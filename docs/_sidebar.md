@@ -1,9 +1,36 @@
-* Getting started
+* Information
 
-  * [Home](README.md)
-  * [Changelog](changelog.md)
-  * [Guides](guide/guide.md)
+    * [Home](README.md)
+    * [Changelog](changelog.md)
+    * [Guides](guide/guide.md)
 
+* Guides 
+
+    * [Getting Started](guide/begin/README.md)
+    * [Command Handler](guide/begin/command-handler.md)
+    * [Aliases](guide/begin/aliases.md)
+    * [Client Status](guide/begin/client-status.md)
+    * [Variables](guide/begin/variables/README.md)
+        * [Channel Variables](guide/begin/variables/channel-variables.md)
+        * [Message Variables](guide/begin/variables/message-variables.md)
+        * [Server Variables](guide/begin/variables/server-variables.md)
+        * [Local User Variables](guide/begin/variables/user-variables.md)
+        * [Global Variables](guide/begin/variables/global-variables.md)
+    * [Permissions](guide/begin/permissions.md)
+    * [Embed Errors](guide/begin/embed-errors.md)
+    * [Hyperlink](guide/begin/hyperlink.md)
+    * [Gateway Intents](guide/begin/gateway-intents.md)
+    * [Character Escaping](guide/begin/character-escaping.md)
+    * [Advanced Guides](guide/advanced-guides/README.md)
+    * [Using Callbacks](guide/advanced-guides/using-callbacks.md)
+    * [Using Music](guide/advanced-guides/music.md)
+    * [Using Slash Commands](guide/advanced-guides/slash-commands.md)
+    * [FetchInvites](guide/advanced-guides/invite-system.md)
+    * [Extras](guide/extras/README.md)
+    * [Custom Events](guide/extras/custom-events.md)
+    * [Sharding](guide/extras/sharding.md)
+    * [dbd.express](guide/extras/dashboard.md)
+    
 * Callbacks
 
     * [bot.onBanAdd](callbacks/bot.onbanadd.md)
