@@ -1,22 +1,18 @@
 ---
-description: Checks if given invite is valid. (Returns true or false)
+description: Check if the Link is a valid invite.
 ---
 
 # $isValidInvite
 
-#### Usage
+{% hint style="info" %}
+Returns `true` or `false`
+{% endhint %}
 
-```javascript
-$isValidInvite[discord.gg/] //After // is your invite Code
-```
-
-#### Example
-
-```javascript
+```text
 bot.command({
 name: "isvalid", 
 code: `
-$isValidInvite[https://discord.gg/HMUfMXDQsV]` //Returns true
+$isValidInvite[$message]`
 })
 ```
 

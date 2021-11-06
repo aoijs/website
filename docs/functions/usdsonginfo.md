@@ -1,16 +1,14 @@
 ---
-description: Returns information about the song that is being played.
+description: Returns of info of the current playing song.
 ---
 
 # $songInfo
 
-#### Usage
+This function returns the &lt;property&gt; of the currently playing song.
 
-```javascript
-$songInfo[property;position]
-```
+Raw usage: `$songInfo[property;position]`
 
-#### Example usage for current playing song
+#### Exapmple for current playing song:
 
 ```javascript
 bot.command({
@@ -21,7 +19,7 @@ Currrently Playing: $songInfo[title]
 })
 ```
 
-#### Example usage for next playing song
+#### Example for next playing song:
 
 ```javascript
 bot.command({
@@ -40,12 +38,12 @@ Next Playing: $songInfo[title;1]
 * duration\_left - Duration left for the song to end.
 * current\_duration - The current duration of the song.
 * url - URL to the youtube video of the current song.
-* userID - ID of the user that added the song.
+* userID - ID of the sser that added the song.
 * thumbnail - The thumbnail of the song.
 * publisher - Channel that uploaded the song.
 * publisher\_url - Link of the channel that uploaded the song.
 
 {% hint style="info" %}
-The current song's position is `0`- so next one's is `1` and so on.
+The cuurent song's position is `0`- so next one's is `1` and so on...
 {% endhint %}
 

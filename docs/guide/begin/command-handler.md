@@ -1,135 +1,65 @@
 ---
-description: Setting up a Command Handler with Aoi.JS.
+description: Command Handlers can be used for organizing your commands
 ---
 
 # Command Handler
+ **In This Topic We Will Learn About Basic Command Handling**
 
-### Adding Command Handler
+## Normal Method Vs Command Handling 
 
-{% tabs %}
-{% tab title="index.js" %}
-```javascript
-bot.loadCommands(`./commands/`)
+**'Normal Methods Are Good'** but if there are too many commands, then the mainFile can get messy and it gets hard to find and update certain commands. Hence to overcome this issue ,**'Command Handlers'** are introduced.
+
+**Command Handlers** not only solve this issue it also makes the mainFile neat and the project more organized.
+## How To Make A Command Handler 
+```js
+'There are 2 methods to make a command Handler:'
+'* fs module'//(which won't be discussed here)
+'* LoadCommands Class'
 ```
-{% endtab %}
-{% endtabs %}
+### Method 
+#### Step-1: Setting Up The Handler 
 
-{% hint style="info" %}
-`commands` can be renamed to any directory folder.
-{% endhint %}
-
-{% tabs %}
-{% tab title="index.js" %}
 ```javascript
-$updatecommands //It will update the commands in the inital path.
+ const bot = new aoijs.Bot({
+   token: "TOKEN", //Discord Bot Token
+   prefix: "PREFIX", //Discord Bot Prefix
+   intents: "all" //Discord Intents 
+ })
+
+ bot.onMessage() //Allows to execute Commands
+
+ const loader = new aoijs.LoadCommands(bot)
+ loader.load(bot.cmd,"./commands/")
+
+ /*
+ bot.cmd is object of Collections where the command data will be stored
+ "./commands/" is the path of folder where all the commands' code will be present
+ */
 ```
-{% endtab %}
-{% endtabs %}
-
-{% hint style="info" %}
-`$updatecommands` can be used in `bot.loadCommands`
-{% endhint %}
-
-### Main File example
-
-This is a example of how to use `bot.loadCommands(./commands/)` in your main index.
-
-{% tabs %}
-{% tab title="index.js" %}
-```javascript
-const aoijs = require("aoi.js")
-
-const bot = new aoijs.Bot({
-token: "TOKEN", //Discord Bot Token
-prefix: "PREFIX" //Discord Bot Prefix
-})
-bot.onMessage() //Allows to execute Commands
-
-bot.command({
-name: "ping", //Trigger name (command name)
-code: `Pong! $pingms` //Code
-})
-
-bot.readyCommand({
-    channel: "", //You can use this or not
-    code: `$log[Ready on $userTag[$clientID]]` //Example Ready on Client
-})
-
-bot.loadCommands(`./commands/`) //Allows Commands executed by `commands` folder
-```
-{% endtab %}
-{% endtabs %}
-
-### Command Handler Folder Setup
-
-{% hint style="warning" %}
-Create a folder named `commands`
-{% endhint %}
-
+---
+#### Step-2 Creating The First File 
+* After Setting Up the Handler In Your MainFile. Create A Folder with name **"commands"**
 ![](../../.gitbook/assets/screenshot-2020-11-23-at-9.54.22-pm.png)
 
-{% hint style="warning" %}
-Make a subfolder
-{% endhint %}
-
+* After Creating The Commands Folder , **create a Folder** (for example : moderation)
 ![Subfolder could be used as a category like a discord category](../../.gitbook/assets/screenshot-2020-11-23-at-9.57.28-pm.png)
 
-{% hint style="warning" %}
-Finally, make your file
-{% endhint %}
-
-![Name of file: commandName.js](../../.gitbook/assets/screenshot-2020-11-23-at-10.00.16-pm.png)
-
-### Setting up a command with command handler.
-
-{% tabs %}
-{% tab title="example.js" %}
+* After That,**Create A JavaScript File** (for example selfKick.js)
+![Name of file: commandName.js](../../.gitbook/assets/selfKick.js.png)
+---
+#### Step-3 : Adding The Code In The File
+* Add The Code In Your Newly Created File (here is example of selfkick command)
 ```javascript
-module.exports = {
-      name: "name",
-      code: `your code/message`
+module.exports ={
+  name:"selfkick",
+  aliases:["sk","bye","exit"],
+  code:`
+  $kick[$authorId]`
 }
 ```
-{% endtab %}
-{% endtabs %}
-
-## Using different command types \(e.g. commands from callback events\) in the command handler
-
-For other commands, like the bot.joinCommand, you just have to find the part behind `bot.`- take it and insert this part at the type option as in the example below. 
-
-`bot.joinCommand` becomes `type: 'joinCommand',`   
-`bot.userUpdateCommand` becomes `type: 'userUpdateCommand'` etc. 
-
-The type line isn't needed for normal `bot.command` commands. Just write your code like in the code block above.
-
-{% tabs %}
-{% tab title="example.js" %}
-```javascript
-module.exports = {
-      type: 'joinCommand',
-      channel: "$systemChannelID",
-      code: `your code/message`
-}
-```
-{% endtab %}
-{% endtabs %}
-
-## Multiple commands in one file
-
-If you want to use multiple commands inside one command handler file, do it like this:
-
-{% tabs %}
-{% tab title="example.js" %}
-```javascript
-module.exports = [{
-  type: 'joinCommand',
-  channel: '773364744240496640',
-  code: `Welcome $userTag !!`
-}, {
-  name: 'ping',
-  code: `Pong! $pingms`
-}]
-```
-{% endtab %}
-{% endtabs %}
-
+#### Step-4: Complete
+* Now Run Your Project And See The Console Logging All The Commands 
+![Console Logging](../../.gitbook/assets/commadLogging.png)
+---
+## Is This The End?
+ * No, [LoadCommands](../../class/loadCommands.md) Class Has Lots Of Features For Which You Can Refer Too [Extra-Features](guide/begin/command-handler-extras.md).

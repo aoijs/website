@@ -4,13 +4,9 @@ description: This function updates all your commands in your command handler
 
 # $updateCommands
 
+This function updates all your commands in your command handler
+
 #### Usage
-
-```javascript
-$updatecommands
-```
-
-#### Example
 
 ```javascript
 bot.command({

@@ -1,7 +1,3 @@
----
-description: Checks if given image URL/Link is valid. (Returns true or false)
----
-
 # $isValidImageLink
 
 This function will return true or false depending if the link is an image or not.
@@ -24,15 +20,6 @@ Raw usage: `$isValidImageLink[URL]`
 bot.command({
     name: "image"
     code: `$isValidImageLink[$message]`
-})
-```
-
-#### Example
-
-```javascript
-bot.command({
-    name: "image"
-    code: `$isValidImageLink[https://leref.ga/img/leref.gif]` //Returns true
 })
 ```
 

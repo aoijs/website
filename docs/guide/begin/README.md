@@ -1,13 +1,11 @@
 ---
-description: The page to guide you with Aoi.JS.
+description: This page will help begin your New Bot!
 ---
-
-# Getting Started
 
 ## Installation
 
 {% hint style="warning" %}
-**Node.JS 12.0.0 or newer is required.**
+**node.js 16.6.0 or newer is required.**
 {% endhint %}
 
 {% tabs %}
@@ -18,7 +16,7 @@ npm install aoi.js
 {% endtab %}
 {% endtabs %}
 
-Once this has installed you can begin the following file `index.js` to setup Aoi.JS.
+Once this has installed you can begin the following file `index.js` to setup aoi.js
 
 {% tabs %}
 {% tab title="index.js" %}
@@ -27,41 +25,32 @@ const aoijs = require("aoi.js")
 
 const bot = new aoijs.Bot({
 token: "TOKEN", //Discord Bot Token
-prefix: "PREFIX" //Discord Bot Prefix
+prefix: "PREFIX", //Discord Bot Prefix
+intents: "all" //Discord Intents
 })
-bot.onMessage() //Allows to execute Commands
 
+//Events
+bot.onMessage()
+
+//Command Example
 bot.command({
-name: "ping", //Trigger name (command name)
-code: `Pong! \`$ping\`ms` //Code
+name: "ping",
+code: `Pong! \`$ping\`ms`
 })
 
+//Ready Event
 bot.readyCommand({
-    channel: "", //You can use this or not
-    code: `$log[Ready on $userTag[$clientID]]` //Example Ready on Client
+    channel: "",
+    code: `$log[Ready on $userTag[$clientID]]`
 })
 ```
 {% endtab %}
 {% endtabs %}
 
-> You must enter a prefix via `PREFIX`
->
-> You must enter a valid Discord Bot Token via `TOKEN`
-
-{% hint style="success" %}
-Just simple as that you can begin using Aoi.JS
-{% endhint %}
-
 ## package.json
 
-{% hint style="warning" %}
-In most Hosting Services you will need a `package.json` file
-{% endhint %}
+The file where your project can "get" aoi.js
 
-If you need a example, there's a quick example to use.
-
-{% tabs %}
-{% tab title="package.json" %}
 ```javascript
 {
     "name": "-asdf",
@@ -72,19 +61,16 @@ If you need a example, there's a quick example to use.
       "start": "node index.js"
     },
     "engines": {
-      "node": "12.x"
+      "node": "16.6"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
-      "aoi.js": "^4.5.0"
+      "aoi.js": "^5.0.0"
     }
   }
 ```
-{% endtab %}
-{% endtabs %}
 
 {% hint style="info" %}
-`4.5.0` can be changed to any version number as you want.
+`5.0.0` can be changed to any version number as you want.
 {% endhint %}
-

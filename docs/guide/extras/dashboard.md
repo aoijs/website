@@ -1,12 +1,4 @@
----
-description: How to setup dbd.express quick and easy.
----
-
-# dbd.express
-
-{% hint style="danger" %}
-**THIS DOES NOT WORK in Aoi.JS v3.0.0 and above.**
-{% endhint %}
+# ‎Dashboard
 
 ## Introduction
 

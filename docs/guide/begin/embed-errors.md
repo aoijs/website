@@ -7,12 +7,12 @@ description: >-
 
 # Embed Errors
 
-* `{title:text}` =&gt; embed's title
+* `{title:text}` =&gt; embed's 
 * `{url:link}` =&gt; embed's title hyperlink url
 * `{footer:text:url}` =&gt; embed's footer text and optional embed's icon image url, embed needs title
 * `{description:text}` =&gt; embed's description
 * `{color:hex}` =&gt; embed's hex color code
-* `{author:text:url}` =&gt; the embed's author and optional author image url
+* `{author:text:url}` =&gt; the embed's author and optional author image uld
 * `{thumbnail:url}` =&gt; the embed's thumbail image url
 * `{field:name:value:inline}` =&gt; embed field with optional inline field \(yes/no\)
 * `{timestamp:ms}` =&gt; embed timestamp with optional ms field
@@ -24,7 +24,7 @@ description: >-
 * `{attachment:name.extension:url}` =&gt; send an attachment with the message
 * `{edit:duration:{new message}:{new message}:{...}}` =&gt; edit the message after given time
 
-## Where to use
+#### Where to use
 
 You can use the embed error functions inside all functions they have message or error message field in it. Among users the following functions:
 
@@ -39,12 +39,11 @@ You can use the embed error functions inside all functions they have message or 
 * [$onlyIfMessageContains](../../functions/usdonlyifmessagecontains.md)
 * [$suppressErrors](../../functions/usdsuppresserrors.md)
 * [$argsCheck](../../functions/usdargscheck.md)
-* [$editMessage](../../functions/usdeditmessage)
 * [$onlyForIDs](../../functions/usdonlyforids.md) and other ID limiters
 * [$cooldown](../../functions/usdcooldown.md) and other cooldown functions
 * [$blackListServerIDs ](../../functions/usdblacklistserverids.md)and other blacklist functions
 
 {% hint style="info" %}
-All of the embed functions are optional. Only `url` field needs a `title` field.
+All of the embed functions are optional. Only url field needs a title field too.
 {% endhint %}
 

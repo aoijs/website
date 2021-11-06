@@ -4,32 +4,29 @@ description: addField allows you to add more fields in your embed.
 
 # $addField
 
-This function is in charge of adding a new field to the embed, these containing a limit of 1000 characters each and allowing to use 10 fields per embed.
+This function is in charge of adding a new field to the embed, these containing a limit of 1024 characters each and allowing to use 25 fields per embed.
 
-#### Fields
+```php
+$addField[index;text;value;inline]
+```
 
-This function has 2 required fields
+## Fields
 
-1. Name \(Required\)
-2. Content \(Required\)
-3. Inline \(Optional\)
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| index | The embed to add this author to. | integer | yes |
+| text | The field text. | string | yes |
+| value | The field value. | string | yes |
+| inline | The field inline. | boolean | no |
 
-Raw Usage: `$addField[title;description;inline (optional)]`
-
-#### Options
-
-* Name - The title of the new field
-* Content - The description/value of the new field
-* Inline \(yes/no\) - Sets the field into an inline field
-
-#### Usage
+## Examples
 
 Without inline
 
 ```javascript
 bot.command({
     name: "embed",
-    code: `$addField[This is an example field;And this is the content!]`
+    code: `$addField[1;Example Field;Value Field]`
 });
 ```
 
@@ -39,9 +36,9 @@ With inline
 bot.command({
     name: "embed",
     code: `
-    $addField[Inline #;3;yes]
-    $addField[Inline #;2;yes]
-    $addField[Inline #;1;yes]
+    $addField[3;Example Field;Value Field;yes]
+    $addField[2;Example Field;Value Field;yes]
+    $addField[1;Example Field;Value Field;yes]
     `
 });
 ```

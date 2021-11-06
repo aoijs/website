@@ -2,36 +2,60 @@
 
 * [Introduction](README.md)
 
-## aoi.js version 4.5.0
+## aoi.js version 5.0.0
 
 * [Changelog](changelog.md)
 
 ## Guides <a id="guide"></a>
 
-* [Getting Started](guide/begin/README.md)
-  * [Command Handler](guide/begin/command-handler.md)
-  * [Aliases](guide/begin/aliases.md)
-  * [Client Status](guide/begin/client-status.md)
-  * [Variables](guide/begin/variables/README.md)
-    * [Channel Variables](guide/begin/variables/channel-variables.md)
-    * [Message Variables](guide/begin/variables/message-variables.md)
-    * [Server Variables](guide/begin/variables/server-variables.md)
-    * [Local User Variables](guide/begin/variables/user-variables.md)
-    * [Global Variables](guide/begin/variables/global-variables.md)
-  * [Permissions](guide/begin/permissions.md)
-  * [Embed Errors](guide/begin/embed-errors.md)
-  * [Hyperlink](guide/begin/hyperlink.md)
-  * [Gateway Intents](guide/begin/gateway-intents.md)
-  * [Character Escaping](guide/begin/character-escaping.md)
-* [Advanced Guides](guide/advanced-guides/README.md)
-  * [Using Callbacks](guide/advanced-guides/using-callbacks.md)
-  * [Using Music](guide/advanced-guides/music.md)
-  * [Using Slash Commands](guide/advanced-guides/slash-commands.md)
-  * [FetchInvites](guide/advanced-guides/invite-system.md)
-* [Extras](guide/extras/README.md)
-  * [Custom Events](guide/extras/custom-events.md)
-  * [Sharding](guide/extras/sharding.md)
-  * [dbd.express](guide/extras/dashboard.md)
+* [Begin](guide/begin/README.md)
+* [Client Status](guide/begin/client-status.md)
+* [Aliases](guide/begin/aliases.md)
+* [Gateway Intents](guide/begin/gateway-intents.md)
+* [Permissions](guide/begin/permissions.md)
+* [Hyperlink](guide/begin/hyperlink.md)
+* [Using Callbacks](guide/begin/using-callbacks.md)
+* [Command Handler](guide/begin/command-handler.md)
+* [Command Handler Extras](guide/begin/command-handler-extras.md)
+* [Character Escaping](guide/begin/character-escaping.md)
+* [Embed Errors](guide/begin/embed-errors.md)
+* [Lavalink System](guide/advanced-guides/lavalink.md)
+* [Slash Commands](guide/advanced-guides/slash-commands.md)
+* [Invite System](guide/advanced-guides/invite-system.md)
+* [Custom Events](guide/extras/custom-events.md)
+* [Sharding](guide/extras/sharding.md)
+* [dbd.express](guide/extras/dashboard.md)
+
+## Variables
+* [Setup](guide/begin/variables/README.md)
+* [Channel Variables](guide/begin/variables/channel-variables.md)
+* [Message Variables](guide/begin/variables/message-variables.md)
+* [Server Variables](guide/begin/variables/server-variables.md)
+* [Local User Variables](guide/begin/variables/user-variables.md)
+* [Global Variables](guide/begin/variables/global-variables.md)
+
+## Class
+
+* [aoiError](class/aoiError.md)
+* [Bot](class/Bot.md)
+* [loadCommands](class/loadCommands.md)
+* [Voice](class/Voice.md)
+
+## Options
+
+* [botOptions](options/botOptions.md)
+* [cacheOptions](options/cacheOptions.md)
+* [commandTypes](options/commandTypes.md)
+* [databaseOptions](options/databaseOptions.md)
+* [intentOptions](options/intentOptions.md)
+* [messageOptions](options/messageOptions.md)
+* [respondOnEditOptions](options/respondOnEditOptions.md)
+* [voiceOptions](options/voiceOptions.md)
+
+## messageFormatters
+
+* [errorObjects](messageFormatters/errorobjects.md)
+* [parsers](messageFormatters/parsers.md)
 
 ## Callbacks
 
@@ -40,11 +64,13 @@
 * [bot.onChannelCreate](callbacks/bot.onchannelcreate.md)
 * [bot.onChannelDelete](callbacks/bot.onchanneldelete.md)
 * [bot.onChannelUpdate](callbacks/bot.onchannelupdate.md)
+* [bot.onFunctionError](callbacks/bot.onfunctionerror.md)
 * [bot.onGuildJoin](callbacks/bot.onguildadd.md)
 * [bot.onGuildLeave](callbacks/bot.onguildleave.md)
+* [bot.onInteractionCreate](callbacks/bot.oninteractioncreate.md)
 * [bot.onInviteCreate](callbacks/bot.oninvitecreate.md)
 * [bot.onInviteDelete](callbacks/bot.oninvitedelete.md)
-* [bot.onJoined](callbacks/bot.onjoined.md)
+* [bot.onJoin](callbacks/bot.onjoin.md)
 * [bot.onLeave](callbacks/bot.onleave.md)
 * [bot.onMemberUpdate](callbacks/bot.onmemberupdate.md)
 * [bot.onMessage](callbacks/bot.onmessage.md)
@@ -60,7 +86,6 @@
 * [bot.onTypingStart](callbacks/bot.ontypingstart.md)
 * [bot.onUserUpdate](callbacks/bot.onuserupdate.md)
 * [bot.onVoiceStateUpdate](callbacks/bot.onvoicestateupdate.md)
-* [bot.onInteractionCreate](callbacks/bot.oninteractioncreate.md)
 * [bot.musicEndCommand](callbacks/bot.musicendcommand.md)
 * [bot.musicStartCommand](callbacks/bot.musicstartcommand.md)
 * [bot.loopCommand](callbacks/bot.loopcommand.md)

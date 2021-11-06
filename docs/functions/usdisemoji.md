@@ -1,14 +1,8 @@
----
-description: Checks if given content is a valid Emoji. (Returns true or false)
----
-
 # $isEmoji
 
-#### Usage
+This function returns whether or not the content is a valid emoji, Returns Boolean
 
-```javascript
-$isEmoji[emoji]
-```
+#### Usage
 
 This function has 1 field
 
@@ -20,13 +14,20 @@ Raw Usage: `$isEmoji[content]`
 
 * Content - The content that is checked to see if it's an emoji or not
 
-#### Example
-
 ```javascript
 bot.command({
 name: "isEmoji",
 code: `
-$isEmoji[:heart:] //Returns true
+$isEmoji[<:bruh:775189112474173470>]
+`
+})
+
+//Or custom content
+
+bot.command({
+name: "isEmoji",
+code: `
+$isEmoji[$message]
 `
 })
 ```

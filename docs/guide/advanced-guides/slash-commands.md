@@ -1,8 +1,4 @@
----
-description: Using Aoi.JS you're able to create Slash Commands for your Client.
----
-
-# Using Slash Commands
+# Slash Commands
 
 ## Introduction
 
@@ -62,41 +58,20 @@ the description will say "A cool slash command for AOIjs"
 })
 ```
 
-**Options form:**
-
-```text
-name:description:Required (true/false):type value
-```
-
-> Here are the available types:
-
-| Name | Type |
-| :--- | :--- |
-| SUB\_COMMAND | 1 |
-| SUB\_COMMAND\_GROUP | 2 |
-| STRING | 3 |
-| INTEGER | 4 |
-| BOOLEAN | 5 |
-| USER | 6 |
-| CHANNEL | 7 |
-| ROLE | 8 |
-| MENTIONABLE | 9 |
-| NUMBER | 10 |
-
 Using function will `options` filled out
 
 ```javascript
 bot.command({
 name: "create",
-code: `$createSlashCommand[$guildID;say;send a message;message:your message:true:3]`
+code: `$createSlashCommand[$guildID;AOIjs;A cool slash command for AOIjs;message]`
 /*
     Code Breakdown:
-    Same thing as above but adds a required field. Example in image below
+    Same thing as above but adds a required field. Example in imagine below
 */
 })
 ```
 
-![Example](../../.gitbook/assets/image%20%2834%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%283%29.png)
+![Example](../../.gitbook/assets/image%20%2834%29%20%282%29.png)
 
 ### $getSlashCommandID
 
@@ -206,10 +181,8 @@ bot.onInteractionCreate()
 
 This function sends a message to the channel when the slash command in executed
 
-> [More info at this function's documentation](https://aoi.leref.ga/functions/usdinteractionreply)
-
 ```javascript
-$interactionReply[content;embeds;components (optional);flags (optional);type (optional)]
+$interactionReply[message]
 ```
 
 ```javascript

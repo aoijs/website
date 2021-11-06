@@ -1,22 +1,21 @@
 ---
-description: Check if @everyone was mentioned in the command. (Returns true or false)
+description: Returns true/false if @everyone was mentioned in the command.
 ---
 
 # $isEveryoneMentioned
 
-#### Usage
+With this function you can check if `@everyone` was mentioned in the command's message.
 
-```javascript
-$isEveryoneMentioned
-```
+Raw usage: `$isEveryoneMentioned`
 
-#### Example
+#### Example Command:
 
-```javascript
+```text
 bot.command({
 name: "everyonementioned",
 code: `
-Everyone mentioned? $isEveryoneMentioned`
+Everyone mentioned? $isEveryoneMentioned
+? 
 })
 ```
 
