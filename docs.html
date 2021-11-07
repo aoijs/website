@@ -37,16 +37,52 @@
   <script>
     window.$docsify = {
       name: 'aoi.js documentation',
-      themeColor: '#82B9FF',
+      themeColor: '#CACACA',
       logo: 'https://aoi.js.org/assets/images/aoijs-new.png',
       repo: 'https://github.com/aoijs/aoi.js',
       loadSidebar: true,
       loadNavbar: 'nav.md',
       notFoundPage: '404.md',
       autoHeader: true,
-      basePath: '/docs/',
-      subMaxLevel: 4,
+      basePath: './docs/',
+      subMaxLevel: 2,
       search: 'auto',
+      darklightTheme: {
+            siteFont : "PT Sans",
+            defaultTheme : 'dark',
+            codeFontFamily : 'Roboto Mono, Monaco, courier, monospace',
+            bodyFontSize : '17px',
+            dark: {
+                accent: '#CACACA',
+                toogleBackground : '#ffffff',
+                background: '#000000',
+                textColor: '#b4b4b4',
+                codeTextColor : '#78D2FF',
+                codeBackgroundColor : '#111010',
+                borderColor : '#000000',
+                blockQuoteColor : '#858585',
+                highlightColor : '#d22778',
+                sidebarSublink : '#b4b4b4',
+                codeTypeColor : '#ffffff',
+                coverBackground : 'linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
+                toogleImage : 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/sun.svg)'
+            },
+            light: {
+                accent: '#000000',
+                toogleBackground : '#091a28',
+                background: '#ffffff',
+                textColor: '#000000',
+                codeTextColor : '#525252',
+                codeBackgroundColor : '#f8f8f8',
+                borderColor : 'rgba(0, 0, 0, 0.07)',
+                blockQuoteColor : '#858585',
+                highlightColor : '#d22778',
+                sidebarSublink : '#b4b4b4',
+                codeTypeColor : '#091a28',
+                coverBackground : 'linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
+                toogleImage : 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/moon.svg)'
+            }
+      }
     }
   </script>
   <script 
