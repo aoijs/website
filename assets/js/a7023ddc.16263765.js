@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkaoijs_docs=self.webpackChunkaoijs_docs||[]).push([[11713],{53457:e=>{e.exports=JSON.parse('[{"label":"v6.0.0-dev","permalink":"/blog/tags/v-6-0-0-dev","count":1},{"label":"dev","permalink":"/blog/tags/dev","count":1}]')}}]);

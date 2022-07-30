@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkaoijs_docs=self.webpackChunkaoijs_docs||[]).push([[90533],{28017:o=>{o.exports=JSON.parse('{"permalink":"/blog","page":1,"postsPerPage":1,"totalPages":1,"totalCount":1,"blogDescription":"The aoi.js blog","blogTitle":"aoi.js blog"}')}}]);

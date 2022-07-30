@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkaoijs_docs=self.webpackChunkaoijs_docs||[]).push([[52535],{45641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Preparing for v6.0.0-dev","permalink":"/blog/v6.0.0-dev"}]}')}}]);
