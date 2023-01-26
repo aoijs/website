@@ -7,7 +7,6 @@
     <link rel="alternate" href="https://aoi.js.org/blog"/>
     <subtitle>aoi.js Blog</subtitle>
     <icon>https://aoi.js.org/https://github.com/aoijs/website/blob/master/assets/images/aoijslogo-new.png?raw=true</icon>
-    <rights>Copyright © 2023 Akarui Development Team | AoiEngine v4.0.0</rights>
     <entry>
         <title type="html"><![CDATA[Preparing for v6.0.0-dev]]></title>
         <id>v6.0.0-dev</id>
