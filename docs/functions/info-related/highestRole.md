@@ -1,0 +1,34 @@
+---
+title: $highestRole
+description: $highestRole will return the highest role of a specific user.
+id: highestRole
+---
+
+`$highestRole` will return the highest role of a specific user.
+
+## Usage
+
+```php
+$highestRole[userID?;guildID?;option?]
+```
+
+## Parameters
+
+| Field    | Type    | Description                                                                                           | Required |
+| -------- | ------- | ----------------------------------------------------------------------------------------------------- | :------: |
+| userID?  | integer | The ID of the user you want the highest role to be returned of.                                       |  false   |
+| guildID? | integer | The ID of the guild.                                                                                  |  false   |
+| option?  | string  | The option how to return the role <br /> 1. **name** <br /> 2. **id** (default) <br /> 3. **mention** |  false   |
+
+## Example(s)
+
+This will return the name of your highest role:
+
+```javascript
+bot.command({
+    name: 'highestRole',
+    code: `
+  $highestRole[$authorID;$guildID;name]
+  `
+});
+```

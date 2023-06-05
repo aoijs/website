@@ -1,0 +1,26 @@
+---
+title: $packageDependencies
+description: $packageDependencies will return aoi.js' package dependencies.
+id: packageDependencies
+---
+
+`$packageDependencies` will return aoi.js' package dependencies.
+
+## Usage
+
+```php
+$packageDependencies
+```
+
+## Example(s)
+
+This will return aoi.js' package dependencies:
+
+```javascript
+bot.command({
+    name: "packageDependencies",
+    code: `
+    $packageDependencies
+    ` // Should return "aoi.db, axios, discord-api-types, discord.js, undici"
+});
+```
