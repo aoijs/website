@@ -41,6 +41,8 @@ Documentation: [aoi.music](../aoi.music/1introduction.md)
 
 ## @akarui/aoi.panel
 
+![aoi.panel](https://github.com/aoijs/website/blob/master/assets/images/aoi.panel-banner.png?raw=true)
+
 Package URL: [npm](https://www.npmjs.com/package/@akarui/aoi.panel)
 
 Documentation: [aoi.panel](../aoi.panel/1introduction.md)

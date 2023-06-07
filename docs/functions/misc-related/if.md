@@ -45,3 +45,19 @@ bot.command({
     `
 });
 ```
+
+This will do the exact same just different usage of `$if` by using `$if: "old"`:
+
+```javascript
+bot.command({
+    name: "if",
+    $if: "old",
+    code: `
+    $if[1==2]
+    That's true!
+    $else
+    That's false!
+    $endif
+    `
+});
+```
