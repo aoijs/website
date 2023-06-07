@@ -1,32 +1,24 @@
 ---
-title: alwaysExecute
-description: Emitted whenever a message is sent.
+title: $alwaysExecute
+description: $alwaysExecute will always emit when a message event is triggered
 id: alwaysExecute
 ---
 
-This "function" will be emitted whenever a message is sent.
+`$alwaysExecute` will always emit when a message event is triggered.
 
-```javascript
-const { AoiClient } = require("aoi.js");
+## Usage
 
-const bot = new AoiClient({
-    token: "DISCORD BOT TOKEN",
-    prefix: "DISCORD BOT PREFIX",
-    intents: ["MessageContent", "Guilds", "GuildMessages"],
-    events: ["onMessage", "onInteractionCreate"]
-});
+```php
+$alwaysExecute
 ```
 
-### Example Usage
+## Example(s)
 
-This will respond with an embed to each message:
+This will send the given message each time you send a message:
 
 ```javascript
 bot.command({
-    name: '$alwaysExecute',
-    code: `
-  $description[Hello!]
-  `
-});
-
+  name: "$alwaysExecute",
+  code: `Hello!`
+})
 ```

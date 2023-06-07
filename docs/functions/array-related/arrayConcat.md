@@ -1,13 +1,15 @@
 ---
 title: $arrayConcat
-description: $arrayConcat will concat two arrays.
+description: $arrayConcat will concat multiple arrays.
 id: arrayConcat
 ---
+
+`$arrayConcat` will concat multiple arrays.
 
 ## Usage
 
 ```php
-$arrayConcat[separator;name]
+$arrayConcat[separator;...arrays]
 ```
 
 ## Parameters
@@ -15,19 +17,19 @@ $arrayConcat[separator;name]
 | Field     | Type   | Description        | Required |
 | --------- | ------ | ------------------ | :------: |
 | separator | string | Separator.         |   true   |
-| name      | string | Name of the array. |   true   |
+| ...arrays | string | Name of the array. |   true   |
 
 ## Example(s)
 
-This will return `This is a test`:
+This will return `This is a test` as it concats array 1 and 2:
 
 ```javascript
 bot.command({
     name: 'arrayConcat',
     code: `
-  $arrayConcat[ ;test;test2]
-  $createArray[test;This is]
-  $createArray[test2;a test]
+  $arrayConcat[ ;test1;test2]
+  $createArray[array1;This is]
+  $createArray[array2;a test]
   `
 });
 ```
