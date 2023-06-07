@@ -6,8 +6,6 @@ id: aoipanel-introduction
 
 # @akarui/aoi.panel Documentation
 
-![aoi.panel](https://github.com/aoijs/website/blob/master/assets/images/aoi.panel-banner.png?raw=true)
-
 ## Table Of Contents
 
 | Name              | Description                           | Link                  |

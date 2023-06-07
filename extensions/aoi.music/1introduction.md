@@ -96,8 +96,6 @@ voice.addPlugin(PluginName.Cacher, new Cacher("memory" /* or "disk" */));
 voice.addPlugin(PluginName.Filter, new Filter({
     filterFromStart: false,
 }));
-
-voice.bindExecutor(bot.functionManager.interpreter);
 ```
 
 ### Events
@@ -105,6 +103,8 @@ voice.bindExecutor(bot.functionManager.interpreter);
 #### Adding Events
 
 ```js
+voice.bindExecutor(bot.functionManager.interpreter);
+
 voice.addEvent(PlayerEvents.EVENT_NAME);
 ```
 
@@ -121,14 +121,10 @@ voice.addEvent(PlayerEvents.EVENT_NAME);
 ### Using Events
 
 ```js
-/* Ensure you have loader defined using the LoadCommands class
-const { AoiClient, LoadCommands } = require("aoi.js");
-const loader = new LoadCommands(bot); */
-
-loader.load(voice.cmds,"./voice/");
+loader.load(voice.cmds,"./voice/") // loader being the LoadCommands class
 ```
 
-This should be the content of your `./voice/somefile.js`:
+This should be the content of your `/voice/somefile.js`:
 
 ```js
 module.exports = [{
