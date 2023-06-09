@@ -4,12 +4,6 @@ description: The beginning process of how to use aoi.js and all its features.
 slug: /
 ---
 
-:::danger Important
-
-This is the brand new documentation for v7 development **THINGS MAY CHANGE**.
-
-:::
-
 ![aoijs](https://github.com/aoijs/website/blob/master/assets/images/aoijs-banner.png?raw=true)
 
 ## Features

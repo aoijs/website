@@ -128,10 +128,11 @@ module.exports = {
           showLastUpdateTime: true,
           sidebarCollapsible: true,
           sidebarPath: require.resolve('./sidebars.js'),
-          lastVersion: 'current',
+          lastVersion: '6.2.6',
           versions: {
             current: {
-              label: '6.2.6',
+              label: '7.0.0',
+              path: '7.0.0',
             },
           },
         },
