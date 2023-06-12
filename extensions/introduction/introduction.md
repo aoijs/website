@@ -26,10 +26,6 @@ Documentation: [aoi.music](../aoi.music/1introduction.md)
 - Control music playback with commands like play, pause, resume, and skip.
 - Adjust the volume level and manage other audio settings.
 
-#### Playlist Management
-- Create and manage playlists to queue multiple songs for continuous playback.
-- Shuffle and loop playlists to customize the listening experience.
-
 #### Song Information
 - Retrieve detailed information about the currently playing song, including title, artist, duration, and thumbnail.
 
@@ -41,7 +37,7 @@ Documentation: [aoi.music](../aoi.music/1introduction.md)
 
 ## @akarui/aoi.panel
 
-![aoi.panel](https://github.com/aoijs/website/blob/master/assets/images/aoi.panel-banner.png?raw=true)
+![aoi.panel](https://github.com/aoijs/website/blob/master/assets/images/aoipanel-banner.png?raw=true)
 
 Package URL: [npm](https://www.npmjs.com/package/@akarui/aoi.panel)
 

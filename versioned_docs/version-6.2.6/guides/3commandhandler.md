@@ -22,6 +22,13 @@ Storing your commands in your main file may seem fine, but after a certain amoun
 In this step we'll take a look at your main file also known as `index.js`. We add `LoadCommands` in order for
 the bot to understand where our files are.
 
+:::warning
+Ensure you edited the first line of code when you start using the LoadCommands class.
+
+\- `const { AoiClient } = require("aoi.js");`  
+\+ `const { AoiClient, LoadCommands } = require("aoi.js");`  
+:::
+
 ```javascript
 const { AoiClient, LoadCommands } = require("aoi.js");
 
