@@ -14,7 +14,7 @@ npm install aoi.js
 
 ## Example
 
-```javascript
+```javascript title="index.js"
 const { AoiClient } = require("aoi.js");
 
 const bot = new AoiClient({

@@ -16,7 +16,7 @@ Head to the [SoundCloud](https://soundcloud.com/) website and make sure you're l
 
 2. Head to the `Network` tab and refresh the page if necessary.
 
-3. Play a random song and search for a property with `?clientID=`.
+3. Find a property with `clientID` in it.
 
 4. Copy the characters after that and you're done.
 

@@ -29,7 +29,7 @@ Ensure you edited the first line of code when you start using the LoadCommands c
 \+ `const { AoiClient, LoadCommands } = require("aoi.js");`  
 :::
 
-```javascript
+```javascript title="index.js"
 const { AoiClient, LoadCommands } = require("aoi.js");
 
 const bot = new AoiClient({
@@ -89,7 +89,7 @@ module.exports = ({...})
 
 Open your `help.js` and copy & paste the following code snippet:
 
-```javascript
+```javascript title="commands/help.js"
 module.exports = [{
     name: "help",
     aliases: ["helpcmd", "helpme"],
@@ -109,7 +109,7 @@ appear.
 From now on, you can have multiple commands in one file, this is useful for `awaited` commands or any similar. Let's
 create a little nice welcome command and combine the command from above with it!
 
-```javascript
+```javascript title="commands/help.js"
 module.exports = [{
     name: "help",
     aliases: ["helpcmd", "helpme"],
@@ -120,12 +120,15 @@ $description[Any text you like can go here!]
 $footer[Even footers!]`
 }, {
     type: "join",
-    channel: "any channel ID",
+    channel: "$channelID",
     code: `
-$title[Someone joined!]
-$description[Welcome to this server <@$authorID>!]`
+$log[Someone joined a server!]`
 }]
 ```
+
+:::info  
+All Command Types can be found [here](./2events.md)!  
+:::
 
 Make sure you have the required intents and `onJoin` in the `events` property in your `index.js` or else this won't
 work!

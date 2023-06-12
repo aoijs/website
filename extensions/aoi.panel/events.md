@@ -1,6 +1,6 @@
 ---
-title: aoi.panel events
-description: All about aoi.panel's events.
+title: Events
+description: All about aoi.panel's events and their usage.
 id: aoipanel-events
 ---
 

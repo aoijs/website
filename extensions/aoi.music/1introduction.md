@@ -25,13 +25,13 @@ npm install @akarui/aoi.music
 
 ```bash
 # for Edge
-npm install @akarui/aoi.music@dev
+npm install @akarui/aoi.music
 # or
 npm install https://github.com/akaruidevelopment/music#main
 ```
 
 
-```js
+```js title="index.js"
 const voice = new AoiVoice(bot, {
     searchOptions?: {
         soundcloudClientId?: string,

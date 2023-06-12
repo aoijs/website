@@ -36,7 +36,7 @@ Discord has designated three intents as privileged\*: **GuildMembers**, **GuildP
 * **DirectMessageTyping**
 
 #### Example Usage of Intents:
-```js
+```js title="index.js"
 const { AoiClient } = require("aoi.js");
 
 const bot = new AoiClient({

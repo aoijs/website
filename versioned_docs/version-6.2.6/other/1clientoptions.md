@@ -6,7 +6,7 @@ id: clientoptions
 
 **This page is about all aoi.js Client Options and what they do.**
 
-```typescript
+```js title="index.js"
 const { AoiClient } = require("aoi.js");
 
 const bot = new AoiClient({

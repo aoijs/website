@@ -6,24 +6,39 @@ id: aoipanel-introduction
 
 # @akarui/aoi.panel Documentation
 
-![aoi.panel](https://github.com/aoijs/website/blob/master/assets/images/aoi.panel-banner.png?raw=true)
+[![aoi.panel](https://raw.githubusercontent.com/aoijs/website/main/assets/images/aoipanel-banner.png)](https://github.com/AkaruiDevelopment/panel/blob/main/examples/)
+
+:::info
+
+Use the hyperlinks to jump quickly across files.
+
+- aoi.panel, panel class and its parameters.
+    - [Jump to File](./panel.md)
+- Advanced Features, usage of multiple accounts, custom pages and more.
+    - [Jump to File](./advanced.md)  
+
+:::
 
 ## Table Of Contents
 
-| Name              | Description                           | Link                  |
-|-------------------|---------------------------------------|-----------------------|
-| The panel Class   | The panel Class and its parameters    | [link](./panel.md)  | 
-| Advanced Features | Multiple accounts, custom pages, etc. | [link](./advanced.md) | 
-
-## To View Examples Click **[here](https://github.com/AkaruiDevelopment/panel/blob/main/examples/)**
+<!-- no toc -->
+- [Installation](#installation)
+- [Getting Started](#installation)
+  - [Basic Usage](#basic-usage-latest-version)
 
 ## Installation
 
-```bash
+```php
 npm i @akarui/aoi.panel
 ```
 
-## Basic Usage (aoi.js v5):
+## Basic Usage (latest version):
+
+:::info Using Hosts  
+The setup is basically the same, but the process is different.
+
+You would need to use the **server** port instead of a random port choosen by you. The port can be mostly found on the right side besides the console window.  
+:::
 
 ```javascript
 const { Panel } = require("@akarui/aoi.panel");
@@ -49,7 +64,7 @@ const panel = new Panel({
     username: "your-username", // username for logging in
     password: "password-here", // password for logging in
     secret: require('crypto').randomBytes(16).toString("hex"), // session secret
-    port: 3000, // port on which website is hosted, not required! Default 3000
+    port: 3000, // port on which website is hosted.
     bot: bot, // your aoi.js client
     mainFile: "index.js", // Main file where code is running.Not required, default taken from package.json
     commands: "./commands", // folder name in which all the edit needing files are there.
@@ -59,6 +74,7 @@ panel.loadPanel(); // Load The Panel
 
 panel.onError(); // Will detect errors, and send it to aoi.panel's error page.
 ```
+
 
 * Panel Login Page
 

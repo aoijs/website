@@ -30,6 +30,16 @@ bot.variables({
 
 The `bot.variables()` function takes an object as an argument, where each property represents a variable name and its corresponding value.
 
+For example:
+
+```js title="index.js"
+bot.variables({
+    blacklisted: false,
+    money: 0,
+    developers: {},
+    title: "none"
+});
+```
 ---
 
 ## Variable Handlers
@@ -53,7 +63,20 @@ module.exports = (bot) => {
     variableName: number,
     variableName: object,
     variableName: "string"
- })
+ });
+}
+```
+
+For example:
+
+```js title="handler/variables.js"
+module.exports = (bot) => { 
+ bot.variables({
+    blacklisted: false,
+    money: 0,
+    developers: {},
+    title: "none"
+ }); 
 }
 ```
 

@@ -10,7 +10,18 @@ id: aoipanel-panel-class
 const { Panel } = require("@akarui/aoi.panel")
 
 const panel = new Panel({
-    ...
+    username: string, array;
+    password: string, array;
+    secret: string;
+    port: number;
+    bot: string;
+    mainFile: pathLike;
+    commands: pathLike;
+    interaction: pathLike;
+    version: string;
+    type: string;
+    theme: string;
+    codetheme: string;
 });
 ```
 

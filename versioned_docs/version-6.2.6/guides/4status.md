@@ -44,7 +44,7 @@ This will display the text "Example Text!" as bot status, of course you can modi
 
 If you want to have multiple statuses just add multiple `bot.status({...})`, simple do the following:
 
-```javascript
+```javascript title="index.js"
 bot.status({
     text: "Example Text one!",
     type: "PLAYING",
@@ -70,7 +70,7 @@ There are various types of statuses:
 
 You can also set the bot's presence, by adding the `status` property, for example:
 
-```javascript
+```javascript title="index.js"
 bot.status({
     text: "Example Text!",
     type: "PLAYING",

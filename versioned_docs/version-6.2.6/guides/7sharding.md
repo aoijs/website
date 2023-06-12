@@ -77,8 +77,8 @@ string,
 
 This should be a new file, for example `shard.js`:
 
-```js
-const {ClientShard} = require("aoi.js");
+```js title="shard.js"
+const { ClientShard } = require("aoi.js");
 
 const sharder = new ClientShard("./index.js", {
     token: "DISCORD BOT TOKEN"
@@ -89,7 +89,7 @@ sharder.startProcess();
 
 This is is your main file which is the source running your Discord Bot, it's typically your `index.js`:
 
-```js
+```js title="index.js"
 const { AoiClient } = require("aoi.js");
 const bot = new AoiClient({
     token: "DISCORD BOT TOKEN",
