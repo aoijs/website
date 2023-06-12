@@ -8,20 +8,18 @@ slug: /
 
 This is the brand new documentation for v7 development **THINGS MAY CHANGE**.
 
+## Disclaimer
+
+- This version of **aoi.js** is currently heavily in development, expect bugs and unfinished functions.
+- There are currently around **80** functions.
+- Everything on here is **SUBJECT TO CHANGE**.  
 :::
 
 ![aoijs](https://github.com/aoijs/website/blob/master/assets/images/aoijs-banner.png?raw=true)
 
-## Features
-
-- Built-in support of **[database](https://www.npmjs.com/package/aoi.db)** by default and ready for multipurpose.
-- Built-in **630+** functions, simple and easy to learn.
-- Simple to learn, all in string-based and compact.
-- Support of extensions available to be used by the community.
-
 ## Installation
 
-**node.js 16.9.0 or newer is required.**
+**node.js LTS or newer is required.**
 
 ```bash
 npm install aoi.js
@@ -34,29 +32,23 @@ yarn add aoi.js
 ## Setup
 
 ```javascript
-const { AoiClient } = require("aoi.js");
+// imports
+const { AoiClient, defaultCacheConfig } = require("aoi.js");
+const { Intents } = require("aoiluna");
 
+// create a new client
 const bot = new AoiClient({
-    token: "DISCORD BOT TOKEN",
-    prefix: "DISCORD BOT PREFIX",
-    intents: ["MessageContent", "Guilds", "GuildMessages"],
-    events: ["onMessage", "onInteractionCreate"]
-});
+  token: "TOKEN",
+  prefixes: "PREFIX",
+  intents: Intents.Guilds | Intents.GuildMessages | Intents.MessageContent,
+  events: ['MessageCreate','Ready'],
+  caches: defaultCacheConfig(),
+})
 
-// Ping Command Example
+// create a command
 bot.command({
-    name: "ping",
-    code: `Pong! $pingms`
-});
-
-// Slash Interaction Command Example (ping)
-/* You must execute the function below for the slash command to work:
-$createApplicationCommand[$guildID;ping;Pong!;true;slash]
-*/
-bot.interactionCommand({
-    name: "ping",
-    prototype: "slash",
-    code: `$interactionReply[Pong! $pingms;;;;everyone;false]`
+  name: "ping",
+  code: `Pong! $pingms`
 });
 ```
 
