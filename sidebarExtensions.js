@@ -19,7 +19,7 @@
       collapsed: false,
       items: [
         {
-          type: 'doc',
+          type: 'category',
           dirName: 'aoi.music',
         }, 
         {
