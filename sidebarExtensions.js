@@ -21,7 +21,7 @@
         {
           type: 'doc',
           label: 'Introduction',
-          id: 'aoimusic-introduction',
+          id: 'aoi.music/aoimusic-introduction',
         },
         {
           type: 'category',
