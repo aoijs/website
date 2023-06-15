@@ -44,7 +44,7 @@ module.exports = {
       items: [
         {
           to: 'docs/',
-          activeBasePath: 'docs',
+          activeBaseRegex: '^docs\/(functions|other)(\/[^\/]+)*$',
           label: 'Documentation',
           position: 'left',
         },
