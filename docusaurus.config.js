@@ -50,6 +50,7 @@ module.exports = {
         },
         {
           to: 'docs/guides/setup',
+          activeBasePath: 'docs/guides',
           label: 'Guides',
           position: 'left',
         },
