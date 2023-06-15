@@ -24,6 +24,7 @@
             type: 'docs',
             id: 'aoi.music/1introduction.md',
           },
+          items: [],
         },
         {
           type: 'category',
