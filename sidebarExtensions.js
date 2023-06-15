@@ -19,12 +19,9 @@
       collapsed: false,
       items: [
         {
-          type: 'category',
-          label: 'aoi.music',
-          link: {
-            type: 'doc', id: 'aoi.music'
-          },
-          items: [],
+          type: 'docs',
+          id: 'aoi.music/1introduction.md',
+          dirName: 'Introduction',
         },
         {
           type: 'category',
