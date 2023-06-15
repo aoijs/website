@@ -15,15 +15,25 @@ slug: /
 
 ## Installation
 
-**node.js 16.9.0 or newer is required.**
 
-```bash
-npm install aoi.js
-```
+<Tabs groupId="pref-install">
+  <TabItem value="i-npm" label="npm">
 
-```bash
-yarn add aoi.js
-```
+  **node.js 16.9.0 or newer is required.**
+  ```bash
+  npm install aoi.js
+  ```
+
+  </TabItem>
+  <TabItem value="i-yarn" label="yarn">
+
+  **node.js 16.9.0 or newer is required.**
+  ```bash
+  yarn add aoi.js
+  ```
+  
+  </TabItem>
+</Tabs>
 
 ## Setup
 
@@ -31,10 +41,19 @@ yarn add aoi.js
 const { AoiClient } = require("aoi.js");
 
 const bot = new AoiClient({
-    token: "DISCORD BOT TOKEN",
-    prefix: "DISCORD BOT PREFIX",
+    token: "Discord Bot Token",
+    prefix: "Discord Bot Prefix",
     intents: ["MessageContent", "Guilds", "GuildMessages"],
-    events: ["onMessage", "onInteractionCreate"]
+    events: ["onMessage", "onInteractionCreate"],
+    database: {
+        type: "aoi.db",
+        db: require("aoi.db"),
+        tables: ["main"],
+        path: "./database/",
+        extraOptions: {
+            dbType: "KeyValue"
+        }
+    }
 });
 
 // Ping Command Example
@@ -43,14 +62,15 @@ bot.command({
     code: `Pong! $pingms`
 });
 
-// Slash Interaction Command Example (ping)
-/* You must execute the function below for the slash command to work:
+/* Slash Interaction Command Example (ping)
+You must execute the function below for the slash command to work:
 $createApplicationCommand[$guildID;ping;Pong!;true;slash]
 */
+
 bot.interactionCommand({
     name: "ping",
     prototype: "slash",
-    code: `$interactionReply[Pong! $pingms;;;;everyone;false]`
+    code: `$interactionReply[Pong! $pingms]`
 });
 ```
 

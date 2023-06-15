@@ -1,0 +1,30 @@
+{
+  "version.label": {
+    "message": "5.5.5",
+    "description": "Die Bezeichnung für Version 5.5.5"
+  },
+  "sidebar.docs.category.Welcome": {
+    "message": "Willkommen",
+    "description": "Die Bezeichnung für Kategorie 'Willkommen' in der Seitenleiste der Dokumentation"
+  },
+  "sidebar.docs.category.Guides": {
+    "message": "Anleitungen",
+    "description": "Die Bezeichnung für Kategorie 'Guides' in der Seitenleiste der Dokumentation"
+  },
+  "sidebar.docs.category.Advanced Guides": {
+    "message": "Erweiterte Anleitungen",
+    "description": "Die Bezeichnung für Kategorie 'Erweiterte Anleitungen' in der Seitenleiste der Dokumentation"
+  },
+  "sidebar.docs.category.Functions": {
+    "message": "Funktionen",
+    "description": "Die Bezeichnung für Kategorie 'Funktionen' in der Seitenleiste der Dokumentation"
+  },
+  "sidebar.docs.category.Events": {
+    "message": "Ereignisse",
+    "description": "Die Bezeichnung für Kategorie 'Ereignisse' in der Seitenleiste der Dokumentation"
+  },
+  "sidebar.docs.category.Other": {
+    "message": "Sonstiges",
+    "description": "Die Bezeichnung für Kategorie 'Sonstiges' in der Seitenleiste der Dokumentation"
+  }
+}

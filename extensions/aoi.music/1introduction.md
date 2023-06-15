@@ -17,19 +17,24 @@ id: aoimusic-introduction
 
 ### Installation
 
-**node.js 16.9.0 or newer is required.**
+<Tabs>
+  <TabItem groupId="pref-install" value="lts" label="Stable">
 
-```bash
-npm install @akarui/aoi.music
-```
+  **node.js 16.9.0 or newer is required.**
+    ```bash
+  npm install @akarui/aoi.music
+  ```
+  
+  </TabItem>
+  <TabItem value="pr" label="Pre-Release">
 
-```bash
-# for Edge
-npm install @akarui/aoi.music
-# or
-npm install https://github.com/akaruidevelopment/music#main
-```
+  **node.js 16.9.0 or newer is required.**
+  ```bash
+  npm install https://github.com/akaruidevelopment/music#main
+  ```
 
+</TabItem>
+</Tabs>
 
 ```js title="index.js"
 const voice = new AoiVoice(bot, {

@@ -19,15 +19,24 @@ This is the brand new documentation for v7 development **THINGS MAY CHANGE**.
 
 ## Installation
 
-**node.js LTS or newer is required.**
+<Tabs groupId="pref-install">
+  <TabItem value="i-npm" label="npm">
 
-```bash
-npm install aoi.js
-```
+  **node.js LTS or newer is required.**
+  ```bash
+  npm install aoi.js
+  ```
 
-```bash
-yarn add aoi.js
-```
+  </TabItem>
+  <TabItem value="i-yarn" label="yarn">
+
+  **node.js LTS or newer is required.**
+  ```bash
+  yarn add aoi.js
+  ```
+  
+  </TabItem>
+</Tabs>
 
 ## Setup
 

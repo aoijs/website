@@ -1,0 +1,70 @@
+{
+  "version.label": {
+    "message": "6.2.6",
+    "description": "Le libellé pour la version 6.2.6"
+  },
+  "sidebar.docs.category.Guides": {
+    "message": "Guides",
+    "description": "Le libellé pour la catégorie Guides dans la barre latérale de la documentation"
+  },
+  "sidebar.docs.category.Functions": {
+    "message": "Fonctions",
+    "description": "Le libellé pour la catégorie Fonctions dans la barre latérale de la documentation"
+  },
+  "sidebar.docs.category.array-related": {
+    "message": "Lié aux tableaux",
+    "description": "Le libellé pour la catégorie Lié aux tableaux dans la barre latérale de la documentation"
+  },
+  "sidebar.docs.category.awaited-related": {
+    "message": "Lié à l'attente",
+    "description": "Le libellé pour la catégorie Lié à l'attente dans la barre latérale de la documentation"
+  },
+  "sidebar.docs.category.client-related": {
+    "message": "Lié au client",
+    "description": "Le libellé pour la catégorie Lié au client dans la barre latérale de la documentation"
+  },
+  "sidebar.docs.category.event-related": {
+    "message": "Lié à l'événement",
+    "description": "Le libellé pour la catégorie Lié à l'événement dans la barre latérale de la documentation"
+  },
+  "sidebar.docs.category.guild-related": {
+    "message": "Lié à la guilde",
+    "description": "Le libellé pour la catégorie Lié à la guilde dans la barre latérale de la documentation"
+  },
+  "sidebar.docs.category.info-related": {
+    "message": "Lié à l'information",
+    "description": "Le libellé pour la catégorie Lié à l'information dans la barre latérale de la documentation"
+  },
+  "sidebar.docs.category.interaction-related": {
+    "message": "Lié à l'interaction",
+    "description": "Le libellé pour la catégorie Lié à l'interaction dans la barre latérale de la documentation"
+  },
+  "sidebar.docs.category.math-related": {
+    "message": "Lié aux mathématiques",
+    "description": "Le libellé pour la catégorie Lié aux mathématiques dans la barre latérale de la documentation"
+  },
+  "sidebar.docs.category.message-related": {
+    "message": "Lié au message",
+    "description": "Le libellé pour la catégorie Lié au message dans la barre latérale de la documentation"
+  },
+  "sidebar.docs.category.misc-related": {
+    "message": "Lié à divers",
+    "description": "Le libellé pour la catégorie Lié à divers dans la barre latérale de la documentation"
+  },
+  "sidebar.docs.category.user-related": {
+    "message": "Lié à l'utilisateur",
+    "description": "Le libellé pour la catégorie Lié à l'utilisateur dans la barre latérale de la documentation"
+  },
+  "sidebar.docs.category.util-related": {
+    "message": "Lié à l'utilitaire",
+    "description": "Le libellé pour la catégorie Lié à l'utilitaire dans la barre latérale de la documentation"
+  },
+  "sidebar.docs.category.variables-related": {
+    "message": "Lié aux variables",
+    "description": "Le libellé pour la catégorie Lié aux variables dans la barre latérale de la documentation"
+  },
+  "sidebar.docs.category.Other": {
+    "message": "Autre",
+    "description": "Le libellé pour la catégorie Autre dans la barre latérale de la documentation"
+  }
+}

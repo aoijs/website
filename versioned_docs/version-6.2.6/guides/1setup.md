@@ -6,11 +6,24 @@ id: setup
 
 ## Installation
 
-**node.js 16.9.0 or newer is required.**
+<Tabs groupId="pref-install">
+  <TabItem value="i-npm" label="npm">
 
-```bash
-npm install aoi.js
-```
+  **node.js 16.9.0 or newer is required.**
+  ```bash
+  npm install aoi.js
+  ```
+
+  </TabItem>
+  <TabItem value="i-yarn" label="yarn">
+
+  **node.js 16.9.0 or newer is required.**
+  ```bash
+  yarn add aoi.js
+  ```
+  
+  </TabItem>
+</Tabs>
 
 ## Example
 

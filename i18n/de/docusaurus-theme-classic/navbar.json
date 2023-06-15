@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "aoi.js",
+    "description": "Der Titel in der Navigationsleiste"
+  },
+  "logo.alt": {
+    "message": "aoijs-Logo",
+    "description": "Der Alt-Text des Logos in der Navigationsleiste"
+  },
+  "item.label.Documentation": {
+    "message": "Dokumentation",
+    "description": "Ein Navigationspunkt mit der Bezeichnung Dokumentation"
+  },
+  "item.label.Guides": {
+    "message": "Anleitungen",
+    "description": "Ein Navigationspunkt mit der Bezeichnung Anleitungen"
+  },
+  "item.label.Akarui Extensions": {
+    "message": "Akarui-Erweiterungen",
+    "description": "Ein Navigationspunkt mit der Bezeichnung Akarui-Erweiterungen"
+  },
+  "item.label.Community": {
+    "message": "Community",
+    "description": "Ein Navigationspunkt mit der Bezeichnung Community"
+  },
+  "item.label.Discord Server": {
+    "message": "Discord-Server",
+    "description": "Ein Navigationspunkt mit der Bezeichnung Discord-Server"
+  }
+}

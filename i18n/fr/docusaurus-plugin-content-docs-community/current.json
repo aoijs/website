@@ -1,0 +1,10 @@
+{
+  "version.label": {
+    "message": "Suivant",
+    "description": "Le libellé pour la version actuelle"
+  },
+  "sidebar.docs.category.Plugins": {
+    "message": "Plugins",
+    "description": "Le libellé pour la catégorie Plugins dans la barre latérale de la documentation"
+  }
+}

@@ -16,6 +16,13 @@ module.exports = {
       darkTheme: require('prism-react-renderer/themes/palenight'),
       additionalLanguages: ['php', 'powershell', 'diff', 'typescript'],
     },
+    /*  
+    i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'de', 'fr'],
+    }, 
+    */
+   // Translations later on
     algolia: {
       appId: '7NDV3UYBW5',
       apiKey: 'dcc8ae1731cfa8322571b65e9a3e9faf',
@@ -28,7 +35,7 @@ module.exports = {
         'Join our <a target="_blank" rel="noopener noreferrer" href="https://aoi.js.org/invite">Discord Server</a> for real-time support!',
       backgroundColor: '#ffffff',
       textColor: '#000000',
-      isCloseable: true,
+      isCloseable: false,
     },
     colorMode: {
       defaultMode: 'dark',
@@ -44,7 +51,7 @@ module.exports = {
       items: [
         {
           to: 'docs/',
-          activeBaseRegex: '^(?!docs/(?:guides|extensions)/).*docs/(?!guides|extensions|community)',
+          activeBaseRegex: 'docs(?!/guides|/extensions|/community)',
           label: 'Documentation',
           position: 'left',
         },
@@ -66,12 +73,26 @@ module.exports = {
           label: 'Community',
           position: 'left',
         },
+        /*
+        {
+          to: 'forums/introduction',
+          activeBasePath: 'forums',
+          label: 'Forums',
+          position: 'right',
+        },
+        */ // Implement comments later in community page
         {
           type: 'docsVersionDropdown',
           position: 'right',
         },
+        /*
         {
-          to: 'http://discord.gg/HMUfMXDQsV',
+          type: 'localeDropdown',
+          position: 'right',
+        }, 
+        */
+        {
+          to: 'https://discord.gg/HMUfMXDQsV',
           label: 'Discord Server',
           position: 'right',
         },
@@ -141,6 +162,16 @@ module.exports = {
           trackingID: 'G-BFNTC2Y655',
           anonymizeIP: true,
         },
+        /*
+        blog: {
+          path: 'forums',
+          routeBasePath: 'forums',
+          showReadingTime: false,
+          blogTitle: 'aoi.js Forums',
+          blogSidebarCount: 0,
+          postsPerPage: 'ALL',
+        },
+        */
       },
     ],
   ],

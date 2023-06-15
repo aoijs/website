@@ -1,0 +1,38 @@
+{
+  "link.title.Documentation": {
+    "message": "Documentation",
+    "description": "Le titre de la colonne de liens de pied de page avec title=Documentation dans le pied de page"
+  },
+  "link.title.Community": {
+    "message": "Communauté",
+    "description": "Le titre de la colonne de liens de pied de page avec title=Communauté dans le pied de page"
+  },
+  "link.title.More": {
+    "message": "Plus",
+    "description": "Le titre de la colonne de liens de pied de page avec title=Plus dans le pied de page"
+  },
+  "link.item.label.Getting Started": {
+    "message": "Démarrage",
+    "description": "Le libellé du lien de pied de page avec label=Démarrage lié à docs/guides/setup"
+  },
+  "link.item.label.Music": {
+    "message": "Musique",
+    "description": "Le libellé du lien de pied de page avec label=Musique lié à extensions/aoi.music/aoimusic-introduction"
+  },
+  "link.item.label.Discord Server": {
+    "message": "Serveur Discord",
+    "description": "Le libellé du lien de pied de page avec label=Serveur Discord lié à https://aoi.js.org/invite/"
+  },
+  "link.item.label.Github": {
+    "message": "Github",
+    "description": "Le libellé du lien de pied de page avec label=Github lié à https://github.com/AkaruiDevelopment/aoi.js/"
+  },
+  "link.item.label.Contributing": {
+    "message": "Contribuer",
+    "description": "Le libellé du lien de pied de page avec label=Contribuer lié à https://github.com/AkaruiDevelopment/aoi.js-documentation/blob/v6/.github/contributing-example.md/"
+  },
+  "copyright": {
+    "message": "Droits d'auteur © 2023 Équipe de Akarui Development | AoiEngine v6.9.5",
+    "description": "Le droit d'auteur du pied de page"
+  }
+}

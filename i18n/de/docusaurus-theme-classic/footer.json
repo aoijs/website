@@ -1,0 +1,38 @@
+{
+  "link.title.Documentation": {
+    "message": "Dokumentation",
+    "description": "Der Titel der Spalte für Dokumentation in der Fußzeile"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "Der Titel der Spalte für Community in der Fußzeile"
+  },
+  "link.title.More": {
+    "message": "Mehr",
+    "description": "Der Titel der Spalte für Weitere Links in der Fußzeile"
+  },
+  "link.item.label.Getting Started": {
+    "message": "Erste Schritte",
+    "description": "Die Bezeichnung des Fußzeilen-Links 'Erste Schritte', der zu docs/guides/setup verlinkt"
+  },
+  "link.item.label.Music": {
+    "message": "Musik",
+    "description": "Die Bezeichnung des Fußzeilen-Links 'Musik', der zu extensions/aoi.music/aoimusic-introduction verlinkt"
+  },
+  "link.item.label.Discord Server": {
+    "message": "Discord-Server",
+    "description": "Die Bezeichnung des Fußzeilen-Links 'Discord-Server', der zu https://aoi.js.org/invite/ verlinkt"
+  },
+  "link.item.label.Github": {
+    "message": "Github",
+    "description": "Die Bezeichnung des Fußzeilen-Links 'Github', der zu https://github.com/AkaruiDevelopment/aoi.js/ verlinkt"
+  },
+  "link.item.label.Contributing": {
+    "message": "Mitarbeit",
+    "description": "Die Bezeichnung des Fußzeilen-Links 'Mitarbeit', der zu https://github.com/AkaruiDevelopment/aoi.js-documentation/blob/v6/.github/contributing-example.md/ verlinkt"
+  },
+  "copyright": {
+    "message": "Copyright © 2023 Akarui Development Team | AoiEngine v6.9.5",
+    "description": "Das Copyright in der Fußzeile"
+  }
+}
