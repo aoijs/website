@@ -21,13 +21,13 @@ $playTrack[track;type]
 
 ## Example(s)
 
-This will play a youtube video (`https://www.youtube.com/watch?v=SiO-lbAvEWc`):
+This will play a youtube video called "Silly Goose":
 
 ```javascript
 bot.command({
     name: 'playTrack',
     code: `
-    $playTrack[SiO-lbAvEWc;youtube]
+    $playTrack[Silly Goose;youtube]
   `
 });
 ```
