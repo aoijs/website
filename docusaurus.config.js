@@ -44,7 +44,7 @@ module.exports = {
       items: [
         {
           to: 'docs/',
-          activeBaseRegex: 'docs/(?!guides|extensions|community)',
+          activeBaseRegex: 'docs(/(?!guides|extensions|community|other|functions))?',
           label: 'Documentation',
           position: 'left',
         },
