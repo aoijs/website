@@ -21,6 +21,12 @@
         {
           type: 'category',
           dirName: 'aoi.music',
+          items: [
+            {
+              type: 'doc',
+              id: 'aoimusic-introduction',
+            },
+          ]
         },
         {
           type: 'category',
