@@ -19,9 +19,11 @@
       collapsed: false,
       items: [
         {
-          type: 'docs',
-          id: 'aoi.music/1introduction.md',
-          dirName: 'Introduction',
+          label: 'Introduction',
+          link: {
+            type: 'docs',
+            id: 'aoi.music/1introduction.md',
+          },
         },
         {
           type: 'category',
