@@ -18,7 +18,7 @@ This will delete the interaction after 5 seconds.
 
 ```javascript
 bot.interactionCommand({
-    name: "interactionEdit",
+    name: "interactionDelete",
     prototype: "button",
     code: `
   $interactionDelete

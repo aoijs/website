@@ -5,6 +5,7 @@ import Highlight from '@site/src/components/Highlight';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import GiscusComponent from '@site/src/components/GiscusComponent';
+import { Tooltip } from 'react-tooltip'
 
 export default {
   // Re-use the default mapping
@@ -14,5 +15,6 @@ export default {
   Highlight,
   GiscusComponent,
   Tabs,
+  Tooltip,
   TabItem
 };
