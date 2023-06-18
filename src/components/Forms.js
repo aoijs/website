@@ -44,7 +44,7 @@ const SubmitForm = () => {
   const fetchUserInfo = async (uid) => {
     const response = await fetch(
       `https://someapi.frenchwomen.repl.co/uinfo/${uid}`
-    );
+    );                                
     const data = await response.json();
 
     return {
@@ -62,7 +62,7 @@ const SubmitForm = () => {
     }
     setFormState((prevState) => ({ ...prevState, tags: selectedTags }));
   };
-
+f
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -116,7 +116,12 @@ const SubmitForm = () => {
 
     while (fileExists) {
       const apiUrl = `https://api.github.com/repos/Faf4a/website/contents/forums/posts/${fileName}`;
-      const response = await fetch(apiUrl);
+      const response = await fetch(apiUrl, {
+        headers: {
+        Authorization: "Bearer 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",
+        "Content-Type": "application/json",
+        }
+      });
 
       if (response.status === 200) {
         const randomString = Math.random().toString(36).substring(7);
@@ -151,7 +156,7 @@ ${code}`;
     const response = await fetch(apiUrl, {
       method: "PUT",
       headers: {
-        Authorization: `Bearer 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`,
+        Authorization: "Bearer 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",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
