@@ -7,11 +7,11 @@ export default function GiscusComponent() {
 
   return (
     <Giscus    
-      repo="Faf4a/discussions"
-      repoId="R_kgDOJvtqUA"
+      repo="Faf4a/website"
+      repoId="R_kgDOJwxdeQ"
       category="General"
-      categoryId="DIC_kwDOJvtqUM4CXOkQ"
-      mapping="url"                      
+      categoryId="DIC_kwDOJwxdec4CXSeZ"
+      mapping="pathname"                      
       term="aoi.js comment section"
       strict="0"
       reactionsEnabled="1"

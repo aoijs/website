@@ -73,14 +73,13 @@ module.exports = {
           label: 'Community',
           position: 'left',
         },
-        /*
         {
-          to: 'forums/introduction',
-          activeBasePath: 'forums',
-          label: 'Forums',
+          to: 'wikis/submit',
+          activeBasePath: 'wikis',
+          label: 'Wikis',
           position: 'right',
         },
-        */ // Implement comments later in community page
+        // Implement comments later in community page
         {
           type: 'docsVersionDropdown',
           position: 'right',
@@ -162,16 +161,14 @@ module.exports = {
           trackingID: 'G-BFNTC2Y655',
           anonymizeIP: true,
         },
-        /*
         blog: {
           path: 'forums',
-          routeBasePath: 'forums',
+          routeBasePath: 'wikis',
           showReadingTime: false,
-          blogTitle: 'aoi.js Forums',
-          blogSidebarCount: 0,
+          blogTitle: 'aoi.js Wikis',
+          blogSidebarCount: 'ALL',
           postsPerPage: 'ALL',
         },
-        */
       },
     ],
   ],

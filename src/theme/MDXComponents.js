@@ -6,6 +6,8 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import GiscusComponent from '@site/src/components/GiscusComponent';
 import { Tooltip } from 'react-tooltip'
+import SubmitForm from '@site/src/components/Forms';
+import InputField from '@site/src/components/InputField'
 
 export default {
   // Re-use the default mapping
@@ -14,6 +16,8 @@ export default {
   // `Highlight` will receive all props that were passed to `<Highlight>` in MDX
   Highlight,
   GiscusComponent,
+  InputField,
+  SubmitForm,
   Tabs,
   Tooltip,
   TabItem
