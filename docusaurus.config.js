@@ -73,12 +73,14 @@ module.exports = {
           label: 'Community',
           position: 'left',
         },
+        /*
         {
           to: 'wikis/submit',
           activeBasePath: 'wikis',
           label: 'Wikis',
           position: 'right',
         },
+        */
         // Implement comments later in community page
         {
           type: 'docsVersionDropdown',
@@ -161,6 +163,7 @@ module.exports = {
           trackingID: 'G-BFNTC2Y655',
           anonymizeIP: true,
         },
+        /*
         blog: {
           path: 'forums',
           routeBasePath: 'wikis',
@@ -169,6 +172,7 @@ module.exports = {
           blogSidebarCount: 'ALL',
           postsPerPage: 'ALL',
         },
+        */
       },
     ],
   ],
