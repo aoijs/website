@@ -62,7 +62,7 @@ const SubmitForm = () => {
     }
     setFormState((prevState) => ({ ...prevState, tags: selectedTags }));
   };
-f
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
