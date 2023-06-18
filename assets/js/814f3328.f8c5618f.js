@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkAoiEngine=self.webpackChunkAoiEngine||[]).push([[52535],{45641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Create Wiki","permalink":"/wikis/submit"}]}')}}]);
