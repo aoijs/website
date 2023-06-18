@@ -29,7 +29,7 @@ const SubmitForm = () => {
   };
 
   const validateDiscordUID = async (uid) => {
-    const bannedIDs = ["1224141242141241241", "5389583258325892352"];
+    const bannedIDs = ["none"];
     if (bannedIDs.includes(uid)) {
       return false;
     }
@@ -115,7 +115,7 @@ const SubmitForm = () => {
     let fileExists = true;
 
     while (fileExists) {
-      const apiUrl = `https://api.github.com/repos/Faf4a/website/contents/forums/wikis/${fileName}`;
+      const apiUrl = `https://api.github.com/repos/Faf4a/website/contents/forums/posts/${fileName}`;
       const response = await fetch(apiUrl);
 
       if (response.status === 200) {
@@ -142,10 +142,10 @@ enableComments: true
 pagination_prev: null
 pagination_next: null
 ---
-  
+
 ${code}`;
 
-    const apiUrl = `https://api.github.com/repos/Faf4a/website/contents/forums/wikis/${fileName}`;
+    const apiUrl = `https://api.github.com/repos/Faf4a/website/contents/forums/posts/${fileName}`;
     const encodedContent = btoa(fileContent);
 
     const response = await fetch(apiUrl, {
