@@ -17,16 +17,16 @@ id: aoimusic-introduction
 
 ### Installation
 
-<Tabs>
-  <TabItem groupId="pref-install" value="lts" label="Stable">
+<Tabs groupId="pref-install">
+  <TabItem value="i-npm" label="Stable">
 
   **node.js 16.9.0 or newer is required.**
-    ```bash
+  ```bash
   npm install @akarui/aoi.music
   ```
   
   </TabItem>
-  <TabItem value="pr" label="Pre-Release">
+  <TabItem value="i-yarn" label="Pre-Release">
 
   **node.js 16.9.0 or newer is required.**
   ```bash
