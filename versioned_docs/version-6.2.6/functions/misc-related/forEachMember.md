@@ -20,3 +20,22 @@ $forEachMember[time;awaitData;...awaitedCmds;endCmd]
 | awaitData      | object | Awaited Data.                                              |   true   |
 | ...awaitedCmds | string | Awaited Commands to execute.                               |   true   |
 | endCmd         | string | Awaited command to execute when loop ends.                 |   true   |
+
+## Example(s)
+
+
+```javascript
+bot.command({
+  name: "awaitData",
+  code: `
+  $forEachMember[1;{ "members": "$membersCount" };returnMembers;]
+  `
+});
+
+bot.awaitedCommand({
+  name: "returnMembers",
+  code: `
+  $log[ $authorID , is one out of $awaitData[members] members ]
+  `
+});
+```

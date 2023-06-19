@@ -20,3 +20,23 @@ $forEachUser[time;awaitData;...awaitedCmds;endCmd]
 | awaitData      | object | Awaited Data.                                                |   true   |
 | ...awaitedCmds | string | Awaited Commands to execute.                                 |   true   |
 | endCmd         | string | Awaited Command to execute when loop ends.                   |   true   |
+
+## Example(s)
+
+This will log every (cached) user in your console:
+
+```javascript
+bot.command({
+  name: "awaitData",
+  code: `
+  $forEachUser[1;{};returnUsers;]
+  `
+});
+
+bot.awaitedCommand({
+  name: "returnUsers",
+  code: `
+  $log[ $authorID ]
+  `
+});
+```

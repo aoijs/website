@@ -10,7 +10,7 @@
 <div align="center">
     <a href="https://aoi.js.org/">Home Page</a> |
     <a href="https://discord.gg/HMUfMXDQsV">Discord</a> |
-    <a href="https://aoi.js.org/exampkes.">Examples</a> |
+    <a href="https://aoi.js.org/community.">Examples</a> |
     <a href="https://aoi.js.org/docs/">Documentation</a>
 </div>
 </div>
