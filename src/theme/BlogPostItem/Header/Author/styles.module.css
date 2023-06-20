@@ -1,0 +1,23 @@
+.tag {
+    border-radius: 4px;
+    margin-left: 7px;
+    padding: 1px 6px;
+    color: rgb(255, 255, 255);
+    font-size: 0.8em;
+}
+  
+.staff {
+    background-color: var(--ifm-color-primary);
+}
+
+.mod {
+    background-color: rgb(245, 117, 5);
+}
+
+.creator {
+    background-color: rgb(255, 0, 7);
+}
+
+.contributor {
+    background-color: rgb(78, 224, 134);
+}

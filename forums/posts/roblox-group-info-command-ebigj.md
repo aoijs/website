@@ -1,12 +1,8 @@
 ---
 title: "Roblox group info command"
 description: "Displays info about a roblox group"
-authors:
-  name: "@Supreme Supreme"
-  title: Member
-  url: https://discord.com/users/964024743172915220
-  image_url: https://cdn.discordapp.com/avatars/964024743172915220/a_153765879b794acfd5fd72ce3f6cd713.png
-tags: ["v6"]
+authors: supreme
+tags: ["v6", "aoi.js"]
 hide_table_of_contents: false
 enableComments: true
 pagination_prev: null
@@ -29,4 +25,5 @@ module.exports = {
     $createObject[$jsonRequest[https://groups.roblox.com/v1/groups/$message[1]]]
     $argscheck[1;Group id?]
     `
-}```
+}
+```
