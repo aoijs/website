@@ -1,7 +1,12 @@
-import React from 'react';
+import React from "react";
+import Cookies from "@site/src/components/CookieComponent";
 
 export default function BlogPostPaginator(props) {
-  return null;
+  return (
+    <div>
+      <Cookies />
+    </div>
+  );
 }
 
 /*

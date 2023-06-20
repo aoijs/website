@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const InputField = ({ name, id, value, onChange, type, error }) => {
+const InputField = ({ name, id, value, onChange, type, error, charCount }) => {
   const inputStyles = {
     width: "100%",
     padding: "8px",
@@ -19,6 +19,7 @@ const InputField = ({ name, id, value, onChange, type, error }) => {
     onChange(event);
   };
 
+  /*
   const handleInputBlur = async () => {
     if (type !== "number") {
       return;
@@ -50,18 +51,37 @@ const InputField = ({ name, id, value, onChange, type, error }) => {
       return;
     }
   };
-
+*/
   let inputElement = null;
 
   switch (type) {
-    case "textarea":
+    case "textarea-description":
+      inputElement = (
+        <div>
+          <textarea
+            name={name}
+            id={id}
+            value={value}
+            onChange={handleInputChange}
+            style={{ ...inputStyles, minHeight: "155px", resize: "none" }}
+            required
+          />
+          <div
+            style={{ fontSize: "12px", color: charCount >= 500 ? "red" : "" }}
+          >
+            {charCount === "undefined" ? "0" : charCount}/{500}
+          </div>
+        </div>
+      );
+      break;
+    case "textarea-code":
       inputElement = (
         <textarea
           name={name}
           id={id}
           value={value}
           onChange={handleInputChange}
-          style={{ ...inputStyles, minHeight: "150px", resize: "none" }}
+          style={{ ...inputStyles, minHeight: "155px", resize: "none" }}
           required
         />
       );
@@ -86,7 +106,7 @@ const InputField = ({ name, id, value, onChange, type, error }) => {
             id={id}
             value={value}
             onChange={handleNumberChange}
-            onBlur={handleInputBlur}
+            // onBlur={handleInputBlur}
             style={inputStyles}
             inputMode="numeric"
             pattern="[0-9]*"
@@ -113,15 +133,22 @@ const InputField = ({ name, id, value, onChange, type, error }) => {
       break;
     default:
       inputElement = (
-        <input
-          type="text"
-          name={name}
-          id={id}
-          value={value}
-          onChange={handleInputChange}
-          style={inputStyles}
-          required
-        />
+        <div>
+          <input
+            type="text"
+            name={name}
+            id={id}
+            value={value}
+            onChange={handleInputChange}
+            style={{ ...inputStyles, resize: "none" }}
+            required
+          />
+          <div
+            style={{ fontSize: "12px", color: charCount >= 50 ? "red" : "", marginTop: "5px" }}
+          >
+            {charCount === "undefined" ? "0" : charCount}/{50}
+          </div>
+        </div>
       );
   }
 

@@ -5,8 +5,17 @@ import ReactMarkdown from "react-markdown";
 import InputField from "./InputField";
 import styles from "../pages/styles.module.css";
 import Link from "@docusaurus/Link";
+import BlogPostItemHeaderAuthor from "@site/src/theme/BlogPostItem/Header/Author/index";
 
 const SubmitForm = () => {
+  const [userInfo, setUserInfo] = useState({
+    avatar: `https://cdn.discordapp.com/embed/avatars/${Math.floor(
+      Math.random() * 5
+    )}.png`,
+    username: "Guest User",
+  });
+
+  const [charCount, setCharCount] = useState(0);
   const [lastRequestTime, setLastRequestTime] = useState(0);
 
   const [formState, setFormState] = useState({
@@ -14,7 +23,7 @@ const SubmitForm = () => {
     discordUID: "",
     description: "",
     code: "",
-    tags: [],
+    tags: ["aoi.js"],
     isUIDValid: true,
   });
 
@@ -27,19 +36,46 @@ const SubmitForm = () => {
 
   const { title, description, discordUID, code, tags, isUIDValid } = formState;
 
-  const handleChange = (event) => {
+  const handleChange = async (event) => {
     const { name, value } = event.target;
     let truncatedValue = value;
 
     if (name === "title") {
       truncatedValue = value.replace(/[^a-zA-Z0-9 ]/g, "");
+      setCharCount((prevCharCount) => ({
+        ...prevCharCount,
+        title: value.length,
+      }));
 
-      if (truncatedValue.length > 50) {
+      if (truncatedValue.length > 49) {
         truncatedValue = truncatedValue.substring(0, 50);
       }
     } else if (name === "description") {
-      if (value.length > 500) {
-        truncatedValue = value.substring(0, 500);
+      setCharCount((prevCharCount) => ({
+        ...prevCharCount,
+        description: value.length,
+      }));
+      if (value.length >= 500) {
+        truncatedValue = value.substring(0, 499);
+      }
+    } else if (name === "discordUID") {
+      setFormState((prevState) => ({ ...prevState, isUIDValid: true }));
+
+      if (value.length > 17) {
+        const isValidUser = await validateDiscordUID(value);
+
+        if (!isValidUser) {
+          setFormState((prevState) => ({ ...prevState, isUIDValid: false }));
+          return;
+        }
+
+        const { avatar, username } = await fetchUserInfo(value);
+
+        setUserInfo((prevUserInfo) => ({
+          ...prevUserInfo,
+          avatar: avatar,
+          username: username,
+        }));
       }
     }
 
@@ -70,7 +106,6 @@ const SubmitForm = () => {
         `https://someapi.frenchwomen.repl.co/uinfo/${uid}`
       );
       const data = await response.json();
-      console.log(data.avatar);
       if (data && data.avatar) {
         return {
           avatar: data.avatar,
@@ -202,7 +237,6 @@ ${code}`;
         return;
       }
     } catch (error) {
-      console.error("Failed to submit the file:", error);
       return;
     }
   };
@@ -228,6 +262,7 @@ ${code}`;
         required
         pattern="[a-zA-Z0-9]*"
         error={fieldErrors.title}
+        charCount={charCount.title === "undefined" ? "0" : charCount.title}
       />
       {fieldErrors.title && <p style={{ color: "red" }}>Title is required</p>}
       <br />
@@ -235,7 +270,8 @@ ${code}`;
         Description
         <small style={{ fontSize: "12px", color: "gray" }}>
           {" "}
-          (A short description about the purpose of your Wiki)
+          (A short description about the purpose of your Wiki, this will not be
+          displayed on the Website)
         </small>
       </h3>
       <InputField
@@ -243,10 +279,13 @@ ${code}`;
         id="description"
         value={description}
         onChange={handleChange}
-        type="textarea"
+        type="textarea-description"
         placeholder="Description"
         required
         error={fieldErrors.description}
+        charCount={
+          charCount.description === "undefined" ? "0" : charCount.description
+        }
       />
       {fieldErrors.description && (
         <p style={{ color: "red" }}>Description is required</p>
@@ -278,7 +317,8 @@ ${code}`;
         Content of Wiki
         <small style={{ fontSize: "12px", color: "gray" }}>
           {" "}
-          (The content of your Wiki)
+          (The content of your Wiki, including how it works, what it does and
+          more)
         </small>
       </h3>
       <InputField
@@ -286,7 +326,7 @@ ${code}`;
         id="code"
         value={code}
         onChange={handleChange}
-        type="textarea"
+        type="textarea-code"
         placeholder="Code"
         required
         error={fieldErrors.code}
@@ -327,6 +367,23 @@ ${code}`;
               padding: "12px",
             }}
           >
+            <BlogPostItemHeaderAuthor
+              author={{
+                name: `@${userInfo.username}`,
+                title: "Member",
+                url: `https://discord.com/users/${discordUID}`,
+                imageURL: `${userInfo.avatar}`,
+              }}
+            />
+            <br />
+            {!code && (
+              <div className={styles.placeholderText}>
+                Some text of your awesome Wiki!
+                <br />
+                <br />
+                Did you know that you can use markdown to make your Wiki look even better?
+              </div>
+            )}
             <ReactMarkdown>{code}</ReactMarkdown>
           </div>
         </div>
