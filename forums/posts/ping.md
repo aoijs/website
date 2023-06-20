@@ -1,8 +1,8 @@
 ---
 title: "Ping Command"
 description: "This is an example of a ping command"
-authors: fafa
-tags: ["v6"]
+authors: faf4a
+tags: ["v6", "aoi.js"]
 hide_table_of_contents: false
 enableComments: true
 pagination_prev: null

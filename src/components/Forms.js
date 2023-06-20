@@ -32,12 +32,14 @@ const SubmitForm = () => {
     let truncatedValue = value;
 
     if (name === "title") {
-      if (value.length > 100) {
-        truncatedValue = value.substring(0, 100);
+      truncatedValue = value.replace(/[^a-zA-Z0-9]/g, "");
+
+      if (truncatedValue.length > 50) {
+        truncatedValue = truncatedValue.substring(0, 50);
       }
     } else if (name === "description") {
-      if (value.length > 75) {
-        truncatedValue = value.substring(0, 75);
+      if (value.length > 500) {
+        truncatedValue = value.substring(0, 500);
       }
     }
 
@@ -68,7 +70,7 @@ const SubmitForm = () => {
         `https://someapi.frenchwomen.repl.co/uinfo/${uid}`
       );
       const data = await response.json();
-      console.log(data.avatar)
+      console.log(data.avatar);
       if (data && data.avatar) {
         return {
           avatar: data.avatar,
@@ -224,6 +226,7 @@ ${code}`;
         type="text"
         placeholder="Title"
         required
+        pattern="[a-zA-Z0-9]*"
         error={fieldErrors.title}
       />
       {fieldErrors.title && <p style={{ color: "red" }}>Title is required</p>}
