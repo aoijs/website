@@ -44,13 +44,14 @@
 
 .tagContainer {
   display: flex;
-  gap: 8px;
+  gap: auto;
 }
 
 .tag {
-  display: inline-block;
-  padding: 4px 8px;
-  border-radius: 10px;
+  display: flex;
+  padding: 3px 10px;
+  margin-top: 0px;
+  border-radius: 7px;
   border: 1px solid var(--ifm-color-primary);
   color: var(--ifm-color-primary);
   background-color: transparent;

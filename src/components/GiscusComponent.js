@@ -7,7 +7,7 @@ export default function GiscusComponent() {
 
   return (
     <Giscus    
-      repo="Faf4a/website"
+      repo="bot-commit/website"
       repoId="R_kgDOJwxdeQ"
       category="General"
       categoryId="DIC_kwDOJwxdec4CXSeZ"

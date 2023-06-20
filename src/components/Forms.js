@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import clsx from "clsx";
+import ReactMarkdown from "react-markdown";
+
 import InputField from "./InputField";
 import styles from "../pages/styles.module.css";
 import Link from "@docusaurus/Link";
-import clsx from "clsx";
 
 const SubmitForm = () => {
   const [formState, setFormState] = useState({
@@ -25,7 +27,19 @@ const SubmitForm = () => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setFormState((prevState) => ({ ...prevState, [name]: value }));
+    let truncatedValue = value;
+
+    if (name === "title") {
+      if (value.length > 100) {
+        truncatedValue = value.substring(0, 100);
+      }
+    } else if (name === "description") {
+      if (value.length > 75) {
+        truncatedValue = value.substring(0, 75);
+      }
+    }
+
+    setFormState((prevState) => ({ ...prevState, [name]: truncatedValue }));
   };
 
   const validateDiscordUID = async (uid) => {
@@ -34,23 +48,30 @@ const SubmitForm = () => {
       return false;
     }
 
-    const response = await fetch(
-      `https://someapi.frenchwomen.repl.co/uinfo/${uid}`
-    );
-    const data = await response.json();
-    return !data.bot;
+    try {
+      const response = await fetch(
+        `https://someapi.frenchwomen.repl.co/uinfo/${uid}`
+      );
+      const data = await response.json();
+      return !data.bot;
+    } catch (error) {
+      return false;
+    }
   };
 
   const fetchUserInfo = async (uid) => {
-    const response = await fetch(
-      `https://someapi.frenchwomen.repl.co/uinfo/${uid}`
-    );
-    const data = await response.json();
-
-    return {
-      avatar: data.avatar,
-      username: data.username,
-    };
+    try {
+      const response = await fetch(
+        `https://someapi.frenchwomen.repl.co/uinfo/${uid}`
+      );
+      const data = await response.json();
+      return {
+        avatar: data.avatar,
+        username: data.username,
+      };
+    } catch (error) {
+      return;
+    }
   };
 
   const handleTagClick = (tag) => {
@@ -100,7 +121,6 @@ const SubmitForm = () => {
     const isValidUser = await validateDiscordUID(discordUID);
 
     if (!isValidUser) {
-      console.log("Invalid user");
       setFormState((prevState) => ({
         ...prevState,
         isUIDValid: false,
@@ -111,28 +131,14 @@ const SubmitForm = () => {
     const { avatar, username } = await fetchUserInfo(discordUID);
 
     const baseFileName = title.toLowerCase().replace(/\s+/g, "-");
-    let fileName = `${baseFileName}.md`;
-    let fileExists = true;
-
-    while (fileExists) {
-      const apiUrl = `https://api.github.com/repos/Faf4a/website/contents/forums/posts/${fileName}`;
-      const response = await fetch(apiUrl);
-
-      if (response.status === 200) {
-        const randomString = Math.random().toString(36).substring(7);
-        fileName = `${baseFileName}-${randomString}.md`;
-      } else if (response.status === 404) {
-        fileExists = false;
-      } else {
-        return;
-      }
-    }
+    const randomString = Math.random().toString(36).substring(7);
+    const fileName = `${baseFileName}-${randomString}.md`;
 
     const fileContent = `---
 title: "${title}"
 description: "${description}"
 authors:
-  name: @${username}
+  name: "@${username}"
   title: Member
   url: https://discord.com/users/${discordUID}
   image_url: ${avatar}
@@ -145,27 +151,30 @@ pagination_next: null
 
 ${code}`;
 
-    const apiUrl = `https://api.github.com/repos/Faf4a/website/contents/forums/posts/${fileName}`;
-    const encodedContent = btoa(fileContent);
+    try {
 
-    const response = await fetch(apiUrl, {
-      method: "PUT",
-      headers: {
-        Authorization: `Bearer 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`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        message: `Create new file -- ${username}`,
-        content: encodedContent,
-      }),
-    });
+      const response = await fetch(atob("aHR0cHM6Ly9zb21lYXBpLmZyZW5jaHdvbWVuLnJlcGwuY28vZ2l0aHVi"), {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          commitMessage: `Create new file -- ${username}`,
+          content: fileContent,
+          fileName: fileName,
+        }),
+      });
 
-    if (response.ok) {
-      setTimeout(async () => {
-        await alert("Successfully submitted your wiki for review, check back later!");
+      if (response.ok) {
+        await alert(
+          "Successfully submitted your wiki for review, check back later!"
+        );
         window.location.reload();
-      }, 1000);      
-    } else {
+      } else {
+        return;
+      }
+    } catch (error) {
+      console.error("Failed to submit the file:", error);
       return;
     }
   };
@@ -174,7 +183,13 @@ ${code}`;
     <form onSubmit={handleSubmit}>
       <br />
       <br />
-      <h3>Title of Wiki</h3>
+      <h3>
+        Title of Wiki
+        <small style={{ fontSize: "12px", color: "gray" }}>
+          {" "}
+          (A short and fitting title for your Wiki)
+        </small>
+      </h3>
       <InputField
         name="title"
         id="title"
@@ -187,7 +202,13 @@ ${code}`;
       />
       {fieldErrors.title && <p style={{ color: "red" }}>Title is required</p>}
       <br />
-      <h3>Description</h3>
+      <h3>
+        Description
+        <small style={{ fontSize: "12px", color: "gray" }}>
+          {" "}
+          (A short description about the purpose of your Wiki)
+        </small>
+      </h3>
       <InputField
         name="description"
         id="description"
@@ -202,7 +223,13 @@ ${code}`;
         <p style={{ color: "red" }}>Description is required</p>
       )}
       <br />
-      <h3>Discord User ID</h3>
+      <h3>
+        Discord User ID
+        <small style={{ fontSize: "12px", color: "gray" }}>
+          {" "}
+          (Your Discord User ID, so you get the full credit of YOUR work)
+        </small>
+      </h3>
       <InputField
         name="discordUID"
         id="discordUID"
@@ -218,7 +245,13 @@ ${code}`;
         <p style={{ color: "red" }}>Discord UID is required</p>
       )}
       <br />
-      <h3>Content of Wiki</h3>
+      <h3>
+        Content of Wiki
+        <small style={{ fontSize: "12px", color: "gray" }}>
+          {" "}
+          (The content of your Wiki)
+        </small>
+      </h3>
       <InputField
         name="code"
         id="code"
@@ -229,10 +262,28 @@ ${code}`;
         required
         error={fieldErrors.code}
       />
+      <div style={{ flex: 1, marginLeft: "1rem" }}>
+        <ReactMarkdown>{code}</ReactMarkdown>
+      </div>
       {fieldErrors.code && <p style={{ color: "red" }}>Content is required</p>}
       <br />
+      <h3>
+        Tags
+        <small style={{ fontSize: "12px", color: "gray" }}>
+          {" "}
+          (Select Tags that fit your Wiki)
+        </small>
+      </h3>
       <div className={styles.tagContainer}>
-        {["aoi.music", "aoi.js", "aoi.panel", "aoi.dashboard", "v6", "v7", "Other"].map((tag) => (
+        {[
+          "aoi.music",
+          "aoi.js",
+          "aoi.panel",
+          "aoi.dashboard",
+          "v6",
+          "v7",
+          "Other",
+        ].map((tag) => (
           <span
             key={tag}
             className={clsx(styles.tag, {
@@ -246,11 +297,17 @@ ${code}`;
       </div>
       <div
         className={styles.buttons}
-        style={{ display: "flex", justifyContent: "flex-end" }}
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "flex-end",
+          marginTop: "15px",
+        }}
       >
         <Link
           className={clsx("button button--outline button--secondary")}
           onClick={handleSubmit}
+          style={{ width: "100%" }}
         >
           Submit
         </Link>
