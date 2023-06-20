@@ -8,7 +8,7 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    imageUrl: 'https://cdn.discordapp.com/attachments/1058843428831629443/1063251770228342895/aoijsbanner.png',
+    imageUrl: 'https://github.com/aoijs/website/blob/master/assets/images/aoijs-banner.png?raw=true',
   },
 ];
 
