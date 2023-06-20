@@ -32,7 +32,7 @@ const SubmitForm = () => {
     let truncatedValue = value;
 
     if (name === "title") {
-      truncatedValue = value.replace(/[^a-zA-Z0-9]/g, "");
+      truncatedValue = value.replace(/[^a-zA-Z0-9 ]/g, "");
 
       if (truncatedValue.length > 50) {
         truncatedValue = truncatedValue.substring(0, 50);
