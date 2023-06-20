@@ -8,8 +8,7 @@ on:
 jobs:
   build:
     if: >
-      github.event.pull_request.head.repo.full_name == 'bot-commit/website' &&
-      startsWith(github.event.pull_request.head.ref, 'wikis pr')
+      github.event.pull_request.head.repo.full_name == 'bot-commit/website'
     runs-on: ubuntu-latest
     
     steps:
