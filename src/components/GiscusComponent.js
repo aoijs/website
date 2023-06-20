@@ -7,10 +7,10 @@ export default function GiscusComponent() {
 
   return (
     <Giscus    
-      repo="bot-commit/website"
-      repoId="R_kgDOJwxdeQ"
+      repo="aoijs/website"
+      repoId="MDEwOlJlcG9zaXRvcnkzNjM3OTEyMzY="
       category="General"
-      categoryId="DIC_kwDOJwxdec4CXSeZ"
+      categoryId="DIC_kwDOFa8DhM4CXVEw"
       mapping="pathname"                      
       term="aoi.js comment section"
       strict="0"
