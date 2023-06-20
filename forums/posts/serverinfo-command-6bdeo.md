@@ -37,3 +37,5 @@ $title[Server Information - $guildName[$guildID]]
   `
 }]; 
 ```
+
+Requires GuildPresences in intents
