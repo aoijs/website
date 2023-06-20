@@ -15,7 +15,7 @@ export default function BlogPostItemHeaderAuthor({ author, className }) {
   const link = url || (email && `mailto:${email}`) || undefined;
   const staff = ["@dodogames", "@supreme supreme", "@supreme", "@.josipfx", "@faf4a", "@satoshisaysnya", "@usersatoshi", "@ahoemi", "@snowytealatte"];
   const mod = ["@dodogames", "@supreme supreme", "@supreme", "@.josipfx", "@faf4a", "@satoshisaysnya", "@usersatoshi"];
-  const creator = ["@leref"];
+  const creator = ["@leref", "@faf4a"];
   const contributor = ["@faf4a"];
 
   const isCreator = creator.includes(name);
