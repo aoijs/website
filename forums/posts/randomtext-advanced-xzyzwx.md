@@ -23,7 +23,7 @@ bot.functionManager.createFunction({
   const data = d.util.aoiFunc(d);
   const [ words, numb = 1 ] = data.inside.splits;
 
-if (!words) {
+if (!words || words === "") {
  let error = `\`\`\`elixir\nRei.js Error\n${functionName}: Words were not provided!\`\`\``
   data.result = error
 } else {
