@@ -59,6 +59,11 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
+.placeholderText {
+  color: rgb(128, 128, 128);
+  position: relative;
+}
+
 .tag:hover {
   background-color: var(--ifm-color-primary);
   color: white;
