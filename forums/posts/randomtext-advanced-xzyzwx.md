@@ -1,5 +1,5 @@
 ---
-title: "$randomText advanced"
+title: "randomText advanced"
 description: "A custom function to get random/specified number of words."
 authors:
   name: "@ahoemi"
@@ -24,8 +24,8 @@ bot.functionManager.createFunction({
   const [ words, numb = 1 ] = data.inside.splits;
 
 if (!words) {
-  const emptyVariable = 'Words'
-    return d.aoiError.fnError(d,"custom",{},`Words were not `); 
+ let error = `\`\`\`elixir\nRei.js Error\n${functionName}: Words were not provided!\`\`\``
+  data.result = error
 } else {
   let wordArr = words.split(':');
   let num = numb > wordArr.length ? wordArr.length : numb;
@@ -36,19 +36,15 @@ if (!words) {
       let rand = Math.floor(Math.random() * wordArr.length);
       newRandom = wordArr[rand];
     } while (randWords.includes(newRandom));
-
     randWords.push(newRandom);
   }
 const output = randWords.join(', ')
-
 data.result = output
 }
-
     return {
       code: d.util.setCode(data),
     };
   }
-
 })
 ```
 ### Usage 
