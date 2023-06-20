@@ -13,6 +13,7 @@ pagination_prev: null
 pagination_next: null
 ---
 
+```js
 module.exports = {
 name: "howgamer",
 code: `$title[how Gamer machine]
@@ -23,3 +24,4 @@ $cooldown[5s; Slow down! Don't spam the command!
 Time left: \`%time%\`]
 `
 }
+```
