@@ -7,6 +7,8 @@ import styles from "../pages/styles.module.css";
 import Link from "@docusaurus/Link";
 
 const SubmitForm = () => {
+  const [lastRequestTime, setLastRequestTime] = useState(0);
+
   const [formState, setFormState] = useState({
     title: "",
     discordUID: "",
@@ -60,17 +62,29 @@ const SubmitForm = () => {
   };
 
   const fetchUserInfo = async (uid) => {
+    const randomAvatarNumber = Math.floor(Math.random() * 5);
     try {
       const response = await fetch(
         `https://someapi.frenchwomen.repl.co/uinfo/${uid}`
       );
       const data = await response.json();
-      return {
-        avatar: data.avatar,
-        username: data.username,
-      };
+      console.log(data.avatar)
+      if (data && data.avatar) {
+        return {
+          avatar: data.avatar,
+          username: data.username,
+        };
+      } else {
+        return {
+          avatar: `https://cdn.discordapp.com/embed/avatars/${randomAvatarNumber}.png`,
+          username: "Guest User",
+        };
+      }
     } catch (error) {
-      return;
+      return {
+        avatar: `https://cdn.discordapp.com/embed/avatars/${randomAvatarNumber}.png`,
+        username: "Guest User",
+      };
     }
   };
 
@@ -86,6 +100,16 @@ const SubmitForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+
+    const currentTime = Date.now();
+    const elapsedTime = currentTime - lastRequestTime;
+
+    if (elapsedTime < 15000) {
+      alert("Don't spam the submit button!");
+      return;
+    }
+
+    setLastRequestTime(currentTime);
 
     const errors = {
       title: false,
@@ -152,18 +176,20 @@ pagination_next: null
 ${code}`;
 
     try {
-
-      const response = await fetch(atob("aHR0cHM6Ly9zb21lYXBpLmZyZW5jaHdvbWVuLnJlcGwuY28vZ2l0aHVi"), {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          commitMessage: `Create new file -- ${username}`,
-          content: fileContent,
-          fileName: fileName,
-        }),
-      });
+      const response = await fetch(
+        atob("aHR0cHM6Ly9zb21lYXBpLmZyZW5jaHdvbWVuLnJlcGwuY28vZ2l0aHVi"),
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            commitMessage: `Create new file -- ${username}`,
+            content: fileContent,
+            fileName: fileName,
+          }),
+        }
+      );
 
       if (response.ok) {
         await alert(
@@ -262,8 +288,45 @@ ${code}`;
         required
         error={fieldErrors.code}
       />
-      <div style={{ flex: 1, marginLeft: "1rem" }}>
-        <ReactMarkdown>{code}</ReactMarkdown>
+      <h5 style={{ marginBottom: "0.5rem" }}>
+        <span style={{ verticalAlign: "middle" }}>
+          Preview
+          <small
+            style={{ fontSize: "8px", color: "gray", verticalAlign: "middle" }}
+          >
+            {" "}
+            (How your Wiki will look on the website)
+          </small>
+        </span>
+      </h5>
+      <div
+        style={{
+          width: "100%",
+          borderRadius: "4px",
+          fontSize: "14px",
+          color: "var(--aoijs-color)",
+          background: "var(--aoijs-color)",
+          position: "auto",
+          fontFamily: "var(--ifm-font-family-base)",
+        }}
+      >
+        <div
+          style={{
+            border: "1px solid #A9A9A9",
+            borderRadius: "4px",
+            overflow: "hidden",
+          }}
+        >
+          <div
+            style={{
+              background: "transparent",
+              borderRadius: "4px",
+              padding: "12px",
+            }}
+          >
+            <ReactMarkdown>{code}</ReactMarkdown>
+          </div>
+        </div>
       </div>
       {fieldErrors.code && <p style={{ color: "red" }}>Content is required</p>}
       <br />
