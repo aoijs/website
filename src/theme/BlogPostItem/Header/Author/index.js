@@ -13,15 +13,56 @@ function MaybeLink(props) {
 export default function BlogPostItemHeaderAuthor({ author, className }) {
   const { name, title, url, imageURL, email } = author;
   const link = url || (email && `mailto:${email}`) || undefined;
-  const staff = ["@dodogames", "@supreme supreme", "@supreme", "@.josipfx", "@faf4a", "@satoshisaysnya", "@usersatoshi", "@ahoemi", "@snowytealatte"];
-  const mod = ["@dodogames", "@supreme supreme", "@supreme", "@.josipfx", "@faf4a", "@satoshisaysnya", "@usersatoshi"];
+  const staff = [
+    "@dodogames",
+    "@supreme supreme",
+    "@supreme",
+    "@.josipfx",
+    "@faf4a",
+    "@satoshisaysnya",
+    "@usersatoshi",
+    "@ahoemi",
+    "@snowytealatte",
+  ];
+  const mod = [
+    "@dodogames",
+    "@supreme supreme",
+    "@supreme",
+    "@.josipfx",
+    "@faf4a",
+    "@satoshisaysnya",
+    "@usersatoshi",
+  ];
   const creator = ["@leref"];
   const contributor = ["@faf4a", "@dodogames"];
+  const booster = [
+    "@Zeke ♡",
+    "@Alien Abd",
+    "@Supreme Supreme",
+    "@creitingameplays",
+    "@leref",
+    "@satoshisaysnya",
+    "@theparadox0018",
+    "@valentineu0",
+    "@wansie",
+    "@あ┃𝚒𝚣𝚊𝚌𝚑𝚘𝚌",
+  ];
 
-  const isCreator = creator.includes(name);
-  const isMod = mod.includes(name);
-  const isStaff = staff.includes(name);
-  const isContributor = contributor.includes(name);
+  const lowercaseName = name.toLowerCase();
+
+  const isCreator = creator
+    .map((item) => item.toLowerCase())
+    .includes(lowercaseName);
+  const isMod = mod.map((item) => item.toLowerCase()).includes(lowercaseName);
+  const isStaff = staff
+    .map((item) => item.toLowerCase())
+    .includes(lowercaseName);
+  const isContributor = contributor
+    .map((item) => item.toLowerCase())
+    .includes(lowercaseName);
+  const isBooster = booster
+    .map((item) => item.toLowerCase())
+    .includes(lowercaseName);
 
   return (
     <div className={clsx("avatar margin-bottom--sm", className)}>
@@ -43,7 +84,14 @@ export default function BlogPostItemHeaderAuthor({ author, className }) {
               <span itemProp="name">{name}</span>
             </MaybeLink>
             {isContributor && (
-              <span className={clsx(styles.tag, styles.contributor)}>Contributor</span>
+              <span className={clsx(styles.tag, styles.contributor)}>
+                Contributor
+              </span>
+            )}
+            {isBooster && (
+              <span className={clsx(styles.tag, styles.booster)}>
+                Server Booster
+              </span>
             )}
             {isStaff && (
               <span className={clsx(styles.tag, styles.staff)}>Staff</span>

@@ -5,6 +5,10 @@
     color: rgb(255, 255, 255);
     font-size: 0.8em;
 }
+
+.booster {
+    background-color: #f47fff;
+}
   
 .staff {
     background-color: var(--ifm-color-primary);
