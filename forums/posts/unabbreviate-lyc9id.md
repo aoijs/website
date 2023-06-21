@@ -14,8 +14,9 @@ pagination_prev: null
 pagination_next: null
 ---
 
-Unabbreviate numbers, By Artz_
-```
+Unabbreviate numbers
+
+```javascript
 bot.functionManager.createFunction({
 name: '$unabbreviate',
 type: 'djs',
