@@ -74,7 +74,7 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'wikis/submit',
+          to: 'wikis/guidelines',
           activeBasePath: 'wikis',
           label: 'Wikis',
           position: 'right',

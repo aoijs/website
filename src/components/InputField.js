@@ -69,7 +69,7 @@ const InputField = ({ name, id, value, onChange, type, error, charCount }) => {
           <div
             style={{ fontSize: "12px", color: charCount >= 500 ? "red" : "" }}
           >
-            {charCount === "undefined" ? "0" : charCount}/{500}
+            {charCount === undefined ? "0" : charCount}/{500}
           </div>
         </div>
       );
@@ -146,7 +146,7 @@ const InputField = ({ name, id, value, onChange, type, error, charCount }) => {
           <div
             style={{ fontSize: "12px", color: charCount >= 50 ? "red" : "", marginTop: "5px" }}
           >
-            {charCount === "undefined" ? "0" : charCount}/{50}
+            {charCount === undefined ? "0" : charCount}/{50}
           </div>
         </div>
       );
