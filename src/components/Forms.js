@@ -8,13 +8,6 @@ import Link from "@docusaurus/Link";
 import BlogPostItemHeaderAuthor from "@site/src/theme/BlogPostItem/Header/Author/index";
 
 const SubmitForm = () => {
-  const [userInfo, setUserInfo] = useState({
-    avatar: `https://cdn.discordapp.com/embed/avatars/${Math.floor(
-      Math.random() * 5
-    )}.png`,
-    username: "Guest User",
-  });
-
   const [charCount, setCharCount] = useState(0);
   const [lastRequestTime, setLastRequestTime] = useState(0);
 
@@ -23,7 +16,7 @@ const SubmitForm = () => {
     discordUID: "",
     description: "",
     code: "",
-    tags: ["aoi.js"],
+    tags: [""],
     isUIDValid: true,
   });
 
@@ -32,9 +25,17 @@ const SubmitForm = () => {
     discordUID: false,
     description: false,
     code: false,
+    tags: false,
   });
 
   const { title, description, discordUID, code, tags, isUIDValid } = formState;
+
+  const [userInfo, setUserInfo] = useState({
+    avatar: `https://cdn.discordapp.com/embed/avatars/${Math.floor(
+      Math.random() * 5
+    )}.png`,
+    username: "Guest User",
+  });
 
   const handleChange = async (event) => {
     const { name, value } = event.target;
@@ -61,15 +62,12 @@ const SubmitForm = () => {
     } else if (name === "discordUID") {
       setFormState((prevState) => ({ ...prevState, isUIDValid: true }));
 
-      if (value.length > 17) {
-        const isValidUser = await validateDiscordUID(value);
+      if (value.length >= 17) {
+        const { avatar, username, bot } = await fetchUserInfo(value);
 
-        if (!isValidUser) {
+        if (bot !== undefined) {
           setFormState((prevState) => ({ ...prevState, isUIDValid: false }));
-          return;
         }
-
-        const { avatar, username } = await fetchUserInfo(value);
 
         setUserInfo((prevUserInfo) => ({
           ...prevUserInfo,
@@ -82,23 +80,6 @@ const SubmitForm = () => {
     setFormState((prevState) => ({ ...prevState, [name]: truncatedValue }));
   };
 
-  const validateDiscordUID = async (uid) => {
-    const bannedIDs = ["none"];
-    if (bannedIDs.includes(uid)) {
-      return false;
-    }
-
-    try {
-      const response = await fetch(
-        `https://someapi.frenchwomen.repl.co/uinfo/${uid}`
-      );
-      const data = await response.json();
-      return !data.bot;
-    } catch (error) {
-      return false;
-    }
-  };
-
   const fetchUserInfo = async (uid) => {
     const randomAvatarNumber = Math.floor(Math.random() * 5);
     try {
@@ -108,17 +89,20 @@ const SubmitForm = () => {
       const data = await response.json();
       if (data && data.avatar) {
         return {
+          bot: data.bot,
           avatar: data.avatar,
           username: data.username,
         };
       } else {
         return {
+          bot: undefined,
           avatar: `https://cdn.discordapp.com/embed/avatars/${randomAvatarNumber}.png`,
           username: "Guest User",
         };
       }
     } catch (error) {
       return {
+        bot: undefined,
         avatar: `https://cdn.discordapp.com/embed/avatars/${randomAvatarNumber}.png`,
         username: "Guest User",
       };
@@ -155,41 +139,32 @@ const SubmitForm = () => {
       code: false,
     };
 
-    if (title.trim() === "") {
-      errors.title = true;
+    const requiredFields = ["title", "discordUID", "description", "code"];
+
+    requiredFields.forEach((field) => {
+      if (formState[field].trim() === "") {
+        errors[field] = true;
+      }
+    });
+
+    if (formState.tags.length === 1) {
+      errors.tags = true;
     }
-    if (discordUID.trim() === "") {
-      errors.discordUID = true;
-    }
-    if (description.trim() === "") {
-      errors.description = true;
-    }
-    if (code.trim() === "") {
-      errors.code = true;
-    }
+
+    console.log(formState.tags.length);
 
     setFieldErrors(errors);
 
-    if (
-      errors.description === true ||
-      errors.code === true ||
-      errors.title === true ||
-      errors.discordUID === true
-    ) {
+    if (Object.values(errors).some((error) => error === true)) {
       return;
     }
 
-    const isValidUser = await validateDiscordUID(discordUID);
+    const { avatar, username, bot } = await fetchUserInfo(discordUID);
 
-    if (!isValidUser) {
-      setFormState((prevState) => ({
-        ...prevState,
-        isUIDValid: false,
-      }));
+    if (bot !== undefined) {
+      setFormState((prevState) => ({ ...prevState, isUIDValid: false }));
       return;
     }
-
-    const { avatar, username } = await fetchUserInfo(discordUID);
 
     const baseFileName = title.toLowerCase().replace(/\s+/g, "-");
     const randomString = Math.random().toString(36).substring(7);
@@ -234,9 +209,11 @@ ${code}`;
         );
         window.location.reload();
       } else {
+        await alert("Something went wrong while handling your request.");
         return;
       }
     } catch (error) {
+      console.log(error);
       return;
     }
   };
@@ -310,7 +287,7 @@ ${code}`;
       />
       {!isUIDValid && <p style={{ color: "red" }}>Invalid user</p>}
       {fieldErrors.discordUID && (
-        <p style={{ color: "red" }}>Discord UID is required</p>
+        <p style={{ color: "red", marginTop: "10px" }}>Discord User ID is required</p>
       )}
       <br />
       <h3>
@@ -331,6 +308,7 @@ ${code}`;
         required
         error={fieldErrors.code}
       />
+      {fieldErrors.code && <p style={{ color: "red" }}>The Wiki Content is required</p>}
       <h5 style={{ marginBottom: "0.5rem" }}>
         <span style={{ verticalAlign: "middle" }}>
           Preview
@@ -381,14 +359,14 @@ ${code}`;
                 Some text of your awesome Wiki!
                 <br />
                 <br />
-                Did you know that you can use markdown to make your Wiki look even better?
+                Did you know that you can use markdown to make your Wiki look
+                even better?
               </div>
             )}
             <ReactMarkdown>{code}</ReactMarkdown>
           </div>
         </div>
       </div>
-      {fieldErrors.code && <p style={{ color: "red" }}>Content is required</p>}
       <br />
       <h3>
         Tags
@@ -418,6 +396,11 @@ ${code}`;
           </span>
         ))}
       </div>
+      {fieldErrors.tags && (
+        <p style={{ color: "red", marginTop: "10px" }}>
+          At least one tag is required
+        </p>
+      )}
       <div
         className={styles.buttons}
         style={{
