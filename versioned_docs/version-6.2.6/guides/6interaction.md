@@ -72,9 +72,9 @@ $createApplicationCommand[guildID/global;name;description;defaultPermission(true
 
 #### Application Types
 
-> * `message` — Creates an Application Command that can be executed on a message.
-> * `slash` — Creates an Application Command as slash command.
-> * `user` — Creates an Application Command that can be executed on a user.
+> * `message` — Creates an Application Command that can be executed on a message. ([documentation](https://discord.com/developers/docs/interactions/application-commands#message-commands))
+> * `slash` — Creates an Application Command as slash command. ([documentation](https://discord.com/developers/docs/interactions/application-commands))
+> * `user` — Creates an Application Command that can be executed on a user. ([documentation](https://discord.com/developers/docs/interactions/application-commands#user-commands))
 
 ### Examples of creating Application Commands
 
@@ -120,6 +120,60 @@ bot.command({
 
 ---
 
+Sub command groups allow nesting of multiple commands in one single command, meaning you can increase the application command limit given by Discord.
+
+This is an example structure of a slash command which has two sub-groups called "user" and "role". 
+
+This example would create one slash command with two sub-groups and would looks like this <Slash>/permissions user</Slash> & <Slash>/permissions role</Slash>
+
+```js
+{
+    "name": "permissions",
+    "description": "Get or edit permissions for a user or a role",
+    "options": [
+        {
+            "name": "user",
+            "description": "Get or edit permissions for a user",
+            "type": 2 // 2 is type SUB_COMMAND_GROUP
+        },
+        {
+            "name": "role",
+            "description": "Get or edit permissions for a role",
+            "type": 2
+        }
+    ]
+}
+```
+
+To create that slash command you would basically do the same as with any other.
+
+```js
+bot.command({
+    name: "createApplicationCommand",
+    code: `
+  $createApplicationCommand[$guildID;slash command;sub commands showcase!;true;slash;[{
+    "name": "permissions",
+    "description": "Get or edit permissions for a user or a role",
+    "options": [
+        {
+            "name": "user",
+            "description": "Get or edit permissions for a user",
+            "type": 2 
+        },
+        {
+            "name": "role",
+            "description": "Get or edit permissions for a role",
+            "type": 2
+        }
+    ]
+}]]`
+});
+```
+
+The official documentation of Discord has other awesome [examples](https://discord.com/developers/docs/interactions/application-commands#example-walkthrough) regarding this.
+
+---
+
 Adding **sub commands** to the application command:
 
 Sub commands have the type `1` and work different from "regular" slash commands. They have other "sub" commands "attached" to the actual command.
@@ -154,7 +208,7 @@ bot.interactionCommand({
   $interactionReply[You picked $interactionData[options._subcommand]!]
   $onlyIf[$interactionData[options._subcommand]==subcommand;]`
 });
-// This example is referring to the exampl above.
+// This example is referring to the example above.
 ```
 
 ## Using Application Commands
