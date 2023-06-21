@@ -15,7 +15,7 @@ pagination_prev: null
 pagination_next: null
 ---
 
-```
+```javascript
 module.exports = [{
 name: 'translate',
 code: `
