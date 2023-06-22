@@ -15,7 +15,7 @@ export default function BlogPostItemHeaderAuthor({ author, className }) {
   const link = url || (email && `mailto:${email}`) || undefined;
   const staff = [
     "@dodogames",
-    "@supreme supreme",
+    "@supremesupreme",
     "@supreme",
     "@.josipfx",
     "@faf4a",
@@ -26,7 +26,7 @@ export default function BlogPostItemHeaderAuthor({ author, className }) {
   ];
   const mod = [
     "@dodogames",
-    "@supreme supreme",
+    "@supremesupreme",
     "@supreme",
     "@.josipfx",
     "@faf4a",
@@ -38,7 +38,7 @@ export default function BlogPostItemHeaderAuthor({ author, className }) {
   const booster = [
     "@Zeke ♡",
     "@Alien Abd",
-    "@Supreme Supreme",
+    "@supremesupreme",
     "@creitingameplays",
     "@leref",
     "@satoshisaysnya",

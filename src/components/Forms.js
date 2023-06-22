@@ -16,7 +16,7 @@ const SubmitForm = () => {
     discordUID: "",
     description: "",
     code: "",
-    tags: [""],
+    tags: [],
     isUIDValid: true,
   });
 
@@ -147,22 +147,23 @@ const SubmitForm = () => {
       }
     });
 
-    if (formState.tags.length === 1) {
+    if (formState.tags.length === 0) {
       errors.tags = true;
-    }
-
-    console.log(formState.tags.length);
-
-    setFieldErrors(errors);
-
-    if (Object.values(errors).some((error) => error === true)) {
-      return;
     }
 
     const { avatar, username, bot } = await fetchUserInfo(discordUID);
 
+    if (username === "Guest User") {
+      errors.discordUID = true;
+    }
+
     if (bot !== undefined) {
-      setFormState((prevState) => ({ ...prevState, isUIDValid: false }));
+      errors.discordUID = true;
+    }
+
+    setFieldErrors(errors);
+
+    if (Object.values(errors).some((error) => error === true)) {
       return;
     }
 
@@ -239,7 +240,7 @@ ${code}`;
         required
         pattern="[a-zA-Z0-9]*"
         error={fieldErrors.title}
-        charCount={charCount.title === "undefined" ? "0" : charCount.title}
+        charCount={charCount.title === undefined ? "0" : charCount.title}
       />
       {fieldErrors.title && <p style={{ color: "red" }}>Title is required</p>}
       <br />
@@ -261,7 +262,7 @@ ${code}`;
         required
         error={fieldErrors.description}
         charCount={
-          charCount.description === "undefined" ? "0" : charCount.description
+          charCount.description === undefined ? "0" : charCount.description
         }
       />
       {fieldErrors.description && (
@@ -287,7 +288,9 @@ ${code}`;
       />
       {!isUIDValid && <p style={{ color: "red" }}>Invalid user</p>}
       {fieldErrors.discordUID && (
-        <p style={{ color: "red", marginTop: "10px" }}>Discord User ID is required</p>
+        <p style={{ color: "red", marginTop: "10px" }}>
+          Discord User ID is required
+        </p>
       )}
       <br />
       <h3>
@@ -308,7 +311,9 @@ ${code}`;
         required
         error={fieldErrors.code}
       />
-      {fieldErrors.code && <p style={{ color: "red" }}>The Wiki Content is required</p>}
+      {fieldErrors.code && (
+        <p style={{ color: "red" }}>The Wiki Content is required</p>
+      )}
       <h5 style={{ marginBottom: "0.5rem" }}>
         <span style={{ verticalAlign: "middle" }}>
           Preview

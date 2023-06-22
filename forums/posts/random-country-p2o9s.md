@@ -6,7 +6,7 @@ authors:
   title: Member
   url: https://discord.com/users/166181471369953280
   image_url: https://cdn.discordapp.com/avatars/166181471369953280/756c4e1baec28426d72e988091dbc5c6.png?size=1024
-tags: ["","aoi.js","v6"]
+tags: ["aoi.js","v6"]
 hide_table_of_contents: false
 enableComments: true
 pagination_prev: null
