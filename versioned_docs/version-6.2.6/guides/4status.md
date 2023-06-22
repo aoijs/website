@@ -52,8 +52,8 @@ bot.status({
 });
 
 bot.status({
-    text: "Example Text three!",
-    type: "STEAMING",
+    text: "Example Text two!",
+    type: "STREAMING",
     URL: "some URL"
 });
 ```

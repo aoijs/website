@@ -25,7 +25,7 @@ $deleteApplicationCommand[guildID/global;id]
 bot.command({
     name: 'deleteApplicationCommand',
     code: `
-  $deleteApplicationCommand[$guildID;$getApplicationCommandID[$guildID;application-command-name]]
+  $deleteApplicationCommand[$guildID;$getApplicationCommandID[application-command-name;$guildID]]
   `
 });
 ```
