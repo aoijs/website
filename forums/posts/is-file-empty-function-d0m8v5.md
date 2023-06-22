@@ -1,0 +1,48 @@
+---
+title: "Is file empty function"
+description: "This function will return `true` or `false` based on whether the file specified is empty or not."
+authors:
+  name: "@artemcurious"
+  title: Member
+  url: https://discord.com/users/591690683509768223
+  image_url: https://cdn.discordapp.com/avatars/591690683509768223/e193473ac4cbcdecf90fc00826f1175e.png
+tags: ["aoi.js","v6"]
+hide_table_of_contents: false
+enableComments: true
+pagination_prev: null
+pagination_next: null
+---
+
+This is a fairly simple function that will return `true` or `false` based on whether the file specified is empty or not.
+
+### The code
+Paste this into your main file, common to be named `index.js`:
+```js
+bot.functionManager.createFunction({
+  name: `$isFileEmpty`,
+  type: "djs",
+  code: async d => {
+    const data = d.util.aoiFunc(d);
+    const [filePath] = data.inside.splits;
+
+    const isFileEmpty = filePath => {
+      try {
+        const stats = fs.statSync(filePath);
+        return stats.size === 0;
+      } catch (error) {
+        // Handle file not found or other errors
+        console.error('Error:', error);
+        return false;
+      }
+    }
+
+    data.result = isFileEmpty(filePath);
+
+    return {
+      code: d.util.setCode(data)
+    };
+  }
+});
+```
+
+That's it, have fun, bye!
