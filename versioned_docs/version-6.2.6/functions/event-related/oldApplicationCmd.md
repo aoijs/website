@@ -32,3 +32,18 @@ $oldApplicationCmd[option]
 | defaultPermission  | string              | Returns Default Permissions of slash command.               |
 | timestamp          | string              | Returns timestamp of the creation of slash command (in ms). |
 | createdAt          | string              | Returns the date of creation of slash command.              |
+
+## Example(s)
+
+```js
+bot.applicationCmdUpdateCommand({
+    channel: "channelid",
+    code: `
+    Slash command was updated!
+- New Name: $newApplicationCmd[name]
+ - Old Name: $oldApplicationCmd[name]
+- New Description: $newApplicationCmd[description]
+ - Old Description: $oldApplicationCmd[description]`
+})
+```
+- This code will execute when __slash command is updated__ (Modified)
