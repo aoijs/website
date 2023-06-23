@@ -1,7 +1,6 @@
 ---
 title: "Download function"
-description: "This is a custom function for downloading files accessible through https.
-Example: `$download[https://cdn.discordapp.com/avatars/608358453580136499/a_1b50c8adf832525b8ca0673e1c74e6e9.gif;./lerefavatar.gif]` would download the image accessible through the link `https://cdn.discordapp.com/avatars/608358453580136499/a_1b50c8adf832525b8ca0673e1c74e6e9.gif`."
+description: "This is a custom function for downloading files accessible through https."
 authors:
   name: "@artemcurious"
   title: Member
@@ -17,6 +16,8 @@ pagination_next: null
 Hey there! Ever needed to download an image, an audio file, or basically any type of file from the internet? Here's the command to solve your issue!
 
 Paste the following code into your bot's main file, which is usually `index.js`:
+
+### Content
 
 ```
 const url = require('url');

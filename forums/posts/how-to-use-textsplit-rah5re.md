@@ -14,6 +14,8 @@ pagination_prev: null
 pagination_next: null
 ---
 
+### Content
+
 ```js
 $splitText[2] // returns Artz_ ( b => Artz_ )
 $editTextSplitElement[2;Artz_]

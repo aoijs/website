@@ -186,6 +186,10 @@ pagination_prev: null
 pagination_next: null
 ---
 
+## Description
+${description}
+
+### Content
 ${code}`;
 
     try {
@@ -248,8 +252,7 @@ ${code}`;
         Description
         <small style={{ fontSize: "12px", color: "gray" }}>
           {" "}
-          (A short description about the purpose of your Wiki, this will not be
-          displayed on the Website)
+          (A short description about the purpose of your Wiki)
         </small>
       </h3>
       <InputField
@@ -359,7 +362,7 @@ ${code}`;
               }}
             />
             <br />
-            {!code && (
+            {code === "" && description == "" && (
               <div className={styles.placeholderText}>
                 Some text of your awesome Wiki!
                 <br />
@@ -368,7 +371,12 @@ ${code}`;
                 even better?
               </div>
             )}
-            <ReactMarkdown>{code}</ReactMarkdown>
+            <ReactMarkdown>
+              {description === "" ? "" : "### Description" + "\n" + description}
+            </ReactMarkdown>
+            <ReactMarkdown>
+              {code === "" ? "" : "### Content" + "\n" + code}
+            </ReactMarkdown>
           </div>
         </div>
       </div>

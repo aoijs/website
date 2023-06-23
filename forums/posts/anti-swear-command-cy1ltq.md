@@ -13,7 +13,8 @@ pagination_prev: null
 pagination_next: null
 ---
 
-# Code
+### Content
+
 ```js
 module.exports = {
 name: "$alwaysExecute",
@@ -24,10 +25,15 @@ $deleteCommand
 $onlyIf[$djsEval[const BadWordsNext = require('bad-words-next')
 const en = require('bad-words-next/data/en.json')
 const badwords = new BadWordsNext({ data: en })
-badwords.check('$message');true]==true]
+badwords.check(\`$message\`);true]==true]
+
+$onlyIf[$checkCondition[$message!=||$isBot[$authorID]==false]==true;]
+
+$suppressErrors
 `
 }
 ```
+
 ### Error?
 probably modules not found
 - go to shell/terminal and type `npm i bad-words-next`

@@ -16,7 +16,8 @@ pagination_next: null
 This code allows you to use the new `$if` in old `$if` commands!
 This can be really useful in some cases.
 
-### Example
+### Content
+
 This code creates a new function, called `$ifv6` that will act as the new `$if` anywhere you run it!
 So, if you have a command with old if enabled:
 ```js
