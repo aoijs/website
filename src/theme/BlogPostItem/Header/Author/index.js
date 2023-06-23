@@ -43,6 +43,7 @@ export default function BlogPostItemHeaderAuthor({ author, className }) {
     "@valentineu0",
     "@wansie",
     "@あ┃𝚒𝚣𝚊𝚌𝚑𝚘𝚌",
+    "@angelusdelux"
   ];
 
   const lowercaseName = name.toLowerCase();
