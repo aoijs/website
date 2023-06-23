@@ -13,7 +13,8 @@ pagination_prev: null
 pagination_next: null
 ---
 
-# Code
+### Content
+
 ```js
 bot.functionManager.createFunction({
   name: "$toToggleCase",

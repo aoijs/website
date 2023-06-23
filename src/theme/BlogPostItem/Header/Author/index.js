@@ -16,8 +16,7 @@ export default function BlogPostItemHeaderAuthor({ author, className }) {
   const staff = [
     "@dodogames",
     "@supremesupreme",
-    "@supreme",
-    "@.josipfx",
+    "@josipfx",
     "@faf4a",
     "@satoshisaysnya",
     "@usersatoshi",
@@ -27,8 +26,6 @@ export default function BlogPostItemHeaderAuthor({ author, className }) {
   const mod = [
     "@dodogames",
     "@supremesupreme",
-    "@supreme",
-    "@.josipfx",
     "@faf4a",
     "@satoshisaysnya",
     "@usersatoshi",

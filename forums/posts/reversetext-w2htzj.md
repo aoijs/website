@@ -13,7 +13,8 @@ pagination_prev: null
 pagination_next: null
 ---
 
-# Code
+### Content
+
 ```js
 $djsEval[let texts = "PUT YOUR TEXT HERE"
 let parts = texts.split('');

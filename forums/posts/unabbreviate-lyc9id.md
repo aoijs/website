@@ -1,7 +1,6 @@
 ---
 title: "Unabbreviate"
-description: "Just a function to shorten numbers
-"
+description: "Just a function to shorten numbers"
 authors:
   name: "@Artz_"
   title: Member
@@ -16,19 +15,21 @@ pagination_next: null
 
 Unabbreviate numbers
 
+### Content
+
 ```javascript
 bot.functionManager.createFunction({
 name: '$unabbreviate',
 type: 'djs',
 code: async d => {
-const data = d.util.aoiFunc(d);
-const [number] = data.inside.splits;
-const u = require('util-stunks')
-const code = u.unabbreviate(number)
-data.result = code
-return {
-code: d.util.setCode(data)
-}
-}
-})
+    const data = d.util.aoiFunc(d);
+    const [number] = data.inside.splits;
+    const u = require('util-stunks')
+    const code = u.unabbreviate(number)
+    data.result = code
+    return {
+      code: d.util.setCode(data)
+    } 
+  }
+});
 ```

@@ -1,6 +1,6 @@
 ---
 title: "Yes or no command"
-description: "Why i made this command?"
+description: "Yes or no command"
 authors:
   name: "@dodogames"
   title: Member
@@ -14,6 +14,9 @@ pagination_next: null
 ---
 
 Most ridiculous command (in my opinion) made for fun purposes.
+
+### Content
+
 ```js
 module.exports = {
 name: "yesorno",
