@@ -35,6 +35,7 @@ const SubmitForm = () => {
       Math.random() * 5
     )}.png`,
     username: "Guest User",
+    id: "",
   });
 
   const handleChange = async (event) => {
@@ -63,7 +64,7 @@ const SubmitForm = () => {
       setFormState((prevState) => ({ ...prevState, isUIDValid: true }));
 
       if (value.length >= 17) {
-        const { avatar, username, bot } = await fetchUserInfo(value);
+        const { avatar, username, bot, id } = await fetchUserInfo(value);
 
         if (bot !== undefined) {
           setFormState((prevState) => ({ ...prevState, isUIDValid: false }));
@@ -73,6 +74,7 @@ const SubmitForm = () => {
           ...prevUserInfo,
           avatar: avatar,
           username: username,
+          id: "- " + id,
         }));
       }
     }
@@ -92,12 +94,14 @@ const SubmitForm = () => {
           bot: data.bot,
           avatar: data.avatar,
           username: data.username,
+          id: data.id,
         };
       } else {
         return {
           bot: undefined,
           avatar: `https://cdn.discordapp.com/embed/avatars/${randomAvatarNumber}.png`,
           username: "Guest User",
+          id: "Invalid User",
         };
       }
     } catch (error) {
@@ -105,6 +109,7 @@ const SubmitForm = () => {
         bot: undefined,
         avatar: `https://cdn.discordapp.com/embed/avatars/${randomAvatarNumber}.png`,
         username: "Guest User",
+        id: "Invalid User",
       };
     }
   };
@@ -215,7 +220,6 @@ ${code}`;
         return;
       }
     } catch (error) {
-      console.log(error);
       return;
     }
   };
@@ -249,7 +253,8 @@ ${code}`;
         Description
         <small style={{ fontSize: "12px", color: "gray" }}>
           {" "}
-          (A short description about the purpose of your Wiki, will NOT be displayed to the user on the website)
+          (A short description about the purpose of your Wiki, will NOT be
+          displayed to the user on the website)
         </small>
       </h3>
       <InputField
@@ -353,7 +358,7 @@ ${code}`;
             <BlogPostItemHeaderAuthor
               author={{
                 name: `@${userInfo.username}`,
-                title: `Member - ${userInfo.id}`,
+                title: `Member ${userInfo.id}`,
                 url: `https://discord.com/users/${discordUID}`,
                 imageURL: `${userInfo.avatar}`,
               }}
@@ -368,9 +373,7 @@ ${code}`;
                 even better?
               </div>
             )}
-            <ReactMarkdown>
-              {code}
-            </ReactMarkdown>
+            <ReactMarkdown>{code}</ReactMarkdown>
           </div>
         </div>
       </div>
