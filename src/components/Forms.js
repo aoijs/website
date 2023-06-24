@@ -35,6 +35,7 @@ const SubmitForm = () => {
       Math.random() * 5
     )}.png`,
     username: "Guest User",
+    id: "",
   });
 
   const handleChange = async (event) => {
@@ -63,7 +64,7 @@ const SubmitForm = () => {
       setFormState((prevState) => ({ ...prevState, isUIDValid: true }));
 
       if (value.length >= 17) {
-        const { avatar, username, bot } = await fetchUserInfo(value);
+        const { avatar, username, bot, id } = await fetchUserInfo(value);
 
         if (bot !== undefined) {
           setFormState((prevState) => ({ ...prevState, isUIDValid: false }));
@@ -73,6 +74,7 @@ const SubmitForm = () => {
           ...prevUserInfo,
           avatar: avatar,
           username: username,
+          id: "- " + id,
         }));
       }
     }
@@ -92,12 +94,14 @@ const SubmitForm = () => {
           bot: data.bot,
           avatar: data.avatar,
           username: data.username,
+          id: data.id,
         };
       } else {
         return {
           bot: undefined,
           avatar: `https://cdn.discordapp.com/embed/avatars/${randomAvatarNumber}.png`,
           username: "Guest User",
+          id: "Invalid User",
         };
       }
     } catch (error) {
@@ -105,6 +109,7 @@ const SubmitForm = () => {
         bot: undefined,
         avatar: `https://cdn.discordapp.com/embed/avatars/${randomAvatarNumber}.png`,
         username: "Guest User",
+        id: "Invalid User",
       };
     }
   };
@@ -169,14 +174,15 @@ const SubmitForm = () => {
 
     const baseFileName = title.toLowerCase().replace(/\s+/g, "-");
     const randomString = Math.random().toString(36).substring(7);
-    const fileName = `${baseFileName}-${randomString}.md`;
+    const fileName = `${discordUID}/${randomString}.md`;
 
     const fileContent = `---
 title: "${title}"
 description: "${description}"
 authors:
   name: "@${username}"
-  title: Member
+  title: Member - ${discordUID}
+  userid: "${discordUID}"
   url: https://discord.com/users/${discordUID}
   image_url: ${avatar}
 tags: ${JSON.stringify(tags)}
@@ -186,10 +192,6 @@ pagination_prev: null
 pagination_next: null
 ---
 
-## Description
-${description}
-
-## Content
 ${code}`;
 
     try {
@@ -201,7 +203,7 @@ ${code}`;
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            commitMessage: `Create new file -- ${username}`,
+            commitMessage: `Create new file -- ${discordUID}`,
             content: fileContent,
             fileName: fileName,
           }),
@@ -218,7 +220,6 @@ ${code}`;
         return;
       }
     } catch (error) {
-      console.log(error);
       return;
     }
   };
@@ -252,7 +253,8 @@ ${code}`;
         Description
         <small style={{ fontSize: "12px", color: "gray" }}>
           {" "}
-          (A short description about the purpose of your Wiki)
+          (A short description about the purpose of your Wiki, will NOT be
+          displayed to the user on the website)
         </small>
       </h3>
       <InputField
@@ -356,13 +358,13 @@ ${code}`;
             <BlogPostItemHeaderAuthor
               author={{
                 name: `@${userInfo.username}`,
-                title: "Member",
+                title: `Member ${userInfo.id}`,
                 url: `https://discord.com/users/${discordUID}`,
                 imageURL: `${userInfo.avatar}`,
               }}
             />
             <br />
-            {code === "" && description == "" && (
+            {!code && (
               <div className={styles.placeholderText}>
                 Some text of your awesome Wiki!
                 <br />
@@ -371,12 +373,7 @@ ${code}`;
                 even better?
               </div>
             )}
-            <ReactMarkdown>
-              {description === "" ? "" : "### Description" + "\n" + description}
-            </ReactMarkdown>
-            <ReactMarkdown>
-              {code === "" ? "" : "## Content" + "\n" + code}
-            </ReactMarkdown>
+            <ReactMarkdown>{code}</ReactMarkdown>
           </div>
         </div>
       </div>

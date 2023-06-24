@@ -4,7 +4,8 @@ description: "This is a ticketing system whose most of the codes are aoi.js whil
 "
 authors:
   name: "@nanotechpikachu"
-  title: Member
+  title: Member - 949588732498018324
+  userid: "949588732498018324"
   url: https://discord.com/users/949588732498018324
   image_url: https://cdn.discordapp.com/avatars/949588732498018324/e8daecdc63c0c4faa5e11c8b1967acc9.png
 tags: ["aoi.js","v6"]
@@ -14,11 +15,8 @@ pagination_prev: null
 pagination_next: null
 ---
 
-## Description
 This is a ticketing system whose most of the codes are aoi.js while some, like the transcript is made with discord.js. I thought of making this wiki as many people are having doubts or want to make a ticketing system.
 
-
-## Content
 ## Getting started
 I will start with some prerequisites which if you have would be splendid!
 - Knowledge about aoi js and how it works. (A stage between beginning - intermediate would be good even if you aren't, it's ok.)

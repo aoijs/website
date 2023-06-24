@@ -1,9 +1,10 @@
 ---
-title: "colored and styled console logging "
+title: "Colored and styled console logging"
 description: "List of codes for colored and styled console logging."
 authors:
   name: "@ahoemi"
-  title: Member
+  title: Member - 715852000096419900
+  userid: "715852000096419900"
   url: https://discord.com/users/715852000096419900
   image_url: https://cdn.discordapp.com/avatars/715852000096419900/4dd9ab5b17ca6c07e4da71746cd0eca9.png
 tags: ["v6","Other"]
@@ -13,10 +14,8 @@ pagination_prev: null
 pagination_next: null
 ---
 
-## Description
 List of codes for colored and styled console logging.
 
-## Content
 # List of codes
 ### Color
 - Black: `\\u001b\\[30mThis is black text\\u001b\\[0m`
