@@ -15,7 +15,7 @@ pagination_next: null
 
 Most ridiculous command (in my opinion) made for fun purposes.
 
-### Content
+## Content
 
 ```js
 module.exports = {

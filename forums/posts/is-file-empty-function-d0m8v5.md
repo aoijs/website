@@ -15,7 +15,7 @@ pagination_next: null
 
 This is a fairly simple function that will return `true` or `false` based on whether the file specified is empty or not.
 
-### Content
+## Content
 
 Paste this into your main file, common to be named `index.js`:
 ```js

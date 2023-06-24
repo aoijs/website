@@ -189,7 +189,7 @@ pagination_next: null
 ## Description
 ${description}
 
-### Content
+## Content
 ${code}`;
 
     try {
@@ -375,7 +375,7 @@ ${code}`;
               {description === "" ? "" : "### Description" + "\n" + description}
             </ReactMarkdown>
             <ReactMarkdown>
-              {code === "" ? "" : "### Content" + "\n" + code}
+              {code === "" ? "" : "## Content" + "\n" + code}
             </ReactMarkdown>
           </div>
         </div>

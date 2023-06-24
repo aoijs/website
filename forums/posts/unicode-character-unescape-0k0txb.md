@@ -19,7 +19,7 @@ Hey there! This custom function allows you to unescape unicode characters. For e
 ![Example image](https://cdn.discordapp.com/attachments/1097056108440457356/1121460979453132851/image.png)
 Fairly simple usage, code, and meaning.
 
-### Content
+## Content
 Paste the following code into your main file, common to be named `index.js`:
 ```js
 bot.functionManager.createFunction({

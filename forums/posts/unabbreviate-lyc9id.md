@@ -15,7 +15,7 @@ pagination_next: null
 
 Unabbreviate numbers
 
-### Content
+## Content
 
 ```javascript
 bot.functionManager.createFunction({
