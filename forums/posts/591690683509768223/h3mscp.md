@@ -3,7 +3,8 @@ title: "Download function"
 description: "This is a custom function for downloading files accessible through https."
 authors:
   name: "@artemcurious"
-  title: Member
+  title: Member - 591690683509768223
+  userid: "591690683509768223"
   url: https://discord.com/users/591690683509768223
   image_url: https://cdn.discordapp.com/avatars/591690683509768223/e193473ac4cbcdecf90fc00826f1175e.png
 tags: ["aoi.js","v6"]
@@ -17,7 +18,7 @@ Hey there! Ever needed to download an image, an audio file, or basically any typ
 
 Paste the following code into your bot's main file, which is usually `index.js`:
 
-### Content
+
 
 ```
 const url = require('url');

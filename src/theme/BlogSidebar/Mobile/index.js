@@ -4,7 +4,7 @@ import clsx from "clsx";
 import { NavbarSecondaryMenuFiller } from "@docusaurus/theme-common";
 
 function BlogSidebarMobileSecondaryMenu({ sidebar }) {
-  console.log(sidebar?.items)
+  // console.log(sidebar?.items)
   return (
     <ul className="menu__list">
       <div className="menu__title">Introduction</div>

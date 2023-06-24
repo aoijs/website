@@ -3,7 +3,8 @@ title: "reverseText"
 description: "A fun command to modify text and reverse them."
 authors:
   name: "@ahoemi"
-  title: Member
+  title: Member - 715852000096419900
+  userid: "715852000096419900"
   url: https://discord.com/users/715852000096419900
   image_url: https://cdn.discordapp.com/avatars/715852000096419900/4dd9ab5b17ca6c07e4da71746cd0eca9.png
 tags: ["v6","Other"]
@@ -13,7 +14,7 @@ pagination_prev: null
 pagination_next: null
 ---
 
-### Content
+
 
 ```js
 $djsEval[let texts = "PUT YOUR TEXT HERE"
