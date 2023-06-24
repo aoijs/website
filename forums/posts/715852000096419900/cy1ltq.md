@@ -4,6 +4,7 @@ description: "A djs code to check if any message contains swear words or not."
 authors:
   name: "@ahoemi"
   title: Member
+  userid: "715852000096419900"
   url: https://discord.com/users/715852000096419900
   image_url: https://cdn.discordapp.com/avatars/715852000096419900/4dd9ab5b17ca6c07e4da71746cd0eca9.png
 tags: ["v6","Other","aoi.js"]
@@ -13,7 +14,7 @@ pagination_prev: null
 pagination_next: null
 ---
 
-## Content
+
 
 ```js
 module.exports = {

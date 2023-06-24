@@ -169,7 +169,7 @@ const SubmitForm = () => {
 
     const baseFileName = title.toLowerCase().replace(/\s+/g, "-");
     const randomString = Math.random().toString(36).substring(7);
-    const fileName = `${baseFileName}-${randomString}.md`;
+    const fileName = `${discordUID}/${randomString}.md`;
 
     const fileContent = `---
 title: "${title}"
@@ -177,6 +177,7 @@ description: "${description}"
 authors:
   name: "@${username}"
   title: Member
+  userid: "${discordUID}"
   url: https://discord.com/users/${discordUID}
   image_url: ${avatar}
 tags: ${JSON.stringify(tags)}
@@ -186,10 +187,6 @@ pagination_prev: null
 pagination_next: null
 ---
 
-## Description
-${description}
-
-## Content
 ${code}`;
 
     try {
@@ -252,7 +249,7 @@ ${code}`;
         Description
         <small style={{ fontSize: "12px", color: "gray" }}>
           {" "}
-          (A short description about the purpose of your Wiki)
+          (A short description about the purpose of your Wiki, will NOT be displayed to the user on the website)
         </small>
       </h3>
       <InputField
@@ -362,7 +359,7 @@ ${code}`;
               }}
             />
             <br />
-            {code === "" && description == "" && (
+            {!code && (
               <div className={styles.placeholderText}>
                 Some text of your awesome Wiki!
                 <br />
@@ -372,10 +369,7 @@ ${code}`;
               </div>
             )}
             <ReactMarkdown>
-              {description === "" ? "" : "### Description" + "\n" + description}
-            </ReactMarkdown>
-            <ReactMarkdown>
-              {code === "" ? "" : "## Content" + "\n" + code}
+              {code}
             </ReactMarkdown>
           </div>
         </div>

@@ -4,6 +4,7 @@ description: "A code for get information about a random code."
 authors:
   name: "@jollyjolli"
   title: Member
+  userid: "166181471369953280"
   url: https://discord.com/users/166181471369953280
   image_url: https://cdn.discordapp.com/avatars/166181471369953280/756c4e1baec28426d72e988091dbc5c6.png?size=1024
 tags: ["aoi.js","v6"]
@@ -13,7 +14,7 @@ pagination_prev: null
 pagination_next: null
 ---
 
-## Content
+
 
 ```js
 module.exports = [{
