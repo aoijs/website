@@ -14,7 +14,7 @@ pagination_prev: null
 pagination_next: null
 ---
 
-### Content
+## Content
 
 ```js
 $splitText[2] // returns Artz_ ( b => Artz_ )

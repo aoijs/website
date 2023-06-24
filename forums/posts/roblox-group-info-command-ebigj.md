@@ -13,7 +13,7 @@ pagination_prev: null
 pagination_next: null
 ---
 
-### Content
+## Content
 
 ```js
 module.exports = {

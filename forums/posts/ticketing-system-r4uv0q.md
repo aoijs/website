@@ -18,7 +18,7 @@ pagination_next: null
 This is a ticketing system whose most of the codes are aoi.js while some, like the transcript is made with discord.js. I thought of making this wiki as many people are having doubts or want to make a ticketing system.
 
 
-### Content
+## Content
 ## Getting started
 I will start with some prerequisites which if you have would be splendid!
 - Knowledge about aoi js and how it works. (A stage between beginning - intermediate would be good even if you aren't, it's ok.)

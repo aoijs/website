@@ -17,7 +17,7 @@ Hey there! Ever needed to download an image, an audio file, or basically any typ
 
 Paste the following code into your bot's main file, which is usually `index.js`:
 
-### Content
+## Content
 
 ```
 const url = require('url');

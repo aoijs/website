@@ -16,7 +16,7 @@ pagination_next: null
 ## Description
 List of codes for colored and styled console logging.
 
-### Content
+## Content
 # List of codes
 ### Color
 - Black: `\\u001b\\[30mThis is black text\\u001b\\[0m`
