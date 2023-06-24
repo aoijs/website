@@ -47,4 +47,5 @@ bot.memberUpdateCommand({
 })
 ```
 - This code will execute when __member updates their guild nickname or discord username__
+
 ---
