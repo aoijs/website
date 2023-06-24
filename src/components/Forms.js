@@ -176,7 +176,7 @@ title: "${title}"
 description: "${description}"
 authors:
   name: "@${username}"
-  title: Member
+  title: Member - ${discordUID}
   userid: "${discordUID}"
   url: https://discord.com/users/${discordUID}
   image_url: ${avatar}
@@ -198,7 +198,7 @@ ${code}`;
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            commitMessage: `Create new file -- ${username}`,
+            commitMessage: `Create new file -- ${discordUID}`,
             content: fileContent,
             fileName: fileName,
           }),
@@ -353,7 +353,7 @@ ${code}`;
             <BlogPostItemHeaderAuthor
               author={{
                 name: `@${userInfo.username}`,
-                title: "Member",
+                title: `Member - ${userInfo.id}`,
                 url: `https://discord.com/users/${discordUID}`,
                 imageURL: `${userInfo.avatar}`,
               }}

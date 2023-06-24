@@ -3,18 +3,16 @@ title: "Random Country"
 description: "A code for get information about a random code."
 authors:
   name: "@jollyjolli"
-  title: Member
+  title: Member - 166181471369953280
   userid: "166181471369953280"
   url: https://discord.com/users/166181471369953280
-  image_url: https://cdn.discordapp.com/avatars/166181471369953280/756c4e1baec28426d72e988091dbc5c6.png?size=1024
+  image_url: https://cdn.discordapp.com/avatars/166181471369953280/153db0a862099b4f901d35849061898b.png
 tags: ["aoi.js","v6"]
 hide_table_of_contents: false
 enableComments: true
 pagination_prev: null
 pagination_next: null
 ---
-
-
 
 ```js
 module.exports = [{

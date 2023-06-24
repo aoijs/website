@@ -3,7 +3,7 @@ title: "Unicode character unescape"
 description: "This custom function allows you to unescape unicode characters. For example, if you had this string (which is escaped): `\u0048\u0065\u0079\u0020\u0074\u0068\u0065\u0072\u0065\u002C\u0020\u0077\u0061\u0073\u0073\u0075\u0070\u003F`, then by using this function, you would get `Hey there, wassup?`."
 authors:
   name: "@artemcurious"
-  title: Member
+  title: Member - 591690683509768223
   userid: "591690683509768223"
   url: https://discord.com/users/591690683509768223
   image_url: https://cdn.discordapp.com/avatars/591690683509768223/e193473ac4cbcdecf90fc00826f1175e.png

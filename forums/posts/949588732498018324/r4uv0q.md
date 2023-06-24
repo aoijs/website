@@ -4,7 +4,7 @@ description: "This is a ticketing system whose most of the codes are aoi.js whil
 "
 authors:
   name: "@nanotechpikachu"
-  title: Member
+  title: Member - 949588732498018324
   userid: "949588732498018324"
   url: https://discord.com/users/949588732498018324
   image_url: https://cdn.discordapp.com/avatars/949588732498018324/e8daecdc63c0c4faa5e11c8b1967acc9.png
