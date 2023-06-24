@@ -13,9 +13,7 @@ export default function DocPaginator(props) {
         description: "The ARIA label for the docs pagination",
       })}
     >
-      <div>
-        <Cookies />
-      </div>
+      <div></div>
       {previous && (
         <PaginatorNavLink
           {...previous}
@@ -43,6 +41,9 @@ export default function DocPaginator(props) {
           isNext
         />
       )}
+      <div>
+        <Cookies />
+      </div>
     </nav>
   );
 }
