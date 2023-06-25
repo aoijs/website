@@ -1,6 +1,6 @@
 module.exports = {
   title: 'aoi.js',
-  tagline: 'aoi.js official documentation',
+  tagline: 'aoi.js documentation',
   url: 'https://aoi.js.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -136,7 +136,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Akarui Development Team | AoiEngine v6.9.5`,
+      copyright: `Copyright © ${new Date().getFullYear()} Akarui Development | AoiEngine v6.9.9`,
     },
   },
   themes: ['@docusaurus/theme-live-codeblock'],
