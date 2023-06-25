@@ -38,13 +38,13 @@ slug: /
 ## Setup
 
 ```javascript title="index.js"
-const { AoiClient } = require("aoi.js");
+const {AoiClient} = require("aoi.js");
 
 const bot = new AoiClient({
-    token: "Discord Bot Token",
-    prefix: "Discord Bot Prefix",
+    token: "DISCORD BOT TOKEN",
+    prefix: "DISCORD BOT PREFIX",
     intents: ["MessageContent", "Guilds", "GuildMessages"],
-    events: ["onMessage", "onInteractionCreate"],
+    events: ["onMessage"],
     database: {
         type: "aoi.db",
         db: require("aoi.db"),
@@ -56,21 +56,10 @@ const bot = new AoiClient({
     }
 });
 
-// Ping Command Example
+// Ping Command
 bot.command({
     name: "ping",
     code: `Pong! $pingms`
-});
-
-/* Slash Interaction Command Example (ping)
-You must execute the function below for the slash command to work:
-$createApplicationCommand[$guildID;ping;Pong!;true;slash]
-*/
-
-bot.interactionCommand({
-    name: "ping",
-    prototype: "slash",
-    code: `$interactionReply[Pong! $pingms]`
 });
 ```
 
