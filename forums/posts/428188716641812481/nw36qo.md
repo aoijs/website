@@ -59,3 +59,6 @@ bot.functionManager.createFunction({
 ```
 
 After that execute the function and let the magic happen! (can take longer in large channels / many messages)
+
+## Preview:
+![preview](https://github.com/Faf4a/website/assets/87046111/3e97944f-96e9-41df-9e75-ac3755b1a1aa)
