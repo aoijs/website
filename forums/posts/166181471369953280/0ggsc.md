@@ -1,11 +1,11 @@
 ---
 title: "Voice Channel Count"
-description: "¡Hey! With this command you will know in how many Voice Channels is your bot connected to.
+description: "Â¡Hey! With this command you will know in how many Voice Channels is your bot connected to.
 
 **Variables needed**: 
 `vcCount: 0`
 
-¿For what I need this code?
+Â¿For what I need this code?
 I dont know, but the reason why I use it is in case I want to restart the host and I do not want some user that's listening to music stop listening suddenly"
 authors:
   name: "@jollyjolli"
@@ -20,7 +20,7 @@ pagination_prev: null
 pagination_next: null
 ---
 
-```
+```js
 module.exports = [{
 name: "voiceCount",
 aliases: ["vcCount", "vcc"],
