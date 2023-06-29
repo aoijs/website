@@ -41,7 +41,7 @@ export default function BlogSidebarDesktop({ sidebar }) {
           </li>
         </ul>
         <div className={clsx(styles.sidebarItemTitle, "margin-bottom--md")}>
-          Recent Wikis
+          Wikis
         </div>
         <ul className={clsx(styles.sidebarItemList, "clean-list")}>
           {sidebar.items.map((item) => {

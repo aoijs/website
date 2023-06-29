@@ -2,7 +2,7 @@
 
 <div align="center" style="margin: 30px;">
 <a href="https://aoi.js.org/">
-  <img src="https://github.com/aoijs/website/blob/master/assets/images/aoijs-banner.png?raw=true"   style="width:300px;" align="center"  alt="aoi.js"/>
+  <img src="https://github.com/aoijs/website/blob/main/assets/images/aoijs-banner.png?raw=true"   style="width:300px;" align="center"  alt="aoi.js"/>
 </a>
 <br />
 <br />
@@ -10,7 +10,7 @@
 <div align="center">
     <a href="https://aoi.js.org/">Home Page</a> |
     <a href="https://discord.gg/HMUfMXDQsV">Discord</a> |
-    <a href="https://aoi.js.org/community.">Examples</a> |
+    <a href="https://aoi.js.org/wikis">Community Wikis</a> |
     <a href="https://aoi.js.org/docs/">Documentation</a>
 </div>
 </div>
@@ -50,8 +50,8 @@ const bot = new AoiClient({
     intents: ["MessageContent", "Guilds", "GuildMessages"],
     events: ["onMessage"],
     database: {
-        type: "aoi.db",
-        db: require("aoi.db"),
+        type: "@akarui/aoi.db",
+        db: require("@akarui/aoi.db"),
         tables: ["main"],
         path: "./database/",
         extraOptions: {
@@ -78,8 +78,8 @@ const bot = new AoiClient({
     intents: ["MessageContent", "Guilds", "GuildMessages"],
     events: ["onMessage", "onInteractionCreate"],
     database: {
-        type: "aoi.db",
-        db: require("aoi.db"),
+        type: "@akarui/aoi.db",
+        db: require("@akarui/aoi.db"),
         tables: ["main"],
         path: "./database/",
         extraOptions: {

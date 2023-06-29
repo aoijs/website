@@ -21,6 +21,6 @@ bot.command({
     name: "packageDependencies",
     code: `
     $packageDependencies
-    ` // Should return "aoi.db, axios, discord-api-types, discord.js, undici"
+    ` // Should return "@akarui/aoi.db, axios, discord-api-types, discord.js, undici"
 });
 ```

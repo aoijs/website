@@ -24,14 +24,14 @@ const bot = new AoiClient({
         messages : number,
     },
     database? : {
-        type : "aoi.db",
-        db : require("aoi.db"),
+        type : "@akarui/aoi.db",
+        db : require("@akarui/aoi.db"),
         tables : ["main"],
         path : "./database/",
         extraOptions : {
             dbType: "KeyValue",
         }
-    }, // Example refers to aoi.db, other databases are not included in this Example.
+    }, // Example refers to @akarui/aoi.db, other databases are not included in this Example.
     suppressAllErrors? : boolean,
     errorMessage? : string,
     aoiWarning? : boolean,

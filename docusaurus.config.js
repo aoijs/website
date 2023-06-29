@@ -1,20 +1,21 @@
 module.exports = {
-  title: 'aoi.js',
-  tagline: 'aoi.js documentation',
-  url: 'https://aoi.js.org',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/logo.png',
-  organizationName: 'akaruidevelopment', // Usually your GitHub org/user name.
-  projectName: 'aoi.js-documentation', // Usually your repo name.
+  title: "aoi.js",
+  tagline: "aoi.js documentation",
+  url: "https://aoi.js.org",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/logo.png",
+  organizationName: "akaruidevelopment", // Usually your GitHub org/user name.
+  projectName: "aoi.js-documentation", // Usually your repo name.
   trailingSlash: false,
   themeConfig: {
-    image: 'https://github.com/aoijs/website/blob/master/assets/images/aoijs-banner.png?raw=true',
+    image:
+      "https://github.com/aoijs/website/blob/main/assets/images/aoijs-banner.png?raw=true",
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/palenight'),
-      additionalLanguages: ['php', 'powershell', 'diff', 'typescript'],
+      theme: require("prism-react-renderer/themes/github"),
+      darkTheme: require("prism-react-renderer/themes/palenight"),
+      additionalLanguages: ["php", "powershell", "diff", "typescript"],
     },
     /*  
     i18n: {
@@ -22,67 +23,67 @@ module.exports = {
     locales: ['en', 'de', 'fr'],
     }, 
     */
-   // Translations later on
+    // Translations later on
     algolia: {
-      appId: '7NDV3UYBW5',
-      apiKey: 'dcc8ae1731cfa8322571b65e9a3e9faf',
-      indexName: 'aoi-js',
+      appId: "7NDV3UYBW5",
+      apiKey: "dcc8ae1731cfa8322571b65e9a3e9faf",
+      indexName: "aoi-js",
       contextualSearch: true,
     },
     announcementBar: {
-      id: 'support_us',
+      id: "support_us",
       content:
         'Join our <a target="_blank" rel="noopener noreferrer" href="https://aoi.js.org/invite">Discord Server</a> for real-time support!',
-      backgroundColor: '#ffffff',
-      textColor: '#000000',
+      backgroundColor: "#ffffff",
+      textColor: "#000000",
       isCloseable: false,
     },
     colorMode: {
-      defaultMode: 'dark',
+      defaultMode: "dark",
       disableSwitch: false,
       respectPrefersColorScheme: true,
     },
     navbar: {
       title: `aoi.js`,
       logo: {
-        alt: 'aoijs logo',
-        src: 'img/logo.png',
+        alt: "aoijs logo",
+        src: "img/logo.png",
       },
       items: [
         {
-          to: 'docs/',
-          activeBaseRegex: 'docs(?!/guides|/extensions|/community)',
-          label: 'Documentation',
-          position: 'left',
+          to: "docs/",
+          activeBaseRegex: "docs(?!/guides|/extensions|/community)",
+          label: "Documentation",
+          position: "left",
         },
         {
-          to: 'docs/guides/setup',
-          activeBasePath: 'docs/guides',
-          label: 'Guides',
-          position: 'left',
+          to: "docs/guides/setup",
+          activeBasePath: "docs/guides",
+          label: "Guides",
+          position: "left",
         },
         {
-          to: 'extensions/',
-          activeBasePath: 'extensions',
-          label: 'Akarui Extensions',
-          position: 'left',
+          to: "extensions/",
+          activeBasePath: "extensions",
+          label: "Akarui Extensions",
+          position: "left",
         },
         {
-          to: 'community/',
-          activeBasePath: 'community',
-          label: 'Community',
-          position: 'left',
+          to: "wikis/",
+          activeBasePath: "wikis",
+          label: "Community Wikis",
+          position: "left",
         },
+//      {
+//        to: 'community/',
+//        activeBasePath: 'community',
+//        label: 'Community',
+//        position: 'left',
+//      },
+// -- Implement comments later in community page
         {
-          to: 'wikis/guidelines',
-          activeBasePath: 'wikis',
-          label: 'Wikis',
-          position: 'right',
-        },
-        // Implement comments later in community page
-        {
-          type: 'docsVersionDropdown',
-          position: 'right',
+          type: "docsVersionDropdown",
+          position: "right",
         },
         /*
         {
@@ -91,105 +92,109 @@ module.exports = {
         }, 
         */
         {
-          to: 'https://discord.gg/HMUfMXDQsV',
-          label: 'Discord Server',
-          position: 'right',
+          to: "https://discord.gg/HMUfMXDQsV",
+          label: "Discord Server",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Documentation',
+          title: "Documentation",
           items: [
             {
-              label: 'Getting Started',
-              to: 'docs/guides/setup',
+              label: "Getting Started",
+              to: "docs/guides/setup",
             },
             {
-              label: 'Music',
-              to: 'extensions/aoi.music/aoimusic-introduction',
+              label: "Akarui Extensions",
+              to: "extensions/",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'Discord Server',
-              href: 'https://aoi.js.org/invite/',
+              label: "Discord Server",
+              href: "https://aoi.js.org/invite/",
             },
             {
-              label: 'Github',
-              href: 'https://github.com/AkaruiDevelopment/aoi.js/',
+              label: "Github",
+              href: "https://github.com/AkaruiDevelopment/aoi.js/",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'Contributing',
-              href: 'https://github.com/AkaruiDevelopment/aoi.js-documentation/blob/v6/.github/contributing-example.md/',
-            }
+              label: "Contributing",
+              href: "https://github.com/AkaruiDevelopment/aoi.js-documentation/blob/v6/.github/contributing-example.md/",
+            },
+            {
+              label: "Community Wikis",
+              to: "wikis/",
+            },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Akarui Development | AoiEngine v6.9.9`,
+      copyright: `Copyright © ${new Date().getFullYear()} Akarui Development | AoiEngine v7.0.0`,
     },
   },
-  themes: ['@docusaurus/theme-live-codeblock'],
+  themes: ["@docusaurus/theme-live-codeblock"],
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           sidebarCollapsible: true,
-          sidebarPath: require.resolve('./sidebars.js'),
-          lastVersion: '6.2.6',
+          sidebarPath: require.resolve("./sidebars.js"),
+          lastVersion: "6.2.6",
           versions: {
             current: {
-              label: '7.0.0',
-              path: '7.0.0',
+              label: "7.0.0",
+              path: "7.0.0",
             },
           },
         },
         gtag: {
-          trackingID: 'G-BFNTC2Y655',
+          trackingID: "G-BFNTC2Y655",
           anonymizeIP: true,
         },
         blog: {
-          path: 'forums',
-          routeBasePath: 'wikis',
+          path: "forums",
+          routeBasePath: "wikis",
           showReadingTime: false,
-          blogTitle: 'aoi.js Wikis',
-          blogSidebarCount: 'ALL',
-          postsPerPage: 'ALL',
+          blogTitle: "aoi.js Wikis",
+          blogSidebarCount: "ALL",
+          postsPerPage: "ALL",
         },
       },
     ],
   ],
   plugins: [
     [
-      '@docusaurus/plugin-content-docs',
+      "@docusaurus/plugin-content-docs",
       {
-        id: 'extensions',
-        path: 'extensions',
-        routeBasePath: 'extensions',
-        sidebarPath: require.resolve('./sidebarExtensions.js'),
+        id: "extensions",
+        path: "extensions",
+        routeBasePath: "extensions",
+        sidebarPath: require.resolve("./sidebarExtensions.js"),
         // ... other options
       },
     ],
     [
-      '@docusaurus/plugin-content-docs',
+      "@docusaurus/plugin-content-docs",
       {
-        id: 'community',
-        path: 'community',
-        routeBasePath: 'community',
-        sidebarPath: require.resolve('./sidebarCommunity.js'),
+        id: "community",
+        path: "community",
+        routeBasePath: "community",
+        sidebarPath: require.resolve("./sidebarCommunity.js"),
         // ... other options
       },
     ],

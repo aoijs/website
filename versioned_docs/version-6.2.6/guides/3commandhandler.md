@@ -38,8 +38,8 @@ const bot = new AoiClient({
     intents: ["Guilds", "GuildMessages", "MessageContent"],
     events: ["onMessage", "onInteractionCreate"],
     database: {
-        type: "aoi.db",
-        db: require("aoi.db"),
+        type: "@akarui/aoi.db",
+        db: require("@akarui/aoi.db"),
         tables: ["main"],
         path: "./database/",
         extraOptions: {

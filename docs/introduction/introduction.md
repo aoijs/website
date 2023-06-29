@@ -15,7 +15,7 @@ This is the brand new documentation for v7 development **THINGS MAY CHANGE**.
 - Everything on here is **SUBJECT TO CHANGE**.  
 :::
 
-![aoijs](https://github.com/aoijs/website/blob/master/assets/images/aoijs-banner.png?raw=true)
+![aoijs](https://github.com/aoijs/website/blob/main/assets/images/aoijs-banner.png?raw=true)
 
 ## Installation
 
