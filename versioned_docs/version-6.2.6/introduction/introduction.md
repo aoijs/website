@@ -46,7 +46,7 @@ const bot = new AoiClient({
     intents: ["MessageContent", "Guilds", "GuildMessages"],
     events: ["onMessage"],
     database: {
-        type: "@akarui/aoi.db",
+        type: "aoi.db",
         db: require("@akarui/aoi.db"),
         tables: ["main"],
         path: "./database/",
