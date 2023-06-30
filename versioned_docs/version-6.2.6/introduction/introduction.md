@@ -8,7 +8,7 @@ slug: /
 
 ## Features
 
-- Built-in support of **[database](https://www.npmjs.com/package/aoi.db)** by default and ready for multipurpose.
+- Built-in support of **[database](https://www.npmjs.com/package/@akarui/aoi.db)** by default and ready for multipurpose.
 - Built-in **630+** functions, simple and easy to learn.
 - Simple to learn, all in string-based and compact.
 - Support of extensions available to be used by the community.
@@ -47,7 +47,7 @@ const bot = new AoiClient({
     events: ["onMessage"],
     database: {
         type: "aoi.db",
-        db: require("aoi.db"),
+        db: require("@akarui/aoi.db"),
         tables: ["main"],
         path: "./database/",
         extraOptions: {

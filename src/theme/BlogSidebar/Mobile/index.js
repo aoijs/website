@@ -28,7 +28,7 @@ function BlogSidebarMobileSecondaryMenu({ sidebar }) {
           Submit Wiki
         </Link>
       </li>
-      <div className="menu__title"  style={{marginTop: "30px"}}>Recent Wikis</div>
+      <div className="menu__title"  style={{marginTop: "30px"}}>Wikis</div>
       {sidebar?.items?.map((item) => (
         <li key={item.permalink} className="menu__list-item">
           <Link

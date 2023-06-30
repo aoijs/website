@@ -35,6 +35,55 @@ Documentation: [aoi.music](../aoi.music/1introduction.md)
 #### Event Handling
 - Utilize event handlers to perform custom actions based on music-related events, such as track ended or queue started.
 
+## @akarui/aoi.parser
+
+Package URL: [npm](https://www.npmjs.com/package/@akarui/aoi.parser)
+
+Documentation: [aoi.parser](https://aoi-parser.vercel.app/)
+
+### Overview
+**@akarui/aoi.parser** is a custom message parser designed for the **aoi.js** message system. It provides powerful functionality to parse and manipulate message content, allowing you to create dynamic and interactive responses in your Discord bots.
+
+### Features
+
+#### Embed Parser
+- Create and customize embed messages with titles, descriptions, URLs, timestamps, colors, footers, images, thumbnails, authors, and fields.
+
+#### Component Parser
+- Parse and handle interactive components such as buttons, dropdowns, and select menus in your messages.
+
+#### File Parser
+- Convert text into attachable files and attach files from URLs to your messages.
+
+#### Options Parser
+- Configure options for your messages, including text-to-speech (TTS), allowed mentions, replies, ephemeral messages, and fetching interaction responses.
+
+The **@akarui/aoi.parser** package enhances the capabilities of **aoi.js** by providing convenient parsing functions and expanding the possibilities of message manipulation in Discord bots.
+
+
+## @akarui/aoi.db
+
+Package URL: [npm](https://www.npmjs.com/package/aoi.db)
+
+Documentation: [aoi.db](https://akaruidevelopment.github.io/aoi.db/)
+
+### Overview
+**aoi.db** is a collection of various database types designed to handle different data requirements. It provides a flexible and efficient solution for managing data in your Discord bots or other projects.
+
+### Features
+
+#### KeyValue
+- A simple database that stores key-value pairs.
+- Suitable for general-purpose data storage and retrieval.
+
+#### WideColumn
+- A database that stores data in a column format.
+- Ideal for organizing and accessing separate columns related to a primary column.
+
+#### Remote
+- A database that stores data on a remote server.
+- Allows for separating database-intensive operations from your main project or process.
+
 ## @akarui/aoi.panel
 
 ![aoi.panel](https://raw.githubusercontent.com/aoijs/website/main/assets/images/aoipanel-banner.png)

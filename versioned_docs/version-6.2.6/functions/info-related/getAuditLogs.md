@@ -32,9 +32,8 @@ $getAuditLogs[guildID;userID?;limit?;action?;format?]
 | {action}            | Will return the action itself                                     |
 | {id}                | Will return the action/auditlog ID                                |
 
-<details>
-  <summary><h3> AuditLog Events </h3></summary>
- 
+## AuditLogEvents
+
 | EVENT                                   | VALUE | DESCRIPTION                                               |       OBJECT CHANGED       |
 | --------------------------------------- | :---: | --------------------------------------------------------- | :------------------------: |
 | GuildUpdate                             |   1   | Server settings were updated                              |           Guild            |
@@ -92,7 +91,6 @@ $getAuditLogs[guildID;userID?;limit?;action?;format?]
 | AutoModerationFlagToChannel             |  144  | Message was flagged by Auto Moderation                    |                            |
 | AutoModerationUserCommunicationDisabled |  145  | Member was timed out by Auto Moderation                   |                            |
 
-</details>
 
 ## Example(s)
 

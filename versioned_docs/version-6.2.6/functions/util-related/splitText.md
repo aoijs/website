@@ -27,7 +27,7 @@ bot.command({
     name: 'splitText',
     code: `
   $splitText[2]
-  $textSplit[aoi.db//aoi.js;//]
+  $textSplit[@akarui/aoi.db//aoi.js;//]
   `
 });
 ```
