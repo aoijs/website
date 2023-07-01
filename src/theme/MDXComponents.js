@@ -9,7 +9,6 @@ import { Tooltip } from "react-tooltip";
 import SubmitForm from "@site/src/components/Forms";
 import InputField from "@site/src/components/InputField";
 import Slash from "@site/src/components/SlashPreview";
-import Showcase from "@site/src/components/Showcase";
 
 export default {
   ...MDXComponents,
@@ -21,6 +20,5 @@ export default {
   Tabs,
   Slash,
   Tooltip,
-  TabItem,
-  Showcase
+  TabItem
 };
