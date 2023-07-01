@@ -176,15 +176,6 @@ module.exports = {
           showReadingTime: false,
           blogTitle: "aoi.js Wikis",
           blogSidebarCount: "ALL",
-          feedOptions: {
-            createFeedItems: async (params) => {
-              const { blogPosts, defaultCreateFeedItems, ...rest } = params;
-              return defaultCreateFeedItems({
-                blogPosts: blogPosts.filter((item, index) => index < 0),
-                ...rest,
-              });
-            },
-          },
         },
       },
     ],
