@@ -64,7 +64,7 @@ module.exports = [{
   type: "interaction",
   $if: "old",
   code: `
-  $kick[$slashOption[user];$guildID;$slashOption[reason]]
+  $kick[$guildID;$slashOption[user];$slashOption[reason]]
   $suppressErrors[{options:{ephemeral: true}}
 {extraOptions:{interaction: true}}{newEmbed:{author:Error:https#COLON#//static.thenounproject.com/png/3688947-200.png}{description:It seems that there is a problem while executing this command.}{color:#000000}}]
   

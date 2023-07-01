@@ -2,6 +2,7 @@
 title: Introduction
 description: Setting up aoi.music with ease.
 id: aoimusic-introduction
+pagination_prev: null
 ---
 
 ### Table of Content

@@ -10,7 +10,8 @@ import Cookies from "@site/src/components/CookieComponent";
 
 const features = [
   {
-    imageUrl: 'https://raw.githubusercontent.com/aoijs/website/main/assets/images/aoijs-banner.png?raw=true',
+    imageUrl:
+      "https://raw.githubusercontent.com/aoijs/website/main/assets/images/aoijs-banner.png?raw=true",
   },
 ];
 
@@ -47,22 +48,17 @@ function Home() {
           <div className={styles.buttons}>
             <Link
               className={clsx(
-                "button button--outline button--secondary button--lg",
-                styles.getStarted
+                "button button--outline button--secondary button--lg"
               )}
               to={useBaseUrl("docs/")}
             >
               npm install aoi.js
             </Link>
-          </div>
-          <br />
-          <div className={styles.buttons}>
             <Link
               className={clsx(
-                "button button--outline button--secondary button--lg",
-                styles.getStarted
+                "button button--outline button--secondary button--lg"
               )}
-              to={useBaseUrl("wikis/")}
+              to={useBaseUrl("wikis/guidelines")}
             >
               Community Wikis
             </Link>

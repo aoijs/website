@@ -24,6 +24,10 @@
   justify-content: center;
 }
 
+.buttons a {
+  margin: 5px;
+}
+
 .features {
   display: flex;
   align-items: center;
@@ -76,4 +80,76 @@
 .tag.active {
   background-color: var(--ifm-color-primary);
   color: white;
+}
+
+/* styles.module.css */
+
+/* styles.module.css */
+
+.fadeIn {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.creditContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.creditItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.1); /* Add background color with slight visibility */
+  border-radius: 10px; /* Add round corners to the container */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.creditItem:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.avatar {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  margin-right: 45px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.name {
+  margin-bottom: 10px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 30px;
+  color: #888;
+}
+
+.creditItem:nth-child(even) .avatar {
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+.creditItem:nth-child(even) .details {
+  text-align: right;
 }

@@ -1,14 +1,39 @@
 ---
-title: Introduction
-description: What is aoi.js extensions 
+title: Introduction of Akarui Extensions
+description: Each official extension explained.
 slug: /
 ---
 
-# Extension Packages: @akarui/aoi.music and @akarui/aoi.panel
+## Table of Contents:
+- **[@akarui/aoi.music](#akaruiaoimusic)**
+  - **[Overview](#overview)**
+  - **[Features](#features)**
+    - **[Music Playback](#music-playback)**
+    - **[Song Information](#song-information)**
+    - **[User Interaction](#user-interaction)**
+    - **[Event Handling](#event-handling)**
+- **[@akarui/aoi.parser](#akaruiaoiparser)**
+  - **[Overview](#overview-1)**
+  - **[Features](#features-1)**
+    - **[Embed Parser](#embed-parser)**
+    - **[Component Parser](#component-parser)**
+    - **[File Parser](#file-parser)**
+    - **[Options Parser](#options-parser)**
+- **[@akarui/aoi.db](#akaruiaoidb)**
+  - **[Overview](#overview-2)**
+  - **[Features](#features-2)**
+    - **[KeyValue](#keyvalue)**
+    - **[WideColumn](#widecolumn)**
+    - **[Remote](#remote)**
+- **[@akarui/aoi.panel](#akaruiaoipanel)**
+  - **[Overview](#overview-3)**
+  - **[Features](#features-3)**
+    - **[Real-time Monitoring](#real-time-monitoring)**
+    - **[Command Management](#command-management)**
+    - **[Server Configuration](#server-configuration)**
+    - **[Error Tracking](#error-tracking)**
 
-Table of Contents:
-- [@akarui/aoi.music](#akaruiaoimusic)
-- [@akarui/aoi.panel](#akaruiaoipanel)
+---
 
 ## @akarui/aoi.music
 
@@ -35,6 +60,8 @@ Documentation: [aoi.music](../aoi.music/1introduction.md)
 #### Event Handling
 - Utilize event handlers to perform custom actions based on music-related events, such as track ended or queue started.
 
+---
+
 ## @akarui/aoi.parser
 
 Package URL: [npm](https://www.npmjs.com/package/@akarui/aoi.parser)
@@ -60,6 +87,7 @@ Documentation: [aoi.parser](https://aoi-parser.vercel.app/)
 
 The **@akarui/aoi.parser** package enhances the capabilities of **aoi.js** by providing convenient parsing functions and expanding the possibilities of message manipulation in Discord bots.
 
+---
 
 ## @akarui/aoi.db
 
@@ -83,6 +111,8 @@ Documentation: [aoi.db](https://akaruidevelopment.github.io/aoi.db/)
 #### Remote
 - A database that stores data on a remote server.
 - Allows for separating database-intensive operations from your main project or process.
+
+---
 
 ## @akarui/aoi.panel
 

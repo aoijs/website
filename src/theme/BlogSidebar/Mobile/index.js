@@ -28,6 +28,16 @@ function BlogSidebarMobileSecondaryMenu({ sidebar }) {
           Submit Wiki
         </Link>
       </li>
+      <li key="/wikis/showcase" className="menu__list-item">
+        <Link
+          isNavLink
+          to="/wikis/"
+          className="menu__link"
+          activeClassName="menu__link--active"
+        >
+          Showcase
+        </Link>
+      </li>
       <div className="menu__title"  style={{marginTop: "30px"}}>Wikis</div>
       {sidebar?.items?.map((item) => (
         <li key={item.permalink} className="menu__list-item">
@@ -46,7 +56,7 @@ function BlogSidebarMobileSecondaryMenu({ sidebar }) {
 }
 
 export default function BlogSidebarMobile({ sidebar }) {
-  const excludedPermalinks = ["/wikis/submit", "/wikis/guidelines"];
+  const excludedPermalinks = ["/wikis/submit", "/wikis/guidelines", "/wikis/showcase"];
 
   return (
     <NavbarSecondaryMenuFiller
