@@ -23,7 +23,8 @@ Reloads and executes all commands without restarting your bot (changes are also 
 > The **old version** of the $if function was used here. For more information, check out the [documentation](https://aoi.js.org/docs/functions/misc-related/if) of the $if function.
 
 ---
-```
+
+```js
 module.exports = {
     name: "reload",
     aliases: ["rr"],
