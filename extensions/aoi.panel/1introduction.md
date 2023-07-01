@@ -2,6 +2,7 @@
 title: Introduction
 description: Setting up aoi.panel with ease.
 id: aoipanel-introduction
+pagination_prev: null
 ---
 
 # @akarui/aoi.panel Documentation
@@ -15,7 +16,7 @@ Use the hyperlinks to jump quickly across files.
 - aoi.panel, panel class and its parameters.
     - [Jump to File](./panel.md)
 - Advanced Features, usage of multiple accounts, custom pages and more.
-    - [Jump to File](./advanced.md)  
+    - [Jump to File](./advanced.md)
 
 :::
 

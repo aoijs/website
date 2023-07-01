@@ -22,6 +22,8 @@ export default function BlogPostItemHeaderAuthor({ author, className }) {
     "@usersatoshi",
     "@ahoemi",
     "@snowytealatte",
+    "@wansie",
+    "@jollyjolli"
   ];
   const mod = [
     "@dodogames",

@@ -31,7 +31,7 @@ So in this wiki, I will give you the ticketing system code with functions like t
 ## Installations needed
 The following libraries/modules are needed:
 - `npm i aoi.js` (AOI)
-- `npm i aoi.parser` (AOI Parser)
+- `npm i @akarui/aoi.parser` (AOI Parser)
 - `npm i discord.js` (Discord.js)
 - `npm i discord-html-transcripts` (Transcript)
 

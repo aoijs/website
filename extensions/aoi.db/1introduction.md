@@ -2,6 +2,8 @@
 title: Introduction
 description: Setting up aoi.db with ease.
 id: aoidb-introduction
+pagination_prev: null
+pagination_next: null
 ---
 
 :::info Documentation
@@ -21,7 +23,7 @@ In-depth documentation can be found **[here](https://akaruidevelopment.github.io
 ### Installation
 
 <Tabs groupId="pref-install">
-  <TabItem value="i-npm" label="NPM">
+  <TabItem value="i-npm" label="npm">
 
   **node.js 17.0.0 or newer is required.**
   ```bash
@@ -29,7 +31,7 @@ In-depth documentation can be found **[here](https://akaruidevelopment.github.io
   ```
   
   </TabItem>
-  <TabItem value="i-yarn" label="Yarn">
+  <TabItem value="i-yarn" label="yarn">
 
   **node.js 17.0.0 or newer is required.**
   ```bash
@@ -44,9 +46,9 @@ In-depth documentation can be found **[here](https://akaruidevelopment.github.io
 ## Database Types
 - KeyValue - A simple database that stores key value pairs
 ```js
-  const { KeyValue } = require("aoi.db") //commonjs
+  const { KeyValue } = require("@akarui/aoi.db") //commonjs
   // or
-  import { KeyValue } from "aoi.db" //esm
+  import { KeyValue } from "@akarui/aoi.db" //esm
 
   // Basic Setup
   const db = new KeyValue({
@@ -62,9 +64,9 @@ In-depth documentation can be found **[here](https://akaruidevelopment.github.io
 ```
 - WideColumn - A database that stores data in a column
 ```js
-  const { WideColumn, Column } = require("aoi.db") //commonjs
+  const { WideColumn, Column } = require("@akarui/aoi.db") //commonjs
   // or
-  import { WideColumn, Column } from "aoi.db" //esm
+  import { WideColumn, Column } from "@akarui/aoi.db" //esm
 
   // Basic Setup
 
@@ -104,9 +106,9 @@ In-depth documentation can be found **[here](https://akaruidevelopment.github.io
 - Remote - A database that stores data in a remote server
 #### Database Server
 ```js
-const { Receiver } = require("aoi.db"); // commonJS
+const { Receiver } = require("@akarui/aoi.db"); // commonJS
 // or
-import { Receiver } from "aoi.db"; // ESM
+import { Receiver } from "@akarui/aoi.db"; // ESM
 
 const rec = new Receiver({
   logEncrypt: "a-32-characters-long-string-here",
@@ -128,9 +130,9 @@ rec.connect();
 #### Client
 
 ```js
-const { Transmitter, TransmitterFlags } = require("aoi.db"); // commonJS
+const { Transmitter, TransmitterFlags } = require("@akarui/aoi.db"); // commonJS
 // or
-import { Transmitter, TransmitterFlags } from "aoi.db"; // ESM
+import { Transmitter, TransmitterFlags } from "@akarui/aoi.db"; // ESM
 
 const db = new Transmitter({
   path: "websocket path",

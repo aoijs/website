@@ -69,18 +69,18 @@ module.exports = {
           position: "left",
         },
         {
-          to: "wikis/",
+          to: "wikis/guidelines",
           activeBasePath: "wikis",
           label: "Community Wikis",
           position: "left",
         },
-//      {
-//        to: 'community/',
-//        activeBasePath: 'community',
-//        label: 'Community',
-//        position: 'left',
-//      },
-// -- Implement comments later in community page
+        //      {
+        //        to: 'community/',
+        //        activeBasePath: 'community',
+        //        label: 'Community',
+        //        position: 'left',
+        //      },
+        // -- Implement comments later in community page
         {
           type: "docsVersionDropdown",
           position: "right",
@@ -92,7 +92,7 @@ module.exports = {
         }, 
         */
         {
-          to: "https://discord.gg/HMUfMXDQsV",
+          to: "https://aoi.js.org/invite",
           label: "Discord Server",
           position: "right",
         },
@@ -136,7 +136,11 @@ module.exports = {
             },
             {
               label: "Community Wikis",
-              to: "wikis/",
+              to: "wikis/guidelines",
+            },
+            {
+              label: "Credits",
+              to: "credits/",
             },
           ],
         },
@@ -154,10 +158,10 @@ module.exports = {
           showLastUpdateTime: true,
           sidebarCollapsible: true,
           sidebarPath: require.resolve("./sidebars.js"),
-          lastVersion: "6.2.6",
+          lastVersion: "6.3.0",
           versions: {
             current: {
-              label: "7.0.0",
+              label: "7.0.0 (dev)",
               path: "7.0.0",
             },
           },
@@ -172,7 +176,15 @@ module.exports = {
           showReadingTime: false,
           blogTitle: "aoi.js Wikis",
           blogSidebarCount: "ALL",
-          postsPerPage: "ALL",
+          feedOptions: {
+            createFeedItems: async (params) => {
+              const { blogPosts, defaultCreateFeedItems, ...rest } = params;
+              return defaultCreateFeedItems({
+                blogPosts: blogPosts.filter((item, index) => index < 0),
+                ...rest,
+              });
+            },
+          },
         },
       },
     ],

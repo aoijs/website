@@ -2,6 +2,7 @@
 title: The Panel Class
 description: All about aoi.panel's Panel class.
 id: aoipanel-panel-class
+pagination_next: null
 ---
 
 # The Panel Class

@@ -44,7 +44,7 @@ Categories: $channelCount[$guildID;Category]
   $addField[Members information;
 Total: $membersCount[$guildID;all;true]
 Humans: $membersCount[$guildID;all;false]
-Bots: $botCount[$guildID]
+Bots: $guildBotCount[$guildID]
 ]
   $thumbnail[$get[serverimage]]
   $cooldown[5s; Slow down! Don't spam the command!

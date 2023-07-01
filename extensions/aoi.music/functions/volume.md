@@ -2,6 +2,7 @@
 title: $volume
 description: $volume will set or return the current volume.
 id: volume
+pagination_next: null
 ---
 
 `$volume` will set or return the current volume.

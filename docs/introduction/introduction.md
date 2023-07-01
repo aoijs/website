@@ -24,7 +24,7 @@ This is the brand new documentation for v7 development **THINGS MAY CHANGE**.
 
   **node.js LTS or newer is required.**
   ```bash
-  npm install aoi.js
+  npm install aoi.js@dev
   ```
 
   </TabItem>
@@ -70,4 +70,4 @@ bot.command({
 - [Website](https://aoi.js.org)
 - [NPM](https://www.npmjs.com/package/aoi.js)
 - [Github](https://github.com/AkaruiDevelopment/aoi.js)
-- [Discord Support Server](https://discord.gg/HMUfMXDQsV)
+- [Discord Support Server](https://aoi.js.org/invite)

@@ -2,6 +2,8 @@
 title: Introduction
 description: Setting up aoi.parser with ease.
 id: aoiparser-introduction
+pagination_next: null
+pagination_prev: null
 ---
 
 ![logo](https://github.com/AkaruiDevelopment/aoi.parser/blob/main/.github/assets/logo.gif?raw=true)
@@ -26,7 +28,7 @@ In-depth documentation can be found **[here](https://aoi-parser.vercel.app/)**.
 ### Installation
 
 <Tabs groupId="pref-install">
-  <TabItem value="i-npm" label="NPM">
+  <TabItem value="i-npm" label="npm">
 
   **node.js 17.0.0 or newer is required.**
   ```bash
@@ -34,7 +36,7 @@ In-depth documentation can be found **[here](https://aoi-parser.vercel.app/)**.
   ```
   
   </TabItem>
-  <TabItem value="i-yarn" label="Yarn">
+  <TabItem value="i-yarn" label="yarn">
 
   **node.js 17.0.0 or newer is required.**
   ```bash
@@ -48,7 +50,7 @@ In-depth documentation can be found **[here](https://aoi-parser.vercel.app/)**.
 
 ```js
 const { Util } = require("aoi.js");
-const { setup } = require("aoi.parser");
+const { setup } = require("@akarui/aoi.parser");
  
 /*
 This will update All the parsers in aoi.js
