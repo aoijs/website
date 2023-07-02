@@ -50,7 +50,7 @@ Bots: $guildBotCount[$guildID]
   $cooldown[5s; Slow down! Don't spam the command!
 Time left: \`%time%\`]
   
-  $let[verifylevel;$replaceText[$replaceText[$replaceText[$replaceText[$GuildVerificationLevel;1;Low];2;Medium];3;High];4;Very High]]
+  $let[verifylevel;$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$GuildVerificationLevel;1;Low];2;Medium];3;High];4;Very High];0;None]]
   $let[content;$replaceText[$replaceText[$replaceText[$guildContentFilter[$guildID];0;Disabled];1;Medium];2;High]]
   $let[serverimage;$replaceText[$replaceText[$checkCondition[$guildIcon==];false;$guildIcon];true;$userAvatar[$clientID]]]
 `
