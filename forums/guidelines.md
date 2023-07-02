@@ -38,6 +38,6 @@ By following these guidelines, we can collectively create and maintain a valuabl
 
 :::info Ready to submit?
 
-Head to the [submittion Page](./introduction.md)!
+Head to the [submission Page](./introduction.md)!
 
 :::
