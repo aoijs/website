@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkAoiEngine=self.webpackChunkAoiEngine||[]).push([[98382],{8314:e=>{e.exports=JSON.parse('{"permalink":"/wikis/tags/aoi-music","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"aoi.js Wikis"}')}}]);
