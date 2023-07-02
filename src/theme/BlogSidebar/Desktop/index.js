@@ -4,7 +4,7 @@ import Link from "@docusaurus/Link";
 import { translate } from "@docusaurus/Translate";
 import styles from "./styles.module.css";
 export default function BlogSidebarDesktop({ sidebar }) {
-  const excludedPermalinks = ["/wikis/submit", "/wikis/guidelines", "/wikis/showcase"];
+  const excludedPermalinks = ["/wikis/submit", "/wikis/guidelines", "/wikis/tags"];
   return (
     <aside className="col col--3">
       <nav
@@ -39,7 +39,7 @@ export default function BlogSidebarDesktop({ sidebar }) {
               Submit Wiki
             </Link>
           </li>
-          <li key="/wikis/showcase" className={styles.sidebarItem}>
+          <li key="/wikis/tags" className={styles.sidebarItem}>
             <Link
               isNavLink
               to="/wikis/"
