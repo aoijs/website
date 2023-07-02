@@ -175,6 +175,7 @@ module.exports = {
           routeBasePath: "wikis",
           showReadingTime: false,
           blogTitle: "aoi.js Wikis",
+          blogDescription: "A community-powered Wiki page will all sort of ideas and codes.",
           blogSidebarCount: "ALL",
         },
       },
