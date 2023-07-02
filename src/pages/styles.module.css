@@ -56,11 +56,12 @@
   padding: 3px 10px;
   margin-top: 0px;
   border-radius: 7px;
-  border: 1px solid var(--ifm-color-primary);
-  color: var(--ifm-color-primary);
+  border: none; /* Remove the border */
+  color: #3f51b5; /* Replace --ifm-color-primary with actual color value */
   background-color: transparent;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  animation: color-transition 3s infinite; /* Keep the text animation */
 }
 
 .placeholderText {
@@ -69,7 +70,7 @@
 }
 
 .tag:hover {
-  background-color: var(--ifm-color-primary);
+  background-color: #3f51b5; /* Replace --ifm-color-primary with actual color value */
   color: white;
 }
 
@@ -78,11 +79,9 @@
 }
 
 .tag.active {
-  background-color: var(--ifm-color-primary);
+  background-color: #3f51b5; /* Replace --ifm-color-primary with actual color value */
   color: white;
 }
-
-/* styles.module.css */
 
 /* styles.module.css */
 
@@ -152,4 +151,147 @@
 
 .creditItem:nth-child(even) .details {
   text-align: right;
+}
+
+.packageStats {
+  padding: 40px 0;
+}
+
+.packageStatsBox {
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.packageStatsTitle {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: color-transition 3s infinite;
+}
+
+@keyframes color-transition {
+  0% {
+    color: #3f51b5;
+  }
+  50% {
+    color: #1976d2;
+  }
+  100% {
+    color: #3f51b5;
+  }
+}
+
+.statsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slide-in 1s ease-in-out;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.stat {
+  padding: 20px;
+  margin: 0 10px;
+  text-align: center;
+  animation: fade-in 1s ease-in-out;
+}
+
+.stat h4 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #3f51b5;
+  margin-bottom: 10px;
+}
+
+.stat p {
+  font-size: 16px;
+  color: #333;
+}
+
+.animatedTitle {
+  animation: color-transition 3s infinite;
+}
+
+@keyframes color-transition {
+  0% {
+    color: #3f51b5;
+  }
+  50% {
+    color: #1976d2;
+  }
+  100% {
+    color: #3f51b5;
+  }
+}
+
+.animatedText {
+  animation: fade-in 1s infinite alternate;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Additional styles for the hero subtitle animation */
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  animation: color-transition 6s infinite, forwards 1s infinite alternate;
+}
+
+@keyframes color-transition {
+  0% {
+    color: #3f51b5;
+  }
+  50% {
+    color: #1976d2;
+  }
+  100% {
+    color: #3f51b5;
+  }
+}
+/* Additional styles for the rounded buttons */
+.roundedButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.roundedButton {
+  margin: 0 8px;
+}
+
+.githubButton {
+  background-color: #24292e;
+  color: #fff;
 }

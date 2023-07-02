@@ -1,0 +1,6 @@
+html[data-theme='dark']  .footer--dark {
+    --ifm-footer-background-color: #171717;
+}
+html[data-theme='light']  .footer--light {
+    --ifm-footer-background-color: #ffffff;
+}
