@@ -15,6 +15,7 @@ pagination_next: null
 ---
 
 # Steps
+
 **1.** If you have an `eval` command use this:
 
 ```js
@@ -53,7 +54,6 @@ $createApplicationCommand[global;kick;Kicks a user from the server.;true;slash;[
   `
 }]
 ```
-
 
 **2.** Create a new file in your command handler (name it however you want), then paste this code into your file:
 
@@ -133,19 +133,23 @@ $onlyIf[$slashOption[user]!=$authorID;{options:{ephemeral: true}}
 What do these variables do?
 
 > ***modLog*** - This variable enables or disables the moderation logs.
-> 
+>
 > ***modCha*** - If modLog is set to true, the moderation logs will be sent to the channel specified in this variable.
 
 # Note
+
 Make sure that you have the required `intents` and `events` to ensure the proper function of this command.
 
 My intents and events:
+
 ```js
 intents: ["MessageContent", "Guilds", "GuildMessages", "GuildBans", "GuildWebhooks", "GuildPresences", "DirectMessages", "GuildMembers"],
 events: ["onMessage", "onMessageDelete", "onMessageUpdate", "onMessageDeleteBulk", "onInteractionCreate", "onGuildJoin", "onJoin"]
 ```
-.
 
 .
 
-You could replace (Crossire) `$findRole[Crossfire]` to whatever role you want to give access to the command, you could add more roles if you want. Like this `$hasAnyRole[$guildID;$authorID;$findRole[Crossfire];$findRole[Moderator]]`.
+.
+
+You could replace (Crossire) `$findRole[Crossfire]` to whatever role you want to give access to the command, you could
+add more roles if you want. Like this `$hasAnyRole[$guildID;$authorID;$findRole[Crossfire];$findRole[Moderator]]`.

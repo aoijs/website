@@ -14,8 +14,6 @@ pagination_prev: null
 pagination_next: null
 ---
 
-
-
 ```js
 module.exports = {
 name: "$alwaysExecute",
@@ -36,7 +34,9 @@ $suppressErrors
 ```
 
 ### Error?
+
 probably modules not found
+
 - go to shell/terminal and type `npm i bad-words-next`
 
 ### Good Luck 

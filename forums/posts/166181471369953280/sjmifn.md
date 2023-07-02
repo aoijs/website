@@ -19,9 +19,12 @@ pagination_next: null
 > install this NPM: googleapis
 
 ## For the apiKey's
-**[Link 1](https://developers.google.com/custom-search/v1/overview?hl=es-419)** **[Link 2](https://programmablesearchengine.google.com/controlpanel/create)**
+
+**[Link 1](https://developers.google.com/custom-search/v1/overview?hl=es-419)** *
+*[Link 2](https://programmablesearchengine.google.com/controlpanel/create)**
 
 # CODE:
+
 ```js
 const { google } = require("googleapis");
 
@@ -95,6 +98,7 @@ bot.functionManager.createFunction({
 ```
 
 # EXAMPLE:
+
 **`$netSearch[query;format;limit]`**
 
 ### Vars:
@@ -106,11 +110,12 @@ bot.functionManager.createFunction({
 - {snippet}: Represents a brief snippet or description of each search result.
 
 #### EXAMPLES OF VARS:
-- Display only the titles: 
-$netSearch[$message;{title};5] 
+
+- Display only the titles:
+  $netSearch[$message;{title};5]
 
 - Display the titles and URLs:
-$netSearch[$message;{title} - {link};5] 
+  $netSearch[$message;{title} - {link};5]
 
 - Display the titles, URLs, and snippets:
-$netSearch[$message;{title} - {link}\n{snippet};5]
+  $netSearch[$message;{title} - {link}\n{snippet};5]

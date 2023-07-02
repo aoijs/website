@@ -7,14 +7,12 @@ authors:
   userid: "964024743172915220"
   url: https://discord.com/users/964024743172915220
   image_url: https://cdn.discordapp.com/avatars/964024743172915220/a_153765879b794acfd5fd72ce3f6cd713.gif
-tags: ["v6", "aoi.js"]
+tags: [ "v6", "aoi.js" ]
 hide_table_of_contents: false
 enableComments: true
 pagination_prev: null
 pagination_next: null
 ---
-
-
 
 ```js
 module.exports = {

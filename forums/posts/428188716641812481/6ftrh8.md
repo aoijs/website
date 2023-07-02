@@ -15,6 +15,7 @@ pagination_next: null
 ---
 
 ## Usage
+
 - Put the given code in your index.js
 - `$fetchInvite[inviteCode;property]` for example, `$fetchInvite[czCgVfh4Hu;code]` which would return the invite code.
 

@@ -14,8 +14,6 @@ pagination_prev: null
 pagination_next: null
 ---
 
-
-
 ```js
 module.exports = {
 name: "howgamer",

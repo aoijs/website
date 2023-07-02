@@ -14,8 +14,6 @@ pagination_prev: null
 pagination_next: null
 ---
 
-
-
 ```js
 $djsEval[let texts = "PUT YOUR TEXT HERE"
 let parts = texts.split('');
@@ -25,12 +23,15 @@ for (let i = parts.length - 1; i >= 0; i--) {
 }
 output;true]
 ```
+
 ## Usage
+
 Put your text in the code and the result will be reversed text of your input.
 
 ![reverseText](https://media.discordapp.net/attachments/1022533781040672839/1121226275374239784/image0.jpg?raw=true)
 
 ### Where to use this?
-I made it in `$djsEval` so u can use it anywhere inside your code 
+
+I made it in `$djsEval` so u can use it anywhere inside your code
 
 -I know right its has no actual uses, but might be for fun bots-
