@@ -15,7 +15,7 @@ pagination_next: null
 ---
 
 # Function:
-$progressBar[current:total:style?;main character?;secondary character?;scale?]
+`$progressBar[current:total:style?;main character?;secondary character?;scale?]`
 
 ## Options:
 - current = current number.
@@ -86,4 +86,4 @@ bot.functionManager.createFunction({
 ```
 
 ### Preview:
-https://cdn.discordapp.com/attachments/1100434750558175242/1125833267199881236/image.png
+![image](https://cdn.discordapp.com/attachments/1100434750558175242/1125833267199881236/image.png)
