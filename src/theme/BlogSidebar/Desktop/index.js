@@ -42,11 +42,11 @@ export default function BlogSidebarDesktop({ sidebar }) {
           <li key="/wikis/tags" className={styles.sidebarItem}>
             <Link
               isNavLink
-              to="/wikis/"
+              to="/wikis/tags"
               className={styles.sidebarItemLink}
               activeClassName={styles.sidebarItemLinkActive}
             >
-              Showcase
+              Tags
             </Link>
           </li>
         </ul>

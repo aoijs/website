@@ -14,8 +14,6 @@ pagination_prev: null
 pagination_next: null
 ---
 
-
-
 ```js
 bot.functionManager.createFunction({
   name: "$randomWord",
@@ -49,11 +47,14 @@ data.result = output
   }
 })
 ```
-### Usage 
+
+### Usage
+
 `$randomWord[Hi:Hello:Bye:Sayonara;2]`
 will return 2 random words from Hi, Hello, Bye and Sayonara
 
 ### Where do i use it?
+
 - Paste it at bottom of your main file.
 - You can also edit it and use in handler
-Mention me in support server for any help.
+  Mention me in support server for any help.

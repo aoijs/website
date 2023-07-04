@@ -14,8 +14,6 @@ pagination_prev: null
 pagination_next: null
 ---
 
-
-
 ```js
 module.exports = {
   name: "serverinfo",
@@ -56,5 +54,10 @@ Time left: \`%time%\`]
 `
 }
 ```
+
 # Note
-This command requires the intent `GuildPresences` to be added into your bot's main file (aka index.js) for the total members shown to be correct. If this doesn't work then eval `$cacheMembers[$guildID]` in the server where you used serverinfo command (while having the intent added as well) and then try again. Feel free to ask for help in support if needed!
+
+This command requires the intent `GuildPresences` to be added into your bot's main file (aka index.js) for the total
+members shown to be correct. If this doesn't work then eval `$cacheMembers[$guildID]` in the server where you used
+serverinfo command (while having the intent added as well) and then try again. Feel free to ask for help in support if
+needed!

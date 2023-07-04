@@ -14,8 +14,6 @@ pagination_prev: null
 pagination_next: null
 ---
 
-
-
 ```js
 bot.functionManager.createFunction({
   name: "$toToggleCase",
@@ -38,11 +36,14 @@ data.result = output
 }
 })
 ```
+
 ## Usage
+
 `$toToggleCase[This Is useless fr]`   
 This will result in `tHIS iS uSELESS fR`
 
 ![image](https://media.discordapp.net/attachments/902553397281030208/1120917182365306981/image0.jpg)
 
 ## Where to use this code?
+
 Place this in your bottom of main file aka index.js

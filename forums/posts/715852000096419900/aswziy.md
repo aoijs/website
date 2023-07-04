@@ -15,6 +15,7 @@ pagination_next: null
 ---
 
 # Code
+
 ```js
 bot.functionManager.createFunction({
   name: "$commands",
@@ -38,15 +39,19 @@ return { code: d.util.setCode(data) }
 }
 })
 ```
+
 # Usage
+
 ```
 $commands[category:misc]
 ```
+
 Option and value are separated by :   
 Invalid option and value will cause error
 Its CaSeSeNsItIvE
 
 ## Image Example
+
 ![example](https://media.discordapp.net/attachments/1022533781040672839/1123866753219432508/image0.jpg?raw=true)
 
 #### Ping for help!

@@ -15,13 +15,18 @@ pagination_next: null
 ---
 
 # Author button
-Author button is a way to allow the person who executed the command to be the only one able to interact with buttons rather than everyone. This is useful to prevent interrupting with other people who're using your bot commands, for example such as blackjack game, help command, etc.
+
+Author button is a way to allow the person who executed the command to be the only one able to interact with buttons
+rather than everyone. This is useful to prevent interrupting with other people who're using your bot commands, for
+example such as blackjack game, help command, etc.
 
 # Requirements
+
 * Aoi.parser installed (for ephemeral messages) otherwise ephemeral won't work except for the rest of the code
 * Must have the event `onInteractionCreate` for this to work (if it wasn't obvious)
 
 # Example author button code
+
 ```js
 module.exports = [{
     name: "authorButton",
@@ -46,12 +51,19 @@ module.exports = [{
 ```
 
 # Explanation
-We start by adding the button using the function `$addButton`. 
 
-We then make sure that it has `_$authorID` within the custom id like `customID_$authorID` but then we start to create an author interaction using `$interactionData[customId]` which allows us to return the custom id name of the button we have just created below.
+We start by adding the button using the function `$addButton`.
 
-As a result, we remove the property `name:` from the button command and we start separating the custom id and the author id using `$advancedTextSplit` as we have `_` in our custom id which makes it easy to do that!
+We then make sure that it has `_$authorID` within the custom id like `customID_$authorID` but then we start to create an
+author interaction using `$interactionData[customId]` which allows us to return the custom id name of the button we have
+just created below.
 
-Finally, we then add our first `$onlyIf` at the bottom of our interaction code to check if the button has been clicked by returning it's custom id name and second `$onlyif` to check if the user is the same person who just ran the command to prevent other users from interacting with the author who ran the command.
+As a result, we remove the property `name:` from the button command and we start separating the custom id and the author
+id using `$advancedTextSplit` as we have `_` in our custom id which makes it easy to do that!
 
-Obviously, we respond to the button using `$interactionReply` and we're done after that! Our author button should work now!
+Finally, we then add our first `$onlyIf` at the bottom of our interaction code to check if the button has been clicked
+by returning it's custom id name and second `$onlyif` to check if the user is the same person who just ran the command
+to prevent other users from interacting with the author who ran the command.
+
+Obviously, we respond to the button using `$interactionReply` and we're done after that! Our author button should work
+now!

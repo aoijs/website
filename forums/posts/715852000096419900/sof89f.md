@@ -17,7 +17,9 @@ pagination_next: null
 List of codes for colored and styled console logging.
 
 # List of codes
+
 ### Color
+
 - Black: `\\u001b\\[30mThis is black text\\u001b\\[0m`
 - Red: `\\u001b\\[31mThis is red text\\u001b\\[0m`
 - Green: `\\u001b\\[32mThis is green text\\u001b\\[0m`
@@ -36,6 +38,7 @@ List of codes for colored and styled console logging.
 - Bright Cyan: `\\u001b\\[96mThis is bright cyan text\\u001b\\[0m`
 
 ### Style
+
 - Bold: `\\u001b\\[1mThis is bold text\\u001b\\[0m`
 - Dim: `\\u001b\\[2mThis is dim text\\u001b\\[0m`
 - Underline: `\\u001b\\[4mThis is underlined text\\u001b\\[0m`
@@ -44,12 +47,15 @@ List of codes for colored and styled console logging.
 - Strikethrough: `\\u001b\\[9mStrikethrough text\\u001b\\[0m`
 
 ### Background
+
 - `\\u001b\\[7mThis is white background text\\u001b\\[0m`
 
 ## Usage
+
 ```js
 $djsEval[console.log("\\u001b\\[7mThis is white background text\\u001b\\[0m")]
 ```
+
 #### Color might change depending of host and platform
 
 ![colored](https://media.discordapp.net/attachments/902553397281030208/1122012102270390292/image0.jpg?raw=true)

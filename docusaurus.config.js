@@ -14,7 +14,7 @@ module.exports = {
       "https://github.com/aoijs/website/blob/main/assets/images/aoijs-banner.png?raw=true",
     prism: {
       theme: require("prism-react-renderer/themes/github"),
-      darkTheme: require("prism-react-renderer/themes/palenight"),
+      darkTheme: require("prism-react-renderer/themes/dracula"),
       additionalLanguages: ["php", "powershell", "diff", "typescript"],
     },
     /*  
@@ -34,14 +34,14 @@ module.exports = {
       id: "support_us",
       content:
         'Join our <a target="_blank" rel="noopener noreferrer" href="https://aoi.js.org/invite">Discord Server</a> for real-time support!',
-      backgroundColor: "#ffffff",
-      textColor: "#000000",
+      backgroundColor: "#1976d2",
+      textColor: "#ffffff",
       isCloseable: false,
     },
     colorMode: {
       defaultMode: "dark",
       disableSwitch: false,
-      respectPrefersColorScheme: true,
+      respectPrefersColorScheme: false,
     },
     navbar: {
       title: `aoi.js`,
@@ -72,6 +72,12 @@ module.exports = {
           to: "wikis/guidelines",
           activeBasePath: "wikis",
           label: "Community Wikis",
+          position: "left",
+        },
+        {
+          to: "credits/",
+          activeBasePath: "credits",
+          label: "Credits",
           position: "left",
         },
         //      {
@@ -154,6 +160,8 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
+          path: 'docs',
+          routeBasePath: 'docs',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           sidebarCollapsible: true,
@@ -165,6 +173,9 @@ module.exports = {
               path: "7.0.0",
             },
           },
+        },
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
         },
         gtag: {
           trackingID: "G-BFNTC2Y655",

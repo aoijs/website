@@ -49,18 +49,21 @@ bot.functionManager.createFunction({
 ## NOTE: If your commands are in /commands/ no change nothing, but if the file name has other name, change line 10.
 
 # HOW TO USE IT
+
 ```js
 $fileNames[misc;separator (optional)]
 ```
 
 **Example:**
 
-Code: 
+Code:
 
 ```js
 $fileNames[utility; | ]
 ```
+
 Return:
+
 ```js
 file1 | file2 | file3
 ```
