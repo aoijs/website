@@ -24,7 +24,7 @@ const bot = new AoiClient({
         messages : number,
     },
     database? : {
-        type : "@akarui/aoi.db",
+        type : "aoi.db",
         db : require("@akarui/aoi.db"),
         tables : ["main"],
         path : "./database/",
@@ -47,8 +47,8 @@ const bot = new AoiClient({
 
 ---
 
-| OPTION              | INPUT   | EXPLANATION                                                                             |
-| ------------------- | ------- | --------------------------------------------------------------------------------------- |
+| OPTION              |  INPUT  | EXPLANATION                                                                             |
+| ------------------- | :-----: | --------------------------------------------------------------------------------------- |
 | `token`             | string  | Your Discord Bot Token                                                                  |
 | `prefix`            | string  | Your Discord Bot Prefix                                                                 |
 | `intents`           | string  | Required Intents                                                                        |
@@ -64,4 +64,4 @@ const bot = new AoiClient({
 | `errorMessage`      | string  | Send a given error message when `suppressAllErrors` executes.                           |
 | `aoiWarning`        | boolean | Disable aoiWarning logs which are sent to your console.                                 |
 | `aoiLogs`           | boolean | Disable aoiLogs which are sent to your console.                                         |
-| `respondOnEdit`     | strng   | Give your bot the ability to respond to edited messages and execute the given commands. |
+| `respondOnEdit`     | string  | Give your bot the ability to respond to edited messages and execute the given commands. |

@@ -60,7 +60,7 @@ Usage:
   <summary><h3> Button Types </h3></summary>
 
 | Name      | Value | Color                     |                                                                     |
-|-----------|-------|---------------------------|---------------------------------------------------------------------|
+| --------- | ----- | ------------------------- | ------------------------------------------------------------------- |
 | Primary   | 1     | blurple                   | `{button:Example Button!:primary:customID:false}`                   |
 | Secondary | 2     | grey                      | `{button:Example Button!:secondary:customID:false}`                 |
 | Success   | 3     | green                     | `{button:Example Button!:success:customID:false}`                   |

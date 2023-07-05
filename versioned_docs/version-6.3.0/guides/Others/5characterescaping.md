@@ -11,7 +11,7 @@ Character escaping can be useful especially when using the embed parser.
 ---
 
 | CHARACTER  | ESCAPED           | ALTERNATIVE |
-|------------|-------------------|-------------|
+| ---------- | ----------------- | ----------- |
 | `[`        | `#RIGHT#`         | `\[`        |
 | `]`        | `#LEFT#`          | `\]`        |
 | `;`        | `#SEMI#`          | `\;`        |

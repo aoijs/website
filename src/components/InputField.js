@@ -5,53 +5,21 @@ const InputField = ({ name, id, value, onChange, type, error, charCount }) => {
     width: "100%",
     padding: "8px",
     borderRadius: "4px",
-    border: `1px solid ${error ? "red" : "#A9A9A9"}`,
+    backgroundColor: "rgba(0, 0, 0, 0.1)",
+    border: `1px solid ${error ? "red" : "#3f51b5"}`,
+    transition: "background-color 0.3s, color 0.3s",
     fontFamily: "var(--ifm-font-family-base)",
     fontSize: "14px",
-    color: "var(--aoijs-color)",
-    background: "var(--aoijs-color)",
+    fontColor: "white",
     position: "relative",
+    outline: "none",
+    boxShadow: "2px 3px 3px rgba(0, 0, 0, 0.1)",
   };
-
-  const [avatarUrl, setAvatarUrl] = useState("");
 
   const handleInputChange = (event) => {
     onChange(event);
   };
 
-  /*
-  const handleInputBlur = async () => {
-    if (type !== "number") {
-      return;
-    }
-    if (value === "") {
-      return;
-    }
-    if (value.length < 18) {
-      return;
-    }
-    let response;
-    try {
-      response = await fetch(
-        `https://someapi.frenchwomen.repl.co/uinfo/${value}`
-      );
-    } catch {
-      return;
-    }
-    try {
-      const text = await response.text();
-      if (text.startsWith("<")) {
-        return;
-      }
-      const data = JSON.parse(text);
-      if (data && data.avatar) {
-        setAvatarUrl(data.avatar);
-      }
-    } catch (error) {
-      return;
-    }
-  };
-*/
   let inputElement = null;
 
   switch (type) {
@@ -67,7 +35,7 @@ const InputField = ({ name, id, value, onChange, type, error, charCount }) => {
             required
           />
           <div
-            style={{ fontSize: "12px", color: charCount >= 500 ? "red" : "" }}
+            style={{ fontSize: "12px", color: charCount >= 500 ? "red" : "#3f51b5" }}
           >
             {charCount === undefined ? "0" : charCount}/{500}
           </div>
@@ -106,15 +74,11 @@ const InputField = ({ name, id, value, onChange, type, error, charCount }) => {
             id={id}
             value={value}
             onChange={handleNumberChange}
-            // onBlur={handleInputBlur}
             style={inputStyles}
             inputMode="numeric"
             pattern="[0-9]*"
             required
           />
-          {avatarUrl && (
-            <img src={avatarUrl} alt="Avatar" style={avatarStyle} />
-          )}
         </div>
       );
       break;
@@ -144,7 +108,7 @@ const InputField = ({ name, id, value, onChange, type, error, charCount }) => {
             required
           />
           <div
-            style={{ fontSize: "12px", color: charCount >= 50 ? "red" : "", marginTop: "5px" }}
+            style={{ fontSize: "12px", color: charCount >= 50 ? "red" : "#3f51b5", marginTop: "5px" }}
           >
             {charCount === undefined ? "0" : charCount}/{50}
           </div>
@@ -156,13 +120,3 @@ const InputField = ({ name, id, value, onChange, type, error, charCount }) => {
 };
 
 export default InputField;
-
-const avatarStyle = {
-  position: "absolute",
-  top: "50%",
-  right: "8px",
-  transform: "translateY(-50%)",
-  width: "24px",
-  height: "24px",
-  borderRadius: "50%",
-};

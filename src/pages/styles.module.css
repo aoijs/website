@@ -5,6 +5,8 @@
  * and scoped locally.
  */
 
+/* index.js */
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
@@ -40,6 +42,8 @@
   width: 400px;
 }
 
+/* Forms.js */
+
 .tagContainer {
   display: flex;
   flex-wrap: wrap;
@@ -56,12 +60,13 @@
   padding: 3px 10px;
   margin-top: 0px;
   border-radius: 7px;
-  border: none; /* Remove the border */
-  color: #3f51b5; /* Replace --ifm-color-primary with actual color value */
-  background-color: transparent;
+  border: 1px solid;
+  position: relative;
+  color: #3f51b5;
+  background-color: rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-  animation: color-transition 3s infinite; /* Keep the text animation */
+  animation: color-transition 3s infinite;
 }
 
 .placeholderText {
@@ -70,8 +75,9 @@
 }
 
 .tag:hover {
-  background-color: #3f51b5; /* Replace --ifm-color-primary with actual color value */
+  background-color: #3f51b5;
   color: white;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
 }
 
 .tag:focus {
@@ -79,11 +85,14 @@
 }
 
 .tag.active {
-  background-color: #3f51b5; /* Replace --ifm-color-primary with actual color value */
-  color: white;
+  background-color: #3f51b5;
+  animation: none;
+  color: whitesmoke;
+  outline: none;
+  box-shadow: 3px 3px 3px grey;
 }
 
-/* styles.module.css */
+/* credits.js */
 
 .fadeIn {
   opacity: 1;
@@ -104,9 +113,9 @@
   transition: opacity 0.5s ease-in;
   width: 100%;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.1); /* Add background color with slight visibility */
-  border-radius: 10px; /* Add round corners to the container */
-  padding: 20px; /* Add padding for spacing */
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .header {
@@ -152,6 +161,42 @@
 .creditItem:nth-child(even) .details {
   text-align: right;
 }
+
+@media (max-width: 900px) {
+  .creditContainer {
+    flex-wrap: wrap;
+  }
+
+  .creditItem {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px;
+    margin-bottom: 25px;
+  }
+
+  .avatar {
+    width: 120px;
+    height: 120px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  .details {
+    text-align: left;
+    width: 100%;
+  }
+
+  .name,
+  .creditItem:nth-child(even) .name,
+  .title,
+  .creditItem:nth-child(even) .title {
+    font-size: 20px;
+    margin-bottom: 4px;
+    overflow-wrap: break-word;
+  }
+}
+
+/* index.js */
 
 .packageStats {
   padding: 40px 0;
@@ -262,7 +307,6 @@
   }
 }
 
-/* Additional styles for the hero subtitle animation */
 .title {
   font-size: 24px;
   margin-bottom: 20px;
@@ -280,7 +324,7 @@
     color: #3f51b5;
   }
 }
-/* Additional styles for the rounded buttons */
+
 .roundedButtons {
   display: flex;
   justify-content: center;

@@ -75,17 +75,17 @@ You can create error messages like the following;
 aoiError.fnError(d, type, data, message)
 ```
 
-| TYPE         | RETURNS                                                        |
-|--------------|----------------------------------------------------------------|
-| member       | Invalid Member ID Provided In ...                              |
-| message      | Invalid Message ID Provided In ...                             |
-| channel      | Invalid Channel ID Provided In ...                             |
-| user         | Invalid User ID Provided In ...                                |
-| role         | Invalid Role ID Provided In ...                                |
-| guild        | Invalid Guild ID Provided In ...                               |
-| emoji        | Invalid Emoji ID Provided In ...                               |
-| option       | Invalid Option ID Provided In ...                              |
-| custom       | Given Custom Error Message                                     |
+| TYPE    | RETURNS                            |
+| ------- | ---------------------------------- |
+| member  | Invalid Member ID Provided In ...  |
+| message | Invalid Message ID Provided In ... |
+| channel | Invalid Channel ID Provided In ... |
+| user    | Invalid User ID Provided In ...    |
+| role    | Invalid Role ID Provided In ...    |
+| guild   | Invalid Guild ID Provided In ...   |
+| emoji   | Invalid Emoji ID Provided In ...   |
+| option  | Invalid Option ID Provided In ...  |
+| custom  | Given Custom Error Message         |
 
 ```js
 aoiError.consoleError(name, e)

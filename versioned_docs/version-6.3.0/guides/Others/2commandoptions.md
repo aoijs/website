@@ -19,7 +19,7 @@ module.exports = [{
 ```
 
 | OPTION        | INPUT   | EXPLANATION                                                                                      |
-|---------------|---------|--------------------------------------------------------------------------------------------------|
+| ------------- | ------- | ------------------------------------------------------------------------------------------------ |
 | `name`        | string  | Command Name.                                                                                    |
 | `aliases`     | string  | Aliases, work the same way as `name`.                                                            |
 | `nonPrefixed` | boolean | Set your command as non prefixed, meaning it can be executed without the actual prefix.          |
@@ -38,7 +38,7 @@ module.exports = [{
 ```
 
 | OPTION    | INPUT  | EXPLANATION                                                   |
-|-----------|--------|---------------------------------------------------------------|
+| --------- | ------ | ------------------------------------------------------------- |
 | `name`    | string | Command Name.                                                 |
 | `type`    | string | Defines the command type, any event, `interaction` or `loop`. |
 | `channel` | string | Where the output may go.                                      |
@@ -56,7 +56,7 @@ module.exports = [{
 ```
 
 | OPTION      | INPUT  | EXPLANATION                                                                                                                          |
-|-------------|--------|--------------------------------------------------------------------------------------------------------------------------------------|
+| ----------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------ |
 | `name`      | string | Command Name.                                                                                                                        |
 | `type`      | string | Defines the command type.                                                                                                            |
 | `prototype` | string | Defines what the command will be triggered by. <br /> 1. **button** <br /> 2. **selectMenu** <br /> 4. **slash** <br /> 5. **modal** |
@@ -76,7 +76,7 @@ module.exports = [{
 ```
 
 | OPTION             | INPUT   | EXPLANATION                                                   |
-|--------------------|---------|---------------------------------------------------------------|
+| ------------------ | ------- | ------------------------------------------------------------- |
 | `name`             | string  | Command Name.                                                 |
 | `type`             | string  | Defines the command type, any event, `interaction` or `loop`. |
 | `channel`          | string  | Where the output may go.                                      |

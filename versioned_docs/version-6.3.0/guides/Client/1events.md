@@ -186,7 +186,7 @@ const bot = new AoiClient({
     prefix: "DISCORD BOT PREFIX",
     intents: ["Guilds", "GuildMessages", "MessageContent"],
     events: ["onMessage", "onJoin", "onLeave", "onBanAdd", "onBanRemove"]
-    ...
+    /* ... */
 });
 ```
 
@@ -194,10 +194,10 @@ const bot = new AoiClient({
 
 ```javascript
 module.exports = [{
-    name: "name",
-    type: "join",
-    channel: "channelID",
-    code: `code`
+    name: string
+    type: string, // Event name
+    channel: integer, 
+    code: ...
 }]
 ```
 

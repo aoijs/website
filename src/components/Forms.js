@@ -172,7 +172,6 @@ const SubmitForm = () => {
       return;
     }
 
-    const baseFileName = title.toLowerCase().replace(/\s+/g, "-");
     const randomString = Math.random().toString(36).substring(7);
     const fileName = `${discordUID}/${randomString}.md`;
 
@@ -247,7 +246,6 @@ ${code}`;
         error={fieldErrors.title}
         charCount={charCount.title === undefined ? "0" : charCount.title}
       />
-      {fieldErrors.title && <p style={{ color: "red" }}>Title is required</p>}
       <br />
       <h3>
         Description
@@ -270,9 +268,6 @@ ${code}`;
           charCount.description === undefined ? "0" : charCount.description
         }
       />
-      {fieldErrors.description && (
-        <p style={{ color: "red" }}>Description is required</p>
-      )}
       <br />
       <h3>
         Discord User ID
@@ -292,11 +287,6 @@ ${code}`;
         error={!isUIDValid || fieldErrors.discordUID}
       />
       {!isUIDValid && <p style={{ color: "red" }}>Invalid user</p>}
-      {fieldErrors.discordUID && (
-        <p style={{ color: "red", marginTop: "10px" }}>
-          Discord User ID is required
-        </p>
-      )}
       <br />
       <h3>
         Content of Wiki
@@ -316,9 +306,6 @@ ${code}`;
         required
         error={fieldErrors.code}
       />
-      {fieldErrors.code && (
-        <p style={{ color: "red" }}>The Wiki Content is required</p>
-      )}
       <h5 style={{ marginBottom: "0.5rem" }}>
         <span style={{ verticalAlign: "middle" }}>
           Preview
@@ -333,18 +320,21 @@ ${code}`;
       <div
         style={{
           width: "100%",
+          padding: "8px",
           borderRadius: "4px",
-          fontSize: "14px",
-          color: "var(--aoijs-color)",
-          background: "var(--aoijs-color)",
-          position: "auto",
+          border: `1px solid #3f51b5`,
+          backgroundColor: "rgba(0, 0, 0, 0.1)",
+          transition: "background-color 0.3s, color 0.3s",
           fontFamily: "var(--ifm-font-family-base)",
+          fontSize: "14px",
+          fontColor: "white",
+          position: "relative",
+          outline: "none",
+          boxShadow: "2px 3px 3px rgba(0, 0, 0, 0.1)",
         }}
       >
         <div
           style={{
-            border: "1px solid #A9A9A9",
-            borderRadius: "4px",
             overflow: "hidden",
           }}
         >
@@ -370,7 +360,21 @@ ${code}`;
                 <br />
                 <br />
                 Did you know that you can use markdown to make your Wiki look
-                even better?
+                even better? <br /> <br />
+                <div
+                  style={{
+                    fontSize: "18px",
+                    color: "gray",
+                    border: "1px solid #3f51b5",
+                    borderRadius: "3px",
+                    margin: "4px",
+                    padding: "10px",
+                  }}
+                >
+                  ![Alt Text](Image Link) for images! <br />
+                  ## For Headers! <br />
+                  - For Lists! <br />
+                </div>
               </div>
             )}
             <ReactMarkdown>{code}</ReactMarkdown>
@@ -407,7 +411,13 @@ ${code}`;
         ))}
       </div>
       {fieldErrors.tags && (
-        <p style={{ color: "red", marginTop: "10px" }}>
+        <p
+          style={{
+            color: "red",
+            marginTop: "10px",
+            fontFamily: "var(--ifm-font-family-base)",
+          }}
+        >
           At least one tag is required
         </p>
       )}

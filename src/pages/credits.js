@@ -5,8 +5,7 @@ import Layout from "@theme/Layout";
 import styles from "./styles.module.css";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
-// Assuming you have an array of team members with their data
-const teamMembers = [
+const team = [
   {
     name: "Leref",
     title: "Creator of aoi.js",
@@ -74,7 +73,7 @@ function Credits() {
       <div className="container" ref={containerRef}>
         <div className={`${styles.header} shadow--tl`} />
         <div className={styles.creditContainer}>
-          {teamMembers.map((member, index) => (
+          {team.map((member, index) => (
             <div key={index} className={styles.creditItem}>
               <img
                 src={member.avatar}
