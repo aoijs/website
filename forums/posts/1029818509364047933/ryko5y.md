@@ -1,10 +1,6 @@
 ---
 title: "Random memes"
-description: "They are funny images of trending memes totally in Spanish.
-
-Requires the package: meme-muichiro-english
-
-Install it: npm i meme-muichiro-spanish"
+description: "They are funny images of trending memes totally in Spanish."
 authors:
   name: "@pixeles10"
   title: Member - 1029818509364047933
@@ -18,6 +14,15 @@ pagination_prev: null
 pagination_next: null
 ---
 
+:::info
+
+Requires the package: meme-muichiro-english
+
+Install it: npm i meme-muichiro-spanish
+
+:::
+
+```js
 module.exports = {
   name: "memes",
   code: `
@@ -31,3 +36,4 @@ d.vars['memes'] = meme.data.url
 d.data.vars = d.vars
 })()]`
 }
+```
