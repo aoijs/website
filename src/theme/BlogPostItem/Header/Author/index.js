@@ -16,37 +16,34 @@ export default function BlogPostItemHeaderAuthor({ author, className }) {
   const staff = [
     "@dodogames",
     "@supremesupreme",
-    "@josipfx",
     "@faf4a",
-    "@satoshisaysnya",
     "@usersatoshi",
     "@ahoemi",
     "@snowytealatte",
     "@wansie",
-    "@jollyjolli"
+    "@jollyjolli",
+    "@manu_1025"
   ];
   const mod = [
     "@dodogames",
     "@supremesupreme",
     "@faf4a",
-    "@satoshisaysnya",
     "@usersatoshi",
   ];
   const creator = ["@leref"];
   const contributor = ["@faf4a", "@dodogames"];
   const booster = [
-    "@Zeke ♡",
+    "@.kuray.",
     "@Alien Abd",
-    "@supremesupreme",
+    "@Zeke ♡",
+    "@artemcurious",
     "@creitingameplays",
+    "@eduard.irm",
+    "@kzzzakz",
     "@leref",
-    "@satoshisaysnya",
-    "@theparadox0018",
+    "@neussdev",
     "@valentineu0",
-    "@wansie",
-    "@あ┃𝚒𝚣𝚊𝚌𝚑𝚘𝚌",
-    "@angelusdelux",
-    "@.kuray."
+    "@wansie"
   ];
 
   const lowercaseName = name.toLowerCase();
