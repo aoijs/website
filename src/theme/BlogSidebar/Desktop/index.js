@@ -3,8 +3,22 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import { translate } from "@docusaurus/Translate";
 import styles from "./styles.module.css";
+
 export default function BlogSidebarDesktop({ sidebar }) {
-  const excludedPermalinks = ["/wikis/submit", "/wikis/guidelines", "/wikis/tags"];
+  const excludedPermalinks = [
+    "/wikis/submit",
+    "/wikis/guidelines",
+    "/wikis/tags",
+  ];
+
+  const sortedItems = sidebar.items
+    .filter((item) => !excludedPermalinks.includes(item.permalink))
+    .sort((a, b) => a.title.localeCompare(b.title));
+
+  const capitalizeFirstChar = (str) => {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  };
+
   return (
     <aside className="col col--3">
       <nav
@@ -54,23 +68,18 @@ export default function BlogSidebarDesktop({ sidebar }) {
           Wikis
         </div>
         <ul className={clsx(styles.sidebarItemList, "clean-list")}>
-          {sidebar.items.map((item) => {
-            if (excludedPermalinks.includes(item.permalink)) {
-              return null;
-            }
-            return (
-              <li key={item.permalink} className={styles.sidebarItem}>
-                <Link
-                  isNavLink
-                  to={item.permalink}
-                  className={styles.sidebarItemLink}
-                  activeClassName={styles.sidebarItemLinkActive}
-                >
-                  {item.title}
-                </Link>
-              </li>
-            );
-          })}
+          {sortedItems.map((item) => (
+            <li key={item.permalink} className={styles.sidebarItem}>
+              <Link
+                isNavLink
+                to={item.permalink}
+                className={styles.sidebarItemLink}
+                activeClassName={styles.sidebarItemLinkActive}
+              >
+                {capitalizeFirstChar(item.title)}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </aside>

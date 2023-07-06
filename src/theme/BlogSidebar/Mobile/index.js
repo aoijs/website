@@ -4,7 +4,15 @@ import clsx from "clsx";
 import { NavbarSecondaryMenuFiller } from "@docusaurus/theme-common";
 
 function BlogSidebarMobileSecondaryMenu({ sidebar }) {
-  // console.log(sidebar?.items)
+  const excludedPermalinks = ["/wikis/submit", "/wikis/guidelines", "/wikis/tags"];
+  const sortedItems = sidebar?.items
+    .filter((item) => !excludedPermalinks.includes(item.permalink))
+    .sort((a, b) => a.title.localeCompare(b.title));
+
+  const capitalizeFirstChar = (str) => {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  };
+
   return (
     <ul className="menu__list">
       <div className="menu__title">Introduction</div>
@@ -38,8 +46,10 @@ function BlogSidebarMobileSecondaryMenu({ sidebar }) {
           Tags
         </Link>
       </li>
-      <div className="menu__title"  style={{marginTop: "30px"}}>Wikis</div>
-      {sidebar?.items?.map((item) => (
+      <div className="menu__title" style={{ marginTop: "30px" }}>
+        Wikis
+      </div>
+      {sortedItems.map((item) => (
         <li key={item.permalink} className="menu__list-item">
           <Link
             isNavLink
@@ -47,7 +57,7 @@ function BlogSidebarMobileSecondaryMenu({ sidebar }) {
             className="menu__link"
             activeClassName="menu__link--active"
           >
-            {item.title}
+            {capitalizeFirstChar(item.title)}
           </Link>
         </li>
       ))}
@@ -57,6 +67,13 @@ function BlogSidebarMobileSecondaryMenu({ sidebar }) {
 
 export default function BlogSidebarMobile({ sidebar }) {
   const excludedPermalinks = ["/wikis/submit", "/wikis/guidelines", "/wikis/tags"];
+  const sortedItems = sidebar?.items
+    .filter((item) => !excludedPermalinks.includes(item.permalink))
+    .sort((a, b) => a.title.localeCompare(b.title));
+
+  const capitalizeFirstChar = (str) => {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  };
 
   return (
     <NavbarSecondaryMenuFiller
@@ -64,9 +81,10 @@ export default function BlogSidebarMobile({ sidebar }) {
       props={{
         sidebar: {
           ...sidebar,
-          items: sidebar?.items?.filter(
-            (item) => !excludedPermalinks.includes(item.permalink)
-          ),
+          items: sortedItems.map((item) => ({
+            ...item,
+            title: capitalizeFirstChar(item.title),
+          })),
         },
       }}
     />
