@@ -9,7 +9,7 @@ authors:
   url: https://discord.com/users/949588732498018324
   image_url: https://raw.githubusercontent.com/Faf4a/website/main/assets/images/avatars/949588732498018324.png
 tags: [ "aoi.js","v6" ]
-hide_table_of_contents: false
+hide_table_of_contents: true
 enableComments: true
 pagination_prev: null
 pagination_next: null

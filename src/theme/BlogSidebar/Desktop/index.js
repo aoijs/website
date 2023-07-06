@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import { translate } from "@docusaurus/Translate";
@@ -11,12 +11,24 @@ export default function BlogSidebarDesktop({ sidebar }) {
     "/wikis/tags",
   ];
 
+  const [isSortedAlphabetically, setIsSortedAlphabetically] = useState(false);
+
   const sortedItems = sidebar.items
     .filter((item) => !excludedPermalinks.includes(item.permalink))
-    .sort((a, b) => a.title.localeCompare(b.title));
+    .sort((a, b) => {
+      if (isSortedAlphabetically) {
+        return a.title.localeCompare(b.title);
+      } else {
+        return b.date - a.date;
+      }
+    });
 
   const capitalizeFirstChar = (str) => {
     return str.charAt(0).toUpperCase() + str.slice(1);
+  };
+
+  const handleSortChange = () => {
+    setIsSortedAlphabetically((prevValue) => !prevValue);
   };
 
   return (
@@ -30,7 +42,7 @@ export default function BlogSidebarDesktop({ sidebar }) {
         })}
       >
         <div className={clsx(styles.sidebarItemTitle, "margin-bottom--md")}>
-          Introduction
+          <span>Introduction</span>
         </div>
         <ul className={clsx(styles.sidebarItemList, "clean-list")}>
           <li key="/wikis/guidelines" className={styles.sidebarItem}>
@@ -66,9 +78,17 @@ export default function BlogSidebarDesktop({ sidebar }) {
         </ul>
         <div className={clsx(styles.sidebarItemTitle, "margin-bottom--md")}>
           Wikis
+          <button
+            className={clsx(styles.activeButton, {
+              [styles.activeButton]: isSortedAlphabetically,
+            })}
+            onClick={handleSortChange}
+          >
+            {isSortedAlphabetically ? "A-Z" : "Newest First"}
+          </button>
         </div>
         <ul className={clsx(styles.sidebarItemList, "clean-list")}>
-          {sortedItems.map((item) => (
+          {sortedItems.map((item, index) => (
             <li key={item.permalink} className={styles.sidebarItem}>
               <Link
                 isNavLink
@@ -77,6 +97,9 @@ export default function BlogSidebarDesktop({ sidebar }) {
                 activeClassName={styles.sidebarItemLinkActive}
               >
                 {capitalizeFirstChar(item.title)}
+                {index < 3 && !isSortedAlphabetically && (
+                  <span className={styles.newTag}>NEW</span>
+                )}
               </Link>
             </li>
           ))}

@@ -2,7 +2,7 @@
 title: Submit Wiki
 description: "Submit a Wiki which will then be showcased on this website!"
 slug: submit
-hide_table_of_contents: false
+hide_table_of_contents: true
 pagination_next: null
 pagination_prev: null
 --- 
