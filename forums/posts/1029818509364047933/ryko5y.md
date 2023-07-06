@@ -10,7 +10,7 @@ authors:
   title: Member - 1029818509364047933
   userid: "1029818509364047933"
   url: https://discord.com/users/1029818509364047933
-  image_url: https://cdn.discordapp.com/avatars/1029818509364047933/3223898f440e1bba59398a164bd3b38f.png
+  image_url: https://raw.githubusercontent.com/Faf4a/website/main/assets/images/avatars/1029818509364047933.png
 tags: ["aoi.js","v6"]
 hide_table_of_contents: false
 enableComments: true

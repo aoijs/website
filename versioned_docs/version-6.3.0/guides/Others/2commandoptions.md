@@ -6,6 +6,13 @@ id: commandoptions
 
 **This page is about command options and what they do.**
 
+## Table of Contents
+
+- [Base Commands](#base-commands)
+- [Event Commands](#event-commands)
+- [Interaction Commands](#interaction-commands)
+- [Loop Commands](#loop-commands)
+
 ### Base Commands
 
 ```js
@@ -68,7 +75,7 @@ module.exports = [{
 module.exports = [{
     name: string,
     type: string,
-    channel?: boolean,
+    channel?: integer,
     executeOnStartup?: boolean,
     every: number,
     code: string

@@ -7,7 +7,7 @@ authors:
   title: Member - 949588732498018324
   userid: "949588732498018324"
   url: https://discord.com/users/949588732498018324
-  image_url: https://cdn.discordapp.com/avatars/949588732498018324/e8daecdc63c0c4faa5e11c8b1967acc9.png
+  image_url: https://raw.githubusercontent.com/Faf4a/website/main/assets/images/avatars/949588732498018324.png
 tags: [ "aoi.js","v6" ]
 hide_table_of_contents: false
 enableComments: true

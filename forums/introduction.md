@@ -9,7 +9,7 @@ pagination_prev: null
 
 Welcome to Wikis, this is still **experimental**.
 
-:::warning Before Submitting
+:::info Before Submitting
 
 Read the guidelines or your Wiki will possibly get denied for not following the guidelines.
 

@@ -5,7 +5,7 @@ id: aoimusic-introduction
 pagination_prev: null
 ---
 
-### Table of Content
+### Table of Contents
 
 - **[Installation](#installation)**
 - **[Setup](#example-usage)**

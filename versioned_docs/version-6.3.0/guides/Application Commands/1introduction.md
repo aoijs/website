@@ -4,7 +4,7 @@ description: This guide will be covering the basics about Slash Commands and the
 id: interactioncommands
 ---
 
-### Table of Content
+### Table of Contents
 
 - **[Introduction][introduction]**
 - **[Getting Started][getting-started]**

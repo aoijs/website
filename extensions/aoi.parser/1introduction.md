@@ -14,7 +14,7 @@ In-depth documentation can be found **[here](https://aoi-parser.vercel.app/)**.
 
 :::
 
-### Table of Content
+### Table of Contents
 
 - **[Installation](#installation)**
 - **[Setup](#example-usage)**

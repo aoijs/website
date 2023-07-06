@@ -6,7 +6,7 @@ id: events
 
 ## Using Events
 
-### Table of Content
+### Table of Contents
 
 - **[Understanding Events][1]**
 - **[Types of Events][2]**

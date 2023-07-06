@@ -4,7 +4,7 @@ description: This page is covering all permissions and intents.
 id: permissionsandintents
 ---
 
-### Table of Content
+### Table of Contents
 
 - **[Gateaway Intents][1]**
   - **[Example Usage of Intents](#example-usage-of-intents)**

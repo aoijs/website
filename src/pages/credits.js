@@ -10,35 +10,35 @@ const team = [
     name: "Leref",
     title: "Creator of aoi.js",
     avatar:
-      require("../../assets/images/avatars/1d8a70beff987337aa2173dd26cd4c47.png")
+      require("../../assets/images/avatars/608358453580136499.png")
         .default,
   },
   {
     name: "USERSATOSHI",
     title: "Co-Owner & Developer",
     avatar:
-      require("../../assets/images/avatars/8a030ced659478ce8e83b888fb5a6a78.png")
+      require("../../assets/images/avatars/715755977483223081.png")
         .default,
   },
   {
     name: "bumblebee_3",
     title: "Developer",
     avatar:
-      require("../../assets/images/avatars/e91d0509022bc6696f8189a37fe9f4cd.png")
+      require("../../assets/images/avatars/818377414367379487.png")
         .default,
   },
   {
     name: "Fafa",
     title: "Community Manager & Documentation Maintainer",
     avatar:
-      require("../../assets/images/avatars/635c1dca728b68c2fa329dbcb3330204.png")
+      require("../../assets/images/avatars/428188716641812481.png")
         .default,
   },
   {
     name: "snowytealatte",
     title: "Artist Manager",
     avatar:
-      require("../../assets/images/avatars/2fe598e4c72d389e1698da27e2eb8fc9.png")
+      require("../../assets/images/avatars/818377414367379487.png")
         .default,
   },
 ];

@@ -4,7 +4,8 @@ description: Each official extension explained.
 slug: /
 ---
 
-## Table of Contents:
+## Table of Contents
+
 - **[@akarui/aoi.music](#akaruiaoimusic)**
   - **[Overview](#overview)**
   - **[Features](#features)**

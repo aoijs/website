@@ -6,7 +6,7 @@ authors:
   title: Member - 715852000096419900
   userid: "715852000096419900"
   url: https://discord.com/users/715852000096419900
-  image_url: https://cdn.discordapp.com/avatars/715852000096419900/4dd9ab5b17ca6c07e4da71746cd0eca9.png
+  image_url: https://raw.githubusercontent.com/Faf4a/website/main/assets/images/avatars/715852000096419900.png
 tags: ["v6","Other","aoi.js"]
 hide_table_of_contents: false
 enableComments: true

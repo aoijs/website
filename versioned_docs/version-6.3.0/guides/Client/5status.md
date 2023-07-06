@@ -6,7 +6,7 @@ id: status
 
 #### This guide will be covering statuses and client presences.
 
-### Table of Content
+### Table of Contents
 
 - **[Statuses](#bot-status)**
 - **[Client Presence](#client-presence)**

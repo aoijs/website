@@ -12,7 +12,7 @@ In-depth documentation can be found **[here](https://akaruidevelopment.github.io
 
 :::
 
-### Table of Content
+### Table of Contents
 
 - **[Installation](#installation)**
 - **[Setup](#example-usage)**

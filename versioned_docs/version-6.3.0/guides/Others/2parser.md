@@ -6,7 +6,7 @@ id: parser
 
 #### This guide covers everything you need to know about embed parsers, component parsers, including basics and examples.
 
-### Table of Content
+### Table of Contents
 
 - **[Embed Parser](#embed-parser)**
     - **[Embeds](#embed-parser-functions)**

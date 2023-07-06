@@ -4,6 +4,6 @@ description: This page covers everything about localizationing Application Comma
 id: interaction-localization
 ---
 
-:::warning Unfinished
+:::info Unfinished
 ## This guide is unfinished, and will change in the future.  
 :::

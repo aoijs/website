@@ -8,20 +8,22 @@ slug: /
 
 ### Introduction
 
-![aoijs](https://aoi.js.org/assets/images/aoijs-new.png)
+![aoijs](https://raw.githubusercontent.com/aoijs/website/main/assets/images/aoijs-v5.png)
 
 **The most advanced string-based package to create a Discord Bot fast and powerful.**
 
 [![Discord Server](https://img.shields.io/discord/773352845738115102?color=5865F2\&logo=discord\&logoColor=white)](https://aoi.js.org/invite) [![NPM Version](https://img.shields.io/npm/v/aoi.js.svg?maxAge=3600)](https://www.npmjs.com/package/aoi.js) [![NPM Downloads](https://img.shields.io/npm/dt/aoi.js.svg?maxAge=3600)](https://www.npmjs.com/package/aoi.js)
 
-# Table of Contents
-- [Features](#features) 
-- [Installation](#installation)
-  - [Setup](#setup)
-- [Events](#events)
-- [Database](#database)
-- [Music Integration](#music-integration)
-- [Links](#links)
+## Table of Contents
+  - [Features](#features)
+  - [Function usage Example](#function-usage-example)
+    - [How does it work?](#how-does-it-work)
+  - [Events](#events)
+  - [Database](#database)
+  - [Music Integration](#music-integration)
+  - [Optional Extensions](#optional-extensions)
+  - [Disclaimer](#disclaimer)
+  - [Links](#links)
 
 ## Features
 

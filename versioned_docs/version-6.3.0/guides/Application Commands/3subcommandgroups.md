@@ -4,6 +4,6 @@ description: This page covers everything about Subcommand Groups of Application 
 id: interaction-subcommandgroups
 ---
 
-:::warning Unfinished
+:::info Unfinished
 ## This guide is unfinished, and will change in the future.  
 :::

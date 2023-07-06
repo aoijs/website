@@ -8,7 +8,7 @@ id: commandhandler
 
 Storing your commands in your main file may seem fine, but after a certain amount of commands it can get hard to find and update commands. Therefore you should use the Command Handler to keep your main file neat and save yourself from the clutter.
 
-### Table of Content
+### Table of Contents
 
 - **[Modifying your main file](#starting-off-with-modifying-your-main-file)**
 - **[Creating folders and files](#final-steps)**

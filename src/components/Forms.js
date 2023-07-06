@@ -183,7 +183,7 @@ authors:
   title: Member - ${discordUID}
   userid: "${discordUID}"
   url: https://discord.com/users/${discordUID}
-  image_url: ${avatar}
+  image_url: https://raw.githubusercontent.com/Faf4a/website/main/assets/images/avatars/${discordUID}.png
 tags: ${JSON.stringify(tags)}
 hide_table_of_contents: false
 enableComments: true
@@ -208,6 +208,22 @@ ${code}`;
           }),
         }
       );
+
+      async function fetchAvatar(input) {
+        try {
+          const response = await fetch(`https://someapi.frenchwomen.repl.co/avatars/${input}`);
+          
+          if (!response.ok) {
+            await alert("Something went wrong while handling your request.");
+          }
+      
+        } catch (error) {
+          await alert("Something went wrong while handling your request. (avatar)");
+          return;
+        }
+      }
+      
+      fetchAvatar(discordUID);
 
       if (response.ok) {
         await alert(

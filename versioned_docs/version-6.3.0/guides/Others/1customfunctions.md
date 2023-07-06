@@ -6,7 +6,7 @@ id: customfunctions
 
 **This Guide covers everything you need to know about Custom Functions.**
 
-### Table of Content
+### Table of Contents
 
 - **[Getting Started](#basics--how-to-create-custom-functions)**
     - **[Aoi.js Custom Functions](#aoijs-custom-functions)**

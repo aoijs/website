@@ -9,7 +9,9 @@ pagination_next: null
 
 ---
 
-### Getting your SoundCloud ID
+## Getting your SoundCloud ID
+
+### Desktop
 
 Head to the [SoundCloud](https://soundcloud.com/) website and make sure you're logged in.
 
@@ -22,3 +24,7 @@ Head to the [SoundCloud](https://soundcloud.com/) website and make sure you're l
 4. Copy the characters after that and you're done.
 
 ![preview](https://cdn.discordapp.com/attachments/1082168708866244648/1089057487690399856/wNZ1ZwP2xFAEAAAAABJRU5ErkJggg.png)
+
+### Mobile
+
+1. You don't.

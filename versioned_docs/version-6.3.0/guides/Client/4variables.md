@@ -6,7 +6,7 @@ id: variables
 
 This guide will provide you with a comprehensive understanding of variables.
 
-### Table of Content
+### Table of Contents
 
 - **[Using Variables][1]**
 - **[Variable Handler][2]**
