@@ -19,7 +19,7 @@
 .sidebarItem {
   margin-top: 0.7rem;
   margin-right: 0.2rem;
-  border: 1px solid grey;
+  border: 1px solid rgba(128, 128, 128, 0.5);
   border-radius: 3px;
   padding: 10px;
   position: relative;
@@ -74,4 +74,44 @@
 
 .activeButton:hover {
   text-decoration: underline;
+}
+
+.searchContainer {
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 4px;
+  box-shadow: none;
+  transition: border-color 0.3s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #3f51b5;
+  box-shadow: 1px 1px 0 1px rgba(63, 81, 181, 0.3);
+}
+
+.mobileSearchContainer {
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.mobileSearchInput {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 4px;
+  box-shadow: none;
+  transition: border-color 0.3s ease;
+}
+
+.mobileSearchInput:focus {
+  outline: none;
+  border-color: #3f51b5;
+  box-shadow: 1px 1px 0 1px rgba(63, 81, 181, 0.3);
 }

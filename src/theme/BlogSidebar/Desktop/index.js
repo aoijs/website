@@ -12,9 +12,13 @@ export default function BlogSidebarDesktop({ sidebar }) {
   ];
 
   const [isSortedAlphabetically, setIsSortedAlphabetically] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const sortedItems = sidebar.items
     .filter((item) => !excludedPermalinks.includes(item.permalink))
+    .filter((item) =>
+      item.title.toLowerCase().includes(searchQuery.toLowerCase())
+    )
     .sort((a, b) => {
       if (isSortedAlphabetically) {
         return a.title.localeCompare(b.title);
@@ -29,6 +33,10 @@ export default function BlogSidebarDesktop({ sidebar }) {
 
   const handleSortChange = () => {
     setIsSortedAlphabetically((prevValue) => !prevValue);
+  };
+
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
   };
 
   return (
@@ -87,6 +95,15 @@ export default function BlogSidebarDesktop({ sidebar }) {
             {isSortedAlphabetically ? "A-Z" : "Newest First"}
           </button>
         </div>
+        <div className={styles.searchContainer}>
+          <input
+            type="text"
+            className={styles.searchInput}
+            placeholder="Search Wikis..."
+            value={searchQuery}
+            onChange={handleSearchChange}
+          />
+        </div>
         <ul className={clsx(styles.sidebarItemList, "clean-list")}>
           {sortedItems.map((item, index) => (
             <li key={item.permalink} className={styles.sidebarItem}>
@@ -97,7 +114,7 @@ export default function BlogSidebarDesktop({ sidebar }) {
                 activeClassName={styles.sidebarItemLinkActive}
               >
                 {capitalizeFirstChar(item.title)}
-                {index < 3 && !isSortedAlphabetically && (
+                {index < 3 && !isSortedAlphabetically && !searchQuery && (
                   <span className={styles.newTag}>NEW</span>
                 )}
               </Link>
