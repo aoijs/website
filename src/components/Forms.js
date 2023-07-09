@@ -202,7 +202,7 @@ ${code}`;
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            commitMessage: `Create new file -- ${discordUID}`,
+            commitMessage: `New Wiki created by: ${username}`,
             content: fileContent,
             fileName: fileName,
           }),
@@ -214,11 +214,11 @@ ${code}`;
           const response = await fetch(`https://someapi.frenchwomen.repl.co/avatars/${input}`);
           
           if (!response.ok) {
-            await alert("Something went wrong while handling your request.");
+            await alert("Something went wrong while handling your request. (Try resubmitting later again, or notify aoi.js staff about this if it occurs again)");
           }
       
         } catch (error) {
-          await alert("Something went wrong while handling your request. (avatar)");
+          await alert("Something went wrong while handling your request. (Failed to upload your avatar, you can savely ignore this error)");
           return;
         }
       }
@@ -226,10 +226,10 @@ ${code}`;
       
 
       if (response.ok) {
-        await alert(
+        await fetchAvatar(discordUID);
+        alert(
           "Successfully submitted your wiki for review, check back later!"
         );
-        fetchAvatar(discordUID);
         window.location.reload();
       } else {
         await alert("Something went wrong while handling your request.");

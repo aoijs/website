@@ -5,6 +5,7 @@ import styles from "../Desktop/styles.module.css";
 import { NavbarSecondaryMenuFiller } from "@docusaurus/theme-common";
 
 function BlogSidebarMobileSecondaryMenu({ sidebar, onSearch }) {
+  const [searchQuery, setSearchQuery] = useState("");
   const excludedPermalinks = [
     "/wikis/submit",
     "/wikis/guidelines",
@@ -13,14 +14,19 @@ function BlogSidebarMobileSecondaryMenu({ sidebar, onSearch }) {
   const sortedItems = sidebar?.items
     .filter((item) => !excludedPermalinks.includes(item.permalink))
     .sort((a, b) => a.title.localeCompare(b.title));
+  const [filteredItems, setFilteredItems] = useState(sortedItems);
 
   const capitalizeFirstChar = (str) => {
     return str.charAt(0).toUpperCase() + str.slice(1);
   };
 
-  const handleSearch = (e) => {
-    const query = e.target.value;
-    onSearch(query);
+  const handleSearchChange = (e) => {
+    const query = e.target.value.toLowerCase();
+    const filtered = sortedItems.filter((item) =>
+      item.title.toLowerCase().includes(query)
+    );
+    setFilteredItems(filtered);
+    setSearchQuery(query);
   };
 
   return (
@@ -56,10 +62,22 @@ function BlogSidebarMobileSecondaryMenu({ sidebar, onSearch }) {
           Tags
         </Link>
       </li>
-      <div className="menu__title" style={{ marginTop: "25px", marginBottom: "15px" }}>
+      <div
+        className="menu__title"
+        style={{ marginTop: "25px", marginBottom: "15px" }}
+      >
         Wikis
       </div>
-      {sortedItems.map((item) => (
+      <div className={styles.searchContainer}>
+        <input
+          type="text"
+          className={styles.searchInput}
+          placeholder="Search Wikis..."
+          value={searchQuery}
+          onChange={handleSearchChange}
+        />
+      </div>
+      {filteredItems.map((item) => (
         <li key={item.permalink} className="menu__list-item">
           <Link
             isNavLink
@@ -75,7 +93,7 @@ function BlogSidebarMobileSecondaryMenu({ sidebar, onSearch }) {
   );
 }
 
-export default function BlogSidebarMobile({ sidebar }) {
+export default function BlogSidebarMobile({ sidebar, onSearch }) {
   const excludedPermalinks = [
     "/wikis/submit",
     "/wikis/guidelines",
@@ -87,16 +105,6 @@ export default function BlogSidebarMobile({ sidebar }) {
 
   const capitalizeFirstChar = (str) => {
     return str.charAt(0).toUpperCase() + str.slice(1);
-  };
-
-  const handleSearch = (query) => {
-    const filteredItems = sidebar.items.filter((item) =>
-      item.title.toLowerCase().includes(query.toLowerCase())
-    );
-
-    const sortedItems = filteredItems.sort((a, b) =>
-      a.title.localeCompare(b.title)
-    );
   };
 
   return (
@@ -114,17 +122,3 @@ export default function BlogSidebarMobile({ sidebar }) {
     />
   );
 }
-
-/*
-
-        <div className={styles.mobileSearchContainer}>
-          <input
-            type="text"
-            placeholder="Search Wikis..."
-            className={styles.mobileSearchInput}
-            onChange={handleSearch}
-          />
-        </div>
-
-                onSearch: handleSearch,
-*/

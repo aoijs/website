@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import { translate } from "@docusaurus/Translate";
@@ -13,6 +13,17 @@ export default function BlogSidebarDesktop({ sidebar }) {
 
   const [isSortedAlphabetically, setIsSortedAlphabetically] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+
+  useEffect(() => {
+    const storedSortingState = localStorage.getItem("sortingState");
+    if (storedSortingState) {
+      setIsSortedAlphabetically(JSON.parse(storedSortingState));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("sortingState", JSON.stringify(isSortedAlphabetically));
+  }, [isSortedAlphabetically]);
 
   const sortedItems = sidebar.items
     .filter((item) => !excludedPermalinks.includes(item.permalink))

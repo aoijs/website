@@ -94,11 +94,6 @@
 
 /* credits.js */
 
-.fadeIn {
-  opacity: 1;
-  transition: opacity 0.5s ease-in;
-}
-
 .creditContainer {
   display: flex;
   flex-wrap: wrap;

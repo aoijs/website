@@ -115,3 +115,27 @@
   border-color: #3f51b5;
   box-shadow: 1px 1px 0 1px rgba(63, 81, 181, 0.3);
 }
+
+.mobileSearchContainer {
+  position: relative;
+}
+
+.searchIcon,
+.searchClose {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.searchIcon {
+  font-size: 16px;
+}
+
+.searchClose {
+  font-size: 14px;
+}

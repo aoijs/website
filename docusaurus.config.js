@@ -44,10 +44,12 @@ module.exports = {
       respectPrefersColorScheme: false,
     },
     navbar: {
-      title: `aoi.js`,
+      title: `aoi.js.org`,
       logo: {
-        alt: "aoijs logo",
+        alt: "aoi.js logo",
         src: "img/logo.png",
+        width: 35,
+        height: 30, 
       },
       items: [
         {
@@ -160,8 +162,8 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
-          path: 'docs',
-          routeBasePath: 'docs',
+          path: "docs",
+          routeBasePath: "docs",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           sidebarCollapsible: true,
@@ -175,7 +177,7 @@ module.exports = {
           },
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
         gtag: {
           trackingID: "G-BFNTC2Y655",
@@ -186,7 +188,8 @@ module.exports = {
           routeBasePath: "wikis",
           showReadingTime: false,
           blogTitle: "aoi.js Wikis",
-          blogDescription: "A community-powered Wiki page will all sort of ideas and codes.",
+          blogDescription:
+            "A community-powered Wiki page will all sort of ideas and codes.",
           blogSidebarCount: "ALL",
         },
       },
@@ -200,7 +203,6 @@ module.exports = {
         path: "extensions",
         routeBasePath: "extensions",
         sidebarPath: require.resolve("./sidebarExtensions.js"),
-        // ... other options
       },
     ],
     [
@@ -210,7 +212,6 @@ module.exports = {
         path: "community",
         routeBasePath: "community",
         sidebarPath: require.resolve("./sidebarCommunity.js"),
-        // ... other options
       },
     ],
   ],
