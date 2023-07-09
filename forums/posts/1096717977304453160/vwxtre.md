@@ -18,7 +18,7 @@ The title says everything.
 
 **Code:**
 
-```
+```js
 bot.command({
    name: "cat",
    aliases: ["kitty"],
