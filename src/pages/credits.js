@@ -38,7 +38,7 @@ const team = [
     name: "snowytealatte",
     title: "Artist Manager",
     avatar:
-      require("../../assets/images/avatars/818377414367379487.png")
+      require("../../assets/images/avatars/673858247320403988.png")
         .default,
   },
 ];
