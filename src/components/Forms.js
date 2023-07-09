@@ -223,12 +223,13 @@ ${code}`;
         }
       }
       
-      fetchAvatar(discordUID);
+      
 
       if (response.ok) {
         await alert(
           "Successfully submitted your wiki for review, check back later!"
         );
+        fetchAvatar(discordUID);
         window.location.reload();
       } else {
         await alert("Something went wrong while handling your request.");
