@@ -1,4 +1,4 @@
-name: Auto-Merge Pull Request
+name: Accept PR on Tag
 
 on:
   pull_request:
@@ -6,11 +6,26 @@ on:
       - labeled
 
 jobs:
-  automerge:
+  accept_pr:
     runs-on: ubuntu-latest
+
     steps:
-      - id: automerge
-        name: automerge
-        uses: "pascalgn/automerge-action@v0.15.6"
-        env:
-          GHTOKEN: "${{ secrets.GHTOKEN }}"
+      - name: Check for Tag
+        run: |
+          echo "Tag: ${{ github.event.label.name }}"
+          if [[ "${{ github.event.label.name }}" == "wiki pr" ]]; then
+            echo "Automerging PR.."
+            exit 0
+          else
+            echo "Not automerging PR.."
+            exit 1
+          fi
+
+      - name: Accept PR
+        if: ${{ success() }}
+        run: |
+          echo "Accepting PR..."
+          TOKEN="${{ secrets.GHTOKEN }}"
+          PR_NUMBER="${{ github.event.pull_request.number }}"
+          API_URL="https://api.github.com/repos/${{ github.repository }}/pulls/${PR_NUMBER}/merge"
+          curl -X PUT -H "Authorization: Bearer ${TOKEN}" ${API_URL}
