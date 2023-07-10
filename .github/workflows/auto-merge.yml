@@ -6,20 +6,6 @@ on:
       - labeled
 
 jobs:
-  accept_pr:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Check if labeled with "wikis pr" tag
-        run: |
-          echo "Tag: ${{ github.event.label.name }}"
-          if [[ "${{ github.event.label.name }}" == "wiki pr" ]]; then
-            echo "Merging Pull Request as Label exists."
-            exit 0
-          else
-            echo "Not merging this Pull Request automatically."
-            exit 1
-          fi
   automerge:
     if: ${{ success() }}
     runs-on: ubuntu-latest
