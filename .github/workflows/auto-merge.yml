@@ -1,4 +1,4 @@
-name: Accept PR on Tag
+name: Auto-Merge Pull Request
 
 on:
   pull_request:
@@ -13,11 +13,11 @@ jobs:
       - name: Check if labeled with "wikis pr" tag
         run: |
           echo "Tag: ${{ github.event.label.name }}"
-          if [[ "${{ github.event.label.name }}" == "wikis pr" ]]; then
-            echo "Tag 'wikis pr' found!"
+          if [[ "${{ github.event.label.name }}" == "wiki pr" ]]; then
+            echo "Merging Pull Request as Label exists."
             exit 0
           else
-            echo "Tag 'wikis pr' not found. Exiting..."
+            echo "Not merging this Pull Request automatically."
             exit 1
           fi
 
