@@ -14,7 +14,7 @@ pagination_prev: null
 pagination_next: null
 ---
 
-**1.** If you have an `eval` command use this:
+**1.** If you have an `eval` command use this :
 ```js
 !eval $createApplicationCommand[global;clear;Clear messages;true;slash;[
   {
