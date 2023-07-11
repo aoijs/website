@@ -10,6 +10,7 @@ module.exports = {
   projectName: "aoi.js-documentation", // Usually your repo name.
   trailingSlash: false,
   themeConfig: {
+    discordClientId: "1000517138802552952",
     image:
       "https://github.com/aoijs/website/blob/main/assets/images/aoijs-banner.png?raw=true",
     prism: {
@@ -49,7 +50,7 @@ module.exports = {
         alt: "aoi.js logo",
         src: "img/logo.png",
         width: 35,
-        height: 30, 
+        height: 30,
       },
       items: [
         {
@@ -196,6 +197,10 @@ module.exports = {
     ],
   ],
   plugins: [
+    [
+      require.resolve("./src/components/AuthContext.js"),
+      {},
+    ],
     [
       "@docusaurus/plugin-content-docs",
       {
