@@ -13,7 +13,7 @@ jobs:
       - name: Check for Tag
         run: |
           echo "Tag: ${{ github.event.label.name }}"
-          if [[ "${{ github.event.label.name }}" == "wiki pr" ]]; then
+          if [[ "${{ github.event.label.name }}" == "automerge" ]]; then
             echo "Automerging PR.."
             exit 0
           else
