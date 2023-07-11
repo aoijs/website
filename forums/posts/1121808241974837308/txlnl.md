@@ -18,7 +18,7 @@ pagination_next: null
 ---
 
 code:
-```
+```js
 module.exports = [{
   name: "county_guess",
   type: "interaction",
@@ -38,7 +38,7 @@ Gg <@$authorID>, it was $awaitData[country]
   }];
 ```
 slash command create code:
-```
+```js
 module.exports = {
   name: "create",
   code: `
