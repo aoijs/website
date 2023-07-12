@@ -21,7 +21,7 @@ const features = [
   },
   {
     title: "Community Driven",
-    description: "Join our active community and collaborate on projects.",
+    description: "Join our active community and collaborate with others.",
   },
 ];
 
