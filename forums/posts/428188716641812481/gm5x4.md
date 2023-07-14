@@ -1,6 +1,6 @@
 ---
 title: "RPS game"
-description: ""Simple" RPS game."
+description: "Simple RPS game."
 authors:
   name: "@faf4a"
   title: Member - 428188716641812481
