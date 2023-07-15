@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkAoiEngine=self.webpackChunkAoiEngine||[]).push([[97751],{91230:e=>{e.exports=JSON.parse('{"permalink":"/tr/wikis/tags/other","page":1,"postsPerPage":10,"totalPages":2,"totalCount":16,"nextPage":"/tr/wikis/tags/other/page/2","blogDescription":"A community-powered Wiki page will all sort of ideas and codes.","blogTitle":"aoi.js Wikis"}')}}]);

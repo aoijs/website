@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkAoiEngine=self.webpackChunkAoiEngine||[]).push([[19265],{18573:s=>{s.exports=JSON.parse('{"label":"v6","permalink":"/tr/wikis/tags/v-6","allTagsPath":"/tr/wikis/tags","count":46}')}}]);
