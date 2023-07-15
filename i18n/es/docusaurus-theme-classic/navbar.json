@@ -1,34 +1,34 @@
 {
   "title": {
     "message": "aoi.js.org",
-    "description": "The title in the navbar"
+    "description": "El título en la barra de navegación"
   },
   "logo.alt": {
-    "message": "aoi.js logo",
-    "description": "The alt text of navbar logo"
+    "message": "Logo de aoi.js",
+    "description": "El texto alternativo del logo en la barra de navegación"
   },
   "item.label.Documentation": {
-    "message": "Documentation",
-    "description": "Navbar item with label Documentation"
+    "message": "Documentación",
+    "description": "Elemento de la barra de navegación con la etiqueta Documentación"
   },
   "item.label.Guides": {
-    "message": "Guides",
-    "description": "Navbar item with label Guides"
+    "message": "Guías",
+    "description": "Elemento de la barra de navegación con la etiqueta Guías"
   },
   "item.label.Akarui Extensions": {
-    "message": "Akarui Extensions",
-    "description": "Navbar item with label Akarui Extensions"
+    "message": "Extensiones Akarui",
+    "description": "Elemento de la barra de navegación con la etiqueta Extensiones Akarui"
   },
   "item.label.Community Wikis": {
-    "message": "Community Wikis",
-    "description": "Navbar item with label Community Wikis"
+    "message": "Wikis de la Comunidad",
+    "description": "Elemento de la barra de navegación con la etiqueta Wikis de la Comunidad"
   },
   "item.label.Credits": {
-    "message": "Credits",
-    "description": "Navbar item with label Credits"
+    "message": "Créditos",
+    "description": "Elemento de la barra de navegación con la etiqueta Créditos"
   },
   "item.label.Discord Server": {
-    "message": "Discord Server",
-    "description": "Navbar item with label Discord Server"
+    "message": "Servidor de Discord",
+    "description": "Elemento de la barra de navegación con la etiqueta Servidor de Discord"
   }
 }
