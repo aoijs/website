@@ -23,7 +23,7 @@ pagination_next: null
 `$translate[auto;en;Привет]` -> `Hello`
 
 **The code:** 
-```
+```js
 bot.functionManager.createFunction({
     name: "$translate",
     type: "djs",
