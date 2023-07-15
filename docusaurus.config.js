@@ -111,7 +111,6 @@ module.exports = {
         //        label: 'Community',
         //        position: 'left',
         //      },
-        // -- Implement comments later in community page
         {
           type: "docsVersionDropdown",
           position: "right",
@@ -209,7 +208,7 @@ module.exports = {
           showLastUpdateTime: true,
           sidebarCollapsible: true,
           sidebarPath: require.resolve("./sidebars.js"),
-          lastVersion: "6.3.0",
+          lastVersion: "6.4.0",
           versions: {
             current: {
               label: "7.0.0 (dev)",

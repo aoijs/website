@@ -23,9 +23,10 @@ jobs:
 
       - name: Accept PR
         if: ${{ success() }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "Accepting PR..."
-          TOKEN="${{ secrets.GHTOKEN }}"
           PR_NUMBER="${{ github.event.pull_request.number }}"
-          API_URL="https://api.github.com/repos/${{ github.repository }}/pulls/${PR_NUMBER}/merge"
-          curl -X PUT -H "Authorization: Bearer ${TOKEN}" ${API_URL}
+          API_URL="https://api.github.com/repos/aoijs/website/pulls/${PR_NUMBER}"
+          curl -X PUT -H "Authorization: Bearer $GITHUB_TOKEN" "${API_URL}/merge"

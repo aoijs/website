@@ -8,22 +8,47 @@ export default function BlogSidebarDesktop({ sidebar }) {
   const excludedPermalinks = [
     "/wikis/submit",
     "/wikis/guidelines",
-    "/wikis/tags",
+    "/wikis/showcase",
   ];
 
   const [isSortedAlphabetically, setIsSortedAlphabetically] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    const storedSortingState = localStorage.getItem("sortingState");
+    const storedSortingState = getLocalStorageItem("sortingState");
     if (storedSortingState) {
       setIsSortedAlphabetically(JSON.parse(storedSortingState));
     }
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("sortingState", JSON.stringify(isSortedAlphabetically));
+    if (isLocalStorageAvailable()) {
+      setLocalStorageItem("sortingState", JSON.stringify(isSortedAlphabetically));
+    }
   }, [isSortedAlphabetically]);
+
+  const getLocalStorageItem = (key) => {
+    if (isLocalStorageAvailable()) {
+      return localStorage.getItem(key);
+    }
+    return null;
+  };
+
+  const setLocalStorageItem = (key, value) => {
+    if (isLocalStorageAvailable()) {
+      localStorage.setItem(key, value);
+    }
+  };
+
+  const isLocalStorageAvailable = () => {
+    try {
+      const testKey = "test";
+      localStorage.testKey = testKey;
+      return true;
+    } catch (e) {
+      return false;
+    }
+  };
 
   const sortedItems = sidebar.items
     .filter((item) => !excludedPermalinks.includes(item.permalink))
@@ -84,14 +109,14 @@ export default function BlogSidebarDesktop({ sidebar }) {
               Submit Wiki
             </Link>
           </li>
-          <li key="/wikis/tags" className={styles.sidebarItem}>
+          <li key="/wikis/showcase" className={styles.sidebarItem}>
             <Link
               isNavLink
-              to="/wikis/tags"
+              to="/wikis/showcase"
               className={styles.sidebarItemLink}
               activeClassName={styles.sidebarItemLinkActive}
             >
-              Tags
+              Showcase
             </Link>
           </li>
         </ul>
@@ -125,9 +150,6 @@ export default function BlogSidebarDesktop({ sidebar }) {
                 activeClassName={styles.sidebarItemLinkActive}
               >
                 {capitalizeFirstChar(item.title)}
-                {index < 3 && !isSortedAlphabetically && !searchQuery && (
-                  <span className={styles.newTag}>NEW</span>
-                )}
               </Link>
             </li>
           ))}
