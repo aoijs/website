@@ -79,8 +79,6 @@ export default function BlogSidebarDesktop({ sidebar }) {
     .sort((a, b) => {
       if (isSortedAlphabetically) {
         return a.title.localeCompare(b.title);
-      } else {
-        return b.date - a.date;
       }
     });
 
