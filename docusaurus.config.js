@@ -9,6 +9,34 @@ module.exports = {
   organizationName: "akaruidevelopment", // Usually your GitHub org/user name.
   projectName: "aoi.js-documentation", // Usually your repo name.
   trailingSlash: false,
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'es', 'tr', 'ar', 'hi', 'fr', 'uk'], // ru - not enough
+    path: 'i18n',
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+        path: 'en',
+      },
+      es: {
+        label: 'Español',
+        direction: 'ltr',
+        path: 'es',
+      },
+      tr: {
+        label: 'Türkçe',
+        direction: 'ltr',
+        path: 'tr',
+      },
+      ar: {
+        label: 'عربي',
+        direction: 'rtl',
+        path: 'ar',
+      },
+    },
+  },
   themeConfig: {
     image:
       "https://github.com/aoijs/website/blob/main/assets/images/aoijs-banner.png?raw=true",
@@ -16,13 +44,7 @@ module.exports = {
       theme: require("prism-react-renderer/themes/github"),
       darkTheme: require("prism-react-renderer/themes/dracula"),
       additionalLanguages: ["php", "powershell", "diff", "typescript"],
-    },
-    /*  
-    i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'de', 'fr'],
     }, 
-    */
     // Translations later on
     algolia: {
       appId: "7NDV3UYBW5",
@@ -48,8 +70,8 @@ module.exports = {
       logo: {
         alt: "aoi.js logo",
         src: "img/logo.png",
-        width: 35,
-        height: 30, 
+        width: 33,
+        height: 30,
       },
       items: [
         {
@@ -65,9 +87,9 @@ module.exports = {
           position: "left",
         },
         {
-          to: "extensions/",
+          to: "extensions/introduction",
           activeBasePath: "extensions",
-          label: "Akarui Extensions",
+          label: "Extensions",
           position: "left",
         },
         {
@@ -88,17 +110,34 @@ module.exports = {
         //        label: 'Community',
         //        position: 'left',
         //      },
-        // -- Implement comments later in community page
         {
           type: "docsVersionDropdown",
           position: "right",
+          dropdownItemsAfter: [
+            {
+              type: 'html',
+              value: '<hr style="margin: 0.3rem 0;">',
+            },
+            {
+              href: 'https://github.com/AkaruiDevelopment/aoi.js',
+              label: 'Github',
+            },
+          ],
         },
-        /*
         {
-          type: 'localeDropdown',
-          position: 'right',
-        }, 
-        */
+          type: "localeDropdown",
+          position: "right",
+          dropdownItemsAfter: [
+            {
+              type: 'html',
+              value: '<hr style="margin: 0.3rem 0;">',
+            },
+            {
+              href: 'https://crowdin.com/translate/aoijs-documentation/all/',
+              label: 'Contribute & Translate',
+            },
+          ],
+        },
         {
           to: "https://aoi.js.org/invite",
           label: "Discord Server",
@@ -117,8 +156,8 @@ module.exports = {
               to: "docs/guides/setup",
             },
             {
-              label: "Akarui Extensions",
-              to: "extensions/",
+              label: "Extensions",
+              to: "extensions/introduction",
             },
           ],
         },
@@ -168,7 +207,7 @@ module.exports = {
           showLastUpdateTime: true,
           sidebarCollapsible: true,
           sidebarPath: require.resolve("./sidebars.js"),
-          lastVersion: "6.3.0",
+          lastVersion: "6.4.0",
           versions: {
             current: {
               label: "7.0.0 (dev)",

@@ -1,0 +1,10 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Plugins": {
+    "message": "Plugins",
+    "description": "The label for category Plugins in sidebar docs"
+  }
+}

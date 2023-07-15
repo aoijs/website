@@ -1,0 +1,37 @@
+---
+title: '$pruneMembers'
+description: '$pruneMembers will kick all inactive users whose been inactive for a given amount of time.'
+id: pruneMembers
+---
+
+`$pruneMembers` will kick all inactive users whose been inactive for a given amount of time.
+
+## الاستخدام
+
+```php
+$pruneMembers[days;guildID?;roleIDs?;dry?;reason?;returnCount?]
+```
+
+## البارامترات
+
+| Field        | النوع           | الديسكبربشين                                                          | مطلوب |
+| ------------ | --------------- | --------------------------------------------------------------------- |:-----:|
+| days         | number          | Number of days to count prune for (1-30, 7 default).                  | true  |
+| guildID?     | Integer         | Where members are going to be pruned.                                 | false |
+| roleIDs?     | integer, string | Roles to include, splitted by commas.                                 | false |
+| dry?         | boolean         | 1. true. false (default)                                              | false |
+| reason?      | string          | Reason to display in the guild's audit logs.                          | false |
+| returnCount? | boolean         | Return count of pruned members. <br /> 1. true. false (default) | false |
+
+## مثال
+
+This will prune all members who have been inactive for 4 days and return the count of the pruned members that meet those requirements:
+
+```javascript
+bot.command({
+    name: 'pruneMembers',
+    code: `
+   $pruneMembers[4;$guildID;$guildID;true;Pruning!;true]
+  `
+});
+```

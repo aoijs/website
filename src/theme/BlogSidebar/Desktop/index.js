@@ -15,15 +15,40 @@ export default function BlogSidebarDesktop({ sidebar }) {
   const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    const storedSortingState = localStorage.getItem("sortingState");
+    const storedSortingState = getLocalStorageItem("sortingState");
     if (storedSortingState) {
       setIsSortedAlphabetically(JSON.parse(storedSortingState));
     }
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("sortingState", JSON.stringify(isSortedAlphabetically));
+    if (isLocalStorageAvailable()) {
+      setLocalStorageItem("sortingState", JSON.stringify(isSortedAlphabetically));
+    }
   }, [isSortedAlphabetically]);
+
+  const getLocalStorageItem = (key) => {
+    if (isLocalStorageAvailable()) {
+      return localStorage.getItem(key);
+    }
+    return null;
+  };
+
+  const setLocalStorageItem = (key, value) => {
+    if (isLocalStorageAvailable()) {
+      localStorage.setItem(key, value);
+    }
+  };
+
+  const isLocalStorageAvailable = () => {
+    try {
+      const testKey = "test";
+      localStorage.testKey = testKey;
+      return true;
+    } catch (e) {
+      return false;
+    }
+  };
 
   const sortedItems = sidebar.items
     .filter((item) => !excludedPermalinks.includes(item.permalink))
@@ -125,9 +150,6 @@ export default function BlogSidebarDesktop({ sidebar }) {
                 activeClassName={styles.sidebarItemLinkActive}
               >
                 {capitalizeFirstChar(item.title)}
-                {index < 3 && !isSortedAlphabetically && !searchQuery && (
-                  <span className={styles.newTag}>NEW</span>
-                )}
               </Link>
             </li>
           ))}

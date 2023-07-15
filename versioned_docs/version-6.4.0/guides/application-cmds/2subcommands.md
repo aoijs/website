@@ -1,0 +1,115 @@
+---
+title: Subcommands
+description: This page covers everything about Subcommands of Application Commands.
+id: interaction-subcommands
+---
+
+:::info Unfinished
+## This guide is unfinished, and will change in the future.  
+:::
+
+## Table of Contents
+
+- [Sub commands](#sub-commands)
+- [Creating Application Commands](#creating-application-commands)
+  - [Examples of creating Application Commands with sub commands](#examples-of-creating-application-commands-with-sub-commands)
+  - [Preview of the Example](#preview-of-the-example)
+- [Replying to Sub commands](#replying-to-sub-commands)
+
+---
+
+## Sub commands
+
+Sub-commands are apart of slash commands and are used to add as the name already suggest sub commands to the regular slash command. Which does not only "bypass" the slash command limit but also allows you to properly structure your application commands.
+
+## Creating Application Commands
+
+```js
+$createApplicationCommand[guildID/global;name;description;defaultPermission(true/false);type(slash/user/message);options?]
+```
+
+| Field             | Type            | Description                                                                                                    | Required |
+| ----------------- | --------------- | -------------------------------------------------------------------------------------------------------------- | :------: |
+| guildID/global    | string, integer | The type of application command, either for every guild (global) or for one specific guild (specific guildID). |   true   |
+| name              | string, number  | The actual slash command name that will be visible to the user.                                                |   true   |
+| description       | string, number  | The slash command description that will be visible to the user.                                                |   true   |
+| defaultPermission | string          | If the application command should syncronisate to the default permissions.                                     |   true   |
+| type              | string          | The application command type (explained below)                                                                 |   true   |
+| options?          | object          | Slash commands options.                                                                                        |   true   |
+
+### Examples of creating Application Commands with sub commands
+
+```js
+bot.command({
+    name: "createApplicationCommand",
+    code: `
+  $createApplicationCommand[guildID/global;moderation;Moderation Commands!;true;slash;[
+{
+  "name": "kick",
+  "description": "Kick someone of your guild!",
+  "type": 1 
+},
+{
+  "name": "ban",
+  "description": "Ban someone of your guild!",
+  "type": 1 
+}
+]]`
+});
+```
+
+### Preview of the Example
+
+![preview](https://raw.githubusercontent.com/aoijs/website/main/assets/images/previews/application-commands.png)
+
+## Replying to Sub commands
+
+To interact with those we kinda need to "filter" the different options of the "moderation" slash commands. We can do that with `$onlyIf` and some advanced stuff.
+
+```js
+$onlyIf[$interactionData[options._subcommand]==sub_command_name;]
+```
+
+This will basically check for the sub command name and if it doesn't match it will block the command, so for our case it would look something like this..
+
+```js
+bot.interactionCommand({
+    name: "moderation",
+    prototype: "slash",
+    code: `
+    $interactionReply[You picked the **ban** sub command!]
+    $onlyIf[$interactionData[options._subcommand]==ban;]`
+})
+
+bot.interactionCommand({
+    name: "moderation",
+    prototype: "slash",
+    code: `
+    $interactionReply[You picked the **kick** sub command!]
+    $onlyIf[$interactionData[options._subcommand]==kick;]`
+})
+```
+
+Here's the handler example (which has the ability to store multiple commands in the same file, therfore its compacter):
+
+```js
+module.exports = [{
+    name: "moderation",
+    prototype: "slash",
+    type: "interaction",
+    code: `
+    $interactionReply[You picked the **ban** sub command!]
+    $onlyIf[$interactionData[options._subcommand]==ban;]`
+}, {
+    name: "moderation",
+    prototype: "slash",
+    type: "interaction",
+    code: `
+    $interactionReply[You picked the **kick** sub command!]
+    $onlyIf[$interactionData[options._subcommand]==kick;]`
+}]
+```
+
+
+
+

@@ -29,6 +29,7 @@
 [![Downloads](https://img.shields.io/npm/dt/aoi.js.svg)](https://www.npmjs.com/package/aoi.js)
 [![License](https://img.shields.io/npm/l/aoi.js.svg)](https://github.com/AkaruiDevelopment/aoi.js/blob/v6/LICENSE)
 [![Stars](https://img.shields.io/github/stars/AkaruiDevelopment/aoi.js.svg)](https://github.com/AkaruiDevelopment/aoi.js/stargazers)
+[![Crowdin](https://badges.crowdin.net/aoijs-documentation/localized.svg)](https://crowdin.com/project/aoijs-documentation)
 
 </div>
 

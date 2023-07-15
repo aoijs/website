@@ -1,0 +1,78 @@
+{
+  "version.label": {
+    "message": "6.4.0",
+    "description": "The label for version 6.4.0"
+  },
+  "sidebar.docs.category.Guides": {
+    "message": "Guides",
+    "description": "The label for category Guides in sidebar docs"
+  },
+  "sidebar.docs.category.Application Commands": {
+    "message": "Application Commands",
+    "description": "The label for category Application Commands in sidebar docs"
+  },
+  "sidebar.docs.category.Client": {
+    "message": "Client",
+    "description": "The label for category Client in sidebar docs"
+  },
+  "sidebar.docs.category.Others": {
+    "message": "Others",
+    "description": "The label for category Others in sidebar docs"
+  },
+  "sidebar.docs.category.Functions": {
+    "message": "Functions",
+    "description": "The label for category Functions in sidebar docs"
+  },
+  "sidebar.docs.category.array-related": {
+    "message": "array-related",
+    "description": "The label for category array-related in sidebar docs"
+  },
+  "sidebar.docs.category.awaited-related": {
+    "message": "awaited-related",
+    "description": "The label for category awaited-related in sidebar docs"
+  },
+  "sidebar.docs.category.client-related": {
+    "message": "client-related",
+    "description": "The label for category client-related in sidebar docs"
+  },
+  "sidebar.docs.category.event-related": {
+    "message": "event-related",
+    "description": "The label for category event-related in sidebar docs"
+  },
+  "sidebar.docs.category.guild-related": {
+    "message": "guild-related",
+    "description": "The label for category guild-related in sidebar docs"
+  },
+  "sidebar.docs.category.info-related": {
+    "message": "info-related",
+    "description": "The label for category info-related in sidebar docs"
+  },
+  "sidebar.docs.category.interaction-related": {
+    "message": "interaction-related",
+    "description": "The label for category interaction-related in sidebar docs"
+  },
+  "sidebar.docs.category.math-related": {
+    "message": "math-related",
+    "description": "The label for category math-related in sidebar docs"
+  },
+  "sidebar.docs.category.message-related": {
+    "message": "message-related",
+    "description": "The label for category message-related in sidebar docs"
+  },
+  "sidebar.docs.category.misc-related": {
+    "message": "misc-related",
+    "description": "The label for category misc-related in sidebar docs"
+  },
+  "sidebar.docs.category.user-related": {
+    "message": "user-related",
+    "description": "The label for category user-related in sidebar docs"
+  },
+  "sidebar.docs.category.util-related": {
+    "message": "util-related",
+    "description": "The label for category util-related in sidebar docs"
+  },
+  "sidebar.docs.category.variables-related": {
+    "message": "variables-related",
+    "description": "The label for category variables-related in sidebar docs"
+  }
+}

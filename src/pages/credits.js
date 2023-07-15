@@ -34,6 +34,18 @@ const team = [
     avatar: require("../../assets/images/avatars/673858247320403988.png")
       .default,
   },
+  {
+    name: "Maniator",
+    title: "Translator ⭐",
+    avatar: require("../../assets/images/avatars/837796591015821332.gif")
+      .default,
+  },
+  {
+    name: "Paolo",
+    title: "Translator ⭐",
+    avatar: require("../../assets/images/avatars/713132410153205802.png")
+      .default,
+  },
 ];
 
 function Credits() {
