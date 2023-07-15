@@ -14,7 +14,7 @@ pagination_prev: null
 pagination_next: null
 ---
 
-The command is simple to use, you just need to execute the command <prefix>avatar [username] (optional) and it will display the user's avatar along with different image formats. If you mention or type the name/ID of a user, their avatar will be shown; otherwise, the avatar of the user who executed the command will be displayed.
+The command is simple to use, you just need to execute the command [prefix]avatar [username] (optional) and it will display the user's avatar along with different image formats. If you mention or type the name/ID of a user, their avatar will be shown; otherwise, the avatar of the user who executed the command will be displayed.
 
 ```module.exports = ({
 	name: "avatar",
