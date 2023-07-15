@@ -18,7 +18,7 @@ $guildShardPing[shardId?]
 | -------- | ------- | ------------- |:------------:|
 | shardId? | integer | The shard ID. | असत्य (नहीं) |
 
-**Note that this won't work without sharding. If you're unsure, review the [sharding guide](../../guides/Client/6sharding.md).**
+**Note that this won't work without sharding. If you're unsure, review the [sharding guide](../../guides/client/6sharding.md).**
 
 ## ट्रू (हा)
 

@@ -12,7 +12,7 @@ id: guildShardID
 $guildShardID
 ```
 
-**Note that this won't work without sharding. If you're unsure, review the [sharding guide](../../guides/Client/6sharding.md).**
+**Note that this won't work without sharding. If you're unsure, review the [sharding guide](../../guides/client/6sharding.md).**
 
 ## Приклад(и)
 

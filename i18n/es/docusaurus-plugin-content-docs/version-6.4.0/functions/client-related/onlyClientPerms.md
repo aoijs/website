@@ -19,7 +19,7 @@ $onlyClientPerms[...permisos;error]
 | ...permisos | string | Permiso que requiere el bot.                                   |    sí     |
 | error       | string | Error a devolver cuando el bot no tiene los permisos listados. |    sí     |
 
-Encontrará todos los permisos __[aquí](../../guides/Client/2permissionsintents.md)__.
+Encontrará todos los permisos __[aquí](../../guides/client/2permissionsintents.md)__.
 
 ## Ejemplo(s)
 

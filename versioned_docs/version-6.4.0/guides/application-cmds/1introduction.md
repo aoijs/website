@@ -100,22 +100,3 @@ learning how to use Interaction Commands and the basics of how they work.
 | MENTIONABLE       | 9   | Includes users and roles                                                                     |
 | NUMBER            | 10  | Any double between -2^53 and 2^53                                                            |
 | ATTACHMENT        | 11  | [attachment](https://discord.com/developers/docs/resources/channel#attachment-object) object |
-
-## Interaction Functions
-
-* **[$createApplicationCommand[guildID/global;name;description;defaultPermission(true/false);type(slash/user/message) (optional);options (optional)]](../../functions/interaction-related/createApplicationCommand.md)**
-* **[$interactionReply[message;embeds?;components?;files?;allowedMentions?;ephemeral(true/false)?]](../../functions/event-related/interactionReply.md)**
-* **[$interactionDefer[ephemeral]](../../functions/event-related/interactionDefer.md)**
-* **[$interactionDeferUpdate[ephemeral]](../../functions/event-related/interactionDeferUpdate.md)**
-* **[$interactionDelete](../../functions/event-related/interactionDelete.md)**
-* **[$interactionEdit[content?;embeds?;components?;files?;allowedMentions]](../../functions/event-related/interactionEdit.md)**
-* **[$interactionFollowUp[content?;embeds?;components?;files?;ephemeral?]](../../functions/event-related/interactionFollowUp.md)**
-* **[$interactionUpdate[content?;embeds?;components?;files?;allowedMentions]](../../functions/event-related/interactionUpdate.md)**
-* **[$slashOption[option]](../../functions/event-related/slashOption.md)**
-* **[$deleteApplicationCommand[guildID/global;id]](../../functions/interaction-related/deleteApplicationCommand.md)**
-* **[$modifyApplicationCommand[guildID/global;commandID;name;description;type;options (optional);defaultPermission(optional)]](../../functions/interaction-related/modifyApplicationCommand.md)**
-* **[$removeApplicationCommandPermissions[guildID/global (optional : global as default);id;roruids]](../../functions/interaction-related/removeApplicationCommandPermissions.md)**
-* **[$getApplicationCommandOptions[name;guildID/global (optional : global as default)]](../../functions/misc-related/getApplicationCommandOptions.md)**
-* **[$getApplicationCommandID[name;guildID/global (optional : global as default)]](../../functions/misc-related/getApplicationCommandID.md)**
-* **[$autoCompleteRespond[OptionName;OptionReply;...]](../../functions/interaction-related/autoCompleteRespond.md)**
-* **[$isAutoComplete](../../functions/interaction-related/isAutoComplete.md)**
