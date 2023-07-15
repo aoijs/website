@@ -17,8 +17,7 @@ module.exports = {
       theme: require("prism-react-renderer/themes/github"),
       darkTheme: require("prism-react-renderer/themes/dracula"),
       additionalLanguages: ["php", "powershell", "diff", "typescript"],
-    },
-    /*  
+    }, 
     i18n: {
       defaultLocale: 'en',
       locales: ['en', 'es', 'tr', 'ar'],
@@ -127,7 +126,6 @@ module.exports = {
             },
           ],
         },
-        /*
         {
           type: "localeDropdown",
           position: "right",
