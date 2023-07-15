@@ -34,7 +34,7 @@ bot.functionManager.createFunction({
     const dataAr = [
       await exc(`$membersCount[${d.guild.id}]`),
       await exc(`$membersCount[${d.guild.id};all;false]`),
-      await exc(`$botCount[${d.guild.id}]`),
+      await exc(`$guildBotCount[${d.guild.id}]`),
       await exc(`$membersCount[${d.guild.id};online]`),
       await exc(`$membersCount[${d.guild.id};dnd]`),
       await exc(`$membersCount[${d.guild.id};idle]`),

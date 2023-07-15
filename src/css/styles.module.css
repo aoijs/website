@@ -1,0 +1,46 @@
+.cookies-banner {
+  width: 100%;
+  background-color: #333;
+  border-radius: 3px;
+  padding: 16px;
+  text-align: center;
+  text-align-last: center;
+  font-size: 14px;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.container {
+  width: 300px;
+  margin: auto;
+  background-color: #3c3c3c;
+  border-radius: 3px;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.content {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.tagContainer {
+  margin-top: 0.5rem;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.tagCircle {
+  background-color: var(--tag-color);
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  margin-right: 0.5rem;
+}

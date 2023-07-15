@@ -20,10 +20,33 @@ module.exports = {
     },
     /*  
     i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'de', 'fr'],
-    }, 
-    */
+      defaultLocale: 'en',
+      locales: ['en', 'es', 'tr', 'ar'],
+      path: 'i18n',
+      localeConfigs: {
+        en: {
+          label: 'English',
+          direction: 'ltr',
+          htmlLang: 'en-US',
+          path: 'en',
+        },
+        es: {
+          label: 'Español',
+          direction: 'ltr',
+          path: 'es',
+        },
+        tr: {
+          label: 'Türkçe',
+          direction: 'ltr',
+          path: 'tr',
+        },
+        ar: {
+          label: 'عربي',
+          direction: 'rtl',
+          path: 'ar',
+        },
+      },
+    },
     // Translations later on
     algolia: {
       appId: "7NDV3UYBW5",
@@ -66,9 +89,9 @@ module.exports = {
           position: "left",
         },
         {
-          to: "extensions/",
+          to: "extensions/introduction",
           activeBasePath: "extensions",
-          label: "Akarui Extensions",
+          label: "Extensions",
           position: "left",
         },
         {
@@ -93,13 +116,32 @@ module.exports = {
         {
           type: "docsVersionDropdown",
           position: "right",
+          dropdownItemsAfter: [
+            {
+              type: 'html',
+              value: '<hr style="margin: 0.3rem 0;">',
+            },
+            {
+              href: 'https://github.com/AkaruiDevelopment/aoi.js',
+              label: 'Github',
+            },
+          ],
         },
         /*
         {
-          type: 'localeDropdown',
-          position: 'right',
-        }, 
-        */
+          type: "localeDropdown",
+          position: "right",
+          dropdownItemsAfter: [
+            {
+              type: 'html',
+              value: '<hr style="margin: 0.3rem 0;">',
+            },
+            {
+              href: 'https://crowdin.com/translate/aoijs-documentation/all/',
+              label: 'Contribute & Translate',
+            },
+          ],
+        },
         {
           to: "https://aoi.js.org/invite",
           label: "Discord Server",
@@ -118,8 +160,8 @@ module.exports = {
               to: "docs/guides/setup",
             },
             {
-              label: "Akarui Extensions",
-              to: "extensions/",
+              label: "Extensions",
+              to: "extensions/introduction",
             },
           ],
         },

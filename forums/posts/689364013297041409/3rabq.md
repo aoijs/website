@@ -103,10 +103,10 @@ module.exports = [{
   $let[reason;$slashOption[reason]]
   $endIf
 
-  $onlyIf[$checkCondition[$rolePosition[$highestRole[$clientID]]==$rolePosition[$highestRole[$slashOption[user]]]]!=false;{options:{ephemeral: true}}
+  $onlyIf[$checkCondition[$rolePosition[$userHighestRole[$clientID]]==$rolePosition[$userHighestRole[$slashOption[user]]]]!=false;{options:{ephemeral: true}}
 {extraOptions:{interaction: true}}{newEmbed:{author:Permission Denied:https#COLON#//static.thenounproject.com/png/3688947-200.png}{description:I cannot kick someone with the same role as mine.}{color:#000000}}]
   
-$onlyIf[$checkCondition[$rolePosition[$highestRole[$clientID]]<$rolePosition[$highestRole[$slashOption[user]]]]!=false;{options:{ephemeral: true}}
+$onlyIf[$checkCondition[$rolePosition[$userHighestRole[$clientID]]<$rolePosition[$userHighestRole[$slashOption[user]]]]!=false;{options:{ephemeral: true}}
 {extraOptions:{interaction: true}}{newEmbed:{author:Permission Denied:https#COLON#//static.thenounproject.com/png/3688947-200.png}{description:I cannot kick someone with a higher role than mine.}{color:#000000}}]
 
 $onlyIf[$checkCondition[$isBot[$slashOption[user]]==true]!=true;{options:{ephemeral: true}}
