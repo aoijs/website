@@ -10,7 +10,29 @@ function BlogSidebarMobileSecondaryMenu({ sidebar, onSearch }) {
     "/wikis/submit",
     "/wikis/guidelines",
     "/wikis/tags",
+    "es/wikis/submit",
+    "es/wikis/guidelines",
+    "es/wikis/tags",
+    "fr/wikis/submit",
+    "fr/wikis/guidelines",
+    "fr/wikis/tags",
+    "ar/wikis/submit",
+    "ar/wikis/guidelines",
+    "ar/wikis/tags",
+    "ru/wikis/submit",
+    "ru/wikis/guidelines",
+    "ru/wikis/tags",
+    "uk/wikis/submit",
+    "uk/wikis/guidelines",
+    "uk/wikis/tags",
+    "tr/wikis/submit",
+    "tr/wikis/guidelines",
+    "tr/wikis/tags",
+    "de/wikis/submit",
+    "de/wikis/guidelines",
+    "de/wikis/tags",
   ];
+  
   const sortedItems = sidebar?.items
     .filter((item) => !excludedPermalinks.includes(item.permalink))
     .sort((a, b) => a.title.localeCompare(b.title));
