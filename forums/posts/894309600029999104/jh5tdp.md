@@ -16,9 +16,10 @@ pagination_next: null
 
 The command is simple to use, you just need to execute the command [prefix]avatar [username] (optional) and it will display the user's avatar along with different image formats. If you mention or type the name/ID of a user, their avatar will be shown; otherwise, the avatar of the user who executed the command will be displayed.
 
-```module.exports = ({
+```js
+module.exports = ({
 	name: "avatar",
-    code: `
+ 	code: `
 	$author[1;$username;$userAvatar[$authorID]]
 	$description[1;**Formats:**
 [**\`Jpg\`**]($userAvatar[$findMember[$message[1;true]];2048;true;jpg]) | [**\`Png\`**]($userAvatar[$findMember[$message[1;true]];2048;true;png]) | [**\`Jpeg\`**]($userAvatar[$findMember[$message[1;true]];2048;true;jpeg]) | [**\`Webp\`**]($userAvatar[$findMember[$message[1;true]];2048;true;webp])]
@@ -26,3 +27,4 @@ The command is simple to use, you just need to execute the command [prefix]avata
 	$color[1;Green]
 `
 })
+```
