@@ -9,7 +9,7 @@ function BlogSidebarMobileSecondaryMenu({ sidebar, onSearch }) {
   const excludedPermalinks = [
     "/wikis/submit",
     "/wikis/guidelines",
-    "/wikis/showcase",
+    "/wikis/tags",
   ];
   const sortedItems = sidebar?.items
     .filter((item) => !excludedPermalinks.includes(item.permalink))
@@ -52,14 +52,14 @@ function BlogSidebarMobileSecondaryMenu({ sidebar, onSearch }) {
           Submit Wiki
         </Link>
       </li>
-      <li key="/wikis/showcase" className="menu__list-item">
+      <li key="/wikis/tags" className="menu__list-item">
         <Link
           isNavLink
-          to="/wikis/showcase"
+          to="/wikis/tags"
           className="menu__link"
           activeClassName="menu__link--active"
         >
-          Showcase
+          Tags
         </Link>
       </li>
       <div
@@ -97,7 +97,7 @@ export default function BlogSidebarMobile({ sidebar, onSearch }) {
   const excludedPermalinks = [
     "/wikis/submit",
     "/wikis/guidelines",
-    "/wikis/showcase",
+    "/wikis/tags",
   ];
   const sortedItems = sidebar?.items
     .filter((item) => !excludedPermalinks.includes(item.permalink))

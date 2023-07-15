@@ -8,7 +8,7 @@ export default function BlogSidebarDesktop({ sidebar }) {
   const excludedPermalinks = [
     "/wikis/submit",
     "/wikis/guidelines",
-    "/wikis/showcase",
+    "/wikis/tags",
   ];
 
   const [isSortedAlphabetically, setIsSortedAlphabetically] = useState(false);
@@ -109,14 +109,14 @@ export default function BlogSidebarDesktop({ sidebar }) {
               Submit Wiki
             </Link>
           </li>
-          <li key="/wikis/showcase" className={styles.sidebarItem}>
+          <li key="/wikis/tags" className={styles.sidebarItem}>
             <Link
               isNavLink
-              to="/wikis/showcase"
+              to="/wikis/tags"
               className={styles.sidebarItemLink}
               activeClassName={styles.sidebarItemLinkActive}
             >
-              Showcase
+              Tags
             </Link>
           </li>
         </ul>
