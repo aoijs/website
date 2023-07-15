@@ -5,12 +5,13 @@ const Cookies = () => {
   return (
     <CookieConsent
       acceptOnScroll={true}
-      acceptOnScrollPercentage={150}
+      acceptOnScrollPercentage={10}
       buttonStyle={{
         backgroundColor: "var(--ifm-color-primary)",
         color: "#fff",
         padding: "10px 20px",
         border: "none",
+        textAlign: "center",
         borderRadius: "6px",
         cursor: "pointer",
       }}

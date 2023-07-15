@@ -17,12 +17,10 @@ module.exports = {
       darkTheme: require("prism-react-renderer/themes/dracula"),
       additionalLanguages: ["php", "powershell", "diff", "typescript"],
     },
-    /*  
     i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'de', 'fr'],
-    }, 
-    */
+      defaultLocale: "en",
+      locales: ["en", "es", "ar", "tr-TR"],
+    },
     // Translations later on
     algolia: {
       appId: "7NDV3UYBW5",
@@ -88,17 +86,14 @@ module.exports = {
         //        label: 'Community',
         //        position: 'left',
         //      },
-        // -- Implement comments later in community page
         {
           type: "docsVersionDropdown",
           position: "right",
         },
-        /*
         {
-          type: 'localeDropdown',
-          position: 'right',
-        }, 
-        */
+          type: "localeDropdown",
+          position: "right",
+        },
         {
           to: "https://aoi.js.org/invite",
           label: "Discord Server",
@@ -168,7 +163,7 @@ module.exports = {
           showLastUpdateTime: true,
           sidebarCollapsible: true,
           sidebarPath: require.resolve("./sidebars.js"),
-          lastVersion: "6.3.0",
+          lastVersion: "6.4.0",
           versions: {
             current: {
               label: "7.0.0 (dev)",
