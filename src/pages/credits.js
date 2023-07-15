@@ -36,8 +36,14 @@ const team = [
   },
   {
     name: "Maniator",
-    title: "Spanish Translator ⭐",
+    title: "Translator ⭐",
     avatar: require("../../assets/images/avatars/837796591015821332.gif")
+      .default,
+  },
+  {
+    name: "Paolo",
+    title: "Translator ⭐",
+    avatar: require("../../assets/images/avatars/713132410153205802.gif")
       .default,
   },
 ];

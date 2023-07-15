@@ -9,8 +9,35 @@ module.exports = {
   organizationName: "akaruidevelopment", // Usually your GitHub org/user name.
   projectName: "aoi.js-documentation", // Usually your repo name.
   trailingSlash: false,
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'es', 'tr', 'ar', 'hi', 'fr', 'uk'], // ru - not enough
+    path: 'i18n',
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+        path: 'en',
+      },
+      es: {
+        label: 'Español',
+        direction: 'ltr',
+        path: 'es',
+      },
+      tr: {
+        label: 'Türkçe',
+        direction: 'ltr',
+        path: 'tr',
+      },
+      ar: {
+        label: 'عربي',
+        direction: 'rtl',
+        path: 'ar',
+      },
+    },
+  },
   themeConfig: {
-    discordClientId: "1000517138802552952",
     image:
       "https://github.com/aoijs/website/blob/main/assets/images/aoijs-banner.png?raw=true",
     prism: {
@@ -18,34 +45,6 @@ module.exports = {
       darkTheme: require("prism-react-renderer/themes/dracula"),
       additionalLanguages: ["php", "powershell", "diff", "typescript"],
     }, 
-    i18n: {
-      defaultLocale: 'en',
-      locales: ['en', 'es', 'tr', 'ar'],
-      path: 'i18n',
-      localeConfigs: {
-        en: {
-          label: 'English',
-          direction: 'ltr',
-          htmlLang: 'en-US',
-          path: 'en',
-        },
-        es: {
-          label: 'Español',
-          direction: 'ltr',
-          path: 'es',
-        },
-        tr: {
-          label: 'Türkçe',
-          direction: 'ltr',
-          path: 'tr',
-        },
-        ar: {
-          label: 'عربي',
-          direction: 'rtl',
-          path: 'ar',
-        },
-      },
-    },
     // Translations later on
     algolia: {
       appId: "7NDV3UYBW5",
@@ -71,7 +70,7 @@ module.exports = {
       logo: {
         alt: "aoi.js logo",
         src: "img/logo.png",
-        width: 35,
+        width: 33,
         height: 30,
       },
       items: [

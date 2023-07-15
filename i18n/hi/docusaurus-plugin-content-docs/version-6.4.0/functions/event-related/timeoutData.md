@@ -1,0 +1,39 @@
+---
+title: '$timeoutData'
+description: '$timeoutData holds data for $setTimeout data parameters, this will be empty if used outside timeoutCommand codes.'
+id: timeoutData
+---
+
+`$timeoutData` holds data for $setTimeout data parameters, this will be empty if used outside timeoutCommand codes.
+
+## प्रोयोग
+
+```php
+$timeoutData[option]
+```
+
+## पैरामीटर्स
+
+| फील्ड  | टाइप     | डिस्क्रिप्शन              | चाहिए |
+| ------ | -------- | ------------------------- |:-----:|
+| option | स्ट्रिंग | Timeout Data option name. | true  |
+
+## ट्रू (हा)
+
+This will send "Hello!" after 10 seconds in the command execution channel:
+
+```javascript
+bot.command({
+    name: "setTimeout",
+    code: `
+    $setTimeout[timeoutCommand;10s;{"channelID": "$channelID", "authorID": "$authorID"};false]
+    `
+});
+
+bot.timeoutCommand({
+    name: "timeoutCommand",
+    code: `
+    $channelSendMessage[$timeoutData[channelID];Hello, <@$timeoutData[authorID]>!]
+    `
+});
+```
