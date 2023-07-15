@@ -1,5 +1,5 @@
 ---
-title: "title: $arrayFilter\ndescription: $arrayFilter verificará si un elemento en la matriz es igual a la consulta y lo devolverá.\nid: arrayFilter"
+title: $arrayFilter
 description: '$arrayFilter va a revisar si un elemento del array cumple con la condición y lo regresará.'
 id: arrayFilter
 ---

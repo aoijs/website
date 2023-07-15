@@ -9,31 +9,43 @@ module.exports = {
   organizationName: "akaruidevelopment", // Usually your GitHub org/user name.
   projectName: "aoi.js-documentation", // Usually your repo name.
   trailingSlash: false,
+  onBrokenLinks: "ignore",
+  onBrokenMarkdownLinks: "ignore",
+  webpack: {
+    jsLoader: (isServer) => ({
+      loader: require.resolve("esbuild-loader"),
+      options: {
+        loader: "tsx",
+        format: isServer ? "cjs" : undefined,
+        target: isServer ? "node12" : "es2017",
+      },
+    }),
+  },
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'es', 'tr', 'ar', 'hi', 'fr', 'uk'], // ru - not enough
-    path: 'i18n',
+    defaultLocale: "en",
+    locales: ["en", "es", "tr", "ar", "hi", "fr", "uk"], // ru - not enough
+    path: "i18n",
     localeConfigs: {
       en: {
-        label: 'English',
-        direction: 'ltr',
-        htmlLang: 'en-US',
-        path: 'en',
+        label: "English",
+        direction: "ltr",
+        htmlLang: "en-US",
+        path: "en",
       },
       es: {
-        label: 'Español',
-        direction: 'ltr',
-        path: 'es',
+        label: "Español",
+        direction: "ltr",
+        path: "es",
       },
       tr: {
-        label: 'Türkçe',
-        direction: 'ltr',
-        path: 'tr',
+        label: "Türkçe",
+        direction: "ltr",
+        path: "tr",
       },
       ar: {
-        label: 'عربي',
-        direction: 'rtl',
-        path: 'ar',
+        label: "عربي",
+        direction: "rtl",
+        path: "ar",
       },
     },
   },
@@ -44,7 +56,7 @@ module.exports = {
       theme: require("prism-react-renderer/themes/github"),
       darkTheme: require("prism-react-renderer/themes/dracula"),
       additionalLanguages: ["php", "powershell", "diff", "typescript"],
-    }, 
+    },
     // Translations later on
     algolia: {
       appId: "7NDV3UYBW5",
@@ -115,12 +127,12 @@ module.exports = {
           position: "right",
           dropdownItemsAfter: [
             {
-              type: 'html',
+              type: "html",
               value: '<hr style="margin: 0.3rem 0;">',
             },
             {
-              href: 'https://github.com/AkaruiDevelopment/aoi.js',
-              label: 'Github',
+              href: "https://github.com/AkaruiDevelopment/aoi.js",
+              label: "Github",
             },
           ],
         },
@@ -129,12 +141,12 @@ module.exports = {
           position: "right",
           dropdownItemsAfter: [
             {
-              type: 'html',
+              type: "html",
               value: '<hr style="margin: 0.3rem 0;">',
             },
             {
-              href: 'https://crowdin.com/translate/aoijs-documentation/all/',
-              label: 'Contribute & Translate',
+              href: "https://crowdin.com/translate/aoijs-documentation/all/",
+              label: "Contribute & Translate",
             },
           ],
         },

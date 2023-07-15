@@ -19,7 +19,7 @@ $onlyClientPerms[...perms;error]
 | ...perms | рядок | Permission that the bot requires.                            |     так      |
 | error    | рядок | Error to return when the bot has not the listed permissions. |     так      |
 
-You can find all permissions __[here](../../guides/Client/2permissionsintents.md)__.
+You can find all permissions __[here](../../guides/client/2permissionsintents.md)__.
 
 ## Приклад(и)
 

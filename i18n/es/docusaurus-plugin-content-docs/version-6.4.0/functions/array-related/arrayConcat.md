@@ -1,6 +1,6 @@
 ---
 title: '$arrayConcat'
-description: <code>$arrayConcat</code> concatenará varios arrays.
+description: $arrayConcat concatenará varios arrays.
 id: arrayConcat
 ---
 

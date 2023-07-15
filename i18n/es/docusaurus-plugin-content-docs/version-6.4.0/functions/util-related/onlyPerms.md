@@ -19,7 +19,7 @@ $onlyPerms[...perms;error]
 | ...permisos | consulta | Permission the user requires.                                 | verdadero |
 | error       | consulta | Error to return when the user has not the listed permissions. | verdadero |
 
-Encontrará todos los permisos __[aquí](../../guides/Client/2permissionsintents.md)__.
+Encontrará todos los permisos __[aquí](../../guides/client/2permissionsintents.md)__.
 
 ## Ejemplo(s)
 

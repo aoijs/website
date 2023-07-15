@@ -16,7 +16,7 @@
 </div>
 <br />
 
-<div align="center"><strong>aoi.js Official Documentation.</strong><br>
+<div align="center"><strong>aoi.js Official Documentation</strong><br>
 
 <br />
 
