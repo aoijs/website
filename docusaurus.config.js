@@ -237,10 +237,6 @@ module.exports = {
   ],
   plugins: [
     [
-      require.resolve("./src/components/AuthContext.js"),
-      {},
-    ],
-    [
       "@docusaurus/plugin-content-docs",
       {
         id: "extensions",
