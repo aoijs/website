@@ -9,6 +9,8 @@ module.exports = {
   organizationName: "akaruidevelopment", // Usually your GitHub org/user name.
   projectName: "aoi.js-documentation", // Usually your repo name.
   trailingSlash: false,
+  onBrokenLinks: "ignore",
+  onBrokenMarkdownLinks: "ignore",
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'es', 'tr', 'ar', 'hi', 'fr', 'uk'], // ru - not enough
