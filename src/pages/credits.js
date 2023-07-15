@@ -43,7 +43,7 @@ const team = [
   {
     name: "Paolo",
     title: "Translator ⭐",
-    avatar: require("../../assets/images/avatars/713132410153205802.gif")
+    avatar: require("../../assets/images/avatars/713132410153205802.png")
       .default,
   },
 ];
