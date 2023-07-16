@@ -116,12 +116,6 @@ module.exports = {
           label: "Credits",
           position: "left",
         },
-        //      {
-        //        to: 'community/',
-        //        activeBasePath: 'community',
-        //        label: 'Community',
-        //        position: 'left',
-        //      },
         {
           type: "docsVersionDropdown",
           position: "right",
@@ -231,8 +225,7 @@ module.exports = {
           customCss: require.resolve("./src/css/custom.css"),
         },
         gtag: {
-          trackingID: "G-BFNTC2Y655",
-          anonymizeIP: true,
+          trackingID: "G-BFNTC2Y655"
         },
         blog: {
           path: "forums",
