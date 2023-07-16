@@ -1,10 +1,10 @@
 ---
 title: '$isContextMenuInteraction'
-description: '$isContextMenuInteraction will return either true or false depending on the type of the interaction.'
+description: '$isContextMenuInteraction поверне true або false залежно від типу взаємодії.'
 id: isContextMenuInteraction
 ---
 
-`$isContextMenuInteraction` will return either true or false depending on the type of interaction.
+`$isContextMenuInteraction` поверне значення true або false в залежності від типу взаємодії.
 
 ## Використання
 

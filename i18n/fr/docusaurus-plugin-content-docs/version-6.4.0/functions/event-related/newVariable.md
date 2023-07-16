@@ -1,20 +1,20 @@
 ---
 title: '$newVariable'
-description: '$newVariable gets the data from variable events.'
+description: '$newVariable récupère les données des événements variables.'
 id: newVariable
 ---
 
-`$newVariable` gets the data from variable events.
+`$newVariable` récupère les données des événements variables.
 
-## Usage
+## Utilisation
 
 ```php
-$newVariable[option;sep?]
+$newVariable[option;sép?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- |:--------:|
-| option | string | Option to retrieve. |   true   |
-| sep    | string | Separator.          |  false   |
+| Champ  | Type                | Description         | Obligatoire |
+| ------ | ------------------- | ------------------- |:-----------:|
+| option | chaîne de caractère | Option à récupérer. |    vrai     |
+| sép?   | chaîne de caractère | Séparateur.         |    faux     |

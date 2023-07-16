@@ -1,7 +1,7 @@
 ---
 title: '$channelID'
 description: '$channelID devolverá el ID de canal del nombre de canal dado.'
-id: canalID
+id: channelID
 ---
 
 `$channelID` devolverá el ID de canal del nombre de canal dado.

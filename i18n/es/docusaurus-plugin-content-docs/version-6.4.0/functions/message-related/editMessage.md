@@ -1,30 +1,30 @@
 ---
 title: '$editMessage'
-description: '$editMessage will edit a given message.'
+description: '$editMessage editará un mensaje dado.'
 id: editMessage
 ---
 
-`$editMessage` will edit a given message.
+`$editMessage` editará un mensaje dado.
 
 ## Uso
 
 ```php
-$editMessage[messageID;content;channelID?]
+$editMessage[mensajeID;contenido;canalID?]
 ```
 
 ## Parámetros
 
-| Campo         | Tipo     | Parámetros                                         | Requerido |
-| ------------- | -------- | -------------------------------------------------- |:---------:|
-| ID de mensaje | entero   | The message that should be edited.                 | verdadero |
-| contenido     | consulta | The content of the new message.                    | verdadero |
-| canalID?      | entero   | The channel ID of where the message is located in. |   falso   |
+| Campo         | Tipo     | Parámetros                                     | Requerido |
+| ------------- | -------- | ---------------------------------------------- |:---------:|
+| ID de mensaje | entero   | El mensaje se ha modificado.                   | verdadero |
+| contenido     | consulta | El contenido del nuevo mensaje.                | verdadero |
+| canalID?      | entero   | El ID del canal donde se encuentra el mensaje. |   falso   |
 
-You can only edit messages that were sent by the bot itself.
+Solo puede editar mensajes que fueron enviados por el propio bot.
 
 ## Ejemplo(s)
 
-This will edit the sent message after five seconds: ( works the same way as `$editIn` )
+Esto editará el mensaje enviado después de cinco segundos: (funciona de la misma manera que `$editIn`)
 
 ```javascript
 bot.command({

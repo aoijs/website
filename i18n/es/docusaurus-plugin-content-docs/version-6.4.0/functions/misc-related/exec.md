@@ -1,26 +1,26 @@
 ---
 title: '$exec'
-description: '$exec will execute given code in your console.'
+description: '$exec ejecutará el código dado en tu consola.'
 id: exec
 ---
 
-`$exec` will execute given code in your console.
+`$exec` ejecutará el código dado en su consola.
 
 ## Uso
 
 ```php
-$exec[code]
+$exec[codigo]
 ```
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros                       | Requerido |
-| ----- | ------ | -------------------------------- |:---------:|
-| code  | string | Code to execute in your console. | verdadera |
+| Campo  | Tipo   | Parámetros                       | Requerido |
+| ------ | ------ | -------------------------------- |:---------:|
+| código | string | Código a ejecutar en tu consola. | verdadera |
 
 ## Ejemplo(s)
 
-This will return your current node version:
+Esto devolverá su versión actual del nodo:
 
 ```javascript
 bot.command({

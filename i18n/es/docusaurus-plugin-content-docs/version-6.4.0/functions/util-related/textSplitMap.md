@@ -1,10 +1,10 @@
 ---
 title: '$textSplitMap'
-description: '$textSplitMap will create a loop over all values that are stored within $textSplit'
+description: '$textSplitMap creará un bucle sobre todos los valores que se almacenan dentro de $textSplit'
 id: textSplitMap
 ---
 
-`$textSplitMap` will create a loop over all values that are stored within $textSplit.
+`$textSplitMap` creará un bucle sobre todos los valores que se almacenan dentro de $textSplit.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $textSplit[awaited]
 
 ## Parámetros
 
-| Campo   | Tipo   | Parámetros                   | Requerido |
-| ------- | ------ | ---------------------------- |:---------:|
-| awaited | string | Name of the awaited command. | verdadera |
+| Campo    | Tipo   | Parámetros                   | Requerido |
+| -------- | ------ | ---------------------------- |:---------:|
+| esperado | string | Nombre del comando esperado. | verdadera |
 
 ## Ejemplo(s)
 
-This will return the arguments within `$textSplit` and send all of them separately:
+Esto devolverá los argumentos dentro de `$textSplit` y los enviará todos por separado:
 
 ```javascript
 bot.command({

@@ -1,10 +1,10 @@
 ---
 title: '$mentionedChannelsCount'
-description: '$mentionedChannelsCount will return the amount of channel mentions within a message.'
+description: '$mentionedChannelsCount devolverá la cantidad de menciones del canal dentro de un mensaje.'
 id: mentionedChannelsCount
 ---
 
-`$mentionedChannelsCount` will return the amount of channel mentions within a message.
+`$mentionedChannelsCount` devolverá la cantidad de menciones del canal dentro de un mensaje.
 
 ## Uso
 
@@ -14,7 +14,7 @@ $mentionedChannelsCount
 
 ## Ejemplo(s)
 
-This will return the amount of channel mentions in the given text:
+Esto devolverá la cantidad de menciones de canal en el texto dado:
 
 ```javascript
 bot.command({

@@ -1,27 +1,27 @@
 ---
 title: '$renameFile'
-description: '$renameFile will rename a file of your bot''s directory.'
+description: '$renameFile renombrará un archivo del directorio de tu bot.'
 id: renameFile
 ---
 
-`$renameFile` will rename a file of your bot's directory.
+`$renameFile` renombrará un archivo del directorio de tu bot.
 
 ## Uso
 
 ```php
-$renameFile[oldFile;newFile]
+$renameFile[archivo antiguo;archivo nuevo]
 ```
 
 ## Parámetros
 
-| Campo   | Tipo     | Parámetros     | Requerido |
-| ------- | -------- | -------------- |:---------:|
-| oldFile | consulta | Old file name. | verdadero |
-| newFile | consulta | New file name. | verdadero |
+| Campo           | Tipo   | Parámetros                 | Requerido |
+| --------------- | ------ | -------------------------- |:---------:|
+| archivo antiguo | cadena | Nombre de archivo antiguo. | verdadero |
+| Archivo nuevo   | cadena | Nuevo nombre de archivo    | verdadero |
 
 ## Ejemplo(s)
 
-This will change your index.js to a index.txt file:
+Esto cambiará su index.js a un archivo index.txt:
 
 ```javascript
 bot.command({

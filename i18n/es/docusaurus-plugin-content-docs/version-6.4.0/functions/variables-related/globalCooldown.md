@@ -1,10 +1,10 @@
 ---
 title: '$globalCooldown'
-description: '$globalCooldown will set a global-based cooldown for a command.'
+description: '$globalCooldown establecerá un tiempo de reutilización global para un comando.'
 id: globalCooldown
 ---
 
-`$globalCooldown` will set a global-based cooldown for a command.
+`$globalCooldown` establecerá un tiempo de recarga global para un comando.
 
 ## Uso
 
@@ -12,25 +12,25 @@ id: globalCooldown
 $globalCooldown[time;errorMessage]
 ```
 
-* You are able to retrieve the remaining cooldown in the `$globalCooldown` function by using **`%time%`** or any of the following below.
-    * `%time%`, `%year%`, `%month%`, `%week%`, `%day%`, `%hour%`, `%min%`, `%sec%`, `%ms%`, `%fullTime%`
+* Puedes recuperar el tiempo de enfriamiento restante en la función `$globalCooldown` usando **`%time%`** o cualquiera de los siguientes a continuación.
+    * `%time%`, `%year%`, `%month%`, `%week%`, `%day%`, `%hour%`, `%min%`, `%sec%` `%ms%`, `%fullTime%`
 
 ## Parámetros
 
-| Campo        | Tipo     | Parámetros                                                       | Requerido |
-| ------------ | -------- | ---------------------------------------------------------------- |:---------:|
-| tiempo       | consulta | The duration of the cooldown.                                    | verdadero |
-| errorMessage | consulta | Error message given when there's remaining time of the cooldown. | verdadero |
+| Campo            | Tipo     | Parámetros                                                            | Requerido |
+| ---------------- | -------- | --------------------------------------------------------------------- |:---------:|
+| tiempo           | consulta | La duración del enfriamiento.                                         | verdadero |
+| mensaje de error | consulta | Mensaje de error dado cuando queda tiempo del tiempo de enfriamiento. | verdadero |
 
 ## Ejemplo(s)
 
-This will return `Hello` and stop anyone from executing the command again for another five minutes:
+Esto devolverá `Hola` y evitará que cualquiera ejecute el comando de nuevo durante otros cinco minutos:
 
 ```javascript
 bot.command({
     name: 'globalCooldown',
     code: `
-  Hello
+  Hola
   $globalCooldown[5m;Please wait %time% to execute this command again.]
   `
 });

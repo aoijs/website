@@ -1,10 +1,10 @@
 ---
 title: '$mentionedRoles'
-description: '$mentionedRoles will return the ID of a role retrieved from a message, this works similar as `$mentioned`.'
+description: '$mentionedRoles devolverá el ID de un rol recuperado de un mensaje, esto funciona como `$mentioned`.'
 id: mentionedRoles
 ---
 
-`$mentionedRoles` will return the ID of a role retrieved from a message.
+`$mentionedRoles` devolverá el ID de un rol recuperado de un mensaje.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $mentionedRoles[index]
 
 ## Parámetros
 
-| Campo  | Tipo   | Parámetros                 | Requerido |
-| ------ | ------ | -------------------------- |:---------:|
-| índice | número | The index of the argument. | verdadera |
+| Campo  | Tipo   | Parámetros               | Requerido |
+| ------ | ------ | ------------------------ |:---------:|
+| índice | número | El índice del argumento. | verdadera |
 
 ## Ejemplo(s)
 
-This will return the ID of the **first** role mention if you attempt to mention any role in this command:
+Esto devolverá el ID de la **primera mención de rol** si intentas mencionar cualquier rol en este comando:
 
 ```javascript
 bot.command({

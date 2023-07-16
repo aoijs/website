@@ -1,36 +1,36 @@
 ---
 title: '$cloneChannel'
-description: '$cloneChannel will clone a channel.'
+description: '$cloneChannel dupliquera un salon.'
 id: cloneChannel
 ---
 
-`$cloneChannel` will clone a channel.
+`$cloneChannel` dupliquera un salon.
 
-## Usage
+## Utilisation
 
 ```php
-$cloneChannel[channelID;name;returnID?]
+$cloneChannel[IDsalon;nom;renvoyerID?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field     | Type    | Description                                                         | Required |
-| --------- | ------- | ------------------------------------------------------------------- |:--------:|
-| channelID | integer | The ID of the channel which is to clone.                            |   true   |
-| name      | string  | The new name of the cloned channel.                                 |   true   |
-| returnID? | string  | If the function should return the ID of the newly created channnel. |  false   |
+| Champ       | Type                 | Description                                              | Obligatoire |
+| ----------- | -------------------- | -------------------------------------------------------- |:-----------:|
+| IDsalon     | entier               | L'ID du salon à dupliquer.                               |    vrai     |
+| nom         | chaine de caractères | Le nouveau nom du salon dupliqué.                        |    vrai     |
+| renvoyerID? | booléen              | Si la fonction retourne l'ID du salon nouvellement créé. |    faux     |
 
-**It won't clone any messages of that channel.**
+**Il ne dupliquera aucun message de ce salon.**
 
-## Example(s)
+## Exemple(s)
 
-This will clone the current channel and name it "new channel":
+Cela clonera le salon actuel et le nommera "nouveau salon":
 
 ```javascript
 bot.command({
-    name: 'cloneChannel',
+    name: 'dupliquerSalon',
     code: `
-  $cloneChannel[$channelID;new channel;false]
+  $cloneChannel[$channelID;nouveau salon;false]
   `
 });
 ```

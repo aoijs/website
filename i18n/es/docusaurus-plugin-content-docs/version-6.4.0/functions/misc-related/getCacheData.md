@@ -1,22 +1,22 @@
 ---
 title: '$getCacheData'
-description: '$getCacheData will return cache data.'
+description: '$getCacheData devolverá los datos del caché.'
 id: getCacheData
 ---
 
-`$getCacheData` will return cache data.
+`$getCacheData` devolverá los datos del caché.
 
 ## Uso
 
 ```php
-$getCacheData[type;name;key;option?]
+$getCacheData[tipo;nombre;llave;opcion?]
 ```
 
 ## Parámetros
 
-| Campo   | Tipo     | Parámetros | Requerido |
-| ------- | -------- | ---------- |:---------:|
-| type    | consulta |            | verdadero |
-| name    | consulta |            | verdadero |
-| key     | string   |            |    sí     |
-| opción? | string   |            |   falso   |
+| Campo   | Tipo   | Parámetros | Requerido |
+| ------- | ------ | ---------- |:---------:|
+| tipo    | cadena |            | verdadero |
+| nombre  | cadena |            | verdadero |
+| llave   | cadena |            | verdadero |
+| opción? | cadena |            |   falso   |

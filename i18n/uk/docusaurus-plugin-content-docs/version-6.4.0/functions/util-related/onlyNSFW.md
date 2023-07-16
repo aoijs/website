@@ -1,10 +1,10 @@
 ---
-title: '$onlyNSFW'
-description: '$onlyNSFW will check if the command was executed in a NSFW channel and return a error message if not.'
+title: $onlyNSFW
+description: '$onlyNSFW перевірить чи виконана команда в NSFW каналі і поверне повідомлення про помилку.'
 id: onlyNSFW
 ---
 
-`$onlyNSFW` will check if the command was executed in a NSFW channel and return a error message if not.
+`$onlyNSFW` перевірить чи виконана команда в NSFW каналі і поверне повідомлення про помилку.
 
 ## Використання
 
@@ -14,18 +14,18 @@ $onlyNSFW[error?]
 
 ## Параметри
 
-| Поле  | Тип   | Опис                                                                 | Обов'язковий |
-| ----- | ----- | -------------------------------------------------------------------- |:------------:|
-| error | рядок | Error to return when the command was not executed in a NSFW channel. |     так      |
+| Поле    | Тип   | Опис                                                             | Обов'язковий |
+| ------- | ----- | ---------------------------------------------------------------- |:------------:|
+| помилка | рядок | Помилка повернення, коли команда не була виконана в NSFW каналі. |     так      |
 
 ## Приклад(и)
 
-This will limit the command only to NSFW channels:
+Це обмежує команду лише NSFW каналів:
 
 ```javascript
 bot.command({
-    name: "onlyNSFW",
-    code: `
+    name: "тільки NSFW",
+    код: `
     Ok.
     $onlyNSFW[You can't use that command here!]
     `

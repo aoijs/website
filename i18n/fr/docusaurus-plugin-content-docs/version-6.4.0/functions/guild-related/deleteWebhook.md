@@ -1,33 +1,33 @@
 ---
 title: '$deleteWebhook'
-description: '$deleteWebhook will delete a given Webhook.'
+description: '$deleteWebhook supprimera le webhook donné.'
 id: deleteWebhook
 ---
 
-`$deleteWebhook` will delete a given Webhook.
+`$deleteWebhook` supprimera le webhook donné.
 
-## Usage
+## Utilisation
 
 ```php
-$deleteWebhook[webhookID;webhookToken]
+$deleteWebhook[IDwebhook;tokenWebhook]
 ```
 
-## Parameters
+## Paramètres
 
-| Field        | Type    | Description               | Required |
-| ------------ | ------- | ------------------------- |:--------:|
-| webhookID    | integer | The ID of the webhook.    |   true   |
-| webhookToken | string  | The token of the webhook. |   true   |
+| Champ        | Type                 | Description          | Obligatoire |
+| ------------ | -------------------- | -------------------- |:-----------:|
+| IDwebhook    | entier               | L'ID du webhook.     |     oui     |
+| tokenWebhook | chaine de caractères | Le token du webhook. |    true     |
 
-## Example(s)
+## Exemple(s)
 
-This will delete a webhook of your guild:
+Ceci supprimera un webhook de votre serveur:
 
 ```javascript
 bot.command({
     name: 'deleteWebhook',
     code: `
-  $deleteWebhook[webhookID;webhookToken]
-  ` // replace the fields which the actual information.
+  $deleteWebhook[IDwebhook;tokenWebhook]
+  ` // remplacez les champs par des informations valides actuellement.
 });
 ```

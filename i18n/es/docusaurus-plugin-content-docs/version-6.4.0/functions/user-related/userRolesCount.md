@@ -1,27 +1,27 @@
 ---
 title: '$userRolesCount'
-description: '$userRolesCount will return a user''s role count.'
+description: '$userRolesCount devolverá el recuento de roles de un usuario.'
 id: userRolesCount
 ---
 
-`$userRolesCount` will return a user's role count.
+`$userRolesCount` devolverá el recuento de roles de un usuario.
 
 ## Uso
 
 ```php
-$userRolesCount[userID?;guildID?]
+$userRolesCount[usuarioID?;servidorID?]
 ```
 
 ## Parámetros
 
-| Campo       | Tipo   | Parámetros    | Requerido |
-| ----------- | ------ | ------------- |:---------:|
-| usarioID?   | entero | The user ID.  |    no     |
-| servidorID? | entero | The guild ID. |    no     |
+| Campo       | Tipo   | Parámetros                     | Requerido |
+| ----------- | ------ | ------------------------------ |:---------:|
+| usarioID?   | entero | La identificación del usuario. |   falso   |
+| servidorID? | entero | ID del servidor.               |   falso   |
 
 ## Ejemplo(s)
 
-This will return the amount of roles you have assigned:
+Esto devolverá la cantidad de roles que ha asignado:
 
 ```javascript
 bot.command({

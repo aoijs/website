@@ -1,28 +1,28 @@
 ---
 title: '$displayName'
-description: '$displayName will return the display name of a given user.'
+description: '$displayName devolverá el nombre mostrado de un usuario dado.'
 id: displayName
 ---
 
-`$displayName` will return the display name of a given user.
+`$displayName` devolverá el nombre mostrado de un usuario determinado.
 
 ## Uso
 
 ```php
-$displayName[guildID?;userID?;returnUser?]
+$displayName[servidorID?;usuarioID?;volverUsuario?]
 ```
 
 ## Parámetros
 
-| Campo       | Tipo     | Parámetros                                                                           | Requerido |
-| ----------- | -------- | ------------------------------------------------------------------------------------ |:---------:|
-| servidorID? | entero   | The ID of the guild.                                                                 |    no     |
-| usarioID?   | entero   | El ID del usuario.                                                                   |    no     |
-| returnUser? | booleano | Return the username <br /> 1. **true** <br /> 2. **false** (por defecto) |   falso   |
+| Campo            | Tipo     | Parámetros                                                                                     | Requerido |
+| ---------------- | -------- | ---------------------------------------------------------------------------------------------- |:---------:|
+| servidorID?      | entero   | ID del servidor.                                                                               |   falso   |
+| usarioID?        | entero   | El ID del usuario.                                                                             |   falso   |
+| ¿volver usuario? | booleano | Devuelve el nombre de usuario <br /> 1. **true** <br /> 2. **false** (por defecto) |   falso   |
 
 ## Ejemplo(s)
 
-This will return your displayName, if you have none then it'll return your Discord username:
+Esto devolverá tu nombre de displayName, si no tienes ninguno, entonces devolverá tu nombre de usuario de Discord:
 
 ```javascript
 bot.command({

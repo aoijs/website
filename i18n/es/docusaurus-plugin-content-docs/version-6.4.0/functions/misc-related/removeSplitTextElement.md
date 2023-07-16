@@ -1,26 +1,26 @@
 ---
 title: '$removeSplitTextElement'
-description: '$removeSplitTextElement will remove a specific split text element.'
+description: '$removeSplitTextElement eliminará un elemento específico de texto dividido.'
 id: removeSplitTextElement
 ---
 
-`$removeSplitTextElement` will remove a specific split text element.
+`$removeSplitTextElement` eliminará un elemento de texto dividido específico.
 
 ## Uso
 
 ```php
-$removeSplitTextElement[...elements]
+$removeSplitTextElement[...elementos]
 ```
 
 ## Parámetros
 
-| Campo        | Tipo   | Parámetros                     | Requerido |
-| ------------ | ------ | ------------------------------ |:---------:|
-| ...elementos | string | Split text elements to remove. | verdadera |
+| Campo        | Tipo   | Parámetros                             | Requerido |
+| ------------ | ------ | -------------------------------------- |:---------:|
+| ...elementos | cadena | Dividir elementos de texto a eliminar. | verdadera |
 
 ## Ejemplo(s)
 
-This will remove the word "bye" from the array:
+Esto eliminará la palabra "bye" del arreglo:
 
 ```javascript
 bot.command({

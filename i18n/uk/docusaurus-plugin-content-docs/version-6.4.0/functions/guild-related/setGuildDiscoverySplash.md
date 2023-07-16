@@ -1,10 +1,10 @@
 ---
 title: '$setGuildDiscoverySplash'
-description: '$setGuildDiscoverySplash will change a Guild''s discovery splash banner.'
+description: '$setGuildDiscoverySplash змінить баннер для відкриття Гільди.'
 id: setGuildDiscoverySplash
 ---
 
-`$setGuildDiscoverySplash` will change a Guild's discovery splash banner.
+`$setGuildDiscoverySplash` змінить банер для дослідження Гільдії.
 
 ## Використання
 
@@ -14,20 +14,20 @@ $setGuildDiscoverySplash[guildID?;URL;reason?]
 
 ## Параметри
 
-| Поле     | Тип     | Опис                                                     | Обов'язковий |
-| -------- | ------- | -------------------------------------------------------- | ------------ |
-| guildID? | integer | Guild ID of the guild.                                   | ні           |
-| URL      | рядок   | New discovery splash banner.                             | так          |
-| reason?  | рядок   | Reason that will be displayed in the guild's audit logs. | ні           |
+| Поле     | Тип   | Опис                                                 | Обов'язковий |
+| -------- | ----- | ---------------------------------------------------- | ------------ |
+| гільдія? | ціле  | ID гільдії (гільдії).                                | ні           |
+| Адреса   | рядок | Нове відкриття сплешу банер.                         | так          |
+| причина? | рядок | Причина відправлена в журналі розпізнавання гільдії. | ні           |
 
 ## Приклад(и)
 
-This will change the banner of the current guild:
+Це змінить прапор поточного вигляду:
 
 ```javascript
 bot.command({
     name: 'setGuildDiscoverySplash',
-    code: `
+    код: `
   $setGuildDiscoverySplash[$guildID;https://cdn.discordapp.com/banners/773352845738115102/b2b27d0915a838e8b4f68b180d1901ad.webp;Example!]
   `
 });

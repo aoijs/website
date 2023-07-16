@@ -1,10 +1,10 @@
 ---
 title: '$splitText'
-description: '$splitText will return a value of $textSplit depending on the given index.'
+description: '$splitText devolverá un valor de $textSplit dependiendo del índice dado.'
 id: splitText
 ---
 
-`$splitText` will return a value of $textSplit depending on the given index.
+`$splitText` devolverá un valor de $textSplit dependiendo del índice dado.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $splitText[index]
 
 ## Parámetros
 
-| Campo  | Tipo    | Parámetros                     | Requerido |
-| ------ | ------- | ------------------------------ |:---------:|
-| índice | integer | Index of `$textSplit` content. | verdadera |
+| Campo  | Tipo    | Parámetros                        | Requerido |
+| ------ | ------- | --------------------------------- |:---------:|
+| índice | integer | Índice de contenido `$textSplit`. | verdadera |
 
 ## Ejemplo(s)
 
-This will return `aoi.js` as it's the second argument of `$textSplit`:
+Esto devolverá `aoi.js` ya que es el segundo argumento de `$textSplit`:
 
 ```javascript
 bot.command({

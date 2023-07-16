@@ -1,10 +1,10 @@
 ---
 title: '$randomUserID'
-description: '$randomUserID will return a random username.'
+description: '$randomUserID devolverá un nombre de usuario aleatorio.'
 id: randomUserID
 ---
 
-`$randomUserID` will return a random username.
+`$randomUserID` devolverá un nombre de usuario aleatorio.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $randomUserID[global/guildID?]
 
 ## Parámetros
 
-| Campo           | Tipo   | Parámetros                                                               | Requerido |
-| --------------- | ------ | ------------------------------------------------------------------------ |:---------:|
-| global/guildID? | string | Return a random user out of all guild or out of one specific guild only. |    no     |
+| Campo            | Tipo   | Parámetros                                                                | Requerido |
+| ---------------- | ------ | ------------------------------------------------------------------------- |:---------:|
+| ¿global/guildID? | string | Devuelve un usuario aleatorio de toda la guild o de una guild específica. |    no     |
 
 ## Ejemplo(s)
 
-This will return a random user id:
+Esto devolverá un id de usuario aleatorio.
 
 ```javascript
 bot.command({

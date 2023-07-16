@@ -1,29 +1,29 @@
 ---
 title: '$forEachGuildChannel'
-description: '$forEachGuildChannel will execute awaited commands in every channel of the current guild.'
+description: '$forEachGuildChannel ejecutará comandos esperados en cada canal de cada gremio.'
 id: forEachGuildChannel
 ---
 
-`$forEachGuildChannel` will execute awaited commands in every channel of the current guild.
+`$forEachGuildChannel` ejecutará comandos esperados en cada canal de cada gremio.
 
 ## Uso
 
 ```php
-$forEachGuildChannel[time;awaitData;...awaitedCmds;endCmd]
+$forEachGuildChannel[tiempo;esperar datos;...Cmds esperados;finalizar comando]
 ```
 
 ## Parámetros
 
-| Campo          | Tipo     | Parámetros                                                  | Requerido |
-| -------------- | -------- | ----------------------------------------------------------- |:---------:|
-| tiempo         | consulta | How long it takes between each channel to execute the next. | verdadero |
-| awaitData      | object   | Datos esperados.                                            | verdadero |
-| ...awaitedCmds | string   | Awaited Commands to execute.                                |    sí     |
-| endCmd         | string   | Awaited Command to execute when loop ends.                  |    sí     |
+| Campo             | Tipo     | Parámetros                                                     | Requerido |
+| ----------------- | -------- | -------------------------------------------------------------- |:---------:|
+| tiempo            | consulta | Cuánto tiempo tarda entre cada canal en ejecutar el siguiente. | verdadero |
+| esperar datos     | objeto   | Datos esperados.                                               | verdadero |
+| ...Cmds esperados | cadena   | Comando esperado para ejecutar.                                | verdadero |
+| finalizar comando | string   | Comando esperado para ejecutar cuando termine el bucle.        | verdadero |
 
 ## Ejemplo(s)
 
-This will change the variable value of each guild channel to "test":
+Esto cambiará el valor de variable de cada canal a "test":
 
 ```javascript
 bot.command({

@@ -14,14 +14,14 @@ $textSplit[text;sep?]
 
 ## Parámetros
 
-| Campo | Tipo     | Parámetros                        | Requerido |
-| ----- | -------- | --------------------------------- |:---------:|
-| text  | consulta | Query of arguments.               | verdadero |
-| sep?  | consulta | Separator for the text arguments. |    no     |
+| Campo | Tipo     | Parámetros                              | Requerido |
+| ----- | -------- | --------------------------------------- |:---------:|
+| text  | consulta | Consulta de argumentos.                 | verdadero |
+| sep?  | consulta | Separador para los argumentos de texto. |    no     |
 
 ## Ejemplo(s)
 
-This will return `hello, how are you`:
+Esto devolverá `Hola, cómo eres`:
 
 ```javascript
 bot.command({

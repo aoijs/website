@@ -1,10 +1,10 @@
 ---
 title: '$endif'
-description: '$endif is used to end an if statement.'
+description: '$endif se usa para terminar una sentencia if.'
 id: endif
 ---
 
-`$endif` is used to end an if statement.
+`$endif` se usa para finalizar una declaración if.
 
 ## Uso
 
@@ -12,17 +12,17 @@ id: endif
 $endif
 ```
 
-:::warning Deprecation
+:::warning decrecación
 
 
-`$if: "old"` is deprecated and should no longer be used as it will be removed in the future.
+`$if: "old"` está en desuso y ya no debe usarse, ya que se eliminará en el futuro.
 
 :::
 
 
 ## Ejemplo(s)
 
-Example usage of `$if: old` (will return "Hello" when the condition is true):
+Ejemplo de uso de `$if: old` (devolverá "Hello" cuando la condición sea verdadera):
 
 ```javascript
 bot.command({

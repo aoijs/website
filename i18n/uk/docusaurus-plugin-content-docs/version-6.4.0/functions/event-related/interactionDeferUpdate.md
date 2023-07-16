@@ -1,10 +1,10 @@
 ---
-title: '$interactionDeferUpdate'
-description: '$interactionDeferUpdate defers the interaction message that will be updated.'
+title: $interactionDeferUpdate
+description: '$interactionDeferUpdate відкриває інтерактивне повідомлення, яке буде оновлено.'
 id: interactionDeferUpdate
 ---
 
-`$interactionDeferUpdate` defers the interaction message that will be updated.
+`$interactionDeferUpdate` повідомляє інтерактивне повідомлення, яке буде оновлено.
 
 ## Використання
 
@@ -14,9 +14,9 @@ $interactionDeferUpdate[ephemeral]
 
 ## Параметри
 
-| Поле      | Тип     | Опис                                | Обов'язковий |
-| --------- | ------- | ----------------------------------- |:------------:|
-| ephemeral | boolean | Visible to the command author only? |     так      |
+| Поле      | Тип     | Опис                                   | Обов'язковий |
+| --------- | ------- | -------------------------------------- |:------------:|
+| ефегемаль | boolean | Видимий лише автору командного автора? |     так      |
 
 ## Приклад(и)
 
@@ -25,7 +25,7 @@ bot.command({
     name: 'exampleButton',
     type: 'interaction',
     prototype: 'button',
-    code: ` 
+    код: ` 
    $interactionFollowUp[This is the first message!]
    $interactionEdit[This is the second message!]
    $interactionDeferUpdate[true]`

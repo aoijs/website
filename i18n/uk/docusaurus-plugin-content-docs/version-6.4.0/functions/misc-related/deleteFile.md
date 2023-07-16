@@ -1,10 +1,10 @@
 ---
-title: '$deleteFile'
-description: '$deleteFile will delete a given file.'
+title: $deleteFile
+description: '$deleteFile видалить заданий файл.'
 id: deleteFile
 ---
 
-`$deleteFile` will delete a given file.
+`$deleteFile` видалить даний файл.
 
 ## Використання
 
@@ -14,18 +14,18 @@ $deleteFile[path]
 
 ## Параметри
 
-| Поле | Тип   | Опис       | Обов'язковий |
-| ---- | ----- | ---------- |:------------:|
-| path | рядок | File path. |     так      |
+| Поле | Тип   | Опис           | Обов'язковий |
+| ---- | ----- | -------------- |:------------:|
+| шлях | рядок | Шлях до файлу. |     так      |
 
 ## Приклад(и)
 
-This will delete your `index.js` (don't actually do that):
+Це призведе до видалення вашого `index.js` (не насправді до цього):
 
 ```javascript
 bot.command({
     name: "deleteFile",
-    code: `
+    код: `
   $deleteFile[./index.js]
   `
 });

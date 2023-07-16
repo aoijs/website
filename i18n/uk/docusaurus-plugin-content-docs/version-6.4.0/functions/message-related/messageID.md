@@ -1,10 +1,10 @@
 ---
-title: '$messageID'
-description: '$messageID will return the message ID.'
+title: $messageID
+description: '$messageID поверне ID повідомлення.'
 id: messageID
 ---
 
-`$messageID` will return the message ID.
+`$messageID` поверне ID повідомлення.
 
 ## Використання
 
@@ -14,13 +14,13 @@ $messageID
 
 ## Приклад(и)
 
-This will return the message ID of the message with which you executed the command:
+Це поверне ID повідомлення, з яким ви виконували команду:
 
 ```javascript
 bot.command({
-    name: 'messageID',
-    code: `
-  The message ID of your the message you just sent is: "$messageID"
+    name: 'ID повідомлення',
+    код:`
+  ID повідомлення повідомлення, яке ви щойно надіслали: "$messageID"
   `
 });
 ```

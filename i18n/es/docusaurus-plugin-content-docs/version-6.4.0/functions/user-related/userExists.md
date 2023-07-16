@@ -1,26 +1,26 @@
 ---
 title: '$userExists'
-description: '$userExists will check if a given user exists.'
+description: '$userExists verificará si existe un usuario determinado.'
 id: userExists
 ---
 
-`$userExists` will check if a given user exists.
+`$userExists` comprobará si existe un usuario determinado.
 
 ## Uso
 
 ```php
-$userExists[userID?]
+$userExists[usuarioID?]
 ```
 
 ## Parámetros
 
-| Campo     | Tipo    | Parámetros   | Requerido |
-| --------- | ------- | ------------ |:---------:|
-| usarioID? | integer | The user ID. |    no     |
+| Campo     | Tipo    | Parámetros                     | Requerido |
+| --------- | ------- | ------------------------------ |:---------:|
+| usarioID? | integer | La identificación del usuario. |   falso   |
 
 ## Ejemplo(s)
 
-This will return either `true` or `false` depending on if the user exists, in this example below it will return `true` as you exist as Discord user:
+Esto retornará `true` o `false` dependiendo de si el usuario existe, en este ejemplo a continuación retornará `true` tal como existas como usuario de Discord:
 
 ```javascript
 bot.command({

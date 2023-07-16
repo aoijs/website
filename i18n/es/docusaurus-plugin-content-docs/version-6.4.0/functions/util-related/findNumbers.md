@@ -1,26 +1,26 @@
 ---
 title: '$findNumbers'
-description: '$findNumbers will attempt to return all numbers in a message of a given text.'
+description: '$findNumbers intentará devolver todos los números en un mensaje de un texto determinado.'
 id: findNumbers
 ---
 
-`$findNumbers` will attempt to return all numbers in a message of a given text.
+`$findNumbers` intentará devolver todos los números en un mensaje de un texto determinado.
 
 ## Uso
 
 ```php
-$findNumbers[text]
+$findNumbers[texto]
 ```
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros                           | Requerido |
-| ----- | ------ | ------------------------------------ |:---------:|
-| text  | string | Text where you want to find numbers. | verdadera |
+| Campo | Tipo   | Parámetros                             | Requerido |
+| ----- | ------ | -------------------------------------- |:---------:|
+| texto | cadena | Texto donde quieres encontrar números. | verdadera |
 
 ## Ejemplo(s)
 
-This will return `25` and remove `Hello, I'm [..] years old` from the given text:
+Esto devolverá `25` y eliminará `Hello, I'm [..]   years old` del texto dado:
 
 ```javascript
 bot.command({

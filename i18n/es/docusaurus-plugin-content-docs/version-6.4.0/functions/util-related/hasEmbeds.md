@@ -1,27 +1,27 @@
 ---
 title: '$hasEmbeds'
-description: '$hasEmbeds will check if there are embeds attached to the message.'
+description: '$hasEmbeds comprobará si hay incrustaciones adjuntas al mensaje.'
 id: hasEmbeds
 ---
 
-`$hasEmbeds` will check if there are embeds attached to the message.
+`$hasEmbeds` comprobará si hay incrustaciones adjuntas al mensaje.
 
 ## Uso
 
 ```php
-$hasEmbeds[messageID;channelID]
+$hasEmbeds[ID de mensaje;canalID?]
 ```
 
 ## Parámetros
 
-| Campo         | Tipo   | Parámetros                                          | Requerido |
-| ------------- | ------ | --------------------------------------------------- |:---------:|
-| ID de mensaje | entero | ID of the message to check if it contains an embed. | verdadero |
-| canalID       | entero | ID of the channel where the message is located in.  | verdadero |
+| Campo         | Tipo   | Parámetros                                               | Requerido |
+| ------------- | ------ | -------------------------------------------------------- |:---------:|
+| ID de mensaje | entero | ID del mensaje para comprobar si contiene un incrustado. | verdadero |
+| canalID       | entero | ID del canal en el que se encuentra el mensaje.          | verdadero |
 
 ## Ejemplo(s)
 
-This will return `false` as there are no embeds attached to your message:
+Esto devolverá `false` ya que no hay incrustaciones adjuntas a tu mensaje:
 
 ```javascript
 bot.command({

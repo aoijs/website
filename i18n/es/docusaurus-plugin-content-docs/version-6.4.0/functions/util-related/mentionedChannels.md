@@ -1,10 +1,10 @@
 ---
 title: '$mentionedChannels'
-description: '$mentionedChannels will return the ID of a channel retrieved from the mention.'
+description: '$mentionedChannels devolverá el ID de un canal recuperado de la mención.'
 id: mentionedChannels
 ---
 
-`$mentionedChannels` will return the ID of a channel retrieved from the mention.
+`$mentionedChannels` devolverá el ID de un canal recuperado de la mención.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $mentionedChannels[index;returnSelf?]
 
 ## Parámetros
 
-| Campo       | Tipo    | Parámetros                                                                                 | Requerido |
-| ----------- | ------- | ------------------------------------------------------------------------------------------ |:---------:|
-| índice      | número  | The index of the argument.                                                                 | verdadero |
-| returnSelf? | boolean | Return the ID of the channel where the command was executed in when channel was not found. |    no     |
+| Campo         | Tipo    | Parámetros                                                                              | Requerido |
+| ------------- | ------- | --------------------------------------------------------------------------------------- |:---------:|
+| índice        | número  | El índice del argumento.                                                                | verdadero |
+| ¿volver a Sí? | boolean | Devuelve el ID del canal donde el comando fue ejecutado cuando no se encontró el canal. |    no     |
 
 ## Ejemplo(s)
 
-This will return the ID of the **first** mention if you attempt to mention any channel in this command, or else it will return the channel ID of the channel where the command was executed in:
+Esto devolverá el ID de la **primera** mención si intenta mencionar cualquier canal en este comando, o devolverá el ID del canal en el que se ejecutó el comando:
 
 ```javascript
 bot.command({

@@ -1,28 +1,28 @@
 ---
 title: '$hasAnyRole'
-description: '$hasAnyRole will check if the provided user has any of the roles listed in the roles argument.'
+description: '$hasAnyRole comprobará si el usuario proporcionado tiene alguno de los roles listados en el argumento de los roles.'
 id: hasAnyRole
 ---
 
-`$hasAnyRole` will check if the provided user has any of the roles listed in the roles argument.
+`$hasAnyRole` comprobará si el usuario proporcionado tiene alguno de los roles listados en el argumento de los roles.
 
 ## Uso
 
 ```php
-$hasAnyRole[guildID;userID;...roles]
+$hasAnyRole[servidoriD;usuarioID;...roles]
 ```
 
 ## Parámetros
 
-| Campo      | Tipo   | Parámetros                                      | Requerido |
-| ---------- | ------ | ----------------------------------------------- |:---------:|
-| servidorID | entero | ID of the guild where the roles are present in. | verdadero |
-| usarioID   | entero | ID of the user.                                 | verdadero |
-| ...roles   | entero | The roles that will be checked for.             |    sí     |
+| Campo      | Tipo   | Parámetros                                            | Requerido |
+| ---------- | ------ | ----------------------------------------------------- |:---------:|
+| servidorID | entero | ID del servidor desde el que se contarán los canales. | verdadero |
+| usarioID   | entero | El ID del usuario.                                    | verdadero |
+| ...roles   | entero | Los roles que se comprobarán.                         | verdadero |
 
 ## Ejemplo(s)
 
-This will return `true` when the user has any of the listed roles:
+Esto devolverá `true` cuando el usuario tenga cualquiera de los roles listados:
 
 ```javascript
 bot.command({

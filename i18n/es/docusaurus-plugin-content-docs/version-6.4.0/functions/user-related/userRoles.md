@@ -1,29 +1,29 @@
 ---
 title: '$userRoles'
-description: '$userRoles will return the roles of a specific user.'
+description: '$userRoles devolverá los roles de un usuario específico.'
 id: userRoles
 ---
 
-`$userRoles` will return the roles of a specific user.
+`$userRoles` devolverá los roles de un usuario específico.
 
 ## Uso
 
 ```php
-$userRoles[userID?;guildID?;option?;sep?]
+$userRoles[usarioID?;servidorID?;opción?,sep?]
 ```
 
 ## Parámetros
 
-| Campo       | Tipo   | Parámetros                                                                                                    | Requerido |
-| ----------- | ------ | ------------------------------------------------------------------------------------------------------------- |:---------:|
-| usarioID?   | entero | The user ID.                                                                                                  |    no     |
-| servidorID? | entero | The guild ID.                                                                                                 |    no     |
-| opción?     | string | How to return the roles <br /> 1. **name** (default) <br /> 2. **id** <br /> 3. **mention** |   falso   |
-| sep?        | string | Separator to separate multiple returned values.                                                               |   falso   |
+| Campo       | Tipo   | Parámetros                                                                                                        | Requerido |
+| ----------- | ------ | ----------------------------------------------------------------------------------------------------------------- |:---------:|
+| usarioID?   | entero | La identificación del usuario.                                                                                    |   falso   |
+| servidorID? | entero | ID del servidor.                                                                                                  |   falso   |
+| opción?     | cadena | Cómo devolver los roles <br /> 1. **name** (por defecto) <br /> 2. **id** <br /> 3. **mention** |   falso   |
+| sep?        | cadena | Separador para separar varios valores devueltos.                                                                  |   falso   |
 
 ## Ejemplo(s)
 
-This will return your roles:
+Esto devolverá sus roles:
 
 ```javascript
 bot.command({

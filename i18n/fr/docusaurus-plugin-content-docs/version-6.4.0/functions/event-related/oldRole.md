@@ -1,19 +1,19 @@
 ---
 title: '$oldRole'
-description: '$oldRole holds data of the role before it was updated, used in role update event, or else any data will be empty.'
+description: '$oldRole conserve les données du rôle avant qu''il ne soit mis à jour, utilisé dans l''événement de rôle mis à jour, sinon toute donnée sera vide.'
 id: oldRole
 ---
 
-`$oldRole` holds data of the role before it was updated, used in role update event, or else any data will be empty.
+`$oldRole` conserve les données du rôle avant qu'il ne soit mis à jour, utilisé dans l'événement de rôle mis à jour, sinon toute donnée sera vide.
 
-## Usage
+## Utilisation
 
 ```php
 $oldRole[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- |:--------:|
-| option | string | Option to retrieve. |   true   |
+| Champ  | Type                 | Description         | Obligatoire |
+| ------ | -------------------- | ------------------- |:-----------:|
+| option | chaîne de caractères | Option à récupérer. |    vrai     |

@@ -1,10 +1,10 @@
 ---
-title: '$error'
-description: '$error will return information about the error.'
+title: $error
+description: '$error поверне інформацію про помилку.'
 id: error
 ---
 
-`$error` will return information about the error, used in `onFunctionError` commands.
+`$error` поверне інформацію про помилку, яка використовується в `onFunctionError` командах.
 
 ## Використання
 

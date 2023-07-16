@@ -1,22 +1,22 @@
 ---
 title: '$createObject'
-description: '$createObject will create a new object.'
+description: '$createObject creará un nuevo objeto.'
 id: createObject
 ---
 
-`$createObject` will create a new object.
+`$createObject` creará un nuevo objeto.
 
 ## Uso
 
 ```php
-$createObject[object]
+$createObject[objeto]
 ```
 
 ## Parámetros
 
 | Campo  | Tipo   | Parámetros   | Requerido |
 | ------ | ------ | ------------ |:---------:|
-| object | object | Json object. | verdadera |
+| objeto | objeto | Objeto Json. | verdadera |
 
 ## Ejemplo(s)
 

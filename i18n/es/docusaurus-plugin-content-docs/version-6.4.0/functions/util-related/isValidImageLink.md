@@ -1,10 +1,10 @@
 ---
 title: '$isValidImageLink'
-description: '$isValidImageLink will check if the given image link is valid.'
+description: '$isValidImageLink comprobará si el enlace de imagen dado es válido.'
 id: isValidImageLink
 ---
 
-`$isValidImageLink` will check if the given image link is valid.
+`$isValidImageLink` comprobará si el enlace de imagen dado es válido.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $isValidImageLink[URL]
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros         | Requerido |
-| ----- | ------ | ------------------ |:---------:|
-| URL   | string | Direct Image link. | verdadera |
+| Campo | Tipo   | Parámetros                | Requerido |
+| ----- | ------ | ------------------------- |:---------:|
+| URL   | string | Enlace de imagen directa. | verdadera |
 
 ## Ejemplo(s)
 
-This will return `true` as the given image link is valid:
+Esto devolverá `verdadero` ya que el enlace de imagen dado es válido:
 
 ```javascript
 bot.command({

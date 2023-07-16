@@ -1,54 +1,54 @@
 ---
 title: '$createChannelInvite'
-description: '$createChannelInvite will create a channel invite.'
+description: '$createChannelInvite crée une invitation vers un salon spécifique.'
 id: createChannelInvite
 ---
 
-`$createChannelInvite` will create a channel invite.
+`$createChannelInvite` crée une invitation vers un salon spécifique.
 
-## Usage
+## Utilisation
 
 ```php
-$createChannelInvite[channelID?;...options]
+$createChannelInvite[IDsalon?;...options]
 ```
 
-## Parameters
+## Paramètres
 
-| Field      | Type    | Description                                         | Required |
-| ---------- | ------- | --------------------------------------------------- |:--------:|
-| channelID? | integer | The channel ID of which the invite will be created. |  false   |
-| options?   | object  | Invite options.                                     |  false   |
+| Champ      | Type   | Description                                | Obligatoire |
+| ---------- | ------ | ------------------------------------------ |:-----------:|
+| IDsalon?   | entier | L'ID du salon où l'invitation sera créé.   |    faux     |
+| ...options | objet  | Options d'invitation. (visible ci-dessous) |    faux     |
 
 <details open>
-  <summary><h3> Invite Target Types </h3></summary>
+  <summary><h3> Type d'invitations cibles </h3></summary>
 
-| TYPE                 | VALUE |
-| -------------------- | ----- |
-| STREAM               | 1     |
-| EMBEDDED_APPLICATION | 2     |
+| TYPE                 | VALEUR |
+| -------------------- | ------ |
+| STREAM               | 1      |
+| EMBEDDED_APPLICATION | 2      |
 
 </details>
 
-## Example(s)
+## Exemple(s)
 
-This will create an invite of the channel where the command is executed in:
+Cela créera une invitation vers le salon où la commande est exécutée:
 
 ```javascript
 bot.command({
-    name: 'createChannelInvite',
+    name: 'créerInvitation',
     code: `
   $createChannelInvite[$channelID]
   `
 });
 ```
 
-### Advanced Example(s)
+### Exemple(s) Avancé(s)
 
-Create Temporary Invites with limited uses:
+Créer des invitations temporaires avec un nombre d'utilisations limité :
 
 ```javascript
 bot.command({
-    name: 'createChannelInvite',
+    name: 'créerInvitation',
     code: `
   $createChannelInvite[$channelID;{
             "temporary": true,
@@ -60,11 +60,11 @@ bot.command({
 });
 ```
 
-Create Activity Invites:
+Créer des invitations à des activités:
 
 ```javascript
 bot.command({
-    name: 'createChannelInvite',
+    name: 'créerInvitation',
     code: `
   $createChannelInvite[voiceID;{
             "targetApplication": "application ID",

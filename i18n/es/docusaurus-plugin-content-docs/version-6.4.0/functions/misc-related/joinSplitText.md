@@ -1,10 +1,10 @@
 ---
 title: '$joinSplitText'
-description: '$joinSplitText will join all text split elements by a given separator.'
+description: '$joinSplitText se unirá a todos los elementos separados por un separador determinado.'
 id: joinSplitText
 ---
 
-`$joinSplitText` will join all text split elements by a given separator.
+`$joinSplitText` se unirá a todos los elementos separados por un separador determinado.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $joinSplitText[sep?]
 
 ## Parámetros
 
-| Campo | Tipo    | Parámetros                                      | Requerido |
-| ----- | ------- | ----------------------------------------------- |:---------:|
-| sep?  | integer | Separator to separate multiple returned values. |    no     |
+| Campo | Tipo   | Parámetros                                       | Requerido |
+| ----- | ------ | ------------------------------------------------ |:---------:|
+| sep?  | entero | El separador para separar los valores devueltos. |   falso   |
 
 ## Ejemplo(s)
 
-This will join all text split elements with a comma:
+Esto se unirá a todos los elementos de texto divididos con una coma:
 
 ```javascript
 bot.command({

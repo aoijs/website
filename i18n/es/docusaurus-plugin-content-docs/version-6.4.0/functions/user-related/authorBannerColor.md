@@ -1,10 +1,10 @@
 ---
 title: '$authorBannerColor'
-description: '$authorBannerColor will return the profile banner color of the command author.'
+description: '$authorBannerColor devolverá el color del banner del perfil del autor del comando.'
 id: authorBannerColor
 ---
 
-`$authorBannerColor` will return the profile banner color of the command author.
+`$authorBannerColor` devolverá el color del banner del perfil del autor del comando.
 
 ## Uso
 
@@ -14,7 +14,7 @@ $authorBannerColor
 
 ## Ejemplo(s)
 
-This will return your profile banner color (if any):
+Esto devolverá el color de tu banner de perfil (si existe):
 
 ```javascript
 bot.command({

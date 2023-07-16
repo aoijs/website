@@ -1,19 +1,19 @@
 ---
 title: '$oldPresence'
-description: '$oldPresence holds old data of the user''s presence, used in update presence event, or else any data will be empty'
+description: '$oldPresence conserve les anciennes données de la présence de l''utilisateur, utilisées dans l''événement de présence mise à jour, sinon toutes les données seront vides.'
 id: oldPresence
 ---
 
-`$oldPresence` holds old data of the user's presence, used in update presence event, or else any data will be empty
+`$oldPresence` conserve les anciennes données de la présence de l'utilisateur, utilisées dans l'événement de présence mise à jour, sinon toutes les données seront vides.
 
-## Usage
+## Utilisation
 
 ```php
 $oldPresence[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- |:--------:|
-| option | string | Option to retrieve. |   true   |
+| Champ  | Type                 | Description         | Obligatoire |
+| ------ | -------------------- | ------------------- |:-----------:|
+| option | chaîne de caractères | Option à récupérer. |    vrai     |

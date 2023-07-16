@@ -1,10 +1,10 @@
 ---
 title: '$isValidObject'
-description: '$isValidObject checks if the given json is a valid object.'
+description: '$isValidObject comprueba si el json dado es un objeto válido.'
 id: isValidObject
 ---
 
-`$isValidObject` checks if the given json is a valid object.
+`$isValidObject` comprueba si el json dado es un objeto válido.
 
 ## Uso
 
@@ -16,11 +16,11 @@ $isValidObject[object]
 
 | Campo  | Tipo   | Parámetros   | Requerido |
 | ------ | ------ | ------------ |:---------:|
-| object | object | JSON object. | verdadera |
+| objeto | objeto | Objeto JSON. | verdadera |
 
 ## Ejemplo(s)
 
-This will return `true` as the given object is a valid JSON object:
+Esto devolverá `verdadero` ya que el objeto dado es un objeto JSON válido:
 
 ```javascript
 bot.command({

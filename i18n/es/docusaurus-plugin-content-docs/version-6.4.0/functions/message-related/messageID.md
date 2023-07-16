@@ -1,10 +1,10 @@
 ---
 title: '$messageID'
-description: '$messageID will return the message ID.'
-id: ID de mensaje
+description: '$messageID devolverá el ID del mensaje.'
+id: messageID
 ---
 
-`$messageID` will return the message ID.
+`$messageID` devolverá las banderas de un mensaje.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $messageID
 
 ## Ejemplo(s)
 
-This will return the message ID of the message with which you executed the command:
+Esto devolverá el ID de categoría del canal de texto en el que ejecute el comando:
 
 ```javascript
 bot.command({
     name: 'messageID',
     code: `
-  The message ID of your the message you just sent is: "$messageID"
+  El ID de mensaje de su mensaje que acaba de enviar es: "$messageID"
   `
 });
 ```

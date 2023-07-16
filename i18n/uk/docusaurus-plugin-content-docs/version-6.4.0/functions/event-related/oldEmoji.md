@@ -1,10 +1,10 @@
 ---
-title: '$oldEmoji'
-description: '$oldEmoji holds data for the emoji before it was updated/ deleted. (emojiUpdate and emojiDelete event)'
+title: $oldEmoji
+description: Дані $oldEmoji для емодзі перед оновленням/видаленням. (події emojiUpdate та emojiDelete подія)
 id: oldEmoji
 ---
 
-`$oldEmoji` holds data for the emoji before it was updated/ deleted. (emojiUpdate and emojiDelete event)
+`$oldEmoji` зберігає дані для емодзі перед оновленням/видаленням. (події emojiUpdate та emojiDelete подія)
 
 ## Використання
 
@@ -14,6 +14,6 @@ $oldEmoji[option]
 
 ## Параметри
 
-| Поле   | Тип   | Опис                | Обов'язковий |
-| ------ | ----- | ------------------- |:------------:|
-| option | рядок | Option to retrieve. |     так      |
+| Поле  | Тип   | Опис                 | Обов'язковий |
+| ----- | ----- | -------------------- |:------------:|
+| опція | рядок | Можливість отримати. |     так      |

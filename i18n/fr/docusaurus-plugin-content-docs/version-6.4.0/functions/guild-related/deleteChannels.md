@@ -1,30 +1,30 @@
 ---
 title: '$deleteChannels'
-description: '$deleteChannels will delete multiple channels.'
+description: '$deleteChannels supprime plusieurs salons.'
 id: deleteChannels
 ---
 
-`$deleteChannels` will delete multiple channels.
+`$deleteChannels` supprimera plusieurs salons.
 
-## Usage
+## Utilisation
 
 ```php
-$deleteChannels[...channels]
+$deleteChannels[...salons]
 ```
 
-## Parameters
+## Paramètres
 
-| Field       | Type    | Description                                            | Required |
-| ----------- | ------- | ------------------------------------------------------ |:--------:|
-| ...channels | integer | The channel Ids of the channels which will be deleted. |   true   |
+| Champ     | Type   | Description                                | Obligatoire |
+| --------- | ------ | ------------------------------------------ |:-----------:|
+| ...salons | entier | L'ID des salons qui devront être supprimé. |     oui     |
 
-## Example(s)
+## Exemple(s)
 
-This will delete multiple channels, make sure to replace the arguments:
+Ceci supprimera plusieurs salons, assurez-vous de remplacer les arguments:
 
 ```javascript
 bot.command({
-    name: 'deleteChannels',
+    name: 'supprimerSalons',
     code: `
   $deleteChannels[channelID1;channelID2;channelID3;channelID4]
   `

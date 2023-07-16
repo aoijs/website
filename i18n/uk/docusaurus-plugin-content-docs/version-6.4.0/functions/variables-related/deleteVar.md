@@ -1,10 +1,10 @@
 ---
-title: '$deleteVar'
-description: '$deleteVar will delete a given variable.'
+title: $deleteVar
+description: '$deleteVar видалить вказану змінну.'
 id: deleteVar
 ---
 
-`$deleteVar` will delete a given variable.
+`$deleteVar` буде видалено задану змінну.
 
 ## Використання
 
@@ -14,20 +14,20 @@ $deleteVar[variable;id;table?]
 
 ## Параметри
 
-| Поле     | Тип            | Опис                                          | Обов'язковий |
-| -------- | -------------- | --------------------------------------------- |:------------:|
-| variable | string, number | Variable name.                                |     так      |
-| id       | integer        | ID of the variable to delete ( userID etc. ). |     так      |
-| table?   | рядок          | Variable table.                               |      ні      |
+| Поле     | Тип          | Опис                                     | Обов'язковий |
+| -------- | ------------ | ---------------------------------------- |:------------:|
+| змінна   | рядок, номер | Назва змінної.                           |     так      |
+| id       | ціле         | ID змінної, що видаляється (userID тощо. |     так      |
+| таблиця? | рядок        | Змінна таблиця.                          |      ні      |
 
 ## Приклад(и)
 
-This will delete a variable called "Test":
+Це видалить змінну з назвою "Тест":
 
 ```javascript
 bot.command({
     name: "deleteVar",
-    code: `
+    код: `
   $deleteVar[Test;$authorID;main]
   `
 });

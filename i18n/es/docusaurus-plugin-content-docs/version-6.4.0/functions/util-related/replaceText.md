@@ -1,10 +1,10 @@
 ---
 title: '$replaceText'
-description: '$replaceText will replace specific segments of text.'
+description: '$replaceText reemplazará segmentos específicos de texto.'
 id: replaceText
 ---
 
-`$replaceText` will replace specific segments of text.
+`$replaceText` reemplazará segmentos específicos de texto.
 
 ## Uso
 
@@ -14,16 +14,16 @@ $replaceText[text;replacer;replaceTo;times?]
 
 ## Parámetros
 
-| Campo     | Tipo     | Parámetros                                                                   | Requerido |
-| --------- | -------- | ---------------------------------------------------------------------------- |:---------:|
-| text      | consulta | Text you want to modify.                                                     | verdadero |
-| replacer  | consulta | The text that will be replaced.                                              | verdadero |
-| replaceTo | string   | The text that will replace `replacer`.                                       |    sí     |
-| times?    | número   | How many times `replaceTo` replaces `replacer`. / Use `-1` for the last one. |   falso   |
+| Campo        | Tipo     | Parámetros                                                                   | Requerido |
+| ------------ | -------- | ---------------------------------------------------------------------------- |:---------:|
+| text         | consulta | Texto que desea modificar.                                                   | verdadero |
+| replacer     | consulta | El texto que será reemplazado.                                               | verdadero |
+| reemplazar a | string   | El texto que reemplazará `replacer`.                                         |    sí     |
+| ¿veces?      | número   | Cuántas veces `replaceTo` reemplaza a `replacer`. / Usa `-1` para el último. |   falso   |
 
 ## Ejemplo(s)
 
-This will replace `M` with `D` and the output will be `Donkey`:
+Esto reemplazará `M` con `D` y la salida será `burro`:
 
 ```javascript
 bot.command({
@@ -34,26 +34,26 @@ bot.command({
 });
 ```
 
-### Advanced Example
+### Ejemplo avanzado
 
-This will replace the word `coffee` two times using the last [field](#parameters) of `$replaceText`:
+Esto reemplazará la palabra `café` dos veces usando el último [campo](#parameters) de `$replaceText`:
 
 ```javascript
 bot.command({
     name: 'replaceText',
     code: `
-  $replaceText[I love drinking Coffee, Coffee gives me power! Coffee is bad for my health.;Coffee;orange juice;2]
+  $replaceText[Me encanta beber café, ¡Coffee me da poder! Coffee es malo para mi salud.;Coffee;jugo naranja;2]
   `
 });
 ```
 
-This will replace `Ferel` and `are` using multiple `$replaceText`:
+Esto reemplazará `Ferel` y `son` usando múltiples `$replaceText`:
 
 ```javascript
 bot.command({
     name: 'replaceText',
     code: `
-  $replaceText[$replaceText[Leref and Ferel are the same person.;Ferel;Ayaka];are;are not]
+  $replaceText[$replaceText[Leref and Ferel are the same person.;Ferel;Ayaka];are;are no]
   `
 });
 ```

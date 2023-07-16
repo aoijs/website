@@ -1,38 +1,38 @@
 ---
 title: '$interactionData'
-description: '$interactionData will return given arguments of an interaction.'
+description: '$interactionData retournera les arguments demandés d''une interaction.'
 id: interactionData
 ---
 
-`$interactionData` will return given arguments of an interaction.
+`$interactionData` retournera les arguments demandés d'une interaction.
 
-## Usage
+## Utilisation
 
 ```php
-$interactionData[data]
+$interactionData[donées]
 ```
 
-## Parameters
+## Paramètres
 
-| Field | Type   | Description       | Required |
-| ----- | ------ | ----------------- |:--------:|
-| data  | string | Data to retrieve. |   true   |
+| Champ  | Type                 | Description          | Obligatoire |
+| ------ | -------------------- | -------------------- |:-----------:|
+| donées | chaîne de caractères | Données à récupérer. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
 ```php
 $interactionData[customId]
-// returns the custom ID of the interaction.
+// renvoie l'ID personnalisée de l'interaction.
 ```
 
 ```php
 $interactionData[author.id]
-// returns the author ID of the interaction.
+// renvoie l'ID de l'auteur de l'interaction.
 ```
 
 ```php
 $interactionData[message.id]
-// returns the message ID of the interaction.
+// renvoie l'ID du message de l'interaction.
 ```
 
-That are just a few example, there are a lot more.
+Ce ne sont là que quelques exemples, il y en a beaucoup plus.

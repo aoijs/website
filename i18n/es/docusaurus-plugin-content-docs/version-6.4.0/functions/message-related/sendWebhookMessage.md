@@ -1,29 +1,29 @@
 ---
 title: '$sendWebhookMessage'
-description: '$sendWebhookMessage will send a message using an existing webhook.'
+description: '$sendWebhookMessage enviará un mensaje usando un webhook existente.'
 id: sendWebhookMessage
 ---
 
-`$sendWebhookMessage` will send a message using an existing webhook.
+$sendWebhookMessage enviará un mensaje usando un webhook existente.
 
 ## Uso
 
 ```php
-$sendWebhookMessage[webhookID;webhookToken;content;returnID?]
+$sendWebhookMessage[ID de webhook;Token de webhook;contenido;ID de retorno?]
 ```
 
 ## Parámetros
 
-| Campo        | Tipo     | Parámetros                                                                           | Requerido |
-| ------------ | -------- | ------------------------------------------------------------------------------------ |:---------:|
-| webhookID    | entero   | The webhook ID.                                                                      | verdadero |
-| webhookToken | consulta | The webhook Token.                                                                   | verdadero |
-| contenido    | string   | The content of the message to send.                                                  |    sí     |
-| returnID?    | boolean  | Return message ID?  <br /> 1. **true** <br /> 2. **false** (por defecto) |   falso   |
+| Campo            | Tipo     | Parámetros                                                                                  | Requerido |
+| ---------------- | -------- | ------------------------------------------------------------------------------------------- |:---------:|
+| ID de webhook    | entero   | El ID del webhook.                                                                          | verdadero |
+| Token de webhook | consulta | Token del webhook.                                                                          | verdadero |
+| contenido        | string   | El contenido del mensaje a enviar.                                                          | verdadero |
+| ID de retorno?   | boolean  | ¿Devolver ID del mensaje?  <br /> 1. **true** <br /> 2. **false** (por defecto) |   falso   |
 
 ## Ejemplo(s)
 
-This will create a webhook and send a message using it:
+Esto creará un webhook y enviará un mensaje usando:
 
 ```javascript
 bot.command({
@@ -31,9 +31,10 @@ bot.command({
     code: `
    $sendWebhookMessage[$splitText[1];$splitText[2];Hello!;false]
    $textSplit[$createWebhook[$channelID;$username;$userAvatar;Testing!;,];,]
-  ` /* Using $textSplit to split the ID and Token in separate parts to use it in sendWebhookMessage
-  $splitText[1] equals the webhook ID 
-  $splitText[2] equals the webhook Token
+  ` 
+/* Usar $textSplit para dividir el ID y el Token en partes separadas para usarlo en sendWebhookMessage
+ $splitText[1] es igual a la ID del webhook
+$splitText[2] es igual al token de webhook
   */
 });
 ```

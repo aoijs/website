@@ -1,10 +1,10 @@
 ---
 title: '$textTrim'
-description: '$textTrim will remove all extra spaces, multiple spaces after one space, and replaces those with one single space.'
+description: '$textTrim eliminará todos los espacios extras, múltiples espacios después de un espacio y reemplazará aquellos con un solo espacio.'
 id: textTrim
 ---
 
-`$textTrim` will remove all extra spaces, multiple spaces after one space, and replaces those with one single space.
+`$textTrim` eliminará todos los espacios adicionales, múltiples espacios después de un espacio y los reemplazará por un solo espacio.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $textTrim[text]
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros              | Requerido |
-| ----- | ------ | ----------------------- |:---------:|
-| text  | string | The text to be trimmed. | verdadera |
+| Campo | Tipo   | Parámetros           | Requerido |
+| ----- | ------ | -------------------- |:---------:|
+| text  | string | El texto a recortar. | verdadera |
 
 ## Ejemplo(s)
 
-This will remove any extra spaces of the given text, in this case it would return `Imagine a string package.`:
+Esto eliminará cualquier espacio extra del texto dado, en este caso devolvería `Imagina un paquete de cadena.`:
 
 ```javascript
 bot.command({

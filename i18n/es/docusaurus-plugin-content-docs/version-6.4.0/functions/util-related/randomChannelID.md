@@ -1,10 +1,10 @@
 ---
 title: '$randomChannelID'
-description: '$randomChannelID will return a random channel ID of all guilds or of a specific guild.'
+description: '$randomChannelID devolverá un ID de canal aleatorio de todos los gremios o de un gremio específico.'
 id: randomChannelID
 ---
 
-`$randomChannelID` will return a random channel ID of all guilds or of a specific guild.
+`$randomChannelID` devolverá un ID de canal aleatorio de todos los gremios o de un gremio específico.
 
 ## Uso
 
@@ -14,10 +14,10 @@ $randomChannelID[guildID/global?;type?]
 
 ## Parámetros
 
-| Campo           | Tipo   | Descripción                | Requerido |
-| --------------- | ------ | -------------------------- |:---------:|
-| guildID/global? | entero | Guild ID or global search. |   falso   |
-| tipo?           | string | Channel type.              |   falso   |
+| Campo            | Tipo   | Descripción                      | Requerido |
+| ---------------- | ------ | -------------------------------- |:---------:|
+| ¿guildID/global? | entero | ID del gremio o búsqueda global. |   falso   |
+| tipo?            | string | Tipo de canal.                   |   falso   |
 
 <details open>
   <summary>Tipos de canales</summary>
@@ -42,7 +42,7 @@ $randomChannelID[guildID/global?;type?]
 
 ## Ejemplo(s)
 
-This will return a random channel ID of your guild:
+Esto devolverá un ID de canal aleatorio de tu gremio:
 
 ```javascript
 bot.command({

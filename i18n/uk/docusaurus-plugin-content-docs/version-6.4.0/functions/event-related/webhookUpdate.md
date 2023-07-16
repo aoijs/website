@@ -1,10 +1,10 @@
 ---
 title: '$webhookUpdate'
-description: '$webhookUpdate holds data for the channel the webhook was updated in. (webhookUpdate event)'
+description: Дані $webhookUpdate для каналу, в якому було оновлено вебхук. (подія webhookUpdate події)
 id: webhookUpdate
 ---
 
-`$webhookUpdate` channel the webhook was updated in. (webhookUpdate event)
+`$webhookUpdate` канал, в якому було оновлено вебхук. (подія webhookUpdate події)
 
 ## Використання
 
@@ -14,6 +14,6 @@ $webhookUpdate[option]
 
 ## Параметри
 
-| Поле   | Тип   | Опис                | Обов'язковий |
-| ------ | ----- | ------------------- |:------------:|
-| option | рядок | Option to retrieve. |     так      |
+| Поле  | Тип   | Опис                 | Обов'язковий |
+| ----- | ----- | -------------------- |:------------:|
+| опція | рядок | Можливість отримати. |     так      |

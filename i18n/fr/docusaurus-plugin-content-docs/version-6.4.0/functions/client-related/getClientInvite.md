@@ -1,82 +1,82 @@
 ---
 title: '$getClientInvite'
-description: '$getClientInvite will return your bot''s invite with specified permissions.'
+description: '$getClientInvite retournera l''invitation de votre bot avec les permissions spécifiées.'
 id: getClientInvite
 ---
 
-`$getClientInvite` will return your bot's invite with specified permissions.
+`$getClientInvite` retournera l'invitation de votre bot avec les permissions spécifiées.
 
-## Usage
+## Utilisation
 
 ```php
-$getClientInvite[...perms?]
+$getClientInvite[...permissions?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description                                        | Required |
-| ------ | ------ | -------------------------------------------------- |:--------:|
-| perms? | string | Permissions you want to be included in the invite. |  false   |
+| Champ        | Type                | Description                                            | Obligatoire |
+| ------------ | ------------------- | ------------------------------------------------------ |:-----------:|
+| permissions? | chaîne de caractère | Permissions que vous voulez inclure dans l'invitation. |    faux     |
 
 <details>
-  <summary><h3> Discord API Permissions </h3></summary>
+  <summary><h3> Autorisations de l'API Discord </h3></summary>
 
-| Permission              |                                                                 |
-| ----------------------- | --------------------------------------------------------------- |
-| createinvite            | Permission to create guild invites                              |
-| kickmembers             | Permission to kick guild members                                |
-| banmembers              | Permission to ban guild members                                 |
-| administrator           | Administrator Permissions                                       |
-| managechannel           | Permission to manage guild channels                             |
-| manageserver            | Permissions to modify server settings                           |
-| addreactions            | Permissions to add reactions                                    |
-| viewauditlog            | Permission to view the guild's audit log                        |
-| priorityspeaker         | Priority Speaker                                                |
-| stream                  | Permission to stream in voice channels                          |
-| viewchannel             | Permission to view a certain channel                            |
-| sendmessages            | Permission to send messages in a certain channel                |
-| sendttsmessages         | Permission to send Text-To-Speech messages                      |
-| managemessages          | Permission to manage messages                                   |
-| embedlinks              | Permission to embed links                                       |
-| attachfiles             | Permission to attach files                                      |
-| readmessagehistory      | Permission to read the message history within a certain channel |
-| mentioneveryone         | Permission to mention `@everyone`/`@here` and all roles         |
-| externalemojis          | Permission to use external emojis                               |
-| viewguildinsights       | Permission to view guild insights                               |
-| connect                 | Permission to connect to voice channels and stages              |
-| mutemembers             | Permission to mute members in voice channels                    |
-| deafenmembers           | Permission to deafen members in voice channels                  |
-| movemembers             | Permission to move members between voice channels               |
-| usevad                  | Permission to use voice-activity-detection                      |
-| changenickname          | Permission to change your own nickname                          |
-| managenicknames         | Permission to manage other members nicknames                    |
-| manageroles             | Permission to manage roles                                      |
-| managewebhooks          | Permission to manage webhooks                                   |
-| manageemojisandstickers | Permission to manage emojis and stickers                        |
-| useappcmds              | Permission to use application commands                          |
-| requesttospeak          | Permission to use request-to-speak in stages                    |
-| manageevents            | Permission to manage events                                     |
-| managethreads           | Permission to manage threads                                    |
-| createpublicthreads     | Permission to use public threads                                |
-| createprivatethreads    | Permission to use private threads                               |
-| createpublicthreads     | Permission to create public threads                             |
-| createprivatethreads    | Permission to create private threads                            |
-| externalstickers        | Permission to use extrernal stickers                            |
-| sendmessageinthreads    | Permission to send messages in threads                          |
-| startembeddedactivities | Permission to start activities within voice channels            |
-| moderatemembers         | Permission to timeout and remove timeouts from guild members    |
+| Permissions             |                                                                                     |
+| ----------------------- | ----------------------------------------------------------------------------------- |
+| createinvite            | Permission de créer des invitations de serveur                                      |
+| kickmembers             | Permission d'expulser les membres du serveur                                        |
+| banmembers              | Permission de bannir les membres du serveur                                         |
+| administrator           | Autorisations d'administrateur                                                      |
+| managechannel           | Permission de gérer les salons du serveur                                           |
+| manageserver            | Permissions de modifier les paramètres du serveur                                   |
+| addreactions            | Permissions d'ajouter des réactions                                                 |
+| viewauditlog            | Permission de voir les logs du serveur                                              |
+| priorityspeaker         | Voix prioritaire                                                                    |
+| stream                  | Permission de diffuser dans les salons vocaux                                       |
+| viewchannel             | Permission de voir un certain salon                                                 |
+| sendmessages            | Permission d'envoyer des messages dans un certain salon                             |
+| sendttsmessages         | Autorisation d'envoyer des messages de synthèse vocale                              |
+| managemessages          | Permission de gérer les messages                                                    |
+| embedlinks              | Permission d'intégrer des liens                                                     |
+| attachfiles             | Permission de joindre des fichiers                                                  |
+| readmessagehistory      | Permission de lire l'historique des messages dans un certain salon                  |
+| mentioneveryone         | Permission de mentionner `@everyone`/`@here` et tous les rôles                      |
+| externalemojis          | Permission d'utiliser des émojis externes                                           |
+| viewguildinsights       | Permission de voir les aperçus de la guilde                                         |
+| connect                 | Permission de se connecter aux salons vocaux et aux conférences                     |
+| mutemembers             | Permission de rendre muet les membres dans les salons vocaux                        |
+| deafenmembers           | Permission de rendre sourds les membres dans les salons vocaux                      |
+| movemembers             | Permission de déplacer les membres entre les salons vocaux                          |
+| usevad                  | Permission d'utiliser la détection des activités vocales                            |
+| changenickname          | Permission de changer votre propre pseudo                                           |
+| managenicknames         | Autorisation de gérer les pseudos des autres membres                                |
+| manageroles             | Permission de gérer les rôles                                                       |
+| managewebhooks          | Permission de gérer les webhooks                                                    |
+| manageemojisandstickers | Permission de gérer les émojis et les autocollants                                  |
+| useappcmds              | Permission d'utiliser les commandes d'application                                   |
+| requesttospeak          | Permission de demander la parole lors des conférences                               |
+| manageevents            | Permission de gérer les événements                                                  |
+| managethreads           | Permission de gérer les fils                                                        |
+| createpublicthreads     | Permission d'utiliser des fils publics                                              |
+| createprivatethreads    | Permission d'utiliser des fils privés                                               |
+| createpublicthreads     | Permission de créer des fils de discussion publics                                  |
+| createprivatethreads    | Permission de créer des fils de discussion privés                                   |
+| externalstickers        | Permission d'utiliser des autocollants externes                                     |
+| sendmessageinthreads    | Permission d'envoyer des messages dans les fils                                     |
+| startembeddedactivities | Permission de démarrer des activités dans les salons vocaux                         |
+| moderatemembers         | Permission d'exclure temporairement et d'arrêter l'exclusion des membres du serveur |
 
 </details>
 
-## Example(s)
+## Exemple(s)
 
-This will return your bot's invite with administrator privileges:
+Cela retournera l'invitation de votre bot avec les permissions d'administrateur :
 
 ```javascript
 bot.command({
     name: 'getClientInvite',
     code: `
-  Invite me here: $getClientInvite[administrator]
+  Invitez-moi ici: $getClientInvite[administrator]
   `
 });
 ```

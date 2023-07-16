@@ -1,10 +1,10 @@
 ---
 title: '$guildDefaultMessageNotifications'
-description: '$guildDefaultMessageNotifications will return given guild''s default message notification type.'
+description: '$guildDefaultMessageNotifications поверне типовий тип сповіщення для повідомлень гільдії.'
 id: guildDefaultMessageNotifications
 ---
 
-`$guildDefaultMessageNotifications` will return given guild's default message notification type.
+`$guildDefaultMessageNotifications` поверне типовий тип сповіщення гільдії.
 
 ## Використання
 
@@ -14,18 +14,18 @@ $guildDefaultMessageNotifications[guildID?]
 
 ## Параметри
 
-| Поле     | Тип     | Опис                 | Обов'язковий |
-| -------- | ------- | -------------------- |:------------:|
-| guildID? | integer | The ID of the guild. |      ні      |
+| Поле     | Тип  | Опис        | Обов'язковий |
+| -------- | ---- | ----------- |:------------:|
+| гільдія? | ціле | ID гільдії. |      ні      |
 
 ## Приклад(и)
 
-This will return the guild's default message notification type:
+Це поверне типовий тип сповіщення гільдії:
 
 ```javascript
 bot.command({
     name: 'guildDefaultMessageNotifications',
-    code: `
+    код: `
   $guildDefaultMessageNotifications
   `
 });

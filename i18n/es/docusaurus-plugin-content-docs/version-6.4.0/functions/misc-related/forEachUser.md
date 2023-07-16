@@ -1,29 +1,29 @@
 ---
 title: '$forEachUser'
-description: '$forEachUser will execute awaited commands for user across all guilds.'
+description: '$forEachUser ejecutará comandos esperados en cada canal de cada gremio.'
 id: forEachUser
 ---
 
-`$forEachUser` will execute awaited commands for user across all guilds.
+`$forEachUser` ejecutará los comandos esperados para el usuario en todos los gremios.
 
 ## Uso
 
 ```php
-$forEachUser[time;awaitData;...awaitedCmds;endCmd]
+$forEachUser[tiempo;esperar datos;...Cmds esperados;finalizar comando]
 ```
 
 ## Parámetros
 
-| Campo          | Tipo     | Parámetros                                                   | Requerido |
-| -------------- | -------- | ------------------------------------------------------------ |:---------:|
-| tiempo         | consulta | How long it takes between each user to execute the next one. | verdadero |
-| awaitData      | object   | Datos esperados.                                             | verdadero |
-| ...awaitedCmds | string   | Awaited Commands to execute.                                 |    sí     |
-| endCmd         | string   | Awaited Command to execute when loop ends.                   |    sí     |
+| Campo             | Tipo   | Parámetros                                                     | Requerido |
+| ----------------- | ------ | -------------------------------------------------------------- |:---------:|
+| tiempo            | cadena | Cuánto tiempo tarda entre cada canal en ejecutar el siguiente. | verdadero |
+| awaitData         | objeto | Datos esperados.                                               | verdadero |
+| ...Cmds esperados | cadena | Comando esperado para ejecutar.                                | verdadero |
+| finalizar comando | cadena | Comando esperado para ejecutar cuando termine el bucle.        | verdadera |
 
 ## Ejemplo(s)
 
-This will log every (cached) user in your console:
+Esto registrará cada usuario (caché) en tu consola:
 
 ```javascript
 bot.command({

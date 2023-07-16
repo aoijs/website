@@ -1,32 +1,32 @@
 ---
 title: '$arrayShuffle'
-description: '$arrayShuffle will shuffle the elements of the given array.'
+description: '$arrayShuffle mélangera les éléments du tableau donné.'
 id: arrayShuffle
 ---
 
-`$arrayShuffle` will shuffle the elements of the given array.
+`$arrayShuffle` mélangera les éléments du tableau donné.
 
-## Usage
+## Utilisation
 
 ```php
-$arrayShuffle[name]
+$arrayShuffle[nom]
 ```
 
-## Parameters
+## Paramètres
 
-| Field | Type   | Description | Required |
-| ----- | ------ | ----------- |:--------:|
-| name  | string | Array name. |   true   |
+| Champ | Type                 | Description     | Obligatoire |
+| ----- | -------------------- | --------------- |:-----------:|
+| nom   | chaîne de caractères | Nom du tableau. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
 ```javascript
 bot.command({
     name: "array-shuffle",
     code: `
-  $arrayJoin[array;, ]
-  $arrayShuffle[array]
-  $createArray[array;aoi.js;akarui;documents;bot]
+  $arrayJoin[tableau;, ]
+  $arrayShuffle[tableau]
+  $createArray[tableau;aoi.js;akarui;documents;bot]
   `
 });
 ```

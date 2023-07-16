@@ -3,11 +3,9 @@ module.exports = {
   tagline: "aoi.js documentation",
   url: "https://aoi.js.org",
   baseUrl: "/",
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
   favicon: "img/logo.png",
-  organizationName: "akaruidevelopment", // Usually your GitHub org/user name.
-  projectName: "aoi.js-documentation", // Usually your repo name.
+  organizationName: "akaruidevelopment",
+  projectName: "aoi.js-documentation",
   trailingSlash: false,
   onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "ignore",
@@ -23,7 +21,7 @@ module.exports = {
   },
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "es", "tr", "ar", "hi", "fr", "uk"], // ru - not enough
+    locales: ["en", "es", "fr", "uk", "ru"],
     path: "i18n",
     localeConfigs: {
       en: {

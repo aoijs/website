@@ -1,27 +1,27 @@
 ---
 title: '$memberJoinPosition'
-description: '$memberJoinPosition will return a members join position.'
+description: '$memberJoinPosition devolverá una posición de unión de miembros.'
 id: memberJoinPosition
 ---
 
-`$memberJoinPosition` will return a members join position.
+`$memberJoinPosition` devolverá un miembro a la posición de unirse.
 
 ## Uso
 
 ```php
-$memberJoinPosition[userID?;guildID?]
+$memberJoinPosition[usuarioID?;servidorID?]
 ```
 
 ## Parámetros
 
-| Campo       | Tipo   | Parámetros           | Requerido |
-| ----------- | ------ | -------------------- |:---------:|
-| usarioID?   | entero | El ID del usuario.   |    no     |
-| servidorID? | entero | The ID of the guild. |    no     |
+| Campo       | Tipo   | Parámetros         | Requerido |
+| ----------- | ------ | ------------------ |:---------:|
+| usarioID?   | entero | El ID del usuario. |   falso   |
+| servidorID? | entero | ID del servidor.   |   falso   |
 
 ## Ejemplo(s)
 
-This will return your join position, if you're the owner then it'd be `1`:
+Esto devolverá tu posición de ingreso, si eres el propietario, entonces sería `1`:
 
 ```javascript
 bot.command({

@@ -1,27 +1,27 @@
 ---
 title: '$filterMessage'
-description: '$filterMessage will filter certain characters out of given text.'
+description: '$filterMessage filtrará ciertos caracteres de un texto dado.'
 id: filterMessage
 ---
 
-`$filterMessage` will filter certain characters out of given text.
+`$filterMessage` filtrará ciertos caracteres de un texto dado.
 
 ## Uso
 
 ```php
-$filterMessage[text;...letters]
+$filterMessage[texto;...letras]
 ```
 
 ## Parámetros
 
-| Campo   | Tipo     | Parámetros                                    | Requerido |
-| ------- | -------- | --------------------------------------------- |:---------:|
-| text    | consulta | Text input which will be filtered.            | verdadero |
-| letters | consulta | Content you want to filter out of the `text`. | verdadero |
+| Campo  | Tipo   | Parámetros                                     | Requerido |
+| ------ | ------ | ---------------------------------------------- |:---------:|
+| texto  | cadena | Entrada de texto que será filtrada.            | verdadero |
+| Letras | cadena | Contenido que desea filtrar fuera del `texto`. | verdadero |
 
 ## Ejemplo(s)
 
-This will remove the `N` of `Never` and return `ever`:
+Esto dividirá `N` de `Never` y devuelve `ever`:
 
 ```javascript
 bot.command({

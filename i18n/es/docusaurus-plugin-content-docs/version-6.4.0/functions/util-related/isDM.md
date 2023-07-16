@@ -1,10 +1,10 @@
 ---
 title: '$isDM'
-description: '$isDM will check if the given channel is a DM or not.'
+description: '$isDM comprobará si el canal dado es un DM o no.'
 id: isDM
 ---
 
-`$isDM` will check if the given channel is a DM or not.
+`$isDM` comprobará si el canal dado es un DM o no.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $isDM[channelID?]
 
 ## Parámetros
 
-| Campo    | Tipo    | Parámetros                                | Requerido |
-| -------- | ------- | ----------------------------------------- |:---------:|
-| canalID? | integer | ID of the channel that you want to check. |    no     |
+| Campo    | Tipo    | Parámetros                        | Requerido |
+| -------- | ------- | --------------------------------- |:---------:|
+| canalID? | integer | ID del canal que desea comprobar. |    no     |
 
 ## Ejemplo(s)
 
-This will return either `true` or `false` depending on if you're executing the command in a DM or not:
+Esto devolverá `verdadero` o `falso` dependiendo de si estás ejecutando el comando en un DM o no:
 
 ```javascript
 bot.command({

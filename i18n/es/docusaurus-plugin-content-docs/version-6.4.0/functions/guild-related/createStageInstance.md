@@ -1,7 +1,7 @@
 ---
-title: '$createStageInstance'
+title: $createStageInstance
 description: '$createStageInstance comenzará una etapa.'
-id: crearStageInstance
+id: createStageInstance
 ---
 
 `$createStageInstance` iniciará una etapa.

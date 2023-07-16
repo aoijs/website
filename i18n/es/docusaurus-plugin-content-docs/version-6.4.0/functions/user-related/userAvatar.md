@@ -1,29 +1,29 @@
 ---
 title: '$userAvatar'
-description: '$userAvatar will return the profile picture of a specific user.'
+description: '$userAvatar devolverá la imagen de perfil de un usuario específico.'
 id: userAvatar
 ---
 
-`$userAvatar` will return the profile picture of a specific user.
+`$userAvatar` devolverá la imagen de perfil de un usuario específico.
 
 ## Uso
 
 ```php
-$userAvatar[userID?;size?;dynamic?;format?]
+$userAvatar[usuarioID?;tamaño?;dinámico?;formato?]
 ```
 
 ## Parámetros
 
-| Campo     | Tipo           | Parámetros                                      | Requerido |
-| --------- | -------------- | ----------------------------------------------- |:---------:|
-| usarioID? | entero         | El ID del usuario.                              |    no     |
-| size?     | cadena, número | The size of the image                           |    no     |
-| dynamic?  | booleano       | 1. **true** (default) <br /> 2. **false** |   falso   |
-| format?   | string         | The format of the returned image.               |   falso   |
+| Campo     | Tipo           | Parámetros                                          | Requerido |
+| --------- | -------------- | --------------------------------------------------- |:---------:|
+| usarioID? | entero         | El ID del usuario.                                  |   falso   |
+| tamaño?   | cadena, número | El tamaño del archivo de la imagen.                 |   falso   |
+| dinámico? | booleano       | 1. **true** (por defecto) <br /> 2. **false** |   falso   |
+| formato?  | cadena         | El formato de la imagen devuelta.                   |   falso   |
 
 ## Ejemplo(s)
 
-This will return your profile picture:
+Esto devolverá tu foto de perfil:
 
 ```javascript
 bot.command({

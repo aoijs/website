@@ -1,26 +1,26 @@
 ---
 title: '$humanizeMs'
-description: '$humanizeMs will convert MS to human-readable time.'
+description: '$humanizeMs convertirá el MS a tiempo legible.'
 id: humanizeMs
 ---
 
-`$humanizeMs` will convert MS to human-readable time.
+`$humanizeMs` convertirá el MS en tiempo legible.
 
 ## Uso
 
 ```php
-$humanizeMs[time]
+$humanizeMs[tiempo]
 ```
 
 ## Parámetros
 
-| Campo  | Tipo   | Parámetros  | Requerido |
-| ------ | ------ | ----------- |:---------:|
-| tiempo | número | Time in MS. | verdadera |
+| Campo  | Tipo   | Parámetros    | Requerido |
+| ------ | ------ | ------------- |:---------:|
+| tiempo | número | Tiempo en MS. | verdadera |
 
 ## Ejemplo(s)
 
-This will return `6mon 1w 4d 16h 34m` converted from `16782516189` MS:
+Esto devolverá `6mon 1w 4d 16h 34m` convertido de `16782516189` MS:
 
 ```javascript
 bot.command({

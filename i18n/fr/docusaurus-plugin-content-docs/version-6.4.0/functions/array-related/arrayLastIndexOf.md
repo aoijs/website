@@ -1,33 +1,33 @@
 ---
 title: '$arrayLastIndexOf'
-description: '$arrayLastIndexOf will return the index of the last found item of the query.'
+description: '$arrayLastIndexOf retournera l''index du dernier élément trouvé de la requête.'
 id: arrayLastIndexOf
 ---
 
-`$arrayLastIndexOf` will return the index of the last found item of the query.
+`$arrayLastIndexOf` retournera l'index du dernier élément trouvé de la requête.
 
-## Usage
+## Utilisation
 
 ```php
-$arrayLastIndexOf[name;query]
+$arrayLastIndexOf[nom;requête]
 ```
 
-## Parameters
+## Paramètres
 
-| Field | Type   | Description                                                         | Required |
-| ----- | ------ | ------------------------------------------------------------------- |:--------:|
-| name  | string | Array name.                                                         |   true   |
-| query | string | The element we will be queering for every element inside the array. |   true   |
+| Champ   | Type                 | Description                                                          | Obligatoire |
+| ------- | -------------------- | -------------------------------------------------------------------- |:-----------:|
+| nom     | chaîne de caractères | Nom du tableau.                                                      |    vrai     |
+| requête | chaîne de caractères | L'élément que nous allons rechercher pour chaque élément du tableau. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
 ```javascript
 bot.command({
-    name: "array-indexof",
+    name: "array-lastindexof",
     code: `
-  $arrayLastIndexOf[array;akarui]
-  $createArray[array;aoi.js;akarui;akarui;documents;bot]
+  $arrayIndexOf[tableau;akarui]
+  $createArray[tableau;aoi.js;akarui;akarui;documents;bot]
   `
-    // It will return "3" as the word "akarui" is in the 3rd position of the array.
+    // Ceci renverra "3" car le dernier mot "akarui" se trouve en troisième position dans le tableau.
 });
 ```

@@ -1,10 +1,10 @@
 ---
-title: '$guildRulesChannelID'
-description: '$guildRulesChannelID will return a guild''s set rules channel ID.'
+title: $guildRulesChannelID
+description: '$guildRulesChannelID поверне набір правил каналу гільдії.'
 id: guildRulesChannelID
 ---
 
-`$guildRulesChannelID` will return a guild's set rules channel ID.
+`$guildRulesChannelID` поверне ідентифікатор групи правил, що налаштовується.
 
 ## Використання
 
@@ -14,18 +14,18 @@ $guildRulesChannelID[guildID?]
 
 ## Параметри
 
-| Поле     | Тип     | Опис                 | Обов'язковий |
-| -------- | ------- | -------------------- |:------------:|
-| guildID? | integer | The ID of the guild. |      ні      |
+| Поле     | Тип  | Опис        | Обов'язковий |
+| -------- | ---- | ----------- |:------------:|
+| гільдія? | ціле | ID гільдії. |      ні      |
 
 ## Приклад(и)
 
-This will return the ID of the guild's rules channel (community guilds only):
+Це поверне ідентифікатор каналу правил гільдії (лише гільдії спільноти):
 
 ```javascript
 bot.command({
     name: 'guildRulesChannelID',
-    code: `
+    код: `
   $guildRulesChannelID[$guildID]
   `
 });

@@ -1,27 +1,27 @@
 ---
 title: '$createScheduledEvent'
-description: '$createScheduledEvent will create a scheduled event.'
+description: '$createScheduledEvent va créer un événement planifié.'
 id: createScheduledEvent
 ---
 
-`$createScheduledEvent` will create a scheduled event.
+`$createScheduledEvent` va créer un événement planifié.
 
-## Usage
+## Utilisation
 
 ```php
-$createScheduledEvent[channelID;name;description;startTime;endTime?;entityType?;entityMetadata?;image?;reason?]
+$createScheduledEvent[IDsalon;nom;description;débutEvènement;finEvènement?;MétadonnéesType?;MétadonnéesEntité?;image?;raison?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field           | Type    | Description                                                   | Required |
-| --------------- | ------- | ------------------------------------------------------------- |:--------:|
-| channelID       | integer | Where the event will be held.                                 |   true   |
-| name            | string  | The event title                                               |   true   |
-| description     | string  | The description of the event.                                 |   true   |
-| startTime       | string  | When the event will start.                                    |   true   |
-| endTime?        | string  | When the event will end.                                      |  false   |
-| entityType?     | string  | Event Type.                                                   |  false   |
-| entityMetadata? | string  | Event metadata.                                               |  false   |
-| image?          | string  | Image/Thumbnail of the scheduled event.                       |  false   |
-| reason?         | string  | The reason which will be displayed in the guild's audit logs. |  false   |
+| Champ              | Type                 | Description                                           | Obligatoire |
+| ------------------ | -------------------- | ----------------------------------------------------- |:-----------:|
+| IDsalon            | entier               | Là où aura lieu l'évènement l'événement.              |    vrai     |
+| nom                | chaine de caractères | Le titre d'événement                                  |    vrai     |
+| description        | chaine de caractères | La description de l'évènement.                        |    vrai     |
+| débutEvènement     | chaîne de caractères | Quand l'événement commencera.                         |    vrai     |
+| finEvènement?      | chaine de caractères | Quand l'événement se terminera.                       |    faux     |
+| MétadonnéesType?   | chaîne de caractères | Type d'événement                                      |    faux     |
+| MétadonnéesEntité? | chaîne de caractères | Métadonnées de l’événement                            |    faux     |
+| image?             | chaine de caractères | Image/Vignette de l'événement planifié.               |    faux     |
+| raison?            | chaine de caractères | La raison qui sera affichée dans les logs du serveur. |    faux     |

@@ -1,10 +1,10 @@
 ---
-title: '$commandCode'
-description: '$commandCode will return the commands'' code.'
+title: $commandCode
+description: '$commandCode поверне код команд.'
 id: commandCode
 ---
 
-`$commandCode` will return the commands' code.
+`$commandCode` поверне код команд.
 
 ## Використання
 

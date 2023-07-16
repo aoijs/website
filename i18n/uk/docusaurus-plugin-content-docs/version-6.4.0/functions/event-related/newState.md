@@ -1,10 +1,10 @@
 ---
-title: '$newState'
-description: '$newState holds data for the user voice state after the update (voiceStateUpdate event).'
+title: $newState
+description: '$newState зберігає дані для стану голосу користувача після оновлення (voiceStateUpdate події).'
 id: newState
 ---
 
-`$newState` holds data for the user voice state after the update (voiceStateUpdate event).
+`$newState` зберігає дані для стану голосу користувача після оновлення (voiceStateUpdate події).
 
 ## Використання
 
@@ -14,6 +14,6 @@ $newState[option]
 
 ## Параметри
 
-| Поле   | Тип   | Опис                | Обов'язковий |
-| ------ | ----- | ------------------- |:------------:|
-| option | рядок | Option to retrieve. |     так      |
+| Поле  | Тип   | Опис                 | Обов'язковий |
+| ----- | ----- | -------------------- |:------------:|
+| опція | рядок | Можливість отримати. |     так      |

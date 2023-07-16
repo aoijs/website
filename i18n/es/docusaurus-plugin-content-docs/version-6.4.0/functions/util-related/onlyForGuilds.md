@@ -1,10 +1,10 @@
 ---
 title: '$onlyForGuilds'
-description: '$onlyForGuilds will check if the command was executed in one of the listed guilds and return a error message if not.'
+description: '$onlyForGuilds comprobará si el comando fue ejecutado en uno de los gremios listados y devolverá un mensaje de error en caso contrario.'
 id: onlyForGuilds
 ---
 
-`$onlyForGuilds` will check if the command was executed in one of the listed guilds and return a error message if not.
+`$onlyForGuilds` comprobará si el comando fue ejecutado en uno de los gremios listados y devolverá un mensaje de error en caso contrario.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $onlyForGuilds[...guildIds;error]
 
 ## Parámetros
 
-| Campo       | Tipo            | Parámetros                                                                     | Requerido |
-| ----------- | --------------- | ------------------------------------------------------------------------------ |:---------:|
-| ...guildIds | string, integer | Guilds you want to limit the command to.                                       | verdadero |
-| error       | consulta        | Error to return when the command was not executed in any of the listed guilds. | verdadero |
+| Campo       | Tipo            | Parámetros                                                                              | Requerido |
+| ----------- | --------------- | --------------------------------------------------------------------------------------- |:---------:|
+| ...guildIds | string, integer | Guilds a los que quieres limitar el comando.                                            | verdadero |
+| error       | consulta        | Error a devolver cuando el comando no fue ejecutado en ninguno de los gremios listados. | verdadero |
 
 ## Ejemplo(s)
 
-This will limit the command only to the listed guilds:
+Esto limitará el comando sólo a los gremios listados:
 
 ```javascript
 bot.command({

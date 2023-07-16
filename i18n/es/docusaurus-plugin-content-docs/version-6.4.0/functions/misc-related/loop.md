@@ -1,40 +1,40 @@
 ---
 title: '$loop'
-description: '$loop will execute awaited commands a given amount of times.'
+description: '$loop ejecutará comandos esperados una cantidad determinada de veces.'
 id: loop
 ---
 
-`$loop` will execute awaited commands a given amount of times.
+$loop ejecutará comandos esperados una cantidad determinada de veces.
 
 ## Uso
 
 ```php
-$loop[time;awaitData;...awaitedCmds]
+$loop[tiempo;esperar datos;...comandos esperados]
 ```
 
 ## Parámetros
 
-| Campo          | Tipo     | Parámetros                     | Requerido |
-| -------------- | -------- | ------------------------------ |:---------:|
-| tiempo         | consulta | How often to execute the loop. | verdadero |
-| awaitData      | object   | Datos esperados.               | verdadero |
-| ...awaitedCmds | string   | Awaited Commands to execute.   |    sí     |
+| Campo             | Tipo   | Parámetros                            | Requerido |
+| ----------------- | ------ | ------------------------------------- |:---------:|
+| tiempo            | cadena | Con qué frecuencia ejecutar el bucle. | verdadero |
+| esperar datos     | objeto | Datos esperados.                      | verdadero |
+| ...Cmds esperados | cadena | Comando esperado para ejecutar.       | verdadero |
 
 ## Ejemplo(s)
 
-This will execute a loop which will edit the sent message 5 times with the given content in `awaitData`:
+Esto ejecutará un bucle que editará el mensaje enviado 5 veces con el contenido dado en `awaitData`:
 
 ```javascript
 bot.command({
     name: "loop",
     code: `
     $loop[5;{ "message": "$get[messageID]", "channel": "$channelID" };editMessage]
-    $let[messageID;$sendMessage[My ping is: $pingMS;true]]
+    $let[messageID;$sendMessage[mi ping es: $pingMS;true]]
     `
 });
 ```
 
-We use `$awaitData` to retrieve the given properties in the `awaitData` field which is located in the loop command.
+Utilizamos `$awaitData` para recuperar las propiedades dadas en el campo `awaitData` que se encuentra en el comando de bucle.
 
 ```javascript
 bot.awaitedCommand({

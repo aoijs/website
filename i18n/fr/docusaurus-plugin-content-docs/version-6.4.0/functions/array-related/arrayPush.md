@@ -1,31 +1,31 @@
 ---
 title: '$arrayPush'
-description: '$arrayPush will add given elements to the array.'
+description: '$arrayPush ajoutera des éléments au tableau.'
 id: arrayPush
 ---
 
-`$arrayPush` will add given elements to the array.
+`$arrayPush` ajoutera des éléments au tableau.
 
-## Usage
+## Utilisation
 
 ```php
-$arrayPush[...elements]
+$arrayPush[...éléments]
 ```
 
-## Parameters
+## Paramètres
 
-| Field       | Type   | Description      | Required |
-| ----------- | ------ | ---------------- |:--------:|
-| ...elements | string | Elements to add. |   true   |
+| Champ       | Type                 | Description         | Obligatoire |
+| ----------- | -------------------- | ------------------- |:-----------:|
+| ...éléments | chaîne de caractères | Éléments à ajouter. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
 ```javascript
 bot.command({
     name: "array-push",
     code: `
-  $arrayPush[array;Leref;Ayaka;Ferel]
-  $createArray[array;aoi.js;akarui;documents;bot]
+  $arrayPush[tableau;Leref;Ayaka;Ferel]
+  $createArray[tableau;aoi.js;akarui;documents;bot]
   `
 });
 ```

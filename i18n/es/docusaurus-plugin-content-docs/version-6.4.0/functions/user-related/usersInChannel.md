@@ -1,28 +1,28 @@
 ---
 title: '$usersInChannel'
-description: '$usersInChannel will return all users who are connected to the specified voice channel.'
+description: '$usersInChannel devolverá todos los usuarios conectados al canal de voz especificado.'
 id: usersInChannel
 ---
 
-`$usersInChannel` will return all users who are connected to the specified voice channel.
+`$usersInChannel` devolverá todos los usuarios conectados al canal de voz especificado.
 
 ## Uso
 
 ```php
-$usersInChannel[channelID;option?;sep?]
+$usersInChannel[servidorID;opcion?;sep?]
 ```
 
 ## Parámetros
 
-| Campo   | Tipo     | Parámetros                                                                                             | Requerido |
-| ------- | -------- | ------------------------------------------------------------------------------------------------------ |:---------:|
-| canalID | entero   | Voice Channel ID.                                                                                      | verdadero |
-| opción? | consulta | How to return the users <br /> 1. **id** (default) <br /> 2. **user** - mentions the users |    no     |
-| sep?    | string   | Separator to separate multiple returned values.                                                        |   falso   |
+| Campo   | Tipo   | Parámetros                                                                                                            | Requerido |
+| ------- | ------ | --------------------------------------------------------------------------------------------------------------------- |:---------:|
+| canalID | entero | Canal de voz.                                                                                                         | verdadero |
+| opción? | cadena | Cómo devolver los usuarios <br /> 1. **id** (por defecto) <br /> 2. **usuario** - menciona a los usuarios |   falso   |
+| sep?    | cadena | El separador para separar los valores devueltos.                                                                      |   falso   |
 
 ## Ejemplo(s)
 
-This will return the users connected to a voice channel:
+Esto devolverá los usuarios conectados a un canal de voz:
 
 ```javascript
 bot.command({

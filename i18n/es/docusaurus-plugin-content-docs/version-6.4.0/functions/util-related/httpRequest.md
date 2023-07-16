@@ -1,31 +1,31 @@
 ---
 title: '$httpRequest'
-description: '$httpRequest either posts to or retrieves data from an API.'
+description: '$httpRequest publica o recupera datos de una API.'
 id: httpRequest
 ---
 
-`$httpRequest` either posts to or retrieves data from an API.
+`$httpRequest` publica o recupera datos de una API.
 
 ## Uso
 
 ```php
-$httpRequest[URL;method;body?;property?;error?;...header?]
+$httpRequest[URL;método;cuerpo?;propiedad?;error?;...cabecera?]
 ```
 
 ## Parámetros
 
-| Campo     | Tipo     | Parámetros                                                                                | Requerido |
-| --------- | -------- | ----------------------------------------------------------------------------------------- |:---------:|
-| URL       | consulta | URL you want to get/send data to/from.                                                    | verdadero |
-| method    | consulta | Method <br /> 1. **GET** (default) <br /> 2. **POST** <br /> 3. **PUT** | verdadero |
-| body?     | string   | Contenido.                                                                                |   falso   |
-| property? | string   | Property to return (get method).                                                          |   falso   |
-| error?    | cadena   | Error to return when request fails.                                                       |    no     |
-| ...header | cadena   | Header.                                                                                   |   falso   |
+| Campo       | Tipo     | Parámetros                                                                                    | Requerido |
+| ----------- | -------- | --------------------------------------------------------------------------------------------- |:---------:|
+| URL         | consulta | URL desde la que quieres obtener/enviar datos.                                                | verdadero |
+| método      | consulta | Método <br /> 1. **GET** (por defecto) <br /> 2. **POST** <br /> 3. **PUT** | verdadero |
+| cuerpo?     | string   | Contenido.                                                                                    |   falso   |
+| propiedad?  | string   | Propiedad a devolver (obtener método).                                                        |   falso   |
+| error?      | cadena   | Error de retorno cuando la solicitud falla.                                                   |   falso   |
+| ...cabecera | cadena   | Cabecera.                                                                                     |   falso   |
 
 ## Ejemplo(s)
 
-This will return a random dog fact using the `GET` method:
+Esto devolverá un hecho perro aleatorio usando el método `GET`:
 
 ```javascript
 bot.command({

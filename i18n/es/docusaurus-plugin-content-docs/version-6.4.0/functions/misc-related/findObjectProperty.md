@@ -1,27 +1,27 @@
 ---
 title: '$findObjectProperty'
-description: '$findObjectProperty will search for a given property of an object and return it.'
+description: '$findObjectProperty buscará una propiedad determinada de un objeto y lo devolverá.'
 id: findObjectProperty
 ---
 
-`$findObjectProperty` will search for a given property of an object and return it.
+`$findObjectProperty` buscará una determinada propiedad de un objeto y lo devolverá.
 
 ## Uso
 
 ```php
-$findObjectProperty[property;object]
+$findObjectProperty[propiedad;objeto]
 ```
 
 ## Parámetros
 
-| Campo    | Tipo     | Parámetros            | Requerido |
-| -------- | -------- | --------------------- |:---------:|
-| property | consulta | Name of the property. | verdadero |
-| object   | object   | The object to search. | verdadero |
+| Campo     | Tipo     | Parámetros              | Requerido |
+| --------- | -------- | ----------------------- |:---------:|
+| propiedad | consulta | Nombre de la propiedad. | verdadero |
+| objeto    | objeto   | El objeto a buscar.     | verdadero |
 
 ## Ejemplo(s)
 
-This will return `{"object": "property"}` as it was able to find "object":
+Esto devolverá `{"object": "property"}` ya que fue capaz de encontrar "object":
 
 ```javascript
 bot.command({

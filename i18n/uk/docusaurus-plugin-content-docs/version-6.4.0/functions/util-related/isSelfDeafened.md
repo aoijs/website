@@ -1,10 +1,10 @@
 ---
-title: '$isSelfDeafened'
-description: '$isSelfDeafened is similar but not to confuse with `$isDeafen`, this will check if the user deafened themselves.'
+title: $isSelfDeafened
+description: '$isSelfDeafened подібний, але не плутати з `$isDeafen`, це перевірить, чи користувач вимкнув звук в чаті.'
 id: isSelfDeafened
 ---
 
-`$isSelfDeafened` is similar but not to confuse with `$isDeafen`, this will check if the user deafened themselves.
+`$isSelfDeafened` аналогічний, але не плутати з `$isDeafen`, це буде перевірити, чи вимкнеться користувач сама з собою, чи не є користувачем.
 
 ## Використання
 
@@ -14,19 +14,19 @@ $isSelfDeafened[userID?;guildID?]
 
 ## Параметри
 
-| Поле     | Тип     | Опис                                                  | Обов'язковий |
-| -------- | ------- | ----------------------------------------------------- |:------------:|
-| userID?  | integer | ID of the user you want to check if they're deafened. |      ні      |
-| guildID? | integer | ID of the guild where they're deafened in.            |      ні      |
+| Поле            | Тип  | Опис                                                                     | Обов'язковий |
+| --------------- | ---- | ------------------------------------------------------------------------ |:------------:|
+| ID користувача? | ціле | ID користувача, якого Ви хочете перевірити, чи вони отримали б декредит. |      ні      |
+| гільдія?        | ціле | ID гільдії, в якому вони були глухими.                                   |      ні      |
 
 ## Приклад(и)
 
-This will return either `true` or `false` depending on if you're deafened or not:
+Це поверне або `true` або `false` в залежності від того, що ви оглушені чи ні:
 
 ```javascript
 bot.command({
     name: 'isSelfDeafened',
-    code: `
+    код: `
   $isSelfDeafened
   `
 });

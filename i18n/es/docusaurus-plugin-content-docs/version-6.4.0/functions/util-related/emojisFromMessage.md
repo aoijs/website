@@ -1,10 +1,10 @@
 ---
 title: '$emojisFromMessage'
-description: '$emojisFromMessage will retrieve all emojis given in a message.'
+description: '$emojisFromMessage recuperará todos los emojis dados en un mensaje.'
 id: emojisFromMessage
 ---
 
-`$emojisFromMessage` returns all emojis in a given message.
+`$emojisFromMessage` devuelve todos los emojis en un mensaje determinado.
 
 ## Uso
 
@@ -12,11 +12,11 @@ id: emojisFromMessage
 $emojisFromMessage
 ```
 
-**Please note that your bot has to be present in the guild where the emoji is in.**
+**Ten en cuenta que tu bot tiene que estar presente en el gremio donde están los emoji.**
 
 ## Ejemplo(s)
 
-This will return any emojis you give as argument:
+Esto devolverá cualquier emojis que usted dé como argumento:
 
 ```javascript
 bot.command({

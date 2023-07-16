@@ -1,7 +1,7 @@
 ---
-title: '$arraySome'
+title: $arraySome
 description: '$arraySome verificará los elementos dados en la matriz.'
-id: matriz Algunos
+id: arraySome
 ---
 
 `$arraySome`  verificará los elementos dados en la matriz y devolverá un valor booleano.

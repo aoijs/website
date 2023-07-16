@@ -1,31 +1,31 @@
 ---
 title: '$createArray'
-description: '$createArray will create a new array with given elements.'
+description: '$createArray va créer un nouveau tableau avec des éléments donnés.'
 id: createArray
 ---
 
-`$createArray` will create a new array with given elements.
+`$createArray` va créer un nouveau tableau avec des éléments donnés.
 
-## Usage
+## Utilisation
 
 ```php
-$createArray[name;...elements]
+$createArray[nom;...éléments]
 ```
 
-## Parameters
+## Paramètres
 
-| Field       | Type   | Description      | Required |
-| ----------- | ------ | ---------------- |:--------:|
-| name        | string | Array name.      |   true   |
-| ...elements | string | Elements to add. |   true   |
+| Champ       | Type                 | Description         | Obligatoire |
+| ----------- | -------------------- | ------------------- |:-----------:|
+| nom         | chaîne de caractères | Nom du tableau.     |    vrai     |
+| ...éléments | chaîne de caractères | Éléments à ajouter. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
 ```javascript
 bot.command({
     name: "array-create",
     code: `
-  $createArray[array;aoi.js;akarui;documents;bot]
+  $createArray[tableau;aoi.js;akarui;documents;bot]
   `
 });
 ```

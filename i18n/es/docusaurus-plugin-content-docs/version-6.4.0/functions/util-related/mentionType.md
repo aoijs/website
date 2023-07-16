@@ -1,10 +1,10 @@
 ---
 title: '$mentionType'
-description: '$mentionType will return the type of the mention.'
+description: '$mentionType devolverá el tipo de mención.'
 id: mentionType
 ---
 
-`$mentionType` will return the type of the mention.
+`$mentionType` devolverá el tipo de mención.
 
 ## Uso
 
@@ -14,25 +14,25 @@ $mentionType[content]
 
 ## Parámetros
 
-| Campo     | Tipo   | Descripción                                      | Requerido |
-| --------- | ------ | ------------------------------------------------ |:---------:|
-| contenido | cadena | The mention whose mention type will be returned. | verdadero |
+| Campo     | Tipo   | Descripción                                    | Requerido |
+| --------- | ------ | ---------------------------------------------- |:---------:|
+| contenido | cadena | La mención cuyo tipo de mención será devuelta. | verdadero |
 
 <details>
-  <summary> <h3> Mention Types </h3></summary>
+  <summary> <h3> Tipos de Mención </h3></summary>
 
-| Tipo     | Descripción                       |
-| -------- | --------------------------------- |
-| everyone | `@everyone` and `@here` mentions. |
-| users    | All user mentions.                |
-| roles    | All role mentions.                |
-| all      | Everything listed above.          |
+| Tipo     | Descripción                      |
+| -------- | -------------------------------- |
+| todos    | `@everyone` y `@aquí` menciones. |
+| usuarios | Todos los usuarios mencionan.    |
+| roles    | Todos los papeles mencionan.     |
+| all      | Todo lo enumerado anteriormente. |
 
 </details>
 
 ## Ejemplo(s)
 
-This will return `users` as you're an user:
+Esto devolverá `users` como usuario:
 
 ```javascript
 bot.command({

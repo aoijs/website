@@ -1,10 +1,10 @@
 ---
-title: '$oldState'
-description: '$oldState holds data for the user voice state before it was updated (voiceStateUpdate event).'
+title: $oldState
+description: Дані $oldState для стану голосу користувача перед оновленням (voiceStateUpdate події).
 id: oldState
 ---
 
-`$oldState` holds data for the user voice state before it was updated (voiceStateUpdate event).
+`$oldState` зберігає дані для голосового стану користувача перед оновленням (voiceStateUpdate event).
 
 ## Використання
 
@@ -14,6 +14,6 @@ $oldState[option]
 
 ## Параметри
 
-| Поле   | Тип   | Опис                | Обов'язковий |
-| ------ | ----- | ------------------- |:------------:|
-| option | рядок | Option to retrieve. |     так      |
+| Поле  | Тип   | Опис                 | Обов'язковий |
+| ----- | ----- | -------------------- |:------------:|
+| опція | рядок | Можливість отримати. |     так      |

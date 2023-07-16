@@ -1,32 +1,32 @@
 ---
 title: '$arrayJoin'
-description: '$arrayJoin will join the array with a given separator.'
+description: '$arrayJoin rejoindra le tableau avec un séparateur donné.'
 id: arrayJoin
 ---
 
-`$arrayJoin` will join the array with a given separator.
+`$arrayJoin` rejoindra le tableau avec un séparateur donné.
 
-## Usage
+## Utilisation
 
 ```php
-$arrayJoin[name;separator?]
+$arrayJoin[nom;séparateur?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field      | Type   | Description | Required |
-| ---------- | ------ | ----------- |:--------:|
-| name       | string | Array name. |   true   |
-| separator? | string | Separator.  |  false   |
+| Champ       | Type                 | Description     | Obligatoire |
+| ----------- | -------------------- | --------------- |:-----------:|
+| nom         | chaîne de caractères | Nom du tableau. |    vrai     |
+| séparateur? | chaîne de caractères | Séparateur.     |    faux     |
 
-## Example(s)
+## Exemple(s)
 
 ```javascript
 bot.command({
     name: "array-join",
     code: `
-  $arrayJoin[array;, ]
-  $createArray[array;aoi.js;akarui;documents;bot]
+  $arrayJoin[tableau;, ]
+  $createArray[tableau;aoi.js;akarui;documents;bot]
   `
 });
 ```

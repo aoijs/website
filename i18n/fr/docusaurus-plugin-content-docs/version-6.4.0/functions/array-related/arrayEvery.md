@@ -1,46 +1,46 @@
 ---
 title: '$arrayEvery'
-description: '$arrayEvery will test whether all elements in the array pass the condition.'
+description: '$arrayEvery testera si tous les éléments du tableau passent la condition.'
 id: arrayEvery
 ---
 
-`$arrayEvery` will test whether all elements in the array pass the condition.
+`$arrayEvery` testera si tous les éléments du tableau passent la condition.
 
-## Usage
+## Utilisation
 
 ```php
-$arrayEvery[name;query;queryType?]
+$arrayEvery[nom;requête;typeDeRequête?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field     | Type   | Description                                                         | Required |
-| --------- | ------ | ------------------------------------------------------------------- |:--------:|
-| name      | string | Array name.                                                         |   true   |
-| query     | string | The element we will be queering for every element inside the array. |   true   |
-| queryType | string | The comparison operator.                                            |  false   |
+| Champ          | Type                 | Description                                                          | Obligatoire |
+| -------------- | -------------------- | -------------------------------------------------------------------- |:-----------:|
+| nom            | chaîne de caractères | Nom du tableau.                                                      |    vrai     |
+| requête        | chaîne de caractères | L'élément que nous allons rechercher pour chaque élément du tableau. |    vrai     |
+| typeDeRequête? | chaîne de caractères | L'opérateur de comparaison.                                          |    faux     |
 
-## Comparison Operators
+## Opérateurs de comparaison
 
-* `includes` — Including
-* `startsWith` — Starts with
-* `endsWith` — Ends with
-* `==` — Equal to
-* `!=` — Not equal to
-* `>` — Greater than
-* `<` — Less than
-* `>=` — Greater than or equal to
-* `<=` — Less than or equal to
+* `includes` — Incluant
+* `startsWith` — Commence par
+* `endsWith` — Se termine par
+* `==` — Égal à
+* `!=` — Pas égal à
+* `>` — Supérieur à
+* `<` — Inférieur à
+* `>=` – Supérieur ou égal à
+* `<=` — inférieur ou égal à
 
-## Example(s)
+## Exemple(s)
 
 ```javascript
 bot.command({
     name: "array-every",
     code: `
-  $arrayEvery[array;30;==]
-  $createArray[array;1;2;3;0;30]
+  $arrayEvery[tableau;30;==]
+  $createArray[tableau;1;2;3;0;30]
   `
-    // It will return "false". Cause 1 ≠ 30. You can think it as "and (&&)" logical operator.
+    // Ceci retournera "false" car 1 ≠ 30. Vous pouvez considérer que c'est comme l'opérateur logique "et (&&)".
 });
 ```

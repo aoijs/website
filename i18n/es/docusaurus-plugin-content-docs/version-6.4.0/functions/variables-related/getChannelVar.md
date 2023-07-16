@@ -1,10 +1,10 @@
 ---
 title: '$getChannelVar'
-description: '$getChannelVar will return the value of a given channel variable.'
+description: '$getChannelVar devolverá el valor de una variable de canal determinada.'
 id: getChannelVar
 ---
 
-`$getChannelVar` will return the value of a given channel variable.
+`$getChannelVar` devolverá el valor de una variable de canal determinada.
 
 ## Uso
 
@@ -14,15 +14,15 @@ $getChannelVar[varname;channelID?;table?]
 
 ## Parámetros
 
-| Campo    | Tipo     | Parámetros      | Requerido |
-| -------- | -------- | --------------- |:---------:|
-| varname  | consulta | Variable name.  | verdadero |
-| canalID? | entero   | ID del canal.   |    no     |
-| table?   | string   | Variable table. |   falso   |
+| Campo    | Tipo     | Parámetros       | Requerido |
+| -------- | -------- | ---------------- |:---------:|
+| varname  | consulta | Nombre variable. | verdadero |
+| canalID? | entero   | ID del canal.    |    no     |
+| tabla?   | string   | Tabla variable.  |   falso   |
 
 ## Ejemplo(s)
 
-This will return the value of a variable called "Example":
+Esto devolverá el valor de una variable llamada "Ejemplo":
 
 ```javascript
 bot.command({

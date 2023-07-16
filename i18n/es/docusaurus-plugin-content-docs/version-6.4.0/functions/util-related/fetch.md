@@ -1,28 +1,28 @@
 ---
 title: '$fetch'
-description: '$fetch will fetch information about a given method using Discord''s API.'
+description: '$fetch obtendrá información sobre un método determinado usando la API de Discord.'
 id: fetch
 ---
 
-`$fetch` will fetch information about a given method using Discord's API.
+`$fetch` obtendrá información sobre un método determinado usando la API de Discord.
 
 ## Uso
 
 ```php
-$fetch[method;query;...query]
+$fetch[método;consulta;...consulta]
 ```
 
 ## Parámetros
 
-| Campo    | Tipo   | Descripción                     | Requerido |
-| -------- | ------ | ------------------------------- |:---------:|
-| method   | string | Method to fetch (listed below). |    sí     |
-| consulta | cadena | Input for the used method.      |    sí     |
+| Campo    | Tipo   | Descripción                                  | Requerido |
+| -------- | ------ | -------------------------------------------- |:---------:|
+| método   | cadena | Método de búsqueda (listado a continuación). | verdadero |
+| consulta | cadena | Entrada para el método utilizado.            | verdadero |
 
 <details>
-  <summary><h3> Methods </h3></summary>
+  <summary><h3> Métodos </h3></summary>
 
-| Methods             |
+| Métodos             |
 | ------------------- |
 | message             |
 | channel             |
@@ -42,7 +42,7 @@ $fetch[method;query;...query]
 
 ## Ejemplo(s)
 
-This will display information about the initial command message using the `fetch` function:
+Esto mostrará información sobre el mensaje de comando inicial usando la función `fetch`:
 
 ```javascript
 bot.command({

@@ -1,27 +1,27 @@
 ---
 title: '$guildRoleIconURL'
-description: '$guildRoleIconURL will retrieve the image URL of the role icon.'
+description: '$guildRoleIconURL recuperará la URL de la imagen del icono del rol.'
 id: guildRoleIconURL
 ---
 
-`$guildRoleIconURL` will retrieve the image URL of the role icon.
+`$guildRoleIconURL` recuperará la URL de la imagen del icono de rol.
 
 ## Uso
 
 ```php
-$guildRoleIconURL[guildId?;roleId]
+$guildRoleIconURL[servidorID?;rolId]
 ```
 
 ## Parámetros
 
-| Campo    | Tipo   | Parámetros                                     | Requerido |
-| -------- | ------ | ---------------------------------------------- |:---------:|
-| guildId? | entero | ID of the guild where the role exists.         |    no     |
-| roleId   | entero | ID of the role you want to check if it exists. | verdadero |
+| Campo       | Tipo   | Parámetros                                  | Requerido |
+| ----------- | ------ | ------------------------------------------- |:---------:|
+| servidorID? | entero | ID del servidor en el que existe el rol.    |   falso   |
+| rolId       | entero | ID del rol que quieres comprobar si existe. | verdadero |
 
 ## Ejemplo(s)
 
-This will return the image URL of the role icon:
+Esto devolverá la URL de la imagen del icono de rol:
 
 ```javascript
 bot.command({

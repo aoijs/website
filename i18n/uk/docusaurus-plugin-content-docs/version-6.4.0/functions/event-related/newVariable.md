@@ -1,10 +1,10 @@
 ---
-title: '$newVariable'
-description: '$newVariable gets the data from variable events.'
+title: $newVariable
+description: '$newVariable отримує дані від змінних подій.'
 id: newVariable
 ---
 
-`$newVariable` gets the data from variable events.
+`$newVariable` отримує дані з подій змінної.
 
 ## Використання
 
@@ -14,7 +14,7 @@ $newVariable[option;sep?]
 
 ## Параметри
 
-| Поле   | Тип   | Опис                | Обов'язковий |
-| ------ | ----- | ------------------- |:------------:|
-| option | рядок | Option to retrieve. |     так      |
-| sep    | рядок | Роздільник.         |      ні      |
+| Поле  | Тип   | Опис                 | Обов'язковий |
+| ----- | ----- | -------------------- |:------------:|
+| опція | рядок | Можливість отримати. |     так      |
+| вер   | рядок | Роздільник.          |      ні      |

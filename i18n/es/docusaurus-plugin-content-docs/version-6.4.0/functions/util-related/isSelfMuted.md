@@ -1,10 +1,10 @@
 ---
 title: '$isSelfMuted'
-description: '$isSelfMuted is similar but not to confuse with `$isMuted`, this will check if the user muted themselves.'
+description: '$isSelfMuted es similar pero no confundir con `$isMuted`, esto comprobará si el usuario se silenció.'
 id: isSelfMuted
 ---
 
-$isSelfMuted is similar but not to confuse with `$isMuted`, this will check if the user muted themselves.
+$isSelfMuted es similar pero no confundir con `$isMuted`, esto comprobará si el usuario se silenció.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $isSelfMuted[userID?;guildID?]
 
 ## Parámetros
 
-| Campo       | Tipo   | Parámetros                                         | Requerido |
-| ----------- | ------ | -------------------------------------------------- |:---------:|
-| usarioID?   | entero | ID of the user you want to check if they're muted. |    no     |
-| servidorID? | entero | ID of the guild where they're muted in.            |    no     |
+| Campo       | Tipo   | Parámetros                                             | Requerido |
+| ----------- | ------ | ------------------------------------------------------ |:---------:|
+| usarioID?   | entero | ID del usuario que desea comprobar si está silenciado. |    no     |
+| servidorID? | entero | ID del gremio donde están silenciados.                 |    no     |
 
 ## Ejemplo(s)
 
-This will return either `true` or `false` depending on if you're muted (voice channel) or not:
+Esto retornará `verdadero` o `falso` dependiendo de si estás silenciado (canal de voz) o no:
 
 ```javascript
 bot.command({

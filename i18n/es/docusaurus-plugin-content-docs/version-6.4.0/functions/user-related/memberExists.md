@@ -1,27 +1,27 @@
 ---
 title: '$memberExists'
-description: '$memberExists check if a given user is member of the given guild.'
+description: '$memberExists verifica si un usuario dado es miembro del gremio dado.'
 id: memberExists
 ---
 
-`$memberExists` check if a given user is member of the given guild.
+`$memberExists` comprueba si un usuario determinado es miembro del gremio dado.
 
 ## Uso
 
 ```php
-$memberExists[userID;guildID?]
+$memberExists[usuarioID;servidorID?]
 ```
 
 ## Parámetros
 
-| Campo       | Tipo   | Parámetros                                                                         | Requerido |
-| ----------- | ------ | ---------------------------------------------------------------------------------- | --------- |
-| usarioID    | entero | id of the user you want to check if they're currently a member of the given server | verdadero |
-| servidorID? | entero | the server where the user is present in                                            | no        |
+| Campo       | Tipo   | Parámetros                                                                     | Requerido |
+| ----------- | ------ | ------------------------------------------------------------------------------ | --------- |
+| usarioID    | entero | id del usuario que desea comprobar si actualmente es miembro del servidor dado | verdadero |
+| servidorID? | entero | ID del gremio donde el usuario está presente                                   | falso     |
 
 ## Ejemplo(s)
 
-This will return `true` as you're currently in this guild:
+Esto devolverá `true` como estás en este gremio:
 
 ```javascript
 bot.command({

@@ -1,10 +1,10 @@
 ---
 title: '$deleteWebhook'
-description: '$deleteWebhook will delete a given Webhook.'
+description: '$deleteWebhook видалить заданий вебгак.'
 id: deleteWebhook
 ---
 
-`$deleteWebhook` will delete a given Webhook.
+`$deleteWebhook` видалить заданий вебхук.
 
 ## Використання
 
@@ -14,20 +14,20 @@ $deleteWebhook[webhookID;webhookToken]
 
 ## Параметри
 
-| Поле         | Тип     | Опис                      | Обов'язковий |
-| ------------ | ------- | ------------------------- |:------------:|
-| webhookID    | integer | The ID of the webhook.    |     так      |
-| webhookToken | рядок   | The token of the webhook. |     так      |
+| Поле                    | Тип   | Опис          | Обов'язковий |
+| ----------------------- | ----- | ------------- |:------------:|
+| ідентифікатор webhookID | ціле  | ID вебгака.   |     так      |
+| webhookToken            | рядок | Знак вебгака. |     так      |
 
 ## Приклад(и)
 
-This will delete a webhook of your guild:
+Це видалить вебхук вашого гільдії:
 
 ```javascript
 bot.command({
     name: 'deleteWebhook',
-    code: `
+    код: `
   $deleteWebhook[webhookID;webhookToken]
-  ` // replace the fields which the actual information.
+  ` // замінює поля, які фактична інформація.
 });
 ```

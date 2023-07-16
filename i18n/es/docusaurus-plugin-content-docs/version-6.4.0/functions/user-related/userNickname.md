@@ -1,28 +1,28 @@
 ---
 title: '$userNickname'
-description: '$userNickname will return a user''s nickname.'
+description: '$userNickname devolverá el apodo de un usuario.'
 id: userNickname
 ---
 
-`$userNickname` will return a user's nickname.
+`$userNickname` devolverá el apodo de un usuario.
 
 ## Uso
 
 ```php
-$userNickname[guildID?;userID?;returnUser?]
+$userNickname[servidorID?;usuarioID?;volverUsuario?]
 ```
 
 ## Parámetros
 
-| Campo       | Tipo     | Parámetros                                                                           | Requerido |
-| ----------- | -------- | ------------------------------------------------------------------------------------ |:---------:|
-| servidorID? | entero   | The ID of the guild.                                                                 |    no     |
-| usarioID?   | entero   | El ID del usuario.                                                                   |    no     |
-| returnUser? | booleano | Return the username <br /> 1. **true** <br /> 2. **false** (por defecto) |   falso   |
+| Campo            | Tipo     | Parámetros                                                                                     | Requerido |
+| ---------------- | -------- | ---------------------------------------------------------------------------------------------- |:---------:|
+| servidorID?      | entero   | ID del servidor.                                                                               |   falso   |
+| usarioID?        | entero   | El ID del usuario.                                                                             |   falso   |
+| ¿volver usuario? | booleano | Devuelve el nombre de usuario <br /> 1. **true** <br /> 2. **false** (por defecto) |   falso   |
 
 ## Ejemplo(s)
 
-This will return your nickname, if you have none then it'll return your Discord username:
+Esto devolverá su apodo, si no tiene ninguno, devolverá su nombre de usuario de Discord:
 
 ```javascript
 bot.command({

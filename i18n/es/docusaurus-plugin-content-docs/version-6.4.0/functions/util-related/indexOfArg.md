@@ -1,10 +1,10 @@
 ---
 title: '$indexOfArg'
-description: '$indexOfArg will return the index of the given query.'
+description: '$indexOfArg devolverá el índice de la consulta dada.'
 id: indexOfArg
 ---
 
-`$indexOfArg` will return the index of the given query.
+`$indexOfArg` devolverá el índice de la consulta dada.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $indexOfArg[string;query]
 
 ## Parámetros
 
-| Campo    | Tipo     | Parámetros                                      | Requerido |
-| -------- | -------- | ----------------------------------------------- |:---------:|
-| string   | consulta | The text the bot will be checking the index of. | verdadero |
-| consulta | consulta | The query the bot will be checking for.         | verdadero |
+| Campo    | Tipo     | Parámetros                             | Requerido |
+| -------- | -------- | -------------------------------------- |:---------:|
+| string   | consulta | El texto del bot comprobará el índice. | verdadero |
+| consulta | consulta | La consulta que el bot buscará.        | verdadero |
 
 ## Ejemplo(s)
 
-This will return `3` as `great` is the third argument in the query:
+Esto devolverá `3` como `gran` es el tercer argumento en la consulta:
 
 ```javascript
 bot.command({

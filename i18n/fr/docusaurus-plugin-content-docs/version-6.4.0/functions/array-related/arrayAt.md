@@ -1,27 +1,27 @@
 ---
 title: '$arrayAt'
-description: '$arrayAt will choose the index (position) of the array element to be returned. Returns nothing if the given index can not be found.'
+description: '$arrayAt choisira l''index (position) de l''élément du tableau à retourner. Ne retourne rien si l''index donné est introuvable.'
 id: arrayAt
 ---
 
-`$arrayAt` will choose the index (position) of the array element to be returned. Returns nothing if the given index can not be found.
+`$arrayAt` choisira l'index (position) de l'élément du tableau à retourner. Ne retourne rien si l'index donné est introuvable.
 
-## Usage
+## Utilisation
 
 ```php
-$arrayAt[name;index]
+$arrayAt[nom;index]
 ```
 
-## Parameters
+## Paramètres
 
-| Field | Type   | Description                  | Required |
-| ----- | ------ | ---------------------------- |:--------:|
-| name  | string | Name of the array.           |   true   |
-| index | string | The position of the element. |   true   |
+| Champ | Type                 | Description               | Obligatoire |
+| ----- | -------------------- | ------------------------- |:-----------:|
+| nom   | chaîne de caractères | Nom du tableau.           |    vrai     |
+| index | chaîne de caractères | La position de l'élément. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
-- This will return `Aoi.dashboard`:
+- Ceci retournera `Aoi.dashboard` :
 
 ```javascript
 bot.command({
@@ -31,6 +31,6 @@ bot.command({
 
   $createArray[Aoi;Aoi.music;Aoi.panel;Aoi.dashboard;Aoi]
   `
-    // Returns "Aoi.dashboard"
+    // Retourne "Aoi.dashboard"
 });
 ```

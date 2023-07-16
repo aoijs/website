@@ -1,27 +1,27 @@
 ---
 title: '$userStatus'
-description: '$userStatus will return a user''s presence.'
+description: '$userStatus devolverá la presencia de un usuario.'
 id: userStatus
 ---
 
-`$userStatus` will return a user's presence.
+`$userStatus` devolverá la presencia de un usuario.
 
 ## Uso
 
 ```php
-$userStatus[guildId?;userId?]
+$userStatus[servidorID?;usuarioID?]
 ```
 
 ## Parámetros
 
-| Campo    | Tipo   | Parámetros                                                      | Requerido |
-| -------- | ------ | --------------------------------------------------------------- |:---------:|
-| guildId? | entero | The guild ID of which guild you want to retrieve the status of. |    no     |
-| userId?  | entero | The ID of the user you want to return the status of.            |    no     |
+| Campo       | Tipo   | Parámetros                                                                 | Requerido |
+| ----------- | ------ | -------------------------------------------------------------------------- |:---------:|
+| servidorID? | entero | La identificación del gremio del gremio del que desea recuperar el estado. |   falso   |
+| usarioID?   | entero | El ID del usuario del que desea devolver el estado.                        |   falso   |
 
 ## Ejemplo(s)
 
-This will either return `idle`, `online`, `invisible` or `dnd` depending on your current presence:
+Esto devolverá `idle`, `online`, `invisible` o `dnd` dependiendo de tu presencia actual:
 
 ```javascript
 bot.command({

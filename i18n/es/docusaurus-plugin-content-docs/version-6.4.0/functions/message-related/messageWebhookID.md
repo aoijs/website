@@ -1,33 +1,33 @@
 ---
 title: '$messageWebhookID'
-description: '$messageWebhookID will return the ID of the webhook which sent the given message.'
+description: '$messageWebhookID devolverá el ID del webhook que envió el mensaje dado.'
 id: messageWebhookID
 ---
 
-`$messageWebhookID` will return the ID of the webhook which sent the given message.
+`$messageWebhookID` devolverá la ID del webhook que envió el mensaje dado.
 
 ## Uso
 
 ```php
-$messageWebhookID[messageID?;channelID?]
+$messageWebhookID[ID de mensaje;canalID?]
 ```
 
 ## Parámetros
 
-| Campo          | Tipo   | Parámetros                                         | Requerido |
-| -------------- | ------ | -------------------------------------------------- |:---------:|
-| ID de mensaje? | entero | ID of the message.                                 |    no     |
-| canalID?       | entero | ID of the message where the message is located in. |    no     |
+| Campo          | Tipo   | Parámetros                                    | Requerido |
+| -------------- | ------ | --------------------------------------------- |:---------:|
+| ID de mensaje? | entero | ID del mensaje.                               |   falso   |
+| canalID?       | entero | ID del mensaje donde se encuentra el mensaje. |   falso   |
 
 ## Ejemplo(s)
 
-This will return the ID of a webhook, make sure to replace "messageID" with an actual message ID sent from a webhook:
+Esto devolverá la ID de un webhook, asegúrese de reemplazar "messageID" con una ID de mensaje real enviada desde un webhook:
 
 ```javascript
 bot.command({
     name: 'messageWebhookID',
     code: `
-  $messageWebhookID[messageID;$channelID] //replace messageID
+  $messageWebhookID[messageID;$channelID] //reemplazar ID de mensaje
   `
 });
 ```

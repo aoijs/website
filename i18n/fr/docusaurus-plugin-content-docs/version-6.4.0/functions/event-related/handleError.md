@@ -1,30 +1,30 @@
 ---
 title: '$handleError'
-description: '$handleError will return information about an occurred error.'
+description: '$handleError renvoie des informations sur l''erreur qui s''est produite.'
 id: handleError
 ---
 
-`$handleError` will return information about an occurred error.
+`$handleError` renvoie des informations sur l'erreur qui s'est produite.
 
-## Usage
+## Utilisation
 
 ```php
 $handleError[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description                                                                                                                                                         | Required |
-| ------ | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |:--------:|
-| option | string | What to return the data of. <br /> 1. **function** - function name <br /> 2. **command** - command name <br /> 3. **error** - error that occurred |   true   |
+| Champ  | Type                 | Description                                                                                                                                                                                      | Obligatoire |
+| ------ | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |:-----------:|
+| option | chaîne de caractères | Quelles données doivent être renvoyées. <br /> 1. **function** - nom de la fonction <br /> 2. **command** - nom de la commande <br /> 3. **error** - erreur qui s'est produite |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
-**You require `events: ["onFunctionError"]` in your main file in order to use this function!**
+**Vous avez besoin de `events: ["onFunctionError"]` dans votre fichier principal pour utiliser cette fonction !**
 
 ```javascript
 bot.functionErrorCommand({
     channel: "channelID (optional)",
-    code: `Something went wrong in your "$handleError[command]" command! The function "$handleError[function]" returned the error "$handleError[error]"!`
+    code: `Quelque chose a mal tourné dans votre commande "$handleError[command]" ! La fonction "$handleError[function]" a renvoyé l'erreur "$handleError[error]"!`
 });
 ```

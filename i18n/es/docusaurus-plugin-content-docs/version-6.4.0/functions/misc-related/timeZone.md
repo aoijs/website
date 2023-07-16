@@ -1,28 +1,28 @@
 ---
 title: '$timeZone'
-description: '$timeZone will change the timezone of any time function in the used command.'
+description: '$timeZone cambiará la zona horaria de cualquier función de tiempo en el comando usado.'
 id: timeZone
 ---
 
-`$timeZone` will change the timezone of any time function in the used command.
+`$timeZone` cambiará la zona horaria de cualquier función de tiempo en el comando usado.
 
 ## Uso
 
 ```php
-$timeZone[timezone]
+$timeZone[zona horaria]
 ```
 
 ## Parámetros
 
-| Campo    | Tipo   | Parámetros                  | Requerido |
-| -------- | ------ | --------------------------- |:---------:|
-| timezone | string | Timezone/Locale formatting. |    no     |
+| Campo        | Tipo   | Parámetros                      | Requerido |
+| ------------ | ------ | ------------------------------- |:---------:|
+| zona horaria | string | Formato de zona horaria/idioma. |   falso   |
 
-You can find all timezones __* *[here](https://gist.githubusercontent.com/diogocapela/12c6617fc87607d11fd62d2a4f42b02a/raw/8b5abde6f9c7d5570df3a2aa22325d7d20a8b5d7/moment-js-timezones.txt) **__.
+Puedes encontrar todas las zonas horarias __* *[aquí](https://gist.githubusercontent.com/diogocapela/12c6617fc87607d11fd62d2a4f42b02a/raw/8b5abde6f9c7d5570df3a2aa22325d7d20a8b5d7/moment-js-timezones.txt) **__.
 
 ## Ejemplo(s)
 
-You can change the timezone using `$timezone` like the followning:
+Puedes cambiar la zona horaria usando `$timezone`:
 
 ```javascript
 bot.command({
@@ -30,6 +30,6 @@ bot.command({
     code: `
     $hour:$minute:$second
     $timeZone[America/New_York]
-    ` // returns current time of New York
+    ` // devuelve la hora actual de Nueva York
 });
 ```

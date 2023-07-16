@@ -1,27 +1,27 @@
 ---
-title: '$memberJoinDate'
-description: '$memberJoinDate will return a members join date in MS.'
-id: memberJoinDate
+title: $memberJoinedDate
+description: '$memberJoinDate devolverá la fecha de ingreso de los miembros en MS.'
+id: memberJoinedDate
 ---
 
-`$memberJoinDate` will return a members join date in MS.
+`$memberJoinDate` devolverá la fecha de ingreso de los miembros en MS.
 
 ## Uso
 
 ```php
-$memberJoinDate[userID?;guildID?]
+$memberJoinDate[usuarioID?;servidorID?]
 ```
 
 ## Parámetros
 
-| Campo       | Tipo   | Parámetros           | Requerido |
-| ----------- | ------ | -------------------- |:---------:|
-| usarioID?   | entero | El ID del usuario.   |    no     |
-| servidorID? | entero | The ID of the guild. |    no     |
+| Campo       | Tipo   | Parámetros         | Requerido |
+| ----------- | ------ | ------------------ |:---------:|
+| usarioID?   | entero | El ID del usuario. |   falso   |
+| servidorID? | entero | ID del servidor.   |   falso   |
 
 ## Ejemplo(s)
 
-This will return your join date in MS and parsed date:
+Esto devolverá la fecha de ingreso en MS y fecha analizada:
 
 ```javascript
 bot.command({

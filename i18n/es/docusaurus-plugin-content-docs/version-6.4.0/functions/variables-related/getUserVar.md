@@ -1,10 +1,10 @@
 ---
 title: '$getUserVar'
-description: '$getUserVar will return the value of a given user variable.'
+description: '$getUserVar devolverá el valor de una variable de usuario determinada.'
 id: getUserVar
 ---
 
-`$getUserVar` will return the value of a given user variable.
+`$getUserVar` devolverá el valor de una variable de usuario determinada.
 
 ## Uso
 
@@ -14,16 +14,16 @@ $getUserVar[varname;userID?;id?;table?]
 
 ## Parámetros
 
-| Campo     | Tipo            | Parámetros                                      | Requerido |
-| --------- | --------------- | ----------------------------------------------- |:---------:|
-| varname   | consulta        | Variable name.                                  | verdadero |
-| usarioID? | entero          | User ID.                                        |    no     |
-| id?       | string, integer | 1. **specific guild id** <br /> 2. **dm** |   falso   |
-| table?    | string          | Variable table.                                 |   falso   |
+| Campo     | Tipo            | Parámetros                                           | Requerido |
+| --------- | --------------- | ---------------------------------------------------- |:---------:|
+| varname   | consulta        | Nombre variable.                                     | verdadero |
+| usarioID? | entero          | ID de usuario.                                       |    no     |
+| ¿id?      | string, integer | 1. **id de guild específico** <br /> 2. **dm** |   falso   |
+| tabla?    | string          | Tabla variable.                                      |   falso   |
 
 ## Ejemplo(s)
 
-This will return the value of a variable called "Example":
+Esto devolverá el valor de una variable llamada "Ejemplo":
 
 ```javascript
 bot.command({

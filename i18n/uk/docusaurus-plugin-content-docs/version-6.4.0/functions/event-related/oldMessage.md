@@ -1,10 +1,10 @@
 ---
-title: '$oldMessage'
-description: '$oldMessage holds the content of the message before it was updated. (if any)'
+title: $oldMessage
+description: '$oldMessage зберігає вміст повідомлення до того, як воно було оновлене. (якщо є)'
 id: oldMessage
 ---
 
-`$oldMessage` holds the content of the message before it was updated. (if any)
+`$oldMessage` зберігає вміст повідомлення до його оновлення. (якщо є)
 
 ## Використання
 
@@ -14,6 +14,6 @@ $oldMessage[option]
 
 ## Параметри
 
-| Поле   | Тип   | Опис                | Обов'язковий |
-| ------ | ----- | ------------------- |:------------:|
-| option | рядок | Option to retrieve. |     так      |
+| Поле  | Тип   | Опис                 | Обов'язковий |
+| ----- | ----- | -------------------- |:------------:|
+| опція | рядок | Можливість отримати. |     так      |

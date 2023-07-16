@@ -1,10 +1,10 @@
 ---
 title: '$resetGlobalUserVar'
-description: '$resetGlobalUserVar will set a given global user variable to its default value.'
+description: '$resetGlobalUserVar establecerá una variable global de usuario a su valor predeterminado.'
 id: resetGlobalUserVar
 ---
 
-`$resetGlobalUserVar` will set a given global user variable to its default value.
+`$resetGlobalUserVar` establecerá una variable global de usuario a su valor predeterminado.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $resetGlobalUserVar[varname;table?]
 
 ## Parámetros
 
-| Campo   | Tipo     | Parámetros      | Requerido |
-| ------- | -------- | --------------- |:---------:|
-| varname | consulta | Variable name.  | verdadero |
-| table?  | consulta | Variable table. |    no     |
+| Campo   | Tipo     | Parámetros       | Requerido |
+| ------- | -------- | ---------------- |:---------:|
+| varname | consulta | Nombre variable. | verdadero |
+| tabla?  | consulta | Tabla variable.  |    no     |
 
 ## Ejemplo(s)
 
-This will reset a variable called "Example":
+Esto restablecerá una variable llamada "Ejemplo":
 
 ```javascript
 bot.command({

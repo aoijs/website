@@ -1,34 +1,34 @@
 ---
 title: '$userPlatform'
-description: '$userPlatform will return the platform which the user is using Discord with.'
+description: '$userPlatform devolverá la plataforma con la que el usuario está usando Discord.'
 id: userPlatform
 ---
 
-`$userPlatform` will return the platform which the user is using Discord with.
+`$userPlatform` devolverá la plataforma con la que el usuario está usando Discord.
 
 ## Uso
 
 ```php
-$userPlatform[userID?;guildID?;sep?]
+$userPlatform[usuarioID?;servidorID?;sep?]
 ```
 
 ## Parámetros
 
-| Campo       | Tipo   | Parámetros                                    | Requerido |
-| ----------- | ------ | --------------------------------------------- |:---------:|
-| usarioID?   | entero | ID of the user.                               |    no     |
-| servidorID? | entero | The guild ID of where the user is present in. |    no     |
-| sep?        | string | The separator to split multiple platforms.    |   falso   |
+| Campo       | Tipo   | Parámetros                                                | Requerido |
+| ----------- | ------ | --------------------------------------------------------- |:---------:|
+| usarioID?   | entero | El ID del usuario.                                        |   falso   |
+| servidorID? | entero | El ID del gremio del lugar donde está baneado el usuario. |   falso   |
+| sep?        | cadena | El separador para dividir múltiples plataformas.          |   falso   |
 
-### Platforms:
-- **web** - The user is currently using the web client.
-- **mobile** - The user is using the mobile app.
-- **desktop** - The user is using the desktop app.
-- **none** - The user is either offline, or unable to fetch the platform.
+### Plataformas：
+- **web** - El usuario está utilizando actualmente el cliente web.
+- **mobile** - El usuario está usando la aplicación móvil.
+- **desktop** - El usuario está usando la aplicación de escritorio.
+- **none** - El usuario está desconectado, o no puede obtener la plataforma.
 
 ## Ejemplo(s)
 
-This will return your platform you're using Discord on:
+Esto devolverá tu plataforma que estás usando Discord en:
 
 ```javascript
 bot.command({

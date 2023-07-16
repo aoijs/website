@@ -1,10 +1,10 @@
 ---
-title: '$addThreadMember'
-description: '$addThreadMember will add a member to a thread.'
+title: $addThreadMember
+description: '$addThreadMember додасть учасника в тему.'
 id: addThreadMember
 ---
 
-`$addThreadMember` will add a member to a thread.
+`$addThreadMember` буде додати учасника до теми.
 
 ## Використання
 
@@ -14,21 +14,21 @@ $addThreadMember[channelID;threadID;userID;reason]
 
 ## Параметри
 
-| Поле      | Тип     | Опис                                                         | Обов'язковий |
-| --------- | ------- | ------------------------------------------------------------ |:------------:|
-| channelID | integer | Channel ID of where the thread is located.                   |     так      |
-| threadID  | integer | The thread ID.                                               |     так      |
-| userID    | integer | The user that should be added to the thread.                 |     так      |
-| reason    | рядок   | The reason that will be displayed in the guild's audit logs. |     так      |
+| Поле           | Тип   | Опис                                                      | Обов'язковий |
+| -------------- | ----- | --------------------------------------------------------- |:------------:|
+| ID каналу      | ціле  | ID каналу, де знаходиться тема.                           |     так      |
+| ID гілки       | ціле  | Ідентифікатор теми (ID).                                  |     так      |
+| ID користувача | ціле  | Користувач, якого слід додати до теми.                    |     так      |
+| причина        | рядок | Причина, яка буде відображатися в журналі аудиту гільдії. |     так      |
 
 ## Приклад(и)
 
-This will create a thread and add random user to it:
+Це створить тему і додасть випадкового користувача до нього:
 
 ```javascript
 bot.command({
-    name: 'addThreadMember',
-    code: `
+    ім'я: 'addThreadMember',
+    код: `
   $addThreadMember[$channelID;$get[id];$randomUserID;testing]
   $let[id;$createThread[$channelID;example;1440;public;$messageID;true]]  
   `

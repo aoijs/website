@@ -1,27 +1,27 @@
 ---
 title: '$findUser'
-description: '$findUser will attempt to find a user which is matching with the given query.'
+description: '$findUser intentará encontrar un usuario que coincida con la consulta dada.'
 id: findUser
 ---
 
-`$findUser` will attempt to find a user which is matching with the given query.
+`$findUser` intentará encontrar un usuario que coincida con la consulta dada.
 
 ## Uso
 
 ```php
-$findUser[userResolver;returnSelf?]
+$findUser[usuarioResolver;volverYo mismo?]
 ```
 
 ## Parámetros
 
-| Campo        | Tipo     | Parámetros                                                                            | Requerido |
-| ------------ | -------- | ------------------------------------------------------------------------------------- |:---------:|
-| userResolver | consulta | Query which is used to find the user.                                                 | verdadero |
-| returnSelf?  | boolean  | Will return the user ID of the user who executed the command when user was not found. |    no     |
+| Campo            | Tipo     | Parámetros                                                                                         | Requerido |
+| ---------------- | -------- | -------------------------------------------------------------------------------------------------- |:---------:|
+| usuario Resolver | cadena   | Consulta que se utiliza para encontrar al usuario.                                                 | verdadero |
+| volverYo mismo?  | booleano | Devolverá el ID de usuario del usuario que ejecutó el comando cuando el usuario no fue encontrado. |   falso   |
 
 ## Ejemplo(s)
 
-This will search for a user called Ferel, if it wont find the user then it'll return the command author's user ID:
+Esto buscará un usuario llamado Ferel, si no encuentra al usuario entonces devolverá el ID de usuario del autor del comando:
 
 ```javascript
 bot.command({

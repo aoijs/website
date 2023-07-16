@@ -1,27 +1,27 @@
 ---
 title: '$sendCrosspostingMessage'
-description: '$sendCrosspostingMessage will crosspost a given message to the given channels.'
+description: '$sendCrosspostingMessage publicará un mensaje dado en los canales dados.'
 id: sendCrosspostingMessage
 ---
 
-`$sendCrosspostingMessage` will crosspost a given message to the given channels.
+`$sendCrosspostingMessage` publicará un mensaje dado en los canales dados.
 
 ## Uso
 
 ```php
-$sendCrosspostingMessage[content;...channelIDs]
+$sendCrosspostingMessage[contenido;...ID de canal]
 ```
 
 ## Parámetros
 
-| Campo         | Tipo     | Parámetros                       | Requerido |
-| ------------- | -------- | -------------------------------- |:---------:|
-| contenido     | consulta | The message to send.             | verdadero |
-| ...channelIDs | entero   | Where to send the given message. | verdadero |
+| Campo      | Tipo   | Parámetros                    | Requerido |
+| ---------- | ------ | ----------------------------- |:---------:|
+| contenido  | cadena | El mensaje a enviar.          | verdadero |
+| ...canalID | entero | Dónde enviar el mensaje dado. | verdadero |
 
 ## Ejemplo(s)
 
-This will crosspost a message to multiple channels in your server:
+Esto enviará un mensaje a varios canales en su servidor:
 
 ```javascript
 bot.command({

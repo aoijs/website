@@ -1,7 +1,7 @@
 ---
-title: '$arrayPop'
+title: $arrayPop
 description: '$arrayPop devolverá el último elemento de la matriz dada.'
-id: pop matriz
+id: arrayPop
 ---
 
 `$arrayPop`  devolverá el último elemento de la matriz dada.

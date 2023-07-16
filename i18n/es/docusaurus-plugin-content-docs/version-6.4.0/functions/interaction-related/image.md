@@ -1,7 +1,7 @@
 ---
-title: '$image'
+title: $image
 description: '$image añadirá una imagen a un incrustado.'
-id: imagen
+id: image
 ---
 
 `$image` añadirá una imagen a un incrustado.

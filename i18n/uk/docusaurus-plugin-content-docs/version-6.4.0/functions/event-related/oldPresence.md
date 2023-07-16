@@ -1,10 +1,10 @@
 ---
 title: '$oldPresence'
-description: '$oldPresence holds old data of the user''s presence, used in update presence event, or else any data will be empty'
+description: '$oldPresence зберігає старі дані присутності користувача, що використовується при оновленні наявної події, або будь-які дані будуть порожніми'
 id: oldPresence
 ---
 
-`$oldPresence` holds old data of the user's presence, used in update presence event, or else any data will be empty
+`$oldPresence` зберігає старі дані присутності користувача, що використовуються в оновленні присутності події, або будь-які дані будуть пусті
 
 ## Використання
 
@@ -14,6 +14,6 @@ $oldPresence[option]
 
 ## Параметри
 
-| Поле   | Тип   | Опис                | Обов'язковий |
-| ------ | ----- | ------------------- |:------------:|
-| option | рядок | Option to retrieve. |     так      |
+| Поле  | Тип   | Опис                 | Обов'язковий |
+| ----- | ----- | -------------------- |:------------:|
+| опція | рядок | Можливість отримати. |     так      |

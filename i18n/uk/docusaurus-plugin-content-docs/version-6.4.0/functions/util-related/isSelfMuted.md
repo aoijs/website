@@ -1,10 +1,10 @@
 ---
-title: '$isSelfMuted'
-description: '$isSelfMuted is similar but not to confuse with `$isMuted`, this will check if the user muted themselves.'
+title: $isSelfMuted
+description: '$isSelfMuted подібний, але не плутати з `$isMuted`, це перевірить, чи користувач приглушує себе.'
 id: isSelfMuted
 ---
 
-$isSelfMuted is similar but not to confuse with `$isMuted`, this will check if the user muted themselves.
+$isSelfMuted подібний, але не плутати з `$isMuted`, це перевірить користувача, чи не заглушує його.
 
 ## Використання
 
@@ -14,19 +14,19 @@ $isSelfMuted[userID?;guildID?]
 
 ## Параметри
 
-| Поле     | Тип     | Опис                                               | Обов'язковий |
-| -------- | ------- | -------------------------------------------------- |:------------:|
-| userID?  | integer | ID of the user you want to check if they're muted. |      ні      |
-| guildID? | integer | ID of the guild where they're muted in.            |      ні      |
+| Поле            | Тип  | Опис                                                              | Обов'язковий |
+| --------------- | ---- | ----------------------------------------------------------------- |:------------:|
+| ID користувача? | ціле | ID користувача, якого Ви хочете перевірити, якщо вони приглушені. |      ні      |
+| гільдія?        | ціле | ID гільдії, в якому вони були приглушені.                         |      ні      |
 
 ## Приклад(и)
 
-This will return either `true` or `false` depending on if you're muted (voice channel) or not:
+Це поверне або `true` або `false` в залежності від того, якщо ви приглушені (голосовий канал), або ні:
 
 ```javascript
 bot.command({
     name: 'isSelfDeafened',
-    code: `
+    код: `
   $isSelfDeafened
   `
 });

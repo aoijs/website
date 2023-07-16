@@ -1,19 +1,19 @@
 ---
 title: '$newPresence'
-description: '$newPresence holds data of the updated presence.'
+description: '$newPresence conserve les données de mise à jour de la présence.'
 id: newPresence
 ---
 
-`$newPresence` holds data of the updated presence.
+`$newPresence` conserve les données de mise à jour de la présence.
 
-## Usage
+## Utilisation
 
 ```php
 $newPresence[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- |:--------:|
-| option | string | Option to retrieve. |   true   |
+| Champ  | Type                 | Description         | Obligatoire |
+| ------ | -------------------- | ------------------- |:-----------:|
+| option | chaîne de caractères | Option à récupérer. |    vrai     |

@@ -1,10 +1,10 @@
 ---
-title: '$toLowerCase'
-description: '$toLowerCase will change the given text from uppercase to lowercase.'
+title: $toLowerCase
+description: '$toLowerCase змінить зазначений текст з верхнього регістру на нижній регістр.'
 id: toLowerCase
 ---
 
-`$toLowerCase` will change the given text from uppercase to lowercase.
+`$toLowerCase` змінить даний текст з верхнього регістру на маленький.
 
 ## Використання
 
@@ -14,18 +14,18 @@ $toLowerCase[text]
 
 ## Параметри
 
-| Поле | Тип   | Опис                             | Обов'язковий |
-| ---- | ----- | -------------------------------- |:------------:|
-| text | рядок | The text to change to lowercase. |     так      |
+| Поле  | Тип   | Опис                                    | Обов'язковий |
+| ----- | ----- | --------------------------------------- |:------------:|
+| текст | рядок | Текст, який потрібно змінити на нижній. |     так      |
 
 ## Приклад(и)
 
-This will everything given to lowercase, in this case it would return `aoi.js is great.`:
+Це буде все, що задано в маленькому регістрі, у цьому випадку це буде повернуто `aoi.js є великим.`:
 
 ```javascript
 bot.command({
-    name: "toLowerCase",
-    code: `
+    ім'я: "toLowerCase",
+    код: `
     $toLowerCase[AOI.JS IS GREAT.]
     `
 });

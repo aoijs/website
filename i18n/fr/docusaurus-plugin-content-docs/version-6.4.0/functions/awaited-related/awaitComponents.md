@@ -1,25 +1,25 @@
 ---
 title: '$awaitComponents'
-description: '$awaitComponents awaits components for given amount of uses.'
+description: '$awaitComponents attend les composants pour un nombre donné d''utilisations.'
 id: awaitComponents
 ---
 
-`$awaitComponents` awaits components for given amount of uses.
+`$awaitComponents` attend les composants pour un nombre donné d'utilisations.
 
-## Usage
+## Utilisation
 
 ```php
-$awaitComponents[messageID;userFilter;customID;commands;errorMsg?;uses?;awaitData?]
+$awaitComponents[IDmessage;filtreUtilisateur;IDpersonnalisé;commandes;messageD'erreur?;utilisations?;donnéesAttendues?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field      | Type    | Description                                                                                                 | Required |
-| ---------- | ------- | ----------------------------------------------------------------------------------------------------------- |:--------:|
-| messageID  | integer | Message ID.                                                                                                 |   true   |
-| userFilter | string  | To what the bot will reply <br /> 1. **everyone** <br /> 2. **specific user ID** - any user ID. |   true   |
-| customID   | string  | Custom ID.                                                                                                  |   true   |
-| commands   | string  | commands that will be executed, you can separate multiple emojis with a comma ( `,` )                       |   true   |
-| errorMsg?  | string  | error message when command expires                                                                          |  false   |
-| uses?      | integer | how many uses until component stops working                                                                 |  false   |
-| awaitData? | string  | awaited data                                                                                                |  false   |
+| Champ             | Type                 | Description                                                                                                                                      | Obligatoire |
+| ----------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |:-----------:|
+| IDmessage         | entier               | ID du message.                                                                                                                                   |    vrai     |
+| filtreUtilisateur | chaîne de caractères | À ce que le bot répondra <br /> 1. **everyone** <br /> 2. **Identifiant spécifique d'utilisateur** - tout identifiant d'utilisateur. |    vrai     |
+| IDpersonnalisé    | chaîne de caractères | ID personnalisé.                                                                                                                                 |    vrai     |
+| commandes         | chaîne de caractères | Commandes qui seront exécutées, vous pouvez séparer plusieurs commandes par une virgule ( `,`)                                                   |    vrai     |
+| messageD'erreur?  | chaîne de caractères | Message d'erreur lorsque la commande expire.                                                                                                     |    faux     |
+| utilisations?     | entier               | Combien d'utilisations jusqu'à ce que le composant cesse de fonctionner.                                                                         |    faux     |
+| donnéesAttendues? | chaîne de caractères | Données attendues.                                                                                                                               |    faux     |

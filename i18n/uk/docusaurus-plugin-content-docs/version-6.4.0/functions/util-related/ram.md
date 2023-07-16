@@ -1,10 +1,10 @@
 ---
 title: '$ram'
-description: '$ram will return the RAM usage of your bot.'
+description: '$ram поверне використання оперативної пам''яті вашого бота.'
 id: ram
 ---
 
-`$ram` will return the RAM usage of your bot.
+`$ram` поверне використання ОЗУ вашого бота.
 
 ## Використання
 
@@ -14,13 +14,13 @@ $ram
 
 ## Приклад(и)
 
-This will return the RAM usage and the available amount of RAM:
+Це поверне використання оперативної пам'яті та кількість оперативної пам'яті:
 
 ```javascript
 bot.command({
     name: 'ram',
-    code: `
-  I'm currently using \`$ram%\` out of \`$maxRam%\`!
+    код: `
+  я використовую \`$ram%\` з \`$maxRam%\`!
   `
 });
 ```

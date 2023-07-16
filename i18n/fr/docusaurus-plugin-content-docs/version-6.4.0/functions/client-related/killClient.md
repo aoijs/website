@@ -1,20 +1,20 @@
 ---
 title: '$killClient'
-description: '$killClient will forcefully shutdown your bot.'
+description: '$killClient va arrêter votre bot de force.'
 id: killClient
 ---
 
-`$killClient` will forcefully shutdown your bot.
+`$killClient` va arrêter votre bot de force.
 
-## Usage
+## Utilisation
 
 ```php
 $killClient
 ```
 
-## Example(s)
+## Exemple(s)
 
-This will forcefully shutdown your bot:
+Ceci va forcer l'arrêt de votre bot :
 
 ```javascript
 bot.command({

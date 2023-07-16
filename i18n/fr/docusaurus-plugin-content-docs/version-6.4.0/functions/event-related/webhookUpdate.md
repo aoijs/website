@@ -1,19 +1,19 @@
 ---
 title: '$webhookUpdate'
-description: '$webhookUpdate holds data for the channel the webhook was updated in. (webhookUpdate event)'
+description: '$webhookUpdate conserve les données pour le salon dans lequel le webhook a été mis à jour. (événement webhookUpdate)'
 id: webhookUpdate
 ---
 
-`$webhookUpdate` channel the webhook was updated in. (webhookUpdate event)
+`$webhookUpdate` conserve les données pour le salon dans lequel le webhook a été mis à jour. (événement webhookUpdate)
 
-## Usage
+## Utilisation
 
 ```php
 $webhookUpdate[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- |:--------:|
-| option | string | Option to retrieve. |   true   |
+| Champ  | Type                 | Description         | Obligatoire |
+| ------ | -------------------- | ------------------- |:-----------:|
+| option | chaîne de caractères | Option à récupérer. |    vrai     |

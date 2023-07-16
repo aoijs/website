@@ -1,10 +1,10 @@
 ---
 title: '$isUserDmEnabled'
-description: '$isUserDmEnabled will check if the user''s Direct Messages are either disabled or enabled.'
+description: '$isUserDmEnabled comprobará si los mensajes directos del usuario están deshabilitados o habilitados.'
 id: isUserDmEnabled
 ---
 
-`$isUserDmEnabled` will check if the user's Direct Messages are either disabled or enabled.
+`$isUserDmEnabled` comprobará si los mensajes directos del usuario están deshabilitados o habilitados.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $isUserDmEnabled[userID]
 
 ## Parámetros
 
-| Campo    | Tipo    | Parámetros                                                        | Requerido |
-| -------- | ------- | ----------------------------------------------------------------- |:---------:|
-| usarioID | integer | ID of the user you want to check if their dms are enabled or not. | verdadera |
+| Campo    | Tipo    | Parámetros                                                            | Requerido |
+| -------- | ------- | --------------------------------------------------------------------- |:---------:|
+| usarioID | integer | ID del usuario que desea comprobar si sus dms están habilitados o no. | verdadera |
 
 ## Ejemplo(s)
 
-This will return either `true` or `false` depending on if your Direct Messages are enabled or disabled:
+Esto retornará `verdadero` o `falso` dependiendo de si tus mensajes directos están habilitados o deshabilitados:
 
 ```javascript
 bot.command({

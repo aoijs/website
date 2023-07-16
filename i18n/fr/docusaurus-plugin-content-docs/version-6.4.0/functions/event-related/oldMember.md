@@ -1,51 +1,51 @@
 ---
 title: '$oldMember'
-description: '$oldMember holds data for the member before it was updated, this is from discord cache and might be empty depending on whether it''s cached, so use partial option before attempting to access any property. (memberUpdate event)'
+description: '$oldMember conserve les données pour le membre avant sa mise à jour, ceci provient du cache de discord et peut être vide selon qu''il est mis en cache, donc utilisez une option partielle avant d''essayer d''accéder à n''importe quelle propriété. (évènement memberUpdate)'
 id: oldMember
 ---
 
-`$oldMember` holds data for the member before it was updated, this is from discord cache and might be empty depending on whether it's cached, so use partial option before attempting to access any property. (memberUpdate event)
+`$oldMember` conserve les données pour le membre avant sa mise à jour, ceci provient du cache de discord et peut être vide selon qu'il est mis en cache, donc utilisez une option partielle avant d'essayer d'accéder à n'importe quelle propriété. (évènement memberUpdate)
 
-## Usage
+## Utilisation
 
 ```php
 $oldMember[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- |:--------:|
-| option | string | Option to retrieve. |   true   |
+| Champ  | Type                 | Description         | Obligatoire |
+| ------ | -------------------- | ------------------- |:-----------:|
+| option | chaîne de caractères | Option à récupérer. |    vrai     |
 
 ### Options
 
-| Field         | Type    | Description                      |
-| ------------- | ------- | -------------------------------- |
-| id            | integer | Returns User ID.                 |
-| name          | string  | Returns Name of user.            |
-| roles         | string  | Returns User roles.              |
-| permissions   | string  | Returns User permissions.        |
-| nick          | string  | Returns User nickname.           |
-| highestRoleID | integer | Returns Higher role ID user has. |
+| Champ         | Type                 | Description                                       |
+| ------------- | -------------------- | ------------------------------------------------- |
+| id            | entier               | Retourne l'ID de l'utilisateur.                   |
+| name          | chaine de caractères | Renvoie le nom de l'utilisateur.                  |
+| roles         | chaîne de caractères | Retourne les rôles de l'utilisateur.              |
+| permissions   | chaine de caractères | Retourne les permissions de l'utilisateur.        |
+| nick          | chaîne de caractères | Renvoie le surnom de l'utilisateur.               |
+| highestRoleID | entier               | Retourne l'ID du plus haut rôle de l'utilisateur. |
 
 
-## Example(s)
-- **Note: You need `GuildMembers` intent**
+## Exemple(s)
+- **Note : vous avez besoin de l'intention `GuildMembers`.**
 
 ```js
 bot.memberUpdateCommand({
     channel: "channelid",
     code: `
-    $username[$newMember[id]] has updated their nickname!
-- New Nickname: $newMember[nick]
- - Old Nickname: $oldMember[nick]
+    $username[$newMember[id]] a mis à jour son surnom !
+- Nouveau surnom : $newMember[nick]
+ - Ancien surnom : $oldMember[nick]
 
-   $username[$newMember[id]] has updated their name!
-- New Name: $newMember[name]
- - Old Name: $oldMember[name]`
+   $username[$newMember[id]] a mis à jour son nom !
+- Nouveau nom : $newMember[name]
+ - Ancien nom : $oldMember[name].`
 })
 ```
-- This code will execute when __member updates their guild nickname or discord username__
+- Ce code sera exécuté lorsque __un membre met à jour son surnom de serveur ou son nom d'utilisateur discord__.
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: '$randomRoleID'
-description: '$randomRoleID will return a random role ID of a given guild.'
+description: '$randomRoleID devolverá un ID de rol aleatorio de un gremio dado.'
 id: randomRoleID
 ---
 
-`$randomRoleID` will return a random role ID of a given guild.
+`$randomRoleID` devolverá un ID de rol aleatorio de un gremio determinado.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $randomRoleID[guildID?]
 
 ## Parámetros
 
-| Campo       | Tipo    | Parámetros                                    | Requerido |
-| ----------- | ------- | --------------------------------------------- |:---------:|
-| servidorID? | integer | Where it will return the random role ID from. | verdadera |
+| Campo       | Tipo    | Parámetros                                 | Requerido |
+| ----------- | ------- | ------------------------------------------ |:---------:|
+| servidorID? | integer | De donde devolverá el ID de rol aleatorio. | verdadera |
 
 ## Ejemplo(s)
 
-This will return a random role ID of your guild:
+Esto devolverá un ID de rol aleatorio de tu gremio:
 
 ```javascript
 bot.command({

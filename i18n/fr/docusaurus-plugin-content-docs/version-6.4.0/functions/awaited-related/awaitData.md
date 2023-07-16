@@ -1,39 +1,39 @@
 ---
 title: '$awaitData'
-description: '$awaitData will return awaited data given in awaited commands.'
+description: '$awaitData retournera les données attendues dans les commandes attendues.'
 id: awaitData
 ---
 
-`$awaitData` will return awaited data given in awaited commands.
+`$awaitData` retournera les données attendues dans les commandes attendues.
 
-## Usage
+## Utilisation
 
 ```php
-$awaitData[name]
+$awaitData[nom]
 ```
 
-## Parameters
+## Paramètres
 
-| Field | Type   | Description        | Required |
-| ----- | ------ | ------------------ |:--------:|
-| name  | string | Awaited Data Name. |   true   |
+| Champ | Type                 | Description                | Obligatoire |
+| ----- | -------------------- | -------------------------- |:-----------:|
+| nom   | chaîne de caractères | Nom de la donnée attendue. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
-This will return the ID of every server member and log it in your console:
+Cela retournera l'ID de chaque membre du serveur et l'enverra dans votre console :
 
 ```javascript
 bot.command({
   name: "awaitData",
   code: `
-  $forEachMember[1s;{ "members": "$membersCount" };returnMembers;]
+  $forEachMember[1s;{ "membres": "$membersCount" };returnMembers;]
   `
 });
 
 bot.awaitedCommand({
   name: "returnMembers",
   code: `
-  $log[ $authorID , is one out of $awaitData[members] members ]
+  $log[$authorID est un des $awaitData[membres] membres]
   `
 });
 ```

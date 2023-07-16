@@ -1,27 +1,27 @@
 ---
 title: '$deleteMessage'
-description: '$deleteMessage will delete a specific message.'
+description: '$deleteMessage eliminará un mensaje específico.'
 id: deleteMessage
 ---
 
-`$deleteMessage` will delete a specific message.
+`$deleteMessage` eliminará un mensaje específico.
 
 ## Uso
 
 ```php
-$deleteMessage[messageID;channelID]
+$deleteMessage[mensajeID;canalID]
 ```
 
 ## Parámetros
 
-| Campo         | Tipo   | Parámetros                                           | Requerido |
-| ------------- | ------ | ---------------------------------------------------- |:---------:|
-| ID de mensaje | entero | The message ID of the channel which will be deleted. | verdadero |
-| canalID       | entero | The channel ID of where the message is located in.   |    no     |
+| Campo         | Tipo   | Parámetros                                     | Requerido |
+| ------------- | ------ | ---------------------------------------------- |:---------:|
+| ID de mensaje | entero | El ID del mensaje del canal que se eliminará.  | verdadero |
+| canalID       | entero | El ID del canal donde se encuentra el mensaje. |   falso   |
 
 ## Ejemplo(s)
 
-This will send and delete the sent message after 15 seconds ( we are using $let and $get to temporary store the message ID ):
+Esto enviará y eliminará el mensaje enviado después de 15 segundos (estamos usando $let y $get para almacenar temporalmente el mensaje ID):
 
 ```javascript
 bot.command({

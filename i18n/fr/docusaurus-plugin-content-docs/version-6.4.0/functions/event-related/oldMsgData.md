@@ -1,19 +1,19 @@
 ---
 title: '$oldMsgData'
-description: '$oldMsgData holds data of the old message.'
+description: '$oldMsgData contient les données de l''ancien message.'
 id: oldMsgData
 ---
 
-`$oldMsgData` holds data of the old message.
+`$oldMsgData` contient les données de l'ancien message.
 
-## Usage
+## Utilisation
 
 ```php
 $oldMsgData[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- |:--------:|
-| option | string | Option to retrieve. |   true   |
+| Champ  | Type                 | Description         | Obligatoire |
+| ------ | -------------------- | ------------------- |:-----------:|
+| option | chaîne de caractères | Option à récupérer. |    vrai     |

@@ -1,20 +1,20 @@
 ---
 title: '$oldVariable'
-description: '$oldVariable gets the data from variable Callbacks (update and delete one)'
+description: '$oldVariable récupère les données des callbacks des variables (mises à jour et supprimées)'
 id: oldVariable
 ---
 
-`$oldVariable` gets the data from variable Callbacks (update and delete one)
+`$oldVariable` récupère les données des callbacks des variables (mises à jour et supprimées)
 
-## Usage
+## Utilisation
 
 ```php
-$oldVariable[option;sep?]
+$oldVariable[option;sép?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description                                                                                                                                                                                                | Required |
-| ------ | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |:--------:|
-| option | string | Option to retrieve <br /> 1. **variable** <br /> 2. **key** <br /> 3. **value** <br /> 4. **guild** <br /> 5. **for** <br /> 6. **type** <br /> 7. **timestamp** |   true   |
-| sep?   | string | Separator.                                                                                                                                                                                                 |  false   |
+| Champ  | Type                | Description                                                                                                                                                                                                | Obligatoire |
+| ------ | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |:-----------:|
+| option | chaîne de caractère | Option à récupérer <br /> 1. **variable** <br /> 2. **key** <br /> 3. **value** <br /> 4. **guild** <br /> 5. **for** <br /> 6. **type** <br /> 7. **timestamp** |    vrai     |
+| sép?   | chaîne de caractère | Séparateur.                                                                                                                                                                                                |    faux     |

@@ -1,31 +1,31 @@
 ---
 title: '$arrayShift'
-description: '$arrayShift will return the first item of the given array.'
+description: '$arrayShift retournera le premier élément du tableau donné.'
 id: arrayShift
 ---
 
-`$arrayShift` will return the first item of the given array.
+`$arrayShift` retournera le premier élément du tableau donné.
 
-## Usage
+## Utilisation
 
 ```php
-$arrayShift[name]
+$arrayShift[nom]
 ```
 
-## Parameters
+## Paramètres
 
-| Field | Type   | Description | Required |
-| ----- | ------ | ----------- |:--------:|
-| name  | string | Array name. |   true   |
+| Champ | Type                 | Description     | Obligatoire |
+| ----- | -------------------- | --------------- |:-----------:|
+| nom   | chaîne de caractères | Nom du tableau. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
 ```javascript
 bot.command({
     name: "array-shift",
     code: `
-  $arrayShift[array]
-  $createArray[array;aoi.js;akarui;documents;bot]
+  $arrayShift[tableau]
+  $createArray[tableau;aoi.js;akarui;documents;bot]
   `
 });
 ```

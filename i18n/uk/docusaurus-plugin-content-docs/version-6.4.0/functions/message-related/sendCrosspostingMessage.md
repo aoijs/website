@@ -1,10 +1,10 @@
 ---
 title: '$sendCrosspostingMessage'
-description: '$sendCrosspostingMessage will crosspost a given message to the given channels.'
+description: Вірус $sendCrosspostingMessage перетне дане повідомлення для заданих каналів.
 id: sendCrosspostingMessage
 ---
 
-`$sendCrosspostingMessage` will crosspost a given message to the given channels.
+`$sendCrosspostingMessage` переправить дане повідомлення на вказані канали.
 
 ## Використання
 
@@ -14,19 +14,19 @@ $sendCrosspostingMessage[content;...channelIDs]
 
 ## Параметри
 
-| Поле          | Тип     | Опис                             | Обов'язковий |
-| ------------- | ------- | -------------------------------- |:------------:|
-| content       | рядок   | The message to send.             |     так      |
-| ...channelIDs | integer | Where to send the given message. |     так      |
+| Поле          | Тип   | Опис                               | Обов'язковий |
+| ------------- | ----- | ---------------------------------- |:------------:|
+| зміст         | рядок | Повідомлення для надсилання.       |     так      |
+| ...ID каналів | ціле  | Де надіслати вказане повідомлення. |     так      |
 
 ## Приклад(и)
 
-This will crosspost a message to multiple channels in your server:
+На цьому сервері повідомлення перетне повідомлення про декілька каналів:
 
 ```javascript
 bot.command({
     name: 'sendCrosspostingMessage',
-    code: `
+    код: `
    $sendCrosspostingMessage[Hello!;$channelID;$randomChannelID]
   `
 });

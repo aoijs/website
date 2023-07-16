@@ -1,35 +1,35 @@
 ---
 title: '$ban'
-description: '$ban will ban a user of a given guild.'
+description: '$ban va bannir un utilisateur d''un serveur donnée.'
 id: ban
 ---
 
-`$ban` will ban a user of a guild.
+`$ban` va bannir un utilisateur d'un serveur.
 
-## Usage
+## Utilisation
 
 ```php
-$ban[guildID;userID;days?;reason?]
+$ban[IDserveur;IDutilisateur;jours?;raison?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field    | Type    | Description                                                     | Required |
-| -------- | ------- | --------------------------------------------------------------- |:--------:|
-| guildID? | integer | From which guild the user should be banned from.                |   true   |
-| userID   | integer | The user to ban.                                                |   true   |
-| days?    | string  | Days of message history to delete, cannot be higher than 7 days |  false   |
-| reason?  | string  | The reason that will be displayed in the guild's audit logs.    |  false   |
+| Champ         | Type                 | Description                                                                               | Obligatoire |
+| ------------- | -------------------- | ----------------------------------------------------------------------------------------- |:-----------:|
+| IDserveur     | entier               | Dans quel serveur l'utilisateur doit être banni?                                          |    vrai     |
+| IDutilisateur | entier               | L'utilisateur à bannir.                                                                   |    vrai     |
+| jours?        | chaine de caractères | Nombre de jours d'historique de message à supprimer, ne peut pas être supérieur à 7 jours |    faux     |
+| raison?       | chaîne de caractères | La raison qui sera affichée dans les logs du serveur.                                     |    faux     |
 
-## Example(s)
+## Exemple(s)
 
-This will ban a random user of your guild:
+Ceci va bannir un utilisateur aléatoire de votre serveur :
 
 ```javascript
 bot.command({
     name: 'ban',
     code: `
-  $ban[$guildID;$randomUserID;7;Imagine getting banned.]
+  $ban[$guildID;$randomUserID;7;Imagine tu te fais bannir.]
   `
 });
 ```

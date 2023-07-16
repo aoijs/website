@@ -1,10 +1,10 @@
 ---
 title: '$setVar'
-description: '$setVar will change the value of a given global variable.'
+description: '$setVar cambiará el valor de una variable global determinada.'
 id: setVar
 ---
 
-`$setVar` will change the value of a given global variable.
+`$setVar` cambiará el valor de una variable global determinada.
 
 ## Uso
 
@@ -14,15 +14,15 @@ $setVar[varname;value;table?]
 
 ## Parámetros
 
-| Campo   | Tipo     | Parámetros          | Requerido |
-| ------- | -------- | ------------------- |:---------:|
-| Varname | consulta | Variable name.      | verdadero |
-| Value   | consulta | New Variable value. | verdadero |
-| Table?  | string   | Variable table.     |   falso   |
+| Campo   | Tipo     | Parámetros            | Requerido |
+| ------- | -------- | --------------------- |:---------:|
+| Varname | consulta | Nombre variable.      | verdadero |
+| Valor   | consulta | Nuevo valor variable. | verdadero |
+| ¿Tabla? | string   | Tabla variable.       |   falso   |
 
 ## Ejemplo(s)
 
-This will change the value of "Example" to "This is a value":
+Esto cambiará el valor de "Ejemplo" a "Este es un valor":
 
 ```javascript
 bot.command({

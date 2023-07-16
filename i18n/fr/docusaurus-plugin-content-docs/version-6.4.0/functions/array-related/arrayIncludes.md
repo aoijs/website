@@ -1,34 +1,34 @@
 ---
 title: '$arrayIncludes'
-description: '$arrayIncludes will check if a specific item exists in the array.'
+description: '$arrayIncludes vérifiera si un élément spécifique existe dans le tableau.'
 id: arrayIncludes
 ---
 
-`$arrayIncludes` will check if a specific item exists in the array.
+`$arrayIncludes` vérifiera si un élément spécifique existe dans le tableau.
 
-## Usage
+## Utilisation
 
 ```php
-$arrayIncludes[name;query]
+$arrayIncludes[nom;requête]
 ```
 
-## Parameters
+## Paramètres
 
-| Field | Type   | Description                                                         | Required |
-| ----- | ------ | ------------------------------------------------------------------- |:--------:|
-| name  | string | Array name.                                                         |   true   |
-| query | string | The element we will be queering for every element inside the array. |   true   |
+| Champ   | Type                 | Description                                                          | Obligatoire |
+| ------- | -------------------- | -------------------------------------------------------------------- |:-----------:|
+| nom     | chaîne de caractères | Nom du tableau.                                                      |    vrai     |
+| requête | chaîne de caractères | L'élément que nous allons rechercher pour chaque élément du tableau. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
 ```javascript
 bot.command({
     name: "array-includes",
     code: `
-  $arrayIncludes[array;Leref]
-  $createArray[array;aoi.js;akarui;documents;bot]
+  $arrayIncludes[tableau;Leref]
+  $createArray[tableau;aoi.js;akarui;documents;bot]
   `
-    // It will return "false" as it doesn't contain the word "Leref".
+    // Ceci renverra "false" car le tableau ne contient pas le mot "Leref".
 });
 ```
 
@@ -36,9 +36,9 @@ bot.command({
 bot.command({
     name: "array-includes",
     code: `
-  $arrayIncludes[array;akarui]
-  $createArray[array;aoi.js;akarui;documents;bot]
+  $arrayIncludes[tableau;akarui]
+  $createArray[tableau;aoi.js;akarui;documents;bot]
   `
-    // It will return "true" as it contains the word "akarui".
+    // Ceci renverra "true" car le tableau contient le mot "akarui".
 });
 ```

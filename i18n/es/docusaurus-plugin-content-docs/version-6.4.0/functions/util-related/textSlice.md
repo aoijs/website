@@ -1,10 +1,10 @@
 ---
 title: '$textSlice'
-description: '$textSlice will slice a message depending on the given arguments.'
+description: '$textSlice cortará un mensaje dependiendo de los argumentos dados.'
 id: textSlice
 ---
 
-`$textSlice` will slice a message depending on the given arguments.
+`$textSlice` cortará un mensaje dependiendo de los argumentos dados.
 
 ## Uso
 
@@ -14,15 +14,15 @@ $textSlice[text;from?;to]
 
 ## Parámetros
 
-| Campo | Tipo     | Parámetros                                 | Requerido |
-| ----- | -------- | ------------------------------------------ |:---------:|
-| text  | consulta | Text you want to slice.                    | verdadero |
-| from? | número   | Starting point where to slice the message. |    no     |
-| to    | número   | Ending point where slicing ends.           |    sí     |
+| Campo   | Tipo     | Parámetros                                | Requerido |
+| ------- | -------- | ----------------------------------------- |:---------:|
+| text    | consulta | Texto que quieres cortar.                 | verdadero |
+| ¿desde? | número   | Punto de partida donde cortar el mensaje. |    no     |
+| a       | número   | Punto final donde termina el corte.       |    sí     |
 
 ## Ejemplo(s)
 
-This will return `Hello` and remove `Bye` from the given text:
+Esto devolverá `Hola` y eliminará `Bye` del texto dado:
 
 ```javascript
 bot.command({

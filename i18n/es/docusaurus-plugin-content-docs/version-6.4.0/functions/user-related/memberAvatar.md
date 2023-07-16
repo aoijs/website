@@ -1,30 +1,30 @@
 ---
 title: '$memberAvatar'
-description: '$memberAvatar will return the profile picture of a guild member.'
+description: '$memberAvatar devolverá la imagen de perfil del autor del comando.'
 id: memberAvatar
 ---
 
-`$memberAvatar` will return the profile picture of a guild member.
+`$memberAvatar` devolverá la imagen de perfil del autor del comando.
 
 ## Uso
 
 ```php
-$memberAvatar[guildID?;userID?;size?;dynamic?;format?]
+$memberAvatar[servidorID?;usuarioID?;tamaño?;dinámico?;formato?]
 ```
 
 ## Parámetros
 
-| Campo       | Tipo    | Parámetros                                      | Requerido |
-| ----------- | ------- | ----------------------------------------------- |:---------:|
-| servidorID? | entero  | The ID of the guild.                            |    no     |
-| usarioID?   | entero  | El ID del usuario.                              |    no     |
-| size?       | entero  | The size of the image.                          |   falso   |
-| dynamic?    | boolean | 1. **true** (default) <br /> 2. **false** |   falso   |
-| format?     | cadena  | Image format.                                   |    no     |
+| Campo       | Tipo     | Parámetros                                          | Requerido |
+| ----------- | -------- | --------------------------------------------------- |:---------:|
+| servidorID? | entero   | ID del servidor.                                    |   falso   |
+| usarioID?   | entero   | El ID del usuario.                                  |   falso   |
+| tamaño?     | entero   | El tamaño del archivo de la imagen.                 |   falso   |
+| dinámico?   | booleano | 1. **true** (por defecto) <br /> 2. **false** |   falso   |
+| formato?    | cadena   | Formato de imagen:                                  |   falso   |
 
 ## Ejemplo(s)
 
-This will return your profile picture:
+Esto reiniciará la imagen de perfil del usuario
 
 ```javascript
 bot.command({

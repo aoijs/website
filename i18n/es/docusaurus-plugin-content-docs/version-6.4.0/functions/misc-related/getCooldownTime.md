@@ -1,29 +1,29 @@
 ---
 title: '$getCooldownTime'
-description: '$getCooldownTime will return the cooldown time of a given command.'
+description: '$getCooldownTime devolverá el tiempo de enfriamiento de un comando determinado.'
 id: getCooldownTime
 ---
 
-`$getCooldownTime` will return the cooldown time of a given command.
+`$getCooldownTime` devolverá el tiempo de enfriamiento de un comando dado.
 
 ## Uso
 
 ```php
-$getCooldownTime[time;type;command;id]
+$getCooldownTime[tiempo;tipo;comando;id]
 ```
 
 ## Parámetros
 
-| Campo   | Tipo     | Parámetros                                                                                                                                              | Requerido |
-| ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |:---------:|
-| tiempo  | consulta | The time of the cooldown.                                                                                                                               | verdadero |
-| tipo    | consulta | Cooldown type <br /> 1. **globalUser** <br /> 2. **user** <br /> 3. **server** <br /> 4. **channel** <br /> 5. **static** | verdadero |
-| command | string   | Command name.                                                                                                                                           |    sí     |
-| id      | entero   | User/guild/channel/message ID.                                                                                                                          |    sí     |
+| Campo   | Tipo   | Parámetros                                                                                                                                                     | Requerido |
+| ------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |:---------:|
+| tiempo  | cadena | El tiempo de enfriamiento.                                                                                                                                     | verdadero |
+| tipo    | cadena | Tipo de enfriamiento <br /> 1. **globalUser** <br /> 2. **user** <br /> 3. **server** <br /> 4. **channel** <br /> 5. **static** | verdadero |
+| Comando | cadena | Nombre del comando                                                                                                                                             | verdadero |
+| id      | entero | Usuario/servidor/canal/mensaje ID.                                                                                                                             | verdadero |
 
 ## Ejemplo(s)
 
-This will return the remaining cooldown of the "getCooldownTime" command:
+Esto devolverá el tiempo de espera restante del comando "getCooldownTime":
 
 ```javascript
 bot.command({

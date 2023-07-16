@@ -1,10 +1,10 @@
 ---
 title: '$shutdown'
-description: '$shutdown will shutdown / end the process of your bot.'
+description: '$shutdown cerrará / finalizará el proceso de tu bot.'
 id: shutdown
 ---
 
-`$shutdown` will shutdown / end the process of your bot.
+`$shutdown` cerrará / finalizará el proceso de tu bot.
 
 ## Uso
 
@@ -14,7 +14,7 @@ $shutdown
 
 ## Ejemplo(s)
 
-This will shutdown your bot:
+Esto reiniciará tu bot:
 
 ```javascript
 bot.command({

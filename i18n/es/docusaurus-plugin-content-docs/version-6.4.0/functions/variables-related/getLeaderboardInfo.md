@@ -1,10 +1,10 @@
 ---
 title: '$getLeaderboardInfo'
-description: '$getLeaderboardInfo will return information about a given variable sorted in a leaderboard.'
+description: '$getLeaderboardInfo devolverá información sobre una variable determinada ordenada en una tabla de clasificaciones.'
 id: getLeaderboardInfo
 ---
 
-`$getLeaderboardInfo` will return information about a given variable sorted in a leaderboard.
+`$getLeaderboardInfo` devolverá información sobre una variable determinada ordenada en una tabla de clasificaciones.
 
 ## Uso
 
@@ -14,16 +14,16 @@ $getLeaderboardInfo[variable;id;type;option]
 
 ## Parámetros
 
-| Campo   | Tipo     | Parámetros                                                                                                                   | Requerido |
-| ------- | -------- | ---------------------------------------------------------------------------------------------------------------------------- |:---------:|
-| varname | consulta | Variable name.                                                                                                               | verdadero |
-| id      | entero   | User/guild/channel/message ID.                                                                                               | verdadero |
-| type    | string   | Variable type <br /> 1. **globalUser** <br /> 2. **user** <br /> 3. **server** <br /> 4. **channel** |    sí     |
-| opción  | string   | Option to return <br /> 1. **top** (default) <br /> **value**                                                    |    sí     |
+| Campo   | Tipo     | Parámetros                                                                                                                      | Requerido |
+| ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------- |:---------:|
+| varname | consulta | Nombre variable.                                                                                                                | verdadero |
+| id      | entero   | Usuario/guild/canal/mensaje ID.                                                                                                 | verdadero |
+| type    | string   | Tipo variable <br /> 1. **globalUser** <br /> 2. **usuario** <br /> 3. **servidor** <br /> 4. **canal** |    sí     |
+| opción  | string   | Opción para devolver <br /> 1. **top** (por defecto) <br /> **valor**                                               |    sí     |
 
 ## Ejemplo(s)
 
-This will return the position of the current guild:
+Esto devolverá la posición del gremio actual:
 
 ```javascript
 bot.command({

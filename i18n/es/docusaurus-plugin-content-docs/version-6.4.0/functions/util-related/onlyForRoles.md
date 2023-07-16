@@ -1,10 +1,10 @@
 ---
 title: '$onlyForRoles'
-description: '$onlyForRoles will check if the user who executed the command has any of the listed roles and return a error message if not.'
+description: '$onlyForRoles comprobará si el usuario que ejecutó el comando tiene alguno de los roles listados y devolverá un mensaje de error si no lo hace.'
 id: onlyForRoles
 ---
 
-`$onlyForRoles` will check if the user who executed the command has any of the listed roles and return a error message if not.
+`$onlyForRoles` comprobará si el usuario que ejecutó el comando tiene alguno de los roles listados y devolverá un mensaje de error si no lo hace.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $onlyForRoles[...roleIds;error]
 
 ## Parámetros
 
-| Campo      | Tipo            | Parámetros                                                                           | Requerido |
-| ---------- | --------------- | ------------------------------------------------------------------------------------ |:---------:|
-| ...roleIds | string, integer | Roles you want to limit the command to.                                              | verdadero |
-| error      | consulta        | Error to return when the command was not executed by any user with the listed roles. |    no     |
+| Campo      | Tipo            | Parámetros                                                                                     | Requerido |
+| ---------- | --------------- | ---------------------------------------------------------------------------------------------- |:---------:|
+| ...roleIds | string, integer | Los roles a los que desea limitar el comando.                                                  | verdadero |
+| error      | consulta        | Error a devolver cuando el comando no fue ejecutado por ningún usuario con los roles listados. |    no     |
 
 ## Ejemplo(s)
 
-This will limit the command only to the listed channels:
+Esto limitará el comando sólo a los canales listados:
 
 ```javascript
 bot.command({

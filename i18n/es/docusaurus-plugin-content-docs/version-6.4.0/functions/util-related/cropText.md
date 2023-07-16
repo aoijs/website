@@ -1,28 +1,28 @@
 ---
 title: '$cropText'
-description: '$cropText will crop given text.'
+description: '$cropText recortará el texto dado.'
 id: cropText
 ---
 
-`$cropText` is used to crop given text.
+`$cropText` se utiliza para recortar el texto dado.
 
 ## Uso
 
 ```php
-$cropText[text;limit;start?]
+$cropText[texto;límite;comenzar?]
 ```
 
 ## Parámetros
 
-| Campo  | Tipo     | Parámetros                                                               | Requerido |
-| ------ | -------- | ------------------------------------------------------------------------ |:---------:|
-| text   | consulta | Text you want to slice.                                                  | verdadero |
-| limit  | número   | Limit of the cropped text/will start to crop any text coming after that. | verdadero |
-| start? | número   | Where cropping should start.                                             |   falso   |
+| Campo      | Tipo   | Parámetros                                                                            | Requerido |
+| ---------- | ------ | ------------------------------------------------------------------------------------- |:---------:|
+| texto      | cadena | Texto que quieres rebanar.                                                            | verdadero |
+| límite     | número | El límite del texto recortado/comenzará a recortar cualquier texto que venga después. | verdadero |
+| ¿comenzar? | número | Donde debe comenzar el cultivo.                                                       |   falso   |
 
 ## Ejemplo(s)
 
-This will return `bye` and remove `hello and` from the given text:
+Esto devolverá `Bye` y eliminará `.Hello` del valor dado:
 
 ```javascript
 bot.command({

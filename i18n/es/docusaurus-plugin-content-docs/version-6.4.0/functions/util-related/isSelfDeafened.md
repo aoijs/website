@@ -1,10 +1,10 @@
 ---
-title: '$isSelfDeafened'
-description: '$isSelfDeafened is similar but not to confuse with `$isDeafen`, this will check if the user deafened themselves.'
+title: $isSelfDeafened
+description: '$isSelfDeafened es similar pero no confundir con `$isDeafen`, esto comprobará si el usuario se ensordece.'
 id: isSelfDeafened
 ---
 
-`$isSelfDeafened` is similar but not to confuse with `$isDeafen`, this will check if the user deafened themselves.
+`$isSelfDeafened` es similar pero no confundir con `$isDeafen`, esto comprobará si el usuario se ensordece a sí mismo.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $isSelfDeafened[userID?;guildID?]
 
 ## Parámetros
 
-| Campo       | Tipo   | Parámetros                                            | Requerido |
-| ----------- | ------ | ----------------------------------------------------- |:---------:|
-| usarioID?   | entero | ID of the user you want to check if they're deafened. |    no     |
-| servidorID? | entero | ID of the guild where they're deafened in.            |    no     |
+| Campo       | Tipo   | Parámetros                                              | Requerido |
+| ----------- | ------ | ------------------------------------------------------- |:---------:|
+| usarioID?   | entero | ID del usuario que desea comprobar si está ensordecido. |    no     |
+| servidorID? | entero | ID de la hermandad donde están ensordecidos.            |    no     |
 
 ## Ejemplo(s)
 
-This will return either `true` or `false` depending on if you're deafened or not:
+Esto retornará `verdadero` o `falso` dependiendo de si estás ensordecido o no:
 
 ```javascript
 bot.command({

@@ -1,22 +1,22 @@
 ---
 title: '$setCacheData'
-description: '$setCacheData will modify given cache data.'
+description: '$setCacheData modificará determinados datos de caché.'
 id: setCacheData
 ---
 
-`$setCacheData` will modify given cache data.
+`$setCacheData` modificará determinados datos de caché.
 
 ## Uso
 
 ```php
-$setCacheData[type;cacheName;cacheKey;cacheValue]
+$setCacheData[tipo;Nombre de caché;clave de caché;Valor de caché]
 ```
 
 ## Parámetros
 
-| Campo      | Tipo     | Parámetros   | Requerido |
-| ---------- | -------- | ------------ |:---------:|
-| type       | consulta | Cache type.  | verdadero |
-| cacheName  | consulta | Cache name.  | verdadero |
-| cacheKey   | string   | Cache key.   |    sí     |
-| cacheValue | string   | Cache value. |    sí     |
+| Campo            | Tipo   | Parámetros       | Requerido |
+| ---------------- | ------ | ---------------- |:---------:|
+| type             | cadena | Tipo cache       | verdadero |
+| Nombre del caché | cadena | Nombre del caché | verdadero |
+| clave de caché   | string | Clave de caché.  | verdadero |
+| cacheValor       | string | Valor del caché. | verdadera |

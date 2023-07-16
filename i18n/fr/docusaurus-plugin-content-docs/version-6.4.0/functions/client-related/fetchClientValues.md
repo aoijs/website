@@ -1,19 +1,19 @@
 ---
 title: '$fetchClientValues'
-description: '$fetchClientValues will return data of all client shards.'
+description: '$fetchClientValues renverra les données de tous les shards du client.'
 id: fetchClientValues
 ---
 
-`$fetchClientValues` will return data of all client shards.
+`$fetchClientValues` renverra les données de tous les shards du client.
 
-## Usage
+## Utilisation
 
 ```php
-$fetchClientValues[function]
+$fetchClientValues[fonction]
 ```
 
-## Parameters
+## Paramètres
 
-| Field    | Type   | Description          | Required |
-| -------- | ------ | -------------------- |:--------:|
-| function | string | Function to execute. |   true   |
+| Champ    | Type                 | Description          | Obligatoire |
+| -------- | -------------------- | -------------------- |:-----------:|
+| fonction | chaîne de caractères | Fonction à exécuter. |    vrai     |

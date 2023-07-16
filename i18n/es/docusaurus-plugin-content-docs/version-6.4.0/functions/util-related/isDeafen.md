@@ -1,10 +1,10 @@
 ---
 title: '$isDeafen'
-description: '$isDeafen will check if a certain user is deafened or not.'
+description: '$isDeafen comprobará si un usuario determinado está ensordecido o no.'
 id: isDeafen
 ---
 
-`$isDeafen` will check if a certain user is deafened or not.
+`$isDeafen` comprobará si un determinado usuario está sordo o no.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $isDeafen[userID?;guildID?]
 
 ## Parámetros
 
-| Campo       | Tipo   | Parámetros                                                | Requerido |
-| ----------- | ------ | --------------------------------------------------------- |:---------:|
-| usarioID?   | entero | User ID you want to check if they're deafened,            |    no     |
-| servidorID? | entero | The guild ID where you want to check if they're deafened. |    no     |
+| Campo       | Tipo   | Parámetros                                                           | Requerido |
+| ----------- | ------ | -------------------------------------------------------------------- |:---------:|
+| usarioID?   | entero | ID de usuario que desea comprobar si están ensordecidos,             |    no     |
+| servidorID? | entero | El ID de la hermandad donde quieres comprobar si están ensordecidos. |    no     |
 
 ## Ejemplo(s)
 
-This will return `false` or `true` depending on if you're currently deafened or not:
+Esto devolverá `falso` o `verdadero` dependiendo de si actualmente estás ensordecido o no:
 
 ```javascript
 bot.command({

@@ -1,10 +1,10 @@
 ---
 title: '$get'
-description: '$get is used for retrieving temporary variables.'
+description: '$get se utiliza para recuperar variables temporales.'
 id: get
 ---
 
-`$get` will retrieve temporary variables stored by `$let`.
+`$get` recuperará variables temporales almacenadas por `$let`.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $get[var]
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros                               | Requerido |
-| ----- | ------ | ---------------------------------------- |:---------:|
-| var   | string | Temporary variable you want to retrieve. | verdadera |
+| Campo | Tipo   | Parámetros                             | Requerido |
+| ----- | ------ | -------------------------------------- |:---------:|
+| var   | cadena | Variable temporal que desea recuperar. | verdadera |
 
 ## Ejemplo(s)
 
-This will return `Leref` from `$let`:
+Esto devolverá `Leref` de la propiedad `$let`
 
 ```javascript
 bot.command({

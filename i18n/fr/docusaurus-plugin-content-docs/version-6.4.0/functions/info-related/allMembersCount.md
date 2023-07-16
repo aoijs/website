@@ -1,20 +1,20 @@
 ---
 title: '$allMembersCount'
-description: '$allMembersCount will return the amount of members in your guild.'
+description: '$allMembersCount renvoie le nombre de membres de votre serveur.'
 id: allMembersCount
 ---
 
-`$allMembersCount` will return the amount of members in your guild.
+`$allMembersCount` renvoie le nombre de membres de votre serveur.
 
-## Usage
+## Utilisation
 
 ```php
 $allMembersCount
 ```
 
-## Example(s)
+## Exemple(s)
 
-This will return the amount of members in your guild:
+Cela renverra le nombre de membres dans votre serveur :
 
 ```javascript
 bot.command({

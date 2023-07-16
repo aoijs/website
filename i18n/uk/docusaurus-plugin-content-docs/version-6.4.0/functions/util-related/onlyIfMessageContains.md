@@ -1,10 +1,10 @@
 ---
-title: '$onlyIfMessageContains'
-description: '$onlyIfMessageContains will check if the message contains the given text and if not return a error message.'
+title: $onlyIfMessageContains
+description: '$onlyIfMessageContains перевірятиме чи повідомлення містить даний текст, а якщо не повернуть повідомлення про помилку.'
 id: onlyIfMessageContains
 ---
 
-`$onlyIfMessageContains` will check if the message contains the given text and if not return a error message.
+`$onlyIfMessageContains` перевірить чи повідомлення містить цей текст, а якщо не повернуте повідомлення.
 
 ## Використання
 
@@ -14,20 +14,20 @@ $onlyIfMessageContains[content;...text;error]
 
 ## Параметри
 
-| Поле    | Тип   | Опис                                         | Обов'язковий |
-| ------- | ----- | -------------------------------------------- |:------------:|
-| content | рядок | Message which should contain the given text. |     так      |
-| text    | рядок | Text to check for in the message.            |     так      |
-| error   | рядок | Error to return.                             |     так      |
+| Поле    | Тип   | Опис                                       | Обов'язковий |
+| ------- | ----- | ------------------------------------------ |:------------:|
+| зміст   | рядок | Повідомлення, яке має містити даний текст. |     так      |
+| текст   | рядок | Текст для перевірки у повідомленні.        |     так      |
+| помилка | рядок | Помилка повернення.                        |     так      |
 
 ## Приклад(и)
 
-This will return the error message as "aoi.js" does not appear in "Hello!":
+Це поверне повідомлення про помилку як про "aoi.js" не відображається в "Привіт!":
 
 ```javascript
 bot.command({
     name: "onlyIfMessageContains",
-    code: `
+    код: `
     Ok.
     $onlyIfMessageContains[Hello!;aoi.js;Couldn't find that word!]
     `

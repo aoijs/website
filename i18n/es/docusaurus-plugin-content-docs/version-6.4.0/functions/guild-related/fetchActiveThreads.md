@@ -1,7 +1,7 @@
 ---
-title: '$fetchActiveThreads'
+title: $fetchActiveThreads
 description: '$fetchActiveThreads devolverá todos los hilos activos de un canal determinado.'
-id: '$fetchActiveThreads'
+id: fetchActiveThreads
 ---
 
 $fetchActiveThreads devolverá todos los hilos activos de un canal determinado.

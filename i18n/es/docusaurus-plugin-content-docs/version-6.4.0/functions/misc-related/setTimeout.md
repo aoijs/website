@@ -1,29 +1,29 @@
 ---
 title: '$setTimeout'
-description: '$setTimeout will set a timeout for a given action (which will even continue to run after bot restart).'
+description: '$setTimeout establecerá un tiempo de espera para una acción determinada (que incluso continuará ejecutándose después de reiniciar el bot).'
 id: setTimeout
 ---
 
-`$setTimeout` will set a timeout for a given action (which will even continue to run after bot restart).
+`$setTimeout` establecerá un tiempo de espera para una acción determinada (que incluso continuará ejecutándose después de reiniciar el bot).
 
 ## Uso
 
 ```php
-$setTimeout[awaitedCmd;duration;timeoutData;returnId?;pulse?]
+$setTimeout[esperadoCmd;duración;timeoutData;ID de retorno?;legumbres?]
 ```
 
 ## Parámetros
 
-| Campo       | Tipo           | Parámetros                                                             | Requerido |
-| ----------- | -------------- | ---------------------------------------------------------------------- |:---------:|
-| awaitedCmd  | consulta       | Awaited command to execute after duration ends.                        | verdadero |
-| duration    | cadena, número | After how much time it will execute / this cannot go over **21 days**. | verdadero |
-| timeoutData | object         | Timeout data.                                                          |    sí     |
-| returnId?   | boolean        | Return timeout ID.                                                     |   falso   |
-| pulse?      | número         | Pulse.                                                                 |    no     |
+| Campo                     | Tipo           | Parámetros                                                            | Requerido |
+| ------------------------- | -------------- | --------------------------------------------------------------------- |:---------:|
+| Cmds esperados            | cadena         | Comando esperado para ejecutar cuando termine el bucle.               | verdadero |
+| Duración                  | cadena, número | Después de cuánto tiempo ejecutará / esto no puede pasar **21 días**. | verdadero |
+| datos de tiempo de espera | objeto         | Tiempo de espera de datos.                                            | verdadero |
+| ID de retorno?            | boolean        | Devolver el tiempo de espera ID.                                      |   falso   |
+| legumbres?                | número         | Legumbres.                                                            |   falso   |
 
-- You can retrieve timeout data using `$timeoutData[name]`.
-- Note that the duration may not go over **21 days**.
+- Puedes recuperar datos de tiempo de espera usando `$timeoutData[name]`.
+- Tenga en cuenta que la duración no puede pasar **21 días**.
 
 ## Ejemplo(s)
 

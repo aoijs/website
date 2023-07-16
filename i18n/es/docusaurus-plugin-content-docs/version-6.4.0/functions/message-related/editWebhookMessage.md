@@ -1,22 +1,22 @@
 ---
 title: '$editWebhookMessage'
-description: '$editWebhookMessage will edit a given webhook message.'
+description: '$editWebhookMessage editará un mensaje dado.'
 id: editWebhookMessage
 ---
 
-`$editWebhookMessage` will edit a given webhook message.
+`$editWebhookMessage` editará un mensaje dado.
 
 ## Uso
 
 ```php
-$editWebhookMessage[webhookID;webhookToken;messageID;content]
+$editWebhookMessage[webhookID;webhookToken;mensajeID;contenido]
 ```
 
 ## Parámetros
 
-| Campo         | Tipo     | Parámetros               | Requerido |
-| ------------- | -------- | ------------------------ |:---------:|
-| webhookID     | entero   | Webhook ID.              | verdadero |
-| webhookToken  | consulta | The Webhook Token.       | verdadero |
-| ID de mensaje | entero   | The message ID to edit.  |    sí     |
-| contenido     | string   | The new message content. |    sí     |
+| Campo            | Tipo     | Parámetros                   | Requerido |
+| ---------------- | -------- | ---------------------------- |:---------:|
+| webhookID        | entero   | ID del webhook.              | verdadero |
+| Token de webhook | consulta | Token del webhook.           | verdadero |
+| ID de mensaje    | entero   | El ID del mensaje a editar.  | verdadero |
+| contenido        | string   | Nuevo contenido del mensaje. | verdadera |

@@ -1,10 +1,10 @@
 ---
 title: '$isVoice'
-description: '$isVoice will check if the given channel is a voice channel or not.'
+description: '$isVoice comprobará si el canal dado es un canal de voz o no.'
 id: isVoice
 ---
 
-`$isVoice` will check if the given channel is a voice channel or not.
+`$isVoice` comprobará si el canal dado es un canal de voz o no.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $isVoice[channelID]
 
 ## Parámetros
 
-| Campo   | Tipo    | Parámetros                                                        | Requerido |
-| ------- | ------- | ----------------------------------------------------------------- |:---------:|
-| canalID | integer | ID of the channel that you want to check if it's a Voice Channel. | verdadera |
+| Campo   | Tipo    | Parámetros                                                | Requerido |
+| ------- | ------- | --------------------------------------------------------- |:---------:|
+| canalID | integer | ID del canal que quieres comprobar si es un canal de voz. | verdadera |
 
 ## Ejemplo(s)
 
-This will return either `true` or `false` depending on what you use as argument:
+Esto retornará `verdadero` o `falso` dependiendo de lo que uses como argumento:
 
 ```javascript
 bot.command({

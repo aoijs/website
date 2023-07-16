@@ -1,29 +1,29 @@
 ---
 title: '$userBanner'
-description: '$userBanner will return the profile banner of a specific user.'
+description: '$userBanner devolverá el banner de perfil de un usuario específico.'
 id: userBanner
 ---
 
-`$userBanner` will return the profile banner of a specific user.
+`$userBanner` devolverá el banner del perfil de un usuario específico.
 
 ## Uso
 
 ```php
-$userBanner[userID?;size?;dynamic?;format?]
+$userBanner[usuarioID?;tamaño?;dinámico?;formato?]
 ```
 
 ## Parámetros
 
-| Campo     | Tipo           | Parámetros                                      | Requerido |
-| --------- | -------------- | ----------------------------------------------- |:---------:|
-| usarioID? | entero         | El ID del usuario.                              |    no     |
-| size?     | cadena, número | The size of the image.                          |    no     |
-| dynamic?  | booleano       | 1. **true** (default) <br /> 2. **false** |   falso   |
-| format?   | string         | The format of the returned image.               |   falso   |
+| Campo     | Tipo           | Parámetros                                          | Requerido |
+| --------- | -------------- | --------------------------------------------------- |:---------:|
+| usarioID? | entero         | El ID del usuario.                                  |   falso   |
+| tamaño?   | cadena, número | El tamaño del archivo de la imagen.                 |   falso   |
+| dinámico? | booleano       | 1. **true** (por defecto) <br /> 2. **false** |   falso   |
+| formato?  | cadena         | El formato de la imagen devuelta.                   |   falso   |
 
 ## Ejemplo(s)
 
-This will return your profile banner:
+Esto devolverá el banner de tu perfil:
 
 ```javascript
 bot.command({

@@ -1,10 +1,10 @@
 ---
 title: '$eventData'
-description: '$eventData will return event data.'
+description: '$eventData devolverá los datos del evento.'
 id: eventData
 ---
 
-`$eventData` will return event data.
+`$eventData` devolverá los datos del evento.
 
 ## Uso
 

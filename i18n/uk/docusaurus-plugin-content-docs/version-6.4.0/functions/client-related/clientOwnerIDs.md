@@ -1,10 +1,10 @@
 ---
-title: '$clientOwnerIDs'
-description: '$clientOwnerIDs will return the user IDs of the bot owner (or of multiple people if you have a team).'
+title: $clientOwnerIDs
+description: '$clientOwnerIDs поверне ID власника бота (або від кількох учасників, якщо у вас є команда).'
 id: clientOwnerIDs
 ---
 
-`$clientOwnerIDs` will return the user IDs of the bot owner (or of multiple people if you have a team).
+`$clientOwnerIDs` поверне ID користувача власника бота (або декількох осіб, якщо у вас є команда).
 
 ## Використання
 
@@ -14,18 +14,18 @@ $clientOwnerIDs[separator?]
 
 ## Параметри
 
-| Поле        | Тип   | Опис                                        | Обов'язковий |
-| ----------- | ----- | ------------------------------------------- |:------------:|
-| розділювач? | рядок | Separator to split user IDs. (default: `,`) |      ні      |
+| Поле        | Тип   | Опис                                                                            | Обов'язковий |
+| ----------- | ----- | ------------------------------------------------------------------------------- |:------------:|
+| розділювач? | рядок | Роздільник для розділення ідентифікаторів користувачів. (за замовчуванням: `,`) |      ні      |
 
 ## Приклад(и)
 
-This will return your user ID most likely:
+Це поверне ваш ID найвірогідніше:
 
 ```javascript
 bot.command({
     name: 'clientOwnerIDs',
-    code: `
+    код: `
   $clientOwnerIDs
   `
 });

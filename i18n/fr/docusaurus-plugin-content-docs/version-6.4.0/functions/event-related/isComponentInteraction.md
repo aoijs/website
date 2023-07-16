@@ -1,12 +1,12 @@
 ---
 title: '$isComponentInteraction'
-description: '$isComponentInteraction will return either true or false depending on the type of the interaction.'
+description: '$isComponentInteraction renverra soit true, soit false, en fonction du type d''interaction.'
 id: isComponentInteraction
 ---
 
-`$isComponentInteraction` will return either true or false depending on the type of interaction.
+`$isComponentInteraction` renverra soit true, soit false, en fonction du type d'interaction.
 
-## Usage
+## Utilisation
 
 ```php
 $isComponentInteraction

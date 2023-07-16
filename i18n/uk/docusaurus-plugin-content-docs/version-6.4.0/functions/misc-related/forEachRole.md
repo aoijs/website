@@ -1,10 +1,10 @@
 ---
 title: '$forEachRole'
-description: '$forEachRole will execute awaited commands for every role in a given guild.'
+description: '$forEachRole виконуватиме очікувані команди для кожної ролі у даній гільдії.'
 id: forEachRole
 ---
 
-`$forEachRole` will execute awaited commands for every role in a given guild.
+`$forEachRole` виконуватиме очікувані команди для кожної ролі в даній гільдії.
 
 ## Використання
 
@@ -14,9 +14,9 @@ $forEachRole[guildID;time;awaitData;...awaitedCmds;endCmd]
 
 ## Параметри
 
-| Поле           | Тип    | Опис                                                     | Обов'язковий |
-| -------------- | ------ | -------------------------------------------------------- |:------------:|
-| time           | рядок  | How long it takes between each role to execute the next. |     так      |
-| awaitData      | object | Очікувані Дані.                                          |     так      |
-| ...awaitedCmds | рядок  | Awaited Commands to execute.                             |     так      |
-| endCmd         | рядок  | Awaited Command to execute when loop ends.               |     так      |
+| Поле                    | Тип    | Опис                                                    | Обов'язковий |
+| ----------------------- | ------ | ------------------------------------------------------- |:------------:|
+| раз                     | рядок  | Час цього виконання між кожною роллю для виконання.     |     так      |
+| awaitData               | об'єкт | Очікувані Дані.                                         |     так      |
+| ...очікують CyanogenMod | рядок  | Awaited Команди для виконання.                          |     так      |
+| Чендм                   | рядок  | Команда Awaited повинна виконати при закінченні циклів. |     так      |

@@ -1,10 +1,10 @@
 ---
 title: '$minute'
-description: '$minute will return the current minute in CST.'
+description: '$minute devolverá el minuto actual en CST.'
 id: minute
 ---
 
-`$minute` will return the current minute in CST.
+`$minute` devolverá el minuto actual en CST.
 
 ## Uso
 
@@ -14,7 +14,7 @@ $minute
 
 ## Ejemplo(s)
 
-This will returns the current minute:
+Esto devolverá el minuto actual:
 
 ```javascript
 bot.command({
@@ -25,14 +25,14 @@ bot.command({
 });
 ```
 
-You can change the timezone using `$timezone`:
+Puedes cambiar la zona horaria usando `$timezone`:
 
 ```javascript
 bot.command({
-    name: "minute",
+    name: "hour",
     code: `
     $minute 
     $timezone[America/New_York]
-    ` // returns current minute in New York
+    ` // devuelve la hora actual en New York
 });
 ```

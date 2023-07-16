@@ -1,10 +1,10 @@
 ---
 title: '$mentionedUsersCount'
-description: '$mentionedUsersCount will return the amount of user mentions within a message.'
+description: '$mentionedUsersCount devolverá la cantidad de menciones del usuario dentro de un mensaje.'
 id: mentionedUsersCount
 ---
 
-`$mentionedUsersCount` will return the amount of user mentions within a message.
+`$mentionedUsersCount` devolverá la cantidad de menciones de usuario dentro de un mensaje.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $mentionedUsersCount
 
 ## Ejemplo(s)
 
-This will return the amount of user mentions in the given text:
+Esto devolverá la cantidad de menciones de usuario en el texto dado:
 
 ```javascript
 bot.command({
     name: 'mentionedUsersCount',
     code: `
-  Amount of user mentions: $mentionedUsersCount
+  Cantidad de palabras de usuario: $mentionedUsersCount
 `
 });
 ```

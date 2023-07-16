@@ -1,26 +1,26 @@
 ---
 title: '$channelExists'
-description: '$channelExists will check if the given channel exists.'
+description: '$channelExists comprobará si existe un canal de gremio.'
 id: channelExists
 ---
 
-`$channelExists` will check if the given channel exists.
+`$channelExists` comprobará si existe un canal de gremio.
 
 ## Uso
 
 ```php
-$channelExists[channel]
+$channelExists[canal]
 ```
 
 ## Parámetros
 
-| Campo   | Tipo            | Parámetros                  | Requerido |
-| ------- | --------------- | --------------------------- |:---------:|
-| channel | string, integer | Channel ID or channel name. | verdadera |
+| Campo | Tipo           | Parámetros                       | Requerido |
+| ----- | -------------- | -------------------------------- |:---------:|
+| canal | cadena, número | ID del canal o nombre del canal. | verdadera |
 
 ## Ejemplo(s)
 
-This will check if a channel with the name `general` exists, alternatively you could use the channel ID instead:
+Esto comprobará si existe un canal de gremio con el nombre `general` , alternativamente puedes usar el ID del canal en su lugar:
 
 ```javascript
 bot.command({

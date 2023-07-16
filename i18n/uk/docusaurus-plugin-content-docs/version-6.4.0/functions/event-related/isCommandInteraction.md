@@ -1,10 +1,10 @@
 ---
-title: '$isCommandInteraction'
-description: '$isCommandInteraction will return either true or false depending on the type of the interaction.'
+title: $isCommandInteraction
+description: '$isCommandInteraction поверне true або false залежно від типу взаємодії.'
 id: isCommandInteraction
 ---
 
-`$isCommandInteraction` will return either true or false depending on the type of interaction.
+`$isCommandInteraction` поверне значення true або false в залежності від типу взаємодії.
 
 ## Використання
 

@@ -1,10 +1,10 @@
 ---
 title: '$getBanReason'
-description: '$getBanReason will return a ban reason of an specific user.'
+description: '$getBanReason поверне блокування причини конкретного користувача.'
 id: getBanReason
 ---
 
-`$getBanReason` will return a ban reason of an specific user.
+`$getBanReason` поверне бан з причини конкретного користувача.
 
 ## Використання
 
@@ -14,20 +14,20 @@ $getBanReason[guildID?;userID?]
 
 ## Параметри
 
-| Поле     | Тип     | Опис                                                         | Обов'язковий |
-| -------- | ------- | ------------------------------------------------------------ |:------------:|
-| guildID? | integer | The guild ID.                                                |      ні      |
-| userID?  | integer | The user ID of the user you want to check the ban reason of. |      ні      |
+| Поле            | Тип  | Опис                                                                      | Обов'язковий |
+| --------------- | ---- | ------------------------------------------------------------------------- |:------------:|
+| гільдія?        | ціле | ID гільдії.                                                               |      ні      |
+| ID користувача? | ціле | Ідентифікатор користувача, якого ви хочете перевірити причини блокування. |      ні      |
 
 ## Приклад(и)
 
-This will return the ban reason of whoever you'd like:
+Це поверне заборону будь-якої котрої кому ви бажаєте:
 
 ```javascript
 bot.command({
     name: 'getBanReason',
-    code: `
+    код: `
   $getBanReason[$guildID;userID] 
-  ` // make sure to replace "userID" with an actual user ID
+  ` // забудьте замінити "userID" фактичним ідентифікатором користувача
 });
 ```

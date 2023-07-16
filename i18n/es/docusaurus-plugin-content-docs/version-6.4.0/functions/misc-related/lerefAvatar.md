@@ -1,10 +1,10 @@
 ---
 title: '$lerefAvatar'
-description: '$lerefAvatar will return the Avatar of the creator of aoi.js'
+description: '$lerefAvatar devolverá el Avatar del creador de aoi.js'
 id: lerefAvatar
 ---
 
-`$lerefAvatar` will return the Avatar of the creator of aoi.js
+`$lerefAvatar` devolverá el Avatar del creador de aoi.js
 
 ## Uso
 
@@ -14,7 +14,7 @@ $lerefAvatar
 
 ## Ejemplo(s)
 
-This will return the creator's Avatar:
+Esto devolverá el Avatar del creador:
 
 ```javascript
 bot.command({

@@ -1,5 +1,5 @@
 ---
-title: $arrayFilter
+title: '$arrayFilter'
 description: '$arrayFilter va a revisar si un elemento del array cumple con la condición y lo regresará.'
 id: arrayFilter
 ---

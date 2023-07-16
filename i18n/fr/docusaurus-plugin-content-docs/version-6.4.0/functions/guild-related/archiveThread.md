@@ -1,36 +1,36 @@
 ---
 title: '$archiveThread'
-description: '$archiveThread will archive or unarchive a specific thread.'
+description: '$archiveThread archivera ou désarchivera un fil spécifique.'
 id: archiveThread
 ---
 
-`$archiveThread` will archive or unarchive a specific thread.
+`$archiveThread` archivera ou désarchivera un fil spécifique.
 
-## Usage
+## Utilisation
 
 ```php
-$archiveThread[threadID;channelID?;archive?;reason?]
+$archiveThread[IDfil;IDsalon?;archiver?;raison?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field      | Type    | Description                                              | Required |
-| ---------- | ------- | -------------------------------------------------------- |:--------:|
-| threadID   | integer | Thread ID.                                               |   true   |
-| channelID? | integer | Channel ID of where the thread is located.               |  false   |
-| archive?   | boolean | Archive the given thread?                                |  false   |
-| reason?    | string  | Reason that will be displayed in the guild's audit logs. |  false   |
+| Champ     | Type                 | Description                                        | Obligatoire |
+| --------- | -------------------- | -------------------------------------------------- |:-----------:|
+| IDfil     | entier               | ID du fil.                                         |    vrai     |
+| IDsalon?  | entier               | ID du salon où se trouve le fil.                   |    faux     |
+| archiver? | booléen              | Archiver le fil de discussion donné ?              |    faux     |
+| raison?   | chaîne de caractères | Raison qui sera affichée dans les logs du serveur. |    faux     |
 
-## Example(s)
+## Exemple(s)
 
-This will archive the created thread:
+Ceci va archiver le fil créé :
 
 ```javascript
 bot.command({
-    name: 'archiveThread',
+    name: 'archiverFil',
     code: `
-  $archiveThread[$channelID;$get[id];true;testing]
-  $let[id;$createThread[$channelID;example;1440;public;$messageID;true]]  
+  $archiveThread[$channelID;$get[id];true;test]
+  $let[id;$createThread[$channelID;exemple;1440;public;$messageID;true]]  
   `
 });
 ```

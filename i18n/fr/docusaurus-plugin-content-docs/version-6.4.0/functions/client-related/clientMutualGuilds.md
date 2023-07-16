@@ -1,27 +1,27 @@
 ---
 title: '$clientMutualGuilds'
-description: '$clientMutualGuilds will return the mutual servers with a given user and the bot.'
+description: '$clientMutualGuilds retournera les serveurs mutuels avec un utilisateur donné et le bot.'
 id: clientMutualGuilds
 ---
 
-`$clientMutualGuilds` will return the mutual servers with a given user and the bot.
+`$clientMutualGuilds` retournera les serveurs mutuels avec un utilisateur donné et le bot.
 
-## Usage
+## Utilisation
 
 ```php
-$clientMutualGuilds[userID?;sep?]
+$clientMutualGuilds[IDutilisateur?;sép?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field   | Type    | Description                                    | Required |
-| ------- | ------- | ---------------------------------------------- |:--------:|
-| userID? | integer | The ID of the user.                            |  false   |
-| sep?    | string  | The separator to separate the returned values. |  false   |
+| Champ          | Type                | Description                                        | Obligatoire |
+| -------------- | ------------------- | -------------------------------------------------- |:-----------:|
+| IDutilisateur? | entier              | L'identifiant de l'utilisateur.                    |    faux     |
+| sép?           | chaîne de caractère | Le séparateur pour séparer les valeurs retournées. |    faux     |
 
-## Example(s)
+## Exemple(s)
 
-This will return the mutual servers of you and the bot:
+Ceci retournera les serveurs mutuels de vous et du bot :
 
 ```javascript
 bot.command({

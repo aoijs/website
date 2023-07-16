@@ -1,10 +1,10 @@
 ---
 title: '$arrayForEach'
-description: '$arrayForEach will execute an awaited command for each item in the array.'
+description: '$arrayForEach виконає очікувану команду для кожного елемента у масиві.'
 id: arrayForEach
 ---
 
-`$arrayForEach` will execute an awaited command for each item in the array.
+`$arrayForEach` виконає очікувану команду для кожного елемента в масиві.
 
 ## Використання
 

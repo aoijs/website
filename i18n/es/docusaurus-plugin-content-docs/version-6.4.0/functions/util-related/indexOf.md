@@ -1,10 +1,10 @@
 ---
 title: '$indexOf'
-description: '$indexOf will return the index of the given character.'
+description: '$indexOf devolverá el índice del carácter dado.'
 id: indexOf
 ---
 
-`$indexOf` will return the index of the given character.
+`$indexOf` devolverá el índice del carácter dado.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $indexOf[string;char]
 
 ## Parámetros
 
-| Campo  | Tipo     | Parámetros                                      | Requerido |
-| ------ | -------- | ----------------------------------------------- |:---------:|
-| string | consulta | The text the bot will be checking the index of. | verdadero |
-| char   | consulta | The characters the bot will be checking for.    | verdadero |
+| Campo    | Tipo     | Parámetros                             | Requerido |
+| -------- | -------- | -------------------------------------- |:---------:|
+| string   | consulta | El texto del bot comprobará el índice. | verdadero |
+| Carácter | consulta | Los caracteres que el bot buscará.     | verdadero |
 
 ## Ejemplo(s)
 
-This will return `8` as it's the first occurring position of the character `w`:
+Esto devolverá `8` ya que es la primera posición del carácter `w`:
 
 ```javascript
 bot.command({

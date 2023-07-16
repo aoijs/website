@@ -1,30 +1,30 @@
 ---
 title: '$newTicket'
-description: '$newTicket will create a new ticket channel.'
+description: '$newTicket creará un nuevo canal de Ticket.'
 id: newTicket
 ---
 
-`$newTicket` will create a new ticket channel.
+`$newTicket` creará un nuevo canal de Ticket.
 
 ## Uso
 
 ```php
-$newTicket[name;msg;categoryID?;returnId?;error?]
+$newTicket[nombre;msg;categoria ID?;ID de retorno?;error?]
 ```
 
 ## Parámetros
 
-| Campo       | Tipo     | Parámetros                                                                             | Requerido |
-| ----------- | -------- | -------------------------------------------------------------------------------------- |:---------:|
-| nombre      | consulta | Channel name.                                                                          | verdadero |
-| msg         | consulta | Start message.                                                                         | verdadero |
-| categoryID? | entero   | Where to place the channel after creation.                                             |   falso   |
-| returnId?   | boolean  | Return the channel ID <br /> 1. **true** <br /> 2. **false** (por defecto) |   falso   |
-| error?      | cadena   | Error to return when something went wrong.                                             |    no     |
+| Campo          | Tipo     | Parámetros                                                                                | Requerido |
+| -------------- | -------- | ----------------------------------------------------------------------------------------- |:---------:|
+| nombre         | consulta | Nombre del canal..                                                                        | verdadero |
+| msg            | consulta | Mensaje de inicio                                                                         | verdadero |
+| categoríaID?   | entero   | Dónde colocar el canal después de la creación.                                            |   falso   |
+| ID de retorno? | boolean  | Devuelve el ID del canal <br /> 1. **true** <br /> 2. **false** (por defecto) |   falso   |
+| error?         | cadena   | Error al devolver cuando algo salió mal.                                                  |   falso   |
 
 ## Ejemplo(s)
 
-This will create a new ticket:
+Esto creará un nuevo ticket:
 
 ```javascript
 bot.command({
@@ -35,7 +35,7 @@ bot.command({
 });
 ```
 
-This will create a new ticket and send an embed:
+Esto creará un nuevo ticket y enviará un incrustado:
 
 ```javascript
 bot.command({

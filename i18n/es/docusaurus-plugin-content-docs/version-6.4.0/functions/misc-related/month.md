@@ -1,10 +1,10 @@
 ---
 title: '$month'
-description: '$month will return the current month.'
+description: '$month devolverá el mes actual.'
 id: month
 ---
 
-`$month` will return the current month.
+`$month` devolverá el mes actual.
 
 ## Uso
 
@@ -14,7 +14,7 @@ $month
 
 ## Ejemplo(s)
 
-This will returns the current month:
+Esto devolverá el mes actual:
 
 ```javascript
 bot.command({

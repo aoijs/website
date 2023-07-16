@@ -1,26 +1,26 @@
 ---
 title: '$clientOwnerIDs'
-description: '$clientOwnerIDs will return the user IDs of the bot owner (or of multiple people if you have a team).'
+description: '$clientOwnerIDs retournera l''identifiant d''utilisateur du propriétaire du bot (ou de plusieurs personnes si vous avez une équipe).'
 id: clientOwnerIDs
 ---
 
-`$clientOwnerIDs` will return the user IDs of the bot owner (or of multiple people if you have a team).
+`$clientOwnerIDs` retournera l'identifiant d'utilisateur du propriétaire du bot (ou de plusieurs personnes si vous avez une équipe).
 
-## Usage
+## Utilisation
 
 ```php
-$clientOwnerIDs[separator?]
+$clientOwnerIDs[séparateur?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field      | Type   | Description                                 | Required |
-| ---------- | ------ | ------------------------------------------- |:--------:|
-| separator? | string | Separator to split user IDs. (default: `,`) |  false   |
+| Champ       | Type                 | Description                                                                | Obligatoire |
+| ----------- | -------------------- | -------------------------------------------------------------------------- |:-----------:|
+| séparateur? | chaîne de caractères | Séparateur pour séparer les identifiants d'utilisateur. (Par défaut : `,`) |    faux     |
 
-## Example(s)
+## Exemple(s)
 
-This will return your user ID most likely:
+Ceci retournera votre identifiant utilisateur (dans une grande partie des cas) :
 
 ```javascript
 bot.command({

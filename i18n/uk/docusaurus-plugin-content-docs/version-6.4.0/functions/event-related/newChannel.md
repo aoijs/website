@@ -1,10 +1,10 @@
 ---
-title: '$newChannel'
-description: '$newChannel holds data of the updated channel, used in channel update, delete and create events, or else any data will be empty.'
+title: $newChannel
+description: '$newChannel зберігає дані оновленого каналу, що використовується при оновленні каналів, видаленні та створенні подій, або будь-які дані будуть порожніми.'
 id: newChannel
 ---
 
-`$newChannel` holds data of the updated channel, used in channel update, delete and create events, or else any data will be empty.
+`$newChannel` зберігає дані оновленого каналу, що використовується при оновленні каналів, видаленні і створенні подій або будь-які дані будуть порожніми.
 
 ## Використання
 
@@ -14,75 +14,75 @@ $newChannel[option]
 
 ## Параметри
 
-| Поле   | Тип   | Опис                | Обов'язковий |
-| ------ | ----- | ------------------- |:------------:|
-| option | рядок | Option to retrieve. |     так      |
+| Поле  | Тип   | Опис                 | Обов'язковий |
+| ----- | ----- | -------------------- |:------------:|
+| опція | рядок | Можливість отримати. |     так      |
 
 
-### Options
+### Опції
 
-| Поле                       | Тип     | Опис                                                                     |
-| -------------------------- | ------- | ------------------------------------------------------------------------ |
-| назва                      | рядок   | Returns channel name.                                                    |
-| id                         | integer | Returns channel ID.                                                      |
-| createdAt                  | integer | Returns date of when was channel created.                                |
-| createdTimestamp           | integer | Returns the timestamp of when was channel created.                       |
-| defaultAutoArchiveDuration | integer | Returns Default Archive Duration.                                        |
-| deleteable                 | рядок   | Returns true / false if channel is deleteable.                           |
-| deleted                    | рядок   | Returns true / false if channel was deleted.                             |
-| guildID                    | integer | Returns guild ID of current guild.                                       |
-| lastMessageContent         | рядок   | Returns content of last message sent in channel.                         |
-| lastMessageID              | integer | Returns ID of last message sent in channel.                              |
-| lastPinAt                  | integer | Returns date of last pinned message.                                     |
-| lastPinTimestamp           | integer | Returns the timestamp of last pinned message.                            |
-| manageable                 | рядок   | Returns true / false if channel is managable.                            |
-| nsfw                       | рядок   | Returns true / false if channel is NSFW.                                 |
-| parentName                 | рядок   | Returns Category Name.                                                   |
-| parentID                   | integer | Returns Category ID.                                                     |
-| position                   | integer | Returns channel position.                                                |
-| slowmode                   | integer | Returns channel slowmode. (if there are any)                             |
-| topic                      | рядок   | Returns channel topic.                                                   |
-| тип                        | рядок   | Returns channel type.                                                    |
-| viewable                   | рядок   | Returns true / false if channel is viewable.                             |
-| permsAllowed               | рядок   | Returns allowed permissions for current channel.                         |
-| permsDenied                | рядок   | Returns denied permissions for current channel.                          |
-| perms                      | рядок   | Returns permissions for current channel.                                 |
-| joinable                   | рядок   | Returns true / false if channel is joinable (only if its voice channel). |
-| userLimit                  | integer | Returns user limit for current (voice) channel.                          |
-| messageCount               | integer | Returns message count of messages sent in current channel.               |
+| Поле                         | Тип   | Опис                                                                             |
+| ---------------------------- | ----- | -------------------------------------------------------------------------------- |
+| назва                        | рядок | Повертає назву каналу.                                                           |
+| id                           | ціле  | Повертає ID каналу.                                                              |
+| createdAt                    | ціле  | Дата повернення, коли був створений канал.                                       |
+| створення часової мітки      | ціле  | Повертає часову позначку коли канал створено.                                    |
+| типова тривалість автоархіву | ціле  | Повертає типову тривалість архіву.                                               |
+| видалення                    | рядок | Повертає true / false, якщо канал є видаленим.                                   |
+| вилучено                     | рядок | Повертає true / false якщо канал був видалений.                                  |
+| гільдія                      | ціле  | Повертає ідентифікатор гільдії поточного сервера.                                |
+| кінцевий вміст повідомлення  | рядок | Повертає вміст останнього повідомлення, надісланого у каналі.                    |
+| ID останнього Повідомлення   | ціле  | Повертає ID останнього повідомлення, надісланого у каналі.                       |
+| lastPinAt                    | ціле  | Дата останнього закріпленого повідомлення.                                       |
+| Останнього Піньімстемпу      | ціле  | Повертає часову позначку останнього закріпленого повідомлення.                   |
+| можна налаштувати            | рядок | Повертає true / false, якщо канал є керованим.                                   |
+| nsfw                         | рядок | Повертає true / false якщо канал NSFW.                                           |
+| назва батьківського          | рядок | Повертає назву категорії.                                                        |
+| ідентифікатор батьків        | ціле  | Повертає ID категорії.                                                           |
+| позиція                      | ціле  | Повертає позицію каналу.                                                         |
+| slowmode                     | ціле  | Повертає сповільнення режиму каналу. (якщо є)                                    |
+| тема                         | рядок | Повертає тему каналів.                                                           |
+| тип                          | рядок | Повертає тип каналу.                                                             |
+| для перегляду                | рядок | Повертає true / false, якщо канал є видимим.                                     |
+| дозволений                   | рядок | Повертає дозволені дозволи для поточного каналу.                                 |
+| при відмові                  | рядок | Повертає заборонені дозволи для поточного каналу.                                |
+| дозволи                      | рядок | Повертає дозволи для поточного каналу.                                           |
+| приєднаний                   | рядок | Повертає true / false якщо канал приєднаний (тільки при його голосовому каналі). |
+| обмеження користувачів       | ціле  | Повертає обмеження користувача для поточного (голосового) каналу.                |
+| кількість повідомлень        | ціле  | Повертає кількість повідомлень, надісланих у поточному каналі.                   |
 
 ## Приклад(и)
 ```js
 bot.channelCreateCommand({
-    channel: "channelid",
-    code: `
-    New channel has been created!
+    канал: "channelid",
+    код: `
+    новий канал був створений!
 - Name: $newChannel[name]
 - ID: $newChannel[id]
 - <#$newChannel[id]>`
 })
 ```
-- This code will execute when __channel is created__.
+- Цей код буде виконуватися коли __канал створюється__.
 ---
 ```js
 bot.channelDeleteCommand({
-    channel: "channelid",
-    code: `
-    Channel has been deleted!
+    канал: "channelid",
+    код: `
+    канал було видалено!
 - Name: $oldChannel[name]
 - ID: $oldChannel[id]`
 })
 ```
-- This code will execute when __channel is deleted__.
+- Цей код буде виконуватися коли __канал буде видалено__.
 ---
 ```js
 bot.channelUpdateCommand({
-    channel: "channelid",
-    code: `
-    Channel has been updated!
-- New name: $newChannel[name]
- - Old name: $oldChannel[name]`
+    канал: "channelid",
+    код: `
+    канал було оновлено!
+- Нове ім'я: $newChannel[name]
+ - Старе ім'я: $oldChannel[name]`
 })
 ```
-- This code will execute when __channel is updated__.
+- Цей код буде виконуватися коли __канал оновлюється__.
 ---

@@ -1,29 +1,29 @@
 ---
 title: '$slashOption'
-description: '$slashOption returns data of a slash command option.'
+description: '$slashOption retourne les données d''une option de commande slash.'
 id: slashOption
 ---
 
-`$slashOption` returns data of a slash command option.
+`$slashOption` retourne les données d'une option de commande slash.
 
-## Usage
+## Utilisation
 
 ```php
 $slashOption[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description  | Required |
-| ------ | ------ | ------------ |:--------:|
-| option | string | Option name. |   true   |
+| Champ  | Type                 | Description      | Obligatoire |
+| ------ | -------------------- | ---------------- |:-----------:|
+| option | chaîne de caractères | Nom de l’option. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
 ```javascript
-$createApplicationCommand[global;exampleslash;Simple example slash command.;true;slash;[{
-    "name": "exampleOption",
-    "description": "example slash command option",
+$createApplicationCommand[global;exempleslash;Exemple simple de commande slash.;true;slash;[{
+    "name": "exempleOption",
+    "description": "exemple d'une option de commande slash",
     "required": true,
     "type": 3
 }]]
@@ -31,10 +31,10 @@ $createApplicationCommand[global;exampleslash;Simple example slash command.;true
 
 ```javascript
 bot.command({
-    name: 'exampleslash',
+    name: 'exempleslash',
     type: 'interaction',
     prototype: 'slash',
     code: `
-    $interactionReply[What a great example! You entered $slashOption[exampleOption]!]`
+    $interactionReply[Quel bel exemple ! Vous avez entré $slashOption[exempleOption] !]`
 });
 ```

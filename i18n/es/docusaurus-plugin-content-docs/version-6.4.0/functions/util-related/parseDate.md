@@ -1,10 +1,10 @@
 ---
 title: '$parseDate'
-description: '$parseDate will return the date/time for the given milliseconds'
+description: '$parseDate devolverá la fecha/hora para los milisegundos dados'
 id: parseDate
 ---
 
-`$parseDate` $parseDate will return the date/time for the given milliseconds
+`$parseDate` $parseDate retornará la fecha/hora para los milisegundos dados
 
 ## Uso
 
@@ -14,21 +14,21 @@ $parseDate[ms;type?]
 
 ## Parámetros
 
-| Campo | Tipo   | Descripción                                            | Requerido |
-| ----- | ------ | ------------------------------------------------------ |:---------:|
-| ms    | string | Time in ms you want to parse.                          |    sí     |
-| tipo? | string | The type in which the parsed date will be returned in. |    no     |
+| Campo | Tipo   | Descripción                                        | Requerido |
+| ----- | ------ | -------------------------------------------------- |:---------:|
+| m     | string | Tiempo en ms que desea analizar.                   |    sí     |
+| tipo? | string | El tipo en el que se devolverá la fecha analizada. |    no     |
 
-### Types
+### Tipos
 
-| Tipo   | Format                                                   |
-| ------ | -------------------------------------------------------- |
-| tiempo | 1 years, 1 week, 6 days, 8 hours, 16 minutes, 20 seconds |
-| date   | 1/1/2023, 8:16:20 AM                                     |
+| Tipo   | Formatear                                                 |
+| ------ | --------------------------------------------------------- |
+| tiempo | 1 año, 1 semana, 6 días, 8 horas, 16 minutos, 20 segundos |
+| fecha  | 1/1/2023, 8:16:20 AM                                      |
 
 ## Ejemplo(s)
 
-This will return your current date in the `date` [format](#types):
+Esto devolverá su fecha actual en la `date` [format](#types):
 
 ```javascript
 bot.command({

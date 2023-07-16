@@ -1,10 +1,10 @@
 ---
 title: '$isVideoOn'
-description: '$isVideoOn checks if the given user has their video on in a voice channel.'
+description: '$isVideoOn comprueba si el usuario dado tiene su video encendido en un canal de voz.'
 id: isVideoOn
 ---
 
-`$isVideoOn` checks if the given user has their video on in a voice channel.
+`$isVideoOn` comprueba si el usuario dado tiene su video encendido en un canal de voz.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $isVideoOn[userID?;guildID?]
 
 ## Parámetros
 
-| Campo       | Tipo   | Parámetros                                                     | Requerido |
-| ----------- | ------ | -------------------------------------------------------------- |:---------:|
-| usarioID?   | entero | ID of the user who turned video on.                            |    no     |
-| servidorID? | entero | ID of the guild you want to check if they have their video on. |    no     |
+| Campo       | Tipo   | Parámetros                                                             | Requerido |
+| ----------- | ------ | ---------------------------------------------------------------------- |:---------:|
+| usarioID?   | entero | ID del usuario que activó el vídeo.                                    |    no     |
+| servidorID? | entero | ID de la hermandad que quieres comprobar si tienen su video encendido. |    no     |
 
 ## Ejemplo(s)
 
-This will check if you're currently using the video feature in a voice channel:
+Esto comprobará si estás usando actualmente la función de vídeo en un canal de voz:
 
 ```javascript
 bot.command({

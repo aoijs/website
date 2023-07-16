@@ -1,10 +1,10 @@
 ---
 title: '$digitalFormat'
-description: '$digitalFormat will return a digital formatted time converted from ms.'
+description: '$digitalFormat devolverá un formato digital de tiempo convertido desde ms.'
 id: digitalFormat
 ---
 
-`$digitalFormat` will convert ms to digital formatted, readable time.
+`$digitalFormat` convertirá ms a tiempo legible con formato digital.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $digitalFormat[ms]
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros                               | Requerido |
-| ----- | ------ | ---------------------------------------- |:---------:|
-| ms    | número | Time in miliseconds you wish to convert. | verdadera |
+| Campo | Tipo   | Parámetros                                  | Requerido |
+| ----- | ------ | ------------------------------------------- |:---------:|
+| ms    | número | Tiempo en milisegundos que desea convertir. | verdadera |
 
 ## Ejemplo(s)
 
-This will return `00:04:00` as `240000ms` are four minutes:
+Esto devolverá `00:04:00` como `240000ms` son cuatro minutos:
 
 ```javascript
 bot.command({

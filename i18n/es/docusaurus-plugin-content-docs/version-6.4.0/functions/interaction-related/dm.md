@@ -1,7 +1,7 @@
 ---
 title: '$dm'
 description: '$dm enviará un mensaje a los usuarios Mensajes Directos.'
-id: mensaje directo
+id: dm
 ---
 
 $dm enviará un mensaje a los usuarios Mensajes Directos.

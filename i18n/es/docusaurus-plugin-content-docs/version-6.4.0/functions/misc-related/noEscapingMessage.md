@@ -1,10 +1,10 @@
 ---
 title: '$noEscapingMessage'
-description: '$noEscapingMessage will return the non escaped message.'
+description: '$noEscapingMessage devolverá el mensaje no escapado.'
 id: noEscapingMessage
 ---
 
-`$noEscapingMessage` will return the non escaped message.
+`$noEscapingMessage` devolverá el mensaje no escapado.
 
 ## Uso
 
@@ -14,9 +14,9 @@ $noEscapingMessage[args]
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros        | Requerido |
-| ----- | ------ | ----------------- |:---------:|
-| args? | string | Message position. |    no     |
+| Campo  | Tipo   | Parámetros            | Requerido |
+| ------ | ------ | --------------------- |:---------:|
+| ¿args? | string | Posición del mensaje. |   falso   |
 
 ## Ejemplo(s)
 

@@ -1,10 +1,10 @@
 ---
 title: '$tempCooldown'
-description: '$tempCooldown will create a temporary cooldown for a command.'
+description: '$tempCooldown creará un tiempo de reutilización para un comando.'
 id: tempCooldown
 ---
 
-`$tempCooldown` will create a temporary cooldown for a command.
+`$tempCooldown` creará un tiempo de reutilización temporal para un comando.
 
 ## Uso
 
@@ -12,26 +12,26 @@ id: tempCooldown
 $tempCooldown[time;id;errorMessage?]
 ```
 
-* You are able to retrieve the remaining cooldown in the `$tempCooldown` function by using **`%time%`** or any of the following below.
-    * `%time%`, `%year%`, `%month%`, `%week%`, `%day%`, `%hour%`, `%min%`, `%sec%`, `%ms%`, `%fullTime%`
+* Puedes recuperar el tiempo de enfriamiento restante en la función `$tempCooldown` usando **`%time%`** o cualquiera de los siguientes a continuación.
+    * `%time%`, `%year%`, `%month%`, `%week%`, `%day%`, `%hour%`, `%min%`, `%sec%` `%ms%`, `%fullTime%`
 
 ## Parámetros
 
-| Campo        | Tipo     | Parámetros                                                  | Requerido |
-| ------------ | -------- | ----------------------------------------------------------- |:---------:|
-| tiempo       | consulta | The duration of the cooldown.                               | verdadero |
-| id           | consulta | Can be user, guild, message, channel or any other ID.       | verdadero |
-| errorMessage | string   | Error message when there's remaining time for the cooldown. |    sí     |
+| Campo            | Tipo     | Parámetros                                                           | Requerido |
+| ---------------- | -------- | -------------------------------------------------------------------- |:---------:|
+| tiempo           | consulta | La duración del enfriamiento.                                        | verdadero |
+| id               | consulta | Puede ser usuario, guild, mensaje, canal o cualquier otro ID.        | verdadero |
+| mensaje de error | string   | Mensaje de error cuando queda tiempo para el tiempo de enfriamiento. |    sí     |
 
 ## Ejemplo(s)
 
-This will set a temporary cooldown for a command which applies once only:
+Esto establecerá un tiempo de reutilización temporal para un comando que se aplica sólo una vez:
 
 ```javascript
 bot.command({
     name: 'tempCooldown',
     code: `
-  hello
+  hola
   $tempCooldown[2m;customid;Please wait %time% to execute this command again.]
   `
 });

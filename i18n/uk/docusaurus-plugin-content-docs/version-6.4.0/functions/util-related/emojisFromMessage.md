@@ -1,10 +1,10 @@
 ---
 title: '$emojisFromMessage'
-description: '$emojisFromMessage will retrieve all emojis given in a message.'
+description: '$emojisFromMessage отримуватиме всі емоції в повідомленні.'
 id: emojisFromMessage
 ---
 
-`$emojisFromMessage` returns all emojis in a given message.
+`$emojisFromMessage` повертає всі емодзі в заданому повідомленні.
 
 ## Використання
 
@@ -12,16 +12,16 @@ id: emojisFromMessage
 $emojisFromMessage
 ```
 
-**Please note that your bot has to be present in the guild where the emoji is in.**
+**Зверніть увагу, що ваш бот повинен бути присутнім в гільдії в якій знаходяться емодзі.**
 
 ## Приклад(и)
 
-This will return any emojis you give as argument:
+Це дозволить повернути емоджі, які ви подаєте в якості аргументу:
 
 ```javascript
 bot.command({
     name: 'emojisFromMessage',
-    code: `
+    код: `
 $emojisFromMessage
   `
 });

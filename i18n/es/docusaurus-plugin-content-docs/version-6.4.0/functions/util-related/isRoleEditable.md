@@ -1,10 +1,10 @@
 ---
 title: '$isRoleEditable'
-description: '$isRoleEditable will check if the role is editable.'
+description: '$isRoleEditable comprobará si el rol es editable.'
 id: isRoleEditable
 ---
 
-`$isRoleEditable` will check if the role is editable.
+`$isRoleEditable` comprobará si el rol es editable.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $isRoleEditable[roleID;guildID?]
 
 ## Parámetros
 
-| Campo       | Tipo   | Parámetros                                        | Requerido |
-| ----------- | ------ | ------------------------------------------------- |:---------:|
-| roleID      | entero | ID of the role you want to check if its editable. | verdadero |
-| servidorID? | entero | The ID of the guild where the role exists.        |    no     |
+| Campo       | Tipo   | Parámetros                                       | Requerido |
+| ----------- | ------ | ------------------------------------------------ |:---------:|
+| roleID      | entero | ID del rol que quieres comprobar si es editable. | verdadero |
+| servidorID? | entero | El ID de la hermandad donde existe el rol.       |    no     |
 
 ## Ejemplo(s)
 
-This will check if a role called `Owner` is editable:
+Esto comprobará si un rol llamado `Propietario` es editable:
 
 ```javascript
 bot.command({

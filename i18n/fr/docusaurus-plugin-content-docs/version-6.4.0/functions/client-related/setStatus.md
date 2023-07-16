@@ -1,30 +1,30 @@
 ---
 title: '$setStatus'
-description: '$setStatus will change the client''s status.'
+description: '$setStatus changera le statut du client.'
 id: setStatus
 ---
 
-`$setStatus` will change the client's status.
+`$setStatus` changera le statut du client.
 
-## Usage
+## Utilisation
 
 ```php
-$setStatus[name;type;status;URL;afk?]
+$setStatus[nom;type;statut;URL;afk?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type            | Description                                                                                                                                     | Required |
-| ------ | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |:--------:|
-| name   | string          | The content of the status.                                                                                                                      |   true   |
-| type   | string, integer | 1. **PLAYING** (default) <br /> 2. **WATCHING** <br /> 3. **STREAMING** <br /> 4. **LISTENING** <br /> 5. **COMPETING** |   true   |
-| status | string          | 1. **online** (default) <br /> 2. **idle** <br /> 3. **dnd** <br /> 4. **invisible**                                          |   true   |
-| URL    | string          | URL (streaming status)                                                                                                                          |   true   |
-| afk?   | boolean         | 1. **true** <br /> 2. **false** (default)                                                                                                 |  false   |
+| Champ  | Type                        | Description                                                                                                                                        | Obligatoire |
+| ------ | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |:-----------:|
+| nom    | chaîne de caractères        | Le contenu du statut.                                                                                                                              |    vrai     |
+| type   | champ de caractères, entier | 1. **PLAYING** (par defaut) <br /> 2. **WATCHING** <br /> 3. **STREAMING** <br /> 4. **LISTENING** <br /> 5. **COMPETING** |    vrai     |
+| statut | chaîne de caractères        | 1. **online** (par defaut) <br /> 2. **idle** <br /> 3. **dnd** <br /> 4. **invisible**                                          |    vrai     |
+| URL    | chaîne de caractères        | URL (statut de streaming)                                                                                                                          |    vrai     |
+| afk?   | booléen                     | 1. **true** <br /> 2. **false** (par défaut)                                                                                                 |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
-This will change the client's status to **PLAYING** and **online**:
+Ceci changera le statut du client en **PLAYING** et avec comme statut **online**:
 
 ```javascript
 bot.command({

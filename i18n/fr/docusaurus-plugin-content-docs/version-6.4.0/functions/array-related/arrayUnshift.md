@@ -1,31 +1,31 @@
 ---
 title: '$arrayUnshift'
-description: '$arrayUnshift will return the amount of elements of the given array.'
+description: '$arrayUnshift retournera le nombre d''éléments du tableau donné.'
 id: arrayUnshift
 ---
 
-`$arrayUnshift` will return the amount of elements of the given array.
+`$arrayUnshift` retournera le nombre d'éléments du tableau donné.
 
-## Usage
+## Utilisation
 
 ```php
-$arrayUnshift[name]
+$arrayUnshift[nom]
 ```
 
-## Parameters
+## Paramètres
 
-| Field | Type   | Description | Required |
-| ----- | ------ | ----------- |:--------:|
-| name  | string | Array name. |   true   |
+| Champ | Type                 | Description     | Obligatoire |
+| ----- | -------------------- | --------------- |:-----------:|
+| nom   | chaîne de caractères | Nom du tableau. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
 ```javascript
 bot.command({
     name: "array-unshift",
     code: `
-  $arrayUnshift[array]
-  $createArray[array;aoi.js;akarui;documents;bot]
+  $arrayUnshift[tableau]
+  $createArray[tableau;aoi.js;akarui;documents;bot]
   `
 });
 ```

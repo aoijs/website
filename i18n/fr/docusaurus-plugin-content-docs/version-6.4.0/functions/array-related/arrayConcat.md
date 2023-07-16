@@ -1,35 +1,35 @@
 ---
 title: '$arrayConcat'
-description: '$arrayConcat will concat multiple arrays.'
+description: '$arrayConcat permet de concaténer plusieurs tableaux.'
 id: arrayConcat
 ---
 
-`$arrayConcat` will concat multiple arrays.
+`$arrayConcat` permet de concaténer plusieurs tableaux.
 
-## Usage
+## Utilisation
 
 ```php
-$arrayConcat[separator;...arrays]
+$arrayConcat[séparateur;...tableaux]
 ```
 
-## Parameters
+## Paramètres
 
-| Field     | Type   | Description        | Required |
-| --------- | ------ | ------------------ |:--------:|
-| separator | string | Separator.         |   true   |
-| ...arrays | string | Name of the array. |   true   |
+| Champ       | Type                 | Description     | Obligatoire |
+| ----------- | -------------------- | --------------- |:-----------:|
+| séparateur  | chaîne de caractères | Séparateur.     |    vrai     |
+| ...tableaux | chaîne de caractères | Nom du tableau. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
-This will return `This is a test` as it concats array 1 and 2:
+Ceci retournera `Ceci est un test` car il concatène les tableaux 1 et 2 :
 
 ```javascript
 bot.command({
     name: 'arrayConcat',
     code: `
-  $arrayConcat[ ;test1;test2]
-  $createArray[array1;This is]
-  $createArray[array2;a test]
+  $arrayConcat[ ;tableau1;tableau2]
+  $createArray[tableau1;Ceci est]
+  $createArray[tableau2;un test]
   `
 });
 ```

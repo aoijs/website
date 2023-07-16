@@ -1,10 +1,10 @@
 ---
 title: '$isThread'
-description: '$isThread will check if the given channel is a thread or not.'
+description: '$isThread comprobará si el canal dado es un hilo o no.'
 id: isThread
 ---
 
-`$isThread` will check if the given channel is a thread or not.
+`$isThread` comprobará si el canal dado es un hilo o no.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $isThread[channelID?]
 
 ## Parámetros
 
-| Campo    | Tipo    | Parámetros                                | Requerido |
-| -------- | ------- | ----------------------------------------- |:---------:|
-| canalID? | integer | ID of the channel that you want to check. |    no     |
+| Campo    | Tipo    | Parámetros                        | Requerido |
+| -------- | ------- | --------------------------------- |:---------:|
+| canalID? | integer | ID del canal que desea comprobar. |    no     |
 
 ## Ejemplo(s)
 
-This will return either `true` or `false` depending on if you're executing the command in a thread:
+Esto devolverá `true` o `false` dependiendo de si estás ejecutando el comando en un hilo:
 
 ```javascript
 bot.command({

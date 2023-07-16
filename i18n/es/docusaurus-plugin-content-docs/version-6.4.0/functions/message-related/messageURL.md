@@ -1,27 +1,27 @@
 ---
 title: '$messageURL'
-description: '$messageURL will return the URL of a given message.'
+description: '$messageURL devolverá la URL de un mensaje determinado.'
 id: messageURL
 ---
 
-`$messageURL` will return the URL of a given message.
+`$messageURL` devolverá la URL de un mensaje dado.
 
 ## Uso
 
 ```php
-$messageURL[messageID?;channelID?]
+$messageURL[ID de mensaje;canalID?]
 ```
 
 ## Parámetros
 
-| Campo          | Tipo   | Parámetros                                         | Requerido |
-| -------------- | ------ | -------------------------------------------------- |:---------:|
-| ID de mensaje? | entero | ID of the message.                                 |    no     |
-| canalID?       | entero | ID of the message where the message is located in. |    no     |
+| Campo          | Tipo   | Parámetros                                      | Requerido |
+| -------------- | ------ | ----------------------------------------------- |:---------:|
+| ID de mensaje? | entero | ID del mensaje.                                 |   falso   |
+| canalID?       | entero | ID del canal en el que se encuentra el mensaje. |   falso   |
 
 ## Ejemplo(s)
 
-This will return the message URL of the message which executed the command:
+Esto devolverá el URL del mensaje del mensaje que ejecutó el comando:
 
 ```javascript
 bot.command({

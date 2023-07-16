@@ -1,26 +1,26 @@
 ---
 title: '$username'
-description: '$username will return a user''s username.'
-id: nombre de usuario
+description: '$username devolverá el nombre de usuario de un usuario.'
+id: username
 ---
 
-`$username` will return a user's username.
+`$username` devolverá el nombre de usuario de un usuario.
 
 ## Uso
 
 ```php
-$username[userID?]
+$username[usuarioID?]
 ```
 
 ## Parámetros
 
-| Campo     | Tipo    | Parámetros   | Requerido |
-| --------- | ------- | ------------ |:---------:|
-| usarioID? | integer | The user ID. |    no     |
+| Campo     | Tipo   | Parámetros                     | Requerido |
+| --------- | ------ | ------------------------------ |:---------:|
+| usarioID? | entero | La identificación del usuario. |   falso   |
 
 ## Ejemplo(s)
 
-This will return your username:
+Esto devolverá tu ID de usuario:
 
 ```javascript
 bot.command({

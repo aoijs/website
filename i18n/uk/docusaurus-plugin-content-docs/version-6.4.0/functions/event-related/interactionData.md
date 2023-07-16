@@ -1,10 +1,10 @@
 ---
 title: '$interactionData'
-description: '$interactionData will return given arguments of an interaction.'
+description: '$interactionData поверне вказані аргументи взаємодії.'
 id: interactionData
 ---
 
-`$interactionData` will return given arguments of an interaction.
+`$interactionData` поверне задані аргументи взаємодії.
 
 ## Використання
 
@@ -14,25 +14,25 @@ $interactionData[data]
 
 ## Параметри
 
-| Поле | Тип   | Опис              | Обов'язковий |
-| ---- | ----- | ----------------- |:------------:|
-| data | рядок | Data to retrieve. |     так      |
+| Поле | Тип   | Опис                | Обов'язковий |
+| ---- | ----- | ------------------- |:------------:|
+| дані | рядок | Дані для отримання. |     так      |
 
 ## Приклад(и)
 
 ```php
 $interactionData[customId]
-// returns the custom ID of the interaction.
+// повертає користувальницький ID взаємодії.
 ```
 
 ```php
 $interactionData[author.id]
-// returns the author ID of the interaction.
+// повертає ідентифікатор автора взаємодії.
 ```
 
 ```php
 $interactionData[message.id]
-// returns the message ID of the interaction.
+// повертає ідентифікатор повідомлення взаємодії.
 ```
 
-That are just a few example, there are a lot more.
+Це лише кілька прикладів, є набагато більше.

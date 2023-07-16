@@ -1,10 +1,10 @@
 ---
 title: '$onlyForGuilds'
-description: '$onlyForGuilds will check if the command was executed in one of the listed guilds and return a error message if not.'
+description: '$onlyForGuilds перевірить чи виконана команда в одному із перерахованих гільдій і поверне повідомлення про помилку, якщо ні.'
 id: onlyForGuilds
 ---
 
-`$onlyForGuilds` will check if the command was executed in one of the listed guilds and return a error message if not.
+`$onlyForGuilds` перевірить чи була виконана команда в одному із перерахованих гільдій і поверне повідомлення про помилку, якщо ні.
 
 ## Використання
 
@@ -14,19 +14,19 @@ $onlyForGuilds[...guildIds;error]
 
 ## Параметри
 
-| Поле        | Тип             | Опис                                                                           | Обов'язковий |
-| ----------- | --------------- | ------------------------------------------------------------------------------ |:------------:|
-| ...guildIds | string, integer | Guilds you want to limit the command to.                                       |     так      |
-| error       | рядок           | Error to return when the command was not executed in any of the listed guilds. |     так      |
+| Поле       | Тип         | Опис                                                                                              | Обов'язковий |
+| ---------- | ----------- | ------------------------------------------------------------------------------------------------- |:------------:|
+| ...гільдії | рядок, ціле | Гільї, до яких ви хочете обмежити команду.                                                        |     так      |
+| помилка    | рядок       | Помилка при поверненні після того, як команда не була виконана в жодній із перерахованих гільдій. |     так      |
 
 ## Приклад(и)
 
-This will limit the command only to the listed guilds:
+Це обмежує команду лише для перерахованих гільдій:
 
 ```javascript
 bot.command({
-    name: "onlyForGuilds",
-    code: `
+    name: "тільки ForGuilds",
+    код: `
     Ok.
     $onlyForGuilds[guildID;guildID;You can't use that command here!]
     `

@@ -1,10 +1,10 @@
 ---
-title: '$createCache'
-description: '$createCache will create custom cache.'
+title: $createCache
+description: '$createCache створить власний кеш.'
 id: createCache
 ---
 
-`$createCache` will create custom cache.
+`$createCache` створить власний кеш.
 
 ## Використання
 
@@ -14,8 +14,8 @@ $createCache[type;name;options]
 
 ## Параметри
 
-| Поле    | Тип   | Опис           | Обов'язковий |
-| ------- | ----- | -------------- |:------------:|
-| тип     | рядок | Cache type.    |     так      |
-| назва   | рядок | Cache name.    |     так      |
-| options | рядок | Cache options. |     так      |
+| Поле         | Тип   | Опис           | Обов'язковий |
+| ------------ | ----- | -------------- |:------------:|
+| тип          | рядок | Cache type.    |     так      |
+| назва        | рядок | Ім'я кешу.     |     так      |
+| налаштування | рядок | Параметри кешу |     так      |

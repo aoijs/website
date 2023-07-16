@@ -1,45 +1,45 @@
 ---
 title: '$arrayFilter'
-description: '$arrayFilter will check whether a element in the array equals the query and return it.'
+description: '$arrayFilter vérifiera si un élément dans le tableau est égal à la requête et le retourne.'
 id: arrayFilter
 ---
 
-`$arrayFilter` will check whether a element in the array equals the query and return it.
+`$arrayFilter` vérifiera si un élément dans le tableau est égal à la requête et le retourne.
 
-## Usage
+## Utilisation
 
 ```php
-$arrayFilter[name;query;queryType?;separator?]
+$arrayFilter[nom;requête;typeDeRequête?;séparateur?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field      | Type   | Description                                                         | Required |
-| ---------- | ------ | ------------------------------------------------------------------- |:--------:|
-| name       | string | Array name.                                                         |   true   |
-| query      | string | The element we will be queering for every element inside the array. |   true   |
-| queryType? | string | The comparison operator.                                            |  false   |
-| separator? | string | Separator.                                                          |  false   |
+| Champ          | Type                 | Description                                                          | Obligatoire |
+| -------------- | -------------------- | -------------------------------------------------------------------- |:-----------:|
+| nom            | chaîne de caractères | Nom du tableau.                                                      |    vrai     |
+| requête        | chaîne de caractères | L'élément que nous allons rechercher pour chaque élément du tableau. |    vrai     |
+| typeDeRequête? | chaîne de caractères | L'opérateur de comparaison.                                          |    faux     |
+| séparateur?    | chaîne de caractères | Séparateur.                                                          |    faux     |
 
-## Comparison Operators
+## Opérateurs de comparaison
 
-* `==` — Every item that matches the query.
-* `!=` — Every item that doesn't match the query.
-* `>`  — All items on the "left" of the found item, excluding itself.
-* `<`  — All items on the "right" of the found item, excluding itself.
-* `>=` — All items on the "left" of the found item, including itself.
-* `<=` — All items on the "right" of the found item, including itself.
+* `==` — Chaque élément correspondant à la requête.
+* `!=` — Chaque élément qui ne correspond pas à la requête.
+* `>` - Tous les éléments situés à "gauche" de l'élément trouvé, à l'exclusion de lui-même.
+* `<` - Tous les éléments situés à "droite" de l'élément trouvé, à l'exclusion de lui-même.
+* `>=` - Tous les éléments situés à "gauche" de l'élément trouvé, y compris lui-même.
+* `<=` - Tous les éléments situés à "droite" de l'élément trouvé, y compris lui-même.
 
-## Example(s)
+## Exemple(s)
 
 ```javascript
 bot.command({
     name: "array-filter",
     code: `
-  $arrayFilter[array;akarui;==;, ]
-  $createArray[array;aoi.js;akarui;documents;bot]
+  $arrayFilter[tableau;akarui;==;, ]
+  $createArray[tableau;aoi.js;akarui;documents;bot]
   `
-    // It will return "akarui" as it matches the query.
+    // Ceci renverra "akarui" car il correspond à la requête.
 });
 ```
 
@@ -47,9 +47,9 @@ bot.command({
 bot.command({
     name: "array-filter",
     code: `
-  $arrayFilter[array;akarui;<=;, ]
-  $createArray[array;aoi.js;akarui;documents;bot]
+  $arrayFilter[tableau;akarui;<=;, ]
+  $createArray[tableau;aoi.js;akarui;documents;bot]
   `
-    // It will return "documents, bot" as its on the right of the found item.
+    // Ceci renverra "documents, bot" car ces mots se trouvent à droite de l'élément trouvé.
 });
 ```

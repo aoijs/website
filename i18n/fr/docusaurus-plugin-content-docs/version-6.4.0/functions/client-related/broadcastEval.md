@@ -1,28 +1,28 @@
 ---
 title: '$broadcastEval'
-description: '$broadcastEval will execute a code in all guilds of all shards.'
+description: '$broadcastEval exécutera un code dans tous les serveurs de tous les shards.'
 id: broadcastEval
 ---
 
-`$broadcastEval` will execute a code in all guilds of all shards. (requires sharding)
+`$broadcastEval` exécutera un code dans tous les serveurs de tous les shards. (nécessite le sharding)
 
-## Usage
+## Utilisation
 
 ```php
-$broadcastEval[function]
+$broadcastEval[fonction]
 ```
 
-## Parameters
+## Paramètres
 
-| Field    | Type   | Description                             | Required |
-| -------- | ------ | --------------------------------------- |:--------:|
-| function | string | Function or code that will be executed. |   true   |
+| Champ    | Type                 | Description                        | Obligatoire |
+| -------- | -------------------- | ---------------------------------- |:-----------:|
+| fonction | chaîne de caractères | Fonction ou code qui sera exécuté. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
-**Requires Sharding - Review the Sharding Guide if you need explanation**
+**Nécessite le sharding - Consultez le Guide des shards si vous avez besoin d'explications**
 
-This will return the amount of servers your bot is in:
+Cela retournera le nombre de serveurs dans lesquels votre bot est :
 
 ```javascript
 bot.command({

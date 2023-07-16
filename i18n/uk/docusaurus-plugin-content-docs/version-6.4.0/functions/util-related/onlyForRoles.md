@@ -1,10 +1,10 @@
 ---
 title: '$onlyForRoles'
-description: '$onlyForRoles will check if the user who executed the command has any of the listed roles and return a error message if not.'
+description: '$onlyForRoles перевірить чи користувач, який виконував команду, має одну із перерахованих ролей і поверне повідомлення про помилку, якщо ні.'
 id: onlyForRoles
 ---
 
-`$onlyForRoles` will check if the user who executed the command has any of the listed roles and return a error message if not.
+`$onlyForRoles` перевірить чи користувач, який виконав команду, має одну із перерахованих ролей і поверне повідомлення про помилку , якщо ні.
 
 ## Використання
 
@@ -14,19 +14,19 @@ $onlyForRoles[...roleIds;error]
 
 ## Параметри
 
-| Поле       | Тип             | Опис                                                                                 | Обов'язковий |
-| ---------- | --------------- | ------------------------------------------------------------------------------------ |:------------:|
-| ...roleIds | string, integer | Roles you want to limit the command to.                                              |     так      |
-| error      | рядок           | Error to return when the command was not executed by any user with the listed roles. |      ні      |
+| Поле       | Тип         | Опис                                                                                    | Обов'язковий |
+| ---------- | ----------- | --------------------------------------------------------------------------------------- |:------------:|
+| ...roleIds | рядок, ціле | Ролі, до яких ви хочете обмежити команду.                                               |     так      |
+| помилка    | рядок       | Помилка повернення, коли команду не виконано жоден користувач із перерахованими ролями. |      ні      |
 
 ## Приклад(и)
 
-This will limit the command only to the listed channels:
+Це обмежує команду лише для перерахованих каналів:
 
 ```javascript
 bot.command({
-    name: "onlyForRoles",
-    code: `
+    name: "Тільки Форролі",
+    код: `
     Ok.
     $onlyForRoles[roleID;roleID;You can't use that command!]
     `

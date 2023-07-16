@@ -1,27 +1,27 @@
 ---
 title: '$userBadges'
-description: '$userBadges will return the given users'' badges.'
+description: '$userBadges devolverá las insignias de los usuarios dados.'
 id: userBadges
 ---
 
-`$userBadges` will return the given users's badges.
+`$userBadges` devolverá las insignias de los usuarios dados.
 
 ## Uso
 
 ```php
-$userBadges[userId?;sep?]
+$userBadges[usuarioID?;sep?]
 ```
 
 ## Parámetros
 
-| Campo   | Tipo     | Parámetros                                                                   | Requerido |
-| ------- | -------- | ---------------------------------------------------------------------------- |:---------:|
-| userId? | entero   | The ID of the user you want the badges of.                                   |    no     |
-| sep?    | consulta | Separator to split multiple badges from eachother <br /> `,` (default) |    no     |
+| Campo     | Tipo   | Parámetros                                                                         | Requerido |
+| --------- | ------ | ---------------------------------------------------------------------------------- |:---------:|
+| usarioID? | entero | El ID del usuario del que quieres las insignias.                                   |   falso   |
+| sep?      | cadena | Separador para dividir varias insignias entre sí <br /> `,` (predeterminado) |   falso   |
 
 ## Ejemplo(s)
 
-This will return your Discord Badges separated with a comma:
+Esto devolverá tus Insignias de Discord separadas por una coma:
 
 ```javascript
 bot.command({

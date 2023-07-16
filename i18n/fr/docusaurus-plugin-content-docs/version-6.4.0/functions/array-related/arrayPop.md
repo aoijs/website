@@ -1,31 +1,31 @@
 ---
 title: '$arrayPop'
-description: '$arrayPop will return the last item of the given array.'
+description: '$arrayPop retournera le dernier élément du tableau donné.'
 id: arrayPop
 ---
 
-`$arrayPop` will return the last item of the given array.
+`$arrayPop` retournera le dernier élément du tableau donné.
 
-## Usage
+## Utilisation
 
 ```php
-$arrayPop[name]
+$arrayPop[nom]
 ```
 
-## Parameters
+## Paramètres
 
-| Field | Type   | Description | Required |
-| ----- | ------ | ----------- |:--------:|
-| name  | string | Array name. |   true   |
+| Champ | Type                 | Description     | Obligatoire |
+| ----- | -------------------- | --------------- |:-----------:|
+| nom   | chaîne de caractères | Nom du tableau. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
 ```javascript
 bot.command({
     name: "array-pop",
     code: `
-  $arrayPop[array]
-  $createArray[array;aoi.js;akarui;documents;bot]
+  $arrayPop[tableau]
+  $createArray[tableau;aoi.js;akarui;documents;bot]
   `
 });
 ```

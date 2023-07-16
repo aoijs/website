@@ -1,26 +1,26 @@
 ---
 title: '$clientLeave'
-description: '$clientLeave will make your bot leave a specific server.'
+description: '$clientLeave fera que votre bot quitte un serveur spécifique.'
 id: clientLeave
 ---
 
-`$clientLeave` will make your bot leave a specific server.
+`$clientLeave` fera que votre bot quitte un serveur spécifique.
 
-## Usage
+## Utilisation
 
 ```php
-$clientLeave[guildID?]
+$clientLeave[IDserveur?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field    | Type    | Description                                     | Required |
-| -------- | ------- | ----------------------------------------------- |:--------:|
-| guildID? | integer | The ID of the guild which your bot shall leave. |  false   |
+| Champ      | Type   | Description                                 | Obligatoire |
+| ---------- | ------ | ------------------------------------------- |:-----------:|
+| IDserveur? | entier | L'ID du serveur que votre bot doit quitter. |    faux     |
 
-## Example(s)
+## Exemple(s)
 
-This will make your bot leave the current guild:
+Cela fera que votre bot quittera le serveur actuel :
 
 ```javascript
 bot.command({
@@ -28,7 +28,7 @@ bot.command({
     code: `
   $clientLeave[$guildID]
   $wait[2s]
-  $sendMessage[Bye, I'm leaving!]
+  $sendMessage[Au revoir, je m'en vais !]
   `
 });
 ```

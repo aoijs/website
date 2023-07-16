@@ -1,28 +1,28 @@
 ---
 title: '$setUserNickname'
-description: '$setUserNickname will change a nickname of a guild member.'
+description: '$setUserNickname cambiará un nick de un miembro del gremio.'
 id: setUserNickname
 ---
 
-`$setUserNickname` will change a nickname of a guild member.
+`$setUserNickname` cambiará el apodo de un miembro del gremio.
 
 ## Uso
 
 ```php
-$setUserNickname[userID;newName;reason?]
+$setUserNickname[usuarioID;nuervo nombre;razon?]
 ```
 
 ## Parámetros
 
-| Campo    | Tipo           | Parámetros                                                      | Requerido |
-| -------- | -------------- | --------------------------------------------------------------- |:---------:|
-| usarioID | entero         | The user ID of the user whose nickname shall be changed.        | verdadero |
-| newName  | cadena, número | Their new nickname.                                             | verdadero |
-| ¿razón?  | cadena, número | Razón que se mostrará en los registros de auditoría del gremio. |   falso   |
+| Campo       | Tipo           | Parámetros                                                                 | Requerido |
+| ----------- | -------------- | -------------------------------------------------------------------------- |:---------:|
+| usarioID    | entero         | El identificador de usuario del usuario cuyas reacciones serán eliminadas. | verdadero |
+| nuevoNombre | cadena, número | El nuevo apodo.                                                            | verdadero |
+| ¿razón?     | cadena, número | Razón que se mostrará en los registros de auditoría del gremio.            |   falso   |
 
 ## Ejemplo(s)
 
-This will change your nickname to "I love aoi.js": (wont work if you're the guild owner)
+Esto cambiará tu apodo a "I love aoi.js": (no funcionará si eres el propietario de la hermandad)
 
 ```javascript
 bot.command({

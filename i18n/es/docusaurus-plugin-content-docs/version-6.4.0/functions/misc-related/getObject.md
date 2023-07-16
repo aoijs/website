@@ -1,26 +1,26 @@
 ---
 title: '$getObject'
-description: '$getObject will return the previously created object.'
+description: '$getObject devolverá el objeto previamente creado.'
 id: getObject
 ---
 
-`$getObject` will return the previously created object.
+`$getObject` devolverá el objeto previamente creado.
 
 ## Uso
 
 ```php
-$getObject[format?]
+$getObject[formato?]
 ```
 
 ## Parámetros
 
-| Campo   | Tipo     | Parámetros                                                         | Requerido |
-| ------- | -------- | ------------------------------------------------------------------ |:---------:|
-| format? | booleano | Format the output? <br /> 1. **true** (default) 2. **false** |    no     |
+| Campo    | Tipo     | Parámetros                                                             | Requerido |
+| -------- | -------- | ---------------------------------------------------------------------- |:---------:|
+| formato? | booleano | Formato de salida <br /> 1. **true** (por defecto)  2. **false** |   falso   |
 
 ## Ejemplo(s)
 
-This will return the object created in `$createObject`:
+Esto devolverá el objeto creado en `$createObject`:
 
 ```javascript
 bot.command({

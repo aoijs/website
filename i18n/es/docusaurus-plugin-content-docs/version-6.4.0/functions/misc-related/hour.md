@@ -1,10 +1,10 @@
 ---
 title: '$hour'
-description: '$hour will return the current hour in CST.'
+description: '$hour devolverá la hora actual en CST.'
 id: hour
 ---
 
-`$hour` will return the current hour in CST.
+`$hour` devolverá la hora actual en CST.
 
 ## Uso
 
@@ -14,7 +14,7 @@ $hour
 
 ## Ejemplo(s)
 
-This will returns the current hour:
+Esto devolverá la hora actual:
 
 ```javascript
 bot.command({
@@ -25,7 +25,7 @@ bot.command({
 });
 ```
 
-You can change the timezone using `$timezone`:
+Puedes cambiar la zona horaria usando `$timezone`:
 
 ```javascript
 bot.command({
@@ -33,6 +33,6 @@ bot.command({
     code: `
     $hour 
     $timezone[America/New_York]
-    ` // returns current hour in New York
+    ` // devuelve la hora actual en New York
 });
 ```

@@ -1,50 +1,50 @@
 ---
 title: '$newMember'
-description: '$newMember holds data for the member after the update, might be a good idea to check partial option before accessing any property. (memberUpdate event)'
+description: '$newMember conserve les données pour le membre après la mise à jour, peut être une bonne idée de cocher l''option partielle avant d''accéder à n''importe quelle propriété. (évènement memberUpdate)'
 id: newMember
 ---
 
-`$newMember` holds data for the member after the update, might be a good idea to check partial option before accessing any property. (memberUpdate event)
+`$newMember` conserve les données pour le membre après la mise à jour, peut être une bonne idée de cocher l'option partielle avant d'accéder à n'importe quelle propriété. (évènement memberUpdate)
 
-## Usage
+## Utilisation
 
 ```php
 $newMember[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- |:--------:|
-| option | string | Option to retrieve. |   true   |
+| Champ  | Type                 | Description         | Obligatoire |
+| ------ | -------------------- | ------------------- |:-----------:|
+| option | chaîne de caractères | Option à récupérer. |    vrai     |
 
 ### Options
 
-| Field         | Type    | Description                      |
-| ------------- | ------- | -------------------------------- |
-| id            | integer | Returns User ID.                 |
-| name          | string  | Returns Name of user.            |
-| roles         | string  | Returns User roles.              |
-| permissions   | string  | Returns User permissions.        |
-| nick          | string  | Returns User nickname.           |
-| highestRoleID | integer | Returns Higher role ID user has. |
+| Champ         | Type                 | Description                                       |
+| ------------- | -------------------- | ------------------------------------------------- |
+| id            | entier               | Retourne l'ID de l'utilisateur.                   |
+| name          | chaine de caractères | Renvoie le nom de l'utilisateur.                  |
+| roles         | chaîne de caractères | Retourne les rôles de l'utilisateur.              |
+| permissions   | chaine de caractères | Retourne les permissions de l'utilisateur.        |
+| nick          | chaîne de caractères | Renvoie le pseudo de l'utilisateur.               |
+| highestRoleID | entier               | Retourne l'ID du plus haut rôle de l'utilisateur. |
 
-## Example(s)
-- **Note: you need `GuildMembers` intent**
+## Exemple(s)
+- **Note : vous avez besoin de l'intention `GuildMembers`.**
 
 ```js
 bot.memberUpdateCommand({
     channel: "channelid",
     code: `
-    $username[$newMember[id]] has updated their nickname!
-- New Nickname: $newMember[nick]
- - Old Nickname: $oldMember[nick]
+    $username[$newMember[id]] a mis à jour son surnom !
+- Nouveau pseudo : $newMember[nick]
+ - Ancien nom : $oldMember[nick]
 
-   $username[$newMember[id]] has updated their name!
-- New Name: $newMember[name]
- - Old Name: $oldMember[name]`
+   $username[$newMember[id]] a mis à jour son nom !
+- Nouveau nom : $newMember[name]
+ - Ancien nom : $oldMember[name].`
 })
 ```
-- This code will execute when __member updates their guild nickname or discord username__
+- Ce code sera exécuté lorsque __un membre met à jour son surnom de serveur ou son nom d'utilisateur discord__.
 
 ---

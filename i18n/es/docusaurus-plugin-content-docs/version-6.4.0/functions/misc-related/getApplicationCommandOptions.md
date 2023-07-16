@@ -1,20 +1,20 @@
 ---
 title: '$getApplicationCommandOptions'
-description: '$getApplicationCommandOptions will return application options of a given application command.'
+description: '$getApplicationCommandOptions devolverá las opciones de la aplicación de un comando determinado.'
 id: getApplicationCommandOptions
 ---
 
-`$getApplicationCommandOptions` will return the ID of a given application command.
+$getApplicationCommandOptions devolverá el ID de un comando de aplicación determinado.
 
 ## Uso
 
 ```php
-$getApplicationCommandOptions[name;type?]
+$getApplicationCommandOptions[nombre;tipo?]
 ```
 
 ## Parámetros
 
-| Campo  | Tipo     | Parámetros                                                                                                     | Requerido |
-| ------ | -------- | -------------------------------------------------------------------------------------------------------------- |:---------:|
-| nombre | consulta | Name of the application command.                                                                               | verdadero |
-| tipo?  | consulta | Application command type. <br /> 1. **global** (default) <br /> 2. **guildID** (specific guild ID) |    no     |
+| Campo  | Tipo   | Parámetros                                                                                                                | Requerido |
+| ------ | ------ | ------------------------------------------------------------------------------------------------------------------------- |:---------:|
+| nombre | cadena | Nombre del comando de la aplicación.                                                                                      | verdadero |
+| tipo?  | cadena | Tipo de comando de aplicación. <br /> 1. **global** (default) <br /> 2. **guildID** (ID de gremio específico) |   falso   |

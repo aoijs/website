@@ -1,29 +1,29 @@
 ---
 title: '$moveUser'
-description: '$moveUser will move a given user between two Voice Channels.'
+description: '$moveUser moverá a un usuario determinado entre dos canales de voz.'
 id: moveUser
 ---
 
-`$moveUser` will move a given user between two Voice Channels.
+`$moveUser` moverá a un usuario determinado entre dos canales de voz.
 
 ## Uso
 
 ```php
-$moveUser[guildID;userID;channelID;reason?]
+$moveUser[servidorID;ID de usuario;canalID;razon?]
 ```
 
 ## Parámetros
 
 | Campo      | Tipo   | Parámetros                                                      | Requerido |
 | ---------- | ------ | --------------------------------------------------------------- |:---------:|
-| servidorID | entero | The guild ID of where the voice channel is located in.          | verdadero |
-| usarioID   | entero | The user ID of the user to move.                                | verdadero |
-| canalID    | entero | The Voice Channel ID of where the user will be moved to.        |    sí     |
+| servidorID | entero | El ID de la hermandad de donde están ubicados los roles.        | verdadero |
+| usarioID   | entero | El ID de usuario del usuario a mover.                           | verdadero |
+| canalID    | entero | El ID del canal de voz de donde se moverá el usuario.           | verdadero |
 | ¿razón?    | string | Razón que se mostrará en los registros de auditoría del gremio. |   falso   |
 
 ## Ejemplo(s)
 
-This will move a user to another Voice Channel:
+Esto moverá un usuario a otro canal de voz:
 
 ```javascript
 bot.command({

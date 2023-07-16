@@ -1,30 +1,30 @@
 ---
 title: '$deleteEmojis'
-description: '$deleteEmojis will delete multiple emoji.'
+description: '$deleteEmojis supprimera plusieurs emojis.'
 id: deleteEmojis
 ---
 
-`$deleteEmojis` will delete multiple emoji.
+`$deleteEmojis` supprimera plusieurs emojis.
 
-## Usage
+## Utilisation
 
 ```php
 $deleteEmojis[...emojis]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description                                                     | Required |
-| ------ | ------ | --------------------------------------------------------------- |:--------:|
-| emojis | string | Emoji Name, ID or full form of the emoji which will be deleted. |   true   |
+| Champ     | Type                 | Description                                                        | Obligatoire |
+| --------- | -------------------- | ------------------------------------------------------------------ |:-----------:|
+| ...emojis | chaîne de caractères | Nom de l'émoji, ID ou forme complète de l'émoji qui sera supprimé. |     oui     |
 
-## Example(s)
+## Exemple(s)
 
-This will delete two random emojis of your guild:
+Ceci va supprimer 2 emojis aléatoirement sur votre serveur:
 
 ```javascript
 bot.command({
-    name: 'deleteEmojis',
+    name: 'supprimerEmojis',
     code: `
   $deleteEmojis[$randomEmoji;$randomEmoji]
   `

@@ -1,10 +1,10 @@
 ---
 title: '$createVar'
-description: '$createVar will create a new variable.'
+description: '$createVar creará una nueva variable.'
 id: createVar
 ---
 
-`$createVar` will create a new variable.
+`$createVar` creará una nueva variable.
 
 ## Uso
 
@@ -16,12 +16,12 @@ $createVar[table;...vars]
 
 | Campo   | Tipo     | Parámetros               | Requerido |
 | ------- | -------- | ------------------------ |:---------:|
-| table   | consulta | Variable table.          | verdadero |
-| ...vars | consulta | Variable name and value. | verdadero |
+| tabla   | consulta | Tabla variable.          | verdadero |
+| ...vars | consulta | Nombre y valor variable. | verdadero |
 
 ## Ejemplo(s)
 
-This will create a new variable with the name of "variable" and the value of "value":
+Esto creará una nueva variable con el nombre de "variable" y el valor de "valor":
 
 ```javascript
 bot.command({

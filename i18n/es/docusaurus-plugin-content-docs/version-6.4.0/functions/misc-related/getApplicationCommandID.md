@@ -1,27 +1,27 @@
 ---
 title: '$getApplicationCommandID'
-description: '$getApplicationCommandID will return the ID of a given application command.'
+description: '$getApplicationCommandID devolverá el ID de un comando de aplicación determinado.'
 id: getApplicationCommandID
 ---
 
-`$getApplicationCommandID` will return the ID of a given application command.
+`$getApplicationCommandID` eliminará un comando de aplicación.
 
 ## Uso
 
 ```php
-$getApplicationCommandID[name;type?]
+$getApplicationCommandID[nombre;tipo?]
 ```
 
 ## Parámetros
 
-| Campo  | Tipo     | Parámetros                                                                                                     | Requerido |
-| ------ | -------- | -------------------------------------------------------------------------------------------------------------- |:---------:|
-| nombre | consulta | Name of the application command.                                                                               | verdadero |
-| tipo?  | consulta | Application command type. <br /> 1. **global** (default) <br /> 2. **guildID** (specific guild ID) |    no     |
+| Campo  | Tipo     | Parámetros                                                                                                                      | Requerido |
+| ------ | -------- | ------------------------------------------------------------------------------------------------------------------------------- |:---------:|
+| nombre | consulta | Nombre del comando de la aplicación.                                                                                            | verdadero |
+| tipo?  | consulta | Tipo de comando de aplicación. <br /> 1. **global** (default) <br /> 2. **guildID** - sustituir por ID de servidor) |   falso   |
 
 ## Ejemplo(s)
 
-This will return the ID of an application command called "example", (if any):
+Esto devolverá el ID de un comando de aplicación llamado "ejemplo", (si existe):
 
 ```javascript
 bot.command({

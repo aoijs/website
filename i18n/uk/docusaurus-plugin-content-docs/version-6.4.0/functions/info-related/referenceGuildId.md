@@ -1,10 +1,10 @@
 ---
 title: '$referenceGuildId'
-description: '$referenceGuildId will return the guild ID of where the user replied in.'
+description: '$referenceGuildId поверне ID гільдії на який відповів користувач.'
 id: referenceGuildId
 ---
 
-`$referenceGuildId` will return the guild ID of where the user replied in.
+`$referenceGuildId` поверне ідентифікатор гільдії де користувач відповів.
 
 ## Використання
 

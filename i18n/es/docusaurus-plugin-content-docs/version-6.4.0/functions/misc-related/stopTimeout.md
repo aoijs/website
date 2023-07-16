@@ -1,10 +1,10 @@
 ---
 title: '$stopTimeout'
-description: '$stopTimeout will end/stop a timeout created by $setTimeout.'
+description: '$stopTimeout finalizará/detener un tiempo de espera creado por $setTimeout.'
 id: stopTimeout
 ---
 
-`$stopTimeout` will end/stop a timeout created by `$setTimeout`.
+`$stopTimeout` eliminará un ticket creado por `$setTimeout`.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $stopTimeout[id]
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros  | Requerido |
-| ----- | ------ | ----------- |:---------:|
-| id    | string | Timeout ID. | verdadera |
+| Campo | Tipo   | Parámetros         | Requerido |
+| ----- | ------ | ------------------ |:---------:|
+| id    | string | Tiempo agotado ID. | verdadera |
 
 ## Ejemplo(s)
 
-This will end a `$setTimeout` timeout:
+Esto finalizará un tiempo de espera de `$setTimeout`:
 
 ```javascript
 bot.command({

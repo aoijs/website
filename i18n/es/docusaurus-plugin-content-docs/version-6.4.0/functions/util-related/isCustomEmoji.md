@@ -1,10 +1,10 @@
 ---
 title: '$isCustomEmoji'
-description: '$isCustomEmoji will check if the given emoji is a custom emoji or not.'
+description: '$isCustomEmoji comprobará si el emoji dado es un emoji personalizado o no.'
 id: isCustomEmoji
 ---
 
-`$isCustomEmoji` will check if the given emoji is a custom emoji or not.
+`$isCustomEmoji` comprobará si el emoji dado es un emoji personalizado o no.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $isCustomEmoji[emojiResolver;guildID?]
 
 ## Parámetros
 
-| Campo         | Tipo     | Parámetros                                       | Requerido |
-| ------------- | -------- | ------------------------------------------------ |:---------:|
-| emojiResolver | consulta | Emoji you want to check if it is a custom emoji. | verdadero |
-| servidorID?   | entero   | ID of the guild where the emoji was created in.  |    no     |
+| Campo                | Tipo     | Parámetros                                                | Requerido |
+| -------------------- | -------- | --------------------------------------------------------- |:---------:|
+| resolutor de emojios | consulta | Emoji que quieres comprobar si es un emoji personalizado. | verdadero |
+| servidorID?          | entero   | ID del gremio en el que se crearon los emojis.            |    no     |
 
 ## Ejemplo(s)
 
-This will return `true` as the ![emoji](https://cdn.discordapp.com/emojis/1003365344724910191.webp?size=16&quality=lossless) emoji is indeed a custom emoji:
+Esto devolverá `verdadero` como el emoji ![emoji](https://cdn.discordapp.com/emojis/1003365344724910191.webp?size=16&quality=lossless) es realmente un emojis personalizado:
 
 ```javascript
 bot.command({

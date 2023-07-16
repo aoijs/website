@@ -1,26 +1,26 @@
 ---
 title: '$setClientName'
-description: '$setClientName will change the clients'' Discord Username.'
+description: '$setClientName changera le nom d''utilisateur discord du client.'
 id: setClientName
 ---
 
-`$setClientName` will change the clients' Discord Username.
+`$setClientName` changera le nom d'utilisateur discord du client.
 
-## Usage
+## Utilisation
 
 ```php
 $setClientName[username]
 ```
 
-## Parameters
+## Paramètres
 
-| Field    | Type   | Description              | Required |
-| -------- | ------ | ------------------------ |:--------:|
-| username | string | The new client username. |   true   |
+| Champ             | Type                 | Description                             | Obligatoire |
+| ----------------- | -------------------- | --------------------------------------- |:-----------:|
+| nom d'utilisateur | chaîne de caractères | Le nouveau nom d'utilisateur du client. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
-This will change the client's username to the command author's username:
+Cela changera l'avatar du client en l'avatar de l'auteur de la commande :
 
 ```javascript
 bot.command({

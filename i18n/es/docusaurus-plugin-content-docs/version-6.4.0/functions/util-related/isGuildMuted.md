@@ -1,10 +1,10 @@
 ---
 title: '$isGuildMuted'
-description: '$isGuildMuted is similar but not to confuse with `$isMuted`, this will check if the user is server muted.'
+description: '$isGuildMuted es similar pero no confundir con `$isMuted`, esto comprobará si el usuario está silenciado.'
 id: isGuildMuted
 ---
 
-`$isGuildMuted` is similar but not to confuse with `$isMuted`, this will check if the user is server muted.
+`$isGuildMuted` es similar pero no confundir con `$isMuted`, esto comprobará si el usuario está silenciado.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $isGuildMuted[userID?;guildID?]
 
 ## Parámetros
 
-| Campo       | Tipo   | Parámetros                                                    | Requerido |
-| ----------- | ------ | ------------------------------------------------------------- |:---------:|
-| usarioID?   | entero | The ID of the user you want to check if they're server muted. |    no     |
-| servidorID? | entero | The ID of the guild where they're server muted in.            |    no     |
+| Campo       | Tipo   | Parámetros                                                                 | Requerido |
+| ----------- | ------ | -------------------------------------------------------------------------- |:---------:|
+| usarioID?   | entero | El ID del usuario que desea comprobar si están silenciados en el servidor. |    no     |
+| servidorID? | entero | El ID de la guild donde están silenciados.                                 |    no     |
 
 ## Ejemplo(s)
 
-This will return either `true` or `false` depending on if you're server muted or not:
+Esto retornará `verdadero` o `falso` dependiendo de si estás silenciado en el servidor o no:
 
 ```javascript
 bot.command({

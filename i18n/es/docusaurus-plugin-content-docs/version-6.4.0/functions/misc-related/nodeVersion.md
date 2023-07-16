@@ -1,10 +1,10 @@
 ---
 title: '$nodeVersion'
-description: '$nodeVersion will return your current node.js version.'
+description: '$nodeVersion devolverá su versión actual de node.js.'
 id: nodeVersion
 ---
 
-`$nodeVersion` will return your current node.js version.
+`$nodeVersion` devolverá su versión actual de node.js.
 
 ## Uso
 
@@ -14,7 +14,7 @@ $nodeVersion
 
 ## Ejemplo(s)
 
-This will return the current node.js version your bot is running on:
+Esto devolverá la versión actual de node.js en la que se está ejecutando tu bot:
 
 ```javascript
 bot.command({

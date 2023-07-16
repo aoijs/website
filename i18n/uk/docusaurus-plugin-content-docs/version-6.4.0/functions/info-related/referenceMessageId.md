@@ -1,10 +1,10 @@
 ---
 title: '$referenceMessageId'
-description: '$referenceMessageId will return the message ID of the message where the user replied to.'
+description: '$referenceMessageId поверне ID повідомлення, на яке користувач відповів.'
 id: referenceMessageId
 ---
 
-`$referenceMessageId` will return the message ID of the message where the user replied to.
+`$referenceMessageId` поверне ID повідомлення на яке користувач відповів.
 
 ## Використання
 

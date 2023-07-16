@@ -1,10 +1,10 @@
 ---
-title: '$hasRoles'
-description: '$hasRoles check if the provided user has the roles listed in the roles argument.'
+title: $hasRoles
+description: '$hasRoles , чи має вказаний користувач ролі, перераховані в аргументах ролей.'
 id: hasRoles
 ---
 
-`$hasRoles` check if the provided user has the roles listed in the roles argument.
+`$hasRoles` перевірити чи наданий користувач має ролі, перераховані в аргументах ролей.
 
 ## Використання
 
@@ -14,20 +14,20 @@ $hasRoles[guildID;userID;...roles]
 
 ## Параметри
 
-| Поле     | Тип     | Опис                                            | Обов'язковий |
-| -------- | ------- | ----------------------------------------------- |:------------:|
-| guildID  | integer | ID of the guild where the roles are present in. |     так      |
-| userID   | integer | ID of the user which has the roles.             |     так      |
-| ...roles | integer | The roles that will be checked for.             |     так      |
+| Поле           | Тип  | Опис                               | Обов'язковий |
+| -------------- | ---- | ---------------------------------- |:------------:|
+| гільдія        | ціле | ID гільдії, в якому присутні ролі. |     так      |
+| ID користувача | ціле | ID користувача, який має ролі.     |     так      |
+| ...ролі        | ціле | Ролі, які будуть перевірені.       |     так      |
 
 ## Приклад(и)
 
-This will return `true` when the user has the listed roles:
+Це поверне `true` , коли користувач має ролі у списку:
 
 ```javascript
 bot.command({
     name: 'hasRoles',
-    code: `
+    код: `
   $hasRoles[$guildID;$authorID;$findRole[Owner]]
   `
 });

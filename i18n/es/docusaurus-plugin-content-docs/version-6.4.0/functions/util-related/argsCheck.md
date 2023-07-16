@@ -1,48 +1,48 @@
 ---
 title: '$argsCheck'
-description: '$argsCheck will check the arguments of what the user typed and the required one, if requirements didn''t meet, it will return an error message.'
+description: '$argsCheck verificará los argumentos de lo que el usuario escribió y el requerido, si los requisitos no se cumplieron, devolverá un mensaje de error.'
 id: argsCheck
 ---
 
-`$argsCheck` will check the arguments of user typed and the required one, if requirements didn't meet, it will return an error message.
+`$argsCheck` comprobará los argumentos del usuario escritos y el requerido, si no se cumplen los requisitos, devolverá un mensaje de error .
 
 ## Uso
 
 ```php
-$argsCheck[condition;errorMessage]
+$argsCheck[condicion;mensaje del error]
 ```
 
 ## Parámetros
 
-| Campo        | Tipo   | Descripción                              | Requerido |
-| ------------ | ------ | ---------------------------------------- |:---------:|
-| condition    | cadena | Condition to be made.                    |    sí     |
-| errorMessage | string | Error message if condition did not meet. |    sí     |
+| Campo            | Tipo   | Descripción                                         | Requerido |
+| ---------------- | ------ | --------------------------------------------------- |:---------:|
+| condición        | cadena | Condición a realizar.                               | verdadero |
+| Mensaje de error | cadena | Mensaje de error si la condición no se ha cumplido. | verdadero |
 
-#### Valid Mathematical Operators
+#### Operadores matemáticos
 
-| Operator | Mathematical Expression  |
-| -------- | ------------------------ |
-| ==       | es igual a               |
-| !=       | not equal to             |
-| <=       | less than or equal to    |
-| \>=     | greater than or equal to |
-| \>      | greater than             |
-| <        | less than                |
-| \       | \|     | logical OR     |
-| &&       | logical conjunction      |
+| Operador | Las expresiones matemáticas |
+| -------- | --------------------------- |
+| ==       | es igual a                  |
+| !=       | no es igual a               |
+| <=       | es inferior o igual a       |
+| \>=     | mayor que o igual a         |
+| \>      | es superior a               |
+| <        | menos que                   |
+| \       | \| O lógico                |
+| &&       | conjunción causal           |
 
 ## Ejemplo(s)
 
-This returns: Greater than 2 arguments if condition met, else it will return an error message.
+Devuelve: Mayor que 2 argumentos si la condición se cumple, de lo contrario devolverá un mensaje de error.
 
 ```javascript
 bot.command({
     name: "argsCheck",
     code: `
-  You have more than two arguments, nice!
+  ¡Tienes más de dos argumentos, bien!
 
-  $argsCheck[>2;You have less than two arguments!]
+  $argsCheck[>2;Tienes menos de dos argumentos!]
   `
 });
 ```

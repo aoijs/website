@@ -1,26 +1,26 @@
 ---
 title: '$findSpecialChars'
-description: '$findSpecialChars will return all special characters of the given argument.'
+description: '$findSpecialChars devolverá todos los caracteres especiales del argumento dado.'
 id: findSpecialChars
 ---
 
-`$findSpecialChars` will return all special characters of the given argument.
+`$findSpecialChars` devolverá todos los caracteres especiales del argumento dado.
 
 ## Uso
 
 ```php
-$findSpecialChars[text]
+$findSpecialChars[texto]
 ```
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros                                      | Requerido |
-| ----- | ------ | ----------------------------------------------- |:---------:|
-| text  | string | Text where you want to find special characters. | verdadera |
+| Campo | Tipo   | Parámetros                                           | Requerido |
+| ----- | ------ | ---------------------------------------------------- |:---------:|
+| texto | cadena | Texto donde quieres encontrar caracteres especiales. | verdadera |
 
 ## Ejemplo(s)
 
-This will return `######`:
+Esto devolvera  `######`:
 
 ```javascript
 bot.command({

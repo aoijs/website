@@ -1,47 +1,47 @@
 ---
 title: '$allChannelsCount'
-description: '$allChannelsCount will return the amount of all cached channels of a given type.'
+description: '$allChannelsCount retournera la quantité de tous les salons mis en cache d''un type donné.'
 id: allChannelsCount
 ---
 
-`$allChannelsCount` will return the amount of all cached channels of a given type.
+`$allChannelsCount` retournera la quantité de tous les salons mis en cache d'un type donné.
 
-## Usage
+## Utilisation
 
 ```php
 $allChannelsCount[type?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field | Type   | Description                                 | Required |
-| ----- | ------ | ------------------------------------------- | -------- |
-| type? | string | Type you want the amount of to be returned. | false    |
+| Champ | Type                 | Description                                        | Obligatoire |
+| ----- | -------------------- | -------------------------------------------------- | ----------- |
+| type? | chaîne de caractères | Type que vous voulez que le montant soit retourné. | faux        |
 
 <details open>
-  <summary><h3> Channel Types </h3></summary>
+  <summary><h3> Types de salon </h3></summary>
 
-| Channel Type         |                    |
-| -------------------- | ------------------ |
-| Text Channel         | Text               |
-| Voice Channel        | Voice              |
-| Category             | Category           |
-| Stage Channel        | Stage              |
-| Private Thread       | PrivateThread      |
-| Public Thread        | PublicThread       |
-| Forum                | Forum              |
-| Announcement Thread  | AnnouncementThread |
-| Announcement Channel | Announcement       |
-| Home                 | GuildDirectory     |
-| NSFW Channel         | NSFW               |
-| Direct Message       | DM                 |
-| All Channel Types    | all                |
+| Type de salon               |                    |
+| --------------------------- | ------------------ |
+| Salon Textuel               | Text               |
+| Salon vocal                 | Voice              |
+| Catégorie                   | Category           |
+| Salon de conférence         | Stage              |
+| Fil de discussion privé     | PrivateThread      |
+| Fil de discussion public    | PublicThread       |
+| Forum                       | Forum              |
+| Fil de discussion d'annonce | AnnouncementThread |
+| Salon d'Annonce             | Announcement       |
+| Accueil                     | GuildDirectory     |
+| Salon NSFW                  | NSFW               |
+| Message direct              | DM                 |
+| Tous les types de salons    | all                |
 
 </details>
 
-## Example(s)
+## Exemple(s)
 
-This will return the amount of Voice Channels in your guild:
+Cela retournera le nombre de salons vocaux dans votre serveur :
 
 ```javascript
 bot.command({

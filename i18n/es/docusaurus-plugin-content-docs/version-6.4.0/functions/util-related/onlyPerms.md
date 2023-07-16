@@ -1,10 +1,10 @@
 ---
 title: '$onlyPerms'
-description: '$onlyPerms will check if the user has the listed permission and return a error message if not.'
+description: '$onlyPerms comprobará si el usuario tiene los permisos listados y devolverá un mensaje de error si no lo hace.'
 id: onlyPerms
 ---
 
-`$onlyPerms` will check if the user has the listed permission and return a error message if not.
+`$onlyPerms` comprobará si el usuario tiene los permisos listados y devolverá un mensaje de error si no lo hace.
 
 ## Uso
 
@@ -14,16 +14,16 @@ $onlyPerms[...perms;error]
 
 ## Parámetros
 
-| Campo       | Tipo     | Parámetros                                                    | Requerido |
-| ----------- | -------- | ------------------------------------------------------------- |:---------:|
-| ...permisos | consulta | Permission the user requires.                                 | verdadero |
-| error       | consulta | Error to return when the user has not the listed permissions. | verdadero |
+| Campo       | Tipo     | Parámetros                                                         | Requerido |
+| ----------- | -------- | ------------------------------------------------------------------ |:---------:|
+| ...permisos | consulta | Permiso que requiere el usuario.                                   | verdadero |
+| error       | consulta | Error a devolver cuando el usuario no tiene los permisos listados. | verdadero |
 
-Encontrará todos los permisos __[aquí](../../guides/client/2permissionsintents.md)__.
+Encontrará todos los permisos __[aquí](../../guides/Client/2permissionsintents.md)__.
 
 ## Ejemplo(s)
 
-This will limit the command to work only when the user has administrator permissions:
+Esto limitará el comando a trabajar sólo cuando el usuario tenga permisos de administrador:
 
 ```javascript
 bot.command({

@@ -1,27 +1,27 @@
 ---
 title: '$findRole'
-description: '$findRole will search and return a given role of a certain guild.'
+description: '$findRole buscará y devolverá un rol dado de un cierto gremio.'
 id: findRole
 ---
 
-`$findRole` will search and return a given role of a certain guild.
+`$findRole` buscará y devolverá un determinado papel de un gremio.
 
 ## Uso
 
 ```php
-$findRole[roleResolver;guildID?]
+$findRole[resolución de rol;servidorID?]
 ```
 
 ## Parámetros
 
-| Campo        | Tipo     | Parámetros                             | Requerido |
-| ------------ | -------- | -------------------------------------- |:---------:|
-| roleResolver | consulta | Name of the role you want to find.     | verdadero |
-| servidorID?  | entero   | Guild ID where the role is present in. |    no     |
+| Campo        | Tipo   | Parámetros                                    | Requerido |
+| ------------ | ------ | --------------------------------------------- |:---------:|
+| resolver rol | cadena | Nombre del grupo que deseas aplicar           | verdadero |
+| servidorID?  | entero | ID del gremio donde el usuario está presente. |   falso   |
 
 ## Ejemplo(s)
 
-This will return the role ID of the role `Owner` if it exists:
+Esto devolverá el ID de rol del rol `Owner` si existe:
 
 ```javascript
 bot.command({

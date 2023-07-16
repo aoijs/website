@@ -1,33 +1,33 @@
 ---
 title: '$deleteIn'
-description: '$deleteIn will delete a message after a given time.'
+description: '$deleteIn supprimera un message après un certain temps.'
 id: deleteIn
 ---
 
-`$deleteIn` will delete a message after a given time.
+`$deleteIn` supprimera un message après un certain temps.
 
-## Usage
+## Utilisation
 
 ```php
-$deleteIn[time]
+$deleteIn[temps]
 ```
 
-## Parameters
+## Paramètres
 
-| Field | Type           | Description                                      | Required |
-| ----- | -------------- | ------------------------------------------------ |:--------:|
-| time  | string, number | After how much time the message will be deleted. |   true   |
+| Champ | Type           | Description                                      | Obligatoire |
+| ----- | -------------- | ------------------------------------------------ |:-----------:|
+| temps | chaîne, nombre | Après combien de temps le message sera supprimé. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
-This will delete the sent message after five seconds:
+Ceci supprimera le message envoyé après cinq secondes:
 
 ```javascript
 bot.command({
     name: 'deleteIn',
     code: `
   $deleteIn[5s]
-  I'll delete this message in 5 seconds!
+  Je vais supprimer ce message dans 5 secondes !
   `
 });
 ```

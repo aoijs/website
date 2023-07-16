@@ -1,10 +1,10 @@
 ---
 title: '$isInteger'
-description: '$isInteger will check if the given number is an integer or not.'
+description: '$isInteger comprobará si el número dado es un número entero o no.'
 id: isInteger
 ---
 
-`$isInteger` will check if the given number is an integer or not.
+`$isInteger` verificará si el número dado es un número entero o no.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $isInteger[number]
 
 ## Parámetros
 
-| Campo  | Tipo   | Parámetros                                         | Requerido |
-| ------ | ------ | -------------------------------------------------- |:---------:|
-| número | número | Number you want to check if its an integer or not. | verdadera |
+| Campo  | Tipo   | Parámetros                                       | Requerido |
+| ------ | ------ | ------------------------------------------------ |:---------:|
+| número | número | Número que desea comprobar si es un entero o no. | verdadera |
 
 ## Ejemplo(s)
 
-This checks if your message contains an integer and returns `true` or `false`:
+Esto verifica si tu mensaje contiene un entero y devuelve `verdadero` o `falso`:
 
 ```javascript
 bot.command({

@@ -1,34 +1,34 @@
 ---
 title: '$deleteThread'
-description: '$deleteThread will delete a given thread of a channel.'
+description: '$deleteThread supprimera le fil donné d''un salon.'
 id: deleteThread
 ---
 
-`$deleteThread` will delete a given thread of a channel.
+`$deleteThread` supprimera le fil donné d'un salon.
 
-## Usage
+## Utilisation
 
 ```php
-$deleteThread[channelID;threadID;reason?]
+$deleteThread[IDsalon;IDfil;raison?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field     | Type    | Description                                                   | Required |
-| --------- | ------- | ------------------------------------------------------------- |:--------:|
-| channelID | integer | The ID of the channel where the thread exists in.             |   true   |
-| threadID  | integer | The thread ID.                                                |   true   |
-| reason?   | string  | The reason which will be displayed in the guild's audit logs. |  false   |
+| Champ   | Type    | Description                                           | Obligatoire |
+| ------- | ------- | ----------------------------------------------------- |:-----------:|
+| IDsalon | entier  | L'ID du salon dans lequel le fil se situe.            |     oui     |
+| IDfil   | entier  | L'ID du fil.                                          |    true     |
+| raison? | booléen | La raison qui sera affichée dans les logs du serveur. |    faux     |
 
-## Example(s)
+## Exemple(s)
 
-This will delete a thread of the channel where you execute the command in ( make sure to replace threadID with an actual thread ID ):
+Ceci supprimera le fil du salon dans lequel la commande est exécuté (assurez-vous de remplacer IDfil par un actuel ID de fil ):
 
 ```javascript
 bot.command({
-    name: 'deleteThread',
+    name: 'supprimerFil',
     code: `
-  $deleteThread[$channelID;threadID;Crazy Example.]
+  $deleteThread[$channelID;IDfil;Test.]
   `
 });
 ```

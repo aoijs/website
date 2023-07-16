@@ -1,10 +1,10 @@
 ---
-title: '$oldRole'
-description: '$oldRole holds data of the role before it was updated, used in role update event, or else any data will be empty.'
+title: $oldRole
+description: Дані ролі $oldRole до його оновлення, використовуються в події оновлення ролі, або будь-які дані будуть порожні.
 id: oldRole
 ---
 
-`$oldRole` holds data of the role before it was updated, used in role update event, or else any data will be empty.
+`$oldRole` зберігає дані ролі до його оновлення, використовуються в події оновлення ролей або будь-які дані будуть порожніми.
 
 ## Використання
 
@@ -14,6 +14,6 @@ $oldRole[option]
 
 ## Параметри
 
-| Поле   | Тип   | Опис                | Обов'язковий |
-| ------ | ----- | ------------------- |:------------:|
-| option | рядок | Option to retrieve. |     так      |
+| Поле  | Тип   | Опис                 | Обов'язковий |
+| ----- | ----- | -------------------- |:------------:|
+| опція | рядок | Можливість отримати. |     так      |

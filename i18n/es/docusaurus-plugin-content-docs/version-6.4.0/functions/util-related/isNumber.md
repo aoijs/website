@@ -1,10 +1,10 @@
 ---
 title: '$isNumber'
-description: '$isNumber will check if the given argument is a number.'
+description: '$isNumber comprobará si el argumento dado es un número.'
 id: isNumber
 ---
 
-`$isNumber` will check if the given argument is a number.
+`$isNumber` comprobará si el argumento dado es un número.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $isNumber[num]
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros                                  | Requerido |
-| ----- | ------ | ------------------------------------------- |:---------:|
-| num   | número | Argument you want to check if its a number. | verdadera |
+| Campo | Tipo   | Parámetros                                     | Requerido |
+| ----- | ------ | ---------------------------------------------- |:---------:|
+| num   | número | Argumento que desea comprobar si es un número. | verdadera |
 
 ## Ejemplo(s)
 
-This will return `true` as `255` is a valid number:
+Esto devolverá `verdadero` como `255` es un número válido:
 
 ```javascript
 bot.command({

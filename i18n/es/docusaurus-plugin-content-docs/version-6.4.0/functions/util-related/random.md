@@ -1,10 +1,10 @@
 ---
 title: '$random'
-description: '$random will generate a random number between your chosen span.'
+description: '$random generará un número aleatorio entre tu rango elegido.'
 id: random
 ---
 
-`$random` will generate a random number between your chosen span.
+`$random` generará un número aleatorio entre tu rango elegido.
 
 ## Uso
 
@@ -14,16 +14,16 @@ $random[num1;num2;allow?;random?]
 
 ## Parámetros
 
-| Campo                        | Tipo     | Parámetros                             | Requerido |
-| ---------------------------- | -------- | -------------------------------------- |:---------:|
-| num1                         | número   | Start of the span.                     | verdadero |
-| num2                         | número   | End of the span.                       | verdadero |
-| allow?                       | booleano | Allows returning of decimal numbers.   |   falso   |
-| [random?](#advanced-Example) | boolean  | If the returned number will be random. |   falso   |
+| Campo                            | Tipo     | Parámetros                                  | Requerido |
+| -------------------------------- | -------- | ------------------------------------------- |:---------:|
+| num1                             | número   | Inicio de la extensión.                     | verdadero |
+| num2                             | número   | Fin de la gama.                             | verdadero |
+| ¿permitir?                       | booleano | Permite la devolución de números decimales. |   falso   |
+| [¿aleatorio?](#advanced-Example) | boolean  | Si el número devuelto será aleatorio.       |   falso   |
 
 ## Ejemplo(s)
 
-This will return a random number between `20` and `250`:
+Esto devolverá un número aleatorio entre `20` y `250`:
 
 ```javascript
 bot.command({
@@ -34,9 +34,9 @@ bot.command({
 });
 ```
 
-### Advanced Example
+### Ejemplo avanzado
 
-This will return a random decimal number between `25` and `50`:
+Esto devolverá un número decimal aleatorio entre `25` y `50`:
 
 ```javascript
 bot.command({
@@ -47,7 +47,7 @@ bot.command({
 });
 ```
 
-This will return a random number between `45` and `64` and the second `$random` will be random as well:
+Esto devolverá un número aleatorio entre `45` y `64` y el segundo `$random` también será aleatorio:
 
 ```javascript
 bot.command({

@@ -1,28 +1,28 @@
 ---
 title: '$authorAvatar'
-description: '$authorAvatar will return the profile picture of the command author.'
+description: '$authorAvatar devolverá la imagen del perfil del autor del comando.'
 id: authorAvatar
 ---
 
-`$authorAvatar` will return the profile picture of the command author.
+`$authorAvatar` devolverá la imagen de perfil del autor del comando.
 
 ## Uso
 
 ```php
-$authorAvatar[size?;dynamic?;format?]
+$authorAvatar[tamaño?;dinámico?;formato?]
 ```
 
 ## Parámetros
 
-| Campo    | Tipo           | Parámetros                                      | Requerido |
-| -------- | -------------- | ----------------------------------------------- |:---------:|
-| size?    | cadena, número | The size of the image                           |    no     |
-| dynamic? | boolean        | 1. **true** (default) <br /> 2. **false** |    no     |
-| format?  | string         | The format of the returned image.               |   falso   |
+| Campo     | Tipo           | Parámetros                                          | Requerido |
+| --------- | -------------- | --------------------------------------------------- |:---------:|
+| tamaño?   | cadena, número | El tamaño del archivo de la imagen.                 |   falso   |
+| dinámico? | booleano       | 1. **true** (por defecto) <br /> 2. **false** |   falso   |
+| formato?  | cadena         | El formato de la imagen devuelta.                   |   falso   |
 
 ## Ejemplo(s)
 
-This will return your profile picture:
+Esto reiniciará la imagen de perfil del usuario
 
 ```javascript
 bot.command({

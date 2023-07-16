@@ -1,10 +1,10 @@
 ---
 title: '$oldGuild'
-description: '$oldGuild holds data for the guild before it was updated, this is from discord cache and might be empty depending on whether it''s cached, so use partial option before attempting to access any property. (guildUpdate event)'
+description: '$oldGuild містить дані для гільдії перед оновленням, це з кешу discord і може бути порожнім в залежності від того, чи він кешований, таким чином використовуйте частковий параметр, перш ніж намагатися отримати доступ до будь-якої властивості. (guildUpdate event)'
 id: oldGuild
 ---
 
-`$oldGuild` holds data for the guild before it was updated, this is from discord cache and might be empty depending on whether it's cached, so use partial option before attempting to access any property. (guildUpdate event)
+`$oldGuild` зберігає дані для гільдії до його оновлення, це з кешу discord і може бути порожнім в залежності від чи він закешований, тому використовуйте частковий варіант перед спробами доступу до будь-якої властивості. (guildUpdate event)
 
 ## Використання
 
@@ -14,6 +14,6 @@ $oldGuild[option]
 
 ## Параметри
 
-| Поле   | Тип   | Опис                | Обов'язковий |
-| ------ | ----- | ------------------- |:------------:|
-| option | рядок | Option to retrieve. |     так      |
+| Поле  | Тип   | Опис                 | Обов'язковий |
+| ----- | ----- | -------------------- |:------------:|
+| опція | рядок | Можливість отримати. |     так      |

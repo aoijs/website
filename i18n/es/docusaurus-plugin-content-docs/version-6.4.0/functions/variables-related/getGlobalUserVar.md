@@ -1,10 +1,10 @@
 ---
 title: '$getGlobalUserVar'
-description: '$getGlobalUserVar will return the value of a given global user variable.'
+description: '$getGlobalUserVar devolverá el valor de una variable global de usuario.'
 id: getGlobalUserVar
 ---
 
-`$getGlobalUserVar` will return the value of a given global user variable.
+`$getGlobalUserVar` devolverá el valor de una variable global de usuario.
 
 ## Uso
 
@@ -14,15 +14,15 @@ $getGlobalUserVar[varname;userID?;table?]
 
 ## Parámetros
 
-| Campo     | Tipo     | Parámetros      | Requerido |
-| --------- | -------- | --------------- |:---------:|
-| varname   | consulta | Variable name.  | verdadero |
-| usarioID? | entero   | User ID.        |    no     |
-| table?    | string   | Variable table. |   falso   |
+| Campo     | Tipo     | Parámetros       | Requerido |
+| --------- | -------- | ---------------- |:---------:|
+| varname   | consulta | Nombre variable. | verdadero |
+| usarioID? | entero   | ID de usuario.   |    no     |
+| tabla?    | string   | Tabla variable.  |   falso   |
 
 ## Ejemplo(s)
 
-This will return the value of a variable called "Example":
+Esto devolverá el valor de una variable llamada "Ejemplo":
 
 ```javascript
 bot.command({

@@ -1,44 +1,44 @@
 ---
 title: '$createStageInstance'
-description: '$createStageInstance will start a stage.'
+description: '$createStageInstance fera commencer une conférence.'
 id: createStageInstance
 ---
 
-`$createStageInstance` will start a stage.
+`$createStageInstance` fera commencer une conférence.
 
-## Usage
+## Utilisation
 
 ```php
-$createStageInstance[channelID;topic;type?]
+$createStageInstance[IDsalon;sujet;type?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field     | Type    | Description                              | Required |
-| --------- | ------- | ---------------------------------------- |:--------:|
-| channelID | integer | The channel ID of the stage channel.     |   true   |
-| topic     | string  | The stage topic which will be displayed. |   true   |
-| type?     | integer | The stage type. (listed below)           |  false   |
+| Champ   | Type                 | Description                                       | Obligatoire |
+| ------- | -------------------- | ------------------------------------------------- |:-----------:|
+| IDsalon | entier               | l'ID du salon de conférence                       |    vrai     |
+| sujet   | chaine de caractères | Le sujet du salon de conférence qui sera affiché. |    vrai     |
+| type?   | entier               | Le type de conférence (listé ci-dessous)          |    faux     |
 
 <details open>
-  <summary><h3> Invite Target Types </h3></summary>
+  <summary><h3> Les types de conférence </h3></summary>
 
-| TYPE    | VALUE |
-| ------- | ----- |
-| PUBLIC  | 1     |
-| PRIVATE | 2     |
+| TYPE    | VALEUR |
+| ------- | ------ |
+| PUBLIC  | 1      |
+| PRIVATE | 2      |
 
 </details>
 
-## Example(s)
+## Exemple(s)
 
-This will create start a new stage instance:
+Cela va créer un nouveau salon de conférence:
 
 ```javascript
 bot.command({
-    name: 'createStageInstance',
+    name: 'créerUneConférence',
     code: `
-  $createStageInstance[stageID;Testing!;1] 
-  ` // replace "stageID" with an actual stage ID
+  $createStageInstance[IDconférence;Testing!;1] 
+  ` // remplacez "IDconférence" avec un salon de conférence actuel
 });
 ```

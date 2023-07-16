@@ -1,40 +1,40 @@
 ---
 title: '$arraySome'
-description: '$arraySome will check for given elements in the array.'
+description: '$arraySome vérifie la présence d''éléments donnés dans le tableau.'
 id: arraySome
 ---
 
-`$arraySome` will check for given elements in the array and return boolean.
+`$arraySome` vérifie la présence d'éléments donnés dans le tableau.
 
-## Usage
+## Utilisation
 
 ```php
-$arraySome[name;query;queryType?]
+$arraySome[nom;requête;typeDeRequête?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field      | Type   | Description                                                         | Required |
-| ---------- | ------ | ------------------------------------------------------------------- |:--------:|
-| name       | string | Array name.                                                         |   true   |
-| query      | string | The element we will be queering for every element inside the array. |   true   |
-| queryType? | string | The comparison operator.                                            |  false   |
+| Champ          | Type                 | Description                                                          | Obligatoire |
+| -------------- | -------------------- | -------------------------------------------------------------------- |:-----------:|
+| nom            | chaîne de caractères | Nom du tableau.                                                      |    vrai     |
+| requête        | chaîne de caractères | L'élément que nous allons rechercher pour chaque élément du tableau. |    vrai     |
+| typeDeRequête? | chaîne de caractères | L'opérateur de comparaison.                                          |    faux     |
 
-* `==` — Every item that matches the query.
-* `!=` — Every item that doesn't match the query.
-* `>`  — All items on the "left" of the found item, excluding itself.
-* `<`  — All items on the "right" of the found item, excluding itself.
-* `>=` — All items on the "left" of the found item, including itself.
-* `<=` — All items on the "right" of the found item, including itself.
+* `==` — Chaque élément correspondant à la requête.
+* `!=` — Chaque élément qui ne correspond pas à la requête.
+* `>` - Tous les éléments situés à "gauche" de l'élément trouvé, à l'exclusion de lui-même.
+* `<` - Tous les éléments situés à "droite" de l'élément trouvé, à l'exclusion de lui-même.
+* `>=` - Tous les éléments situés à "gauche" de l'élément trouvé, y compris lui-même.
+* `<=` - Tous les éléments situés à "droite" de l'élément trouvé, y compris lui-même.
 
-## Example(s)
+## Exemple(s)
 
 ```javascript
 bot.command({
     name: "array-some",
     code: `
-  $arraySome[array;aoi.js;==]
-  $createArray[array;aoi.js;akarui;documents;bot]
+  $arraySome[tableau;aoi.js;==]
+  $createArray[tableau;aoi.js;akarui;documents;bot]
   `
 });
 ```

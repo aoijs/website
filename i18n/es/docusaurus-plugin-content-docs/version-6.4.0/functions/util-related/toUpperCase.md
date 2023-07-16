@@ -1,10 +1,10 @@
 ---
 title: '$toUpperCase'
-description: '$toUpperCase will change the given text from lowercase to uppercase.'
+description: '$toUpperCase cambiará el texto de minúsculas a mayúsculas.'
 id: toUpperCase
 ---
 
-`$toUpperCase` will change the given text from lowercase to uppercase.
+`$toUpperCase` cambiará el texto dado de minúsculas a mayúsculas.
 
 ## Uso
 
@@ -16,11 +16,11 @@ $toUpperCase[text]
 
 | Campo | Tipo   | Parámetros                       | Requerido |
 | ----- | ------ | -------------------------------- |:---------:|
-| text  | string | The text to change to uppercase. | verdadera |
+| text  | string | El texto a cambiar a mayúsculas. | verdadera |
 
 ## Ejemplo(s)
 
-This will everything given to uppercase, in this case it would return `THIS IS AN EXAMPLE`:
+Esto hará todo lo dado a mayúsculas, en este caso devolvería `ESTO ES UN EXAMPLE`:
 
 ```javascript
 bot.command({

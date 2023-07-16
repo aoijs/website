@@ -1,10 +1,10 @@
 ---
 title: '$modifyRole'
-description: '$modifyRole will modify a given role.'
+description: '$modifyRole змінить вказану роль.'
 id: modifyRole
 ---
 
-`$modifyRole` will modify a given role.
+`$modifyRole` змінить вказану роль.
 
 ## Використання
 
@@ -14,20 +14,20 @@ $modifyRole[guildID;roleID;...data]
 
 ## Параметри
 
-| Поле    | Тип            | Опис                                          | Обов'язковий |
-| ------- | -------------- | --------------------------------------------- |:------------:|
-| guildID | integer        | The guild ID of where the role is located in. |     так      |
-| roleID  | integer        | The role ID to modify.                        |     так      |
-| ...data | string, object | New Role Data.                                |     так      |
+| Поле     | Тип           | Опис                                 | Обов'язковий |
+| -------- | ------------- | ------------------------------------ |:------------:|
+| гільдія  | ціле          | ID гільдії в якому знаходиться роль. |     так      |
+| roleID   | ціле          | ID ролі для зміни.                   |     так      |
+| ... дані | рядок, об'єкт | Нові дані ролей.                     |     так      |
 
 ## Приклад(и)
 
-This will edit a existing role / change its name to "Awesome!":
+Редагувати існуючу роль / змінити її ім'я на "Awesome!":
 
 ```javascript
 bot.command({
     name: 'modifyRole',
-    code: `
+    код: `
   $modifyRole[$guildID;roleID;{
     "name": "Awesome!"
   }]

@@ -1,28 +1,28 @@
 ---
 title: '$userPerms'
-description: '$userPerms will return a user''s permission of a specific guild.'
+description: '$userPerms devolverá el permiso de un usuario de un gremio específico.'
 id: userPerms
 ---
 
-`$userPerms` will return a user's permission of a specific guild.
+`$userPerms` devolverá el permiso de un usuario de un gremio específico.
 
 ## Uso
 
 ```php
-$userPerms[userID?;sep?;guildID?]
+$userPerms[usuarioID;sep?;servidorID?]
 ```
 
 ## Parámetros
 
-| Campo       | Tipo     | Parámetros                                      | Requerido |
-| ----------- | -------- | ----------------------------------------------- |:---------:|
-| usarioID?   | entero   | The user ID.                                    |    no     |
-| sep?        | consulta | Separator to separate multiple returned values. |    no     |
-| servidorID? | entero   | The guild ID.                                   |   falso   |
+| Campo       | Tipo   | Parámetros                                       | Requerido |
+| ----------- | ------ | ------------------------------------------------ |:---------:|
+| usarioID?   | entero | La identificación del usuario.                   |   falso   |
+| sep?        | cadena | Separador para separar varios valores devueltos. |   falso   |
+| servidorID? | entero | ID del servidor.                                 |   falso   |
 
 ## Ejemplo(s)
 
-This will return your permissions:
+Esto devolverá sus permisos:
 
 ```javascript
 bot.command({

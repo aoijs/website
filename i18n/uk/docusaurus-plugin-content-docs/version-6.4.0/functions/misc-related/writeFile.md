@@ -1,10 +1,10 @@
 ---
-title: '$writeFile'
-description: '$writeFile will create a new file in the bot''s directory.'
+title: $writeFile
+description: '$writeFile створить новий файл у теці бота.'
 id: writeFile
 ---
 
-`$writeFile` will create a new file in the bot's directory.
+`$writeFile` створить новий файл в каталозі бота.
 
 ## Використання
 
@@ -14,20 +14,20 @@ $writeFile[path;text;encoding?]
 
 ## Параметри
 
-| Поле     | Тип   | Опис                                    | Обов'язковий |
-| -------- | ----- | --------------------------------------- |:------------:|
-| path     | рядок | Where to create the file.               |     так      |
-| text     | рядок | What the content of the file should be. |     так      |
-| encoding | рядок | Text/File encoding.                     |      ні      |
+| Поле      | Тип   | Опис                       | Обов'язковий |
+| --------- | ----- | -------------------------- |:------------:|
+| шлях      | рядок | Місце створення файлу.     |     так      |
+| текст     | рядок | Який вміст файлу має бути. |     так      |
+| кодування | рядок | Кодування тексту/файлів.   |      ні      |
 
 ## Приклад(и)
 
-This will a file called "testing.txt" with the content of "Hello!":
+Файл буде називатися "testing.txt" із змістом "Привіт!":
 
 ```javascript
 bot.command({
     name: "writeFile",
-    code: `
+    код: `
     $writeFile[./testing.txt;Hello!;utf8]
     `
 });

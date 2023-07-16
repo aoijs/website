@@ -1,20 +1,20 @@
 ---
 title: '$eventEmit'
-description: '$eventEmit will emit a custom event.'
+description: '$eventEmit emitirá un evento personalizado.'
 id: eventEmit
 ---
 
-`$eventEmit` will emit a custom event.
+`$eventEmit` emitirá un evento personalizado.
 
 ## Uso
 
 ```php
-$eventEmit[name;...datas]
+$eventEmit[nombre;...datas]
 ```
 
 ## Parámetros
 
-| Campo    | Tipo     | Parámetros         | Requerido |
-| -------- | -------- | ------------------ |:---------:|
-| nombre   | consulta | Custom event name. | verdadero |
-| ...datas | consulta | Custom event data. | verdadero |
+| Campo    | Tipo     | Parámetros                       | Requerido |
+| -------- | -------- | -------------------------------- |:---------:|
+| nombre   | consulta | Nombre de evento personalizado.  | verdadero |
+| ...datos | consulta | Datos de eventos personalizados. | verdadero |

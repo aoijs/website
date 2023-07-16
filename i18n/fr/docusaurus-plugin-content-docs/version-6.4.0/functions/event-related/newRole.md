@@ -1,19 +1,19 @@
 ---
 title: '$newRole'
-description: '$newRole holds data of a role that was created, updated, or deleted. Used in role update / delete / create events, or else it won''t give any data.'
+description: '$newRole contient les données d''un rôle qui a été créé, mis à jour ou supprimé. Utilisé dans les évènements rôle mis à jour / supprimé / créé, sinon il ne donnera aucune donnée.'
 id: newRole
 ---
 
-`$newRole` holds data of a role that was created, updated, or deleted. Used in role update / delete / create events, or else it won't give any data.
+`$newRole` contient les données d'un rôle qui a été créé, mis à jour ou supprimé. Utilisé dans les évènements rôle mis à jour / supprimé / créé, sinon il ne donnera aucune donnée.
 
-## Usage
+## Utilisation
 
 ```php
 $newRole[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- |:--------:|
-| option | string | Option to retrieve. |   true   |
+| Champ  | Type                 | Description         | Obligatoire |
+| ------ | -------------------- | ------------------- |:-----------:|
+| option | chaîne de caractères | Option à récupérer. |    vrai     |

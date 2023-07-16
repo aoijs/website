@@ -1,10 +1,10 @@
 ---
 title: '$isMentioned'
-description: '$isMentioned checks if the query contains a mention.'
+description: '$isMentioned comprueba si la consulta contiene una mención.'
 id: isMentioned
 ---
 
-`$isMentioned` checks if the query contains a mention.
+`$isMentioned` comprueba si la consulta contiene una mención.
 
 ## Uso
 
@@ -14,17 +14,17 @@ $isMentioned[query]
 
 ## Parámetros
 
-| Campo    | Tipo   | Parámetros                                                    | Requerido |
-| -------- | ------ | ------------------------------------------------------------- |:---------:|
-| consulta | string | Where you want to check if a user/role/channel was mentioned. | verdadera |
+| Campo    | Tipo   | Parámetros                                                      | Requerido |
+| -------- | ------ | --------------------------------------------------------------- |:---------:|
+| consulta | string | Donde desea comprobar si se ha mencionado un usuario/rol/canal. | verdadera |
 
 ## Ejemplo(s)
 
-This will return `true` as you were mentioned within the message:
+Esto devolverá `verdadero` como te mencionaron en el mensaje:
 
 ```javascript
 bot.command({
-    name: 'isMentioned',
+    name: 'isMtioned',
     code: `
   $isMentioned[<@$authorID>]
   `

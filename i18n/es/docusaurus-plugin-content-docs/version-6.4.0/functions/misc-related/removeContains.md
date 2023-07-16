@@ -1,27 +1,27 @@
 ---
 title: '$removeContains'
-description: '$removeContains will remove specific text from a give text.'
+description: '$removeContains eliminará texto específico de un texto dado.'
 id: removeContains
 ---
 
-`$removeContains` will remove specific text from a give text.
+`$removeContains` eliminará texto específico de un texto dado.
 
 ## Uso
 
 ```php
-$removeContains[content;...words]
+$removeContains[contenido;...palabras]
 ```
 
 ## Parámetros
 
-| Campo     | Tipo     | Parámetros                           | Requerido |
-| --------- | -------- | ------------------------------------ |:---------:|
-| contenido | consulta | Text where to remove the words from. | verdadero |
-| ...words  | consulta | Text to remove from the text.        | verdadero |
+| Campo       | Tipo   | Parámetros                          | Requerido |
+| ----------- | ------ | ----------------------------------- |:---------:|
+| contenido   | cadena | Texto de dónde quitar las palabras. | verdadero |
+| ...palabras | cadena | Texto a eliminar del texto.         | verdadero |
 
 ## Ejemplo(s)
 
-This will remove the word "aoi.js from the given text:
+Esto eliminará la palabra "aoi.js" del texto dado:
 
 ```javascript
 bot.command({

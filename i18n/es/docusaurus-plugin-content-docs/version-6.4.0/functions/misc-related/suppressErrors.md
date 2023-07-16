@@ -1,10 +1,10 @@
 ---
 title: '$suppressErrors'
-description: '$suppressErrors will suppress aoi.js function errors.'
+description: '$suppressErrors eliminará los errores de función de aoi.js.'
 id: suppressErrors
 ---
 
-`$suppressErrors` will suppress aoi.js function errors.
+`$suppressErrors` eliminará los errores de función de aoi.js.
 
 ## Uso
 
@@ -14,20 +14,20 @@ $suppressErrors[errorMsg?]
 
 ## Parámetros
 
-| Campo    | Tipo   | Parámetros               | Requerido |
-| -------- | ------ | ------------------------ |:---------:|
-| errorMsg | string | Error message to return. |    no     |
+| Campo             | Tipo   | Parámetros                   | Requerido |
+| ----------------- | ------ | ---------------------------- |:---------:|
+| mensaje de error? | string | Mensaje de error a regresar. |   falso   |
 
 ## Ejemplo(s)
 
-This will suppress all errors of your code and return the pre-defined error message instead:
+Esto eliminará todos los errores de su código y devolverá el mensaje de error predefinido en su lugar:
 
 ```javascript
 bot.command({
     name: "suppressErrors",
     code: `
     $description
-    $suppressErrors[Something went wrong!]
-    ` // Intentional invalid usage of $description
+    $suppressErrors[Algo salió mal!]
+    ` // Uso intencional inválido de $description
 });
 ```
