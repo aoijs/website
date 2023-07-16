@@ -21,7 +21,7 @@ pagination_next: null
 
 This is like `$awaitFunc` of the bot creater app.
 ```js
-<client>.functionManager.createFunction({
+(client).functionManager.createFunction({
   name: "$callAwaited",
   type: "djs",
   code: async function(d) {
