@@ -6,7 +6,7 @@ id: commandsCount
 
 `$commandsCount` devolverá la cantidad de comandos.
 
-## Modo de uso
+## Uso
 
 ```php
 $commandsCount

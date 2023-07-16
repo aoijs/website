@@ -6,7 +6,7 @@ id: databasePing
 
 `$databasePing` devolverá el ping de su base de datos.
 
-## Modo de uso
+## Uso
 
 ```php
 $databasePing

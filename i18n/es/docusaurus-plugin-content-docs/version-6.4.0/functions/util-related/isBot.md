@@ -6,7 +6,7 @@ id: isBot
 
 `$isBot` will check if the given user is a bot.
 
-## Modo de uso
+## Uso
 
 ```php
 $isBot[userID?]

@@ -6,7 +6,7 @@ id: userTag
 
 `$userTag` will return a user's username and discriminator.
 
-## Modo de uso
+## Uso
 
 ```php
 $userTag[userID?]

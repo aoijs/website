@@ -6,7 +6,7 @@ id: messageWebhookID
 
 `$messageWebhookID` will return the ID of the webhook which sent the given message.
 
-## Modo de uso
+## Uso
 
 ```php
 $messageWebhookID[messageID?;channelID?]

@@ -6,7 +6,7 @@ id: getReactions
 
 `$getReactions` devolverá propiedades sobre una reacción dada en un mensaje específico.
 
-## Modo de uso
+## Uso
 
 ```php
 $getReactions[canalID;mensajeID;reacción;forzar?;opción?]

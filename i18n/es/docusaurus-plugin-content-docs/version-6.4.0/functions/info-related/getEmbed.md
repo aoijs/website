@@ -6,7 +6,7 @@ id: getEmbed
 
 `$getEmbed` devolverá propiedades sobre un embed dado.
 
-## Modo de uso
+## Uso
 
 ```php
 $getEmbed[canalID?;mensajeID?;índice?;opción?]

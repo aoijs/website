@@ -6,7 +6,7 @@ id: userReacted
 
 `$userReacted` will check if a specified user reacted with a specific emoji to a specific message and return either true or false.
 
-## Modo de uso
+## Uso
 
 ```php
 $userReacted[channelID;messageID;userID;emoji]

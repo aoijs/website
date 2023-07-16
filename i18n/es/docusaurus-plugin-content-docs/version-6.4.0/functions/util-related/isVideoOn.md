@@ -6,7 +6,7 @@ id: isVideoOn
 
 `$isVideoOn` checks if the given user has their video on in a voice channel.
 
-## Modo de uso
+## Uso
 
 ```php
 $isVideoOn[userID?;guildID?]

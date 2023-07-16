@@ -6,7 +6,7 @@ id: getBanReason
 
 `$getBanReason` devolverá la razón de baneo de un usuario específico.
 
-## Modo de uso
+## Uso
 
 ```php
 $getBanReason[servidorID?;usarioID?]

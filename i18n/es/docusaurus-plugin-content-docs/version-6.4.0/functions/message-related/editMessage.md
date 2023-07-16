@@ -6,7 +6,7 @@ id: editMessage
 
 `$editMessage` will edit a given message.
 
-## Modo de uso
+## Uso
 
 ```php
 $editMessage[messageID;content;channelID?]

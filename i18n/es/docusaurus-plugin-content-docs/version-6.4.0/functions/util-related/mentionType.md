@@ -6,7 +6,7 @@ id: mentionType
 
 `$mentionType` will return the type of the mention.
 
-## Modo de uso
+## Uso
 
 ```php
 $mentionType[content]

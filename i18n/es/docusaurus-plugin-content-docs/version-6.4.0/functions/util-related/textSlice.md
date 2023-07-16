@@ -6,7 +6,7 @@ id: textSlice
 
 `$textSlice` will slice a message depending on the given arguments.
 
-## Modo de uso
+## Uso
 
 ```php
 $textSlice[text;from?;to]

@@ -6,7 +6,7 @@ id: hasRoles
 
 `$hasRoles` check if the provided user has the roles listed in the roles argument.
 
-## Modo de uso
+## Uso
 
 ```php
 $hasRoles[guildID;userID;...roles]

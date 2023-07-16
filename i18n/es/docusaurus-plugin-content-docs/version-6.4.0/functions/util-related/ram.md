@@ -6,7 +6,7 @@ id: ram
 
 `$ram` will return the RAM usage of your bot.
 
-## Modo de uso
+## Uso
 
 ```php
 $ram

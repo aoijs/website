@@ -6,7 +6,7 @@ id: textSplit
 
 `$textSplit`
 
-## Modo de uso
+## Uso
 
 ```php
 $textSplit[text;sep?]

@@ -6,7 +6,7 @@ id: findMember
 
 `$findMember` will find a specific member in a specific guild.
 
-## Modo de uso
+## Uso
 
 ```php
 $findMember[userResolver;returnSelf?;guildID?]

@@ -6,7 +6,7 @@ id: onlyForChannels
 
 `$onlyForChannels` will check if the command was executed in one of the listed channels and return a error message if not.
 
-## Modo de uso
+## Uso
 
 ```php
 $onlyForChannels[...categoryIds;error]

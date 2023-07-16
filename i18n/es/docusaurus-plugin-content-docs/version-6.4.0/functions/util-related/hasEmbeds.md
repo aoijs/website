@@ -6,7 +6,7 @@ id: hasEmbeds
 
 `$hasEmbeds` will check if there are embeds attached to the message.
 
-## Modo de uso
+## Uso
 
 ```php
 $hasEmbeds[messageID;channelID]

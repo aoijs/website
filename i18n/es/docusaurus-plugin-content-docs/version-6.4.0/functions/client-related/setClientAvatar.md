@@ -6,7 +6,7 @@ id: setClientAvatar
 
 `$setClientAvatar` cambiará el avatar del cliente.
 
-## Modo de uso
+## Uso
 
 ```php
 $setClientAvatar[URL]

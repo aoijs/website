@@ -6,7 +6,7 @@ id: userNickname
 
 `$userNickname` will return a user's nickname.
 
-## Modo de uso
+## Uso
 
 ```php
 $userNickname[guildID?;userID?;returnUser?]

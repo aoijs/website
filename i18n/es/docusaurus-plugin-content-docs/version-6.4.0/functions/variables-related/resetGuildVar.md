@@ -6,7 +6,7 @@ id: resetGuildVar
 
 `$resetGuildVar` will set a given guild variable to its default value.
 
-## Modo de uso
+## Uso
 
 ```php
 $resetGuildVar[varname;table?]

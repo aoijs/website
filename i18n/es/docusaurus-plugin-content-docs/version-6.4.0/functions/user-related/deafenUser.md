@@ -6,7 +6,7 @@ id: deafenUser
 
 `$deafenUser` will deafen a user.
 
-## Modo de uso
+## Uso
 
 ```php
 $deafenUser[userID;deafen?]

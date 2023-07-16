@@ -6,7 +6,7 @@ id: resolveEmojiID
 
 `$resolveEmojiID` will resolve a certain emoji.
 
-## Modo de uso
+## Uso
 
 ```php
 $resolveEmojiID[emojiResolver]

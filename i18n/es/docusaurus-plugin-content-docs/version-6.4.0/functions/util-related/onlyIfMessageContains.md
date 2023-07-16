@@ -6,7 +6,7 @@ id: onlyIfMessageContains
 
 `$onlyIfMessageContains` will check if the message contains the given text and if not return a error message.
 
-## Modo de uso
+## Uso
 
 ```php
 $onlyIfMessageContains[content;...text;error]

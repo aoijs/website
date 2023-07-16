@@ -6,7 +6,7 @@ id: userBadges
 
 `$userBadges` will return the given users's badges.
 
-## Modo de uso
+## Uso
 
 ```php
 $userBadges[userId?;sep?]

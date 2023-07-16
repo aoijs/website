@@ -6,7 +6,7 @@ id: isDeafen
 
 `$isDeafen` will check if a certain user is deafened or not.
 
-## Modo de uso
+## Uso
 
 ```php
 $isDeafen[userID?;guildID?]

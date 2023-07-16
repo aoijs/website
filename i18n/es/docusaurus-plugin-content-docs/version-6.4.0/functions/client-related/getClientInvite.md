@@ -6,7 +6,7 @@ id: getClientInvite
 
 `$getClientInvite` devolverá la invitación de su bot con los permisos especificados.
 
-## Modo de uso
+## Uso
 
 ```php
 $getClientInvite[...permisos?]

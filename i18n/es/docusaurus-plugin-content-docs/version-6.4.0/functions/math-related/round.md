@@ -6,7 +6,7 @@ id: round
 
 `$round` redondeará al siguiente número entero.
 
-## Modo de uso
+## Uso
 
 ```php
 $round[número]

@@ -163,7 +163,8 @@ Developer Portal.
 ### Custom Events
 
 * **onInteractionCreate** &rarr; Emitted whenever a Interaction is created.
-* **onApplicationCmdPermsUpdate** &rarr; Emitted whenever a Application Command gets updated (for example, name).
+* **onFunctionError** &rarr; Emitted whenever a command or function returns a error message.
+* **onApplicationCommandPermissionsUpdate** &rarr; Emitted whenever a Application Command gets updated (for example, name).
     * `$oldApplicationCmd[option?]` &rarr; Retrieves data of the old application command.
     * `$newApplicationCmd[option?]` &rarr; Retrieves data of the updated application command.
 * **onVariableCreate** &rarr; Emitted whenever a variable is created.
@@ -195,20 +196,9 @@ const bot = new AoiClient({
 
 ```javascript
 module.exports = [{
-    name: string
+    name?: string
     type: string, // Event name
     channel: integer, 
     code: ...
 }]
 ```
-
-<!--- links -->
-
-[1]: #table-of-content
-[2]: #types-of-events
-[2.1]: #message-based-Events
-[2.2]: #guild-based-events
-[2.3]: #guild-members-based-events
-[2.4]: #user-based-events
-[2.5]: #custom-events
-[3]: #example-usage-of-events

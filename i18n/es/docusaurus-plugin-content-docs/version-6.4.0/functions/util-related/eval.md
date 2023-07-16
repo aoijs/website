@@ -6,7 +6,7 @@ id: eval
 
 `$eval` will execute given aoi.js code.
 
-## Modo de uso
+## Uso
 
 ```php
 $eval[code;returnCode?;sendMessage?;returnExecution?;returnID?]

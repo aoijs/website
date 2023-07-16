@@ -6,7 +6,7 @@ id: isValidObject
 
 `$isValidObject` checks if the given json is a valid object.
 
-## Modo de uso
+## Uso
 
 ```php
 $isValidObject[object]

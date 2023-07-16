@@ -6,7 +6,7 @@ id: userPlatform
 
 `$userPlatform` will return the platform which the user is using Discord with.
 
-## Modo de uso
+## Uso
 
 ```php
 $userPlatform[userID?;guildID?;sep?]

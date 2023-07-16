@@ -6,7 +6,7 @@ id: getRoleColor
 
 `$getRoleColor` devolverá el color del rol dado.
 
-## Modo de uso
+## Uso
 
 ```php
 $getRoleColor[rolId;servidorID?]

@@ -6,7 +6,7 @@ id: setUserVar
 
 `$setUserVar` will change the value of a given user variable.
 
-## Modo de uso
+## Uso
 
 ```php
 $setUserVar[varname;value;userID?;id?;table?]

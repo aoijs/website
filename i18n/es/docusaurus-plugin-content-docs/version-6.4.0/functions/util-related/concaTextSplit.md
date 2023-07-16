@@ -6,7 +6,7 @@ id: concatTextSplit
 
 `$concatTextSplit` will concatenates the text with the given separator.
 
-## Modo de uso
+## Uso
 
 ```php
 $concatTextSplit[...text]

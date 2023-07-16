@@ -6,7 +6,7 @@ id: isBanned
 
 `$isBanned` checks if a given user is banned in a specific guild.
 
-## Modo de uso
+## Uso
 
 ```php
 $isBanned[guildID;userID]

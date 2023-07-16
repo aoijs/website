@@ -6,7 +6,7 @@ id: wait
 
 `$wait` will delay functions from executing for a given time.
 
-## Modo de uso
+## Uso
 
 ```php
 $wait[time]

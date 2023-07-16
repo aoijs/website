@@ -6,7 +6,7 @@ id: isRoleManaged
 
 `$isRoleManaged` will check if a certain role is managed by Discord.
 
-## Modo de uso
+## Uso
 
 ```php
 $isRoleManaged[roleID;guildID?]

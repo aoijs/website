@@ -6,7 +6,7 @@ id: getChannelSlowmode
 
 `$getChannelSlowmode` devolverá el modo pausado de un canal en segundos.
 
-## Modo de uso
+## Uso
 
 ```php
 $getChannelSlowmode[canalID?]

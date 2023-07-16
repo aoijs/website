@@ -6,7 +6,7 @@ id: findGuildChannel
 
 `$findGuildChannel` will search a guild channel within a guild.
 
-## Modo de uso
+## Uso
 
 ```php
 $findGuildChannel[channelResolver;returnSelf?;guildID?]

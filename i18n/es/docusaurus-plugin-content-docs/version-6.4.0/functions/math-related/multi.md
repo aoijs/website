@@ -6,7 +6,7 @@ id: multi
 
 `$multi` operación / multiplicación.
 
-## Modo de uso
+## Uso
 
 ```php
 $multi[núm;núm]

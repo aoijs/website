@@ -6,7 +6,7 @@ id: globalUserLeaderBoard
 
 `$globalUserLeaderBoard` will return a leaderboard of a global user variable.
 
-## Modo de uso
+## Uso
 
 ```php
 $globalUserLeaderBoard[variable;type?;custom?;list?;page?;table?]

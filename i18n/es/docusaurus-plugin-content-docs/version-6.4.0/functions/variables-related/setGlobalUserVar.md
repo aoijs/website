@@ -6,7 +6,7 @@ id: setGlobalUserVar
 
 `$setGlobalUserVar` will change the value of a given global user variable.
 
-## Modo de uso
+## Uso
 
 ```php
 $setGlobalUserVar[varname;value;userID?;table?]

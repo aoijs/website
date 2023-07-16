@@ -6,7 +6,7 @@ id: clientMutualGuilds
 
 `$clientMutualGuilds` devolverá los servidores mutuos con un usuario dado y el bot.
 
-## Modo de uso
+## Uso
 
 ```php
 $clientMutualGuilds[usarioID?;sep?]

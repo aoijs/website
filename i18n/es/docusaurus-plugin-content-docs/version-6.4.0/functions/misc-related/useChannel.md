@@ -6,7 +6,7 @@ id: useChannel
 
 `$useChannel` will use the specified channel and execute all function inside of it instead.
 
-## Modo de uso
+## Uso
 
 ```php
 $useChannel[channelID]

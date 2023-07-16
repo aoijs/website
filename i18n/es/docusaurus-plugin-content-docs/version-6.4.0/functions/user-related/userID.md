@@ -6,7 +6,7 @@ id: usarioID
 
 `$userID` will return a given user's ID.
 
-## Modo de uso
+## Uso
 
 ```php
 $userID[user]

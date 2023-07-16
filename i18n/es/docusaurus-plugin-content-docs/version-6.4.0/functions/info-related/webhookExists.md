@@ -6,7 +6,7 @@ id: webhookExists
 
 `$webhookExists` comprobará si un webhook dado existe.
 
-## Modo de uso
+## Uso
 
 ```php
 $webhookExists[id;token]

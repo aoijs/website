@@ -6,7 +6,7 @@ id: onlyClientPerms
 
 `$onlyClientPerms` comprobará si el bot tiene el permiso indicado y devolverá un mensaje de error en caso contrario.
 
-## Modo de uso
+## Uso
 
 ```php
 $onlyClientPerms[...permisos;error]

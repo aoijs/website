@@ -6,7 +6,7 @@ id: messageType
 
 `$messageType` will return the type of a given message.
 
-## Modo de uso
+## Uso
 
 ```php
 $messageType[messageID?;channelID?]

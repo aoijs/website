@@ -6,7 +6,7 @@ id: setClientName
 
 `$setClientName` cambiará el nombre de usuario de Discord del cliente.
 
-## Modo de uso
+## Uso
 
 ```php
 $setClientName[nombre de usario]

@@ -6,7 +6,7 @@ id: removeContains
 
 `$removeContains` will remove specific text from a give text.
 
-## Modo de uso
+## Uso
 
 ```php
 $removeContains[content;...words]

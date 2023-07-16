@@ -6,7 +6,7 @@ id: userHighestRole
 
 `$userHighestRole` devolverá el rol más alto de un usuario específico.
 
-## Modo de uso
+## Uso
 
 ```php
 $userHighestRole[usarioID?;servidorID?;opción?]

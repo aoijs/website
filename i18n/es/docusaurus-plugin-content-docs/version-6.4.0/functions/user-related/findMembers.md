@@ -6,7 +6,7 @@ id: findMembers
 
 `$findMembers` will return all members with similar username.
 
-## Modo de uso
+## Uso
 
 ```php
 $findMembers[userResolver;limit?;type?;force?;format?]

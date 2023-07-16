@@ -6,7 +6,7 @@ id: hoistedRole
 
 `$hoistedRole` devolverá el rol separado mostrado más alto de un usuario.
 
-## Modo de uso
+## Uso
 
 ```php
 $hoistedRole[usarioID?;servidorID?;opción?]

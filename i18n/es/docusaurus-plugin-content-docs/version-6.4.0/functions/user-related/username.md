@@ -6,7 +6,7 @@ id: nombre de usuario
 
 `$username` will return a user's username.
 
-## Modo de uso
+## Uso
 
 ```php
 $username[userID?]

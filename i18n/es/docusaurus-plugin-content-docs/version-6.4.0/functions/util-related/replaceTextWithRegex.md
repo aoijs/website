@@ -6,7 +6,7 @@ id: replaceTextWithRegex
 
 `$replaceTextWithRegex` will replace specific segments of text.
 
-## Modo de uso
+## Uso
 
 ```php
 $replaceTextWithRegex[text;reg;flags;newText]

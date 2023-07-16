@@ -6,7 +6,7 @@ id: clientToken
 
 `$clientToken` devolverá el token del cliente.
 
-## Modo de uso
+## Uso
 
 ```php
 $clientToken

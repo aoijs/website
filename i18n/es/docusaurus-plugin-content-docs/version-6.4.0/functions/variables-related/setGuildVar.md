@@ -6,7 +6,7 @@ id: setGuildVar
 
 `$setGuildVar` will change the value of a given guild variable.
 
-## Modo de uso
+## Uso
 
 ```php
 $setGuildVar[varname;value;guildID?;table?]

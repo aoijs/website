@@ -6,7 +6,7 @@ id: getUserVar
 
 `$getUserVar` will return the value of a given user variable.
 
-## Modo de uso
+## Uso
 
 ```php
 $getUserVar[varname;userID?;id?;table?]

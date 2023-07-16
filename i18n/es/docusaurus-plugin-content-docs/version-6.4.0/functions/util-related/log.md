@@ -6,7 +6,7 @@ id: log
 
 `$log` will log a given message in your bot's console.
 
-## Modo de uso
+## Uso
 
 ```php
 $log[content]

@@ -6,7 +6,7 @@ id: cooldown
 
 `$cooldown` will set a user-based cooldown.
 
-## Modo de uso
+## Uso
 
 ```php
 $cooldown[time;errorMessage

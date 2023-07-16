@@ -6,7 +6,7 @@ id: isCustomEmoji
 
 `$isCustomEmoji` will check if the given emoji is a custom emoji or not.
 
-## Modo de uso
+## Uso
 
 ```php
 $isCustomEmoji[emojiResolver;guildID?]

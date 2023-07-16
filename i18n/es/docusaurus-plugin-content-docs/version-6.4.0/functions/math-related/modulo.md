@@ -6,7 +6,7 @@ id: modulo
 
 `$modulo` operación / el resto al dividir.
 
-## Modo de uso
+## Uso
 
 ```php
 $modulo[núm;núm]

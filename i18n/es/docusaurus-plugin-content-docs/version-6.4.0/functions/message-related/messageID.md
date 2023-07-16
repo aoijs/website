@@ -6,7 +6,7 @@ id: ID de mensaje
 
 `$messageID` will return the message ID.
 
-## Modo de uso
+## Uso
 
 ```php
 $messageID

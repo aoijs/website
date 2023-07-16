@@ -6,7 +6,7 @@ id: cpu
 
 `$cpu` devolverá el uso de CPU de un proceso o del SO.
 
-## Modo de uso
+## Uso
 
 ```php
 $cpu[opción?]

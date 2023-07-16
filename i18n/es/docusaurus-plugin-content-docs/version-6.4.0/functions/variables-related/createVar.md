@@ -6,7 +6,7 @@ id: createVar
 
 `$createVar` will create a new variable.
 
-## Modo de uso
+## Uso
 
 ```php
 $createVar[table;...vars]

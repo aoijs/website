@@ -6,7 +6,7 @@ id: getApplicationCommandOptions
 
 `$getApplicationCommandOptions` will return the ID of a given application command.
 
-## Modo de uso
+## Uso
 
 ```php
 $getApplicationCommandOptions[name;type?]

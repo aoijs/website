@@ -6,7 +6,7 @@ id: isTicket
 
 `$isTicket` will return either true or false depending on the channel being a ticket channel.
 
-## Modo de uso
+## Uso
 
 ```php
 $isTicket[channelID?]

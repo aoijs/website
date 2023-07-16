@@ -6,7 +6,7 @@ id: channelNSFW
 
 `$channelNSFW` devolverá true o false dependiendo de si el canal dado está marcado como NSFW o no.
 
-## Modo de uso
+## Uso
 
 ```php
 $channelNSFW[canalID?]

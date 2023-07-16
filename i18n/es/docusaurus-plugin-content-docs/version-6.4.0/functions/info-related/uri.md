@@ -6,7 +6,7 @@ id: uri
 
 `$uri` codificará o descodificará una URL.
 
-## Modo de uso
+## Uso
 
 ```php
 $uri[texto;tipo?]

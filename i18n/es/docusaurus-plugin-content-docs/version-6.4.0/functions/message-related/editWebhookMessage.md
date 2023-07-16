@@ -6,7 +6,7 @@ id: editWebhookMessage
 
 `$editWebhookMessage` will edit a given webhook message.
 
-## Modo de uso
+## Uso
 
 ```php
 $editWebhookMessage[webhookID;webhookToken;messageID;content]

@@ -6,7 +6,7 @@ id: getAttachment
 
 `$getAttachment` devolverá las propiedades de un adjunto.
 
-## Modo de uso
+## Uso
 
 ```php
 $getAttachment[canalID;mensajeID;índice?;opción?]

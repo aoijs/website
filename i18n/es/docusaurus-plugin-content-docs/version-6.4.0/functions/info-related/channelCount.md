@@ -6,7 +6,7 @@ id: channelCount
 
 `$channelCount` devolverá la cantidad de canales de un tipo determinado.
 
-## Modo de uso
+## Uso
 
 ```php
 $channelCount[servidorID?;tipo?]

@@ -6,7 +6,7 @@ id: channelExists
 
 `$channelExists` will check if the given channel exists.
 
-## Modo de uso
+## Uso
 
 ```php
 $channelExists[channel]

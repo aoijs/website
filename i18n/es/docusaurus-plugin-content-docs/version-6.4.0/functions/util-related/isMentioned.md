@@ -6,7 +6,7 @@ id: isMentioned
 
 `$isMentioned` checks if the query contains a mention.
 
-## Modo de uso
+## Uso
 
 ```php
 $isMentioned[query]

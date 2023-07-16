@@ -6,7 +6,7 @@ id: roleExists
 
 `$roleExists` will check if a certain role exists within a certain guild.
 
-## Modo de uso
+## Uso
 
 ```php
 $roleExists[roleResolver;guildID?]

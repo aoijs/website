@@ -6,7 +6,7 @@ id: minute
 
 `$minute` will return the current minute in CST.
 
-## Modo de uso
+## Uso
 
 ```php
 $minute

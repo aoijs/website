@@ -6,7 +6,7 @@ id: mentionedChannels
 
 `$mentionedChannels` will return the ID of a channel retrieved from the mention.
 
-## Modo de uso
+## Uso
 
 ```php
 $mentionedChannels[index;returnSelf?]

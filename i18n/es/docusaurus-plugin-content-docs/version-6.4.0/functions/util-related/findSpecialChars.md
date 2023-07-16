@@ -6,7 +6,7 @@ id: findSpecialChars
 
 `$findSpecialChars` will return all special characters of the given argument.
 
-## Modo de uso
+## Uso
 
 ```php
 $findSpecialChars[text]

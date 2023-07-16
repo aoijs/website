@@ -6,7 +6,7 @@ id: randomString
 
 `$randomString` will generate a random string.
 
-## Modo de uso
+## Uso
 
 ```php
 $randomString[range;diffExec?]

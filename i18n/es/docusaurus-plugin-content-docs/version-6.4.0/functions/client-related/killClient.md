@@ -6,7 +6,7 @@ id: killClient
 
 `$killClient` cerrará forzosamente su bot.
 
-## Modo de uso
+## Uso
 
 ```php
 $killClient

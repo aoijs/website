@@ -6,7 +6,7 @@ id: vanityUses
 
 `$vanityUses` devolverá los usos de una URL de vanidad.
 
-## Modo de uso
+## Uso
 
 ```php
 $vanityUses[servidorID?]

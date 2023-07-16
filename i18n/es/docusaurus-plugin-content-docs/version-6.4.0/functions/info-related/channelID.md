@@ -6,7 +6,7 @@ id: canalID
 
 `$channelID` devolverá el ID de canal del nombre de canal dado.
 
-## Modo de uso
+## Uso
 
 ```php
 $channelID[nombre?]

@@ -6,7 +6,7 @@ id: tempCooldown
 
 `$tempCooldown` will create a temporary cooldown for a command.
 
-## Modo de uso
+## Uso
 
 ```php
 $tempCooldown[time;id;errorMessage?]

@@ -6,7 +6,7 @@ id: get
 
 `$get` will retrieve temporary variables stored by `$let`.
 
-## Modo de uso
+## Uso
 
 ```php
 $get[var]

@@ -6,7 +6,7 @@ id: memberExists
 
 `$memberExists` check if a given user is member of the given guild.
 
-## Modo de uso
+## Uso
 
 ```php
 $memberExists[userID;guildID?]

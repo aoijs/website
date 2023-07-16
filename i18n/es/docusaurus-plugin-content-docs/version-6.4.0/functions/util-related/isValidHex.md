@@ -6,7 +6,7 @@ id: isValidHex
 
 `$isValidHex` will check if the given hex / decimal color is valid.
 
-## Modo de uso
+## Uso
 
 ```php
 $isValidHex[colorResolver]

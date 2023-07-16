@@ -6,7 +6,7 @@ id: advanceCooldown
 
 `$advanceCooldown` will set a cooldown for a given ID.
 
-## Modo de uso
+## Uso
 
 ```php
 $advanceCooldown[time;id;errorMessage]

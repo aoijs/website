@@ -6,7 +6,7 @@ id: year
 
 `$year` will return the current year in CST.
 
-## Modo de uso
+## Uso
 
 ```php
 $year

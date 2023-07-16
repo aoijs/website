@@ -6,7 +6,7 @@ id: userLeaderBoard
 
 `$userLeaderBoard` will return a leaderboard of a user variable.
 
-## Modo de uso
+## Uso
 
 ```php
 $userLeaderBoard[guildID;variable;order?;custom?;list?;page?;table?]

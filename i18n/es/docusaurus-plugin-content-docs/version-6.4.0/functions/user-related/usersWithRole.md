@@ -6,7 +6,7 @@ id: usersWithRole
 
 `$usersWithRole` will return the users who have a specific role.
 
-## Modo de uso
+## Uso
 
 ```php
 $usersWithRole[roleID;guildID?;option?;sep?]

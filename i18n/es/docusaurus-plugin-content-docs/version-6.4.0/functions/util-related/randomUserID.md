@@ -6,7 +6,7 @@ id: randomUserID
 
 `$randomUserID` will return a random username.
 
-## Modo de uso
+## Uso
 
 ```php
 $randomUserID[global/guildID?]

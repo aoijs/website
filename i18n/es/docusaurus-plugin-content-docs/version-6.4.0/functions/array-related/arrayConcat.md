@@ -6,7 +6,7 @@ id: arrayConcat
 
 `$arrayConcat` concatenará varios arreglos.
 
-## Modo de Uso
+## Uso
 
 ```php
 $arrayConcat[separador;...arrays]

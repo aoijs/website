@@ -6,7 +6,7 @@ id: timeZone
 
 `$timeZone` will change the timezone of any time function in the used command.
 
-## Modo de uso
+## Uso
 
 ```php
 $timeZone[timezone]

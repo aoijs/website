@@ -6,7 +6,7 @@ id: userRoleColor
 
 `$userRoleColor` will return the role color of a user's highest assigned role.
 
-## Modo de uso
+## Uso
 
 ```php
 $userRoleColor[userID?;guildID?]

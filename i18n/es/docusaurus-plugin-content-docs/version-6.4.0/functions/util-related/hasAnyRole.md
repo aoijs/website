@@ -6,7 +6,7 @@ id: hasAnyRole
 
 `$hasAnyRole` will check if the provided user has any of the roles listed in the roles argument.
 
-## Modo de uso
+## Uso
 
 ```php
 $hasAnyRole[guildID;userID;...roles]

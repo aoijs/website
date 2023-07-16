@@ -6,7 +6,7 @@ id: fileSize
 
 `$fileSize` will return the size of a given file.
 
-## Modo de uso
+## Uso
 
 ```php
 $fileSize[path;unit?]

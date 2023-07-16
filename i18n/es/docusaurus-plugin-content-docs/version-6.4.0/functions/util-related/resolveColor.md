@@ -6,7 +6,7 @@ id: resolveColor
 
 `$resolveColor` will convert a given color to a given type.
 
-## Modo de uso
+## Uso
 
 ```php
 $resolveColor[type;returnAs?;...data]

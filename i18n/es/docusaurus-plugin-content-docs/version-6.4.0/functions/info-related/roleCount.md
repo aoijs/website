@@ -6,7 +6,7 @@ id: roleCount
 
 `$roleCount` devolverá el recuento de roles del servidor.
 
-## Modo de uso
+## Uso
 
 ```php
 $roleCount[servidorID?;obtenerPrimero?]

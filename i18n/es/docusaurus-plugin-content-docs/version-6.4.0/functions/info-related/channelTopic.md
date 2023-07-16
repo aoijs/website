@@ -6,7 +6,7 @@ id: channelTopic
 
 `$channelTopic` devolverá el tema del canal dado.
 
-## Modo de uso
+## Uso
 
 ```php
 $channelTopic[canalID?]

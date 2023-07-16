@@ -6,7 +6,7 @@ id: userLowestRole
 
 `$userLowestRole` devolverá el rol más bajo de un usuario específico.
 
-## Modo de uso
+## Uso
 
 ```php
 $userLowestRole[usarioID?;servidorID?]

@@ -6,7 +6,7 @@ id: digitalFormat
 
 `$digitalFormat` will convert ms to digital formatted, readable time.
 
-## Modo de uso
+## Uso
 
 ```php
 $digitalFormat[ms]

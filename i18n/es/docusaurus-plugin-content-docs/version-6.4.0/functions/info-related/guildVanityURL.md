@@ -6,7 +6,7 @@ id: guildVanityURL
 
 `$guildVanityURL` devolverá la URL de vanidad de un servidor.
 
-## Modo de uso
+## Uso
 
 ```php
 $guildVanityURL[servidorID?]

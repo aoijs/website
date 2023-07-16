@@ -6,7 +6,7 @@ id: shutdown
 
 `$shutdown` will shutdown / end the process of your bot.
 
-## Modo de uso
+## Uso
 
 ```php
 $shutdown

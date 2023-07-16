@@ -6,7 +6,7 @@ id: randomChannelID
 
 `$randomChannelID` will return a random channel ID of all guilds or of a specific guild.
 
-## Modo de uso
+## Uso
 
 ```php
 $randomChannelID[guildID/global?;type?]

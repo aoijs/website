@@ -6,7 +6,7 @@ id: getCooldownTime
 
 `$getCooldownTime` will return the cooldown time of a given command.
 
-## Modo de uso
+## Uso
 
 ```php
 $getCooldownTime[time;type;command;id]

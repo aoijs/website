@@ -6,7 +6,7 @@ id: isThread
 
 `$isThread` will check if the given channel is a thread or not.
 
-## Modo de uso
+## Uso
 
 ```php
 $isThread[channelID?]

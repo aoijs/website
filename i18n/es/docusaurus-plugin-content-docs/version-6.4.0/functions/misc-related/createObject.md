@@ -6,7 +6,7 @@ id: createObject
 
 `$createObject` will create a new object.
 
-## Modo de uso
+## Uso
 
 ```php
 $createObject[object]

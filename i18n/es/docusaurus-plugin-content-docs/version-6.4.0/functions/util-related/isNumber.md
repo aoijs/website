@@ -6,7 +6,7 @@ id: isNumber
 
 `$isNumber` will check if the given argument is a number.
 
-## Modo de uso
+## Uso
 
 ```php
 $isNumber[num]

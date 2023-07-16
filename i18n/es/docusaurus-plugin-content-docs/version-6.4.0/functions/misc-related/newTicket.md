@@ -6,7 +6,7 @@ id: newTicket
 
 `$newTicket` will create a new ticket channel.
 
-## Modo de uso
+## Uso
 
 ```php
 $newTicket[name;msg;categoryID?;returnId?;error?]

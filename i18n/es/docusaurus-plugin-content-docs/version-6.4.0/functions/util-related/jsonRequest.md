@@ -6,7 +6,7 @@ id: jsonRequest
 
 `$jsonRequest` will send a GET request to a given URL.
 
-## Modo de uso
+## Uso
 
 ```php
 $jsonRequest[URL;property?;error?;...header?]

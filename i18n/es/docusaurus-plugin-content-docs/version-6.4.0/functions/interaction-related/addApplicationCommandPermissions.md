@@ -4,7 +4,7 @@ description: '$addApplicationCommandPermissions cambiará los permisos de un com
 id: addApplicationCommandPermissions
 ---
 
-## Modo de uso
+## Uso
 
 ```php
 $addApplicationCommandPermissions[servidorID/global?;id;...perms]

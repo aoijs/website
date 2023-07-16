@@ -6,7 +6,7 @@ id: setCacheData
 
 `$setCacheData` will modify given cache data.
 
-## Modo de uso
+## Uso
 
 ```php
 $setCacheData[type;cacheName;cacheKey;cacheValue]

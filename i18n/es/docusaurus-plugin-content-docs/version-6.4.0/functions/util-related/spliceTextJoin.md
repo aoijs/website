@@ -6,7 +6,7 @@ id: spliceTextJoin
 
 `$spliceTextJoin`
 
-## Modo de uso
+## Uso
 
 ```php
 $spliceTextJoin[text;splitter;sep1?;sep2?]

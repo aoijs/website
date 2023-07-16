@@ -6,7 +6,7 @@ id: roleName
 
 `$roleName` devolverá el nombre de un rol específico.
 
-## Modo de uso
+## Uso
 
 ```php
 $roleName[rolID;servidorID?]

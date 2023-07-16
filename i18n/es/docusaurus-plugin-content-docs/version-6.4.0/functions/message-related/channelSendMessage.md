@@ -6,7 +6,7 @@ id: channelSendMessage
 
 `$channelSendMessage` enviará un mensaje en un canal específico.
 
-## Modo de uso
+## Uso
 
 ```php
 $channelSendMessage[canalID;contenido;devolverID?]

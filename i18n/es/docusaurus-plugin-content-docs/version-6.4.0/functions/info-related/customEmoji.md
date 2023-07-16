@@ -6,7 +6,7 @@ id: customEmoji
 
 `$customEmoji` devolverá un emoji personalizado.
 
-## Modo de uso
+## Uso
 
 ```php
 $customEmoji[emojiResolver;servidorID?]

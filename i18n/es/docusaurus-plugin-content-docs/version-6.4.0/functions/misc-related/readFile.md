@@ -6,7 +6,7 @@ id: readFile
 
 `$readFile` will read a file's content and return it.
 
-## Modo de uso
+## Uso
 
 ```php
 $readFile[path]

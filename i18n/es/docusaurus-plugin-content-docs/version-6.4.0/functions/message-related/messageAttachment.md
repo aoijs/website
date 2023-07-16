@@ -6,7 +6,7 @@ id: messageAttachment
 
 `$messageAttachment` will return a message attachment depending on the given index.
 
-## Modo de uso
+## Uso
 
 ```php
 $messageAttachment[index?]

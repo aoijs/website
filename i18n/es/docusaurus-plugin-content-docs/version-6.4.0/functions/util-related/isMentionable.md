@@ -6,7 +6,7 @@ id: isMentionable
 
 `$isMentionable` check if a given role is mentionable.
 
-## Modo de uso
+## Uso
 
 ```php
 $isMentionable[roleID;guildID?]

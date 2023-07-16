@@ -6,7 +6,7 @@ id: isHoisted
 
 `$isHoisted` will check if a specific role is hoisted.
 
-## Modo de uso
+## Uso
 
 ```php
 $isHoisted[roleID;guildID?]

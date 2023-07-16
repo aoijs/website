@@ -6,7 +6,7 @@ id: loop
 
 `$loop` will execute awaited commands a given amount of times.
 
-## Modo de uso
+## Uso
 
 ```php
 $loop[time;awaitData;...awaitedCmds]

@@ -6,7 +6,7 @@ id: authorAvatar
 
 `$authorAvatar` will return the profile picture of the command author.
 
-## Modo de uso
+## Uso
 
 ```php
 $authorAvatar[size?;dynamic?;format?]

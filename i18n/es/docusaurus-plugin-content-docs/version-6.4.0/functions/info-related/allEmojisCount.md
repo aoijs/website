@@ -6,7 +6,7 @@ id: allEmojisCount
 
 `$allEmojisCount` devolverá la cantidad de emojis de un tipo determinado.
 
-## Modo de uso
+## Uso
 
 ```php
 $allEmojisCount[tipo?]

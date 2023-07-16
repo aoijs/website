@@ -6,7 +6,7 @@ id: hasPermsInChannel
 
 `$hasPermsInChannel` will check if the user has one of the required permission in the given channel.
 
-## Modo de uso
+## Uso
 
 ```php
 $hasPermsInChannel[channelID;userOrRoleID;...perms]

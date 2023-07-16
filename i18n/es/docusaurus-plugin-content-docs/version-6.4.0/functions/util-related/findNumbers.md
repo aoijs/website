@@ -6,7 +6,7 @@ id: findNumbers
 
 `$findNumbers` will attempt to return all numbers in a message of a given text.
 
-## Modo de uso
+## Uso
 
 ```php
 $findNumbers[text]

@@ -6,7 +6,7 @@ id: ordinal
 
 `$ordinal` añade `st`, `nd`, `rd`, `th` a un número como `1st`, `2nd`, `3rd`, `4th`.
 
-## Modo de uso
+## Uso
 
 ```php
 $ordinal[número]

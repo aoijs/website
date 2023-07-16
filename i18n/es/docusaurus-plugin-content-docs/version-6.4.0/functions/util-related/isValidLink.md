@@ -6,7 +6,7 @@ id: isValidLink
 
 `$isValidLink` will check if the given link is valid.
 
-## Modo de uso
+## Uso
 
 ```php
 $isValidLink[URL]

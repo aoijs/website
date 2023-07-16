@@ -6,7 +6,7 @@ id: messageExists
 
 `$messageExists` will check if a specific message exists.
 
-## Modo de uso
+## Uso
 
 ```php
 $messageExists[messageID;channelID?]

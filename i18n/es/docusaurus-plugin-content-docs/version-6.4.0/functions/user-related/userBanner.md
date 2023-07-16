@@ -6,7 +6,7 @@ id: userBanner
 
 `$userBanner` will return the profile banner of a specific user.
 
-## Modo de uso
+## Uso
 
 ```php
 $userBanner[userID?;size?;dynamic?;format?]

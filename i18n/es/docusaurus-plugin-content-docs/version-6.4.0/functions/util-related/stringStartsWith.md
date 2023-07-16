@@ -6,7 +6,7 @@ id: stringStartsWith
 
 `$stringStartsWith` will check if the given argument starts with something specific.
 
-## Modo de uso
+## Uso
 
 ```php
 $stringStartsWith[text;check]

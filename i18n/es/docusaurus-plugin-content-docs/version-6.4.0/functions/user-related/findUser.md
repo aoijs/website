@@ -6,7 +6,7 @@ id: findUser
 
 `$findUser` will attempt to find a user which is matching with the given query.
 
-## Modo de uso
+## Uso
 
 ```php
 $findUser[userResolver;returnSelf?]

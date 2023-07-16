@@ -6,7 +6,7 @@ id: randomEmoji
 
 `$randomEmoji` will return a random emoji ID.
 
-## Modo de uso
+## Uso
 
 ```php
 $randomEmoji

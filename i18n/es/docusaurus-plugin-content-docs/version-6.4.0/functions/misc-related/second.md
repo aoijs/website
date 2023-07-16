@@ -6,7 +6,7 @@ id: second
 
 `$second` will return the current second in CST.
 
-## Modo de uso
+## Uso
 
 ```php
 $second

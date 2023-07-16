@@ -6,7 +6,7 @@ id: isRoleEditable
 
 `$isRoleEditable` will check if the role is editable.
 
-## Modo de uso
+## Uso
 
 ```php
 $isRoleEditable[roleID;guildID?]

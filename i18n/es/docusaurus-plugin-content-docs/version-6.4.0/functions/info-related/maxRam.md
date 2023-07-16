@@ -6,7 +6,7 @@ id: maxRam
 
 `$maxRam` devolverá la cantidad máxima de Ram del bot.
 
-## Modo de uso
+## Uso
 
 ```php
 $maxRam

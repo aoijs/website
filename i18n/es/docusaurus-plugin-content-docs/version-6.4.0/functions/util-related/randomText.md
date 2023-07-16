@@ -6,7 +6,7 @@ id: randomText
 
 `$randomText` will return a random word out of the given query
 
-## Modo de uso
+## Uso
 
 ```php
 $randomText[text;text;...]

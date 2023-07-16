@@ -6,7 +6,7 @@ id: abbreviate
 
 `$abbreviate` le permitirá abreviar números grandes.
 
-## Modo de uso
+## Uso
 
 ```php
 $abbreviate[num;dec?]

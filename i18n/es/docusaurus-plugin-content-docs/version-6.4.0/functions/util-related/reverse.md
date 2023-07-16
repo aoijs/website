@@ -6,7 +6,7 @@ id: reverse
 
 `$reverse` will reverse given text.
 
-## Modo de uso
+## Uso
 
 ```php
 $reverse[text]

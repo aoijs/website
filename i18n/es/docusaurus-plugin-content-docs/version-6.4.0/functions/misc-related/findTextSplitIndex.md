@@ -6,7 +6,7 @@ id: findTextSplitIndex
 
 `$findTextSplitIndex` will return the index of a text split element after a given query.
 
-## Modo de uso
+## Uso
 
 ```php
 $findTextSplitIndex[query]

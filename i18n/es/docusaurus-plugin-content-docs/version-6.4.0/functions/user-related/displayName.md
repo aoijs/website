@@ -6,7 +6,7 @@ id: displayName
 
 `$displayName` will return the display name of a given user.
 
-## Modo de uso
+## Uso
 
 ```php
 $displayName[guildID?;userID?;returnUser?]

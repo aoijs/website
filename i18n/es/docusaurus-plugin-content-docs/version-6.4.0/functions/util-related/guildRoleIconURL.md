@@ -6,7 +6,7 @@ id: guildRoleIconURL
 
 `$guildRoleIconURL` will retrieve the image URL of the role icon.
 
-## Modo de uso
+## Uso
 
 ```php
 $guildRoleIconURL[guildId?;roleId]

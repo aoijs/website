@@ -6,7 +6,7 @@ id: getObjectProperty
 
 `$getObjectProperty` will return a object property of a given object.
 
-## Modo de uso
+## Uso
 
 ```php
 $getObjectProperty[name]

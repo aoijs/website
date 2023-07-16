@@ -6,7 +6,7 @@ id: onlyForGuilds
 
 `$onlyForGuilds` will check if the command was executed in one of the listed guilds and return a error message if not.
 
-## Modo de uso
+## Uso
 
 ```php
 $onlyForGuilds[...guildIds;error]

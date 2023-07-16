@@ -6,7 +6,7 @@ id: userAvatar
 
 `$userAvatar` will return the profile picture of a specific user.
 
-## Modo de uso
+## Uso
 
 ```php
 $userAvatar[userID?;size?;dynamic?;format?]

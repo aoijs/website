@@ -6,7 +6,7 @@ id: checkCondition
 
 `$checkCondition` checks if a condition is either true or false.
 
-## Modo de uso
+## Uso
 
 ```php
 $checkCondition[condition]

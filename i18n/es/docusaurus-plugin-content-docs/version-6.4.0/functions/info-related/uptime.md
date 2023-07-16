@@ -6,7 +6,7 @@ id: uptime
 
 `$uptime` devolverá el tiempo de actividad del bot.
 
-## Modo de uso
+## Uso
 
 ```php
 $uptime[opción?]

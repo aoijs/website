@@ -6,7 +6,7 @@ id: userActivity
 
 `$userActivity` will return a user's current activity.
 
-## Modo de uso
+## Uso
 
 ```php
 $userActivity[guildID?;userID?]

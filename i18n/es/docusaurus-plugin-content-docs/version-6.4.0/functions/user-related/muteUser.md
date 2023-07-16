@@ -6,7 +6,7 @@ id: muteUser
 
 `$muteUser` will mute or unmute a given user in a Voice Channel.
 
-## Modo de uso
+## Uso
 
 ```php
 $muteUser[guildID;userID;mute?;reason?]

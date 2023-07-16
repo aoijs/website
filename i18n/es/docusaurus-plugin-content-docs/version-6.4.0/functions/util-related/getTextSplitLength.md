@@ -6,7 +6,7 @@ id: getTextSplitLength
 
 `$getTextSplitLength` will return the amount of split arguments in `$textSplit`.
 
-## Modo de uso
+## Uso
 
 ```php
 $getTextSplitLength

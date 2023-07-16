@@ -6,7 +6,7 @@ id: getObject
 
 `$getObject` will return the previously created object.
 
-## Modo de uso
+## Uso
 
 ```php
 $getObject[format?]

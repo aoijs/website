@@ -6,7 +6,7 @@ id: mentionedRoles
 
 `$mentionedRoles` will return the ID of a role retrieved from a message.
 
-## Modo de uso
+## Uso
 
 ```php
 $mentionedRoles[index]

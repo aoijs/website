@@ -6,7 +6,7 @@ id: interactionPing
 
 `$interactionPing` devolverá la latencia de una interacción.
 
-## Modo de uso
+## Uso
 
 ```php
 $interactionPing

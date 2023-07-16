@@ -6,7 +6,7 @@ id: packageVersion
 
 `$packageVersion` will return your current aoi.js version.
 
-## Modo de uso
+## Uso
 
 ```php
 $packageVersion

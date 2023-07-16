@@ -6,7 +6,7 @@ id: isUserDmEnabled
 
 `$isUserDmEnabled` will check if the user's Direct Messages are either disabled or enabled.
 
-## Modo de uso
+## Uso
 
 ```php
 $isUserDmEnabled[userID]

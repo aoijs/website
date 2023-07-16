@@ -6,7 +6,7 @@ id: editTextSplitElement
 
 `$editTextSplitElement` will edit a specific text split element.
 
-## Modo de uso
+## Uso
 
 ```php
 $editTextSplitElement[index;text]

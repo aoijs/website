@@ -6,7 +6,7 @@ id: hour
 
 `$hour` will return the current hour in CST.
 
-## Modo de uso
+## Uso
 
 ```php
 $hour

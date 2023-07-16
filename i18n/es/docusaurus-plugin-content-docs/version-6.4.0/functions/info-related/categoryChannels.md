@@ -6,7 +6,7 @@ id: categoryChannels
 
 `$categoryChannels` devolverá todos los canales de una categoría determinada.
 
-## Modo de uso
+## Uso
 
 ```php
 $categoryChannels[categoríaID;opción?;sep?]

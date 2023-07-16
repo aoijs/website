@@ -6,7 +6,7 @@ id: getLeaderboardInfo
 
 `$getLeaderboardInfo` will return information about a given variable sorted in a leaderboard.
 
-## Modo de uso
+## Uso
 
 ```php
 $getLeaderboardInfo[variable;id;type;option]

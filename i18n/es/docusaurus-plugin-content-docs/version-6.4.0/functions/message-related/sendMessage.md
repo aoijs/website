@@ -6,7 +6,7 @@ id: sendMessage
 
 `$sendMessage` will send a message in the execution channel.
 
-## Modo de uso
+## Uso
 
 ```php
 $sendMessage[content;returnID?]

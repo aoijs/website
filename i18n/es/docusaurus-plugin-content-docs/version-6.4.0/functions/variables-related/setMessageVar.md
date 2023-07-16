@@ -6,7 +6,7 @@ id: setMessageVar
 
 `$setMessageVar` will change the value of a given message variable.
 
-## Modo de uso
+## Uso
 
 ```php
 $setMessageVar[varname;value;messageID?;table?]

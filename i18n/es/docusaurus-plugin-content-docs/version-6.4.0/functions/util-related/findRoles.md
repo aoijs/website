@@ -6,7 +6,7 @@ id: findRoles
 
 `$findRoles` will return all matching roles depending on the given query.
 
-## Modo de uso
+## Uso
 
 ```php
 $findRoles[roleResolver;limit?;type?;format?]

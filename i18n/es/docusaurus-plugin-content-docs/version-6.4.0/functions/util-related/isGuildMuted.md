@@ -6,7 +6,7 @@ id: isGuildMuted
 
 `$isGuildMuted` is similar but not to confuse with `$isMuted`, this will check if the user is server muted.
 
-## Modo de uso
+## Uso
 
 ```php
 $isGuildMuted[userID?;guildID?]

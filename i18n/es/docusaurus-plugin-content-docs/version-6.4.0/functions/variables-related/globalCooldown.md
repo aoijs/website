@@ -6,7 +6,7 @@ id: globalCooldown
 
 `$globalCooldown` will set a global-based cooldown for a command.
 
-## Modo de uso
+## Uso
 
 ```php
 $globalCooldown[time;errorMessage]

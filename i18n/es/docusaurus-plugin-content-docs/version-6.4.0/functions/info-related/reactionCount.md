@@ -6,7 +6,7 @@ id: reactionCount
 
 `$reactionCount` devolverá la cantidad de usuarios que reaccionaron a un emoji específico.
 
-## Modo de uso
+## Uso
 
 ```php
 $reactionCount[canalID;mensajeID;emoji]

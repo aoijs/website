@@ -6,7 +6,7 @@ id: joinSplitText
 
 `$joinSplitText` will join all text split elements by a given separator.
 
-## Modo de uso
+## Uso
 
 ```php
 $joinSplitText[sep?]

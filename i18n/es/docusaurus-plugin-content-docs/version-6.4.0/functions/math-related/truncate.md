@@ -6,7 +6,7 @@ id: truncate
 
 `$truncate` eliminará todos los valores después del punto decimal.
 
-## Modo de uso
+## Uso
 
 ```php
 $truncate[número]

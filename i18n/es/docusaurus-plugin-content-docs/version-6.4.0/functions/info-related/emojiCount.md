@@ -6,7 +6,7 @@ id: emojiCount
 
 `$emojiCount` devolverá el recuento de emojis de un servidor.
 
-## Modo de uso
+## Uso
 
 ```php
 $emojiCount[servidorID?]

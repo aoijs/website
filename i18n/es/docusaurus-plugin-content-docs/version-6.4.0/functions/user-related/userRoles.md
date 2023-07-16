@@ -6,7 +6,7 @@ id: userRoles
 
 `$userRoles` will return the roles of a specific user.
 
-## Modo de uso
+## Uso
 
 ```php
 $userRoles[userID?;guildID?;option?;sep?]

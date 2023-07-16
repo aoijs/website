@@ -6,7 +6,7 @@ id: messageFlags
 
 `$messageFlags` will return a message's flags.
 
-## Modo de uso
+## Uso
 
 ```php
 $messageFlags[messageID;sep?;channelID?]

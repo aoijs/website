@@ -6,7 +6,7 @@ id: httpRequest
 
 `$httpRequest` either posts to or retrieves data from an API.
 
-## Modo de uso
+## Uso
 
 ```php
 $httpRequest[URL;method;body?;property?;error?;...header?]

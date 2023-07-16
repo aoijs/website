@@ -6,7 +6,7 @@ id: fetch
 
 `$fetch` will fetch information about a given method using Discord's API.
 
-## Modo de uso
+## Uso
 
 ```php
 $fetch[method;query;...query]

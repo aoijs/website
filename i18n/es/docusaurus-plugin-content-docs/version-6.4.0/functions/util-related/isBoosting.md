@@ -6,7 +6,7 @@ id: isBoosting
 
 `$isBoosting` will check if the given user is boosting the given guild.
 
-## Modo de uso
+## Uso
 
 ```php
 $isBoosting[userID?;guildID?]

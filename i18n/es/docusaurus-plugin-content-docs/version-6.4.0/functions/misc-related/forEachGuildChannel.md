@@ -6,7 +6,7 @@ id: forEachGuildChannel
 
 `$forEachGuildChannel` will execute awaited commands in every channel of the current guild.
 
-## Modo de uso
+## Uso
 
 ```php
 $forEachGuildChannel[time;awaitData;...awaitedCmds;endCmd]

@@ -6,7 +6,7 @@ id: replaceText
 
 `$replaceText` will replace specific segments of text.
 
-## Modo de uso
+## Uso
 
 ```php
 $replaceText[text;replacer;replaceTo;times?]

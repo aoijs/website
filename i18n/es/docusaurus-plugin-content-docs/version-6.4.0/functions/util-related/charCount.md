@@ -6,7 +6,7 @@ id: charCount
 
 `$charCount` will count the given characters in a text and return the amount of characters.
 
-## Modo de uso
+## Uso
 
 ```php
 $charCount[text]

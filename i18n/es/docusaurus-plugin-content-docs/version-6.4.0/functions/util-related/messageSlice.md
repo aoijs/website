@@ -6,7 +6,7 @@ id: messageSlice
 
 `$messageSlice` will slice a message.
 
-## Modo de uso
+## Uso
 
 ```php
 $messageSlice[from;to?]

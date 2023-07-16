@@ -6,7 +6,7 @@ id: discriminator
 
 `$discriminator` will return a user's discriminator.
 
-## Modo de uso
+## Uso
 
 ```php
 $discriminator[userId?]

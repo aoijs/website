@@ -6,7 +6,7 @@ id: guildPreferredLocale
 
 `$guildPreferredLocale` devolverá la configuración regional establecida de un gremio.
 
-## Modo de uso
+## Uso
 
 ```php
 $guildPreferredLocale[servidorID?]

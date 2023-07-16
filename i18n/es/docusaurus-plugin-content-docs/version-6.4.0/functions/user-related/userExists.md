@@ -6,7 +6,7 @@ id: userExists
 
 `$userExists` will check if a given user exists.
 
-## Modo de uso
+## Uso
 
 ```php
 $userExists[userID?]

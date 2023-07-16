@@ -6,7 +6,7 @@ id: removeObjectProperty
 
 `$removeObjectProperty` will remove a property of an given object.
 
-## Modo de uso
+## Uso
 
 ```php
 $removeObjectProperty[property;object]

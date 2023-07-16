@@ -6,7 +6,7 @@ id: getCacheData
 
 `$getCacheData` will return cache data.
 
-## Modo de uso
+## Uso
 
 ```php
 $getCacheData[type;name;key;option?]

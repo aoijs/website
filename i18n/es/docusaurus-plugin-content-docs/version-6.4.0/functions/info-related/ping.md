@@ -6,7 +6,7 @@ id: ping
 
 `$ping` devolverá la latencia del bot.
 
-## Modo de uso
+## Uso
 
 ```php
 $ping

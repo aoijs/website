@@ -6,7 +6,7 @@ id: onlyForIDs
 
 `$onlyForIDs` will check if the command was executed by any user of the listed user IDs and return a error if not.
 
-## Modo de uso
+## Uso
 
 ```php
 $onlyForIDs[...userIds;error]

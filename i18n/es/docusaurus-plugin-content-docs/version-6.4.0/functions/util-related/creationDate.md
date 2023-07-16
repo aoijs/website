@@ -6,7 +6,7 @@ id: creationDate
 
 `$creationDate` will return the creation date of the given Discord User.
 
-## Modo de uso
+## Uso
 
 ```php
 $creationDate[id;format?]

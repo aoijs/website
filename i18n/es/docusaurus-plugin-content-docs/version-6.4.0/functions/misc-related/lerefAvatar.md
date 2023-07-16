@@ -6,7 +6,7 @@ id: lerefAvatar
 
 `$lerefAvatar` will return the Avatar of the creator of aoi.js
 
-## Modo de uso
+## Uso
 
 ```php
 $lerefAvatar

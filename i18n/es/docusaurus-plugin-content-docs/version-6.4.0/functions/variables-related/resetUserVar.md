@@ -6,7 +6,7 @@ id: resetUserVar
 
 `$resetUserVar` will set a given user variable to its default value of a given guild.
 
-## Modo de uso
+## Uso
 
 ```php
 $resetUserVar[varname;guildID?;table?]

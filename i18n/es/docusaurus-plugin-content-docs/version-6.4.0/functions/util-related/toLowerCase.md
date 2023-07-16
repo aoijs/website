@@ -6,7 +6,7 @@ id: toLowerCase
 
 `$toLowerCase` will change the given text from uppercase to lowercase.
 
-## Modo de uso
+## Uso
 
 ```php
 $toLowerCase[text]

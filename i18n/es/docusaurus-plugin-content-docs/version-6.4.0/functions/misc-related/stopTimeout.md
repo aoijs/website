@@ -6,7 +6,7 @@ id: stopTimeout
 
 `$stopTimeout` will end/stop a timeout created by `$setTimeout`.
 
-## Modo de uso
+## Uso
 
 ```php
 $stopTimeout[id]

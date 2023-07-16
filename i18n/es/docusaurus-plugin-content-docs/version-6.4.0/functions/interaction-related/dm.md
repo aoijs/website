@@ -6,7 +6,7 @@ id: mensaje directo
 
 $dm enviará un mensaje a los usuarios Mensajes Directos.
 
-## Modo de uso
+## Uso
 
 ```php
 $dm[ID de usuario]

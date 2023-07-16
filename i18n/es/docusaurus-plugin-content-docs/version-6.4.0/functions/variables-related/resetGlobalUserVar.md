@@ -6,7 +6,7 @@ id: resetGlobalUserVar
 
 `$resetGlobalUserVar` will set a given global user variable to its default value.
 
-## Modo de uso
+## Uso
 
 ```php
 $resetGlobalUserVar[varname;table?]

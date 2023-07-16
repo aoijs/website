@@ -6,7 +6,7 @@ id: setStatus
 
 `$setStatus` cambiará el estado del cliente.
 
-## Modo de uso
+## Uso
 
 ```php
 $setStatus[nombre;tipo;estado;URL;afk?]

@@ -6,7 +6,7 @@ id: membersCount
 
 `$membersCount` will return a guild's member count.
 
-## Modo de uso
+## Uso
 
 ```php
 $membersCount[guildID?;presence?;countBot?]

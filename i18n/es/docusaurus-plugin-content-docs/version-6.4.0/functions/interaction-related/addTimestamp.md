@@ -6,7 +6,7 @@ id: addTimestamp
 
 $addTimestamp añadirá una marca de tiempo a un incrustado.
 
-## Modo de uso
+## Uso
 
 ```php
 $addTimestamp[ms?]

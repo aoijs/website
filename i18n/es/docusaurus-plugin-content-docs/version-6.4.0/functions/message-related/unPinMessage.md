@@ -6,7 +6,7 @@ id: unPinMessage
 
 `$unPinMessage` will unpin a given message.
 
-## Modo de uso
+## Uso
 
 ```php
 $unPinMessage[messageID?;channelID?]

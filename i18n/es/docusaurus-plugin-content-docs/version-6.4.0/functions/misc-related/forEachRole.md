@@ -6,7 +6,7 @@ id: forEachRole
 
 `$forEachRole` will execute awaited commands for every role in a given guild.
 
-## Modo de uso
+## Uso
 
 ```php
 $forEachRole[guildID;time;awaitData;...awaitedCmds;endCmd]

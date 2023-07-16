@@ -6,7 +6,7 @@ id: findRole
 
 `$findRole` will search and return a given role of a certain guild.
 
-## Modo de uso
+## Uso
 
 ```php
 $findRole[roleResolver;guildID?]

@@ -6,7 +6,7 @@ id: getGuildVar
 
 `$getGuildVar` will return the value of a given guild variable.
 
-## Modo de uso
+## Uso
 
 ```php
 $getGuildVar[varname;guildID?;table?]

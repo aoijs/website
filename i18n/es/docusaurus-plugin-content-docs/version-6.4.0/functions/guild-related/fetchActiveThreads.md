@@ -6,7 +6,7 @@ id: '$fetchActiveThreads'
 
 $fetchActiveThreads devolverá todos los hilos activos de un canal determinado.
 
-## Modo de uso
+## Uso
 
 ```php
 $fetchActiveThreads[canalID;opción?]

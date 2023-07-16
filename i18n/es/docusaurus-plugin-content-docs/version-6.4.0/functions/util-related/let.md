@@ -6,7 +6,7 @@ id: let
 
 `$let` will store temporary variables which can be retrieved by `$get`.
 
-## Modo de uso
+## Uso
 
 ```php
 $let[varname;value]

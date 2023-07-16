@@ -6,7 +6,7 @@ id: guildRoles
 
 `$guildRoles` devolverá todos los roles de un gremio específico.
 
-## Modo de uso
+## Uso
 
 ```php
 $guildRoles[servidorID?;opción?;sep?]

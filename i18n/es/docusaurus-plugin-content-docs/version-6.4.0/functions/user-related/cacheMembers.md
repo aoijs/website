@@ -6,7 +6,7 @@ id: cacheMembers
 
 `$cacheMembers` will cache all members of a guild.
 
-## Modo de uso
+## Uso
 
 ```php
 $cacheMembers[guildID?;returnCount?]

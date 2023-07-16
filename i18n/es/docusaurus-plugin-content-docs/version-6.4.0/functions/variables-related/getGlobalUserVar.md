@@ -6,7 +6,7 @@ id: getGlobalUserVar
 
 `$getGlobalUserVar` will return the value of a given global user variable.
 
-## Modo de uso
+## Uso
 
 ```php
 $getGlobalUserVar[varname;userID?;table?]

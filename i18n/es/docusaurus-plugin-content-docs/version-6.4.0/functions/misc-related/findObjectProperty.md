@@ -6,7 +6,7 @@ id: findObjectProperty
 
 `$findObjectProperty` will search for a given property of an object and return it.
 
-## Modo de uso
+## Uso
 
 ```php
 $findObjectProperty[property;object]

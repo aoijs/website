@@ -6,7 +6,7 @@ id: suppressErrors
 
 `$suppressErrors` will suppress aoi.js function errors.
 
-## Modo de uso
+## Uso
 
 ```php
 $suppressErrors[errorMsg?]

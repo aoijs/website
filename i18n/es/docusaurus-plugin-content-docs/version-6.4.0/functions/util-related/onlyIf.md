@@ -6,7 +6,7 @@ id: onlyIf
 
 `$onlyIf` will check for a condition and return a error message if that condition does not match.
 
-## Modo de uso
+## Uso
 
 ```php
 $onlyIf[condition;error]

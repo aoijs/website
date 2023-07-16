@@ -6,7 +6,7 @@ id: checkContains
 
 `$checkContains` will check if the given arguments are present within the text.
 
-## Modo de uso
+## Uso
 
 ```php
 $checkContains[text;...chars]

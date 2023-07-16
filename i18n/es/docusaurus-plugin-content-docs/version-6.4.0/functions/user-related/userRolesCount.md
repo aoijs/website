@@ -6,7 +6,7 @@ id: userRolesCount
 
 `$userRolesCount` will return a user's role count.
 
-## Modo de uso
+## Uso
 
 ```php
 $userRolesCount[userID?;guildID?]

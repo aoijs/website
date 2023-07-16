@@ -6,7 +6,7 @@ id: authorID
 
 `$authorID` will return user ID of who executed the command.
 
-## Modo de uso
+## Uso
 
 ```php
 $authorID

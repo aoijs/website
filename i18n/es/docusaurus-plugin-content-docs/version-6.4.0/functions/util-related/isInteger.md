@@ -6,7 +6,7 @@ id: isInteger
 
 `$isInteger` will check if the given number is an integer or not.
 
-## Modo de uso
+## Uso
 
 ```php
 $isInteger[number]

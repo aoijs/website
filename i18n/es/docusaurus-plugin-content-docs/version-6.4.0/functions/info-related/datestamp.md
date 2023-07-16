@@ -6,7 +6,7 @@ id: datestamp
 
 `$datestamp` devolverá el día en MS.
 
-## Modo de uso
+## Uso
 
 ```php
 $datestamp

@@ -6,7 +6,7 @@ id: memberJoinDate
 
 `$memberJoinDate` will return a members join date in MS.
 
-## Modo de uso
+## Uso
 
 ```php
 $memberJoinDate[userID?;guildID?]

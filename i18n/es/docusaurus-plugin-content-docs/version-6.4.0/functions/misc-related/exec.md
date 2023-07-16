@@ -6,7 +6,7 @@ id: exec
 
 `$exec` will execute given code in your console.
 
-## Modo de uso
+## Uso
 
 ```php
 $exec[code]

@@ -6,7 +6,7 @@ id: writeFile
 
 `$writeFile` will create a new file in the bot's directory.
 
-## Modo de uso
+## Uso
 
 ```php
 $writeFile[path;text;encoding?]

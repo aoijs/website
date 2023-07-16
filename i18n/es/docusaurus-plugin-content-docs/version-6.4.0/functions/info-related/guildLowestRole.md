@@ -6,7 +6,7 @@ id: guildLowestRole
 
 `$guildLowestRole` devolverá el rol más bajo de un servidor específico.
 
-## Modo de uso
+## Uso
 
 ```php
 $guildLowestRole[servidorID?]

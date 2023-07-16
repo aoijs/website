@@ -6,7 +6,7 @@ id: removeTextSplitElement
 
 `$removeTextSplitElement` will remove a specific text split element.
 
-## Modo de uso
+## Uso
 
 ```php
 $removeTextSplitElement[element]

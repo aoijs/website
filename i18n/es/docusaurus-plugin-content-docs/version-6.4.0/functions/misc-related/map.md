@@ -6,7 +6,7 @@ id: map
 
 `$map` will execute awaited commands for given elements.
 
-## Modo de uso
+## Uso
 
 ```php
 $map[text;split;awaitedCmds;sep?]

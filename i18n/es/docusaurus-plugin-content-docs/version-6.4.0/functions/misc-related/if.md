@@ -6,7 +6,7 @@ id: if
 
 `$if` will check a condition and return either true or false depending on the condition being true or false.
 
-## Modo de uso
+## Uso
 
 ```php
 $if[condition;true;false?]

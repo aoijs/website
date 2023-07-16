@@ -6,7 +6,7 @@ id: pruneMembers
 
 `$pruneMembers` will kick all inactive users whose been inactive for a given amount of time.
 
-## Modo de uso
+## Uso
 
 ```php
 $pruneMembers[days;guildID?;roleIDs?;dry?;reason?;returnCount?]

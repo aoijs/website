@@ -6,7 +6,7 @@ id: roleId
 
 `$roleId` will return the ID of a role.
 
-## Modo de uso
+## Uso
 
 ```php
 $roleId[roleResolver;guildID?]

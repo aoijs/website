@@ -6,7 +6,7 @@ id: guildLeaderboard
 
 `$guildLeaderboard` will return a leaderboard of a guild variable.
 
-## Modo de uso
+## Uso
 
 ```php
 $guildLeaderboard[variable;type?;custom?;list?;page?;table?]

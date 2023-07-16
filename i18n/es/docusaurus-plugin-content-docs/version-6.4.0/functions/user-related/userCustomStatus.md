@@ -6,7 +6,7 @@ id: userCustomStatus
 
 `$userCustomStatus` will return a user's custom status.
 
-## Modo de uso
+## Uso
 
 ```php
 $userCustomStatus[guildID?;userID?;option?]

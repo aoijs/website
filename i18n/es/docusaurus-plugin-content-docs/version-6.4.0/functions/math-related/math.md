@@ -6,7 +6,7 @@ id: math
 
 `$math` devolverá un resultado calculado del argumento dado.
 
-## Modo de uso
+## Uso
 
 ```php
 $math[ecuación]

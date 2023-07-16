@@ -6,7 +6,7 @@ id: isChannelManageable
 
 `$isChannelManageable` will check if the channel is manageable or not.
 
-## Modo de uso
+## Uso
 
 ```php
 $isChannelManageable[channelID?]

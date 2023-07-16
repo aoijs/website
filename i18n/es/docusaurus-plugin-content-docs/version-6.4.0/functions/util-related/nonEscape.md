@@ -6,7 +6,7 @@ id: nonEscape
 
 `$nonEscape` will stop escaping special characters.
 
-## Modo de uso
+## Uso
 
 ```php
 $nonEscape[message]

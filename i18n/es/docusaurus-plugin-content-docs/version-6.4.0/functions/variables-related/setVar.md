@@ -6,7 +6,7 @@ id: setVar
 
 `$setVar` will change the value of a given global variable.
 
-## Modo de uso
+## Uso
 
 ```php
 $setVar[varname;value;table?]

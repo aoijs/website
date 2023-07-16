@@ -6,7 +6,7 @@ id: random
 
 `$random` will generate a random number between your chosen span.
 
-## Modo de uso
+## Uso
 
 ```php
 $random[num1;num2;allow?;random?]

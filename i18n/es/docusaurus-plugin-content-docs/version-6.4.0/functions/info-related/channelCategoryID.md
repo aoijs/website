@@ -6,7 +6,7 @@ id: channelCategoryID
 
 `$channelCategoryID` devolverá el padre de un canal específico.
 
-## Modo de uso
+## Uso
 
 ```php
 $channelCategoryID[canalID?]

@@ -6,7 +6,7 @@ id: leaveThread
 
 `$killShard` hará que el bot se una a un hilo específico.
 
-## Modo de uso
+## Uso
 
 ```php
 $leaveThread[canalID;hiloID]

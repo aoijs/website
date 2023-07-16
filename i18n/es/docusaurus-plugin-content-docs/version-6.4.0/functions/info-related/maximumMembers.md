@@ -6,7 +6,7 @@ id: maximumMembers
 
 `$maximumMembers` devolverá la cantidad máxima de miembros que puede tener un servidor.
 
-## Modo de uso
+## Uso
 
 ```php
 $maximumMembers[servidorID?]

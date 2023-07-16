@@ -6,7 +6,7 @@ id: fileExists
 
 `$fileExists` will check if a given file exists.
 
-## Modo de uso
+## Uso
 
 ```php
 $fileExists[path]

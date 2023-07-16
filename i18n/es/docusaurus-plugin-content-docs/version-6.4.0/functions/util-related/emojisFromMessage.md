@@ -6,7 +6,7 @@ id: emojisFromMessage
 
 `$emojisFromMessage` returns all emojis in a given message.
 
-## Modo de uso
+## Uso
 
 ```php
 $emojisFromMessage

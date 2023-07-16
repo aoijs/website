@@ -6,7 +6,7 @@ id: parseTime
 
 `$parseTime` will convert any human time to milliseconds.
 
-## Modo de uso
+## Uso
 
 ```php
 $parseTime[time]

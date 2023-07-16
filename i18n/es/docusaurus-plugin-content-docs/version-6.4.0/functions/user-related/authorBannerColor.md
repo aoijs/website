@@ -6,7 +6,7 @@ id: authorBannerColor
 
 `$authorBannerColor` will return the profile banner color of the command author.
 
-## Modo de uso
+## Uso
 
 ```php
 $authorBannerColor

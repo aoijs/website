@@ -6,7 +6,7 @@ id: getMessageVar
 
 `$getMessageVar` will return the value of a given message variable.
 
-## Modo de uso
+## Uso
 
 ```php
 $getMessageVar[varname;guildID?;table?]

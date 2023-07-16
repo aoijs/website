@@ -6,7 +6,7 @@ id: sendWebhookMessage
 
 `$sendWebhookMessage` will send a message using an existing webhook.
 
-## Modo de uso
+## Uso
 
 ```php
 $sendWebhookMessage[webhookID;webhookToken;content;returnID?]

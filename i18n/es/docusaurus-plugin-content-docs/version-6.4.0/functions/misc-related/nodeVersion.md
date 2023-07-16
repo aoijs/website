@@ -6,7 +6,7 @@ id: nodeVersion
 
 `$nodeVersion` will return your current node.js version.
 
-## Modo de uso
+## Uso
 
 ```php
 $nodeVersion

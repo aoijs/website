@@ -6,7 +6,7 @@ id: hasPerms
 
 `$hasPerms` will check if the user has the required permission.
 
-## Modo de uso
+## Uso
 
 ```php
 $hasPerms[guildID;userID;...perms]

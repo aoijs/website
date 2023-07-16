@@ -6,7 +6,7 @@ id: broadcastEval
 
 `$broadcastEval` ejecutará un código en todos los servidores de todos los shards. (requiere sharding)
 
-## Modo de uso
+## Uso
 
 ```php
 $broadcastEval[función]

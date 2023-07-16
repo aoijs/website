@@ -6,7 +6,7 @@ id: month
 
 `$month` will return the current month.
 
-## Modo de uso
+## Uso
 
 ```php
 $month

@@ -6,7 +6,7 @@ id: eventEmit
 
 `$eventEmit` will emit a custom event.
 
-## Modo de uso
+## Uso
 
 ```php
 $eventEmit[name;...datas]

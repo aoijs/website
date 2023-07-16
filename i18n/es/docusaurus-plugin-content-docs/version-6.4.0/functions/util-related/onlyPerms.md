@@ -6,7 +6,7 @@ id: onlyPerms
 
 `$onlyPerms` will check if the user has the listed permission and return a error message if not.
 
-## Modo de uso
+## Uso
 
 ```php
 $onlyPerms[...perms;error]

@@ -6,7 +6,7 @@ id: emojiExists
 
 `$emojiExists` will check if the given emoji exists.
 
-## Modo de uso
+## Uso
 
 ```php
 $emojiExists[emojiResolver]

@@ -6,7 +6,7 @@ id: numberSeparator
 
 `$numberSeparator` will separate numbers and make them readable.
 
-## Modo de uso
+## Uso
 
 ```php
 $numberSeparator[num;sep?]

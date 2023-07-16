@@ -6,7 +6,7 @@ id: parseDate
 
 `$parseDate` $parseDate will return the date/time for the given milliseconds
 
-## Modo de uso
+## Uso
 
 ```php
 $parseDate[ms;type?]

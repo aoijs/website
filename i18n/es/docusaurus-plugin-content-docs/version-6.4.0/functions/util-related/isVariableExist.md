@@ -6,7 +6,7 @@ id: isVariableExist
 
 `$isVariableExist` checks if a given variable exists in a given table.
 
-## Modo de uso
+## Uso
 
 ```php
 $isVariableExist[variable;table?]

@@ -6,7 +6,7 @@ id: channelType
 
 `$channelType` devolverá el tipo de canal dado.
 
-## Modo de uso
+## Uso
 
 ```php
 $channelType[canalID?]

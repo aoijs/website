@@ -6,7 +6,7 @@ id: addMessageReactions
 
 `$addMessageReactions` añadirá una reacción a un mensaje específico.
 
-## Modo de uso
+## Uso
 
 ```php
 $addMessageReactions[canalID;mensajeID;...reacciones]

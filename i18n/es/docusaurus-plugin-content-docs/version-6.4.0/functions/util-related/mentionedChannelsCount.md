@@ -6,7 +6,7 @@ id: mentionedChannelsCount
 
 `$mentionedChannelsCount` will return the amount of channel mentions within a message.
 
-## Modo de uso
+## Uso
 
 ```php
 $mentionedChannelsCount

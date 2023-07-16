@@ -6,7 +6,7 @@ id: channelOverwrites
 
 `$channelOverwrites` devolverá las sobreescrituras del canal dado.
 
-## Modo de uso
+## Uso
 
 ```php
 $channelOverwrites[canalID?;respuesta?;sep?]

@@ -6,7 +6,7 @@ id: rawLeaderboard
 
 `$rawLeaderboard` will return a leaderboard of the given type.
 
-## Modo de uso
+## Uso
 
 ```php
 $rawLeaderboard[variable;order?;type?;custom?;list?;page?;table?]

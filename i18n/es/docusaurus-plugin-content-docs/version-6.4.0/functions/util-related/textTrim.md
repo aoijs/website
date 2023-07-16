@@ -6,7 +6,7 @@ id: textTrim
 
 `$textTrim` will remove all extra spaces, multiple spaces after one space, and replaces those with one single space.
 
-## Modo de uso
+## Uso
 
 ```php
 $textTrim[text]

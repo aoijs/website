@@ -6,7 +6,7 @@ id: boostingSince
 
 `$boostingSince` devolverá la fecha en la que alguien empezó a mejorar un servidor específico.
 
-## Modo de uso
+## Uso
 
 ```php
 $boostingSince[servidorID?;usarioID?;formato?]

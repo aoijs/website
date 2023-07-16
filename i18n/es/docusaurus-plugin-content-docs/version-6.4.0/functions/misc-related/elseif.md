@@ -6,7 +6,7 @@ id: elseif
 
 `$elseif` is used to create an else statement with condition.
 
-## Modo de uso
+## Uso
 
 ```php
 $elseif[condition]

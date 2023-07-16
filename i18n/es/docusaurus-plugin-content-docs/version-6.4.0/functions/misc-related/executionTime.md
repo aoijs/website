@@ -6,7 +6,7 @@ id: executionTime
 
 `$executionTime` will return the execution time.
 
-## Modo de uso
+## Uso
 
 ```php
 $executionTime

@@ -6,7 +6,7 @@ id: filterMessage
 
 `$filterMessage` will filter certain characters out of given text.
 
-## Modo de uso
+## Uso
 
 ```php
 $filterMessage[text;...letters]

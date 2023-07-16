@@ -6,7 +6,7 @@ id: isMuted
 
 `$isMuted` will check if a specific user is muted within a voice channel.
 
-## Modo de uso
+## Uso
 
 ```php
 $isMuted[userID?;guildID?]

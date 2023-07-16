@@ -6,7 +6,7 @@ id: toUpperCase
 
 `$toUpperCase` will change the given text from lowercase to uppercase.
 
-## Modo de uso
+## Uso
 
 ```php
 $toUpperCase[text]

@@ -6,7 +6,7 @@ id: rolePerms
 
 `$rolePerms` devolverá todos los permisos de un rol determinado.
 
-## Modo de uso
+## Uso
 
 ```php
 $rolePerms[rolID;sep?;servidorID?]

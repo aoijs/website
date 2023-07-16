@@ -6,7 +6,7 @@ id: noMentionMessage
 
 `$noMentionMessage` will return the part of the message which contains no mention.
 
-## Modo de uso
+## Uso
 
 ```php
 $noMentionMessage[args]

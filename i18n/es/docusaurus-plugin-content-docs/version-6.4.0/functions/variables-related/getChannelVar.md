@@ -6,7 +6,7 @@ id: getChannelVar
 
 `$getChannelVar` will return the value of a given channel variable.
 
-## Modo de uso
+## Uso
 
 ```php
 $getChannelVar[varname;channelID?;table?]

@@ -6,7 +6,7 @@ id: findInCache
 
 `$findInCache` will search for given arguments in your bot's cache.
 
-## Modo de uso
+## Uso
 
 ```php
 $findInCache[type;name;prop;value;findType?;returnValue?]

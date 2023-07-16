@@ -6,7 +6,7 @@ id: isTimeout
 
 `$isTimeout` will check if the user is timeouted with Discord's built-in timeout feature.
 
-## Modo de uso
+## Uso
 
 ```php
 $isTimeout[guildID?;userID?]

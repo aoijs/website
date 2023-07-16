@@ -6,7 +6,7 @@ id: sub
 
 `$sub` restará dos números dados.
 
-## Modo de uso
+## Uso
 
 ```php
 $sub[núm;núm]

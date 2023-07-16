@@ -6,7 +6,7 @@ id: isValidImageLink
 
 `$isValidImageLink` will check if the given image link is valid.
 
-## Modo de uso
+## Uso
 
 ```php
 $isValidImageLink[URL]

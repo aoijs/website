@@ -6,7 +6,7 @@ id: splitText
 
 `$splitText` will return a value of $textSplit depending on the given index.
 
-## Modo de uso
+## Uso
 
 ```php
 $splitText[index]

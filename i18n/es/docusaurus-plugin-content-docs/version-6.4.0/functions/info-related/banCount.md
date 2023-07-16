@@ -6,7 +6,7 @@ id: banCount
 
 `$banCount` devolverá la cantidad de usuarios baneados de un servidor específico.
 
-## Modo de uso
+## Uso
 
 ```php
 $banCount[servidorID?]

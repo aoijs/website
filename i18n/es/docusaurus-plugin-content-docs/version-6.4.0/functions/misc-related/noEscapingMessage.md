@@ -6,7 +6,7 @@ id: noEscapingMessage
 
 `$noEscapingMessage` will return the non escaped message.
 
-## Modo de uso
+## Uso
 
 ```php
 $noEscapingMessage[args]

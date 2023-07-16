@@ -6,7 +6,7 @@ id: getMessage
 
 `$getMessage` devolverá propiedades sobre un mensaje dado.
 
-## Modo de uso
+## Uso
 
 ```php
 $getMessage[canalID;mensajeID;opción?]

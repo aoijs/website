@@ -6,7 +6,7 @@ id: messagePing
 
 `$messagePing` will return the latency of the message.
 
-## Modo de uso
+## Uso
 
 ```php
 $messagePing

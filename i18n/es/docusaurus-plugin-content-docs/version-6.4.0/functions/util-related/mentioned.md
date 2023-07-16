@@ -6,7 +6,7 @@ id: mentioned
 
 `$mentioned` will return the ID of an user of the mention.
 
-## Modo de uso
+## Uso
 
 ```php
 $mentioned[index;returnSelf?]

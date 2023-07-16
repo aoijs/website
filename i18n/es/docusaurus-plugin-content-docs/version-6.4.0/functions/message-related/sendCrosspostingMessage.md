@@ -6,7 +6,7 @@ id: sendCrosspostingMessage
 
 `$sendCrosspostingMessage` will crosspost a given message to the given channels.
 
-## Modo de uso
+## Uso
 
 ```php
 $sendCrosspostingMessage[content;...channelIDs]

@@ -6,7 +6,7 @@ id: djsEval
 
 `$djsEval` will execute given discord.js code.
 
-## Modo de uso
+## Uso
 
 ```php
 $djsEval[code;returnCode?]

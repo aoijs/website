@@ -6,7 +6,7 @@ id: getAuditLogs
 
 `$getAuditLogs` recuperará los registros de auditoría del servidor de acuerdo con los argumentos dados.
 
-## Modo de uso
+## Uso
 
 ```php
 $getAuditLogs[servidorID;usarioID?;límite?;acción?;formato?]

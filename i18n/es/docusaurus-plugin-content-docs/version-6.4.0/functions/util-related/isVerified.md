@@ -6,7 +6,7 @@ id: isVerified
 
 `$isVerified` checks if the given guild is verified by Discord.
 
-## Modo de uso
+## Uso
 
 ```php
 $isVerified[guildID?]

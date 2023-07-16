@@ -6,7 +6,7 @@ id: hasAnyPerm
 
 `$hasAnyPerm` will check if the user has one of the required permissions.
 
-## Modo de uso
+## Uso
 
 ```php
 $hasAnyPerm[guildID;userID;...perms]

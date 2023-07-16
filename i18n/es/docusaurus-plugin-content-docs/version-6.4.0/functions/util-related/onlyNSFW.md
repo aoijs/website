@@ -6,7 +6,7 @@ id: onlyNSFW
 
 `$onlyNSFW` will check if the command was executed in a NSFW channel and return a error message if not.
 
-## Modo de uso
+## Uso
 
 ```php
 $onlyNSFW[error?]

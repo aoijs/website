@@ -6,7 +6,7 @@ id: isDM
 
 `$isDM` will check if the given channel is a DM or not.
 
-## Modo de uso
+## Uso
 
 ```php
 $isDM[channelID?]

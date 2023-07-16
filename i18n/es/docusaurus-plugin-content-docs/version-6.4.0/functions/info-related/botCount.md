@@ -6,7 +6,7 @@ id: guildBotCount
 
 `$guildBotCount` devolverá la cantidad de Bots en su servidor.
 
-## Modo de uso
+## Uso
 
 ```php
 $guildBotCount[servidorID?]

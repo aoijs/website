@@ -6,7 +6,7 @@ id: deleteMessage
 
 `$deleteMessage` will delete a specific message.
 
-## Modo de uso
+## Uso
 
 ```php
 $deleteMessage[messageID;channelID]

@@ -6,7 +6,7 @@ id: footer
 
 `$footer` añadirá un pie de página a un incrustado.
 
-## Modo de uso
+## Uso
 
 ```php
 $footer[indice?;contenido;URL del icono?]

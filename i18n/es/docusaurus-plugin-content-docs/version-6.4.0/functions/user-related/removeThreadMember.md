@@ -6,7 +6,7 @@ id: removeThreadMember
 
 `$removeThreadMember` will remove a given thread member from a given thread.
 
-## Modo de uso
+## Uso
 
 ```php
 $removeThreadMember[channelID;threadID;userID;reason?]

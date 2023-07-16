@@ -6,7 +6,7 @@ id: textSplitMap
 
 `$textSplitMap` will create a loop over all values that are stored within $textSplit.
 
-## Modo de uso
+## Uso
 
 ```php
 $textSplit[awaited]

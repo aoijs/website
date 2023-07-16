@@ -6,7 +6,7 @@ id: clientTyping
 
 `$clientTyping` hará que su bot escriba en un canal (mostrará que está escribiendo).
 
-## Modo de uso
+## Uso
 
 ```php
 $clientTyping

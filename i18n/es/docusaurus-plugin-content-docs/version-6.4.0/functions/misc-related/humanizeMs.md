@@ -6,7 +6,7 @@ id: humanizeMs
 
 `$humanizeMs` will convert MS to human-readable time.
 
-## Modo de uso
+## Uso
 
 ```php
 $humanizeMs[time]

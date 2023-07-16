@@ -6,7 +6,7 @@ id: moveUser
 
 `$moveUser` will move a given user between two Voice Channels.
 
-## Modo de uso
+## Uso
 
 ```php
 $moveUser[guildID;userID;channelID;reason?]

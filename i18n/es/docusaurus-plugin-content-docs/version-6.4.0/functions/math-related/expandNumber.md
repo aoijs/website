@@ -6,7 +6,7 @@ id: expandNumber
 
 `$expandNumber` expandirá cualquier número dado.
 
-## Modo de uso
+## Uso
 
 ```php
 $expandNumber[númeroAbreviado]

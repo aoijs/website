@@ -6,7 +6,7 @@ id: isVoice
 
 `$isVoice` will check if the given channel is a voice channel or not.
 
-## Modo de uso
+## Uso
 
 ```php
 $isVoice[channelID]

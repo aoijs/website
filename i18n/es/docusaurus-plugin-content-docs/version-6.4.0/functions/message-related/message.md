@@ -6,7 +6,7 @@ id: message
 
 `$message` will return given arguments of a message.
 
-## Modo de uso
+## Uso
 
 ```php
 $message[index?]

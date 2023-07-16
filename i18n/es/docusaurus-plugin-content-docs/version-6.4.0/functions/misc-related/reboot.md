@@ -6,7 +6,7 @@ id: reboot
 
 `$reboot` will restart your bot.
 
-## Modo de uso
+## Uso
 
 ```php
 $reboot

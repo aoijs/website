@@ -6,7 +6,7 @@ id: findChannel
 
 `$findChannel` will search a given channel by its name.
 
-## Modo de uso
+## Uso
 
 ```php
 $findChannel[channelResolver;returnSelf?]

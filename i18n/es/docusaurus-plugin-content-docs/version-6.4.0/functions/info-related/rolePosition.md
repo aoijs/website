@@ -6,7 +6,7 @@ id: rolePosition
 
 `$rolePosition` devolverá la posición de rol de un rol específico.
 
-## Modo de uso
+## Uso
 
 ```php
 $rolePosition[rolID;servidorID?]

@@ -6,7 +6,7 @@ id: updateCommands
 
 `$updateCommands` will reload your commands of your command folder / will make changes effective.
 
-## Modo de uso
+## Uso
 
 ```php
 $updateCommands

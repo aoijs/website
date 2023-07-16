@@ -6,7 +6,7 @@ id: argsSlice
 
 `$argsSlice` will slice the given argument depending on the users input.
 
-## Modo de uso
+## Uso
 
 ```php
 $argsSlice[text;from?;to] 

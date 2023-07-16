@@ -6,7 +6,7 @@ id: endelseif
 
 `$endelseif` is used to end an elseif statement.
 
-## Modo de uso
+## Uso
 
 ```php
 $endelseif

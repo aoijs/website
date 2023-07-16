@@ -6,7 +6,7 @@ id: toLocaleUpperCase
 
 `$toLocaleUpperCase` will change the first character of every word to uppercase.
 
-## Modo de uso
+## Uso
 
 ```php
 $toLocaleUpperCase[text]

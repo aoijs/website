@@ -6,7 +6,7 @@ id: mentionedRolesCount
 
 `$mentionedRolesCount` will return the amount of role mentions within a message.
 
-## Modo de uso
+## Uso
 
 ```php
 $mentionedRolesCount

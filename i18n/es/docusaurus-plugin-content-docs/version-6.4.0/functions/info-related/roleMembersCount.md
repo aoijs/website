@@ -6,7 +6,7 @@ id: roleMembersCount
 
 `$roleMembersCount` devolverá la cantidad de miembros que tienen un rol específico.
 
-## Modo de uso
+## Uso
 
 ```php
 $roleMembersCount[rolID;servidorID?]

@@ -6,7 +6,7 @@ id: giveRoles
 
 `$giveRoles` le dará a un usuario específico un rol específico).
 
-## Modo de uso
+## Uso
 
 ```php
 $giveRoles[servidorID;ID de usuario;razon?;...roles]

@@ -6,7 +6,7 @@ id: memberJoinPosition
 
 `$memberJoinPosition` will return a members join position.
 
-## Modo de uso
+## Uso
 
 ```php
 $memberJoinPosition[userID?;guildID?]

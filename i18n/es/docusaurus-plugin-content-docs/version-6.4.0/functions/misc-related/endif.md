@@ -6,7 +6,7 @@ id: endif
 
 `$endif` is used to end an if statement.
 
-## Modo de uso
+## Uso
 
 ```php
 $endif

@@ -6,7 +6,7 @@ id: allMembersCount
 
 `$allMembersCount` devolverá la cantidad de miembros en su servidor.
 
-## Modo de uso
+## Uso
 
 ```php
 $allMembersCount

@@ -6,7 +6,7 @@ id: disableMentionType
 
 `$disableMentionType` will disable a specific mention type.
 
-## Modo de uso
+## Uso
 
 ```php
 $disableMentionType[type]

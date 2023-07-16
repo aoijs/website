@@ -6,7 +6,7 @@ id: setUserNickname
 
 `$setUserNickname` will change a nickname of a guild member.
 
-## Modo de uso
+## Uso
 
 ```php
 $setUserNickname[userID;newName;reason?]

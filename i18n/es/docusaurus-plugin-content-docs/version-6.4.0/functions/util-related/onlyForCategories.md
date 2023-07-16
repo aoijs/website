@@ -6,7 +6,7 @@ id: onlyForCategories
 
 `$onlyForCategories` will check if the command was executed in the category of the execution channel and return a error message if not.
 
-## Modo de uso
+## Uso
 
 ```php
 $onlyForCategories[...categoryIds;error]

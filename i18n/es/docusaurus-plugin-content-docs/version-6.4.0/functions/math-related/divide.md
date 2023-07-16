@@ -6,7 +6,7 @@ id: divide
 
 `$divide` dividirá dos números dados.
 
-## Modo de uso
+## Uso
 
 ```php
 $divide[...números;...números]

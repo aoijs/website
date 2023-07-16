@@ -6,7 +6,7 @@ id: mentionedUsersCount
 
 `$mentionedUsersCount` will return the amount of user mentions within a message.
 
-## Modo de uso
+## Uso
 
 ```php
 $mentionedUsersCount

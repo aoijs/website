@@ -6,7 +6,7 @@ id: userBannerColor
 
 `$userBannerColor` will return the profile banner color.
 
-## Modo de uso
+## Uso
 
 ```php
 $userBannerColor[userID?]

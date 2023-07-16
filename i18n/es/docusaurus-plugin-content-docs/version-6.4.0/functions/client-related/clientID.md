@@ -6,7 +6,7 @@ id: clientID
 
 `$clientID` devolverá el ID de usuario de Discord del cliente.
 
-## Modo de uso
+## Uso
 
 ```php
 $clientID

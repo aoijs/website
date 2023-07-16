@@ -6,7 +6,7 @@ id: usersBanned
 
 `$usersBanned` will return the banned users of a guild.
 
-## Modo de uso
+## Uso
 
 ```php
 $usersBanned[guildID?;force?;option?;sep?]

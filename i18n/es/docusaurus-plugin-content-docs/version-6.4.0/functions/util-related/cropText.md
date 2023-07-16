@@ -6,7 +6,7 @@ id: cropText
 
 `$cropText` is used to crop given text.
 
-## Modo de uso
+## Uso
 
 ```php
 $cropText[text;limit;start?]

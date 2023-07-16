@@ -6,7 +6,7 @@ id: fetchClientValues
 
 `$fetchClientValues` devolverá los datos de todos los shards del cliente.
 
-## Modo de uso
+## Uso
 
 ```php
 $fetchClientValues[función]

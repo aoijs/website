@@ -6,7 +6,7 @@ id: isStreaming
 
 `$isStreaming` will check if one user is streaming in a voice channel.
 
-## Modo de uso
+## Uso
 
 ```php
 $isStreaming[userID?;guildID?]

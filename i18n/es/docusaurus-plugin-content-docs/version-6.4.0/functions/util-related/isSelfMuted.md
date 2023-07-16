@@ -6,7 +6,7 @@ id: isSelfMuted
 
 $isSelfMuted is similar but not to confuse with `$isMuted`, this will check if the user muted themselves.
 
-## Modo de uso
+## Uso
 
 ```php
 $isSelfMuted[userID?;guildID?]

@@ -6,7 +6,7 @@ id: allChannelsCount
 
 `$allChannelsCount` devolverá la cantidad de todos los canales almacenados en caché de un tipo determinado.
 
-## Modo de uso
+## Uso
 
 ```php
 $allChannelsCount[tipo?]

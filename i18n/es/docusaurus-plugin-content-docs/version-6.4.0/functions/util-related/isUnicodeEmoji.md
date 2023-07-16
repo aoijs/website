@@ -6,7 +6,7 @@ id: isUnicodeEmoji
 
 `$isUnicodeEmoji` will check if the given emoji is an unicode emoji.
 
-## Modo de uso
+## Uso
 
 ```php
 $isUnicodeEmoji[emojiResolver]

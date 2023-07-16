@@ -6,7 +6,7 @@ id: clientLeave
 
 `$clientLeave` hará que su bot abandone un servidor específico.
 
-## Modo de uso
+## Uso
 
 ```php
 $clientLeave[servidorID?]

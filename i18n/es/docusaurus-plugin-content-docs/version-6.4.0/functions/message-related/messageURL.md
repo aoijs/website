@@ -6,7 +6,7 @@ id: messageURL
 
 `$messageURL` will return the URL of a given message.
 
-## Modo de uso
+## Uso
 
 ```php
 $messageURL[messageID?;channelID?]

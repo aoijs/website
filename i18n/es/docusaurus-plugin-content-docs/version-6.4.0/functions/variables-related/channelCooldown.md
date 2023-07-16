@@ -6,7 +6,7 @@ id: channelCooldown
 
 `$channelCooldown` will set a channel-based cooldown.
 
-## Modo de uso
+## Uso
 
 ```php
 $channelCooldown[time;errorMessage]

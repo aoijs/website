@@ -6,7 +6,7 @@ id: commandInfo
 
 `$commandInfo` devolverá el texto dado de una propiedad.
 
-## Modo de uso
+## Uso
 
 ```php
 $commandInfo[nombre;opción]

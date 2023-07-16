@@ -6,7 +6,7 @@ id: deleteVar
 
 `$deleteVar` will delete a given variable.
 
-## Modo de uso
+## Uso
 
 ```php
 $deleteVar[variable;id;table?]

@@ -6,7 +6,7 @@ id: isValidInvite
 
 `$isValidInvite` will check if the given invite is valid.
 
-## Modo de uso
+## Uso
 
 ```php
 $isValidInvite[inviteResolver]

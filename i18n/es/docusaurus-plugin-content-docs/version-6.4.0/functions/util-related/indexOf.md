@@ -6,7 +6,7 @@ id: indexOf
 
 `$indexOf` will return the index of the given character.
 
-## Modo de uso
+## Uso
 
 ```php
 $indexOf[string;char]

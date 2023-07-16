@@ -6,7 +6,7 @@ id: stringEndsWith
 
 `$stringEndsWith` will check if the given argument ends with something specific.
 
-## Modo de uso
+## Uso
 
 ```php
 $stringEndsWith[text;check]

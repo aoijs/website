@@ -6,7 +6,7 @@ id: userPerms
 
 `$userPerms` will return a user's permission of a specific guild.
 
-## Modo de uso
+## Uso
 
 ```php
 $userPerms[userID?;sep?;guildID?]

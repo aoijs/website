@@ -6,7 +6,7 @@ id: packageDependencies
 
 `$packageDependencies` will return aoi.js' package dependencies.
 
-## Modo de uso
+## Uso
 
 ```php
 $packageDependencies

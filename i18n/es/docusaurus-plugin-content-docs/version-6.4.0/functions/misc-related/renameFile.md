@@ -6,7 +6,7 @@ id: renameFile
 
 `$renameFile` will rename a file of your bot's directory.
 
-## Modo de uso
+## Uso
 
 ```php
 $renameFile[oldFile;newFile]

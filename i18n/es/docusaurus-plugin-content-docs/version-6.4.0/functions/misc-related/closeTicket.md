@@ -6,7 +6,7 @@ id: closeTicket
 
 `$closeTicket` eliminará un ticket creado por `$newTicket`.
 
-## Modo de uso
+## Uso
 
 ```php
 $closeTicket[error?]

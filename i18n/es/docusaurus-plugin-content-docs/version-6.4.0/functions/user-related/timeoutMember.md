@@ -6,7 +6,7 @@ id: timeoutMember
 
 `$timeoutMember` will timeout a given member using Discord's Timeout feature.
 
-## Modo de uso
+## Uso
 
 ```php
 $timeoutMember[guildID;memberID;timer;timeoutEndsAt?;reason?]

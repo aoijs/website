@@ -6,7 +6,7 @@ id: isSelfDeafened
 
 `$isSelfDeafened` is similar but not to confuse with `$isDeafen`, this will check if the user deafened themselves.
 
-## Modo de uso
+## Uso
 
 ```php
 $isSelfDeafened[userID?;guildID?]

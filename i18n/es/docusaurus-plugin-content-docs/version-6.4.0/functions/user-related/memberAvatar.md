@@ -6,7 +6,7 @@ id: memberAvatar
 
 `$memberAvatar` will return the profile picture of a guild member.
 
-## Modo de uso
+## Uso
 
 ```php
 $memberAvatar[guildID?;userID?;size?;dynamic?;format?]

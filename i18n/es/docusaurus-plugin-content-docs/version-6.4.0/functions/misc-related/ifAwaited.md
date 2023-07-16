@@ -6,7 +6,7 @@ id: ifAwaited
 
 `$ifAwaited` will check a condition and executed an awaited command depending on the condition being true or false.
 
-## Modo de uso
+## Uso
 
 ```php
 $ifAwaited[condition;true;false?]

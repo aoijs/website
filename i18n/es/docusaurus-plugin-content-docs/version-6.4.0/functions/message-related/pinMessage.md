@@ -6,7 +6,7 @@ id: pinMessage
 
 `$pinMessage` will pin a given message.
 
-## Modo de uso
+## Uso
 
 ```php
 $pinMessage[messageID?;channelID?]

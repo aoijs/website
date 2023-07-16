@@ -6,7 +6,7 @@ id: repeatMessage
 
 `$repeatMessage` will repeat the given text for given amount of times.
 
-## Modo de uso
+## Uso
 
 ```php
 $repeatMessage[time;text]

@@ -6,7 +6,7 @@ id: formatDate
 
 `$formatDate` will format a given date.
 
-## Modo de uso
+## Uso
 
 ```php
 $formatDate[date;format?]

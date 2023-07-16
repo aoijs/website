@@ -6,7 +6,7 @@ id: userDefaultAvatar
 
 `$userDefaultAvatar` will return the given user's default Discord User Avatar.
 
-## Modo de uso
+## Uso
 
 ```php
 $userDefaultAvatar[userID?]

@@ -6,7 +6,7 @@ id: indexOfArg
 
 `$indexOfArg` will return the index of the given query.
 
-## Modo de uso
+## Uso
 
 ```php
 $indexOfArg[string;query]

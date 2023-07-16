@@ -6,7 +6,7 @@ id: isPartnered
 
 `$isPartnered` checks if the given guild is partnered with Discord.
 
-## Modo de uso
+## Uso
 
 ```php
 $isPartnered[guildID?]

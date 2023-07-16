@@ -6,7 +6,7 @@ id: clientOwnerIDs
 
 `$clientOwnerIDs` devolverá los ID de usuario del propietario del bot (o de varias personas si tienes un equipo).
 
-## Modo de uso
+## Uso
 
 ```php
 $clientOwnerIDs[separador?]

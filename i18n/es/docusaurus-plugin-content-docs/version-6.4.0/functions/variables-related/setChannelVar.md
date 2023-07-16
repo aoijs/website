@@ -6,7 +6,7 @@ id: setChannelVar
 
 `$setChannelVar` will change the value of a given channel variable.
 
-## Modo de uso
+## Uso
 
 ```php
 $setChannelVar[varname;value;channelID?;table?]

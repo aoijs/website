@@ -6,7 +6,7 @@ id: userStatus
 
 `$userStatus` will return a user's presence.
 
-## Modo de uso
+## Uso
 
 ```php
 $userStatus[guildId?;userId?]

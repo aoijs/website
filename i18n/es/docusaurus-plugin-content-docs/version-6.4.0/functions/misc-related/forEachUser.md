@@ -6,7 +6,7 @@ id: forEachUser
 
 `$forEachUser` will execute awaited commands for user across all guilds.
 
-## Modo de uso
+## Uso
 
 ```php
 $forEachUser[time;awaitData;...awaitedCmds;endCmd]

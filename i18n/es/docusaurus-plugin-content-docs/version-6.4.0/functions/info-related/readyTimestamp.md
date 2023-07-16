@@ -6,7 +6,7 @@ id: readyTimestamp
 
 `$readyTimestamp` devolverá el timestamp de cuando el bot estaba listo.
 
-## Modo de uso
+## Uso
 
 ```php
 $readyTimestamp

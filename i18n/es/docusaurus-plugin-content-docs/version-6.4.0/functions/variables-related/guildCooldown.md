@@ -6,7 +6,7 @@ id: guildCooldown
 
 `$guildCooldown` will set a guild-based cooldown.
 
-## Modo de uso
+## Uso
 
 ```php
 $guildCooldown[time;errorMessage]

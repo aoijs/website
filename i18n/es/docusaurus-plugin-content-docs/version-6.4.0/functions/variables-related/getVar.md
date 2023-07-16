@@ -6,7 +6,7 @@ id: getVar
 
 `$getVar` will return the value of a global variable
 
-## Modo de uso
+## Uso
 
 ```php
 $getVar[varname;table?]

@@ -6,7 +6,7 @@ id: setTimeout
 
 `$setTimeout` will set a timeout for a given action (which will even continue to run after bot restart).
 
-## Modo de uso
+## Uso
 
 ```php
 $setTimeout[awaitedCmd;duration;timeoutData;returnId?;pulse?]

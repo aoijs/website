@@ -6,7 +6,7 @@ id: sum
 
 `$sum` sumará dos números dados.
 
-## Modo de uso
+## Uso
 
 ```php
 $sum[núm;núm]

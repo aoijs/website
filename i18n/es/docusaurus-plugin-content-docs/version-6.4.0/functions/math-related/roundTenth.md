@@ -6,7 +6,7 @@ id: roundTenth
 
 `$roundTenth` redondeará a la décima siguiente.
 
-## Modo de uso
+## Uso
 
 ```php
 $roundTenth[número;posiciónDecimal]

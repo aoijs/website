@@ -6,7 +6,7 @@ id: deleteFile
 
 `$deleteFile` will delete a given file.
 
-## Modo de uso
+## Uso
 
 ```php
 $deleteFile[path]

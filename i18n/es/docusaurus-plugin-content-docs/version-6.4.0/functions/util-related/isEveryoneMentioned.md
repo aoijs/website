@@ -6,7 +6,7 @@ id: isEveryoneMentioned
 
 `$isEveryoneMentioned` will check if everyone or here is mentioned.
 
-## Modo de uso
+## Uso
 
 ```php
 $isEveryoneMentioned

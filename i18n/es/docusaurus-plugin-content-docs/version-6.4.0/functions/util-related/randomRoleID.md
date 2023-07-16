@@ -6,7 +6,7 @@ id: randomRoleID
 
 `$randomRoleID` will return a random role ID of a given guild.
 
-## Modo de uso
+## Uso
 
 ```php
 $randomRoleID[guildID?]

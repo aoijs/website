@@ -6,7 +6,7 @@ id: addCmdReactions
 
 $addCmdReactions reaccionará con emojis dados al mensaje del autor.
 
-## Modo de uso
+## Uso
 
 ```php
 $addClientReactions[...reacciones]

@@ -6,7 +6,7 @@ id: date
 
 `$date` devolverá el día del mes.
 
-## Modo de uso
+## Uso
 
 ```php
 $date

@@ -6,7 +6,7 @@ id: usersInChannel
 
 `$usersInChannel` will return all users who are connected to the specified voice channel.
 
-## Modo de uso
+## Uso
 
 ```php
 $usersInChannel[channelID;option?;sep?]
