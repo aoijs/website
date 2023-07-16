@@ -23,29 +23,6 @@ module.exports = {
     defaultLocale: "en",
     locales: ["en", "es", "fr", "uk", "ru"],
     path: "i18n",
-    localeConfigs: {
-      en: {
-        label: "English",
-        direction: "ltr",
-        htmlLang: "en-US",
-        path: "en",
-      },
-      es: {
-        label: "Español",
-        direction: "ltr",
-        path: "es",
-      },
-      tr: {
-        label: "Türkçe",
-        direction: "ltr",
-        path: "tr",
-      },
-      ar: {
-        label: "عربي",
-        direction: "rtl",
-        path: "ar",
-      },
-    },
   },
   themeConfig: {
     image:
@@ -223,7 +200,7 @@ module.exports = {
           customCss: require.resolve("./src/css/custom.css"),
         },
         gtag: {
-          trackingID: "G-BFNTC2Y655"
+          trackingID: "G-BFNTC2Y655",
         },
         blog: {
           path: "forums",
