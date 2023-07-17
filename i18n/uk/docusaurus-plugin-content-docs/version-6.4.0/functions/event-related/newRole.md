@@ -1,10 +1,10 @@
 ---
 title: '$newRole'
-description: '$newRole holds data of a role that was created, updated, or deleted. Used in role update / delete / create events, or else it won''t give any data.'
+description: '$newRole містить дані про створену роль, оновлену або видалену. Використовується в якості ролі оновлення / видалення / створення подій, або інший вона не дасть жодних даних.'
 id: newRole
 ---
 
-`$newRole` holds data of a role that was created, updated, or deleted. Used in role update / delete / create events, or else it won't give any data.
+`$newRole` зберігає дані ролі створеної ролі, оновлені або видалені. Використовується у якості ролі оновлення / видалення / створення подій, або для того щоб вони не давали даних.
 
 ## Використання
 
@@ -14,6 +14,6 @@ $newRole[option]
 
 ## Параметри
 
-| Поле   | Тип   | Опис                | Обов'язковий |
-| ------ | ----- | ------------------- |:------------:|
-| option | рядок | Option to retrieve. |     так      |
+| Поле  | Тип   | Опис                 | Обов'язковий |
+| ----- | ----- | -------------------- |:------------:|
+| опція | рядок | Можливість отримати. |     так      |

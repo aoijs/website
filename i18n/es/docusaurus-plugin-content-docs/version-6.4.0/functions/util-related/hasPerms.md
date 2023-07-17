@@ -1,24 +1,24 @@
 ---
 title: '$hasPerms'
-description: '$hasPerms will check if the user has the required permission.'
+description: '$hasPerms comprobará si el usuario tiene uno de los permisos necesarios.'
 id: hasPerms
 ---
 
-`$hasPerms` will check if the user has the required permission.
+`$hasPerms` comprobará si el usuario tiene uno de los permisos necesarios.
 
 ## Uso
 
 ```php
-$hasPerms[guildID;userID;...perms]
+$hasPerms[servidoriD;usuarioID;...perms]
 ```
 
 ## Parámetros
 
-| Campo       | Tipo   | Descripción                                              | Requerido |
-| ----------- | ------ | -------------------------------------------------------- |:---------:|
-| guildID     | entero | ID of the guild where the client checks the permissions. |    sí     |
-| usarioID    | entero | ID of the user.                                          |    no     |
-| ...permisos | string | Permissions.                                             |    sí     |
+| Campo       | Tipo   | Descripción                                                 | Requerido |
+| ----------- | ------ | ----------------------------------------------------------- |:---------:|
+| guildID     | entero | ID de la hermandad donde el cliente comprueba los permisos. | verdadero |
+| usarioID    | entero | El ID del usuario.                                          |   falso   |
+| ...permisos | string | Permisos.                                                   | verdadero |
 
 <details>
   <summary> <h3> Permisos de la API de Discord </h3></summary>
@@ -42,7 +42,7 @@ $hasPerms[guildID;userID;...perms]
 | embedlinks              | Permiso para insertar enlaces                                                    |
 | attachfiles             | Permiso para adjuntar archivos                                                   |
 | readmessagehistory      | Permiso para leer el historial de mensajes dentro de un canal determinado        |
-| mentioneveryone         | Permission to mention `@everyone` and all roles                                  |
+| mentioneveryone         | Permiso para mencionar @everyone/`@here` y todos los roles                       |
 | useexternalemojis       | Permiso para utilizar emojis externos                                            |
 | viewguildinsights       | Permiso para ver la información del servidor                                     |
 | connect                 | Permiso para conectarse a canales de voz y stages                                |
@@ -72,7 +72,7 @@ $hasPerms[guildID;userID;...perms]
 
 ## Ejemplo(s)
 
-This will return `true` when the author has `kick` permissions and return `false` when they don't have those:
+Esto devolverá `true` cuando el autor tenga permisos de `kick` y devolverá `false` cuando no los tenga:
 
 ```javascript
 bot.command({

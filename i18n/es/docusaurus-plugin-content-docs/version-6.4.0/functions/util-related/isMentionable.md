@@ -1,10 +1,10 @@
 ---
 title: '$isMentionable'
-description: '$isMentionable check if a given role is mentionable.'
+description: '$isMentionable comprueba si un rol dado es mencionable.'
 id: isMentionable
 ---
 
-`$isMentionable` check if a given role is mentionable.
+`$isMentionable` comprueba si un rol determinado es mencionable.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $isMentionable[roleID;guildID?]
 
 ## Parámetros
 
-| Campo       | Tipo   | Parámetros                                       | Requerido |
-| ----------- | ------ | ------------------------------------------------ |:---------:|
-| roleID      | entero | The role ID to check if it's mentionable or not. | verdadero |
-| servidorID? | entero | ID of the guild where the role is present in.    |    no     |
+| Campo       | Tipo   | Parámetros                                           | Requerido |
+| ----------- | ------ | ---------------------------------------------------- |:---------:|
+| roleID      | entero | El ID de rol para comprobar si es mencionable o no.  | verdadero |
+| servidorID? | entero | ID de la hermandad en la que está presente el papel. |    no     |
 
 ## Ejemplo(s)
 
-This will check if a role with the name `Owner` is mentionable and returns either `true` or `false`:
+Esto comprobará si un rol con el nombre `Propietario` es mencionado y devuelve `verdadero` o `falso`:
 
 ```javascript
 bot.command({

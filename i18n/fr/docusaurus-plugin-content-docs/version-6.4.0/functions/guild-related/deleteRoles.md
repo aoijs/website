@@ -1,33 +1,33 @@
 ---
 title: '$deleteRoles'
-description: '$deleteRoles will delete one or multiple roles.'
+description: '$deleteRoles supprimera un ou plusieurs rôles.'
 id: deleteRoles
 ---
 
-`$deleteRoles` will delete one or multiple roles.
+`$deleteRoles` supprimera un ou plusieurs rôles.
 
-## Usage
+## Utilisation
 
 ```php
-$deleteRoles[guildID;...roles]
+$deleteRoles[IDserveur;...rôles]
 ```
 
-## Parameters
+## Paramètres
 
-| Field    | Type            | Description                                     | Required |
-| -------- | --------------- | ----------------------------------------------- |:--------:|
-| guildID  | integer         | The guild ID of where the roles are located in. |   true   |
-| ...roles | integer, string | The Ids of the roles.                           |   true   |
+| Champ     | Type                         | Description                               | Obligatoire |
+| --------- | ---------------------------- | ----------------------------------------- |:-----------:|
+| IDserveur | entier                       | L'ID du serveur où se trouvent les rôles. |     oui     |
+| ...roles  | entier, chaîne de caractères | l'IDs des rôles.                          |    true     |
 
-## Example(s)
+## Exemple(s)
 
-This will delete roles of your guilds ( make sure to add actual IDs ):
+Ceci supprimer des rôles de votre serveur. (assurez-vous d'ajouter les identifiants réels):
 
 ```javascript
 bot.command({
-    name: 'deleteRoles',
+    name: 'supprimerRôles',
     code: `
-  Deleted three roles!
+  Rôles supprimés!
   $deleteRoles[$guildID;roleID1;roleID2;roleID3]
   `
 });

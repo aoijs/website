@@ -1,10 +1,10 @@
 ---
 title: '$isChannelManageable'
-description: '$isChannelManageable will check if the channel is manageable or not.'
+description: '$isChannelManageable перевірить, чи доступний для управління каналом.'
 id: isChannelManageable
 ---
 
-`$isChannelManageable` will check if the channel is manageable or not.
+`$isChannelManageable` буде перевірити, чи є канал керованим чи ні.
 
 ## Використання
 
@@ -14,18 +14,18 @@ $isChannelManageable[channelID?]
 
 ## Параметри
 
-| Поле       | Тип     | Опис                                                            | Обов'язковий |
-| ---------- | ------- | --------------------------------------------------------------- |:------------:|
-| channelID? | integer | ID of the channel to check if the channel is manageable or not. |      ні      |
+| Поле       | Тип  | Опис                                                   | Обов'язковий |
+| ---------- | ---- | ------------------------------------------------------ |:------------:|
+| ID каналу? | ціле | ID каналу, який перевіряє, чи є канал керованим чи ні. |      ні      |
 
 ## Приклад(и)
 
-This will return `true` or `false` depending on if the channel you're executing the command in is manageable:
+Це поверне `true` або `false` в залежності від того, що канал ви виконуєте в менеджері команди:
 
 ```javascript
 bot.command({
     name: 'isChannelManageable',
-    code: `
+    код: `
   $isChannelManageable[$channelID]
   `
 });

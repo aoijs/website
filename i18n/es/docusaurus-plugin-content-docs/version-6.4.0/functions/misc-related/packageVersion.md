@@ -1,10 +1,10 @@
 ---
 title: '$packageVersion'
-description: '$packageVersion will return your current aoi.js version.'
+description: '$packageVersion devolverá su versión actual de aoi.js.'
 id: packageVersion
 ---
 
-`$packageVersion` will return your current aoi.js version.
+`$packageVersion` devolverá su versión actual de aoi.js.
 
 ## Uso
 
@@ -14,7 +14,7 @@ $packageVersion
 
 ## Ejemplo(s)
 
-This will return your current aoi.js version:
+devolverá su versión actual de aoi.js.
 
 ```javascript
 bot.command({

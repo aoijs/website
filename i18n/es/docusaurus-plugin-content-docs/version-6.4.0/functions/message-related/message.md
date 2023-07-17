@@ -1,32 +1,32 @@
 ---
 title: '$message'
-description: '$message will return given arguments of a message.'
+description: '$message devolverá los argumentos dados de un mensaje.'
 id: message
 ---
 
-`$message` will return given arguments of a message.
+`$message` devolverá argumentos dados de una interacción.
 
 ## Uso
 
 ```php
-$message[index?]
+$message[indice?]
 ```
 
 ## Parámetros
 
-| Campo  | Tipo    | Parámetros                                                                           | Requerido |
-| ------ | ------- | ------------------------------------------------------------------------------------ |:---------:|
-| index? | integer | Which message argument will be returned, leave it empty to return the whole message. |    no     |
+| Campo   | Tipo   | Parámetros                                                                              | Requerido |
+| ------- | ------ | --------------------------------------------------------------------------------------- |:---------:|
+| índice? | entero | Qué argumento de mensaje será devuelto, déjalo vacío para devolver el mensaje completo. |   falso   |
 
 ## Ejemplo(s)
 
-This will return your given message:
+Esto responderá a tu mensaje de comando:
 
 ```javascript
 bot.command({
     name: 'message',
     code: `
-  You said: "$message"
-  ` // [prefix]message Hello!
+  Usted dijo: "$message"
+  ` // [prefix]message Hola!
 });
 ```

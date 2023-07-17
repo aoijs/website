@@ -1,39 +1,39 @@
 ---
 title: '$checkCondition'
-description: '$checkCondition checks if a condition is either true or false.'
+description: '$checkCondition comprueba si una condición es verdadera o falsa.'
 id: checkCondition
 ---
 
-`$checkCondition` checks if a condition is either true or false.
+`$checkCondition` comprueba si una condición es verdadera o falsa.
 
 ## Uso
 
 ```php
-$checkCondition[condition]
+$checkCondition[condicion]
 ```
 
 ## Parámetros
 
-| Campo     | Tipo   | Descripción                  | Requerido |
-| --------- | ------ | ---------------------------- |:---------:|
-| condition | cadena | Condition you want to check. | verdadero |
+| Campo     | Tipo   | Descripción                    | Requerido |
+| --------- | ------ | ------------------------------ |:---------:|
+| condición | cadena | Condición que desea comprobar. | verdadero |
 
-#### Valid Mathematical Operators
+#### Operadores matemáticos
 
-| Operator | Mathematical Expression  |
-| -------- | ------------------------ |
-| ==       | es igual a               |
-| !=       | not equal to             |
-| <=       | less than or equal to    |
-| \>=     | greater than or equal to |
-| \>      | greater than             |
-| <        | less than                |
-| \       | \|     | logical OR     |
-| &&       | logical conjunction      |
+| Operador | Las expresiones matemáticas |
+| -------- | --------------------------- |
+| ==       | es igual a                  |
+| !=       | no es igual a               |
+| <=       | es inferior o igual a       |
+| \>=     | mayor que o igual a         |
+| \>      | es superior a               |
+| <        | menos que                   |
+| \       | \| O lógico                |
+| &&       | conjunción causal           |
 
 ## Ejemplo(s)
 
-This will return `false` as `50` is greater than `25`:
+Esto devolverá `false` ya que `50` es mayor que `25`:
 
 ```javascript
 bot.command({
@@ -44,11 +44,11 @@ bot.command({
 });
 ```
 
-### Advanced Example
+### Ejemplo(s) avanzado
 
-#### Logical conjunction
+#### Conjunción causal
 
-This will return `true` as `50` is greater than `25` and `120` is less than `280`:
+Esto devolverá `true` ya que `50` es mayor que `25` y `120` es menor que `280`:
 
 ```javascript
 bot.command({
@@ -59,9 +59,9 @@ bot.command({
 });
 ```
 
-#### Logical OR
+#### O lógico
 
-This will return `true` as one of the two arguments (`50>25`) are `true`:
+Esto devolverá `true` ya que uno de los dos argumentos (`50>25`) es `true`:
 
 ```javascript
 bot.command({

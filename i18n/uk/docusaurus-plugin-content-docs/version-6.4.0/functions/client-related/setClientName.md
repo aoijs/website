@@ -1,10 +1,10 @@
 ---
 title: '$setClientName'
-description: '$setClientName will change the clients'' Discord Username.'
+description: '$setClientName змінить ім''я користувача Discord.'
 id: setClientName
 ---
 
-`$setClientName` will change the clients' Discord Username.
+`$setClientName` змінить ім'я користувача Discord.
 
 ## Використання
 
@@ -14,18 +14,18 @@ $setClientName[username]
 
 ## Параметри
 
-| Поле     | Тип   | Опис                     | Обов'язковий |
-| -------- | ----- | ------------------------ |:------------:|
-| username | рядок | The new client username. |     так      |
+| Поле             | Тип   | Опис                   | Обов'язковий |
+| ---------------- | ----- | ---------------------- |:------------:|
+| ім'я користувача | рядок | Нове ім'я користувача. |     так      |
 
 ## Приклад(и)
 
-This will change the client's username to the command author's username:
+Змінить ім'я користувача користувача на ім'я користувача для адміністратора:
 
 ```javascript
 bot.command({
     name: 'setClientName',
-    code: `
+    код: `
    $setClientName[$username[$authorID]]`
 });
 ```

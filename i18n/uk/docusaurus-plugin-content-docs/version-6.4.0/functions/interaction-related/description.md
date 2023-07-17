@@ -1,10 +1,10 @@
 ---
-title: '$description'
-description: '$description is used for embeds to add an description field.'
-id: опис
+title: $description
+description: '$description використовується для додавання поля опису.'
+id: description
 ---
 
-`$description` is used for embeds to add an description field.
+`$description` використовується для включення в поле опису.
 
 ## Використання
 
@@ -14,19 +14,19 @@ $description[index?;description]
 
 ## Параметри
 
-| Поле   | Тип    | Опис                                   | Обов'язковий |
-| ------ | ------ | -------------------------------------- |:------------:|
-| index? | number | The embed index.                       |      ні      |
-| опис   | рядок  | The content of the embeds description. |     так      |
+| Поле    | Тип       | Опис                     | Обов'язковий |
+| ------- | --------- | ------------------------ |:------------:|
+| індекс? | кількість | Вбудувати індекс.        |      ні      |
+| опис    | рядок     | Зміст опису вбудованого. |     так      |
 
 ## Приклад(и)
 
-This will send an embed with the content `aoi.js is great!`:
+Це буде відправити вставку з вмістом `aoi.js є чудовою!`:
 
 ```javascript
 bot.command({
     name: 'embed',
-    code: `
+    код: `
   $description[aoi.js is great!]
   `
 });

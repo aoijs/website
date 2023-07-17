@@ -1,10 +1,10 @@
 ---
-title: '$isRoleManaged'
-description: '$isRoleManaged will check if a certain role is managed by Discord.'
+title: $isRoleManaged
+description: '$isRoleManaged comprobará si un determinado rol es administrado por Discord.'
 id: isRoleManaged
 ---
 
-`$isRoleManaged` will check if a certain role is managed by Discord.
+`$isRoleManaged` comprobará si un determinado rol es administrado por Discord.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $isRoleManaged[roleID;guildID?]
 
 ## Parámetros
 
-| Campo       | Tipo   | Parámetros                                                          | Requerido |
-| ----------- | ------ | ------------------------------------------------------------------- |:---------:|
-| roleID      | entero | ID of the role you want to check if it's managed by Discord or not. | verdadero |
-| servidorID? | entero | ID of the guild where the role exists.                              |    no     |
+| Campo       | Tipo   | Parámetros                                                            | Requerido |
+| ----------- | ------ | --------------------------------------------------------------------- |:---------:|
+| roleID      | entero | ID del rol que quieres comprobar si es administrado por Discord o no. | verdadero |
+| servidorID? | entero | ID del gremio donde existe el rol.                                    |    no     |
 
 ## Ejemplo(s)
 
-This will check if a role called `Server Booster` is managed by Discord and return either `true` or `false`:
+Esto comprobará si un rol llamado `Aumento del Servidor` es administrado por Discord y devuelve `verdadero` o `falso`:
 
 ```javascript
 bot.command({

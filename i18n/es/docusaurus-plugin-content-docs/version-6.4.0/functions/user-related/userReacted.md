@@ -1,29 +1,29 @@
 ---
 title: '$userReacted'
-description: '$userReacted will check if a specified user reacted with a specific emoji to a specific message and return either true or false.'
+description: '$userReacted verificará si un usuario específico reaccionó con un emoji específico a un mensaje específico y devolverá true o false.'
 id: userReacted
 ---
 
-`$userReacted` will check if a specified user reacted with a specific emoji to a specific message and return either true or false.
+`$userReacted` comprobará si un usuario específico reaccionó con un emoji específico a un mensaje específico y devolverá true o false.
 
 ## Uso
 
 ```php
-$userReacted[channelID;messageID;userID;emoji]
+$userReacted[canalID;mensajeID;ID de usuario;emoji]
 ```
 
 ## Parámetros
 
-| Campo         | Tipo   | Parámetros          | Requerido |
-| ------------- | ------ | ------------------- |:---------:|
-| servidorID    | entero | The guild ID.       | verdadero |
-| ID de mensaje | entero | El ID del mensaje.  | verdadero |
-| usarioID      | entero | The user ID.        |    sí     |
-| emoji         | string | Emoji to check for. |    sí     |
+| Campo         | Tipo   | Parámetros                     | Requerido |
+| ------------- | ------ | ------------------------------ |:---------:|
+| servidorID    | entero | El ID del servidor.            | verdadero |
+| ID de mensaje | entero | El ID del mensaje.             | verdadero |
+| usarioID      | entero | La identificación del usuario. | verdadero |
+| emoji         | cadena | Emoji para comprobar.          | verdadera |
 
 ## Ejemplo(s)
 
-This will return `true` as the bot reacted to the initial command message:
+Esto devolverá `true` como el bot reaccionó al mensaje de comando inicial:
 
 ```javascript
 bot.command({

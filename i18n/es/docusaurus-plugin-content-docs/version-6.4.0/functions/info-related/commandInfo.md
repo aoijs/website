@@ -32,7 +32,7 @@ bot.command({
     aliases: ["ci", "cmdInfo"],
     uso: "commandInfo [command]",
     code: `
-  Modo de uso: $commandInfo[ci;uso]
+  Uso: $commandInfo[ci;uso]
   `
 });
 ```

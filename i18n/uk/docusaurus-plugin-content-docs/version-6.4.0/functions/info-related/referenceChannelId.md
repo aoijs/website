@@ -1,10 +1,10 @@
 ---
-title: '$referenceChannelId'
-description: '$referenceChannelId will return the channel ID of where the user replied in.'
+title: $referenceChannelId
+description: '$referenceChannelId поверне ID каналу, в якому користувач відповів.'
 id: referenceChannelId
 ---
 
-`$referenceChannelId` will return the channel ID of where the user replied in.
+`$referenceChannelId` поверне ідентифікатор каналу, в якому користувач відповів.
 
 ## Використання
 

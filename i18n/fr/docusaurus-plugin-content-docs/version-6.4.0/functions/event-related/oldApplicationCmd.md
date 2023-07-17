@@ -1,49 +1,49 @@
 ---
 title: '$oldApplicationCmd'
-description: '$oldApplicationCmd gets the data from application Callbacks (update and delete one)'
+description: '$oldApplicationCmd récupère les données des callbacks de l''application (évènements mis à jour et supprimé)'
 id: oldApplicationCmd
 ---
 
-`$oldApplicationCmd` gets the data from application Callbacks (update and delete one)
+`$oldApplicationCmd` récupère les données des callbacks de l'application (évènements mis à jour et supprimé)
 
-## Usage
+## Utilisation
 
 ```php
 $oldApplicationCmd[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- |:--------:|
-| option | string | Option to retrieve. |   true   |
+| Champ  | Type                 | Description         | Obligatoire |
+| ------ | -------------------- | ------------------- |:-----------:|
+| option | chaîne de caractères | Option à récupérer. |    vrai     |
 
 ### Options
 
-| Field             | Type    | Description                                                 |
-| ----------------- | ------- | ----------------------------------------------------------- |
-| name              | string  | Name of slash commnad.                                      |
-| id                | integer | ID of slash commnad.                                        |
-| description       | string  | Description of slash commnad.                               |
-| version           | integer | Version of slash command.                                   |
-| options           | string  | Options of slash command.                                   |
-| guildID           | integer | Guild ID of slash command.                                  |
-| applicationID     | integer | Returns application ID.                                     |
-| defaultPermission | string  | Returns Default Permissions of slash command.               |
-| timestamp         | string  | Returns timestamp of the creation of slash command (in ms). |
-| createdAt         | string  | Returns the date of creation of slash command.              |
+| Champ             | Type                 | Description                                                        |
+| ----------------- | -------------------- | ------------------------------------------------------------------ |
+| name              | chaîne de caractères | Nom de la commnade slash.                                          |
+| id                | entier               | ID de la commande slash.                                           |
+| description       | chaîne de caractères | Description de la commande slash.                                  |
+| version           | entier               | Version de la commande slash.                                      |
+| options           | chaîne de caractères | Options de la commande slash.                                      |
+| guildID           | entier               | ID du serveur de la commande slash.                                |
+| applicationID     | entier               | Renvoie l'ID de l'application.                                     |
+| defaultPermission | chaine de caractères | Renvoie les permissions par défaut de la commande slash.           |
+| timestamp         | chaîne de caractères | Retourne le timestamp de la création de la commande slash (en ms). |
+| createdAt         | chaîne de caractères | Retourne la date de création de la commande slash.                 |
 
-## Example(s)
+## Exemple(s)
 
 ```js
 bot.applicationCmdUpdateCommand({
     channel: "channelid",
     code: `
-    Slash command was updated!
-- New Name: $newApplicationCmd[name]
- - Old Name: $oldApplicationCmd[name]
-- New Description: $newApplicationCmd[description]
- - Old Description: $oldApplicationCmd[description]`
+    Commande slash mise à jour !
+- Nouveau nom : $newApplicationCmd[name]
+ - Ancien nom : $oldApplicationCmd[name]
+- Nouvelle description : $newApplicationCmd[description]
+ - Ancienne description : $oldApplicationCmd[description]`
 })
 ```
-- This code will execute when __slash command is updated__ (Modified)
+- Ce code sera exécuté lorsque la __commande slash sera mise à jour__ (Modifiée)

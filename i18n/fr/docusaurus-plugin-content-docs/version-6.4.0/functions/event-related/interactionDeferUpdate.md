@@ -1,24 +1,24 @@
 ---
 title: '$interactionDeferUpdate'
-description: '$interactionDeferUpdate defers the interaction message that will be updated.'
+description: '$interactionDeferUpdate reporte le message d''interaction qui sera mis à jour.'
 id: interactionDeferUpdate
 ---
 
-`$interactionDeferUpdate` defers the interaction message that will be updated.
+`$interactionDeferUpdate` reporte le message d'interaction qui sera mis à jour.
 
-## Usage
+## Utilisation
 
 ```php
-$interactionDeferUpdate[ephemeral]
+$interactionDeferUpdate[éphémère]
 ```
 
-## Parameters
+## Paramètres
 
-| Field     | Type    | Description                         | Required |
-| --------- | ------- | ----------------------------------- |:--------:|
-| ephemeral | boolean | Visible to the command author only? |   true   |
+| Champ    | Type    | Description                                      | Obligatoire |
+| -------- | ------- | ------------------------------------------------ |:-----------:|
+| éphémère | booléen | Visible uniquement par l'auteur de la commande ? |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
 ```javascript
 bot.command({
@@ -26,8 +26,8 @@ bot.command({
     type: 'interaction',
     prototype: 'button',
     code: ` 
-   $interactionFollowUp[This is the first message!]
-   $interactionEdit[This is the second message!]
+   $interactionFollowUp[ceci est le premier message!]
+   $interactionEdit[Ceci est le second message !]
    $interactionDeferUpdate[true]`
 });
 ```

@@ -1,19 +1,19 @@
 ---
 title: '$oldMessage'
-description: '$oldMessage holds the content of the message before it was updated. (if any)'
+description: '$oldMessage contient le contenu du message avant qu''il ne soit mis à jour. (s''il y en a)'
 id: oldMessage
 ---
 
-`$oldMessage` holds the content of the message before it was updated. (if any)
+`$oldMessage` contient le contenu du message avant qu'il ne soit mis à jour. (s'il y en a)
 
-## Usage
+## Utilisation
 
 ```php
 $oldMessage[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- |:--------:|
-| option | string | Option to retrieve. |   true   |
+| Champ  | Type                 | Description         | Obligatoire |
+| ------ | -------------------- | ------------------- |:-----------:|
+| option | chaîne de caractères | Option à récupérer. |    vrai     |

@@ -1,27 +1,27 @@
 ---
 title: '$sendMessage'
-description: '$sendMessage will send a message in the execution channel.'
+description: '$sendMessage enviará un mensaje en el canal de ejecución.'
 id: sendMessage
 ---
 
-`$sendMessage` will send a message in the execution channel.
+`$sendMessage` enviará un mensaje en un canal específico.
 
 ## Uso
 
 ```php
-$sendMessage[content;returnID?]
+$sendMessage[contenido;ID de retorno?]
 ```
 
 ## Parámetros
 
-| Campo     | Tipo     | Parámetros                                                                           | Requerido |
-| --------- | -------- | ------------------------------------------------------------------------------------ |:---------:|
-| contenido | consulta | Message Content to send.                                                             | verdadero |
-| returnID? | boolean  | Return message ID?  <br /> 1. **true** <br /> 2. **false** (por defecto) |    no     |
+| Campo          | Tipo     | Parámetros                                                                                  | Requerido |
+| -------------- | -------- | ------------------------------------------------------------------------------------------- |:---------:|
+| contenido      | consulta | Contenido del mensaje a enviar.                                                             | verdadero |
+| ID de retorno? | boolean  | ¿Devolver ID del mensaje?  <br /> 1. **true** <br /> 2. **false** (por defecto) |   falso   |
 
 ## Ejemplo(s)
 
-This will send a message in the current channel:
+Esto enviará una inserción en el canal actual:
 
 ```javascript
 bot.command({
@@ -32,13 +32,13 @@ bot.command({
 });
 ```
 
-This will send an embed in the current channel using parsers:
+Esto enviará una inserción en el canal actual usando "parsers".
 
 ```javascript
 bot.command({
     name: 'sendMessage',
     code: `
-   $sendMessage[Hello! {newEmbed:{title:Bonjour!}};false]  
+   $sendMessage[Hola! {newEmbed:{title:Bonjour!}};false]  
   `
 });
 ```

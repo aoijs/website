@@ -1,27 +1,27 @@
 ---
 title: '$cacheMembers'
-description: '$cacheMembers will cache all members of a guild.'
+description: '$cacheMembers almacenará en caché a todos los miembros de un gremio.'
 id: cacheMembers
 ---
 
-`$cacheMembers` will cache all members of a guild.
+`$cacheMembers` cacheará a todos los miembros de un gremio.
 
 ## Uso
 
 ```php
-$cacheMembers[guildID?;returnCount?]
+$cacheMembers[servidorID?;volverCuenta?]
 ```
 
 ## Parámetros
 
-| Campo        | Tipo    | Parámetros                                                                                        | Requerido |
-| ------------ | ------- | ------------------------------------------------------------------------------------------------- |:---------:|
-| servidorID?  | entero  | Of which guild the members shall be cached from.                                                  |    no     |
-| returnCount? | boolean | Returns the cached member count. <br /> 1. **true** <br /> 2. **false** (por defecto) |    no     |
+| Campo         | Tipo     | Parámetros                                                                                                  | Requerido |
+| ------------- | -------- | ----------------------------------------------------------------------------------------------------------- |:---------:|
+| servidorID?   | entero   | De qué gremio se almacenarán en caché los miembros.                                                         |   falso   |
+| volverCuenta? | booleano | Devuelve el recuento de miembros en caché. <br /> 1. **true** <br /> 2. **false** (por defecto) |   falso   |
 
 ## Ejemplo(s)
 
-This will cache all members of the current guild and return the amount of the cached members:
+Esto cacheará a todos los miembros de la guild actual y devolverá la cantidad de miembros cacheados:
 
 ```javascript
 bot.command({

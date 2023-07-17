@@ -1,10 +1,10 @@
 ---
-title: '$allChannelsCount'
-description: '$allChannelsCount will return the amount of all cached channels of a given type.'
+title: $allChannelsCount
+description: '$allChannelsCount поверне кількість всіх кешованих каналів даного типу.'
 id: allChannelsCount
 ---
 
-`$allChannelsCount` will return the amount of all cached channels of a given type.
+`$allChannelsCount` поверне кількість всіх кешованих каналів заданого типу.
 
 ## Використання
 
@@ -14,39 +14,39 @@ $allChannelsCount[type?]
 
 ## Параметри
 
-| Поле | Тип   | Опис                                        | Обов'язковий |
-| ---- | ----- | ------------------------------------------- | ------------ |
-| тип? | рядок | Type you want the amount of to be returned. | ні           |
+| Поле | Тип   | Опис                    | Обов'язковий |
+| ---- | ----- | ----------------------- | ------------ |
+| тип? | рядок | Введіть суму повернень. | ні           |
 
 <details open>
-  <summary><h3> Channel Types </h3></summary>
+  <summary><h3> Типи каналів </h3></summary>
 
-| Channel Type         |                    |
-| -------------------- | ------------------ |
-| Text Channel         | Text               |
-| Voice Channel        | Voice              |
-| Category             | Category           |
-| Stage Channel        | Stage              |
-| Private Thread       | PrivateThread      |
-| Public Thread        | PublicThread       |
-| Forum                | Forum              |
-| Announcement Thread  | AnnouncementThread |
-| Announcement Channel | Announcement       |
-| Home                 | GuildDirectory     |
-| NSFW Channel         | NSFW               |
-| Direct Message       | DM                 |
-| All Channel Types    | all                |
+| Тип каналу            |                 |
+| --------------------- | --------------- |
+| Текстовий канал       | Текст           |
+| Голосовий канал       | Голос           |
+| Категорія             | Категорія       |
+| Стадія канал          | Етап            |
+| Приватний потік       | Приватний потік |
+| Публічний потік       | PublicThread    |
+| Форум                 | Форум           |
+| Анонс потік           | Анонс           |
+| Канал оголошення      | Оголошення      |
+| Домашній екран        | GuildDirectory  |
+| NSFW Канал            | ПНС             |
+| Приватне повідомлення | ПП              |
+| Всі типи каналів      | всі             |
 
 </details>
 
 ## Приклад(и)
 
-This will return the amount of Voice Channels in your guild:
+Це поверне кількість Голосових Каналів у вашій гільдії:
 
 ```javascript
 bot.command({
     name: 'allChannelsCount',
-    code: `
+    код: `
   $allChannelsCount[Voice]
   `
 });

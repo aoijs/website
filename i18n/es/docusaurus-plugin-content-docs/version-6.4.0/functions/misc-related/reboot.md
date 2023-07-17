@@ -1,10 +1,10 @@
 ---
 title: '$reboot'
-description: '$reboot will restart your bot.'
+description: '$reboot reiniciará tu bot.'
 id: reboot
 ---
 
-`$reboot` will restart your bot.
+`$reboot` reiniciará tu bot.
 
 ## Uso
 
@@ -14,7 +14,7 @@ $reboot
 
 ## Ejemplo(s)
 
-This will restart your bot:
+Esto reiniciará tu bot:
 
 ```javascript
 bot.command({

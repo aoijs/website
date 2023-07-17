@@ -1,48 +1,48 @@
 ---
 title: '$awaitMessages'
-description: '$awaitMessages will reply once a given message has been sent by the given user.'
+description: '$awaitMessages répondra une fois qu''un message a été envoyé par l''utilisateur donné.'
 id: awaitMessages
 ---
 
-`$awaitMessages` will reply once a given message has been sent by the given user.
+`$awaitMessages` répondra une fois qu'un message a été envoyé par l'utilisateur donné.
 
-## Usage
+## Utilisation
 
 ```php
-$awaitMessages[channelID;userFilter;time;replies;cmds;errorMessage?;awaitData?;dm?]
+$awaitMessages[IDsalon;filtreUtilisateur;temps;réponses;commandes;messageD'erreur?;donnéesAttendues?;dm?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field         | Type    | Description                                                                                                                         | Required |
-| ------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------- |:--------:|
-| channelID     | integer | Channel ID.                                                                                                                         |   true   |
-| userFilter    | integer | User filter <br /> 1. **everyone** <br /> 2. **specific user** - any user ID                                            |   true   |
-| time          | string  | How long the command lasts / when it expires.                                                                                       |   true   |
-| replies       | string  | To what the bot will be responding to, multiple words can be separated with a comma  (or use "everything" to respond to everything) |   true   |
-| cmds          | string  | Commands that will be executed, multiple commands can be separated with a comma.                                                    |   true   |
-| errorMessage? | string  | Error message when the command expires.                                                                                             |  false   |
-| awaitData?    | string  | Awaited Data.                                                                                                                       |  false   |
-| dm?           | integer | User ID of where the command may be executed.                                                                                       |  false   |
+| Champ             | Type                 | Description                                                                                                                                 | Obligatoire |
+| ----------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |:-----------:|
+| IDsalon           | entier               | ID du salon.                                                                                                                                |    vrai     |
+| filtreUtilisateur | entier               | Filtre d'utilisateur <br /> 1. **everyone** <br /> 2. **Identifiant spécifique d'utilisateur** - tout identifiant d'utilisateur |    vrai     |
+| temps             | chaîne de caractères | Combien de temps la commande durera / quand la commande expire.                                                                             |    vrai     |
+| réponses          | chaîne de caractères | À ce à quoi le bot répondra, plusieurs mots peuvent être séparés par une virgule (ou utiliser "everything" pour répondre à tout)            |    vrai     |
+| commandes         | chaîne de caractères | Les commandes qui seront exécutées, plusieurs commandes peuvent être séparées par une virgule.                                              |    vrai     |
+| messageD'erreur?  | chaîne de caractères | Message d'erreur lorsque la commande expire.                                                                                                |    faux     |
+| donnéesAttendues? | chaîne de caractères | Données attendues.                                                                                                                          |    faux     |
+| dm?               | entier               | ID de l'utilisateur de l'endroit où la commande peut être exécutée.                                                                         |    faux     |
 
-## Example(s)
+## Exemple(s)
 
-This will reply to any message you send after executing the command:
+Ceci répondra à n'importe quel message que vous envoyez après avoir exécuté la commande :
 
 ```js
 bot.command({
     name: "awaitMessages",
     code: `
-  $awaitMessages[$channelID;$authorID;15s;everything;awaitedcommandexample;Oh? You don't want to talk to me..?] 
-  What's your name?
+  $awaitMessages[$channelID;$authorID;15s;everything;awaitedcommandexample;Oh ? Vous ne voulez pas me parler..?] 
+  Quel est votre prénom ?
   `
-    // Please make sure that the awaitedCommand name is ALL lowercase or else it won't work.
+    // Veuillez vous assurer que le nom de la commande attendue est TOUT en minuscule, sinon cela ne fonctionnera pas.
 });
 
 bot.awaitedCommand({
     name: "awaitedcommandexample",
     code: `
-  Nice to meet you, $message!
+    Ravi de vous rencontrer, $message!
   `
 });
 ```

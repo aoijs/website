@@ -1,33 +1,33 @@
 ---
 title: '$arrayIndexOf'
-description: '$arrayIndexOf will return the index of the first found item of the query.'
+description: '$arrayIndexOf retournera l''index du premier élément trouvé de la requête.'
 id: arrayIndexOf
 ---
 
-`$arrayIndexOf` will return the index of the first found item of the query.
+`$arrayIndexOf` retournera l'index du premier élément trouvé de la requête.
 
-## Usage
+## Utilisation
 
 ```php
-$arrayIndexOf[name;query]
+$arrayIndexOf[nom;requête]
 ```
 
-## Parameters
+## Paramètres
 
-| Field | Type   | Description                                                         | Required |
-| ----- | ------ | ------------------------------------------------------------------- |:--------:|
-| name  | string | Array name.                                                         |   true   |
-| query | string | The element we will be queering for every element inside the array. |   true   |
+| Champ   | Type                 | Description                                                          | Obligatoire |
+| ------- | -------------------- | -------------------------------------------------------------------- |:-----------:|
+| nom     | chaîne de caractères | Nom du tableau.                                                      |    vrai     |
+| requête | chaîne de caractères | L'élément que nous allons rechercher pour chaque élément du tableau. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
 ```javascript
 bot.command({
     name: "array-indexof",
     code: `
-  $arrayIndexOf[array;akarui]
-  $createArray[array;aoi.js;akarui;documents;bot]
+  $arrayIndexOf[tableau;akarui]
+  $createArray[tableau;aoi.js;akarui;documents;bot]
   `
-    // It will return "2" as the word "akarui" is in the 2nd position of the array.
+    // Ceci renverra "2" car le mot "akarui" se trouve en deuxième position dans le tableau.
 });
 ```

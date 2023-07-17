@@ -1,10 +1,10 @@
 ---
 title: '$isBot'
-description: '$isBot will check if the given user is a bot.'
+description: '$isBot comprobará si el usuario dado es un bot.'
 id: isBot
 ---
 
-`$isBot` will check if the given user is a bot.
+`$isBot` comprobará si el usuario dado es un bot.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $isBot[userID?]
 
 ## Parámetros
 
-| Campo     | Tipo    | Parámetros                         | Requerido |
-| --------- | ------- | ---------------------------------- |:---------:|
-| usarioID? | integer | User id to check if they're a bot. |    no     |
+| Campo     | Tipo    | Parámetros                               | Requerido |
+| --------- | ------- | ---------------------------------------- |:---------:|
+| usarioID? | integer | Id de usuario para comprobar si son bot. |    no     |
 
 ## Ejemplo(s)
 
-This will return `true` as your bot is, obviously, a bot:
+Esto devolverá `verdadero` como tu bot es, obviamente, un bot:
 
 ```javascript
 bot.command({

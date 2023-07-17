@@ -1,33 +1,33 @@
 ---
 title: '$findChannel'
-description: '$findChannel will search a given channel by its name.'
+description: '$findChannel buscará un canal determinado por su nombre.'
 id: findChannel
 ---
 
-`$findChannel` will search a given channel by its name.
+`$findChannel` buscará un canal determinado por su nombre.
 
 ## Uso
 
 ```php
-$findChannel[channelResolver;returnSelf?]
+$findChannel[canalResolver;returnSelf?]
 ```
 
 ## Parámetros
 
-| Campo           | Tipo     | Parámetros                                                                                              | Requerido |
-| --------------- | -------- | ------------------------------------------------------------------------------------------------------- |:---------:|
-| channelResolver | consulta | Name of the channel you want to search for.                                                             | verdadero |
-| returnSelf?     | boolean  | Will return the channel where the command is executed in by default if the given channel was not found. |    no     |
+| Campo           | Tipo     | Parámetros                                                                                    | Requerido |
+| --------------- | -------- | --------------------------------------------------------------------------------------------- |:---------:|
+| canalResolver   | cadena   | El nombre del artefacto que quieres buscar.                                                   | verdadero |
+| volverYo mismo? | booleano | Devuelve el canal donde el comando se ejecuta por defecto si el canal dado no fue encontrado. |   falso   |
 
 ## Ejemplo(s)
 
-This will return `882360051640193054` as it was able to find the `#⊂・⊃﹐aoi_v5` channel:
+Esto devolverá `882360051640193054` ya que fue capaz de encontrar el canal `#á-aoi_v6`:
 
 ```javascript
 bot.command({
     name: 'findChannel',
     code: `
-  $findChannel[⊂・⊃﹐aoi_v5;false]
+  $findChannel[⊂・⊃﹐aoi_v6;false]
   `
 });
 ```

@@ -1,19 +1,19 @@
 ---
 title: '$reactionData'
-description: '$reactionData holds data of a reaction.'
+description: '$reactionData contient les données d''une réaction.'
 id: reactionData
 ---
 
-`$reactionData` holds data of a reaction.
+`$reactionData` contient les données d'une réaction.
 
-## Usage
+## Utilisation
 
 ```php
 $reactionData[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description                                                                                            | Required |
-| ------ | ------ | ------------------------------------------------------------------------------------------------------ |:--------:|
-| option | string | Option to retrieve. <br /> 1. **usernames** <br /> 2. **userIds** <br /> 3. **tags** |   true   |
+| Champ  | Type                 | Description                                                                                            | Obligatoire |
+| ------ | -------------------- | ------------------------------------------------------------------------------------------------------ |:-----------:|
+| option | chaîne de caractères | Option à récupérer. <br /> 1. **usernames** <br /> 2. **userIds** <br /> 3. **tags** |    vrai     |

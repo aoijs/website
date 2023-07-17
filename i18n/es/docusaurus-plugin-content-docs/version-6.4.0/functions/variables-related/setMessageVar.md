@@ -1,10 +1,10 @@
 ---
 title: '$setMessageVar'
-description: '$setMessageVar will change the value of a given message variable.'
+description: '$setMessageVar cambiará el valor de una variable de mensaje determinada.'
 id: setMessageVar
 ---
 
-`$setMessageVar` will change the value of a given message variable.
+`$setMessageVar` cambiará el valor de una variable de mensaje.
 
 ## Uso
 
@@ -14,16 +14,16 @@ $setMessageVar[varname;value;messageID?;table?]
 
 ## Parámetros
 
-| Campo          | Tipo     | Parámetros          | Requerido |
-| -------------- | -------- | ------------------- |:---------:|
-| varname        | consulta | Variable name.      | verdadero |
-| value          | consulta | New Variable value. | verdadero |
-| ID de mensaje? | entero   | Mensaje ID.         |   falso   |
-| table?         | string   | Variable table.     |   falso   |
+| Campo          | Tipo     | Parámetros            | Requerido |
+| -------------- | -------- | --------------------- |:---------:|
+| varname        | consulta | Nombre variable.      | verdadero |
+| valor          | consulta | Nuevo valor variable. | verdadero |
+| ID de mensaje? | entero   | Mensaje ID.           |   falso   |
+| tabla?         | string   | Tabla variable.       |   falso   |
 
 ## Ejemplo(s)
 
-This will change the value of "Example" to "This is a value":
+Esto cambiará el valor de "Ejemplo" a "Este es un valor":
 
 ```javascript
 bot.command({

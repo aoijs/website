@@ -1,29 +1,29 @@
 ---
 title: '$removeThreadMember'
-description: '$removeThreadMember will remove a given thread member from a given thread.'
+description: '$removeThreadMember eliminará a un miembro determinado del hilo de un hilo dado.'
 id: removeThreadMember
 ---
 
-`$removeThreadMember` will remove a given thread member from a given thread.
+`$removeThreadMember` eliminará a un miembro determinado del hilo de un hilo dado.
 
 ## Uso
 
 ```php
-$removeThreadMember[channelID;threadID;userID;reason?]
+$removeThreadMember[canalID;ID de subproceso;ID de usuario;razón]
 ```
 
 ## Parámetros
 
 | Campo    | Tipo   | Parámetros                                                      | Requerido |
 | -------- | ------ | --------------------------------------------------------------- |:---------:|
-| canalID  | entero | The ID of the channel of where the thread is located in.        | verdadero |
+| canalID  | entero | El ID del canal en el que se encuentra el hilo.                 | verdadero |
 | hiloID   | entero | El hilo ID.                                                     | verdadero |
-| usarioID | entero | The ID of the user that will be removed from the given thread.  |    sí     |
+| usarioID | entero | El ID del usuario que será eliminado del hilo dado.             | verdadero |
 | ¿razón?  | string | Razón que se mostrará en los registros de auditoría del gremio. |   falso   |
 
 ## Ejemplo(s)
 
-This will remove the command author from a given thread:
+Esto eliminará el autor del comando de un hilo determinado:
 
 ```javascript
 bot.command({

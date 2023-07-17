@@ -1,24 +1,24 @@
 ---
 title: '$alwaysExecute'
-description: '$alwaysExecute will always emit when a message event is triggered'
+description: '$alwaysExecute s''exécute toujours lorsqu''un évènement de message est déclenché'
 id: alwaysExecute
 ---
 
-`$alwaysExecute` will always emit when a message event is triggered.
+`$alwaysExecute` s'exécute toujours lorsqu'un évènement de message est déclenché.
 
-## Usage
+## Utilisation
 
 ```php
 $alwaysExecute
 ```
 
-## Example(s)
+## Exemple(s)
 
-This will send the given message each time you send a message:
+Ceci enverra le message donné à chaque fois que vous envoyez un message:
 
 ```javascript
 bot.command({
   name: "$alwaysExecute",
-  code: `Hello!`
+  code: `Bonjour!`
 })
 ```

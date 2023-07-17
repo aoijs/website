@@ -1,10 +1,10 @@
 ---
-title: '$packageDependencies'
-description: '$packageDependencies will return aoi.js'' package dependencies.'
+title: $packageDependencies
+description: '$packageDependencies поверне залежності пакунків aoi.js.'
 id: packageDependencies
 ---
 
-`$packageDependencies` will return aoi.js' package dependencies.
+`$packageDependencies` поверне залежності пакетів aoi.js.
 
 ## Використання
 
@@ -14,13 +14,13 @@ $packageDependencies
 
 ## Приклад(и)
 
-This will return aoi.js' package dependencies:
+Це буде повертати залежності aoi.js:
 
 ```javascript
 bot.command({
     name: "packageDependencies",
-    code: `
+    код: `
     $packageDependencies
-    ` // Should return "@akarui/aoi.db, axios, discord-api-types, discord.js, undici"
+    ` // має повернути "@akarui/aoi.db, axios, discord-api-types, discord.js, undici"
 });
 ```

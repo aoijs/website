@@ -1,10 +1,10 @@
 ---
 title: '$isChannelManageable'
-description: '$isChannelManageable will check if the channel is manageable or not.'
+description: '$isChannelManageable comprobará si el canal es manejable o no.'
 id: isChannelManageable
 ---
 
-`$isChannelManageable` will check if the channel is manageable or not.
+`$isChannelManageable` comprobará si el canal es manejable o no.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $isChannelManageable[channelID?]
 
 ## Parámetros
 
-| Campo    | Tipo    | Parámetros                                                      | Requerido |
-| -------- | ------- | --------------------------------------------------------------- |:---------:|
-| canalID? | integer | ID of the channel to check if the channel is manageable or not. |    no     |
+| Campo    | Tipo    | Parámetros                                                 | Requerido |
+| -------- | ------- | ---------------------------------------------------------- |:---------:|
+| canalID? | integer | ID del canal para comprobar si el canal es manejable o no. |    no     |
 
 ## Ejemplo(s)
 
-This will return `true` or `false` depending on if the channel you're executing the command in is manageable:
+Esto devolverá `verdadero` o `falso` dependiendo de si el canal en el que estás ejecutando el comando es manejable:
 
 ```javascript
 bot.command({

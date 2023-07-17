@@ -1,10 +1,10 @@
 ---
-title: '$arrayLength'
-description: '$arrayLength will return the length of a given array.'
+title: $arrayLength
+description: '$arrayLength поверне довжину заданого масиву.'
 id: arrayLength
 ---
 
-`$arrayLength` will return the length of a given array.
+`$arrayLength` поверне довжину заданого масиву.
 
 ## Використання
 

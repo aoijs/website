@@ -1,7 +1,7 @@
 ---
-title: '$guildHighestRole'
+title: $highestGuildRole
 description: '$guildHighestRole devolverá el rol más alto de un gremio específico.'
-id: guildHighestRole
+id: highestGuildRole
 ---
 
 `$guildHighestRole` devolverá todos los roles de un gremio específico.

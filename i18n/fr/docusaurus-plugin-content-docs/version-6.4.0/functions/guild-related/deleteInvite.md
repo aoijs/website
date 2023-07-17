@@ -1,34 +1,34 @@
 ---
 title: '$deleteInvite'
-description: '$deleteInvite will delete a specific guild invite.'
+description: '$deleteInvite supprime une invitation spécifique dans un serveur.'
 id: deleteInvite
 ---
 
-`$deleteInvite` will delete a specific guild invite.
+`$deleteInvite` supprime une invitation spécifique dans un serveur.
 
-## Usage
+## Utilisation
 
 ```php
-$deleteInvite[guildID;inviteCode;reason?]
+$deleteInvite[IDserveur;CodeInvitation;raison?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field      | Type    | Description                                               | Required |
-| ---------- | ------- | --------------------------------------------------------- |:--------:|
-| guildID    | integer | The guild ID whose invite should be deleted.              |   true   |
-| inviteCode | string  | The specific invite code.                                 |   true   |
-| reason?    | string  | Reason which will be displayed in the guild's audit logs. |  false   |
+| Champ          | Type                 | Description                                        | Obligatoire |
+| -------------- | -------------------- | -------------------------------------------------- |:-----------:|
+| IDserveur      | entier               | Le serveur dans lequel l'invitation sera supprimé. |     oui     |
+| CodeInvitation | chaine de caractères | Le code d'invitation spécifique.                   |    true     |
+| raison?        | booléen              | Raison qui sera affichée dans les logs du serveur. |    faux     |
 
-## Example(s)
+## Exemple(s)
 
-This will delete an invite (wont work as the invite code doesn't exist):
+Ceci supprimera une invitation (ne fonctionnera pas car le code d'invitatio n'existe pas):
 
 ```javascript
 bot.command({
-    name: 'deleteInvite',
+    name: 'supprimerInvitation',
     code: `
-  $deleteInvite[$guildID;ifawd9a;Testing!]
+  $deleteInvite[$guildID;ifawd9a;Test!]
   `
 });
 ```

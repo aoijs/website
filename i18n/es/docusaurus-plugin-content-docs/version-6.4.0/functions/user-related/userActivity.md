@@ -1,27 +1,27 @@
 ---
 title: '$userActivity'
-description: '$activity will return a user''s activity.'
+description: '$userActivity devolverá la actividad de un usuario'
 id: userActivity
 ---
 
-`$userActivity` will return a user's current activity.
+`$userActivity` devolverá la actividad actual de un usuario.
 
 ## Uso
 
 ```php
-$userActivity[guildID?;userID?]
+$userActivity[servidorID?;usuarioID?]
 ```
 
 ## Parámetros
 
-| Campo       | Tipo   | Parámetros    | Requerido |
-| ----------- | ------ | ------------- |:---------:|
-| servidorID? | entero | The guild ID. |    no     |
-| usarioID?   | entero | The user ID.  |    no     |
+| Campo       | Tipo   | Parámetros                     | Requerido |
+| ----------- | ------ | ------------------------------ |:---------:|
+| servidorID? | entero | El ID del servidor.            |   falso   |
+| usarioID?   | entero | La identificación del usuario. |   falso   |
 
 ## Ejemplo(s)
 
-This will return your current Activity:
+Esto devolverá su actividad actual:
 
 ```javascript
 bot.command({

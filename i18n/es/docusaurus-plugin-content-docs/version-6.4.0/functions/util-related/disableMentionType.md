@@ -1,38 +1,38 @@
 ---
 title: '$disableMentionType'
-description: '$disableMentionType will disable a specific mention type.'
+description: '$disableMentionType deshabilitará un tipo de mención específica.'
 id: disableMentionType
 ---
 
-`$disableMentionType` will disable a specific mention type.
+`$disableMentionType` deshabilitará un tipo de mención específica.
 
 ## Uso
 
 ```php
-$disableMentionType[type]
+$disableMentionType[tipo]
 ```
 
 ## Parámetros
 
-| Campo | Tipo   | Descripción                          | Requerido |
-| ----- | ------ | ------------------------------------ |:---------:|
-| type  | cadena | Type of mention you want to disable. | verdadero |
+| Campo | Tipo   | Descripción                           | Requerido |
+| ----- | ------ | ------------------------------------- |:---------:|
+| tipo  | cadena | Tipo de mención que desea desactivar. | verdadero |
 
 <details>
-  <summary> <h2> Available Types </h2></summary>
+  <summary> <h2> Tipos disponibles </h2></summary>
 
-| Tipo     | Descripción                         |
-| -------- | ----------------------------------- |
-| everyone | `@everyone` and `@here` mentions.   |
-| users    | All user mentions.                  |
-| roles    | All role mentions.                  |
-| all      | Roles, users and any other mention. |
+| Tipo     | Descripción                               |
+| -------- | ----------------------------------------- |
+| everyone | `@everyone` y `@aquí` menciones.          |
+| users    | Todos los usuarios mencionan.             |
+| roles    | Todos los roles mencionan.                |
+| all      | Roles, usuarios y cualquier otra mención. |
 
 </details>
 
 ## Ejemplo(s)
 
-This will stop the bot from mentioning you:
+Esto evitará que el bot te mencione:
 
 ```javascript
 bot.command({
@@ -44,7 +44,7 @@ $disableMentionType[users]
 });
 ```
 
-This will stop the bot from mentioning anyone or anything:
+Esto evitará que el bot mencione a cualquiera o cualquier cosa:
 
 ```javascript
 bot.command({

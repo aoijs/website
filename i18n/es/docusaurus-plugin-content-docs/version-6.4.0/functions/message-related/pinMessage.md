@@ -1,27 +1,27 @@
 ---
 title: '$pinMessage'
-description: '$pinMessage will pin a given message.'
+description: '$pinMessage fijará un mensaje determinado.'
 id: pinMessage
 ---
 
-`$pinMessage` will pin a given message.
+`$pinMessage` fijará un mensaje determinado.
 
 ## Uso
 
 ```php
-$pinMessage[messageID?;channelID?]
+$pinMessage[ID de mensaje;canalID?]
 ```
 
 ## Parámetros
 
-| Campo         | Tipo   | Parámetros                                         | Requerido |
-| ------------- | ------ | -------------------------------------------------- |:---------:|
-| ID de mensaje | entero | The ID of the message that will be pinned.         |    no     |
-| canalID       | entero | The channel ID of where the message is located in. |    no     |
+| Campo         | Tipo   | Parámetros                                     | Requerido |
+| ------------- | ------ | ---------------------------------------------- |:---------:|
+| ID de mensaje | entero | El ID del mensaje que se fijará.               |   falso   |
+| canalID       | entero | El ID del canal donde se encuentra el mensaje. |   falso   |
 
 ## Ejemplo(s)
 
-This will pin the bot's message:
+Esto fijará el mensaje del bot:
 
 ```javascript
 bot.command({
@@ -29,6 +29,6 @@ bot.command({
     code: `
   $pinMessage[$get[id]]
   $let[id;$sendMessage[Hello!;true]
-  ` // using $let & $get to save the message ID
+  ` // usando $let & $get para guardar el ID del mensaje
 });
 ```

@@ -1,10 +1,10 @@
 ---
 title: '$channelCategoryID'
-description: '$channelCategoryID will return the parent of a specific channel.'
+description: '$channelCategoryID поверне батька спеціального каналу.'
 id: channelCategoryID
 ---
 
-`$channelCategoryID` will return the parent of a specific channel.
+`$channelCategoryID` поверне батьківський канал.
 
 ## Використання
 
@@ -14,18 +14,18 @@ $channelCategoryID[channelID?]
 
 ## Параметри
 
-| Поле       | Тип     | Опис                                                         | Обов'язковий |
-| ---------- | ------- | ------------------------------------------------------------ |:------------:|
-| channelID? | integer | ID of a channel of which you want to retrieve its parent of. |      ні      |
+| Поле       | Тип  | Опис                                                           | Обов'язковий |
+| ---------- | ---- | -------------------------------------------------------------- |:------------:|
+| ID каналу? | ціле | ID каналу, з якого ви хочете отримати його батьківський канал. |      ні      |
 
 ## Приклад(и)
 
-This will return the category ID of the text channel in where you execute the command:
+Це поверне ID категорії текстового каналу, в якому ви виконаєте команду:
 
 ```javascript
 bot.command({
     name: 'channelCategoryID',
-    code: `
+    код: `
   $channelCategoryID[$channelID]
   `
 });

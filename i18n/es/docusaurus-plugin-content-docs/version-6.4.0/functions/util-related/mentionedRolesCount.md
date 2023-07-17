@@ -1,10 +1,10 @@
 ---
 title: '$mentionedRolesCount'
-description: '$mentionedRolesCount will return the amount of role mentions within a message.'
+description: '$mentionedRolesCount devolverá la cantidad de menciones de rol dentro de un mensaje.'
 id: mentionedRolesCount
 ---
 
-`$mentionedRolesCount` will return the amount of role mentions within a message.
+`$mentionedRolesCount` devolverá la cantidad de menciones de rol dentro de un mensaje.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $mentionedRolesCount
 
 ## Ejemplo(s)
 
-This will return the amount of role mentions in the given text:
+Esto devolverá la cantidad de menciones de rol en el texto dado:
 
 ```javascript
 bot.command({
     name: 'mentionedRolesCount',
     code: `
-  You have: $mentionedRolesCount role mentions in your message!
+  Tú tienes: ¡Menciones de rol $mentionedRolesCount en tu mensaje!
 `
 });
 ```

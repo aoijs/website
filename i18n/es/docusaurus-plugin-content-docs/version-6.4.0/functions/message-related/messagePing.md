@@ -1,10 +1,10 @@
 ---
 title: '$messagePing'
-description: '$messagePing will return the latency of the message.'
+description: '$messagePing devolverá la latencia del mensaje.'
 id: messagePing
 ---
 
-`$messagePing` will return the latency of the message.
+`$messagePing` devolverá la latencia del mensaje.
 
 ## Uso
 
@@ -14,7 +14,7 @@ $messagePing
 
 ## Ejemplo(s)
 
-This will return the latency of your message:
+Esto devolverá la latencia de una interacción:
 
 ```javascript
 bot.command({

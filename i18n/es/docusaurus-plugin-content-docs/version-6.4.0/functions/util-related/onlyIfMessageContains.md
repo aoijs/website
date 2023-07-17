@@ -1,10 +1,10 @@
 ---
 title: '$onlyIfMessageContains'
-description: '$onlyIfMessageContains will check if the message contains the given text and if not return a error message.'
+description: '$onlyIfMessageContains comprobará si el mensaje contiene el texto dado y si no devuelve un mensaje de error.'
 id: onlyIfMessageContains
 ---
 
-`$onlyIfMessageContains` will check if the message contains the given text and if not return a error message.
+`$onlyIfMessageContains` comprobará si el mensaje contiene el texto dado y si no devuelve un mensaje de error.
 
 ## Uso
 
@@ -14,15 +14,15 @@ $onlyIfMessageContains[content;...text;error]
 
 ## Parámetros
 
-| Campo     | Tipo     | Parámetros                                   | Requerido |
-| --------- | -------- | -------------------------------------------- |:---------:|
-| contenido | consulta | Message which should contain the given text. | verdadero |
-| text      | consulta | Text to check for in the message.            | verdadero |
-| error     | string   | Error to return.                             |    sí     |
+| Campo     | Tipo     | Parámetros                               | Requerido |
+| --------- | -------- | ---------------------------------------- |:---------:|
+| contenido | consulta | Mensaje que debe contener el texto dado. | verdadero |
+| text      | consulta | Texto a buscar en el mensaje.            | verdadero |
+| error     | string   | Error de devolución.                     |    sí     |
 
 ## Ejemplo(s)
 
-This will return the error message as "aoi.js" does not appear in "Hello!":
+Esto devolverá el mensaje de error porque "aoi.js" no aparece en "¡Hola!":
 
 ```javascript
 bot.command({

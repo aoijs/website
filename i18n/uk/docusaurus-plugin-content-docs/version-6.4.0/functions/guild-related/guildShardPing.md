@@ -1,10 +1,10 @@
 ---
-title: '$guildShardPing'
-description: '$guildShardPing will return the latency of a specific shard.'
+title: $guildShardPing
+description: '$guildShardPing поверне латентність конкретної різкої.'
 id: guildShardPing
 ---
 
-`$guildShardPing` will return the latency of a specific shard.
+`$guildShardPing` поверне латентність конкретної різкої.
 
 ## Використання
 
@@ -14,20 +14,20 @@ $guildShardPing[shardId?]
 
 ## Параметри
 
-| Поле     | Тип     | Опис          | Обов'язковий |
-| -------- | ------- | ------------- |:------------:|
-| shardId? | integer | The shard ID. |      ні      |
+| Поле                | Тип  | Опис         | Обов'язковий |
+| ------------------- | ---- | ------------ |:------------:|
+| корд-ідентифікатор? | ціле | Фрагмент ID. |      ні      |
 
-**Note that this won't work without sharding. If you're unsure, review the [sharding guide](../../guides/client/6sharding.md).**
+**Зауважте, що це не працюватиме без фрагментів. Якщо ви не впевнені, перегляньте [гідність посібника](../../guides/Client/6sharding.md).**
 
 ## Приклад(и)
 
-This will return the shard latency of the current shard:
+Це поверне фрагментарну затримку поточного фрагмента:
 
 ```javascript
 bot.command({
     name: 'guildShardPing',
-    code: `
+    код: `
   $guildShardPing[$shardId]MS
   `
 });

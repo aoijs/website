@@ -26,7 +26,7 @@ $modifyRolePerms[servidorID;rolID;...perms]
 | `+` | Denegar un permiso específico a alguien o algo.               |
 | `/` | Restablecer un permiso específico a su estado predeterminado. |
 
-Encontrará todos los permisos __[aquí](../../guides/client/2permissionsintents.md)__.
+Encontrará todos los permisos __[aquí](../../guides/Client/2permissionsintents.md)__.
 
 ## Ejemplo(s)
 

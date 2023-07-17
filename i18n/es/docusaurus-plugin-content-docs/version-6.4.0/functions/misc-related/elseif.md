@@ -1,30 +1,30 @@
 ---
 title: '$elseif'
-description: '$elseif is used to create an else statement with condition.'
+description: '$elseif se utiliza para crear una sentencia con condición.'
 id: elseif
 ---
 
-`$elseif` is used to create an else statement with condition.
+`$elseif` se utiliza para crear una sentencia con condición.
 
 ## Uso
 
 ```php
-$elseif[condition]
+$elseif[condición]
 ```
 
-:::warning Deprecation
+:::warning decrecación
 
 
-`$if: "old"` is deprecated and should no longer be used as it will be removed in the future.
+`$if: "old"` está obsoleto y ya no debería utilizarse ya que se eliminará en el futuro.
 
 :::
 
 
 ## Ejemplo(s)
 
-Example usage of `$if: old` (will return "Hello" when the condition is true):
+Ejemplo de uso de `$if: old` (devolverá "Hello" cuando la condición sea verdadera):
 
-You require `$endelseif` to end the `$elseIf` statement.
+Requerirás que `$endelseif` termine la proposición `$elseIf`.
 
 ```javascript
 bot.command({

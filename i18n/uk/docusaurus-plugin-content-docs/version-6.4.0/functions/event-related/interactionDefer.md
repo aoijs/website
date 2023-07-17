@@ -1,10 +1,10 @@
 ---
-title: '$interactionDefer'
-description: '$interactionDefer defers an Interaction of the last 15 minutes.'
+title: $interactionDefer
+description: '$interactionDefer захищує взаємодію за останні 15 хвилин.'
 id: interactionDefer
 ---
 
-`$interactionDefer` defers an Interaction of the last 15 minutes.
+`$interactionDefer` повідомляє про взаємодію за останні 15 хвилин.
 
 ## Використання
 
@@ -14,9 +14,9 @@ $interactionDefer[ephemeral]
 
 ## Параметри
 
-| Поле      | Тип     | Опис                                | Обов'язковий |
-| --------- | ------- | ----------------------------------- |:------------:|
-| ephemeral | boolean | Visible to the command author only? |     так      |
+| Поле      | Тип     | Опис                                   | Обов'язковий |
+| --------- | ------- | -------------------------------------- |:------------:|
+| ефегемаль | boolean | Видимий лише автору командного автора? |     так      |
 
 ## Приклад(и)
 
@@ -25,7 +25,7 @@ bot.command({
     name: 'exampleButton',
     type: 'interaction',
     prototype: 'button',
-    code: `
+    код: `
    $interactionFollowUp[This is the second message!] 
    $interactionFollowUp[This is the first message!] 
    $interactionDefer[true]`

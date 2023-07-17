@@ -1,35 +1,35 @@
 ---
 title: '$findRoles'
-description: '$findRoles will return all matching roles depending on the given query.'
+description: '$findRoles devolverá todos los roles que coincidan dependiendo de la consulta dada.'
 id: findRoles
 ---
 
-`$findRoles` will return all matching roles depending on the given query.
+`$findRoles` devolverá todos los roles correspondientes dependiendo de la consulta dada.
 
 ## Uso
 
 ```php
-$findRoles[roleResolver;limit?;type?;format?]
+$findRoles[rolResolver;límite?;tipo?;formato?]
 ```
 
 ## Parámetros
 
-| Campo        | Tipo     | Parámetros                                       | Requerido |
-| ------------ | -------- | ------------------------------------------------ |:---------:|
-| roleResolver | consulta | Query to match.                                  | verdadero |
-| limit?       | número   | The maximum amount of roles the bot will return. |    no     |
-| tipo?        | string   | Type of the search query.                        |   falso   |
-| format?      | string   | Formatting for the output.                       |   falso   |
+| Campo        | Tipo   | Parámetros                                      | Requerido |
+| ------------ | ------ | ----------------------------------------------- |:---------:|
+| resolver rol | cadena | Consulta para coincidir.                        | verdadero |
+| límite?      | número | La cantidad de resultados que el bot regresará. |   falso   |
+| tipo?        | cadena | Tipo de consulta de búsqueda.                   |   falso   |
+| formato?     | cadena | Formateando para la salida.                     |   falso   |
 
-### Parameters for the `format` argument
+### Parámetros para el argumento `formato`
 
-* {position} -> returns the position
-* {id} -> returns the role ID
-* {username} -> returns the role name
+* {position} -> devuelve la posición
+* {id} -> devuelve el ID de usuario
+* {username} -> devuelve el nombre de usuario
 
 ## Ejemplo(s)
 
-This will return all roles which are named `Owner`:
+Esto devolverá todos los roles que se llaman `Owner`:
 
 ```javascript
 bot.command({

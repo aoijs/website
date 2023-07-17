@@ -1,10 +1,10 @@
 ---
 title: '$alwaysExecute'
-description: '$alwaysExecute will always emit when a message event is triggered'
+description: '$alwaysExecute завжди випромінює, коли викликається подія повідомлення'
 id: alwaysExecute
 ---
 
-`$alwaysExecute` will always emit when a message event is triggered.
+`$alwaysExecute` завжди буде викликати, коли викликається подія повідомлення.
 
 ## Використання
 
@@ -14,11 +14,11 @@ $alwaysExecute
 
 ## Приклад(и)
 
-This will send the given message each time you send a message:
+Це буде відправляти дане повідомлення кожного разу, коли ви надішлете повідомлення:
 
 ```javascript
 bot.command({
   name: "$alwaysExecute",
-  code: `Hello!`
+  код: "Привіт!`
 })
 ```

@@ -1,10 +1,10 @@
 ---
-title: '$executionTime'
-description: '$executionTime will return the execution time.'
+title: $executionTime
+description: '$executionTime поверне час виконання.'
 id: executionTime
 ---
 
-`$executionTime` will return the execution time.
+`$executionTime` поверне час виконання.
 
 ## Використання
 
@@ -14,13 +14,13 @@ $executionTime
 
 ## Приклад(и)
 
-This will return the execution time of how long it took to execute this code:
+Це поверне час виконання процесу, скільки часу необхідно було виконати цей код:
 
 ```javascript
 bot.command({
     name: "executionTime",
-    code: `
-    This took: $executionTime MS
+    код: `
+    Це теж: $executionTime MS
   `
 });
 ```

@@ -1,10 +1,10 @@
 ---
 title: '$allEmojisCount'
-description: '$allEmojisCount will return the amount of emojis of a given type.'
+description: '$allEmojisCount поверне кількість емоджі певного типу.'
 id: allEmojisCount
 ---
 
-`$allEmojisCount` will return the amount of emojis of a given type.
+`$allEmojisCount` поверне кількість емодзі вказаного типу.
 
 ## Використання
 
@@ -14,24 +14,24 @@ $allEmojisCount[type?]
 
 ## Параметри
 
-| Поле | Тип   | Опис                                        | Обов'язковий |
-| ---- | ----- | ------------------------------------------- | ------------ |
-| тип? | рядок | Type you want the amount of to be returned. | ні           |
+| Поле | Тип   | Опис                    | Обов'язковий |
+| ---- | ----- | ----------------------- | ------------ |
+| тип? | рядок | Введіть суму повернень. | ні           |
 
-| Emoji Type      |          |
-| --------------- | -------- |
-| Animated Emojis | animated |
-| Stable Emojis   | normal   |
+| Emoji Type       |            |
+| ---------------- | ---------- |
+| Анімовані емодзі | анімовані  |
+| Сталі емоджі     | нормальний |
 
 ## Приклад(и)
 
-This will return the amount of emojis in your guild:
+Це поверне кількість емодзі вашої гільдії:
 
 ```javascript
 bot.command({
     name: 'allEmojisCount',
-    code: `
+    код: `
   $allEmojisCount
-  `
+
 });
 ```

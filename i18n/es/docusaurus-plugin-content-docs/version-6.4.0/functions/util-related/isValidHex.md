@@ -1,10 +1,10 @@
 ---
 title: '$isValidHex'
-description: '$isValidHex will check if the given hex / decimal color is valid.'
+description: '$isValidHex comprobará si el color hexadecimal / decimal dado es válido.'
 id: isValidHex
 ---
 
-`$isValidHex` will check if the given hex / decimal color is valid.
+`$isValidHex` comprobará si el color hexadecimal / decimal dado es válido.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $isValidHex[colorResolver]
 
 ## Parámetros
 
-| Campo         | Tipo            | Parámetros                  | Requerido |
-| ------------- | --------------- | --------------------------- |:---------:|
-| colorResolver | string, integer | Hex / decimal color string. | verdadera |
+| Campo                 | Tipo            | Parámetros                             | Requerido |
+| --------------------- | --------------- | -------------------------------------- |:---------:|
+| resolución de colores | string, integer | Cadena de color hexadecimal / decimal. | verdadera |
 
 ## Ejemplo(s)
 
-This will return `true` as `#30dbd8` is an valid hex color:
+Esto devolverá `verdadero` como `#30dbd8` es un color hexadecimal válido:
 
 ```javascript
 bot.command({
@@ -31,7 +31,7 @@ bot.command({
 });
 ```
 
-This will return `true` as well as `80` is an valid hexadecimal color:
+Esto devolverá `verdadero` así como `80` es un color hexadecimal válido:
 
 ```javascript
 bot.command({

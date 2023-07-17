@@ -1,38 +1,38 @@
 ---
 title: '$findMembers'
-description: '$findMembers will return all members with similar username.'
+description: '$findMembers devolverá todos los miembros con un nombre de usuario similar.'
 id: findMembers
 ---
 
-`$findMembers` will return all members with similar username.
+`$findMembers` devolverá todos los miembros con un nombre de usuario similar.
 
 ## Uso
 
 ```php
-$findMembers[userResolver;limit?;type?;force?;format?]
+$findMembers[usuarioResolver;límite?;tipo?;forzar?;formato?]
 ```
 
 ## Parámetros
 
-| Campo        | Tipo     | Parámetros                                                     | Requerido |
-| ------------ | -------- | -------------------------------------------------------------- |:---------:|
-| userResolver | consulta | Query of the username the bot will search for.                 | verdadero |
-| limit?       | número   | The amount of results the bot will return.                     |    no     |
-| tipo?        | string   | Type of the search query.                                      |   falso   |
-| force?       | boolean  | 1. **true** <br /> 2. **false** (por defecto)            |   falso   |
-| format?      | cadena   | The format the bot will return the found users (listed below). |    no     |
+| Campo            | Tipo    | Parámetros                                                                            | Requerido |
+| ---------------- | ------- | ------------------------------------------------------------------------------------- |:---------:|
+| usuario Resolver | cadena  | Consulta del nombre de usuario que buscará el bot.                                    | verdadero |
+| límite?          | número  | La cantidad de resultados que el bot regresará.                                       |   falso   |
+| tipo?            | cadena  | Tipo de consulta de búsqueda.                                                         |   falso   |
+| forzar?          | boolean | 1. **true** <br /> 2. **false** (por defecto)                                   |   falso   |
+| formato?         | cadena  | El formato que el bot devolverá a los usuarios encontrados (listados a continuación). |   falso   |
 
-### Parameters for the `format` argument
+### Parámetros para el argumento `formato`
 
-* {position} -> returns the position
-* {id} -> returns the user ID
-* {username} -> returns the username
-* {nick} -> returns the nickname
-* {tag} -> returns the user discriminator
+* {position} -> devuelve la posición
+* {id} -> devuelve el ID de usuario
+* {username} -> devuelve el nombre de usuario
+* {nick} -> devuelve el nick
+* {tag} -> devuelve el discriminador de usuario
 
 ## Ejemplo(s)
 
-This will return twenty members with `Leref` in their username:
+Esto devolverá veinte miembros con `Leref` en su nombre de usuario:
 
 ```javascript
 bot.command({

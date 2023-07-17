@@ -1,33 +1,33 @@
 ---
 title: '$interactionDefer'
-description: '$interactionDefer defers an Interaction of the last 15 minutes.'
+description: '$interactionDefer reporte une interaction des 15 dernières minutes.'
 id: interactionDefer
 ---
 
-`$interactionDefer` defers an Interaction of the last 15 minutes.
+`$interactionDefer` reporte une interaction des 15 dernières minutes.
 
-## Usage
+## Utilisation
 
 ```php
-$interactionDefer[ephemeral]
+$interactionDefer[éphémère]
 ```
 
-## Parameters
+## Paramètres
 
-| Field     | Type    | Description                         | Required |
-| --------- | ------- | ----------------------------------- |:--------:|
-| ephemeral | boolean | Visible to the command author only? |   true   |
+| Champ    | Type    | Description                                      | Obligatoire |
+| -------- | ------- | ------------------------------------------------ |:-----------:|
+| éphémère | booléen | Visible uniquement par l'auteur de la commande ? |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
 ```javascript
 bot.command({
-    name: 'exampleButton',
+    name : 'exempleButton',
     type: 'interaction',
     prototype: 'button',
     code: `
-   $interactionFollowUp[This is the second message!] 
-   $interactionFollowUp[This is the first message!] 
+   $interactionFollowUp[Ceci est le second message!] 
+   $interactionFollowUp[Ceci est le premier message!] 
    $interactionDefer[true]`
 });
 ```

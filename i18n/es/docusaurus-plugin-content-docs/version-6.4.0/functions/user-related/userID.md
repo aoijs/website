@@ -1,26 +1,26 @@
 ---
 title: '$userID'
-description: '$userID will return a given user''s ID.'
-id: usarioID
+description: '$userID devolverá la identificación de un usuario determinado.'
+id: userID
 ---
 
-`$userID` will return a given user's ID.
+`$userID` devolverá la ID de un usuario determinado.
 
 ## Uso
 
 ```php
-$userID[user]
+$userID[usuario]
 ```
 
 ## Parámetros
 
-| Campo | Tipo           | Parámetros                                                       | Requerido |
-| ----- | -------------- | ---------------------------------------------------------------- |:---------:|
-| user  | cadena, número | The name of the user who you want the user ID to be returned of. | verdadera |
+| Campo   | Tipo           | Parámetros                                                       | Requerido |
+| ------- | -------------- | ---------------------------------------------------------------- |:---------:|
+| usuario | cadena, número | El ID del usuario del que desea que se devuelva el rol más alto. | verdadera |
 
 ## Ejemplo(s)
 
-This will return your user ID:
+Esto devolverá tu ID de usuario:
 
 ```javascript
 bot.command({

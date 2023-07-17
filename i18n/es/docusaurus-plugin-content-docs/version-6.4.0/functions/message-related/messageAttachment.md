@@ -1,32 +1,32 @@
 ---
 title: '$messageAttachment'
-description: '$messageAttachment will return a message attachment depending on the given index.'
+description: '$messageAttachment devolverá un archivo adjunto de mensajes dependiendo del índice dado.'
 id: messageAttachment
 ---
 
-`$messageAttachment` will return a message attachment depending on the given index.
+`$messageAttachment` devolverá un mensaje adjunto dependiendo del índice dado.
 
 ## Uso
 
 ```php
-$messageAttachment[index?]
+$messageAttachment[indice?]
 ```
 
 ## Parámetros
 
-| Campo  | Tipo    | Parámetros                                              | Requerido |
-| ------ | ------- | ------------------------------------------------------- |:---------:|
-| index? | integer | The index of which message attachment will be returned. |    no     |
+| Campo   | Tipo   | Parámetros                                               | Requerido |
+| ------- | ------ | -------------------------------------------------------- |:---------:|
+| índice? | entero | El índice del archivo adjunto de mensajes será devuelto. |   falso   |
 
 ## Ejemplo(s)
 
-This will return your given attachment:
+Esto devolverá el archivo adjunto:
 
 ```javascript
 bot.command({
     name: 'messageAttachment',
     code: `
-  You had the following attachment in your message: $messageAttachment
+Tenía el siguiente archivo adjunto en su mensaje: $messageAttachment
   `
 });
 ```

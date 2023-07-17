@@ -1,12 +1,12 @@
 ---
 title: '$isContextMenuInteraction'
-description: '$isContextMenuInteraction will return either true or false depending on the type of the interaction.'
+description: '$isContextMenuInteraction renverra soit true, soit false, en fonction du type d''interaction.'
 id: isContextMenuInteraction
 ---
 
-`$isContextMenuInteraction` will return either true or false depending on the type of interaction.
+`$isContextMenuInteraction` renverra soit true, soit false, en fonction du type d'interaction.
 
-## Usage
+## Utilisation
 
 ```php
 $isContextMenuInteraction

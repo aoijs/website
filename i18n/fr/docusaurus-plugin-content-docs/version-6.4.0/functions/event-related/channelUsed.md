@@ -1,26 +1,26 @@
 ---
 title: '$channelUsed'
-description: '$channelUsed will return the channel ID of where the event was triggered.'
+description: '$channelUsed retournera l''ID du salon où l''événement a été déclenché.'
 id: channelUsed
 ---
 
-`$channelUsed` will return the channel ID of where the event was triggered.
+`$channelUsed` retournera l'ID du salon où l'événement a été déclenché.
 
-## Usage
+## Utilisation
 
 ```php
 $channelUsed
 ```
 
-## Example(s)
+## Exemple(s)
 
-This will return the amount of roles of your guild:
+Cela va retourner le salon dans lequel un message a été supprimé:
 
-**You require `onMessageDelete` in your main file in order to use this example!**
+**Vous avez besoin de `onMessageDelete` dans votre fichier principal pour utiliser cet exemple!**
 
 ```javascript
 bot.deletedCommand({
     channel: "channelID",
-    code: `$userTag deleted a message in <#$channelUsed>!`
+    code: `$userTag a supprimé un message dans <#$channelUsed>!`
 });
 ```

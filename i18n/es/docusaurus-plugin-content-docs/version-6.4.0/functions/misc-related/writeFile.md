@@ -1,28 +1,28 @@
 ---
 title: '$writeFile'
-description: '$writeFile will create a new file in the bot''s directory.'
+description: '$writeFile renombrará un archivo del directorio de tu bot.'
 id: writeFile
 ---
 
-`$writeFile` will create a new file in the bot's directory.
+`$writeFile` renombrará un archivo del directorio de tu bot.
 
 ## Uso
 
 ```php
-$writeFile[path;text;encoding?]
+$writeFile[camino;texto;codificación?]
 ```
 
 ## Parámetros
 
-| Campo    | Tipo     | Parámetros                              | Requerido |
-| -------- | -------- | --------------------------------------- |:---------:|
-| path     | consulta | Where to create the file.               | verdadero |
-| text     | consulta | What the content of the file should be. | verdadero |
-| encoding | string   | Text/File encoding.                     |   falso   |
+| Campo        | Tipo     | Parámetros                              | Requerido |
+| ------------ | -------- | --------------------------------------- |:---------:|
+| camino       | consulta | Dónde crear el archivo.                 | verdadero |
+| text         | consulta | Cuál debe ser el contenido del archivo. | verdadero |
+| codificación | string   | Codificación de texto/archivo.          |   falso   |
 
 ## Ejemplo(s)
 
-This will a file called "testing.txt" with the content of "Hello!":
+Esto será un archivo llamado "testing.txt" con el contenido de "¡Hola!":
 
 ```javascript
 bot.command({

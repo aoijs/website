@@ -1,10 +1,10 @@
 ---
 title: '$clientMutualGuilds'
-description: '$clientMutualGuilds will return the mutual servers with a given user and the bot.'
+description: '$clientMutualGuilds поверне взаємні сервери з даним користувачем і ботом.'
 id: clientMutualGuilds
 ---
 
-`$clientMutualGuilds` will return the mutual servers with a given user and the bot.
+`$clientMutualGuilds` поверне взаємні сервери з даним користувачем і ботом.
 
 ## Використання
 
@@ -14,19 +14,19 @@ $clientMutualGuilds[userID?;sep?]
 
 ## Параметри
 
-| Поле    | Тип     | Опис                                           | Обов'язковий |
-| ------- | ------- | ---------------------------------------------- |:------------:|
-| userID? | integer | The ID of the user.                            |      ні      |
-| sep?    | рядок   | The separator to separate the returned values. |      ні      |
+| Поле            | Тип   | Опис                                             | Обов'язковий |
+| --------------- | ----- | ------------------------------------------------ |:------------:|
+| ID користувача? | ціле  | ID користувача.                                  |      ні      |
+| місце?          | рядок | Розділювач для відокремлення очікуваних значень. |      ні      |
 
 ## Приклад(и)
 
-This will return the mutual servers of you and the bot:
+Це поверне спільне сервери вас і бота:
 
 ```javascript
 bot.command({
     name: 'clientMutualGuilds',
-    code: `
+    код: `
   $clientMutualGuilds[$authorID;, ]
   `
 });

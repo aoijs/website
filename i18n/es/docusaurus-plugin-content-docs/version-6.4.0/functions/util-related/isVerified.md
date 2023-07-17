@@ -1,10 +1,10 @@
 ---
 title: '$isVerified'
-description: '$isVerified checks if the given guild is verified by Discord.'
+description: '$isVerified comprueba si la guild dada es verificada por Discord.'
 id: isVerified
 ---
 
-`$isVerified` checks if the given guild is verified by Discord.
+`$isVerified` comprueba si la guild dada es verificada por Discord.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $isVerified[guildID?]
 
 ## Parámetros
 
-| Campo       | Tipo    | Parámetros                                                              | Requerido |
-| ----------- | ------- | ----------------------------------------------------------------------- |:---------:|
-| servidorID? | integer | The ID of the guild where you want to check its verification status of. |    no     |
+| Campo       | Tipo    | Parámetros                                                           | Requerido |
+| ----------- | ------- | -------------------------------------------------------------------- |:---------:|
+| servidorID? | integer | El ID del gremio al que quieres comprobar su estado de verificación. |    no     |
 
 ## Ejemplo(s)
 
-This will check if your server is verified and return either `true` or `false`:
+Esto comprobará si tu servidor está verificado y devolverá `verdadero` o `falso`:
 
 ```javascript
 bot.command({

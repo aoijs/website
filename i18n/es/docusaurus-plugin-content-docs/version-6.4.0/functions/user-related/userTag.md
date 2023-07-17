@@ -1,26 +1,26 @@
 ---
 title: '$userTag'
-description: '$userTag will return a user''s username and discriminator.'
+description: '$userTag devolverá el nombre de usuario y el discriminador de un usuario.'
 id: userTag
 ---
 
-`$userTag` will return a user's username and discriminator.
+`$userTag` devolverá el nombre de usuario y el discriminador de un usuario.
 
 ## Uso
 
 ```php
-$userTag[userID?]
+$userTag[usuarioID?]
 ```
 
 ## Parámetros
 
-| Campo     | Tipo    | Parámetros   | Requerido |
-| --------- | ------- | ------------ |:---------:|
-| usarioID? | integer | The user ID. |    no     |
+| Campo     | Tipo   | Parámetros                     | Requerido |
+| --------- | ------ | ------------------------------ |:---------:|
+| usarioID? | entero | La identificación del usuario. |   falso   |
 
 ## Ejemplo(s)
 
-This will return your username and discriminator:
+Esto devolverá su nombre de usuario y discriminador:
 
 ```javascript
 bot.command({

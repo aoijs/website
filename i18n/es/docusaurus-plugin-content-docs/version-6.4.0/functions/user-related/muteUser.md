@@ -1,29 +1,29 @@
 ---
 title: '$muteUser'
-description: '$muteUser will mute or unmute a given user in a Voice Channel.'
+description: '$muteUser silenciará o dessilenciará a un usuario determinado en un canal de voz.'
 id: muteUser
 ---
 
-`$muteUser` will mute or unmute a given user in a Voice Channel.
+`$muteUser` silenciará o dessilenciará a un usuario determinado en un canal de voz.
 
 ## Uso
 
 ```php
-$muteUser[guildID;userID;mute?;reason?]
+$moveUser[servidorID;ID de usuario;Mudo;razon?]
 ```
 
 ## Parámetros
 
-| Campo      | Tipo     | Parámetros                                                                                            | Requerido |
-| ---------- | -------- | ----------------------------------------------------------------------------------------------------- |:---------:|
-| servidorID | entero   | The guild ID of where the user is located.                                                            | verdadero |
-| usarioID   | entero   | The user ID of the user to mute/unmute.                                                               | verdadero |
-| mute?      | booleano | Mute or unmute the user. <br /> 1. **true** (mute / default) <br /> 2. **false** (unmute) |   falso   |
-| ¿razón?    | string   | Razón que se mostrará en los registros de auditoría del gremio.                                       |   falso   |
+| Campo      | Tipo     | Parámetros                                                                                                                             | Requerido |
+| ---------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------- |:---------:|
+| servidorID | entero   | El ID de gremio de donde se encuentra el usuario.                                                                                      | verdadero |
+| usarioID   | entero   | El ID de usuario del usuario para silenciar/dessilenciar.                                                                              | verdadero |
+| Mudo?      | booleano | Silenciar o dejar de silenciar a un usuario <br /> 1. **true** (Mudo/ default) <br /> 2. ** false ** (activar el silencio) |   falso   |
+| ¿razón?    | cadena   | Razón que se mostrará en los registros de auditoría del gremio.                                                                        |   falso   |
 
 ## Ejemplo(s)
 
-This will server mute yourself (must be in a voice channel):
+Esto se silenciará a ti mismo (debe estar en un canal de voz):
 
 ```javascript
 bot.command({

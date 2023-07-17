@@ -1,10 +1,10 @@
 ---
 title: '$jsonRequest'
-description: '$jsonRequest will send a GET request to a given URL.'
+description: '$jsonRequest enviará una solicitud GET a una URL determinada.'
 id: jsonRequest
 ---
 
-`$jsonRequest` will send a GET request to a given URL.
+`$jsonRequest` enviará una solicitud GET a una URL determinada.
 
 ## Uso
 
@@ -14,16 +14,16 @@ $jsonRequest[URL;property?;error?;...header?]
 
 ## Parámetros
 
-| Campo     | Tipo     | Parámetros                            | Requerido |
-| --------- | -------- | ------------------------------------- |:---------:|
-| URL       | consulta | URL you want to get/send data to/from | verdadero |
-| property? | consulta | Property to return (get method)       |    no     |
-| error?    | string   | Error to return when request fails    |   falso   |
-| ...header | string   | Header.                               |   falso   |
+| Campo       | Tipo     | Parámetros                                        | Requerido |
+| ----------- | -------- | ------------------------------------------------- |:---------:|
+| URL         | consulta | URL a la que quieres obtener/enviar datos a/desde | verdadero |
+| ¿propiedad? | consulta | Propiedad a devolver (obtener método)             |    no     |
+| ¿error?     | string   | Error de retorno cuando la solicitud falla        |   falso   |
+| ...cabecera | string   | Cabeza.                                           |   falso   |
 
 ## Ejemplo(s)
 
-This will return a random dog fact:
+Esto devolverá un hecho al azar:
 
 ```javascript
 bot.command({

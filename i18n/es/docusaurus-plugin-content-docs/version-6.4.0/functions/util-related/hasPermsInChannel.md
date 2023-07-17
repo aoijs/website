@@ -1,24 +1,24 @@
 ---
 title: '$hasPermsInChannel'
-description: '$hasPermsInChannel will check if the user has one of the required permission in the given channel.'
+description: '$hasPermsInChannel comprobará si el usuario tiene uno de los permisos necesarios.'
 id: hasPermsInChannel
 ---
 
-`$hasPermsInChannel` will check if the user has one of the required permission in the given channel.
+`$hasPermsInChannel` comprobará si el usuario tiene uno de los permisos necesarios.
 
 ## Uso
 
 ```php
-$hasPermsInChannel[channelID;userOrRoleID;...perms]
+$hasPermsInChannel[canalID;usuario o rol ID;...perms]
 ```
 
 ## Parámetros
 
-| Campo        | Tipo   | Descripción                                                | Requerido |
-| ------------ | ------ | ---------------------------------------------------------- | --------- |
-| channelD     | entero | ID of the channel where the client checks the permissions. | sí        |
-| userOrRoleID | entero | ID of the user or role.                                    | sí        |
-| ...permisos  | string | Permissions.                                               | sí        |
+| Campo                | Tipo   | Descripción                                           | Requerido |
+| -------------------- | ------ | ----------------------------------------------------- | --------- |
+| canalD               | entero | ID del canal donde el cliente comprueba los permisos. | verdadero |
+| ID de usuario o rol? | entero | El ID de un usuario o rol.                            | verdadero |
+| ...permisos          | string | Permisos.                                             | verdadero |
 
 <details>
   <summary> <h3> Permisos de la API de Discord </h3></summary>
@@ -42,7 +42,7 @@ $hasPermsInChannel[channelID;userOrRoleID;...perms]
 | embedlinks              | Permiso para insertar enlaces                                                    |
 | attachfiles             | Permiso para adjuntar archivos                                                   |
 | readmessagehistory      | Permiso para leer el historial de mensajes dentro de un canal determinado        |
-| mentioneveryone         | Permission to mention `@everyone` and all roles                                  |
+| mentioneveryone         | Permiso para mencionar @everyone/`@here` y todos los roles                       |
 | useexternalemojis       | Permiso para utilizar emojis externos                                            |
 | viewguildinsights       | Permiso para ver la información del servidor                                     |
 | connect                 | Permiso para conectarse a canales de voz y stages                                |
@@ -72,7 +72,7 @@ $hasPermsInChannel[channelID;userOrRoleID;...perms]
 
 ## Ejemplo(s)
 
-This will return `true` when the author has `send messages` permissions and return `false` when they don't have those:
+Esto devolverá `true` cuando el autor tiene permisos para `enviar mensajes` y devolverá `false` cuando no los tenga:
 
 ```javascript
 bot.command({

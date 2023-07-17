@@ -1,10 +1,10 @@
 ---
 title: '$roleExists'
-description: '$roleExists will check if a certain role exists within a certain guild.'
+description: '$roleExists comprobará si existe un determinado rol dentro de un gremio determinado.'
 id: roleExists
 ---
 
-`$roleExists` will check if a certain role exists within a certain guild.
+`$roleExists` comprobará si existe cierto papel dentro de un gremio determinado.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $roleExists[roleResolver;guildID?]
 
 ## Parámetros
 
-| Campo        | Tipo   | Parámetros                                     | Requerido |
-| ------------ | ------ | ---------------------------------------------- |:---------:|
-| roleResolver | entero | ID of the role you want to check if it exists. | verdadero |
-| servidorID?  | entero | ID of the guild where the role exists.         |    no     |
+| Campo        | Tipo   | Parámetros                                | Requerido |
+| ------------ | ------ | ----------------------------------------- |:---------:|
+| resolver rol | entero | ID del rol que desea comprobar si existe. | verdadero |
+| servidorID?  | entero | ID del gremio donde existe el rol.        |    no     |
 
 ## Ejemplo(s)
 
-This will return `false` as the role doesn't exist in your guide:
+Esto devolverá `falso` ya que el rol no existe en tu guía:
 
 ```javascript
 bot.command({

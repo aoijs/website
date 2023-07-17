@@ -1,26 +1,26 @@
 ---
 title: '$fileExists'
-description: '$fileExists will check if a given file exists.'
+description: '$fileExists verificará si existe un archivo determinado.'
 id: fileExists
 ---
 
-`$fileExists` will check if a given file exists.
+`$fileExists` verificará si existe un archivo determinado.
 
 ## Uso
 
 ```php
-$fileExists[path]
+$fileExists[camino]
 ```
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros | Requerido |
-| ----- | ------ | ---------- |:---------:|
-| path  | string | File path. | verdadera |
+| Campo  | Tipo   | Parámetros       | Requerido |
+| ------ | ------ | ---------------- |:---------:|
+| camino | string | Ruta del archivo | verdadera |
 
 ## Ejemplo(s)
 
-This will check if a file called `index.js` exists in your directory:
+Esto comprobará si existe un archivo llamado `index.js` en su directorio:
 
 ```javascript
 bot.command({

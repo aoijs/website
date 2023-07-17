@@ -1,10 +1,10 @@
 ---
 title: '$oldMsgData'
-description: '$oldMsgData holds data of the old message.'
+description: '$oldMsgData містить дані старого повідомлення.'
 id: oldMsgData
 ---
 
-`$oldMsgData` holds data of the old message.
+`$oldMsgData` містить дані зі старого повідомлення.
 
 ## Використання
 
@@ -14,6 +14,6 @@ $oldMsgData[option]
 
 ## Параметри
 
-| Поле   | Тип   | Опис                | Обов'язковий |
-| ------ | ----- | ------------------- |:------------:|
-| option | рядок | Option to retrieve. |     так      |
+| Поле  | Тип   | Опис                 | Обов'язковий |
+| ----- | ----- | -------------------- |:------------:|
+| опція | рядок | Можливість отримати. |     так      |

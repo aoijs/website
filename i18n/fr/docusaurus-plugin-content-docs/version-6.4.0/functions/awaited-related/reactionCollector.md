@@ -1,48 +1,48 @@
 ---
 title: '$reactionCollector'
-description: '$reactionCollector will create a reaction collector on a given message.'
+description: '$reactionCollector va créer un collecteur de réactions sur un message donné.'
 id: reactionCollector
 ---
 
-`$reactionCollector` will create a reaction collector on a given message.
+`$reactionCollector` va créer un collecteur de réactions sur un message donné.
 
-## Usage
+## Utilisation
 
 ```php
-$reactionCollector[channelID;messageID;userFilters;time;reactions;awaitedCommands;removeReaction?;awaitData?;endAwait?]
+$reactionCollector[IDsalon;IDmessage;filtreUtilisateur;temps;réactions;commandesAttendues;retirerRéaction?;donnéesAttendues?;finAttente?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field           | Type    | Description                                                                                                | Required |
-| --------------- | ------- | ---------------------------------------------------------------------------------------------------------- |:--------:|
-| channelID       | integer | channel ID                                                                                                 |   true   |
-| messageID       | integer | message ID                                                                                                 |   true   |
-| userFilter      | string  | to what the bot will reply <br /> 1. **everyone** <br /> 2. **specific user ID** - any user ID |   true   |
-| time            | string  | when the command expires                                                                                   |   true   |
-| reactions       | string  | reactions, you can separate multiple emojis with a comma ( `,` )                                           |   true   |
-| awaitedCommands | string  | commands to execute, you can separate multiple emojis with a comma ( `,` )                                 |   true   |
-| removeReaction? | string  | remove the reactions after the commands executed                                                           |  false   |
-| awaitData?      | string  | awaited data                                                                                               |  false   |
-| endAwait?       | string  | end awaited command / awaited command to execute when timer ends                                           |  false   |
+| Champ              | Type                 | Description                                                                                                                                     | Obligatoire |
+| ------------------ | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |:-----------:|
+| IDsalon            | entier               | ID du salon                                                                                                                                     |    vrai     |
+| IDmessage          | entier               | ID du message                                                                                                                                   |    vrai     |
+| filtreUtilisateur  | chaîne de caractères | à ce que le bot répondra <br /> 1. **everyone** <br /> 2. **Identifiant spécifique d'utilisateur** - tout identifiant d'utilisateur |    vrai     |
+| temps              | chaîne de caractères | quand la commande se termine/expire                                                                                                             |    vrai     |
+| réactions          | chaîne de caractères | réactions, vous pouvez séparer plusieurs émoticônes par une virgule ( `,`)                                                                      |    vrai     |
+| commandesAttendues | chaîne de caractères | Commandes qui seront exécutées, vous pouvez séparer plusieurs commandes par une virgule ( `,`)                                                  |    vrai     |
+| retirerRéaction?   | chaîne de caractères | supprimer les réactions après l'exécution des commandes                                                                                         |    faux     |
+| donnéesAttendues?  | chaîne de caractère  | Données attendues                                                                                                                               |    faux     |
+| finAttente?        | chaîne de caractère  | fin de la commande attendue / commande attendue à exécuter lorsque le minuteur se termine                                                       |    faux     |
 
-## Example(s)
+## Exemple(s)
 
-This will send a message when you add a reaction:
+Ceci enverra un message lorsque vous ajouterez une réaction :
 
 ```js
 bot.command({
     name: "reactionCollector",
     code: `
   $reactionCollector[$channelID;$splitText[1];$authorID;10m;👀;awaitReaction;;true]
-  $textSplit[$sendMessage[React with "👀" for something special!;true]; ]
+  $textSplit[$sendMessage[Réagissez avec "👀" pour quelque chose de spécial !;true]; ]
   `
 });
 
 bot.awaitedCommand({
     name: "awaitReaction",
     code: `
-  $sendMessage[👀 what's this?]
+  $sendMessage[👀 qu'est-ce que c'est ?]
   `
 });
 ```

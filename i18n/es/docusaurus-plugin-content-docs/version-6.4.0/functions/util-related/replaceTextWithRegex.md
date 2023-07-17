@@ -1,10 +1,10 @@
 ---
 title: '$replaceTextWithRegex'
-description: '$replaceTextWithRegex will replace specific regex in a text. This works similar as $replaceText.'
+description: '$replaceTextWithRegex reemplazará expresiones regulares específicas en un texto. Esto funciona de forma similar a $replaceText.'
 id: replaceTextWithRegex
 ---
 
-`$replaceTextWithRegex` will replace specific segments of text.
+`$replaceTextWithRegex` reemplazará segmentos específicos de texto.
 
 ## Uso
 
@@ -14,27 +14,27 @@ $replaceTextWithRegex[text;reg;flags;newText]
 
 ## Parámetros
 
-| Campo   | Tipo   | Descripción                       | Requerido |
-| ------- | ------ | --------------------------------- |:---------:|
-| text    | string | Text you want to modify.          |    sí     |
-| reg     | cadena | The regex that will be replaced.  |    sí     |
-| flags   | cadena | [Flags](#flags).                  |    sí     |
-| newText | string | The text that will replace `reg`. |    no     |
+| Campo    | Tipo   | Descripción                     | Requerido |
+| -------- | ------ | ------------------------------- |:---------:|
+| text     | string | Texto que desea modificar.      |    sí     |
+| reg      | cadena | El regex que será reemplazado.  |    sí     |
+| banderas | cadena | [banderas](#flags).             |    sí     |
+| newText  | string | El texto que reemplazará `reg`. |    no     |
 
 <details open>
-  <summary><h2> Flags </h2></summary>
+  <summary><h2> banderas </h2></summary>
 
-| Flags |                                        |
-|:-----:| -------------------------------------- |
-|   g   | Replace all matches (case-sensitive)   |
-|   m   | Multiline matching                     |
-|   i   | Replace all matches (case-insensitive) |
+| Banderas |                                                              |
+|:--------:| ------------------------------------------------------------ |
+|    g     | Reemplazar todas las coincidencias (mayúsculas y minúsculas) |
+|    m     | Coincidencia múltiple                                        |
+|    i     | Reemplazar todas las coincidencias (mayúsculas y minúsculas) |
 
 </details>
 
 ## Ejemplo(s)
 
-This will replace `more` with `less`:
+Esto reemplazará `más` por `menos`:
 
 ```javascript
 bot.command({
@@ -45,9 +45,9 @@ bot.command({
 });  
 ```
 
-### Advanced Example
+### Ejemplo avanzado
 
-This will replace `less` with `more`:
+Esto reemplazará `menos` con `más`:
 
 ```javascript
 bot.command({

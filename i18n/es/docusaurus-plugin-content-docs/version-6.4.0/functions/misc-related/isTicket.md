@@ -1,15 +1,15 @@
 ---
 title: '$isTicket'
-description: '$isTicket will return either true or false depending on the channel being a ticket channel.'
+description: '$isTicket devolverá verdadero o falso según el tipo de interacción.'
 id: isTicket
 ---
 
-`$isTicket` will return either true or false depending on the channel being a ticket channel.
+`$isTicket` devolverá verdadero o falso según el tipo de interacción.
 
 ## Uso
 
 ```php
-$isTicket[channelID?]
+$isTicket[canalID?]
 ```
 
 ## Parámetros
@@ -20,7 +20,7 @@ $isTicket[channelID?]
 
 ## Ejemplo(s)
 
-This will check if the current channel is a ticket channel created by `$newTicket`:
+Esto comprobará si el canal actual es un canal de tickets creado por `$newTicket`:
 
 ```javascript
 bot.command({

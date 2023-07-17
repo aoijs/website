@@ -1,10 +1,10 @@
 ---
 title: '$getMessageVar'
-description: '$getMessageVar will return the value of a given message variable.'
+description: '$getMessageVar devolverá el valor de una variable de mensaje determinada.'
 id: getMessageVar
 ---
 
-`$getMessageVar` will return the value of a given message variable.
+`$getMessageVar` devolverá el valor de una variable de mensaje determinada.
 
 ## Uso
 
@@ -14,15 +14,15 @@ $getMessageVar[varname;guildID?;table?]
 
 ## Parámetros
 
-| Campo          | Tipo     | Parámetros      | Requerido |
-| -------------- | -------- | --------------- |:---------:|
-| varname        | consulta | Variable name.  | verdadero |
-| ID de mensaje? | entero   | mensaje ID      |    no     |
-| table?         | string   | Variable table. |   falso   |
+| Campo          | Tipo     | Parámetros       | Requerido |
+| -------------- | -------- | ---------------- |:---------:|
+| varname        | consulta | Nombre variable. | verdadero |
+| ID de mensaje? | entero   | mensaje ID       |    no     |
+| tabla?         | string   | Tabla variable.  |   falso   |
 
 ## Ejemplo(s)
 
-This will return the value of a variable called "Example":
+Esto devolverá el valor de una variable llamada "Ejemplo":
 
 ```javascript
 bot.command({

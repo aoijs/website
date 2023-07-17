@@ -1,26 +1,26 @@
 ---
 title: '$userDefaultAvatar'
-description: '$userDefaultAvatar will return the given user''s default Discord User Avatar.'
+description: '$userDefaultAvatar devolverá el avatar de usuario predeterminado de Discord del usuario.'
 id: userDefaultAvatar
 ---
 
-`$userDefaultAvatar` will return the given user's default Discord User Avatar.
+`$userDefaultAvatar` devolverá el avatar predeterminado del usuario de Discord por defecto.
 
 ## Uso
 
 ```php
-$userDefaultAvatar[userID?]
+$userDefaultAvatar[usuarioID?]
 ```
 
 ## Parámetros
 
 | Campo     | Tipo    | Parámetros         | Requerido |
 | --------- | ------- | ------------------ |:---------:|
-| usarioID? | integer | El ID del usuario. |    no     |
+| usarioID? | integer | El ID del usuario. |   falso   |
 
 ## Ejemplo(s)
 
-This will return your default Discord User Avatar:
+Esto devolverá tu Avatar de Usuario predeterminado de Discord:
 
 ```javascript
 bot.command({

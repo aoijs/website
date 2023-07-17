@@ -1,10 +1,10 @@
 ---
 title: '$advanceCooldown'
-description: '$advanceCooldown will set a cooldown for a given ID.'
+description: '$advanceCooldown establecerá un tiempo de reutilización para un ID dado.'
 id: advanceCooldown
 ---
 
-`$advanceCooldown` will set a cooldown for a given ID.
+`$advanceCooldown` establecerá un tiempo de enfriamiento para un ID determinado.
 
 ## Uso
 
@@ -12,20 +12,20 @@ id: advanceCooldown
 $advanceCooldown[time;id;errorMessage]
 ```
 
-* You are able to retrieve the remaining cooldown in the `$cooldown` function by using **`%time%`** or any of the following below.
-    * `%time%`, `%year%`, `%month%`, `%week%`, `%day%`, `%hour%`, `%min%`, `%sec%`, `%ms%`, `%fullTime%`
+* Puedes recuperar el tiempo de enfriamiento restante en la función `$cooldown` usando **`%time%`** o cualquiera de los siguientes a continuación.
+    * `%time%`, `%year%`, `%month%`, `%week%`, `%day%`, `%hour%`, `%min%`, `%sec%` `%ms%`, `%fullTime%`
 
 ## Parámetros
 
-| Campo        | Tipo     | Parámetros                                                     | Requerido |
-| ------------ | -------- | -------------------------------------------------------------- |:---------:|
-| tiempo       | consulta | Text to be separated.                                          | verdadero |
-| id           | entero   | Text to be separated.                                          | verdadero |
-| errorMessage | string   | Error message to be displayed when there's cooldown remaining. |    sí     |
+| Campo            | Tipo     | Parámetros                                                              | Requerido |
+| ---------------- | -------- | ----------------------------------------------------------------------- |:---------:|
+| tiempo           | consulta | Texto a separar.                                                        | verdadero |
+| id               | entero   | Texto a separar.                                                        | verdadero |
+| mensaje de error | string   | Mensaje de error que se mostrará cuando haya tiempo de espera restante. |    sí     |
 
 ## Ejemplo(s)
 
-This will set a cooldown for the guild of where you execute the command in and return the remaining cooldown time:
+Esto establecerá un tiempo de reutilización para el gremio donde ejecutas el comando y devolverá el tiempo restante de enfriamiento:
 
 ```javascript
 bot.command({

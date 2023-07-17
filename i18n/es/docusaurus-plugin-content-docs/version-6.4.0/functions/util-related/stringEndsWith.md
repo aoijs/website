@@ -1,10 +1,10 @@
 ---
 title: '$stringEndsWith'
-description: '$stringEndsWith will check if the given argument ends with something specific.'
+description: '$stringEndsWith comprobará si el argumento dado termina con algo específico.'
 id: stringEndsWith
 ---
 
-`$stringEndsWith` will check if the given argument ends with something specific.
+`$stringEndsWith` comprobará si el argumento dado termina con algo específico.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $stringEndsWith[text;check]
 
 ## Parámetros
 
-| Campo | Tipo     | Parámetros                                                             | Requerido |
-| ----- | -------- | ---------------------------------------------------------------------- |:---------:|
-| text  | consulta | The text that will be checked.                                         | verdadero |
-| check | consulta | The argument that will check if the text ends with something specific. | verdadero |
+| Campo     | Tipo     | Parámetros                                                           | Requerido |
+| --------- | -------- | -------------------------------------------------------------------- |:---------:|
+| text      | consulta | El texto que se comprobará.                                          | verdadero |
+| comprobar | consulta | El argumento que comprobará si el texto termina con algo específico. | verdadero |
 
 ## Ejemplo(s)
 
-This will return `true` as `aoi.js` ends with `js`:
+Esto devolverá `verdadero` como `aoi.js` termina con `js`:
 
 ```javascript
 bot.command({

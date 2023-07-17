@@ -1,7 +1,7 @@
 ---
-title: '$userLowestRole'
+title: $lowestRole
 description: '$userLowestRole devolverá el rol más bajo de un usuario específico.'
-id: userLowestRole
+id: lowestRole
 ---
 
 `$userLowestRole` devolverá el rol más bajo de un usuario específico.

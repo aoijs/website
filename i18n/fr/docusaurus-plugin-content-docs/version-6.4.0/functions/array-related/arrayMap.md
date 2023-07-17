@@ -1,22 +1,22 @@
 ---
 title: '$arrayMap'
-description: '$arrayMap will create a map with the given array.'
+description: '$arrayMap va créer une mappe avec le tableau donné.'
 id: arrayMap
 ---
 
-`$arrayMap` will create a map with the given array.
+`$arrayMap` va créer une mappe avec le tableau donné.
 
-## Usage
+## Utilisation
 
 ```php
-$arrayMap[name;awaitedCommand;separator?;awaitData?]
+$arrayMap[nom;commandeAttendue;séparateur?;donnéesAttendues?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field          | Type   | Description                  | Required |
-| -------------- | ------ | ---------------------------- |:--------:|
-| name           | string | Array name.                  |   true   |
-| awaitedCommand | string | Awaited command to executed. |   true   |
-| separator?     | string | Separator.                   |  false   |
-| awaitData?     | string | Awaited Data.                |  false   |
+| Champ             | Type                 | Description             | Obligatoire |
+| ----------------- | -------------------- | ----------------------- |:-----------:|
+| nom               | chaîne de caractères | Nom du tableau.         |    vrai     |
+| commandeAttendue  | chaîne de caractères | La commande à exécuter. |    vrai     |
+| séparateur?       | chaîne de caractères | Séparateur.             |    faux     |
+| donnéesAttendues? | chaîne de caractères | Données attendues.      |    faux     |

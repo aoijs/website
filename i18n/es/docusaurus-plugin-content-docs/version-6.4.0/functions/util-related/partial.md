@@ -1,10 +1,10 @@
 ---
 title: '$partial'
-description: '$partial checks if the object structure is partial.'
+description: '$partial comprueba si la estructura del objeto es parcial.'
 id: partial
 ---
 
-`$partial` checks if the object structure is partial.
+`$partial` comprueba si la estructura del objeto es parcial.
 
 ## Uso
 

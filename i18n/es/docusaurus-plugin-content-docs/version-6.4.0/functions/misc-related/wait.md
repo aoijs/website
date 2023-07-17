@@ -1,34 +1,34 @@
 ---
 title: '$wait'
-description: '$wait will delay functions from executing for a given time.'
+description: '$wait retrasará las funciones de ejecución durante un tiempo determinado.'
 id: wait
 ---
 
-`$wait` will delay functions from executing for a given time.
+`$wait` retrasará las funciones de ejecución durante un tiempo determinado.
 
 ## Uso
 
 ```php
-$wait[time]
+$wait[tiempo]
 ```
 
 ## Parámetros
 
-| Campo  | Tipo           | Parámetros                       | Requerido |
-| ------ | -------------- | -------------------------------- |:---------:|
-| tiempo | cadena, número | How long to delay the execution. | verdadera |
+| Campo  | Tipo           | Parámetros                           | Requerido |
+| ------ | -------------- | ------------------------------------ |:---------:|
+| tiempo | cadena, número | Cuánto tiempo retrasar la ejecución. | verdadera |
 
 ## Ejemplo(s)
 
-This will send an embed delayed:
+Esto enviará un incrustado retrasado:
 
 ```javascript
 bot.command({
     name: "wait",
     code: `
-    $description[Hello!]
+    $description[Hola!]
     $wait[5s]
-    $sendMessage[Oh, what's that?]
+    $sendMessage[¿Oh, qué es eso?]
     `
 });
 ```

@@ -1,26 +1,26 @@
 ---
 title: '$componentCollector'
-description: '$componentCollector will create a collector for the given components.'
+description: '$componentCollector va créer un collecteur pour les composants donnés.'
 id: componentCollector
 ---
 
-`$componentCollector` will create a collector for the given components.
+`$componentCollector` va créer un collecteur pour les composants donnés.
 
-## Usage
+## Utilisation
 
 ```php
-$componentCollector[messageID;userFilter;time;customIDs;commands;errorMsg?;endcommand?;awaitData?]
+$componentCollector[IDmessage;filtreUtilisateur;temps;IDpersonnalisé;commandes;messageD'erreu?;finCommande?;donnéesAttendues?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field       | Type    | Description                                                                                                 | Required |
-| ----------- | ------- | ----------------------------------------------------------------------------------------------------------- |:--------:|
-| messageID   | integer | The message ID.                                                                                             |   true   |
-| userFilter  | string  | To what the bot will reply. <br /> 1. **everyone** <br /> 2. **specific user ID** - any user ID |   true   |
-| time        | string  | When the command ends/expires.                                                                              |   true   |
-| customID    | string  | The component ID.                                                                                           |   true   |
-| commands    | string  | Commands that will be executed, you can separate multiple emojis with a comma ( `,` ).                      |   true   |
-| errorMsg?   | string  | Error message when command expires.                                                                         |  false   |
-| endcommand? | integer | End command which will be executed when previous commands were executed.                                    |  false   |
-| awaitData?  | string  | Awaited Data.                                                                                               |  false   |
+| Champ             | Type                 | Description                                                                                                                                      | Obligatoire |
+| ----------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |:-----------:|
+| IDmessage         | entier               | L'identifiant du message.                                                                                                                        |    vrai     |
+| filtreUtilisateur | chaîne de caractère  | À ce que le bot répondra. <br /> 1. **everyone** <br /> 2. **Identifiant spécifique d'utilisateur** - tout identifiant d'utilisateur |    vrai     |
+| temps             | chaîne de caractères | Quand la commande se termine/expire.                                                                                                             |    vrai     |
+| IDpersonnalisé    | chaîne de caractères | L'ID du composant.                                                                                                                               |    vrai     |
+| commandes         | chaîne de caractères | Commandes qui seront exécutées, vous pouvez séparer plusieurs commandes par une virgule ( `,`).                                                  |    vrai     |
+| messageD'erreur?  | chaîne de caractères | Message d'erreur lorsque la commande expire.                                                                                                     |    faux     |
+| finCommande?      | entier               | Commande de fin qui sera exécutée lorsque les commandes précédentes ont été exécutées.                                                           |    faux     |
+| donnéesAttendues? | chaîne de caractère  | Données attendues.                                                                                                                               |    faux     |

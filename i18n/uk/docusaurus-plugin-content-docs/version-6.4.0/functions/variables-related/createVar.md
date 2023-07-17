@@ -1,10 +1,10 @@
 ---
 title: '$createVar'
-description: '$createVar will create a new variable.'
+description: '$createVar створить нову змінну.'
 id: createVar
 ---
 
-`$createVar` will create a new variable.
+`$createVar` створить нову змінну.
 
 ## Використання
 
@@ -14,19 +14,19 @@ $createVar[table;...vars]
 
 ## Параметри
 
-| Поле    | Тип   | Опис                     | Обов'язковий |
-| ------- | ----- | ------------------------ |:------------:|
-| table   | рядок | Variable table.          |     так      |
-| ...vars | рядок | Variable name and value. |     так      |
+| Поле    | Тип   | Опис                      | Обов'язковий |
+| ------- | ----- | ------------------------- |:------------:|
+| таблиця | рядок | Змінна таблиця.           |     так      |
+| ...vars | рядок | Ім'я та значення змінної. |     так      |
 
 ## Приклад(и)
 
-This will create a new variable with the name of "variable" and the value of "value":
+Буде створено нову змінну з ім'ям "variable" та значенням "значення":
 
 ```javascript
 bot.command({
     name: "createVar",
-    code: `
+    код: `
   $createVar[main;variable;value]
   `
 });

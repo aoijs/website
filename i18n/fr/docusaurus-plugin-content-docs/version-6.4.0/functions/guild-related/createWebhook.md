@@ -1,36 +1,36 @@
 ---
 title: '$createWebhook'
-description: '$createWebhook will create a webhook.'
+description: '$createWebhook créera un webhook.'
 id: createWebhook
 ---
 
-`$createWebhook` will create a webhook.
+`$createWebhook` créera un webhook.
 
-## Usage
+## Utilisation
 
 ```php
-$createWebhook[channelID;name;avatar;reason;sep?]
+$createWebhook[IDsalon;nom;avatar;raison;separator?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field     | Type    | Description                                                                                        | Required |
-| --------- | ------- | -------------------------------------------------------------------------------------------------- |:--------:|
-| channelID | integer | Channel ID of where the webhook will be created in.                                                |   true   |
-| name      | string  | The webhook's display name.                                                                        |   true   |
-| avatar    | string  | The webhook avatar url.                                                                            |   true   |
-| reason    | string  | Reason which will be displayed in the guild's audit logs.                                          |   true   |
-| sep?      | string  | The separator which will be used to separate important credentials like token and ID, default `,`. |  false   |
+| Champ       | Type                 | Description                                                                                                                | Obligatoire |
+| ----------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------- |:-----------:|
+| IDsalon     | entier               | ID du salon dans lequel le webhook sera créé.                                                                              |    vrai     |
+| nom         | chaine de caractères | Le nom d'affichage du webhook.                                                                                             |    vrai     |
+| avatar      | chaine de caractères | L'URL de l'avatar du webhook.                                                                                              |    vrai     |
+| raison      | chaîne de caractères | Raison qui sera affichée dans les logs du serveur.                                                                         |    true     |
+| séparateur? | chaine de caractères | Le séparateur qui sera utilisé pour séparer les identifiants importants comme le token et l'ID, séparateur par défaut `,`. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
-This will create a webhook in the current channel:
+Ceci va créer un webhook dans le salon actuel :
 
 ```javascript
 bot.command({
     name: 'createWebhook',
     code: `
-  $createWebhook[$channelID;aoi.js is great;$userAvatar[$authorID];Just testing.;, ]
+  $createWebhook[$channelID;aoi.js est bien;$userAvatar[$authorID];Juste un test.;, ]
   `
 });
 ```

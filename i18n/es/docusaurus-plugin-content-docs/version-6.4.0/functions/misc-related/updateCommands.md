@@ -1,10 +1,10 @@
 ---
 title: '$updateCommands'
-description: '$updateCommands will reload your commands of your command folder / will make changes effective.'
+description: '$updateCommands recargará los comandos de tu carpeta de comandos / hará que los cambios sean efectivos.'
 id: updateCommands
 ---
 
-`$updateCommands` will reload your commands of your command folder / will make changes effective.
+`$updateCommands` volverá a cargar los comandos de tu carpeta de comandos / hará que los cambios sean efectivos.
 
 ## Uso
 
@@ -12,7 +12,7 @@ id: updateCommands
 $updateCommands
 ```
 
-* Will only work if you use a command handler, example below:
+* Sólo funcionará si usas un manejador de comandos, ejemplo a continuación:
 
 ```javascript
 const { AoiClient, LoadCommands } = require("aoi.js");
@@ -34,12 +34,12 @@ const bot = new AoiClient({
 });
 
 const loader = new LoadCommands(bot);
-loader.load(bot.cmd, "./commands/"); // your command directory.
+loader.load(bot.cmd, "./commands/"); // su directorio de comandos.
 ```
 
 ## Ejemplo(s)
 
-This will update the commands of your bot without restarting it:
+Esto actualizará los comandos de tu bot sin reiniciarlo:
 
 ```javascript
 bot.command({

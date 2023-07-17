@@ -1,10 +1,10 @@
 ---
 title: '$onlyIf'
-description: '$onlyIf will check for a condition and return a error message if that condition does not match.'
+description: '$onlyIf comprobará una condición y devolverá un mensaje de error si esa condición no coincide.'
 id: onlyIf
 ---
 
-`$onlyIf` will check for a condition and return a error message if that condition does not match.
+`$onlyIf` comprobará si hay una condición y devolverá un mensaje de error si esa condición no coincide.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $onlyIf[condition;error]
 
 ## Parámetros
 
-| Campo     | Tipo     | Parámetros                                     | Requerido |
-| --------- | -------- | ---------------------------------------------- |:---------:|
-| condition | consulta | Condition to check.                            | verdadero |
-| error     | consulta | Error to return when condition does not match. |    no     |
+| Campo     | Tipo     | Parámetros                                        | Requerido |
+| --------- | -------- | ------------------------------------------------- |:---------:|
+| condición | consulta | Condición a comprobar.                            | verdadero |
+| error     | consulta | Error a devolver cuando la condición no coincide. |    no     |
 
 ## Ejemplo(s)
 
-This will return the error message as 5 does not equal to 3:
+Esto devolverá el mensaje de error ya que 5 no es igual a 3:
 
 ```javascript
 bot.command({

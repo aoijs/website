@@ -1,10 +1,10 @@
 ---
 title: '$nonEscape'
-description: '$nonEscape will stop escaping special characters.'
+description: '$nonEscape dejará de escapar a personajes especiales.'
 id: nonEscape
 ---
 
-`$nonEscape` will stop escaping special characters.
+`$nonEscape` dejará de escapar caracteres especiales.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $nonEscape[message]
 
 ## Parámetros
 
-| Campo   | Tipo   | Parámetros                         | Requerido |
-| ------- | ------ | ---------------------------------- | --------- |
-| message | string | Text you don't want to be escaped. | verdadera |
+| Campo   | Tipo   | Parámetros                    | Requerido |
+| ------- | ------ | ----------------------------- | --------- |
+| mensaje | string | Texto que no quieres escapar. | verdadera |
 
 ## Ejemplo(s)
 
-This will stop from escaping certain characters:
+Esto dejará de escapar ciertos caracteres:
 
 ```javascript
 bot.command({

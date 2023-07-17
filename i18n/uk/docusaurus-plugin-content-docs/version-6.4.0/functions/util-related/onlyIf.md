@@ -1,10 +1,10 @@
 ---
 title: '$onlyIf'
-description: '$onlyIf will check for a condition and return a error message if that condition does not match.'
+description: '$onlyIf перевірить умову і поверне повідомлення про помилку, якщо ця умова не збігається.'
 id: onlyIf
 ---
 
-`$onlyIf` will check for a condition and return a error message if that condition does not match.
+`$onlyIf` перевірить умову і поверне повідомлення про помилку, якщо ця умова не відповідає.
 
 ## Використання
 
@@ -14,19 +14,19 @@ $onlyIf[condition;error]
 
 ## Параметри
 
-| Поле      | Тип   | Опис                                           | Обов'язковий |
-| --------- | ----- | ---------------------------------------------- |:------------:|
-| condition | рядок | Condition to check.                            |     так      |
-| error     | рядок | Error to return when condition does not match. |      ні      |
+| Поле    | Тип   | Опис                                          | Обов'язковий |
+| ------- | ----- | --------------------------------------------- |:------------:|
+| умова   | рядок | Умови перевірки                               |     так      |
+| помилка | рядок | Помилка повернення, коли умова не збігається. |      ні      |
 
 ## Приклад(и)
 
-This will return the error message as 5 does not equal to 3:
+Це поверне повідомлення про помилку, оскільки 5 не дорівнює 3:
 
 ```javascript
 bot.command({
-    name: "onlyIf",
-    code: `
+    name: "тільки",
+    код: `
     Ok.
     $onlyIf[5==3;That's wrong!]
     `

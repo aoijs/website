@@ -1,10 +1,10 @@
 ---
 title: '$onlyForCategories'
-description: '$onlyForCategories will check if the command was executed in the category of the execution channel and return a error message if not.'
+description: '$onlyForCategories comprobará si el comando fue ejecutado en la categoría del canal de ejecución y devolverá un mensaje de error en caso contrario.'
 id: onlyForCategories
 ---
 
-`$onlyForCategories` will check if the command was executed in the category of the execution channel and return a error message if not.
+`$onlyForCategories` comprobará si el comando fue ejecutado en la categoría del canal de ejecución y devolverá un mensaje de error si no.
 
 ## Uso
 
@@ -14,19 +14,19 @@ $onlyForCategories[...categoryIds;error]
 
 ## Parámetros
 
-| Campo          | Tipo            | Parámetros                                                                         | Requerido |
-| -------------- | --------------- | ---------------------------------------------------------------------------------- |:---------:|
-| ...categoryIds | string, integer | Categories you want to limit the command to.                                       | verdadero |
-| error          | consulta        | Error to return when the command was not executed in any of the listed categories. | verdadero |
+| Campo             | Tipo            | Parámetros                                                                                 | Requerido |
+| ----------------- | --------------- | ------------------------------------------------------------------------------------------ |:---------:|
+| ...categorías Ids | string, integer | Categorías a las que desea limitar el comando.                                             | verdadero |
+| error             | consulta        | Error a devolver cuando el comando no fue ejecutado en ninguna de las categorías listadas. | verdadero |
 
 ## Ejemplo(s)
 
-This will limit the command only to given channel categories:
+Esto limitará el comando sólo a las categorías de canales dadas:
 
 ```javascript
 bot.command({
-    name: "onlyForCategories",
-    code: `
+    nombre: "onlyForCategories",
+    código: `
     Ok.
     $onlyForCategories[categoryID;categoryID;You can't use that command here!]
     `

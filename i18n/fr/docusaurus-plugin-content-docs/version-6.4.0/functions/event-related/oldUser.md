@@ -1,19 +1,19 @@
 ---
 title: '$oldUser'
-description: '$oldUser holds data of the old user, used in update user event, or else any data will be empty.'
+description: '$oldUser conserve les données de l''ancien utilisateur, utilisées l''évènement membre mis à jour, sinon toutes les données seront vides.'
 id: oldUser
 ---
 
-`$oldUser` holds data of the old user, used in update user event, or else any data will be empty.
+`$oldUser` conserve les données de l'ancien utilisateur, utilisées l'évènement membre mis à jour, sinon toutes les données seront vides.
 
-## Usage
+## Utilisation
 
 ```php
 $oldUser[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description                                                                                                                                                                                                                                                                             | Required |
-| ------ | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |:--------:|
-| option | string | Option to retrieve <br /> 1. **name** <br /> 2. **tag** <br /> 3. **banner** <br /> 4. **bannerURL** <br /> 5. **createdAt** <br /> 6. **avatarURL** <br /> 7. **accentColor** <br /> 8. **flags** <br /> 9. **createdTimestamp** |   true   |
+| Champ  | Type                 | Description                                                                                                                                                                                                                                                                             | Obligatoire |
+| ------ | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |:-----------:|
+| option | chaîne de caractères | Option à récupérer <br /> 1. **name** <br /> 2. **tag** <br /> 3. **banner** <br /> 4. **bannerURL** <br /> 5. **createdAt** <br /> 6. **avatarURL** <br /> 7. **accentColor** <br /> 8. **flags** <br /> 9. **createdTimestamp** |    vrai     |

@@ -1,10 +1,10 @@
 ---
 title: '$getTextSplitLength'
-description: '$getTextSplitLength will return the amount of split arguments in $textSplit'
+description: '$getTextSplitLength devolverá la cantidad de argumentos dados.'
 id: getTextSplitLength
 ---
 
-`$getTextSplitLength` will return the amount of split arguments in `$textSplit`.
+`$getTextSplitLength` devolverá la cantidad de argumentos divididos en `$textSplit`.
 
 ## Uso
 
@@ -14,7 +14,7 @@ $getTextSplitLength
 
 ## Ejemplo(s)
 
-This will return `5` as there are five arguments separated by commas given in `$textSplit`
+Esto devolverá `5` ya que hay cinco argumentos separados por comas dadas en `$textSplit`
 
 ```javascript
 bot.command({

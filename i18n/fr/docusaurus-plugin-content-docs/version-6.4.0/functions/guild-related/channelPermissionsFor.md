@@ -1,32 +1,32 @@
 ---
 title: '$channelPermissionsFor'
-description: '$channelPermissionsFor will return the channel permissions of a specific user or role.'
+description: '$channelPermissionsFor retournera les permissions du salon donné d''un utilisateur ou d''un rôle spécifique.'
 id: channelPermissionsFor
 ---
 
-`$channelPermissionsFor` will return the channel permissions of a specific user or role.
+`$channelPermissionsFor` retournera les permissions du salon donné d'un utilisateur ou d'un rôle spécifique.
 
-## Usage
+## Utilisation
 
 ```php
-$channelPermissionsFor[userOrRoleID?;channelID?;sep?]
+$channelPermissionsFor[IDrôle/IDtilisateur?;IDsalon?;séparateur?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field        | Type    | Description                                                                   | Required |
-| ------------ | ------- | ----------------------------------------------------------------------------- |:--------:|
-| userOrRoleID | integer | The user or role ID whose permissions shall be returned.                      |   true   |
-| channelID    | integer | The channel ID of the channel of which the permissions should be returned of. |   true   |
-| sep?         | string  | The separator which will be used to separate the permissions, by default ",". |  false   |
+| Champ                 | Type                 | Description                                                                             | Obligatoire |
+| --------------------- | -------------------- | --------------------------------------------------------------------------------------- |:-----------:|
+| IDrôle/IDutilisateur? | entier               | L'identifiant de l'utilisateur ou du rôle dont les permissions doivent être renvoyées.  |    vrai     |
+| IDsalon?              | entier               | L'ID du salon dont les permissions doivent être renvoyées.                              |    vrai     |
+| séparateur?           | chaine de caractères | Le séparateur qui sera utilisé pour séparer les permissions, séparateur par défaut ",". |    faux     |
 
-## Example(s)
+## Exemple(s)
 
-This will return your permissions in the channel where you execute the command:
+Cela va renvoyer vos permissions dans le salon où vous exécutez la commande :
 
 ```javascript
 bot.command({
-    name: 'channelPermissionsFor',
+    name: 'permissionDuSalonPour',
     code: `
   $channelPermissionsFor[$authorID;$channelID;, ]
   `

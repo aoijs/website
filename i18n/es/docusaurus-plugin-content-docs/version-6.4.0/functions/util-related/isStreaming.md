@@ -1,10 +1,10 @@
 ---
 title: '$isStreaming'
-description: '$isStreaming will check if one user is streaming in a voice channel.'
+description: '$isStreaming comprobará si un usuario está transmitiendo en un canal de voz.'
 id: isStreaming
 ---
 
-`$isStreaming` will check if one user is streaming in a voice channel.
+`$isStreaming` comprobará si un usuario está transmitiendo en un canal de voz.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $isStreaming[userID?;guildID?]
 
 ## Parámetros
 
-| Campo       | Tipo   | Parámetros                                             | Requerido |
-| ----------- | ------ | ------------------------------------------------------ |:---------:|
-| usarioID?   | entero | ID of the user you want to check if they're streaming. |    no     |
-| servidorID? | entero | ID of the channel where they're streaming in.          |    no     |
+| Campo       | Tipo   | Parámetros                                           | Requerido |
+| ----------- | ------ | ---------------------------------------------------- |:---------:|
+| usarioID?   | entero | ID del usuario que desea comprobar si está fluyendo. |    no     |
+| servidorID? | entero | ID del canal en el que se están transmitiendo.       |    no     |
 
 ## Ejemplo(s)
 
-This will return either `true` or `false` depending on if you're streaming (voice channel) or not:
+Esto retornará `verdadero` o `falso` dependiendo de si estás transmitiendo (canal de voz) o no:
 
 ```javascript
 bot.command({

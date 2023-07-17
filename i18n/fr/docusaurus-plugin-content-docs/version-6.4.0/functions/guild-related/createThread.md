@@ -1,41 +1,41 @@
 ---
 title: '$createThread'
-description: '$createThread will create a new thread.'
+description: '$createThread créera un nouveau fil.'
 id: createThread
 ---
 
-`$createThread` will create a new thread.
+`$createThread` créera un nouveau fil.
 
-## Usage
+## Utilisation
 
 ```php
-$createThread[channelID;name;archive;type;startMessage;returnId?]
+$createThread[IDsalon;nom;archive;type;premierMessage;renvoyerID?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field        | Type    | Description                                                                  | Required |
-| ------------ | ------- | ---------------------------------------------------------------------------- |:--------:|
-| channelID    | integer | The channel ID of where the thread should be created in.                     |   true   |
-| name         | string  | The name of the newly created thread.                                        |   true   |
-| achieve      | string  | After how much time the thread will be achieved (ms).                        |   true   |
-| type         | string  | Thread type <br /> 1. **public** (default) <br /> 2. **private** |   true   |
-| startMessage | string  | The message ID of where the thread should relate to.                         |   true   |
-| returnId?    | string  | If the function should return the thread ID after its creation.              |  false   |
+| Champ          | Type                 | Description                                                                     | Obligatoire |
+| -------------- | -------------------- | ------------------------------------------------------------------------------- |:-----------:|
+| IDsalon        | entier               | L'ID du salon où le fil doit être créé.                                         |    vrai     |
+| nom            | chaine de caractères | Le nom du fil nouvellement créé.                                                |    vrai     |
+| archive        | chaine de caractères | Après combien de temps le fil de discussion sera archivé (ms).                  |    vrai     |
+| type           | chaîne de caractères | Type de fil <br /> 1. **public** (par défaut) <br /> 2. **private** |    vrai     |
+| premierMessage | chaine de caractères | L'ID du message où le fil sera créé.                                            |    vrai     |
+| renvoyerID?    | chaîne de caractères | Si la fonction renvoie l'identifiant du fil après sa création.                  |    faux     |
 
-* **60 —** This option makes the thread stays active for **1 hour**.
-* **1440 —** This option makes the thread stays active for **1 day**.
-* **4320 —** This option makes the thread stays active for **3 days**.
-* **10080 —** This option makes the thread stays active for **1 week**.
-* **MAX —** This option makes the thread stays active for the highest possible time.
+* **60 —** Cette option rend le fil actif pendant **1 heure**.
+* **1440 —** Cette option rend le fil actif pendant **1 jour**.
+* **4320 —** Cette option rend le fil actif pendant **3 jours**.
+* **10080 —** Cette option rend le fil actif pendant **1 semaine**.
+* **MAX —** Cette option rend le fil actif pendant le plus lontemp possible.
 
-## Example(s)
+## Exemple(s)
 
-This will create a thread in the current channel:
+Ceci va créer un fil dans le salon actuel:
 
 ```javascript
 bot.command({
-    name: 'createThread',
+    name: 'créerFil',
     code: `
   $createThread[$channelID;Example!;60;public;$messageID;false]
   `

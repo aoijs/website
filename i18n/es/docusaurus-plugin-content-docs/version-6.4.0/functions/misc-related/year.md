@@ -1,10 +1,10 @@
 ---
 title: '$year'
-description: '$year will return the current year in CST.'
+description: '$year devolverá el año actual en CST.'
 id: year
 ---
 
-`$year` will return the current year in CST.
+`$year` devolverá el año actual en CST.
 
 ## Uso
 
@@ -14,7 +14,7 @@ $year
 
 ## Ejemplo(s)
 
-This will returns the current year:
+Esto devolverá el año actual:
 
 ```javascript
 bot.command({
@@ -25,7 +25,7 @@ bot.command({
 });
 ```
 
-You can change the timezone using `$timezone`:
+Puedes cambiar la zona horaria usando `$timezone`:
 
 ```javascript
 bot.command({
@@ -33,6 +33,6 @@ bot.command({
     code: `
     $year 
     $timezone[America/New_York]
-    ` // returns current year in New York
+    ` // devuelve el año actual en Nueva York
 });
 ```

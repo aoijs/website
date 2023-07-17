@@ -1,28 +1,28 @@
 ---
 title: '$userCustomStatus'
-description: '$userCustomStatus will return a user''s custom status.'
+description: '$userCustomStatus devolverá el estado personalizado de un usuario.'
 id: userCustomStatus
 ---
 
-`$userCustomStatus` will return a user's custom status.
+`$userCustomStatus` devolverá el estado personalizado de un usuario.
 
 ## Uso
 
 ```php
-$userCustomStatus[guildID?;userID?;option?]
+$userCustomStatus[servidorID?;usuarioID?;opcion?]
 ```
 
 ## Parámetros
 
 | Campo       | Tipo   | Parámetros                                                                                                                                            | Requerido |
 | ----------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |:---------:|
-| servidorID? | entero | The role ID.                                                                                                                                          |    no     |
-| usarioID?   | entero | The user ID.                                                                                                                                          |    no     |
-| opción?     | string | Which part of the status will be returned <br /> 1. **state** (default) - returns the status text <br /> 2. **emoji** - returns the emoji |   falso   |
+| servidorID? | entero | ID del rol.                                                                                                                                           |   falso   |
+| usarioID?   | entero | La identificación del usuario.                                                                                                                        |   falso   |
+| opción?     | cadena | Qué parte del estado se devolverá <br /> 1. **state** (predeterminado): devuelve el texto de estado <br /> 2. **emoji** - cualquier emoji |   falso   |
 
 ## Ejemplo(s)
 
-This will return your status text if you have any:
+Esto devolverá tu texto de estado si tienes alguno:
 
 ```javascript
 bot.command({

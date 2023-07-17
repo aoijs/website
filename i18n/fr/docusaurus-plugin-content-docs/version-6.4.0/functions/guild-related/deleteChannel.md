@@ -1,30 +1,30 @@
 ---
 title: '$deleteChannel'
-description: '$deleteChannel will delete a specific channel.'
+description: '$deleteChannel supprimera un salon spécifique.'
 id: deleteChannel
 ---
 
-`$deleteChannel` will delete a specific channel.
+`$deleteChannel` supprimera un salon spécifique.
 
-## Usage
+## Utilisation
 
 ```php
-$deleteChannel[channelID]
+$deleteChannel[IDsalon]
 ```
 
-## Parameters
+## Paramètres
 
-| Field     | Type    | Description                                          | Required |
-| --------- | ------- | ---------------------------------------------------- |:--------:|
-| channelID | integer | The channel ID of the channel which will be deleted. |   true   |
+| Champ   | Type   | Description                               | Obligatoire |
+| ------- | ------ | ----------------------------------------- |:-----------:|
+| IDsalon | entier | L'ID du canal du salon qui sera supprimé. |     oui     |
 
-## Example(s)
+## Exemple(s)
 
-This will delete the channel where the command was executed in:
+Ceci supprimera le salon où la commande a été exécutée:
 
 ```javascript
 bot.command({
-    name: 'deleteChannel',
+    name: 'supprimerSalon',
     code: `
   $deleteChannel[$channelID]
   `

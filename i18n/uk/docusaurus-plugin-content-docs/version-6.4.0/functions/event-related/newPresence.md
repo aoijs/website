@@ -1,10 +1,10 @@
 ---
 title: '$newPresence'
-description: '$newPresence holds data of the updated presence.'
+description: '$newPresence зберігає дані оновленої присутності.'
 id: newPresence
 ---
 
-`$newPresence` holds data of the updated presence.
+`$newPresence` зберігає дані оновленої присутності.
 
 ## Використання
 
@@ -14,6 +14,6 @@ $newPresence[option]
 
 ## Параметри
 
-| Поле   | Тип   | Опис                | Обов'язковий |
-| ------ | ----- | ------------------- |:------------:|
-| option | рядок | Option to retrieve. |     так      |
+| Поле  | Тип   | Опис                 | Обов'язковий |
+| ----- | ----- | -------------------- |:------------:|
+| опція | рядок | Можливість отримати. |     так      |

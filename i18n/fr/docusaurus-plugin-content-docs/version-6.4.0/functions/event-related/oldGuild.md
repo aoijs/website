@@ -1,19 +1,19 @@
 ---
 title: '$oldGuild'
-description: '$oldGuild holds data for the guild before it was updated, this is from discord cache and might be empty depending on whether it''s cached, so use partial option before attempting to access any property. (guildUpdate event)'
+description: '$oldGuild conserve les données du serveur avant sa mise à jour, ceci provient du cache de discord et peut être vide selon qu''il est mis en cache, donc utilisez une option partielle avant d''essayer d''accéder à n''importe quelle propriété. (évènement guildUpdate)'
 id: oldGuild
 ---
 
-`$oldGuild` holds data for the guild before it was updated, this is from discord cache and might be empty depending on whether it's cached, so use partial option before attempting to access any property. (guildUpdate event)
+`$oldGuild` conserve les données du serveur avant sa mise à jour, ceci provient du cache de discord et peut être vide selon qu'il est mis en cache, donc utilisez une option partielle avant d'essayer d'accéder à n'importe quelle propriété. (évènement guildUpdate)
 
-## Usage
+## Utilisation
 
 ```php
 $oldGuild[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- |:--------:|
-| option | string | Option to retrieve. |   true   |
+| Champ  | Type                 | Description         | Obligatoire |
+| ------ | -------------------- | ------------------- |:-----------:|
+| option | chaîne de caractères | Option à récupérer. |    vrai     |

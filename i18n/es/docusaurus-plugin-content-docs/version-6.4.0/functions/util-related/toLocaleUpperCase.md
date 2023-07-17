@@ -1,10 +1,10 @@
 ---
 title: '$toLocaleUpperCase'
-description: '$toLocaleUpperCase will change the first character of every word to uppercase.'
+description: '$toLocaleUpperCase cambiará el primer carácter de cada palabra a mayúsculas.'
 id: toLocaleUpperCase
 ---
 
-`$toLocaleUpperCase` will change the first character of every word to uppercase.
+`$toLocaleUpperCase` cambiará el primer carácter de cada palabra a mayúsculas.
 
 ## Uso
 
@@ -14,18 +14,18 @@ $toLocaleUpperCase[text]
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros                              | Requerido |
-| ----- | ------ | --------------------------------------- |:---------:|
-| text  | string | The text to change to locale uppercase. | verdadera |
+| Campo | Tipo   | Parámetros                                       | Requerido |
+| ----- | ------ | ------------------------------------------------ |:---------:|
+| text  | string | El texto a cambiar a mayúsculas de localización. | verdadera |
 
 ## Ejemplo(s)
 
-This will change every first character of a word to uppercase, in this case it would return `Hello, I'm Happy.`:
+Esto cambiará cada primer carácter de una palabra a mayúsculas, en este caso devolvería `Hola, soy Feliz.`:
 
 ```javascript
 bot.command({
-    name: "toLocaleUpperCase",
-    code: `
+    nombre: "toLocaleUpperCase",
+    código: `
     $toLocaleUpperCase[hello, i'm happy.]
     `
 });

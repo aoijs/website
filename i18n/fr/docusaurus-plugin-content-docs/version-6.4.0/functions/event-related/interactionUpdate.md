@@ -1,34 +1,34 @@
 ---
 title: '$interactionUpdate'
-description: '$interactionUpdate will update an existing interaction.'
+description: '$interactionUpdate mettra à jour une interaction existante.'
 id: interactionUpdate
 ---
 
-`$interactionUpdate` will return update an existing interaction.
+`$interactionUpdate` mettra à jour une interaction existante.
 
-## Usage
+## Utilisation
 
 ```php
-$interactionUpdate[content?;embeds?;components?;files?]
+$interactionUpdate[contenu?;embeds?;composants?;fichiers?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field       | Type   | Description          | Required |
-| ----------- | ------ | -------------------- |:--------:|
-| content?    | string | New message content. |  false   |
-| embeds?     | string | Embed parser.        |  false   |
-| components? | string | Component parser.    |  false   |
-| files?      | string | File parser.         |  false   |
+| Champ       | Type                 | Description                 | Obligatoire |
+| ----------- | -------------------- | --------------------------- |:-----------:|
+| contenu?    | chaîne de caractères | Nouveau contenu du message. |    faux     |
+| embeds?     | chaîne de caractères | Embed parser.               |    faux     |
+| composants? | chaîne de caractères | Composant parser.           |    faux     |
+| fichiers?   | chaîne de caractères | Fichier parser.             |    faux     |
 
-## Example(s)
+## Exemple(s)
 
 ```javascript
 bot.interactionCommand({
     name: "interactionUpdate",
     prototype: "slash",
     code: `
-  $interactionReply[Hello, World!;;{actionRow:{button:Example Button!:primary:customID:false}};;everyone;false]
+  $interactionReply[Bonjour, tout le monde!;;{actionRow:{button:Bouton d'exemple!:primary:customID:false}};;everyone;false]
   `
 });
 ```
@@ -38,7 +38,7 @@ bot.interactionCommand({
     name: "customID",
     prototype: "button",
     code: `
-  $interactionUpdate[Bye, world.]
+  $interactionUpdate[Aurevoir, tout le monde!]
   `
 });
 ```

@@ -1,31 +1,31 @@
 ---
 title: '$arrayReverse'
-description: '$arrayReverse will reverse the elements in the given array.'
+description: '$arrayReverse inverse les éléments dans le tableau donné.'
 id: arrayReverse
 ---
 
-`$arrayReverse` will reverse the elements in the given array.
+`$arrayReverse` inverse les éléments dans le tableau donné.
 
-## Usage
+## Utilisation
 
 ```php
-$arrayReverse[name]
+$arrayReverse[nom]
 ```
 
-## Parameters
+## Paramètres
 
-| Field | Type   | Description | Required |
-| ----- | ------ | ----------- |:--------:|
-| name  | string | Array name. |   true   |
+| Champ | Type                 | Description     | Obligatoire |
+| ----- | -------------------- | --------------- |:-----------:|
+| nom   | chaîne de caractères | Nom du tableau. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
 ```javascript
 bot.command({
     name: "array-reverse",
     code: `
-  $arrayReverse[array]
-  $createArray[array;aoi.js;akarui;documents;bot]
+  $arrayReverse[tableau]
+  $createArray[tableau;aoi.js;akarui;documents;bot]
   `
 });
 ```

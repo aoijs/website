@@ -1,10 +1,10 @@
 ---
 title: '$reverse'
-description: '$reverse will reverse given text.'
+description: '$reverse revertirá el texto dado.'
 id: reverse
 ---
 
-`$reverse` will reverse given text.
+`$reverse` revertirá el texto dado.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $reverse[text]
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros                | Requerido |
-| ----- | ------ | ------------------------- |:---------:|
-| text  | string | Text you want to reverse. | verdadera |
+| Campo | Tipo   | Parámetros                  | Requerido |
+| ----- | ------ | --------------------------- |:---------:|
+| text  | string | Texto que quieres revertir. | verdadera |
 
 ## Ejemplo(s)
 
-This will the following text readable:
+Esto se puede leer el siguiente texto:
 
 ```javascript
 bot.command({

@@ -1,21 +1,21 @@
 ---
 title: '$arrayForEach'
-description: '$arrayForEach will execute an awaited command for each item in the array.'
+description: '$arrayForEach exécutera une commande attendue pour chaque élément du tableau.'
 id: arrayForEach
 ---
 
-`$arrayForEach` will execute an awaited command for each item in the array.
+`$arrayForEach` exécutera une commande attendue pour chaque élément du tableau.
 
-## Usage
+## Utilisation
 
 ```php
-$arrayForEach[name;awaitedCommand;awaitData?]
+$arrayForEach[nom;commandeAttendue;donnéesAttendues?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field          | Type   | Description                  | Required |
-| -------------- | ------ | ---------------------------- |:--------:|
-| name           | string | Array name.                  |   true   |
-| awaitedCommand | string | Awaited command to executed. |   true   |
-| awaitData?     | string | Awaited Data.                |  false   |
+| Champ             | Type                 | Description             | Obligatoire |
+| ----------------- | -------------------- | ----------------------- |:-----------:|
+| nom               | chaîne de caractères | Nom du tableau.         |    vrai     |
+| commandeAttendue  | chaîne de caractères | La commande à exécuter. |    vrai     |
+| donnéesAttendues? | chaîne de caractères | Données attendues.      |    faux     |

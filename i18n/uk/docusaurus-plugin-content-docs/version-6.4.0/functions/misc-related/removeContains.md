@@ -1,10 +1,10 @@
 ---
-title: '$removeContains'
-description: '$removeContains will remove specific text from a give text.'
+title: $removeContains
+description: '$removeContains видалить певний текст із наданого тексту.'
 id: removeContains
 ---
 
-`$removeContains` will remove specific text from a give text.
+`$removeContains` видалить текст, що містить текст.
 
 ## Використання
 
@@ -14,19 +14,19 @@ $removeContains[content;...words]
 
 ## Параметри
 
-| Поле     | Тип   | Опис                                 | Обов'язковий |
-| -------- | ----- | ------------------------------------ |:------------:|
-| content  | рядок | Text where to remove the words from. |     так      |
-| ...words | рядок | Text to remove from the text.        |     так      |
+| Поле     | Тип   | Опис                                    | Обов'язковий |
+| -------- | ----- | --------------------------------------- |:------------:|
+| зміст    | рядок | Текст, з якого потрібно видалити слова. |     так      |
+| ...слова | рядок | Текст для видалення з тексту.           |     так      |
 
 ## Приклад(и)
 
-This will remove the word "aoi.js from the given text:
+Це дозволить видалити слово "aoi.js з заданого тексту:
 
 ```javascript
 bot.command({
     name: "removeContains",
-    code: `
+    код: `
     $removeContains[Hello, aoi.js!;, ;aoi.js]
     `
 });

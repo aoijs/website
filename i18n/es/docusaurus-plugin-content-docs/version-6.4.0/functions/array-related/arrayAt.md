@@ -1,12 +1,12 @@
 ---
-title: '$arrayAt'
+title: $arrayAt
 description: "$arrayAt elegirá el índice (posición) del elemento de matriz que se devolverá.\n  No devuelve nada si no se puede encontrar el índice dado."
-id: arrayId
+id: arrayAt
 ---
 
 `$arrayAt` elegirá el índice (posición) del array que se debe devolver. Se va a devolver nada si el índice dado no se encuentra.
 
-## Uso
+## Modo de Uso
 
 ```php
 $arrayAt[nombre;índice]

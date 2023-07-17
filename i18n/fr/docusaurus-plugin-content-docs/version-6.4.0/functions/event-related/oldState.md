@@ -1,19 +1,19 @@
 ---
 title: '$oldState'
-description: '$oldState holds data for the user voice state before it was updated (voiceStateUpdate event).'
+description: '$oldState conserve les données de l''état vocal de l''utilisateur avant qu''il ne soit mis à jour (événement VoiceStateUpdate).'
 id: oldState
 ---
 
-`$oldState` holds data for the user voice state before it was updated (voiceStateUpdate event).
+`$oldState` conserve les données de l'état vocal de l'utilisateur avant qu'il ne soit mis à jour (événement VoiceStateUpdate).
 
-## Usage
+## Utilisation
 
 ```php
 $oldState[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- |:--------:|
-| option | string | Option to retrieve. |   true   |
+| Champ  | Type                 | Description         | Obligatoire |
+| ------ | -------------------- | ------------------- |:-----------:|
+| option | chaîne de caractères | Option à récupérer. |    vrai     |

@@ -1,40 +1,40 @@
 ---
 title: '$createRole'
-description: '$createRole will create a new guild role.'
+description: '$createRole créera un nouveau rôle dans le serveur donné.'
 id: createRole
 ---
 
-`$createRole` will create a new guild role.
+`$createRole` créera un nouveau rôle dans le serveur donné.
 
-## Usage
+## Utilisation
 
 ```php
-$createRole[guildID;returnID;name;color;icon;hoist;unicodeEmoji;position;mentionable;...permissions]
+$createRole[IDserveur;renvoyerID;nom;couleur;icône;afficherSéparément;unicodeEmoji;position;mentionable;...permissions]
 ```
 
-## Parameters
+## Paramètres
 
-| Field          | Type    | Description                                            | Required |
-| -------------- | ------- | ------------------------------------------------------ |:--------:|
-| guildID        | integer | The ID of the guild where the role will be created in. |   true   |
-| returnID       | boolean | Return the ID of the newly created role?               |   true   |
-| name           | string  | The name of the new role.                              |   true   |
-| color          | integer | The color of the new role.                             |   true   |
-| icon           | string  | The image URL that will be used as icon.               |  false   |
-| hoist          | boolean | If the new role should be hoisted.                     |   true   |
-| unicodeEmoji   | string  | The unicodeEmoji that will be used as icon.            |  false   |
-| position       | integer | The position of the role, 1 being the very bottom.     |   true   |
-| mentionable    | boolean | If the role is mentionable by `@everyone`.             |   true   |
-| ...permissions | string  | Permissions the role will have.                        |  false   |
+| Champ              | Type                 | Description                                        | Obligatoire |
+| ------------------ | -------------------- | -------------------------------------------------- |:-----------:|
+| IDserveur          | entier               | L'ID de la guilde dans laquelle le rôle sera créé. |    vrai     |
+| renvoyerID         | booléen              | Renvoie l'ID du rôle nouvellement créé?            |    vrai     |
+| nom                | chaine de caractères | Le nom du nouveau rôle.                            |    vrai     |
+| couleur            | entier               | La couleur du nouveau rôle.                        |    vrai     |
+| icône              | chaine de caractères | L'URL de l'image qui sera utilisée comme icône.    |    faux     |
+| afficherSéparément | booléen              | Si le nouveau rôle doit être afficher séparément.  |    vrai     |
+| unicodeEmoji       | chaîne de caractères | L'unicodeEmoji qui sera utilisé en icône.          |    faux     |
+| position           | entier               | La position du rôle, 1 étant le plus bas.          |    vrai     |
+| mentionnable       | booléen              | Si le rôle est mentionnable par `@everyone`.       |    vrai     |
+| ...permissions     | chaine de caractères | Permissions que le rôle aura.                      |    faux     |
 
-## Example(s)
+## Exemple(s)
 
-This will create a new role called "Bird" in the color of red:
+Cela va créer un nouveau rôle appelé "Oiseau" avec comme couleur le rouge:
 
 ```javascript
 bot.command({
-    name: 'createRole',
+    name: 'créerRole',
     code: `
-    $createRole[$guildID;false;Bird;FF0000;;false;❤;1;false;sendmessages]`
+    $createRole[$guildID;false;Oiseau;FF0000;;false;❤;1;false;sendmessages]`
 });
 ```

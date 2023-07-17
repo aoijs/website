@@ -1,10 +1,10 @@
 ---
 title: '$second'
-description: '$second will return the current second in CST.'
+description: '$second devolverá el segundo actual en CST.'
 id: second
 ---
 
-`$second` will return the current second in CST.
+`$second` devolverá el segundo actual en CST.
 
 ## Uso
 
@@ -14,7 +14,7 @@ $second
 
 ## Ejemplo(s)
 
-This will returns the current second:
+Esto devolverá el segundo actual:
 
 ```javascript
 bot.command({
@@ -25,14 +25,14 @@ bot.command({
 });
 ```
 
-You can change the timezone using `$timezone`:
+Puedes cambiar la zona horaria usando `$timezone`:
 
 ```javascript
 bot.command({
-    name: "second",
+    name: "hour",
     code: `
     $second 
     $timezone[America/New_York]
-    ` // returns current second in New York
+    ` // devuelve la hora actual en New York
 });
 ```

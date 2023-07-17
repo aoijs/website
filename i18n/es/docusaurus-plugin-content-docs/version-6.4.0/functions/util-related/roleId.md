@@ -1,10 +1,10 @@
 ---
 title: '$roleId'
-description: '$roleId will return the ID of a role.'
+description: '$roleId devolverá el ID de un rol.'
 id: roleId
 ---
 
-`$roleId` will return the ID of a role.
+`$roleId` devolverá el ID de un rol.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $roleId[roleResolver;guildID?]
 
 ## Parámetros
 
-| Campo        | Tipo     | Parámetros                                     | Requerido |
-| ------------ | -------- | ---------------------------------------------- |:---------:|
-| roleResolver | consulta | Name of the role.                              | verdadero |
-| servidorID?  | consulta | ID of the guild where the role was created in. |    no     |
+| Campo        | Tipo     | Parámetros                              | Requerido |
+| ------------ | -------- | --------------------------------------- |:---------:|
+| resolver rol | consulta | Nombre del rol.                         | verdadero |
+| servidorID?  | consulta | ID del gremio en el que se creó el rol. |    no     |
 
 ## Ejemplo(s)
 
-This will return the role ID of a role called `Owner` (this example won't work if you dont have that role):
+Esto devolverá el ID de rol de un rol llamado `Propietario` (este ejemplo no funcionará si no tienes ese rol):
 
 ```javascript
 bot.command({

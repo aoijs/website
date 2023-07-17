@@ -1,10 +1,10 @@
 ---
 title: '$parseTime'
-description: '$parseTime will convert any human time to milliseconds.'
+description: '$parseTime convertirá cualquier tiempo humano en milisegundos.'
 id: parseTime
 ---
 
-`$parseTime` will convert any human time to milliseconds.
+`$parseTime` convertirá cualquier tiempo humano en milisegundos.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $parseTime[time]
 
 ## Parámetros
 
-| Campo  | Tipo   | Parámetros                               | Requerido |
-| ------ | ------ | ---------------------------------------- |:---------:|
-| tiempo | string | The time that will be converted to `ms`. | verdadera |
+| Campo  | Tipo   | Parámetros                          | Requerido |
+| ------ | ------ | ----------------------------------- |:---------:|
+| tiempo | string | El tiempo que se convertirá a `ms`. | verdadera |
 
 ## Ejemplo(s)
 
-This will convert `69 minutes` to milliseconds and return `4140000`:
+Esto convertirá `69 minutos` a milisegundos y devolverá `4140000`:
 
 ```javascript
 bot.command({
@@ -31,7 +31,7 @@ bot.command({
 });
 ```
 
-This will convert `1w 2d 20m` to milliseconds and return `778800000`:
+Esto convertirá `1w 2d 20m` a milisegundos y devolverá `778800000`:
 
 ```javascript
 bot.command({

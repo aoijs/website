@@ -1,41 +1,41 @@
 ---
 title: '$ifAwaited'
-description: '$ifAwaited will check a condition and executed an awaited command depending on the condition being true or false.'
+description: '$ifAwaited comprobará una condición y devolverá verdadero o falso dependiendo de que la condición sea verdadera o falsa.'
 id: ifAwaited
 ---
 
-`$ifAwaited` will check a condition and executed an awaited command depending on the condition being true or false.
+`$ifAwaited` comprobará una condición y devolverá verdadero o falso dependiendo de que la condición sea verdadera o falsa.
 
 ## Uso
 
 ```php
-$ifAwaited[condition;true;false?]
+$if[condicion;verdadero;falso?]
 ```
 
 ## Parámetros
 
-| Campo     | Tipo   | Descripción                             | Requerido |
-| --------- | ------ | --------------------------------------- |:---------:|
-| condition | string | Condition to check                      |    sí     |
-| sí        | cadena | What to do when the condition is true.  |    sí     |
-| false?    | cadena | What to do when the condition is false. |   falso   |
+| Campo     | Tipo   | Descripción                                  | Requerido |
+| --------- | ------ | -------------------------------------------- |:---------:|
+| condición | cadena | Condición para usar                          | verdadero |
+| verdadero | cadena | Qué volver cuando la condición es verdadera. | verdadero |
+| falso?    | cadena | Qué volver cuando la condición es falsa.     |   falso   |
 
-#### Valid Mathematical Operators
+#### Después del operador matemático
 
-| Operator | Mathematical Expression  |
-| -------- | ------------------------ |
-| ==       | es igual a               |
-| !=       | not equal to             |
-| <=       | less than or equal to    |
-| \>=     | greater than or equal to |
-| \>      | greater than             |
-| <        | less than                |
-| \       | \|     | logical OR     |
-| &&       | logical conjunction      |
+| Operador | Las expresiones matemáticas |
+| -------- | --------------------------- |
+| ==       | es igual a                  |
+| !=       | no es igual a               |
+| <=       | es inferior o igual a       |
+| \>=     | mayor que o igual a         |
+| \>      | es superior a               |
+| <        | menos que                   |
+| \       | \| O lógico                |
+| &&       | conjunción causal           |
 
 ## Ejemplo(s)
 
-This will execute the `awaitedCommand` awaited command as the statement is true:
+Esto ejecutará el comando `awaitedCommand` esperado ya que la declaración es verdadera:
 
 ```javascript
 bot.command({

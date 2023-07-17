@@ -1,10 +1,10 @@
 ---
 title: '$isValidLink'
-description: '$isValidLink will check if the given link is valid.'
+description: '$isValidLink comprobará si el enlace dado es válido.'
 id: isValidLink
 ---
 
-`$isValidLink` will check if the given link is valid.
+`$isValidLink` comprobará si el enlace dado es válido.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $isValidLink[URL]
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros       | Requerido |
-| ----- | ------ | ---------------- |:---------:|
-| URL   | string | Any kind of URL. | verdadera |
+| Campo | Tipo   | Parámetros             | Requerido |
+| ----- | ------ | ---------------------- |:---------:|
+| URL   | string | Cualquier tipo de URL. | verdadera |
 
 ## Ejemplo(s)
 
-This will return `true` as the given link is valid:
+Esto devolverá `verdadero` ya que el enlace dado es válido:
 
 ```javascript
 bot.command({

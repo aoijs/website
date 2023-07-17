@@ -1,30 +1,30 @@
 ---
 title: '$timeoutMember'
-description: '$timeoutMember will timeout a given member using Discord''s Timeout feature.'
+description: '$timeoutMember agotará a un miembro determinado usando la función de tiempo de espera de Discord.'
 id: timeoutMember
 ---
 
-`$timeoutMember` will timeout a given member using Discord's Timeout feature.
+`$timeoutMember` agotará un miembro determinado usando la función de tiempo de espera de Discord.
 
 ## Uso
 
 ```php
-$timeoutMember[guildID;memberID;timer;timeoutEndsAt?;reason?]
+$timeoutMember[servidorID;Identificación de miembro;Temporizador;el tiempo de espera termina en?;razon?]
 ```
 
 ## Parámetros
 
-| Campo          | Tipo           | Parámetros                                                                                        | Requerido |
-| -------------- | -------------- | ------------------------------------------------------------------------------------------------- |:---------:|
-| servidorID     | entero         | The guild ID of where the member is located in.                                                   | verdadero |
-| memberID       | entero         | The ID of the user that will be timeouted.                                                        | verdadero |
-| timer          | cadena, número | The duration of the timeout.                                                                      |    sí     |
-| timeoutEndsAt? | boolean        | Returns time when timeout ends.  <br /> 1. **true** <br /> 2. **false** (por defecto) |   falso   |
-| ¿razón?        | cadena         | razón que se mostrará en los registros de auditoría del gremio.                                   |    no     |
+| Campo                           | Tipo           | Parámetros                                                                                                               | Requerido |
+| ------------------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------ |:---------:|
+| servidorID                      | entero         | El ID del gremio donde se encuentra el miembro.                                                                          | verdadero |
+| Identificación de miembro       | entero         | El ID del usuario que será desbloqueado.                                                                                 | verdadero |
+| Temporizador                    | cadena, número | La duración del tiempo de espera.                                                                                        | verdadero |
+| el tiempo de espera termina en? | booleano       | Devuelve el tiempo cuando finaliza el tiempo de espera. <br /> 1. **true** <br /> 2. **false** (por defecto) |   falso   |
+| ¿razón?                         | cadena         | razón que se mostrará en los registros de auditoría del gremio.                                                          |   falso   |
 
 ## Ejemplo(s)
 
-This will timeout a given member for five minutes:
+Esto agotará un miembro determinado durante cinco minutos:
 
 ```javascript
 bot.command({

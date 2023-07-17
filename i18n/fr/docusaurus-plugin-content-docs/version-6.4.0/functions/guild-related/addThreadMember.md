@@ -1,36 +1,36 @@
 ---
 title: '$addThreadMember'
-description: '$addThreadMember will add a member to a thread.'
+description: '$addThreadMember ajoutera un membre à un fil.'
 id: addThreadMember
 ---
 
-`$addThreadMember` will add a member to a thread.
+`$addThreadMember` ajoutera un membre à un fil.
 
-## Usage
+## Utilisation
 
 ```php
-$addThreadMember[channelID;threadID;userID;reason]
+$addThreadMember[IDsalon;IDfil;IDutilisateur;raison]
 ```
 
-## Parameters
+## Paramètres
 
-| Field     | Type    | Description                                                  | Required |
-| --------- | ------- | ------------------------------------------------------------ |:--------:|
-| channelID | integer | Channel ID of where the thread is located.                   |   true   |
-| threadID  | integer | The thread ID.                                               |   true   |
-| userID    | integer | The user that should be added to the thread.                 |   true   |
-| reason    | string  | The reason that will be displayed in the guild's audit logs. |   true   |
+| Champ         | Type                 | Description                                           | Obligatoire |
+| ------------- | -------------------- | ----------------------------------------------------- |:-----------:|
+| IDsalon       | entier               | ID du salon où se trouve le fil.                      |    vrai     |
+| IDfil         | entier               | L'ID du fil.                                          |    vrai     |
+| IDutilisateur | entier               | L'utilisateur qui doit être ajouté au fil.            |    vrai     |
+| raison        | chaîne de caractères | La raison qui sera affichée dans les logs du serveur. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
-This will create a thread and add random user to it:
+Ceci va créer un fil de discussion et ajouter un utilisateur aléatoire à celui-ci :
 
 ```javascript
 bot.command({
-    name: 'addThreadMember',
+    name: 'filAjouterMembre',
     code: `
-  $addThreadMember[$channelID;$get[id];$randomUserID;testing]
-  $let[id;$createThread[$channelID;example;1440;public;$messageID;true]]  
+  $addThreadMember[$channelID;$get[id];$randomUserID;test]
+  $let[id;$createThread[$channelID;exemple;1440;public;$messageID;true]]  
   `
 });
 ```

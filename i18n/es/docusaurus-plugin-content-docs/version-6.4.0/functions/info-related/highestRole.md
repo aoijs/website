@@ -1,7 +1,7 @@
 ---
-title: '$userHighestRole'
+title: $highestRole
 description: '$userHighestRole devolverá el rol más alto de un usuario específico.'
-id: userHighestRole
+id: highestRole
 ---
 
 `$userHighestRole` devolverá el rol más alto de un usuario específico.

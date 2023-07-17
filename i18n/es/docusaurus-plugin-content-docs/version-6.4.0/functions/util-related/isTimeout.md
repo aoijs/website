@@ -1,10 +1,10 @@
 ---
 title: '$isTimeout'
-description: '$isTimeout will check if the user is timeouted with Discord''s built-in timeout feature.'
+description: '$isTimeout comprobará si el usuario está en tiempo de espera con la función integrada de Discord.'
 id: isTimeout
 ---
 
-`$isTimeout` will check if the user is timeouted with Discord's built-in timeout feature.
+`$isTimeout` comprobará si el usuario está agotado con la función de tiempo de espera incorporada de Discord.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $isTimeout[guildID?;userID?]
 
 ## Parámetros
 
-| Campo       | Tipo   | Parámetros                                      | Requerido |
-| ----------- | ------ | ----------------------------------------------- |:---------:|
-| servidorID? | entero | The ID of the guild where they're timeouted in. |    no     |
-| usarioID?   | entero | The ID of the user that's timeouted.            |    no     |
+| Campo       | Tipo   | Parámetros                                        | Requerido |
+| ----------- | ------ | ------------------------------------------------- |:---------:|
+| servidorID? | entero | El ID de la hermandad en donde se los deja pasar. |    no     |
+| usarioID?   | entero | El ID del usuario que está agotado.               |    no     |
 
 ## Ejemplo(s)
 
-This will check if you're timeouted and either return `true` or `false`:
+Esto comprobará si estás esperado y devuelve `verdadero` o `falso`:
 
 ```javascript
 bot.command({

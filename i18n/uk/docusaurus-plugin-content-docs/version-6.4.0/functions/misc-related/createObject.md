@@ -1,10 +1,10 @@
 ---
 title: '$createObject'
-description: '$createObject will create a new object.'
+description: '$createObject створить новий об''єкт.'
 id: createObject
 ---
 
-`$createObject` will create a new object.
+`$createObject` створить новий об'єкт.
 
 ## Використання
 
@@ -16,14 +16,14 @@ $createObject[object]
 
 | Поле   | Тип    | Опис         | Обов'язковий |
 | ------ | ------ | ------------ |:------------:|
-| object | object | Json object. |     так      |
+| об'єкт | об'єкт | Json об'єкт. |     так      |
 
 ## Приклад(и)
 
 ```javascript
 bot.command({
     name: "createObject",
-    code: `
+    код: `
   $createObject[{
     "hello": "bye",
     "bye": "hello"

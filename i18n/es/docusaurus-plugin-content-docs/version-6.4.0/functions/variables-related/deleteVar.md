@@ -1,10 +1,10 @@
 ---
 title: '$deleteVar'
-description: '$deleteVar will delete a given variable.'
+description: '$deleteVar eliminará una variable determinada.'
 id: deleteVar
 ---
 
-`$deleteVar` will delete a given variable.
+`$deleteVar` eliminará una variable determinada.
 
 ## Uso
 
@@ -14,15 +14,15 @@ $deleteVar[variable;id;table?]
 
 ## Parámetros
 
-| Campo    | Tipo           | Parámetros                                    | Requerido |
-| -------- | -------------- | --------------------------------------------- |:---------:|
-| variable | cadena, número | Variable name.                                | verdadero |
-| id       | entero         | ID of the variable to delete ( userID etc. ). | verdadero |
-| table?   | string         | Variable table.                               |   falso   |
+| Campo    | Tipo           | Parámetros                                   | Requerido |
+| -------- | -------------- | -------------------------------------------- |:---------:|
+| variable | cadena, número | Nombre variable.                             | verdadero |
+| id       | entero         | ID de la variable a eliminar ( userID etc.). | verdadero |
+| tabla?   | string         | Tabla variable.                              |   falso   |
 
 ## Ejemplo(s)
 
-This will delete a variable called "Test":
+Esto eliminará una variable llamada "Test":
 
 ```javascript
 bot.command({

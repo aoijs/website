@@ -1,27 +1,27 @@
 ---
 title: '$checkContains'
-description: '$checkContains will check if the given arguments are present within a text.'
+description: '$checkContains comprobará si los argumentos dados están presentes dentro de un texto.'
 id: checkContains
 ---
 
-`$checkContains` will check if the given arguments are present within the text.
+`$checkContains` comprobará si los argumentos dados están presentes dentro del texto.
 
 ## Uso
 
 ```php
-$checkContains[text;...chars]
+$checkContains[texto;...chars]
 ```
 
 ## Parámetros
 
-| Campo | Tipo     | Parámetros                  | Requerido |
-| ----- | -------- | --------------------------- |:---------:|
-| text  | consulta | Text you want to check.     | verdadero |
-| chars | consulta | Text you want to check for. | verdadero |
+| Campo      | Tipo     | Parámetros                 | Requerido |
+| ---------- | -------- | -------------------------- |:---------:|
+| text       | consulta | Texto que desea comprobar. | verdadero |
+| caracteres | cadena   | Texto que desea comprobar. | verdadero |
 
 ## Ejemplo(s)
 
-This will return `true` as `easy` and/or `simple` are present in the given text:
+Esto devolverá `true` como `easy` y/o `simple` están presentes en el texto dado:
 
 ```javascript
 bot.command({

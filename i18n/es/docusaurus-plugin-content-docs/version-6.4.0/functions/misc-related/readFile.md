@@ -1,26 +1,26 @@
 ---
 title: '$readFile'
-description: '$readFile will read a file''s content and return it.'
+description: '$readFile leerá el contenido de un archivo y lo devolverá.'
 id: readFile
 ---
 
-`$readFile` will read a file's content and return it.
+`$readFile` leerá el contenido de un archivo y lo devolverá.
 
 ## Uso
 
 ```php
-$readFile[path]
+$readFile[camino]
 ```
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros | Requerido |
-| ----- | ------ | ---------- |:---------:|
-| path  | string | File path. | verdadera |
+| Campo  | Tipo   | Parámetros       | Requerido |
+| ------ | ------ | ---------------- |:---------:|
+| camino | cadena | Ruta del archivo | verdadera |
 
 ## Ejemplo(s)
 
-This will return your main file (index.js):
+Esto devolverá su archivo principal (index.js):
 
 ```javascript
 bot.command({

@@ -1,10 +1,10 @@
 ---
-title: '$fetchClientValues'
-description: '$fetchClientValues will return data of all client shards.'
+title: $fetchClientValues
+description: '$fetchClientValues поверне дані про всі фрагменти клієнта.'
 id: fetchClientValues
 ---
 
-`$fetchClientValues` will return data of all client shards.
+`$fetchClientValues` поверне дані про всі клієнтські фрагментів.
 
 ## Використання
 
@@ -14,6 +14,6 @@ $fetchClientValues[function]
 
 ## Параметри
 
-| Поле     | Тип   | Опис                 | Обов'язковий |
-| -------- | ----- | -------------------- |:------------:|
-| function | рядок | Function to execute. |     так      |
+| Поле    | Тип   | Опис                   | Обов'язковий |
+| ------- | ----- | ---------------------- |:------------:|
+| функція | рядок | Функція для виконання. |     так      |

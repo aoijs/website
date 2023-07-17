@@ -1,49 +1,49 @@
 ---
 title: '$if'
-description: '$if will check a condition and return either true or false depending on the condition being true or false.'
+description: '$if comprobará una condición y devolverá verdadera o falsa dependiendo de que la condición sea verdadera o falsa.'
 id: if
 ---
 
-`$if` will check a condition and return either true or false depending on the condition being true or false.
+`$if` comprobará una condición y devolverá verdadero o falso dependiendo de que la condición sea verdadera o falsa.
 
 ## Uso
 
 ```php
-$if[condition;true;false?]
+$if[condicion;verdadero;falso?]
 ```
 
-:::warning Deprecation
+:::warning decrecación
 
 
-`$if: "old"` is deprecated and should no longer be used as it will be removed in the future.
+`$if: "old"` está en desuso y ya no debe usarse, ya que se eliminará en el futuro.
 
 :::
 
 
 ## Parámetros
 
-| Campo     | Tipo   | Descripción                                 | Requerido |
-| --------- | ------ | ------------------------------------------- |:---------:|
-| condition | string | Condition to check.                         |    sí     |
-| sí        | string | What to return when the condition is true.  |    sí     |
-| false?    | string | What to return when the condition is false. |    no     |
+| Campo     | Tipo   | Descripción                                  | Requerido |
+| --------- | ------ | -------------------------------------------- |:---------:|
+| condición | cadena | Condición para usar                          | verdadero |
+| true      | cadena | Qué volver cuando la condición es verdadera. | verdadero |
+| falso?    | cadena | Qué volver cuando la condición es falsa.     |   falso   |
 
-#### Valid Mathematical Operators
+#### Después del operador matemático
 
-| Operator | Mathematical Expression  |
-| -------- | ------------------------ |
-| ==       | es igual a               |
-| !=       | not equal to             |
-| <=       | less than or equal to    |
-| \>=     | greater than or equal to |
-| \>      | greater than             |
-| <        | less than                |
-| \       | \|     | logical OR     |
-| &&       | logical AND              |
+| Operador | Las expresiones matemáticas |
+| -------- | --------------------------- |
+| ==       | es igual a                  |
+| !=       | no es igual a               |
+| <=       | es inferior o igual a       |
+| \>=     | mayor que o igual a         |
+| \>      | es superior a               |
+| <        | menos que                   |
+| \       | \| O lógico                |
+| &&       | Y Lógico                    |
 
 ## Ejemplo(s)
 
-This will return `That's false!` as `1` doesn't equal `2`:
+Esto devolverá `That's false!` como `1` no es igual a `2`:
 
 ```javascript
 bot.command({
@@ -54,7 +54,7 @@ bot.command({
 });
 ```
 
-This will do the exact same just different usage of `$if` by using `$if: "old"`:
+Esto hará exactamente lo mismo con un uso diferente de `$if` usando `$if: "old"`:
 
 ```javascript
 bot.command({

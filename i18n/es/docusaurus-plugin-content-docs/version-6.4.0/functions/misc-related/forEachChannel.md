@@ -1,29 +1,29 @@
 ---
 title: '$forEachChannel'
-description: '$forEachChannel will execute awaited commands in every channel of every guild.'
+description: '$forEachChannel ejecutará comandos esperados en cada canal de cada gremio.'
 id: forEachChannel
 ---
 
-`$forEachChannel` will execute awaited commands in every channel of every guild.
+`$forEachChannel` ejecutará comandos esperados en cada canal de cada gremio.
 
 ## Uso
 
 ```php
-$forEachChannel[time;awaitData;...awaitedCmds;endCmd]
+$forEachChannel[tiempo;esperar datos;...Cmds esperados;finalizar comando]
 ```
 
 ## Parámetros
 
-| Campo          | Tipo     | Parámetros                                                  | Requerido |
-| -------------- | -------- | ----------------------------------------------------------- |:---------:|
-| tiempo         | consulta | How long it takes between each channel to execute the next. | verdadero |
-| awaitData      | object   | Datos esperados.                                            | verdadero |
-| ...awaitedCmds | string   | Awaited Commands to execute.                                |    sí     |
-| endCmd         | string   | Awaited Command to execute when loop ends.                  |    sí     |
+| Campo             | Tipo   | Parámetros                                                     | Requerido |
+| ----------------- | ------ | -------------------------------------------------------------- |:---------:|
+| tiempo            | cadena | Cuánto tiempo tarda entre cada canal en ejecutar el siguiente. | verdadero |
+| awaitData         | objeto | Datos esperados.                                               | verdadero |
+| ...Cmds esperados | cadena | Comando esperado para ejecutar.                                | verdadero |
+| finalizar comando | cadena | Comando esperado para ejecutar cuando termine el bucle.        | verdadero |
 
 ## Ejemplo(s)
 
-This will change the variable value of each channel to "test":
+Esto cambiará el valor de variable de cada canal a "test":
 
 ```javascript
 bot.command({

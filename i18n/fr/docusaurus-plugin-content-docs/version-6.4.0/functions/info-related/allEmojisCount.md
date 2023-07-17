@@ -1,31 +1,31 @@
 ---
 title: '$allEmojisCount'
-description: '$allEmojisCount will return the amount of emojis of a given type.'
+description: '$allEmojisCount renvoie le nombre d''émojis d''un type donné.'
 id: allEmojisCount
 ---
 
-`$allEmojisCount` will return the amount of emojis of a given type.
+`$allEmojisCount` renvoie le nombre d'émojis d'un type donné.
 
-## Usage
+## Utilisation
 
 ```php
 $allEmojisCount[type?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field | Type   | Description                                 | Required |
-| ----- | ------ | ------------------------------------------- | -------- |
-| type? | string | Type you want the amount of to be returned. | false    |
+| Champ | Type                 | Description                                        | Obligatoire |
+| ----- | -------------------- | -------------------------------------------------- | ----------- |
+| type? | chaîne de caractères | Type que vous voulez que le montant soit retourné. | faux        |
 
-| Emoji Type      |          |
-| --------------- | -------- |
-| Animated Emojis | animated |
-| Stable Emojis   | normal   |
+| Type d'émoji   |          |
+| -------------- | -------- |
+| Émojis animés  | animated |
+| Émojis stables | normal   |
 
-## Example(s)
+## Exemple(s)
 
-This will return the amount of emojis in your guild:
+Cela retournera le nombre d'émojis dans votre serveur :
 
 ```javascript
 bot.command({

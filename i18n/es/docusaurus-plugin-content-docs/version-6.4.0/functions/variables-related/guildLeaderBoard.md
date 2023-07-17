@@ -1,10 +1,10 @@
 ---
-title: '$guildLeaderboard'
-description: '$guildLeaderboard will return a leaderboard of a guild variable.'
-id: guildLeaderboard
+title: $guildLeaderBoard
+description: '$guildLeaderboard devolverá una tabla de clasificación de una variable de gremio.'
+id: guildLeaderBoard
 ---
 
-`$guildLeaderboard` will return a leaderboard of a guild variable.
+`$guildLeaderboard` devolverá una tabla de clasificación de una variable del gremio.
 
 ## Uso
 
@@ -14,25 +14,25 @@ $guildLeaderboard[variable;type?;custom?;list?;page?;table?]
 
 ## Parámetros
 
-| Campo    | Tipo   | Descripción                                                                                                             | Requerido |
-| -------- | ------ | ----------------------------------------------------------------------------------------------------------------------- |:---------:|
-| variable | string | Variable name.                                                                                                          |    sí     |
-| type     | string | In which order it will be returned <br /> 1. **asc** (ascending / default) <br /> 2. **dsc** (descendiendo) |   falso   |
-| custom?  | string | Formatting.                                                                                                             |    no     |
-| list?    | número | How many to list.                                                                                                       |    no     |
-| page?    | número | Which page to list.                                                                                                     |    no     |
-| table?   | string | Variable table.                                                                                                         |    no     |
+| Campo           | Tipo   | Descripción                                                                                                                  | Requerido |
+| --------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------- |:---------:|
+| variable        | string | Nombre variable.                                                                                                             |    sí     |
+| type            | string | En qué orden será devuelto <br /> 1. **ascender** (ascendente / predeterminado) <br /> 2. **dsc** (descendiendo) |   falso   |
+| ¿personalizado? | string | Formateando.                                                                                                                 |    no     |
+| lista?          | número | Cuántos listar.                                                                                                              |    no     |
+| ¿página?        | número | Qué página listar.                                                                                                           |    no     |
+| tabla?          | string | Tabla variable.                                                                                                              |    no     |
 
-| Opciones    | Returns         |                                         |
-| ----------- | --------------- | --------------------------------------- |
-| **{top}**   | número          | Returns the user position of the guild. |
-| **{name}**  | cadena          | Returns the user name.                  |
-| **{id}**    | entero          | Returns the guild ID.                   |
-| **{value}** | number, integer | Returns the variable value.             |
+| Opciones    | Devuelve       |                                              |
+| ----------- | -------------- | -------------------------------------------- |
+| **{top}**   | número         | Devuelve la posición del usuario del gremio. |
+| **{name}**  | cadena         | Devuelve el nombre de usuario.               |
+| **{id}**    | entero         | Devuelve el ID del gremio.                   |
+| **{value}** | número, entero | Devuelve el valor de la variable.            |
 
 ## Ejemplo(s)
 
-This will returns a leaderboard of the "Example" variable:
+Esto devolverá una tabla de clasificación de la variable "Ejemplo":
 
 ```javascript
 bot.command({

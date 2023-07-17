@@ -1,27 +1,27 @@
 ---
 title: '$djsEval'
-description: '$djsEval will execute given discord.js code.'
+description: '$djsEval ejecutará un código discord.js dado.'
 id: djsEval
 ---
 
-`$djsEval` will execute given discord.js code.
+`$djsEval` ejecutará un código discord.js dado.
 
 ## Uso
 
 ```php
-$djsEval[code;returnCode?]
+$djsEval[código;código de retorno?]
 ```
 
 ## Parámetros
 
-| Campo       | Tipo     | Parámetros                                                                    | Requerido |
-| ----------- | -------- | ----------------------------------------------------------------------------- |:---------:|
-| code        | consulta | Discord.js code to execute.                                                   | verdadero |
-| returnCode? | consulta | Return code. <br /> 1. **true** <br /> 2. **false** (por defecto) |    no     |
+| Campo              | Tipo   | Parámetros                                                                          | Requerido |
+| ------------------ | ------ | ----------------------------------------------------------------------------------- |:---------:|
+| código             | cadena | Código Discord.js a ejecutar.                                                       | verdadero |
+| código de retorno? | cadena | Códigos de Retorno <br /> 1. **true** <br /> 2. **false** (por defecto) |   falso   |
 
 ## Ejemplo(s)
 
-This will return your user ID:
+Esto devolverá tu ID de usuario:
 
 ```javascript
 bot.command({

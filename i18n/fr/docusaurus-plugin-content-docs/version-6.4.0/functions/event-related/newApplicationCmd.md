@@ -1,48 +1,48 @@
 ---
 title: '$newApplicationCmd'
-description: '$newApplicationCmd gets the data from application Callbacks (update and create one).'
+description: '$newApplicationCmd récupère les données des Callbacks de l''application (met à jour et en crée un).'
 id: newApplicationCmd
 ---
 
-`$newApplicationCmd` gets the data from application Callbacks (update and create one).
+`$newApplicationCmd` récupère les données des Callbacks de l'application (met à jour et en crée un).
 
-## Usage
+## Utilisation
 
 ```php
-$newApplicationCmd[name]
+$newApplicationCmd[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- |:--------:|
-| option | string | Option to retrieve. |   true   |
+| Champ  | Type                 | Description         | Obligatoire |
+| ------ | -------------------- | ------------------- |:-----------:|
+| option | chaîne de caractères | Option à récupérer. |    vrai     |
 
 ### Options
 
-| Field             | Type    | Description                                                 |
-| ----------------- | ------- | ----------------------------------------------------------- |
-| name              | string  | Name of slash commnad.                                      |
-| id                | integer | ID of slash commnad.                                        |
-| description       | string  | Description of slash commnad.                               |
-| version           | integer | Version of slash command.                                   |
-| options           | string  | Options of slash command.                                   |
-| guildID           | integer | Guild ID of slash command.                                  |
-| applicationID     | integer | Returns application ID.                                     |
-| defaultPermission | string  | Returns Default Permissions of slash command.               |
-| timestamp         | string  | Returns timestamp of the creation of slash command (in ms). |
-| createdAt         | string  | Returns the date of creation of slash command.              |
+| Champ             | Type                 | Description                                                        |
+| ----------------- | -------------------- | ------------------------------------------------------------------ |
+| nom               | chaîne de caractères | Nom de la commnade slash.                                          |
+| id                | entier               | ID de la commande slash.                                           |
+| description       | chaîne de caractères | Description de la commande slash.                                  |
+| version           | entier               | Version de la commande slash.                                      |
+| options           | chaîne de caractères | Options de la commande slash.                                      |
+| guildID           | entier               | ID du serveur de la commande slash.                                |
+| applicationID     | entier               | Renvoie l'ID de l'application.                                     |
+| defaultPermission | chaine de caractères | Renvoie les permissions par défaut de la commande slash.           |
+| timestamp         | chaîne de caractères | Retourne le timestamp de la création de la commande slash (en ms). |
+| createdAt         | chaîne de caractères | Retourne la date de création de la commande slash.                 |
 
-## Example(s)
+## Exemple(s)
 
 ```js
 bot.applicationCmdUpdateCommand({
     channel: "channelid",
     code: `
-    Slash command was updated!
-- Name: $newApplicationCmd[name]
+    Commande slash mis à jour!
+- Nom: $newApplicationCmd[name]
 - ID: $newApplicationCmd[id]
-- Application ID: $newApplicationCmd[applicationID]`
+- ID de l'application: $newApplicationCmd[applicationID]`
 })
 ```
-- This code will execute when __slash command is updated__ (Modified)
+- Ce code s'exécutera lorsque la commande __slash sera mise à jour__ (Modifié)

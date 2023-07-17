@@ -1,27 +1,27 @@
 ---
 title: '$removeObjectProperty'
-description: '$removeObjectProperty will remove a property of an object.'
+description: '$removeObjectProperty eliminará una propiedad de un objeto.'
 id: removeObjectProperty
 ---
 
-`$removeObjectProperty` will remove a property of an given object.
+`$removeObjectProperty` eliminará una propiedad de un objeto determinado.
 
 ## Uso
 
 ```php
-$removeObjectProperty[property;object]
+$removeObjectProperty[propiedad;objeto]
 ```
 
 ## Parámetros
 
-| Campo    | Tipo     | Parámetros            | Requerido |
-| -------- | -------- | --------------------- |:---------:|
-| property | consulta | Name of the property. | verdadero |
-| object   | object   | The object.           | verdadero |
+| Campo     | Tipo   | Parámetros              | Requerido |
+| --------- | ------ | ----------------------- |:---------:|
+| propiedad | cadena | Nombre de la propiedad. | verdadero |
+| objeto    | objeto | El objeto.              | verdadero |
 
 ## Ejemplo(s)
 
-This will remove `Ferel` from the given object:
+Esto eliminará `Ferel` del objeto dado:
 
 ```javascript
 bot.command({

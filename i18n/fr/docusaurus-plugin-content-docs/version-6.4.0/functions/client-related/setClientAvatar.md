@@ -1,26 +1,26 @@
 ---
 title: '$setClientAvatar'
-description: '$setClientAvatar will change the clients'' avatar.'
+description: '$setClientAvatar changera l''avatar du client.'
 id: setClientAvatar
 ---
 
-`$setClientAvatar` will change the clients' avatar.
+`$setClientAvatar` changera l'avatar du client.
 
-## Usage
+## Utilisation
 
 ```php
 $setClientAvatar[URL]
 ```
 
-## Parameters
+## Paramètres
 
-| Field | Type   | Description         | Required |
-| ----- | ------ | ------------------- |:--------:|
-| URL   | string | The new avatar URL. |   true   |
+| Champ | Type                 | Description             | Obligatoire |
+| ----- | -------------------- | ----------------------- |:-----------:|
+| URL   | chaîne de caractères | L'URL du nouvel avatar. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
-This will change the client's avatar to the command author's user avatar:
+Cela changera l'avatar du client en avatar de l'auteur de la commande :
 
 ```javascript
 bot.command({

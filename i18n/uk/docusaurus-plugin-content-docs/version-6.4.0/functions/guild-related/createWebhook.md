@@ -1,10 +1,10 @@
 ---
 title: '$createWebhook'
-description: '$createWebhook will create a webhook.'
+description: '$createWebhook створить вебгак.'
 id: createWebhook
 ---
 
-`$createWebhook` will create a webhook.
+`$createWebhook` створить вебхук.
 
 ## Використання
 
@@ -14,23 +14,23 @@ $createWebhook[channelID;name;avatar;reason;sep?]
 
 ## Параметри
 
-| Поле      | Тип     | Опис                                                                                               | Обов'язковий |
-| --------- | ------- | -------------------------------------------------------------------------------------------------- |:------------:|
-| channelID | integer | Channel ID of where the webhook will be created in.                                                |     так      |
-| назва     | рядок   | The webhook's display name.                                                                        |     так      |
-| avatar    | рядок   | The webhook avatar url.                                                                            |     так      |
-| reason    | рядок   | Reason which will be displayed in the guild's audit logs.                                          |     так      |
-| sep?      | рядок   | The separator which will be used to separate important credentials like token and ID, default `,`. |      ні      |
+| Поле      | Тип   | Опис                                                                                                             | Обов'язковий |
+| --------- | ----- | ---------------------------------------------------------------------------------------------------------------- |:------------:|
+| ID каналу | ціле  | ID каналу, в якому буде створено вебгак.                                                                         |     так      |
+| назва     | рядок | Ім'я показу вебхука.                                                                                             |     так      |
+| аватар    | рядок | Аватар вебгака url.                                                                                              |     так      |
+| причина   | рядок | Причина, яка буде відображатися в журналі аудиту гільдії.                                                        |     так      |
+| місце?    | рядок | Розділювач, який буде використовуватися для відокремлення важливих облікових записів, таких як токен та ID, `,`. |      ні      |
 
 ## Приклад(и)
 
-This will create a webhook in the current channel:
+Це створить вебхук у поточному каналі:
 
 ```javascript
 bot.command({
     name: 'createWebhook',
-    code: `
-  $createWebhook[$channelID;aoi.js is great;$userAvatar[$authorID];Just testing.;, ]
+    код: `
+  $createWebhook[$channelID;aoi.js is great;$userAvatar[$authorID];Просто тестування.;, ]
   `
 });
 ```

@@ -1,10 +1,10 @@
 ---
 title: '$setGuildVar'
-description: '$setGuildVar will change the value of a given guild variable.'
+description: '$setGuildVar cambiará el valor de una variable de guild determinada.'
 id: setGuildVar
 ---
 
-`$setGuildVar` will change the value of a given guild variable.
+`$setGuildVar` cambiará el valor de una variable de gremio.
 
 ## Uso
 
@@ -14,16 +14,16 @@ $setGuildVar[varname;value;guildID?;table?]
 
 ## Parámetros
 
-| Campo       | Tipo     | Parámetros          | Requerido |
-| ----------- | -------- | ------------------- |:---------:|
-| varname     | consulta | Variable name.      | verdadero |
-| value       | consulta | New Variable value. | verdadero |
-| servidorID? | entero   | ID del gremio.      |   falso   |
-| table?      | string   | Variable table.     |   falso   |
+| Campo       | Tipo     | Parámetros            | Requerido |
+| ----------- | -------- | --------------------- |:---------:|
+| varname     | consulta | Nombre variable.      | verdadero |
+| valor       | consulta | Nuevo valor variable. | verdadero |
+| servidorID? | entero   | ID del gremio.        |   falso   |
+| tabla?      | string   | Tabla variable.       |   falso   |
 
 ## Ejemplo(s)
 
-This will change the value of "Example" to "This is a value":
+Esto cambiará el valor de "Ejemplo" a "Este es un valor":
 
 ```javascript
 bot.command({

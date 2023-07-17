@@ -1,10 +1,10 @@
 ---
-title: '$ping'
-description: '$ping will return the bot''s latency.'
+title: $ping
+description: '$ping поверне запізнення бота.'
 id: ping
 ---
 
-`$ping` will return the bot's latency.
+`$ping` поверне запізнення бота.
 
 ## Використання
 
@@ -14,13 +14,13 @@ $ping
 
 ## Приклад(и)
 
-This will return your bot's latency in MS:
+Це поверне затримку вашого бота в МС:
 
 ```javascript
 bot.command({
     name: 'ping',
-    code: `
-  My ping is: $pingMS!
+    код: `
+  Мій пінг: $pingMS!
   `
 });
 ```

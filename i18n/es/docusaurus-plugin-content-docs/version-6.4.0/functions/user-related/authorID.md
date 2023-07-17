@@ -1,10 +1,10 @@
 ---
 title: '$authorID'
-description: '$authorID will return user ID of who executed the command.'
+description: '$authorID devolverá el ID de usuario de quien ejecutó el comando.'
 id: authorID
 ---
 
-`$authorID` will return user ID of who executed the command.
+`$authorID` devolverá el ID de usuario de quien ejecutó el comando.
 
 ## Uso
 
@@ -14,7 +14,7 @@ $authorID
 
 ## Ejemplo(s)
 
-This will return your user ID:
+Esto devolverá tu ID de usuario:
 
 ```javascript
 bot.command({

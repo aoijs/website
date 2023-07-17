@@ -1,32 +1,32 @@
 ---
 title: '$useChannel'
-description: '$useChannel will use the specified channel and execute all function inside of it instead.'
+description: '$useChannel usará el canal especificado y ejecutará toda la función dentro de él en su lugar.'
 id: useChannel
 ---
 
-`$useChannel` will use the specified channel and execute all function inside of it instead.
+`$useChannel` usará el canal especificado y ejecutará toda la función dentro de él en su lugar.
 
 ## Uso
 
 ```php
-$useChannel[channelID]
+$useChannel[canalID]
 ```
 
 ## Parámetros
 
-| Campo   | Tipo    | Parámetros                      | Requerido |
-| ------- | ------- | ------------------------------- |:---------:|
-| canalID | integer | Where to execute the functions. | verdadera |
+| Campo   | Tipo    | Parámetros                    | Requerido |
+| ------- | ------- | ----------------------------- |:---------:|
+| canalID | integer | Dónde ejecutar las funciones. | verdadera |
 
 ## Ejemplo(s)
 
-This will send an embed in the current channel:
+Esto enviará una inserción en el canal actual:
 
 ```javascript
 bot.command({
     name: "useChannel",
     code: `
-    $description[Hello!]
+    $description[Hola!]
     $useChannel[$channelID]
     `
 });

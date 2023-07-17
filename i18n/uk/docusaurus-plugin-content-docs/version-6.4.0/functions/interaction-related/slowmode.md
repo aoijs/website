@@ -1,10 +1,10 @@
 ---
 title: '$slowmode'
-description: '$slowmode will change a channel''s slowmode.'
+description: '$slowmode змінить повільний режим каналу.'
 id: slowmode
 ---
 
-`$slowmode` will change a channel's slowmode.
+`$slowmode` змінить повільний режим каналу.
 
 ## Використання
 
@@ -14,31 +14,31 @@ $slowmode[time;channelID?]
 
 ## Параметри
 
-| Поле       | Тип            | Опис                                         | Обов'язковий |
-| ---------- | -------------- | -------------------------------------------- |:------------:|
-| time       | string, number | The new slowmode of the given channel.       |     так      |
-| channelID? | integer        | The ID of the channel that will be modified. |      ні      |
+| Поле       | Тип          | Опис                                 | Обов'язковий |
+| ---------- | ------------ | ------------------------------------ |:------------:|
+| раз        | рядок, номер | Новий повільний режим даного каналу. |     так      |
+| ID каналу? | ціле         | ID каналу, який буде змінений.       |      ні      |
 
-This has a max time of 21600000 seconds (6 hours).
+Це складає максимум часу 21600000 секунд (6 годин).
 
 ## Приклад(и)
 
-This will change the channel's slowmode to three minutes:
+Це змінить повільний режим каналу на три хвилини:
 
 ```javascript
 bot.command({
-    name: 'slowmode',
-    code: `
+    name: 'повільний',
+    код: `
    $slowmode[3m;$channelID]`
 });
 ```
 
-This will change the channel's slowmode to 6 hours:
+Це змінить повільний режим каналу на 6 годин:
 
 ```javascript
 bot.command({
-    name: 'slowmode',
-    code: `
+    name: 'повільний',
+    код: `
    $slowmode[6h;$channelID]`
 });
 ```

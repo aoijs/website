@@ -1,10 +1,10 @@
 ---
 title: '$modifyWebhook'
-description: '$modifyWebhook will modify a given webhook.'
+description: '$modifyWebhook змінить вказаний вебгак.'
 id: modifyWebhook
 ---
 
-`$modifyWebhook` will modify a given webhook.
+`$modifyWebhook` змінить даний вебхук.
 
 ## Використання
 
@@ -14,23 +14,23 @@ $modifyWebhook[webhookID;name;avatar;channelID?;reason?]
 
 ## Параметри
 
-| Поле       | Тип     | Опис                                                     | Обов'язковий |
-| ---------- | ------- | -------------------------------------------------------- |:------------:|
-| webhookID  | integer | The webhook ID to modify.                                |     так      |
-| назва      | рядок   | New webhook name.                                        |     так      |
-| avatar     | рядок   | New webhook avatar.                                      |     так      |
-| channelID? | integer | ID of the channel where the webhook is located in.       |      ні      |
-| reason?    | рядок   | Reason that will be displayed in the guild's audit logs. |      ні      |
+| Поле                    | Тип   | Опис                                                 | Обов'язковий |
+| ----------------------- | ----- | ---------------------------------------------------- |:------------:|
+| ідентифікатор webhookID | ціле  | ID вебхука (Webhook ID для зміни.                    |     так      |
+| назва                   | рядок | Нове ім'я вебхука.                                   |     так      |
+| аватар                  | рядок | Аватар нового вебгака.                               |     так      |
+| ID каналу?              | ціле  | ID каналу, в якому розміщений вебхук.                |      ні      |
+| причина?                | рядок | Причина відправлена в журналі розпізнавання гільдії. |      ні      |
 
 ## Приклад(и)
 
-This will modify a existing webhook and change it's avatar to your user avatar:
+Це змінить вже існуючий вебхук і змінить його аватар на ваш аватар користувача:
 
 ```javascript
 bot.command({
     name: 'modifyWebhook',
-    code: `
-  $modifyWebhook[webhookID;Hello!;$userAvatar[$authorID];$channelID;Testing!]
+    код: `
+  $modifyWebhook[webhookID;Hello!;$userAvatar[$authorID];$channelID;Тестування!]
   `
 });
 ```

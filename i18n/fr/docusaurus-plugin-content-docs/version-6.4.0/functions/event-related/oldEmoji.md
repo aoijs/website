@@ -1,19 +1,19 @@
 ---
 title: '$oldEmoji'
-description: '$oldEmoji holds data for the emoji before it was updated/ deleted. (emojiUpdate and emojiDelete event)'
+description: '$oldEmoji conserve les données pour l''émoji avant sa mise à jour/suppression. (évènements emojiUpdate et emojiDelete)'
 id: oldEmoji
 ---
 
-`$oldEmoji` holds data for the emoji before it was updated/ deleted. (emojiUpdate and emojiDelete event)
+`$oldEmoji` conserve les données pour l'émoji avant sa mise à jour/suppression. (évènements emojiUpdate et emojiDelete)
 
-## Usage
+## Utilisation
 
 ```php
 $oldEmoji[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- |:--------:|
-| option | string | Option to retrieve. |   true   |
+| Champ  | Type                 | Description         | Obligatoire |
+| ------ | -------------------- | ------------------- |:-----------:|
+| option | chaîne de caractères | Option à récupérer. |    vrai     |

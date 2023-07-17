@@ -1,61 +1,61 @@
 ---
-title: '$editChannel'
-description: '$editChannel will edit a channel.'
+title: $editChannel
+description: '$editChannel modifiera un salon.'
 id: editChannel
 ---
 
-`$editChannel` will edit a channel.
+`$editChannel` modifiera un salon.
 
-## Usage
+## Utilisation
 
 ```php
-$editChannel[channelID;name?;type?;position?;topic?;nsfw?;bitrate?;userlimit?;parent?;lockPermissions?;permissionOverwrites?;rateLimitPerUser?;defaultAutoArchiveDuration?;rtcRegion?;reason?]
+$editChannel[IDsalon;nom?;type?;position?;sujet?;nsfw?;débit?;limiteUtilisateur?;catégorie?;permissionsBloquées?;permissionEcrasées?;modeRalenti?;autoArchiveDuréeParDéfaut?;regionRtc?;raison?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field                       | Type    | Description                                               | Required |
-| --------------------------- | ------- | --------------------------------------------------------- |:--------:|
-| channelID                   | integer | The ID of the channel which will be notified.             |   true   |
-| name?                       | string  | The new channel name.                                     |  false   |
-| type?                       | string  | The new channel type. (listed below)                      |  false   |
-| position?                   | string  | The new channel position.                                 |  false   |
-| topic?                      | string  | The new channel topic.                                    |  false   |
-| nsfw?                       | boolean | If it should mark the channel as NSFW or not.             |  false   |
-| bitrate?                    | integer | Voice Channel bitrate.                                    |  false   |
-| userlimit?                  | number  | Voice Channel userlimit.                                  |  false   |
-| parent?                     | integer | The new parent of the channel. (category ID)              |  false   |
-| lockPermissions?            | string  | The new channels lock permissions.                        |  false   |
-| permissionOverwrites?       | string  | The new channels permission overwrites.                   |  false   |
-| rateLimitPerUser?           | number  | The channel slowmode of the edited channel.               |  false   |
-| defaultAutoArchiveDuration? | number  | Thread/Forum archive duration. (in ms)                    |  false   |
-| rtcRegion?                  | string  | Voice Channel RTC region.                                 |  false   |
-| reason?                     | string  | Reason which will be displayed in the guild's audit logs. |  false   |
+| Champ                            | Type                 | Description                                                    | Obligatoire |
+| -------------------------------- | -------------------- | -------------------------------------------------------------- |:-----------:|
+| IDsalon                          | entier               | L'ID du canal qui sera notifié.                                |    vrai     |
+| nom?                             | chaine de caractères | Le nouveau nom du canal.                                       |    faux     |
+| type?                            | chaine de caractères | Le nouveau type de canal. (listé ci-dessous)                   |    faux     |
+| position?                        | booléen              | La nouvelle position du canal.                                 |    faux     |
+| sujet?                           | booléen              | Le nouveau sujet du canal.                                     |    faux     |
+| nsfw?                            | booléen              | Si elle doit marquer le canal comme NSFW ou non.               |    faux     |
+| débit?                           | entier               | Débit du canal vocal                                           |    faux     |
+| limiteUtilisateur?               | nombre               | Limite utilisateur du salon vocal.                             |    faux     |
+| categorie?                       | entier               | Le nouveau parent du canal. (ID de la catégorie)               |    faux     |
+| Autorisations de verrouillage ?  | booléen              | Les nouvelles autorisations de verrouillage des chaînes.       |    faux     |
+| Ecraser les permissions ?        | booléen              | Les nouvelles autorisations de chaînes écrasent.               |    faux     |
+| limite de taux par utilisateur ? | nombre               | Le mode ralenti du canal modifié.                              |    faux     |
+| defaultAutoArchiveDuration?      | nombre               | Durée de l'archive Thread/Forum. (en ms)                       |    faux     |
+| rtcRégion ?                      | booléen              | Région RTC du canal vocal.                                     |    faux     |
+| raison?                          | booléen              | Motif qui sera affiché dans les journaux d'audit de la guilde. |    faux     |
 
-**Note: you can use `$default` to keep the current property.**
+**Remarque : vous pouvez utiliser `$default` pour conserver la propriété actuelle.**
 
 <details>
-  <summary><h3> Channel Types </h3></summary>
+  <summary><h3> Types de salon </h3></summary>
 
-| Channel Type         |                    |
-| -------------------- | ------------------ |
-| Text Channel         | Text               |
-| Voice Channel        | Voice              |
-| Category             | Category           |
-| Stage Channel        | Stage              |
-| Private Thread       | PrivateThread      |
-| Public Thread        | PublicThread       |
-| Forum                | Forum              |
-| Announcement Thread  | AnnouncementThread |
-| Announcement Channel | Announcement       |
+| Type de salon               |                    |
+| --------------------------- | ------------------ |
+| Salon Textuel               | Text               |
+| Salon vocal                 | Voice              |
+| Catégorie                   | Category           |
+| Salon de conférence         | Stage              |
+| Fil de discussion privé     | PrivateThread      |
+| Fil de discussion public    | PublicThread       |
+| Forum                       | Forum              |
+| Fil de discussion d'annonce | AnnouncementThread |
+| Salon d'Annonce             | Announcement       |
 
-Note: all channel types are **case-sensitive**.
+Remarque : tous les types de canaux sont **sensibles à la casse**.
 
 </details>
 
-## Example(s)
+## Exemple(s)
 
-This will change the current channel name to "i-love-aoijs":
+Cela changera le nom du canal actuel en "i-love-aoijs":
 
 ```javascript
 bot.command({

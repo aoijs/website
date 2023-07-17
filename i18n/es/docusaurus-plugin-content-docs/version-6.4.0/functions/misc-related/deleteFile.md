@@ -1,26 +1,26 @@
 ---
 title: '$deleteFile'
-description: '$deleteFile will delete a given file.'
+description: '$deleteFile eliminará un archivo dado.'
 id: deleteFile
 ---
 
-`$deleteFile` will delete a given file.
+`$deleteFile` eliminará un archivo dado.
 
 ## Uso
 
 ```php
-$deleteFile[path]
+$deleteFile[camino]
 ```
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros | Requerido |
-| ----- | ------ | ---------- |:---------:|
-| path  | string | File path. | verdadera |
+| Campo  | Tipo   | Parámetros       | Requerido |
+| ------ | ------ | ---------------- |:---------:|
+| camino | string | Ruta del archivo | verdadera |
 
 ## Ejemplo(s)
 
-This will delete your `index.js` (don't actually do that):
+Esto eliminará su `index.js` (no haga eso):
 
 ```javascript
 bot.command({

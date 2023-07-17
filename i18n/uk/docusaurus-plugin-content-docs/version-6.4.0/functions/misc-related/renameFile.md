@@ -1,10 +1,10 @@
 ---
-title: '$renameFile'
-description: '$renameFile will rename a file of your bot''s directory.'
+title: $renameFile
+description: '$renameFile перейменує файл директорії вашого бота.'
 id: renameFile
 ---
 
-`$renameFile` will rename a file of your bot's directory.
+`$renameFile` перейменує файл директорії вашого бота.
 
 ## Використання
 
@@ -14,19 +14,19 @@ $renameFile[oldFile;newFile]
 
 ## Параметри
 
-| Поле    | Тип   | Опис           | Обов'язковий |
-| ------- | ----- | -------------- |:------------:|
-| oldFile | рядок | Old file name. |     так      |
-| newFile | рядок | New file name. |     так      |
+| Поле    | Тип   | Опис              | Обов'язковий |
+| ------- | ----- | ----------------- |:------------:|
+| oldFile | рядок | Старе ім'я файлу. |     так      |
+| newFile | рядок | Нове ім'я файлу.  |     так      |
 
 ## Приклад(и)
 
-This will change your index.js to a index.txt file:
+Це змінить ваш index.js на файл index.txt:
 
 ```javascript
 bot.command({
     name: "renameFile",
-    code: `
+    код: `
     $renameFile[./index.js;./index.txt]
     `
 });

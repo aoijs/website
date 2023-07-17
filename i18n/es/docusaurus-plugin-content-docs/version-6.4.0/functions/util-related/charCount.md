@@ -1,26 +1,26 @@
 ---
 title: '$charCount'
-description: '$charCount will count the given characters in a text and return the amount of characters.'
+description: '$charCount contará los caracteres dados en un texto y devolverá la cantidad de caracteres.'
 id: charCount
 ---
 
-`$charCount` will count the given characters in a text and return the amount of characters.
+$charCount contará los caracteres dados en un texto y devolverá la cantidad de caracteres.
 
 ## Uso
 
 ```php
-$charCount[text]
+$charCount[texto]
 ```
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros                                             | Requerido |
-| ----- | ------ | ------------------------------------------------------ |:---------:|
-| text  | string | The text that will be the character count returned of. | verdadera |
+| Campo | Tipo   | Parámetros                                            | Requerido |
+| ----- | ------ | ----------------------------------------------------- |:---------:|
+| text  | cadena | El texto que será el recuento de caracteres devuelto. | verdadera |
 
 ## Ejemplo(s)
 
-This will return `77` as there are 77 characters in this text:
+Esto devolverá `77` ya que hay 77 caracteres en este texto:
 
 ```javascript
 bot.command({

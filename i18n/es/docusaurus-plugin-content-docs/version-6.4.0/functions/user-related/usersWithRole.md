@@ -1,29 +1,29 @@
 ---
 title: '$usersWithRole'
-description: '$usersWithRole will return the users who have a specific role.'
+description: '$usersWithRole devolverá los usuarios que tienen un rol específico.'
 id: usersWithRole
 ---
 
-`$usersWithRole` will return the users who have a specific role.
+`$usersWithRole` devolverá los usuarios que tienen un rol específico.
 
 ## Uso
 
 ```php
-$usersWithRole[roleID;guildID?;option?;sep?]
+$usersWithRole[rolID?;servidorID?;opción?,sep?]
 ```
 
 ## Parámetros
 
-| Campo       | Tipo   | Parámetros                                                                           | Requerido |
-| ----------- | ------ | ------------------------------------------------------------------------------------ |:---------:|
-| roleID      | entero | The role ID.                                                                         | verdadero |
-| servidorID? | entero | The guild ID.                                                                        |    no     |
-| opción?     | string | How to return the users <br /> 1. **id** (default) <br /> 2. **mention** |   falso   |
-| sep?        | string | Separator to separate multiple returned values.                                      |   falso   |
+| Campo       | Tipo   | Parámetros                                                                                  | Requerido |
+| ----------- | ------ | ------------------------------------------------------------------------------------------- |:---------:|
+| rolID       | entero | ID del rol.                                                                                 | verdadero |
+| servidorID? | entero | ID del servidor.                                                                            |   falso   |
+| opción?     | string | Cómo devolver los usuarios <br /> 1. **id** (por defecto) <br /> 2. **mention** |   falso   |
+| sep?        | string | Separador para separar varios valores devueltos.                                            |   falso   |
 
 ## Ejemplo(s)
 
-This will return the users of a specific role, make sure to replace roleID:
+Esto devolverá los usuarios de un rol específico, asegúrese de reemplazar roleID:
 
 ```javascript
 bot.command({

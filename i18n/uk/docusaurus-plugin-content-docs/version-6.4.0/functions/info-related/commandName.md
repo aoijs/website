@@ -1,10 +1,10 @@
 ---
-title: '$commandName'
-description: '$commandName will return the commands'' name.'
+title: $commandName
+description: '$commandName поверне назву команд.'
 id: commandName
 ---
 
-`$commandName` will return the commands' name.
+`$commandName` поверне ім'я команд.
 
 ## Використання
 

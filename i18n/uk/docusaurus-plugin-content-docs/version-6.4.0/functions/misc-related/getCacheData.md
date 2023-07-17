@@ -1,10 +1,10 @@
 ---
 title: '$getCacheData'
-description: '$getCacheData will return cache data.'
+description: '$getCacheData поверне дані кешу.'
 id: getCacheData
 ---
 
-`$getCacheData` will return cache data.
+`$getCacheData` поверне дані кешу.
 
 ## Використання
 
@@ -14,9 +14,9 @@ $getCacheData[type;name;key;option?]
 
 ## Параметри
 
-| Поле    | Тип   | Опис | Обов'язковий |
-| ------- | ----- | ---- |:------------:|
-| тип     | рядок |      |     так      |
-| назва   | рядок |      |     так      |
-| key     | рядок |      |     так      |
-| option? | рядок |      |      ні      |
+| Поле     | Тип   | Опис | Обов'язковий |
+| -------- | ----- | ---- |:------------:|
+| тип      | рядок |      |     так      |
+| назва    | рядок |      |     так      |
+| ключ     | рядок |      |     так      |
+| варіант? | рядок |      |      ні      |

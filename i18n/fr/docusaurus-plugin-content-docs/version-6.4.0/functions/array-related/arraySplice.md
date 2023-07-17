@@ -1,34 +1,34 @@
 ---
 title: '$arraySplice'
-description: '$arraySplice will splice elements from the array.'
+description: '$arraySplice permet de séparer les éléments d''un tableau.'
 id: arraySplice
 ---
 
-`$arraySplice` will splice elements from the array.
+`$arraySplice` permet de séparer les éléments d'un tableau.
 
-## Usage
+## Utilisation
 
 ```php
-$arraySplice[name;index;amount;...elements]
+$arraySplice[nom;index;quantité;...éléments]
 ```
 
-## Parameters
+## Paramètres
 
-| Field       | Type   | Description           | Required |
-| ----------- | ------ | --------------------- |:--------:|
-| name        | string | Array name.           |   true   |
-| index       | number | Index of the element. |   true   |
-| amount      | number | Amount to splice.     |   true   |
-| ...elements | string | Elements to splice.   |   true   |
+| Champ       | Type                 | Description         | Obligatoire |
+| ----------- | -------------------- | ------------------- |:-----------:|
+| nom         | chaîne de caractères | Nom du tableau.     |    vrai     |
+| index       | nombre               | Index de l'élément. |    vrai     |
+| quantité    | nombre               | Quantité à séparer. |    vrai     |
+| ...éléments | chaîne de caractères | Eléments à séparer. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
 ```javascript
 bot.command({
     name: "array-splice",
     code: `
-  $arraySplice[array;2;3]
-  $createArray[array;aoi.js;akarui;documents;bot]
+  $arraySplice[tableau;2;3]
+  $createArray[tableau;aoi.js;akarui;documents;bot]
   `
 });
 ```

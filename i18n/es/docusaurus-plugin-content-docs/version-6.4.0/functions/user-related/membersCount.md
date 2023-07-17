@@ -1,28 +1,28 @@
 ---
 title: '$membersCount'
-description: '$membersCount will return a guild''s member count.'
+description: '$membersCount devolverá el número de miembros de un gremio.'
 id: membersCount
 ---
 
-`$membersCount` will return a guild's member count.
+`$membersCount` devolverá el recuento de miembros de un gremio.
 
 ## Uso
 
 ```php
-$membersCount[guildID?;presence?;countBot?]
+$membersCount[servidorID?;¿presencia?;ContarBot?]
 ```
 
 ## Parámetros
 
-| Campo       | Tipo     | Parámetros                                                                                                                                                          | Requerido |
-| ----------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |:---------:|
-| servidorID? | entero   | The ID of the guild.                                                                                                                                                |    no     |
-| presence?   | consulta | The presence of the users <br /> 1. **all** (default) <br /> 2. **dnd** <br /> 3. **idle** <br /> 4. **offline** <br /> 5. **online** |    no     |
-| countBot?   | booleano | Count bots? <br /> 1. **true** (default) <br /> 2. **false**                                                                                            |   falso   |
+| Campo       | Tipo     | Parámetros                                                                                                                                                                 | Requerido |
+| ----------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |:---------:|
+| servidorID? | entero   | ID del servidor.                                                                                                                                                           |   falso   |
+| presencia   | cadena   | La presencia de los usuarios <br /> 1. **all** (por defecto) <br /> 2. **dnd** <br /> 3. **idle** <br /> 4. **offline** <br /> 5. **online** |   falso   |
+| ContarBot?  | booleano | ¿Contar bots? <br /> 1. **true** (por defecto) <br /> 2. **false**                                                                                             |   falso   |
 
 ## Ejemplo(s)
 
-This will return the amount of offline users (including bots) in your guild:
+Esto devolverá la cantidad de usuarios sin conexión (incluyendo bots) en tu gremio:
 
 ```javascript
 bot.command({

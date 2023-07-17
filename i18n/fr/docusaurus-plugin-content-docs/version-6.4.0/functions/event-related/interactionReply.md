@@ -1,36 +1,36 @@
 ---
 title: '$interactionReply'
-description: '$interactionReply allows you to send an interaction message reply.'
+description: '$interactionReply vous permet d''envoyer une réponse au message d''interaction.'
 id: interactionReply
 ---
 
-`$interactionReply` allows you to send an interaction message reply.
+`$interactionReply` vous permet d'envoyer une réponse au message d'interaction.
 
-## Usage
+## Utilisation
 
 ```php
-$interactionReply[content?;embeds?;components?;files?;allowedMentions?;ephemeral?]
+$interactionReply[contenu?;embeds?;composants?;fichiers?;autoriserMentions?;éphémère ?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field            | Type    | Description                                                                                        | Required |
-| ---------------- | ------- | -------------------------------------------------------------------------------------------------- |:--------:|
-| content?         | string  | Message content.                                                                                   |  false   |
-| embeds?          | string  | Embed parser.                                                                                      |  false   |
-| components?      | string  | Component parser.                                                                                  |  false   |
-| files?           | string  | File Parser.                                                                                       |  false   |
-| allowedMentions? | string  | Allowed mentions? <br /> 1. **everyone** <br /> 2. **roles** <br /> 3. **users** |  false   |
-| ephemeral?       | boolean | Visible to the command author only? <br /> 1. **true** <br /> 2. **false** (default)   |  false   |
+| Champ              | Type                 | Description                                                                                                      | Obligatoire |
+| ------------------ | -------------------- | ---------------------------------------------------------------------------------------------------------------- |:-----------:|
+| contenu?           | chaîne de caractères | Contenu du message.                                                                                              |    faux     |
+| embeds?            | chaîne de caractères | Embed parser.                                                                                                    |    faux     |
+| composants?        | chaîne de caractères | Composant parser.                                                                                                |    faux     |
+| fichiers?          | chaîne de caractères | Fichier parser.                                                                                                  |    faux     |
+| autoriserMentions? | chaîne de caractères | Mentions autorisées? <br /> 1. **everyone** <br /> 2. **roles** <br /> 3. **users**            |    faux     |
+| éphémère?          | booléen              | Visible uniquement par l'auteur de la commande ? <br /> 1. **true** <br /> 2. **false** (par defaut) |    faux     |
 
-## Example(s)
+## Exemple(s)
 
 ```javascript
 bot.interactionCommand({
     name: "interactionReply",
     prototype: "slash", // button/selectMenu/slash
     code: `
-  $interactionReply[Hello, world!;;;;everyone;false]
+  $interactionReply[Bonjour, tout le monde!;;;;everyone;false]
   `
 });
 ```

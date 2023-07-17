@@ -1,10 +1,10 @@
 ---
 title: '$nonEscape'
-description: '$nonEscape will stop escaping special characters.'
+description: '$nonEscape перестане уникати спеціальних символів.'
 id: nonEscape
 ---
 
-`$nonEscape` will stop escaping special characters.
+`$nonEscape` перестане екранувати спеціальні символи.
 
 ## Використання
 
@@ -14,18 +14,18 @@ $nonEscape[message]
 
 ## Параметри
 
-| Поле    | Тип   | Опис                               | Обов'язковий |
-| ------- | ----- | ---------------------------------- | ------------ |
-| message | рядок | Text you don't want to be escaped. | так          |
+| Поле         | Тип   | Опис                                               | Обов'язковий |
+| ------------ | ----- | -------------------------------------------------- | ------------ |
+| повідомлення | рядок | Текст, який ви не хочете, щоб вас використовували. | так          |
 
 ## Приклад(и)
 
-This will stop from escaping certain characters:
+Це перестане уникати певних символів:
 
 ```javascript
 bot.command({
     name: 'nonEscape',
-    code: `
+    код: `
   $nonEscape[Hello [;)]]
   `
 });

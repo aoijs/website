@@ -1,10 +1,10 @@
 ---
 title: '$packageDependencies'
-description: '$packageDependencies will return aoi.js'' package dependencies.'
+description: '$packageDependencies devolverá las dependencias del paquete de aoi.js.'
 id: packageDependencies
 ---
 
-`$packageDependencies` will return aoi.js' package dependencies.
+`$packageDependencies` retornará las dependencias del paquete de aoi.js.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $packageDependencies
 
 ## Ejemplo(s)
 
-This will return aoi.js' package dependencies:
+Esto devolverá las dependencias del paquete de aoi.js:
 
 ```javascript
 bot.command({
     name: "packageDependencies",
     code: `
     $packageDependencies
-    ` // Should return "@akarui/aoi.db, axios, discord-api-types, discord.js, undici"
+    ` // Debe devolver "@akarui/aoi.db, axios, discord-api-types, discord.js, undici"
 });
 ```

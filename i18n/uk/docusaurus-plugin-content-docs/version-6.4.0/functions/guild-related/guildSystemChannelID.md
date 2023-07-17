@@ -1,10 +1,10 @@
 ---
-title: '$guildSystemChannelID'
-description: '$guildSystemChannelID will return the ID of the guild''s system channel.'
+title: $guildSystemChannelID
+description: '$guildSystemChannelID поверне ідентифікатор каналу гільдії.'
 id: guildSystemChannelID
 ---
 
-`$guildSystemChannelID` will return the ID of the guild's system channel.
+`$guildSystemChannelID` поверне ID гільдії каналу.
 
 ## Використання
 
@@ -14,18 +14,18 @@ $guildSystemChannelID[guildID?]
 
 ## Параметри
 
-| Поле     | Тип     | Опис          | Обов'язковий |
-| -------- | ------- | ------------- |:------------:|
-| guildID? | integer | The guild ID. |      ні      |
+| Поле     | Тип  | Опис        | Обов'язковий |
+| -------- | ---- | ----------- |:------------:|
+| гільдія? | ціле | ID гільдії. |      ні      |
 
 ## Приклад(и)
 
-This will return the guild's system channel ID:
+Це поверне ID гільдії системного каналу.
 
 ```javascript
 bot.command({
     name: 'guildSystemChannelID',
-    code: `
+    код: `
   $guildSystemChannelID[$guildID]
   `
 });

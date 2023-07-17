@@ -1,19 +1,19 @@
 ---
 title: '$shard'
-description: '$shard returns the data of a shard.'
+description: '$shard retourne les données d''un shard.'
 id: shard
 ---
 
-`$shard` returns the data of a shard.
+`$shard` retourne les données d'un shard.
 
-## Usage
+## Utilisation
 
 ```php
 $shard[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- |:--------:|
-| option | string | Option to retrieve. |   true   |
+| Champ  | Type                 | Description         | Obligatoire |
+| ------ | -------------------- | ------------------- |:-----------:|
+| option | chaîne de caractères | Option à récupérer. |    vrai     |

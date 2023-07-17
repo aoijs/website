@@ -1,20 +1,20 @@
 ---
 title: '$clientID'
-description: '$clientID will return the client''s Discord User ID.'
+description: '$clientID retournera l''ID d''utilisateur Discord du client.'
 id: clientID
 ---
 
-`$clientID` will return the client's Discord User ID.
+`$clientID` retournera l'ID d'utilisateur Discord du client.
 
-## Usage
+## Utilisation
 
 ```php
 $clientID
 ```
 
-## Example(s)
+## Exemple(s)
 
-This will return the client's ID:
+Ceci retournera l'identifiant du client :
 
 ```javascript
 bot.command({

@@ -1,10 +1,10 @@
 ---
-title: '$resolveColor'
-description: '$resolveColor will convert a given color to a given type.'
+title: $resolveColor
+description: '$resolveColor convertirá un color dado en un tipo determinado.'
 id: resolveColor
 ---
 
-`$resolveColor` will convert a given color to a given type.
+`$resolveColor` convertirá un color dado a un tipo determinado.
 
 ## Uso
 
@@ -14,23 +14,23 @@ $resolveColor[type;returnAs?;...data]
 
 ## Parámetros
 
-| Campo     | Tipo   | Descripción                                | Requerido |
-| --------- | ------ | ------------------------------------------ |:---------:|
-| type      | string | Which type the input is.                   |    sí     |
-| returnAs? | string | As what the color will be returned.        |    no     |
-| ...data   | string | The data of the RGB or decimal color data. |    sí     |
+| Campo         | Tipo   | Descripción                                    | Requerido |
+| ------------- | ------ | ---------------------------------------------- |:---------:|
+| type          | string | Qué tipo es la entrada.                        |    sí     |
+| ¿volver como? | string | Como el color será retornado.                  |    no     |
+| ...datos      | string | Los datos de los datos RVA o de color decimal. |    sí     |
 
-### Types
+### Tipos
 
-| Types   |                   | Returns     |
+| Tipos   |                   | Devuelve    |
 | ------- | ----------------- | ----------- |
-| RGB     | red, green, blue  | 50, 168, 82 |
-| decimal | hex color         | #32a852     |
-| número  | hexadecimal color | 80          |
+| RGB     | rojo, verde, azul | 50, 168, 82 |
+| decimal | color hexadecimal | #32a852     |
+| número  | color hexadecimal | 80          |
 
 ## Ejemplo(s)
 
-This will return `#32a852` as `50, 168, 82` is the RGB value of it:
+Esto devolverá `#32a852` como `50, 168, 82` es el valor RGB de él:
 
 ```javascript
 bot.command({
@@ -41,7 +41,7 @@ bot.command({
 });
 ```
 
-This will return `50, 168, 82` as `#32a852` is the hex color of it:
+Esto devolverá `50, 168, 82` como `#32a852` es el color hexadecimal del mismo:
 
 ```javascript
 bot.command({
@@ -52,7 +52,7 @@ bot.command({
 });
 ```
 
-This will return `3319890` as `#32a852` is the hex color of it:
+Esto devolverá `3319890` como `#32a852` es el color hexadecimal de él:
 
 ```javascript
 bot.command({

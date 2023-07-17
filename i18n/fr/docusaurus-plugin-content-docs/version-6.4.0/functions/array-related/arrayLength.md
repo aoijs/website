@@ -1,31 +1,31 @@
 ---
 title: '$arrayLength'
-description: '$arrayLength will return the length of a given array.'
+description: '$arrayLength retournera la longueur d''un tableau donné.'
 id: arrayLength
 ---
 
-`$arrayLength` will return the length of a given array.
+`$arrayLength` retournera la longueur d'un tableau donné.
 
-## Usage
+## Utilisation
 
 ```php
-$arrayLength[name]
+$arrayLength[nom]
 ```
 
-## Parameters
+## Paramètres
 
-| Field | Type   | Description | Required |
-| ----- | ------ | ----------- |:--------:|
-| name  | string | Array name. |   true   |
+| Champ | Type                 | Description     | Obligatoire |
+| ----- | -------------------- | --------------- |:-----------:|
+| nom   | chaîne de caractères | Nom du tableau. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
 ```javascript
 bot.command({
     name: "array-length",
     code: `
-  $arrayLength[array]
-  $createArray[array;aoi.js;akarui;documents;bot]
+  $arrayLength[tableau]
+  $createArray[tableau;aoi.js;akarui;documents;bot]
   `
 });
 ```

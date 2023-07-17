@@ -1,36 +1,36 @@
 ---
 title: '$onlyClientPerms'
-description: '$onlyClientPerms will check if the bot has the listed permission and return a error message if not.'
+description: '$onlyClientPerms vérifiera si le bot a les autorisations requises et renverra un message d''erreur si ce n''est pas le cas.'
 id: onlyClientPerms
 ---
 
-`$onlyClientPerms` will check if the bot has the listed permission and return a error message if not.
+$onlyClientPerms vérifiera si le bot a les autorisations requises et renverra un message d'erreur si ce n'est pas le cas.
 
-## Usage
+## Utilisation
 
 ```php
-$onlyClientPerms[...perms;error]
+$onlyClientPerms[...permissions;erreur]
 ```
 
-## Parameters
+## Paramètres
 
-| Field    | Type   | Description                                                  | Required |
-| -------- | ------ | ------------------------------------------------------------ |:--------:|
-| ...perms | string | Permission that the bot requires.                            |   true   |
-| error    | string | Error to return when the bot has not the listed permissions. |   true   |
+| Champ          | Type                | Description                                                        | Obligatoire |
+| -------------- | ------------------- | ------------------------------------------------------------------ |:-----------:|
+| ...permissions | chaîne de caractère | Permissions dont le bot a besoin.                                  |    vrai     |
+| erreur         | chaîne de caractère | Erreur à retourner lorsque le bot n'a pas les permissions listées. |    vrai     |
 
-You can find all permissions __[here](../../guides/client/2permissionsintents.md)__.
+Vous pouvez toutes les permissions __[ici](../../guides/Client/2permissionsintents.md)__.
 
-## Example(s)
+## Exemple(s)
 
-This will limit the command to work only when the Bot has administrator permissions:
+La commande ne fonctionnera que si le bot dispose des permissions administrateur :
 
 ```javascript
 bot.command({
     name: "onlyClientPerms",
     code: `
     Ok.
-    $onlyClientPerms[administrator;I don't have administrator permissions!]
+    $onlyClientPerms[administrator;Je n'ai pas les permissions administrateurs!]
     `
 });
 ```

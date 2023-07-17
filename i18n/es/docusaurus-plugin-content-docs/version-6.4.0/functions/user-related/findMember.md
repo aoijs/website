@@ -1,28 +1,28 @@
 ---
 title: '$findMember'
-description: '$findMember will find a specific member in a specific guild by their name.'
+description: '$findMember encontrará un miembro específico en una guild específica por su nombre.'
 id: findMember
 ---
 
-`$findMember` will find a specific member in a specific guild.
+`$findMember` encontrará un miembro específico en un gremio específico.
 
 ## Uso
 
 ```php
-$findMember[userResolver;returnSelf?;guildID?]
+$findMember[usuarioResolver;volverYo mismo?;servidorID?]
 ```
 
 ## Parámetros
 
-| Campo        | Tipo     | Parámetros                                            | Requerido |
-| ------------ | -------- | ----------------------------------------------------- |:---------:|
-| userResolver | consulta | User you want to find.                                | verdadero |
-| returnSelf?  | boolean  | Return the author ID if the given user was not found. |    no     |
-| servidorID?  | entero   | Guild ID where the user is present in.                |   falso   |
+| Campo            | Tipo     | Parámetros                                                   | Requerido |
+| ---------------- | -------- | ------------------------------------------------------------ |:---------:|
+| usuario Resolver | cadena   | Usuario que desea encontrar.                                 | verdadero |
+| volverYo mismo?  | booleano | Devuelve el ID del autor si no se encuentra el usuario dado. |   falso   |
+| servidorID?      | entero   | ID del gremio donde el usuario está presente.                |   falso   |
 
 ## Ejemplo(s)
 
-This will return your ID as `Leref` was not found in the given guild:
+Esto devolverá tu ID ya que `Leref` no se encontró en el gremio dado:
 
 ```javascript
 bot.command({

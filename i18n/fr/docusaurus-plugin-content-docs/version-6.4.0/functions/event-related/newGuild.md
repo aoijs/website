@@ -1,19 +1,19 @@
 ---
 title: '$newGuild'
-description: '$newGuild holds data for the guild after the update, might be a good idea to check partial option before accessing any property. (guildUpdate event)'
+description: '$newGuild contient les données du serveur après la mise à jour, il serait bon de vérifier l''option partielle avant d''accéder à une propriété. (évènement guildUpdate)'
 id: newGuild
 ---
 
-`$newGuild` holds data for the guild after the update, might be a good idea to check partial option before accessing any property. (guildUpdate event)
+`$newGuild` contient les données du serveur après la mise à jour, il serait bon de vérifier l'option partielle avant d'accéder à une propriété. (évènement guildUpdate)
 
-## Usage
+## Utilisation
 
 ```php
 $newGuild[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- |:--------:|
-| option | string | Option to retrieve. |   true   |
+| Champ  | Type                 | Description         | Obligatoire |
+| ------ | -------------------- | ------------------- |:-----------:|
+| option | chaîne de caractères | Option à récupérer. |    vrai     |

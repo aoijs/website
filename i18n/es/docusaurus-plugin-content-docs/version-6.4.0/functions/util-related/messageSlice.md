@@ -1,10 +1,10 @@
 ---
 title: '$messageSlice'
-description: '$messageSlice will slice a message.'
+description: '$messageSlice cortará un mensaje.'
 id: messageSlice
 ---
 
-`$messageSlice` will slice a message.
+`$messageSlice` cortará un mensaje.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $messageSlice[from;to?]
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros                                 | Requerido |
-| ----- | ------ | ------------------------------------------ |:---------:|
-| from  | número | Starting point where to slice the message. | verdadero |
-| to?   | número | Ending point where slicing ends.           |    no     |
+| Campo   | Tipo   | Parámetros                                | Requerido |
+| ------- | ------ | ----------------------------------------- |:---------:|
+| de      | número | Punto de partida donde cortar el mensaje. | verdadero |
+| ¿hacer? | número | Punto final donde termina el corte.       |    no     |
 
 ## Ejemplo(s)
 
-This will slice the message from the first message to the fifth message:
+Esto cortará el mensaje del primer mensaje al quinto mensaje:
 
 ```javascript
 bot.command({

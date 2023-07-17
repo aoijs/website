@@ -1,10 +1,10 @@
 ---
 title: '$setGlobalUserVar'
-description: '$setGlobalUserVar will change the value of a given global user variable.'
+description: '$setGlobalUserVar cambiará el valor de una variable global de usuario.'
 id: setGlobalUserVar
 ---
 
-`$setGlobalUserVar` will change the value of a given global user variable.
+`$setGlobalUserVar` cambiará el valor de una variable global de usuario.
 
 ## Uso
 
@@ -14,16 +14,16 @@ $setGlobalUserVar[varname;value;userID?;table?]
 
 ## Parámetros
 
-| Campo     | Tipo     | Parámetros          | Requerido |
-| --------- | -------- | ------------------- |:---------:|
-| varname   | consulta | Variable name.      | verdadero |
-| value     | consulta | New Variable value. | verdadero |
-| usarioID? | entero   | User ID.            |   falso   |
-| table?    | string   | Variable table.     |   falso   |
+| Campo     | Tipo     | Parámetros            | Requerido |
+| --------- | -------- | --------------------- |:---------:|
+| varname   | consulta | Nombre variable.      | verdadero |
+| valor     | consulta | Nuevo valor variable. | verdadero |
+| usarioID? | entero   | ID de usuario.        |   falso   |
+| tabla?    | string   | Tabla variable.       |   falso   |
 
 ## Ejemplo(s)
 
-This will change the value of "Example" to "This is a value" for the command author:
+Esto cambiará el valor de "Ejemplo" a "Este es un valor" para el autor de comandos:
 
 ```javascript
 bot.command({

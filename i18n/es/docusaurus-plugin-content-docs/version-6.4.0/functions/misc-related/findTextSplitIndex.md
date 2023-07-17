@@ -1,26 +1,26 @@
 ---
 title: '$findTextSplitIndex'
-description: '$findTextSplitIndex will return the index of a text split element after a given query.'
+description: '$findTextSplitIndex devolverá el índice de un elemento dividido de texto después de una consulta determinada.'
 id: findTextSplitIndex
 ---
 
-`$findTextSplitIndex` will return the index of a text split element after a given query.
+`$findTextSplitIndex` devolverá el índice de un elemento de división de texto después de una consulta determinada.
 
 ## Uso
 
 ```php
-$findTextSplitIndex[query]
+$findTextSplitIndex[consulta]
 ```
 
 ## Parámetros
 
 | Campo    | Tipo   | Parámetros | Requerido |
 | -------- | ------ | ---------- |:---------:|
-| consulta | string | Query.     | verdadera |
+| consulta | string | Consultas  | verdadera |
 
 ## Ejemplo(s)
 
-This will return `3` as the first `Cya` in this `$textSplit` is in the third position:
+Esto devolverá `3` como la primera `Cya` en esta `$textSplit` está en la tercera posición:
 
 ```javascript
 bot.command({

@@ -1,10 +1,10 @@
 ---
 title: '$isUnicodeEmoji'
-description: '$isUnicodeEmoji will check if the given emoji is an unicode emoji.'
+description: '$isUnicodeEmoji comprobará si el emoji dado es un emoji unicode.'
 id: isUnicodeEmoji
 ---
 
-`$isUnicodeEmoji` will check if the given emoji is an unicode emoji.
+`$isUnicodeEmoji` comprobará si el emoji dado es un emoji unicode.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $isUnicodeEmoji[emojiResolver]
 
 ## Parámetros
 
-| Campo         | Tipo   | Parámetros     | Requerido |
-| ------------- | ------ | -------------- |:---------:|
-| emojiResolver | string | Unicode emoji. | verdadera |
+| Campo                | Tipo   | Parámetros     | Requerido |
+| -------------------- | ------ | -------------- |:---------:|
+| resolutor de emojios | string | Unicode emoji. | verdadera |
 
 ## Ejemplo(s)
 
-This will return `true` as "🤓" is an valid unicode emoji:
+Esto devolverá `verdadero` como "🤓" es un emoji unicode válido:
 
 ```javascript
 bot.command({

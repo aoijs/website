@@ -1,27 +1,27 @@
 ---
 title: '$unPinMessage'
-description: '$unPinMessage will unpin a given message.'
+description: '$unPinMessage desanclará un mensaje determinado.'
 id: unPinMessage
 ---
 
-`$unPinMessage` will unpin a given message.
+`$unPinMessage` desanclará un mensaje determinado.
 
 ## Uso
 
 ```php
-$unPinMessage[messageID?;channelID?]
+$unPinMessage[ID de mensaje;canalID?]
 ```
 
 ## Parámetros
 
-| Campo         | Tipo   | Parámetros                                                | Requerido |
-| ------------- | ------ | --------------------------------------------------------- |:---------:|
-| ID de mensaje | entero | The ID of the message to unpin.                           |    no     |
-| canalID       | entero | The ID of the channel of where the message is located in. |    no     |
+| Campo         | Tipo   | Parámetros                                         | Requerido |
+| ------------- | ------ | -------------------------------------------------- |:---------:|
+| ID de mensaje | entero | El ID del mensaje a desanclar.                     |   falso   |
+| canalID       | entero | El ID del canal en el que se encuentra el mensaje. |   falso   |
 
 ## Ejemplo(s)
 
-This will pin the bot's message and unpin it after two seconds:
+Esto fijará el mensaje del bot y lo desanclará después de dos segundos:
 
 ```javascript
 bot.command({
@@ -31,6 +31,6 @@ bot.command({
   $wait[2s]
   $pinMessage[$get[id]]
   $let[id;$sendMessage[Hello!;true]
-  ` // using $let & $get to save the message ID
+  ` // usando $let & $get para guardar el ID del mensaje
 });
 ```

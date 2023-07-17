@@ -1,10 +1,10 @@
 ---
 title: '$repeatMessage'
-description: '$repeatMessage will repeat the given text for given amount of times.'
+description: '$repeatMessage repetirá el texto dado por una cantidad de veces.'
 id: repeatMessage
 ---
 
-`$repeatMessage` will repeat the given text for given amount of times.
+`$repeatMessage` repetirá el texto dado por una cantidad de veces.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $repeatMessage[time;text]
 
 ## Parámetros
 
-| Campo  | Tipo     | Parámetros                                  | Requerido |
-| ------ | -------- | ------------------------------------------- |:---------:|
-| tiempo | entero   | The amount of times the text gets repeated. | verdadero |
-| text   | consulta | The text that will get repeated.            | verdadero |
+| Campo  | Tipo     | Parámetros                                   | Requerido |
+| ------ | -------- | -------------------------------------------- |:---------:|
+| tiempo | entero   | La cantidad de veces que se repite el texto. | verdadero |
+| text   | consulta | El texto que se repetirá.                    | verdadero |
 
 ## Ejemplo(s)
 
-This will return `Hello` twenty times:
+Esto devolverá `Hola` veinte veces:
 
 ```javascript
 bot.command({

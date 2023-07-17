@@ -1,26 +1,26 @@
 ---
 title: '$emojiExists'
-description: '$emojiExists will check if the given emoji exists.'
+description: '$emojiExists verificará si existe el emoji dado.'
 id: emojiExists
 ---
 
-`$emojiExists` will check if the given emoji exists.
+`$emojiExists` verificará si existe el emoji dado.
 
 ## Uso
 
 ```php
-$emojiExists[emojiResolver]
+$emojiExists[Resolución de emojis]
 ```
 
 ## Parámetros
 
-| Campo         | Tipo   | Parámetros                            | Requerido |
-| ------------- | ------ | ------------------------------------- |:---------:|
-| emojiResolver | string | Emoji you want to check if it exists. | verdadera |
+| Campo                | Tipo   | Parámetros                             | Requerido |
+| -------------------- | ------ | -------------------------------------- |:---------:|
+| resolutor de emojios | cadena | Emoji que quieres comprobar si existe. | verdadera |
 
 ## Ejemplo(s)
 
-This will return `true` as the ![emoji](https://cdn.discordapp.com/emojis/1003365344724910191.webp?size=16&quality=lossless) emoji exists:
+Esto devolverá `true` ya que el emoji ![emoji](https://cdn.discordapp.com/emojis/1003365344724910191.webp?size=16&quality=lossless) existe:
 
 ```javascript
 bot.command({

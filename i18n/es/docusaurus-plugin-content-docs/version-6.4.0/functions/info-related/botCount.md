@@ -1,7 +1,7 @@
 ---
-title: '$guildBotCount'
+title: $botCount
 description: '$guildBotCount devolverá la cantidad de Bots en su servidor.'
-id: guildBotCount
+id: botCount
 ---
 
 `$guildBotCount` devolverá la cantidad de Bots en su servidor.

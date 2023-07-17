@@ -1,27 +1,27 @@
 ---
 title: '$userRoleColor'
-description: '$userRoleColor will return the role color of a user''s highest assigned role.'
+description: '$userRoleColor devolverá el color de la función más alta asignada a un usuario.'
 id: userRoleColor
 ---
 
-`$userRoleColor` will return the role color of a user's highest assigned role.
+`$userRoleColor` devolverá el color de la función más alta asignada a un usuario.
 
 ## Uso
 
 ```php
-$userRoleColor[userID?;guildID?]
+$getRoleColor[usuarioID?;servidorID?]
 ```
 
 ## Parámetros
 
-| Campo       | Tipo   | Parámetros    | Requerido |
-| ----------- | ------ | ------------- |:---------:|
-| usarioID?   | entero | The user ID.  |    no     |
-| servidorID? | entero | The guild ID. |    no     |
+| Campo       | Tipo   | Parámetros                     | Requerido |
+| ----------- | ------ | ------------------------------ |:---------:|
+| usarioID?   | entero | La identificación del usuario. |   falso   |
+| servidorID? | entero | ID del servidor.               |   falso   |
 
 ## Ejemplo(s)
 
-This will return the Color of your highest role:
+Esto devolverá el color de su rol más alto:
 
 ```javascript
 bot.command({

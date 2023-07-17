@@ -1,10 +1,10 @@
 ---
-title: '$eventEmit'
-description: '$eventEmit will emit a custom event.'
+title: $eventEmit
+description: '$eventEmit створюватиме настроювану подію.'
 id: eventEmit
 ---
 
-`$eventEmit` will emit a custom event.
+`$eventEmit` випромінить настроювану подію.
 
 ## Використання
 
@@ -14,7 +14,7 @@ $eventEmit[name;...datas]
 
 ## Параметри
 
-| Поле     | Тип   | Опис               | Обов'язковий |
-| -------- | ----- | ------------------ |:------------:|
-| назва    | рядок | Custom event name. |     так      |
-| ...datas | рядок | Custom event data. |     так      |
+| Поле     | Тип   | Опис                 | Обов'язковий |
+| -------- | ----- | -------------------- |:------------:|
+| назва    | рядок | Власна назва події.  |     так      |
+| ...datas | рядок | Довільні дані подій. |     так      |

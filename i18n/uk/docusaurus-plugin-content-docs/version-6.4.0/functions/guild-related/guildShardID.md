@@ -1,10 +1,10 @@
 ---
 title: '$guildShardID'
-description: '$guildShardID will return the current shard ID.'
+description: '$guildShardID поверне поточний фрагмент ID.'
 id: guildShardID
 ---
 
-`$guildShardID` will return the current shard ID.
+`$guildShardID` поверне поточний фрагмент ID.
 
 ## Використання
 
@@ -12,17 +12,17 @@ id: guildShardID
 $guildShardID
 ```
 
-**Note that this won't work without sharding. If you're unsure, review the [sharding guide](../../guides/client/6sharding.md).**
+**Зауважте, що це не працюватиме без фрагментів. Якщо ви не впевнені, перегляньте [гідність посібника](../../guides/Client/6sharding.md).**
 
 ## Приклад(и)
 
-This will return the current shard ID:
+Це поверне поточний фрагмент ID:
 
 ```javascript
 bot.command({
     name: 'guildShardID',
-    code: `
-  I'm currently on shard $guildShardID!
+    код: `
+  я зараз на шарі $guildShardID!
   `
 });
 ```

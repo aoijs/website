@@ -1,10 +1,10 @@
 ---
 title: '$isButtonInteraction'
-description: '$isButtonInteraction will return either true or false depending on the type of the interaction.'
+description: '$isButtonInteraction поверне true або false залежно від типу взаємодії.'
 id: isButtonInteraction
 ---
 
-`$isButtonInteraction` will return either true or false depending on the type of interaction.
+`$isButtonInteraction` поверне значення true або false в залежності від типу взаємодії.
 
 ## Використання
 

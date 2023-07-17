@@ -1,10 +1,10 @@
 ---
 title: '$isHoisted'
-description: '$isHoisted will check if a specific role is hoisted.'
+description: '$isHoisted comprobará si un rol específico está levantado.'
 id: isHoisted
 ---
 
-`$isHoisted` will check if a specific role is hoisted.
+`$isHoisted` comprobará si un rol específico está aumentado.
 
 ## Uso
 
@@ -16,12 +16,12 @@ $isHoisted[roleID;guildID?]
 
 | Campo       | Tipo   | Parámetros                                                                 | Requerido |
 | ----------- | ------ | -------------------------------------------------------------------------- |:---------:|
-| roleID      | entero | ID of the role you want to check if it's hoisted or not.                   | verdadero |
-| servidorID? | entero | The ID of the guild where you want to check if the role is hoisted or not. |    no     |
+| roleID      | entero | ID del rol que quieres comprobar si está elevado o no.                     | verdadero |
+| servidorID? | entero | El ID de la hermandad donde quieres comprobar si el rol está elevado o no. |    no     |
 
 ## Ejemplo(s)
 
-This will check if a role called `Owner` is hoisted in your server:
+Esto comprobará si un rol llamado `Propietario` está elevado en tu servidor:
 
 ```javascript
 bot.command({

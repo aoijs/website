@@ -1,33 +1,33 @@
 ---
 title: '$discriminator'
-description: '$discriminator will return a user''s discriminator.'
+description: '$discriminator devolverá el discriminador de un usuario.'
 id: discriminator
 ---
 
-`$discriminator` will return a user's discriminator.
+`$discriminator` devolverá un discriminador del usuario.
 
 ## Uso
 
 ```php
-$discriminator[userId?]
+$discriminator[ID de usuario?]
 ```
 
 ## Parámetros
 
-| Campo   | Tipo    | Parámetros                                                       | Requerido |
-| ------- | ------- | ---------------------------------------------------------------- | --------- |
-| userId? | integer | The ID of the user you want the discriminator to be returned of. | no        |
+| Campo     | Tipo   | Parámetros                                                       | Requerido |
+| --------- | ------ | ---------------------------------------------------------------- | --------- |
+| usarioID? | entero | El ID del usuario del que desea que se devuelva el rol más alto. | falso     |
 
 ## Ejemplo(s)
 
-This will return your Discord User Discriminator, for example `User#0000` (the four digits):
+Esto devolverá a su Discriminador de Usuario de Discord, por ejemplo `User#0000` (los cuatro dígitos):
 
 ```javascript
 bot.command({
     name: 'discriminator',
     code: `
-  $discriminator[$authorID] // your discriminator
-  $discriminator[$clientID] // the bot's discriminator
+  $discriminator[$authorID] // tu discriminador
+  $discriminator[$clientID] // el discriminador del bot
   `
 });
 ```

@@ -1,10 +1,10 @@
 ---
 title: '$onlyForIDs'
-description: '$onlyForIDs will check if the command was executed by any user of the listed user IDs and return a error if not.'
+description: '$onlyForIDs comprobará si el comando fue ejecutado por cualquier usuario de los identificadores de usuario listados y devolverá un error si no lo hace.'
 id: onlyForIDs
 ---
 
-`$onlyForIDs` will check if the command was executed by any user of the listed user IDs and return a error if not.
+`$onlyForIDs` comprobará si el comando fue ejecutado por cualquier usuario de los ID de usuario listados y devolverá un error si no lo hace.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $onlyForIDs[...userIds;error]
 
 ## Parámetros
 
-| Campo      | Tipo            | Parámetros                                                                    | Requerido |
-| ---------- | --------------- | ----------------------------------------------------------------------------- |:---------:|
-| ...userIds | string, integer | Users you want to limit the command to.                                       | verdadero |
-| error      | consulta        | Error to return when the command was not executed by and of the listed users. | verdadero |
+| Campo      | Tipo            | Parámetros                                                                           | Requerido |
+| ---------- | --------------- | ------------------------------------------------------------------------------------ |:---------:|
+| ...userIds | string, integer | Usuarios a los que desea limitar el comando.                                         | verdadero |
+| error      | consulta        | Error al devolver cuando el comando no fue ejecutado por y de los usuarios listados. | verdadero |
 
 ## Ejemplo(s)
 
-This will limit the command to bot developers only:
+Esto limitará el comando sólo a los desarrolladores de bot:
 
 ```javascript
 bot.command({

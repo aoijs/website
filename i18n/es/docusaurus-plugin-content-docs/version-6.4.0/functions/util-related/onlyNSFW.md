@@ -1,10 +1,10 @@
 ---
 title: '$onlyNSFW'
-description: '$onlyNSFW will check if the command was executed in a NSFW channel and return a error message if not.'
+description: '$onlyNSFW comprobará si el comando fue ejecutado en un canal NSFW y devolverá un mensaje de error en caso contrario.'
 id: onlyNSFW
 ---
 
-`$onlyNSFW` will check if the command was executed in a NSFW channel and return a error message if not.
+`$onlyNSFW` comprobará si el comando fue ejecutado en un canal NSFW y devolverá un mensaje de error si no lo hace.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $onlyNSFW[error?]
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros                                                           | Requerido |
-| ----- | ------ | -------------------------------------------------------------------- |:---------:|
-| error | string | Error to return when the command was not executed in a NSFW channel. | verdadera |
+| Campo | Tipo   | Parámetros                                                             | Requerido |
+| ----- | ------ | ---------------------------------------------------------------------- |:---------:|
+| error | string | Error al devolver cuando el comando no fue ejecutado en un canal NSFW. | verdadera |
 
 ## Ejemplo(s)
 
-This will limit the command only to NSFW channels:
+Esto limitará el comando sólo a los canales NSFW:
 
 ```javascript
 bot.command({

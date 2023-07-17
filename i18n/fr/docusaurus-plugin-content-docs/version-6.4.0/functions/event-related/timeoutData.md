@@ -1,26 +1,26 @@
 ---
 title: '$timeoutData'
-description: '$timeoutData holds data for $setTimeout data parameters, this will be empty if used outside timeoutCommand codes.'
+description: '$timeoutData contient des données pour les paramètres de données $setTimeout, cela sera vide si utilisé en dehors des commandes timeoutCommand.'
 id: timeoutData
 ---
 
-`$timeoutData` holds data for $setTimeout data parameters, this will be empty if used outside timeoutCommand codes.
+`$timeoutData` contient des données pour les paramètres de données $setTimeout, cela sera vide si utilisé en dehors des commandes timeoutCommand.
 
-## Usage
+## Utilisation
 
 ```php
 $timeoutData[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description               | Required |
-| ------ | ------ | ------------------------- |:--------:|
-| option | string | Timeout Data option name. |   true   |
+| Champ  | Type                 | Description                              | Obligatoire |
+| ------ | -------------------- | ---------------------------------------- |:-----------:|
+| option | chaîne de caractères | Nom de l'option de la donnée du timeout. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
-This will send "Hello!" after 10 seconds in the command execution channel:
+Cela enverra "Bonjour !" après 10 secondes dans le salon d'exécution de la commande :
 
 ```javascript
 bot.command({
@@ -33,7 +33,7 @@ bot.command({
 bot.timeoutCommand({
     name: "timeoutCommand",
     code: `
-    $channelSendMessage[$timeoutData[channelID];Hello, <@$timeoutData[authorID]>!]
+    $channelSendMessage[$timeoutData[channelID];Bonjour, <@$timeoutData[authorID]>!]
     `
 });
 ```

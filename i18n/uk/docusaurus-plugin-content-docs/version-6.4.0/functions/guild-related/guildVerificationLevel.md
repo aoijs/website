@@ -1,10 +1,10 @@
 ---
-title: '$guildVerificationLevel'
-description: '$guildVerificationLevel will return the guild''s verification level.'
+title: $guildVerificationLevel
+description: '$guildVerificationLevel поверне рівень перевірки гільдії.'
 id: guildVerificationLevel
 ---
 
-`$guildVerificationLevel` will return the guild's verification level.
+`$guildVerificationLevel` поверне рівень перевірки гільдії.
 
 ## Використання
 
@@ -14,26 +14,26 @@ $guildVerificationLevel[guildID?]
 
 ## Параметри
 
-| Поле     | Тип     | Опис                 | Обов'язковий |
-| -------- | ------- | -------------------- |:------------:|
-| guildID? | integer | The ID of the guild. |      ні      |
+| Поле     | Тип  | Опис        | Обов'язковий |
+| -------- | ---- | ----------- |:------------:|
+| гільдія? | ціле | ID гільдії. |      ні      |
 
-| Тип |         |
-| --- | ------- |
-| 0   | None    |
-| 1   | Low     |
-| 2   | Medium  |
-| 3   | High    |
-| 4   | Highest |
+| Тип |            |
+| --- | ---------- |
+| 0   | Без ефекту |
+| 1   | Низька     |
+| 2   | Медіум     |
+| 3   | Високий    |
+| 4   | Найвищий   |
 
 ## Приклад(и)
 
-This will return the guild's verification Level:
+Це поверне рівень перевірки гільдії:
 
 ```javascript
 bot.command({
-    name: 'guildVerificationLevel',
-    code: `
+    name: 'guildificationLevel',
+    код: `
   $guildVerificationLevel[$guildID]
   `
 });

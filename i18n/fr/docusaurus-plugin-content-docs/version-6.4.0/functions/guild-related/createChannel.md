@@ -1,51 +1,51 @@
 ---
 title: '$createChannel'
-description: '$createChannel will create a channel of a given type.'
+description: '$createChannel créera un salon du type donné.'
 id: createChannel
 ---
 
-`$createChannel` will create a channel of a given type.
+`$createChannel` créera un salon du type donné.
 
-## Usage
+## Utilisation
 
 ```php
-$createChannel[guildID;name;type;returnID;parentID]
+$createChannel[IDserveur;nom;type;renvoyerID;IDcatégorie]
 ```
 
-## Parameters
+## Paramètres
 
-| Field    | Type    | Description                                                                                                      | Required |
-| -------- | ------- | ---------------------------------------------------------------------------------------------------------------- |:--------:|
-| guildID  | integer | ID of the guild of where the channel will be created in.                                                         |   true   |
-| name     | string  | The channel name of the newly created channel.                                                                   |   true   |
-| type     | string  | The channel type. (listed below)                                                                                 |   true   |
-| returnID | boolean | Return the channel ID of the newly created channel. <br /> 1. **true** <br /> 2. **false** (default) |   true   |
-| parentID | integer | The category ID.                                                                                                 |  false   |
+| Champ       | Type                 | Description                                                                                              | Obligatoire |
+| ----------- | -------------------- | -------------------------------------------------------------------------------------------------------- |:-----------:|
+| IDserveur   | entier               | ID du serveur où le salon sera créé.                                                                     |    vrai     |
+| nom         | chaine de caractères | Le nom du salon nouvellement créé.                                                                       |    vrai     |
+| type        | chaine de caractères | Le type de salon. (listé ci-dessous)                                                                     |    vrai     |
+| renvoyerID  | booléen              | Renvoie l'ID du salon nouvellement créé. <br /> 1. **true** <br /> 2. **false** (par défaut) |    vrai     |
+| IDcatégorie | entier               | L'ID de la catégorie.                                                                                    |    faux     |
 
 <details open>
-  <summary><h3> Channel Types </h3></summary>
+  <summary><h3> Types de salon </h3></summary>
 
-| Channel Type         |                    |
-| -------------------- | ------------------ |
-| Text Channel         | Text               |
-| Voice Channel        | Voice              |
-| Category             | Category           |
-| Stage Channel        | Stage              |
-| Private Thread       | PrivateThread      |
-| Public Thread        | PublicThread       |
-| Forum                | Forum              |
-| Announcement Thread  | AnnouncementThread |
-| Announcement Channel | Announcement       |
+| Type de salon            |                    |
+| ------------------------ | ------------------ |
+| Salon Textuel            | Text               |
+| Salon vocal              | Voice              |
+| Catégorie                | Category           |
+| Salon de conférence      | Stage              |
+| Fil de discussion privé  | PrivateThread      |
+| Fil de discussion public | PublicThread       |
+| Forum                    | Forum              |
+| Fil d'annonce            | AnnouncementThread |
+| Salon d'Annonce          | Announcement       |
 
 </details>
 
-## Example(s)
+## Exemple(s)
 
-This will create a new text channel called "aoijs":
+Cela va créer un nouveau salon textuel appelé "aoijs":
 
 ```javascript
 bot.command({
-    name: 'createChannel',
+    name: 'créerSalon',
     code: `
     $createChannel[$guildID;aoijs;Text;false]
   `

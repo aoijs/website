@@ -1,26 +1,26 @@
 ---
 title: '$getObjectProperty'
-description: '$getObjectProperty will return a object property of a given object.'
+description: '$getObjectProperty devolverá una propiedad de un objeto dado.'
 id: getObjectProperty
 ---
 
-`$getObjectProperty` will return a object property of a given object.
+`$getObjectProperty` devolverá una propiedad de un objeto determinado.
 
 ## Uso
 
 ```php
-$getObjectProperty[name]
+$getObjectProperty[nombre]
 ```
 
 ## Parámetros
 
-| Campo  | Tipo   | Parámetros                   | Requerido |
-| ------ | ------ | ---------------------------- |:---------:|
-| nombre | string | Name of the object property. | verdadera |
+| Campo  | Tipo   | Parámetros                  | Requerido |
+| ------ | ------ | --------------------------- |:---------:|
+| nombre | string | Nombre del objeto a buscar. | verdadera |
 
 ## Ejemplo(s)
 
-This will return the object property of "hello" created in `$createObject`:
+Esto devolverá el objeto creado en `$createObject`:
 
 ```javascript
 bot.command({

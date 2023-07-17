@@ -1,34 +1,34 @@
 ---
 title: '$editIn'
-description: '$editIn will edit a message after a given time.'
+description: '$editIn modifiera un message après un temps donné.'
 id: editIn
 ---
 
-`$editIn` will edit a message after a given time.
+`$editIn` modifiera un message après un temps donné.
 
-## Usage
+## Utilisation
 
 ```php
-$editIn[time;...content]
+$editIn[temps;...contenu]
 ```
 
-## Parameters
+## Paramètres
 
-| Field   | Type           | Description                                     | Required |
-| ------- | -------------- | ----------------------------------------------- |:--------:|
-| time    | string, number | After how much time the message will be edited. |   true   |
-| content | string         | What the new content of the message should be.  |   true   |
+| Champ   | Type                | Description                                      | Obligatoire |
+| ------- | ------------------- | ------------------------------------------------ |:-----------:|
+| temps   | chaîne, nombre      | Après combien de temps le message sera édité.    |    vrai     |
+| contenu | chaîne de caractère | Quel devrait être le nouveau contenu du message. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
-This will edit the sent message after five seconds:
+Ceci va modifier le message envoyé après cinq secondes :
 
 ```javascript
 bot.command({
     name: 'editIn',
     code: `
-  $editIn[5s;aoi.js is great, don't you agree?;Yes, I do!]
-  I'll edit this message in 5 seconds!
+  $editIn[5s;aoi.js est génial, n'est-ce pas ?;Oui, je suis d'accord !]
+  Je vais éditer ce message dans 5 secondes!
   `
 });
 ```

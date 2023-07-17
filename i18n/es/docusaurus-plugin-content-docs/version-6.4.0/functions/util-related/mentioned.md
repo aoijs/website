@@ -1,10 +1,10 @@
 ---
 title: '$mentioned'
-description: '$mentioned will return the ID of an user of the mention.'
+description: '$mentioned devolverá el ID de un usuario de la mención.'
 id: mentioned
 ---
 
-`$mentioned` will return the ID of an user of the mention.
+`$mentioned` devolverá el ID de un usuario de la mención.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $mentioned[index;returnSelf?]
 
 ## Parámetros
 
-| Campo       | Tipo    | Parámetros                                    | Requerido |
-| ----------- | ------- | --------------------------------------------- |:---------:|
-| índice      | número  | The index of the argument.                    | verdadero |
-| returnSelf? | boolean | Return the author's ID if user was not found. |    no     |
+| Campo         | Tipo    | Parámetros                                                | Requerido |
+| ------------- | ------- | --------------------------------------------------------- |:---------:|
+| índice        | número  | El índice del argumento.                                  | verdadero |
+| ¿volver a Sí? | boolean | Devuelve el ID del autor si el usuario no fue encontrado. |    no     |
 
 ## Ejemplo(s)
 
-This will return the ID of the **first** mention if you attempt to mention someone in this command, or else it will return your ID:
+Esto devolverá la ID de la **primera** mención si intenta mencionar a alguien en este comando, o de lo contrario devuelve tu ID:
 
 ```javascript
 bot.command({

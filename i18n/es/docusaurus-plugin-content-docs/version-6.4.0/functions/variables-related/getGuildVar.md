@@ -1,10 +1,10 @@
 ---
 title: '$getGuildVar'
-description: '$getGuildVar will return the value of a given guild variable.'
+description: '$getGuildVar devolverá el valor de una variable de guild determinada.'
 id: getGuildVar
 ---
 
-`$getGuildVar` will return the value of a given guild variable.
+`$getGuildVar` devolverá el valor de una variable de gremio.
 
 ## Uso
 
@@ -14,15 +14,15 @@ $getGuildVar[varname;guildID?;table?]
 
 ## Parámetros
 
-| Campo       | Tipo     | Parámetros      | Requerido |
-| ----------- | -------- | --------------- |:---------:|
-| varname     | consulta | Variable name.  | verdadero |
-| servidorID? | entero   | ID del gremio.  |    no     |
-| table?      | string   | Variable table. |   falso   |
+| Campo       | Tipo     | Parámetros       | Requerido |
+| ----------- | -------- | ---------------- |:---------:|
+| varname     | consulta | Nombre variable. | verdadero |
+| servidorID? | entero   | ID del gremio.   |    no     |
+| tabla?      | string   | Tabla variable.  |   falso   |
 
 ## Ejemplo(s)
 
-This will return the value of a variable called "Example":
+Esto devolverá el valor de una variable llamada "Ejemplo":
 
 ```javascript
 bot.command({

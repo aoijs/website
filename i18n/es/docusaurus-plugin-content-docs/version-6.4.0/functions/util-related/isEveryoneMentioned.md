@@ -1,10 +1,10 @@
 ---
 title: '$isEveryoneMentioned'
-description: '$isEveryoneMentioned will check if everyone or here is mentioned.'
+description: '$isEveryoneMentioned comprobará si se menciona a todos o aquí.'
 id: isEveryoneMentioned
 ---
 
-`$isEveryoneMentioned` will check if everyone or here is mentioned.
+`$isEveryoneMentioned` comprobará si se menciona a todos o aquí.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $isEveryoneMentioned
 
 ## Ejemplo(s)
 
-This will check if you mentioned `@here` or `@everyone`:
+Esto comprobará si mencionaste `@here` o `@everyone`:
 
 ```javascript
 bot.command({
-    name: 'isEveryoneMentioned',
+    nombre: 'isEveryoneMtioned',
     code: `
-  You did not mention @ everyone!
+  ¡No mencionaste a todos!
   $onlyIf[$isEveryoneMentioned==false;You tried to mention @ everyone!]
   `
 });

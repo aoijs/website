@@ -1,12 +1,12 @@
 ---
 title: '$arrayConcat'
-description: $arrayConcat concatenará varios arrays.
+description: <code>$arrayConcat</code> concatenará varios arrays.
 id: arrayConcat
 ---
 
 `$arrayConcat` concatenará varios arreglos.
 
-## Uso
+## Modo de Uso
 
 ```php
 $arrayConcat[separador;...arrays]

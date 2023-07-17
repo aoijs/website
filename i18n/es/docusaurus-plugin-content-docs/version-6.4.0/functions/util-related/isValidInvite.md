@@ -1,10 +1,10 @@
 ---
 title: '$isValidInvite'
-description: '$isValidInvite will check if the given invite is valid.'
+description: '$isValidInvite comprobará si la invitación dada es válida.'
 id: isValidInvite
 ---
 
-`$isValidInvite` will check if the given invite is valid.
+`$isValidInvite` comprobará si la invitación dada es válida.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $isValidInvite[inviteResolver]
 
 ## Parámetros
 
-| Campo          | Tipo   | Parámetros         | Requerido |
-| -------------- | ------ | ------------------ |:---------:|
-| inviteResolver | string | Guild invite link. | verdadera |
+| Campo               | Tipo   | Parámetros                      | Requerido |
+| ------------------- | ------ | ------------------------------- |:---------:|
+| Resolver invitación | string | Enlace de invitación al gremio. | verdadera |
 
 ## Ejemplo(s)
 
-This will return `true` as `https://discord.gg/aoi-js-server-akarui-development-team-773352845738115102` is an valid invite:
+Esto devolverá `verdadero` como `https://discord.gg/aoi-js-server-akarui-development-team-773352845738115102` es una invitación válida:
 
 ```javascript
 bot.command({

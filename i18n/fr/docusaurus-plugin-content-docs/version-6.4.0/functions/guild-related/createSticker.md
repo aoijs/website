@@ -1,38 +1,38 @@
 ---
 title: '$createSticker'
-description: '$createSticker will create a sticker.'
+description: '$createSticker créera un autocollant.'
 id: createSticker
 ---
 
-`$createSticker` will create a sticker.
+`$createSticker` créera un autocollant.
 
-## Usage
+## Utilisation
 
 ```php
-$createSticker[guildID;URL;name;returnSticker?;tags;description;reason]
+$createSticker[IDserveur;URL;nom;renvoyerAutocollant?;tags;description?;raison?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field          | Type    | Description                                                                                         | Required |
-| -------------- | ------- | --------------------------------------------------------------------------------------------------- |:--------:|
-| guildID        | integer | Guild ID of where the sticker will be created in.                                                   |   true   |
-| URL            | string  | Image URL (**png only**).                                                                           |   true   |
-| name           | string  | The sticker name.                                                                                   |   true   |
-| returnSticker? | boolean | Return the sticker after its creation. <br /> 1. **true** <br /> 2. **false** (default) |  false   |
-| tags?          | string  | Sticker tags.                                                                                       |  false   |
-| description?   | string  | The description of the sticker.                                                                     |  false   |
-| reason?        | string  | Reason that will be displayed in the guild's audit logs.                                            |  false   |
+| Champ                | Type                 | Description                                                                                              | Obligatoire |
+| -------------------- | -------------------- | -------------------------------------------------------------------------------------------------------- |:-----------:|
+| IDserveur            | entier               | ID du serveur où l'autocollant sera créé.                                                                |    vrai     |
+| URL                  | chaine de caractères | Lien d'une image (**format png seulement**).                                                             |    vrai     |
+| nom                  | chaine de caractères | Le nom de l'autocollant.                                                                                 |    vrai     |
+| renvoyerAutocollant? | booléen              | Renvoie l'autocollant après sa création. <br /> 1. **true** <br /> 2. **false** (par défaut) |    faux     |
+| tags?                | chaine de caractères | Tags de l'autocollant.                                                                                   |    faux     |
+| description?         | chaîne de caractères | La description de l'autocollant.                                                                         |    faux     |
+| raison?              | chaîne de caractères | Raison qui sera affichée dans les logs du serveur.                                                       |    faux     |
 
-## Example(s)
+## Exemple(s)
 
-This will create a sticker called `Imagine`:
+Cela va créer un autocollant appelé `Imagine`:
 
 ```javascript
 bot.command({
-    name: 'createSticker',
+    name: 'créerAutocollant',
     code: `
-  $createSticker[$guildID;https://cdn.discordapp.com/attachments/1061712111052521493/1066397675278323734/692445926480150611.png;Imagine;true;money;Random sticker;Testing.]
+  $createSticker[$guildID;https://cdn.discordapp.com/attachments/1061712111052521493/1066397675278323734/692445926480150611.png;Imagine;true;monnaie;Autocollant aléatoire;Test.]
   `
 });
 ```

@@ -1,27 +1,27 @@
 ---
 title: '$editTextSplitElement'
-description: '$editTextSplitElement will edit a specific text split element.'
+description: '$editTextSplitElement editará un elemento de división de texto específico.'
 id: editTextSplitElement
 ---
 
-`$editTextSplitElement` will edit a specific text split element.
+`$editTextSplitElement` editará un elemento específico de división de texto.
 
 ## Uso
 
 ```php
-$editTextSplitElement[index;text]
+$editTextSplitElement[indice;texto]
 ```
 
 ## Parámetros
 
-| Campo  | Tipo     | Parámetros                       | Requerido |
-| ------ | -------- | -------------------------------- |:---------:|
-| índice | consulta | Index of the text split element. | verdadero |
-| text   | consulta | New text split element.          | verdadero |
+| Campo  | Tipo     | Parámetros                             | Requerido |
+| ------ | -------- | -------------------------------------- |:---------:|
+| índice | consulta | Índice del elemento dividido en texto. | verdadero |
+| text   | consulta | Nuevo elemento dividido en texto.      | verdadero |
 
 ## Ejemplo(s)
 
-This will edit the 3rd text split element and change it to "Goodbye":
+Esto editará el elemento dividido del tercer texto y lo cambiará a "Bien":
 
 ```javascript
 bot.command({

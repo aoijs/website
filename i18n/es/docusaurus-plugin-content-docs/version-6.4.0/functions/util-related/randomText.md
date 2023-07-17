@@ -1,10 +1,10 @@
 ---
 title: '$randomText'
-description: '$randomText will return a random word out of the given query'
+description: '$randomText retornará una palabra al azar de la consulta dada'
 id: randomText
 ---
 
-`$randomText` will return a random word out of the given query
+`$randomText` retornará una palabra aleatoria de la consulta dada
 
 ## Uso
 
@@ -14,13 +14,13 @@ $randomText[text;text;...]
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros                                                  | Requerido |
-| ----- | ------ | ----------------------------------------------------------- |:---------:|
-| text  | string | Any words/sentences/letters you want to be chosen randomly. | verdadera |
+| Campo | Tipo   | Parámetros                                                        | Requerido |
+| ----- | ------ | ----------------------------------------------------------------- |:---------:|
+| text  | string | Cualquier palabra/frase/letras que quieras que se elijan al azar. | verdadera |
 
 ## Ejemplo(s)
 
-This will return a random text out of `Hello, Bye, Goodnight, See you`:
+Esto devolverá un texto aleatorio de `Hola, Bye, Goodnight, See you`:
 
 ```javascript
 bot.command({

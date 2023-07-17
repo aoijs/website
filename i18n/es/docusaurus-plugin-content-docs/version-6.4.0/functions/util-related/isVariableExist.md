@@ -1,10 +1,10 @@
 ---
 title: '$isVariableExist'
-description: '$isVariableExist checks if a given variable exists in a given table.'
+description: '$isVariableExist comprueba si existe una variable dada en una tabla determinada.'
 id: isVariableExist
 ---
 
-`$isVariableExist` checks if a given variable exists in a given table.
+`$isVariableExist` comprueba si existe una variable dada en una tabla determinada.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $isVariableExist[variable;table?]
 
 ## Parámetros
 
-| Campo    | Tipo     | Parámetros         | Requerido |
-| -------- | -------- | ------------------ |:---------:|
-| variable | consulta | The variable name. | verdadero |
-| table?   | consulta | The table name.    |    no     |
+| Campo    | Tipo     | Parámetros             | Requerido |
+| -------- | -------- | ---------------------- |:---------:|
+| variable | consulta | El nombre de variable. | verdadero |
+| tabla?   | consulta | El nombre de la tabla. |    no     |
 
 ## Ejemplo(s)
 
-This will either true or false depending on if a variable called `Example` exists:
+Esto será verdadero o falso dependiendo de si existe una variable llamada `Ejemplo`:
 
 ```javascript
 bot.command({

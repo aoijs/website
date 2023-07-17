@@ -1,10 +1,10 @@
 ---
 title: '$endelseif'
-description: '$endelseif is used to end an elseif statement.'
+description: '$endelseif se usa para finalizar una instrucción elseif.'
 id: endelseif
 ---
 
-`$endelseif` is used to end an elseif statement.
+`$endelseif` se usa para finalizar una instrucción elseif.
 
 ## Uso
 
@@ -12,17 +12,17 @@ id: endelseif
 $endelseif
 ```
 
-:::warning Deprecation
+:::warning decrecación
 
 
-`$if: "old"` is deprecated and should no longer be used as it will be removed in the future.
+`$if: "old"` está obsoleto y ya no debería utilizarse ya que se eliminará en el futuro.
 
 :::
 
 
 ## Ejemplo(s)
 
-Example usage of `$if: old` (will return "Hello" when the condition is true):
+Ejemplo de uso de `$if: old` (devolverá "Hello" cuando la condición sea verdadera):
 
 ```javascript
 bot.command({

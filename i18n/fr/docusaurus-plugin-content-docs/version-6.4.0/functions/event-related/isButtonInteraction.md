@@ -1,12 +1,12 @@
 ---
 title: '$isButtonInteraction'
-description: '$isButtonInteraction will return either true or false depending on the type of the interaction.'
+description: '$isButtonInteraction renverra soit true, soit false, en fonction du type d''interaction.'
 id: isButtonInteraction
 ---
 
-`$isButtonInteraction` will return either true or false depending on the type of interaction.
+`$isButtonInteraction` renverra soit true, soit false, en fonction du type d'interaction.
 
-## Usage
+## Utilisation
 
 ```php
 $isButtonInteraction

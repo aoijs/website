@@ -1,10 +1,10 @@
 ---
 title: '$messageExists'
-description: '$messageExists will check if a specific message exists.'
+description: '$messageExists comprobará si existe un mensaje específico.'
 id: messageExists
 ---
 
-`$messageExists` will check if a specific message exists.
+`$messageExists` verificará si existe un mensaje específico.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $messageExists[messageID;channelID?]
 
 ## Parámetros
 
-| Campo         | Tipo   | Parámetros                                  | Requerido |
-| ------------- | ------ | ------------------------------------------- | --------- |
-| ID de mensaje | entero | the id of the message                       | verdadero |
-| canalID?      | entero | the channel id where the message is located | no        |
+| Campo         | Tipo   | Parámetros                                    | Requerido |
+| ------------- | ------ | --------------------------------------------- | --------- |
+| ID de mensaje | entero | el id del mensaje                             | verdadero |
+| canalID?      | entero | el id del canal donde se encuentra el mensaje | no        |
 
 ## Ejemplo(s)
 
-This will return `false` as the message doesn't exist in the given channel:
+Esto devolverá `falso` ya que el mensaje no existe en el canal dado:
 
 ```javascript
 bot.command({

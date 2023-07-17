@@ -1,22 +1,22 @@
 ---
 title: '$clientToken'
-description: '$clientToken will return the client''s token.'
+description: '$clientToken retournera le token du client.'
 id: clientToken
 ---
 
-`$clientToken` will return the client's token.
+`$clientToken` retournera le token du client.
 
-## Usage
+## Utilisation
 
 ```php
 $clientToken
 ```
 
-> ** ⚠ You should never share your Discord Bot Token with anyone.**
+> ** ⚠️ Vous ne devriez jamais partager votre token de bot Discord avec quiconque.**
 
-## Example(s)
+## Exemple(s)
 
-This will return the client's Token:
+Ceci retournera le token du client :
 
 ```javascript
 bot.command({

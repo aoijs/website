@@ -1,33 +1,33 @@
 ---
 title: '$deleteArray'
-description: '$deleteArray will delete a previously created array.'
+description: '$deleteArray supprimera un tableau précédemment créé.'
 id: deleteArray
 ---
 
-`$deleteArray` will delete a previously created array.
+`$deleteArray` supprimera un tableau précédemment créé.
 
-## Usage
+## Utilisation
 
 ```php
-$deleteArray[name]
+$deleteArray[nom]
 ```
 
-## Parameters
+## Paramètres
 
-| Field | Type   | Description | Required |
-| ----- | ------ | ----------- |:--------:|
-| name  | string | Array name. |   true   |
+| Champ | Type                 | Description     | Obligatoire |
+| ----- | -------------------- | --------------- |:-----------:|
+| nom   | chaîne de caractères | Nom du tableau. |    vrai     |
 
-## Example(s)
+## Exemple(s)
 
-This will delete the array "array":
+Ceci supprimera le tableau "tableau" :
 
 ```javascript
 bot.command({
     name: "deleteArray",
     code: `
-  $deleteArray[array]
-  $createArray[array;Hello;This;Is;Great]
+  $deleteArray[tableau]
+  $createArray[tableau;Bonjour;ceci;est;incroyable]
   `
 });
 ```

@@ -1,10 +1,10 @@
 ---
 title: '$stringStartsWith'
-description: '$stringStartsWith will check if the given argument starts with something specific.'
+description: '$stringStartsWith comprobará si el argumento dado comienza con algo específico.'
 id: stringStartsWith
 ---
 
-`$stringStartsWith` will check if the given argument starts with something specific.
+`$stringStartsWith` comprobará si el argumento dado comienza con algo específico.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $stringStartsWith[text;check]
 
 ## Parámetros
 
-| Campo | Tipo     | Parámetros                                                               | Requerido |
-| ----- | -------- | ------------------------------------------------------------------------ |:---------:|
-| text  | consulta | The text that will be checked.                                           | verdadero |
-| check | consulta | The argument that will check if the text starts with something specific. | verdadero |
+| Campo     | Tipo     | Parámetros                                                            | Requerido |
+| --------- | -------- | --------------------------------------------------------------------- |:---------:|
+| text      | consulta | El texto que se comprobará.                                           | verdadero |
+| comprobar | consulta | El argumento que comprobará si el texto comienza con algo específico. | verdadero |
 
 ## Ejemplo(s)
 
-This will return `true` as `aoi.js` starts with `aoi`:
+Esto devolverá `verdadero` como `aoi.js` comienza con `aoi`:
 
 ```javascript
 bot.command({

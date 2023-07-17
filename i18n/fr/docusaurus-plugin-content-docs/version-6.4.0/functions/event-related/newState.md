@@ -1,19 +1,19 @@
 ---
 title: '$newState'
-description: '$newState holds data for the user voice state after the update (voiceStateUpdate event).'
+description: '$newState conserve les données de l''état vocal de l''utilisateur après la mise à jour (événement VoiceStateUpdate).'
 id: newState
 ---
 
-`$newState` holds data for the user voice state after the update (voiceStateUpdate event).
+`$newState` conserve les données de l'état vocal de l'utilisateur après la mise à jour (événement VoiceStateUpdate).
 
-## Usage
+## Utilisation
 
 ```php
 $newState[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- |:--------:|
-| option | string | Option to retrieve. |   true   |
+| Champ  | Type                 | Description         | Obligatoire |
+| ------ | -------------------- | ------------------- |:-----------:|
+| option | chaîne de caractères | Option à récupérer. |    vrai     |

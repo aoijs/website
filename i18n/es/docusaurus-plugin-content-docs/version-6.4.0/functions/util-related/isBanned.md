@@ -1,10 +1,10 @@
 ---
 title: '$isBanned'
-description: '$isBanned checks if a given user is banned in a specific guild.'
+description: '$isBanned comprueba si un usuario dado está baneado en un gremio específico.'
 id: isBanned
 ---
 
-`$isBanned` checks if a given user is banned in a specific guild.
+`$isBanned` comprueba si un usuario determinado está baneado en un gremio específico.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $isBanned[guildID;userID]
 
 ## Parámetros
 
-| Campo      | Tipo   | Parámetros                                                    | Requerido |
-| ---------- | ------ | ------------------------------------------------------------- |:---------:|
-| servidorID | entero | ID of the guild where to check if the user is banned or not.  | verdadero |
-| usarioID   | entero | ID of the user that will be checked if they're banned or not. | verdadero |
+| Campo      | Tipo   | Parámetros                                                      | Requerido |
+| ---------- | ------ | --------------------------------------------------------------- |:---------:|
+| servidorID | entero | ID de la guild donde comprobar si el usuario está baneado o no. | verdadero |
+| usarioID   | entero | ID del usuario que se comprobará si está baneado o no.          | verdadero |
 
 ## Ejemplo(s)
 
-This will return `false` as you're not banned in this guild:
+Esto devolverá `falso` ya que no estás baneado en este gremio:
 
 ```javascript
 bot.command({

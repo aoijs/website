@@ -1,10 +1,10 @@
 ---
 title: '$resetGuildVar'
-description: '$resetGuildVar will set a given guild variable to its default value.'
+description: '$resetGuildVar establecerá una variable de guild determinada a su valor predeterminado.'
 id: resetGuildVar
 ---
 
-`$resetGuildVar` will set a given guild variable to its default value.
+`$resetGuildVar` establecerá una variable del gremio a su valor predeterminado.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $resetGuildVar[varname;table?]
 
 ## Parámetros
 
-| Campo   | Tipo     | Parámetros      | Requerido |
-| ------- | -------- | --------------- |:---------:|
-| varname | consulta | Variable name.  | verdadero |
-| table?  | consulta | Variable table. |    no     |
+| Campo   | Tipo     | Parámetros       | Requerido |
+| ------- | -------- | ---------------- |:---------:|
+| varname | consulta | Nombre variable. | verdadero |
+| tabla?  | consulta | Tabla variable.  |    no     |
 
 ## Ejemplo(s)
 
-This will reset a variable called "Example":
+Esto restablecerá una variable llamada "Ejemplo":
 
 ```javascript
 bot.command({

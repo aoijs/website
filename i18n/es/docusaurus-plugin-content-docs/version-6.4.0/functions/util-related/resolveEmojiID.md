@@ -1,10 +1,10 @@
 ---
 title: '$resolveEmojiID'
-description: '$resolveEmojiID will resolve a certain emoji.'
+description: '$resolveEmojiID resolverá un cierto emoji.'
 id: resolveEmojiID
 ---
 
-`$resolveEmojiID` will resolve a certain emoji.
+`$resolveEmojiID` resolverá un cierto emoji.
 
 ## Uso
 
@@ -14,13 +14,13 @@ $resolveEmojiID[emojiResolver]
 
 ## Parámetros
 
-| Campo         | Tipo   | Parámetros            | Requerido |
-| ------------- | ------ | --------------------- |:---------:|
-| emojiResolver | string | Emoji name or string. | verdadera |
+| Campo                | Tipo   | Parámetros                | Requerido |
+| -------------------- | ------ | ------------------------- |:---------:|
+| resolutor de emojios | string | Nombre o cadena de Emoji. | verdadera |
 
 ## Ejemplo(s)
 
-This will return `<:LerefMoney:1003365344724910191>`:
+Esto devolverá `<:LerefMoney:1003365344724910191>`:
 
 ```javascript
 bot.command({

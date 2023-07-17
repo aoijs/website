@@ -1,37 +1,37 @@
 ---
 title: '$cooldown'
-description: '$cooldown will set a cooldown for the author of the command after being used.'
+description: '$cooldown establecerá un tiempo de reutilización para el autor del comando después de ser usado.'
 id: cooldown
 ---
 
-`$cooldown` will set a user-based cooldown.
+`$cooldown` establecerá un tiempo de espera basado en el usuario.
 
 ## Uso
 
 ```php
-$cooldown[time;errorMessage
+$cooldown[tiempo;mensaje de error
 ]
 ```
 
-* You are able to retrieve the remaining cooldown in the `$cooldown` function by using **`%time%`** or any of the following below.
-    * `%time%`, `%year%`, `%month%`, `%week%`, `%day%`, `%hour%`, `%min%`, `%sec%`, `%ms%`, `%fullTime%`
+* Puedes recuperar el tiempo de enfriamiento restante en la función `$cooldown` usando **`%time%`** o cualquiera de los siguientes a continuación.
+    * `%time%`, `%year%`, `%month%`, `%week%`, `%day%`, `%hour%`, `%min%`, `%sec%` `%ms%`, `%fullTime%`
 
 ## Parámetros
 
-| Campo        | Tipo     | Parámetros                                                  | Requerido |
-| ------------ | -------- | ----------------------------------------------------------- |:---------:|
-| tiempo       | consulta | The duration of the cooldown.                               | verdadero |
-| errorMessage | consulta | Error message when there's remaining time for the cooldown. | verdadero |
+| Campo            | Tipo     | Parámetros                                                           | Requerido |
+| ---------------- | -------- | -------------------------------------------------------------------- |:---------:|
+| tiempo           | consulta | La duración del enfriamiento.                                        | verdadero |
+| mensaje de error | consulta | Mensaje de error cuando queda tiempo para el tiempo de enfriamiento. | verdadero |
 
 ## Ejemplo(s)
 
-This will set a cooldown for a command which applies to the user only and returns the remaining cooldown:
+Esto establecerá un tiempo de espera para un comando que sólo se aplica al usuario y devuelve el tiempo de espera restante:
 
 ```javascript
 bot.command({
     name: 'cooldown',
     code: `
-  hello
+  hola
   $cooldown[2m;Please wait %time% to execute this command again.]
   `
 });

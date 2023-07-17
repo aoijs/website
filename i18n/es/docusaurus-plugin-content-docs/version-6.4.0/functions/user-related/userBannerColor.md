@@ -1,26 +1,26 @@
 ---
 title: '$userBannerColor'
-description: '$userBannerColor will return the profile banner color.'
+description: '$userBannerColor devolverá el color del estandarte del perfil.'
 id: userBannerColor
 ---
 
-`$userBannerColor` will return the profile banner color.
+`$userBannerColor` devolverá el color del rol dado.
 
 ## Uso
 
 ```php
-$userBannerColor[userID?]
+$userBannerColor[usuarioID?]
 ```
 
 ## Parámetros
 
-| Campo     | Tipo    | Parámetros         | Requerido |
-| --------- | ------- | ------------------ |:---------:|
-| usarioID? | integer | El ID del usuario. |    no     |
+| Campo     | Tipo   | Parámetros         | Requerido |
+| --------- | ------ | ------------------ |:---------:|
+| usarioID? | entero | El ID del usuario. |   falso   |
 
 ## Ejemplo(s)
 
-This will return your profile banner color (if any):
+Esto devolverá el color de tu banner de perfil (si existe):
 
 ```javascript
 bot.command({

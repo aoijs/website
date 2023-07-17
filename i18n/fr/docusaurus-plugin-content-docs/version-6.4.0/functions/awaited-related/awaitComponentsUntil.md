@@ -1,25 +1,25 @@
 ---
 title: '$awaitComponentsUntil'
-description: '$awaitComponentsUntil awaits message components.'
+description: '$awaitComponentsUntil attend des composants de message.'
 id: awaitComponentsUntil
 ---
 
-`$awaitComponentsUntil` awaits message components.
+`$awaitComponentsUntil` attend des composants de message.
 
-## Usage
+## Utilisation
 
 ```php
-$awaitComponentsUntil[channelID;messageID;userFilter;time;customIDs;commands;errorMsg?;awaitData?]
+$awaitComponentsUntil[IDsalon;IDmessage;filtreUtilisateur;temps;IDsPersonnalisés;commandes;messageD'erreur?;donnéesAttendues?]
 ```
 
-## Parameters
+## Paramètres
 
-| Field      | Type    | Description                                                                                                | Required |
-| ---------- | ------- | ---------------------------------------------------------------------------------------------------------- |:--------:|
-| channelID  | string  | Channel ID.                                                                                                |   true   |
-| messageID  | string  | Message ID.                                                                                                |   true   |
-| userFilter | integer | To what the bot will reply <br /> 1. **everyone** <br /> 2. **specific user ID** - any user ID |   true   |
-| reactions  | string  | Reactions the bot will be listening to, you can separate multiple emojis with a comma ( `,` )              |   true   |
-| commands   | string  | Commands that will be executed, you can separate multiple emojis with a comma ( `,` )                      |   true   |
-| errorMsg?  | string  | Error message when command expires.                                                                        |  false   |
-| awaitData? | string  | Awaited Data.                                                                                              |  false   |
+| Champ             | Type                 | Description                                                                                                                                     | Obligatoire |
+| ----------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |:-----------:|
+| IDsalon           | chaîne de caractères | ID du salon.                                                                                                                                    |    vrai     |
+| IDmessage         | chaîne de caractères | ID du message.                                                                                                                                  |    vrai     |
+| filtreUtilisateur | entier               | À ce que le bot répondra <br /> 1. **everyone** <br /> 2. **Identifiant spécifique d'utilisateur** - tout identifiant d'utilisateur |    vrai     |
+| réactions         | chaîne de caractères | Les réactions que le bot écoutera, vous pouvez séparer plusieurs émoticônes par une virgule ( `,`)                                              |    vrai     |
+| commandes         | chaîne de caractères | Commandes qui seront exécutées, vous pouvez séparer plusieurs commandes par une virgule ( `,`)                                                  |    vrai     |
+| messageD'erreur?  | chaîne de caractères | Message d'erreur lorsque la commande expire.                                                                                                    |    faux     |
+| donnéesAttendues? | chaîne de caractères | Données attendues.                                                                                                                              |    faux     |

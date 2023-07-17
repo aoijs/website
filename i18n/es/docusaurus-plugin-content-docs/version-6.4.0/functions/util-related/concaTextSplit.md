@@ -1,26 +1,26 @@
 ---
-title: '$concatTextSplit'
-description: '$concatTextSplit will concatenates the text with the given separator.'
-id: concatTextSplit
+title: $concaTextSplit
+description: '$concatTextSplit concatenará el texto con el separador dado.'
+id: concaTextSplit
 ---
 
-`$concatTextSplit` will concatenates the text with the given separator.
+`$concatTextSplit` concatena el texto con el separador dado.
 
 ## Uso
 
 ```php
-$concatTextSplit[...text]
+$concatTextSplit[...texto]
 ```
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros                                         | Requerido |
-| ----- | ------ | -------------------------------------------------- |:---------:|
-| text  | string | Text to concat to the existing textSplit elements. | verdadera |
+| Campo | Tipo   | Parámetros                                                | Requerido |
+| ----- | ------ | --------------------------------------------------------- |:---------:|
+| texto | cadena | Texto a concatenar con los elementos textSdid existentes. | verdadera |
 
 ## Ejemplo(s)
 
-This will add `Hello, Bye` to the already used `$textSplit` argument:
+Esto añadirá `Hello, Bye` al argumento ya utilizado `$textSplit`:
 
 ```javascript
 bot.command({

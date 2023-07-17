@@ -1,10 +1,10 @@
 ---
 title: '$let'
-description: '$let is used for storing temporary variables.'
+description: '$let se utiliza para almacenar variables temporales.'
 id: let
 ---
 
-`$let` will store temporary variables which can be retrieved by `$get`.
+`$let` almacenará variables temporales que pueden ser recuperadas por `$get`.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $let[varname;value]
 
 ## Parámetros
 
-| Campo   | Tipo     | Parámetros                                        | Requerido |
-| ------- | -------- | ------------------------------------------------- |:---------:|
-| varname | consulta | Name of the temporary variable.                   | verdadero |
-| value   | consulta | Value of the temporary variable you want to save. | verdadero |
+| Campo   | Tipo     | Parámetros                                       | Requerido |
+| ------- | -------- | ------------------------------------------------ |:---------:|
+| varname | consulta | Nombre de la variable temporal.                  | verdadero |
+| valor   | consulta | Valor de la variable temporal que desea guardar. | verdadero |
 
 ## Ejemplo(s)
 
-This will return `Ayaka` from `$get`:
+Esto devolverá `Ayaka` de `$get`:
 
 ```javascript
 bot.command({

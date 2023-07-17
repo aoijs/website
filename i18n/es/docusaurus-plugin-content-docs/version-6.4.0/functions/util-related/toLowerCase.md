@@ -1,10 +1,10 @@
 ---
 title: '$toLowerCase'
-description: '$toLowerCase will change the given text from uppercase to lowercase.'
+description: '$toLowerCase cambiará el texto dado de mayúsculas a minúsculas.'
 id: toLowerCase
 ---
 
-`$toLowerCase` will change the given text from uppercase to lowercase.
+`$toLowerCase` cambiará el texto dado de mayúsculas a minúsculas.
 
 ## Uso
 
@@ -16,11 +16,11 @@ $toLowerCase[text]
 
 | Campo | Tipo   | Parámetros                       | Requerido |
 | ----- | ------ | -------------------------------- |:---------:|
-| text  | string | The text to change to lowercase. | verdadera |
+| text  | string | El texto a cambiar a minúsculas. | verdadera |
 
 ## Ejemplo(s)
 
-This will everything given to lowercase, in this case it would return `aoi.js is great.`:
+Esto hará todo lo dado a minúsculas, en este caso devolvería `aoi.js es genial.`:
 
 ```javascript
 bot.command({

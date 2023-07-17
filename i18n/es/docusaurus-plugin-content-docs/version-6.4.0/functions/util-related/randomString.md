@@ -1,10 +1,10 @@
 ---
 title: '$randomString'
-description: '$randomString will generate a random string.'
+description: '$randomString generará una cadena aleatoria.'
 id: randomString
 ---
 
-`$randomString` will generate a random string.
+`$randomString` generará una cadena aleatoria.
 
 ## Uso
 
@@ -14,14 +14,14 @@ $randomString[range;diffExec?]
 
 ## Parámetros
 
-| Campo     | Tipo    | Parámetros                            | Requerido |
-| --------- | ------- | ------------------------------------- |:---------:|
-| range     | número  | Range of the random generated string. | verdadero |
-| diffExec? | boolean |                                       |    no     |
+| Campo          | Tipo    | Parámetros                                  | Requerido |
+| -------------- | ------- | ------------------------------------------- |:---------:|
+| range          | número  | Rango de la cadena generada aleatoriamente. | verdadero |
+| ¿Difiere Exec? | boolean |                                             |    no     |
 
 ## Ejemplo(s)
 
-This will return a random string of twenty characters:
+Esto devolverá una cadena aleatoria de veinte caracteres:
 
 ```javascript
 bot.command({

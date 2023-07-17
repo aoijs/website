@@ -1,10 +1,10 @@
 ---
 title: '$randomEmoji'
-description: '$randomEmoji will return a random emoji ID.'
+description: '$randomEmoji devolverá un ID de emoji aleatorio.'
 id: randomEmoji
 ---
 
-`$randomEmoji` will return a random emoji ID.
+`$randomEmoji` devolverá un ID emoji aleatorio.
 
 ## Uso
 
@@ -14,7 +14,7 @@ $randomEmoji
 
 ## Ejemplo(s)
 
-This will return a random emoji ID of your guild:
+Esto devolverá un ID de emoji aleatorio de tu gremio:
 
 ```javascript
 bot.command({

@@ -1,88 +1,88 @@
 ---
 title: '$newChannel'
-description: '$newChannel holds data of the updated channel, used in channel update, delete and create events, or else any data will be empty.'
+description: '$newChannel contient les données du salon mis à jour, utilisées dans les évènements channel update, delete et create, ou sinon toutes les données seront vides.'
 id: newChannel
 ---
 
-`$newChannel` holds data of the updated channel, used in channel update, delete and create events, or else any data will be empty.
+`$newChannel` contient les données du salon mis à jour, utilisées dans les évènements channel update, delete et create, ou sinon toutes les données seront vides.
 
-## Usage
+## Utilisation
 
 ```php
 $newChannel[option]
 ```
 
-## Parameters
+## Paramètres
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- |:--------:|
-| option | string | Option to retrieve. |   true   |
+| Champ  | Type                 | Description         | Obligatoire |
+| ------ | -------------------- | ------------------- |:-----------:|
+| option | chaîne de caractères | Option à récupérer. |    vrai     |
 
 
 ### Options
 
-| Field                      | Type    | Description                                                              |
-| -------------------------- | ------- | ------------------------------------------------------------------------ |
-| name                       | string  | Returns channel name.                                                    |
-| id                         | integer | Returns channel ID.                                                      |
-| createdAt                  | integer | Returns date of when was channel created.                                |
-| createdTimestamp           | integer | Returns the timestamp of when was channel created.                       |
-| defaultAutoArchiveDuration | integer | Returns Default Archive Duration.                                        |
-| deleteable                 | string  | Returns true / false if channel is deleteable.                           |
-| deleted                    | string  | Returns true / false if channel was deleted.                             |
-| guildID                    | integer | Returns guild ID of current guild.                                       |
-| lastMessageContent         | string  | Returns content of last message sent in channel.                         |
-| lastMessageID              | integer | Returns ID of last message sent in channel.                              |
-| lastPinAt                  | integer | Returns date of last pinned message.                                     |
-| lastPinTimestamp           | integer | Returns the timestamp of last pinned message.                            |
-| manageable                 | string  | Returns true / false if channel is managable.                            |
-| nsfw                       | string  | Returns true / false if channel is NSFW.                                 |
-| parentName                 | string  | Returns Category Name.                                                   |
-| parentID                   | integer | Returns Category ID.                                                     |
-| position                   | integer | Returns channel position.                                                |
-| slowmode                   | integer | Returns channel slowmode. (if there are any)                             |
-| topic                      | string  | Returns channel topic.                                                   |
-| type                       | string  | Returns channel type.                                                    |
-| viewable                   | string  | Returns true / false if channel is viewable.                             |
-| permsAllowed               | string  | Returns allowed permissions for current channel.                         |
-| permsDenied                | string  | Returns denied permissions for current channel.                          |
-| perms                      | string  | Returns permissions for current channel.                                 |
-| joinable                   | string  | Returns true / false if channel is joinable (only if its voice channel). |
-| userLimit                  | integer | Returns user limit for current (voice) channel.                          |
-| messageCount               | integer | Returns message count of messages sent in current channel.               |
+| Champ                      | Type                 | Description                                                                           |
+| -------------------------- | -------------------- | ------------------------------------------------------------------------------------- |
+| nom                        | chaîne de caractères | Renvoie le nom du salon.                                                              |
+| id                         | entier               | Renvoie l'id du salon.                                                                |
+| createdAt                  | entier               | Renvoie la date de création du salon.                                                 |
+| createdTimestamp           | entier               | Renvoie le timestamp de quand le salon a été créé.                                    |
+| defaultAutoArchiveDuration | entier               | Renvoie la durée de l'archive par défaut.                                             |
+| deleteable                 | chaine de caractères | Renvoie true / false si le salon peut être supprimé.                                  |
+| deleted                    | chaine de caractères | Renvoie true / false si le salon a été supprimé.                                      |
+| guildID                    | entier               | Renvoie l'ID de la guilde actuelle.                                                   |
+| lastMessageContent         | chaîne de caractères | Renvoie le contenu du dernier message envoyé dans le salon.                           |
+| lastMessageID              | entier               | Renvoie l'ID du dernier message envoyé dans le salon.                                 |
+| lastPinAt                  | entier               | Renvoie la date du dernier message épinglé.                                           |
+| lastPinTimestamp           | entier               | Retourne le timestamp du dernier message épinglé.                                     |
+| manageable                 | chaine de caractères | Retourne true / false si le salon est gérable.                                        |
+| nsfw                       | chaine de caractères | Renvoie true / false si le salon est NSFW.                                            |
+| parentName                 | chaine de caractères | Renvoie le nom de la catégorie.                                                       |
+| parentID                   | entier               | Renvoie l'ID de la catégorie.                                                         |
+| position                   | entier               | Renvoie la position du salon.                                                         |
+| slowmode                   | entier               | Renvoie la durée du mode ralenti du salon. (s'il y en a)                              |
+| topic                      | chaine de caractères | Renvoie le sujet du salon.                                                            |
+| type                       | chaine de caractères | Renvoie le type de salon.                                                             |
+| viewable                   | chaine de caractères | Renvoie true / false si le salon est visible.                                         |
+| permsAllowed               | chaine de caractères | Renvoie les permissions autorisées pour le salon actuel.                              |
+| permsDenied                | chaine de caractères | Renvoie les permissions refusées pour le salon actuel.                                |
+| perms                      | chaine de caractères | Renvoie les permissions pour le salon actuel.                                         |
+| joinable                   | chaine de caractères | Renvoie true / false si le canal est rejoignable (seulement si c'est un salon vocal). |
+| userLimit                  | entier               | Renvoie la limite d'utilisateur pour le salon (vocal) actuel.                         |
+| messageCount               | entier               | Renvoie le nombre de messages envoyés dans le salon actuel.                           |
 
-## Example(s)
+## Exemple(s)
 ```js
 bot.channelCreateCommand({
     channel: "channelid",
     code: `
-    New channel has been created!
-- Name: $newChannel[name]
+    Un nouveau salon a été créé!
+- Nom: $newChannel[name]
 - ID: $newChannel[id]
 - <#$newChannel[id]>`
 })
 ```
-- This code will execute when __channel is created__.
+- Ce code s'exécutera quand __un salon est créé__.
 ---
 ```js
 bot.channelDeleteCommand({
     channel: "channelid",
     code: `
-    Channel has been deleted!
-- Name: $oldChannel[name]
+    Un salon a été supprimé!
+- Nom: $oldChannel[name]
 - ID: $oldChannel[id]`
 })
 ```
-- This code will execute when __channel is deleted__.
+- Ce code s'exécutera quand __un salon est supprimé__.
 ---
 ```js
 bot.channelUpdateCommand({
     channel: "channelid",
     code: `
-    Channel has been updated!
-- New name: $newChannel[name]
- - Old name: $oldChannel[name]`
+    Un salon a été mis à jour!
+- Nouveau nom: $newChannel[name]
+ - Ancien nom: $oldChannel[name]`
 })
 ```
-- This code will execute when __channel is updated__.
+- Ce code s'exécutera quand __un salon est mis à jour__.
 ---

@@ -1,29 +1,29 @@
 ---
 title: '$usersBanned'
-description: '$usersBanned will return the banned users of a guild.'
+description: '$usersBanned devolverá los usuarios prohibidos de un gremio.'
 id: usersBanned
 ---
 
-`$usersBanned` will return the banned users of a guild.
+`$usersBanned` devolverá los usuarios prohibidos de un gremio.
 
 ## Uso
 
 ```php
-$usersBanned[guildID?;force?;option?;sep?]
+$usersBanned[servidorID?;fuerza?;opcion?;sep?]
 ```
 
 ## Parámetros
 
-| Campo       | Tipo    | Parámetros                                                                                                               | Requerido |
-| ----------- | ------- | ------------------------------------------------------------------------------------------------------------------------ |:---------:|
-| servidorID? | entero  | The guild ID.                                                                                                            |    no     |
-| force?      | boolean | 1. **true** <br /> 2. **false** (por defecto)                                                                      |    no     |
-| opción?     | string  | How to return the banned users <br /> 1. **id** (default) <br /> 1. **username** <br /> 1. **mention** |   falso   |
-| sep?        | string  | Separator to separate multiple returned values.                                                                          |   falso   |
+| Campo       | Tipo     | Parámetros                                                                                                                          | Requerido |
+| ----------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------- |:---------:|
+| servidorID? | entero   | El ID del servidor.                                                                                                                 |   falso   |
+| fuerza?     | booleano | 1. **true** <br /> 2. **false** (por defecto)                                                                                 |   falso   |
+| opción?     | string   | Cómo devolver a los usuarios baneados <br /> 1. **id** (por defecto) <br /> 1. **username** <br /> 1. **mention** |   falso   |
+| sep?        | string   | Separador para separar varios valores devueltos.                                                                                    |   falso   |
 
 ## Ejemplo(s)
 
-This will return the banned users of your guild as mention in an embed:
+Esto devolverá a los usuarios baneados de tu gremio como se menciona en un embebido:
 
 ```javascript
 bot.command({

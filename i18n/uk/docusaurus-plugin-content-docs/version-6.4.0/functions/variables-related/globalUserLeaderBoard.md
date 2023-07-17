@@ -1,10 +1,10 @@
 ---
 title: '$globalUserLeaderBoard'
-description: '$globalUserLeaderBoard will return a leaderboard of a global user variable.'
+description: '$globalUserLeaderBoard поверне таблицю лідерів глобальної змінної користувача.'
 id: globalUserLeaderBoard
 ---
 
-`$globalUserLeaderBoard` will return a leaderboard of a global user variable.
+`$globalUserLeaderBoard` поверне таблицю лідерів глобальної змінної користувача.
 
 ## Використання
 
@@ -14,32 +14,32 @@ $globalUserLeaderBoard[variable;type?;custom?;list?;page?;table?]
 
 ## Параметри
 
-| Поле     | Тип    | Опис                                                                                                                  | Обов'язковий |
-| -------- | ------ | --------------------------------------------------------------------------------------------------------------------- |:------------:|
-| variable | рядок  | Variable name.                                                                                                        |     так      |
-| тип      | рядок  | In which order it will be returned <br /> 1. **asc** (ascending / default) <br /> 2. **dsc** (descending) |      ні      |
-| custom?  | рядок  | Formatting.                                                                                                           |      ні      |
-| list?    | number | How many to list.                                                                                                     |      ні      |
-| page?    | number | Which page to list.                                                                                                   |      ні      |
-| table?   | рядок  | Variable table.                                                                                                       |      ні      |
+| Поле      | Тип       | Опис                                                                                                                   | Обов'язковий |
+| --------- | --------- | ---------------------------------------------------------------------------------------------------------------------- |:------------:|
+| змінна    | рядок     | Назва змінної.                                                                                                         |     так      |
+| тип       | рядок     | У якому порядку поверне <br /> 1. **** (за зростанням / за замовчуванням) <br /> 2. **dsc** (за спаданням) |      ні      |
+| інші?     | рядок     | Форматування.                                                                                                          |      ні      |
+| список?   | кількість | Скільки перелічити.                                                                                                    |      ні      |
+| сторінка? | кількість | Котра сторінка для відображення.                                                                                       |      ні      |
+| таблиця?  | рядок     | Змінна таблиця.                                                                                                        |      ні      |
 
-| Options        | Returns         |                                         |
-| -------------- | --------------- | --------------------------------------- |
-| **{top}**      | number          | Returns the position of the user.       |
-| **{username}** | рядок           | Returns the username.                   |
-| **{tag}**      | рядок           | Returns the username and discriminator. |
-| **{id}**       | integer         | Returns the user ID.                    |
-| **{value}**    | number, integer | Returns the variable value.             |
+| Опції          | Повернення товару |                                             |
+| -------------- | ----------------- | ------------------------------------------- |
+| **{top}**      | кількість         | Повертає положення користувача.             |
+| **{username}** | рядок             | Повертає ім'я користувача.                  |
+| **{tag}**      | рядок             | Повертає ім'я користувача та дискримінацію. |
+| **{id}**       | ціле              | Повертає ID користувача.                    |
+| **{value}**    | число, ціле       | Повертає значення змінної.                  |
 
 ## Приклад(и)
 
-This will returns a leaderboard of the "Example" variable:
+Це поверне таблицю лідерів змінної "Приклад":
 
 ```javascript
 bot.command({
     name: "globalUserLeaderBoard",
-    code: `
+    код: `
     $globalUserLeaderBoard[Example;asc;{top} - {username} - {value};10;1;main]
-    `
+
 });
 ```

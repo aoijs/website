@@ -1,22 +1,22 @@
 ---
 title: '$map'
-description: '$map will execute awaited commands for given elements.'
+description: '$map ejecutará comandos esperados para elementos dados.'
 id: map
 ---
 
-`$map` will execute awaited commands for given elements.
+`$map` ejecutará comandos esperados para determinados elementos.
 
 ## Uso
 
 ```php
-$map[text;split;awaitedCmds;sep?]
+$map[texto;dividir;Cmds esperados;sep?]
 ```
 
 ## Parámetros
 
-| Campo       | Tipo     | Parámetros                   | Requerido |
-| ----------- | -------- | ---------------------------- |:---------:|
-| text        | consulta | Text.                        | verdadero |
-| split       | consulta |                              | verdadero |
-| awaitedCmds | string   | Awaited Commands to execute. |    sí     |
-| sep?        | string   | Separador.                   |   falso   |
+| Campo          | Tipo     | Parámetros                      | Requerido |
+| -------------- | -------- | ------------------------------- |:---------:|
+| text           | consulta | Text.                           | verdadero |
+| dividir        | cadena   |                                 | verdadero |
+| Cmds esperados | cadena   | Comando esperado para ejecutar. | verdadero |
+| sep?           | cadena   | Separador.                      |   falso   |

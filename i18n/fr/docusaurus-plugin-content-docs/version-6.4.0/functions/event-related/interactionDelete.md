@@ -1,20 +1,20 @@
 ---
 title: '$interactionDelete'
-description: '$interactionDelete will delete a reply of an interaction.'
+description: '$interactionDelete supprimera une réponse d''une interaction.'
 id: interactionDelete
 ---
 
-`$interactionDelete` will delete a reply of an interaction.
+`$interactionDelete` supprimera une réponse d'une interaction.
 
-## Usage
+## Utilisation
 
 ```php
 $interactionDelete
 ```
 
-## Example(s)
+## Exemple(s)
 
-This will delete the interaction after 5 seconds.
+Ceci supprimera le message envoyé après 5 secondes.
 
 ```javascript
 bot.interactionCommand({
@@ -23,7 +23,7 @@ bot.interactionCommand({
     code: `
   $interactionDelete
   $wait[5s]
-  $interactionReply[Hello, World!;;;;everyone;false]
+  $interactionReply[Bonjour, tout le monde!;;;;everyone;false]
   `
 });
 ```

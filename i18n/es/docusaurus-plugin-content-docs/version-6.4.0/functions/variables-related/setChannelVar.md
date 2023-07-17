@@ -1,10 +1,10 @@
 ---
 title: '$setChannelVar'
-description: '$setChannelVar will change the value of a given channel variable.'
+description: '$setChannelVar cambiará el valor de una variable de canal determinada.'
 id: setChannelVar
 ---
 
-`$setChannelVar` will change the value of a given channel variable.
+`$setChannelVar` cambiará el valor de una variable de canal determinada.
 
 ## Uso
 
@@ -14,16 +14,16 @@ $setChannelVar[varname;value;channelID?;table?]
 
 ## Parámetros
 
-| Campo    | Tipo     | Parámetros          | Requerido |
-| -------- | -------- | ------------------- |:---------:|
-| varname  | consulta | Variable name.      | verdadero |
-| value    | consulta | New Variable value. | verdadero |
-| canalID? | entero   | ID del canal.       |   falso   |
-| table?   | string   | Variable table.     |   falso   |
+| Campo    | Tipo     | Parámetros            | Requerido |
+| -------- | -------- | --------------------- |:---------:|
+| varname  | consulta | Nombre variable.      | verdadero |
+| valor    | consulta | Nuevo valor variable. | verdadero |
+| canalID? | entero   | ID del canal.         |   falso   |
+| tabla?   | string   | Tabla variable.       |   falso   |
 
 ## Ejemplo(s)
 
-This will change the value of "Example" to "This is a value":
+Esto cambiará el valor de "Ejemplo" a "Este es un valor":
 
 ```javascript
 bot.command({

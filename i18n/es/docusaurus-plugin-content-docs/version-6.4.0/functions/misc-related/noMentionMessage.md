@@ -1,10 +1,10 @@
 ---
 title: '$noMentionMessage'
-description: '$noMentionMessage will return the part of the message which contains no mention.'
+description: '$noMentionMessage devolverá la parte del mensaje que no contiene mención.'
 id: noMentionMessage
 ---
 
-`$noMentionMessage` will return the part of the message which contains no mention.
+`$noMentionMessage` devolverá la parte del mensaje que no contiene ninguna mención.
 
 ## Uso
 
@@ -14,9 +14,9 @@ $noMentionMessage[args]
 
 ## Parámetros
 
-| Campo | Tipo   | Parámetros        | Requerido |
-| ----- | ------ | ----------------- |:---------:|
-| args? | string | Message position. |    no     |
+| Campo  | Tipo   | Parámetros            | Requerido |
+| ------ | ------ | --------------------- |:---------:|
+| ¿args? | cadena | Posición del mensaje. |   falso   |
 
 ## Ejemplo(s)
 

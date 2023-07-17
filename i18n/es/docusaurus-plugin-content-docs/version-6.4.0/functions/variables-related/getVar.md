@@ -1,10 +1,10 @@
 ---
 title: '$getVar'
-description: '$getVar will return the value of a global variable.'
+description: '$getVar devolverá el valor de una variable global.'
 id: getVar
 ---
 
-`$getVar` will return the value of a global variable
+`$getVar` devolverá el valor de una variable global
 
 ## Uso
 
@@ -14,14 +14,14 @@ $getVar[varname;table?]
 
 ## Parámetros
 
-| Campo   | Tipo     | Parámetros      | Requerido |
-| ------- | -------- | --------------- |:---------:|
-| varname | consulta | Variable name.  | verdadero |
-| table?  | consulta | Variable table. |    no     |
+| Campo   | Tipo     | Parámetros       | Requerido |
+| ------- | -------- | ---------------- |:---------:|
+| varname | consulta | Nombre variable. | verdadero |
+| tabla?  | consulta | Tabla variable.  |    no     |
 
 ## Ejemplo(s)
 
-This will return the value of a variable called "Example":
+Esto devolverá el valor de una variable llamada "Ejemplo":
 
 ```javascript
 bot.command({

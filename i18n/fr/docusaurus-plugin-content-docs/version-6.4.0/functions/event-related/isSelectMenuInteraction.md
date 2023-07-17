@@ -1,12 +1,12 @@
 ---
 title: '$isSelectMenuInteraction'
-description: '$isSelectMenuInteraction will return either true or false depending on the type of the interaction.'
+description: '$isSelectMenuInteraction renverra soit true, soit false, en fonction du type d''interaction.'
 id: isSelectMenuInteraction
 ---
 
-`$isSelectMenuInteraction` will return either true or false depending on the type of interaction.
+`$isSelectMenuInteraction` renverra soit true, soit false, en fonction du type d'interaction.
 
-## Usage
+## Utilisation
 
 ```php
 $isSelectMenuInteraction
