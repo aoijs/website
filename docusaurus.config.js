@@ -45,7 +45,7 @@ module.exports = {
         'Join our <a target="_blank" rel="noopener noreferrer" href="https://aoi.js.org/invite">Discord Server</a> for real-time support!',
       backgroundColor: "#1976d2",
       textColor: "#ffffff",
-      isCloseable: true,
+      isCloseable: false,
     },
     colorMode: {
       defaultMode: "dark",
