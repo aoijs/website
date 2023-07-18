@@ -26,7 +26,7 @@ $modifyRolePerms[guildID;roleID;...perms]
 | `+` | Erlaube einer bestimmten Berechtigung für jemanden oder etwas.   |
 | `/` | Setze eine bestimmte Berechtigung auf den Standardstatus zurück. |
 
-Sie können alle Berechtigungen __[hier](../../guides/Client/2permissionsintents.md)__ finden.
+Sie können alle Berechtigungen __[hier](../../guides/client/2permissionsintents.md)__ finden.
 
 ## Beispiel(e)
 

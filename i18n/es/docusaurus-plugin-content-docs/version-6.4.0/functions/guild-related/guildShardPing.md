@@ -18,7 +18,7 @@ $guildShardPing[identificación del fragmento?]
 | ----------------------------- | ------- | ---------------- |:---------:|
 | identificación del fragmento? | integer | El fragmento ID. |    no     |
 
-**Tenga en cuenta que esto no funcionará sin fragmentar. Si no estás seguro, revisa la [guía de fragmentación](../../guides/Client/6sharding.md).**
+**Tenga en cuenta que esto no funcionará sin fragmentar. Si no estás seguro, revisa la [guía de fragmentación](../../guides/client/6sharding.md).**
 
 ## Ejemplo(s)
 

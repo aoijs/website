@@ -20,7 +20,7 @@ $guildShard[option?;sep?;shardId]
 | sep?    | string     | Separator um mehrere zurückgegebene Werte zu trennen.                                           |    falsch    |
 | spardId | ganze Zahl | Die Shard-ID.                                                                                   |     wahr     |
 
-#### Beachten Sie, dass dies nicht ohne sharding funktioniert. Wenn Sie sich nicht sicher sind, lesen Sie die [Freigabeanleitung](../../guides/Client/6sharding.md).
+#### Beachten Sie, dass dies nicht ohne sharding funktioniert. Wenn Sie sich nicht sicher sind, lesen Sie die [Freigabeanleitung](../../guides/client/6sharding.md).
 
 ## Beispiel(e)
 
