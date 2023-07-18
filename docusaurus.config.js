@@ -7,8 +7,8 @@ module.exports = {
   organizationName: "akaruidevelopment",
   projectName: "aoi.js-documentation",
   trailingSlash: false,
-  onBrokenLinks: "ignore",
-  onBrokenMarkdownLinks: "ignore",
+  onBrokenLinks: "warn",
+  onBrokenMarkdownLinks: "warn",
   webpack: {
     jsLoader: (isServer) => ({
       loader: require.resolve("esbuild-loader"),
@@ -45,7 +45,7 @@ module.exports = {
         'Join our <a target="_blank" rel="noopener noreferrer" href="https://aoi.js.org/invite">Discord Server</a> for real-time support!',
       backgroundColor: "#1976d2",
       textColor: "#ffffff",
-      isCloseable: false,
+      isCloseable: true,
     },
     colorMode: {
       defaultMode: "dark",
@@ -153,6 +153,10 @@ module.exports = {
               label: "Github",
               href: "https://github.com/AkaruiDevelopment/aoi.js/",
             },
+            {
+              label: "Credits",
+              to: "credits/",
+            },
           ],
         },
         {
@@ -167,8 +171,8 @@ module.exports = {
               to: "wikis/guidelines",
             },
             {
-              label: "Credits",
-              to: "credits/",
+              label: "Privacy",
+              to: "privacy/"
             },
           ],
         },
