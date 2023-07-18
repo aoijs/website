@@ -1,7 +1,7 @@
 ---
 title: Client Options
 description: This page is covering all aoi.js client options and what they do.
-id: clientoptions
+id: options
 ---
 
 **This page is about all aoi.js Client Options and what they do.**

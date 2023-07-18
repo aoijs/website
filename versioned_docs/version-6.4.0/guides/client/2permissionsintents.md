@@ -1,7 +1,7 @@
 ---
 title: Permissions & Intents
 description: This page is covering all permissions and intents.
-id: permissionsandintents
+id: intents
 ---
 
 ### Table of Contents

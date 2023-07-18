@@ -1,5 +1,5 @@
 ---
-title: Welcome to aoi.js Documentation
+title: aoi.js Guide
 description: The beginning process of how to use aoi.js and all its features.
 slug: /
 ---

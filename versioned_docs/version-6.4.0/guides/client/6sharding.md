@@ -1,5 +1,5 @@
 ---
-title: Sharding
+title: Client Sharding
 description: This Guide will be covering how to integrate Sharding for your Discord Bot.
 id: sharding
 ---
