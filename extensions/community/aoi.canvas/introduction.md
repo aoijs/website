@@ -1,7 +1,7 @@
 ---
 title: Introduction of aoi.canvas
 description: What aoi.canvas is and how to use it.
-id: aoi-canvas
+id: introduction
 ---
 
 ### Table of Contents
@@ -23,6 +23,7 @@ aoi.canvas supports *almost* everything as the original canvas, its basically ju
 
 **NPM Package**: https://www.npmjs.com/package/aoi.canvas  
 **Creator**: [devlordduck2](https://discord.com/users/1096717977304453160)
+**Official Documentation**: https://ild.vercel.app/aoi.canvas
 
 ### Installation
 
