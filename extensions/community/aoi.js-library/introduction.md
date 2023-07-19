@@ -11,9 +11,8 @@ id: introduction
   - [Installation](#installation)
 - [Adding your Plugins](#adding-your-plugins)
 - [Plugins](#plugins)
-  - [Loading Plugins:](#loading-plugins)
-  - [Loading specific plugins:](#loading-specific-plugins)
-  - [Available Plugins:](#available-plugins)
+  - [Loading Plugins](#loading-plugins)
+  - [Available Plugins](#available-plugins)
 - [User Plugins](#user-plugins)
   - [User Plugin Structure](#user-plugin-structure)
   - [Example User Plugin (aoi.js)](#example-user-plugin-aoijs)
@@ -65,7 +64,9 @@ bot.command({
     code: `Pong! $pingms`
 });
 
-new Plugins({ bot }).loadPlugins(); // Load all Plugins Functions from aoi.js-library 
+new Plugins({ bot }).loadPlugins([
+    'default/comment',
+]); // Load Plugins Functions from aoi.js-library 
 ```
 
 ## Adding your Plugins
@@ -81,16 +82,23 @@ The Plugins class provides a way to load and manage plugins for your Discord bot
 
 ### Loading Plugins:
 
-```js
-new Plugins({ bot }).loadPlugins();
-```
+The Plugins class provides a way to load and manage plugins for your Discord bot.
 
-### Loading specific plugins:
+To load an available plugin:
 
 ```js
-new Plugins({ bot }).loadPlugins(['$comment']);
+new Plugins({ bot }).loadPlugins([
+    "author/pluginName"
+]);
 ```
-By adding this function in the field, it'll only enable $comment, it supports mulitple if provided otherwise ignored.
+
+Example which loads the comment plugin:
+```js
+new Plugins({ bot }).loadPlugins([
+    'default/comment',
+]);
+```
+By adding this function in the field, it'll only enable $comment, it supports an multiple array if provided otherwise ignored.
 
 ### Available Plugins:
 ```php
