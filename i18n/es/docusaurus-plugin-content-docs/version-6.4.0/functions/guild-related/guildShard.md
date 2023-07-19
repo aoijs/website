@@ -20,7 +20,7 @@ $guildShard[opción?;sep?;identificación del fragmento]
 | sep?                         | consulta | El separador para separar los valores devueltos.                                                    |   falso   |
 | identificación del fragmento | entero   | El fragmento ID.                                                                                    | verdadero |
 
-#### Tenga en cuenta que esto no funcionará sin fragmentar. Si no estás seguro, revisa la [guía de fragmentación](../../guides/client/6sharding.md).
+#### Tenga en cuenta que esto no funcionará sin fragmentar. Si no estás seguro, revisa la [guía de fragmentación](../../../../../../versioned_docs/version-6.4.0/guides/client/6sharding.md).
 
 ## Ejemplo(s)
 
