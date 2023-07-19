@@ -40,7 +40,7 @@ const bot = new AoiClient({
     }
 });
 
-const invite = new AoiInviteSystem(bot, true);
+new AoiInviteSystem(bot, true);
 ```
 
 ## Setup
