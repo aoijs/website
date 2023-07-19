@@ -26,7 +26,7 @@ $modifyChannelPerms[canalID;roruID;...perms]
 | `+` | Denegar un permiso específico a alguien o algo.               |
 | `/` | Restablecer un permiso específico a su estado predeterminado. |
 
-Encontrará todos los permisos __[aquí](../../guides/client/2permissionsintents.md)__.
+Encontrará todos los permisos __[aquí](../../../../../../versioned_docs/version-6.4.0/guides/client/2permissionsintents.md)__.
 
 ## Ejemplo(s)
 

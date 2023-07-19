@@ -19,7 +19,7 @@ $onlyClientPerms[...permissions;erreur]
 | ...permissions | chaîne de caractère | Permissions dont le bot a besoin.                                  |    vrai     |
 | erreur         | chaîne de caractère | Erreur à retourner lorsque le bot n'a pas les permissions listées. |    vrai     |
 
-Vous pouvez toutes les permissions __[ici](../../guides/client/2permissionsintents.md)__.
+Vous pouvez toutes les permissions __[ici](../../../../../../versioned_docs/version-6.4.0/guides/client/2permissionsintents.md)__.
 
 ## Exemple(s)
 

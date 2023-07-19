@@ -19,7 +19,7 @@ $onlyClientPerms[...perms;error]
 | ...Perms   | string | Berechtigung, die der Bot benötigt.                                               |     wahr     |
 | fehlerhaft | string | Fehler bei der Rückgabe, wenn der Bot nicht die aufgelisteten Berechtigungen hat. |     wahr     |
 
-Sie können alle Berechtigungen __[hier](../../guides/client/2permissionsintents.md)__ finden.
+Sie können alle Berechtigungen __[hier](../../../../../../versioned_docs/version-6.4.0/guides/client/2permissionsintents.md)__ finden.
 
 ## Beispiel(e)
 

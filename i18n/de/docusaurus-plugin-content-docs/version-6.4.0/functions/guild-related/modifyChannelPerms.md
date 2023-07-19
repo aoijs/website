@@ -26,7 +26,7 @@ $modifyChannelPerms[channelID;roruID;...perms]
 | `+` | Erlaube einer bestimmten Berechtigung für jemanden oder etwas.   |
 | `/` | Setze eine bestimmte Berechtigung auf den Standardstatus zurück. |
 
-Sie können alle Berechtigungen __[hier](../../guides/client/2permissionsintents.md)__ finden.
+Sie können alle Berechtigungen __[hier](../../../../../../versioned_docs/version-6.4.0/guides/client/2permissionsintents.md)__ finden.
 
 ## Beispiel(e)
 

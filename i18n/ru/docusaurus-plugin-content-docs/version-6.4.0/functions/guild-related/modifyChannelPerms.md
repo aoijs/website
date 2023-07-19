@@ -26,7 +26,7 @@ $modifyChannelPerms[channelID;roruID;...perms]
 | `+` | Разрешить определенное разрешение кому-либо или что-то.    |
 | `/` | Сбросить определенное разрешение к состоянию по умолчанию. |
 
-Вы можете найти все разрешения __[здесь](../../guides/client/2permissionsintents.md)__.
+Вы можете найти все разрешения __[здесь](../../../../../../versioned_docs/version-6.4.0/guides/client/2permissionsintents.md)__.
 
 ## Пример(ы)
 
