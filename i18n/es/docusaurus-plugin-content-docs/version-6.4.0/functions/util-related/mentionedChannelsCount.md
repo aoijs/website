@@ -1,5 +1,5 @@
 ---
-title: '$mentionedChannelsCount'
+title: $mentionedChannelsCount
 description: '$mentionedChannelsCount devolverá la cantidad de menciones del canal dentro de un mensaje.'
 id: mentionedChannelsCount
 ---

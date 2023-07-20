@@ -1,5 +1,5 @@
 ---
-title: '$mentionedRolesCount'
+title: $mentionedRolesCount
 description: '$mentionedRolesCount devolverá la cantidad de menciones de rol dentro de un mensaje.'
 id: mentionedRolesCount
 ---

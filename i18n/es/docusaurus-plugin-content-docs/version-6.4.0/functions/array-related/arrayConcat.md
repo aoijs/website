@@ -6,7 +6,7 @@ id: arrayConcat
 
 `$arrayConcat` concatenará varios arreglos.
 
-## Modo de Uso
+## Uso
 
 ```php
 $arrayConcat[separador;...arrays]
@@ -27,7 +27,7 @@ Este ejemplo va a devolver `Esto es un test` ya que concatena el array 1 y el ar
 bot.command({
     name: 'arrayConcat',
     code: `
-  $arrayConcat[ ;test1;test2]
+  $arrayConcat[ ;array1;array2]
   $createArray[array1;Esto es]
   $createArray[array2;un test]
   `

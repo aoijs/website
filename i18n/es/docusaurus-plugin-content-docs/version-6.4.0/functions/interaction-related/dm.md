@@ -1,5 +1,5 @@
 ---
-title: '$dm'
+title: $dm
 description: '$dm enviará un mensaje a los usuarios Mensajes Directos.'
 id: dm
 ---

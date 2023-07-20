@@ -1,5 +1,5 @@
 ---
-title: '$isMentionable'
+title: $isMentionable
 description: '$isMentionable comprueba si un rol dado es mencionable.'
 id: isMentionable
 ---

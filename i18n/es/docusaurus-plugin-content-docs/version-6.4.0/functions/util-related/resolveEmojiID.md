@@ -1,5 +1,5 @@
 ---
-title: '$resolveEmojiID'
+title: $resolveEmojiID
 description: '$resolveEmojiID resolverá un cierto emoji.'
 id: resolveEmojiID
 ---

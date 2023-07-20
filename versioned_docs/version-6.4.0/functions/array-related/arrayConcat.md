@@ -27,7 +27,7 @@ This will return `This is a test` as it concats array 1 and 2:
 bot.command({
     name: 'arrayConcat',
     code: `
-  $arrayConcat[ ;test1;test2]
+  $arrayConcat[ ;array1;array2]
   $createArray[array1;This is]
   $createArray[array2;a test]
   `

@@ -1,5 +1,5 @@
 ---
-title: '$onlyNSFW'
+title: $onlyNSFW
 description: '$onlyNSFW comprobará si el comando fue ejecutado en un canal NSFW y devolverá un mensaje de error en caso contrario.'
 id: onlyNSFW
 ---

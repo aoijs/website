@@ -1,5 +1,5 @@
 ---
-title: '$partial'
+title: $partial
 description: '$partial comprueba si la estructura del objeto es parcial.'
 id: partial
 ---

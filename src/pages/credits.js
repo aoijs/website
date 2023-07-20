@@ -46,6 +46,12 @@ const team = [
     avatar: require("../../assets/images/avatars/713132410153205802.png")
       .default,
   },
+  {
+    name: "t3nsei",
+    title: "Translator ⭐",
+    avatar: require("../../assets/images/avatars/1017901559121719347.png")
+      .default,
+  },
 ];
 
 function Credits() {

@@ -6,7 +6,7 @@ id: deleteInvite
 
 `$deleteInvite` supprime une invitation spécifique dans un serveur.
 
-## Utilisation
+## Usage
 
 ```php
 $deleteInvite[IDserveur;CodeInvitation;raison?]
@@ -14,15 +14,15 @@ $deleteInvite[IDserveur;CodeInvitation;raison?]
 
 ## Paramètres
 
-| Champ          | Type                 | Description                                        | Obligatoire |
-| -------------- | -------------------- | -------------------------------------------------- |:-----------:|
-| IDserveur      | entier               | Le serveur dans lequel l'invitation sera supprimé. |     oui     |
-| CodeInvitation | chaine de caractères | Le code d'invitation spécifique.                   |    true     |
-| raison?        | booléen              | Raison qui sera affichée dans les logs du serveur. |    faux     |
+| Champ          | Type                 | Libellé                                            | Requis |
+| -------------- | -------------------- | -------------------------------------------------- |:------:|
+| IDserveur      | entier               | Le serveur dans lequel l'invitation sera supprimé. |  vrai  |
+| CodeInvitation | chaîne de caractères | Le code d'invitation spécifique.                   |  vrai  |
+| raison?        | chaîne de caractères | Raison qui sera affichée dans les logs du serveur. |  faux  |
 
 ## Exemple(s)
 
-Ceci supprimera une invitation (ne fonctionnera pas car le code d'invitatio n'existe pas):
+Ceci supprimera une invitation (ne fonctionnera pas car le code d'invitation n'existe pas):
 
 ```javascript
 bot.command({

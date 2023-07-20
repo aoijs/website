@@ -1,6 +1,6 @@
 ---
 title: $userActivity
-description: '$activity wird die Aktivität eines Benutzers zurückgeben.'
+description: '$userActivity wird die Aktivität eines Benutzers zurückgeben.'
 id: userActivity
 ---
 

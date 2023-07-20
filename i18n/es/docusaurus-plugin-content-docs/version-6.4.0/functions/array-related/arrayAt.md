@@ -6,7 +6,7 @@ id: arrayAt
 
 `$arrayAt` elegirá el índice (posición) del array que se debe devolver. Se va a devolver nada si el índice dado no se encuentra.
 
-## Modo de Uso
+## Uso
 
 ```php
 $arrayAt[nombre;índice]

@@ -12,7 +12,7 @@ id: if
 $if[condicion;verdadero;falso?]
 ```
 
-:::warning decrecación
+:::advertir decrecación
 
 
 `$if: "old"` está en desuso y ya no debe usarse, ya que se eliminará en el futuro.

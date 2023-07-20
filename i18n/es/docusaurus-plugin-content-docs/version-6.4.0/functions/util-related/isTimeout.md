@@ -1,5 +1,5 @@
 ---
-title: '$isTimeout'
+title: $isTimeout
 description: '$isTimeout comprobará si el usuario está en tiempo de espera con la función integrada de Discord.'
 id: isTimeout
 ---

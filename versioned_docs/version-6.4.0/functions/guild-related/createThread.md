@@ -18,7 +18,7 @@ $createThread[channelID;name;archive;type;startMessage;returnId?]
 | ------------ | ------- | ---------------------------------------------------------------- | :------: |
 | channelID    | integer | The channel ID of where the thread should be created in.         |   true   |
 | name         | string  | The name of the newly created thread.                            |   true   |
-| achieve      | string  | After how much time the thread will be achieved (ms).            |   true   |
+| archieve      | string  | After how much time the thread will be archieved (ms).            |   true   |
 | type         | string  | Thread type <br /> 1. **public** (default) <br /> 2. **private** |   true   |
 | startMessage | string  | The message ID of where the thread should relate to.             |   true   |
 | returnId?    | string  | If the function should return the thread ID after its creation.  |  false   |

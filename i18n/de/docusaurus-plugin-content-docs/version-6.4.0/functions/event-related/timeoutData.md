@@ -1,5 +1,5 @@
 ---
-title: '$timeoutData'
+title: $timeoutData
 description: '$timeoutData enthält Daten für $setTimeout Datenparameter, dies wird leer sein, wenn außerhalb der TimeoutCommand Codes verwendet wird.'
 id: timeoutData
 ---

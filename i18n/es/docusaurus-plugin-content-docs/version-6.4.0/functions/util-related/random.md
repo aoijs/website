@@ -1,5 +1,5 @@
 ---
-title: '$random'
+title: $random
 description: '$random generará un número aleatorio entre tu rango elegido.'
 id: random
 ---

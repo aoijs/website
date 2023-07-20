@@ -1,5 +1,5 @@
 ---
-title: '$isNumber'
+title: $isNumber
 description: '$isNumber comprobará si el argumento dado es un número.'
 id: isNumber
 ---

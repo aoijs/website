@@ -14,9 +14,9 @@ $modulo[num;num]
 
 ## Parameters
 
-| Field | Type   | Description                          | Required |
-| ----- | ------ | ------------------------------------ | :------: |
-| num   | number | Numbers to return the raimainder of. |   true   |
+| Field | Type   | Description                         | Required |
+| ----- | ------ | ----------------------------------- | :------: |
+| num   | number | Numbers to return the remainder of. |   true   |
 
 ## Example(s)
 

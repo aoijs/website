@@ -14,11 +14,11 @@ $deleteThread[IDsalon;IDfil;raison?]
 
 ## Paramètres
 
-| Champ   | Type    | Description                                           | Obligatoire |
-| ------- | ------- | ----------------------------------------------------- |:-----------:|
-| IDsalon | entier  | L'ID du salon dans lequel le fil se situe.            |     oui     |
-| IDfil   | entier  | L'ID du fil.                                          |    true     |
-| raison? | booléen | La raison qui sera affichée dans les logs du serveur. |    faux     |
+| Champ   | Type de texte        | Description                                                         | Obligatoire |
+| ------- | -------------------- | ------------------------------------------------------------------- |:-----------:|
+| IDsalon | entier               | L'ID du salon dans lequel le fil se situe.                          |    vrai     |
+| IDfil   | entier               | L'ID du fil de discussion.                                          |    vrai     |
+| raison? | chaîne de caractères | La raison qui sera affichée dans les journaux d'audit de la guilde. |    faux     |
 
 ## Exemple(s)
 

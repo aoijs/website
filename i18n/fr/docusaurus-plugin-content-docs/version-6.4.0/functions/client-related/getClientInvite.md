@@ -15,7 +15,7 @@ $getClientInvite[...permissions?]
 ## Paramètres
 
 | Champ        | Type                | Description                                            | Obligatoire |
-| ------------ | ------------------- | ------------------------------------------------------ |:-----------:|
+| ------------ | ------------------- | ------------------------------------------------------ | :---------: |
 | permissions? | chaîne de caractère | Permissions que vous voulez inclure dans l'invitation. |    faux     |
 
 <details>
@@ -57,8 +57,8 @@ $getClientInvite[...permissions?]
 | requesttospeak          | Permission de demander la parole lors des conférences                               |
 | manageevents            | Permission de gérer les événements                                                  |
 | managethreads           | Permission de gérer les fils                                                        |
-| createpublicthreads     | Permission d'utiliser des fils publics                                              |
-| createprivatethreads    | Permission d'utiliser des fils privés                                               |
+| usepublicthreads        | Permission d'utiliser des fils publics                                              |
+| useprivatethreads       | Permission d'utiliser des fils privés                                               |
 | createpublicthreads     | Permission de créer des fils de discussion publics                                  |
 | createprivatethreads    | Permission de créer des fils de discussion privés                                   |
 | externalstickers        | Permission d'utiliser des autocollants externes                                     |

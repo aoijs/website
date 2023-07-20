@@ -1,5 +1,5 @@
 ---
-title: '$mentionedRoles'
+title: $mentionedRoles
 description: '$mentionedRoles devolverá el ID de un rol recuperado de un mensaje, esto funciona como `$mentioned`.'
 id: mentionedRoles
 ---

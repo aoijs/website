@@ -1,5 +1,5 @@
 ---
-title: '$channelCooldown'
+title: $channelCooldown
 description: '$channelCooldown establecerá un enfriamiento vinculado a un canal específico después de la ejecución del comando.'
 id: channelCooldown
 ---

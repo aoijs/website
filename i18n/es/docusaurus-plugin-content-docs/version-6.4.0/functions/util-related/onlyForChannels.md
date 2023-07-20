@@ -1,5 +1,5 @@
 ---
-title: '$onlyForChannels'
+title: $onlyForChannels
 description: '$onlyForChannels comprobará si el comando fue ejecutado en uno de los canales listados y devolverá un mensaje de error en caso contrario.'
 id: onlyForChannels
 ---

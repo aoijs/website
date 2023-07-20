@@ -1,5 +1,5 @@
 ---
-title: '$isChannelManageable'
+title: $isChannelManageable
 description: '$isChannelManageable comprobará si el canal es manejable o no.'
 id: isChannelManageable
 ---

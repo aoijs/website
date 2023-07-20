@@ -1,5 +1,5 @@
 ---
-title: '$randomString'
+title: $randomString
 description: '$randomString generará una cadena aleatoria.'
 id: randomString
 ---

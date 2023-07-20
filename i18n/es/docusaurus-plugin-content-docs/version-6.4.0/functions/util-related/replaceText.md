@@ -1,5 +1,5 @@
 ---
-title: '$replaceText'
+title: $replaceText
 description: '$replaceText reemplazará segmentos específicos de texto.'
 id: replaceText
 ---

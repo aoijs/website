@@ -1,5 +1,5 @@
 ---
-title: '$stringStartsWith'
+title: $stringStartsWith
 description: '$stringStartsWith comprobará si el argumento dado comienza con algo específico.'
 id: stringStartsWith
 ---

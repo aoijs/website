@@ -16,7 +16,7 @@ $spawnShard[shard]
 
 | Feld    | Typ    | Beschreibung         | Erforderlich |
 | ------- | ------ | -------------------- |:------------:|
-| shard | anzahl | Anzahl der Scherben. |     wahr     |
+| scherbe | anzahl | Anzahl der Scherben. |     wahr     |
 
 ## Beispiel(e)
 

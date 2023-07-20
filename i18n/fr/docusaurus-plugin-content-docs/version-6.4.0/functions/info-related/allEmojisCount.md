@@ -6,7 +6,7 @@ id: allEmojisCount
 
 `$allEmojisCount` renvoie le nombre d'émojis d'un type donné.
 
-## Utilisation
+## Usage
 
 ```php
 $allEmojisCount[type?]
@@ -16,7 +16,7 @@ $allEmojisCount[type?]
 
 | Champ | Type                 | Description                                        | Obligatoire |
 | ----- | -------------------- | -------------------------------------------------- | ----------- |
-| type? | chaîne de caractères | Type que vous voulez que le montant soit retourné. | faux        |
+| type? | chaîne de caractères | Type que vous voulez que le montant soit retourné. | Faux        |
 
 | Type d'émoji   |          |
 | -------------- | -------- |

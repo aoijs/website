@@ -1,5 +1,5 @@
 ---
-title: '$isGuildDeafened'
+title: $isGuildDeafened
 description: '$isGuildDeafened es similar pero no confundir con `$isDeafen`, esto comprobará si el usuario está sordo.'
 id: isGuildDeafened
 ---

@@ -1,5 +1,5 @@
 ---
-title: '$isStreaming'
+title: $isStreaming
 description: '$isStreaming comprobará si un usuario está transmitiendo en un canal de voz.'
 id: isStreaming
 ---

@@ -1,5 +1,5 @@
 ---
-title: '$isPartnered'
+title: $isPartnered
 description: '$isPartnered comprueba si el gremio dado está asociado con Discord.'
 id: isPartnered
 ---

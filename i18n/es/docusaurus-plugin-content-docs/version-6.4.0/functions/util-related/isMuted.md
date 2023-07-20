@@ -1,5 +1,5 @@
 ---
-title: '$isMuted'
+title: $isMuted
 description: '$isMuted comprobará si un usuario específico está silenciado dentro de un canal de voz.'
 id: isMuted
 ---

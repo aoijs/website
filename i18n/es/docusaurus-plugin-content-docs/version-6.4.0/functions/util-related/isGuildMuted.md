@@ -1,5 +1,5 @@
 ---
-title: '$isGuildMuted'
+title: $isGuildMuted
 description: '$isGuildMuted es similar pero no confundir con `$isMuted`, esto comprobará si el usuario está silenciado.'
 id: isGuildMuted
 ---

@@ -1,5 +1,5 @@
 ---
-title: '$username'
+title: $username
 description: '$username devolverá el nombre de usuario de un usuario.'
 id: username
 ---

@@ -1,5 +1,5 @@
 ---
-title: '$onlyForCategories'
+title: $onlyForCategories
 description: '$onlyForCategories comprobará si el comando fue ejecutado en la categoría del canal de ejecución y devolverá un mensaje de error en caso contrario.'
 id: onlyForCategories
 ---

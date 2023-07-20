@@ -1,5 +1,5 @@
 ---
-title: '$isUserDmEnabled'
+title: $isUserDmEnabled
 description: '$isUserDmEnabled comprobará si los mensajes directos del usuario están deshabilitados o habilitados.'
 id: isUserDmEnabled
 ---

@@ -1,5 +1,5 @@
 ---
-title: '$isDeafen'
+title: $isDeafen
 description: '$isDeafen comprobará si un usuario determinado está ensordecido o no.'
 id: isDeafen
 ---

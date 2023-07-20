@@ -1,5 +1,5 @@
 ---
-title: '$isThread'
+title: $isThread
 description: '$isThread comprobará si el canal dado es un hilo o no.'
 id: isThread
 ---

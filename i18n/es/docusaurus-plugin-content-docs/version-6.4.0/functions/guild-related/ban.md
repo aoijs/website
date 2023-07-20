@@ -9,7 +9,7 @@ id: ban
 ## Uso
 
 ```php
-$ban[guildID;userID;days?;reason?]
+$ban[servidorID;usuarioID;dias?;razon?]
 ```
 
 ## Parámetros

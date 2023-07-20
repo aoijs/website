@@ -6,7 +6,7 @@ id: deleteWebhook
 
 `$deleteWebhook` supprimera le webhook donné.
 
-## Utilisation
+## Usage
 
 ```php
 $deleteWebhook[IDwebhook;tokenWebhook]
@@ -16,8 +16,8 @@ $deleteWebhook[IDwebhook;tokenWebhook]
 
 | Champ        | Type                 | Description          | Obligatoire |
 | ------------ | -------------------- | -------------------- |:-----------:|
-| IDwebhook    | entier               | L'ID du webhook.     |     oui     |
-| tokenWebhook | chaine de caractères | Le token du webhook. |    true     |
+| IDwebhook    | entier               | L'ID du webhook.     |    vrai     |
+| tokenWebhook | chaîne de caractères | Le token du webhook. |    vrai     |
 
 ## Exemple(s)
 

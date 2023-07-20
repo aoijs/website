@@ -12,7 +12,7 @@ id: endelseif
 $endelseif
 ```
 
-:::warning decrecación
+:::advertir decrecación
 
 
 `$if: "old"` está obsoleto y ya no debería utilizarse ya que se eliminará en el futuro.

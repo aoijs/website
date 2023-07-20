@@ -1,5 +1,5 @@
 ---
-title: '$isDM'
+title: $isDM
 description: '$isDM comprobará si el canal dado es un DM o no.'
 id: isDM
 ---

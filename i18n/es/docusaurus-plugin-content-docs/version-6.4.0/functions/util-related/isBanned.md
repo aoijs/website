@@ -1,5 +1,5 @@
 ---
-title: '$isBanned'
+title: $isBanned
 description: '$isBanned comprueba si un usuario dado está baneado en un gremio específico.'
 id: isBanned
 ---

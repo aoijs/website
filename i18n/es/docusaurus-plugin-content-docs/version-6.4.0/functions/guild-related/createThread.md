@@ -9,7 +9,7 @@ id: createThread
 ## Uso
 
 ```php
-$createThread[canalID;nombre;achieve;tipo;mensaje de inicio;ID de retorno?]
+$createThread[canalID;nombre;archieve;tipo;mensaje de inicio;ID de retorno?]
 ```
 
 ## Parámetros
@@ -18,7 +18,7 @@ $createThread[canalID;nombre;achieve;tipo;mensaje de inicio;ID de retorno?]
 | --------------- | -------- | --------------------------------------------------------------------------------- |:---------:|
 | canalID         | entero   | El ID del canal en el que debe crearse el hilo.                                   | verdadero |
 | name            | consulta | El nombre del tema recién creado.                                                 | verdadero |
-| achieve         | string   | Después de cuánto tiempo se eliminará el mensaje).                                | verdadero |
+| archieve         | string   | Después de cuánto tiempo se eliminará el mensaje).                                | verdadero |
 | type            | string   | Tipo de hilo <br /> 1. **online** (por defecto) <br /> 2. **private** | verdadero |
 | iniciar mensaje | cadena   | El ID del canal en el que debe crearse el hilo.                                   | verdadero |
 | ID de retorno?  | cadena   | Si la función devuelve el ID del hilo después de su creación.                     |   falso   |

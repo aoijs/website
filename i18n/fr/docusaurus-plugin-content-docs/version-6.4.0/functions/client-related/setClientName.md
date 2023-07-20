@@ -20,7 +20,7 @@ $setClientName[username]
 
 ## Exemple(s)
 
-Cela changera l'avatar du client en l'avatar de l'auteur de la commande :
+Cela changera le pseudo du client en le pseudo de l'auteur de la commande :
 
 ```javascript
 bot.command({

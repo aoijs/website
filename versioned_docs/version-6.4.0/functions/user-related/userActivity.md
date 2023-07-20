@@ -1,6 +1,6 @@
 ---
 title: $userActivity
-description: $activity will return a user's activity.
+description: $userActivity will return a user's activity.
 id: userActivity
 ---
 

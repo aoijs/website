@@ -1,5 +1,5 @@
 ---
-title: '$spliceTextJoin'
+title: $spliceTextJoin
 description: '$spliceTextJoin'
 id: spliceTextJoin
 ---

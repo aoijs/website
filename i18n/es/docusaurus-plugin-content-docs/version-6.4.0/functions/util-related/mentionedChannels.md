@@ -1,5 +1,5 @@
 ---
-title: '$mentionedChannels'
+title: $mentionedChannels
 description: '$mentionedChannels devolverá el ID de un canal recuperado de la mención.'
 id: mentionedChannels
 ---

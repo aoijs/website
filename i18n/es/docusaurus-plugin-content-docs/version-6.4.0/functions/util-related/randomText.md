@@ -1,5 +1,5 @@
 ---
-title: '$randomText'
+title: $randomText
 description: '$randomText retornará una palabra al azar de la consulta dada'
 id: randomText
 ---

@@ -1,5 +1,5 @@
 ---
-title: '$deleteVar'
+title: $deleteVar
 description: '$deleteVar eliminará una variable determinada.'
 id: deleteVar
 ---

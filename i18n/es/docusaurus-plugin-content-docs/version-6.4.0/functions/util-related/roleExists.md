@@ -1,5 +1,5 @@
 ---
-title: '$roleExists'
+title: $roleExists
 description: '$roleExists comprobará si existe un determinado rol dentro de un gremio determinado.'
 id: roleExists
 ---
