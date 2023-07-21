@@ -1,5 +1,5 @@
 ---
-title: '$isHoisted'
+title: $isHoisted
 description: '$isHoisted comprobará si un rol específico está levantado.'
 id: isHoisted
 ---

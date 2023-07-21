@@ -1,5 +1,5 @@
 ---
-title: '$mentionType'
+title: $mentionType
 description: '$mentionType devolverá el tipo de mención.'
 id: mentionType
 ---

@@ -1,5 +1,5 @@
 ---
-title: '$oldMember'
+title: $oldMember
 description: '$oldMember enthält Daten für das Mitglied, bevor es aktualisiert wurde, dies ist aus Discord Cache und könnte leer sein, je nachdem, ob es gecached wird, Verwenden Sie also eine partielle Option, bevor Sie versuchen, auf eine Immobilie zuzugreifen. (MemberUpdate-Ereignis)'
 id: oldMember
 ---

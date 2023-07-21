@@ -1,5 +1,5 @@
 ---
-title: '$isEveryoneMentioned'
+title: $isEveryoneMentioned
 description: '$isEveryoneMentioned comprobará si se menciona a todos o aquí.'
 id: isEveryoneMentioned
 ---

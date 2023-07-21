@@ -1,5 +1,5 @@
 ---
-title: '$channelID'
+title: $channelID
 description: '$channelID devolverá el ID de canal del nombre de canal dado.'
 id: channelID
 ---

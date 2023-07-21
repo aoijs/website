@@ -1,5 +1,5 @@
 ---
-title: '$getLeaderboardInfo'
+title: $getLeaderboardInfo
 description: '$getLeaderboardInfo devolverá información sobre una variable determinada ordenada en una tabla de clasificaciones.'
 id: getLeaderboardInfo
 ---

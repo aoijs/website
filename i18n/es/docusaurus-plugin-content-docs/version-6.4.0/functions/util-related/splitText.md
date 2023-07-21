@@ -1,5 +1,5 @@
 ---
-title: '$splitText'
+title: $splitText
 description: '$splitText devolverá un valor de $textSplit dependiendo del índice dado.'
 id: splitText
 ---

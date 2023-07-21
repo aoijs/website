@@ -14,9 +14,9 @@ $deleteChannels[...salons]
 
 ## Paramètres
 
-| Champ     | Type   | Description                                | Obligatoire |
-| --------- | ------ | ------------------------------------------ |:-----------:|
-| ...salons | entier | L'ID des salons qui devront être supprimé. |     oui     |
+| Champ     | Type   | Description                                     | Obligatoire |
+| --------- | ------ | ----------------------------------------------- |:-----------:|
+| ...salons | entier | L'es IDs des salons qui devront être supprimés. |    vrai     |
 
 ## Exemple(s)
 

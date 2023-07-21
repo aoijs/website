@@ -1,5 +1,5 @@
 ---
-title: '$onlyIfMessageContains'
+title: $onlyIfMessageContains
 description: '$onlyIfMessageContains comprobará si el mensaje contiene el texto dado y si no devuelve un mensaje de error.'
 id: onlyIfMessageContains
 ---

@@ -1,5 +1,5 @@
 ---
-title: '$mentionedUsersCount'
+title: $mentionedUsersCount
 description: '$mentionedUsersCount devolverá la cantidad de menciones del usuario dentro de un mensaje.'
 id: mentionedUsersCount
 ---

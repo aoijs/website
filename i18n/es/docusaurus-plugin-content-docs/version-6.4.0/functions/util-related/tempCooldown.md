@@ -1,5 +1,5 @@
 ---
-title: '$tempCooldown'
+title: $tempCooldown
 description: '$tempCooldown creará un tiempo de reutilización para un comando.'
 id: tempCooldown
 ---

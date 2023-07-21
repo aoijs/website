@@ -18,7 +18,7 @@ $cloneChannel[channelID;name;returnID?]
 | --------- | ------- | ------------------------------------------------------------------- | :------: |
 | channelID | integer | The ID of the channel which is to clone.                            |   true   |
 | name      | string  | The new name of the cloned channel.                                 |   true   |
-| returnID? | string  | If the function should return the ID of the newly created channnel. |  false   |
+| returnID? | boolean  | If the function should return the ID of the newly created channnel. |  false   |
 
 **It won't clone any messages of that channel.**
 

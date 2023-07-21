@@ -1,5 +1,5 @@
 ---
-title: '$isMentioned'
+title: $isMentioned
 description: '$isMentioned comprueba si la consulta contiene una mención.'
 id: isMentioned
 ---

@@ -1,5 +1,5 @@
 ---
-title: '$isRoleEditable'
+title: $isRoleEditable
 description: '$isRoleEditable comprobará si el rol es editable.'
 id: isRoleEditable
 ---

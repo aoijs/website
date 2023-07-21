@@ -1,5 +1,5 @@
 ---
-title: '$replaceTextWithRegex'
+title: $replaceTextWithRegex
 description: '$replaceTextWithRegex reemplazará expresiones regulares específicas en un texto. Esto funciona de forma similar a $replaceText.'
 id: replaceTextWithRegex
 ---

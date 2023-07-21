@@ -1,5 +1,5 @@
 ---
-title: '$newState'
+title: $newState
 description: '$newState enthält Daten für den Sprachstatus des Benutzers nach dem Update (voiceStateUpdate).'
 id: newState
 ---

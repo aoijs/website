@@ -1,5 +1,5 @@
 ---
-title: '$isVideoOn'
+title: $isVideoOn
 description: '$isVideoOn comprueba si el usuario dado tiene su video encendido en un canal de voz.'
 id: isVideoOn
 ---

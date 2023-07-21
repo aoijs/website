@@ -1,5 +1,5 @@
 ---
-title: '$randomChannelID'
+title: $randomChannelID
 description: '$randomChannelID devolverá un ID de canal aleatorio de todos los gremios o de un gremio específico.'
 id: randomChannelID
 ---

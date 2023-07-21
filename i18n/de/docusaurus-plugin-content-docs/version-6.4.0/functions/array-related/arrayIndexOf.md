@@ -23,7 +23,7 @@ $arrayIndexOf[name;query]
 
 ```javascript
 bot.command({
-    Name: "array-indexof",
+    Name: "arrayIndexOf",
     Code: `
   $arrayIndexOf[array;akarui]
   $createArray[array;aoi.js;akarui;documents;bot]

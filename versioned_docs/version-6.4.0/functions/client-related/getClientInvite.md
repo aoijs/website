@@ -57,8 +57,8 @@ $getClientInvite[...perms?]
 | requesttospeak          | Permission to use request-to-speak in stages                    |
 | manageevents            | Permission to manage events                                     |
 | managethreads           | Permission to manage threads                                    |
-| createpublicthreads     | Permission to use public threads                                |
-| createprivatethreads    | Permission to use private threads                               |
+| usepublicthreads        | Permission to use public threads                                |
+| useprivatethreads       | Permission to use private threads                               |
 | createpublicthreads     | Permission to create public threads                             |
 | createprivatethreads    | Permission to create private threads                            |
 | externalstickers        | Permission to use extrernal stickers                            |

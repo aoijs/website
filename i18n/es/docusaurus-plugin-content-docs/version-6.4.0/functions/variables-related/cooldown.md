@@ -1,5 +1,5 @@
 ---
-title: '$cooldown'
+title: $cooldown
 description: '$cooldown establecerá un tiempo de reutilización para el autor del comando después de ser usado.'
 id: cooldown
 ---

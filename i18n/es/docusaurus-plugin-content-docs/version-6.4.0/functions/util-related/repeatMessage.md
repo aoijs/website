@@ -1,5 +1,5 @@
 ---
-title: '$repeatMessage'
+title: $repeatMessage
 description: '$repeatMessage repetirá el texto dado por una cantidad de veces.'
 id: repeatMessage
 ---

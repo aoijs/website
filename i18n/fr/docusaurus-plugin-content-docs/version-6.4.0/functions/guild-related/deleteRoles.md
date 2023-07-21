@@ -14,10 +14,10 @@ $deleteRoles[IDserveur;...rôles]
 
 ## Paramètres
 
-| Champ     | Type                         | Description                               | Obligatoire |
-| --------- | ---------------------------- | ----------------------------------------- |:-----------:|
-| IDserveur | entier                       | L'ID du serveur où se trouvent les rôles. |     oui     |
-| ...roles  | entier, chaîne de caractères | l'IDs des rôles.                          |    true     |
+| Champ           | Type                         | Description                               | Obligatoire |
+| --------------- | ---------------------------- | ----------------------------------------- |:-----------:|
+| ID de la guilde | entier                       | L'ID du serveur où se trouvent les rôles. |    vrai     |
+| ...roles        | entier, chaîne de caractères | l'IDs des rôles.                          |    vrai     |
 
 ## Exemple(s)
 
@@ -28,7 +28,7 @@ bot.command({
     name: 'supprimerRôles',
     code: `
   Rôles supprimés!
-  $deleteRoles[$guildID;roleID1;roleID2;roleID3]
+  $deleteRoles[$guildID;IDrole1;IDrole2;IDrole3]
   `
 });
 ```

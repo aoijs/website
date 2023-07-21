@@ -1,5 +1,5 @@
 ---
-title: '$isSelfMuted'
+title: $isSelfMuted
 description: '$isSelfMuted es similar pero no confundir con `$isMuted`, esto comprobará si el usuario se silenció.'
 id: isSelfMuted
 ---

@@ -1,15 +1,15 @@
 ---
 title: $lowestRole
-description: '$userLowestRole возвращает нижнюю роль конкретного пользователя.'
+description: '$lowestRole возвращает нижнюю роль конкретного пользователя.'
 id: lowestRole
 ---
 
-`$userLowestRole` возвращает нижнюю роль конкретного пользователя.
+`$lowestRole` возвращает нижнюю роль конкретного пользователя.
 
 ## Использование
 
 ```php
-$userLowestRole[userID?;guildID?]
+$lowestRole[userID?;guildID?]
 ```
 
 ## Параметры
@@ -25,9 +25,9 @@ ID вашей низкой роли будет возвращен:
 
 ```javascript
 bot.command({
-    name: 'userLowestRole',
+    name: 'lowestRole',
     code: `
-  $userLowestRole[$authorID;$guildID]
+  $lowestRole[$authorID;$guildID]
   `
 });
 ```

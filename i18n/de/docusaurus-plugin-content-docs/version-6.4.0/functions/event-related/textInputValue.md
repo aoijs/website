@@ -1,5 +1,5 @@
 ---
-title: '$textInputValue'
+title: $textInputValue
 description: '$textInputValue gibt Daten einer Kontextmenüoption zurück.'
 id: textInputValue
 ---

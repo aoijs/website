@@ -1,5 +1,5 @@
 ---
-title: '$messageSlice'
+title: $messageSlice
 description: '$messageSlice cortará un mensaje.'
 id: messageSlice
 ---

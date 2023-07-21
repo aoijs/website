@@ -1,5 +1,5 @@
 ---
-title: '$messageExists'
+title: $messageExists
 description: '$messageExists comprobará si existe un mensaje específico.'
 id: messageExists
 ---

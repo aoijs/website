@@ -1,5 +1,5 @@
 ---
-title: '$toLocaleUpperCase'
+title: $toLocaleUpperCase
 description: '$toLocaleUpperCase cambiará el primer carácter de cada palabra a mayúsculas.'
 id: toLocaleUpperCase
 ---

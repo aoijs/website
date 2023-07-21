@@ -16,7 +16,7 @@ $deleteEmoji[emoji]
 
 | Champ | Type                 | Description                                                        | Obligatoire |
 | ----- | -------------------- | ------------------------------------------------------------------ |:-----------:|
-| emoji | chaîne de caractères | Nom de l'émoji, ID ou forme complète de l'émoji qui sera supprimé. |     oui     |
+| emoji | chaîne de caractères | Nom de l'émoji, ID ou forme complète de l'émoji qui sera supprimé. |    vrai     |
 
 ## Exemple(s)
 

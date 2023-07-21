@@ -1,7 +1,7 @@
 ---
-title: '$numberSeparator'
+title: $numberSeperator
 description: '$numberSeparator separará los números y los hará legibles.'
-id: numberSeparator
+id: numberSeperator
 ---
 
 `$numberSeparator` separará los números y los hará legibles.

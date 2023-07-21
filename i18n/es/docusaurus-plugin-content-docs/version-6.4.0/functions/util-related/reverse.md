@@ -1,5 +1,5 @@
 ---
-title: '$reverse'
+title: $reverse
 description: '$reverse revertirá el texto dado.'
 id: reverse
 ---

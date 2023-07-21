@@ -1,5 +1,5 @@
 ---
-title: '$isVerified'
+title: $isVerified
 description: '$isVerified comprueba si la guild dada es verificada por Discord.'
 id: isVerified
 ---

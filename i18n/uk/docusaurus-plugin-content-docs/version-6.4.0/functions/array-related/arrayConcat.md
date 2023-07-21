@@ -27,7 +27,7 @@ $arrayConcat[роздільник;...масиви]
 bot.command({
     name: 'arrayConcat',
     code: `
-  $arrayConcat[ ;test1;test2]
+  $arrayConcat[ ;array1;array2]
   $createArray[array1;Це є]
   $createArray[array2;тест]
   `

@@ -1,5 +1,5 @@
 ---
-title: '$guildCooldown'
+title: $guildCooldown
 description: '$guildCooldown establecerá un tiempo de enfriamiento para el gremio después de ser usado.'
 id: guildCooldown
 ---

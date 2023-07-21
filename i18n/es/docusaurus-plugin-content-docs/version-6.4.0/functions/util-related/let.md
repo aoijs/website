@@ -1,5 +1,5 @@
 ---
-title: '$let'
+title: $let
 description: '$let se utiliza para almacenar variables temporales.'
 id: let
 ---

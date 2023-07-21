@@ -15,7 +15,7 @@ $getClientInvite[...permisos?]
 ## Parámetros
 
 | Campo     | Tipo   | Descripción                                  | Requerido |
-| --------- | ------ | -------------------------------------------- |:---------:|
+| --------- | ------ | -------------------------------------------- | :-------: |
 | permisos? | string | Permisos que desea incluir en la invitación. |    no     |
 
 <details>
@@ -57,8 +57,8 @@ $getClientInvite[...permisos?]
 | requesttospeak          | Permiso para utilizar la petición de palabra por stages                          |
 | manageevents            | Permiso para gestionar eventos                                                   |
 | managethreads           | Permiso para gestionar hilos                                                     |
-| createpublicthreads     | Permiso para utilizar hilos públicos                                             |
-| createprivatethreads    | Permiso para utilizar hilos privados                                             |
+| usepublicthreads        | Permiso para utilizar hilos públicos                                             |
+| useprivatethreads       | Permiso para utilizar hilos privados                                             |
 | createpublicthreads     | Permiso para crear hilos públicos                                                |
 | createprivatethreads    | Permiso para crear hilos privados                                                |
 | externalstickers        | Permiso para utilizar stickers extrernales                                       |

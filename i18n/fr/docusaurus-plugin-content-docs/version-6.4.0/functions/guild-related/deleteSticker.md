@@ -16,8 +16,8 @@ $deleteSticker[IDserveur;autocollant]
 
 | Champ       | Type                 | Description                                 | Obligatoire |
 | ----------- | -------------------- | ------------------------------------------- |:-----------:|
-| IDserveur   | entier               | L'ID du serveur où se trouve l'autocollant. |     oui     |
-| autocollant | chaine de caractères | Le nom de l'autocollant.                    |    true     |
+| IDserveur   | entier               | L'ID du serveur où se trouve l'autocollant. |    vrai     |
+| autocollant | chaîne de caractères | Le nom de l'autocollant.                    |    vrai     |
 
 ## Exemple(s)
 

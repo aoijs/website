@@ -1,5 +1,5 @@
 ---
-title: '$shard'
+title: $shard
 description: '$shard gibt die Daten eines Shards zurück.'
 id: shard
 ---

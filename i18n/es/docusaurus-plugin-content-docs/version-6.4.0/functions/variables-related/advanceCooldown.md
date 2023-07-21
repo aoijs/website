@@ -1,5 +1,5 @@
 ---
-title: '$advanceCooldown'
+title: $advanceCooldown
 description: '$advanceCooldown establecerá un tiempo de reutilización para un ID dado.'
 id: advanceCooldown
 ---

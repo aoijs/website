@@ -16,7 +16,7 @@ $deleteChannel[IDsalon]
 
 | Champ   | Type   | Description                               | Obligatoire |
 | ------- | ------ | ----------------------------------------- |:-----------:|
-| IDsalon | entier | L'ID du canal du salon qui sera supprimé. |     oui     |
+| IDsalon | entier | L'ID du canal du salon qui sera supprimé. |    vrai     |
 
 ## Exemple(s)
 

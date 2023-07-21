@@ -1,5 +1,5 @@
 ---
-title: '$stringEndsWith'
+title: $stringEndsWith
 description: '$stringEndsWith comprobará si el argumento dado termina con algo específico.'
 id: stringEndsWith
 ---

@@ -1,5 +1,5 @@
 ---
-title: '$arrayLength'
+title: $arrayLength
 description: '$arrayLength gibt die Länge eines Arrays zurück.'
 id: arrayLength
 ---

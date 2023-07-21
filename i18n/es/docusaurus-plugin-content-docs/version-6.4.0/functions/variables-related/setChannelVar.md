@@ -1,5 +1,5 @@
 ---
-title: '$setChannelVar'
+title: $setChannelVar
 description: '$setChannelVar cambiará el valor de una variable de canal determinada.'
 id: setChannelVar
 ---

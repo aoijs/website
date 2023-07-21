@@ -1,5 +1,5 @@
 ---
-title: '$isVoice'
+title: $isVoice
 description: '$isVoice comprobará si el canal dado es un canal de voz o no.'
 id: isVoice
 ---

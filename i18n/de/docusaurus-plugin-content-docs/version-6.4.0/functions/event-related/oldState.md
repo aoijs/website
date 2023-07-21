@@ -1,5 +1,5 @@
 ---
-title: '$oldState'
+title: $oldState
 description: '$oldState enthält Daten für den Sprachstatus des Benutzers, bevor er aktualisiert wurde (VoiceStateUpdate).'
 id: oldState
 ---

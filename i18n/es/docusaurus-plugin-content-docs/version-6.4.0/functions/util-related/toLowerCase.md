@@ -1,5 +1,5 @@
 ---
-title: '$toLowerCase'
+title: $toLowerCase
 description: '$toLowerCase cambiará el texto dado de mayúsculas a minúsculas.'
 id: toLowerCase
 ---

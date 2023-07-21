@@ -1,5 +1,5 @@
 ---
-title: '$mentioned'
+title: $mentioned
 description: '$mentioned devolverá el ID de un usuario de la mención.'
 id: mentioned
 ---

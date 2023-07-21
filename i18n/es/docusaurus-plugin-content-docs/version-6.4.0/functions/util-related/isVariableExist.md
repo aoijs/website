@@ -1,5 +1,5 @@
 ---
-title: '$isVariableExist'
+title: $isVariableExist
 description: '$isVariableExist comprueba si existe una variable dada en una tabla determinada.'
 id: isVariableExist
 ---
