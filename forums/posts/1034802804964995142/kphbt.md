@@ -18,7 +18,7 @@ pagination_next: null
 module.exports={
   name: "join",
   type: "guildJoin",
-  channel: "1129375514113605712",
+  channel: "$channelID",
   code: `
   $author[1;$guildName[$guildID];$guildIcon[$guildID]]
   $title[<:icons_stagerequesttospeak:1123610843720986645> New Guild Joined!]
