@@ -29,7 +29,7 @@ module.exports = {
       "https://github.com/aoijs/website/blob/main/assets/images/aoijs-banner.png?raw=true",
     prism: {
       theme: require("prism-react-renderer/themes/github"),
-      darkTheme: require("prism-react-renderer/themes/dracula"),
+      darkTheme: require("prism-react-renderer/themes/palenight"),
       additionalLanguages: ["php", "powershell", "diff", "typescript"],
     },
     // Translations later on
