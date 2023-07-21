@@ -239,6 +239,7 @@
     opacity: 0;
     transform: translateY(-20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -256,9 +257,11 @@
   0% {
     color: #3f51b5;
   }
+
   50% {
     color: #1976d2;
   }
+
   100% {
     color: #3f51b5;
   }
@@ -276,6 +279,7 @@
     opacity: 0;
     transform: translateX(-20px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -309,9 +313,11 @@
   0% {
     color: #3f51b5;
   }
+
   50% {
     color: #1976d2;
   }
+
   100% {
     color: #3f51b5;
   }
@@ -326,6 +332,7 @@
     opacity: 0;
     transform: translateY(-10px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -335,18 +342,24 @@
 .title {
   font-size: 24px;
   margin-bottom: 20px;
-  animation: color-transition 6s infinite, forwards 1s infinite alternate;
+  animation: color-transition 3s infinite, forwards 1s infinite alternate;
 }
 
 @keyframes color-transition {
   0% {
-    color: #3f51b5;
+    color: #4864ff;
   }
-  50% {
-    color: #1976d2;
+
+  25% {
+    color: #3856ff;
   }
+
+  75% {
+    color: #2545ff;
+  }
+
   100% {
-    color: #3f51b5;
+    color: #3d59f8;
   }
 }
 

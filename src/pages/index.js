@@ -50,52 +50,50 @@ function FeatureList() {
   );
 }
 
+function formatNumberWithCommas(number) {
+  if (typeof number !== "number" || isNaN(number)) {
+    return "N/A";
+  }
+  return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 function PackageStats() {
-  const [downloadCount, setDownloadCount] = useState(0);
-  const [downloadsAllTime, setDownloadsAllTime] = useState(0);
-  const [starsCount, setStarsCount] = useState(0);
+  const [downloadCount, setDownloadCount] = useState("N/A");
+  const [downloadsAllTime, setDownloadsAllTime] = useState("N/A");
+  const [starsCount, setStarsCount] = useState("N/A");
 
   useEffect(() => {
-    fetchDownloadCount();
-    fetchDownloadsAllTime();
-    fetchStarsCount();
+    fetchPackageStats();
   }, []);
 
-  const fetchDownloadCount = async () => {
+  const fetchPackageStats = async () => {
     try {
-      const response = await fetch(
+      const downloadCountResponse = await fetch(
         "https://api.npmjs.org/downloads/point/last-week/aoi.js"
       );
-      const data = await response.json();
-      setDownloadCount(data.downloads);
-    } catch (error) {
-      console.error("Error fetching download count:", error);
-    }
-  };
+      const downloadCountData = await downloadCountResponse.json();
+      setDownloadCount(downloadCountData.downloads);
 
-  const fetchDownloadsAllTime = async () => {
-    try {
-      const response = await fetch(
+      const downloadsAllTimeResponse = await fetch(
         "https://api.npmjs.org/downloads/range/1000-01-01:2030-12-31/aoi.js"
       );
-      const data = await response.json();
-      const totalCount = data.downloads.reduce(
+      const downloadsAllTimeData = await downloadsAllTimeResponse.json();
+      const totalCount = downloadsAllTimeData.downloads.reduce(
         (accumulator, currentValue) => accumulator + currentValue.downloads,
         0
       );
       setDownloadsAllTime(totalCount);
-    } catch (error) {
-      return;
-    }
-  };
 
-  const fetchStarsCount = async () => {
-    try {
-      const response = await fetch("https://api.github.com/repos/aoijs/aoi.js");
-      const data = await response.json();
-      setStarsCount(data.stargazers_count);
+      const starsCountResponse = await fetch(
+        "https://api.github.com/repos/AkaruiDevelopment/aoi.js"
+      );
+      const starsCountData = await starsCountResponse.json();
+      setStarsCount(starsCountData.stargazers_count);
     } catch (error) {
-      return;
+      console.error("Error fetching package stats:", error);
+      setDownloadCount("N/A");
+      setDownloadsAllTime("N/A");
+      setStarsCount("N/A");
     }
   };
 
@@ -114,19 +112,19 @@ function PackageStats() {
           <div className={styles.statsContainer}>
             <div className={styles.stat}>
               <Typography variant="h4" component="h3">
-                {downloadCount.toLocaleString()}
+                {formatNumberWithCommas(downloadCount)}
               </Typography>
               <Typography variant="body1">Downloads (Last Week)</Typography>
             </div>
             <div className={styles.stat}>
               <Typography variant="h4" component="h3">
-                {downloadsAllTime.toLocaleString()}
+                {formatNumberWithCommas(downloadsAllTime)}
               </Typography>
               <Typography variant="body1">Downloads (All Time)</Typography>
             </div>
             <div className={styles.stat}>
               <Typography variant="h4" component="h3">
-                {starsCount.toLocaleString()}
+                {formatNumberWithCommas(starsCount)}
               </Typography>
               <Typography variant="body1">Stars on GitHub</Typography>
             </div>
