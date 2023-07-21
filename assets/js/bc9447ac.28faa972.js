@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkAoiEngine=self.webpackChunkAoiEngine||[]).push([[72510],{836:i=>{i.exports=JSON.parse('[{"label":"aoi.js","permalink":"/wikis/tags/aoi-js","count":45},{"label":"v6","permalink":"/wikis/tags/v-6","count":52},{"label":"Other","permalink":"/wikis/tags/other","count":18},{"label":"aoi.music","permalink":"/wikis/tags/aoi-music","count":2}]')}}]);
