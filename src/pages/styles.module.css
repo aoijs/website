@@ -377,3 +377,47 @@
   background-color: #24292e;
   color: #fff;
 }
+
+.copyButtonWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.copyButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #00000000;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.copyIconWrapper {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.copyIconBeforeCopy {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.copyIcon {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.copied .copyIconBeforeCopy {
+  opacity: 0;
+}
+
+.copied .copyIcon {
+  opacity: 1;
+}

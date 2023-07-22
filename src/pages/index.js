@@ -7,6 +7,7 @@ import Layout from "@theme/Layout";
 import Cookies from "@site/src/components/CookieComponent";
 import DescriptionIcon from "@mui/icons-material/Description";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import FileCopyIcon from "@mui/icons-material/FileCopy";
 import styles from "./styles.module.css";
 
 const features = [
@@ -135,6 +136,40 @@ function PackageStats() {
   );
 }
 
+function CopyToClipboardButton() {
+  const [isCopied, setIsCopied] = useState(false);
+
+  const copyTextToClipboard = () => {
+    const text = "npm install aoi.js";
+    navigator.clipboard.writeText(text).then(
+      () => {
+        setIsCopied(true);
+        setTimeout(() => setIsCopied(false), 2000); // Reset copied state after 2 seconds
+      },
+      (err) => {
+        console.error("Failed to copy text: ", err);
+      }
+    );
+  };
+
+  return (
+    <button
+      className={`${styles.copyButton} ${isCopied ? styles.copied : ""}`}
+      onClick={copyTextToClipboard}
+      type="button"
+    >
+      <span className={styles.copyIconWrapper}>
+        {isCopied ? (
+          <FileCopyIcon className={styles.copyIcon} />
+        ) : (
+          <FileCopyIcon className={styles.copyIconBeforeCopy} />
+        )}
+      </span>
+      npm install aoi.js
+    </button>
+  );
+}
+
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
@@ -168,20 +203,23 @@ function Home() {
                 color="primary"
                 size="large"
                 component={Link}
-                to={useBaseUrl("/docs/guides/setup")}
+                to={useBaseUrl("/docs")}
                 startIcon={<DescriptionIcon />}
               >
-                Get Started
+                Docs
               </Button>
               <Button
                 variant="outlined"
                 color="primary"
                 size="large"
-                href="https://github.com/aoijs/aoi.js"
+                href="https://github.com/AkaruiDevelopment/aoi.js"
                 startIcon={<GitHubIcon />}
               >
                 GitHub
               </Button>
+            </div>
+            <div className={styles.copyButtonWrapper}>
+              <CopyToClipboardButton />
             </div>
             <Cookies />
           </Container>

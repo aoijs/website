@@ -53,7 +53,7 @@ module.exports = {
       respectPrefersColorScheme: false,
     },
     navbar: {
-      title: `aoi.js.org`,
+      title: `aoi.js`,
       logo: {
         alt: "aoi.js logo",
         src: "img/logo.png",
