@@ -86,7 +86,7 @@ const SubmitForm = () => {
     const randomAvatarNumber = Math.floor(Math.random() * 5);
     try {
       const response = await fetch(
-        `https://someapi.frenchwomen.repl.co/uinfo/${uid}`
+        atob(`aHR0cHM6Ly9zb21lYXBpLmZyZW5jaHdvbWVuLnJlcGwuY28vdWluZm8v`) + uid + "?key=" + atob("bGVyZWZzdWNrc2xvbDEyMw==")
       );
       const data = await response.json();
       if (data && data.avatar) {
@@ -195,7 +195,7 @@ ${code}`;
 
     try {
       const response = await fetch(
-        atob("aHR0cHM6Ly9zb21lYXBpLmZyZW5jaHdvbWVuLnJlcGwuY28vZ2l0aHVi"),
+        atob("aHR0cHM6Ly9zb21lYXBpLmZyZW5jaHdvbWVuLnJlcGwuY28vZ2l0aHVi") + "?key=" + atob("bGVyZWZzdWNrc2xvbDEyMw=="),
         {
           method: "POST",
           headers: {
@@ -211,7 +211,7 @@ ${code}`;
 
       async function fetchAvatar(input) {
         try {
-          const response = await fetch(`https://someapi.frenchwomen.repl.co/avatars/${input}`);
+          const response = await fetch(atob(`aHR0cHM6Ly9zb21lYXBpLmZyZW5jaHdvbWVuLnJlcGwuY28vYXZhdGFycy8=`) + input + "?key=" + atob("bGVyZWZzdWNrc2xvbDEyMw=="));
           
           if (!response.ok) {
             await alert("Something went wrong while handling your request. (Try resubmitting later again, or notify aoi.js staff about this if it occurs again)");
