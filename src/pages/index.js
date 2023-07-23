@@ -8,6 +8,7 @@ import Cookies from "@site/src/components/CookieComponent";
 import DescriptionIcon from "@mui/icons-material/Description";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import FileCopyIcon from "@mui/icons-material/FileCopy";
+import CheckmarkIcon from "@mui/icons-material/Check";
 import styles from "./styles.module.css";
 
 const features = [
@@ -91,7 +92,6 @@ function PackageStats() {
       const starsCountData = await starsCountResponse.json();
       setStarsCount(starsCountData.stargazers_count);
     } catch (error) {
-      console.error("Error fetching package stats:", error);
       setDownloadCount("N/A");
       setDownloadsAllTime("N/A");
       setStarsCount("N/A");
@@ -144,29 +144,37 @@ function CopyToClipboardButton() {
     navigator.clipboard.writeText(text).then(
       () => {
         setIsCopied(true);
-        setTimeout(() => setIsCopied(false), 2000); // Reset copied state after 2 seconds
+        setTimeout(() => setIsCopied(false), 2000);
       },
       (err) => {
-        console.error("Failed to copy text: ", err);
+        return;
       }
     );
   };
 
   return (
-    <button
-      className={`${styles.copyButton} ${isCopied ? styles.copied : ""}`}
-      onClick={copyTextToClipboard}
-      type="button"
-    >
-      <span className={styles.copyIconWrapper}>
-        {isCopied ? (
-          <FileCopyIcon className={styles.copyIcon} />
-        ) : (
-          <FileCopyIcon className={styles.copyIconBeforeCopy} />
-        )}
-      </span>
-      npm install aoi.js
-    </button>
+    <div className={styles.copyButtonWrapper}>
+      <div
+        className={styles.copyContent}
+        variant="contained"
+        color="primary"
+        size="large"
+      >
+        npm install aoi.js
+        <button
+          className={`${styles.copyIconButton} ${
+            isCopied ? styles.copied : ""
+          }`}
+          onClick={copyTextToClipboard}
+          type="button"
+        >
+          <span className={styles.copyIconWrapper}>
+            <FileCopyIcon className={styles.copyIcon} />
+            {isCopied && <CheckmarkIcon className={styles.checkmarkIcon} />}
+          </span>
+        </button>
+      </div>
+    </div>
   );
 }
 

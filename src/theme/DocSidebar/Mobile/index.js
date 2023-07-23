@@ -15,8 +15,7 @@ const DocSidebarMobileSecondaryMenu = ({sidebar, path}) => {
         items={sidebar}
         activePath={path}
         onItemClick={(item) => {
-          // Mobile sidebar should only be closed if the category has a link
-          if (item.type === 'category' && item.href) {
+          if (item.type === 'category' && item.href && item["aria-label"] !== "no-mobile") {
             mobileSidebar.toggle();
           }
           if (item.type === 'link') {

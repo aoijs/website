@@ -94,6 +94,7 @@ module.exports = {
         {
           type: "docsVersionDropdown",
           position: "right",
+          /*
           dropdownItemsAfter: [
             {
               type: "html",
@@ -104,6 +105,7 @@ module.exports = {
               label: "Github",
             },
           ],
+          -- not needed anymore */
         },
         {
           type: "localeDropdown",
@@ -120,9 +122,16 @@ module.exports = {
           ],
         },
         {
-          to: "https://aoi.js.org/invite",
-          label: "Discord Server",
+          href: "https://github.com/AkaruiDevelopment/aoi.js",
           position: "right",
+          className: "header-github-link",
+          "aria-label": "no-mobile",
+        },
+        {
+          href: "https://aoi.js.org/invite",
+          position: "right",
+          className: "header-discord-link",
+          "aria-label": "no-mobile",
         },
       ],
     },
@@ -172,7 +181,7 @@ module.exports = {
             },
             {
               label: "Privacy",
-              to: "privacy/"
+              to: "privacy/",
             },
           ],
         },
