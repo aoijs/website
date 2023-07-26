@@ -9,27 +9,35 @@ export default function BlogSidebarDesktop({ sidebar }) {
     "/wikis/submit",
     "/wikis/guidelines",
     "/wikis/tags",
+    "/wikis/showcase",
     "es/wikis/submit",
     "es/wikis/guidelines",
     "es/wikis/tags",
+    "es/wikis/showcase",
     "fr/wikis/submit",
     "fr/wikis/guidelines",
     "fr/wikis/tags",
+    "fr/wikis/showcase",
     "ar/wikis/submit",
     "ar/wikis/guidelines",
     "ar/wikis/tags",
+    "ar/wikis/showcase",
     "ru/wikis/submit",
     "ru/wikis/guidelines",
     "ru/wikis/tags",
+    "ru/wikis/showcase",
     "uk/wikis/submit",
     "uk/wikis/guidelines",
     "uk/wikis/tags",
+    "uk/wikis/showcase",
     "tr/wikis/submit",
     "tr/wikis/guidelines",
     "tr/wikis/tags",
+    "tr/wikis/showcase",
     "de/wikis/submit",
     "de/wikis/guidelines",
     "de/wikis/tags",
+    "de/wikis/showcase",
   ];
 
   const [isSortedAlphabetically, setIsSortedAlphabetically] = useState(false);
@@ -136,6 +144,16 @@ export default function BlogSidebarDesktop({ sidebar }) {
               activeClassName={styles.sidebarItemLinkActive}
             >
               Tags
+            </Link>
+          </li>
+          <li key="/wikis/showcase" className={styles.sidebarItem}>
+            <Link
+              isNavLink
+              to="/wikis/showcase"
+              className={styles.sidebarItemLink}
+              activeClassName={styles.sidebarItemLinkActive}
+            >
+              Showcase
             </Link>
           </li>
         </ul>
