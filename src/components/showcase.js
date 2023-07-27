@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 
@@ -520,8 +520,11 @@ export default function Showcase() {
             );
 
     const handleButtonRedirect = (url) => {
-        window.location.href = url;
+        useEffect(() => {
+            window.location.href = url;
+        }, []);
     };
+
 
     return (
         <div>
@@ -573,12 +576,12 @@ export default function Showcase() {
                             <img src="https://github.com/aoijs/website/blob/main/assets/images/aoijs-banner.png?raw=true" alt="Image" />
                         </div>
                         <div className={clsx("card__footer", "my-card-footer")}>
-                            <Link
-                                className={clsx("button", "button--secondary", "button--block")}
-                                to={item.path}
-                            >
-                                Go to Wiki
-                            </Link>
+                        <Link
+                            className={clsx("button", "button--secondary", "button--block")}
+                            onClick={() => handleButtonRedirect(item.path)}
+                        >
+                          Go to Wiki
+                        </Link>
                         </div>
                     </div>
                 ))}
