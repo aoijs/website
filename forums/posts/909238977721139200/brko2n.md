@@ -56,6 +56,7 @@ $onlyif[$slashOption[amount]>0;{newEmbed: {title:Error...}{description:You need 
 $onlyIf[$hasPerms[$guildId;$authorId;managemessages]!=false;{newEmbed: {title: Missing Permissions...}{description:Seems like you are missing \`MANAGE_MESSAGES\` permissions! You need these to be able to request message deletion!}{color:Red}}{extraOptions: {interaction}}]
 $onlyIf[$hasPerms[$guildId;$clientID;managemessages]!=false;{newEmbed: {title: Missing Permissions...}{description:Seems like i'am missing \`MANAGE_MESSAGES\` permissions! I need these to be able to delete messages!}{color:Red}}{extraOptions: {interaction}}]
 $suppressErrors[{newEmbed: {description: I ran into an error! This can  have been cause by a few things! \`\`\`- Channel not text\n- Missing Perms\`\`\`}{color:Red}{title:#COLON#warning#COLON# Error #COLON#warning#COLON#}}{extraOptions: {interaction}}]
+})
 ```
 
 Now once you have used the command to create the slash its really simple. All you do is /purge and do the requirements. The bot will delete the amount of messages requested in the channel the command was excecuted in **if** no channel is provided.
