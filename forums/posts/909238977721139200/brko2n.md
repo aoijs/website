@@ -15,7 +15,7 @@ pagination_next: null
 ---
 
 This is a slash command so you will need to make a slash. Heres an example:
-```
+```js
 bot.command({
     name: "slash",
     code: `
@@ -36,7 +36,7 @@ $color[Green]
 });
 ```
 This you would add in your main file or make in your commands handler. Whatever is better for you.
-```
+```js
 bot.interactionCommand({
   name: "purge",
   $if: "old",
