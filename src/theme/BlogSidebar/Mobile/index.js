@@ -128,7 +128,7 @@ export default function BlogSidebarMobile({ sidebar, onSearch }) {
     "/wikis/submit",
     "/wikis/guidelines",
     "/wikis/tags",
-    "wikis/showcase"
+    "/wikis/showcase"
   ];
   const sortedItems = sidebar?.items
     .filter((item) => !excludedPermalinks.includes(item.permalink))
