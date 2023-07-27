@@ -7,4 +7,4 @@ pagination_next: null
 pagination_prev: null
 --- 
 
-<Showcase1 />
+<Showcase />
