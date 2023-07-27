@@ -479,6 +479,15 @@ export default function Showcase() {
       "path": "/wikis/posts/894309600029999104/jh5tdp"
     },
     {
+      "title": "Slash Purge Command",
+      "description": "This wiki is about a purge command, an efficient tool enabling users to swiftly delete multiple messages with a single command, rather than tediously removing them one by one. The purge command grants users the ability to specify the exact number of messages they wish to erase, streamlining the process of message management and facilitating a cleaner and more organized communication environment. ",
+      "tags": [
+        "aoi.js",
+        "v6"
+      ],
+      "path": "/wikis/posts/909238977721139200/brko2n"
+    },
+    {
       "title": "Ticketing system",
       "description": "This is a ticketing system whose most of the codes are aoi.js while some, like the transcript is made with discord.js. I thought of making this wiki as many people are having doubts or want to make a ticketing system. ",
       "tags": [
@@ -495,6 +504,16 @@ export default function Showcase() {
         "aoi.js"
       ],
       "path": "/wikis/posts/964024743172915220/ebigj"
+    },
+    {
+      "title": "Rank bot victier ",
+      "description": "Victier rank bot but aoi.js version",
+      "tags": [
+        "aoi.js",
+        "v6",
+        "Other"
+      ],
+      "path": "/wikis/posts/964024743172915220/hiyv8"
     }
   ];
 

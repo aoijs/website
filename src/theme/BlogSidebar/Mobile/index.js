@@ -10,29 +10,37 @@ function BlogSidebarMobileSecondaryMenu({ sidebar, onSearch }) {
     "/wikis/submit",
     "/wikis/guidelines",
     "/wikis/tags",
+    "/wikis/showcase",
     "es/wikis/submit",
     "es/wikis/guidelines",
     "es/wikis/tags",
+    "es/wikis/showcase",
     "fr/wikis/submit",
     "fr/wikis/guidelines",
     "fr/wikis/tags",
+    "fr/wikis/showcase",
     "ar/wikis/submit",
     "ar/wikis/guidelines",
     "ar/wikis/tags",
+    "ar/wikis/showcase",
     "ru/wikis/submit",
     "ru/wikis/guidelines",
     "ru/wikis/tags",
+    "ru/wikis/showcase",
     "uk/wikis/submit",
     "uk/wikis/guidelines",
     "uk/wikis/tags",
+    "uk/wikis/showcase",
     "tr/wikis/submit",
     "tr/wikis/guidelines",
     "tr/wikis/tags",
+    "tr/wikis/showcase",
     "de/wikis/submit",
     "de/wikis/guidelines",
     "de/wikis/tags",
+    "de/wikis/showcase",
   ];
-  
+
   const sortedItems = sidebar?.items
     .filter((item) => !excludedPermalinks.includes(item.permalink))
     .sort((a, b) => a.title.localeCompare(b.title));
@@ -54,6 +62,16 @@ function BlogSidebarMobileSecondaryMenu({ sidebar, onSearch }) {
   return (
     <ul className="menu__list">
       <div className="menu__title">Introduction</div>
+      <li key="/wikis/showcase" className="menu__list-item">
+        <Link
+          isNavLink
+          to="/wikis/showcase"
+          className="menu__link"
+          activeClassName="menu__link--active"
+        >
+          Showcase
+        </Link>
+      </li>
       <li key="/wikis/guidelines" className="menu__list-item">
         <Link
           isNavLink
@@ -72,16 +90,6 @@ function BlogSidebarMobileSecondaryMenu({ sidebar, onSearch }) {
           activeClassName="menu__link--active"
         >
           Submit Wiki
-        </Link>
-      </li>
-      <li key="/wikis/tags" className="menu__list-item">
-        <Link
-          isNavLink
-          to="/wikis/tags"
-          className="menu__link"
-          activeClassName="menu__link--active"
-        >
-          Tags
         </Link>
       </li>
       <div
@@ -120,6 +128,7 @@ export default function BlogSidebarMobile({ sidebar, onSearch }) {
     "/wikis/submit",
     "/wikis/guidelines",
     "/wikis/tags",
+    "wikis/showcase"
   ];
   const sortedItems = sidebar?.items
     .filter((item) => !excludedPermalinks.includes(item.permalink))

@@ -80,7 +80,7 @@ module.exports = {
           position: "left",
         },
         {
-          to: "wikis/guidelines",
+          to: "wikis/showcase",
           activeBasePath: "wikis",
           label: "Community Wikis",
           position: "left",
@@ -177,7 +177,7 @@ module.exports = {
             },
             {
               label: "Community Wikis",
-              to: "wikis/guidelines",
+              to: "wikis/showcase",
             },
             {
               label: "Privacy",

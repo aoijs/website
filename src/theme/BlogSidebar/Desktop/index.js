@@ -116,6 +116,16 @@ export default function BlogSidebarDesktop({ sidebar }) {
           <span>Introduction</span>
         </div>
         <ul className={clsx(styles.sidebarItemList, "clean-list")}>
+          <li key="/wikis/showcase" className={styles.sidebarItem}>
+            <Link
+              isNavLink
+              to="/wikis/showcase"
+              className={styles.sidebarItemLink}
+              activeClassName={styles.sidebarItemLinkActive}
+            >
+              Showcase
+            </Link>
+          </li>
           <li key="/wikis/guidelines" className={styles.sidebarItem}>
             <Link
               isNavLink
@@ -134,26 +144,6 @@ export default function BlogSidebarDesktop({ sidebar }) {
               activeClassName={styles.sidebarItemLinkActive}
             >
               Submit Wiki
-            </Link>
-          </li>
-          <li key="/wikis/tags" className={styles.sidebarItem}>
-            <Link
-              isNavLink
-              to="/wikis/tags"
-              className={styles.sidebarItemLink}
-              activeClassName={styles.sidebarItemLinkActive}
-            >
-              Tags
-            </Link>
-          </li>
-          <li key="/wikis/showcase" className={styles.sidebarItem}>
-            <Link
-              isNavLink
-              to="/wikis/showcase"
-              className={styles.sidebarItemLink}
-              activeClassName={styles.sidebarItemLinkActive}
-            >
-              Showcase
             </Link>
           </li>
         </ul>
