@@ -25,6 +25,15 @@ export default function Showcase() {
       "path": "/wikis/posts/1034802804964995142/kphbt"
     },
     {
+      "title": "Dm or guild help",
+      "description": "You can set the call type of the help command: DM or NONE In fact, DM only plays a role, because if the perpenal 'type' does not correspond to DM",
+      "tags": [
+        "v6",
+        "aoi.js"
+      ],
+      "path": "/wikis/posts/1060920802503036948/99c6nn"
+    },
+    {
       "title": "Prefix custom function",
       "description": "Returns the prefix you used to call the command.",
       "tags": [

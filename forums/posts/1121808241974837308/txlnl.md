@@ -1,8 +1,6 @@
 ---
 title: "Guess the country game"
-description: "a guess the country game using $awaitMessages
-the user gets a country flag and he has to guess it
-if the user guesses it right the bot mentions him and says Gg
+description: "a guess the country game using $awaitMessages the user gets a country flag and he has to guess it if the user guesses it right the bot mentions him and says Gg
 "
 authors:
   name: "@lokamoka"
