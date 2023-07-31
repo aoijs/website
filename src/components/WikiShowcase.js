@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
+import ReactMarkdown from "react-markdown";
 
 export default function Showcase() {
   const [selectedTags, setSelectedTags] = useState([]);
   const items = [
     {
       "title": "Random memes",
-      "description": "They are funny images of trending memes totally in Spanish.",
+      "description": 'They are funny images of trending memes totally in Spanish.',
       "tags": [
         "aoi.js",
         "v6"
@@ -543,11 +544,6 @@ export default function Showcase() {
       ? items
       : items.filter((item) => selectedTags.every((tag) => item.tags.includes(tag)));
 
-  const handleButtonRedirect = (url) => {
-    // Redirect on the client-side to avoid server-side rendering issues
-    window.location.href = url;
-  };
-
   return (
     <div>
       <ul className="pills">
@@ -592,7 +588,7 @@ export default function Showcase() {
               <h3>{item.title}</h3>
             </div>
             <div className={clsx("card__body", "my-card-body")}>
-              <p>{item.description}</p>
+              <p><ReactMarkdown>{item.description}</ReactMarkdown></p>
             </div>
             <div className={clsx("card__image", "my-card-image")}>
               <img src="https://github.com/aoijs/website/blob/main/assets/images/aoijs-banner.png?raw=true" alt="Image" />
@@ -600,7 +596,6 @@ export default function Showcase() {
             <div className={clsx("card__footer", "my-card-footer")}>
               <Link
                 className={clsx("button", "button--secondary", "button--block")}
-                // Use anchor tags directly to avoid server-side rendering issues
                 href={item.path}
               >
                 Go to Wiki
