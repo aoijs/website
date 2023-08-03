@@ -7,9 +7,9 @@ authors:
   userid: '713132410153205802'
   url: https://discord.com/users/713132410153205802
   image_url: https://raw.githubusercontent.com/Faf4a/website/main/assets/images/avatars/713132410153205802.png
-    tags: ["aoi.js","v6","Other"]
-    hide_table_of_contents: true
-    enableComments: true
+tags: ["aoi.js","v6","Other"]
+hide_table_of_contents: true
+enableComments: true
 pagination_prev: null
 pagination_next: null
 ---
