@@ -53,8 +53,8 @@ bot.functionManager.createFunction({
 
 | Field | Type | Description |  
 | ------ | --- | ---------------- |  
-| Time | 30 | Human Time |  
-| Type | 25 | Unix timestamp type |  
+| Time | String | Human Time |  
+| Type | String | Unix timestamp type |  
 | A Idk | Operator | A thing to do expression |  
 
 # Type Option
