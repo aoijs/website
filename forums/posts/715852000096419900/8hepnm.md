@@ -1,20 +1,20 @@
 ---
-    title: 'create timestamp'
-    description: 'A js custom function to create unix timestamp.'
-    authors:
-      name: '@ahoemi'
-      title: Member - 715852000096419900
-      userid: '715852000096419900'
-      url: https://discord.com/users/715852000096419900
-      image_url: https://raw.githubusercontent.com/Faf4a/website/main/assets/images/avatars/715852000096419900.png
-    tags: ["v6","aoi.js","Other"]
-    hide_table_of_contents: true
-    enableComments: true
-    pagination_prev: null
-    pagination_next: null
-    ---
+title: 'create timestamp'
+description: 'A js custom function to create unix timestamp.'
+authors:
+    name: '@ahoemi'
+    title: Member - 715852000096419900
+    userid: '715852000096419900'
+    url: https://discord.com/users/715852000096419900
+    image_url: https://raw.githubusercontent.com/Faf4a/website/main/assets/images/avatars/715852000096419900.png
+tags: ["v6","aoi.js","Other"]
+hide_table_of_contents: true
+enableComments: true
+pagination_prev: null
+pagination_next: null
+---
     
-    # Code
+# Code
 ```js
 bot.functionManager.createFunction({
   name: "$createTimestamp",
