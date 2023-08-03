@@ -1,20 +1,20 @@
 ---
-    title: 'multipleReplaceText custom function'
-    description: 'A simple function that avoids putting lots of $replacetext in $replacetext to change several words in the same text'
-    authors:
-      name: '@p4olo.'
-      title: Member - 713132410153205802
-      userid: '713132410153205802'
-      url: https://discord.com/users/713132410153205802
-      image_url: https://raw.githubusercontent.com/Faf4a/website/main/assets/images/avatars/713132410153205802.png
+title: 'multipleReplaceText custom function'
+description: 'A simple function that avoids putting lots of $replacetext in $replacetext to change several words in the same text'
+authors:
+  name: '@p4olo.'
+  title: Member - 713132410153205802
+  userid: '713132410153205802'
+  url: https://discord.com/users/713132410153205802
+  image_url: https://raw.githubusercontent.com/Faf4a/website/main/assets/images/avatars/713132410153205802.png
     tags: ["aoi.js","v6","Other"]
     hide_table_of_contents: true
     enableComments: true
-    pagination_prev: null
-    pagination_next: null
-    ---
+pagination_prev: null
+pagination_next: null
+---
     
-    ### Function:
+### Function:
 $multipleReplaceText[text;replacer1 --> replaceto1, replacer2 --> replaceto2...]
 
 This this function avoids putting replacetext in replacetext in replacetext ...
