@@ -9,11 +9,13 @@ import { Tooltip } from "react-tooltip";
 import SubmitForm from "@site/src/components/Forms";
 import InputField from "@site/src/components/InputField";
 import Slash from "@site/src/components/SlashPreview";
-import Showcase from "@site/src/components/WikiShowcase"
+import Showcase from "@site/src/components/WikiShowcase";
+import ReactMarkdown from "react-markdown";
 
 export default {
   ...MDXComponents,
   Highlight,
+  ReactMarkdown,
   GiscusComponent,
   InputField,
   SubmitForm,
@@ -22,5 +24,5 @@ export default {
   Slash,
   Showcase,
   Tooltip,
-  TabItem
+  TabItem,
 };

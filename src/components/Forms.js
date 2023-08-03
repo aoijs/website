@@ -86,7 +86,10 @@ const SubmitForm = () => {
     const randomAvatarNumber = Math.floor(Math.random() * 5);
     try {
       const response = await fetch(
-        atob(`aHR0cHM6Ly9zb21lYXBpLmZyZW5jaHdvbWVuLnJlcGwuY28vdWluZm8v`) + uid + "?key=" + atob("bGVyZWZzdWNrc2xvbDEyMw==")
+        atob(`aHR0cHM6Ly9zb21lYXBpLmZyZW5jaHdvbWVuLnJlcGwuY28vdWluZm8v`) +
+          uid +
+          "?key=" +
+          atob("bGVyZWZzdWNrc2xvbDEyMw==")
       );
       const data = await response.json();
       if (data && data.avatar) {
@@ -176,26 +179,40 @@ const SubmitForm = () => {
     const fileName = `${discordUID}/${randomString}.md`;
 
     const fileContent = `---
-title: "${title}"
-description: "${description}"
-authors:
-  name: "@${username}"
-  title: Member - ${discordUID}
-  userid: "${discordUID}"
-  url: https://discord.com/users/${discordUID}
-  image_url: https://raw.githubusercontent.com/Faf4a/website/main/assets/images/avatars/${discordUID}.png
-tags: ${JSON.stringify(tags)}
-hide_table_of_contents: true
-enableComments: true
-pagination_prev: null
-pagination_next: null
----
+    title: '${title}'
+    description: '${description}'
+    authors:
+      name: '@${username}'
+      title: Member - ${discordUID}
+      userid: '${discordUID}'
+      url: https://discord.com/users/${discordUID}
+      image_url: https://raw.githubusercontent.com/Faf4a/website/main/assets/images/avatars/${discordUID}.png
+    tags: ${JSON.stringify(tags)}
+    hide_table_of_contents: true
+    enableComments: true
+    pagination_prev: null
+    pagination_next: null
+    ---
+    
+    ${fixCodeBlock(code)}`;
 
-${code}`;
+    function fixCodeBlock(code) {
+      if (checkforJS(code)) {
+        return "```js\n" + code + "\n```";
+      } else {
+        return code;
+      }
+    }
+
+    function checkforJS(code) {
+      return code.indexOf("```") !== -1 && code.indexOf("```js") === -1;
+    }
 
     try {
       const response = await fetch(
-        atob("aHR0cHM6Ly9zb21lYXBpLmZyZW5jaHdvbWVuLnJlcGwuY28vZ2l0aHVi") + "?key=" + atob("bGVyZWZzdWNrc2xvbDEyMw=="),
+        atob("aHR0cHM6Ly9zb21lYXBpLmZyZW5jaHdvbWVuLnJlcGwuY28vZ2l0aHVi") +
+          "?key=" +
+          atob("bGVyZWZzdWNrc2xvbDEyMw=="),
         {
           method: "POST",
           headers: {
@@ -211,25 +228,31 @@ ${code}`;
 
       async function fetchAvatar(input) {
         try {
-          const response = await fetch(atob(`aHR0cHM6Ly9zb21lYXBpLmZyZW5jaHdvbWVuLnJlcGwuY28vYXZhdGFycy8=`) + input + "?key=" + atob("bGVyZWZzdWNrc2xvbDEyMw=="));
-          
+          const response = await fetch(
+            atob(
+              `aHR0cHM6Ly9zb21lYXBpLmZyZW5jaHdvbWVuLnJlcGwuY28vYXZhdGFycy8=`
+            ) +
+              input +
+              "?key=" +
+              atob("bGVyZWZzdWNrc2xvbDEyMw==")
+          );
+
           if (!response.ok) {
-            await alert("Something went wrong while handling your request. (Try resubmitting later again, or notify aoi.js staff about this if it occurs again)");
+            await alert(
+              "Something went wrong while handling your request. (Try resubmitting later again, or notify aoi.js staff about this if it occurs again)"
+            );
           }
-      
         } catch (error) {
-          await alert("Something went wrong while handling your request. (Failed to upload your avatar, you can savely ignore this error)");
+          await alert(
+            "Something went wrong while handling your request. (Failed to upload your avatar, you can savely ignore this error)"
+          );
           return;
         }
       }
-      
-      
 
       if (response.ok) {
+        alert("Successfully submitted your wiki for review, check back later!");
         await fetchAvatar(discordUID);
-        alert(
-          "Successfully submitted your wiki for review, check back later!"
-        );
         window.location.reload();
       } else {
         await alert("Something went wrong while handling your request.");

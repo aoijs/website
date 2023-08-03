@@ -3,7 +3,7 @@ title: Client Events
 description: This guide will be covering everything you need to know about events and their usage.
 id: events
 ---
-
+ 
 ## Using Events
 
 ### Table of Contents
