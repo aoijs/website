@@ -1,20 +1,20 @@
 ---
-    title: 'Moderation commads'
-    description: 'This wiki includes the most common used moderation commands that is, kick, ban, timeout.'
-    authors:
-      name: '@nanotechpikachu'
-      title: Member - 949588732498018324
-      userid: '949588732498018324'
-      url: https://discord.com/users/949588732498018324
-      image_url: https://raw.githubusercontent.com/Faf4a/website/main/assets/images/avatars/949588732498018324.png
-    tags: ["aoi.js"]
-    hide_table_of_contents: true
-    enableComments: true
-    pagination_prev: null
-    pagination_next: null
-    ---
+title: 'Moderation commads'
+description: 'This wiki includes the most common used moderation commands that is, kick, ban, timeout.'
+authors:
+  name: '@nanotechpikachu'
+  title: Member - 949588732498018324
+  userid: '949588732498018324'
+  url: https://discord.com/users/949588732498018324
+  image_url: https://raw.githubusercontent.com/Faf4a/website/main/assets/images/avatars/949588732498018324.png
+tags: ["aoi.js"]
+hide_table_of_contents: true
+enableComments: true
+pagination_prev: null
+pagination_next: null
+---
     
-    Hi to all the viewers. I am back with one of the most commonly used command's wikis. So the commands are:
+Hi to all the viewers. I am back with one of the most commonly used command's wikis. So the commands are:
 - Ban
 - Kick
 - Timeout
@@ -110,9 +110,9 @@ That`s the codes for you all!
 
 ## Image gallery
 The example image of my codes.
-https://cdn.discordapp.com/attachments/1096692386748452946/1137682021599154186/Screenshot_20230806_151021_Discord.jpg
-https://cdn.discordapp.com/attachments/1096692386748452946/1137682021922119700/Screenshot_20230806_151051_Discord.jpg
-https://cdn.discordapp.com/attachments/1096692386748452946/1137682022299602944/Screenshot_20230806_151117_Discord.jpg
+![image](https://cdn.discordapp.com/attachments/1096692386748452946/1137682021599154186/Screenshot_20230806_151021_Discord.jpg)
+![image](https://cdn.discordapp.com/attachments/1096692386748452946/1137682021922119700/Screenshot_20230806_151051_Discord.jpg)
+![image](https://cdn.discordapp.com/attachments/1096692386748452946/1137682022299602944/Screenshot_20230806_151117_Discord.jpg)
 These are discord links so, I want your discretion. 
 
 ## Warning
