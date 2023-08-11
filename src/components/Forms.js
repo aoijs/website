@@ -179,22 +179,22 @@ const SubmitForm = () => {
     const fileName = `${discordUID}/${randomString}.md`;
 
     const fileContent = `---
-    title: '${title}'
-    description: '${description}'
-    authors:
-      name: '@${username}'
-      title: Member - ${discordUID}
-      userid: '${discordUID}'
-      url: https://discord.com/users/${discordUID}
-      image_url: https://raw.githubusercontent.com/Faf4a/website/main/assets/images/avatars/${discordUID}.png
-    tags: ${JSON.stringify(tags)}
-    hide_table_of_contents: true
-    enableComments: true
-    pagination_prev: null
-    pagination_next: null
-    ---
+title: '${title}'
+description: '${description}'
+authors:
+  name: '@${username}'
+  title: Member - ${discordUID}
+  userid: '${discordUID}'
+  url: https://discord.com/users/${discordUID}
+  image_url: https://raw.githubusercontent.com/Faf4a/website/main/assets/images/avatars/${discordUID}.png
+tags: ${JSON.stringify(tags)}
+hide_table_of_contents: true
+enableComments: true
+pagination_prev: null
+pagination_next: null
+---
     
-    ${fixCodeBlock(code)}`;
+${fixCodeBlock(code)}`;
 
     function fixCodeBlock(code) {
       if (checkforJS(code)) {
@@ -435,6 +435,8 @@ const SubmitForm = () => {
           "aoi.js",
           "aoi.panel",
           "aoi.dashboard",
+          "Template",
+          "discord.js",
           "v6",
           "v7",
           "Other",
