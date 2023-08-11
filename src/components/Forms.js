@@ -131,11 +131,9 @@ const SubmitForm = () => {
     event.preventDefault();
 
     const currentTime = Date.now();
-    const elapsedTime = currentTime - lastRequestTime;
 
-    if (elapsedTime < 15000) {
-      alert("Don't spam the submit button!");
-      return;
+    if ((currentTime - lastRequestTime) < 15000) {
+      return alert("Don't spam the submit button!");
     }
 
     setLastRequestTime(currentTime);
@@ -159,7 +157,7 @@ const SubmitForm = () => {
       errors.tags = true;
     }
 
-    const { avatar, username, bot } = await fetchUserInfo(discordUID);
+    const { username, bot } = await fetchUserInfo(discordUID);
 
     if (username === "Guest User") {
       errors.discordUID = true;
@@ -238,25 +236,23 @@ ${fixCodeBlock(code)}`;
           );
 
           if (!response.ok) {
-            await alert(
+            return alert(
               "Something went wrong while handling your request. (Try resubmitting later again, or notify aoi.js staff about this if it occurs again)"
             );
           }
         } catch (error) {
-          await alert(
+          return alert(
             "Something went wrong while handling your request. (Failed to upload your avatar, you can savely ignore this error)"
           );
-          return;
         }
       }
 
       if (response.ok) {
         alert("Successfully submitted your wiki for review, check back later!");
-        await fetchAvatar(discordUID);
         window.location.reload();
+        await fetchAvatar(discordUID);
       } else {
-        await alert("Something went wrong while handling your request.");
-        return;
+        return alert("Something went wrong while handling your request.");
       }
     } catch (error) {
       return;
