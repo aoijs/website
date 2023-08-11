@@ -579,6 +579,22 @@ export default function Showcase() {
         >
           aoi.js
         </li>
+                <li
+          className={clsx("pills__item", {
+            "pills__item--active": selectedTags.includes("Template"),
+          })}
+          onClick={() => handleTagClick("Template")}
+        >
+          Template
+        </li>
+        <li
+          className={clsx("pills__item", {
+            "pills__item--active": selectedTags.includes("discord.js"),
+          })}
+          onClick={() => handleTagClick("discord.js")}
+        >
+          discord.js
+        </li>
       </ul>
 
       <div className="card-demo">
