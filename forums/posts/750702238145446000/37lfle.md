@@ -14,10 +14,10 @@ pagination_prev: null
 pagination_next: null
 ---
     
-```js
+
 In this wiki, I'll show you how to create an awaited command with buttons that you can only press once and can't be pressed again until you have responded to the command. Here is the code:
 
-```
+```js
 bot.interactionCommand({
     name: "example",
     prototype: "button",
