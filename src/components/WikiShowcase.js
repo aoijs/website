@@ -8,7 +8,7 @@ export default function Showcase() {
   const items = [
     {
       "title": "Random memes",
-      "description": 'They are funny images of trending memes totally in Spanish.',
+      "description": "They are funny images of trending memes totally in Spanish.",
       "tags": [
         "aoi.js",
         "v6"
@@ -349,6 +349,16 @@ export default function Showcase() {
       "path": "/wikis/posts/713132410153205802/34unj"
     },
     {
+      "title": "multipleReplaceText custom function",
+      "description": "A simple function that avoids putting lots of $replacetext in $replacetext to change several words in the same text",
+      "tags": [
+        "aoi.js",
+        "v6",
+        "Other"
+      ],
+      "path": "/wikis/posts/713132410153205802/ahhuzg"
+    },
+    {
       "title": "Progression bar",
       "description": "A function that makes progression bar to save time and help people who can't do basic maths",
       "tags": [
@@ -375,6 +385,16 @@ export default function Showcase() {
         "v6"
       ],
       "path": "/wikis/posts/715852000096419900/7y0d4k"
+    },
+    {
+      "title": "create timestamp",
+      "description": "A js custom function to create unix timestamp.",
+      "tags": [
+        "v6",
+        "aoi.js",
+        "Other"
+      ],
+      "path": "/wikis/posts/715852000096419900/8hepnm"
     },
     {
       "title": "commands list",
@@ -413,6 +433,15 @@ export default function Showcase() {
         "v6"
       ],
       "path": "/wikis/posts/715852000096419900/icaljl"
+    },
+    {
+      "title": "isLink",
+      "description": "Checks if the provided text is link or not",
+      "tags": [
+        "v6",
+        "aoi.js"
+      ],
+      "path": "/wikis/posts/715852000096419900/qa41i"
     },
     {
       "title": "Colored and styled console logging",
@@ -462,6 +491,15 @@ export default function Showcase() {
       "path": "/wikis/posts/715852000096419900/xzyzwx"
     },
     {
+      "title": "Simple Set Nickname Command",
+      "description": "this is just a simple moderations set nickname command",
+      "tags": [
+        "aoi.js",
+        "v6"
+      ],
+      "path": "/wikis/posts/730782268175679528/bl6gy8"
+    },
+    {
       "title": "Currency Command Balance",
       "description": "A Simple Currency Balance Command",
       "tags": [
@@ -478,6 +516,16 @@ export default function Showcase() {
         "v6"
       ],
       "path": "/wikis/posts/730782268175679528/j991sn"
+    },
+    {
+      "title": "Button that cant be pressed until u respond first",
+      "description": "if u press the button once, it will work like normal but if you press it again without responding to the awaited command, the button will tell u to first respond to the awaited command",
+      "tags": [
+        "aoi.js",
+        "v6",
+        "Other"
+      ],
+      "path": "/wikis/posts/750702238145446000/37lfle"
     },
     {
       "title": "Simple avatar command",
@@ -498,6 +546,16 @@ export default function Showcase() {
       "path": "/wikis/posts/909238977721139200/brko2n"
     },
     {
+      "title": "removeTimeout Custom func",
+      "description": "This is the custom function to remove the timeout of a person. ",
+      "tags": [
+        "v6",
+        "aoi.js",
+        "Other"
+      ],
+      "path": "/wikis/posts/949588732498018324/ka92zr"
+    },
+    {
       "title": "Ticketing system",
       "description": "This is a ticketing system whose most of the codes are aoi.js while some, like the transcript is made with discord.js. I thought of making this wiki as many people are having doubts or want to make a ticketing system. ",
       "tags": [
@@ -505,6 +563,14 @@ export default function Showcase() {
         "v6"
       ],
       "path": "/wikis/posts/949588732498018324/r4uv0q"
+    },
+    {
+      "title": "Moderation commads",
+      "description": "This wiki includes the most common used moderation commands that is, kick, ban, timeout.",
+      "tags": [
+        "aoi.js"
+      ],
+      "path": "/wikis/posts/949588732498018324/yworwb"
     },
     {
       "title": "Roblox group info command",
@@ -579,7 +645,7 @@ export default function Showcase() {
         >
           aoi.js
         </li>
-                <li
+        <li
           className={clsx("pills__item", {
             "pills__item--active": selectedTags.includes("Template"),
           })}
