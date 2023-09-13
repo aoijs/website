@@ -46,25 +46,25 @@ streamline their workflow.
 const { AoiClient } = require("aoi.js");
 
 const bot = new AoiClient({
-    token: "DISCORD BOT TOKEN",
-    prefix: "DISCORD BOT PREFIX",
-    intents: ["MessageContent", "Guilds", "GuildMessages"],
-    events: ["onMessage"],
-    database: {
-        type: "aoi.db",
-        db: require("@akarui/aoi.db"),
-        tables: ["main"],
-        path: "./database/",
-        extraOptions: {
-            dbType: "KeyValue"
-        }
-    }
+  token: "DISCORD BOT TOKEN",
+  prefix: "DISCORD BOT PREFIX",
+  intents: ["MessageContent", "Guilds", "GuildMessages"],
+  events: ["onMessage"],
+  database: {
+    type: "aoi.db",
+    db: require("@akarui/aoi.db"),
+    tables: ["main"],
+    path: "./database/",
+    extraOptions: {
+      dbType: "KeyValue",
+    },
+  },
 });
 
 // Ping Command
 bot.command({
-    name: "ping",
-    code: `Pong! $pingms`
+  name: "ping",
+  code: `Pong! $pingms`,
 });
 ```
 
@@ -74,32 +74,32 @@ bot.command({
 const { AoiClient } = require("aoi.js");
 
 const bot = new AoiClient({
-    token: "DISCORD BOT TOKEN",
-    prefix: "DISCORD BOT PREFIX",
-    intents: ["MessageContent", "Guilds", "GuildMessages"],
-    events: ["onMessage", "onInteractionCreate"],
-    database: {
-        type: "aoi.db",
-        db: require("@akarui/aoi.db"),
-        tables: ["main"],
-        path: "./database/",
-        extraOptions: {
-            dbType: "KeyValue"
-        }
-    }
+  token: "DISCORD BOT TOKEN",
+  prefix: "DISCORD BOT PREFIX",
+  intents: ["MessageContent", "Guilds", "GuildMessages"],
+  events: ["onMessage", "onInteractionCreate"],
+  database: {
+    type: "aoi.db",
+    db: require("@akarui/aoi.db"),
+    tables: ["main"],
+    path: "./database/",
+    extraOptions: {
+      dbType: "KeyValue",
+    },
+  },
 });
 
 // Create Interaction Ping
 bot.command({
-    name: "create",
-    code: `$createApplicationCommand[$guildID;ping;Pong!;true;slash]`
+  name: "create",
+  code: `$createApplicationCommand[$guildID;ping;Pong!;true;slash]`,
 });
 
 // Ping Interaction Command
 bot.interactionCommand({
-    name: "ping",
-    prototype: "slash",
-    code: `$interactionReply[Pong! $pingms;;;;everyone;false]`
+  name: "ping",
+  prototype: "slash",
+  code: `$interactionReply[Pong! $pingms;;;;everyone;false]`,
 });
 ```
 

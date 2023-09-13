@@ -1,0 +1,67 @@
+---
+title: aoi.js
+description: The most powerful string package to create a simple and fast Discord Bot.
+template: splash
+banner:
+  content: |
+    The newest version, v6.5 just dropped!
+    <a href="https://github.com/AkaruiDevelopment/aoi.js#v6">Check it out</a>
+head:
+  - tag: meta
+    attrs:
+      name: "og:description"
+      content: "Get started with aoi.js, the most powerful string package to create a simple and fast Discord Bot."
+hero:
+  title: Build Powerful Discord Bots using aoi.js
+  tagline: The most advanced string-based package to create a Discord Bot fast and powerful
+  image:
+    file: /favicon.png
+  actions:
+    - text: Getting Started
+      link: guides/setup
+      icon: right-arrow
+      variant: primary
+    - text: "Extensions"
+      link: extensions/
+      icon: bars
+      variant: primary
+    - text: "Need support? Join our Discord!"
+      link: invite/
+      icon: external
+      variant: secondary
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+import { Icon } from "@astrojs/starlight/components";
+
+<CardGrid stagger>
+  <Card title="Easy-to-use" icon="rocket">
+    While keeping things simple, aoi.js also allows you to customize and extend
+    its capabilities. You can create your own commands and events tailored to
+    your project's requirements.
+  </Card>
+  <Card title="Community" icon="discord">
+    The package comes with comprehensive documentation that's helpful for both
+    beginners and experienced developers. Plus, there's a
+    <b><a class="linkStyle" href="invite/">community of users<Icon name="external" size="1rem" /></a></b> 
+    who can assist if you run into any issues.
+  </Card>
+  <Card title="Pre-built Functions" icon="puzzle">
+    aoi.js comes with over 600 pre-built functions that empower you to create
+    dynamic and interactive Discord bots with ease. These functions provide a
+    wide range of functionalities to enhance your bot's capabilities.
+  </Card>
+  <Card title="Built-in Custom Local Database" icon="document">
+    aoi.js provides a powerful custom local database, <a class="linkStyle" href="extensions/">aoi.db<Icon name="external" size="1rem" /></a>. This database allows you to store and retrieve data with ease, making it
+    convenient for managing and persisting bot-related information
+  </Card>
+  <Card title="Extensions for Added Functionality" icon="puzzle">
+    aoi.js offers extensions like <a class="linkStyle" href="extensions/">aoi.music<Icon name="external" size="1rem" /></a> and <a class="linkStyle" href="extensions/">aoi.panel<Icon name="external" size="1rem" /></a> to enhance your bot's capabilities. These extensions make it simple to add
+    features like music playback and a customizable web dashboard for managing
+    your bot.
+  </Card>
+  <a href="https://astro.build">
+    <img style="user-select: none" align="center" draggable="false" src="https://astro.badg.es/v1/built-with-astro/medium.svg" alt="Built with Astro" />
+  </a>
+</CardGrid>
+

@@ -1,0 +1,61 @@
+---
+title: Events
+description: "Enhance your Discord bot with @akarui/aoi.music: A powerful TypeScript-based JavaScript library for music operations in aoi.js."
+head:
+  - tag: meta
+    attrs:
+      name: "og:title"
+      content: "@akarui/aoi.music"
+  - tag: meta
+    attrs:
+      name: "og:site_name"
+      content: "aoi.music | Akarui Development"
+id: events
+next: false
+prev: false
+---
+
+#### Adding Events
+
+```js
+voice.addEvent(PlayerEvents.eventName);
+```
+
+#### List of Events
+
+- `trackStart` &rarr; Emitted whenever a track starts. 
+- `trackEnd` &rarr; Emitted whenever a track ends.
+- `queueStart` &rarr; Emitted whenever a queue starts.
+- `queueEnd` &rarr; Emitted whenever a queue ends.
+- `audioError` &rarr; Emitted whenever a audio error occurs.
+- `trackPause` &rarr; Emitted whenever a track pauses.
+- `trackResume` &rarr; Emitted whenever a track resumes.
+
+### Using Events
+
+```js
+/* Ensure you have loader defined using the LoadCommands class
+const { AoiClient, LoadCommands } = require("aoi.js");
+const loader = new LoadCommands(bot); */
+
+loader.load(voice.cmds,"./voice/");
+```
+
+This should be the content of your `./voice/<filename>.js`:
+
+```js
+module.exports = [{
+    channel: "$channelID",
+    type: "eventName",
+    code: `code to execute here`
+}]
+```
+
+If you don't want to use handlers, you can use this instead in your main file also known as `index.js`:
+
+```js
+voice.cmds["eventName"].set("name of the command", {
+    channel: "$channelID",
+    code: `code to execute here`
+});
+```

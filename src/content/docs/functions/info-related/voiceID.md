@@ -1,0 +1,32 @@
+---
+title: $voiceID
+description: $voiceID will return the current or given voice ID of an user.
+id: voiceID
+---
+
+`$voiceID` will return the current or given voice ID of an user.
+
+## Usage
+
+```php
+$voiceID[userID?]
+```
+
+## Parameters
+
+| Field   | Type    | Description                                                           | Required |
+| ------- | ------- | --------------------------------------------------------------------- | :------: |
+| userID? | integer | The ID of the user you want to retrieve the current voice channel of. |  false   |
+
+## Example(s)
+
+This will return your current voice channel ID (if any):
+
+```javascript
+bot.command({
+  name: "voiceID",
+  code: `
+    $voiceID[$authorID]
+  `,
+});
+```
