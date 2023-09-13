@@ -4,8 +4,8 @@
   <ShortName>aoi.js</ShortName>
   <Description>Search aoi.js</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://aoi.js.org/uk/img/logo.png</Image>
-  <Url type="text/html" method="get" template="https://aoi.js.org/uk/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://aoi.js.org/uk/opensearch.xml" />
-  <moz:SearchForm>https://aoi.js.org/uk/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://aoijs.github.io/website-old/uk/img/logo.png</Image>
+  <Url type="text/html" method="get" template="https://aoijs.github.io/website-old/uk/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://aoijs.github.io/website-old/uk/opensearch.xml" />
+  <moz:SearchForm>https://aoijs.github.io/website-old/uk/</moz:SearchForm>
 </OpenSearchDescription>
