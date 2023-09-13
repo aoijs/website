@@ -4,6 +4,7 @@
 # Production
 /build
 .env
+.astro
 
 # Generated files
 .docusaurus

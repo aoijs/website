@@ -6,7 +6,7 @@ import react from "@astrojs/react";
 
 export default defineConfig({
   site: "https://aoi.js.org",
-  base: "/",
+  base: "/website",
   integrations: [
     starlight({
       title: "aoi.js",
