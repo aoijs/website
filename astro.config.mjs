@@ -14,11 +14,11 @@ export default defineConfig({
         src: "/favicon.png",
       },
       social: {
-        github: "https://github.com/aoijs/website-astro",
+        github: "https://github.com/aoijs/website",
         discord: "https://discord.com/invite/HMUfMXDQsV",
       },
       editLink: {
-        baseUrl: "https://github.com/aoijs/website-astro/edit/main/",
+        baseUrl: "https://github.com/aoijs/website/edit/main/",
       },
       customCss: ["./src/styles/custom.css"],
       head: [
