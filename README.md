@@ -2,7 +2,7 @@
 
 <div align="center" style="margin: 30px;">
 <a href="https://aoi.js.org/">
-  <img src="https://github.com/aoijs/website/blob/main/assets/images/aoijs-banner.png?raw=true"   style="width:300px;" align="center"  alt="aoi.js"/>
+  <img src="https://github.com/aoijs/website/blob/master/assets/images/aoijs-banner.png?raw=true"   style="width:300px;" align="center"  alt="aoi.js"/>
 </a>
 <br />
 <br />
