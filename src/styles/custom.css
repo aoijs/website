@@ -47,6 +47,14 @@ code {
   -webkit-backdrop-filter: blur(12px);
 }
 
+a:where(.astro-3ii7xxms) {
+  margin-top: 0.2rem;
+}
+
+a:where(.astro-3ii7xxms):hover {
+  background-color: var(--sl-color-backdrop-overlay);
+}
+
 .sl-banner {
   border: 2px solid var(--sl-color-bg);
 }
