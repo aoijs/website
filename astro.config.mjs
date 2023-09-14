@@ -25,7 +25,7 @@ export default defineConfig({
         {
           tag: "script",
           attrs: {
-            src: "/website-astro/custom.js",
+            src: "/custom.js",
             defer: true,
           },
         },
