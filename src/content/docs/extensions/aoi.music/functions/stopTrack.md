@@ -1,10 +1,10 @@
 ---
 title: $stopTrack
-description: $stopTrack will stop the current track. 
+description: $stopTrack will stop the current track.
 id: stopTrack
 ---
 
-`$stopTrack` will stop the current track.   
+`$stopTrack` will stop the current track.
 
 ## Usage
 
@@ -18,9 +18,9 @@ This will stop the current track:
 
 ```javascript
 bot.command({
-    name: 'stopTrack',
-    code: `
+  name: "stopTrack",
+  code: `
     $stopTrack
-  `
+  `,
 });
 ```

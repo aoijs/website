@@ -1,10 +1,10 @@
 ---
 title: $resumeTrack
-description: $resumeTrack will resume the current paused track. 
+description: $resumeTrack will resume the current paused track.
 id: resumeTrack
 ---
 
-`$resumeTrack` will resume the current paused track.   
+`$resumeTrack` will resume the current paused track.
 
 ## Usage
 
@@ -18,9 +18,9 @@ This will resume the current track:
 
 ```javascript
 bot.command({
-    name: 'resumeTrack',
-    code: `
+  name: "resumeTrack",
+  code: `
     $resumeTrack
-  `
+  `,
 });
 ```

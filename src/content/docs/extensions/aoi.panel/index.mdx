@@ -42,38 +42,38 @@ To get started with aoi.panel, follow these steps:
 const { AoiClient } = require("aoi.js");
 const { Panel } = require("@akarui/aoi.panel");
 const bot = new AoiClient({
-    token: "DISCORD BOT TOKEN",
-    prefix: "DISCORD BOT PREFIX",
-    intents: ["MessageContent", "Guilds", "GuildMessages"],
-    events: ["onMessage"],
-    database: {
-        type: "aoi.db",
-        db: require("@akarui/aoi.db"),
-        tables: ["main"],
-        path: "./database/",
-        extraOptions: {
-            dbType: "KeyValue"
-        }
-    }
+  token: "DISCORD BOT TOKEN",
+  prefix: "DISCORD BOT PREFIX",
+  intents: ["MessageContent", "Guilds", "GuildMessages"],
+  events: ["onMessage"],
+  database: {
+    type: "aoi.db",
+    db: require("@akarui/aoi.db"),
+    tables: ["main"],
+    path: "./database/",
+    extraOptions: {
+      dbType: "KeyValue",
+    },
+  },
 });
 
 // Ping Command
 bot.command({
-    name: "ping",
-    code: `Pong! $pingms`
+  name: "ping",
+  code: `Pong! $pingms`,
 });
 
 const panel = new Panel({
-    username: "your-username", //username for logging in
-    password: "password-here", //password for logging in
-    secret: require('crypto').randomBytes(16).toString("hex"), //session secret
-    port: 3000, //port on which website is hosted, Not required! Default 3000
-    bot: bot, //your aoi.js client
-    mainFile: "index.js", //Main file where code is running.Not required, default taken from package.json
-    commands: "./commands", // folder name in which all the edit needing files are there.
-    interaction:"./interactions" //interactions folder
+  port: 3000,
+  client: bot,
 });
 
-panel.loadPanel(); // Load The Panel.
-panel.onError(); // Log console errors.
+panel.loadAPI({
+  auth: "Authentication key here (random string)", // no spaces, keep it only alphanumeric...
+});
+
+panel.loadGUI({
+  username: ["username 1", "username 2"],
+  password: ["Password 1", "Password 2"],
+});
 ```

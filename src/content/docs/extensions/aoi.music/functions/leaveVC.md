@@ -15,7 +15,7 @@ $leaveVC[guildID?]
 ## Parameters
 
 | Field    | Type    | Description | Required |
-|----------|---------|-------------|:--------:|
+| -------- | ------- | ----------- | :------: |
 | guildID? | integer | guild ID    |  false   |
 
 ## Example(s)
@@ -24,9 +24,9 @@ This will make your bot leave the current voice channel in the current guild (if
 
 ```javascript
 bot.command({
-    name: 'leaveVC',
-    code: `
+  name: "leaveVC",
+  code: `
     $leaveVC[$guildID]
-  `
+  `,
 });
 ```

@@ -25,13 +25,16 @@ $interactionEdit[content?;embeds?;components?;files?;allowedMentions?]
 ## Example(s)
 
 ```javascript
-bot.interactionCommand({
-  name: "interactionEdit",
-  prototype: "slash",
-  code: `
+module.exports = [
+  {
+    name: "interactionEdit",
+    type: "interaction",
+    prototype: "slash",
+    code: `
   $interactionEdit[Bye, World!;;;;everyone]
   $wait[5s]
   $interactionReply[Hello, World!;;;;everyone;false]
   `,
-});
+  },
+];
 ```

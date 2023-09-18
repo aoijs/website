@@ -18,9 +18,9 @@ This will return the current applied filters:
 
 ```javascript
 bot.command({
-    name: 'getFilters',
-    code: `
+  name: "getFilters",
+  code: `
     $getFilters
-  `
+  `,
 });
 ```

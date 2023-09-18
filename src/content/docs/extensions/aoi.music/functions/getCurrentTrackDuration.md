@@ -18,9 +18,9 @@ This will return the current track duration in ms:
 
 ```javascript
 bot.command({
-    name: 'getCurrentTrackDuration',
-    code: `
+  name: "getCurrentTrackDuration",
+  code: `
     $getCurrentTrackDuration
-  `
+  `,
 });
 ```

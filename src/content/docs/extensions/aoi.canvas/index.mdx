@@ -20,16 +20,19 @@ head:
       content: "https://media.discordapp.net/attachments/832704676096245800/1149738393496989797/26_20230908190821.png"
 id: setup
 next: false
-prev: false 
+prev: false
 ---
 
 Aoi.canvas is a package with simplified and ready-to-use functions for Discord bot developers. It aims to be the easiest package to learn and provides swift and flexible functionality using functions.
 
 ### Features
 
-#### Canvas Integration: 
+#### Canvas Integration:
+
 - aoi.canvas adds the ability to use canvas to aoi.js. It supports almost everything as the original canvas and utilizes aoi.js function syntax.
-#### Simplified Usage: 
+
+#### Simplified Usage:
+
 - aoi.canvas provides a simplified and easy-to-use syntax for working with the canvas in aoi.js. This makes it more accessible for developers who want to create graphics and visual elements in their Discord bots.
 
 ## Setup
@@ -51,7 +54,7 @@ We do not take responsibilities for any damages this package could produce, if y
 ```javascript title="index.js"
 const { AoiClient } = require("aoi.js");
 const aoicanvas = require("aoi.canvas");
- 
+
 const bot = new AoiClient({
   token: "DISCORD BOT TOKEN",
   prefix: "DISCORD BOT PREFIX",
@@ -63,29 +66,29 @@ const bot = new AoiClient({
     tables: ["main"],
     path: "./database/",
     extraOptions: {
-      dbType: "KeyValue"
-    }
-  }
+      dbType: "KeyValue",
+    },
+  },
 });
- 
+
 aoicanvas.load({
   bot: bot, // the aoi.js bot
   DownloadFolder: "./aoicanvas/", // download folder for $downloadCanvas and $downloadGIF
-  ErrorsType: "console" // errors type (console/message)
+  ErrorsType: "console", // errors type (console/message)
 });
- 
+
 // Ping Command Example
 bot.command({
   name: "ping",
-  code: `Pong! $pingms`
+  code: `Pong! $pingms`,
 });
- 
+
 // Leref Command Example (The best)
 bot.command({
-  name: "leref",  
+  name: "leref",
   code: `
   $sendCanvas[lerefPro;msg]
   $lerefPro
-  `
+  `,
 });
 ```

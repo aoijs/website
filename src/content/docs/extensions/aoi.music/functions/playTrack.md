@@ -15,7 +15,7 @@ $playTrack[track;type]
 ## Parameters
 
 | Field | Type   | Description                                                                                                                                                                     | Required |
-|-------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
+| ----- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------: |
 | track | string | track to play                                                                                                                                                                   |   true   |
 | type  | string | platform type <br /> 1. **youtube** <br /> 2. **soundcloud** <br /> 3. **spotify** <br /> 4. **local** (local file) <br /> 5. **url** (url which emits music or any other kind) |   true   |
 
@@ -25,9 +25,9 @@ This will play a youtube video called "Silly Goose":
 
 ```javascript
 bot.command({
-    name: 'playTrack',
-    code: `
+  name: "playTrack",
+  code: `
     $playTrack[Silly Goose;youtube]
-  `
+  `,
 });
 ```

@@ -4,24 +4,29 @@ description: This guide will be covering how to start using command handlers, cr
 id: handler
 ---
 
+<!-- omit from toc -->
+## Table of Contents
+- [Why should you use Command Handler?](#why-should-you-use-command-handler)
+  - [Starting off with modifying your main file](#starting-off-with-modifying-your-main-file)
+  - [Setting everything up with folders and files](#setting-everything-up-with-folders-and-files)
+    - [Creating sub directories](#creating-sub-directories)
+    - [Creating files inside of the directory](#creating-files-inside-of-the-directory)
+- [Final Steps](#final-steps)
+  - [Change of creating commands](#change-of-creating-commands)
+  - [Multiple commands in one file](#multiple-commands-in-one-file)
+  - [Updating your commands](#updating-your-commands)
+
+
 ## Why should you use Command Handler?
 
 Storing your commands in your main file may seem fine, but after a certain amount of commands it can get hard to find and update commands. Therefore you should use the Command Handler to keep your main file neat and save yourself from the clutter.
 
 ### Starting off with modifying your main file
 
-In this step we'll take a look at your main file also known as `index.js`. We add `LoadCommands` in order for
-the bot to understand where our files are.
-
-:::caution
-Ensure you edited the first line of code when you start using the LoadCommands class.
-
-Instead of: `const { AoiClient } = require("aoi.js");`  
-Do this instead: `const { AoiClient, LoadCommands } = require("aoi.js");`  
-:::
+In this step we'll take a look at your main file also known as `index.js`. We add `LoadCommands` in order for the bot to understand where our files are.
 
 ```javascript title="index.js"
-const { AoiClient, LoadCommands } = require("aoi.js");
+const { AoiClient } = require("aoi.js");
 
 const bot = new AoiClient({
   token: "Discord Bot Token",
@@ -39,8 +44,7 @@ const bot = new AoiClient({
   },
 });
 
-const loader = new LoadCommands(bot);
-loader.load(bot.cmd, "./commands/"); //you can change this to any directory you want
+bot.LoadCommands(bot.cmd, "./commands/"); //you can change this to any directory you want
 ```
 
 ### Setting everything up with folders and files
@@ -122,16 +126,13 @@ $log[Someone joined a server!]`,
 ];
 ```
 
-:::tip  
-All Command Types can be found [here](./1events.md)!  
-:::
+---
 
-Make sure you have the required intents and `onJoin` in the `events` property in your `index.js` or else this won't
-work!
+Ensure you have the required intents including `onJoin` in the `events` array or else this won't work!
 
-> **Required intents: `GuildMembers`**
+> **Required intents: `GuildMembers (p)`**
 
-### Updating your commands without restart!
+### Updating your commands
 
 You are able to use `$updateCommands` when updating commands in your directory. Please note that this does **not** apply
 to any files outside of the directory.

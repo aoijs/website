@@ -20,12 +20,16 @@ Aoi.music is a package with simplified and ready-to-use functions for Discord bo
 ### Features
 
 #### Music-related properties
-- aoi.music adds music-related properties to your Discord bot built with aoi.js. It provides a solid foundation for implementing music operations in your bot.
-#### Powerful and feature-rich
-- aoi.music is a powerful library that offers a wide range of features for music playback in Discord bots. It allows you to play music from various sources, control playback, manage queues, and even create custom playlists.
-#### TypeScript-based:
-- aoi.music is built with TypeScript, which provides static typing and improved code organization. This can enhance the development experience and make your code more reliable.
 
+- aoi.music adds music-related properties to your Discord bot built with aoi.js. It provides a solid foundation for implementing music operations in your bot.
+
+#### Powerful and feature-rich
+
+- aoi.music is a powerful library that offers a wide range of features for music playback in Discord bots. It allows you to play music from various sources, control playback, manage queues, and even create custom playlists.
+
+#### TypeScript-based:
+
+- aoi.music is built with TypeScript, which provides static typing and improved code organization. This can enhance the development experience and make your code more reliable.
 
 ## Setup
 
@@ -45,46 +49,55 @@ For aoi.music to work properly we also have to install `ffmpeg-static` and `opus
 
 ```javascript title="index.js"
 const { AoiClient } = require("aoi.js");
-const { AoiVoice, PlayerEvents, PluginName, Cacher, Filter } = require("@akarui/aoi.music");
+const {
+  AoiVoice,
+  PlayerEvents,
+  PluginName,
+  Cacher,
+  Filter,
+} = require("@akarui/aoi.music");
 
 const bot = new AoiClient({
-    token: "Discord Bot Token",
-    prefix: "Discord Bot Prefix",
-    intents: ["MessageContent", "Guilds", "GuildMessages", "GuildVoiceStates"],
-    events: ["onMessage", "onInteractionCreate"],
-    database: {
-        type: "aoi.db",
-        db: require("aoi.db"),
-        tables: ["main"],
-        path: "./database/",
-        extraOptions: {
-            dbType: "KeyValue"
-        }
-    }
+  token: "Discord Bot Token",
+  prefix: "Discord Bot Prefix",
+  intents: ["MessageContent", "Guilds", "GuildMessages", "GuildVoiceStates"],
+  events: ["onMessage", "onInteractionCreate"],
+  database: {
+    type: "aoi.db",
+    db: require("aoi.db"),
+    tables: ["main"],
+    path: "./database/",
+    extraOptions: {
+      dbType: "KeyValue",
+    },
+  },
 });
 
 const voice = new AoiVoice(bot, {
-    searchOptions: {
-        soundcloudClientId: "Soundcloud ID", // optional
-        youtubegl: "US",
-    },
-    requestOptions: {
-        offsetTimeout: 0,
-        soundcloudLikeTrackLimit: 200,
-    },
+  searchOptions: {
+    soundcloudClientId: "Soundcloud ID", // optional
+    youtubegl: "US",
+  },
+  requestOptions: {
+    offsetTimeout: 0,
+    soundcloudLikeTrackLimit: 200,
+  },
 });
 
 // Command Example (ping)
 bot.command({
-    name: "ping",
-    code: `Pong! $pingms`,
+  name: "ping",
+  code: `Pong! $pingms`,
 });
 
 // optional (cacher / filter)
 voice.addPlugin(PluginName.Cacher, new Cacher("memory" /* or "disk" */));
-voice.addPlugin(PluginName.Filter, new Filter({
+voice.addPlugin(
+  PluginName.Filter,
+  new Filter({
     filterFromStart: false,
-}));
+  }),
+);
 
 voice.bindExecutor(bot.functionManager.interpreter); // needed for events
 ```

@@ -18,9 +18,9 @@ This will return the current queue length:
 
 ```javascript
 bot.command({
-    name: 'queueLength',
-    code: `
+  name: "queueLength",
+  code: `
     $queueLength
-  `
+  `,
 });
 ```

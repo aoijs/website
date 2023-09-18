@@ -27,11 +27,14 @@ bot.command({
   `,
 });
 
-bot.interactionCommand({
-  name: "testButton",
-  prototype: "button",
-  code: `
+module.exports = [
+  {
+    name: "testButton",
+    type: "interaction",
+    prototype: "button",
+    code: `
   $interactionUpdate[This took me: $interactionPing MS!]
   `,
-});
+  },
+];
 ```

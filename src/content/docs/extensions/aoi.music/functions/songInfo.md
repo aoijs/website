@@ -15,7 +15,7 @@ $songInfo[type?;position?]
 ## Parameters
 
 | Field     | Type   | Description             | Required |
-|-----------|--------|-------------------------|:--------:|
+| --------- | ------ | ----------------------- | :------: |
 | type?     | string | information to retrieve |  false   |
 | position? | number | track position          |  false   |
 
@@ -23,7 +23,7 @@ $songInfo[type?;position?]
   <summary><h3> Types </h3></summary>
 
 | Property          |                                                                    | Returns | Supports                                     |
-|-------------------|--------------------------------------------------------------------| :-----: |----------------------------------------------|
+| ----------------- | ------------------------------------------------------------------ | :-----: | -------------------------------------------- |
 | title             | Returns the video/song title                                       | string  | YouTube, Spotify, SoundCloud, Url, LocalFile |
 | channelId         | Returns the channel id                                             | string  | YouTube                                      |
 | artist            | Returns the Artist                                                 | string  | YouTube, Spotify, SoundCloud                 |
@@ -51,9 +51,9 @@ This will return the current track name:
 
 ```javascript
 bot.command({
-    name: 'songInfo',
-    code: `
+  name: "songInfo",
+  code: `
     $songInfo[title]
-  `
+  `,
 });
 ```

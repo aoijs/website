@@ -1,10 +1,10 @@
 ---
 title: $skipTrack
-description: $skipTrack will skip the current track. 
+description: $skipTrack will skip the current track.
 id: skipTrack
 ---
 
-`$skipTrack` will skip the current track.   
+`$skipTrack` will skip the current track.
 
 ## Usage
 
@@ -18,9 +18,9 @@ This will skip the current track:
 
 ```javascript
 bot.command({
-    name: 'skipTrack',
-    code: `
+  name: "skipTrack",
+  code: `
     $skipTrack
-  `
+  `,
 });
 ```

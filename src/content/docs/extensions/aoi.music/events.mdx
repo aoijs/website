@@ -23,7 +23,7 @@ voice.addEvent(PlayerEvents.eventName);
 
 #### List of Events
 
-- `trackStart` &rarr; Emitted whenever a track starts. 
+- `trackStart` &rarr; Emitted whenever a track starts.
 - `trackEnd` &rarr; Emitted whenever a track ends.
 - `queueStart` &rarr; Emitted whenever a queue starts.
 - `queueEnd` &rarr; Emitted whenever a queue ends.
@@ -34,28 +34,26 @@ voice.addEvent(PlayerEvents.eventName);
 ### Using Events
 
 ```js
-/* Ensure you have loader defined using the LoadCommands class
-const { AoiClient, LoadCommands } = require("aoi.js");
-const loader = new LoadCommands(bot); */
-
-loader.load(voice.cmds,"./voice/");
+bot.LoadCommands(voice.cmds, "./voice/");
 ```
 
 This should be the content of your `./voice/<filename>.js`:
 
 ```js
-module.exports = [{
+module.exports = [
+  {
     channel: "$channelID",
     type: "eventName",
-    code: `code to execute here`
-}]
+    code: `code to execute here`,
+  },
+];
 ```
 
 If you don't want to use handlers, you can use this instead in your main file also known as `index.js`:
 
 ```js
 voice.cmds["eventName"].set("name of the command", {
-    channel: "$channelID",
-    code: `code to execute here`
+  channel: "$channelID",
+  code: `code to execute here`,
 });
 ```

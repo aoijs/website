@@ -15,7 +15,7 @@ $updateCommands
 - Will only work if you use a command handler, example below:
 
 ```javascript
-const { AoiClient, LoadCommands } = require("aoi.js");
+const { AoiClient } = require("aoi.js");
 
 const bot = new AoiClient({
   token: "DISCORD BOT TOKEN",
@@ -33,8 +33,7 @@ const bot = new AoiClient({
   },
 });
 
-const loader = new LoadCommands(bot);
-loader.load(bot.cmd, "./commands/"); // your command directory.
+bot.LoadCommands(bot.cmd, "./commands/"); // your command directory.
 ```
 
 ## Example(s)

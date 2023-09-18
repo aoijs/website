@@ -1,10 +1,10 @@
 ---
 title: $clearQueue
-description: $clearQueue will clear the current player's queue. 
+description: $clearQueue will clear the current player's queue.
 id: clearQueue
 ---
 
-`$clearQueue` will clear the current player's queue. 
+`$clearQueue` will clear the current player's queue.
 
 ## Usage
 
@@ -18,9 +18,9 @@ This will clear the current queue:
 
 ```javascript
 bot.command({
-    name: 'clearQueue',
-    code: `
+  name: "clearQueue",
+  code: `
     $clearQueue
-  `
+  `,
 });
 ```

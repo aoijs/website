@@ -1,10 +1,10 @@
 ---
 title: $stopPlayer
-description: $stopPlayer will destroy the current player. 
+description: $stopPlayer will destroy the current player.
 id: stopPlayer
 ---
 
-`$stopPlayer` will destroy the current player. 
+`$stopPlayer` will destroy the current player.
 
 ## Usage
 
@@ -18,9 +18,9 @@ This will destroy the current player:
 
 ```javascript
 bot.command({
-    name: 'stopPlayer',
-    code: `
+  name: "stopPlayer",
+  code: `
     $stopPlayer
-  `
+  `,
 });
 ```

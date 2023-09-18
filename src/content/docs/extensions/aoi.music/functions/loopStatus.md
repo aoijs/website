@@ -1,6 +1,6 @@
 ---
 title: $loopStatus
-description: $loopStatus will return the current loop status. 
+description: $loopStatus will return the current loop status.
 id: loopStatus
 ---
 
@@ -18,9 +18,9 @@ This will return the current loop status:
 
 ```javascript
 bot.command({
-    name: 'loopStatus',
-    code: `
+  name: "loopStatus",
+  code: `
     $loopStatus
-  `
+  `,
 });
 ```

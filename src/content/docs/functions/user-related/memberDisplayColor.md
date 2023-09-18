@@ -14,10 +14,10 @@ $memberDisplayColor[guildID?;userID?]
 
 ## Parameters
 
-| Field       | Type    | Description                                                          | Required |
-| ----------- | ------- | -------------------------------------------------------------------- | :------: |
-| guildID?    | integer | The ID of the guild.                                                 |  false   |
-| userID?     | integer | The ID of the user.                                                  |  false   |
+| Field    | Type    | Description          | Required |
+| -------- | ------- | -------------------- | :------: |
+| guildID? | integer | The ID of the guild. |  false   |
+| userID?  | integer | The ID of the user.  |  false   |
 
 ## Example(s)
 

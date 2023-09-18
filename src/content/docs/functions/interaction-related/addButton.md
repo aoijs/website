@@ -54,11 +54,14 @@ bot.command({
 ```
 
 ```javascript
-bot.interactionCommand({
-  name: "exampleButton",
-  prototype: "button",
-  code: `
+module.exports = [
+  {
+    name: "exampleButton",
+    type: "interaction",
+    prototype: "button",
+    code: `
     $interactionReply[Awesome Button Interaction!]
   `,
-});
+  },
+];
 ```

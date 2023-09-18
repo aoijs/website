@@ -15,11 +15,11 @@ $removeFilter[filter]
 ## Parameters
 
 | Field  | Type   | Description | Required |
-|--------|--------|-------------|:--------:|
+| ------ | ------ | ----------- | :------: |
 | filter | string | JSON format |   true   |
 
 | Filter       | Contains                                   | JSON Format                 |
-|--------------|--------------------------------------------|-----------------------------|
+| ------------ | ------------------------------------------ | --------------------------- |
 | NIGHT_CORE   | aresample, asetrate                        | `{"NIGHT_CORE": "value"}`   |
 | BASS_BOOST   | bass                                       | `{"BASS_BOOST": "value"}`   |
 | 8_D          | extrastereo, aecho, apulsator, stereowiden | `{"8_D": "value"}`          |
@@ -39,9 +39,9 @@ This will remove the `NIGHT_CORE` and `BASS_BOOST` filters:
 
 ```javascript
 bot.command({
-    name: 'removeFilter',
-    code: `
+  name: "removeFilter",
+  code: `
     $removeFilter[{"NIGHT_CORE", "BASS_BOOST"}]
-  `
+  `,
 });
 ```

@@ -15,7 +15,7 @@ $autoPlay[type?]
 ## Parameters
 
 | Field | Type   | Description                                                                                                                   | Required |
-|-------|--------|-------------------------------------------------------------------------------------------------------------------------------|:--------:|
+| ----- | ------ | ----------------------------------------------------------------------------------------------------------------------------- | :------: |
 | type? | string | Type <br /> 1. **relative** (default) <br /> 2. **spotify** <br /> 3. **youtube** <br /> 4. **soundcloud** <br /> 5. **none** |  false   |
 
 ## Example(s)
@@ -24,9 +24,9 @@ This will automatically add songs to your queue from the given type:
 
 ```javascript
 bot.command({
-    name: 'autoPlay',
-    code: `
+  name: "autoPlay",
+  code: `
     $autoPlay[relative]
-  `
+  `,
 });
 ```

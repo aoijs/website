@@ -15,7 +15,7 @@ $queue[page?;limit?;format?]
 ## Parameters
 
 | Field   | Type   | Description                                   | Required |
-|---------|--------|-----------------------------------------------|:--------:|
+| ------- | ------ | --------------------------------------------- | :------: |
 | page?   | number | queue page                                    |  false   |
 | limit?  | number | maximum of songs to display                   |  false   |
 | format? | string | format to display information about the songs |  false   |
@@ -24,7 +24,7 @@ $queue[page?;limit?;format?]
   <summary><h3> Types </h3></summary>
 
 | Property              |                                                                    | Returns | Supports                                     |
-|-----------------------|--------------------------------------------------------------------|:-------:|----------------------------------------------|
+| --------------------- | ------------------------------------------------------------------ | :-----: | -------------------------------------------- |
 | `{title}`             | Returns the video/song title                                       | string  | YouTube, Spotify, SoundCloud, Url, LocalFile |
 | `{channelId}`         | Returns the channel id                                             | string  | YouTube                                      |
 | `{artist}`            | Returns the Artist                                                 | string  | YouTube, Spotify, SoundCloud                 |
@@ -52,9 +52,9 @@ This will return the current queue in the `{position}) {title} - {requester.user
 
 ```javascript
 bot.command({
-    name: 'queue',
-    code: `
+  name: "queue",
+  code: `
     $queue[1;10;{position}) {title} - {requester.user.name}]
-  `
+  `,
 });
 ```

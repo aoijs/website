@@ -23,10 +23,12 @@ $functionName[parameter;parameter]
 
 ## Example(s)
 
-[description - what the example does]:
+[description - what the example does]: ```javascript
 
-```javascript
 bot.command({...});
 
 // Example in non-handler format using bot.command and JS code-highlighting
+
+```
+
 ```

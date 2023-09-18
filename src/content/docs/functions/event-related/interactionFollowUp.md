@@ -26,12 +26,15 @@ $interactionFollowUp[content?;embeds?;components?;files?;ephemeral?]
 ## Example(s)
 
 ```javascript
-bot.interactionCommand({
-  name: "interactionFollowUp",
-  prototype: "slash",
-  code: `
+module.exports = [
+  {
+    name: "interactionFollowUp",
+    type: "interaction",
+    prototype: "slash",
+    code: `
   $interactionFollowUp[Bye, world!]
   $interactionDefer[true]
   `,
-});
+  },
+];
 ```

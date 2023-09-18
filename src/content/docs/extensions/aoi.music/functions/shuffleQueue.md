@@ -1,10 +1,10 @@
 ---
 title: $shuffleQueue
-description: $shuffleQueue will shuffle the current queue. 
+description: $shuffleQueue will shuffle the current queue.
 id: shuffleQueue
 ---
 
-`$shuffleQueue` will shuffle the current queue. 
+`$shuffleQueue` will shuffle the current queue.
 
 ## Usage
 
@@ -18,9 +18,9 @@ This will shuffle the current queue:
 
 ```javascript
 bot.command({
-    name: 'shuffleQueue',
-    code: `
+  name: "shuffleQueue",
+  code: `
     $shuffleQueue
-  `
+  `,
 });
 ```

@@ -18,9 +18,9 @@ This will play the previous track:
 
 ```javascript
 bot.command({
-    name: 'playPreviousTrack',
-    code: `
+  name: "playPreviousTrack",
+  code: `
     $playPreviousTrack
-  `
+  `,
 });
 ```

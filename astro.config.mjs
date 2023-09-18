@@ -3,10 +3,17 @@ import starlight from "@astrojs/starlight";
 import { rehypeHeadingIds } from "@astrojs/markdown-remark";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import react from "@astrojs/react";
+import expressiveCode from "astro-expressive-code";
 
+// https://astro.build/config
 export default defineConfig({
   site: "https://aoi.js.org",
   integrations: [
+    expressiveCode({
+      frames: {
+        showCopyToClipboardButton: true,
+      },
+    }),
     starlight({
       title: "aoi.js",
       favicon: "/favicon.png",
@@ -30,21 +37,35 @@ export default defineConfig({
           },
         },
         {
-					tag: 'meta',
-					attrs: { property: 'og:site_name', content: "aoi.js | Akarui Development" },
-				},
+          tag: "meta",
+          attrs: {
+            property: "og:site_name",
+            content: "aoi.js | Akarui Development",
+          },
+        },
         {
-					tag: 'meta',
-					attrs: { property: 'og:image', content: "https://raw.githubusercontent.com/aoijs/website/master/assets/images/aoijs-banner.png" },
-				},
-				{
-					tag: 'meta',
-					attrs: { property: 'twitter:image', content: "https://raw.githubusercontent.com/aoijs/website/master/assets/images/aoijs-banner.png" },
-				},
+          tag: "meta",
+          attrs: {
+            property: "og:image",
+            content:
+              "https://raw.githubusercontent.com/aoijs/website/master/assets/images/aoijs-banner.png",
+          },
+        },
         {
-					tag: 'meta',
-					attrs: { property: 'theme-color', content: "#89CFF0" },
-				},
+          tag: "meta",
+          attrs: {
+            property: "twitter:image",
+            content:
+              "https://raw.githubusercontent.com/aoijs/website/master/assets/images/aoijs-banner.png",
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            property: "theme-color",
+            content: "#89CFF0",
+          },
+        },
       ],
       sidebar: [
         {
@@ -52,10 +73,61 @@ export default defineConfig({
           link: "/guides/setup",
         },
         {
-          label: 'Extensions',
-          autogenerate: { directory: 'extensions' },
-          collapsed: true
-        },    
+          label: "Extensions",
+          items: [
+            {
+              label: "Showcase",
+              link: "/extensions/showcase/",
+            },
+            {
+              label: "@akarui",
+              items: [
+                {
+                  label: "aoi.panel",
+                  autogenerate: {
+                    directory: "extensions/aoipanel",
+                  },
+                  collapsed: true,
+                },
+                {
+                  label: "aoi.music",
+                  items: [
+                    {
+                      label: "Getting Started",
+                      link: "/extensions/aoi.music/",
+                    },
+                    {
+                      label: "Events",
+                      link: "/extensions/aoimusic/events",
+                    },
+                    {
+                      label: "Functions",
+                      autogenerate: {
+                        directory: "extensions/aoimusic/functions",
+                      },
+                      collapsed: true,
+                    },
+                  ],
+                  collapsed: true,
+                },
+              ],
+            },
+            {
+              label: "Community Extensions",
+              items: [
+                {
+                  label: "aoi.canvas",
+                  link: "extensions/aoicanvas",
+                },
+                {
+                  label: "aoi.js-library",
+                  link: "extensions/aoijs-library",
+                },
+              ],
+            },
+          ],
+          collapsed: true,
+        },
         {
           label: "Guides",
           items: [
@@ -205,7 +277,11 @@ export default defineConfig({
         rehypeAutolinkHeadings,
         {
           behavior: "wrap",
-          properties: { ariaHidden: true, tabIndex: -1, class: "heading-link" },
+          properties: {
+            ariaHidden: true,
+            tabIndex: -1,
+            class: "heading-link",
+          },
         },
       ],
     ],

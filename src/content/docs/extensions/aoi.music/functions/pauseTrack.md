@@ -1,10 +1,10 @@
 ---
 title: $pauseTrack
-description: $pauseTrack will pause the current track. 
+description: $pauseTrack will pause the current track.
 id: pauseTrack
 ---
 
-`$pauseTrack` will pause the current track.  
+`$pauseTrack` will pause the current track.
 
 ## Usage
 
@@ -18,9 +18,9 @@ This will pause the current track:
 
 ```javascript
 bot.command({
-    name: 'pauseTrack',
-    code: `
+  name: "pauseTrack",
+  code: `
     $pauseTrack
-  `
+  `,
 });
 ```

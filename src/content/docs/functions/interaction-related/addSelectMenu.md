@@ -38,34 +38,6 @@ bot.command({
   `,
 });
 
-bot.interactionCommand({
-  name: "yourCustomID",
-  prototype: "selectMenu",
-  code: `
-  $interactionReply[Hello! :);;;;everyone;false]
-  $onlyIf[$interactionData[values[0]]==anotherCustomID;]
-  `,
-});
-
-bot.interactionCommand({
-  name: "yourCustomID",
-  prototype: "selectMenu",
-  code: `
-  $interactionReply[Hello! :);;;;everyone;false]
-  $onlyIf[$interactionData[values[0]]==andAnotherCustomID;]
-  `,
-});
-
-/* 
-We use "$onlyIf[$interactionData[values[0]]==customID;]" to make sure this only will be triggered for the according select menu option.
-
-Also ensure that you have the "onInteractionCreate" event in your main file (index.js in most cases).
-*/
-```
-
-Handler Example:
-
-```js
 module.exports = [
   {
     name: "add-select-menu",
@@ -91,6 +63,12 @@ module.exports = [
      $onlyIf[$interactionData[values[0]]==andAnotherCustomID;]`,
   },
 ];
+
+/* 
+We use "$onlyIf[$interactionData[values[0]]==customID;]" to make sure this only will be triggered for the according select menu option.
+
+Also ensure that you have the "onInteractionCreate" event in your main file (index.js in most cases).
+*/
 ```
 
 [dp]: https://discord.com/developers/docs/interactions/message-components#button-object-button-styles

@@ -15,7 +15,7 @@ $seek[time]
 ## Parameters
 
 | Field | Type   | Description         | Required |
-|-------|--------|---------------------|:--------:|
+| ----- | ------ | ------------------- | :------: |
 | time  | number | song position in ms |   true   |
 
 ## Example(s)
@@ -24,9 +24,9 @@ This will seek to second 10 of the song>
 
 ```javascript
 bot.command({
-    name: 'seek',
-    code: `
+  name: "seek",
+  code: `
     $seek[10000]
-  `
+  `,
 });
 ```

@@ -18,9 +18,9 @@ This will reset the current applied filters:
 
 ```javascript
 bot.command({
-    name: 'resetFilter',
-    code: `
+  name: "resetFilter",
+  code: `
     $resetFilter
-  `
+  `,
 });
 ```

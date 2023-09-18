@@ -1,10 +1,10 @@
 ---
 title: $unshuffleQueue
-description: $unshuffleQueue will unshuffle the current queue. 
+description: $unshuffleQueue will unshuffle the current queue.
 id: unshuffleQueue
 ---
 
-`$unshuffleQueue` will unshuffle the current queue. 
+`$unshuffleQueue` will unshuffle the current queue.
 
 ## Usage
 
@@ -18,9 +18,9 @@ This will unshuffle the current queue:
 
 ```javascript
 bot.command({
-    name: 'unshuffleQueue',
-    code: `
+  name: "unshuffleQueue",
+  code: `
     $unshuffleQueue
-  `
+  `,
 });
 ```

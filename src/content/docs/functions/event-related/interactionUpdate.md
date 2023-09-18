@@ -24,8 +24,9 @@ $interactionUpdate[content?;embeds?;components?;files?]
 ## Example(s)
 
 ```javascript
-bot.interactionCommand({
+module.exports = [{
   name: "interactionUpdate",
+  type: "interaction",
   prototype: "slash",
   code: `
   $interactionReply[Hello, World!;;{actionRow:{button:Example Button!:primary:customID:false}};;everyone;false]
@@ -34,11 +35,14 @@ bot.interactionCommand({
 ```
 
 ```js
-bot.interactionCommand({
-  name: "customID",
-  prototype: "button",
-  code: `
+module.exports = [
+  {
+    name: "customID",
+    type: "interaction",
+    prototype: "button",
+    code: `
   $interactionUpdate[Bye, world.]
   `,
-});
+  },
+];
 ```

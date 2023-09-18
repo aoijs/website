@@ -72,24 +72,6 @@ a:where(.astro-3ii7xxms):hover {
 
 /* Copy button for ALL codeblocks (important) */
 
-.copy-button {
-  position: absolute;
-  top: -0.9rem;
-  right: 0.5rem;
-  background-color: var(--astro-code-color-background);
-  border: #585858 solid 0.1rem;
-  border-radius: 0.5rem;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
-  user-select: none;
-  transition: all 0.1s ease-in;
-}
-
-.copy-button:hover {
-  border: #c2c2c2 solid 0.11rem;
-  transition: all 0.1s ease-in;
-}
-
 .sh-button-container {
   border-radius: 10px;
   padding: 10px;

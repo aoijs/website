@@ -89,17 +89,10 @@ const bot = new AoiClient({
   },
 });
 
-// Create Interaction Ping
+// Create Interaction Ping Command
 bot.command({
   name: "create",
   code: `$createApplicationCommand[$guildID;ping;Pong!;true;slash]`,
-});
-
-// Ping Interaction Command
-bot.interactionCommand({
-  name: "ping",
-  prototype: "slash",
-  code: `$interactionReply[Pong! $pingms;;;;everyone;false]`,
 });
 ```
 
@@ -108,3 +101,11 @@ bot.interactionCommand({
 [Refer to contribution documentation for more information](https://github.com/AkaruiDevelopment/aoi.js/blob/v6/.github/CONTRIBUTING.md)
 
 ## Our ♥️ Contributors
+
+### Aoi.js
+
+[![AkaruiDevelopment/aoi.js](https://contrib.rocks/image?repo=AkaruiDevelopment/aoi.js)](https://github.com/AkaruiDevelopment/aoi.js)
+
+### Documentation
+
+[![aoijs/website](https://contrib.rocks/image?repo=aoijs/website)](https://github.com/aoijs/website)
