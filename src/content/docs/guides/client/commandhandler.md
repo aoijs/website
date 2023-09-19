@@ -44,7 +44,7 @@ const bot = new AoiClient({
   },
 });
 
-bot.LoadCommands(bot.cmd, "./commands/"); //you can change this to any directory you want
+bot.LoadCommands("./commands/", true); // you can change this to any directory you want
 ```
 
 ### Setting everything up with folders and files

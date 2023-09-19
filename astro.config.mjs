@@ -94,7 +94,7 @@ export default defineConfig({
                   items: [
                     {
                       label: "Getting Started",
-                      link: "/extensions/aoi.music/",
+                      link: "/extensions/aoimusic/",
                     },
                     {
                       label: "Events",
@@ -103,7 +103,7 @@ export default defineConfig({
                     {
                       label: "Functions",
                       autogenerate: {
-                        directory: "extensions/aoimusic/functions",
+                        directory: "/extensions/aoi.music/functions",
                       },
                       collapsed: true,
                     },
