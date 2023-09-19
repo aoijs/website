@@ -103,7 +103,7 @@ export default defineConfig({
                     {
                       label: "Functions",
                       autogenerate: {
-                        directory: "/extensions/aoi.music/functions",
+                        directory: "extensions/aoi.music/functions",
                       },
                       collapsed: true,
                     },
