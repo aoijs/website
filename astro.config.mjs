@@ -13,6 +13,7 @@ export default defineConfig({
       frames: {
         showCopyToClipboardButton: true,
       },
+      theme: "dracula-soft",
     }),
     starlight({
       title: "aoi.js",
@@ -85,7 +86,7 @@ export default defineConfig({
                 {
                   label: "aoi.panel",
                   autogenerate: {
-                    directory: "extensions/aoipanel",
+                    directory: "extensions/aoi.panel",
                   },
                   collapsed: true,
                 },
@@ -118,10 +119,17 @@ export default defineConfig({
                 {
                   label: "aoi.canvas",
                   link: "extensions/aoicanvas",
+                  badge: { text: "New", variant: "tip" },
+                },
+                {
+                  label: "aoi.loader",
+                  link: "extensions/aoiloader",
+                  badge: { text: "New", variant: "tip" },
                 },
                 {
                   label: "aoi.js-library",
                   link: "extensions/aoijs-library",
+                  badge: { text: "New", variant: "tip" },
                 },
               ],
             },

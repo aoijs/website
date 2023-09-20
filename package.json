@@ -18,7 +18,7 @@
     "@astrojs/markdown-remark": "^3.0.0",
     "@astrojs/node": "^6.0.0",
     "@astrojs/react": "^3.0.0",
-    "@astrojs/starlight": "^0.10.0",
+    "@astrojs/starlight": "^0.10.1",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "astro": "^3.1.0",
@@ -28,6 +28,7 @@
     "react-dom": "^18.2.0",
     "rehype-autolink-headings": "^6.1.1",
     "sharp": "^0.32.5",
+    "shiki": "^0.14.4",
     "starlight-root": "github:withastro/starlight#main",
     "typescript": "^5.2.2"
   }

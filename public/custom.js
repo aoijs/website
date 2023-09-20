@@ -6,7 +6,7 @@
   let position = { scrollTop: 0, details: [] };
 
   const sidebar = document.querySelector(
-    "#starlight__sidebar > .sidebar-content",
+    "#starlight__sidebar > .sidebar-content"
   );
 
   if (sidebar) {
@@ -50,26 +50,22 @@
           sidebar.scrollTop = position.scrollTop || 0;
         }
       } catch (err) {
-        console.error(err);
+        return;
       }
     }
 
     const Store = () => {
-      if (timeout) {
-        window.clearTimeout(timeout);
-      }
-      timeout = window.setTimeout(() => {
-        position.scrollTop = sidebar.scrollTop;
-        position.details = details.map((detail) => detail.hasAttribute("open"));
-        sessionStorage.setItem(key, JSON.stringify(position));
-        timeout = 0;
-      }, 1000);
+      position.scrollTop = sidebar.scrollTop;
+      position.details = details.map((detail) => detail.hasAttribute("open"));
+      sessionStorage.setItem(key, JSON.stringify(position));
     };
 
-    sidebar.addEventListener("scroll", Store);
+    const uic = () => {
+      Store();
+    };
 
-    for (const detail of details) {
-      detail.addEventListener("toggle", Store);
-    }
+    document.addEventListener("mousemove", uic);
+    document.addEventListener("click", uic);
+    document.addEventListener("keydown", uic);
   }
 })();
