@@ -2,6 +2,8 @@
 title: Getting Started with aoi.js
 description: Learn how to set up and use aoi.js, a package for developing Discord bots with simplified and ready-to-use functions.
 id: setup
+next: false
+prev: false
 ---
 
 Aoi.js is a package with simplified and ready-to-use functions for Discord bot developers. It aims to be the easiest package to learn and provides swift and flexible functionality using functions.
@@ -18,6 +20,8 @@ Aoi.js is a package with simplified and ready-to-use functions for Discord bot d
 To get started with aoi.js, follow these steps:
 
 import { Tabs, TabItem } from "@astrojs/starlight/components";
+import { LinkCard, CardGrid } from "@astrojs/starlight/components";
+
 
 <Tabs>
   <TabItem label="npm">
@@ -65,3 +69,15 @@ client.command({
   code: `Pong! $pingms`,
 });
 ```
+
+<LinkCard
+  title="Getting Started with Command Handlers"
+  description="Learn how to handle commands clean and correct."
+  href="/guides/client/handler"
+/>
+
+<LinkCard
+  title="Get started with Client Variables"
+  description="Learn how to use and create Client Variables."
+  href="/guides/client/variables"
+/>
