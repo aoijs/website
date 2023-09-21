@@ -66,6 +66,7 @@
 
     document.addEventListener("mousemove", uic);
     document.addEventListener("click", uic);
-    document.addEventListener("keydown", uic);
+    document.addEventListener("touchmove", uic);
+    document.addEventListener("touchstart", uic);
   }
 })();
