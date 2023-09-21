@@ -1,6 +1,6 @@
 {
-  "name": "website-astro",
-  "version": "1.0.0",
+  "name": "aoi.js-website",
+  "version": "0.3.0",
   "description": "Offical aoi.js Documentation.",
   "main": "index.js",
   "scripts": {
