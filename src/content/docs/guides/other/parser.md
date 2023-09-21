@@ -59,7 +59,7 @@ For every component parser is one thing always the same, `{actionRow:{...}}`. We
 
 Usage:
 
-```php
+```bash
 {button:label:style:customID:disabled? (true / false):emoji?}
 ```
 
@@ -78,7 +78,7 @@ Usage:
 
 Select Menu Parser Usage:
 
-```php
+```bash
 {selectMenu:customID:placeholder:minValue:maxValue:default(true / false):...options}
 
 {selectMenuOptions:optionName:customID:optionDescription:default? (true / false):emoji?}
@@ -88,7 +88,7 @@ Select Menu Parser Usage:
 
 Interaction Modal Parser Usage:
 
-```php
+```bash
 {textInput:label:style:customID:required? (true / false):placeholder?:minLength?:maxLength?:defaultValue?}
 ```
 
@@ -100,11 +100,9 @@ Below are simple examples of each parser and how to use them.
 
 **Embed with title, footer, image and field.**
 
-```php
+```bash
 {newEmbed:{title:Another Awesome Example !}{image:https://cdn.discordapp.com/icons/773352845738115102/f6b0d1a62a83397976ea441c5377e6ad.png?size=128}{field:This is a field title!:And a field description which is not inline!:false}{footer:Example #2}}
 ```
-
-![preview](https://raw.githubusercontent.com/aoijs/website/docus/assets/images/others/embed-image-footer.png)
 
 ---
 
@@ -114,31 +112,27 @@ Below are simple examples of each parser and how to use them.
 
 **Two buttons each one in a different row.**
 
-```php
+```bash
 {actionRow:{button:Button:secondary:button1}}{actionRow:{button:Button:primary:button2}}
 ```
 
-![preview](https://raw.githubusercontent.com/aoijs/website/docus/assets/images/others/embed-buttons.png)
-
 **Three buttons, one with emoji.**
 
-```php
+```bash
 {actionRow:{button:Button:primary:button1:false}{button:Button:primary:button2:false}{button:Button:danger:button3:false:👋}}
 ```
-
-![preview](https://raw.githubusercontent.com/aoijs/website/docus/assets/images/others/embed-buttons-3.png)
 
 #### Select Menu Parser
 
 **Single-Select Menu with two options**
 
-```php
+```bash
 {actionRow:{selectMenu:customID:Placeholder:1:1:false:{selectMenuOptions:Option1:1:OptionDescription1:false:👋}{selectMenuOptions:Option2:2:OptionDescription2:false}}}
 ```
 
 **Multi-Select Menu with three options and and a maximum of 2 selectable options**
 
-```php
+```bash
 {actionRow:{selectMenu:customID:Placeholder:1:2:false:{selectMenuOptions:Option1:1:OptionDescription1:false:👋}{selectMenuOptions:Option2:2:OptionDescription2:false}{selectMenuOptions:Option3:3:OptionDescription3:false}}}
 ```
 
@@ -146,6 +140,6 @@ Below are simple examples of each parser and how to use them.
 
 **Modal with two fields one being normal sized and the other being bigger.**
 
-```php
+```bash
 {actionRow:{textInput:ExampleTitle1:1:customID1:true}}{actionRow:{textInput:ExampleTitle2:2:customID2:false}}
 ```
