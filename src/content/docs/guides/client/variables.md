@@ -18,10 +18,10 @@ client.variables({
   variableName: number,
   variableName: object,
   variableName: "string",
-});
+}, table?);
 ```
 
-The `client.variables()` function takes an object as an argument, where each property represents a variable name and its corresponding value.
+The `client.variables()` function takes an object as an argument, where each property represents a variable name and its corresponding value. You can assign variables to a certain table. However, this is optional and will default to "main".
 
 For example:
 
@@ -31,7 +31,7 @@ client.variables({
   money: 0,
   developers: {},
   title: "none",
-});
+}, "main");
 ```
 
 ---
@@ -45,32 +45,32 @@ Another way to use variables is by using a variable handler, which can help keep
 3. In your main file, add the following code:
 
 ```js
-require("./handler/variables.js")(bot);
+require("./handler/variables.js")(client);
 ```
 
 4. In the `variables.js` file, create an array of objects, where each object represents a variable name and its corresponding value:
 
 ```js
-module.exports = (bot) => {
+module.exports = (client) => {
   client.variables({
     variableName: boolean,
     variableName: number,
     variableName: object,
     variableName: "string",
-  });
+  }, table?);
 };
 ```
 
 For example:
 
 ```js title="handler/variables.js"
-module.exports = (bot) => {
+module.exports = (client) => {
   client.variables({
     blacklisted: false,
     money: 0,
     developers: {},
     title: "none",
-  });
+  }, "main");
 };
 ```
 
