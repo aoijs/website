@@ -65,7 +65,7 @@ const client = new AoiClient({
 });
 
 // Loading commands with custom loader.
-new Loader(bot).load("./commands")
+new Loader(client).load("./commands")
     .then(() => console.log("Source loaded!"));
 ```
 
