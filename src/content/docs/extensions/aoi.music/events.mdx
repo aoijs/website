@@ -34,7 +34,12 @@ voice.addEvent(PlayerEvents.eventName);
 ### Using Events
 
 ```js
-bot.LoadCommands(voice.cmds, "./voice/");
+const { LoadCommands } = require("aoi.js");
+
+...
+
+const loader = new LoadCommands(bot);
+loader.load(voice.cmds, "./voice/");
 ```
 
 This should be the content of your `./voice/<filename>.js`:

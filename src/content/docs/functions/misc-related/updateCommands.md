@@ -33,7 +33,7 @@ const bot = new AoiClient({
   },
 });
 
-bot.LoadCommands("./commands/", true); // your command directory.
+bot.loadCommands("./commands/", true); // your command directory.
 ```
 
 ## Example(s)
