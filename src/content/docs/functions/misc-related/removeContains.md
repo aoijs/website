@@ -24,7 +24,7 @@ $removeContains[content;...words]
 This will remove the word "aoi.js from the given text:
 
 ```javascript
-bot.command({
+client.command({
   name: "removeContains",
   code: `
     $removeContains[Hello, aoi.js!;, ;aoi.js]

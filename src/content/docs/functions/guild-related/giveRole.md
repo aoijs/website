@@ -28,7 +28,7 @@ Please note that the bots **highest** role must be above the role you're trying 
 This will assign you a role called "Admin" (if present):
 
 ```javascript
-bot.command({
+client.command({
   name: "giveRole",
   code: `
   $giveRole[$guildID;$authorID;$findRole[Admin];Some reason.]

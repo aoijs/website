@@ -24,7 +24,7 @@ $messagePublish[messageID;channelID?]
 This will publish a message ( will only work in announcement channels ):
 
 ```javascript
-bot.command({
+client.command({
   name: "messagePublish",
   code: `
   $messagePublish[$get[msgID];$channelID]

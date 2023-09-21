@@ -27,7 +27,7 @@ $eval[code;returnCode?;sendMessage?;returnExecution?;returnID?]
 This will return your user ID:
 
 ```javascript
-bot.command({
+client.command({
   name: "eval",
   code: `
     \`\`\`

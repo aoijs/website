@@ -17,7 +17,7 @@ $second
 This will returns the current second:
 
 ```javascript
-bot.command({
+client.command({
   name: "second",
   code: `
     $second
@@ -28,7 +28,7 @@ bot.command({
 You can change the timezone using `$timezone`:
 
 ```javascript
-bot.command({
+client.command({
   name: "second",
   code: `
     $second 

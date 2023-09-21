@@ -23,7 +23,7 @@ $isValidHex[colorResolver]
 This will return `true` as `#30dbd8` is an valid hex color:
 
 ```javascript
-bot.command({
+client.command({
   name: "isValidHex",
   code: `
   $isValidHex[#30dbd8]
@@ -34,7 +34,7 @@ bot.command({
 This will return `true` as well as `80` is an valid hexadecimal color:
 
 ```javascript
-bot.command({
+client.command({
   name: "isValidHex",
   code: `
   $isValidHex[80]

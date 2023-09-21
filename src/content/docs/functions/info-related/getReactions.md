@@ -29,7 +29,7 @@ $getReactions[channelID;messageID;reaction;force?;option?]
 This will mention all users that reacted to your message, in this case, only your bot:
 
 ```javascript
-bot.command({
+client.command({
   name: "getReactions",
   code: `
 $getReactions[$channelID;$messageID;👋;true;mention]

@@ -35,7 +35,7 @@ $findMembers[userResolver;limit?;type?;force?;format?]
 This will return twenty members with `Leref` in their username:
 
 ```javascript
-bot.command({
+client.command({
   name: "findMembers",
   code: `
   $findMembers[Leref;20;startsWith;true;{position}) {username}#{tag}]

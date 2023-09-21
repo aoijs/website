@@ -17,7 +17,7 @@ $month
 This will returns the current month:
 
 ```javascript
-bot.command({
+client.command({
   name: "month",
   code: `
     $month

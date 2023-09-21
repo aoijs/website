@@ -23,7 +23,7 @@ $log[content]
 This will log "Aoi.js is great!" in your bot's console:
 
 ```javascript
-bot.command({
+client.command({
   name: "log",
   code: `
     $log[Aoi.js is great!]

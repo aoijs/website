@@ -31,7 +31,7 @@ $parseDate[ms;type?]
 This will return your current date in the `date` [format](#types):
 
 ```javascript
-bot.command({
+client.command({
   name: "parseDate",
   code: `
   $parseDate[$dateStamp;date]

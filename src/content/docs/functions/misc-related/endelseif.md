@@ -23,7 +23,7 @@ $endelseif
 Example usage of `$if: old` (will return "Hello" when the condition is true):
 
 ```javascript
-bot.command({
+client.command({
   name: "if",
   $if: "old",
   code: `

@@ -29,7 +29,7 @@ This will set a cooldown for a command in the channel where the command was exec
 cooldown:
 
 ```javascript
-bot.command({
+client.command({
   name: "channelCooldown",
   code: `
   hello

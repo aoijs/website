@@ -43,7 +43,7 @@ $addButton[index;label;style;customID;disabled?;emoji?]
 This adds a primary and link button to the bot's message:
 
 ```javascript
-bot.command({
+client.command({
   name: "addButton",
   code: `
     Hello!

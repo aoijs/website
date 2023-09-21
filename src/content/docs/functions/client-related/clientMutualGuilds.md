@@ -24,7 +24,7 @@ $clientMutualGuilds[userID?;sep?]
 This will return the mutual servers of you and the bot:
 
 ```javascript
-bot.command({
+client.command({
   name: "clientMutualGuilds",
   code: `
   $clientMutualGuilds[$authorID;, ]

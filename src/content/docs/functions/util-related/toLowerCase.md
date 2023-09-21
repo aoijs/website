@@ -23,7 +23,7 @@ $toLowerCase[text]
 This will everything given to lowercase, in this case it would return `aoi.js is great.`:
 
 ```javascript
-bot.command({
+client.command({
   name: "toLowerCase",
   code: `
     $toLowerCase[AOI.JS IS GREAT.]

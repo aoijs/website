@@ -25,7 +25,7 @@ $setUserNickname[userID;newName;reason?]
 This will change your nickname to "I love aoi.js": (wont work if you're the guild owner)
 
 ```javascript
-bot.command({
+client.command({
   name: "setUserNickname",
   code: `
   $setUserNickname[$authorID;I love aoi.js;They simply love aoi.js]

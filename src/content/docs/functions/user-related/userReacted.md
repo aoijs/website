@@ -27,7 +27,7 @@ $userReacted[channelID;messageID;userID;emoji]
 This will return `true` as the bot reacted to the initial command message:
 
 ```javascript
-bot.command({
+client.command({
   name: "userReacted",
   code: `
 $userReacted[$channelID;$messageID;$clientID;😩]

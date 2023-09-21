@@ -28,7 +28,7 @@ In this step we'll take a look at your main file also known as `index.js`. We ad
 ```javascript title="index.js"
 const { AoiClient } = require("aoi.js");
 
-const bot = new AoiClient({
+const client = new AoiClient({
   token: "Discord Bot Token",
   prefix: "Discord Bot Prefix",
   intents: ["Guilds", "GuildMessages", "MessageContent"],
@@ -44,7 +44,7 @@ const bot = new AoiClient({
   },
 });
 
-bot.loadCommands("./commands/", true); // you can change this to any directory you want
+client.loadCommands("./commands/", true); // you can change this to any directory you want
 ```
 
 ### Setting everything up with folders and files

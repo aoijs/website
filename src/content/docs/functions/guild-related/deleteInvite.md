@@ -25,7 +25,7 @@ $deleteInvite[guildID;inviteCode;reason?]
 This will delete an invite (wont work as the invite code doesn't exist):
 
 ```javascript
-bot.command({
+client.command({
   name: "deleteInvite",
   code: `
   $deleteInvite[$guildID;ifawd9a;Testing!]

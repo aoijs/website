@@ -41,7 +41,7 @@ $createApplicationCommand[guildID/global;name;description;defaultPermission(true
 The official documentation can be found [here](https://discord.com/developers/docs/interactions/application-commands#subcommands-and-subcommand-groups)
 
 ```js
-bot.command({
+client.command({
   name: "createApplicationCommand",
   code: `
   $createApplicationCommand[guildID/global;moderation;Moderation Commands!;true;slash;[{

@@ -25,7 +25,7 @@ $membersCount[guildID?;presence?;countBot?]
 This will return the amount of offline users (including bots) in your guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "membersCount",
   code: `
   $membersCount[$guildID;offline;true]

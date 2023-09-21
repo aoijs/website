@@ -26,7 +26,7 @@ $jsonRequest[URL;property?;error?;...header?]
 This will return a random dog fact:
 
 ```javascript
-bot.command({
+client.command({
   name: "jsonRequest",
   code: `
     $jsonRequest[https://some-random-api.ml/facts/dog;fact;Something went wrong.]

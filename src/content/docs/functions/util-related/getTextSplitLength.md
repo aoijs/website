@@ -17,7 +17,7 @@ $getTextSplitLength
 This will return `5` as there are five arguments separated by commas given in `$textSplit`
 
 ```javascript
-bot.command({
+client.command({
   name: "getTextSplitLength",
   code: `
   $getTextSplitLength

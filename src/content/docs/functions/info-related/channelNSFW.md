@@ -24,7 +24,7 @@ This will return either `true` or `false` depending on if the channel where you 
 not:
 
 ```javascript
-bot.command({
+client.command({
   name: "channelNSFW",
   code: `
   $channelNSFW[$channelID]

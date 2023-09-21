@@ -23,7 +23,7 @@ $guildAFKChannelID[guildID?]
 This will return the AFK voice channel of your guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildAFKChannelID",
   code: `
   $guildAFKChannelID

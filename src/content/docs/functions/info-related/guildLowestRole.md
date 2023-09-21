@@ -23,7 +23,7 @@ $guildLowestRole[guildID?]
 This will return the ID of the lowest guild role:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildLowestRole",
   code: `
   $guildLowestRole[$guildID]

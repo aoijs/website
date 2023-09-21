@@ -25,7 +25,7 @@ $setRolePosition[roleID;position;guildID?]
 This will change a random role's position to `1` (the bot's highest role must be above that role):
 
 ```javascript
-bot.command({
+client.command({
   name: "setRolePosition",
   code: `
    $setRolePosition[$randomRoleID;1;$guildID]`,

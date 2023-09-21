@@ -27,7 +27,7 @@ $cloneChannel[channelID;name;returnID?]
 This will clone the current channel and name it "new channel":
 
 ```javascript
-bot.command({
+client.command({
   name: "cloneChannel",
   code: `
   $cloneChannel[$channelID;new channel;false]

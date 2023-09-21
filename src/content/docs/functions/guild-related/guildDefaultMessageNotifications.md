@@ -23,7 +23,7 @@ $guildDefaultMessageNotifications[guildID?]
 This will return the guild's default message notification type:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildDefaultMessageNotifications",
   code: `
   $guildDefaultMessageNotifications

@@ -37,7 +37,7 @@ $getMessage[channelID;messageID;option?]
 This will return the content of your sent message:
 
 ```javascript
-bot.command({
+client.command({
   name: "getMessage",
   code: `
 $getMessage[$channelID;$messageID;content]

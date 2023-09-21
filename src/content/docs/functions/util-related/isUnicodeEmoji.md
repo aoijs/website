@@ -23,7 +23,7 @@ $isUnicodeEmoji[emojiResolver]
 This will return `true` as "🤓" is an valid unicode emoji:
 
 ```javascript
-bot.command({
+client.command({
   name: "isUnicodeEmoji",
   code: `
   $isUnicodeEmoji[🤓]

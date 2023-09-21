@@ -17,7 +17,7 @@ $packageVersion
 This will return your current aoi.js version:
 
 ```javascript
-bot.command({
+client.command({
   name: "packageVersion",
   code: `
     $packageVersion

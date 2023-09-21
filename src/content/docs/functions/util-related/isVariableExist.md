@@ -24,7 +24,7 @@ $isVariableExist[variable;table?]
 This will either true or false depending on if a variable called `Example` exists:
 
 ```javascript
-bot.command({
+client.command({
   name: "isVariableExist",
   code: `
   $isVariableExist[Example;main]

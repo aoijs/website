@@ -44,7 +44,7 @@ $createChannel[guildID;name;type;returnID;parentID]
 This will create a new text channel called "aoijs":
 
 ```javascript
-bot.command({
+client.command({
   name: "createChannel",
   code: `
     $createChannel[$guildID;aoijs;Text;false]

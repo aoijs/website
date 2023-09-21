@@ -23,7 +23,7 @@ $leaveVC[guildID?]
 This will make your bot leave the current voice channel in the current guild (if any):
 
 ```javascript
-bot.command({
+client.command({
   name: "leaveVC",
   code: `
     $leaveVC[$guildID]

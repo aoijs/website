@@ -23,7 +23,7 @@ $seek[time]
 This will seek to second 10 of the song>
 
 ```javascript
-bot.command({
+client.command({
   name: "seek",
   code: `
     $seek[10000]

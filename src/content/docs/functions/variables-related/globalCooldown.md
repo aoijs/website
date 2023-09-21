@@ -28,7 +28,7 @@ $globalCooldown[time;errorMessage]
 This will return `Hello` and stop anyone from executing the command again for another five minutes:
 
 ```javascript
-bot.command({
+client.command({
   name: "globalCooldown",
   code: `
   Hello

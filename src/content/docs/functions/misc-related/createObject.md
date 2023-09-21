@@ -22,7 +22,7 @@ $createObject[objectName;object]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "createObject",
   code: `
   $getObjectProperty[Object Name;Leref]

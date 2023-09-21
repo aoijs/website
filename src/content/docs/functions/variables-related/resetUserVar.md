@@ -25,7 +25,7 @@ $resetUserVar[varname;guildID?;table?]
 This will reset a variable called "Example":
 
 ```javascript
-bot.command({
+client.command({
   name: "resetUserVar",
   code: `
     $resetUserVar[Example;$guildID;main]

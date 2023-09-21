@@ -23,7 +23,7 @@ $concatTextSplit[...text]
 This will add `Hello, Bye` to the already used `$textSplit` argument:
 
 ```javascript
-bot.command({
+client.command({
   name: "concatTextSplit",
   code: `
   $concatTextSplit[Hello;Bye]

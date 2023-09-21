@@ -19,7 +19,7 @@ $interactionPing
 This will return the latency of an interaction:
 
 ```javascript
-bot.command({
+client.command({
   name: "interactionPing",
   code: `
  $addButton[1;Test;primary;testButton;false]

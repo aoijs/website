@@ -23,7 +23,7 @@ $removeSplitTextElement[...elements]
 This will remove the word "bye" from the array:
 
 ```javascript
-bot.command({
+client.command({
   name: "removeSplitTextElement",
   code: `
     $removeSplitTextElement[bye]

@@ -25,7 +25,7 @@ $channelSendMessage[channelID;content;returnID?]
 This will send "Hello!" to the current channel:
 
 ```javascript
-bot.command({
+client.command({
   name: "channelSendMessage",
   code: `
   $channelSendMessage[$channelID;Hello!;false]
@@ -38,7 +38,7 @@ bot.command({
 This will send an embed with description and footer to the current channel:
 
 ```javascript
-bot.command({
+client.command({
   name: "channelSendMessage",
   code: `
   $channelSendMessage[$channelID;{newEmbed:{title:Hello}{footer:Bye}};false]

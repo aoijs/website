@@ -17,7 +17,7 @@ $ram
 This will return the RAM usage and the available amount of RAM:
 
 ```javascript
-bot.command({
+client.command({
   name: "ram",
   code: `
   I'm currently using \`$ram%\` out of \`$maxRam%\`!

@@ -21,7 +21,7 @@ $arrayPop[name]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "array-pop",
   code: `
   $arrayPop[array]

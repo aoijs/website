@@ -23,7 +23,7 @@ $deleteStageInstance[channelID]
 This will end the current stage instance: ( make sure to replace stageID with an actual stage ID )
 
 ```javascript
-bot.command({
+client.command({
   name: "deleteStageInstance",
   code: `
   $deleteStageInstance[stageInstance]

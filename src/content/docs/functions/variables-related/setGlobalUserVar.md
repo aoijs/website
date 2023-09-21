@@ -26,7 +26,7 @@ $setGlobalUserVar[varname;value;userID?;table?]
 This will change the value of "Example" to "This is a value" for the command author:
 
 ```javascript
-bot.command({
+client.command({
   name: "setGlobalUserVar",
   code: `
     $setGlobalUserVar[Example;This is a value;$authorID;main]

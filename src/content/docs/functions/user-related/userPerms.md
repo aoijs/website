@@ -25,7 +25,7 @@ $userPerms[userID?;sep?;guildID?]
 This will return your permissions:
 
 ```javascript
-bot.command({
+client.command({
   name: "userPerms",
   code: `
   $userPerms[$authorID;, ;$guildID]

@@ -35,7 +35,7 @@ $arrayEvery[name;query;queryType?]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "array-every",
   code: `
   $arrayEvery[array;30;==]

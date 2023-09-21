@@ -17,7 +17,7 @@ $executionTime
 This will return the execution time of how long it took to execute this code:
 
 ```javascript
-bot.command({
+client.command({
   name: "executionTime",
   code: `
     This took: $executionTime MS

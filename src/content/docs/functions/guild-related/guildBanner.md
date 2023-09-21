@@ -26,7 +26,7 @@ $guildBanner[guildID?;size?;dynamic?;extension?]
 This will return your guild banner (if unlocked and using):
 
 ```javascript
-bot.command({
+client.command({
   name: "guildBanner",
   code: `
   $guildBanner[$guildID]

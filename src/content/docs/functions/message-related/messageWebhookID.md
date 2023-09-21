@@ -24,7 +24,7 @@ $messageWebhookID[messageID?;channelID?]
 This will return the ID of a webhook, make sure to replace "messageID" with an actual message ID sent from a webhook:
 
 ```javascript
-bot.command({
+client.command({
   name: "messageWebhookID",
   code: `
   $messageWebhookID[messageID;$channelID] //replace messageID

@@ -26,7 +26,7 @@ $guildIcon[guildID?;size?;dynamic?;extension?]
 This will return the icon of the guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildIcon",
   code: `
   $guildIcon[$guildID;4096;true;webp]

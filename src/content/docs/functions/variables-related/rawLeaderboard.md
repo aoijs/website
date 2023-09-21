@@ -37,7 +37,7 @@ $rawLeaderboard[variable;order?;type?;custom?;list?;page?;table?]
 This will return a leaderboard of the "Example" variable:
 
 ```javascript
-bot.command({
+client.command({
   name: "rawLeaderboard",
   code: `
     $rawLeaderboard[Example;asc;globalUser;{top} - {username} - {value};10;1;main]

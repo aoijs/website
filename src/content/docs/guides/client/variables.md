@@ -13,7 +13,7 @@ Variables are useful tools in programming that allow you to store values that ca
 One way to do this is by using the following code snippet in your main file (usually named `index.js`):
 
 ```js
-bot.variables({
+client.variables({
   variableName: boolean,
   variableName: number,
   variableName: object,
@@ -21,12 +21,12 @@ bot.variables({
 });
 ```
 
-The `bot.variables()` function takes an object as an argument, where each property represents a variable name and its corresponding value.
+The `client.variables()` function takes an object as an argument, where each property represents a variable name and its corresponding value.
 
 For example:
 
 ```js title="index.js"
-bot.variables({
+client.variables({
   blacklisted: false,
   money: 0,
   developers: {},
@@ -52,7 +52,7 @@ require("./handler/variables.js")(bot);
 
 ```js
 module.exports = (bot) => {
-  bot.variables({
+  client.variables({
     variableName: boolean,
     variableName: number,
     variableName: object,
@@ -65,7 +65,7 @@ For example:
 
 ```js title="handler/variables.js"
 module.exports = (bot) => {
-  bot.variables({
+  client.variables({
     blacklisted: false,
     money: 0,
     developers: {},

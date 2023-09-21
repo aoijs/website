@@ -24,7 +24,7 @@ $findRole[roleResolver;guildID?]
 This will return the role ID of the role `Owner` if it exists:
 
 ```javascript
-bot.command({
+client.command({
   name: "findRole",
   code: `
   $findRole[Owner;$guildID]

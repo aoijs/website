@@ -24,7 +24,7 @@ $renameFile[oldFile;newFile]
 This will change your index.js to a index.txt file:
 
 ```javascript
-bot.command({
+client.command({
   name: "renameFile",
   code: `
     $renameFile[./index.js;./index.txt]

@@ -24,7 +24,7 @@ $stringStartsWith[text;check]
 This will return `true` as `aoi.js` starts with `aoi`:
 
 ```javascript
-bot.command({
+client.command({
   name: "stringStartsWith",
   code: `
   $stringStartsWith[aoi.js;aoi]

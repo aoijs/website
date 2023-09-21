@@ -24,7 +24,7 @@ This will return either `true` or `false` depending on if the user exists, in th
 as you exist as Discord user:
 
 ```javascript
-bot.command({
+client.command({
   name: "userExists",
   code: `
   $userExists[$authorID]

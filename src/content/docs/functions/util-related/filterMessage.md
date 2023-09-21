@@ -24,7 +24,7 @@ $filterMessage[text;...letters]
 This will remove the `N` of `Never` and return `ever`:
 
 ```javascript
-bot.command({
+client.command({
   name: "filterMessage",
   code: `
   $filterMessage[Never;N]

@@ -23,7 +23,7 @@ $guildIDS[sep?]
 This will return all guild IDs your bot is in:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildIDS",
   code: `
   $guildIDS[, ]

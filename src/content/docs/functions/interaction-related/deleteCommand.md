@@ -17,7 +17,7 @@ $deleteCommand
 This will delete the initial command message:
 
 ```javascript
-bot.command({
+client.command({
   name: "deleteCommand",
   code: `
   Hello!

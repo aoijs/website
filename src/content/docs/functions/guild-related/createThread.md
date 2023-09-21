@@ -34,7 +34,7 @@ $createThread[channelID;name;archive;type;startMessage;returnId?]
 This will create a thread in the current channel:
 
 ```javascript
-bot.command({
+client.command({
   name: "createThread",
   code: `
   $createThread[$channelID;Example!;60;public;$messageID;false]

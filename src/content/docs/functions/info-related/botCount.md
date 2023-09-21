@@ -23,7 +23,7 @@ $guildBotCount[guildID?]
 This will return the amount of bots in your guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildBotCount",
   code: `
   $guildBotCount

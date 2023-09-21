@@ -26,7 +26,7 @@ $getUserVar[varname;userID?;id?;table?]
 This will return the value of a variable called "Example":
 
 ```javascript
-bot.command({
+client.command({
   name: "getUserVar",
   code: `
     $getUserVar[Example;$authorID;$guildID;main]

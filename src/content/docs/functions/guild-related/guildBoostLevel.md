@@ -23,7 +23,7 @@ $guildBoostLevel[guildID?]
 This will return the boost level of a specific guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildBoostLevel",
   code: `
   $guildBoostLevel[$guildID]

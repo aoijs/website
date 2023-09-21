@@ -23,7 +23,7 @@ $channelTopic[channelID?]
 This will return the channel topic of the channel where you execute the command in:
 
 ```javascript
-bot.command({
+client.command({
   name: "channelTopic",
   code: `
   $channelTopic[$channelID]

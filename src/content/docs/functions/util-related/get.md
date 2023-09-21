@@ -23,7 +23,7 @@ $get[var]
 This will return `Leref` from `$let`:
 
 ```javascript
-bot.command({
+client.command({
   name: "get",
   code: `
 Aoi.js developer: $get[developer]

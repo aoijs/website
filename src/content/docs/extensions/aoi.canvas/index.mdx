@@ -55,7 +55,7 @@ We do not take responsibilities for any damages this package could produce, if y
 const { AoiClient } = require("aoi.js");
 const aoicanvas = require("aoi.canvas");
 
-const bot = new AoiClient({
+const client = new AoiClient({
   token: "DISCORD BOT TOKEN",
   prefix: "DISCORD BOT PREFIX",
   intents: ["MessageContent", "Guilds", "GuildMessages"],
@@ -78,13 +78,13 @@ aoicanvas.load({
 });
 
 // Ping Command Example
-bot.command({
+client.command({
   name: "ping",
   code: `Pong! $pingms`,
 });
 
 // Leref Command Example (The best)
-bot.command({
+client.command({
   name: "leref",
   code: `
   $sendCanvas[lerefPro;msg]

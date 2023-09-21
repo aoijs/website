@@ -26,7 +26,7 @@ $clearReaction[channelID;messageID;userID;emoji]
 This will add and remove the bot's reaction after two seconds:
 
 ```javascript
-bot.command({
+client.command({
   name: "clearReaction",
   code: `
   $clearReaction[$channelID;$messageID;$clientID;🥱]

@@ -24,7 +24,7 @@ $memberJoinDate[userID?;guildID?]
 This will return your join date in MS and parsed date:
 
 ```javascript
-bot.command({
+client.command({
   name: "memberJoinDate",
   code: `
   $memberJoinDate[$authorID;$guildID] -> $parseDate[$memberJoinDate[$authorID;$guildID]]

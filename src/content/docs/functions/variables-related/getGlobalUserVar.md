@@ -25,7 +25,7 @@ $getGlobalUserVar[varname;userID?;table?]
 This will return the value of a variable called "Example":
 
 ```javascript
-bot.command({
+client.command({
   name: "getGlobalUserVar",
   code: `
     $getGlobalUserVar[Example;$authorID;main]

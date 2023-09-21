@@ -24,7 +24,7 @@ $getApplicationCommandID[name;type?]
 This will return the ID of an application command called "example", (if any):
 
 ```javascript
-bot.command({
+client.command({
   name: "getApplicationCommandID",
   code: `
   $getApplicationCommandID[example;global]

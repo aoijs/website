@@ -23,7 +23,7 @@ $isVerified[guildID?]
 This will check if your server is verified and return either `true` or `false`:
 
 ```javascript
-bot.command({
+client.command({
   name: "isVerified",
   code: `
   $isVerified[$guildID]

@@ -17,7 +17,7 @@ $playerStatus
 This will return the current player status:
 
 ```javascript
-bot.command({
+client.command({
   name: "playerStatus",
   code: `
     $playerStatus

@@ -26,7 +26,7 @@ $userBanner[userID?;size?;dynamic?;extension?]
 This will return your profile banner:
 
 ```javascript
-bot.command({
+client.command({
   name: "userBanner",
   code: `
   $userBanner[$authorID;4096;true;webp]

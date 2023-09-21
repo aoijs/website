@@ -24,7 +24,7 @@ $unPinMessage[messageID?;channelID?]
 This will pin the bot's message and unpin it after two seconds:
 
 ```javascript
-bot.command({
+client.command({
   name: "unPinMessage",
   code: `
   $unPinMessage[$get[id]]

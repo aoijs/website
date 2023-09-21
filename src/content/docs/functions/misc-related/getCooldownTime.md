@@ -26,7 +26,7 @@ $getCooldownTime[time;type;command;id]
 This will return the remaining cooldown of the "getCooldownTime" command:
 
 ```javascript
-bot.command({
+client.command({
   name: "getCooldownTime",
   code: `
     $cooldown[2m;]

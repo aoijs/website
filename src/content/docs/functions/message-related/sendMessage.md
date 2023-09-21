@@ -24,7 +24,7 @@ $sendMessage[content;returnID?]
 This will send a message in the current channel:
 
 ```javascript
-bot.command({
+client.command({
   name: "sendMessage",
   code: `
    $sendMessage[Hello!;false]  
@@ -35,7 +35,7 @@ bot.command({
 This will send an embed in the current channel using parsers:
 
 ```javascript
-bot.command({
+client.command({
   name: "sendMessage",
   code: `
    $sendMessage[Hello! {newEmbed:{title:Bonjour!}};false]  

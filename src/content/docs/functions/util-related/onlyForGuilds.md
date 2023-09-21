@@ -24,7 +24,7 @@ $onlyForGuilds[...guildIds;error]
 This will limit the command only to the listed guilds:
 
 ```javascript
-bot.command({
+client.command({
   name: "onlyForGuilds",
   code: `
     Ok.

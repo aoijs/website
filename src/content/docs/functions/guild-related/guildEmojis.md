@@ -24,7 +24,7 @@ $guildEmojis[sep?;guildID?]
 This will return the emojis of your guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildEmojis",
   code: `
   $guildEmojis[, ;$guildID]

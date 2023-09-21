@@ -24,7 +24,7 @@ $stringEndsWith[text;check]
 This will return `true` as `aoi.js` ends with `js`:
 
 ```javascript
-bot.command({
+client.command({
   name: "stringEndsWith",
   code: `
   $stringEndsWith[aoi.js;js]

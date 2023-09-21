@@ -25,7 +25,7 @@ This will send and delete the sent message after 15 seconds ( we are using $let 
 ID ):
 
 ```javascript
-bot.command({
+client.command({
   name: "deleteMessage",
   code: `
   $deleteMessage[$get[id];$channelID]

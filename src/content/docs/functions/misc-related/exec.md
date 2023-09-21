@@ -23,7 +23,7 @@ $exec[code]
 This will return your current node version:
 
 ```javascript
-bot.command({
+client.command({
   name: "exec",
   code: `
     \`\`\`

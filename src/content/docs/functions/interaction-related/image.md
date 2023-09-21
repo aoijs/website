@@ -24,7 +24,7 @@ $image[index?;URL]
 This will create an embed with an image, title and footer:
 
 ```javascript
-bot.command({
+client.command({
   name: "embed",
   code: `
   $title[Hello!]

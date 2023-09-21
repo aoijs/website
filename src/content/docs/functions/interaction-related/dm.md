@@ -28,7 +28,7 @@ $dm[userID]
 This will send an DM to you containing "Hello! Did you really think this works?":
 
 ```javascript
-bot.command({
+client.command({
   name: "dm",
   code: `
   Hello! Did you really think this works?

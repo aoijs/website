@@ -17,7 +17,7 @@ $argsCount
 This will return the amount of arguments in your message, for example, `[prefix]argsCount Hello Bye` will return two:
 
 ```javascript
-bot.command({
+client.command({
   name: "argsCount",
   code: `
   $argsCount

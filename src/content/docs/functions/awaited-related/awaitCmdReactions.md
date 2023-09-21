@@ -30,7 +30,7 @@ $awaitCmdReactions[userFilter;time;reactions;commands;errorMsg?;awaitData?]
 This will reply to you when you react with the "❤️" emoji to your initial command message:
 
 ```js
-bot.command({
+client.command({
   name: "awaitCmdReaction",
   code: `
   React with "❤️" for a surprise! 
@@ -38,7 +38,7 @@ bot.command({
   `,
 });
 
-bot.awaitedCommand({
+client.awaitedCommand({
   name: "awaitedCommandExample",
   code: `
   Nice, you reacted with ❤️.

@@ -23,7 +23,7 @@ $maximumMembers[guildID?]
 This will return the maximum of members you can have in your guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "maximumMembers",
   code: `
   You can have: $maximumMembers[$guildID] Members in this guild!

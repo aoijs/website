@@ -17,7 +17,7 @@ $clientPrefixes
 This will return all your prefixes separated by a comma (`, `):
 
 ```javascript
-bot.command({
+client.command({
   name: "clientPrefixes",
   code: `
   $clientPrefixes

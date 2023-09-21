@@ -29,7 +29,7 @@ $createSticker[guildID;URL;name;returnSticker?;tags;description;reason]
 This will create a sticker called `Imagine`:
 
 ```javascript
-bot.command({
+client.command({
   name: "createSticker",
   code: `
   $createSticker[$guildID;https://cdn.discordapp.com/attachments/1061712111052521493/1066397675278323734/692445926480150611.png;Imagine;true;money;Random sticker;Testing.]

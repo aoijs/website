@@ -23,7 +23,7 @@ $channelName[channelID?]
 This will return the channel name of the channel where you executed the command in:
 
 ```javascript
-bot.command({
+client.command({
   name: "channelName",
   code: `
   $channelName[$channelID]

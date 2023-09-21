@@ -23,7 +23,7 @@ $deleteIn[time]
 This will delete the sent message after five seconds:
 
 ```javascript
-bot.command({
+client.command({
   name: "deleteIn",
   code: `
   $deleteIn[5s]

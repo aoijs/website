@@ -23,7 +23,7 @@ $guildOwnerID[guildID?]
 This will return the ID of the server owner where you execute the command in:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildOwnerID",
   code: `
   $guildOwnerID[$guildID]

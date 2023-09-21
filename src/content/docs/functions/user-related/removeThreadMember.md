@@ -26,7 +26,7 @@ $removeThreadMember[channelID;threadID;userID;reason?]
 This will remove the command author from a given thread:
 
 ```javascript
-bot.command({
+client.command({
   name: "removeThreadMember",
   code: `
    $removeThreadMember[$channelID;threadID;$authorID;Testing functions!]

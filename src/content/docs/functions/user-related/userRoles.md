@@ -26,7 +26,7 @@ $userRoles[userID?;guildID?;option?;sep?]
 This will return your roles:
 
 ```javascript
-bot.command({
+client.command({
   name: "userRoles",
   code: `
   $userRoles[$authorID;$guildID;id;, ]

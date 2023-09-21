@@ -22,7 +22,7 @@ $arrayLastIndexOf[name;query]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "arrayLastIndexOf",
   code: `
   $arrayLastIndexOf[array;akarui]

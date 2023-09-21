@@ -23,7 +23,7 @@ $multi[num;num]
 This will return `72` as `8*9` equals that:
 
 ```javascript
-bot.command({
+client.command({
   name: "multi",
   code: `
   $multi[8;9]

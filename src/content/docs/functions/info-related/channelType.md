@@ -23,7 +23,7 @@ $channelType[channelID?]
 This will return the channel type of the channel where you execute the command in:
 
 ```javascript
-bot.command({
+client.command({
   name: "channelType",
   code: `
   $channelType[$channelID]

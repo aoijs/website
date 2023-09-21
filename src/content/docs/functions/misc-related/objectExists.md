@@ -23,7 +23,7 @@ $objectExists[objectName]
 This will return true as the object exists created by `$createObject`:
 
 ```javascript
-bot.command({
+client.command({
   name: "objectExists",
   code: `
     $objectExists[Object Name]

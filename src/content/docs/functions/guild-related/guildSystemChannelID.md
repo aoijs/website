@@ -23,7 +23,7 @@ $guildSystemChannelID[guildID?]
 This will return the guild's system channel ID:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildSystemChannelID",
   code: `
   $guildSystemChannelID[$guildID]

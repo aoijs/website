@@ -17,7 +17,7 @@ $maxRam
 This will return your bot's maximum amount of available Ram:
 
 ```javascript
-bot.command({
+client.command({
   name: "maxRam",
   code: `
   $maxRam

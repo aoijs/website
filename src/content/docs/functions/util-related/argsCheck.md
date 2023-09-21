@@ -38,7 +38,7 @@ $argsCheck[condition;errorMessage]
 This returns: Greater than 2 arguments if condition met, else it will return an error message.
 
 ```javascript
-bot.command({
+client.command({
   name: "argsCheck",
   code: `
   You have more than two arguments, nice!

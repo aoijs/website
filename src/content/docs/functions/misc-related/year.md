@@ -17,7 +17,7 @@ $year
 This will returns the current year:
 
 ```javascript
-bot.command({
+client.command({
   name: "year",
   code: `
     $year
@@ -28,7 +28,7 @@ bot.command({
 You can change the timezone using `$timezone`:
 
 ```javascript
-bot.command({
+client.command({
   name: "year",
   code: `
     $year 

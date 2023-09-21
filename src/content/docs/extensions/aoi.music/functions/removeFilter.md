@@ -38,7 +38,7 @@ $removeFilter[filter]
 This will remove the `NIGHT_CORE` and `BASS_BOOST` filters:
 
 ```javascript
-bot.command({
+client.command({
   name: "removeFilter",
   code: `
     $removeFilter[{"NIGHT_CORE", "BASS_BOOST"}]

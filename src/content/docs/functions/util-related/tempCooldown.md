@@ -29,7 +29,7 @@ $tempCooldown[time;id;errorMessage?]
 This will set a temporary cooldown for a command which applies once only:
 
 ```javascript
-bot.command({
+client.command({
   name: "tempCooldown",
   code: `
   hello

@@ -24,7 +24,7 @@ $getObject[objectName;format?]
 This will return the object created in `$createObject`:
 
 ```javascript
-bot.command({
+client.command({
   name: "getObject",
   code: `
     $getObject[true]

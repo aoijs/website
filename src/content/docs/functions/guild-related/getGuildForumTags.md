@@ -27,7 +27,7 @@ This function also supports **custom formatting**!
 This will return the forum tag names:
 
 ```javascript
-bot.command({
+client.command({
   name: "getGuildForumTags",
   code: `
   $getGuildForumTags[forumId;name;, ]
@@ -38,7 +38,7 @@ bot.command({
 This will return the emojis of the tags and ids:
 
 ```javascript
-bot.command({
+client.command({
   name: "getGuildForumTags",
   code: `
   $getGuildForumTags[forumId;Name: {name} -> Emoji: {emoji} {emojiId}]

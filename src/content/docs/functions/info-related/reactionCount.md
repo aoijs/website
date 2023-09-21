@@ -26,7 +26,7 @@ This will return the amount of reactions on your message with which you executed
 return `1` due to the bot being the only one who reacted to it:
 
 ```javascript
-bot.command({
+client.command({
   name: "reactionCount",
   code: `
 There are: $reactionCount[$channelID;$messageID;😫] reactions!

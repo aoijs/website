@@ -61,7 +61,7 @@ $color[index?;hex]
 This will return a red embed:
 
 ```javascript
-bot.command({
+client.command({
   name: "color",
   code: `
   $description[What a nice color!]
@@ -71,7 +71,7 @@ bot.command({
 ```
 
 ```javascript
-bot.command({
+client.command({
   name: "color",
   code: `
   $description[What a nice color!]

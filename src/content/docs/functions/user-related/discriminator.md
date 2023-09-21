@@ -23,7 +23,7 @@ $discriminator[userId?]
 This will return your Discord User Discriminator, for example `User#0000` (the four digits):
 
 ```javascript
-bot.command({
+client.command({
   name: "discriminator",
   code: `
   $discriminator[$authorID] // your discriminator

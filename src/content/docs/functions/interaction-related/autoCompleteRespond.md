@@ -29,7 +29,7 @@ Create the slash-commands: (please note that you require the `events: ["onMessag
 your main file)
 
 ```javascript
-bot.command({
+client.command({
   name: "createSlashCommand",
   code: `
   $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;slash;[{
@@ -46,7 +46,7 @@ bot.command({
 Interaction Command:
 
 ```javascript
-bot.command({
+client.command({
   name: "test",
   prototype: "slash",
   code: `
@@ -65,7 +65,7 @@ Create the slash-commands: (please note that you require the `events: ["onMessag
 your main file)
 
 ```javascript
-bot.command({
+client.command({
   name: "createSlashCommand",
   code: `
   $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;slash;[{
@@ -87,7 +87,7 @@ bot.command({
 Interaction Command:
 
 ```javascript
-bot.command({
+client.command({
   name: "test",
   prototype: "slash",
   $if: "old",

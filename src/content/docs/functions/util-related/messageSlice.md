@@ -24,7 +24,7 @@ $messageSlice[from;to?]
 This will slice the message from the first message to the fifth message:
 
 ```javascript
-bot.command({
+client.command({
   name: "messageSlice",
   code: `
   $messageSlice[1;5]

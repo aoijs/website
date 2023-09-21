@@ -30,7 +30,7 @@ $createApplicationCommand[global;exampleslash;Simple example slash command.;true
 ```
 
 ```javascript
-bot.command({
+client.command({
   name: "exampleslash",
   type: "interaction",
   prototype: "slash",

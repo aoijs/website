@@ -23,7 +23,7 @@ $voiceID[userID?]
 This will return your current voice channel ID (if any):
 
 ```javascript
-bot.command({
+client.command({
   name: "voiceID",
   code: `
     $voiceID[$authorID]

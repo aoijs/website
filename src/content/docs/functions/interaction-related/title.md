@@ -25,7 +25,7 @@ $title[index?;title;URL?]
 This will create an embed with a title:
 
 ```javascript
-bot.command({
+client.command({
   name: "title",
   code: `
    $title[Hello!;https://aoi.js.org]

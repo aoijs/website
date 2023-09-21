@@ -23,7 +23,7 @@ $guildSafetyChannelID[guildID?]
 This will return the safety channel ID of the current guild (if any):
 
 ```javascript
-bot.command({
+client.command({
   name: "guildSafetyChannelID",
   code: `
   $guildSafetyChannelID[$guildID]

@@ -17,7 +17,7 @@ $pauseTrack
 This will pause the current track:
 
 ```javascript
-bot.command({
+client.command({
   name: "pauseTrack",
   code: `
     $pauseTrack

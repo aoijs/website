@@ -17,7 +17,7 @@ $datestamp
 This will return day of the month, in MS ( we're using $humanizeMS to make it readable ):
 
 ```javascript
-bot.command({
+client.command({
   name: "datestamp",
   code: `
   $humanizeMS[$datestamp]

@@ -24,7 +24,7 @@ $userActivity[guildID?;userID?]
 This will return your current Activity:
 
 ```javascript
-bot.command({
+client.command({
   name: "userActivity",
   code: `
   $userActivity[$guildID;$authorID]

@@ -17,7 +17,7 @@ $allMembersCount
 This will return the amount of members in your guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "allMembersCount",
   code: `
   $allMembersCount

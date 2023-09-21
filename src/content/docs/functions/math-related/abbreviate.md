@@ -24,7 +24,7 @@ $abbreviate[num;dec?]
 This returns: `20k`
 
 ```javascript
-bot.command({
+client.command({
   name: "abbreviate",
   code: `
   $abbreviate[20000]
@@ -35,7 +35,7 @@ bot.command({
 This returns: `20.0k`
 
 ```javascript
-bot.command({
+client.command({
   name: "abbreviate",
   code: `
   $abbreviate[20000;1]

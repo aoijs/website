@@ -33,7 +33,7 @@ $arrayFind[name;query;queryType?;separator?]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "array-find",
   code: `
   $arrayFind[array;akarui;==;, ]

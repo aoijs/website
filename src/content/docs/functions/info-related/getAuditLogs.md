@@ -96,7 +96,7 @@ $getAuditLogs[guildID;userID?;limit?;action?;format?]
 This will return your latest bans (which are logged in audit logs):
 
 ```javascript
-bot.command({
+client.command({
   name: "getAuditLogs",
   code: `
   $getAuditLogs[$guildID;$authorID;5;$authorID;12;{executor.username}: {target.id} - {action}]

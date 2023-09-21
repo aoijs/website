@@ -33,7 +33,7 @@ You can find all permissions **[here](../../guides/client/2permissions.md)**.
 This will allow `@everyone` to send messages and add reactions in the current channel:
 
 ```javascript
-bot.command({
+client.command({
   name: "modifyChannelPerms",
   code: `
   $modifyChannelPerms[$channelID;$guildID;+sendmessages;+addreactions]

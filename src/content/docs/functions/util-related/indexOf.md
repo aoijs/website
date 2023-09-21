@@ -24,7 +24,7 @@ $indexOf[string;char]
 This will return `8` as it's the first occurring position of the character `w`:
 
 ```javascript
-bot.command({
+client.command({
   name: "indexOf",
   code: `
   $indexOf[Hello, what is wrong with you?;w]

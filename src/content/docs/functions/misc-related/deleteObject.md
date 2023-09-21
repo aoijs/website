@@ -21,7 +21,7 @@ $deleteObject[objectName]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "deleteObject",
   code: `
   $deleteObject[Object Name]

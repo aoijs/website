@@ -23,7 +23,7 @@ $guildNSFWLevel[guildID?]
 This will return the guild's NSFW level:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildNSFWLevel",
   code: `
   $guildNSFWLevel[$guildID]

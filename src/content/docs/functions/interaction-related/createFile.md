@@ -24,7 +24,7 @@ $createFile[attachment;name]
 This will create a text file called **`example.txt`** with the text "This is an example!":
 
 ```javascript
-bot.command({
+client.command({
   name: "createFile",
   code: `
   $createFile[This is an example!;example.txt]

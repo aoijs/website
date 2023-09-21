@@ -21,7 +21,7 @@ $arrayShuffle[name]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "array-shuffle",
   code: `
   $arrayJoin[array;, ]

@@ -25,7 +25,7 @@ $authorBanner[size?;dynamic?;extension?]
 This will return your banner (if any):
 
 ```javascript
-bot.command({
+client.command({
   name: "authorBanner",
   code: `
   $authorBanner[2048;true;webp]

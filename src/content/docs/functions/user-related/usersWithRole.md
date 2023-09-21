@@ -26,7 +26,7 @@ $usersWithRole[roleID;guildID?;option?;sep?]
 This will return the users of a specific role, make sure to replace roleID:
 
 ```javascript
-bot.command({
+client.command({
   name: "usersWithRole",
   code: `
   $usersWithRole[roleID;$guildID;id;, ]

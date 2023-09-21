@@ -26,7 +26,7 @@ You can find all permissions **[here](../../guides/client/2permissions.md)**.
 This will limit the command to work only when the user has administrator permissions:
 
 ```javascript
-bot.command({
+client.command({
   name: "onlyPerms",
   code: `
     Ok.

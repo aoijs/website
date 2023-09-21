@@ -27,7 +27,7 @@ Please note that you require "**events: ["onMessage", "onInteractionCreate"]**" 
 most cases, index.js)
 
 ```js
-bot.command({
+client.command({
   name: "interactionModal",
   code: `
 $addButton[1;Press Me!;primary;exampleID;false]

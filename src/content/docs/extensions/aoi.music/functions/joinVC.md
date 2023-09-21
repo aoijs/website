@@ -30,7 +30,7 @@ $joinVC[voiceID?;selfDeaf?;selfMute?;speaker?;audioPlayerType?;debug?]
 This will make your bot join the voice channel you're currently in:
 
 ```javascript
-bot.command({
+client.command({
   name: "joinVC",
   code: `
     $joinVC[$voiceID;yes;no;yes;default;no]

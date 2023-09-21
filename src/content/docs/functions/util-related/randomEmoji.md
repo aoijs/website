@@ -17,7 +17,7 @@ $randomEmoji
 This will return a random emoji ID of your guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "randomEmoji",
   code: `
   $randomEmoji

@@ -23,7 +23,7 @@ $joinSplitText[sep?]
 This will join all text split elements with a comma:
 
 ```javascript
-bot.command({
+client.command({
   name: "joinSplitText",
   code: `
     $joinSplitText[, ]

@@ -25,7 +25,7 @@ $categoryChannels[categoryID;option?;sep?]
 This will return all channels of the category of the channel where you execute the command in:
 
 ```javascript
-bot.command({
+client.command({
   name: "categoryChannels",
   code: `
   $categoryChannels[$channelCategoryID;names;, ]

@@ -24,7 +24,7 @@ $isGuildDeafened[userID?;guildID?]
 This will return either `true` or `false` depending on if you're server deafened or not:
 
 ```javascript
-bot.command({
+client.command({
   name: "isGuildDeafened",
   code: `
   $isGuildDeafened

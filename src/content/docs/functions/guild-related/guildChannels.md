@@ -25,7 +25,7 @@ $guildChannels[guildID?;option?;sep?]
 This will return all channels of your guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildChannels",
   code: `
   $guildChannels[$guildID;mention;, ]

@@ -23,7 +23,7 @@ $isPartnered[guildID?]
 This will check if your server is partnered and return either `true` or `false`:
 
 ```javascript
-bot.command({
+client.command({
   name: "isPartnered",
   code: `
   $isPartnered[$guildID]

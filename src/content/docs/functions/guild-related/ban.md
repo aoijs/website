@@ -26,7 +26,7 @@ $ban[guildID;userID;days?;reason?]
 This will ban a random user of your guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "ban",
   code: `
   $ban[$guildID;$randomUserID;7;Imagine getting banned.]

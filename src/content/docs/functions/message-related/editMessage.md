@@ -27,7 +27,7 @@ You can only edit messages that were sent by the bot itself.
 This will edit the sent message after five seconds: ( works the same way as `$editIn` )
 
 ```javascript
-bot.command({
+client.command({
   name: "editMessage",
   code: `
   $editMessage[$get[id];Bye!]

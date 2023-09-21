@@ -25,7 +25,7 @@ $banCount[guildID?]
 This will return the amount of banned users in your guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "banCount",
   code: `
   $banCount

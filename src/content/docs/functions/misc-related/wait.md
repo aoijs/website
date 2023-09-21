@@ -23,7 +23,7 @@ $wait[time]
 This will send an embed delayed:
 
 ```javascript
-bot.command({
+client.command({
   name: "wait",
   code: `
     $description[Hello!]

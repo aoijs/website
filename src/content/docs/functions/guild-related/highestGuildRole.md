@@ -24,7 +24,7 @@ $guildHighestRole[guildID?;option?]
 This will return the name of the highest role of your guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildHighestRole",
   code: `
   $guildHighestRole[$guildID;name]

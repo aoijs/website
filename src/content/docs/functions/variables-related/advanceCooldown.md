@@ -29,7 +29,7 @@ $advanceCooldown[time;id;errorMessage]
 This will set a cooldown for the guild of where you execute the command in and return the remaining cooldown time:
 
 ```javascript
-bot.command({
+client.command({
   name: "advanceCooldown",
   code: `
   $advanceCooldown[2m;$guildID;]

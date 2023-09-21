@@ -23,7 +23,7 @@ $channelExists[channel]
 This will check if a channel with the name `general` exists, alternatively you could use the channel ID instead:
 
 ```javascript
-bot.command({
+client.command({
   name: "channelExists",
   code: `
   $channelExists[general]

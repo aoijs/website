@@ -23,7 +23,7 @@ $readFile[path]
 This will return your main file (index.js):
 
 ```javascript
-bot.command({
+client.command({
   name: "readFile",
   code: `
     $readFile[./index.js]

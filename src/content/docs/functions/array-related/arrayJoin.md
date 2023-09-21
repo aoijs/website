@@ -22,7 +22,7 @@ $arrayJoin[name;separator?]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "array-join",
   code: `
   $arrayJoin[array;, ]

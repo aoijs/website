@@ -23,7 +23,7 @@ $userTag[userID?]
 This will return your username and discriminator:
 
 ```javascript
-bot.command({
+client.command({
   name: "userTag",
   code: `
   $userTag[$authorID]

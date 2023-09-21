@@ -50,7 +50,7 @@ $getEmbed[channelID?;messageID?;index?;option?]
 This will return the description of an embed:
 
 ```javascript
-bot.command({
+client.command({
   name: "getEmbed",
   code: `
 $getEmbed[$channelID;messageID;1;description] 

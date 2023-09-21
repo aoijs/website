@@ -24,7 +24,7 @@ $isMuted[userID?;guildID?]
 This will check if you're currently muted in a voice channel and returns either `true` or `false`:
 
 ```javascript
-bot.command({
+client.command({
   name: "isMuted",
   code: `
   $isMuted[$authorID;$guildID]

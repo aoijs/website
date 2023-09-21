@@ -25,7 +25,7 @@ $sendTTS[channelID;message;returnID?]
 This will send a TTS message in the current channel:
 
 ```javascript
-bot.command({
+client.command({
   name: "sendTTS",
   code: `
    $sendTTS[$channelID;Hello!;false]

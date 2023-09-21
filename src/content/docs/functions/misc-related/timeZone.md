@@ -26,7 +26,7 @@ You can find all timezones **\* \*[here](https://gist.githubusercontent.com/diog
 You can change the timezone using `$timezone` like the followning:
 
 ```javascript
-bot.command({
+client.command({
   name: "time",
   code: `
     $hour:$minute:$second

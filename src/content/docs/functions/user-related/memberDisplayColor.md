@@ -24,7 +24,7 @@ $memberDisplayColor[guildID?;userID?]
 This will return your display color:
 
 ```javascript
-bot.command({
+client.command({
   name: "memberDisplayColor",
   code: `
   $memberDisplayColor[$guildID;$authorID]

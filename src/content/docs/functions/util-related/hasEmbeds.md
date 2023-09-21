@@ -24,7 +24,7 @@ $hasEmbeds[messageID;channelID]
 This will return `false` as there are no embeds attached to your message:
 
 ```javascript
-bot.command({
+client.command({
   name: "hasEmbeds",
   code: `
   $hasEmbeds[$messageID;$channelID]

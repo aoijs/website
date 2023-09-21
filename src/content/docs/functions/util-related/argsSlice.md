@@ -25,7 +25,7 @@ $argsSlice[text;from?;to]
 This will return `Bye` and remove `Hello` from the given text:
 
 ```javascript
-bot.command({
+client.command({
   name: "slice",
   code: `
   $argsSlice[Hello Bye;1;5]

@@ -26,7 +26,7 @@ the ![emoji](https://cdn.discordapp.com/emojis/1003365344724910191.webp?size=16&
 custom emoji:
 
 ```javascript
-bot.command({
+client.command({
   name: "isCustomEmoji",
   code: `
   $isCustomEmoji[<:LerefMoney:1003365344724910191>;773352845738115102]

@@ -23,7 +23,7 @@ $round[number]
 This will return `555` as it's the next number to `555.78`:
 
 ```javascript
-bot.command({
+client.command({
   name: "round",
   code: `
   $round[555.78]

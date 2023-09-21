@@ -24,7 +24,7 @@ $memberDisplayName[guildID?;userID?]
 This will return your display name, if you have none then it'll return your Discord username:
 
 ```javascript
-bot.command({
+client.command({
   name: "memberDisplayName",
   code: `
   $memberDisplayName[$guildID;$authorID]

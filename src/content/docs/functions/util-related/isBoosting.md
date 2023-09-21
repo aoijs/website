@@ -24,7 +24,7 @@ $isBoosting[userID?;guildID?]
 This will return `false` or `true` depending on if you boosted this server:
 
 ```javascript
-bot.command({
+client.command({
   name: "isBoosting",
   code: `
   $isBoosting[$authorID;$guildID]

@@ -21,7 +21,7 @@ Please note that you require "**events: ["onMessage", "onInteractionCreate"]**" 
 most cases, index.js)
 
 ```javascript
-bot.command({
+client.command({
   name: "createSlashCommand",
   code: `
   $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;slash;[{
@@ -37,7 +37,7 @@ bot.command({
 Checking if autoComplete equals `true`, if so it will respond with the given respond (addition of the code above):
 
 ```javascript
-bot.command({
+client.command({
   name: "example",
   prototype: "slash",
   $if: "old",
@@ -54,7 +54,7 @@ bot.command({
 Create the slash-commands with another option:
 
 ```javascript
-bot.command({
+client.command({
   name: "createSlashCommand",
   code: `
   $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;slash;[{
@@ -76,7 +76,7 @@ Using JSON and checking if autoComplete equals `true`, if so it will respond wit
 code above):
 
 ```javascript
-bot.command({
+client.command({
   name: "example",
   prototype: "slash",
   $if: "old",

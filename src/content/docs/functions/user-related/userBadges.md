@@ -24,7 +24,7 @@ $userBadges[userId?;sep?]
 This will return your Discord Badges separated with a comma:
 
 ```javascript
-bot.command({
+client.command({
   name: "userBadges",
   code: `
   $userBadges[$authorID;, ]

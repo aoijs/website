@@ -24,7 +24,7 @@ $deleteRoles[guildID;...roles]
 This will delete roles of your guilds ( make sure to add actual IDs ):
 
 ```javascript
-bot.command({
+client.command({
   name: "deleteRoles",
   code: `
   Deleted three roles!

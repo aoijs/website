@@ -24,7 +24,7 @@ $let[varname;value]
 This will return `Ayaka` from `$get`:
 
 ```javascript
-bot.command({
+client.command({
   name: "let",
   code: `
 $get[genius]

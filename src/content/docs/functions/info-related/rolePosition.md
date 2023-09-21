@@ -24,7 +24,7 @@ $rolePosition[roleID;guildID?]
 This will return the role position of any role you might like, for this example, we'll use the `@everyone` role:
 
 ```javascript
-bot.command({
+client.command({
   name: "rolePosition",
   code: `
   $rolePosition[$guildID]

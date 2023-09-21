@@ -17,7 +17,7 @@ $alwaysExecute
 This will send the given message each time you send a message:
 
 ```javascript
-bot.command({
+client.command({
   name: "$alwaysExecute",
   code: `Hello!`,
 });

@@ -17,7 +17,7 @@ $mentionedChannelsCount
 This will return the amount of channel mentions in the given text:
 
 ```javascript
-bot.command({
+client.command({
   name: "mentionedChannelsCount",
   code: `
   $mentionedChannelsCount

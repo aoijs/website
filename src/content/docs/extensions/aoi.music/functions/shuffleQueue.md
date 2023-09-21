@@ -17,7 +17,7 @@ $shuffleQueue
 This will shuffle the current queue:
 
 ```javascript
-bot.command({
+client.command({
   name: "shuffleQueue",
   code: `
     $shuffleQueue

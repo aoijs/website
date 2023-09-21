@@ -17,7 +17,7 @@ $mentionedUsersCount
 This will return the amount of user mentions in the given text:
 
 ```javascript
-bot.command({
+client.command({
   name: "mentionedUsersCount",
   code: `
   Amount of user mentions: $mentionedUsersCount

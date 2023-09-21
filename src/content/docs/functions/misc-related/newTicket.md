@@ -27,7 +27,7 @@ $newTicket[name;msg;categoryID?;returnId?;error?]
 This will create a new ticket:
 
 ```javascript
-bot.command({
+client.command({
   name: "newTicket",
   code: `
     $newTicket[ticket-$username;Hello <@$authorID!;$guildID;false;Error!]
@@ -38,7 +38,7 @@ bot.command({
 This will create a new ticket and send an embed:
 
 ```javascript
-bot.command({
+client.command({
   name: "newTicket",
   code: `
     $newTicket[ticket-$username;Hello <@$authorID! {newEmbed:{description:<@$authorID> opened a new ticket!}};$guildID;false;Error!]

@@ -21,7 +21,7 @@ $noMentionMessage[args]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "noMentionMessage",
   code: `
     $noMentionMessage[1]

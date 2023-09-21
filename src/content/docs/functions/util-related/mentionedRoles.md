@@ -23,7 +23,7 @@ $mentionedRoles[index]
 This will return the ID of the **first** role mention if you attempt to mention any role in this command:
 
 ```javascript
-bot.command({
+client.command({
   name: "mentionedRoles",
   code: `
   $mentionedRoles[1]

@@ -45,7 +45,7 @@ $channelCount[guildID?;type?]
 This will return the amount of Voice Channels in your guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "channelCount",
   code: `
   $channelCount[$guildID;Voice]

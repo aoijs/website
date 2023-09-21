@@ -25,7 +25,7 @@ $onlyForChannels[...categoryIds;error]
 This will limit the command only to the listed channels:
 
 ```javascript
-bot.command({
+client.command({
   name: "onlyForChannels",
   code: `
     Ok.

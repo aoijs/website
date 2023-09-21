@@ -73,7 +73,7 @@ $createApplicationCommand[guildID/global;name;description;defaultPermission(true
 ### Examples of creating Application Commands
 
 ```js
-bot.command({
+client.command({
     name: "createApplicationCommand",
     code: `
   $createApplicationCommand[guildID/global;example;slash command description!;true;slash]`

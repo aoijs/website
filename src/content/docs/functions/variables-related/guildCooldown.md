@@ -28,7 +28,7 @@ $guildCooldown[time;errorMessage]
 This will set a cooldown for a command which applies to the guild only and returns the remaining cooldown:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildCooldown",
   code: `
   hello

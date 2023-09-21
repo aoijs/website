@@ -24,7 +24,7 @@ $setRoleColor[roleID;color]
 This will change a random role's color to red:
 
 ```javascript
-bot.command({
+client.command({
   name: "setRoleColor",
   code: `
    $setRoleColor[$randomRoleID;Red]`,
@@ -32,7 +32,7 @@ bot.command({
 ```
 
 ```javascript
-bot.command({
+client.command({
   name: "setRoleColor",
   code: `
    $setRoleColor[$randomRoleID;ED4245]`,

@@ -22,7 +22,7 @@ $arrayIndexOf[name;query]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "arrayIndexOf",
   code: `
   $arrayIndexOf[array;akarui]

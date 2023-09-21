@@ -32,7 +32,7 @@ $channelOverwrites[channelID?;response?;sep?]
 This will return the channel overwrites of the channel where you execute the command in:
 
 ```javascript
-bot.command({
+client.command({
   name: "channelOverwrites",
   code: `
   $channelOverwrites[$channelID;{mention} {type} {allow} {deny};, ]

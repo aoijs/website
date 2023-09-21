@@ -24,7 +24,7 @@ $roleMembersCount[roleID;guildID?]
 This will return the amount of users who have a specific role:
 
 ```javascript
-bot.command({
+client.command({
   name: "roleMembersCount",
   code: `
   $roleMembersCount[$guildID;$guildID]

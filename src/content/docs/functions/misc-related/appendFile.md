@@ -25,7 +25,7 @@ $appendFile[path;content;encode?]
 This will add a comment to your main file:
 
 ```javascript
-bot.command({
+client.command({
   name: "appendFile",
   code: `
   $appendFile[./index.js;// Hello!]

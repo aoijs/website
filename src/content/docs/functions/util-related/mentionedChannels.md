@@ -25,7 +25,7 @@ This will return the ID of the **first** mention if you attempt to mention any c
 return the channel ID of the channel where the command was executed in:
 
 ```javascript
-bot.command({
+client.command({
   name: "mentionedChannels",
   code: `
   $mentionedChannels[1;true]

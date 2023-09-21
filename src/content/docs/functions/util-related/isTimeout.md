@@ -24,7 +24,7 @@ $isTimeout[guildID?;userID?]
 This will check if you're timeouted and either return `true` or `false`:
 
 ```javascript
-bot.command({
+client.command({
   name: "isTimeout",
   code: `
   $isTimeout[$guildID;$authorID]

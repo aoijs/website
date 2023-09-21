@@ -23,7 +23,7 @@ $isUserDmEnabled[userID]
 This will return either `true` or `false` depending on if your Direct Messages are enabled or disabled:
 
 ```javascript
-bot.command({
+client.command({
   name: "isUserDmEnabled",
   code: `
   $isUserDmEnabled[$authorID]

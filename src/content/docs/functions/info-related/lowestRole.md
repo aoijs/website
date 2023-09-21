@@ -24,7 +24,7 @@ $userLowestRole[userID?;guildID?]
 This will return the ID of your lowest role:
 
 ```javascript
-bot.command({
+client.command({
   name: "userLowestRole",
   code: `
   $userLowestRole[$authorID;$guildID]

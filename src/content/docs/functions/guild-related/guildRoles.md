@@ -25,7 +25,7 @@ $guildRoles[guildID?;option?;sep?]
 This will return all roles of your guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildRoles",
   code: `
   $description[$guildRoles[$guildID;name;, ]]

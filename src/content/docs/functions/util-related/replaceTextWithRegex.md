@@ -37,7 +37,7 @@ $replaceTextWithRegex[text;reg;flags;newText]
 This will replace `more` with `less`:
 
 ```javascript
-bot.command({
+client.command({
   name: "replaceTextWithRegex",
   code: `
   $replaceTextWithRegex[This function is more complicated than it looks.;more;g;less]
@@ -50,7 +50,7 @@ bot.command({
 This will replace `less` with `more`:
 
 ```javascript
-bot.command({
+client.command({
   name: "replaceTextWithRegex",
   code: `
   $replaceTextWithRegex[This function is more complicated than it looks.;lESs;i;more]

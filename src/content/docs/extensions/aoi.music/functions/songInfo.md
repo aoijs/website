@@ -50,7 +50,7 @@ $songInfo[type?;position?]
 This will return the current track name:
 
 ```javascript
-bot.command({
+client.command({
   name: "songInfo",
   code: `
     $songInfo[title]

@@ -27,7 +27,7 @@ $timeoutMember[guildID;memberID;timer;timeoutEndsAt?;reason?]
 This will timeout a given member for five minutes:
 
 ```javascript
-bot.command({
+client.command({
   name: "timeoutMember",
   code: `
    $timeoutMember[$guildID;userID;5m;false]`,

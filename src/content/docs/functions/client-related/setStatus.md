@@ -27,7 +27,7 @@ $setStatus[name;type;status;URL;afk?]
 This will change the client's status to **PLAYING** and **online**:
 
 ```javascript
-bot.command({
+client.command({
   name: "setStatus",
   code: `
    $setStatus[Hello!;PLAYING;online]`,

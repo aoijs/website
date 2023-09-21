@@ -24,7 +24,7 @@ $getBanReason[guildID?;userID?]
 This will return the ban reason of whoever you'd like:
 
 ```javascript
-bot.command({
+client.command({
   name: "getBanReason",
   code: `
   $getBanReason[$guildID;userID] 

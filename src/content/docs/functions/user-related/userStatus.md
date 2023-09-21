@@ -24,7 +24,7 @@ $userStatus[guildId?;userId?]
 This will either return `idle`, `online`, `invisible` or `dnd` depending on your current presence:
 
 ```javascript
-bot.command({
+client.command({
   name: "userStatus",
   code: `
   $userStatus[$guildID;$authorID]

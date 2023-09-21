@@ -30,7 +30,7 @@ $awaitMessages[channelID;userFilter;time;replies;cmds;errorMessage?;awaitData?;d
 This will reply to any message you send after executing the command:
 
 ```js
-bot.command({
+client.command({
   name: "awaitMessages",
   code: `
   $awaitMessages[$channelID;$authorID;15s;everything;awaitedcommandexample;Oh? You don't want to talk to me..?] 
@@ -39,7 +39,7 @@ bot.command({
   // Please make sure that the awaitedCommand name is ALL lowercase or else it won't work.
 });
 
-bot.awaitedCommand({
+client.awaitedCommand({
   name: "awaitedcommandexample",
   code: `
   Nice to meet you, $message!

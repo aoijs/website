@@ -23,7 +23,7 @@ $guildExists[guildId]
 This will return `true` your guild exists:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildExists",
   code: `
   $guildExists[$guildID]

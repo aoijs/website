@@ -75,7 +75,7 @@ $hasPermsInChannel[channelID;userOrRoleID;...perms]
 This will return `true` when the author has `send messages` permissions and return `false` when they don't have those:
 
 ```javascript
-bot.command({
+client.command({
   name: "hasPermsInChannel",
   code: `
   $hasPermsInChannel[$channelID;$authorID;sendmessages]

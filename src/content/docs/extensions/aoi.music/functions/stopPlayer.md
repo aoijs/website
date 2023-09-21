@@ -17,7 +17,7 @@ $stopPlayer
 This will destroy the current player:
 
 ```javascript
-bot.command({
+client.command({
   name: "stopPlayer",
   code: `
     $stopPlayer

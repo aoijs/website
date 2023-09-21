@@ -26,7 +26,7 @@ $clear[amount;filter?;returnCount?;channelID?]
 This will delete the most recent fifty messages which are not pinned:
 
 ```javascript
-bot.command({
+client.command({
   name: "clear",
   code: `
   $clear[50;unPins;false;$channelID]

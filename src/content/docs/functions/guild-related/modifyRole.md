@@ -25,7 +25,7 @@ $modifyRole[guildID;roleID;...data]
 This will edit a existing role / change its name to "Awesome!":
 
 ```javascript
-bot.command({
+client.command({
   name: "modifyRole",
   code: `
   $modifyRole[$guildID;roleID;{

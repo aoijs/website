@@ -24,7 +24,7 @@ $resetGlobalUserVar[varname;table?]
 This will reset a variable called "Example":
 
 ```javascript
-bot.command({
+client.command({
   name: "resetGlobalUserVar",
   code: `
     $resetGlobalUserVar[Example;main]

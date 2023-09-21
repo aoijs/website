@@ -24,7 +24,7 @@ $numberSeparator[num;sep?]
 This will return `1,000,000`:
 
 ```javascript
-bot.command({
+client.command({
   name: "numberSeparator",
   code: `
   $numberSeparator[1000000;,]

@@ -24,7 +24,7 @@ $editTextSplitElement[index;text]
 This will edit the 3rd text split element and change it to "Goodbye":
 
 ```javascript
-bot.command({
+client.command({
   name: "editTextSplitElement",
   code: `
   $editTextSplitElement[3;Goodbye]

@@ -17,7 +17,7 @@ $loopStatus
 This will return the current loop status:
 
 ```javascript
-bot.command({
+client.command({
   name: "loopStatus",
   code: `
     $loopStatus

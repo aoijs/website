@@ -23,7 +23,7 @@ $guildRulesChannelID[guildID?]
 This will return the ID of the guild's rules channel (community guilds only):
 
 ```javascript
-bot.command({
+client.command({
   name: "guildRulesChannelID",
   code: `
   $guildRulesChannelID[$guildID]

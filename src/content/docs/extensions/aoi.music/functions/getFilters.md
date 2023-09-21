@@ -17,7 +17,7 @@ $getFilters
 This will return the current applied filters:
 
 ```javascript
-bot.command({
+client.command({
   name: "getFilters",
   code: `
     $getFilters

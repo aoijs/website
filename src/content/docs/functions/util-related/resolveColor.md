@@ -33,7 +33,7 @@ $resolveColor[type;returnAs?;...data]
 This will return `#32a852` as `50, 168, 82` is the RGB value of it:
 
 ```javascript
-bot.command({
+client.command({
   name: "resolveColor",
   code: `
   $resolveColor[rgb;decimal;50;168;82]
@@ -44,7 +44,7 @@ bot.command({
 This will return `50, 168, 82` as `#32a852` is the hex color of it:
 
 ```javascript
-bot.command({
+client.command({
   name: "resolveColor",
   code: `
   $resolveColor[decimal;rgb;#32a852]
@@ -55,7 +55,7 @@ bot.command({
 This will return `3319890` as `#32a852` is the hex color of it:
 
 ```javascript
-bot.command({
+client.command({
   name: "resolveColor",
   code: `
   $resolveColor[decimal;number;#32a852]

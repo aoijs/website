@@ -25,7 +25,7 @@ $getGuildVar[varname;guildID?;table?]
 This will return the value of a variable called "Example":
 
 ```javascript
-bot.command({
+client.command({
   name: "getGuildVar",
   code: `
     $getGuildVar[Example;$guildID;main]

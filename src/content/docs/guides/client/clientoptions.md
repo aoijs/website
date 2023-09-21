@@ -9,7 +9,7 @@ id: options
 ```js title="index.js"
 const { AoiClient } = require("aoi.js");
 
-const bot = new AoiClient({
+const client = new AoiClient({
     token : string,
     prefix : string,
     intents : ["MessageContent", "Guilds", "GuildMessages"],

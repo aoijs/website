@@ -28,7 +28,7 @@ $allEmojisCount[type?]
 This will return the amount of emojis in your guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "allEmojisCount",
   code: `
   $allEmojisCount

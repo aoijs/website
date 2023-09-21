@@ -24,7 +24,7 @@ $memberJoinPosition[userID?;guildID?]
 This will return your join position, if you're the owner then it'd be `1`:
 
 ```javascript
-bot.command({
+client.command({
   name: "memberJoinPosition",
   code: `
   $memberJoinPosition[$authorID;$guildID]

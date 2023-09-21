@@ -25,7 +25,7 @@ $hoistedRole[userID?;guildID?;option?]
 This will return the name of your highest hoisted role:
 
 ```javascript
-bot.command({
+client.command({
   name: "hoistedRole",
   code: `
   $hoistedRole[$authorID;$guildID;name]

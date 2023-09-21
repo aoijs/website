@@ -34,7 +34,7 @@ $creationDate[id;format?]
 This will return your account create date:
 
 ```javascript
-bot.command({
+client.command({
   name: "creationDate",
   code: `
   Your account was created: $creationDate[$authorID;date]

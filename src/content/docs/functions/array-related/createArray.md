@@ -22,7 +22,7 @@ $createArray[name;...elements]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "array-create",
   code: `
   $createArray[array;aoi.js;akarui;documents;bot]

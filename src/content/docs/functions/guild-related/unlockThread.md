@@ -25,7 +25,7 @@ $unlockThread[channelID;threadID;reason?]
 This will unlock a given thread:
 
 ```javascript
-bot.command({
+client.command({
   name: "unlockThread",
   code: `
   $unlockThread[$channelID;threadID;Example reason!]

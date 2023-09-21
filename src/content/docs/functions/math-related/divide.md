@@ -23,7 +23,7 @@ $divide[...numbers;...numbers]
 This will return `23` as `69/3` equals it.
 
 ```javascript
-bot.command({
+client.command({
   name: "divide",
   code: `
   $divide[69;3]

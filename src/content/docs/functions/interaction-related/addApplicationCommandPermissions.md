@@ -24,7 +24,7 @@ This will disable the slash command for everyone in the guild ( make sure to rep
 ID ):
 
 ```javascript
-bot.command({
+client.command({
   name: "addApplicationCommandPermissions",
   code: `
     $addApplicationCommandPermissions[$guildID;ID;[

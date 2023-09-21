@@ -25,7 +25,7 @@ $footer[index?;content;iconURL?]
 This will create an embed with a footer and title:
 
 ```javascript
-bot.command({
+client.command({
   name: "embed",
   code: `
   $title[Hello!]

@@ -24,7 +24,7 @@ $leaveThread[channelID;threadID]
 This will create a thread and make the bot leave after creation:
 
 ```javascript
-bot.command({
+client.command({
   name: "leaveThread",
   code: `
   $leaveThread[$channelID;$get[threadID]]

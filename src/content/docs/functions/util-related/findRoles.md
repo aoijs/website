@@ -32,7 +32,7 @@ $findRoles[roleResolver;limit?;type?;format?]
 This will return all roles which are named `Owner`:
 
 ```javascript
-bot.command({
+client.command({
   name: "findRoles",
   code: `
   $findRoles[Owner;5;startsWith;{position}) {username}: {id}]

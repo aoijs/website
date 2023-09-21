@@ -17,7 +17,7 @@ $stopTrack
 This will stop the current track:
 
 ```javascript
-bot.command({
+client.command({
   name: "stopTrack",
   code: `
     $stopTrack

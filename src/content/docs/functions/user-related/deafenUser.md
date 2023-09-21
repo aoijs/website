@@ -24,7 +24,7 @@ $deafenUser[userID;deafen?]
 This will deafen yourself:
 
 ```javascript
-bot.command({
+client.command({
   name: "deafen",
   code: `
   $deafen[$authorID;true]

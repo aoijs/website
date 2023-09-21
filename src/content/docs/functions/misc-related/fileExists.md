@@ -23,7 +23,7 @@ $fileExists[path]
 This will check if a file called `index.js` exists in your directory:
 
 ```javascript
-bot.command({
+client.command({
   name: "fileExists",
   code: `
   $fileExists[./index.js]

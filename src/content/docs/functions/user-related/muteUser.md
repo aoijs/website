@@ -26,7 +26,7 @@ $muteUser[guildID;userID;mute?;reason?]
 This will server mute yourself (must be in a voice channel):
 
 ```javascript
-bot.command({
+client.command({
   name: "muteUser",
   code: `
   $muteUser[$guildID;$authorID;true]

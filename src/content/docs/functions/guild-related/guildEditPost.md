@@ -26,7 +26,7 @@ $guildEditPost[forumId;userID?;...threadTags(?)]
 This will create a post in the given forum with the name "this is a post" with an embed and a button attached to the message:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildEditPost",
   code: `
   $guildEditPost[forumId;This is a reason!;false;Tag 1;Tag 2;Tag 3]

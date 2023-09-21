@@ -17,7 +17,7 @@ $getCurrentTrackDuration
 This will return the current track duration in ms:
 
 ```javascript
-bot.command({
+client.command({
   name: "getCurrentTrackDuration",
   code: `
     $getCurrentTrackDuration

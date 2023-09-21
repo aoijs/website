@@ -21,7 +21,7 @@ $arrayPush[...elements]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "array-push",
   code: `
   $arrayPush[array;Leref;Ayaka;Ferel]

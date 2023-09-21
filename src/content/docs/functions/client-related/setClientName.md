@@ -23,7 +23,7 @@ $setClientName[username]
 This will change the client's username to the command author's username:
 
 ```javascript
-bot.command({
+client.command({
   name: "setClientName",
   code: `
    $setClientName[$username[$authorID]]`,

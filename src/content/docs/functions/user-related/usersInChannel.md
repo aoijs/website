@@ -25,7 +25,7 @@ $usersInChannel[channelID;option?;sep?]
 This will return the users connected to a voice channel:
 
 ```javascript
-bot.command({
+client.command({
   name: "usersInChannel",
   code: `
   $usersInChannel[$voiceID;user;, ]

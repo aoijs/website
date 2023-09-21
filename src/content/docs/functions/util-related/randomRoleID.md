@@ -23,7 +23,7 @@ $randomRoleID[guildID?]
 This will return a random role ID of your guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "randomRoleID",
   code: `
   $randomRoleID[$guildID]

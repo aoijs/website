@@ -23,7 +23,7 @@ $findTextSplitIndex[query]
 This will return `3` as the first `Cya` in this `$textSplit` is in the third position:
 
 ```javascript
-bot.command({
+client.command({
   name: "findTextSplitIndex",
   code: `
   $findTextSplitIndex[Cya]

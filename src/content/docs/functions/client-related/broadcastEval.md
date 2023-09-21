@@ -25,7 +25,7 @@ $broadcastEval[function]
 This will return the amount of servers your bot is in:
 
 ```javascript
-bot.command({
+client.command({
   name: "broadcastEval",
   code: `
   $broadcastEval[$guildCount]

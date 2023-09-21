@@ -23,7 +23,7 @@ $skipTo[index]
 This will skip to the third song in the queue:
 
 ```javascript
-bot.command({
+client.command({
   name: "skipTo",
   code: `
     $skipTo[3]

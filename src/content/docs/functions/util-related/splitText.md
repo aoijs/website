@@ -23,7 +23,7 @@ $splitText[index]
 This will return `aoi.js` as it's the second argument of `$textSplit`:
 
 ```javascript
-bot.command({
+client.command({
   name: "splitText",
   code: `
   $splitText[2]

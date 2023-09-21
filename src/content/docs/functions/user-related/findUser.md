@@ -24,7 +24,7 @@ $findUser[userResolver;returnSelf?]
 This will search for a user called Ferel, if it wont find the user then it'll return the command author's user ID:
 
 ```javascript
-bot.command({
+client.command({
   name: "findUser",
   code: `
   $findUser[Ferel;true]

@@ -17,7 +17,7 @@ $authorID
 This will return your user ID:
 
 ```javascript
-bot.command({
+client.command({
   name: "authorID",
   code: `
   $authorID

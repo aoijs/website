@@ -23,7 +23,7 @@ $digitalFormat[ms]
 This will return `00:04:00` as `240000ms` are four minutes:
 
 ```javascript
-bot.command({
+client.command({
   name: "digitalFormat",
   code: `
   $digitalFormat[240000]

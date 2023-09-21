@@ -25,7 +25,7 @@ Example usage of `$if: old` (will return "Hello" when the condition is true):
 You require `$endelseif` to end the `$elseIf` statement.
 
 ```javascript
-bot.command({
+client.command({
   name: "if",
   $if: "old",
   code: `

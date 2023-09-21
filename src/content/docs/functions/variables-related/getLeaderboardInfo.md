@@ -26,7 +26,7 @@ $getLeaderboardInfo[variable;id;type;option]
 This will return the position of the current guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "getLeaderboardInfo",
   code: `
     $getLeaderboardInfo[Example;$guildID;guild;top]

@@ -17,7 +17,7 @@ $hasPlayer
 This will return either true or false depending on if your bot has a player in the current guild or not:
 
 ```javascript
-bot.command({
+client.command({
   name: "hasPlayer",
   code: `
     $hasPlayer

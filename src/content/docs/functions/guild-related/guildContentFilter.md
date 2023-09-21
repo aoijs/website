@@ -29,7 +29,7 @@ $guildContentFilter[guildID?]
 This will return the content filter level of a specific guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildContentFilter",
   code: `
   $guildContentFilter[$guildID]

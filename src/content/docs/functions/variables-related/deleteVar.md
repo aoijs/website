@@ -25,7 +25,7 @@ $deleteVar[variable;id;table?]
 This will delete a variable called "Test":
 
 ```javascript
-bot.command({
+client.command({
   name: "deleteVar",
   code: `
   $deleteVar[Test;$authorID;main]

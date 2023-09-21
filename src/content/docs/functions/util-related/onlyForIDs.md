@@ -24,7 +24,7 @@ $onlyForIDs[...userIds;error]
 This will limit the command to bot developers only:
 
 ```javascript
-bot.command({
+client.command({
   name: "onlyForIDs",
   code: `
     Ok.

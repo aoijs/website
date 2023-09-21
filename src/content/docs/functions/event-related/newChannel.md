@@ -54,7 +54,7 @@ $newChannel[option]
 ## Example(s)
 
 ```js
-bot.channelCreateCommand({
+client.channelCreateCommand({
   channel: "channelid",
   code: `
     New channel has been created!
@@ -69,7 +69,7 @@ bot.channelCreateCommand({
 ---
 
 ```js
-bot.channelDeleteCommand({
+client.channelDeleteCommand({
   channel: "channelid",
   code: `
     Channel has been deleted!
@@ -83,7 +83,7 @@ bot.channelDeleteCommand({
 ---
 
 ```js
-bot.channelUpdateCommand({
+client.channelUpdateCommand({
   channel: "channelid",
   code: `
     Channel has been updated!

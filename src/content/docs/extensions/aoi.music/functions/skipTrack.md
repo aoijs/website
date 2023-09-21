@@ -17,7 +17,7 @@ $skipTrack
 This will skip the current track:
 
 ```javascript
-bot.command({
+client.command({
   name: "skipTrack",
   code: `
     $skipTrack

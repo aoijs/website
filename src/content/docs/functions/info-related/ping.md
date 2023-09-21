@@ -17,7 +17,7 @@ $ping
 This will return your bot's latency in MS:
 
 ```javascript
-bot.command({
+client.command({
   name: "ping",
   code: `
   My ping is: $pingMS!

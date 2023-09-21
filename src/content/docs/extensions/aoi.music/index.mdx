@@ -21,7 +21,7 @@ Aoi.music is a package with simplified and ready-to-use functions for Discord bo
 
 #### Music-related properties
 
-- aoi.music adds music-related properties to your Discord bot built with aoi.js. It provides a solid foundation for implementing music operations in your bot.
+- aoi.music adds music-related properties to your Discord bot built with aoi.js. It provides a solid foundation for implementing music operations in your client.
 
 #### Powerful and feature-rich
 
@@ -57,7 +57,7 @@ const {
   Filter,
 } = require("@akarui/aoi.music");
 
-const bot = new AoiClient({
+const client = new AoiClient({
   token: "Discord Bot Token",
   prefix: "Discord Bot Prefix",
   intents: ["MessageContent", "Guilds", "GuildMessages", "GuildVoiceStates"],
@@ -85,7 +85,7 @@ const voice = new AoiVoice(bot, {
 });
 
 // Command Example (ping)
-bot.command({
+client.command({
   name: "ping",
   code: `Pong! $pingms`,
 });
@@ -99,5 +99,5 @@ voice.addPlugin(
   }),
 );
 
-voice.bindExecutor(bot.functionManager.interpreter); // needed for events
+voice.bindExecutor(client.functionManager.interpreter); // needed for events
 ```

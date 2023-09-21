@@ -38,14 +38,14 @@ $ifAwaited[condition;true;false?]
 This will execute the `awaitedCommand` awaited command as the statement is true:
 
 ```javascript
-bot.command({
+client.command({
   name: "ifAwaited",
   code: `
     $ifAwaited[1==1;{execute:awaitedCommand}]
     `,
 });
 
-bot.awaitedCommand({
+client.awaitedCommand({
   name: "awaitedCommand",
   code: `
     $sendMessage[That's true!;false]

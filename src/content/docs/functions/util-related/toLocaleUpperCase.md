@@ -23,7 +23,7 @@ $toLocaleUpperCase[text]
 This will change every first character of a word to uppercase, in this case it would return `Hello, I'm Happy.`:
 
 ```javascript
-bot.command({
+client.command({
   name: "toLocaleUpperCase",
   code: `
     $toLocaleUpperCase[hello, i'm happy.]

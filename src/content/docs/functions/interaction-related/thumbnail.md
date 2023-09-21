@@ -24,7 +24,7 @@ $thumbnail[index?;URL]
 This will create an embed with your user avatar in it:
 
 ```javascript
-bot.command({
+client.command({
   name: "thumbnail",
   code: `
    $thumbnail[$userAvatar[$authorID]]

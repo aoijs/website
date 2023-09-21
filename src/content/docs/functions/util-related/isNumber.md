@@ -23,7 +23,7 @@ $isNumber[num]
 This will return `true` as `255` is a valid number:
 
 ```javascript
-bot.command({
+client.command({
   name: "isNumber",
   code: `
   $isNumber[255]

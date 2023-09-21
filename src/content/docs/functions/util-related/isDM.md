@@ -23,7 +23,7 @@ $isDM[channelID?]
 This will return either `true` or `false` depending on if you're executing the command in a DM or not:
 
 ```javascript
-bot.command({
+client.command({
   name: "isDM",
   code: `
   $isDM[$channelID]

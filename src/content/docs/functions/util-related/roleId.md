@@ -24,7 +24,7 @@ $roleId[roleResolver;guildID?]
 This will return the role ID of a role called `Owner` (this example won't work if you dont have that role):
 
 ```javascript
-bot.command({
+client.command({
   name: "roleId",
   code: `
   $roleId[Owner;$guildID]

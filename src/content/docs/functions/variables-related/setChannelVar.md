@@ -26,7 +26,7 @@ $setChannelVar[varname;value;channelID?;table?]
 This will change the value of "Example" to "This is a value":
 
 ```javascript
-bot.command({
+client.command({
   name: "setChannelVar",
   code: `
     $setChannelVar[Example;This is a value;$channelID;main]

@@ -26,7 +26,7 @@ $random[num1;num2;allow?;random?]
 This will return a random number between `20` and `250`:
 
 ```javascript
-bot.command({
+client.command({
   name: "random",
   code: `
   $random[20;250]
@@ -39,7 +39,7 @@ bot.command({
 This will return a random decimal number between `25` and `50`:
 
 ```javascript
-bot.command({
+client.command({
   name: "random",
   code: `
   $random[25;50;true]  
@@ -50,7 +50,7 @@ bot.command({
 This will return a random number between `45` and `64` and the second `$random` will be random as well:
 
 ```javascript
-bot.command({
+client.command({
   name: "random",
   code: `
   $random[45;65;false;true]

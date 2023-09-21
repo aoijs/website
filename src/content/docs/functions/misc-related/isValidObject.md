@@ -23,7 +23,7 @@ $isValidObject[object]
 This will return `true` as the given object is a valid JSON object:
 
 ```javascript
-bot.command({
+client.command({
   name: "isValidObject",
   code: `
   $isValidObject[{"name":"Leref", "aoijs":"nice"}]

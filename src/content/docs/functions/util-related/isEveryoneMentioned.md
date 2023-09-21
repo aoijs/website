@@ -17,7 +17,7 @@ $isEveryoneMentioned
 This will check if you mentioned `@here` or `@everyone`:
 
 ```javascript
-bot.command({
+client.command({
   name: "isEveryoneMentioned",
   code: `
   You did not mention @ everyone!

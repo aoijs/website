@@ -17,7 +17,7 @@ $resetFilter
 This will reset the current applied filters:
 
 ```javascript
-bot.command({
+client.command({
   name: "resetFilter",
   code: `
     $resetFilter

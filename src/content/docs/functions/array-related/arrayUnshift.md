@@ -21,7 +21,7 @@ $arrayUnshift[name]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "array-unshift",
   code: `
   $arrayUnshift[array]

@@ -24,7 +24,7 @@ $isBanned[guildID;userID]
 This will return `false` as you're not banned in this guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "isBanned",
   code: `
   $isBanned[$guildID;$authorID]

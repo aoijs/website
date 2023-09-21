@@ -25,7 +25,7 @@ $advancedTextSplit[text;sep;index;sep?;index?]
 This will split `Hello` from `Bye` and return `Hello`:
 
 ```javascript
-bot.command({
+client.command({
   name: "advancedTextSplit",
   code: `
   $advancedTextSplit[Hello/Bye;/;1]

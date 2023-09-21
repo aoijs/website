@@ -24,7 +24,7 @@ $roleCount[guildID?;fetchFirst?]
 This will return the amount of roles of your guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "roleCount",
   code: `
   $roleCount[$guildID;true]

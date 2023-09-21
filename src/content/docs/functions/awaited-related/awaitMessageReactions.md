@@ -32,7 +32,7 @@ $awaitMessageReactions[channelID;messageID;userFilter;time;reactions;commands;er
 This will reply to you when you react with the "❤️" emoji to the bot's message:
 
 ```js
-bot.command({
+client.command({
   name: "awaitMessageReactions",
   code: `
   React with "❤️" for a surprise! 
@@ -40,7 +40,7 @@ bot.command({
   `,
 });
 
-bot.awaitedCommand({
+client.awaitedCommand({
   name: "awaitedcommandexample",
   code: `
   Nice, you reacted with ❤️.

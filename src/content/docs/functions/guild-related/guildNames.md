@@ -23,7 +23,7 @@ $guildNames[sep?]
 This will return the names of the guilds your bot is in and separate it by a comma:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildNames",
   code: `
   $guildNames[, ]

@@ -24,7 +24,7 @@ $repeatMessage[time;text]
 This will return `Hello` twenty times:
 
 ```javascript
-bot.command({
+client.command({
   name: "repeatMessage",
   code: `
   $repeatMessage[20;Hello ]

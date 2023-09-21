@@ -23,7 +23,7 @@ $getGuildAutomodNames[guildID?]
 This will return the automod rules of the current guild (if any):
 
 ```javascript
-bot.command({
+client.command({
   name: "getGuildAutomodNames",
   code: `
   $getGuildAutomodNames[$guildID]

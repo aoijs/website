@@ -23,7 +23,7 @@ $cpu[option?]
 This will return the CPU usage of your bot:
 
 ```javascript
-bot.command({
+client.command({
   name: "cpu",
   code: `
   OS: $cpu[os] 

@@ -23,7 +23,7 @@ $addClientReactions[...reactions]
 This will add the given emojis to the bot's response ("Hello!"):
 
 ```javascript
-bot.command({
+client.command({
   name: "addClientReactions",
   code: `
     Hello!

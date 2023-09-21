@@ -23,7 +23,7 @@ $voicePing[type?]
 This will return the current voice latency:
 
 ```javascript
-bot.command({
+client.command({
   name: "voicePing",
   code: `
     $voicePing[ws]

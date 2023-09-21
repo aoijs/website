@@ -23,7 +23,7 @@ $nonEscape[message]
 This will stop from escaping certain characters:
 
 ```javascript
-bot.command({
+client.command({
   name: "nonEscape",
   code: `
   $nonEscape[Hello [;)]]

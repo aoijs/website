@@ -26,7 +26,7 @@ $guildSplash[guildID?;size?;dynamic?;extension?]
 This will return the guild's invite background (if unlocked):
 
 ```javascript
-bot.command({
+client.command({
   name: "guildSplash",
   code: `
   $guildSplash[$guildID]

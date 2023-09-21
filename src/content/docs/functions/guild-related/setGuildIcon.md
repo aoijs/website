@@ -24,7 +24,7 @@ $setGuildIcon[URL;guildID?]
 This will change guild's icon you're executing the command in to your user avatar:
 
 ```javascript
-bot.command({
+client.command({
   name: "setGuildIcon",
   code: `
    $setGuildIcon[$userAvatar[$authorID];$guildID]`,

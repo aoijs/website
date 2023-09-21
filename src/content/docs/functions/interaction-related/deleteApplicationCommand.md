@@ -22,7 +22,7 @@ $deleteApplicationCommand[guildID/global;id]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "deleteApplicationCommand",
   code: `
   $deleteApplicationCommand[$guildID;$getApplicationCommandID[application-command-name;$guildID]]

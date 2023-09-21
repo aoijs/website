@@ -24,7 +24,7 @@ $arrayConcat[separator;...arrays]
 This will return `This is a test` as it concats array 1 and 2:
 
 ```javascript
-bot.command({
+client.command({
   name: "arrayConcat",
   code: `
   $arrayConcat[ ;array1;array2]

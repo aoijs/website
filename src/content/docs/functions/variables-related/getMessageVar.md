@@ -25,7 +25,7 @@ $getMessageVar[varname;guildID?;table?]
 This will return the value of a variable called "Example":
 
 ```javascript
-bot.command({
+client.command({
   name: "getMessageVar",
   code: `
     $getMessageVar[Example;$messageID;main]

@@ -21,7 +21,7 @@ $arrayReverse[name]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "array-reverse",
   code: `
   $arrayReverse[array]

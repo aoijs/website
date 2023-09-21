@@ -23,7 +23,7 @@ $isInteger[number]
 This checks if your message contains an integer and returns `true` or `false`:
 
 ```javascript
-bot.command({
+client.command({
   name: "isInteger",
   code: `
   $isInteger[$message]

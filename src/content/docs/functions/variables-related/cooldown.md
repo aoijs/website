@@ -29,7 +29,7 @@ $cooldown[time;errorMessage
 This will set a cooldown for a command which applies to the user only and returns the remaining cooldown:
 
 ```javascript
-bot.command({
+client.command({
   name: "cooldown",
   code: `
   hello

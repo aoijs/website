@@ -23,7 +23,7 @@ $isVoice[channelID]
 This will return either `true` or `false` depending on what you use as argument:
 
 ```javascript
-bot.command({
+client.command({
   name: "isVoice",
   code: `
   $isVoice[$channelID]

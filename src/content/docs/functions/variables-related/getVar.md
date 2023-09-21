@@ -24,7 +24,7 @@ $getVar[varname;table?]
 This will return the value of a variable called "Example":
 
 ```javascript
-bot.command({
+client.command({
   name: "getVar",
   code: `
     $getVar[Example;main]

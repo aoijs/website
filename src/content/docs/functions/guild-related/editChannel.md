@@ -58,7 +58,7 @@ Note: all channel types are **case-sensitive**.
 This will change the current channel name to "i-love-aoijs":
 
 ```javascript
-bot.command({
+client.command({
   name: "editChannel",
   code: `
   $editChannel[$channelID;i-love-aoi-js]

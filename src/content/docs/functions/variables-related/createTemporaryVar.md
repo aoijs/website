@@ -24,7 +24,7 @@ $createTemporaryVar[table;...vars]
 This will create a new variable with the name of "variable" and the value of "value":
 
 ```javascript
-bot.command({
+client.command({
   name: "createTemporaryVar",
   code: `
   $createTemporaryVar[main;variable;value]

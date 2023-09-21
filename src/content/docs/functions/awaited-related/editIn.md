@@ -24,7 +24,7 @@ $editIn[time;...content]
 This will edit the sent message after five seconds:
 
 ```javascript
-bot.command({
+client.command({
   name: "editIn",
   code: `
   $editIn[5s;aoi.js is great, don't you agree?;Yes, I do!]

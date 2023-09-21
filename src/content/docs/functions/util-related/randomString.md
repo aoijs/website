@@ -24,7 +24,7 @@ $randomString[range;diffExec?]
 This will return a random string of twenty characters:
 
 ```javascript
-bot.command({
+client.command({
   name: "randomString",
   code: `
   $randomString[20]

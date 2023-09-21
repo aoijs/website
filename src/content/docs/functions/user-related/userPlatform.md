@@ -32,7 +32,7 @@ $userPlatform[userID?;guildID?;sep?]
 This will return your platform you're using Discord on:
 
 ```javascript
-bot.command({
+client.command({
   name: "userPlatform",
   code: `
   $userPlatform[$authorID;$guildID;, ]

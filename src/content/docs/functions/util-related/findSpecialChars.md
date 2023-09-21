@@ -23,7 +23,7 @@ $findSpecialChars[text]
 This will return `######`:
 
 ```javascript
-bot.command({
+client.command({
   name: "findSpecialChars",
   code: `
   $findSpecialChars[Aoi.js is ###### great]

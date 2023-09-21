@@ -25,7 +25,7 @@ $rolePerms[roleID;sep?;guildID?]
 This will return the permissions for the `@everyone` role:
 
 ```javascript
-bot.command({
+client.command({
   name: "rolePerms",
   code: `
   $rolePerms[$guildID;, ;$guildID]

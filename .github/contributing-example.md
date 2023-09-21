@@ -25,9 +25,9 @@ $functionName[parameter;parameter]
 
 [description - what the example does]: ```javascript
 
-bot.command({...});
+client.command({...});
 
-// Example in non-handler format using bot.command and JS code-highlighting
+// Example in non-handler format using client.command and JS code-highlighting
 
 ```
 

@@ -24,7 +24,7 @@ $arraySplice[name;index;amount;...elements]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "array-splice",
   code: `
   $arraySplice[array;2;3]

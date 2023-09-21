@@ -23,7 +23,7 @@ $guildWidgetChannelID[guildID?]
 This will return the widget channel ID of the current guild (if any):
 
 ```javascript
-bot.command({
+client.command({
   name: "guildWidgetChannelID",
   code: `
   $guildWidgetChannelID[$guildID]

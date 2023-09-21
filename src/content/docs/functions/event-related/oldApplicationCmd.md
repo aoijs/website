@@ -36,7 +36,7 @@ $oldApplicationCmd[option]
 ## Example(s)
 
 ```js
-bot.applicationCmdUpdateCommand({
+client.applicationCmdUpdateCommand({
   channel: "channelid",
   code: `
     Slash command was updated!

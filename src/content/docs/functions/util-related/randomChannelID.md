@@ -45,7 +45,7 @@ $randomChannelID[guildID/global?;type?]
 This will return a random channel ID of your guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "randomChannelID",
   code: `
   <#$randomChannelID[$guildID;all]>

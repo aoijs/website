@@ -26,14 +26,14 @@ $forEachGuildChannel[time;awaitData;...awaitedCmds;endCmd]
 This will change the variable value of each guild channel to "test":
 
 ```javascript
-bot.command({
+client.command({
   name: "forEachGuildChannel",
   code: `
   $forEachGuildChannel[2s;{"value": "test"};awaitedCommand;]
   `,
 });
 
-bot.awaitedCommand({
+client.awaitedCommand({
   name: "awaitedCommand",
   code: `
   $setChannelVar[varname;$awaitData[value];$channelID]

@@ -23,7 +23,7 @@ $handleError[option]
 **You require `events: ["onFunctionError"]` in your main file in order to use this function!**
 
 ```javascript
-bot.functionErrorCommand({
+client.functionErrorCommand({
   channel: "channelID (optional)",
   code: `Something went wrong in your "$handleError[command]" command! The function "$handleError[function]" returned the error "$handleError[error]"!`,
 });

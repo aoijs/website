@@ -25,7 +25,7 @@ $loop[time;awaitData;...awaitedCmds]
 This will execute a loop which will edit the sent message 5 times with the given content in `awaitData`:
 
 ```javascript
-bot.command({
+client.command({
   name: "loop",
   code: `
     $loop[5;{ "message": "$get[messageID]", "channel": "$channelID" };editMessage]
@@ -37,7 +37,7 @@ bot.command({
 We use `$awaitData` to retrieve the given properties in the `awaitData` field which is located in the loop command.
 
 ```javascript
-bot.awaitedCommand({
+client.awaitedCommand({
   name: "editMessage",
   code: `
     $editMessage[$awaitData[message];$pingMS;$awaitData[channel]]

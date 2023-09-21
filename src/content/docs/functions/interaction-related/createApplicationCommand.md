@@ -51,7 +51,7 @@ $createApplicationCommand[guildID/global;name;description;defaultPermission;type
 This will create a slash command without options:
 
 ```js
-bot.command({
+client.command({
   name: "createApplicationCommand",
   code: `
   $createApplicationCommand[$guildID/global;example;slash command description!;true;slash]`,

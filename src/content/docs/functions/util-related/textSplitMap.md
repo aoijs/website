@@ -23,7 +23,7 @@ $textSplit[awaited]
 This will return the arguments within `$textSplit` and send all of them separately:
 
 ```javascript
-bot.command({
+client.command({
   name: "textSplitMap",
   code: `
     $textSplitMap[devs]
@@ -31,7 +31,7 @@ bot.command({
     `,
 });
 
-bot.awaitedCommand({
+client.awaitedCommand({
   name: "devs",
   code: `
     $message[1]

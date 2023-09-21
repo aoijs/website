@@ -24,7 +24,7 @@ $getObjectValues[objectName;separator?]
 This will return `Ferel` and `aoi.js`:
 
 ```javascript
-bot.command({
+client.command({
   name: "getObjectValues",
   code: `
   $getObjectValues[Object Name;Leref;Ferel]

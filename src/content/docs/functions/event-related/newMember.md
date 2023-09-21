@@ -35,7 +35,7 @@ $newMember[option]
 - **Note: you need `GuildMembers` intent**
 
 ```js
-bot.memberUpdateCommand({
+client.memberUpdateCommand({
   channel: "channelid",
   code: `
     $username[$newMember[id]] has updated their nickname!

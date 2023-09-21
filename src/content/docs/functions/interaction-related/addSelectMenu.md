@@ -29,7 +29,7 @@ $addSelectMenu[index;customId;placeHolder;minValues;maxValues;disabled?;label:de
 This adds a select menu with two functions:
 
 ```javascript
-bot.command({
+client.command({
   name: "add-select-menu",
   code: `
   Select an option.

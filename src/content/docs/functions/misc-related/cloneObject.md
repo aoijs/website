@@ -22,7 +22,7 @@ $cloneObject[objectName;newObjectName]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "cloneObject",
   code: `
   $getObjectProperty[Another Name;Leref]

@@ -23,7 +23,7 @@ $randomUserID[global/guildID?]
 This will return a random user id:
 
 ```javascript
-bot.command({
+client.command({
   name: "randomUserID",
   code: `
   $randomUserID[global]

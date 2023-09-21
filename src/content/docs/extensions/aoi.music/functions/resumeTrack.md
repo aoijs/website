@@ -17,7 +17,7 @@ $resumeTrack
 This will resume the current track:
 
 ```javascript
-bot.command({
+client.command({
   name: "resumeTrack",
   code: `
     $resumeTrack

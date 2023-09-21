@@ -17,7 +17,7 @@ $unshuffleQueue
 This will unshuffle the current queue:
 
 ```javascript
-bot.command({
+client.command({
   name: "unshuffleQueue",
   code: `
     $unshuffleQueue

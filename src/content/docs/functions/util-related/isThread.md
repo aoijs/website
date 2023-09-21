@@ -23,7 +23,7 @@ $isThread[channelID?]
 This will return either `true` or `false` depending on if you're executing the command in a thread:
 
 ```javascript
-bot.command({
+client.command({
   name: "isThread",
   code: `
   $isThread[$channelID]

@@ -35,7 +35,7 @@ $createStageInstance[channelID;topic;type?]
 This will create start a new stage instance:
 
 ```javascript
-bot.command({
+client.command({
   name: "createStageInstance",
   code: `
   $createStageInstance[stageID;Testing!;1] 

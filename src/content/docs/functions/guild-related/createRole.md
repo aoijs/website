@@ -32,7 +32,7 @@ $createRole[guildID;returnID;name;color;icon;hoist;unicodeEmoji;position;mention
 This will create a new role called "Bird" in the color of red:
 
 ```javascript
-bot.command({
+client.command({
   name: "createRole",
   code: `
     $createRole[$guildID;false;Bird;FF0000;;false;❤;1;false;sendmessages]`,

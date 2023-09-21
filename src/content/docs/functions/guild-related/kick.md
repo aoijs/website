@@ -25,7 +25,7 @@ $kick[guildID;userID;reason?]
 This will kick someone from your guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "kick",
   code: `
   <@$findMember[$message;false]> has been kicked!

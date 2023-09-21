@@ -26,7 +26,7 @@ $setMessageVar[varname;value;messageID?;table?]
 This will change the value of "Example" to "This is a value":
 
 ```javascript
-bot.command({
+client.command({
   name: "setMessageVar",
   code: `
     $setMessageVar[Example;This is a value;$messageID;main]

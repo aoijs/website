@@ -24,7 +24,7 @@ $findChannel[channelResolver;returnSelf?]
 This will return `882360051640193054` as it was able to find the `#⊂・⊃﹐aoi_v5` channel:
 
 ```javascript
-bot.command({
+client.command({
   name: "findChannel",
   code: `
   $findChannel[⊂・⊃﹐aoi_v5;false]

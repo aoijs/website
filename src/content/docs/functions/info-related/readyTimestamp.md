@@ -17,7 +17,7 @@ $readyTimestamp
 This will return the last time your bot started/was ready:
 
 ```javascript
-bot.command({
+client.command({
   name: "readyTimestamp",
   code: `
   $readyTimestamp

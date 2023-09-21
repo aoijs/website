@@ -37,7 +37,7 @@ $userLeaderBoard[guildID;variable;order?;custom?;list?;page?;table?]
 This will returns a leaderboard of the "Example" variable:
 
 ```javascript
-bot.command({
+client.command({
   name: "userLeaderBoard",
   code: `
     $userLeaderBoard[$guildID;Example;asc;{top} - {username} - {value};10;1;main]

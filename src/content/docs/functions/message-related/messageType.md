@@ -24,7 +24,7 @@ $messageType[messageID?;channelID?]
 This will return the message type of the message which executed the command:
 
 ```javascript
-bot.command({
+client.command({
   name: "messageType",
   code: `
   $messageType[$messageID;$channelID]

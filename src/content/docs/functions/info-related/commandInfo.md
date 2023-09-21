@@ -27,7 +27,7 @@ This will return the usage (defined by added properties) of the command:
 - You can use aliases or the command name to return it's information.
 
 ```javascript
-bot.command({
+client.command({
   name: "commandInfo",
   aliases: ["ci", "cmdInfo"],
   usage: "commandInfo [command]",

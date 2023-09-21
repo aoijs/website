@@ -23,7 +23,7 @@ $channelCategoryID[channelID?]
 This will return the category ID of the text channel in where you execute the command:
 
 ```javascript
-bot.command({
+client.command({
   name: "channelCategoryID",
   code: `
   $channelCategoryID[$channelID]

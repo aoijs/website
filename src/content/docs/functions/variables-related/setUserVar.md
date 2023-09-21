@@ -27,7 +27,7 @@ $setUserVar[varname;value;userID?;id?;table?]
 This will change the value of "Example" to "This is a value":
 
 ```javascript
-bot.command({
+client.command({
   name: "setUserVar",
   code: `
     $setUserVar[Example;This is a value;$authorID;$guildID;main]

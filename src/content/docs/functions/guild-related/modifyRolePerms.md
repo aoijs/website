@@ -33,7 +33,7 @@ You can find all permissions **[here](../../guides/client/2permissions.md)**.
 This will edit a existing role's permission and allow the "@everyone" role to send messages and add reactions.
 
 ```javascript
-bot.command({
+client.command({
   name: "modifyRolePerms",
   code: `
   $modifyRolePerms[$guildID;$guildID;+sendmessages;+addreactions]"

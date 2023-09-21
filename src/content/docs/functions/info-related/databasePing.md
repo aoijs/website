@@ -17,7 +17,7 @@ $databasePing
 This will return your database ping:
 
 ```javascript
-bot.command({
+client.command({
   name: "databasePing",
   code: `
   My database ping is: $databasePing MS!

@@ -30,7 +30,7 @@ $boostingSince[guildID?;userID?;format?]
 This will return the date when you started boosting (wont work when you're not boosting):
 
 ```javascript
-bot.command({
+client.command({
   name: "boostingSince",
   code: `
   $boostingSince[$guildID;$authorID;date]

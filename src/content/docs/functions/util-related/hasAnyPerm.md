@@ -76,7 +76,7 @@ This will return `true` when the author has `manage messages` or `kick` permissi
 have any of those:
 
 ```javascript
-bot.command({
+client.command({
   name: "hasAnyPerm",
   code: `
   $hasAnyPerm[$guildID;$authorID;kick;managemessages]

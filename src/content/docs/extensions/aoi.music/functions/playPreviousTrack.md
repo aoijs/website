@@ -17,7 +17,7 @@ $playPreviousTrack
 This will play the previous track:
 
 ```javascript
-bot.command({
+client.command({
   name: "playPreviousTrack",
   code: `
     $playPreviousTrack

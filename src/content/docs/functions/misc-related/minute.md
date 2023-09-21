@@ -17,7 +17,7 @@ $minute
 This will returns the current minute:
 
 ```javascript
-bot.command({
+client.command({
   name: "minute",
   code: `
     $minute
@@ -28,7 +28,7 @@ bot.command({
 You can change the timezone using `$timezone`:
 
 ```javascript
-bot.command({
+client.command({
   name: "minute",
   code: `
     $minute 

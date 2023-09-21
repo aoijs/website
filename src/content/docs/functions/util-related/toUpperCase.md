@@ -23,7 +23,7 @@ $toUpperCase[text]
 This will everything given to uppercase, in this case it would return `THIS IS AN EXAMPLE`:
 
 ```javascript
-bot.command({
+client.command({
   name: "toUpperCase",
   code: `
     $toUpperCase[this is an example]

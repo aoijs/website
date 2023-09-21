@@ -17,7 +17,7 @@ $shutdown
 This will shutdown your bot:
 
 ```javascript
-bot.command({
+client.command({
   name: "shutdown",
   code: `
     $shutdown

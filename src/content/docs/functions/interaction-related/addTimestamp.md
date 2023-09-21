@@ -23,7 +23,7 @@ $addTimestamp[ms?]
 This will create a embed with timestamp and description:
 
 ```javascript
-bot.command({
+client.command({
   name: "addTimestamp",
   code: `
   $description[Hello!]

@@ -25,7 +25,7 @@ $setVar[varname;value;table?]
 This will change the value of "Example" to "This is a value":
 
 ```javascript
-bot.command({
+client.command({
   name: "setVar",
   code: `
     $setVar[Example;This is a value;main]

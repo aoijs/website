@@ -24,7 +24,7 @@ $joinThread[channelID;threadID]
 This will create a thread in the current channel and add the bot to it:
 
 ```javascript
-bot.command({
+client.command({
   name: "joinThread",
   code: `
   $joinThread[$channelID;$get[threadID]]

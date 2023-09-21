@@ -26,7 +26,7 @@ $archiveThread[threadID;channelID?;archive?;reason?]
 This will archive the created thread:
 
 ```javascript
-bot.command({
+client.command({
   name: "archiveThread",
   code: `
   $archiveThread[$channelID;$get[id];true;testing]

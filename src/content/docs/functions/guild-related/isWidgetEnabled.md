@@ -23,7 +23,7 @@ $isWidgetEnabled[guildID?]
 This will return true or false depending on if the widget is enabled in the current guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "isWidgetEnabled",
   code: `
   $isWidgetEnabled[$guildID]

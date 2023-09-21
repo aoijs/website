@@ -17,7 +17,7 @@ $day
 This will return day of the month, for example, `thursday`:
 
 ```javascript
-bot.command({
+client.command({
   name: "day",
   code: `
   Today is: $day

@@ -25,7 +25,7 @@ $sendDm[message;userID?;returnID?]
 This will send a DM to the command author:
 
 ```javascript
-bot.command({
+client.command({
   name: "sendDm",
   code: `
    $sendDm[Hello!;$authorID;false]  

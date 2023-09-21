@@ -31,7 +31,7 @@ $createAutomodRule[guildID;name;triggerType;triggerMetadata;actions;enabled?;exe
 This will create a automod rule which blocks the words (type: 1) "bad" & "words":
 
 ```javascript
-bot.command({
+client.command({
   name: "createAutomodRule",
   code: `
   $createAutomodRule[$guildID;Block Bad Words;1;{ "keywordFilter": ["bad", "words"]};[{ "type": 1 }];true;;;This is a reason!]

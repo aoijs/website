@@ -23,7 +23,7 @@ $deleteFile[path]
 This will delete your `index.js` (don't actually do that):
 
 ```javascript
-bot.command({
+client.command({
   name: "deleteFile",
   code: `
   $deleteFile[./index.js]

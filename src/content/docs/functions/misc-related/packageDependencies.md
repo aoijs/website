@@ -17,7 +17,7 @@ $packageDependencies
 This will return aoi.js' package dependencies:
 
 ```javascript
-bot.command({
+client.command({
   name: "packageDependencies",
   code: `
     $packageDependencies

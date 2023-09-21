@@ -31,7 +31,7 @@ $reactionCollector[channelID;messageID;userFilters;time;reactions;awaitedCommand
 This will send a message when you add a reaction:
 
 ```js
-bot.command({
+client.command({
   name: "reactionCollector",
   code: `
   $reactionCollector[$channelID;$splitText[1];$authorID;10m;👀;awaitReaction;;true]
@@ -39,7 +39,7 @@ bot.command({
   `,
 });
 
-bot.awaitedCommand({
+client.awaitedCommand({
   name: "awaitReaction",
   code: `
   $sendMessage[👀 what's this?]

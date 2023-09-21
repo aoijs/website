@@ -24,7 +24,7 @@ $onlyIf[condition;error]
 This will return the error message as 5 does not equal to 3:
 
 ```javascript
-bot.command({
+client.command({
   name: "onlyIf",
   code: `
     Ok.

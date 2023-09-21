@@ -36,7 +36,7 @@ $checkCondition[condition]
 This will return `false` as `50` is greater than `25`:
 
 ```javascript
-bot.command({
+client.command({
   name: "checkCondition",
   code: `
   $checkCondition[50>25]
@@ -51,7 +51,7 @@ bot.command({
 This will return `true` as `50` is greater than `25` and `120` is less than `280`:
 
 ```javascript
-bot.command({
+client.command({
   name: "checkCondition",
   code: `
   $checkCondition[50>25&&120<280]
@@ -64,7 +64,7 @@ bot.command({
 This will return `true` as one of the two arguments (`50>25`) are `true`:
 
 ```javascript
-bot.command({
+client.command({
   name: "checkCondition",
   code: `
   $checkCondition[50>25||true==false]

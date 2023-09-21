@@ -22,7 +22,7 @@ $arrayIncludes[name;query]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "array-includes",
   code: `
   $arrayIncludes[array;Leref]
@@ -33,7 +33,7 @@ bot.command({
 ```
 
 ```javascript
-bot.command({
+client.command({
   name: "array-includes",
   code: `
   $arrayIncludes[array;akarui]

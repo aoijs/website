@@ -24,7 +24,7 @@ $reply[messageID?;mentionUser?]
 This will reply to your command message:
 
 ```javascript
-bot.command({
+client.command({
   name: "reply",
   code: `
    Hello!

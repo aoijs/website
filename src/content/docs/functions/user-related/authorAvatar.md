@@ -25,7 +25,7 @@ $authorAvatar[size?;dynamic?;format?]
 This will return your profile picture:
 
 ```javascript
-bot.command({
+client.command({
   name: "authorAvatar",
   code: `
   $authorAvatar[2048;true;webp]

@@ -24,7 +24,7 @@ $fetchArchivedThreads[channelID;option?]
 This will return all archived threads, if any:
 
 ```javascript
-bot.command({
+client.command({
   name: "fetchArchivedThreads",
   code: `
   $fetchArchivedThreads[$channelID;name]

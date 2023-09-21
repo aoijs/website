@@ -17,7 +17,7 @@ $nodeVersion
 This will return the current node.js version your bot is running on:
 
 ```javascript
-bot.command({
+client.command({
   name: "nodeVersion",
   code: `
     $nodeVersion

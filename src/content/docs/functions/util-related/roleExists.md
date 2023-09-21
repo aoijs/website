@@ -24,7 +24,7 @@ $roleExists[roleResolver;guildID?]
 This will return `false` as the role doesn't exist in your guide:
 
 ```javascript
-bot.command({
+client.command({
   name: "roleExists",
   code: `
   $roleExists[900004369355931729;$guildID]

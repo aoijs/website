@@ -75,7 +75,7 @@ $hasPerms[guildID;userID;...perms]
 This will return `true` when the author has `kick` permissions and return `false` when they don't have those:
 
 ```javascript
-bot.command({
+client.command({
   name: "hasPerms",
   code: `
   $hasPerms[$guildID;$authorID;kick]

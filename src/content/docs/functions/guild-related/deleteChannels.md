@@ -23,7 +23,7 @@ $deleteChannels[...channels]
 This will delete multiple channels, make sure to replace the arguments:
 
 ```javascript
-bot.command({
+client.command({
   name: "deleteChannels",
   code: `
   $deleteChannels[channelID1;channelID2;channelID3;channelID4]

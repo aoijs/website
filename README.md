@@ -45,7 +45,7 @@ streamline their workflow.
 ```javascript
 const { AoiClient } = require("aoi.js");
 
-const bot = new AoiClient({
+const client = new AoiClient({
   token: "DISCORD BOT TOKEN",
   prefix: "DISCORD BOT PREFIX",
   intents: ["MessageContent", "Guilds", "GuildMessages"],
@@ -62,7 +62,7 @@ const bot = new AoiClient({
 });
 
 // Ping Command
-bot.command({
+client.command({
   name: "ping",
   code: `Pong! $pingms`,
 });
@@ -73,7 +73,7 @@ bot.command({
 ```javascript
 const { AoiClient } = require("aoi.js");
 
-const bot = new AoiClient({
+const client = new AoiClient({
   token: "DISCORD BOT TOKEN",
   prefix: "DISCORD BOT PREFIX",
   intents: ["MessageContent", "Guilds", "GuildMessages"],
@@ -90,7 +90,7 @@ const bot = new AoiClient({
 });
 
 // Create Interaction Ping Command
-bot.command({
+client.command({
   name: "create",
   code: `$createApplicationCommand[$guildID;ping;Pong!;true;slash]`,
 });

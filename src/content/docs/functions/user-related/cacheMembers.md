@@ -24,7 +24,7 @@ $cacheMembers[guildID?;returnCount?]
 This will cache all members of the current guild and return the amount of the cached members:
 
 ```javascript
-bot.command({
+client.command({
   name: "cacheMembers",
   code: `
   $cacheMembers[$guildID;true]

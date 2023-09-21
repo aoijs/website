@@ -42,7 +42,7 @@ $formatDate[date;format?]
 This will return your current date in the `dddd, DD MMMM YYYY` format:
 
 ```javascript
-bot.command({
+client.command({
   name: "formatDate",
   code: `
   $formatDate[$dateStamp;dddd, DD MMMM YYYY]

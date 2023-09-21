@@ -17,7 +17,7 @@ $reboot
 This will restart your bot:
 
 ```javascript
-bot.command({
+client.command({
   name: "reboot",
   code: `
     $reboot

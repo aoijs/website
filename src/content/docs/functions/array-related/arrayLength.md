@@ -21,7 +21,7 @@ $arrayLength[name]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "array-length",
   code: `
   $arrayLength[array]

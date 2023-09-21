@@ -23,7 +23,7 @@ $isValidLink[URL]
 This will return `true` as the given link is valid:
 
 ```javascript
-bot.command({
+client.command({
   name: "isValidLink",
   code: `
   $isValidLink[https://aoi.js.org/docs/]

@@ -33,7 +33,7 @@ $arrayFilter[name;query;queryType?;separator?]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "array-filter",
   code: `
   $arrayFilter[array;akarui;==;, ]
@@ -44,7 +44,7 @@ bot.command({
 ```
 
 ```javascript
-bot.command({
+client.command({
   name: "array-filter",
   code: `
   $arrayFilter[array;akarui;<=;, ]

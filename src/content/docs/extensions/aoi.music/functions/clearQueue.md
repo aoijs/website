@@ -17,7 +17,7 @@ $clearQueue
 This will clear the current queue:
 
 ```javascript
-bot.command({
+client.command({
   name: "clearQueue",
   code: `
     $clearQueue

@@ -23,14 +23,14 @@ $timeoutData[option]
 This will send "Hello!" after 10 seconds in the command execution channel:
 
 ```javascript
-bot.command({
+client.command({
   name: "setTimeout",
   code: `
     $setTimeout[timeoutCommand;10s;{"channelID": "$channelID", "authorID": "$authorID"};false]
     `,
 });
 
-bot.timeoutCommand({
+client.timeoutCommand({
   name: "timeoutCommand",
   code: `
     $channelSendMessage[$timeoutData[channelID];Hello, <@$timeoutData[authorID]>!]

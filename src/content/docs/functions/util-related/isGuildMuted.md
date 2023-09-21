@@ -24,7 +24,7 @@ $isGuildMuted[userID?;guildID?]
 This will return either `true` or `false` depending on if you're server muted or not:
 
 ```javascript
-bot.command({
+client.command({
   name: "isGuildMuted",
   code: `
   $isGuildMuted[$authorID;$guildID]

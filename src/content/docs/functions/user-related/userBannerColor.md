@@ -23,7 +23,7 @@ $userBannerColor[userID?]
 This will return your profile banner color (if any):
 
 ```javascript
-bot.command({
+client.command({
   name: "userBanner",
   code: `
   $userBannerColor[$authorID]

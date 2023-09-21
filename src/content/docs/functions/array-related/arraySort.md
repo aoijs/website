@@ -22,7 +22,7 @@ $arraySort[name;type?]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "array-sort",
   code: `
   $arrayJoin[array;, ]

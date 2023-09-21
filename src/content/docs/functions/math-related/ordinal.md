@@ -21,7 +21,7 @@ $ordinal[number]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "ordinal",
   code: `
   $ordinal[12] -> Returns 12nd 

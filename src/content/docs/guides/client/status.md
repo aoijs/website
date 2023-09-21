@@ -20,7 +20,7 @@ id: status
 First of all we have to add the following piece of code to our main file:
 
 ```javascript
-bot.status({
+client.status({
     text: string,
     type: string,
     time: number,
@@ -32,7 +32,7 @@ bot.status({
 When you use sharding you can individually change the status of each shard:
 
 ```javascript
-bot.status({
+client.status({
     text: string,
     type: string,
     time: number,
@@ -44,23 +44,23 @@ bot.status({
 
 This will display the text "Example Text!" as bot status, of course you can modify it.
 
-If you want to have multiple statuses just add multiple `bot.status({...})`, simple do the following:
+If you want to have multiple statuses just add multiple `client.status({...})`, simple do the following:
 
 ```javascript title="index.js"
-bot.status({
+client.status({
     text: "Example Text one!",
     type: "PLAYING",
     time: 12
 });
 
-bot.status({
+client.status({
     text: "Example Text two!",
     type: "STREAMING",
     time: 25,
     URL: "some URL"
 });
 
-bot.status({
+client.status({
     text: "Doing nothing..", // normal status as any other Discord User without any state
     time: 50,
     type: "CUSTOM",
@@ -81,7 +81,7 @@ There are various types of statuses (not case-sensitive):
 You can also set the bot's presence, by adding the `status` property, for example:
 
 ```javascript title="index.js"
-bot.status({
+client.status({
     text: "Example Text!",
     type: "PLAYING",
     status: "dnd",

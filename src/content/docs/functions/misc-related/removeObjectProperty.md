@@ -24,7 +24,7 @@ $removeObjectProperty[objectName;...properties]
 This will remove `Object` from the given object:
 
 ```javascript
-bot.command({
+client.command({
   name: "removeObjectProperty",
   code: `
   $removeObjectProperty[Object Name;Object]

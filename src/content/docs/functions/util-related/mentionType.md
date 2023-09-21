@@ -35,7 +35,7 @@ $mentionType[content]
 This will return `users` as you're an user:
 
 ```javascript
-bot.command({
+client.command({
   name: "mentionType",
   code: `
   $mentionType[<@$authorID>]

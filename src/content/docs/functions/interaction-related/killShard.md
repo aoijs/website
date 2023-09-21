@@ -23,7 +23,7 @@ $killShard[shardID]
 This will kill the current shard ( requires **sharding** ):
 
 ```javascript
-bot.command({
+client.command({
   name: "killShard",
   code: `
   $killShard[$shardID]

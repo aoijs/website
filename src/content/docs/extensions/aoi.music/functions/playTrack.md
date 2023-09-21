@@ -24,7 +24,7 @@ $playTrack[track;type]
 This will play a youtube video called "Silly Goose":
 
 ```javascript
-bot.command({
+client.command({
   name: "playTrack",
   code: `
     $playTrack[Silly Goose;youtube]

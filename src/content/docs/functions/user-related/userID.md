@@ -23,7 +23,7 @@ $userID[user]
 This will return your user ID:
 
 ```javascript
-bot.command({
+client.command({
   name: "userID",
   code: `
   $userID[$username]

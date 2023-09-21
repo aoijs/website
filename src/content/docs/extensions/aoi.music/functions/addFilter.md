@@ -40,7 +40,7 @@ aoi.music also supports `ffmpeg` built-in filters in json format.
 This will add `nightCore` and `bassBoost` filters:
 
 ```javascript
-bot.command({
+client.command({
   name: "addFilter",
   code: `
     $addFilter[{"nightCore": "1", "bassBoost": "0.3"}]

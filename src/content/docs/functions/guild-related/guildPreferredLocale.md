@@ -23,7 +23,7 @@ $guildPreferredLocale[guildID?]
 This will return the guild's preferred locale:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildPreferredLocale",
   code: `
   $guildPreferredLocale[$guildID]

@@ -17,7 +17,7 @@ $killClient
 This will forcefully shutdown your bot:
 
 ```javascript
-bot.command({
+client.command({
   name: "killClient",
   code: `
     $killClient

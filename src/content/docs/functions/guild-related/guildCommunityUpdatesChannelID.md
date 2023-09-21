@@ -23,7 +23,7 @@ $guildCommunityUpdatesChannelID[guildID?]
 This will return the community updates channel ID of the current guild (if any):
 
 ```javascript
-bot.command({
+client.command({
   name: "guildCommunityUpdatesChannelID",
   code: `
   $guildCommunityUpdatesChannelID[$guildID]

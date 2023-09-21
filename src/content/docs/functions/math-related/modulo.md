@@ -23,7 +23,7 @@ $modulo[num;num]
 This will return `2` as it's the remainder of `5 % 3`:
 
 ```javascript
-bot.command({
+client.command({
   name: "modulo",
   code: `
   $modulo[5;3]

@@ -40,7 +40,7 @@ $createApplicationCommand[guildID/global;name;description;defaultPermission(true
 ### Examples of creating Application Commands with sub commands
 
 ```js
-bot.command({
+client.command({
   name: "createApplicationCommand",
   code: `
   $createApplicationCommand[guildID/global;moderation;Moderation Commands!;true;slash;[
@@ -63,7 +63,7 @@ bot.command({
 Creating sub commands with options or choices work basically the same as any other.
 
 ```js
-bot.command({
+client.command({
   name: "createApplicationCommand",
   code: `
   $createApplicationCommand[guildID/global;moderation;Moderation Commands!;true;slash;[

@@ -26,7 +26,7 @@ $sendWebhookMessage[webhookID;webhookToken;content;returnID?]
 This will create a webhook and send a message using it:
 
 ```javascript
-bot.command({
+client.command({
   name: "sendWebhookMessage",
   code: `
    $sendWebhookMessage[$splitText[1];$splitText[2];Hello!;false]

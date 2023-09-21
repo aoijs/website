@@ -24,7 +24,7 @@ $webhookExists[id;token]
 This will check if the given Webhook Exists:
 
 ```javascript
-bot.command({
+client.command({
   name: "webhookExists",
   code: `
   $webhookExists[$splitText[1];$splitText[2]]

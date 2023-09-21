@@ -26,7 +26,7 @@ This has a max time of 21600000 seconds (6 hours).
 This will change the channel's slowmode to three minutes:
 
 ```javascript
-bot.command({
+client.command({
   name: "slowmode",
   code: `
    $slowmode[3m;$channelID]`,
@@ -36,7 +36,7 @@ bot.command({
 This will change the channel's slowmode to 6 hours:
 
 ```javascript
-bot.command({
+client.command({
   name: "slowmode",
   code: `
    $slowmode[6h;$channelID]`,

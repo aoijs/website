@@ -34,7 +34,7 @@ $getGuildInvite[guildID?;...options]
 This will create an invite of the channel where the command is executed in:
 
 ```javascript
-bot.command({
+client.command({
   name: "getGuildInvite",
   code: `
   $getGuildInvite[$guildID]
@@ -47,7 +47,7 @@ bot.command({
 Create Temporary Invites with limited uses:
 
 ```javascript
-bot.command({
+client.command({
   name: "getGuildInvite",
   code: `
   $getGuildInvite[$guildID;{

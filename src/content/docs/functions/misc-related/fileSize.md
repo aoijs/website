@@ -24,7 +24,7 @@ $fileSize[path;unit?]
 This will return the size of your `index.js` in `GB`:
 
 ```javascript
-bot.command({
+client.command({
   name: "fileSize",
   code: `
   $fileSize[./index.js;GB]

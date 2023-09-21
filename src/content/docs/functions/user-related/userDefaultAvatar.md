@@ -23,7 +23,7 @@ $userDefaultAvatar[userID?]
 This will return your default Discord User Avatar:
 
 ```javascript
-bot.command({
+client.command({
   name: "userDefaultAvatar",
   code: `
   $userDefaultAvatar[$authorID]

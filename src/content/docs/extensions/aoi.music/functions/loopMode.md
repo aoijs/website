@@ -23,7 +23,7 @@ $loopMode[mode?]
 This will set the loop mode to the current track:
 
 ```javascript
-bot.command({
+client.command({
   name: "loopMode",
   code: `
     $loopMode[song]

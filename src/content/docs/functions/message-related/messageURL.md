@@ -24,7 +24,7 @@ $messageURL[messageID?;channelID?]
 This will return the message URL of the message which executed the command:
 
 ```javascript
-bot.command({
+client.command({
   name: "messageURL",
   code: `
   $messageURL[$messageID;$channelID]

@@ -23,7 +23,7 @@ $stopTimeout[id]
 This will end a `$setTimeout` timeout:
 
 ```javascript
-bot.command({
+client.command({
   name: "stopTimeout",
   code: `
     $stopTimeout[10029]

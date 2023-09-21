@@ -25,7 +25,7 @@ $userNickname[guildID?;userID?;returnUser?]
 This will return your nickname, if you have none then it'll return your Discord username:
 
 ```javascript
-bot.command({
+client.command({
   name: "userNickname",
   code: `
   $userNickname[$guildID;$authorID;true]

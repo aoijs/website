@@ -24,7 +24,7 @@ $getObjectProperty[objectName;property]
 This will return the object property of "Leref" created in `$createObject`:
 
 ```javascript
-bot.command({
+client.command({
   name: "getObjectProperty",
   code: `
     $getObjectProperty[Object Name;Leref]

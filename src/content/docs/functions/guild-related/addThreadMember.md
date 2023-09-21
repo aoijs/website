@@ -26,7 +26,7 @@ $addThreadMember[channelID;threadID;userID;reason]
 This will create a thread and add random user to it:
 
 ```javascript
-bot.command({
+client.command({
   name: "addThreadMember",
   code: `
   $addThreadMember[$channelID;$get[id];$randomUserID;testing]

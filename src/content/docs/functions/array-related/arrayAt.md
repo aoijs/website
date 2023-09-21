@@ -24,7 +24,7 @@ $arrayAt[name;index]
 - This will return `Aoi.dashboard`:
 
 ```javascript
-bot.command({
+client.command({
   name: "array-at",
   code: `
   $arrayAt[Aoi;3]

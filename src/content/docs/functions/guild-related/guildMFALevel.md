@@ -28,7 +28,7 @@ $guildMFALevel[guildID?]
 This will return the guild's MFA Level:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildMFALevel",
   code: `
   $guildMFALevel[$guildID]

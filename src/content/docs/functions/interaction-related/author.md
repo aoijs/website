@@ -25,7 +25,7 @@ $author[index?;name;iconURL?]
 This will create an embed with description and author title:
 
 ```javascript
-bot.command({
+client.command({
   name: "author",
   code: `
   $author[Hello!;$userAvatar[$authorID]]

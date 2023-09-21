@@ -28,7 +28,7 @@ $httpRequest[URL;method;body?;property?;error?;...header?]
 This will return a random dog fact using the `GET` method:
 
 ```javascript
-bot.command({
+client.command({
   name: "httpRequest",
   code: `
     $httpRequest[https://some-random-api.ml/facts/dog;GET;;fact;Something went wrong.]

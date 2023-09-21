@@ -17,7 +17,7 @@ $guildRandomID
 This will return a random guild if of the guild's your bot is a member of:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildRandomID",
   code: `
   $guildRandomID

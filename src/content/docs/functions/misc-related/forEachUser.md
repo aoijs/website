@@ -26,14 +26,14 @@ $forEachUser[time;awaitData;...awaitedCmds;endCmd]
 This will log every (cached) user in your console:
 
 ```javascript
-bot.command({
+client.command({
   name: "awaitData",
   code: `
   $forEachUser[1;{};returnUsers;]
   `,
 });
 
-bot.awaitedCommand({
+client.awaitedCommand({
   name: "returnUsers",
   code: `
   $log[ $authorID ]

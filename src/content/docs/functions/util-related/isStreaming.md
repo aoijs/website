@@ -24,7 +24,7 @@ $isStreaming[userID?;guildID?]
 This will return either `true` or `false` depending on if you're streaming (voice channel) or not:
 
 ```javascript
-bot.command({
+client.command({
   name: "isStreaming",
   code: `
   $isStreaming[$authorID;$guildID]

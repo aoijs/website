@@ -21,7 +21,7 @@ $closeTicket[error?]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "closeTicket",
   code: `
   $closeTicket[Something went wrong!]

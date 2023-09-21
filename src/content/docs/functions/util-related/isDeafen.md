@@ -24,7 +24,7 @@ $isDeafen[userID?;guildID?]
 This will return `false` or `true` depending on if you're currently deafened or not:
 
 ```javascript
-bot.command({
+client.command({
   name: "isDeafen",
   code: `
   $isDeafen[$authorID;$guildID]

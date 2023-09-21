@@ -24,7 +24,7 @@ $isRoleEditable[roleID;guildID?]
 This will check if a role called `Owner` is editable:
 
 ```javascript
-bot.command({
+client.command({
   name: "isRoleEditable",
   code: `
   $isRoleEditable[$findRole[Owner];$guildID]

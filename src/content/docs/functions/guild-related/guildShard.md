@@ -27,7 +27,7 @@ $guildShard[option?;sep?;shardId]
 This will return the amount guilds of a shard:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildShard",
   code: `
   $guildShard[name;, ;$shardID]

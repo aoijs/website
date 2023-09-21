@@ -24,7 +24,7 @@ $guildChannelExists[guildID;channelResolver]
 This will check if a guild channel with the name `rules` exists, alternatively you could use the channel ID instead:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildChannelExists",
   code: `
   $guildChannelExists[$guildID;rules]

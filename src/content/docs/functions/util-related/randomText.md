@@ -23,7 +23,7 @@ $randomText[text;text;...]
 This will return a random text out of `Hello, Bye, Goodnight, See you`:
 
 ```javascript
-bot.command({
+client.command({
   name: "randomText",
   code: `
   $randomText[Hello;Bye;Goodnight;See you]

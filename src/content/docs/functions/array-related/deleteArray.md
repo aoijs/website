@@ -23,7 +23,7 @@ $deleteArray[name]
 This will delete the array "array":
 
 ```javascript
-bot.command({
+client.command({
   name: "deleteArray",
   code: `
   $deleteArray[array]

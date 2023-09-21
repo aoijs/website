@@ -23,7 +23,7 @@ $findNumbers[text]
 This will return `25` and remove `Hello, I'm [..] years old` from the given text:
 
 ```javascript
-bot.command({
+client.command({
   name: "findNumbers",
   code: `
   $findNumbers[Hello, I'm 25 years old]

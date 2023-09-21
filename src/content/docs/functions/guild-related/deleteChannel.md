@@ -23,7 +23,7 @@ $deleteChannel[channelID]
 This will delete the channel where the command was executed in:
 
 ```javascript
-bot.command({
+client.command({
   name: "deleteChannel",
   code: `
   $deleteChannel[$channelID]

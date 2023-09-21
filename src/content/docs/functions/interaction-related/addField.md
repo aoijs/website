@@ -25,7 +25,7 @@ $addField[fieldTitle;fieldDescription;inline?]
 This will send an embed with a field and description:
 
 ```javascript
-bot.command({
+client.command({
   name: "addField",
   code: `
   $addField[Example;Look at this!;false]

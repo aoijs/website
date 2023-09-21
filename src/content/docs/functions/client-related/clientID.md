@@ -17,7 +17,7 @@ $clientID
 This will return the client's ID:
 
 ```javascript
-bot.command({
+client.command({
   name: "clientID",
   code: `
   $clientID

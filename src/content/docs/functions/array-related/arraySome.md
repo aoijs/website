@@ -30,7 +30,7 @@ $arraySome[name;query;queryType?]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "array-some",
   code: `
   $arraySome[array;aoi.js;==]

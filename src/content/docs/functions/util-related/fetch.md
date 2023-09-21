@@ -46,7 +46,7 @@ $fetch[method;query;...properties]
 This will display information about the initial command message using the `fetch` function (returns `message.id`):
 
 ```javascript
-bot.command({
+client.command({
   name: "fetch",
   code: `
   \`\`\`

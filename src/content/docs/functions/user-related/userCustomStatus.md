@@ -25,7 +25,7 @@ $userCustomStatus[guildID?;userID?;option?]
 This will return your status text if you have any:
 
 ```javascript
-bot.command({
+client.command({
   name: "userCustomStatus",
   code: `
   $userCustomStatus[$authorID;$guildID;state]

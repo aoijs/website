@@ -25,7 +25,7 @@ This will return the ID of the **first** mention if you attempt to mention someo
 return your ID:
 
 ```javascript
-bot.command({
+client.command({
   name: "mentioned",
   code: `
   $mentioned[1;true]

@@ -26,7 +26,7 @@ $setGuildVar[varname;value;guildID?;table?]
 This will change the value of "Example" to "This is a value":
 
 ```javascript
-bot.command({
+client.command({
   name: "setGuildVar",
   code: `
     $setGuildVar[Example;This is a value;$guildID;main]

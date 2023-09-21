@@ -43,7 +43,7 @@ import { Tabs, TabItem } from "@astrojs/starlight/components";
 ```javascript title="index.js"
 const { AoiClient } = require("aoi.js");
 
-const bot = new AoiClient({
+const client = new AoiClient({
   token: "Discord Bot Token",
   prefix: "Discord Bot Prefix",
   intents: ["MessageContent", "Guilds", "GuildMessages"],
@@ -60,7 +60,7 @@ const bot = new AoiClient({
 });
 
 // Ping Command Example
-bot.command({
+client.command({
   name: "ping",
   code: `Pong! $pingms`,
 });

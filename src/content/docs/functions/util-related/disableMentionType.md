@@ -35,7 +35,7 @@ $disableMentionType[type]
 This will stop the bot from mentioning you:
 
 ```javascript
-bot.command({
+client.command({
   name: "mention",
   code: `
 <@$authorID>
@@ -47,7 +47,7 @@ $disableMentionType[users]
 This will stop the bot from mentioning anyone or anything:
 
 ```javascript
-bot.command({
+client.command({
   name: "mention",
   code: `
 <@$authorID>

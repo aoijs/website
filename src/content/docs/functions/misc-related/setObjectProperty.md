@@ -25,7 +25,7 @@ $setObjectProperty[objectName;property;value]
 This will return `Ferel` from the `Leref` Property:
 
 ```javascript
-bot.command({
+client.command({
   name: "setObjectProperty",
   code: `
   $getObjectProperty[Object Name;Leref]

@@ -23,7 +23,7 @@ $isTicket[channelID?]
 This will check if the current channel is a ticket channel created by `$newTicket`:
 
 ```javascript
-bot.command({
+client.command({
   name: "isTicket",
   code: `
     $isTicket[$channelID]

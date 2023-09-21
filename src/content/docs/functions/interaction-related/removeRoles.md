@@ -26,7 +26,7 @@ $removeRoles[guildID;userID;reason?;...roleIDs]
 This will remove given roles from yourself (the roles must be below the bot's highest role):
 
 ```javascript
-bot.command({
+client.command({
   name: "removeRoles",
   code: `
    $removeRoles[$guildID;$authorID;Some reason..;roleID;roleID;...]`,

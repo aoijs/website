@@ -24,7 +24,7 @@ $getObjectKeys[objectName;separator?]
 This will return `Leref` and `dbd.js`:
 
 ```javascript
-bot.command({
+client.command({
   name: "getObjectKeys",
   code: `
   $getObjectKeys[Object Name;Leref;Ferel]

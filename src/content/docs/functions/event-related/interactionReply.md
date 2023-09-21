@@ -26,7 +26,7 @@ $interactionReply[content?;embeds?;components?;files?;allowedMentions?;ephemeral
 ## Example(s)
 
 ```javascript
-bot.interactionCommand({
+client.interactionCommand({
   name: "interactionReply",
   prototype: "slash", // button/selectMenu/slash
   code: `

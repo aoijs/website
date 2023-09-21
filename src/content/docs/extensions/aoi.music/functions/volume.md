@@ -24,7 +24,7 @@ $volume[value]
 This will return the current volume:
 
 ```javascript
-bot.command({
+client.command({
   name: "volume",
   code: `
     $volume[get]
@@ -35,7 +35,7 @@ bot.command({
 This will set the current volume to `45`:
 
 ```javascript
-bot.command({
+client.command({
   name: "volume",
   code: `
     $volume[45]

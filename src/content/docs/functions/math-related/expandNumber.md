@@ -23,7 +23,7 @@ $expandNumber[abbrNumber]
 This will return `1300000`:
 
 ```javascript
-bot.command({
+client.command({
   name: "expandNumber",
   code: `
   $expandNumber[1.3m]`,

@@ -23,7 +23,7 @@ $clientOwnerIDs[separator?]
 This will return your user ID most likely:
 
 ```javascript
-bot.command({
+client.command({
   name: "clientOwnerIDs",
   code: `
   $clientOwnerIDs

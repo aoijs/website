@@ -17,7 +17,7 @@ $queueLength
 This will return the current queue length:
 
 ```javascript
-bot.command({
+client.command({
   name: "queueLength",
   code: `
     $queueLength

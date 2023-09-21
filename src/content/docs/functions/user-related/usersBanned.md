@@ -26,7 +26,7 @@ $usersBanned[guildID?;force?;option?;sep?]
 This will return the banned users of your guild as mention in an embed:
 
 ```javascript
-bot.command({
+client.command({
   name: "usersBanned",
   code: `
 $description[$usersBanned[$guildID;false;mention;, ]]

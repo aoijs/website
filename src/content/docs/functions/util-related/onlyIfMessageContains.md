@@ -25,7 +25,7 @@ $onlyIfMessageContains[content;...text;error]
 This will return the error message as "aoi.js" does not appear in "Hello!":
 
 ```javascript
-bot.command({
+client.command({
   name: "onlyIfMessageContains",
   code: `
     Ok.

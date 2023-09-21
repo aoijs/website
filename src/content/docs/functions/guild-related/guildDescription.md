@@ -23,7 +23,7 @@ $guildDescription[guildID?]
 This will return the description of a specific guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildDescription",
   code: `
   $guildDescription[$guildID]

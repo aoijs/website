@@ -29,7 +29,7 @@ $addEmoji[guildID;URL;name;returnEmoji?;reason?;...roles?]
 This will create an emoji:
 
 ```javascript
-bot.command({
+client.command({
   name: "addEmoji",
   code: `
   $addEmoji[$guildID;https://cdn.discordapp.com/emojis/1010320053687832586.webp?size=96&quality=lossless;leref;false]

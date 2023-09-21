@@ -24,7 +24,7 @@ $findObjectProperty[objectName;...properties]
 This will return `{"Leref": "Ferel"}` as it was able to find "object":
 
 ```javascript
-bot.command({
+client.command({
   name: "findObjectProperty",
   code: `
   $findObjectProperty[Object Name;Leref]

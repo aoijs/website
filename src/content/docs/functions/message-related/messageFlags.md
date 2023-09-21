@@ -25,7 +25,7 @@ $messageFlags[messageID;sep?;channelID?]
 This will the message flags of your initial command message:
 
 ```javascript
-bot.command({
+client.command({
   name: "messageFlags",
   code: `
   $messageFlags[$messageID;, ;$channelID]

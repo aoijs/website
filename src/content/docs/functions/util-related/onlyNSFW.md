@@ -23,7 +23,7 @@ $onlyNSFW[error?]
 This will limit the command only to NSFW channels:
 
 ```javascript
-bot.command({
+client.command({
   name: "onlyNSFW",
   code: `
     Ok.

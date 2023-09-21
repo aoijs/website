@@ -21,7 +21,7 @@ $noEscapingMessage[args]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "noEscapingMessage",
   code: `
     $noEscapingMessage[1]

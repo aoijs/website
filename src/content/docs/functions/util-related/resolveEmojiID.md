@@ -23,7 +23,7 @@ $resolveEmojiID[emojiResolver]
 This will return `<:LerefMoney:1003365344724910191>`:
 
 ```javascript
-bot.command({
+client.command({
   name: "resolveEmojiID",
   code: `
   $resolveEmojiID[LerefMoney]

@@ -17,7 +17,7 @@ $messageID
 This will return the message ID of the message with which you executed the command:
 
 ```javascript
-bot.command({
+client.command({
   name: "messageID",
   code: `
   The message ID of your the message you just sent is: "$messageID"

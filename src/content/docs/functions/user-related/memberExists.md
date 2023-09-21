@@ -24,7 +24,7 @@ $memberExists[userID;guildID?]
 This will return `true` as you're currently in this guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "memberExists",
   code: `
   $memberExists[$authorid;$guildID]

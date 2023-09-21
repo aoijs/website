@@ -23,7 +23,7 @@ $isChannelManageable[channelID?]
 This will return `true` or `false` depending on if the channel you're executing the command in is manageable:
 
 ```javascript
-bot.command({
+client.command({
   name: "isChannelManageable",
   code: `
   $isChannelManageable[$channelID]

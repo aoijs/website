@@ -25,7 +25,7 @@ $channelPermissionsFor[userOrRoleID?;channelID?;sep?]
 This will return your permissions in the channel where you execute the command:
 
 ```javascript
-bot.command({
+client.command({
   name: "channelPermissionsFor",
   code: `
   $channelPermissionsFor[$authorID;$channelID;, ]

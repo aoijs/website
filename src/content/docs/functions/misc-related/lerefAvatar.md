@@ -17,7 +17,7 @@ $lerefAvatar
 This will return the creator's Avatar:
 
 ```javascript
-bot.command({
+client.command({
   name: "lerefAvatar",
   code: `
     $lerefAvatar

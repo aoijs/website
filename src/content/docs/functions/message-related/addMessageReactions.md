@@ -25,7 +25,7 @@ $addMessageReactions[channelID;messageID;...reactions]
 This will add the given reactions to your message:
 
 ```javascript
-bot.command({
+client.command({
   name: "addMessageReactions",
   code: `
  $addMessageReactions[$channelID;$messageID;✅;❌]

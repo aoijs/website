@@ -25,7 +25,7 @@ $onlyForRoles[...roleIds;error]
 This will limit the command only to the listed channels:
 
 ```javascript
-bot.command({
+client.command({
   name: "onlyForRoles",
   code: `
     Ok.

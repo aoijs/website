@@ -24,7 +24,7 @@ $djsEval[code;returnCode?]
 This will return your user ID:
 
 ```javascript
-bot.command({
+client.command({
   name: "djsEval",
   code: `
   $djsEval[msg.author.id;true]

@@ -25,7 +25,7 @@ $clearReactions[channelID;messageID;emoji]
 This will add two emojis and remove one completely:
 
 ```javascript
-bot.command({
+client.command({
   name: "clearReactions",
   code: `
   $clearReactions[$channelID;$messageID;🥱]

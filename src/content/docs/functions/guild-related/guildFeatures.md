@@ -23,7 +23,7 @@ $guildFeatures[guildID?]
 This will return the unlocked guild features of a guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildFeatures",
   code: `
   $guildFeatures[$guildID;true]

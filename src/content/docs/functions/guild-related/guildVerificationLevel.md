@@ -31,7 +31,7 @@ $guildVerificationLevel[guildID?]
 This will return the guild's verification Level:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildVerificationLevel",
   code: `
   $guildVerificationLevel[$guildID]

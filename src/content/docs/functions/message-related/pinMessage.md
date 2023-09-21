@@ -24,7 +24,7 @@ $pinMessage[messageID?;channelID?]
 This will pin the bot's message:
 
 ```javascript
-bot.command({
+client.command({
   name: "pinMessage",
   code: `
   $pinMessage[$get[id]]

@@ -26,7 +26,7 @@ This will delete a thread of the channel where you execute the command in ( make
 thread ID ):
 
 ```javascript
-bot.command({
+client.command({
   name: "deleteThread",
   code: `
   $deleteThread[$channelID;threadID;Crazy Example.]

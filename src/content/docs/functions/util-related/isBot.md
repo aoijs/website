@@ -23,7 +23,7 @@ $isBot[userID?]
 This will return `true` as your bot is, obviously, a bot:
 
 ```javascript
-bot.command({
+client.command({
   name: "isBot",
   code: `
   $isBot[$clientID]

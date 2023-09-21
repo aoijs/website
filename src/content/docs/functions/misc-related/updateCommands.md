@@ -17,7 +17,7 @@ $updateCommands
 ```javascript
 const { AoiClient } = require("aoi.js");
 
-const bot = new AoiClient({
+const client = new AoiClient({
   token: "DISCORD BOT TOKEN",
   prefix: "DISCORD BOT PREFIX",
   intents: ["GuildMessages", "MessageContent", "Guilds"],
@@ -33,7 +33,7 @@ const bot = new AoiClient({
   },
 });
 
-bot.loadCommands("./commands/", true); // your command directory.
+client.loadCommands("./commands/", true); // your command directory.
 ```
 
 ## Example(s)
@@ -41,7 +41,7 @@ bot.loadCommands("./commands/", true); // your command directory.
 This will update the commands of your bot without restarting it:
 
 ```javascript
-bot.command({
+client.command({
   name: "updateCommands",
   code: `
     $updateCommands

@@ -24,7 +24,7 @@ $setGuildName[name;guildID?]
 This will change guild's name you're executing the command in to your username:
 
 ```javascript
-bot.command({
+client.command({
   name: "setGuildName",
   code: `
    $setGuildName[$username[$authorID];$guildID]`,

@@ -25,7 +25,7 @@ $cropText[text;limit;start?]
 This will return `bye` and remove `hello and` from the given text:
 
 ```javascript
-bot.command({
+client.command({
   name: "cropText",
   code: `
 $cropText[hello and bye;20;9]

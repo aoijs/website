@@ -94,7 +94,7 @@ To use intents simply add them to your `AoiClient` in your main file, commonly k
 
 ```javascript
 //index.js
-const bot = new AoiClient({
+const client = new AoiClient({
     token: "DISCORD BOT TOKEN",
     prefix: "DISCORD BOT PREFIX",
     events: [],

@@ -25,7 +25,7 @@ $findMember[userResolver;returnSelf?;guildID?]
 This will return your ID as `Leref` was not found in the given guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "findMember",
   code: `
   $findMember[Leref;true;$guildID]

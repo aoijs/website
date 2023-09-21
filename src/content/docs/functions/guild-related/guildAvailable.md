@@ -23,7 +23,7 @@ $guildAvailable[guildID?]
 This will return `true` or `false` depending on if the guild is available:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildAvailable",
   code: `
   $guildAvailable[$guildID]

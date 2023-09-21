@@ -25,7 +25,7 @@ $unban[guildID;userID;reason?]
 This will unban a given user:
 
 ```javascript
-bot.command({
+client.command({
   name: "unban",
   code: `
   $unban[$guildID;$randomUserID;Some reason.]

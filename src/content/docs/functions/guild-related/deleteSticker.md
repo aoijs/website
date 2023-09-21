@@ -24,7 +24,7 @@ $deleteSticker[guildID;sticker]
 This will delete a sticker of your guild ( make sure to provide an actual sticker name ):
 
 ```javascript
-bot.command({
+client.command({
   name: "deleteSticker",
   code: `
   $deleteSticker[$guildID;sticker]

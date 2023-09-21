@@ -25,7 +25,7 @@ $hasRoles[guildID;userID;...roles]
 This will return `true` when the user has the listed roles:
 
 ```javascript
-bot.command({
+client.command({
   name: "hasRoles",
   code: `
   $hasRoles[$guildID;$authorID;$findRole[Owner]]

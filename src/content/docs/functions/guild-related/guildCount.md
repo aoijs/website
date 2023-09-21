@@ -17,7 +17,7 @@ $guildCount
 This will return the amount of guilds your bot is in:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildCount",
   code: `
   I'm in $guildCount guilds!

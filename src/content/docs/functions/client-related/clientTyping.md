@@ -17,7 +17,7 @@ $clientTyping
 This will display your bot as typing and send "Hello!" as message:
 
 ```javascript
-bot.command({
+client.command({
   name: "clientTyping",
   code: `
   Hello!

@@ -51,7 +51,7 @@ $queue[page?;limit?;format?]
 This will return the current queue in the `{position}) {title} - {requester.user.name}` format:
 
 ```javascript
-bot.command({
+client.command({
   name: "queue",
   code: `
     $queue[1;10;{position}) {title} - {requester.user.name}]

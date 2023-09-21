@@ -24,7 +24,7 @@ $roleName[roleID;guildID?]
 This will return the role name of any role you may like, in this case, It would return `@everyone`:
 
 ```javascript
-bot.command({
+client.command({
   name: "roleName",
   code: `
   \`$roleName[$guildID]\`

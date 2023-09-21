@@ -25,7 +25,7 @@ $writeFile[path;text;encoding?]
 This will a file called "testing.txt" with the content of "Hello!":
 
 ```javascript
-bot.command({
+client.command({
   name: "writeFile",
   code: `
     $writeFile[./testing.txt;Hello!;utf8]

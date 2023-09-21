@@ -24,7 +24,7 @@ $deleteWebhook[webhookID;webhookToken]
 This will delete a webhook of your guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "deleteWebhook",
   code: `
   $deleteWebhook[webhookID;webhookToken]

@@ -23,7 +23,7 @@ $deleteEmoji[emoji]
 This will delete a random emoji of your guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "deleteEmoji",
   code: `
   $deleteEmoji[$randomEmoji]

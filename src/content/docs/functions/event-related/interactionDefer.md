@@ -21,7 +21,7 @@ $interactionDefer[ephemeral]
 ## Example(s)
 
 ```javascript
-bot.command({
+client.command({
   name: "exampleButton",
   type: "interaction",
   prototype: "button",

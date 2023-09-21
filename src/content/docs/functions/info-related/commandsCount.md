@@ -17,7 +17,7 @@ $commandsCount
 This will return the the amount of your commands:
 
 ```javascript
-bot.command({
+client.command({
   name: "commandsCount",
   code: `
   $commandsCount

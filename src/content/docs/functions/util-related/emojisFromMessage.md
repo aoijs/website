@@ -19,7 +19,7 @@ $emojisFromMessage
 This will return any emojis you give as argument:
 
 ```javascript
-bot.command({
+client.command({
   name: "emojisFromMessage",
   code: `
 $emojisFromMessage

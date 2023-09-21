@@ -25,7 +25,7 @@ $lockThread[channelID;threadID;reason?]
 This will lock a given thread:
 
 ```javascript
-bot.command({
+client.command({
   name: "lockThread",
   code: `
   $lockThread[$channelID;threadID;Example reason!]

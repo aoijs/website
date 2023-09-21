@@ -17,7 +17,7 @@ $messagePing
 This will return the latency of your message:
 
 ```javascript
-bot.command({
+client.command({
   name: "messagePing",
   code: `
   $messagePing

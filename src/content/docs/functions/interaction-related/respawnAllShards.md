@@ -17,7 +17,7 @@ $respawnAllShards
 This will respawn all shards (requires sharding):
 
 ```javascript
-bot.command({
+client.command({
   name: "respawnAllShards",
   code: `
    $respawnAllShards

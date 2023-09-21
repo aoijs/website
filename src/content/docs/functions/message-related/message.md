@@ -23,7 +23,7 @@ $message[index?]
 This will return your given message:
 
 ```javascript
-bot.command({
+client.command({
   name: "message",
   code: `
   You said: "$message"

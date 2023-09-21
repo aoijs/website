@@ -23,7 +23,7 @@ $useChannel[channelID]
 This will send an embed in the current channel:
 
 ```javascript
-bot.command({
+client.command({
   name: "useChannel",
   code: `
     $description[Hello!]

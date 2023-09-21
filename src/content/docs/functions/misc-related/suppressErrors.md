@@ -23,7 +23,7 @@ $suppressErrors[errorMsg?]
 This will suppress all errors of your code and return the pre-defined error message instead:
 
 ```javascript
-bot.command({
+client.command({
   name: "suppressErrors",
   code: `
     $description

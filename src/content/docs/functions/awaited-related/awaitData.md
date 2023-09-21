@@ -23,14 +23,14 @@ $awaitData[name]
 This will return the ID of every server member and log it in your console:
 
 ```javascript
-bot.command({
+client.command({
   name: "awaitData",
   code: `
   $forEachMember[1s;{ "members": "$membersCount" };returnMembers;]
   `,
 });
 
-bot.awaitedCommand({
+client.awaitedCommand({
   name: "returnMembers",
   code: `
   $log[ $authorID , is one out of $awaitData[members] members ]

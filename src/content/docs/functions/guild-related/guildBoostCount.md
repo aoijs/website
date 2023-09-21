@@ -23,7 +23,7 @@ $guildBoostCount[guildID?]
 This will return the amount of boosts a specific guild has:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildBoostCount",
   code: `
   $guildBoostCount[$guildID]

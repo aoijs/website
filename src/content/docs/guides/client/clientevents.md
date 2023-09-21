@@ -180,7 +180,7 @@ Developer Portal.
 ```js title="index.js"
 const { AoiClient } = require("aoi.js");
 
-const bot = new AoiClient({
+const client = new AoiClient({
     token: "DISCORD BOT TOKEN",
     prefix: "DISCORD BOT PREFIX",
     intents: ["Guilds", "GuildMessages", "MessageContent"],
@@ -192,7 +192,7 @@ const bot = new AoiClient({
 #### Example Usage of Events without Handler
 
 ```javascript title="index.js"
-bot.<eventName>Command({ // exclude "on" of the event for example, "onTypingStart" -> "typingStartCommand"
+client.<eventName>Command({ // exclude "on" of the event for example, "onTypingStart" -> "typingStartCommand"
     name?: string // option for events
     channel: integer,
     code: ...

@@ -23,7 +23,7 @@ $autoPlay[type?]
 This will automatically add songs to your queue from the given type:
 
 ```javascript
-bot.command({
+client.command({
   name: "autoPlay",
   code: `
     $autoPlay[relative]

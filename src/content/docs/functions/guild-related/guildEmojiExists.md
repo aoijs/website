@@ -25,7 +25,7 @@ This will return `true` as
 the ![emoji](https://cdn.discordapp.com/emojis/1003365344724910191.webp?size=16&quality=lossless) emoji exists:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildEmojiExists",
   code: `
   $guildEmojiExists[<:LerefMoney:1003365344724910191>;$guildID]

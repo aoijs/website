@@ -23,7 +23,7 @@ $spawnShard[shard]
 This will spawn shard `1`:
 
 ```javascript
-bot.command({
+client.command({
   name: "spawnShard",
   code: `
    $spawnShard[1]`,

@@ -27,7 +27,7 @@ $autoCompleteRespond[[{
 Create the slash command, this will create a global application command with the name of "example" with an option which uses autoComplete:
 
 ```javascript
-bot.command({
+client.command({
   name: "createApplicationCommand",
   code: `
   $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;slash;[{
@@ -43,7 +43,7 @@ bot.command({
 Checking if autoComplete equals `true`, if so it will respond with the given respond (addition of the code above):
 
 ```javascript
-bot.command({
+client.command({
   name: "example",
   prototype: "slash",
   $if: "old",
@@ -60,7 +60,7 @@ bot.command({
 Create the slash-command, this will create a global application command with the name "example":
 
 ```javascript
-bot.command({
+client.command({
   name: "createApplicationCommand",
   code: `
   $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;slash;[{

@@ -23,7 +23,7 @@ $vanityUses[guildID?]
 This will return the uses of your guild's vanity URL, if you have one:
 
 ```javascript
-bot.command({
+client.command({
   name: "vanityUses",
   code: `
   $vanityUses[$guildID]

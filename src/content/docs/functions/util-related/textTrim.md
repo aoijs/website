@@ -23,7 +23,7 @@ $textTrim[text]
 This will remove any extra spaces of the given text, in this case it would return `Imagine a string package.`:
 
 ```javascript
-bot.command({
+client.command({
   name: "textTrim",
   code: `
     $textTrim[      Imagine a string package      ]

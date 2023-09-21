@@ -23,7 +23,7 @@ $guildName[guildID?]
 This will return the name of your guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "guildName",
   code: `
   $guildName[$guildID]

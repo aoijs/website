@@ -26,7 +26,7 @@ This send a custom emoji of your choice, replace emojiResolver with an actual em
 Tries to search for the emoji in all guilds the bot is in:
 
 ```javascript
-bot.command({
+client.command({
   name: "customEmoji",
   code: `
   $customEmoji[emojiResolver;global]
@@ -37,7 +37,7 @@ bot.command({
 Tries to return the emoji of the given guild:
 
 ```javascript
-bot.command({
+client.command({
   name: "customEmoji",
   code: `
   $customEmoji[emojiResolver;specific guild ID]

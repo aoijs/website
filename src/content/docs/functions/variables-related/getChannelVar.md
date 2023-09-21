@@ -25,7 +25,7 @@ $getChannelVar[varname;channelID?;table?]
 This will return the value of a variable called "Example":
 
 ```javascript
-bot.command({
+client.command({
   name: "getChannelVar",
   code: `
     $getChannelVar[Example;$channelID;main]

@@ -24,7 +24,7 @@ $isHoisted[roleID;guildID?]
 This will check if a role called `Owner` is hoisted in your server:
 
 ```javascript
-bot.command({
+client.command({
   name: "isHoisted",
   code: `
   $isHoisted[$findRole[Owner];$guildID]
