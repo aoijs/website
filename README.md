@@ -9,9 +9,8 @@
 
 <div align="center">
     <a href="https://aoi.js.org/">Home Page</a> |
-    <a href="https://discord.gg/HMUfMXDQsV">Discord</a> |
-    <a href="https://aoi.js.org/wikis">Community Wikis</a> |
-    <a href="https://aoi.js.org/docs/">Documentation</a>
+    <a href="https://aoi.js.org/invite">Discord</a> |
+    <a href="https://aoi.js.org/">Documentation</a>
 </div>
 </div>
 <br />
@@ -24,23 +23,22 @@
 
 <div align="center">
 
-[![Discord](https://img.shields.io/discord/773352845738115102.svg?label=&logo=discord&logoColor=ffffff&color=5865F2&labelColor=5865F2)](https://discord.gg/HMUfMXDQsV)
 [![NPM](https://img.shields.io/npm/v/aoi.js.svg)](https://www.npmjs.com/package/aoi.js)
 [![Downloads](https://img.shields.io/npm/dt/aoi.js.svg)](https://www.npmjs.com/package/aoi.js)
-[![License](https://img.shields.io/npm/l/aoi.js.svg)](https://github.com/AkaruiDevelopment/aoi.js/blob/v6/LICENSE)
 [![Stars](https://img.shields.io/github/stars/AkaruiDevelopment/aoi.js.svg)](https://github.com/AkaruiDevelopment/aoi.js/stargazers)
-[![Crowdin](https://badges.crowdin.net/aoijs-documentation/localized.svg)](https://crowdin.com/project/aoijs-documentation)
+[![License](https://img.shields.io/npm/l/aoi.js.svg)](https://github.com/AkaruiDevelopment/aoi.js/blob/v6/LICENSE)
+[![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build)
 
 </div>
 
-## What is aoi.js?
+## ❓ What is aoi.js?
 
 aoi.js is a JavaScript library that is designed to make it easy to build Discord bots. It is open-source and free to
 use, and provides a simple, easy-to-use interface for interacting with the Discord API and handling events. aoi.js is
 suitable for beginners who are new to building bots, as well as experienced developers who want to save time and
 streamline their workflow.
 
-## Setup
+## 🚀 Setup
 
 ```javascript
 const { AoiClient } = require("aoi.js");
@@ -96,16 +94,14 @@ client.command({
 });
 ```
 
-## Contribution
+## 🐛 Contribution
 
 [Refer to contribution documentation for more information](https://github.com/AkaruiDevelopment/aoi.js/blob/v6/.github/CONTRIBUTING.md)
 
-## Our ♥️ Contributors
-
-### Aoi.js
+### 🧑‍💻 Aoi.js
 
 [![AkaruiDevelopment/aoi.js](https://contrib.rocks/image?repo=AkaruiDevelopment/aoi.js)](https://github.com/AkaruiDevelopment/aoi.js)
 
-### Documentation
+### 📄 Documentation 
 
 [![aoijs/website](https://contrib.rocks/image?repo=aoijs/website)](https://github.com/aoijs/website)
