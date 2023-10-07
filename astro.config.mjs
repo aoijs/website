@@ -1,15 +1,19 @@
 import { defineConfig } from "astro/config";
-import starlight from "@astrojs/starlight";
 import { rehypeHeadingIds } from "@astrojs/markdown-remark";
+import starlight from "@astrojs/starlight";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import react from "@astrojs/react";
 import expressiveCode from "astro-expressive-code";
 
-// https://astro.build/config
 export default defineConfig({
   site: "https://aoi.js.org",
   integrations: [
     expressiveCode({
+      textMarkers: {
+        styleOverrides: {
+          defaultChroma: '55',
+        },
+      },
       frames: {
         showCopyToClipboardButton: true,
       },

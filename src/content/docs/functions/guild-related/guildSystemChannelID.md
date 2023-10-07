@@ -27,6 +27,6 @@ client.command({
   name: "guildSystemChannelID",
   code: `
   $guildSystemChannelID[$guildID]
-  `,
+  `
 });
 ```

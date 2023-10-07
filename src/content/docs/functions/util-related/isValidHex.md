@@ -27,7 +27,7 @@ client.command({
   name: "isValidHex",
   code: `
   $isValidHex[#30dbd8]
-  `,
+  `
 });
 ```
 
@@ -38,6 +38,6 @@ client.command({
   name: "isValidHex",
   code: `
   $isValidHex[80]
-  `,
+  `
 });
 ```

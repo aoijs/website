@@ -28,6 +28,6 @@ client.command({
   name: "isGuildMuted",
   code: `
   $isGuildMuted[$authorID;$guildID]
-  `,
+  `
 });
 ```

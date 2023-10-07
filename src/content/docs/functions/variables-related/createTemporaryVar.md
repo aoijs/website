@@ -28,6 +28,6 @@ client.command({
   name: "createTemporaryVar",
   code: `
   $createTemporaryVar[main;variable;value]
-  `,
+  `
 });
 ```

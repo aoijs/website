@@ -28,6 +28,6 @@ client.command({
   name: "memberJoinPosition",
   code: `
   $memberJoinPosition[$authorID;$guildID]
-  `,
+  `
 });
 ```

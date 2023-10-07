@@ -27,6 +27,6 @@ client.command({
   name: "multi",
   code: `
   $multi[8;9]
-  `,
+  `
 });
 ```

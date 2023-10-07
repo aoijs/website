@@ -28,6 +28,6 @@ client.command({
   $ordinal[50] -> Returns 50th
   $ordinal[11] -> Returns 11st
   $ordinal[88] -> Returns 88th
-  `,
+  `
 });
 ```

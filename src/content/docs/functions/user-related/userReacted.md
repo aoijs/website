@@ -32,6 +32,6 @@ client.command({
   code: `
 $userReacted[$channelID;$messageID;$clientID;😩]
 $addCmdReactions[😩]
-  `,
+  `
 });
 ```

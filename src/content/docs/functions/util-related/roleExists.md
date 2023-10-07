@@ -28,6 +28,6 @@ client.command({
   name: "roleExists",
   code: `
   $roleExists[900004369355931729;$guildID]
-  `,
+  `
 });
 ```

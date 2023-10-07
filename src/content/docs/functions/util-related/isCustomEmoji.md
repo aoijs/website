@@ -30,6 +30,6 @@ client.command({
   name: "isCustomEmoji",
   code: `
   $isCustomEmoji[<:LerefMoney:1003365344724910191>;773352845738115102]
-  `,
+  `
 });
 ```

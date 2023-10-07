@@ -29,6 +29,6 @@ client.command({
   name: "rolePerms",
   code: `
   $rolePerms[$guildID;, ;$guildID]
-  `,
+  `
 });
 ```

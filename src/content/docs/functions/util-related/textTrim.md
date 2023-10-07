@@ -27,6 +27,6 @@ client.command({
   name: "textTrim",
   code: `
     $textTrim[      Imagine a string package      ]
-    `,
+    `
 });
 ```

@@ -28,13 +28,13 @@ client.command({
   code: `
     $textSplitMap[devs]
     $textSplit[Ayaka,Leref,Ferel,Blurr;,]
-    `,
+    `
 });
 
 client.awaitedCommand({
   name: "devs",
   code: `
     $message[1]
-    `,
+    `
 });
 ```

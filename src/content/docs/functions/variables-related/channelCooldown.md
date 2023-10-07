@@ -34,6 +34,6 @@ client.command({
   code: `
   hello
   $channelCooldown[2m;Please wait %time% to execute this command again.]
-  `,
+  `
 });
 ```

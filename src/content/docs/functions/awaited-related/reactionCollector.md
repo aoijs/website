@@ -36,13 +36,13 @@ client.command({
   code: `
   $reactionCollector[$channelID;$splitText[1];$authorID;10m;👀;awaitReaction;;true]
   $textSplit[$sendMessage[React with "👀" for something special!;true]; ]
-  `,
+  `
 });
 
 client.awaitedCommand({
   name: "awaitReaction",
   code: `
   $sendMessage[👀 what's this?]
-  `,
+  `
 });
 ```

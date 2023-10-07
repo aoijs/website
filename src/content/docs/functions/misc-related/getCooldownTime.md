@@ -31,6 +31,6 @@ client.command({
   code: `
     $cooldown[2m;]
     $getCooldownTime[2m;user;getCooldownTime;$authorID]
-    `,
+    `
 });
 ```

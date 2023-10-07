@@ -27,6 +27,6 @@ client.command({
   name: "isDM",
   code: `
   $isDM[$channelID]
-  `,
+  `
 });
 ```

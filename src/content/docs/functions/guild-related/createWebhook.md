@@ -31,6 +31,6 @@ client.command({
   name: "createWebhook",
   code: `
   $createWebhook[$channelID;aoi.js is great;$userAvatar[$authorID];Just testing.;, ]
-  `,
+  `
 });
 ```

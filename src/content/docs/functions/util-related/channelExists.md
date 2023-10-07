@@ -27,6 +27,6 @@ client.command({
   name: "channelExists",
   code: `
   $channelExists[general]
-  `,
+  `
 });
 ```

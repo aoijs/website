@@ -27,6 +27,6 @@ client.command({
   $arrayJoin[array;, ]
   $arrayShuffle[array]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `,
+  `
 });
 ```

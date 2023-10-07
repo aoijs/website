@@ -52,6 +52,6 @@ client.command({
   \`\`\`
   $fetch[message;$messageID;id]
   \`\`\`
-  `,
+  `
 });
 ```

@@ -29,6 +29,6 @@ client.command({
   name: "userNickname",
   code: `
   $userNickname[$guildID;$authorID;true]
-  `,
+  `
 });
 ```

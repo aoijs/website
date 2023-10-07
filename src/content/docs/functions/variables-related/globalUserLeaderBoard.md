@@ -40,6 +40,6 @@ client.command({
   name: "globalUserLeaderBoard",
   code: `
     $globalUserLeaderBoard[Example;asc;{top} - {username} - {value};10;1;main]
-    `,
+    `
 });
 ```

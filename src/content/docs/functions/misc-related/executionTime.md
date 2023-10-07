@@ -21,6 +21,6 @@ client.command({
   name: "executionTime",
   code: `
     This took: $executionTime MS
-  `,
+  `
 });
 ```

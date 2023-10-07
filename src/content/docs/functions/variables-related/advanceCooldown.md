@@ -33,6 +33,6 @@ client.command({
   name: "advanceCooldown",
   code: `
   $advanceCooldown[2m;$guildID;]
-  `,
+  `
 });
 ```

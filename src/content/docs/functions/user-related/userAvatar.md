@@ -30,6 +30,6 @@ client.command({
   name: "userAvatar",
   code: `
   $userAvatar[$authorID;2048;true;webp]
-  `,
+  `
 });
 ```

@@ -35,6 +35,6 @@ client.command({
   name: "guildVerificationLevel",
   code: `
   $guildVerificationLevel[$guildID]
-  `,
+  `
 });
 ```

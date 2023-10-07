@@ -29,6 +29,6 @@ client.command({
   name: "banCount",
   code: `
   $banCount
-  `,
+  `
 });
 ```

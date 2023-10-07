@@ -42,6 +42,6 @@ client.command({
   name: "removeFilter",
   code: `
     $removeFilter[{"NIGHT_CORE", "BASS_BOOST"}]
-  `,
+  `
 });
 ```

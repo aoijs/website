@@ -30,6 +30,6 @@ client.command({
   name: "removeThreadMember",
   code: `
    $removeThreadMember[$channelID;threadID;$authorID;Testing functions!]
-  `,
+  `
 });
 ```

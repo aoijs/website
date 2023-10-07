@@ -27,6 +27,6 @@ client.command({
   name: "isVoice",
   code: `
   $isVoice[$channelID]
-  `,
+  `
 });
 ```

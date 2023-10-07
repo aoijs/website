@@ -28,6 +28,6 @@ client.command({
   name: "isStreaming",
   code: `
   $isStreaming[$authorID;$guildID]
-  `,
+  `
 });
 ```

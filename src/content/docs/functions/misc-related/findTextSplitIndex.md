@@ -28,6 +28,6 @@ client.command({
   code: `
   $findTextSplitIndex[Cya]
   $textSplit[Hello, Bye, Cya;, ]
-  `,
+  `
 });
 ```

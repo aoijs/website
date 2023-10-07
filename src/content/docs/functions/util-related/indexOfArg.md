@@ -28,6 +28,6 @@ client.command({
   name: "indexOfArgs",
   code: `
   $indexOfArgs[aoi.js is great for users who are new to Discord's API!;great]
-  `,
+  `
 });
 ```

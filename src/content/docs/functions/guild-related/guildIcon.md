@@ -30,6 +30,6 @@ client.command({
   name: "guildIcon",
   code: `
   $guildIcon[$guildID;4096;true;webp]
-  `,
+  `
 });
 ```

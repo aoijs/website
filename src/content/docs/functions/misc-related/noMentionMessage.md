@@ -25,6 +25,6 @@ client.command({
   name: "noMentionMessage",
   code: `
     $noMentionMessage[1]
-    `,
+    `
 });
 ```

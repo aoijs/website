@@ -30,6 +30,6 @@ client.command({
   name: "usersBanned",
   code: `
 $description[$usersBanned[$guildID;false;mention;, ]]
-  `,
+  `
 });
 ```

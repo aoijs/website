@@ -49,6 +49,6 @@ client.command({
   name: "channelCount",
   code: `
   $channelCount[$guildID;Voice]
-  `,
+  `
 });
 ```

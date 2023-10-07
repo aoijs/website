@@ -41,6 +41,6 @@ client.command({
   name: "rawLeaderboard",
   code: `
     $rawLeaderboard[Example;asc;globalUser;{top} - {username} - {value};10;1;main]
-    `,
+    `
 });
 ```

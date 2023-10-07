@@ -21,6 +21,6 @@ client.command({
   name: "allMembersCount",
   code: `
   $allMembersCount
-  `,
+  `
 });
 ```

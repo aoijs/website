@@ -27,6 +27,6 @@ client.command({
   name: "getChannelSlowmode",
   code: `
   The current channel slowmode is: $getChannelSlowmode[$channelID] seconds!
-  `,
+  `
 });
 ```

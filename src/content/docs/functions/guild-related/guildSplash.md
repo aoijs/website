@@ -30,6 +30,6 @@ client.command({
   name: "guildSplash",
   code: `
   $guildSplash[$guildID]
-  `,
+  `
 });
 ```

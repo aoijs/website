@@ -27,6 +27,6 @@ client.command({
   name: "guildMaxStageVideoChannelUsers",
   code: `
   $guildMaxStageVideoChannelUsers[$guildID]
-  `,
+  `
 });
 ```

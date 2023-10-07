@@ -25,6 +25,6 @@ client.command({
   name: "noEscapingMessage",
   code: `
     $noEscapingMessage[1]
-    `,
+    `
 });
 ```

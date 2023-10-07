@@ -29,6 +29,6 @@ client.command({
   name: "lockThread",
   code: `
   $lockThread[$channelID;threadID;Example reason!]
-  `,
+  `
 });
 ```

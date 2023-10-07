@@ -29,6 +29,6 @@ client.command({
   code: `
   $webhookExists[$splitText[1];$splitText[2]]
   $textSplit[$createWebhook[$channelID;aoi.js is great;$userAvatar[$authorID];Just testing.;, ];, ]
-  `,
+  `
 });
 ```

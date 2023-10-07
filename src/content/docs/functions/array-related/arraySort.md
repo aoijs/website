@@ -28,6 +28,6 @@ client.command({
   $arrayJoin[array;, ]
   $arraySort[array;asc]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `,
+  `
 });
 ```

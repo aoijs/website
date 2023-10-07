@@ -28,6 +28,6 @@ client.command({
   name: "memberDisplayColor",
   code: `
   $memberDisplayColor[$guildID;$authorID]
-  `,
+  `
 });
 ```

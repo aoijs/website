@@ -37,7 +37,7 @@ client.command({
   name: "resolveColor",
   code: `
   $resolveColor[rgb;decimal;50;168;82]
-  `,
+  `
 });
 ```
 
@@ -48,7 +48,7 @@ client.command({
   name: "resolveColor",
   code: `
   $resolveColor[decimal;rgb;#32a852]
-  `,
+  `
 });
 ```
 
@@ -59,6 +59,6 @@ client.command({
   name: "resolveColor",
   code: `
   $resolveColor[decimal;number;#32a852]
-  `,
+  `
 });
 ```

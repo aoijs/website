@@ -43,6 +43,6 @@ client.awaitedCommand({
   name: "awaitedcommandexample",
   code: `
   Nice to meet you, $message!
-  `,
+  `
 });
 ```

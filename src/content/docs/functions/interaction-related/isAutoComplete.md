@@ -47,7 +47,7 @@ client.command({
   $else
   $interactionReply[$slashOption[option];;;;everyone]
   $endif
-  `,
+  `
 });
 ```
 
@@ -92,6 +92,6 @@ client.command({
   $else
   $interactionReply[$slashOption[option] - autocomplete #SEMI# $slashOption[anotheroption] - false autocomplete;;;;everyone]
   $endif
-  `,
+  `
 });
 ```

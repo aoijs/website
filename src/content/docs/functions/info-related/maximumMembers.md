@@ -27,6 +27,6 @@ client.command({
   name: "maximumMembers",
   code: `
   You can have: $maximumMembers[$guildID] Members in this guild!
-  `,
+  `
 });
 ```

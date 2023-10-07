@@ -34,6 +34,6 @@ client.command({
   code: `
 $getReactions[$channelID;$messageID;👋;true;mention]
 $addCmdReactions[👋]
-  `,
+  `
 });
 ```

@@ -38,6 +38,6 @@ client.command({
   code: `
   $modifyRolePerms[$guildID;$guildID;+sendmessages;+addreactions]"
   }]
-  `,
+  `
 });
 ```

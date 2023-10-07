@@ -29,6 +29,6 @@ client.command({
   name: "getGuildVar",
   code: `
     $getGuildVar[Example;$guildID;main]
-    `,
+    `
 });
 ```

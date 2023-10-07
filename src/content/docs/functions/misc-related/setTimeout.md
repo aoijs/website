@@ -34,13 +34,13 @@ client.command({
   name: "setTimeout",
   code: `
     $setTimeout[timeoutCommand;10s;{"channelID": "$channelID", "authorID": "$authorID"};false]
-    `,
+    `
 });
 
 client.timeoutCommand({
   name: "timeoutCommand",
   code: `
     $channelSendMessage[$timeoutData[channelID];Hello, <@$timeoutData[authorID]>!]
-    `,
+    `
 });
 ```

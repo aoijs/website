@@ -27,6 +27,6 @@ client.command({
   name: "isInteger",
   code: `
   $isInteger[$message]
-  `,
+  `
 });
 ```

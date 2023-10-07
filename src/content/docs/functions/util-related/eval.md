@@ -33,6 +33,6 @@ client.command({
     \`\`\`
     $eval[$authorID;true;true;true;true]
     \`\`\`
-  `,
+  `
 });
 ```

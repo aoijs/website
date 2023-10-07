@@ -27,6 +27,6 @@ client.command({
   name: "leaveVC",
   code: `
     $leaveVC[$guildID]
-  `,
+  `
 });
 ```

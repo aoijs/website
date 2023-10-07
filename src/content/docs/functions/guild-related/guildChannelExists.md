@@ -28,6 +28,6 @@ client.command({
   name: "guildChannelExists",
   code: `
   $guildChannelExists[$guildID;rules]
-  `,
+  `
 });
 ```

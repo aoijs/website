@@ -27,6 +27,6 @@ client.command({
   name: "mentionedRoles",
   code: `
   $mentionedRoles[1]
-  `,
+  `
 });
 ```

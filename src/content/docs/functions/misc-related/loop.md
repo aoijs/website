@@ -30,7 +30,7 @@ client.command({
   code: `
     $loop[5;{ "message": "$get[messageID]", "channel": "$channelID" };editMessage]
     $let[messageID;$sendMessage[My ping is: $pingMS;true]]
-    `,
+    `
 });
 ```
 
@@ -42,6 +42,6 @@ client.awaitedCommand({
   code: `
     $editMessage[$awaitData[message];$pingMS;$awaitData[channel]]
     $wait[5s]
-    `,
+    `
 });
 ```

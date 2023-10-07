@@ -18,7 +18,7 @@ $getLeaderboardInfo[variable;id;type;option]
 | -------- | ------- | ------------------------------------------------------------------------------------------------------------------------------- | :------: |
 | variable | string  | Variable name.                                                                                                                  |   true   |
 | id       | integer | User/guild/channel/message ID.                                                                                                  |   true   |
-| type     | string  | Variable type <br /> 1. **global** <br /> 2. **user** <br /> 3. **guild** (default) <br /> 4. **channel** <br /> 5. **message** |   true   |
+| type     | string  | Variable type <br /> 1. **global** <br /> 2. **guild** (default) <br /> 3. **channel** <br /> 4. **message** |   true   |
 | option   | string  | Option to return <br /> 1. **top** <br /> 2. **value** <br /> 3. **tag** <br /> 4. **username**                                 |   true   |
 
 ## Example(s)
@@ -29,7 +29,7 @@ This will return the position of the current guild:
 client.command({
   name: "getLeaderboardInfo",
   code: `
-    $getLeaderboardInfo[Example;$guildID;guild;top]
-    `,
+    $getLeaderboardInfo[Example;$guildID;user;top]
+    `
 });
 ```

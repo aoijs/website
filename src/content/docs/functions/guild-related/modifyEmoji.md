@@ -30,6 +30,6 @@ client.command({
   name: "modifyEmoji",
   code: `
   $modifyEmoji[$guildID;emojiID;Example]
-  `,
+  `
 });
 ```

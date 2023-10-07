@@ -29,6 +29,6 @@ client.command({
   code: `
     Ok.
     $onlyForIDs[$botOwnerID;You can't use that command!]
-    `,
+    `
 });
 ```

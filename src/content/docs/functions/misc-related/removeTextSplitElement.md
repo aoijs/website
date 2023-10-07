@@ -28,6 +28,6 @@ client.command({
   code: `
     $removeTextSplitElement[bye]
     $textSplit[hello, bye, aoi.js;, ]
-    `,
+    `
 });
 ```

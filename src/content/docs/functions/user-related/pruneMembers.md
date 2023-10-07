@@ -33,6 +33,6 @@ client.command({
   name: "pruneMembers",
   code: `
    $pruneMembers[4;$guildID;$guildID;true;Pruning!;true]
-  `,
+  `
 });
 ```

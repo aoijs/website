@@ -29,6 +29,6 @@ client.command({
   name: "usersInChannel",
   code: `
   $usersInChannel[$voiceID;user;, ]
-  `,
+  `
 });
 ```

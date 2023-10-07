@@ -30,6 +30,6 @@ client.command({
   name: "moveUser",
   code: `
   $moveUser[$guildID;userID;new voice channel ID;Testing!]
-  `,
+  `
 });
 ```

@@ -29,6 +29,6 @@ client.command({
   name: "setUserNickname",
   code: `
   $setUserNickname[$authorID;I love aoi.js;They simply love aoi.js]
-  `,
+  `
 });
 ```

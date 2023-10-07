@@ -29,6 +29,6 @@ client.command({
   name: "mentionedChannels",
   code: `
   $mentionedChannels[1;true]
-  `,
+  `
 });
 ```

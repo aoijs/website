@@ -27,6 +27,6 @@ client.command({
   name: "username",
   code: `
   $username[$authorID]
-  `,
+  `
 });
 ```

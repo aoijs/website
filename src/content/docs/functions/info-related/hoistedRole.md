@@ -29,6 +29,6 @@ client.command({
   name: "hoistedRole",
   code: `
   $hoistedRole[$authorID;$guildID;name]
-  `,
+  `
 });
 ```

@@ -27,6 +27,6 @@ client.command({
   name: "truncate",
   code: `
   $truncate[775.9723]
-  `,
+  `
 });
 ```

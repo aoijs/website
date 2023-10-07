@@ -77,6 +77,6 @@ client.command({
   name: "getClientInvite",
   code: `
   Invite me here: $getClientInvite[administrator]
-  `,
+  `
 });
 ```

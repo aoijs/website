@@ -28,6 +28,6 @@ client.command({
   name: "userActivity",
   code: `
   $userActivity[$guildID;$authorID]
-  `,
+  `
 });
 ```

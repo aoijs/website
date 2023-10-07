@@ -28,6 +28,6 @@ client.command({
   name: "fetchActiveThreads",
   code: `
   $fetchActiveThreads[$channelID;name]
-  `,
+  `
 });
 ```

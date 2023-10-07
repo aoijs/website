@@ -27,6 +27,6 @@ client.command({
   name: "guildNSFWLevel",
   code: `
   $guildNSFWLevel[$guildID]
-  `,
+  `
 });
 ```

@@ -29,6 +29,6 @@ client.command({
   name: "unlockThread",
   code: `
   $unlockThread[$channelID;threadID;Example reason!]
-  `,
+  `
 });
 ```

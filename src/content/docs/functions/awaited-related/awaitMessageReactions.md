@@ -37,13 +37,13 @@ client.command({
   code: `
   React with "❤️" for a surprise! 
   $awaitMessageReactions[$channelID;$messageID;$authorID;10s;❤️;awaitedcommandexample;Whoops! You didn't react in time..]
-  `,
+  `
 });
 
 client.awaitedCommand({
   name: "awaitedcommandexample",
   code: `
   Nice, you reacted with ❤️.
-  `,
+  `
 });
 ```

@@ -29,6 +29,6 @@ client.command({
   name: "resetUserVar",
   code: `
     $resetUserVar[Example;$guildID;main]
-    `,
+    `
 });
 ```

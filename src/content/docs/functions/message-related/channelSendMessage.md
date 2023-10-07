@@ -29,7 +29,7 @@ client.command({
   name: "channelSendMessage",
   code: `
   $channelSendMessage[$channelID;Hello!;false]
-  `,
+  `
 });
 ```
 
@@ -42,6 +42,6 @@ client.command({
   name: "channelSendMessage",
   code: `
   $channelSendMessage[$channelID;{newEmbed:{title:Hello}{footer:Bye}};false]
-  `,
+  `
 });
 ```

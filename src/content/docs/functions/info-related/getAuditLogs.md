@@ -100,6 +100,6 @@ client.command({
   name: "getAuditLogs",
   code: `
   $getAuditLogs[$guildID;$authorID;5;$authorID;12;{executor.username}: {target.id} - {action}]
-  `,
+  `
 });
 ```

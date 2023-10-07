@@ -35,6 +35,6 @@ client.command({
   name: "createAutomodRule",
   code: `
   $createAutomodRule[$guildID;Block Bad Words;1;{ "keywordFilter": ["bad", "words"]};[{ "type": 1 }];true;;;This is a reason!]
-  `,
+  `
 });
 ```

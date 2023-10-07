@@ -27,6 +27,6 @@ client.command({
   name: "userBanner",
   code: `
   $userBannerColor[$authorID]
-  `,
+  `
 });
 ```

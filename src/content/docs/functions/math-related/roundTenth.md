@@ -28,6 +28,6 @@ client.command({
   name: "roundTenth",
   code: `
   $roundTenth[503.6972]
-  `,
+  `
 });
 ```

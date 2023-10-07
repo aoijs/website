@@ -62,6 +62,6 @@ client.command({
   name: "editChannel",
   code: `
   $editChannel[$channelID;i-love-aoi-js]
-  `,
+  `
 });
 ```

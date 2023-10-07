@@ -34,6 +34,6 @@ client.command({
   name: "boostingSince",
   code: `
   $boostingSince[$guildID;$authorID;date]
-  `,
+  `
 });
 ```

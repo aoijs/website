@@ -40,7 +40,7 @@ client.command({
   code: `
 <@$authorID>
 $disableMentionType[users] 
-  `,
+  `
 });
 ```
 
@@ -52,6 +52,6 @@ client.command({
   code: `
 <@$authorID>
 $disableMentionType[all] 
-  `,
+  `
 });
 ```

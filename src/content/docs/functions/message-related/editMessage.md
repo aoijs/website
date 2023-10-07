@@ -33,6 +33,6 @@ client.command({
   $editMessage[$get[id];Bye!]
   $wait[5s]
   $let[id;$sendMessage[Hello!;true]]
-  `,
+  `
 });
 ```

@@ -29,6 +29,6 @@ client.command({
   name: "advancedTextSplit",
   code: `
   $advancedTextSplit[Hello/Bye;/;1]
-  `,
+  `
 });
 ```

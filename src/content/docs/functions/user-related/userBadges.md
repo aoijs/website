@@ -28,6 +28,6 @@ client.command({
   name: "userBadges",
   code: `
   $userBadges[$authorID;, ]
-  `,
+  `
 });
 ```

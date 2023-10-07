@@ -33,6 +33,6 @@ client.command({
   code: `
   hello
   $guildCooldown[2m;Please wait %time% to execute this command again.]
-  `,
+  `
 });
 ```

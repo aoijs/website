@@ -29,6 +29,6 @@ client.command({
   name: "userHighestRole",
   code: `
   $userHighestRole[$authorID;$guildID;name]
-  `,
+  `
 });
 ```

@@ -27,6 +27,6 @@ client.command({
   name: "isValidObject",
   code: `
   $isValidObject[{"name":"Leref", "aoijs":"nice"}]
-  `,
+  `
 });
 ```

@@ -21,6 +21,6 @@ client.command({
   name: "queueLength",
   code: `
     $queueLength
-  `,
+  `
 });
 ```

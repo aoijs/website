@@ -33,6 +33,6 @@ client.command({
   code: `
   Hello! Did you really think this works?
   $dm[$authorID]
-  `,
+  `
 });
 ```

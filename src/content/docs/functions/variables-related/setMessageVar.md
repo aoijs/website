@@ -30,6 +30,6 @@ client.command({
   name: "setMessageVar",
   code: `
     $setMessageVar[Example;This is a value;$messageID;main]
-    `,
+    `
 });
 ```

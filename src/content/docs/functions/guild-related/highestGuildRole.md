@@ -28,6 +28,6 @@ client.command({
   name: "guildHighestRole",
   code: `
   $guildHighestRole[$guildID;name]
-  `,
+  `
 });
 ```

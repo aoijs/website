@@ -49,6 +49,6 @@ client.command({
   name: "randomChannelID",
   code: `
   <#$randomChannelID[$guildID;all]>
-  `,
+  `
 });
 ```

@@ -27,6 +27,6 @@ client.command({
   name: "guildWidgetChannelID",
   code: `
   $guildWidgetChannelID[$guildID]
-  `,
+  `
 });
 ```

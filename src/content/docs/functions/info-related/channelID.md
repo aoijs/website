@@ -27,6 +27,6 @@ client.command({
   name: "channelID",
   code: `
   $channelID
-  `,
+  `
 });
 ```

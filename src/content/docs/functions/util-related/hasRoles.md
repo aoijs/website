@@ -29,6 +29,6 @@ client.command({
   name: "hasRoles",
   code: `
   $hasRoles[$guildID;$authorID;$findRole[Owner]]
-  `,
+  `
 });
 ```

@@ -27,6 +27,6 @@ client.command({
   name: "guildCommunityUpdatesChannelID",
   code: `
   $guildCommunityUpdatesChannelID[$guildID]
-  `,
+  `
 });
 ```

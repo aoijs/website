@@ -31,6 +31,6 @@ client.command({
   name: "modifyWebhook",
   code: `
   $modifyWebhook[webhookID;Hello!;$userAvatar[$authorID];$channelID;Testing!]
-  `,
+  `
 });
 ```

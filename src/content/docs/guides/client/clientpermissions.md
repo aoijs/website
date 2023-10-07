@@ -15,7 +15,7 @@ id: permissions
   - Guild
   - PermissionsBitField: 3
 
-## kickmembers
+## banmembers
   - Allows banning members
   - Guild
   - PermissionsBitField: 4

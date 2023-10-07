@@ -28,6 +28,6 @@ client.command({
   name: "resetGlobalUserVar",
   code: `
     $resetGlobalUserVar[Example;main]
-    `,
+    `
 });
 ```

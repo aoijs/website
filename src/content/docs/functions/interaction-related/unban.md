@@ -29,6 +29,6 @@ client.command({
   name: "unban",
   code: `
   $unban[$guildID;$randomUserID;Some reason.]
-  `,
+  `
 });
 ```

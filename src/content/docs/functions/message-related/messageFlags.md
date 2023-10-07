@@ -29,6 +29,6 @@ client.command({
   name: "messageFlags",
   code: `
   $messageFlags[$messageID;, ;$channelID]
-  `,
+  `
 });
 ```

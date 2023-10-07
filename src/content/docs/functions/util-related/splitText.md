@@ -28,6 +28,6 @@ client.command({
   code: `
   $splitText[2]
   $textSplit[@akarui/aoi.db//aoi.js;//]
-  `,
+  `
 });
 ```

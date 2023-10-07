@@ -31,6 +31,6 @@ client.command({
   $clearReactions[$channelID;$messageID;🥱]
   $wait[2s]
   $addCmdReactions[🥱;😩]
-  `,
+  `
 });
 ```

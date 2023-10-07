@@ -29,6 +29,6 @@ client.command({
   code: `
     Ok.
     $onlyForGuilds[guildID;guildID;You can't use that command here!]
-    `,
+    `
 });
 ```

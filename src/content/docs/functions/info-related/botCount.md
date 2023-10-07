@@ -27,6 +27,6 @@ client.command({
   name: "guildBotCount",
   code: `
   $guildBotCount
-  `,
+  `
 });
 ```

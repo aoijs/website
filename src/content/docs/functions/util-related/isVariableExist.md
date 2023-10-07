@@ -28,6 +28,6 @@ client.command({
   name: "isVariableExist",
   code: `
   $isVariableExist[Example;main]
-  `,
+  `
 });
 ```

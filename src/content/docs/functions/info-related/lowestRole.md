@@ -28,6 +28,6 @@ client.command({
   name: "userLowestRole",
   code: `
   $userLowestRole[$authorID;$guildID]
-  `,
+  `
 });
 ```

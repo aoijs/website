@@ -21,7 +21,7 @@ First of all we have to add the following piece of code to our main file:
 
 ```javascript
 client.status({
-    text: string,
+    name: string,
     type: string,
     time: number,
     URL?: string,
@@ -33,7 +33,7 @@ When you use sharding you can individually change the status of each shard:
 
 ```javascript
 client.status({
-    text: string,
+    name: string,
     type: string,
     time: number,
     shard: number
@@ -48,20 +48,20 @@ If you want to have multiple statuses just add multiple `client.status({...})`, 
 
 ```javascript title="index.js"
 client.status({
-    text: "Example Text one!",
+    name: "Example Text one!",
     type: "PLAYING",
     time: 12
 });
 
 client.status({
-    text: "Example Text two!",
+    name: "Example Text two!",
     type: "STREAMING",
     time: 25,
     URL: "some URL"
 });
 
 client.status({
-    text: "Doing nothing..", // normal status as any other Discord User without any state
+    name: "Doing nothing..", // normal status as any other Discord User without any state
     time: 50,
     type: "CUSTOM",
 });
@@ -82,7 +82,7 @@ You can also set the bot's presence, by adding the `status` property, for exampl
 
 ```javascript title="index.js"
 client.status({
-    text: "Example Text!",
+    name: "Example Text!",
     type: "PLAYING",
     status: "dnd",
     time: 12

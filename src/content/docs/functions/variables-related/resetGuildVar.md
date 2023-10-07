@@ -28,6 +28,6 @@ client.command({
   name: "resetGuildVar",
   code: `
     $resetGuildVar[Example;main]
-    `,
+    `
 });
 ```

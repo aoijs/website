@@ -21,6 +21,6 @@ client.command({
   name: "readyTimestamp",
   code: `
   $readyTimestamp
-  `,
+  `
 });
 ```

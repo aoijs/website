@@ -35,7 +35,7 @@ client.command({
   Select an option.
   
   $addSelectMenu[1;yourCustomID;This is a placeholder!;1;1;false;A Option:Description of option B:anotherCustomID:false;B Option:Description of option B:andAnotherCustomID:true]
-  `,
+  `
 });
 
 module.exports = [

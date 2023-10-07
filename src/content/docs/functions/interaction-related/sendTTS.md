@@ -29,6 +29,6 @@ client.command({
   name: "sendTTS",
   code: `
    $sendTTS[$channelID;Hello!;false]
-  `,
+  `
 });
 ```

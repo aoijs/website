@@ -27,6 +27,6 @@ client.command({
   name: "digitalFormat",
   code: `
   $digitalFormat[240000]
-  `,
+  `
 });
 ```

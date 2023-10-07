@@ -33,6 +33,6 @@ client.command({
   code: `
   Hello
   $globalCooldown[5m;Please wait %time% to execute this command again.]
-  `,
+  `
 });
 ```

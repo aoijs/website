@@ -30,6 +30,6 @@ client.command({
   code: `
   $title[Hello!]
   $footer[Hello again!;$userAvatar]
-  `,
+  `
 });
 ```

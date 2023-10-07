@@ -30,6 +30,6 @@ client.command({
   name: "getUserVar",
   code: `
     $getUserVar[Example;$authorID;$guildID;main]
-    `,
+    `
 });
 ```

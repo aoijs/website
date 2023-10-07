@@ -27,6 +27,6 @@ client.command({
   name: "randomText",
   code: `
   $randomText[Hello;Bye;Goodnight;See you]
-  `,
+  `
 });
 ```

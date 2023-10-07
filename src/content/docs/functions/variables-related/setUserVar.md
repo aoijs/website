@@ -31,6 +31,6 @@ client.command({
   name: "setUserVar",
   code: `
     $setUserVar[Example;This is a value;$authorID;$guildID;main]
-    `,
+    `
 });
 ```

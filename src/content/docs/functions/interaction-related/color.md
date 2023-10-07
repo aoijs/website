@@ -66,7 +66,7 @@ client.command({
   code: `
   $description[What a nice color!]
   $color[Red]
-  `,
+  `
 });
 ```
 
@@ -76,6 +76,6 @@ client.command({
   code: `
   $description[What a nice color!]
   $color[ED4245]
-  `,
+  `
 });
 ```

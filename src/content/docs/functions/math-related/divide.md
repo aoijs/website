@@ -27,6 +27,6 @@ client.command({
   name: "divide",
   code: `
   $divide[69;3]
-  `,
+  `
 });
 ```

@@ -28,6 +28,6 @@ client.command({
   name: "isBanned",
   code: `
   $isBanned[$guildID;$authorID]
-  `,
+  `
 });
 ```

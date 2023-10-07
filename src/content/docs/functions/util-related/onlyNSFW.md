@@ -28,6 +28,6 @@ client.command({
   code: `
     Ok.
     $onlyNSFW[You can't use that command here!]
-    `,
+    `
 });
 ```

@@ -28,6 +28,6 @@ client.command({
   name: "fileSize",
   code: `
   $fileSize[./index.js;GB]
-  `,
+  `
 });
 ```

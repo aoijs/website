@@ -28,6 +28,6 @@ client.command({
   name: "channelNSFW",
   code: `
   $channelNSFW[$channelID]
-  `,
+  `
 });
 ```

@@ -29,6 +29,6 @@ client.command({
   name: "deleteInvite",
   code: `
   $deleteInvite[$guildID;ifawd9a;Testing!]
-  `,
+  `
 });
 ```

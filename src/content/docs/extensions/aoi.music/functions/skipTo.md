@@ -27,6 +27,6 @@ client.command({
   name: "skipTo",
   code: `
     $skipTo[3]
-  `,
+  `
 });
 ```

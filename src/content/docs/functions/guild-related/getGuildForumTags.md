@@ -31,7 +31,7 @@ client.command({
   name: "getGuildForumTags",
   code: `
   $getGuildForumTags[forumId;name;, ]
-  `,
+  `
 });
 ```
 
@@ -42,6 +42,6 @@ client.command({
   name: "getGuildForumTags",
   code: `
   $getGuildForumTags[forumId;Name: {name} -> Emoji: {emoji} {emojiId}]
-  `,
+  `
 });
 ```

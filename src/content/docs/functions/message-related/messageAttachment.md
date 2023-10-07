@@ -27,6 +27,6 @@ client.command({
   name: "messageAttachment",
   code: `
   You had the following attachment in your message: $messageAttachment
-  `,
+  `
 });
 ```

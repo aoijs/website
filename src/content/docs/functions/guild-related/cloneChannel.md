@@ -31,6 +31,6 @@ client.command({
   name: "cloneChannel",
   code: `
   $cloneChannel[$channelID;new channel;false]
-  `,
+  `
 });
 ```

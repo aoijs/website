@@ -27,6 +27,6 @@ client.command({
   name: "deleteStageInstance",
   code: `
   $deleteStageInstance[stageInstance]
-  `,
+  `
 });
 ```

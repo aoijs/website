@@ -29,6 +29,6 @@ client.command({
   name: "getAutomodRuleId",
   code: `
   $getAutomodRuleId[$guildId;Automod Rule;true]
-  `,
+  `
 });
 ```

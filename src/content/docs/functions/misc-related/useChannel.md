@@ -28,6 +28,6 @@ client.command({
   code: `
     $description[Hello!]
     $useChannel[$channelID]
-    `,
+    `
 });
 ```

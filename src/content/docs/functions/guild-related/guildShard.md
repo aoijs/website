@@ -31,6 +31,6 @@ client.command({
   name: "guildShard",
   code: `
   $guildShard[name;, ;$shardID]
-  `,
+  `
 });
 ```

@@ -28,6 +28,6 @@ client.command({
   name: "deleteSticker",
   code: `
   $deleteSticker[$guildID;sticker]
-  `,
+  `
 });
 ```

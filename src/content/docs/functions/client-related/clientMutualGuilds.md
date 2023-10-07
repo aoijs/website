@@ -28,6 +28,6 @@ client.command({
   name: "clientMutualGuilds",
   code: `
   $clientMutualGuilds[$authorID;, ]
-  `,
+  `
 });
 ```

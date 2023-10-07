@@ -32,6 +32,6 @@ client.command({
     "Leref": "Ferel",
     "dbd.js": "aoi.js"
   }]
-  `,
+  `
 });
 ```

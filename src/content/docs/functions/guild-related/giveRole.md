@@ -32,6 +32,6 @@ client.command({
   name: "giveRole",
   code: `
   $giveRole[$guildID;$authorID;$findRole[Admin];Some reason.]
-  `,
+  `
 });
 ```

@@ -31,6 +31,6 @@ client.command({
   code: `
   $addThreadMember[$channelID;$get[id];$randomUserID;testing]
   $let[id;$createThread[$channelID;example;1440;public;$messageID;true]]  
-  `,
+  `
 });
 ```

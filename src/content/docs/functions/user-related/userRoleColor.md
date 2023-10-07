@@ -28,6 +28,6 @@ client.command({
   name: "userRoleColor",
   code: `
   $userRoleColor[$authorID;$guildID]
-  `,
+  `
 });
 ```

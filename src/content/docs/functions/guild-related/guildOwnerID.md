@@ -27,6 +27,6 @@ client.command({
   name: "guildOwnerID",
   code: `
   $guildOwnerID[$guildID]
-  `,
+  `
 });
 ```

@@ -38,7 +38,7 @@ client.command({
   name: "getGuildInvite",
   code: `
   $getGuildInvite[$guildID]
-  `,
+  `
 });
 ```
 
@@ -56,6 +56,6 @@ client.command({
             "maxUses": 25,
             "unique": true
   }]
-  `,
+  `
 });
 ```

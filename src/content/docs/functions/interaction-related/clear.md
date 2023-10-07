@@ -30,6 +30,6 @@ client.command({
   name: "clear",
   code: `
   $clear[50;unPins;false;$channelID]
-  `,
+  `
 });
 ```

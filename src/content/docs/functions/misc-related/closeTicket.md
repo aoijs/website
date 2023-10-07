@@ -25,6 +25,6 @@ client.command({
   name: "closeTicket",
   code: `
   $closeTicket[Something went wrong!]
-  `,
+  `
 });
 ```

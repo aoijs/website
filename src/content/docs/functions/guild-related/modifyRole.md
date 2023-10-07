@@ -31,6 +31,6 @@ client.command({
   $modifyRole[$guildID;roleID;{
     "name": "Awesome!"
   }]
-  `,
+  `
 });
 ```

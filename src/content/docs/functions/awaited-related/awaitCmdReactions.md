@@ -35,13 +35,13 @@ client.command({
   code: `
   React with "❤️" for a surprise! 
   $awaitCmdReactions[$authorID;10s;❤️;awaitedCommandExample;Whoops! You didn't react in time..]
-  `,
+  `
 });
 
 client.awaitedCommand({
   name: "awaitedCommandExample",
   code: `
   Nice, you reacted with ❤️.
-  `,
+  `
 });
 ```

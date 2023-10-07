@@ -29,6 +29,6 @@ client.command({
   name: "userPerms",
   code: `
   $userPerms[$authorID;, ;$guildID]
-  `,
+  `
 });
 ```

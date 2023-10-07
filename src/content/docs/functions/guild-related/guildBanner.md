@@ -30,6 +30,6 @@ client.command({
   name: "guildBanner",
   code: `
   $guildBanner[$guildID]
-  `,
+  `
 });
 ```

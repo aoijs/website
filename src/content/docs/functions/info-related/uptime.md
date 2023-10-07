@@ -33,6 +33,6 @@ client.command({
   name: "uptime",
   code: `
   I've been up for $uptime[full]!
-  `,
+  `
 });
 ```

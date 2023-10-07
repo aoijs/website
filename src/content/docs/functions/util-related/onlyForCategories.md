@@ -30,6 +30,6 @@ client.command({
   code: `
     Ok.
     $onlyForCategories[categoryID;categoryID;You can't use that command here!]
-    `,
+    `
 });
 ```

@@ -36,6 +36,6 @@ client.command({
   name: "channelOverwrites",
   code: `
   $channelOverwrites[$channelID;{mention} {type} {allow} {deny};, ]
-  `,
+  `
 });
 ```

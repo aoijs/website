@@ -79,6 +79,6 @@ client.command({
   name: "hasPermsInChannel",
   code: `
   $hasPermsInChannel[$channelID;$authorID;sendmessages]
-  `,
+  `
 });
 ```

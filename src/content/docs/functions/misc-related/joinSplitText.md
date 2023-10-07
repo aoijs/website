@@ -28,6 +28,6 @@ client.command({
   code: `
     $joinSplitText[, ]
     $textSplit[Hello:Bye:Leref;:]
-    `,
+    `
 });
 ```

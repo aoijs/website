@@ -34,6 +34,6 @@ client.command({
   code: `
   hello
   $tempCooldown[2m;customid;Please wait %time% to execute this command again.]
-  `,
+  `
 });
 ```

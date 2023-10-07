@@ -28,6 +28,6 @@ client.command({
   name: "getRoleColor",
   code: `
   $getRoleColor[$userHighestRole]
-  `,
+  `
 });
 ```

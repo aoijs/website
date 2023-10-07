@@ -29,6 +29,6 @@ client.command({
   name: "getMessageVar",
   code: `
     $getMessageVar[Example;$messageID;main]
-    `,
+    `
 });
 ```

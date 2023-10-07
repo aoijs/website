@@ -28,6 +28,6 @@ client.command({
   name: "guildEmojis",
   code: `
   $guildEmojis[, ;$guildID]
-  `,
+  `
 });
 ```

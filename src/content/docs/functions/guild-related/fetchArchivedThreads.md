@@ -28,6 +28,6 @@ client.command({
   name: "fetchArchivedThreads",
   code: `
   $fetchArchivedThreads[$channelID;name]
-  `,
+  `
 });
 ```

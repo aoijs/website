@@ -54,6 +54,6 @@ client.command({
   name: "songInfo",
   code: `
     $songInfo[title]
-  `,
+  `
 });
 ```

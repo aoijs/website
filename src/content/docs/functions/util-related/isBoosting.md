@@ -28,6 +28,6 @@ client.command({
   name: "isBoosting",
   code: `
   $isBoosting[$authorID;$guildID]
-  `,
+  `
 });
 ```

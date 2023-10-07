@@ -28,6 +28,6 @@ client.command({
   name: "messageSlice",
   code: `
   $messageSlice[1;5]
-  `,
+  `
 });
 ```

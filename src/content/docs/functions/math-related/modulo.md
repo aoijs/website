@@ -27,6 +27,6 @@ client.command({
   name: "modulo",
   code: `
   $modulo[5;3]
-  `,
+  `
 });
 ```

@@ -30,7 +30,7 @@ client.command({
   name: "customEmoji",
   code: `
   $customEmoji[emojiResolver;global]
-  `,
+  `
 });
 ```
 
@@ -41,6 +41,6 @@ client.command({
   name: "customEmoji",
   code: `
   $customEmoji[emojiResolver;specific guild ID]
-  `,
+  `
 });
 ```

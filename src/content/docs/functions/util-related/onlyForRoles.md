@@ -30,6 +30,6 @@ client.command({
   code: `
     Ok.
     $onlyForRoles[roleID;roleID;You can't use that command!]
-    `,
+    `
 });
 ```

@@ -27,6 +27,6 @@ client.command({
   name: "autoPlay",
   code: `
     $autoPlay[relative]
-  `,
+  `
 });
 ```

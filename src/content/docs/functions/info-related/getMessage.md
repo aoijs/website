@@ -41,6 +41,6 @@ client.command({
   name: "getMessage",
   code: `
 $getMessage[$channelID;$messageID;content]
-  `,
+  `
 });
 ```

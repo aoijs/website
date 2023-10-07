@@ -28,6 +28,6 @@ client.command({
   name: "getVar",
   code: `
     $getVar[Example;main]
-    `,
+    `
 });
 ```

@@ -29,6 +29,6 @@ client.command({
   name: "membersCount",
   code: `
   $membersCount[$guildID;offline;true]
-  `,
+  `
 });
 ```

@@ -30,6 +30,6 @@ client.command({
   name: "setChannelVar",
   code: `
     $setChannelVar[Example;This is a value;$channelID;main]
-    `,
+    `
 });
 ```

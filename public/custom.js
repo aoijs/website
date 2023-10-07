@@ -1,8 +1,5 @@
 (() => {
   const key = "toc-position";
-
-  let timeout = 0;
-
   let position = { scrollTop: 0, details: [] };
 
   const sidebar = document.querySelector(
@@ -66,7 +63,5 @@
 
     document.addEventListener("mousemove", uic);
     document.addEventListener("click", uic);
-    document.addEventListener("touchmove", uic);
-    document.addEventListener("touchstart", uic);
   }
 })();

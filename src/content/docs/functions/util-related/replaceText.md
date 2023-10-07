@@ -30,7 +30,7 @@ client.command({
   name: "replaceText",
   code: `
   $replaceText[Monkey;M;D]
-  `,
+  `
 });
 ```
 
@@ -43,7 +43,7 @@ client.command({
   name: "replaceText",
   code: `
   $replaceText[I love drinking Coffee, Coffee gives me power! Coffee is bad for my health.;Coffee;orange juice;2]
-  `,
+  `
 });
 ```
 
@@ -54,6 +54,6 @@ client.command({
   name: "replaceText",
   code: `
   $replaceText[$replaceText[Leref and Ferel are the same person.;Ferel;Ayaka];are;are not]
-  `,
+  `
 });
 ```

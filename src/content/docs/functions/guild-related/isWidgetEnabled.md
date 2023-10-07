@@ -27,6 +27,6 @@ client.command({
   name: "isWidgetEnabled",
   code: `
   $isWidgetEnabled[$guildID]
-  `,
+  `
 });
 ```

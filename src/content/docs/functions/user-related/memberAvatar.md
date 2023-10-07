@@ -31,6 +31,6 @@ client.command({
   name: "memberAvatar",
   code: `
   $memberAvatar[$guildID;$authorID;2048;true;webp]
-  `,
+  `
 });
 ```

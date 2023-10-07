@@ -38,6 +38,6 @@ client.command({
   name: "creationDate",
   code: `
   Your account was created: $creationDate[$authorID;date]
-  `,
+  `
 });
 ```

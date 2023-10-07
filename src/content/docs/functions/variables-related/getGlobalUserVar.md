@@ -29,6 +29,6 @@ client.command({
   name: "getGlobalUserVar",
   code: `
     $getGlobalUserVar[Example;$authorID;main]
-    `,
+    `
 });
 ```

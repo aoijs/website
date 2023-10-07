@@ -28,6 +28,6 @@ client.command({
   name: "findRole",
   code: `
   $findRole[Owner;$guildID]
-  `,
+  `
 });
 ```

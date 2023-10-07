@@ -30,6 +30,6 @@ client.command({
   name: "guildEditPost",
   code: `
   $guildEditPost[forumId;This is a reason!;false;Tag 1;Tag 2;Tag 3]
-  `,
+  `
 });
 ```

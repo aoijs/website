@@ -41,6 +41,6 @@ client.command({
   name: "userLeaderBoard",
   code: `
     $userLeaderBoard[$guildID;Example;asc;{top} - {username} - {value};10;1;main]
-    `,
+    `
 });
 ```

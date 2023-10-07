@@ -27,6 +27,6 @@ client.command({
   name: "clientOwnerIDs",
   code: `
   $clientOwnerIDs
-  `,
+  `
 });
 ```

@@ -27,6 +27,6 @@ client.command({
   name: "guildBoostLevel",
   code: `
   $guildBoostLevel[$guildID]
-  `,
+  `
 });
 ```

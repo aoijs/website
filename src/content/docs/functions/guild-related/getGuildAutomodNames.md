@@ -27,6 +27,6 @@ client.command({
   name: "getGuildAutomodNames",
   code: `
   $getGuildAutomodNames[$guildID]
-  `,
+  `
 });
 ```

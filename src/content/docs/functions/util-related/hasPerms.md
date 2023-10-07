@@ -79,6 +79,6 @@ client.command({
   name: "hasPerms",
   code: `
   $hasPerms[$guildID;$authorID;kick]
-  `,
+  `
 });
 ```

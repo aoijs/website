@@ -30,6 +30,6 @@ client.command({
   name: "setGuildVar",
   code: `
     $setGuildVar[Example;This is a value;$guildID;main]
-    `,
+    `
 });
 ```

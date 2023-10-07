@@ -30,6 +30,6 @@ client.command({
   code: `
   <@$findMember[$message;false]> has been kicked!
   $kick[$guildID;$findMember[$message;false];Example reason!]
-  `,
+  `
 });
 ```

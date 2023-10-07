@@ -27,6 +27,6 @@ client.command({
   name: "toLowerCase",
   code: `
     $toLowerCase[AOI.JS IS GREAT.]
-    `,
+    `
 });
 ```

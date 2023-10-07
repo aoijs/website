@@ -39,6 +39,6 @@ client.command({
   name: "guildLeaderboard",
   code: `
     $guildLeaderboard[Example;asc;{top} - {name} - {value};10;1;main]
-    `,
+    `
 });
 ```

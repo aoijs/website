@@ -29,6 +29,6 @@ client.command({
   name: "guildRoles",
   code: `
   $description[$guildRoles[$guildID;name;, ]]
-  `,
+  `
 });
 ```

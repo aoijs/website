@@ -30,6 +30,6 @@ client.command({
   name: "userRoles",
   code: `
   $userRoles[$authorID;$guildID;id;, ]
-  `,
+  `
 });
 ```

@@ -21,6 +21,6 @@ client.command({
   name: "messageID",
   code: `
   The message ID of your the message you just sent is: "$messageID"
-  `,
+  `
 });
 ```

@@ -27,6 +27,6 @@ client.command({
   name: "toLocaleUpperCase",
   code: `
     $toLocaleUpperCase[hello, i'm happy.]
-    `,
+    `
 });
 ```

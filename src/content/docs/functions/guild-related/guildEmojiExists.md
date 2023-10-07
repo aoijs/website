@@ -29,6 +29,6 @@ client.command({
   name: "guildEmojiExists",
   code: `
   $guildEmojiExists[<:LerefMoney:1003365344724910191>;$guildID]
-  `,
+  `
 });
 ```

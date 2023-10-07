@@ -29,6 +29,6 @@ client.command({
   code: `
    Hello!
    $reply[$messageID;true]
-  `,
+  `
 });
 ```

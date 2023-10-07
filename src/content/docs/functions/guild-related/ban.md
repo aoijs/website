@@ -30,6 +30,6 @@ client.command({
   name: "ban",
   code: `
   $ban[$guildID;$randomUserID;7;Imagine getting banned.]
-  `,
+  `
 });
 ```

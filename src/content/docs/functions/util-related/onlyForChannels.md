@@ -30,6 +30,6 @@ client.command({
   code: `
     Ok.
     $onlyForChannels[channelID;channelID;You can't use that command here!]
-    `,
+    `
 });
 ```

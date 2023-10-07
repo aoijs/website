@@ -37,6 +37,6 @@ client.command({
   name: "modifyChannelPerms",
   code: `
   $modifyChannelPerms[$channelID;$guildID;+sendmessages;+addreactions]
-  `,
+  `
 });
 ```

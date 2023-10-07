@@ -27,6 +27,6 @@ client.command({
   name: "deleteChannels",
   code: `
   $deleteChannels[channelID1;channelID2;channelID3;channelID4]
-  `,
+  `
 });
 ```

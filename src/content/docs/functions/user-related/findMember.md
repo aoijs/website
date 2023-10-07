@@ -29,6 +29,6 @@ client.command({
   name: "findMember",
   code: `
   $findMember[Leref;true;$guildID]
-  `,
+  `
 });
 ```

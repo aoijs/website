@@ -30,6 +30,6 @@ client.command({
   code: `
     Ok.
     $onlyIfMessageContains[Hello!;aoi.js;Couldn't find that word!]
-    `,
+    `
 });
 ```

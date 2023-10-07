@@ -27,6 +27,6 @@ client.command({
   name: "userDefaultAvatar",
   code: `
   $userDefaultAvatar[$authorID]
-  `,
+  `
 });
 ```

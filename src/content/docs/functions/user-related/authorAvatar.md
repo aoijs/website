@@ -29,6 +29,6 @@ client.command({
   name: "authorAvatar",
   code: `
   $authorAvatar[2048;true;webp]
-  `,
+  `
 });
 ```

@@ -28,6 +28,6 @@ client.command({
   name: "isSelfDeafened",
   code: `
   $isSelfDeafened
-  `,
+  `
 });
 ```

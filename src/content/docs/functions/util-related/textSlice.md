@@ -29,6 +29,6 @@ client.command({
   name: "textSlice",
   code: `
   $textSlice[Hello Bye;0;5]
-  `,
+  `
 });
 ```

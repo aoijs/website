@@ -30,13 +30,13 @@ client.command({
   name: "forEachGuildChannel",
   code: `
   $forEachGuildChannel[2s;{"value": "test"};awaitedCommand;]
-  `,
+  `
 });
 
 client.awaitedCommand({
   name: "awaitedCommand",
   code: `
   $setChannelVar[varname;$awaitData[value];$channelID]
-  `,
+  `
 });
 ```

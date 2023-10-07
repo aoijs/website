@@ -29,6 +29,6 @@ client.command({
   code: `
   $joinThread[$channelID;$get[threadID]]
   $let[threadID;$createThread[$channelID;Example!;1440;public;$messageID;true]]
-  `,
+  `
 });
 ```

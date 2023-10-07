@@ -21,6 +21,6 @@ client.command({
   name: "loopStatus",
   code: `
     $loopStatus
-  `,
+  `
 });
 ```

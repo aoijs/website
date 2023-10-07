@@ -27,6 +27,6 @@ client.command({
   name: "guildDefaultMessageNotifications",
   code: `
   $guildDefaultMessageNotifications
-  `,
+  `
 });
 ```

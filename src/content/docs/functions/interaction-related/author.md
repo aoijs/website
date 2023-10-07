@@ -30,6 +30,6 @@ client.command({
   code: `
   $author[Hello!;$userAvatar[$authorID]]
   $description[Embed with author!]
-  `,
+  `
 });
 ```

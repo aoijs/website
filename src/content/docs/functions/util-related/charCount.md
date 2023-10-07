@@ -27,6 +27,6 @@ client.command({
   name: "charCount",
   code: `
   $charCount[aoi.js is one of the simplest and easiest ways to create your own Discord Bot]
-  `,
+  `
 });
 ```

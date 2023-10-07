@@ -29,6 +29,6 @@ client.command({
   name: "userCustomStatus",
   code: `
   $userCustomStatus[$authorID;$guildID;state]
-  `,
+  `
 });
 ```

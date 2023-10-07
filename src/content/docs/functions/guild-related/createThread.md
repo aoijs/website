@@ -38,6 +38,6 @@ client.command({
   name: "createThread",
   code: `
   $createThread[$channelID;Example!;60;public;$messageID;false]
-  `,
+  `
 });
 ```

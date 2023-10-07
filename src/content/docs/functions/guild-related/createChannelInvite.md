@@ -38,7 +38,7 @@ client.command({
   name: "createChannelInvite",
   code: `
   $createChannelInvite[$channelID]
-  `,
+  `
 });
 ```
 
@@ -56,7 +56,7 @@ client.command({
             "maxUses": 25,
             "unique": true
   }]
-  `,
+  `
 });
 ```
 
@@ -70,6 +70,6 @@ client.command({
             "targetApplication": "application ID",
             "targetType": 2
   }]
-  `,
+  `
 });
 ```

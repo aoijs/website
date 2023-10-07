@@ -39,6 +39,6 @@ client.command({
   name: "findMembers",
   code: `
   $findMembers[Leref;20;startsWith;true;{position}) {username}#{tag}]
-  `,
+  `
 });
 ```

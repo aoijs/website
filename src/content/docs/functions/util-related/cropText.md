@@ -29,6 +29,6 @@ client.command({
   name: "cropText",
   code: `
 $cropText[hello and bye;20;9]
-  `,
+  `
 });
 ```

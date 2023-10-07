@@ -28,6 +28,6 @@ client.command({
   name: "numberSeparator",
   code: `
   $numberSeparator[1000000;,]
-  `,
+  `
 });
 ```

@@ -46,6 +46,6 @@ client.command({
   name: "formatDate",
   code: `
   $formatDate[$dateStamp;dddd, DD MMMM YYYY]
-  `,
+  `
 });
 ```

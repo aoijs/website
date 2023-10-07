@@ -28,6 +28,6 @@ client.command({
   name: "memberJoinDate",
   code: `
   $memberJoinDate[$authorID;$guildID] -> $parseDate[$memberJoinDate[$authorID;$guildID]]
-  `,
+  `
 });
 ```

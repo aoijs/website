@@ -29,6 +29,6 @@ client.command({
   name: "addMessageReactions",
   code: `
  $addMessageReactions[$channelID;$messageID;✅;❌]
-  `,
+  `
 });
 ```

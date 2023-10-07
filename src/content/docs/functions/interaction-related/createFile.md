@@ -28,6 +28,6 @@ client.command({
   name: "createFile",
   code: `
   $createFile[This is an example!;example.txt]
-  `,
+  `
 });
 ```

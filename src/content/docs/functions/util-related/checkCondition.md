@@ -40,7 +40,7 @@ client.command({
   name: "checkCondition",
   code: `
   $checkCondition[50>25]
-  `,
+  `
 });
 ```
 
@@ -55,7 +55,7 @@ client.command({
   name: "checkCondition",
   code: `
   $checkCondition[50>25&&120<280]
-  `,
+  `
 });
 ```
 
@@ -68,6 +68,6 @@ client.command({
   name: "checkCondition",
   code: `
   $checkCondition[50>25||true==false]
-  `,
+  `
 });
 ```

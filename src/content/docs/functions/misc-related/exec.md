@@ -29,6 +29,6 @@ client.command({
     \`\`\`
     $exec[node -v]
     \`\`\`
-  `,
+  `
 });
 ```

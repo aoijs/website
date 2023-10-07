@@ -27,6 +27,6 @@ client.command({
   name: "findNumbers",
   code: `
   $findNumbers[Hello, I'm 25 years old]
-  `,
+  `
 });
 ```

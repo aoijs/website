@@ -29,6 +29,6 @@ client.command({
   name: "appendFile",
   code: `
   $appendFile[./index.js;// Hello!]
-  `,
+  `
 });
 ```

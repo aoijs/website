@@ -48,6 +48,6 @@ client.command({
   name: "createChannel",
   code: `
     $createChannel[$guildID;aoijs;Text;false]
-  `,
+  `
 });
 ```

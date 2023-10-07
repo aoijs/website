@@ -29,6 +29,6 @@ client.command({
   name: "getChannelVar",
   code: `
     $getChannelVar[Example;$channelID;main]
-    `,
+    `
 });
 ```

@@ -31,7 +31,7 @@ client.command({
   name: "newTicket",
   code: `
     $newTicket[ticket-$username;Hello <@$authorID!;$guildID;false;Error!]
-    `,
+    `
 });
 ```
 
@@ -42,6 +42,6 @@ client.command({
   name: "newTicket",
   code: `
     $newTicket[ticket-$username;Hello <@$authorID! {newEmbed:{description:<@$authorID> opened a new ticket!}};$guildID;false;Error!]
-    `,
+    `
 });
 ```

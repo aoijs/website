@@ -29,6 +29,6 @@ client.command({
   name: "setRoleIcon",
   code: `
   $setRoleIcon[$guildID;roleID;iconURL]
-  `,
+  `
 });
 ```

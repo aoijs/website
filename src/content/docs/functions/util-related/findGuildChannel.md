@@ -29,6 +29,6 @@ client.command({
   name: "findGuildChannel",
   code: `
   $findGuildChannel[rules;false;$guildID]
-  `,
+  `
 });
 ```

@@ -30,6 +30,6 @@ client.command({
   name: "userBanner",
   code: `
   $userBanner[$authorID;4096;true;webp]
-  `,
+  `
 });
 ```

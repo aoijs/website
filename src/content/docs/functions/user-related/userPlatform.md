@@ -36,6 +36,6 @@ client.command({
   name: "userPlatform",
   code: `
   $userPlatform[$authorID;$guildID;, ]
-  `,
+  `
 });
 ```

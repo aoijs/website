@@ -28,6 +28,6 @@ client.command({
   name: "cacheMembers",
   code: `
   $cacheMembers[$guildID;true]
-  `,
+  `
 });
 ```

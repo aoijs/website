@@ -27,6 +27,6 @@ client.command({
   name: "guildBoostCount",
   code: `
   $guildBoostCount[$guildID]
-  `,
+  `
 });
 ```

@@ -28,6 +28,6 @@ client.command({
   name: "repeatMessage",
   code: `
   $repeatMessage[20;Hello ]
-  `,
+  `
 });
 ```

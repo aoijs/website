@@ -28,6 +28,6 @@ client.command({
   name: "sendCrosspostingMessage",
   code: `
    $sendCrosspostingMessage[Hello!;$channelID;$randomChannelID]
-  `,
+  `
 });
 ```

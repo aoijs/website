@@ -29,6 +29,6 @@ client.command({
   code: `
   Deleted three roles!
   $deleteRoles[$guildID;roleID1;roleID2;roleID3]
-  `,
+  `
 });
 ```

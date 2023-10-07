@@ -27,6 +27,6 @@ client.command({
   name: "emojiCount",
   code: `
   You have $emojiCount emojis in your guild!
-  `,
+  `
 });
 ```

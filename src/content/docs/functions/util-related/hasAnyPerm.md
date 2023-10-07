@@ -80,6 +80,6 @@ client.command({
   name: "hasAnyPerm",
   code: `
   $hasAnyPerm[$guildID;$authorID;kick;managemessages]
-  `,
+  `
 });
 ```

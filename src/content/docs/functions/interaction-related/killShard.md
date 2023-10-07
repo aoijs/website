@@ -27,6 +27,6 @@ client.command({
   name: "killShard",
   code: `
   $killShard[$shardID]
-  `,
+  `
 });
 ```

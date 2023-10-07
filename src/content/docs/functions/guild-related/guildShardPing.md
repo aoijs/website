@@ -29,6 +29,6 @@ client.command({
   name: "guildShardPing",
   code: `
   $guildShardPing[$shardId]MS
-  `,
+  `
 });
 ```

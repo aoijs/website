@@ -28,6 +28,6 @@ client.command({
   name: "messageWebhookID",
   code: `
   $messageWebhookID[messageID;$channelID] //replace messageID
-  `,
+  `
 });
 ```

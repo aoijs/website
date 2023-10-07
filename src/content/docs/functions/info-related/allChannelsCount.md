@@ -48,6 +48,6 @@ client.command({
   name: "allChannelsCount",
   code: `
   $allChannelsCount[Voice]
-  `,
+  `
 });
 ```

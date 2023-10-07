@@ -30,7 +30,7 @@ module.exports = [{
   prototype: "slash",
   code: `
   $interactionReply[Hello, World!;;{actionRow:{button:Example Button!:primary:customID:false}};;everyone;false]
-  `,
+  `
 });
 ```
 

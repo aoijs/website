@@ -30,6 +30,6 @@ client.command({
   name: "muteUser",
   code: `
   $muteUser[$guildID;$authorID;true]
-  `,
+  `
 });
 ```

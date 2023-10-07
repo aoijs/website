@@ -30,6 +30,6 @@ client.command({
   name: "setGlobalUserVar",
   code: `
     $setGlobalUserVar[Example;This is a value;$authorID;main]
-    `,
+    `
 });
 ```

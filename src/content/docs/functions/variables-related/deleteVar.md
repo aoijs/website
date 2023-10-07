@@ -29,6 +29,6 @@ client.command({
   name: "deleteVar",
   code: `
   $deleteVar[Test;$authorID;main]
-  `,
+  `
 });
 ```

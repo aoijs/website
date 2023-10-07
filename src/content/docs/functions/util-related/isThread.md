@@ -27,6 +27,6 @@ client.command({
   name: "isThread",
   code: `
   $isThread[$channelID]
-  `,
+  `
 });
 ```

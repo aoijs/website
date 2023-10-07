@@ -29,6 +29,6 @@ client.command({
   name: "channelPermissionsFor",
   code: `
   $channelPermissionsFor[$authorID;$channelID;, ]
-  `,
+  `
 });
 ```

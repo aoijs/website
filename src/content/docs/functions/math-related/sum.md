@@ -27,6 +27,6 @@ client.command({
   name: "sum",
   code: `
   $sum[70;5]
-  `,
+  `
 });
 ```
