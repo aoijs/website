@@ -11,7 +11,7 @@ export default defineConfig({
     expressiveCode({
       textMarkers: {
         styleOverrides: {
-          defaultChroma: '55',
+          defaultChroma: "55",
         },
       },
       frames: {
@@ -34,6 +34,23 @@ export default defineConfig({
       },
       customCss: ["./src/styles/custom.css"],
       head: [
+        {
+          tag: "script",
+          attrs: {
+            async: true,
+            src: "https://www.googletagmanager.com/gtag/js?id=G-GMH27HJZGY",
+          },
+        },
+        {
+          tag: "script",
+          content: `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GMH27HJZGY');
+      `,
+        },
         {
           tag: "script",
           attrs: {
