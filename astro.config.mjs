@@ -4,10 +4,12 @@ import starlight from "@astrojs/starlight";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import react from "@astrojs/react";
 import expressiveCode from "astro-expressive-code";
+import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: "https://aoi.js.org",
   integrations: [
+    sitemap(),
     expressiveCode({
       textMarkers: {
         styleOverrides: {
@@ -33,6 +35,10 @@ export default defineConfig({
         baseUrl: "https://github.com/aoijs/website/edit/main/",
       },
       customCss: ["./src/styles/custom.css"],
+      components: {
+        // Override the default `Search` component.
+        Search: './src/components/Search.astro',
+      },
       head: [
         {
           tag: "script",
