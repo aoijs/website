@@ -51,13 +51,14 @@ We do not take responsibilities for any damages this package could produce, if y
 
 ---
 
-```javascript title="index.js"
-const { AoiClient } = require("aoi.js");
+```js 
+//index.js
+const { AoiClient, Util } = require("aoi.js");
 const aoicanvas = require("aoi.canvas");
-
+ 
 const client = new AoiClient({
-  token: "DISCORD BOT TOKEN",
-  prefix: "DISCORD BOT PREFIX",
+  token: "Discord Bot Token",
+  prefix: "Discord Bot Prefix",
   intents: ["MessageContent", "Guilds", "GuildMessages"],
   events: ["onMessage", "onInteractionCreate"],
   database: {
@@ -70,25 +71,41 @@ const client = new AoiClient({
     },
   },
 });
-
+ 
 aoicanvas.load({
-  bot: client, // the aoi.js bot
+  client: client, // the aoi.js bot
+  Util: Util, // To make aoi.canvas parser work. ($sendMessage, $channelSendMessage, $interactionReply, etc)
   DownloadFolder: "./aoicanvas/", // download folder for $downloadCanvas and $downloadGIF
-  ErrorsType: "console", // errors type (console/message)
+  ErrorsType: "console" // errors type (console/message)
 });
-
+ 
 // Ping Command Example
 client.command({
   name: "ping",
-  code: `Pong! $pingms`,
+  code: `Pong! $pingms`
 });
 
-// Leref Command Example (The best)
+// Pro Avatar Command Example
+client.command({
+    name: "pro",
+    code: `
+    $sendCanvas[pro]
+    $drawText[pro;Pro;225;450]
+    $setShadow[pro;20]
+    $canvasColor[pro;#FFFFFF;shadow]
+    $font[pro;50px Arial]
+    $canvasColor[pro;#000000]
+    $drawImage[pro;avatar;0;0;512;512]
+    $loadImage[pro;avatar;url;$nonEscape[$authorAvatar]]
+    $createCanvas[pro;512;512]
+    `
+});
+ 
+// Leref Pro Command Example
 client.command({
   name: "leref",
   code: `
   $sendCanvas[lerefPro;msg]
   $lerefPro
   `
-});
-```
+});```
