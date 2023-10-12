@@ -18,8 +18,6 @@ $guildShardPing[shardId?]
 | -------- | ------- | ------------- | :------: |
 | shardId? | integer | The shard ID. |  false   |
 
-**Note that this won't work without sharding. If you're unsure, review the [sharding guide](../../guides/client/6sharding.md).**
-
 ## Example(s)
 
 This will return the shard latency of the current shard:

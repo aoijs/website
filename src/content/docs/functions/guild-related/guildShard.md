@@ -20,8 +20,6 @@ $guildShard[option?;sep?;shardId]
 | sep?    | string  | Separator to separate multiple returned values.                              |  false   |
 | shardId | integer | The shard ID.                                                                |   true   |
 
-#### Note that this won't work without sharding. If you're unsure, review the [sharding guide](../../guides/client/6sharding.md).
-
 ## Example(s)
 
 This will return the amount guilds of a shard:
