@@ -2,33 +2,19 @@
 
 <div align="center" style="margin: 30px;">
 <a href="https://aoi.js.org/">
-  <img src="https://github.com/aoijs/website/blob/master/assets/images/aoijs-banner.png?raw=true"   style="width:300px;" align="center"  alt="aoi.js"/>
+  <img src="https://github.com/aoijs/website/blob/master/assets/images/aoijs-banner.png?raw=true"   style="width:350px;" align="center"  alt="aoi.js"/>
 </a>
 <br />
 <br />
 
-<div align="center">
-    <a href="https://aoi.js.org/">Home Page</a> |
-    <a href="https://aoi.js.org/invite">Discord</a> |
-    <a href="https://aoi.js.org/">Documentation</a>
-</div>
-</div>
-<br />
-
 <div align="center"><strong>aoi.js Official Documentation</strong><br>
-
-<br />
-
-</div>
-
 <div align="center">
-
-[![NPM](https://img.shields.io/npm/v/aoi.js.svg)](https://www.npmjs.com/package/aoi.js)
-[![Downloads](https://img.shields.io/npm/dt/aoi.js.svg)](https://www.npmjs.com/package/aoi.js)
-[![Stars](https://img.shields.io/github/stars/AkaruiDevelopment/aoi.js.svg)](https://github.com/AkaruiDevelopment/aoi.js/stargazers)
-[![License](https://img.shields.io/npm/l/aoi.js.svg)](https://github.com/AkaruiDevelopment/aoi.js/blob/v6/LICENSE)
-[![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build)
-
+    <a href="https://aoi.js.org/invite">Discord</a> |
+    <a href="https://aoi.js.org/">Documentation</a> <br /> <br />
+    <a href="https://starlight.astro.build"><img src="https://astro.badg.es/v2/built-with-starlight/tiny.svg" alt="Built with Starlight" width="140" height="20"></a>
+</div>
+</div>
+<br />
 </div>
 
 ## ❓ What is aoi.js?
