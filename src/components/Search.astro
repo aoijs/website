@@ -5,14 +5,33 @@ import "@docsearch/css";
 <div id="docsearch"></div>
 
 <script>
-    import docsearch from '@docsearch/js';
+  import docsearch from "@docsearch/js";
 
-    docsearch({
-        container: '#docsearch',
-        appId: '7NDV3UYBW5',
-        indexName: 'aoi-js',
-        apiKey: '775caf3aef9ecccc83a7b3948ac1b92f',
-    });
+  docsearch({
+    container: "#docsearch",
+    appId: "7NDV3UYBW5",
+    indexName: "aoi-js",
+    apiKey: "775caf3aef9ecccc83a7b3948ac1b92f",
+    placeholder: "Search something..",
+    maxResultsPerGroup: 5,
+    getMissingResultsUrl({ query }) {
+      return `https://github.com/aoijs/website/issues/new?title=${query}`;
+    },
+    resultsFooterComponent({ state }) {
+      return {
+        type: "a",
+        ref: undefined,
+        constructor: undefined,
+        key: state.query,
+        props: {
+          href: "https://github.com/AkaruiDevelopment",
+          target: "_blank",
+          children: `${state.context.nbHits} results found!`,
+        },
+        __v: null,
+      };
+    },
+  });
 </script>
 
 <style>
