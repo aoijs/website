@@ -1,10 +1,10 @@
 ---
-title: Client Events
+title: Custom Events
 description: This guide will be covering everything you need to know about Custom Events and their usage.
 id: custom-events
 ---
 
-:::caution["Experienced Users]
+:::caution[Experienced Users]
 
 Basic JavaScript knowledge is needed, you can find the needed resources here:
 
