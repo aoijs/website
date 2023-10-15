@@ -1,5 +1,5 @@
 {
-  "index_name": "dev_aoijs",
+  "index_name": "aoi-js",
   "start_urls": [
     {
       "url": "https://aoi.js.org/",
@@ -18,9 +18,7 @@
       "tags": ["wikis"]
     }
   ],
-  "sitemap_urls": [
-    "https://aoi.js.org/sitemap-0.xml"
-  ],
+  "sitemap_urls": ["https://aoi.js.org/sitemap.xml"],
   "stop_urls": [],
   "selectors_exclude": [".code", "code", "table", "thread", ".table"],
   "selectors": {
