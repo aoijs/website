@@ -18,10 +18,10 @@ $autoCompleteRespond[OptionName;OptionReply;...]
 
 ## Parameters
 
-| Field       | Type   | Description                                                                                      | Required |
-| ----------- | ------ | ------------------------------------------------------------------------------------------------ | :------: |
-| OptionName  | string | Name of the auto-complete option that will be displayed to the user.                             |   true   |
-| OptionReply | string | The reply that will be sent if the auto-complete option was selected, (not visible to the user). |   true   |
+| Field       | Type                                                                                              | Description                                                                                      | Required |
+| ----------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | :------: |
+| OptionName  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Name of the auto-complete option that will be displayed to the user.                             |   true   |
+| OptionReply | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The reply that will be sent if the auto-complete option was selected, (not visible to the user). |   true   |
 
 ## Example(s)
 
@@ -39,7 +39,7 @@ client.command({
   "type": 3,
   "autocomplete": true
 }]
-  `
+  `,
 });
 ```
 
@@ -55,7 +55,7 @@ client.command({
   $else
   $interactionReply[$slashOption[option];;;;everyone]
   $endif
-  `
+  `,
 });
 ```
 
@@ -80,7 +80,7 @@ client.command({
   "required": false,
   "type": 3
 }]
-  `
+  `,
 });
 ```
 
@@ -103,6 +103,6 @@ client.command({
   $else
   $interactionReply[$slashOption[option] - autocomplete #SEMI# $slashOption[anotheroption] - false autocomplete;;;;everyone]
   $endif
-  `
+  `,
 });
 ```

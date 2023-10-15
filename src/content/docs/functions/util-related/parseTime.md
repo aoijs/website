@@ -14,9 +14,9 @@ $parseTime[time]
 
 ## Parameters
 
-| Field | Type   | Description                              | Required |
-| ----- | ------ | ---------------------------------------- | :------: |
-| time  | string | The time that will be converted to `ms`. |   true   |
+| Field | Type                                                                                              | Description                              | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ---------------------------------------- | :------: |
+| time  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The time that will be converted to `ms`. |   true   |
 
 ## Example(s)
 
@@ -27,7 +27,7 @@ client.command({
   name: "parseTime",
   code: `
   $parseTime[69m]
-  `
+  `,
 });
 ```
 
@@ -38,6 +38,6 @@ client.command({
   name: "parseTime",
   code: `
   $parseTime[1w 2d 20m]
-  `
+  `,
 });
 ```

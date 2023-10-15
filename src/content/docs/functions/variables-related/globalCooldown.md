@@ -18,10 +18,10 @@ $globalCooldown[time;errorMessage]
 
 ## Parameters
 
-| Field        | Type   | Description                                                      | Required |
-| ------------ | ------ | ---------------------------------------------------------------- | :------: |
-| time         | string | The duration of the cooldown.                                    |   true   |
-| errorMessage | string | Error message given when there's remaining time of the cooldown. |   true   |
+| Field        | Type                                                                                              | Description                                                      | Required |
+| ------------ | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | :------: |
+| time         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The duration of the cooldown.                                    |   true   |
+| errorMessage | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Error message given when there's remaining time of the cooldown. |   true   |
 
 ## Example(s)
 
@@ -33,6 +33,6 @@ client.command({
   code: `
   Hello
   $globalCooldown[5m;Please wait %time% to execute this command again.]
-  `
+  `,
 });
 ```

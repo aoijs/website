@@ -14,9 +14,9 @@ $spawnShard[shard]
 
 ## Parameters
 
-| Field | Type   | Description       | Required |
-| ----- | ------ | ----------------- | :------: |
-| shard | number | Amount of shards. |   true   |
+| Field | Type                                                                                              | Description       | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ----------------- | :------: |
+| shard | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Amount of shards. |   true   |
 
 ## Example(s)
 

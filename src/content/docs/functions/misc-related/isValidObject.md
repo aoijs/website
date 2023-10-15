@@ -14,9 +14,10 @@ $isValidObject[object]
 
 ## Parameters
 
-| Field  | Type   | Description  | Required |
-| ------ | ------ | ------------ | :------: |
-| object | object | JSON object. |   true   |
+| Field                                       | Type                                                   | Description | Required |
+| ------------------------------------------- | ------------------------------------------------------ | ----------- | :------: |
+| object                                      | [object](https://developer.mozilla.org/en-US/docs/Web/ |
+| JavaScript/Reference/Global_Objects/Object) | JSON object.                                           | true        |
 
 ## Example(s)
 
@@ -27,6 +28,6 @@ client.command({
   name: "isValidObject",
   code: `
   $isValidObject[{"name":"Leref", "aoijs":"nice"}]
-  `
+  `,
 });
 ```

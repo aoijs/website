@@ -28,6 +28,6 @@ client.command({
   name: "memberDisplayName",
   code: `
   $memberDisplayName[$guildID;$authorID]
-  `
+  `,
 });
 ```

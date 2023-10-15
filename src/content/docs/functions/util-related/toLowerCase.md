@@ -14,9 +14,9 @@ $toLowerCase[text]
 
 ## Parameters
 
-| Field | Type   | Description                      | Required |
-| ----- | ------ | -------------------------------- | :------: |
-| text  | string | The text to change to lowercase. |   true   |
+| Field | Type                                                                                              | Description                      | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | -------------------------------- | :------: |
+| text  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The text to change to lowercase. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "toLowerCase",
   code: `
     $toLowerCase[AOI.JS IS GREAT.]
-    `
+    `,
 });
 ```

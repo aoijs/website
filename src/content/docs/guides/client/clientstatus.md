@@ -5,7 +5,9 @@ id: status
 ---
 
 <!-- omit from toc -->
+
 ## Table of Contents
+
 - [Bot Status](#bot-status)
   - [Customizing Bot Status](#customizing-bot-status)
 - [Client Presence](#client-presence)
@@ -32,10 +34,10 @@ When you use sharding you can individually change the status of each shard:
 
 ```javascript
 client.status({
-    name: string,
-    type: string,
-    time: number,
-    shard: number
+  name: string,
+  type: string,
+  time: number,
+  shard: number,
 });
 ```
 
@@ -47,33 +49,33 @@ If you want to have multiple statuses just add multiple `client.status({...})`, 
 
 ```javascript title="index.js"
 client.status({
-    name: "Example Text one!",
-    type: "PLAYING",
-    time: 12
+  name: "Example Text one!",
+  type: "PLAYING",
+  time: 12,
 });
 
 client.status({
-    name: "Example Text two!",
-    type: "STREAMING",
-    time: 25,
-    URL: "some URL"
+  name: "Example Text two!",
+  type: "STREAMING",
+  time: 25,
+  URL: "some URL",
 });
 
 client.status({
-    name: "Doing nothing..", // normal status as any other Discord User without any state
-    time: 50,
-    type: "CUSTOM",
+  name: "Doing nothing..", // normal status as any other Discord User without any state
+  time: 50,
+  type: "CUSTOM",
 });
 ```
 
 There are various types of statuses (not case-sensitive):
 
-* **PLAYING**
-* **WATCHING**
-* **STREAMING**
-* **LISTENING**
-* **COMPETING**
-* **CUSTOM** 
+- **PLAYING**
+- **WATCHING**
+- **STREAMING**
+- **LISTENING**
+- **COMPETING**
+- **CUSTOM**
 
 ### Client Presence
 
@@ -81,16 +83,16 @@ You can also set the bot's presence, by adding the `status` property, for exampl
 
 ```javascript title="index.js"
 client.status({
-    name: "Example Text!",
-    type: "PLAYING",
-    status: "dnd",
-    time: 12
+  name: "Example Text!",
+  type: "PLAYING",
+  status: "dnd",
+  time: 12,
 });
 ```
 
 There are multiple types of presences:
 
-> * **online**
-> * **idle**
-> * **dnd** 
-> * **invisible**
+> - **online**
+> - **idle**
+> - **dnd**
+> - **invisible**

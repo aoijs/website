@@ -14,10 +14,10 @@ $let[varname;value]
 
 ## Parameters
 
-| Field   | Type   | Description                                       | Required |
-| ------- | ------ | ------------------------------------------------- | :------: |
-| varname | string | Name of the temporary variable.                   |   true   |
-| value   | string | Value of the temporary variable you want to save. |   true   |
+| Field   | Type                                                                                              | Description                                       | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------- | :------: |
+| varname | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Name of the temporary variable.                   |   true   |
+| value   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Value of the temporary variable you want to save. |   true   |
 
 ## Example(s)
 

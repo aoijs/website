@@ -14,11 +14,11 @@ $createStageInstance[channelID;topic;type?]
 
 ## Parameters
 
-| Field     | Type    | Description                              | Required |
-| --------- | ------- | ---------------------------------------- | :------: |
-| channelID | integer | The channel ID of the stage channel.     |   true   |
-| topic     | string  | The stage topic which will be displayed. |   true   |
-| type?     | integer | The stage type. (listed below)           |  false   |
+| Field     | Type                                                                                              | Description                              | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------- | :------: |
+| channelID | integer                                                                                           | The channel ID of the stage channel.     |   true   |
+| topic     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The stage topic which will be displayed. |   true   |
+| type?     | integer                                                                                           | The stage type. (listed below)           |  false   |
 
 <details open>
   <summary><h3> Invite Target Types </h3></summary>

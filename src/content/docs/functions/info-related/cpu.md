@@ -14,9 +14,9 @@ $cpu[option?]
 
 ## Parameters
 
-| Field   | Type   | Description                                                                                                                                                         | Required |
-| ------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------: |
-| option? | string | The option that the CPU usage will be returned of. <br /> 1. **os** - returns the CPU usage of the bot <br /> 2. **process** - returns the CPU usage of the process |  false   |
+| Field   | Type                                                                                              | Description                                                                                                                                                         | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------: |
+| option? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The option that the CPU usage will be returned of. <br /> 1. **os** - returns the CPU usage of the bot <br /> 2. **process** - returns the CPU usage of the process |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   code: `
   OS: $cpu[os] 
   Process: $cpu[process] 
-  `
+  `,
 });
 ```

@@ -14,10 +14,10 @@ $channelCount[guildID?;type?]
 
 ## Parameters
 
-| Field    | Type    | Description                                               | Required |
-| -------- | ------- | --------------------------------------------------------- | :------: |
-| guildID? | integer | ID of the guild where the channels will be counted from.  |  false   |
-| type?    | string  | Type you want the amount of to be returned, listed below. |  false   |
+| Field    | Type                                                                                              | Description                                               | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | :------: |
+| guildID? | integer                                                                                           | ID of the guild where the channels will be counted from.  |  false   |
+| type?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Type you want the amount of to be returned, listed below. |  false   |
 
 <details>
   <summary><h3> Channel Types </h3></summary>
@@ -49,6 +49,6 @@ client.command({
   name: "channelCount",
   code: `
   $channelCount[$guildID;Voice]
-  `
+  `,
 });
 ```

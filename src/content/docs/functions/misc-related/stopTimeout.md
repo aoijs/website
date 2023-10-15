@@ -14,9 +14,9 @@ $stopTimeout[id]
 
 ## Parameters
 
-| Field | Type   | Description | Required |
-| ----- | ------ | ----------- | :------: |
-| id    | string | Timeout ID. |   true   |
+| Field | Type                                                                                              | Description | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ----------- | :------: |
+| id    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Timeout ID. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "stopTimeout",
   code: `
     $stopTimeout[10029]
-    `
+    `,
 });
 ```

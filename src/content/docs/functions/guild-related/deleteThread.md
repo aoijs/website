@@ -14,11 +14,11 @@ $deleteThread[channelID;threadID;reason?]
 
 ## Parameters
 
-| Field     | Type    | Description                                                   | Required |
-| --------- | ------- | ------------------------------------------------------------- | :------: |
-| channelID | integer | The ID of the channel where the thread exists in.             |   true   |
-| threadID  | integer | The thread ID.                                                |   true   |
-| reason?   | string  | The reason which will be displayed in the guild's audit logs. |  false   |
+| Field     | Type                                                                                              | Description                                                   | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | :------: |
+| channelID | integer                                                                                           | The ID of the channel where the thread exists in.             |   true   |
+| threadID  | integer                                                                                           | The thread ID.                                                |   true   |
+| reason?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The reason which will be displayed in the guild's audit logs. |  false   |
 
 ## Example(s)
 
@@ -30,6 +30,6 @@ client.command({
   name: "deleteThread",
   code: `
   $deleteThread[$channelID;threadID;Crazy Example.]
-  `
+  `,
 });
 ```

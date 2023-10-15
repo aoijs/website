@@ -5,6 +5,7 @@ id: parser
 ---
 
 <!-- omit from toc -->
+
 ### Table of Contents
 
 - [Embed Parser](#embed-parser)
@@ -25,7 +26,7 @@ id: parser
 
 ## Embed Parser
 
-Embed Parser are handy to use once you know how, this section will be covering the basics about embed parsers. 
+Embed Parser are handy to use once you know how, this section will be covering the basics about embed parsers.
 
 :::tip
 You require `{newEmbed:{...}}` every time you want to use embed parsers.
@@ -45,7 +46,7 @@ You require `{newEmbed:{...}}` every time you want to use embed parsers.
 {authorURL:URL} // Adds clickable link to the author.
 {field:title:value:inline? (true / false)} // Adds fields to the embed, which is either inline or not.
 {timestamp:ms?} // Adds a timestamp to the embed.
-``` 
+```
 
 ---
 

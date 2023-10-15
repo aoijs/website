@@ -14,10 +14,10 @@ $formatDate[date;format?]
 
 ## Parameters
 
-| Field   | Type   | Description                                                      | Required |
-| ------- | ------ | ---------------------------------------------------------------- | :------: |
-| date    | number | The date you want to format.                                     |   true   |
-| format? | string | The format that will be used to display the date (listed below). |  false   |
+| Field   | Type                                                                                              | Description                                                      | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | :------: |
+| date    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The date you want to format.                                     |   true   |
+| format? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The format that will be used to display the date (listed below). |  false   |
 
 <details open>
   <summary> <h2> Possible formatting </h2></summary>
@@ -46,6 +46,6 @@ client.command({
   name: "formatDate",
   code: `
   $formatDate[$dateStamp;dddd, DD MMMM YYYY]
-  `
+  `,
 });
 ```

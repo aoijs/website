@@ -6,14 +6,16 @@ sidebar:
   order: 1
 ---
 
-<!-- omit from toc --> 
-### Table of Contents 
+<!-- omit from toc -->
+
+### Table of Contents
+
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
   - [Inviting your bot with correct permissions](#inviting-your-bot-with-correct-permissions)
 - [Important](#important)
 - [Creating Application Commands](#creating-application-commands)
-    - [Application Types](#application-types)
+  - [Application Types](#application-types)
   - [Examples of creating Application Commands](#examples-of-creating-application-commands)
 - [Conclusion](#conclusion)
 - [Application Command Option Type](#application-command-option-type)
@@ -42,10 +44,10 @@ anything, simply reinvite it.
 
 ## Important
 
-* Due to Discord's Limitation you can only have up to **50 slash commands** in your bot / per guild.
-* Two Application commands can **not have the same name** in the same guild.
-* Application command names can **not contain special symbols (this includes spaces)** and must be shorter than **32 characters**.
-* You require `events: ["onMessage", "onInteractionCreate"]` in your main file.
+- Due to Discord's Limitation you can only have up to **50 slash commands** in your bot / per guild.
+- Two Application commands can **not have the same name** in the same guild.
+- Application command names can **not contain special symbols (this includes spaces)** and must be shorter than **32 characters**.
+- You require `events: ["onMessage", "onInteractionCreate"]` in your main file.
 
 ![slash-example](https://cdn.discordapp.com/attachments/1061712111052521493/1062559509601591427/image_6.png)
 
@@ -66,19 +68,18 @@ $createApplicationCommand[guildID/global;name;description;defaultPermission(true
 
 #### Application Types
 
-> * `message` — Creates an Application Command that can be executed on a message. ([documentation](https://discord.com/developers/docs/interactions/application-commands#message-commands))
-> * `slash` — Creates an Application Command as slash command. ([documentation](https://discord.com/developers/docs/interactions/application-commands))
-> * `user` — Creates an Application Command that can be executed on a user. ([documentation](https://discord.com/developers/docs/interactions/application-commands#user-commands))
+> - `message` — Creates an Application Command that can be executed on a message. ([documentation](https://discord.com/developers/docs/interactions/application-commands#message-commands))
+> - `slash` — Creates an Application Command as slash command. ([documentation](https://discord.com/developers/docs/interactions/application-commands))
+> - `user` — Creates an Application Command that can be executed on a user. ([documentation](https://discord.com/developers/docs/interactions/application-commands#user-commands))
 
 ### Examples of creating Application Commands
 
 ```js
 client.command({
-    name: "createApplicationCommand",
-    code: `
-  $createApplicationCommand[guildID/global;example;slash command description!;true;slash]`
+  name: "createApplicationCommand",
+  code: `
+  $createApplicationCommand[guildID/global;example;slash command description!;true;slash]`,
 });
-
 ```
 
 ## Conclusion

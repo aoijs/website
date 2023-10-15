@@ -14,11 +14,11 @@ $setVar[varname;value;table?]
 
 ## Parameters
 
-| Field   | Type   | Description         | Required |
-| ------- | ------ | ------------------- | :------: |
-| Varname | string | Variable name.      |   true   |
-| Value   | string | New Variable value. |   true   |
-| Table?  | string | Variable table.     |  false   |
+| Field   | Type                                                                                              | Description         | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ------------------- | :------: |
+| Varname | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable name.      |   true   |
+| Value   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | New Variable value. |   true   |
+| Table?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable table.     |  false   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   name: "setVar",
   code: `
     $setVar[Example;This is a value;main]
-    `
+    `,
 });
 ```

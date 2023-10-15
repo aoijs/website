@@ -14,12 +14,12 @@ $replaceTextWithRegex[text;reg;flags;newText]
 
 ## Parameters
 
-| Field   | Type   | Description                       | Required |
-| ------- | ------ | --------------------------------- | :------: |
-| text    | string | Text you want to modify.          |   true   |
-| reg     | string | The regex that will be replaced.  |   true   |
-| flags   | string | [Flags](#flags).                  |   true   |
-| newText | string | The text that will replace `reg`. |  false   |
+| Field   | Type                                                                                              | Description                       | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | --------------------------------- | :------: |
+| text    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Text you want to modify.          |   true   |
+| reg     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The regex that will be replaced.  |   true   |
+| flags   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | [Flags](#flags).                  |   true   |
+| newText | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The text that will replace `reg`. |  false   |
 
 <details open>
   <summary><h2> Flags </h2></summary>
@@ -41,7 +41,7 @@ client.command({
   name: "replaceTextWithRegex",
   code: `
   $replaceTextWithRegex[This function is more complicated than it looks.;more;g;less]
-  `
+  `,
 });
 ```
 
@@ -54,6 +54,6 @@ client.command({
   name: "replaceTextWithRegex",
   code: `
   $replaceTextWithRegex[This function is more complicated than it looks.;lESs;i;more]
-  `
+  `,
 });
 ```

@@ -14,11 +14,11 @@ $categoryChannels[categoryID;option?;sep?]
 
 ## Parameters
 
-| Field      | Type    | Description                                                                                                                                   | Required |
-| ---------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------- | :------: |
-| categoryID | integer | The ID of the category.                                                                                                                       |   true   |
-| option?    | string  | The option the bot will return the channels in. <br /> 1. **names** - returns channel names (default) <br /> 2. **ids** - returns channel IDs |  false   |
-| sep?       | string  | The separator to separate the returned channels.                                                                                              |  false   |
+| Field      | Type                                                                                              | Description                                                                                                                                   | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | :------: |
+| categoryID | integer                                                                                           | The ID of the category.                                                                                                                       |   true   |
+| option?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The option the bot will return the channels in. <br /> 1. **names** - returns channel names (default) <br /> 2. **ids** - returns channel IDs |  false   |
+| sep?       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The separator to separate the returned channels.                                                                                              |  false   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   name: "categoryChannels",
   code: `
   $categoryChannels[$channelCategoryID;names;, ]
-  `
+  `,
 });
 ```

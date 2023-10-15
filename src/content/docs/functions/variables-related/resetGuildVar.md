@@ -14,10 +14,10 @@ $resetGuildVar[varname;table?]
 
 ## Parameters
 
-| Field   | Type   | Description     | Required |
-| ------- | ------ | --------------- | :------: |
-| varname | string | Variable name.  |   true   |
-| table?  | string | Variable table. |  false   |
+| Field   | Type                                                                                              | Description     | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | --------------- | :------: |
+| varname | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable name.  |   true   |
+| table?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable table. |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "resetGuildVar",
   code: `
     $resetGuildVar[Example;main]
-    `
+    `,
 });
 ```

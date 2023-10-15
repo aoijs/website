@@ -14,10 +14,11 @@ $deafenUser[userID;deafen?]
 
 ## Parameters
 
-| Field   | Type    | Description                                                                         | Required |
-| ------- | ------- | ----------------------------------------------------------------------------------- | :------: |
-| userID  | integer | The user who will be deafened or undeafened.                                        |   true   |
-| deafen? | boolean | Deafen or Undeafen the given user. <br /> 1. **true** (default) <br /> 2. **false** |  false   |
+| Field                                        | Type                                                                                | Description                                  | Required |
+| -------------------------------------------- | ----------------------------------------------------------------------------------- | -------------------------------------------- | :------: |
+| userID                                       | integer                                                                             | The user who will be deafened or undeafened. |   true   |
+| deafen?                                      | [boolean](https://developer.mozilla.org/en-US/docs/Web/                             |
+| JavaScript/Reference/Global_Objects/Boolean) | Deafen or Undeafen the given user. <br /> 1. **true** (default) <br /> 2. **false** | false                                        |
 
 ## Example(s)
 
@@ -28,6 +29,6 @@ client.command({
   name: "deafen",
   code: `
   $deafen[$authorID;true]
-  `
+  `,
 });
 ```

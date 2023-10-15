@@ -14,9 +14,9 @@ $nonEscape[message]
 
 ## Parameters
 
-| Field   | Type   | Description                        | Required |
-| ------- | ------ | ---------------------------------- | -------- |
-| message | string | Text you don't want to be escaped. | true     |
+| Field   | Type                                                                                              | Description                        | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ---------------------------------- | -------- |
+| message | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Text you don't want to be escaped. | true     |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "nonEscape",
   code: `
   $nonEscape[Hello [;)]]
-  `
+  `,
 });
 ```

@@ -14,10 +14,11 @@ $createObject[objectName;object]
 
 ## Parameters
 
-| Field      | Type   | Description      | Required |
-| ---------- | ------ | ---------------- | :------: |
-| objectName | string | The object name. |   true   |
-| object     | object | JSON object.     |   true   |
+| Field                                       | Type                                                                                              | Description      | Required |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------------- | ---------------- | :------: |
+| objectName                                  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The object name. |   true   |
+| object                                      | [object](https://developer.mozilla.org/en-US/docs/Web/                                            |
+| JavaScript/Reference/Global_Objects/Object) | JSON object.                                                                                      | true             |
 
 ## Example(s)
 
@@ -30,6 +31,6 @@ client.command({
     "Leref": "Ferel",
     "aoi.js": "dbd.js"
   }]
-  `
+  `,
 });
 ```

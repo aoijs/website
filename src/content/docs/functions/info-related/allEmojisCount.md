@@ -14,9 +14,9 @@ $allEmojisCount[type?]
 
 ## Parameters
 
-| Field | Type   | Description                                 | Required |
-| ----- | ------ | ------------------------------------------- | -------- |
-| type? | string | Type you want the amount of to be returned. | false    |
+| Field | Type                                                                                              | Description                                 | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ------------------------------------------- | -------- |
+| type? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Type you want the amount of to be returned. | false    |
 
 | Emoji Type      |          |
 | --------------- | -------- |
@@ -32,6 +32,6 @@ client.command({
   name: "allEmojisCount",
   code: `
   $allEmojisCount
-  `
+  `,
 });
 ```

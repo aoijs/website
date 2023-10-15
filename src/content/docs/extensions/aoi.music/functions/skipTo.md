@@ -14,9 +14,9 @@ $skipTo[index]
 
 ## Parameters
 
-| Field | Type   | Description    | Required |
-| ----- | ------ | -------------- | :------: |
-| index | number | track position |   true   |
+| Field | Type                                                                                              | Description    | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | -------------- | :------: |
+| index | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | track position |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "skipTo",
   code: `
     $skipTo[3]
-  `
+  `,
 });
 ```

@@ -28,6 +28,6 @@ client.command({
   name: "isDeafen",
   code: `
   $isDeafen[$authorID;$guildID]
-  `
+  `,
 });
 ```

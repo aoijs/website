@@ -28,6 +28,6 @@ client.command({
   name: "memberExists",
   code: `
   $memberExists[$authorid;$guildID]
-  `
+  `,
 });
 ```

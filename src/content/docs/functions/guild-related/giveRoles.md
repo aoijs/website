@@ -14,12 +14,12 @@ $giveRoles[guildID;userID;reason?;...roles]
 
 ## Parameters
 
-| Field   | Type    | Description                                                  | Required |
-| ------- | ------- | ------------------------------------------------------------ | :------: |
-| guildID | integer | Of which guild the member should receive roles of.           |   true   |
-| userID  | integer | The user ID of the guild member.                             |   true   |
-| reason? | string  | The reason that will be displayed in the guild's audit logs. |  false   |
-| roles   | integer | The IDs of the roles to give.                                |   true   |
+| Field   | Type                                                                                              | Description                                                  | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | :------: |
+| guildID | integer                                                                                           | Of which guild the member should receive roles of.           |   true   |
+| userID  | integer                                                                                           | The user ID of the guild member.                             |   true   |
+| reason? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The reason that will be displayed in the guild's audit logs. |  false   |
+| roles   | integer                                                                                           | The IDs of the roles to give.                                |   true   |
 
 Please note that the bots **highest** role must be above the role you're trying to assign.
 
@@ -32,6 +32,6 @@ client.command({
   name: "giveRoles",
   code: `
   $giveRoles[$guildID;$authorID;Some reason.;$findRole[Admin];$findRole[Moderator]]
-  `
+  `,
 });
 ```

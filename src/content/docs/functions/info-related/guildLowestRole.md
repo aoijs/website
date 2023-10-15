@@ -27,6 +27,6 @@ client.command({
   name: "guildLowestRole",
   code: `
   $guildLowestRole[$guildID]
-  `
+  `,
 });
 ```

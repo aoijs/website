@@ -14,9 +14,9 @@ $textInputValue[option]
 
 ## Parameters
 
-| Field  | Type   | Description                               | Required |
-| ------ | ------ | ----------------------------------------- | :------: |
-| option | string | Option <br /> 1. **name (of the option)** |   true   |
+| Field  | Type                                                                                              | Description                               | Required |
+| ------ | ------------------------------------------------------------------------------------------------- | ----------------------------------------- | :------: |
+| option | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Option <br /> 1. **name (of the option)** |   true   |
 
 ## Example(s)
 

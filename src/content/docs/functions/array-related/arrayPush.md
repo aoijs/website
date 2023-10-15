@@ -14,9 +14,9 @@ $arrayPush[...elements]
 
 ## Parameters
 
-| Field       | Type   | Description      | Required |
-| ----------- | ------ | ---------------- | :------: |
-| ...elements | string | Elements to add. |   true   |
+| Field       | Type                                                                                              | Description      | Required |
+| ----------- | ------------------------------------------------------------------------------------------------- | ---------------- | :------: |
+| ...elements | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Elements to add. |   true   |
 
 ## Example(s)
 
@@ -26,6 +26,6 @@ client.command({
   code: `
   $arrayPush[array;Leref;Ayaka;Ferel]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `
+  `,
 });
 ```

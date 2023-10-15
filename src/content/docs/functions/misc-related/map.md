@@ -14,9 +14,9 @@ $map[text;split;awaitedCmds;sep?]
 
 ## Parameters
 
-| Field       | Type   | Description                  | Required |
-| ----------- | ------ | ---------------------------- | :------: |
-| text        | string | Text.                        |   true   |
-| split       | string |                              |   true   |
-| awaitedCmds | string | Awaited Commands to execute. |   true   |
-| sep?        | string | Separator.                   |  false   |
+| Field       | Type                                                                                              | Description                  | Required |
+| ----------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | :------: |
+| text        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Text.                        |   true   |
+| split       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |                              |   true   |
+| awaitedCmds | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Awaited Commands to execute. |   true   |
+| sep?        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Separator.                   |  false   |

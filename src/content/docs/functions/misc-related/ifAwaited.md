@@ -14,11 +14,11 @@ $ifAwaited[condition;true;false?]
 
 ## Parameters
 
-| Field     | Type   | Description                             | Required |
-| --------- | ------ | --------------------------------------- | :------: |
-| condition | string | Condition to check                      |   true   |
-| true      | string | What to do when the condition is true.  |   true   |
-| false?    | string | What to do when the condition is false. |  false   |
+| Field     | Type                                                                                              | Description                             | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | --------------------------------------- | :------: |
+| condition | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Condition to check                      |   true   |
+| true      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | What to do when the condition is true.  |   true   |
+| false?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | What to do when the condition is false. |  false   |
 
 #### Valid Mathematical Operators
 
@@ -42,13 +42,13 @@ client.command({
   name: "ifAwaited",
   code: `
     $ifAwaited[1==1;{execute:awaitedCommand}]
-    `
+    `,
 });
 
 client.awaitedCommand({
   name: "awaitedCommand",
   code: `
     $sendMessage[That's true!;false]
-    `
+    `,
 });
 ```

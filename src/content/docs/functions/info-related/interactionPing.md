@@ -24,7 +24,7 @@ client.command({
   code: `
  $addButton[1;Test;primary;testButton;false]
  Click me!
-  `
+  `,
 });
 
 module.exports = [

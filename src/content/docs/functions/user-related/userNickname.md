@@ -14,11 +14,12 @@ $userNickname[guildID?;userID?;returnUser?]
 
 ## Parameters
 
-| Field       | Type    | Description                                                          | Required |
-| ----------- | ------- | -------------------------------------------------------------------- | :------: |
-| guildID?    | integer | The ID of the guild.                                                 |  false   |
-| userID?     | integer | The ID of the user.                                                  |  false   |
-| returnUser? | boolean | Return the username <br /> 1. **true** <br /> 2. **false** (default) |  false   |
+| Field                                        | Type                                                                 | Description          | Required |
+| -------------------------------------------- | -------------------------------------------------------------------- | -------------------- | :------: |
+| guildID?                                     | integer                                                              | The ID of the guild. |  false   |
+| userID?                                      | integer                                                              | The ID of the user.  |  false   |
+| returnUser?                                  | [boolean](https://developer.mozilla.org/en-US/docs/Web/              |
+| JavaScript/Reference/Global_Objects/Boolean) | Return the username <br /> 1. **true** <br /> 2. **false** (default) | false                |
 
 ## Example(s)
 
@@ -29,6 +30,6 @@ client.command({
   name: "userNickname",
   code: `
   $userNickname[$guildID;$authorID;true]
-  `
+  `,
 });
 ```

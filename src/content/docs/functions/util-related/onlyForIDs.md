@@ -14,10 +14,10 @@ $onlyForIDs[...userIds;error]
 
 ## Parameters
 
-| Field      | Type            | Description                                                                   | Required |
-| ---------- | --------------- | ----------------------------------------------------------------------------- | :------: |
-| ...userIds | string, integer | Users you want to limit the command to.                                       |   true   |
-| error      | string          | Error to return when the command was not executed by and of the listed users. |   true   |
+| Field      | Type                                                                                                       | Description                                                                   | Required |
+| ---------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | :------: |
+| ...userIds | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), integer | Users you want to limit the command to.                                       |   true   |
+| error      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)          | Error to return when the command was not executed by and of the listed users. |   true   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   code: `
     Ok.
     $onlyForIDs[$botOwnerID;You can't use that command!]
-    `
+    `,
 });
 ```

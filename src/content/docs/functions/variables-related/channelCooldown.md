@@ -18,10 +18,10 @@ $channelCooldown[time;errorMessage]
 
 ## Parameters
 
-| Field        | Type   | Description                                              | Required |
-| ------------ | ------ | -------------------------------------------------------- | :------: |
-| time         | string | Timer of the cooldown                                    |   true   |
-| errorMessage | string | Error message when given cooldown timer is still active. |  false   |
+| Field        | Type                                                                                              | Description                                              | Required |
+| ------------ | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | :------: |
+| time         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Timer of the cooldown                                    |   true   |
+| errorMessage | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Error message when given cooldown timer is still active. |  false   |
 
 ## Example(s)
 
@@ -34,6 +34,6 @@ client.command({
   code: `
   hello
   $channelCooldown[2m;Please wait %time% to execute this command again.]
-  `
+  `,
 });
 ```

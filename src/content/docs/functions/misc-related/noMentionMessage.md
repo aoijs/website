@@ -14,9 +14,9 @@ $noMentionMessage[args]
 
 ## Parameters
 
-| Field | Type   | Description       | Required |
-| ----- | ------ | ----------------- | :------: |
-| args? | string | Message position. |  false   |
+| Field | Type                                                                                              | Description       | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ----------------- | :------: |
+| args? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Message position. |  false   |
 
 ## Example(s)
 
@@ -25,6 +25,6 @@ client.command({
   name: "noMentionMessage",
   code: `
     $noMentionMessage[1]
-    `
+    `,
 });
 ```

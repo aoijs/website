@@ -14,10 +14,10 @@ $setGuildIcon[URL;guildID?]
 
 ## Parameters
 
-| Field    | Type    | Description                                  | Required |
-| -------- | ------- | -------------------------------------------- | :------: |
-| URL      | string  | URL of the new guild Icon.                   |   true   |
-| guildID? | integer | The guild ID of where to set the guild Icon. |  false   |
+| Field    | Type                                                                                              | Description                                  | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------- | :------: |
+| URL      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | URL of the new guild Icon.                   |   true   |
+| guildID? | integer                                                                                           | The guild ID of where to set the guild Icon. |  false   |
 
 ## Example(s)
 

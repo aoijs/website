@@ -28,6 +28,6 @@ client.command({
   name: "isTimeout",
   code: `
   $isTimeout[$guildID;$authorID]
-  `
+  `,
 });
 ```

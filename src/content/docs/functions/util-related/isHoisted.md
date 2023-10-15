@@ -28,6 +28,6 @@ client.command({
   name: "isHoisted",
   code: `
   $isHoisted[$findRole[Owner];$guildID]
-  `
+  `,
 });
 ```

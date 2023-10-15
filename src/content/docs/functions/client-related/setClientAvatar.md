@@ -14,9 +14,9 @@ $setClientAvatar[URL]
 
 ## Parameters
 
-| Field | Type   | Description         | Required |
-| ----- | ------ | ------------------- | :------: |
-| URL   | string | The new avatar URL. |   true   |
+| Field | Type                                                                                              | Description         | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ------------------- | :------: |
+| URL   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The new avatar URL. |   true   |
 
 ## Example(s)
 

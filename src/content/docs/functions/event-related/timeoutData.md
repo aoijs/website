@@ -14,9 +14,9 @@ $timeoutData[option]
 
 ## Parameters
 
-| Field  | Type   | Description               | Required |
-| ------ | ------ | ------------------------- | :------: |
-| option | string | Timeout Data option name. |   true   |
+| Field  | Type                                                                                              | Description               | Required |
+| ------ | ------------------------------------------------------------------------------------------------- | ------------------------- | :------: |
+| option | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Timeout Data option name. |   true   |
 
 ## Example(s)
 
@@ -27,13 +27,13 @@ client.command({
   name: "setTimeout",
   code: `
     $setTimeout[timeoutCommand;10s;{"channelID": "$channelID", "authorID": "$authorID"};false]
-    `
+    `,
 });
 
 client.timeoutCommand({
   name: "timeoutCommand",
   code: `
     $channelSendMessage[$timeoutData[channelID];Hello, <@$timeoutData[authorID]>!]
-    `
+    `,
 });
 ```

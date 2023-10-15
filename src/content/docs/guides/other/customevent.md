@@ -13,7 +13,9 @@ Basic JavaScript knowledge is needed, you can find the needed resources here:
 :::
 
 <!-- omit from toc -->
+
 ### Table of Content
+
 - [CustomEvent Class](#customevent-class)
 - [Emitting Custom Events](#emitting-custom-events)
   - [Node.js / Discord.js Method](#nodejs--discordjs-method)
@@ -34,10 +36,10 @@ const { CustomEvent } = require("aoi.js");
 const event = new CustomEvent(client); // Creates a new instance of the CustomEvent class, passing the "client" as an argument.
 
 event.command({
-    listen: "eventName", // This should represent the name of the event, in this case it is "eventName".
-    code: `
+  listen: "eventName", // This should represent the name of the event, in this case it is "eventName".
+  code: `
         code
-    ` // The code of the event that will be triggered once the event is emitted.
+    `, // The code of the event that will be triggered once the event is emitted.
 });
 
 event.listen("eventName"); // This will make the client "listen" or in other words, wait for the event to be triggered. It does not trigger the event yet.
@@ -48,10 +50,11 @@ event.listen("eventName"); // This will make the client "listen" or in other wor
 To emit a previously created custom event you have to options.
 
 ### Node.js / Discord.js Method
+
 You can use the native [`node.js` method](https://nodejs.org/dist/latest/docs/api/events.html#emitteremiteventname-args) by using `emit`:
 
 ```js
-EventEmitter.emit(eventName, ...args)
+EventEmitter.emit(eventName, ...args);
 ```
 
 ### Aoi.js Function Method
@@ -72,41 +75,41 @@ It would basically do the same as the [node.js method](#emitting-custom-events).
 const { AoiClient, LoadCommands, CustomEvent } = require("aoi.js");
 
 const client = AoiClient({
-    token: "DISCORD BOT TOKEN",
-    prefix: "DISCORD BOT PREFIX",
-    intents: ["MessageContent", "GuildMembers", "GuildMessages", "Guilds"],
-    events: ["onMessage", "onInteractionCreate"],
-    database: {
-        type: "aoi.db",
-        db: require("aoi.db"),
-        tables: ["main"],
-        path: "./database/",
-        extraOptions: {
-            dbType: "KeyValue"
-        }
+  token: "DISCORD BOT TOKEN",
+  prefix: "DISCORD BOT PREFIX",
+  intents: ["MessageContent", "GuildMembers", "GuildMessages", "Guilds"],
+  events: ["onMessage", "onInteractionCreate"],
+  database: {
+    type: "aoi.db",
+    db: require("aoi.db"),
+    tables: ["main"],
+    path: "./database/",
+    extraOptions: {
+      dbType: "KeyValue",
     },
+  },
 });
 
 const event = new CustomEvent(client);
 
 event.command({
-    listen: 'log',
-    code: `$log[Hello!] `
+  listen: "log",
+  code: `$log[Hello!] `,
 });
 
-event.listen('log');
+event.listen("log");
 ```
 
 Inside of aoi.js command files or aoi.js related code you can use the `$eventEmit` & `$eventData` functions to interact with created events.
 
 ```js
-$eventEmit[log]
+$eventEmit[log];
 ```
 
 Would do the same as
 
 ```js
-event.emit("log")
+event.emit("log");
 ```
 
 Both emit the created `log` event, which causes `Hello!` to appear in your console.

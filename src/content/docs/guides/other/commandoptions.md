@@ -5,6 +5,7 @@ id: commandoptions
 ---
 
 <!-- omit from toc -->
+
 ## Table of Contents
 
 - [Base Commands](#base-commands)
@@ -54,12 +55,14 @@ module.exports = [{
 ### Interaction Commands
 
 ```js
-module.exports = [{
+module.exports = [
+  {
     name: string,
     type: string,
     prototype: string,
     code: string,
-}]
+  },
+];
 ```
 
 | OPTION      | INPUT  | EXPLANATION                                                                                                                          |

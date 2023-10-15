@@ -21,7 +21,7 @@ client.command({
   name: "hour",
   code: `
     $hour
-    `
+    `,
 });
 ```
 

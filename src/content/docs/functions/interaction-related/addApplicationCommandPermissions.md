@@ -12,11 +12,11 @@ $addApplicationCommandPermissions[guildID/global?;id;...perms]
 
 ## Parameters
 
-| Field          | Type            | Description                                                                 | Required |
-| -------------- | --------------- | --------------------------------------------------------------------------- | :------: |
-| guildID/global | string, integer | Application command type. <br/> 1. **global** <br/> 2. **specific guildID** |   true   |
-| id             | integer         | Application command ID.                                                     |   true   |
-| ...perms       | string          | Permissions.                                                                |   true   |
+| Field          | Type                                                                                                       | Description                                                                 | Required |
+| -------------- | ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | :------: |
+| guildID/global | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), integer | Application command type. <br/> 1. **global** <br/> 2. **specific guildID** |   true   |
+| id             | integer                                                                                                    | Application command ID.                                                     |   true   |
+| ...perms       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)          | Permissions.                                                                |   true   |
 
 ## Example(s)
 

@@ -14,10 +14,10 @@ $stringStartsWith[text;check]
 
 ## Parameters
 
-| Field | Type   | Description                                                              | Required |
-| ----- | ------ | ------------------------------------------------------------------------ | :------: |
-| text  | string | The text that will be checked.                                           |   true   |
-| check | string | The argument that will check if the text starts with something specific. |   true   |
+| Field | Type                                                                                              | Description                                                              | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ | :------: |
+| text  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The text that will be checked.                                           |   true   |
+| check | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The argument that will check if the text starts with something specific. |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "stringStartsWith",
   code: `
   $stringStartsWith[aoi.js;aoi]
-  `
+  `,
 });
 ```

@@ -14,11 +14,11 @@ $attachment[attachment;name;type?]
 
 ## Parameters
 
-| Field      | Type   | Description                                  | Required |
-| ---------- | ------ | -------------------------------------------- | :------: |
-| attachment | string | Content of the attachment, preferably a URL. |   true   |
-| name       | string | Attachment name.                             |   true   |
-| type?      | string | Attachment type. <br /> 1. **URL** (default) |  false   |
+| Field      | Type                                                                                              | Description                                  | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------- | :------: |
+| attachment | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Content of the attachment, preferably a URL. |   true   |
+| name       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Attachment name.                             |   true   |
+| type?      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Attachment type. <br /> 1. **URL** (default) |  false   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   name: "attachment",
   code: `
   $attachment[https://cdn.discordapp.com/emojis/1063432790697328710.webp?size=96&quality=lossless;boost-icon.png;URL]
-  `
+  `,
 });
 ```

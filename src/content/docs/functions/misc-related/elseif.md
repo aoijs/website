@@ -34,6 +34,6 @@ client.command({
   $elseif[2==4]
   $endelseif
   $endif
-  `
+  `,
 });
 ```

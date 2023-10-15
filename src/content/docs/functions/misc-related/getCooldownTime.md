@@ -14,12 +14,12 @@ $getCooldownTime[time;type;command;id]
 
 ## Parameters
 
-| Field   | Type    | Description                                                                                                               | Required |
-| ------- | ------- | ------------------------------------------------------------------------------------------------------------------------- | :------: |
-| time    | string  | The time of the cooldown.                                                                                                 |   true   |
-| type    | string  | Cooldown type <br /> 1. **globalUser** <br /> 2. **user** <br /> 3. **server** <br /> 4. **channel** <br /> 5. **static** |   true   |
-| command | string  | Command name.                                                                                                             |   true   |
-| id      | integer | User/guild/channel/message ID.                                                                                            |   true   |
+| Field   | Type                                                                                              | Description                                                                                                               | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | :------: |
+| time    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The time of the cooldown.                                                                                                 |   true   |
+| type    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Cooldown type <br /> 1. **globalUser** <br /> 2. **user** <br /> 3. **server** <br /> 4. **channel** <br /> 5. **static** |   true   |
+| command | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Command name.                                                                                                             |   true   |
+| id      | integer                                                                                           | User/guild/channel/message ID.                                                                                            |   true   |
 
 ## Example(s)
 
@@ -31,6 +31,6 @@ client.command({
   code: `
     $cooldown[2m;]
     $getCooldownTime[2m;user;getCooldownTime;$authorID]
-    `
+    `,
 });
 ```

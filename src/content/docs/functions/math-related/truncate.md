@@ -14,9 +14,9 @@ $truncate[number]
 
 ## Parameters
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- | :------: |
-| number | number | Number to truncate. |   true   |
+| Field                                                                                             | Type                                                                                              | Description         | Required |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------- | :------: |
+| [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Number to truncate. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "truncate",
   code: `
   $truncate[775.9723]
-  `
+  `,
 });
 ```

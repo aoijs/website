@@ -14,9 +14,9 @@ $guildID[name?]
 
 ## Parameters
 
-| Field | Type   | Description                                       | Required |
-| ----- | ------ | ------------------------------------------------- | :------: |
-| name? | string | The guild name you want the ID to be returned of. |  false   |
+| Field | Type                                                                                              | Description                                       | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------- | :------: |
+| name? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The guild name you want the ID to be returned of. |  false   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "guildID",
   code: `
   $guildID
-  `
+  `,
 });
 ```

@@ -30,6 +30,6 @@ client.command({
   $if[1==1]
   Hello!
   $endif
-  `
+  `,
 });
 ```

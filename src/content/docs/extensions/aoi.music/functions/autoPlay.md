@@ -14,9 +14,9 @@ $autoPlay[type?]
 
 ## Parameters
 
-| Field | Type   | Description                                                                                                                   | Required |
-| ----- | ------ | ----------------------------------------------------------------------------------------------------------------------------- | :------: |
-| type? | string | Type <br /> 1. **relative** (default) <br /> 2. **spotify** <br /> 3. **youtube** <br /> 4. **soundcloud** <br /> 5. **none** |  false   |
+| Field | Type                                                                                              | Description                                                                                                                   | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | :------: |
+| type? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Type <br /> 1. **relative** (default) <br /> 2. **spotify** <br /> 3. **youtube** <br /> 4. **soundcloud** <br /> 5. **none** |  false   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "autoPlay",
   code: `
     $autoPlay[relative]
-  `
+  `,
 });
 ```

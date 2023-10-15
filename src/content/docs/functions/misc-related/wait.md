@@ -14,9 +14,9 @@ $wait[time]
 
 ## Parameters
 
-| Field | Type           | Description                      | Required |
-| ----- | -------------- | -------------------------------- | :------: |
-| time  | string, number | How long to delay the execution. |   true   |
+| Field | Type                                                                                                                                                                                                 | Description                      | Required |
+| ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | :------: |
+| time  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | How long to delay the execution. |   true   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
     $description[Hello!]
     $wait[5s]
     $sendMessage[Oh, what's that?]
-    `
+    `,
 });
 ```

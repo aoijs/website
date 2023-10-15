@@ -27,6 +27,6 @@ client.command({
   name: "isUserDmEnabled",
   code: `
   $isUserDmEnabled[$authorID]
-  `
+  `,
 });
 ```

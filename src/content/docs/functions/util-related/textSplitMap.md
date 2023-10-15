@@ -14,9 +14,9 @@ $textSplit[awaited]
 
 ## Parameters
 
-| Field   | Type   | Description                  | Required |
-| ------- | ------ | ---------------------------- | :------: |
-| awaited | string | Name of the awaited command. |   true   |
+| Field   | Type                                                                                              | Description                  | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | :------: |
+| awaited | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Name of the awaited command. |   true   |
 
 ## Example(s)
 
@@ -28,13 +28,13 @@ client.command({
   code: `
     $textSplitMap[devs]
     $textSplit[Ayaka,Leref,Ferel,Blurr;,]
-    `
+    `,
 });
 
 client.awaitedCommand({
   name: "devs",
   code: `
     $message[1]
-    `
+    `,
 });
 ```

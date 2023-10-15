@@ -14,9 +14,9 @@ $exec[code]
 
 ## Parameters
 
-| Field | Type   | Description                      | Required |
-| ----- | ------ | -------------------------------- | :------: |
-| code  | string | Code to execute in your console. |   true   |
+| Field | Type                                                                                              | Description                      | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | -------------------------------- | :------: |
+| code  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Code to execute in your console. |   true   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
     \`\`\`
     $exec[node -v]
     \`\`\`
-  `
+  `,
 });
 ```

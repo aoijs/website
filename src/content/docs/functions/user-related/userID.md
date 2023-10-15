@@ -14,9 +14,9 @@ $userID[user]
 
 ## Parameters
 
-| Field | Type           | Description                                                      | Required |
-| ----- | -------------- | ---------------------------------------------------------------- | :------: |
-| user  | string, number | The name of the user who you want the user ID to be returned of. |   true   |
+| Field | Type                                                                                                                                                                                                 | Description                                                      | Required |
+| ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | :------: |
+| user  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The name of the user who you want the user ID to be returned of. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "userID",
   code: `
   $userID[$username]
-  `
+  `,
 });
 ```

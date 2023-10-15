@@ -15,13 +15,14 @@ $interactionFollowUp[content?;embeds?;components?;files?;ephemeral?]
 
 ## Parameters
 
-| Field       | Type    | Description                                                                           | Required |
-| ----------- | ------- | ------------------------------------------------------------------------------------- | :------: |
-| content?    | string  | Message content.                                                                      |  false   |
-| embeds?     | string  | Embed parser.                                                                         |  false   |
-| components? | string  | Component parser.                                                                     |  false   |
-| files?      | string  | File parser.                                                                          |  false   |
-| ephemeral?  | boolean | vVisible to the command author only? <br /> 1. **true** <br /> 2. **false** (default) |  false   |
+| Field                                        | Type                                                                                              | Description       | Required |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------- | ----------------- | :------: |
+| content?                                     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Message content.  |  false   |
+| embeds?                                      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Embed parser.     |  false   |
+| components?                                  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Component parser. |  false   |
+| files?                                       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | File parser.      |  false   |
+| ephemeral?                                   | [boolean](https://developer.mozilla.org/en-US/docs/Web/                                           |
+| JavaScript/Reference/Global_Objects/Boolean) | vVisible to the command author only? <br /> 1. **true** <br /> 2. **false** (default)             | false             |
 
 ## Example(s)
 

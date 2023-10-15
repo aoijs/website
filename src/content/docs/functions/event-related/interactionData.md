@@ -14,9 +14,9 @@ $interactionData[data]
 
 ## Parameters
 
-| Field | Type   | Description       | Required |
-| ----- | ------ | ----------------- | :------: |
-| data  | string | Data to retrieve. |   true   |
+| Field | Type                                                                                              | Description       | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ----------------- | :------: |
+| data  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Data to retrieve. |   true   |
 
 ## Example(s)
 

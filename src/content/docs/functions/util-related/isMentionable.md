@@ -28,6 +28,6 @@ client.command({
   name: "isMentionable",
   code: `
   $isMentionable[$findRole[Owner];$guildID]
-  `
+  `,
 });
 ```

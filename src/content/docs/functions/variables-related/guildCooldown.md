@@ -18,10 +18,10 @@ $guildCooldown[time;errorMessage]
 
 ## Parameters
 
-| Field        | Type   | Description                                                 | Required |
-| ------------ | ------ | ----------------------------------------------------------- | :------: |
-| time         | number | The duration of the cooldown.                               |   true   |
-| errorMessage | string | Error message when there's remaining time for the cooldown. |   true   |
+| Field        | Type                                                                                              | Description                                                 | Required |
+| ------------ | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | :------: |
+| time         | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The duration of the cooldown.                               |   true   |
+| errorMessage | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Error message when there's remaining time for the cooldown. |   true   |
 
 ## Example(s)
 
@@ -33,6 +33,6 @@ client.command({
   code: `
   hello
   $guildCooldown[2m;Please wait %time% to execute this command again.]
-  `
+  `,
 });
 ```

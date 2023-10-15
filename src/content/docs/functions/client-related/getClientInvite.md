@@ -14,9 +14,9 @@ $getClientInvite[...perms?]
 
 ## Parameters
 
-| Field  | Type   | Description                                        | Required |
-| ------ | ------ | -------------------------------------------------- | :------: |
-| perms? | string | Permissions you want to be included in the invite. |  false   |
+| Field  | Type                                                                                              | Description                                        | Required |
+| ------ | ------------------------------------------------------------------------------------------------- | -------------------------------------------------- | :------: |
+| perms? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Permissions you want to be included in the invite. |  false   |
 
 <details>
   <summary><h3> Discord API Permissions </h3></summary>
@@ -77,6 +77,6 @@ client.command({
   name: "getClientInvite",
   code: `
   Invite me here: $getClientInvite[administrator]
-  `
+  `,
 });
 ```

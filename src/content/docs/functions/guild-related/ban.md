@@ -14,12 +14,12 @@ $ban[guildID;userID;days?;reason?]
 
 ## Parameters
 
-| Field    | Type    | Description                                                     | Required |
-| -------- | ------- | --------------------------------------------------------------- | :------: |
-| guildID? | integer | From which guild the user should be banned from.                |   true   |
-| userID   | integer | The user to ban.                                                |   true   |
-| days?    | string  | Days of message history to delete, cannot be higher than 7 days |  false   |
-| reason?  | string  | The reason that will be displayed in the guild's audit logs.    |  false   |
+| Field    | Type                                                                                              | Description                                                     | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | :------: |
+| guildID? | integer                                                                                           | From which guild the user should be banned from.                |   true   |
+| userID   | integer                                                                                           | The user to ban.                                                |   true   |
+| days?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Days of message history to delete, cannot be higher than 7 days |  false   |
+| reason?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The reason that will be displayed in the guild's audit logs.    |  false   |
 
 ## Example(s)
 
@@ -30,6 +30,6 @@ client.command({
   name: "ban",
   code: `
   $ban[$guildID;$randomUserID;7;Imagine getting banned.]
-  `
+  `,
 });
 ```

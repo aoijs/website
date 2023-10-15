@@ -14,9 +14,9 @@ $removeSplitTextElement[...elements]
 
 ## Parameters
 
-| Field       | Type   | Description                    | Required |
-| ----------- | ------ | ------------------------------ | :------: |
-| ...elements | string | Split text elements to remove. |   true   |
+| Field       | Type                                                                                              | Description                    | Required |
+| ----------- | ------------------------------------------------------------------------------------------------- | ------------------------------ | :------: |
+| ...elements | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Split text elements to remove. |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   code: `
     $removeSplitTextElement[bye]
     $textSplit[hello, bye, aoi.js;, ]
-    `
+    `,
 });
 ```

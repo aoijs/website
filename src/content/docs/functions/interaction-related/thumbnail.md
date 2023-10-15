@@ -14,10 +14,10 @@ $thumbnail[index?;URL]
 
 ## Parameters
 
-| Field  | Type   | Description           | Required |
-| ------ | ------ | --------------------- | :------: |
-| index? | number | Embed position/index. |  false   |
-| URL    | string | Thumbnail Image URL.  |   true   |
+| Field  | Type                                                                                              | Description           | Required |
+| ------ | ------------------------------------------------------------------------------------------------- | --------------------- | :------: |
+| index? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Embed position/index. |  false   |
+| URL    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Thumbnail Image URL.  |   true   |
 
 ## Example(s)
 

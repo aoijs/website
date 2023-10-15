@@ -18,11 +18,11 @@ $tempCooldown[time;id;errorMessage?]
 
 ## Parameters
 
-| Field        | Type   | Description                                                 | Required |
-| ------------ | ------ | ----------------------------------------------------------- | :------: |
-| time         | string | The duration of the cooldown.                               |   true   |
-| id           | string | Can be user, guild, message, channel or any other ID.       |   true   |
-| errorMessage | string | Error message when there's remaining time for the cooldown. |   true   |
+| Field        | Type                                                                                              | Description                                                 | Required |
+| ------------ | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | :------: |
+| time         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The duration of the cooldown.                               |   true   |
+| id           | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Can be user, guild, message, channel or any other ID.       |   true   |
+| errorMessage | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Error message when there's remaining time for the cooldown. |   true   |
 
 ## Example(s)
 
@@ -34,6 +34,6 @@ client.command({
   code: `
   hello
   $tempCooldown[2m;customid;Please wait %time% to execute this command again.]
-  `
+  `,
 });
 ```

@@ -14,10 +14,10 @@ $onlyIf[condition;error]
 
 ## Parameters
 
-| Field     | Type   | Description                                    | Required |
-| --------- | ------ | ---------------------------------------------- | :------: |
-| condition | string | Condition to check.                            |   true   |
-| error     | string | Error to return when condition does not match. |  false   |
+| Field     | Type                                                                                              | Description                                    | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------- | :------: |
+| condition | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Condition to check.                            |   true   |
+| error     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Error to return when condition does not match. |  false   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   code: `
     Ok.
     $onlyIf[5==3;That's wrong!]
-    `
+    `,
 });
 ```

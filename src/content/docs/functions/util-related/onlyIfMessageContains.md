@@ -14,11 +14,11 @@ $onlyIfMessageContains[content;...text;error]
 
 ## Parameters
 
-| Field   | Type   | Description                                  | Required |
-| ------- | ------ | -------------------------------------------- | :------: |
-| content | string | Message which should contain the given text. |   true   |
-| text    | string | Text to check for in the message.            |   true   |
-| error   | string | Error to return.                             |   true   |
+| Field   | Type                                                                                              | Description                                  | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------- | :------: |
+| content | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Message which should contain the given text. |   true   |
+| text    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Text to check for in the message.            |   true   |
+| error   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Error to return.                             |   true   |
 
 ## Example(s)
 
@@ -30,6 +30,6 @@ client.command({
   code: `
     Ok.
     $onlyIfMessageContains[Hello!;aoi.js;Couldn't find that word!]
-    `
+    `,
 });
 ```

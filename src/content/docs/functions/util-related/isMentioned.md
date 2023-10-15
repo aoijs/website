@@ -14,9 +14,9 @@ $isMentioned[query]
 
 ## Parameters
 
-| Field | Type   | Description                                                   | Required |
-| ----- | ------ | ------------------------------------------------------------- | :------: |
-| query | string | Where you want to check if a user/role/channel was mentioned. |   true   |
+| Field | Type                                                                                              | Description                                                   | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | :------: |
+| query | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Where you want to check if a user/role/channel was mentioned. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "isMentioned",
   code: `
   $isMentioned[<@$authorID>]
-  `
+  `,
 });
 ```

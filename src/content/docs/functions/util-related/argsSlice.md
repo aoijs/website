@@ -14,11 +14,11 @@ $argsSlice[text;from?;to]
 
 ## Parameters
 
-| Field | Type   | Description                               | Required |
-| ----- | ------ | ----------------------------------------- | :------: |
-| text  | string | Text you want to slice                    |   true   |
-| from? | number | Starting point where to slice the message |  false   |
-| to    | number | Ending point where slicing ends           |   true   |
+| Field | Type                                                                                              | Description                               | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ----------------------------------------- | :------: |
+| text  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Text you want to slice                    |   true   |
+| from? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Starting point where to slice the message |  false   |
+| to    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Ending point where slicing ends           |   true   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   name: "slice",
   code: `
   $argsSlice[Hello Bye;1;5]
-  `
+  `,
 });
 ```

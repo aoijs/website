@@ -14,9 +14,9 @@ $killShard[shardID]
 
 ## Parameters
 
-| Field   | Type   | Description   | Required |
-| ------- | ------ | ------------- | :------: |
-| shardID | number | The shard ID. |   true   |
+| Field   | Type                                                                                              | Description   | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ------------- | :------: |
+| shardID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The shard ID. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "killShard",
   code: `
   $killShard[$shardID]
-  `
+  `,
 });
 ```

@@ -22,6 +22,6 @@ client.command({
   code: `
   You did not mention @ everyone!
   $onlyIf[$isEveryoneMentioned==false;You tried to mention @ everyone!]
-  `
+  `,
 });
 ```

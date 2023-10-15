@@ -14,9 +14,9 @@ $mentionedRoles[index]
 
 ## Parameters
 
-| Field | Type   | Description                | Required |
-| ----- | ------ | -------------------------- | :------: |
-| index | number | The index of the argument. |   true   |
+| Field | Type                                                                                              | Description                | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | -------------------------- | :------: |
+| index | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The index of the argument. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "mentionedRoles",
   code: `
   $mentionedRoles[1]
-  `
+  `,
 });
 ```

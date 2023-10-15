@@ -14,10 +14,11 @@ $findUser[userResolver;returnSelf?]
 
 ## Parameters
 
-| Field        | Type    | Description                                                                           | Required |
-| ------------ | ------- | ------------------------------------------------------------------------------------- | :------: |
-| userResolver | string  | Query which is used to find the user.                                                 |   true   |
-| returnSelf?  | boolean | Will return the user ID of the user who executed the command when user was not found. |  false   |
+| Field                                        | Type                                                                                              | Description                           | Required |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------- | :------: |
+| userResolver                                 | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Query which is used to find the user. |   true   |
+| returnSelf?                                  | [boolean](https://developer.mozilla.org/en-US/docs/Web/                                           |
+| JavaScript/Reference/Global_Objects/Boolean) | Will return the user ID of the user who executed the command when user was not found.             | false                                 |
 
 ## Example(s)
 
@@ -28,6 +29,6 @@ client.command({
   name: "findUser",
   code: `
   $findUser[Ferel;true]
-  `
+  `,
 });
 ```

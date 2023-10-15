@@ -14,10 +14,10 @@ $deleteSticker[guildID;sticker]
 
 ## Parameters
 
-| Field   | Type    | Description                                      | Required |
-| ------- | ------- | ------------------------------------------------ | :------: |
-| guildID | integer | The guild ID of where the sticker is located in. |   true   |
-| sticker | string  | The name of the sticker.                         |   true   |
+| Field   | Type                                                                                              | Description                                      | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------ | :------: |
+| guildID | integer                                                                                           | The guild ID of where the sticker is located in. |   true   |
+| sticker | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The name of the sticker.                         |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "deleteSticker",
   code: `
   $deleteSticker[$guildID;sticker]
-  `
+  `,
 });
 ```

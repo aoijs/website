@@ -14,9 +14,9 @@ $round[number]
 
 ## Parameters
 
-| Field  | Type   | Description      | Required |
-| ------ | ------ | ---------------- | :------: |
-| number | number | Number to round. |   true   |
+| Field  | Type                                                                                              | Description      | Required |
+| ------ | ------------------------------------------------------------------------------------------------- | ---------------- | :------: |
+| number | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Number to round. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "round",
   code: `
   $round[555.78]
-  `
+  `,
 });
 ```

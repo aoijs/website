@@ -14,10 +14,10 @@ $description[index?;description]
 
 ## Parameters
 
-| Field       | Type   | Description                            | Required |
-| ----------- | ------ | -------------------------------------- | :------: |
-| index?      | number | The embed index.                       |  false   |
-| description | string | The content of the embeds description. |   true   |
+| Field       | Type                                                                                              | Description                            | Required |
+| ----------- | ------------------------------------------------------------------------------------------------- | -------------------------------------- | :------: |
+| index?      | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The embed index.                       |  false   |
+| description | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The content of the embeds description. |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "embed",
   code: `
   $description[aoi.js is great!]
-  `
+  `,
 });
 ```

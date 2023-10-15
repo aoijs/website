@@ -14,9 +14,9 @@ $humanizeMs[time]
 
 ## Parameters
 
-| Field | Type   | Description | Required |
-| ----- | ------ | ----------- | :------: |
-| time  | number | Time in MS. |   true   |
+| Field | Type                                                                                              | Description | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ----------- | :------: |
+| time  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Time in MS. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "humanizeMs",
   code: `
     $humanizeMs[16782516189]
-    `
+    `,
 });
 ```

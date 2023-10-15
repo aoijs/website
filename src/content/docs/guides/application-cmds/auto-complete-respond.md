@@ -53,7 +53,7 @@ client.command({
   $else
   $interactionReply[$slashOption[option]]
   $endif
-  `
+  `,
 });
 ```
 

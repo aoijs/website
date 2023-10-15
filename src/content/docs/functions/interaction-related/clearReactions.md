@@ -14,11 +14,11 @@ $clearReactions[channelID;messageID;emoji]
 
 ## Parameters
 
-| Field     | Type    | Description                                                                      | Required |
-| --------- | ------- | -------------------------------------------------------------------------------- | :------: |
-| channelID | integer | The channel ID of where the message is located in.                               |   true   |
-| messageID | integer | The message ID.                                                                  |   true   |
-| emoji     | string  | The emoji to remove. <br /> 1. **all** (default) <br /> 2. **emoji** - any emoji |   true   |
+| Field     | Type                                                                                              | Description                                                                      | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | :------: |
+| channelID | integer                                                                                           | The channel ID of where the message is located in.                               |   true   |
+| messageID | integer                                                                                           | The message ID.                                                                  |   true   |
+| emoji     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The emoji to remove. <br /> 1. **all** (default) <br /> 2. **emoji** - any emoji |   true   |
 
 ## Example(s)
 
@@ -31,6 +31,6 @@ client.command({
   $clearReactions[$channelID;$messageID;🥱]
   $wait[2s]
   $addCmdReactions[🥱;😩]
-  `
+  `,
 });
 ```

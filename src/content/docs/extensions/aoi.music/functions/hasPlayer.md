@@ -21,6 +21,6 @@ client.command({
   name: "hasPlayer",
   code: `
     $hasPlayer
-  `
+  `,
 });
 ```

@@ -14,9 +14,9 @@ $setCacheData[type;cacheName;cacheKey;cacheValue]
 
 ## Parameters
 
-| Field      | Type   | Description  | Required |
-| ---------- | ------ | ------------ | :------: |
-| type       | string | Cache type.  |   true   |
-| cacheName  | string | Cache name.  |   true   |
-| cacheKey   | string | Cache key.   |   true   |
-| cacheValue | string | Cache value. |   true   |
+| Field      | Type                                                                                              | Description  | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | ------------ | :------: |
+| type       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Cache type.  |   true   |
+| cacheName  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Cache name.  |   true   |
+| cacheKey   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Cache key.   |   true   |
+| cacheValue | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Cache value. |   true   |

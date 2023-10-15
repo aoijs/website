@@ -15,9 +15,9 @@ $volume[value]
 
 ## Parameters
 
-| Field | Type           | Description                                                                             | Required |
-| ----- | -------------- | --------------------------------------------------------------------------------------- | :------: |
-| value | string, number | new volume <br /> 1. **number** (any number) <br /> 2. **get** (returns current volume) |   true   |
+| Field | Type                                                                                                                                                                                                 | Description                                                                             | Required |
+| ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | :------: |
+| value | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | new volume <br /> 1. **number** (any number) <br /> 2. **get** (returns current volume) |   true   |
 
 ## Example(s)
 
@@ -28,7 +28,7 @@ client.command({
   name: "volume",
   code: `
     $volume[get]
-  `
+  `,
 });
 ```
 
@@ -39,6 +39,6 @@ client.command({
   name: "volume",
   code: `
     $volume[45]
-  `
+  `,
 });
 ```

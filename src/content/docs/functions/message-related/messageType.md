@@ -28,6 +28,6 @@ client.command({
   name: "messageType",
   code: `
   $messageType[$messageID;$channelID]
-  `
+  `,
 });
 ```

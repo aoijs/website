@@ -14,9 +14,9 @@ $isUnicodeEmoji[emojiResolver]
 
 ## Parameters
 
-| Field         | Type   | Description    | Required |
-| ------------- | ------ | -------------- | :------: |
-| emojiResolver | string | Unicode emoji. |   true   |
+| Field         | Type                                                                                              | Description    | Required |
+| ------------- | ------------------------------------------------------------------------------------------------- | -------------- | :------: |
+| emojiResolver | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Unicode emoji. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "isUnicodeEmoji",
   code: `
   $isUnicodeEmoji[🤓]
-  `
+  `,
 });
 ```

@@ -14,13 +14,13 @@ $getAuditLogs[guildID;userID?;limit?;action?;format?]
 
 ## Parameters
 
-| Field   | Type    | Description                                            | Required |
-| ------- | ------- | ------------------------------------------------------ | :------: |
-| guildID | integer | The ID of a specific guild.                            |   true   |
-| userID? | integer | The user who executed the action stated in audit logs. |  false   |
-| limit?  | number  | The maximum of audit logs it will return.              |  false   |
-| action? | integer | The action that was executed.                          |  false   |
-| format? | string  | The format to return the audit logs in.                |  false   |
+| Field   | Type                                                                                              | Description                                            | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | :------: |
+| guildID | integer                                                                                           | The ID of a specific guild.                            |   true   |
+| userID? | integer                                                                                           | The user who executed the action stated in audit logs. |  false   |
+| limit?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The maximum of audit logs it will return.              |  false   |
+| action? | integer                                                                                           | The action that was executed.                          |  false   |
+| format? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The format to return the audit logs in.                |  false   |
 
 | Format              |                                                                   |
 | ------------------- | ----------------------------------------------------------------- |
@@ -100,6 +100,6 @@ client.command({
   name: "getAuditLogs",
   code: `
   $getAuditLogs[$guildID;$authorID;5;$authorID;12;{executor.username}: {target.id} - {action}]
-  `
+  `,
 });
 ```

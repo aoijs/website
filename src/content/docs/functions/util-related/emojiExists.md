@@ -14,9 +14,9 @@ $emojiExists[emojiResolver]
 
 ## Parameters
 
-| Field         | Type   | Description                           | Required |
-| ------------- | ------ | ------------------------------------- | :------: |
-| emojiResolver | string | Emoji you want to check if it exists. |   true   |
+| Field         | Type                                                                                              | Description                           | Required |
+| ------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------- | :------: |
+| emojiResolver | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Emoji you want to check if it exists. |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "emojiExists",
   code: `
   $emojiExists[<:LerefMoney:1003365344724910191>]
-  `
+  `,
 });
 ```

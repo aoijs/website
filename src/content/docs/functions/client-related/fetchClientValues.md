@@ -14,6 +14,6 @@ $fetchClientValues[function]
 
 ## Parameters
 
-| Field    | Type   | Description          | Required |
-| -------- | ------ | -------------------- | :------: |
-| function | string | Function to execute. |   true   |
+| Field    | Type                                                                                              | Description          | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | -------------------- | :------: |
+| function | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Function to execute. |   true   |

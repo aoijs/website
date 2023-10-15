@@ -14,9 +14,9 @@ $isValidHex[colorResolver]
 
 ## Parameters
 
-| Field         | Type            | Description                 | Required |
-| ------------- | --------------- | --------------------------- | :------: |
-| colorResolver | string, integer | Hex / decimal color string. |   true   |
+| Field         | Type                                                                                                       | Description                 | Required |
+| ------------- | ---------------------------------------------------------------------------------------------------------- | --------------------------- | :------: |
+| colorResolver | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), integer | Hex / decimal color string. |   true   |
 
 ## Example(s)
 
@@ -27,7 +27,7 @@ client.command({
   name: "isValidHex",
   code: `
   $isValidHex[#30dbd8]
-  `
+  `,
 });
 ```
 
@@ -38,6 +38,6 @@ client.command({
   name: "isValidHex",
   code: `
   $isValidHex[80]
-  `
+  `,
 });
 ```

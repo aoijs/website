@@ -14,11 +14,11 @@ $interactionModal[title;customID;components]
 
 ## Parameters
 
-| Field      | Type   | Description                                                     | Required |
-| ---------- | ------ | --------------------------------------------------------------- | :------: |
-| title      | string | The title of the modal which will be displayed as Modal Header. |   true   |
-| customID   | string | The component custom ID.                                        |   true   |
-| components | string | The modal text components.                                      |   true   |
+| Field      | Type                                                                                              | Description                                                     | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | :------: |
+| title      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The title of the modal which will be displayed as Modal Header. |   true   |
+| customID   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The component custom ID.                                        |   true   |
+| components | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The modal text components.                                      |   true   |
 
 ## Example(s)
 

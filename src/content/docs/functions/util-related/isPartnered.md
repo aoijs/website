@@ -27,6 +27,6 @@ client.command({
   name: "isPartnered",
   code: `
   $isPartnered[$guildID]
-  `
+  `,
 });
 ```

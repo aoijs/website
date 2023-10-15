@@ -14,13 +14,13 @@ $createWebhook[channelID;name;avatar;reason;sep?]
 
 ## Parameters
 
-| Field     | Type    | Description                                                                                        | Required |
-| --------- | ------- | -------------------------------------------------------------------------------------------------- | :------: |
-| channelID | integer | Channel ID of where the webhook will be created in.                                                |   true   |
-| name      | string  | The webhook's display name.                                                                        |   true   |
-| avatar    | string  | The webhook avatar url.                                                                            |   true   |
-| reason    | string  | Reason which will be displayed in the guild's audit logs.                                          |   true   |
-| sep?      | string  | The separator which will be used to separate important credentials like token and ID, default `,`. |  false   |
+| Field     | Type                                                                                              | Description                                                                                        | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | :------: |
+| channelID | integer                                                                                           | Channel ID of where the webhook will be created in.                                                |   true   |
+| name      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The webhook's display name.                                                                        |   true   |
+| avatar    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The webhook avatar url.                                                                            |   true   |
+| reason    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Reason which will be displayed in the guild's audit logs.                                          |   true   |
+| sep?      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The separator which will be used to separate important credentials like token and ID, default `,`. |  false   |
 
 ## Example(s)
 
@@ -31,6 +31,6 @@ client.command({
   name: "createWebhook",
   code: `
   $createWebhook[$channelID;aoi.js is great;$userAvatar[$authorID];Just testing.;, ]
-  `
+  `,
 });
 ```

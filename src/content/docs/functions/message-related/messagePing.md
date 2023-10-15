@@ -21,6 +21,6 @@ client.command({
   name: "messagePing",
   code: `
   $messagePing
-  `
+  `,
 });
 ```

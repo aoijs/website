@@ -14,11 +14,11 @@ $resolveColor[type;returnAs?;...data]
 
 ## Parameters
 
-| Field     | Type   | Description                                | Required |
-| --------- | ------ | ------------------------------------------ | :------: |
-| type      | string | Which type the input is.                   |   true   |
-| returnAs? | string | As what the color will be returned.        |  false   |
-| ...data   | string | The data of the RGB or decimal color data. |   true   |
+| Field     | Type                                                                                              | Description                                | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------ | :------: |
+| type      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Which type the input is.                   |   true   |
+| returnAs? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | As what the color will be returned.        |  false   |
+| ...data   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The data of the RGB or decimal color data. |   true   |
 
 ### Types
 
@@ -37,7 +37,7 @@ client.command({
   name: "resolveColor",
   code: `
   $resolveColor[rgb;decimal;50;168;82]
-  `
+  `,
 });
 ```
 
@@ -48,7 +48,7 @@ client.command({
   name: "resolveColor",
   code: `
   $resolveColor[decimal;rgb;#32a852]
-  `
+  `,
 });
 ```
 
@@ -59,6 +59,6 @@ client.command({
   name: "resolveColor",
   code: `
   $resolveColor[decimal;number;#32a852]
-  `
+  `,
 });
 ```

@@ -28,6 +28,6 @@ client.command({
   code: `
   $description[Hello!]
   $addTimestamp[192839ms]
-  `
+  `,
 });
 ```

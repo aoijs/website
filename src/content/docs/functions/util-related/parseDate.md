@@ -14,10 +14,10 @@ $parseDate[ms;type?]
 
 ## Parameters
 
-| Field | Type   | Description                                            | Required |
-| ----- | ------ | ------------------------------------------------------ | :------: |
-| ms    | string | Time in ms you want to parse.                          |   true   |
-| type? | string | The type in which the parsed date will be returned in. |  false   |
+| Field | Type                                                                                              | Description                                            | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | :------: |
+| ms    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Time in ms you want to parse.                          |   true   |
+| type? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The type in which the parsed date will be returned in. |  false   |
 
 ### Types
 
@@ -35,6 +35,6 @@ client.command({
   name: "parseDate",
   code: `
   $parseDate[$dateStamp;date]
-  `
+  `,
 });
 ```

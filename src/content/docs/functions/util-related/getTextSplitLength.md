@@ -22,6 +22,6 @@ client.command({
   code: `
   $getTextSplitLength
   $textSplit[Hello, my, name, is, Leref;, ]
-  `
+  `,
 });
 ```

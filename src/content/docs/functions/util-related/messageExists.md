@@ -28,6 +28,6 @@ client.command({
   name: "messageExists",
   code: `
   $messageExists[1058998634823299143;$channelID]
-  `
+  `,
 });
 ```

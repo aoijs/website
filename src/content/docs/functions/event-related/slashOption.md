@@ -14,9 +14,9 @@ $slashOption[option]
 
 ## Parameters
 
-| Field  | Type   | Description  | Required |
-| ------ | ------ | ------------ | :------: |
-| option | string | Option name. |   true   |
+| Field  | Type                                                                                              | Description  | Required |
+| ------ | ------------------------------------------------------------------------------------------------- | ------------ | :------: |
+| option | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Option name. |   true   |
 
 ## Example(s)
 

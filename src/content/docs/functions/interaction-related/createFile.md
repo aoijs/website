@@ -14,10 +14,10 @@ $createFile[attachment;name]
 
 ## Parameters
 
-| Field      | Type   | Description                 | Required |
-| ---------- | ------ | --------------------------- | :------: |
-| attachment | string | Content of the file.        |   true   |
-| name       | string | The name of the attachment. |   true   |
+| Field      | Type                                                                                              | Description                 | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | --------------------------- | :------: |
+| attachment | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Content of the file.        |   true   |
+| name       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The name of the attachment. |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "createFile",
   code: `
   $createFile[This is an example!;example.txt]
-  `
+  `,
 });
 ```

@@ -27,6 +27,6 @@ client.command({
   name: "isChannelManageable",
   code: `
   $isChannelManageable[$channelID]
-  `
+  `,
 });
 ```

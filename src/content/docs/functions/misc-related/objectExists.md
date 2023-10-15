@@ -14,9 +14,9 @@ $objectExists[objectName]
 
 ## Parameters
 
-| Field      | Type   | Description      | Required |
-| ---------- | ------ | ---------------- | :------: |
-| objectName | string | The object name. |   true   |
+| Field      | Type                                                                                              | Description      | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | ---------------- | :------: |
+| objectName | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The object name. |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   code: `
     $objectExists[Object Name]
     $createObject[Object Name;{"Leref": "Ferel"}]
-    `
+    `,
 });
 ```

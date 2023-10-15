@@ -28,6 +28,6 @@ client.command({
   name: "userExists",
   code: `
   $userExists[$authorID]
-  `
+  `,
 });
 ```

@@ -14,10 +14,10 @@ $createTemporaryVar[table;...vars]
 
 ## Parameters
 
-| Field   | Type   | Description              | Required |
-| ------- | ------ | ------------------------ | :------: |
-| table   | string | Variable table.          |   true   |
-| ...vars | string | Variable name and value. |   true   |
+| Field   | Type                                                                                              | Description              | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ------------------------ | :------: |
+| table   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable table.          |   true   |
+| ...vars | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable name and value. |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "createTemporaryVar",
   code: `
   $createTemporaryVar[main;variable;value]
-  `
+  `,
 });
 ```

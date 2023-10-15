@@ -14,11 +14,11 @@ $usersInChannel[channelID;option?;sep?]
 
 ## Parameters
 
-| Field     | Type    | Description                                                                                | Required |
-| --------- | ------- | ------------------------------------------------------------------------------------------ | :------: |
-| channelID | integer | Voice Channel ID.                                                                          |   true   |
-| option?   | string  | How to return the users <br /> 1. **id** (default) <br /> 2. **user** - mentions the users |  false   |
-| sep?      | string  | Separator to separate multiple returned values.                                            |  false   |
+| Field     | Type                                                                                              | Description                                                                                | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | :------: |
+| channelID | integer                                                                                           | Voice Channel ID.                                                                          |   true   |
+| option?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | How to return the users <br /> 1. **id** (default) <br /> 2. **user** - mentions the users |  false   |
+| sep?      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Separator to separate multiple returned values.                                            |  false   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   name: "usersInChannel",
   code: `
   $usersInChannel[$voiceID;user;, ]
-  `
+  `,
 });
 ```

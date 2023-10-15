@@ -21,6 +21,6 @@ client.command({
   name: "guildRandomID",
   code: `
   $guildRandomID
-  `
+  `,
 });
 ```

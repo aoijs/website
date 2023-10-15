@@ -29,6 +29,6 @@ client.command({
   $clientLeave[$guildID]
   $wait[2s]
   $sendMessage[Bye, I'm leaving!]
-  `
+  `,
 });
 ```

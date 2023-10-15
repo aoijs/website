@@ -14,9 +14,9 @@ $seek[time]
 
 ## Parameters
 
-| Field | Type   | Description         | Required |
-| ----- | ------ | ------------------- | :------: |
-| time  | number | song position in ms |   true   |
+| Field | Type                                                                                              | Description         | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ------------------- | :------: |
+| time  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | song position in ms |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "seek",
   code: `
     $seek[10000]
-  `
+  `,
 });
 ```

@@ -14,10 +14,10 @@ $indexOfArg[string;query]
 
 ## Parameters
 
-| Field  | Type   | Description                                     | Required |
-| ------ | ------ | ----------------------------------------------- | :------: |
-| string | string | The text the bot will be checking the index of. |   true   |
-| query  | string | The query the bot will be checking for.         |   true   |
+| Field                                                                                             | Type                                                                                              | Description                                     | Required |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------- | :------: |
+| [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The text the bot will be checking the index of. |   true   |
+| query                                                                                             | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The query the bot will be checking for.         |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "indexOfArgs",
   code: `
   $indexOfArgs[aoi.js is great for users who are new to Discord's API!;great]
-  `
+  `,
 });
 ```

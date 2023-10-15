@@ -14,9 +14,9 @@ $deleteIn[time]
 
 ## Parameters
 
-| Field | Type           | Description                                      | Required |
-| ----- | -------------- | ------------------------------------------------ | :------: |
-| time  | string, number | After how much time the message will be deleted. |   true   |
+| Field | Type                                                                                                                                                                                                 | Description                                      | Required |
+| ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | :------: |
+| time  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | After how much time the message will be deleted. |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   code: `
   $deleteIn[5s]
   I'll delete this message in 5 seconds!
-  `
+  `,
 });
 ```

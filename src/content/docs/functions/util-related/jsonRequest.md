@@ -14,12 +14,12 @@ $jsonRequest[URL;property?;error?;...header?]
 
 ## Parameters
 
-| Field     | Type   | Description                           | Required |
-| --------- | ------ | ------------------------------------- | :------: |
-| URL       | string | URL you want to get/send data to/from |   true   |
-| property? | string | Property to return (get method)       |  false   |
-| error?    | string | Error to return when request fails    |  false   |
-| ...header | string | Header.                               |  false   |
+| Field     | Type                                                                                              | Description                           | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | ------------------------------------- | :------: |
+| URL       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | URL you want to get/send data to/from |   true   |
+| property? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Property to return (get method)       |  false   |
+| error?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Error to return when request fails    |  false   |
+| ...header | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Header.                               |  false   |
 
 ## Example(s)
 
@@ -30,6 +30,6 @@ client.command({
   name: "jsonRequest",
   code: `
     $jsonRequest[https://some-random-api.ml/facts/dog;fact;Something went wrong.]
-    `
+    `,
 });
 ```

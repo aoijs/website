@@ -14,9 +14,9 @@ $modulo[num;num]
 
 ## Parameters
 
-| Field | Type   | Description                         | Required |
-| ----- | ------ | ----------------------------------- | :------: |
-| num   | number | Numbers to return the remainder of. |   true   |
+| Field | Type                                                                                              | Description                         | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ----------------------------------- | :------: |
+| num   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Numbers to return the remainder of. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "modulo",
   code: `
   $modulo[5;3]
-  `
+  `,
 });
 ```

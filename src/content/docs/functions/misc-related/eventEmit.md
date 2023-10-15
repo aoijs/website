@@ -14,7 +14,7 @@ $eventEmit[name;...datas]
 
 ## Parameters
 
-| Field    | Type   | Description        | Required |
-| -------- | ------ | ------------------ | :------: |
-| name     | string | Custom event name. |   true   |
-| ...datas | string | Custom event data. |   true   |
+| Field    | Type                                                                                              | Description        | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ------------------ | :------: |
+| name     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Custom event name. |   true   |
+| ...datas | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Custom event data. |   true   |

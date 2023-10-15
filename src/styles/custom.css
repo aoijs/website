@@ -73,10 +73,6 @@ a:where(.astro-3ii7xxms):hover {
   background-color: var(--sl-color-backdrop-overlay);
 }
 
-.sl-banner {
-  border: 2px solid var(--sl-color-bg);
-}
-
 /* Theme Component */
 .astro-4yphtoen {
   border-radius: 6px;

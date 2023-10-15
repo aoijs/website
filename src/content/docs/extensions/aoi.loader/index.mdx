@@ -24,7 +24,7 @@ A unofficial command loader for aoi.js gen 6.
 - Commands can be reloaded without restarting the client.
 - Array of commands in JS files are supported.
 
---- 
+---
 
 ## Setup
 
@@ -43,33 +43,27 @@ const { Loader } = require("aoi.loader");
 const { AoiClient } = require("aoi.js");
 
 const client = new AoiClient({
-    database: {
-        type: "aoi.db",
-        db: require("@akarui/aoi.db"),
-        tables: ["main"],
-        path: "./db",
-        extraOptions: {
-            dbType: "KeyValue"
-        }
+  database: {
+    type: "aoi.db",
+    db: require("@akarui/aoi.db"),
+    tables: ["main"],
+    path: "./db",
+    extraOptions: {
+      dbType: "KeyValue",
     },
-    intents: [
-        "Guilds",
-        "GuildMessages",
-        "MessageContent"
-    ],
-    events: [
-        "onMessage"
-    ],
-    prefix: "BOT PREFIX",
-    token: "BOT TOKEN",
+  },
+  intents: ["Guilds", "GuildMessages", "MessageContent"],
+  events: ["onMessage"],
+  prefix: "BOT PREFIX",
+  token: "BOT TOKEN",
 });
 
 // Loading commands with custom loader.
-new Loader(client).load("./commands")
-    .then(() => console.log("Source loaded!"));
+new Loader(client).load("./commands").then(() => console.log("Source loaded!"));
 ```
 
 ## Commands
+
 All options
 
 ```
@@ -133,6 +127,7 @@ You must use the built-in function.
 `$updateLoader`
 
 Example:
+
 ```
 [exportCommand: default] {
     name: reload

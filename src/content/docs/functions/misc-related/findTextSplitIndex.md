@@ -14,9 +14,9 @@ $findTextSplitIndex[query]
 
 ## Parameters
 
-| Field | Type   | Description | Required |
-| ----- | ------ | ----------- | :------: |
-| query | string | Query.      |   true   |
+| Field | Type                                                                                              | Description | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ----------- | :------: |
+| query | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Query.      |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   code: `
   $findTextSplitIndex[Cya]
   $textSplit[Hello, Bye, Cya;, ]
-  `
+  `,
 });
 ```

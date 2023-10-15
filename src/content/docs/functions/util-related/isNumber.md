@@ -14,9 +14,9 @@ $isNumber[num]
 
 ## Parameters
 
-| Field | Type   | Description                                 | Required |
-| ----- | ------ | ------------------------------------------- | :------: |
-| num   | number | Argument you want to check if its a number. |   true   |
+| Field | Type                                                                                              | Description                                 | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ------------------------------------------- | :------: |
+| num   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Argument you want to check if its a number. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "isNumber",
   code: `
   $isNumber[255]
-  `
+  `,
 });
 ```

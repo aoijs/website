@@ -14,9 +14,9 @@ $disableMentionType[type]
 
 ## Parameters
 
-| Field | Type   | Description                          | Required |
-| ----- | ------ | ------------------------------------ | :------: |
-| type  | string | Type of mention you want to disable. |   true   |
+| Field | Type                                                                                              | Description                          | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ------------------------------------ | :------: |
+| type  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Type of mention you want to disable. |   true   |
 
 <details>
   <summary> <h2> Available Types </h2></summary>
@@ -40,7 +40,7 @@ client.command({
   code: `
 <@$authorID>
 $disableMentionType[users] 
-  `
+  `,
 });
 ```
 
@@ -52,6 +52,6 @@ client.command({
   code: `
 <@$authorID>
 $disableMentionType[all] 
-  `
+  `,
 });
 ```

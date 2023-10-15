@@ -14,13 +14,13 @@ $interactionEdit[content?;embeds?;components?;files?;allowedMentions?]
 
 ## Parameters
 
-| Field            | Type   | Description                                                                      | Required |
-| ---------------- | ------ | -------------------------------------------------------------------------------- | :------: |
-| content?         | string | New message content.                                                             |  false   |
-| embeds?          | string | Embed parser.                                                                    |  false   |
-| components?      | string | Component parser.                                                                |  false   |
-| files?           | string | File parser.                                                                     |  false   |
-| allowedMentions? | string | Allowed mentions? <br /> 1. **users** <br /> 2. **roles** <br /> 3. **everyone** |  false   |
+| Field            | Type                                                                                              | Description                                                                      | Required |
+| ---------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | :------: |
+| content?         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | New message content.                                                             |  false   |
+| embeds?          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Embed parser.                                                                    |  false   |
+| components?      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Component parser.                                                                |  false   |
+| files?           | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | File parser.                                                                     |  false   |
+| allowedMentions? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Allowed mentions? <br /> 1. **users** <br /> 2. **roles** <br /> 3. **everyone** |  false   |
 
 ## Example(s)
 

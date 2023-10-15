@@ -14,10 +14,10 @@ $getObjectValues[objectName;separator?]
 
 ## Parameters
 
-| Field      | Type   | Description         | Required |
-| ---------- | ------ | ------------------- | :------: |
-| objectName | string | Name of the object. |   true   |
-| separator? | string | The separator.      |   true   |
+| Field      | Type                                                                                              | Description         | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | ------------------- | :------: |
+| objectName | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Name of the object. |   true   |
+| separator? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The separator.      |   true   |
 
 ## Example(s)
 
@@ -32,6 +32,6 @@ client.command({
     "Leref": "Ferel",
     "dbd.js": "aoi.js"
   }]
-  `
+  `,
 });
 ```

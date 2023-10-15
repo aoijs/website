@@ -4,7 +4,7 @@ import starlight from "@astrojs/starlight";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import react from "@astrojs/react";
 import expressiveCode from "astro-expressive-code";
-import sitemap from '@astrojs/sitemap';
+import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
   site: "https://aoi.js.org",
@@ -19,7 +19,7 @@ export default defineConfig({
       frames: {
         showCopyToClipboardButton: true,
       },
-      theme: "dracula-soft",
+      theme: "github-dark",
     }),
     starlight({
       title: "aoi.js",
@@ -37,7 +37,7 @@ export default defineConfig({
       customCss: ["./src/styles/custom.css"],
       components: {
         // Override the default `Search` component.
-        Search: './src/components/Search.astro',
+        Search: "./src/components/Search.astro",
       },
       head: [
         {
@@ -238,13 +238,6 @@ export default defineConfig({
               label: "Interaction",
               autogenerate: {
                 directory: "functions/interaction-related",
-              },
-              collapsed: true,
-            },
-            {
-              label: "Invite",
-              autogenerate: {
-                directory: "functions/invite-related",
               },
               collapsed: true,
             },

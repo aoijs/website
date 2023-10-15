@@ -14,10 +14,10 @@ $setGuildName[name;guildID?]
 
 ## Parameters
 
-| Field    | Type    | Description                                      | Required |
-| -------- | ------- | ------------------------------------------------ | :------: |
-| name     | string  | The new guild name.                              |   true   |
-| guildID? | integer | The ID of the guild whose name will be modified. |  false   |
+| Field    | Type                                                                                              | Description                                      | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------ | :------: |
+| name     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The new guild name.                              |   true   |
+| guildID? | integer                                                                                           | The ID of the guild whose name will be modified. |  false   |
 
 ## Example(s)
 

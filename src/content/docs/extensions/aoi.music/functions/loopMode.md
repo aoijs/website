@@ -14,9 +14,9 @@ $loopMode[mode?]
 
 ## Parameters
 
-| Field | Type   | Description                                                                   | Required |
-| ----- | ------ | ----------------------------------------------------------------------------- | :------: |
-| mode? | string | loop mode <br /> 1. **queue** (default) <br /> 2. **song** <br /> 3. **none** |  false   |
+| Field | Type                                                                                              | Description                                                                   | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | :------: |
+| mode? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | loop mode <br /> 1. **queue** (default) <br /> 2. **song** <br /> 3. **none** |  false   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "loopMode",
   code: `
     $loopMode[song]
-  `
+  `,
 });
 ```

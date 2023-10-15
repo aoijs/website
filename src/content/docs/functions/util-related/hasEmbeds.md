@@ -28,6 +28,6 @@ client.command({
   name: "hasEmbeds",
   code: `
   $hasEmbeds[$messageID;$channelID]
-  `
+  `,
 });
 ```

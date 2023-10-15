@@ -28,6 +28,6 @@ client.command({
   code: `
   $discriminator[$authorID] // your discriminator
   $discriminator[$clientID] // the bot's discriminator
-  `
+  `,
 });
 ```

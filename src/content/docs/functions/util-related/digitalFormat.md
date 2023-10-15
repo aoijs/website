@@ -14,9 +14,9 @@ $digitalFormat[ms]
 
 ## Parameters
 
-| Field | Type   | Description                              | Required |
-| ----- | ------ | ---------------------------------------- | :------: |
-| ms    | number | Time in miliseconds you wish to convert. |   true   |
+| Field | Type                                                                                              | Description                              | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ---------------------------------------- | :------: |
+| ms    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Time in miliseconds you wish to convert. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "digitalFormat",
   code: `
   $digitalFormat[240000]
-  `
+  `,
 });
 ```

@@ -14,10 +14,10 @@ $arrayConcat[separator;...arrays]
 
 ## Parameters
 
-| Field     | Type   | Description        | Required |
-| --------- | ------ | ------------------ | :------: |
-| separator | string | Separator.         |   true   |
-| ...arrays | string | Name of the array. |   true   |
+| Field     | Type                                                                                              | Description        | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | ------------------ | :------: |
+| separator | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Separator.         |   true   |
+| ...arrays | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Name of the array. |   true   |
 
 ## Example(s)
 
@@ -30,6 +30,6 @@ client.command({
   $arrayConcat[ ;array1;array2]
   $createArray[array1;This is]
   $createArray[array2;a test]
-  `
+  `,
 });
 ```

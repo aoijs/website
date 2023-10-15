@@ -14,9 +14,10 @@ $interactionDeferUpdate[ephemeral]
 
 ## Parameters
 
-| Field     | Type    | Description                         | Required |
-| --------- | ------- | ----------------------------------- | :------: |
-| ephemeral | boolean | Visible to the command author only? |   true   |
+| Field                                        | Type                                                    | Description | Required |
+| -------------------------------------------- | ------------------------------------------------------- | ----------- | :------: |
+| ephemeral                                    | [boolean](https://developer.mozilla.org/en-US/docs/Web/ |
+| JavaScript/Reference/Global_Objects/Boolean) | Visible to the command author only?                     | true        |
 
 ## Example(s)
 

@@ -14,9 +14,9 @@ $resolveEmojiID[emojiResolver]
 
 ## Parameters
 
-| Field         | Type   | Description           | Required |
-| ------------- | ------ | --------------------- | :------: |
-| emojiResolver | string | Emoji name or string. |   true   |
+| Field         | Type                                                                                              | Description           | Required |
+| ------------- | ------------------------------------------------------------------------------------------------- | --------------------- | :------: |
+| emojiResolver | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Emoji name or string. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "resolveEmojiID",
   code: `
   $resolveEmojiID[LerefMoney]
-  `
+  `,
 });
 ```

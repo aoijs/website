@@ -19,10 +19,10 @@ $cooldown[time;errorMessage
 
 ## Parameters
 
-| Field        | Type   | Description                                                 | Required |
-| ------------ | ------ | ----------------------------------------------------------- | :------: |
-| time         | string | The duration of the cooldown.                               |   true   |
-| errorMessage | string | Error message when there's remaining time for the cooldown. |   true   |
+| Field        | Type                                                                                              | Description                                                 | Required |
+| ------------ | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | :------: |
+| time         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The duration of the cooldown.                               |   true   |
+| errorMessage | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Error message when there's remaining time for the cooldown. |   true   |
 
 ## Example(s)
 
@@ -34,6 +34,6 @@ client.command({
   code: `
   hello
   $cooldown[2m;Please wait %time% to execute this command again.]
-  `
+  `,
 });
 ```

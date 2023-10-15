@@ -14,11 +14,11 @@ $fetch[method;query;...properties]
 
 ## Parameters
 
-| Field         | Type   | Description                        | Required |
-| ------------- | ------ | ---------------------------------- | :------: |
-| method        | string | Method to fetch (listed below).    |   true   |
-| query         | string | Input for the used method.         |   true   |
-| ...properties | string | Sub properties of query to return. |  false   |
+| Field         | Type                                                                                              | Description                        | Required |
+| ------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------- | :------: |
+| method        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Method to fetch (listed below).    |   true   |
+| query         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Input for the used method.         |   true   |
+| ...properties | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Sub properties of query to return. |  false   |
 
 <details>
   <summary><h3> Methods </h3></summary>
@@ -52,6 +52,6 @@ client.command({
   \`\`\`
   $fetch[message;$messageID;id]
   \`\`\`
-  `
+  `,
 });
 ```

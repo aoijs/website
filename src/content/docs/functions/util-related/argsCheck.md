@@ -15,10 +15,10 @@ $argsCheck[condition;errorMessage]
 
 ## Parameters
 
-| Field        | Type   | Description                              | Required |
-| ------------ | ------ | ---------------------------------------- | :------: |
-| condition    | string | Condition to be made.                    |   true   |
-| errorMessage | string | Error message if condition did not meet. |   true   |
+| Field        | Type                                                                                              | Description                              | Required |
+| ------------ | ------------------------------------------------------------------------------------------------- | ---------------------------------------- | :------: |
+| condition    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Condition to be made.                    |   true   |
+| errorMessage | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Error message if condition did not meet. |   true   |
 
 #### Valid Mathematical Operators
 
@@ -44,6 +44,6 @@ client.command({
   You have more than two arguments, nice!
 
   $argsCheck[>2;You have less than two arguments!]
-  `
+  `,
 });
 ```

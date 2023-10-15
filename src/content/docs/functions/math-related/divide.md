@@ -14,9 +14,9 @@ $divide[...numbers;...numbers]
 
 ## Parameters
 
-| Field   | Type   | Description                                | Required |
-| ------- | ------ | ------------------------------------------ | :------: |
-| numbers | number | Numbers you want to divide with eachother. |   true   |
+| Field   | Type                                                                                              | Description                                | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------ | :------: |
+| numbers | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Numbers you want to divide with eachother. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "divide",
   code: `
   $divide[69;3]
-  `
+  `,
 });
 ```

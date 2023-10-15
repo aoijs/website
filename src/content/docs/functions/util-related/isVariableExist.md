@@ -14,10 +14,10 @@ $isVariableExist[variable;table?]
 
 ## Parameters
 
-| Field    | Type   | Description        | Required |
-| -------- | ------ | ------------------ | :------: |
-| variable | string | The variable name. |   true   |
-| table?   | string | The table name.    |  false   |
+| Field    | Type                                                                                              | Description        | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ------------------ | :------: |
+| variable | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The variable name. |   true   |
+| table?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The table name.    |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "isVariableExist",
   code: `
   $isVariableExist[Example;main]
-  `
+  `,
 });
 ```

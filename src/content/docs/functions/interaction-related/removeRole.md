@@ -14,12 +14,12 @@ $removeRole[guildID;userID;roleID;reason?]
 
 ## Parameters
 
-| Field   | Type    | Description                                                  | Required |
-| ------- | ------- | ------------------------------------------------------------ | :------: |
-| guildID | integer | The guild ID of where the user and role is located in.       |   true   |
-| userID  | integer | The ID of the user whose role will be removed.               |   true   |
-| roleID  | integer | The ID of the role that will be removed.                     |   true   |
-| reason? | string  | The reason that will be displayed in the guild's audit logs. |  false   |
+| Field   | Type                                                                                              | Description                                                  | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | :------: |
+| guildID | integer                                                                                           | The guild ID of where the user and role is located in.       |   true   |
+| userID  | integer                                                                                           | The ID of the user whose role will be removed.               |   true   |
+| roleID  | integer                                                                                           | The ID of the role that will be removed.                     |   true   |
+| reason? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The reason that will be displayed in the guild's audit logs. |  false   |
 
 ## Example(s)
 

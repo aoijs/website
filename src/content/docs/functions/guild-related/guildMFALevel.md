@@ -32,6 +32,6 @@ client.command({
   name: "guildMFALevel",
   code: `
   $guildMFALevel[$guildID]
-  `
+  `,
 });
 ```

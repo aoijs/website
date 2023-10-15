@@ -14,9 +14,9 @@ $handleError[option]
 
 ## Parameters
 
-| Field  | Type   | Description                                                                                                                                       | Required |
-| ------ | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------- | :------: |
-| option | string | What to return the data of. <br /> 1. **function** - function name <br /> 2. **command** - command name <br /> 3. **error** - error that occurred |   true   |
+| Field  | Type                                                                                              | Description                                                                                                                                       | Required |
+| ------ | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | :------: |
+| option | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | What to return the data of. <br /> 1. **function** - function name <br /> 2. **command** - command name <br /> 3. **error** - error that occurred |   true   |
 
 ## Example(s)
 

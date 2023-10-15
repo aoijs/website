@@ -14,10 +14,10 @@ $sendCrosspostingMessage[content;...channelIDs]
 
 ## Parameters
 
-| Field         | Type    | Description                      | Required |
-| ------------- | ------- | -------------------------------- | :------: |
-| content       | string  | The message to send.             |   true   |
-| ...channelIDs | integer | Where to send the given message. |   true   |
+| Field         | Type                                                                                              | Description                      | Required |
+| ------------- | ------------------------------------------------------------------------------------------------- | -------------------------------- | :------: |
+| content       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The message to send.             |   true   |
+| ...channelIDs | integer                                                                                           | Where to send the given message. |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "sendCrosspostingMessage",
   code: `
    $sendCrosspostingMessage[Hello!;$channelID;$randomChannelID]
-  `
+  `,
 });
 ```

@@ -14,9 +14,9 @@ $removeFilter[filter]
 
 ## Parameters
 
-| Field  | Type   | Description | Required |
-| ------ | ------ | ----------- | :------: |
-| filter | string | JSON format |   true   |
+| Field  | Type                                                                                              | Description | Required |
+| ------ | ------------------------------------------------------------------------------------------------- | ----------- | :------: |
+| filter | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | JSON format |   true   |
 
 | Filter       | Contains                                   | JSON Format                 |
 | ------------ | ------------------------------------------ | --------------------------- |
@@ -42,6 +42,6 @@ client.command({
   name: "removeFilter",
   code: `
     $removeFilter[{"NIGHT_CORE", "BASS_BOOST"}]
-  `
+  `,
 });
 ```

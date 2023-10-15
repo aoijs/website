@@ -14,12 +14,13 @@ $forEachGuildChannel[time;awaitData;...awaitedCmds;endCmd]
 
 ## Parameters
 
-| Field          | Type   | Description                                                 | Required |
-| -------------- | ------ | ----------------------------------------------------------- | :------: |
-| time           | string | How long it takes between each channel to execute the next. |   true   |
-| awaitData      | object | Awaited Data.                                               |   true   |
-| ...awaitedCmds | string | Awaited Commands to execute.                                |   true   |
-| endCmd         | string | Awaited Command to execute when loop ends.                  |   true   |
+| Field                                       | Type                                                                                              | Description                                                 | Required |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | :------: |
+| time                                        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | How long it takes between each channel to execute the next. |   true   |
+| awaitData                                   | [object](https://developer.mozilla.org/en-US/docs/Web/                                            |
+| JavaScript/Reference/Global_Objects/Object) | Awaited Data.                                                                                     | true                                                        |
+| ...awaitedCmds                              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Awaited Commands to execute.                                |   true   |
+| endCmd                                      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Awaited Command to execute when loop ends.                  |   true   |
 
 ## Example(s)
 
@@ -30,13 +31,13 @@ client.command({
   name: "forEachGuildChannel",
   code: `
   $forEachGuildChannel[2s;{"value": "test"};awaitedCommand;]
-  `
+  `,
 });
 
 client.awaitedCommand({
   name: "awaitedCommand",
   code: `
   $setChannelVar[varname;$awaitData[value];$channelID]
-  `
+  `,
 });
 ```

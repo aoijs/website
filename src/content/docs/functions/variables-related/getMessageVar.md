@@ -14,11 +14,11 @@ $getMessageVar[varname;guildID?;table?]
 
 ## Parameters
 
-| Field      | Type    | Description     | Required |
-| ---------- | ------- | --------------- | :------: |
-| varname    | string  | Variable name.  |   true   |
-| messageID? | integer | message ID      |  false   |
-| table?     | string  | Variable table. |  false   |
+| Field      | Type                                                                                              | Description     | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | --------------- | :------: |
+| varname    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable name.  |   true   |
+| messageID? | integer                                                                                           | message ID      |  false   |
+| table?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable table. |  false   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   name: "getMessageVar",
   code: `
     $getMessageVar[Example;$messageID;main]
-    `
+    `,
 });
 ```

@@ -21,6 +21,6 @@ client.command({
   name: "packageVersion",
   code: `
     $packageVersion
-    `
+    `,
 });
 ```

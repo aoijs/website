@@ -14,10 +14,10 @@ $arraySort[name;type?]
 
 ## Parameters
 
-| Field | Type   | Description                                                              | Required |
-| ----- | ------ | ------------------------------------------------------------------------ | :------: |
-| name  | string | Array name.                                                              |   true   |
-| type  | string | Type to sort after <br /> 1. **asc** (ascending) 2. **dsc** (descending) |   true   |
+| Field | Type                                                                                              | Description                                                              | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ | :------: |
+| name  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Array name.                                                              |   true   |
+| type  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Type to sort after <br /> 1. **asc** (ascending) 2. **dsc** (descending) |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   $arrayJoin[array;, ]
   $arraySort[array;asc]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `
+  `,
 });
 ```

@@ -14,10 +14,10 @@ $removeObjectProperty[objectName;...properties]
 
 ## Parameters
 
-| Field         | Type   | Description             | Required |
-| ------------- | ------ | ----------------------- | :------: |
-| objectName    | string | The object name.        |   true   |
-| ...properties | string | Name of the properties. |   true   |
+| Field         | Type                                                                                              | Description             | Required |
+| ------------- | ------------------------------------------------------------------------------------------------- | ----------------------- | :------: |
+| objectName    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The object name.        |   true   |
+| ...properties | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Name of the properties. |   true   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   code: `
   $removeObjectProperty[Object Name;Object]
   $createObject[Object Name;{"Object": "Property"}]
-  `
+  `,
 });
 ```

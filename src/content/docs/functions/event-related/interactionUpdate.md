@@ -14,12 +14,12 @@ $interactionUpdate[content?;embeds?;components?;files?]
 
 ## Parameters
 
-| Field       | Type   | Description          | Required |
-| ----------- | ------ | -------------------- | :------: |
-| content?    | string | New message content. |  false   |
-| embeds?     | string | Embed parser.        |  false   |
-| components? | string | Component parser.    |  false   |
-| files?      | string | File parser.         |  false   |
+| Field       | Type                                                                                              | Description          | Required |
+| ----------- | ------------------------------------------------------------------------------------------------- | -------------------- | :------: |
+| content?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | New message content. |  false   |
+| embeds?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Embed parser.        |  false   |
+| components? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Component parser.    |  false   |
+| files?      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | File parser.         |  false   |
 
 ## Example(s)
 

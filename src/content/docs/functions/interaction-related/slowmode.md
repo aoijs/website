@@ -14,10 +14,10 @@ $slowmode[time;channelID?]
 
 ## Parameters
 
-| Field      | Type           | Description                                  | Required |
-| ---------- | -------------- | -------------------------------------------- | :------: |
-| time       | string, number | The new slowmode of the given channel.       |   true   |
-| channelID? | integer        | The ID of the channel that will be modified. |  false   |
+| Field      | Type                                                                                                                                                                                                 | Description                                  | Required |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | :------: |
+| time       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The new slowmode of the given channel.       |   true   |
+| channelID? | integer                                                                                                                                                                                              | The ID of the channel that will be modified. |  false   |
 
 This has a max time of 21600000 seconds (6 hours).
 

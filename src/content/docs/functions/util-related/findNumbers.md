@@ -14,9 +14,9 @@ $findNumbers[text]
 
 ## Parameters
 
-| Field | Type   | Description                          | Required |
-| ----- | ------ | ------------------------------------ | :------: |
-| text  | string | Text where you want to find numbers. |   true   |
+| Field | Type                                                                                              | Description                          | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ------------------------------------ | :------: |
+| text  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Text where you want to find numbers. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "findNumbers",
   code: `
   $findNumbers[Hello, I'm 25 years old]
-  `
+  `,
 });
 ```

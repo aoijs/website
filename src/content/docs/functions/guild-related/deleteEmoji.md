@@ -14,9 +14,9 @@ $deleteEmoji[emoji]
 
 ## Parameters
 
-| Field | Type   | Description                                                     | Required |
-| ----- | ------ | --------------------------------------------------------------- | :------: |
-| emoji | string | Emoji Name, ID or full form of the emoji which will be deleted. |   true   |
+| Field | Type                                                                                              | Description                                                     | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | :------: |
+| emoji | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Emoji Name, ID or full form of the emoji which will be deleted. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "deleteEmoji",
   code: `
   $deleteEmoji[$randomEmoji]
-  `
+  `,
 });
 ```

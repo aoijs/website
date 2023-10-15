@@ -14,10 +14,10 @@ $image[index?;URL]
 
 ## Parameters
 
-| Field  | Type   | Description                     | Required |
-| ------ | ------ | ------------------------------- | :------: |
-| index? | number | Embed index                     |  false   |
-| URL    | string | Embed Image URL. (bottom image) |   true   |
+| Field  | Type                                                                                              | Description                     | Required |
+| ------ | ------------------------------------------------------------------------------------------------- | ------------------------------- | :------: |
+| index? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Embed index                     |  false   |
+| URL    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Embed Image URL. (bottom image) |   true   |
 
 ## Example(s)
 
@@ -30,6 +30,6 @@ client.command({
   $title[Hello!]
   $image[$userAvatar]
   $footer[Hello again!;$userAvatar]
-  `
+  `,
 });
 ```

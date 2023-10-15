@@ -14,9 +14,9 @@ $math[equation]
 
 ## Parameters
 
-| Field    | Type   |      Description      | Required |
-| -------- | ------ | :-------------------: | :------: |
-| equation | string | Calculation (/\*-+()) |   true   |
+| Field    | Type                                                                                              |      Description      | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | :-------------------: | :------: |
+| equation | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Calculation (/\*-+()) |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "math",
   code: `
   $math[15+5/2*26+(5+120)]
-  `
+  `,
 });
 ```

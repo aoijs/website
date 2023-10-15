@@ -15,10 +15,10 @@ $onlyForChannels[...categoryIds;error]
 
 ## Parameters
 
-| Field         | Type            | Description                                                                      | Required |
-| ------------- | --------------- | -------------------------------------------------------------------------------- | :------: |
-| ...channelIds | string, integer | Channels you want to limit the command to.                                       |   true   |
-| error         | string          | Error to return when the command was not executed in any of the listed channels. |   true   |
+| Field         | Type                                                                                                       | Description                                                                      | Required |
+| ------------- | ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | :------: |
+| ...channelIds | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), integer | Channels you want to limit the command to.                                       |   true   |
+| error         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)          | Error to return when the command was not executed in any of the listed channels. |   true   |
 
 ## Example(s)
 
@@ -30,6 +30,6 @@ client.command({
   code: `
     Ok.
     $onlyForChannels[channelID;channelID;You can't use that command here!]
-    `
+    `,
 });
 ```

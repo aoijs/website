@@ -14,12 +14,12 @@ $findRoles[roleResolver;limit?;type?;format?]
 
 ## Parameters
 
-| Field        | Type   | Description                                      | Required |
-| ------------ | ------ | ------------------------------------------------ | :------: |
-| roleResolver | string | Query to match.                                  |   true   |
-| limit?       | number | The maximum amount of roles the bot will return. |  false   |
-| type?        | string | Type of the search query.                        |  false   |
-| format?      | string | Formatting for the output.                       |  false   |
+| Field        | Type                                                                                              | Description                                      | Required |
+| ------------ | ------------------------------------------------------------------------------------------------- | ------------------------------------------------ | :------: |
+| roleResolver | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Query to match.                                  |   true   |
+| limit?       | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The maximum amount of roles the bot will return. |  false   |
+| type?        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Type of the search query.                        |  false   |
+| format?      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Formatting for the output.                       |  false   |
 
 ### Parameters for the `format` argument
 
@@ -36,6 +36,6 @@ client.command({
   name: "findRoles",
   code: `
   $findRoles[Owner;5;startsWith;{position}) {username}: {id}]
-  `
+  `,
 });
 ```

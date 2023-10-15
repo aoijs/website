@@ -28,6 +28,6 @@ client.command({
   name: "isGuildDeafened",
   code: `
   $isGuildDeafened
-  `
+  `,
 });
 ```

@@ -30,6 +30,6 @@ client.command({
   code: `
   $deleteMessage[$get[id];$channelID]
   $let[id;$sendMessage[Hello!;true]]
-  `
+  `,
 });
 ```

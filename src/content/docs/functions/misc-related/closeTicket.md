@@ -14,9 +14,9 @@ $closeTicket[error?]
 
 ## Parameters
 
-| Field  | Type   | Description      | Required |
-| ------ | ------ | ---------------- | :------: |
-| error? | string | Error to return. |  false   |
+| Field  | Type                                                                                              | Description      | Required |
+| ------ | ------------------------------------------------------------------------------------------------- | ---------------- | :------: |
+| error? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Error to return. |  false   |
 
 ## Example(s)
 
@@ -25,6 +25,6 @@ client.command({
   name: "closeTicket",
   code: `
   $closeTicket[Something went wrong!]
-  `
+  `,
 });
 ```

@@ -14,9 +14,9 @@ $suppressErrors[errorMsg?]
 
 ## Parameters
 
-| Field    | Type   | Description              | Required |
-| -------- | ------ | ------------------------ | :------: |
-| errorMsg | string | Error message to return. |  false   |
+| Field    | Type                                                                                              | Description              | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ------------------------ | :------: |
+| errorMsg | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Error message to return. |  false   |
 
 ## Example(s)
 

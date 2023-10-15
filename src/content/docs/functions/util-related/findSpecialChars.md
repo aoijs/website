@@ -14,9 +14,9 @@ $findSpecialChars[text]
 
 ## Parameters
 
-| Field | Type   | Description                                     | Required |
-| ----- | ------ | ----------------------------------------------- | :------: |
-| text  | string | Text where you want to find special characters. |   true   |
+| Field | Type                                                                                              | Description                                     | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------- | :------: |
+| text  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Text where you want to find special characters. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "findSpecialChars",
   code: `
   $findSpecialChars[Aoi.js is ###### great]
-  `
+  `,
 });
 ```

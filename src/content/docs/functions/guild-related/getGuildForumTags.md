@@ -14,11 +14,11 @@ $getGuildForumTags[forumId;option?;separator?]
 
 ## Parameters
 
-| Field      | Type    | Description                         | Required |
-| ---------- | ------- | ----------------------------------- | :------: |
-| forumId    | integer | The ID of the forum channel.        |   true   |
-| option?    | string  | The option / format to return.      |  false   |
-| separator? | string  | The separator to separate the data. |  false   |
+| Field      | Type                                                                                              | Description                         | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | ----------------------------------- | :------: |
+| forumId    | integer                                                                                           | The ID of the forum channel.        |   true   |
+| option?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The option / format to return.      |  false   |
+| separator? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The separator to separate the data. |  false   |
 
 This function also supports **custom formatting**!
 
@@ -31,7 +31,7 @@ client.command({
   name: "getGuildForumTags",
   code: `
   $getGuildForumTags[forumId;name;, ]
-  `
+  `,
 });
 ```
 
@@ -42,6 +42,6 @@ client.command({
   name: "getGuildForumTags",
   code: `
   $getGuildForumTags[forumId;Name: {name} -> Emoji: {emoji} {emojiId}]
-  `
+  `,
 });
 ```

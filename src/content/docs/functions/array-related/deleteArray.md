@@ -14,9 +14,9 @@ $deleteArray[name]
 
 ## Parameters
 
-| Field | Type   | Description | Required |
-| ----- | ------ | ----------- | :------: |
-| name  | string | Array name. |   true   |
+| Field | Type                                                                                              | Description | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ----------- | :------: |
+| name  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Array name. |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   code: `
   $deleteArray[array]
   $createArray[array;Hello;This;Is;Great]
-  `
+  `,
 });
 ```

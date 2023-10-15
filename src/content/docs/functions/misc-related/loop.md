@@ -14,11 +14,12 @@ $loop[time;awaitData;...awaitedCmds]
 
 ## Parameters
 
-| Field          | Type   | Description                    | Required |
-| -------------- | ------ | ------------------------------ | :------: |
-| time           | string | How often to execute the loop. |   true   |
-| awaitData      | object | Awaited Data.                  |   true   |
-| ...awaitedCmds | string | Awaited Commands to execute.   |   true   |
+| Field                                       | Type                                                                                              | Description                    | Required |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------ | :------: |
+| time                                        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | How often to execute the loop. |   true   |
+| awaitData                                   | [object](https://developer.mozilla.org/en-US/docs/Web/                                            |
+| JavaScript/Reference/Global_Objects/Object) | Awaited Data.                                                                                     | true                           |
+| ...awaitedCmds                              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Awaited Commands to execute.   |   true   |
 
 ## Example(s)
 
@@ -30,7 +31,7 @@ client.command({
   code: `
     $loop[5;{ "message": "$get[messageID]", "channel": "$channelID" };editMessage]
     $let[messageID;$sendMessage[My ping is: $pingMS;true]]
-    `
+    `,
 });
 ```
 
@@ -42,6 +43,6 @@ client.awaitedCommand({
   code: `
     $editMessage[$awaitData[message];$pingMS;$awaitData[channel]]
     $wait[5s]
-    `
+    `,
 });
 ```

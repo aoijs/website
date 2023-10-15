@@ -14,10 +14,11 @@ $sendMessage[content;returnID?]
 
 ## Parameters
 
-| Field     | Type    | Description                                                         | Required |
-| --------- | ------- | ------------------------------------------------------------------- | :------: |
-| content   | string  | Message Content to send.                                            |   true   |
-| returnID? | boolean | Return message ID? <br /> 1. **true** <br /> 2. **false** (default) |  false   |
+| Field                                        | Type                                                                                              | Description              | Required |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------ | :------: |
+| content                                      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Message Content to send. |   true   |
+| returnID?                                    | [boolean](https://developer.mozilla.org/en-US/docs/Web/                                           |
+| JavaScript/Reference/Global_Objects/Boolean) | Return message ID? <br /> 1. **true** <br /> 2. **false** (default)                               | false                    |
 
 ## Example(s)
 
@@ -28,7 +29,7 @@ client.command({
   name: "sendMessage",
   code: `
    $sendMessage[Hello!;false]  
-  `
+  `,
 });
 ```
 
@@ -39,6 +40,6 @@ client.command({
   name: "sendMessage",
   code: `
    $sendMessage[Hello! {newEmbed:{title:Bonjour!}};false]  
-  `
+  `,
 });
 ```

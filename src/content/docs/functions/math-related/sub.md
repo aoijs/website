@@ -14,9 +14,9 @@ $sub[num;num]
 
 ## Parameters
 
-| Field | Type   | Description                          | Required |
-| ----- | ------ | ------------------------------------ | :------: |
-| num   | number | Numbers to perform calculation with. |   true   |
+| Field | Type                                                                                              | Description                          | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ------------------------------------ | :------: |
+| num   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Numbers to perform calculation with. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "sub",
   code: `
   $sub[70;5]
-  `
+  `,
 });
 ```

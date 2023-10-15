@@ -21,6 +21,6 @@ client.command({
   name: "clientPrefixes",
   code: `
   $clientPrefixes
-  `
+  `,
 });
 ```

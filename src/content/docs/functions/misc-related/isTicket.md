@@ -27,6 +27,6 @@ client.command({
   name: "isTicket",
   code: `
     $isTicket[$channelID]
-    `
+    `,
 });
 ```

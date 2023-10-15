@@ -28,6 +28,6 @@ client.command({
   name: "isVideoOn",
   code: `
   $isVideoOn[$authorID;$guildID]
-  `
+  `,
 });
 ```

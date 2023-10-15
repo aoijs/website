@@ -14,11 +14,12 @@ $modifyRole[guildID;roleID;...data]
 
 ## Parameters
 
-| Field   | Type           | Description                                   | Required |
-| ------- | -------------- | --------------------------------------------- | :------: |
-| guildID | integer        | The guild ID of where the role is located in. |   true   |
-| roleID  | integer        | The role ID to modify.                        |   true   |
-| ...data | string, object | New Role Data.                                |   true   |
+| Field                                       | Type                                                                                                                                                      | Description                                   | Required |
+| ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | :------: |
+| guildID                                     | integer                                                                                                                                                   | The guild ID of where the role is located in. |   true   |
+| roleID                                      | integer                                                                                                                                                   | The role ID to modify.                        |   true   |
+| ...data                                     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [object](https://developer.mozilla.org/en-US/docs/Web/ |
+| JavaScript/Reference/Global_Objects/Object) | New Role Data.                                                                                                                                            | true                                          |
 
 ## Example(s)
 
@@ -31,6 +32,6 @@ client.command({
   $modifyRole[$guildID;roleID;{
     "name": "Awesome!"
   }]
-  `
+  `,
 });
 ```

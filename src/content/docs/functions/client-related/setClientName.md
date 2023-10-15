@@ -14,9 +14,9 @@ $setClientName[username]
 
 ## Parameters
 
-| Field    | Type   | Description              | Required |
-| -------- | ------ | ------------------------ | :------: |
-| username | string | The new client username. |   true   |
+| Field    | Type                                                                                              | Description              | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ------------------------ | :------: |
+| username | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The new client username. |   true   |
 
 ## Example(s)
 

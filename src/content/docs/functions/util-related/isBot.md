@@ -27,6 +27,6 @@ client.command({
   name: "isBot",
   code: `
   $isBot[$clientID]
-  `
+  `,
 });
 ```

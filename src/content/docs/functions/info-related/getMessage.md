@@ -14,11 +14,11 @@ $getMessage[channelID;messageID;option?]
 
 ## Parameters
 
-| Field     | Type    | Description                                        | Required |
-| --------- | ------- | -------------------------------------------------- | :------: |
-| channelID | integer | ID of the channel where the message is located in. |   true   |
-| messageID | integer | The ID of the message.                             |   true   |
-| option?   | string  | Which option to fetch.                             |  false   |
+| Field     | Type                                                                                              | Description                                        | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------- | :------: |
+| channelID | integer                                                                                           | ID of the channel where the message is located in. |   true   |
+| messageID | integer                                                                                           | The ID of the message.                             |   true   |
+| option?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Which option to fetch.                             |  false   |
 
 <details open>
   <summary><h3> Options </h3></summary>
@@ -41,6 +41,6 @@ client.command({
   name: "getMessage",
   code: `
 $getMessage[$channelID;$messageID;content]
-  `
+  `,
 });
 ```

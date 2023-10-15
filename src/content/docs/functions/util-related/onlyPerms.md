@@ -14,10 +14,10 @@ $onlyPerms[...perms;error]
 
 ## Parameters
 
-| Field    | Type   | Description                                                   | Required |
-| -------- | ------ | ------------------------------------------------------------- | :------: |
-| ...perms | string | Permission the user requires.                                 |   true   |
-| error    | string | Error to return when the user has not the listed permissions. |   true   |
+| Field    | Type                                                                                              | Description                                                   | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | :------: |
+| ...perms | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Permission the user requires.                                 |   true   |
+| error    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Error to return when the user has not the listed permissions. |   true   |
 
 You can find all permissions **[here](../../guides/client/clientpermissions.md)**.
 
@@ -31,6 +31,6 @@ client.command({
   code: `
     Ok.
     $onlyPerms[administrator;You don't have administrator permissions!]
-    `
+    `,
 });
 ```

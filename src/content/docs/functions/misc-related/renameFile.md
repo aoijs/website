@@ -14,10 +14,10 @@ $renameFile[oldFile;newFile]
 
 ## Parameters
 
-| Field   | Type   | Description    | Required |
-| ------- | ------ | -------------- | :------: |
-| oldFile | string | Old file name. |   true   |
-| newFile | string | New file name. |   true   |
+| Field   | Type                                                                                              | Description    | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | -------------- | :------: |
+| oldFile | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Old file name. |   true   |
+| newFile | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | New file name. |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "renameFile",
   code: `
     $renameFile[./index.js;./index.txt]
-    `
+    `,
 });
 ```

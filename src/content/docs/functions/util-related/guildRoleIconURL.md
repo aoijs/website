@@ -28,6 +28,6 @@ client.command({
   name: "guildRoleIconURL",
   code: `
   $guildRoleIconURL[$guildID;900004369355931729]
-  `
+  `,
 });
 ```

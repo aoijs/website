@@ -5,7 +5,9 @@ id: handler
 ---
 
 <!-- omit from toc -->
+
 ## Table of Contents
+
 - [Why should you use Command Handler?](#why-should-you-use-command-handler)
   - [Starting off with modifying your main file](#starting-off-with-modifying-your-main-file)
   - [Setting everything up with folders and files](#setting-everything-up-with-folders-and-files)
@@ -15,7 +17,6 @@ id: handler
   - [Change of creating commands](#change-of-creating-commands)
   - [Multiple commands in one file](#multiple-commands-in-one-file)
   - [Updating your commands](#updating-your-commands)
-
 
 ## Why should you use Command Handler?
 

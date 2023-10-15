@@ -28,6 +28,6 @@ client.command({
   name: "userRolesCount",
   code: `
   $userRolesCount[$authorID;$guildID]
-  `
+  `,
 });
 ```

@@ -14,10 +14,10 @@ $customEmoji[emojiResolver;guildID?]
 
 ## Parameters
 
-| Field         | Type            | Description                                                                                 | Required |
-| ------------- | --------------- | ------------------------------------------------------------------------------------------- | :------: |
-| emojiResolver | string          | Emoji name or ID.                                                                           |   true   |
-| guildID?      | string, integer | Where the emoji is from. <br /> 1. **global** <br /> 2. **guildID** - replace with guild ID |  false   |
+| Field         | Type                                                                                                       | Description                                                                                 | Required |
+| ------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | :------: |
+| emojiResolver | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)          | Emoji name or ID.                                                                           |   true   |
+| guildID?      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), integer | Where the emoji is from. <br /> 1. **global** <br /> 2. **guildID** - replace with guild ID |  false   |
 
 ## Example(s)
 
@@ -30,7 +30,7 @@ client.command({
   name: "customEmoji",
   code: `
   $customEmoji[emojiResolver;global]
-  `
+  `,
 });
 ```
 
@@ -41,6 +41,6 @@ client.command({
   name: "customEmoji",
   code: `
   $customEmoji[emojiResolver;specific guild ID]
-  `
+  `,
 });
 ```

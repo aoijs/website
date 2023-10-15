@@ -14,9 +14,9 @@ $expandNumber[abbrNumber]
 
 ## Parameters
 
-| Field      | Type   | Description                | Required |
-| ---------- | ------ | -------------------------- | :------: |
-| abbrNumber | string | Number you want to expand. |   true   |
+| Field      | Type                                                                                              | Description                | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | -------------------------- | :------: |
+| abbrNumber | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Number you want to expand. |   true   |
 
 ## Example(s)
 

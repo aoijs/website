@@ -14,11 +14,12 @@ $findMember[userResolver;returnSelf?;guildID?]
 
 ## Parameters
 
-| Field        | Type    | Description                                           | Required |
-| ------------ | ------- | ----------------------------------------------------- | :------: |
-| userResolver | string  | User you want to find.                                |   true   |
-| returnSelf?  | boolean | Return the author ID if the given user was not found. |  false   |
-| guildID?     | integer | Guild ID where the user is present in.                |  false   |
+| Field                                        | Type                                                                                              | Description                            | Required |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------- | :------: |
+| userResolver                                 | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | User you want to find.                 |   true   |
+| returnSelf?                                  | [boolean](https://developer.mozilla.org/en-US/docs/Web/                                           |
+| JavaScript/Reference/Global_Objects/Boolean) | Return the author ID if the given user was not found.                                             | false                                  |
+| guildID?                                     | integer                                                                                           | Guild ID where the user is present in. |  false   |
 
 ## Example(s)
 
@@ -29,6 +30,6 @@ client.command({
   name: "findMember",
   code: `
   $findMember[Leref;true;$guildID]
-  `
+  `,
 });
 ```

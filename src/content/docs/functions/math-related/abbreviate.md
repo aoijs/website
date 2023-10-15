@@ -28,7 +28,7 @@ client.command({
   name: "abbreviate",
   code: `
   $abbreviate[20000]
-  `
+  `,
 });
 ```
 
@@ -39,6 +39,6 @@ client.command({
   name: "abbreviate",
   code: `
   $abbreviate[20000;1]
-  `
+  `,
 });
 ```

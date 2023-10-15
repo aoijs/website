@@ -27,6 +27,6 @@ client.command({
   name: "isVerified",
   code: `
   $isVerified[$guildID]
-  `
+  `,
 });
 ```

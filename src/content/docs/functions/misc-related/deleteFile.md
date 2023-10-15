@@ -14,9 +14,9 @@ $deleteFile[path]
 
 ## Parameters
 
-| Field | Type   | Description | Required |
-| ----- | ------ | ----------- | :------: |
-| path  | string | File path.  |   true   |
+| Field | Type                                                                                              | Description | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ----------- | :------: |
+| path  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | File path.  |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "deleteFile",
   code: `
   $deleteFile[./index.js]
-  `
+  `,
 });
 ```

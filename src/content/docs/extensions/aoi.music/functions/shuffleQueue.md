@@ -21,6 +21,6 @@ client.command({
   name: "shuffleQueue",
   code: `
     $shuffleQueue
-  `
+  `,
 });
 ```

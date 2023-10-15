@@ -33,6 +33,6 @@ client.command({
   name: "guildContentFilter",
   code: `
   $guildContentFilter[$guildID]
-  `
+  `,
 });
 ```

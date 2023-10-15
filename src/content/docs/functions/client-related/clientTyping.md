@@ -22,6 +22,6 @@ client.command({
   code: `
   Hello!
   $clientTyping
-  `
+  `,
 });
 ```

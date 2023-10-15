@@ -21,6 +21,6 @@ client.command({
   name: "respawnAllShards",
   code: `
    $respawnAllShards
-  `
+  `,
 });
 ```

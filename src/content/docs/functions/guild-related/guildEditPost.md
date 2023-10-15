@@ -14,12 +14,13 @@ $guildEditPost[forumId;userID?;...threadTags(?)]
 
 ## Parameters
 
-| Field            | Type    | Description                                                               | Required |
-| ---------------- | ------- | ------------------------------------------------------------------------- | :------: |
-| forumId          | integer | The ID of the forum channel.                                              |   true   |
-| reason?          | string  | The reason displayed in the guild's audit logs.                           |  false   |
-| returnTags?      | boolean | Return the thread tags?                                                   |  false   |
-| ...threadTags(?) | string  | The applied post tags. Optional when forum channel does not require tags. |    /     |
+| Field                                        | Type                                                                                              | Description                                                               | Required |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | :------: |
+| forumId                                      | integer                                                                                           | The ID of the forum channel.                                              |   true   |
+| reason?                                      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The reason displayed in the guild's audit logs.                           |  false   |
+| returnTags?                                  | [boolean](https://developer.mozilla.org/en-US/docs/Web/                                           |
+| JavaScript/Reference/Global_Objects/Boolean) | Return the thread tags?                                                                           | false                                                                     |
+| ...threadTags(?)                             | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The applied post tags. Optional when forum channel does not require tags. |    /     |
 
 ## Example(s)
 
@@ -30,6 +31,6 @@ client.command({
   name: "guildEditPost",
   code: `
   $guildEditPost[forumId;This is a reason!;false;Tag 1;Tag 2;Tag 3]
-  `
+  `,
 });
 ```

@@ -14,9 +14,9 @@ $checkCondition[condition]
 
 ## Parameters
 
-| Field     | Type   | Description                  | Required |
-| --------- | ------ | ---------------------------- | :------: |
-| condition | string | Condition you want to check. |   true   |
+| Field     | Type                                                                                              | Description                  | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | :------: |
+| condition | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Condition you want to check. |   true   |
 
 #### Valid Mathematical Operators
 
@@ -40,7 +40,7 @@ client.command({
   name: "checkCondition",
   code: `
   $checkCondition[50>25]
-  `
+  `,
 });
 ```
 
@@ -55,7 +55,7 @@ client.command({
   name: "checkCondition",
   code: `
   $checkCondition[50>25&&120<280]
-  `
+  `,
 });
 ```
 
@@ -68,6 +68,6 @@ client.command({
   name: "checkCondition",
   code: `
   $checkCondition[50>25||true==false]
-  `
+  `,
 });
 ```

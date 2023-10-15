@@ -29,6 +29,6 @@ client.command({
   code: `
   $messagePublish[$get[msgID];$channelID]
   $let[msgID;$sendMessage[Hello!;true]]
-  `
+  `,
 });
 ```

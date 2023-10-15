@@ -14,10 +14,11 @@ $mentioned[index;returnSelf?]
 
 ## Parameters
 
-| Field       | Type    | Description                                   | Required |
-| ----------- | ------- | --------------------------------------------- | :------: |
-| index       | number  | The index of the argument.                    |   true   |
-| returnSelf? | boolean | Return the author's ID if user was not found. |  false   |
+| Field                                        | Type                                                                                              | Description                | Required |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------- | :------: |
+| index                                        | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The index of the argument. |   true   |
+| returnSelf?                                  | [boolean](https://developer.mozilla.org/en-US/docs/Web/                                           |
+| JavaScript/Reference/Global_Objects/Boolean) | Return the author's ID if user was not found.                                                     | false                      |
 
 ## Example(s)
 
@@ -29,6 +30,6 @@ client.command({
   name: "mentioned",
   code: `
   $mentioned[1;true]
-  `
+  `,
 });
 ```

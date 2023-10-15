@@ -21,6 +21,6 @@ client.command({
   name: "day",
   code: `
   Today is: $day
-  `
+  `,
 });
 ```

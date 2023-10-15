@@ -26,12 +26,15 @@ The `client.variables()` function takes an object as an argument, where each pro
 For example:
 
 ```js title="index.js"
-client.variables({
-  blacklisted: false,
-  money: 0,
-  developers: {},
-  title: "none",
-}, "main");
+client.variables(
+  {
+    blacklisted: false,
+    money: 0,
+    developers: {},
+    title: "none",
+  },
+  "main",
+);
 ```
 
 ---
@@ -65,12 +68,15 @@ For example:
 
 ```js title="handler/variables.js"
 module.exports = (client) => {
-  client.variables({
-    blacklisted: false,
-    money: 0,
-    developers: {},
-    title: "none",
-  }, "main");
+  client.variables(
+    {
+      blacklisted: false,
+      money: 0,
+      developers: {},
+      title: "none",
+    },
+    "main",
+  );
 };
 ```
 

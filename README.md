@@ -88,6 +88,6 @@ client.command({
 
 [![AkaruiDevelopment/aoi.js](https://contrib.rocks/image?repo=AkaruiDevelopment/aoi.js)](https://github.com/AkaruiDevelopment/aoi.js)
 
-### 📄 Documentation 
+### 📄 Documentation
 
 [![aoijs/website](https://contrib.rocks/image?repo=aoijs/website)](https://github.com/aoijs/website)

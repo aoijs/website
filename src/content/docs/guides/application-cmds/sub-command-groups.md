@@ -7,6 +7,7 @@ sidebar:
 ---
 
 <!-- omit from toc -->
+
 ## Table of Contents
 
 - [Sub command groups](#sub-command-groups)

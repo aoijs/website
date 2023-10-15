@@ -14,10 +14,10 @@ $userBadges[userId?;sep?]
 
 ## Parameters
 
-| Field   | Type    | Description                                                            | Required |
-| ------- | ------- | ---------------------------------------------------------------------- | :------: |
-| userId? | integer | The ID of the user you want the badges of.                             |  false   |
-| sep?    | string  | Separator to split multiple badges from eachother <br /> `,` (default) |  false   |
+| Field   | Type                                                                                              | Description                                                            | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | :------: |
+| userId? | integer                                                                                           | The ID of the user you want the badges of.                             |  false   |
+| sep?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Separator to split multiple badges from eachother <br /> `,` (default) |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "userBadges",
   code: `
   $userBadges[$authorID;, ]
-  `
+  `,
 });
 ```

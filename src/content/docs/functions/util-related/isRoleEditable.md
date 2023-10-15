@@ -28,6 +28,6 @@ client.command({
   name: "isRoleEditable",
   code: `
   $isRoleEditable[$findRole[Owner];$guildID]
-  `
+  `,
 });
 ```

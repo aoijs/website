@@ -14,9 +14,9 @@ $awaitData[name]
 
 ## Parameters
 
-| Field | Type   | Description        | Required |
-| ----- | ------ | ------------------ | :------: |
-| name  | string | Awaited Data Name. |   true   |
+| Field | Type                                                                                              | Description        | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ------------------ | :------: |
+| name  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Awaited Data Name. |   true   |
 
 ## Example(s)
 
@@ -27,13 +27,13 @@ client.command({
   name: "awaitData",
   code: `
   $forEachMember[1s;{ "members": "$membersCount" };returnMembers;]
-  `
+  `,
 });
 
 client.awaitedCommand({
   name: "returnMembers",
   code: `
   $log[ $authorID , is one out of $awaitData[members] members ]
-  `
+  `,
 });
 ```

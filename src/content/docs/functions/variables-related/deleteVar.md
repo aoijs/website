@@ -14,11 +14,11 @@ $deleteVar[variable;id;table?]
 
 ## Parameters
 
-| Field    | Type           | Description                                   | Required |
-| -------- | -------------- | --------------------------------------------- | :------: |
-| variable | string, number | Variable name.                                |   true   |
-| id       | integer        | ID of the variable to delete ( userID etc. ). |   true   |
-| table?   | string         | Variable table.                               |  false   |
+| Field    | Type                                                                                                                                                                                                 | Description                                   | Required |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | :------: |
+| variable | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Variable name.                                |   true   |
+| id       | integer                                                                                                                                                                                              | ID of the variable to delete ( userID etc. ). |   true   |
+| table?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | Variable table.                               |  false   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   name: "deleteVar",
   code: `
   $deleteVar[Test;$authorID;main]
-  `
+  `,
 });
 ```

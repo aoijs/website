@@ -14,10 +14,10 @@ $removeContains[content;...words]
 
 ## Parameters
 
-| Field    | Type   | Description                          | Required |
-| -------- | ------ | ------------------------------------ | :------: |
-| content  | string | Text where to remove the words from. |   true   |
-| ...words | string | Text to remove from the text.        |   true   |
+| Field    | Type                                                                                              | Description                          | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ------------------------------------ | :------: |
+| content  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Text where to remove the words from. |   true   |
+| ...words | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Text to remove from the text.        |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "removeContains",
   code: `
     $removeContains[Hello, aoi.js!;, ;aoi.js]
-    `
+    `,
 });
 ```

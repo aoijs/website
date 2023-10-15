@@ -51,11 +51,11 @@ We do not take responsibilities for any damages this package could produce, if y
 
 ---
 
-```js 
+````js
 //index.js
 const { AoiClient, Util } = require("aoi.js");
 const aoicanvas = require("aoi.canvas");
- 
+
 const client = new AoiClient({
   token: "Discord Bot Token",
   prefix: "Discord Bot Prefix",
@@ -71,14 +71,14 @@ const client = new AoiClient({
     },
   },
 });
- 
+
 aoicanvas.load({
   client: client, // the aoi.js bot
   Util: Util, // To make aoi.canvas parser work. ($sendMessage, $channelSendMessage, $interactionReply, etc)
   DownloadFolder: "./aoicanvas/", // download folder for $downloadCanvas and $downloadGIF
   ErrorsType: "console" // errors type (console/message)
 });
- 
+
 // Ping Command Example
 client.command({
   name: "ping",
@@ -100,7 +100,7 @@ client.command({
     $createCanvas[pro;512;512]
     `
 });
- 
+
 // Leref Pro Command Example
 client.command({
   name: "leref",
@@ -109,3 +109,4 @@ client.command({
   $lerefPro
   `
 });```
+````

@@ -14,10 +14,10 @@ $commandInfo[name;option]
 
 ## Parameters
 
-| Field  | Type   | Description            | Required |
-| ------ | ------ | ---------------------- | :------: |
-| name   | string | Command name or alias. |   true   |
-| option | string | Property to retrieve.  |   true   |
+| Field  | Type                                                                                              | Description            | Required |
+| ------ | ------------------------------------------------------------------------------------------------- | ---------------------- | :------: |
+| name   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Command name or alias. |   true   |
+| option | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Property to retrieve.  |   true   |
 
 ## Example(s)
 
@@ -33,6 +33,6 @@ client.command({
   usage: "commandInfo [command]",
   code: `
   Usage: $commandInfo[ci;usage]
-  `
+  `,
 });
 ```

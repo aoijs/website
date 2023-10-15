@@ -14,10 +14,10 @@ $randomChannelID[guildID/global?;type?]
 
 ## Parameters
 
-| Field           | Type    | Description                | Required |
-| --------------- | ------- | -------------------------- | :------: |
-| guildID/global? | integer | Guild ID or global search. |  false   |
-| type?           | string  | Channel type.              |  false   |
+| Field           | Type                                                                                              | Description                | Required |
+| --------------- | ------------------------------------------------------------------------------------------------- | -------------------------- | :------: |
+| guildID/global? | integer                                                                                           | Guild ID or global search. |  false   |
+| type?           | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Channel type.              |  false   |
 
 <details open>
   <summary><h3> Channel Types </h3></summary>
@@ -49,6 +49,6 @@ client.command({
   name: "randomChannelID",
   code: `
   <#$randomChannelID[$guildID;all]>
-  `
+  `,
 });
 ```

@@ -14,12 +14,12 @@ $setChannelVar[varname;value;channelID?;table?]
 
 ## Parameters
 
-| Field      | Type    | Description         | Required |
-| ---------- | ------- | ------------------- | :------: |
-| varname    | string  | Variable name.      |   true   |
-| value      | string  | New Variable value. |   true   |
-| channelID? | integer | Channel ID.         |  false   |
-| table?     | string  | Variable table.     |  false   |
+| Field      | Type                                                                                              | Description         | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | ------------------- | :------: |
+| varname    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable name.      |   true   |
+| value      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | New Variable value. |   true   |
+| channelID? | integer                                                                                           | Channel ID.         |  false   |
+| table?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable table.     |  false   |
 
 ## Example(s)
 
@@ -30,6 +30,6 @@ client.command({
   name: "setChannelVar",
   code: `
     $setChannelVar[Example;This is a value;$channelID;main]
-    `
+    `,
 });
 ```

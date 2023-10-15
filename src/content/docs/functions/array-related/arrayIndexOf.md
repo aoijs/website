@@ -14,10 +14,10 @@ $arrayIndexOf[name;query]
 
 ## Parameters
 
-| Field | Type   | Description                                                         | Required |
-| ----- | ------ | ------------------------------------------------------------------- | :------: |
-| name  | string | Array name.                                                         |   true   |
-| query | string | The element we will be queering for every element inside the array. |   true   |
+| Field | Type                                                                                              | Description                                                         | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | :------: |
+| name  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Array name.                                                         |   true   |
+| query | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The element we will be queering for every element inside the array. |   true   |
 
 ## Example(s)
 

@@ -14,10 +14,10 @@ $arrayJoin[name;separator?]
 
 ## Parameters
 
-| Field      | Type   | Description | Required |
-| ---------- | ------ | ----------- | :------: |
-| name       | string | Array name. |   true   |
-| separator? | string | Separator.  |  false   |
+| Field      | Type                                                                                              | Description | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | ----------- | :------: |
+| name       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Array name. |   true   |
+| separator? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Separator.  |  false   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   code: `
   $arrayJoin[array;, ]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `
+  `,
 });
 ```

@@ -14,9 +14,9 @@ $isValidInvite[inviteResolver]
 
 ## Parameters
 
-| Field          | Type   | Description        | Required |
-| -------------- | ------ | ------------------ | :------: |
-| inviteResolver | string | Guild invite link. |   true   |
+| Field          | Type                                                                                              | Description        | Required |
+| -------------- | ------------------------------------------------------------------------------------------------- | ------------------ | :------: |
+| inviteResolver | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Guild invite link. |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "isValidInvite",
   code: `
   $isValidInvite[https://discord.gg/aoi-js-server-akarui-development-team-773352845738115102]
-  `
+  `,
 });
 ```

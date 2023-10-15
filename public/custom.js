@@ -3,7 +3,7 @@
   let position = { scrollTop: 0, details: [] };
 
   const sidebar = document.querySelector(
-    "#starlight__sidebar > .sidebar-content"
+    "#starlight__sidebar > .sidebar-content",
   );
 
   if (sidebar) {

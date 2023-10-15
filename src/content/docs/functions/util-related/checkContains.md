@@ -14,10 +14,10 @@ $checkContains[text;...chars]
 
 ## Parameters
 
-| Field | Type   | Description                 | Required |
-| ----- | ------ | --------------------------- | :------: |
-| text  | string | Text you want to check.     |   true   |
-| chars | string | Text you want to check for. |   true   |
+| Field | Type                                                                                              | Description                 | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | --------------------------- | :------: |
+| text  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Text you want to check.     |   true   |
+| chars | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Text you want to check for. |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "checkContains",
   code: `
   $checkContains[aoi.js is easy and simple to use for beginners;easy;simple]
-  `
+  `,
 });
 ```

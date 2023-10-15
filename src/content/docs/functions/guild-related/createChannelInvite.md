@@ -14,10 +14,11 @@ $createChannelInvite[channelID?;...options]
 
 ## Parameters
 
-| Field      | Type    | Description                                         | Required |
-| ---------- | ------- | --------------------------------------------------- | :------: |
-| channelID? | integer | The channel ID of which the invite will be created. |  false   |
-| options?   | object  | Invite options.                                     |  false   |
+| Field                                       | Type                                                   | Description                                         | Required |
+| ------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------- | :------: |
+| channelID?                                  | integer                                                | The channel ID of which the invite will be created. |  false   |
+| options?                                    | [object](https://developer.mozilla.org/en-US/docs/Web/ |
+| JavaScript/Reference/Global_Objects/Object) | Invite options.                                        | false                                               |
 
 <details open>
   <summary><h3> Invite Target Types </h3></summary>
@@ -38,7 +39,7 @@ client.command({
   name: "createChannelInvite",
   code: `
   $createChannelInvite[$channelID]
-  `
+  `,
 });
 ```
 
@@ -56,7 +57,7 @@ client.command({
             "maxUses": 25,
             "unique": true
   }]
-  `
+  `,
 });
 ```
 
@@ -70,6 +71,6 @@ client.command({
             "targetApplication": "application ID",
             "targetType": 2
   }]
-  `
+  `,
 });
 ```

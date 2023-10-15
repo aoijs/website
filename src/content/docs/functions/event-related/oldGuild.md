@@ -15,6 +15,6 @@ $oldGuild[option]
 
 ## Parameters
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- | :------: |
-| option | string | Option to retrieve. |   true   |
+| Field  | Type                                                                                              | Description         | Required |
+| ------ | ------------------------------------------------------------------------------------------------- | ------------------- | :------: |
+| option | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Option to retrieve. |   true   |

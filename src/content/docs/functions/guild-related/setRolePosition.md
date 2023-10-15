@@ -14,11 +14,11 @@ $setRolePosition[roleID;position;guildID?]
 
 ## Parameters
 
-| Field    | Type    | Description                                             | Required |
-| -------- | ------- | ------------------------------------------------------- | :------: |
-| roleID   | integer | The ID of the role to modify.                           |   true   |
-| position | number  | The new position of the role. (1 being the very bottom) |   true   |
-| guildID? | integer | The ID of the guild of where the role is located in.    |  false   |
+| Field    | Type                                                                                              | Description                                             | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | :------: |
+| roleID   | integer                                                                                           | The ID of the role to modify.                           |   true   |
+| position | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The new position of the role. (1 being the very bottom) |   true   |
+| guildID? | integer                                                                                           | The ID of the guild of where the role is located in.    |  false   |
 
 ## Example(s)
 

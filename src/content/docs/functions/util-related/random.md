@@ -14,12 +14,14 @@ $random[num1;num2;allow?;random?]
 
 ## Parameters
 
-| Field                        | Type    | Description                            | Required |
-| ---------------------------- | ------- | -------------------------------------- | :------: |
-| num1                         | number  | Start of the span.                     |   true   |
-| num2                         | number  | End of the span.                       |   true   |
-| allow?                       | boolean | Allows returning of decimal numbers.   |  false   |
-| [random?](#advanced-Example) | boolean | If the returned number will be random. |  false   |
+| Field                                        | Type                                                                                              | Description        | Required |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------ | :------: |
+| num1                                         | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Start of the span. |   true   |
+| num2                                         | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | End of the span.   |   true   |
+| allow?                                       | [boolean](https://developer.mozilla.org/en-US/docs/Web/                                           |
+| JavaScript/Reference/Global_Objects/Boolean) | Allows returning of decimal numbers.                                                              | false              |
+| [random?](#advanced-Example)                 | [boolean](https://developer.mozilla.org/en-US/docs/Web/                                           |
+| JavaScript/Reference/Global_Objects/Boolean) | If the returned number will be random.                                                            | false              |
 
 ## Example(s)
 
@@ -30,7 +32,7 @@ client.command({
   name: "random",
   code: `
   $random[20;250]
-  `
+  `,
 });
 ```
 
@@ -43,7 +45,7 @@ client.command({
   name: "random",
   code: `
   $random[25;50;true]  
-  `
+  `,
 });
 ```
 
@@ -55,6 +57,6 @@ client.command({
   code: `
   $random[45;65;false;true]
   $random[45;65;false;true]
-  `
+  `,
 });
 ```

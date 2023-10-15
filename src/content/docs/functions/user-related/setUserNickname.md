@@ -14,11 +14,11 @@ $setUserNickname[userID;newName;reason?]
 
 ## Parameters
 
-| Field   | Type           | Description                                              | Required |
-| ------- | -------------- | -------------------------------------------------------- | :------: |
-| userID  | integer        | The user ID of the user whose nickname shall be changed. |   true   |
-| newName | string, number | Their new nickname.                                      |   true   |
-| reason? | string, number | Reason that will be displayed in the guild's audit logs. |  false   |
+| Field   | Type                                                                                                                                                                                                 | Description                                              | Required |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | :------: |
+| userID  | integer                                                                                                                                                                                              | The user ID of the user whose nickname shall be changed. |   true   |
+| newName | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Their new nickname.                                      |   true   |
+| reason? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Reason that will be displayed in the guild's audit logs. |  false   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   name: "setUserNickname",
   code: `
   $setUserNickname[$authorID;I love aoi.js;They simply love aoi.js]
-  `
+  `,
 });
 ```

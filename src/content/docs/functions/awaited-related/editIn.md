@@ -14,10 +14,10 @@ $editIn[time;...content]
 
 ## Parameters
 
-| Field   | Type           | Description                                     | Required |
-| ------- | -------------- | ----------------------------------------------- | :------: |
-| time    | string, number | After how much time the message will be edited. |   true   |
-| content | string         | What the new content of the message should be.  |   true   |
+| Field   | Type                                                                                                                                                                                                 | Description                                     | Required |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | :------: |
+| time    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | After how much time the message will be edited. |   true   |
+| content | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | What the new content of the message should be.  |   true   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   code: `
   $editIn[5s;aoi.js is great, don't you agree?;Yes, I do!]
   I'll edit this message in 5 seconds!
-  `
+  `,
 });
 ```

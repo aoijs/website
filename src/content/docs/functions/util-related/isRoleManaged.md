@@ -28,6 +28,6 @@ client.command({
   name: "isRoleManaged",
   code: `
   $isRoleManaged[$findRole[Server Booster];$guildID]
-  `
+  `,
 });
 ```

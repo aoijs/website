@@ -5,7 +5,9 @@ id: sharding
 ---
 
 <!-- omit from toc -->
+
 ### Table of Contents
+
 - [What's Sharding?](#whats-sharding)
 - [Getting Started](#getting-started)
   - [Constructor](#constructor)
@@ -37,15 +39,15 @@ aoi.js has the `ClientShard` class to handle Sharding for your Discord Bot, this
 new ClientShard(file, options);
 ```
 
-| Parameter |  Type  | Description                      |
-| --------- | :----: | -------------------------------- |
+| Parameter |                                               Type                                                | Description                      |
+| --------- | :-----------------------------------------------------------------------------------------------: | -------------------------------- |
 | `file`    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Path to your main file           |
 | `options` | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Options for the sharding manager |
 
 ### `options`
 
-| Parameter     |  Type  | Description                                                                                                   |
-| ------------- | :----: | ------------------------------------------------------------------------------------------------------------- |
+| Parameter     |                                               Type                                                | Description                                                                                                   |
+| ------------- | :-----------------------------------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------- |
 | `token`       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Token to use for automatic shard count and passing to shards                                                  |
 | `totalShards` | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Number of total shards of all shard managers or "auto"                                                        |
 | `shardList`   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | List of shards to spawn or "auto"                                                                             |
@@ -64,12 +66,13 @@ One called `index.js` and another one with the name `shard.js`.
 ```js title="shard.js"
 const { ClientShard } = require("aoi.js");
 
-const sharder = new ClientShard("./index.js", { // Your main file, in this case called "index.js".
-    token: "Discord Bot Token", // Your Discord Bot token.
-    totalShards: 3 // The amount of shards/instances you want to create, in this case three. 
+const sharder = new ClientShard("./index.js", {
+  // Your main file, in this case called "index.js".
+  token: "Discord Bot Token", // Your Discord Bot token.
+  totalShards: 3, // The amount of shards/instances you want to create, in this case three.
 });
 
-sharder.on('shardCreate', shard => console.log(`Launched shard ${shard.id}`)); // Used for debugging, can be removed.
+sharder.on("shardCreate", (shard) => console.log(`Launched shard ${shard.id}`)); // Used for debugging, can be removed.
 sharder.startProcess(); // Starts the sharding process.
 ```
 
@@ -101,7 +104,7 @@ client.command({
 });
 ```
 
-Then by running `node shard.js` you are able to start your bot. 
+Then by running `node shard.js` you are able to start your bot.
 
 :::caution[Start Command]
 
@@ -113,10 +116,10 @@ Running `node index.js` will no longer work if you want to have sharding, use `n
 
 ## Sharding Related Functions
 
-- [`$shard[option]`](../../functions/event-related/shard.md)  
-- [`$guildShard[option?;sep?;shardId]`](../../functions/guild-related/guildShard.md)  
-- [`$guildShardID`](../../functions/guild-related/guildShardID.md)  
-- [`$guildShardPing[shardId?]`](../../functions/guild-related/guildShardPing.md)  
-- [`$killShard[shardId]`](../../functions/interaction-related/killShard.md)  
-- [`$respawnAllShards`](../../functions/interaction-related/respawnAllShards.md)  
-- [`$spawnShard[amount]`](../../functions/interaction-related/spawnShard.md)  
+- [`$shard[option]`](../../functions/event-related/shard.md)
+- [`$guildShard[option?;sep?;shardId]`](../../functions/guild-related/guildShard.md)
+- [`$guildShardID`](../../functions/guild-related/guildShardID.md)
+- [`$guildShardPing[shardId?]`](../../functions/guild-related/guildShardPing.md)
+- [`$killShard[shardId]`](../../functions/interaction-related/killShard.md)
+- [`$respawnAllShards`](../../functions/interaction-related/respawnAllShards.md)
+- [`$spawnShard[amount]`](../../functions/interaction-related/spawnShard.md)

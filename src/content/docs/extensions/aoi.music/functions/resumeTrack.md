@@ -21,6 +21,6 @@ client.command({
   name: "resumeTrack",
   code: `
     $resumeTrack
-  `
+  `,
 });
 ```

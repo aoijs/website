@@ -14,12 +14,12 @@ $getLeaderboardInfo[variable;id;type;option]
 
 ## Parameters
 
-| Field    | Type    | Description                                                                                                  | Required |
-| -------- | ------- | ------------------------------------------------------------------------------------------------------------ | :------: |
-| variable | string  | Variable name.                                                                                               |   true   |
-| id       | integer | User/guild/channel/message ID.                                                                               |   true   |
-| type     | string  | Variable type <br /> 1. **global** <br /> 2. **guild** (default) <br /> 3. **channel** <br /> 4. **message** |   true   |
-| option   | string  | Option to return <br /> 1. **top** <br /> 2. **value** <br /> 3. **tag** <br /> 4. **username**              |   true   |
+| Field    | Type                                                                                              | Description                                                                                                  | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | :------: |
+| variable | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable name.                                                                                               |   true   |
+| id       | integer                                                                                           | User/guild/channel/message ID.                                                                               |   true   |
+| type     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable type <br /> 1. **global** <br /> 2. **guild** (default) <br /> 3. **channel** <br /> 4. **message** |   true   |
+| option   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Option to return <br /> 1. **top** <br /> 2. **value** <br /> 3. **tag** <br /> 4. **username**              |   true   |
 
 ## Example(s)
 
@@ -30,6 +30,6 @@ client.command({
   name: "getLeaderboardInfo",
   code: `
     $getLeaderboardInfo[Example;$authorId;guild;top]
-    `
+    `,
 });
 ```

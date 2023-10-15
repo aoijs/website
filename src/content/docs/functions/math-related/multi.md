@@ -14,9 +14,9 @@ $multi[num;num]
 
 ## Parameters
 
-| Field | Type   | Description                   | Required |
-| ----- | ------ | ----------------------------- | :------: |
-| num   | number | Numbers you want to multiply. |   true   |
+| Field | Type                                                                                              | Description                   | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ----------------------------- | :------: |
+| num   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Numbers you want to multiply. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "multi",
   code: `
   $multi[8;9]
-  `
+  `,
 });
 ```

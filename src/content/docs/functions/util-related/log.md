@@ -14,9 +14,9 @@ $log[content]
 
 ## Parameters
 
-| Field   | Type           | Description                    | Required |
-| ------- | -------------- | ------------------------------ | :------: |
-| content | string, number | Content of the message to log. |   true   |
+| Field   | Type                                                                                                                                                                                                 | Description                    | Required |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | :------: |
+| content | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Content of the message to log. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "log",
   code: `
     $log[Aoi.js is great!]
-    `
+    `,
 });
 ```

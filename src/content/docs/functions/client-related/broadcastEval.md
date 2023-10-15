@@ -14,9 +14,9 @@ $broadcastEval[function]
 
 ## Parameters
 
-| Field    | Type   | Description                             | Required |
-| -------- | ------ | --------------------------------------- | :------: |
-| function | string | Function or code that will be executed. |   true   |
+| Field    | Type                                                                                              | Description                             | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | --------------------------------------- | :------: |
+| function | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Function or code that will be executed. |   true   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   name: "broadcastEval",
   code: `
   $broadcastEval[$guildCount]
-  `
+  `,
 });
 ```

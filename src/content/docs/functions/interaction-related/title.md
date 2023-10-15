@@ -14,11 +14,11 @@ $title[index?;title;URL?]
 
 ## Parameters
 
-| Field  | Type   | Description                      | Required |
-| ------ | ------ | -------------------------------- | :------: |
-| index? | number | The index of the embed.          |  false   |
-| title  | string | The content of the embed title.  |   true   |
-| URL?   | string | URL which will be the hyperlink. |  false   |
+| Field  | Type                                                                                              | Description                      | Required |
+| ------ | ------------------------------------------------------------------------------------------------- | -------------------------------- | :------: |
+| index? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The index of the embed.          |  false   |
+| title  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The content of the embed title.  |   true   |
+| URL?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | URL which will be the hyperlink. |  false   |
 
 ## Example(s)
 

@@ -14,11 +14,11 @@ $hasPermsInChannel[channelID;userOrRoleID;...perms]
 
 ## Parameters
 
-| Field        | Type    | Description                                                | Required |
-| ------------ | ------- | ---------------------------------------------------------- | -------- |
-| channelD     | integer | ID of the channel where the client checks the permissions. | true     |
-| userOrRoleID | integer | ID of the user or role.                                    | true     |
-| ...perms     | string  | Permissions.                                               | true     |
+| Field        | Type                                                                                              | Description                                                | Required |
+| ------------ | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | -------- |
+| channelD     | integer                                                                                           | ID of the channel where the client checks the permissions. | true     |
+| userOrRoleID | integer                                                                                           | ID of the user or role.                                    | true     |
+| ...perms     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Permissions.                                               | true     |
 
 <details>
   <summary> <h3> Discord API Permissions </h3></summary>
@@ -79,6 +79,6 @@ client.command({
   name: "hasPermsInChannel",
   code: `
   $hasPermsInChannel[$channelID;$authorID;sendmessages]
-  `
+  `,
 });
 ```

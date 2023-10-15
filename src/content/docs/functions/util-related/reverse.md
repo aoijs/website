@@ -14,9 +14,9 @@ $reverse[text]
 
 ## Parameters
 
-| Field | Type   | Description               | Required |
-| ----- | ------ | ------------------------- | :------: |
-| text  | string | Text you want to reverse. |   true   |
+| Field | Type                                                                                              | Description               | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ------------------------- | :------: |
+| text  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Text you want to reverse. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "reverse",
   code: `
   $reverse[!snoitalutargnoc neht ,siht daer ot elba er'uoy fi ,desrever si txet sihT]
-  `
+  `,
 });
 ```

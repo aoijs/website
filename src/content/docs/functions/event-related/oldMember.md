@@ -15,20 +15,20 @@ $oldMember[option]
 
 ## Parameters
 
-| Field  | Type   | Description         | Required |
-| ------ | ------ | ------------------- | :------: |
-| option | string | Option to retrieve. |   true   |
+| Field  | Type                                                                                              | Description         | Required |
+| ------ | ------------------------------------------------------------------------------------------------- | ------------------- | :------: |
+| option | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Option to retrieve. |   true   |
 
 ### Options
 
-| Field         | Type    | Description                      |
-| ------------- | ------- | -------------------------------- |
-| id            | integer | Returns User ID.                 |
-| name          | string  | Returns Name of user.            |
-| roles         | string  | Returns User roles.              |
-| permissions   | string  | Returns User permissions.        |
-| nick          | string  | Returns User nickname.           |
-| highestRoleID | integer | Returns Higher role ID user has. |
+| Field         | Type                                                                                              | Description                      |
+| ------------- | ------------------------------------------------------------------------------------------------- | -------------------------------- |
+| id            | integer                                                                                           | Returns User ID.                 |
+| name          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns Name of user.            |
+| roles         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns User roles.              |
+| permissions   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns User permissions.        |
+| nick          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns User nickname.           |
+| highestRoleID | integer                                                                                           | Returns Higher role ID user has. |
 
 ## Example(s)
 

@@ -27,6 +27,6 @@ client.command({
   name: "vanityUses",
   code: `
   $vanityUses[$guildID]
-  `
+  `,
 });
 ```

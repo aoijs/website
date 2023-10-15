@@ -14,9 +14,9 @@ $textTrim[text]
 
 ## Parameters
 
-| Field | Type   | Description             | Required |
-| ----- | ------ | ----------------------- | :------: |
-| text  | string | The text to be trimmed. |   true   |
+| Field | Type                                                                                              | Description             | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ----------------------- | :------: |
+| text  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The text to be trimmed. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "textTrim",
   code: `
     $textTrim[      Imagine a string package      ]
-    `
+    `,
 });
 ```

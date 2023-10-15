@@ -14,9 +14,9 @@ $isValidLink[URL]
 
 ## Parameters
 
-| Field | Type   | Description      | Required |
-| ----- | ------ | ---------------- | :------: |
-| URL   | string | Any kind of URL. |   true   |
+| Field | Type                                                                                              | Description      | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ---------------- | :------: |
+| URL   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Any kind of URL. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "isValidLink",
   code: `
   $isValidLink[https://aoi.js.org/docs/]
-  `
+  `,
 });
 ```

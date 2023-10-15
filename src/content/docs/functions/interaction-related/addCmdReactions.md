@@ -14,9 +14,9 @@ $addCmdReactions[...reactions]
 
 ## Parameters
 
-| Field     | Type   | Description       | Required |
-| --------- | ------ | ----------------- | :------: |
-| reactions | string | Reactions to add. |   true   |
+| Field     | Type                                                                                              | Description       | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | ----------------- | :------: |
+| reactions | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Reactions to add. |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   code: `
 Hello!
 $addCmdReactions[🧡;❤]
-  `
+  `,
 });
 ```

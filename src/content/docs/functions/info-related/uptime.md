@@ -14,9 +14,9 @@ $uptime[option?]
 
 ## Parameters
 
-| Field   | Type   | Description                                     | Required |
-| ------- | ------ | ----------------------------------------------- | :------: |
-| option? | string | How the uptime will be returned (listed below). |  false   |
+| Field   | Type                                                                                              | Description                                     | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------- | :------: |
+| option? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | How the uptime will be returned (listed below). |  false   |
 
 | Option             | Output                 |
 | ------------------ | ---------------------- |
@@ -33,6 +33,6 @@ client.command({
   name: "uptime",
   code: `
   I've been up for $uptime[full]!
-  `
+  `,
 });
 ```

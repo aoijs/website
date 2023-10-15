@@ -14,11 +14,11 @@ $unban[guildID;userID;reason?]
 
 ## Parameters
 
-| Field   | Type    | Description                                                                | Required |
-| ------- | ------- | -------------------------------------------------------------------------- | :------: |
-| guildID | integer | The guild ID of where the user is banned in.                               |   true   |
-| userID  | integer | The ID of the user which will be unbanned.                                 |   true   |
-| reason? | string  | The reason for the unban that will be displayed in the guild's audit logs. |  false   |
+| Field   | Type                                                                                              | Description                                                                | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | :------: |
+| guildID | integer                                                                                           | The guild ID of where the user is banned in.                               |   true   |
+| userID  | integer                                                                                           | The ID of the user which will be unbanned.                                 |   true   |
+| reason? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The reason for the unban that will be displayed in the guild's audit logs. |  false   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   name: "unban",
   code: `
   $unban[$guildID;$randomUserID;Some reason.]
-  `
+  `,
 });
 ```

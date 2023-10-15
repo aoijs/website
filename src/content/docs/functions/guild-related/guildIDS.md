@@ -14,9 +14,9 @@ $guildIDS[sep?]
 
 ## Parameters
 
-| Field | Type   | Description                                         | Required |
-| ----- | ------ | --------------------------------------------------- | :------: |
-| sep?  | string | The separator to separate multiple returned values. |  false   |
+| Field | Type                                                                                              | Description                                         | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------- | :------: |
+| sep?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The separator to separate multiple returned values. |  false   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "guildIDS",
   code: `
   $guildIDS[, ]
-  `
+  `,
 });
 ```

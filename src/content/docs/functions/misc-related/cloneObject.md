@@ -14,10 +14,12 @@ $cloneObject[objectName;newObjectName]
 
 ## Parameters
 
-| Field         | Type   | Description                           | Required |
-| ------------- | ------ | ------------------------------------- | :------: |
-| objectName    | string | The object name.                      |   true   |
-| newObjectName | object | The object name of the cloned object. |   true   |
+| Field                                             | Type                                                                                              | Description                                                | Required |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | :------: |
+| objectName                                        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The [object](https://developer.mozilla.org/en-US/docs/Web/ |
+| JavaScript/Reference/Global_Objects/Object) name. | true                                                                                              |
+| newObjectName                                     | [object](https://developer.mozilla.org/en-US/docs/Web/                                            |
+| JavaScript/Reference/Global_Objects/Object)       | The object name of the cloned object.                                                             | true                                                       |
 
 ## Example(s)
 
@@ -31,6 +33,6 @@ client.command({
     "Leref": "Ferel",
     "aoi.js": "dbd.js"
   }]
-  `
+  `,
 });
 ```

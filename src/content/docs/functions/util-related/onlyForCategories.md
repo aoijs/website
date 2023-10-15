@@ -15,10 +15,10 @@ $onlyForCategories[...categoryIds;error]
 
 ## Parameters
 
-| Field          | Type            | Description                                                                        | Required |
-| -------------- | --------------- | ---------------------------------------------------------------------------------- | :------: |
-| ...categoryIds | string, integer | Categories you want to limit the command to.                                       |   true   |
-| error          | string          | Error to return when the command was not executed in any of the listed categories. |   true   |
+| Field          | Type                                                                                                       | Description                                                                        | Required |
+| -------------- | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | :------: |
+| ...categoryIds | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), integer | Categories you want to limit the command to.                                       |   true   |
+| error          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)          | Error to return when the command was not executed in any of the listed categories. |   true   |
 
 ## Example(s)
 
@@ -30,6 +30,6 @@ client.command({
   code: `
     Ok.
     $onlyForCategories[categoryID;categoryID;You can't use that command here!]
-    `
+    `,
 });
 ```

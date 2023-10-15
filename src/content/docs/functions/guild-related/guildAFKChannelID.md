@@ -27,6 +27,6 @@ client.command({
   name: "guildAFKChannelID",
   code: `
   $guildAFKChannelID
-  `
+  `,
 });
 ```

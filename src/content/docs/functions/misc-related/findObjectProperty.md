@@ -14,10 +14,11 @@ $findObjectProperty[objectName;...properties]
 
 ## Parameters
 
-| Field         | Type   | Description             | Required |
-| ------------- | ------ | ----------------------- | :------: |
-| objectName    | object | The object name.        |   true   |
-| ...properties | string | Name of the properties. |   true   |
+| Field                                       | Type                                                                                              | Description             | Required |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------- | :------: |
+| objectName                                  | [object](https://developer.mozilla.org/en-US/docs/Web/                                            |
+| JavaScript/Reference/Global_Objects/Object) | The object name.                                                                                  | true                    |
+| ...properties                               | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Name of the properties. |   true   |
 
 ## Example(s)
 
@@ -29,6 +30,6 @@ client.command({
   code: `
   $findObjectProperty[Object Name;Leref]
   $createObject[Object Name;{"Leref": "Ferel", "aoi.js": "dbd.js"}]
-  `
+  `,
 });
 ```

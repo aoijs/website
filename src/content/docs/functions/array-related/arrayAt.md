@@ -14,10 +14,10 @@ $arrayAt[name;index]
 
 ## Parameters
 
-| Field | Type   | Description                  | Required |
-| ----- | ------ | ---------------------------- | :------: |
-| name  | string | Name of the array.           |   true   |
-| index | string | The position of the element. |   true   |
+| Field | Type                                                                                              | Description                  | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ---------------------------- | :------: |
+| name  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Name of the array.           |   true   |
+| index | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The position of the element. |   true   |
 
 ## Example(s)
 

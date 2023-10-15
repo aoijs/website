@@ -14,10 +14,10 @@ $editTextSplitElement[index;text]
 
 ## Parameters
 
-| Field | Type   | Description                      | Required |
-| ----- | ------ | -------------------------------- | :------: |
-| index | string | Index of the text split element. |   true   |
-| text  | string | New text split element.          |   true   |
+| Field | Type                                                                                              | Description                      | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | -------------------------------- | :------: |
+| index | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Index of the text split element. |   true   |
+| text  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | New text split element.          |   true   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   code: `
   $editTextSplitElement[3;Goodbye]
   $textSplit[Hello, Bye, Cya;, ]
-  `
+  `,
 });
 ```
