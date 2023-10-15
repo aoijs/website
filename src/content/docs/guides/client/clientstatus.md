@@ -10,7 +10,6 @@ id: status
   - [Customizing Bot Status](#customizing-bot-status)
 - [Client Presence](#client-presence)
 
-
 ---
 
 ### Bot Status
