@@ -18,7 +18,8 @@
       "tags": ["wikis"]
     }
   ],
-  "sitemap_urls": ["https://aoi.js.org/sitemap.xml"],
+  "sitemap_urls": ["https://aoi.js.org/sitemap-index.xml"],
+  "sitemap_alternate_links": true,
   "stop_urls": [],
   "selectors_exclude": [".code", "code", "table", "thread", ".table"],
   "selectors": {
