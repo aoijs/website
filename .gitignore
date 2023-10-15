@@ -26,7 +26,6 @@ yarn-debug.log*
 yarn-error.log*
 
 ## Extraction
-
 data.js
 extract.js
 fix.js
