@@ -66,7 +66,7 @@ new Loader(client).load("./commands").then(() => console.log("Source loaded!"));
 
 All options
 
-```
+```js
 [exportCommand: COMMAND_TYPE] {
     prototype: PROTOTYPE
     name: COMMAND_NAME
@@ -81,7 +81,7 @@ All options
 
 Example (Adding a join command)
 
-```
+```js
 [exportCommand: join] {
     channel: $getServerVar[channelID]
     code: @{
@@ -95,7 +95,7 @@ Example (Adding a join command)
 
 Example (Adding a slash command)
 
-```
+```js
 [exportCommand: interaction] {
     prototype: slash,
     name: ping
@@ -107,7 +107,7 @@ Example (Adding a slash command)
 
 Example (Using old $if)
 
-```
+```js
 [exportCommand: interaction] {
     prototype: slash,
     name: ping
@@ -128,7 +128,7 @@ You must use the built-in function.
 
 Example:
 
-```
+```js
 [exportCommand: default] {
     name: reload
     aliases: update, u, r, restart
