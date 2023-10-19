@@ -15,16 +15,7 @@ permissions:
   id-token: write
 
 jobs:
-  prettier:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Prettify JavaScript & Markdown files
-        uses: creyD/prettier_action@v4.3
-        with:
-        prettier_options: --write **/*.{js,md}
-
   build:
-    needs: prettier
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
