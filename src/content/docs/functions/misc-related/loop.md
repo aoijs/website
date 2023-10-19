@@ -17,7 +17,7 @@ $loop[time;awaitData;...awaitedCmds]
 | Field                                       | Type                                                                                              | Description                    | Required |
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------ | :------: |
 | time                                        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | How often to execute the loop. |   true   |
-| awaitData                                   | [object](https://developer.mozilla.org/en-US/docs/Web/                                            |
+| awaitData                                   | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |
 | JavaScript/Reference/Global_Objects/Object) | Awaited Data.                                                                                     | true                           |
 | ...awaitedCmds                              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Awaited Commands to execute.   |   true   |
 

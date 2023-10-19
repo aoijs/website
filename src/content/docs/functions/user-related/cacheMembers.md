@@ -14,11 +14,11 @@ $cacheMembers[guildID?;returnCount?]
 
 ## Parameters
 
-| Field                                        | Type                                                                              | Description                                      | Required |
-| -------------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------ | :------: |
-| guildID?                                     | integer                                                                           | Of which guild the members shall be cached from. |  false   |
-| returnCount?                                 | [boolean](https://developer.mozilla.org/en-US/docs/Web/                           |
-| JavaScript/Reference/Global_Objects/Boolean) | Returns the cached member count. <br /> 1. **true** <br /> 2. **false** (default) | false                                            |
+| Field                                        | Type                                                                                                | Description                                      | Required |
+| -------------------------------------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------ | :------: |
+| guildID?                                     | integer                                                                                             | Of which guild the members shall be cached from. |  false   |
+| returnCount?                                 | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
+| JavaScript/Reference/Global_Objects/Boolean) | Returns the cached member count. <br /> 1. **true** <br /> 2. **false** (default)                   | false                                            |
 
 ## Example(s)
 

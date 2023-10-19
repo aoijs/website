@@ -14,11 +14,11 @@ $getObject[objectName;format?]
 
 ## Parameters
 
-| Field                                        | Type                                                                                              | Description      | Required |
-| -------------------------------------------- | ------------------------------------------------------------------------------------------------- | ---------------- | :------: |
-| objectName                                   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The object name. |   true   |
-| format?                                      | [boolean](https://developer.mozilla.org/en-US/docs/Web/                                           |
-| JavaScript/Reference/Global_Objects/Boolean) | Format the output? <br /> 1. **true** (default) 2. **false**                                      | false            |
+| Field                                        | Type                                                                                                | Description      | Required |
+| -------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------- | :------: |
+| objectName                                   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The object name. |   true   |
+| format?                                      | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
+| JavaScript/Reference/Global_Objects/Boolean) | Format the output? <br /> 1. **true** (default) 2. **false**                                        | false            |
 
 ## Example(s)
 

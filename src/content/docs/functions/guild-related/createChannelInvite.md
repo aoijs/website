@@ -14,11 +14,11 @@ $createChannelInvite[channelID?;...options]
 
 ## Parameters
 
-| Field                                       | Type                                                   | Description                                         | Required |
-| ------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------- | :------: |
-| channelID?                                  | integer                                                | The channel ID of which the invite will be created. |  false   |
-| options?                                    | [object](https://developer.mozilla.org/en-US/docs/Web/ |
-| JavaScript/Reference/Global_Objects/Object) | Invite options.                                        | false                                               |
+| Field                                       | Type                                                                                              | Description                                         | Required |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------- | :------: |
+| channelID?                                  | integer                                                                                           | The channel ID of which the invite will be created. |  false   |
+| options?                                    | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |
+| JavaScript/Reference/Global_Objects/Object) | Invite options.                                                                                   | false                                               |
 
 <details open>
   <summary><h3> Invite Target Types </h3></summary>

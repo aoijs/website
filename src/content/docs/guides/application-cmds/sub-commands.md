@@ -10,11 +10,11 @@ sidebar:
 
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [Sub commands](#sub-commands)
 - [Creating Application Commands](#creating-application-commands)
   - [Examples of creating Application Commands with sub commands](#examples-of-creating-application-commands-with-sub-commands)
     - [Creating Sub Commands with options](#creating-sub-commands-with-options)
-  - [Preview of the Example](#preview-of-the-example)
 - [Replying to Sub commands](#replying-to-sub-commands)
 
 ---
@@ -97,10 +97,6 @@ client.command({
 ```
 
 That would for example add two options called "user" and "reason", where reason is type 3, string and user type 6, mention (user).
-
-### Preview of the Example
-
-![preview](https://raw.githubusercontent.com/aoijs/website/main/assets/images/previews/application-commands.png)
 
 ## Replying to Sub commands
 

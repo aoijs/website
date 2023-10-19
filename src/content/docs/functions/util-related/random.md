@@ -14,14 +14,14 @@ $random[num1;num2;allow?;random?]
 
 ## Parameters
 
-| Field                                        | Type                                                                                              | Description        | Required |
-| -------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------ | :------: |
-| num1                                         | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Start of the span. |   true   |
-| num2                                         | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | End of the span.   |   true   |
-| allow?                                       | [boolean](https://developer.mozilla.org/en-US/docs/Web/                                           |
-| JavaScript/Reference/Global_Objects/Boolean) | Allows returning of decimal numbers.                                                              | false              |
-| [random?](#advanced-Example)                 | [boolean](https://developer.mozilla.org/en-US/docs/Web/                                           |
-| JavaScript/Reference/Global_Objects/Boolean) | If the returned number will be random.                                                            | false              |
+| Field                                        | Type                                                                                                | Description        | Required |
+| -------------------------------------------- | --------------------------------------------------------------------------------------------------- | ------------------ | :------: |
+| num1                                         | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | Start of the span. |   true   |
+| num2                                         | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | End of the span.   |   true   |
+| allow?                                       | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
+| JavaScript/Reference/Global_Objects/Boolean) | Allows returning of decimal numbers.                                                                | false              |
+| [random?](#advanced-Example)                 | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
+| JavaScript/Reference/Global_Objects/Boolean) | If the returned number will be random.                                                              | false              |
 
 ## Example(s)
 

@@ -14,10 +14,10 @@ $isValidObject[object]
 
 ## Parameters
 
-| Field                                       | Type                                                   | Description | Required |
-| ------------------------------------------- | ------------------------------------------------------ | ----------- | :------: |
-| object                                      | [object](https://developer.mozilla.org/en-US/docs/Web/ |
-| JavaScript/Reference/Global_Objects/Object) | JSON object.                                           | true        |
+| Field                                       | Type                                                                                              | Description | Required |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------------- | ----------- | :------: |
+| object                                      | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |
+| JavaScript/Reference/Global_Objects/Object) | JSON object.                                                                                      | true        |
 
 ## Example(s)
 

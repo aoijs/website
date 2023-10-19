@@ -14,13 +14,13 @@ $muteUser[guildID;userID;mute?;reason?]
 
 ## Parameters
 
-| Field                                        | Type                                                                                              | Description                                              | Required |
-| -------------------------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | :------: |
-| guildID                                      | integer                                                                                           | The guild ID of where the user is located.               |   true   |
-| userID                                       | integer                                                                                           | The user ID of the user to mute/unmute.                  |   true   |
-| mute?                                        | [boolean](https://developer.mozilla.org/en-US/docs/Web/                                           |
-| JavaScript/Reference/Global_Objects/Boolean) | Mute or unmute the user. <br /> 1. **true** (mute / default) <br /> 2. **false** (unmute)         | false                                                    |
-| reason?                                      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Reason that will be displayed in the guild's audit logs. |  false   |
+| Field                                        | Type                                                                                                | Description                                              | Required |
+| -------------------------------------------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | :------: |
+| guildID                                      | integer                                                                                             | The guild ID of where the user is located.               |   true   |
+| userID                                       | integer                                                                                             | The user ID of the user to mute/unmute.                  |   true   |
+| mute?                                        | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
+| JavaScript/Reference/Global_Objects/Boolean) | Mute or unmute the user. <br /> 1. **true** (mute / default) <br /> 2. **false** (unmute)           | false                                                    |
+| reason?                                      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Reason that will be displayed in the guild's audit logs. |  false   |
 
 ## Example(s)
 

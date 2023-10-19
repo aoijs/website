@@ -16,7 +16,7 @@ $findObjectProperty[objectName;...properties]
 
 | Field                                       | Type                                                                                              | Description             | Required |
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------- | :------: |
-| objectName                                  | [object](https://developer.mozilla.org/en-US/docs/Web/                                            |
+| objectName                                  | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |
 | JavaScript/Reference/Global_Objects/Object) | The object name.                                                                                  | true                    |
 | ...properties                               | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Name of the properties. |   true   |
 

@@ -10,6 +10,7 @@ sidebar:
 
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [Sub command groups](#sub-command-groups)
 - [Creating Application Commands](#creating-application-commands)
   - [Examples of creating Application Commands with sub command groups](#examples-of-creating-application-commands-with-sub-command-groups)

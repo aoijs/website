@@ -14,12 +14,12 @@ $channelSendMessage[channelID;content;returnID?]
 
 ## Parameters
 
-| Field                                        | Type                                                                                              | Description                                | Required |
-| -------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------ | :------: |
-| channelID                                    | integer                                                                                           | Where the messages shall be sent to.       |   true   |
-| content                                      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | What the content of the message should be. |   true   |
-| returnID?                                    | [boolean](https://developer.mozilla.org/en-US/docs/Web/                                           |
-| JavaScript/Reference/Global_Objects/Boolean) | If the message ID should be returned or not. <br /> 1. **true** <br /> 2. **false** (default)     | false                                      |
+| Field                                        | Type                                                                                                | Description                                | Required |
+| -------------------------------------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------ | :------: |
+| channelID                                    | integer                                                                                             | Where the messages shall be sent to.       |   true   |
+| content                                      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | What the content of the message should be. |   true   |
+| returnID?                                    | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
+| JavaScript/Reference/Global_Objects/Boolean) | If the message ID should be returned or not. <br /> 1. **true** <br /> 2. **false** (default)       | false                                      |
 
 ## Example(s)
 

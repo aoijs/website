@@ -15,13 +15,13 @@ const packageInfo = await pRetry(
       throw new Error(
         `npm API call failed: GET "${url}" returned status ${
           response.status
-        }: ${JSON.stringify(json)}`
+        }: ${JSON.stringify(json)}`,
       );
     }
 
     return json;
   },
-  { retries: 10 }
+  { retries: 10 },
 );
 
 const { version } = packageInfo;
@@ -31,15 +31,18 @@ const content = `The newest aoi.js version <b>${version}</b> is available! <a hr
 <div class="sl-banner" set:html={content}><slot /></div>
 
 <style>
-	.sl-banner {
-		--__sl-banner-text: var(--sl-color-banner-text, var(--sl-color-text-invert));
-		padding: var(--sl-nav-pad-y) var(--sl-nav-pad-x);
-		background-color: var(--sl-color-banner-bg, var(--sl-color-bg-accent));
-		color: var(--__sl-banner-text);
-		line-height: var(--sl-line-height-headings);
-		text-align: center;
-		text-wrap: balance;
-		box-shadow: var(--sl-shadow-sm);
+  .sl-banner {
+    --__sl-banner-text: var(
+      --sl-color-banner-text,
+      var(--sl-color-text-invert)
+    );
+    padding: var(--sl-nav-pad-y) var(--sl-nav-pad-x);
+    background-color: var(--sl-color-banner-bg, var(--sl-color-bg-accent));
+    color: var(--__sl-banner-text);
+    line-height: var(--sl-line-height-headings);
+    text-align: center;
+    text-wrap: balance;
+    box-shadow: var(--sl-shadow-sm);
     position: fixed;
     z-index: 5;
     left: 0;
@@ -47,9 +50,9 @@ const content = `The newest aoi.js version <b>${version}</b> is available! <a hr
     width: 100%;
     top: var(--sl-nav-height);
     transition: color 0.1s;
-	}
-	.sl-banner :global(a) {
-		color: var(--__sl-banner-text);
+  }
+  .sl-banner :global(a) {
+    color: var(--__sl-banner-text);
     transition: color 0.1s;
-	}
+  }
 </style>

@@ -30,8 +30,6 @@ Application Commands make it simpler for users to discover what a bot can do, an
 
 Using Application Commands offers a few benefits, like the ability to quickly and easily access the features of a bot, a user-friendly interface to guide users through commands, and the ability to separate the user's mental model from the workings of the bot. All of this makes it simpler for users to use the bot, so they can get the most out of it.
 
-![preview](https://raw.githubusercontent.com/aoijs/website/main/assets/images/previews/application-commands.png)
-
 ## Getting Started
 
 ### Inviting your bot with correct permissions

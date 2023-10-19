@@ -19,7 +19,7 @@ $createChannel[guildID;name;type;returnID;parentID]
 | guildID                                      | integer                                                                                              | ID of the guild of where the channel will be created in. |   true   |
 | name                                         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)    | The channel name of the newly created channel.           |   true   |
 | type                                         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)    | The channel type. (listed below)                         |   true   |
-| returnID                                     | [boolean](https://developer.mozilla.org/en-US/docs/Web/                                              |
+| returnID                                     | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)  |
 | JavaScript/Reference/Global_Objects/Boolean) | Return the channel ID of the newly created channel. <br /> 1. **true** <br /> 2. **false** (default) | true                                                     |
 | parentID                                     | integer                                                                                              | The category ID.                                         |  false   |
 

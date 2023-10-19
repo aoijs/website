@@ -14,11 +14,11 @@ $roleCount[guildID?;fetchFirst?]
 
 ## Parameters
 
-| Field                                        | Type                                                                                               | Description          | Required |
-| -------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------- | :------: |
-| guildID?                                     | integer                                                                                            | The ID of the guild. |  false   |
-| fetchFirst?                                  | [boolean](https://developer.mozilla.org/en-US/docs/Web/                                            |
-| JavaScript/Reference/Global_Objects/Boolean) | Fetch the roles first before returning the count? <br /> 1. **true** <br /> 2. **false** (default) | false                |
+| Field                                        | Type                                                                                                | Description          | Required |
+| -------------------------------------------- | --------------------------------------------------------------------------------------------------- | -------------------- | :------: |
+| guildID?                                     | integer                                                                                             | The ID of the guild. |  false   |
+| fetchFirst?                                  | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
+| JavaScript/Reference/Global_Objects/Boolean) | Fetch the roles first before returning the count? <br /> 1. **true** <br /> 2. **false** (default)  | false                |
 
 ## Example(s)
 

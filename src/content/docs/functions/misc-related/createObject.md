@@ -17,7 +17,7 @@ $createObject[objectName;object]
 | Field                                       | Type                                                                                              | Description      | Required |
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------- | ---------------- | :------: |
 | objectName                                  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The object name. |   true   |
-| object                                      | [object](https://developer.mozilla.org/en-US/docs/Web/                                            |
+| object                                      | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |
 | JavaScript/Reference/Global_Objects/Object) | JSON object.                                                                                      | true             |
 
 ## Example(s)

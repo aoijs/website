@@ -19,7 +19,7 @@ $onlyPerms[...perms;error]
 | ...perms | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Permission the user requires.                                 |   true   |
 | error    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Error to return when the user has not the listed permissions. |   true   |
 
-You can find all permissions **[here](../../guides/client/clientpermissions.md)**.
+You can find all permissions **[here](../../../guides/client/clientpermissions/)**.
 
 ## Example(s)
 
