@@ -14,10 +14,10 @@ $roleExists[roleResolver;guildID?]
 
 ## Parameters
 
-| Field        | Type    | Description                                    | Required |
-| ------------ | ------- | ---------------------------------------------- | :------: |
-| roleResolver | integer | ID of the role you want to check if it exists. |   true   |
-| guildID?     | integer | ID of the guild where the role exists.         |  false   |
+| Field        | Type                                                                                                | Description                                    | Required |
+| ------------ | --------------------------------------------------------------------------------------------------- | ---------------------------------------------- | :------: |
+| roleResolver | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the role you want to check if it exists. |   true   |
+| guildID?     | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the guild where the role exists.         |  false   |
 
 ## Example(s)
 

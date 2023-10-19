@@ -14,9 +14,9 @@ $isVoice[channelID]
 
 ## Parameters
 
-| Field     | Type    | Description                                                       | Required |
-| --------- | ------- | ----------------------------------------------------------------- | :------: |
-| channelID | integer | ID of the channel that you want to check if it's a Voice Channel. |   true   |
+| Field     | Type                                                                                                | Description                                                       | Required |
+| --------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | :------: |
+| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the channel that you want to check if it's a Voice Channel. |   true   |
 
 ## Example(s)
 

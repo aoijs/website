@@ -14,9 +14,9 @@ $isThread[channelID?]
 
 ## Parameters
 
-| Field      | Type    | Description                               | Required |
-| ---------- | ------- | ----------------------------------------- | :------: |
-| channelID? | integer | ID of the channel that you want to check. |  false   |
+| Field      | Type                                                                                                | Description                               | Required |
+| ---------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------- | :------: |
+| channelID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the channel that you want to check. |  false   |
 
 ## Example(s)
 

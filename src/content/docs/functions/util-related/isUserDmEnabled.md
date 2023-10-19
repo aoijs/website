@@ -14,9 +14,9 @@ $isUserDmEnabled[userID]
 
 ## Parameters
 
-| Field  | Type    | Description                                                       | Required |
-| ------ | ------- | ----------------------------------------------------------------- | :------: |
-| userID | integer | ID of the user you want to check if their dms are enabled or not. |   true   |
+| Field  | Type                                                                                                | Description                                                       | Required |
+| ------ | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | :------: |
+| userID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the user you want to check if their dms are enabled or not. |   true   |
 
 ## Example(s)
 

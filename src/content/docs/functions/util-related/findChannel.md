@@ -14,11 +14,10 @@ $findChannel[channelResolver;returnSelf?]
 
 ## Parameters
 
-| Field                                        | Type                                                                                                    | Description                                 | Required |
-| -------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------- | :------: |
-| channelResolver                              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)       | Name of the channel you want to search for. |   true   |
-| returnSelf?                                  | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)     |
- Will return the channel where the command is executed in by default if the given channel was not found. | false                                       |
+| Field           | Type                                                                                                | Description                                                                                             | Required |
+| --------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | :------: |
+| channelResolver | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Name of the channel you want to search for.                                                             |   true   |
+| returnSelf?     | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Will return the channel where the command is executed in by default if the given channel was not found. |  false   |
 
 ## Example(s)
 

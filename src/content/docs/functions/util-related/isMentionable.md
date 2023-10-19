@@ -14,10 +14,10 @@ $isMentionable[roleID;guildID?]
 
 ## Parameters
 
-| Field    | Type    | Description                                      | Required |
-| -------- | ------- | ------------------------------------------------ | :------: |
-| roleID   | integer | The role ID to check if it's mentionable or not. |   true   |
-| guildID? | integer | ID of the guild where the role is present in.    |  false   |
+| Field    | Type                                                                                                | Description                                      | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------ | :------: |
+| roleID   | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The role ID to check if it's mentionable or not. |   true   |
+| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the guild where the role is present in.    |  false   |
 
 ## Example(s)
 

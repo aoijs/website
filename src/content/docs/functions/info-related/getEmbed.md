@@ -14,12 +14,12 @@ $getEmbed[channelID?;messageID?;index?;option?]
 
 ## Parameters
 
-| Field     | Type                                                                                              | Description                                        | Required |
-| --------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------- | :------: |
-| channelID | integer                                                                                           | ID of the channel where the message is located in. |   true   |
-| messageID | integer                                                                                           | The ID of the message that has an embed.           |   true   |
-| index     | integer                                                                                           | The index of the embed.                            |   true   |
-| option    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The option to fetch.                               |   true   |
+| Field     | Type                                                                                                | Description                                        | Required |
+| --------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------- | :------: |
+| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the channel where the message is located in. |   true   |
+| messageID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the message that has an embed.           |   true   |
+| index     | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The index of the embed.                            |   true   |
+| option    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The option to fetch.                               |   true   |
 
 <details>
   <summary><h3> Options </h3></summary>

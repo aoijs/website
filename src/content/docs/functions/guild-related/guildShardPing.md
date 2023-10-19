@@ -14,9 +14,9 @@ $guildShardPing[shardId?]
 
 ## Parameters
 
-| Field    | Type    | Description   | Required |
-| -------- | ------- | ------------- | :------: |
-| shardId? | integer | The shard ID. |  false   |
+| Field    | Type                                                                                                | Description   | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | ------------- | :------: |
+| shardId? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The shard ID. |  false   |
 
 ## Example(s)
 

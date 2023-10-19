@@ -14,10 +14,10 @@ $color[index?;hex]
 
 ## Parameters
 
-| Field  | Type                                                                                              | Description                                               | Required |
-| ------ | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | :------: |
-| index? | integer                                                                                           | The embed index.                                          |  false   |
-| hex    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The hex color or color name (supported colornames below). |   true   |
+| Field  | Type                                                                                                | Description                                               | Required |
+| ------ | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | :------: |
+| index? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The embed index.                                          |  false   |
+| hex    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The hex color or color name (supported colornames below). |   true   |
 
 <details>
   <summary><h3> Embed Colors </h3></summary>

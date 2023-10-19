@@ -18,11 +18,11 @@ $advanceCooldown[time;id;errorMessage]
 
 ## Parameters
 
-| Field        | Type                                                                                              | Description                                                    | Required |
-| ------------ | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | :------: |
-| time         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Text to be separated.                                          |   true   |
-| id           | integer                                                                                           | Text to be separated.                                          |   true   |
-| errorMessage | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Error message to be displayed when there's cooldown remaining. |   true   |
+| Field        | Type                                                                                                | Description                                                    | Required |
+| ------------ | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | :------: |
+| time         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Text to be separated.                                          |   true   |
+| id           | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Text to be separated.                                          |   true   |
+| errorMessage | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Error message to be displayed when there's cooldown remaining. |   true   |
 
 ## Example(s)
 

@@ -14,10 +14,10 @@ $getGuildInvite[guildID?;...options]
 
 ## Parameters
 
-| Field    | Type                                                                                              | Description                                           | Required |
-| -------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | :------: |
-| guildID? | integer                                                                                           | The guild ID of which the invite will be returned of. |  false   |
-| options? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Invite option object.                                 |  false   |
+| Field    | Type                                                                                                | Description                                           | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | :------: |
+| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The guild ID of which the invite will be returned of. |  false   |
+| options? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Invite option object.                                 |  false   |
 
 <details>
   <summary><h3> Invite Target Types </h3></summary>

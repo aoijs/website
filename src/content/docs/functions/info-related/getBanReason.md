@@ -14,10 +14,10 @@ $getBanReason[guildID?;userID?]
 
 ## Parameters
 
-| Field    | Type    | Description                                                  | Required |
-| -------- | ------- | ------------------------------------------------------------ | :------: |
-| guildID? | integer | The guild ID.                                                |  false   |
-| userID?  | integer | The user ID of the user you want to check the ban reason of. |  false   |
+| Field    | Type                                                                                                | Description                                                  | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | :------: |
+| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The guild ID.                                                |  false   |
+| userID?  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The user ID of the user you want to check the ban reason of. |  false   |
 
 ## Example(s)
 

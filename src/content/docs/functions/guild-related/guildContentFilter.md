@@ -14,9 +14,9 @@ $guildContentFilter[guildID?]
 
 ## Parameters
 
-| Field    | Type    | Description          | Required |
-| -------- | ------- | -------------------- | :------: |
-| guildID? | integer | The ID of the guild. |   true   |
+| Field    | Type                                                                                                | Description          | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | -------------------- | :------: |
+| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the guild. |   true   |
 
 | Type |          |
 | ---- | -------- |

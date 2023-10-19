@@ -14,11 +14,10 @@ $randomString[range;diffExec?]
 
 ## Parameters
 
-| Field                                        | Type                                                                                                | Description                           | Required |
-| -------------------------------------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------- | :------: |
-| range                                        | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | Range of the random generated string. |   true   |
-| diffExec?                                    | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
-                                                                                                     | false                                 |
+| Field     | Type                                                                                                | Description                           | Required |
+| --------- | --------------------------------------------------------------------------------------------------- | ------------------------------------- | :------: |
+| range     | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | Range of the random generated string. |   true   |
+| diffExec? | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Return different results?             |  false   |
 
 ## Example(s)
 

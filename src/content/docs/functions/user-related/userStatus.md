@@ -14,10 +14,10 @@ $userStatus[guildId?;userId?]
 
 ## Parameters
 
-| Field    | Type    | Description                                                     | Required |
-| -------- | ------- | --------------------------------------------------------------- | :------: |
-| guildId? | integer | The guild ID of which guild you want to retrieve the status of. |  false   |
-| userId?  | integer | The ID of the user you want to return the status of.            |  false   |
+| Field    | Type                                                                                                | Description                                                     | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | :------: |
+| guildId? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The guild ID of which guild you want to retrieve the status of. |  false   |
+| userId?  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the user you want to return the status of.            |  false   |
 
 ## Example(s)
 

@@ -14,9 +14,9 @@ $channelType[channelID?]
 
 ## Parameters
 
-| Field      | Type    | Description                                                 | Required |
-| ---------- | ------- | ----------------------------------------------------------- | :------: |
-| channelID? | integer | ID of the channel you want the channel type to be returned. |  false   |
+| Field      | Type                                                                                                | Description                                                 | Required |
+| ---------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | :------: |
+| channelID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the channel you want the channel type to be returned. |  false   |
 
 ## Example(s)
 

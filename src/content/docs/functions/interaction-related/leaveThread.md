@@ -14,10 +14,10 @@ $leaveThread[channelID;threadID]
 
 ## Parameters
 
-| Field     | Type    | Description                                              | Required |
-| --------- | ------- | -------------------------------------------------------- | :------: |
-| channelID | integer | The ID of the channel of where the thread is located in. |   true   |
-| threadID  | integer | The ID of the thread.                                    |   true   |
+| Field     | Type                                                                                                | Description                                              | Required |
+| --------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | :------: |
+| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the channel of where the thread is located in. |   true   |
+| threadID  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the thread.                                    |   true   |
 
 ## Example(s)
 

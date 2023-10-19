@@ -14,10 +14,10 @@ $isVideoOn[userID?;guildID?]
 
 ## Parameters
 
-| Field    | Type    | Description                                                    | Required |
-| -------- | ------- | -------------------------------------------------------------- | :------: |
-| userID?  | integer | ID of the user who turned video on.                            |  false   |
-| guildID? | integer | ID of the guild you want to check if they have their video on. |  false   |
+| Field    | Type                                                                                                | Description                                                    | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | :------: |
+| userID?  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the user who turned video on.                            |  false   |
+| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the guild you want to check if they have their video on. |  false   |
 
 ## Example(s)
 

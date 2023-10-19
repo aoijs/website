@@ -14,10 +14,10 @@ $messageWebhookID[messageID?;channelID?]
 
 ## Parameters
 
-| Field      | Type    | Description                                        | Required |
-| ---------- | ------- | -------------------------------------------------- | :------: |
-| messageID? | integer | ID of the message.                                 |  false   |
-| channelID? | integer | ID of the message where the message is located in. |  false   |
+| Field      | Type                                                                                                | Description                                        | Required |
+| ---------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------- | :------: |
+| messageID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the message.                                 |  false   |
+| channelID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the message where the message is located in. |  false   |
 
 ## Example(s)
 

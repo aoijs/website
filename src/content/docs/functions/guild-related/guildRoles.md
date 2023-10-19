@@ -14,11 +14,11 @@ $guildRoles[guildID?;option?;sep?]
 
 ## Parameters
 
-| Field    | Type                                                                                              | Description                                                                                               | Required |
-| -------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | :------: |
-| guildID? | integer                                                                                           | The ID of the guild.                                                                                      |  false   |
-| option?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The option on how to return the roles <br /> 1. **name** (default) <br /> 2. **id** <br /> 3. **mention** |  false   |
-| sep?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Separator to separate multiple returned values.                                                           |  false   |
+| Field    | Type                                                                                                | Description                                                                                               | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | :------: |
+| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the guild.                                                                                      |  false   |
+| option?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The option on how to return the roles <br /> 1. **name** (default) <br /> 2. **id** <br /> 3. **mention** |  false   |
+| sep?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Separator to separate multiple returned values.                                                           |  false   |
 
 ## Example(s)
 

@@ -14,9 +14,9 @@ $discriminator[userId?]
 
 ## Parameters
 
-| Field   | Type    | Description                                                      | Required |
-| ------- | ------- | ---------------------------------------------------------------- | -------- |
-| userId? | integer | The ID of the user you want the discriminator to be returned of. | false    |
+| Field   | Type                                                                                                | Description                                                      | Required |
+| ------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | -------- |
+| userId? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the user you want the discriminator to be returned of. | false    |
 
 ## Example(s)
 

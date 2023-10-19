@@ -14,10 +14,10 @@ $isStreaming[userID?;guildID?]
 
 ## Parameters
 
-| Field    | Type    | Description                                            | Required |
-| -------- | ------- | ------------------------------------------------------ | :------: |
-| userID?  | integer | ID of the user you want to check if they're streaming. |  false   |
-| guildID? | integer | ID of the channel where they're streaming in.          |  false   |
+| Field    | Type                                                                                                | Description                                            | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | :------: |
+| userID?  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the user you want to check if they're streaming. |  false   |
+| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the channel where they're streaming in.          |  false   |
 
 ## Example(s)
 

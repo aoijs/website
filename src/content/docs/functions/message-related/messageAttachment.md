@@ -14,9 +14,9 @@ $messageAttachment[index?]
 
 ## Parameters
 
-| Field  | Type    | Description                                             | Required |
-| ------ | ------- | ------------------------------------------------------- | :------: |
-| index? | integer | The index of which message attachment will be returned. |  false   |
+| Field  | Type                                                                                                | Description                                             | Required |
+| ------ | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | :------: |
+| index? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The index of which message attachment will be returned. |  false   |
 
 ## Example(s)
 

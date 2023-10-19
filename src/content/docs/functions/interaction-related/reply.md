@@ -14,11 +14,10 @@ $reply[messageID?;mentionUser?]
 
 ## Parameters
 
-| Field                                        | Type                                                                                                | Description                                    | Required |
-| -------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------- | :------: |
-| messageID?                                   | integer                                                                                             | The ID of the message that will be replied to. |  false   |
-| mentionUser?                                 | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
- Mention the author in the reply? <br /> 1. **true** (default) <br /> 2. **false**                   | false                                          |
+| Field        | Type                                                                                                | Description                                                                       | Required |
+| ------------ | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | :------: |
+| messageID?   | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the message that will be replied to.                                    |  false   |
+| mentionUser? | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Mention the author in the reply? <br /> 1. **true** (default) <br /> 2. **false** |  false   |
 
 ## Example(s)
 

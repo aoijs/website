@@ -14,9 +14,9 @@ $message[index?]
 
 ## Parameters
 
-| Field  | Type    | Description                                                                          | Required |
-| ------ | ------- | ------------------------------------------------------------------------------------ | :------: |
-| index? | integer | Which message argument will be returned, leave it empty to return the whole message. |  false   |
+| Field  | Type                                                                                                | Description                                                                          | Required |
+| ------ | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | :------: |
+| index? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Which message argument will be returned, leave it empty to return the whole message. |  false   |
 
 ## Example(s)
 

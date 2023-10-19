@@ -14,9 +14,9 @@ $voiceID[userID?]
 
 ## Parameters
 
-| Field   | Type    | Description                                                           | Required |
-| ------- | ------- | --------------------------------------------------------------------- | :------: |
-| userID? | integer | The ID of the user you want to retrieve the current voice channel of. |  false   |
+| Field   | Type                                                                                                | Description                                                           | Required |
+| ------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | :------: |
+| userID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the user you want to retrieve the current voice channel of. |  false   |
 
 ## Example(s)
 

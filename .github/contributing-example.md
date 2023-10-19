@@ -14,12 +14,12 @@ $functionName[parameter;parameter]
 
 ## Parameters
 
-| Field     | Type    | Description   | Required |
-| --------- | ------- | ------------- | :------: |
-| parameter | string  | [description] |  false   |
-| parameter | number  | [description] |   true   |
-| parameter | boolean | [description] |  false   |
-| parameter | integer | [description] |   true   |
+| Field     | Type                                                                                                | Description   | Required |
+| --------- | --------------------------------------------------------------------------------------------------- | ------------- | :------: |
+| parameter | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | [description] |  false   |
+| parameter | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | [description] |   true   |
+| parameter | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | [description] |  false   |
+| parameter | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | [description] |   true   |
 
 ## Example(s)
 

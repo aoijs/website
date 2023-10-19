@@ -14,10 +14,10 @@ $clientMutualGuilds[userID?;sep?]
 
 ## Parameters
 
-| Field   | Type                                                                                              | Description                                    | Required |
-| ------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------- | :------: |
-| userID? | integer                                                                                           | The ID of the user.                            |  false   |
-| sep?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The separator to separate the returned values. |  false   |
+| Field   | Type                                                                                                | Description                                    | Required |
+| ------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------- | :------: |
+| userID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the user.                            |  false   |
+| sep?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The separator to separate the returned values. |  false   |
 
 ## Example(s)
 

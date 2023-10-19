@@ -17,7 +17,7 @@ $deleteVar[variable;id;table?]
 | Field    | Type                                                                                                                                                                                                 | Description                                   | Required |
 | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | :------: |
 | variable | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Variable name.                                |   true   |
-| id       | integer                                                                                                                                                                                              | ID of the variable to delete ( userID etc. ). |   true   |
+| id       | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer)                                                                                                  | ID of the variable to delete ( userID etc. ). |   true   |
 | table?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | Variable table.                               |  false   |
 
 ## Example(s)

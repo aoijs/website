@@ -14,10 +14,10 @@ $deleteMessage[messageID;channelID]
 
 ## Parameters
 
-| Field     | Type    | Description                                          | Required |
-| --------- | ------- | ---------------------------------------------------- | :------: |
-| messageID | integer | The message ID of the channel which will be deleted. |   true   |
-| channelID | integer | The channel ID of where the message is located in.   |  false   |
+| Field     | Type                                                                                                | Description                                          | Required |
+| --------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | :------: |
+| messageID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The message ID of the channel which will be deleted. |   true   |
+| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The channel ID of where the message is located in.   |  false   |
 
 ## Example(s)
 

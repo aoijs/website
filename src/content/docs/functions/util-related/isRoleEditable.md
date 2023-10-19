@@ -14,10 +14,10 @@ $isRoleEditable[roleID;guildID?]
 
 ## Parameters
 
-| Field    | Type    | Description                                       | Required |
-| -------- | ------- | ------------------------------------------------- | :------: |
-| roleID   | integer | ID of the role you want to check if its editable. |   true   |
-| guildID? | integer | The ID of the guild where the role exists.        |  false   |
+| Field    | Type                                                                                                | Description                                       | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------- | :------: |
+| roleID   | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the role you want to check if its editable. |   true   |
+| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the guild where the role exists.        |  false   |
 
 ## Example(s)
 

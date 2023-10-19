@@ -14,9 +14,9 @@ $guildExists[guildId]
 
 ## Parameters
 
-| Field   | Type    | Description | Required |
-| ------- | ------- | ----------- | :------: |
-| guildId | integer | Guild ID.   |   true   |
+| Field   | Type                                                                                                | Description | Required |
+| ------- | --------------------------------------------------------------------------------------------------- | ----------- | :------: |
+| guildId | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Guild ID.   |   true   |
 
 ## Example(s)
 

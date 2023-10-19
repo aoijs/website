@@ -14,9 +14,9 @@ $isTicket[channelID?]
 
 ## Parameters
 
-| Field      | Type    | Description | Required |
-| ---------- | ------- | ----------- | :------: |
-| channelID? | integer | Channel ID. |  false   |
+| Field      | Type                                                                                                | Description | Required |
+| ---------- | --------------------------------------------------------------------------------------------------- | ----------- | :------: |
+| channelID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Channel ID. |  false   |
 
 ## Example(s)
 

@@ -14,10 +14,10 @@ $guildEmojis[sep?;guildID?]
 
 ## Parameters
 
-| Field    | Type                                                                                              | Description                                    | Required |
-| -------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------- | :------: |
-| sep?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The separator to separate the returned emojis. |  false   |
-| guildID? | integer                                                                                           | The ID of the guild.                           |  false   |
+| Field    | Type                                                                                                | Description                                    | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------- | :------: |
+| sep?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The separator to separate the returned emojis. |  false   |
+| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the guild.                           |  false   |
 
 ## Example(s)
 

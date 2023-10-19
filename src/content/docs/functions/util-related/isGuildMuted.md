@@ -14,10 +14,10 @@ $isGuildMuted[userID?;guildID?]
 
 ## Parameters
 
-| Field    | Type    | Description                                                   | Required |
-| -------- | ------- | ------------------------------------------------------------- | :------: |
-| userID?  | integer | The ID of the user you want to check if they're server muted. |  false   |
-| guildID? | integer | The ID of the guild where they're server muted in.            |  false   |
+| Field    | Type                                                                                                | Description                                                   | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | :------: |
+| userID?  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the user you want to check if they're server muted. |  false   |
+| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the guild where they're server muted in.            |  false   |
 
 ## Example(s)
 

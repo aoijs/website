@@ -14,10 +14,10 @@ $isGuildDeafened[userID?;guildID?]
 
 ## Parameters
 
-| Field    | Type    | Description                                                      | Required |
-| -------- | ------- | ---------------------------------------------------------------- | :------: |
-| userID?  | integer | The ID of the user you want to check if they're server deafened. |  false   |
-| guildID? | integer | The ID of the guild where they're server deafened in.            |  false   |
+| Field    | Type                                                                                                | Description                                                      | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | :------: |
+| userID?  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the user you want to check if they're server deafened. |  false   |
+| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the guild where they're server deafened in.            |  false   |
 
 ## Example(s)
 

@@ -14,10 +14,10 @@ $roleName[roleID;guildID?]
 
 ## Parameters
 
-| Field    | Type    | Description                                                    | Required |
-| -------- | ------- | -------------------------------------------------------------- | :------: |
-| roleID   | integer | The role ID of which you want the role name to be returned of. |   true   |
-| guildID? | integer | The guild ID.                                                  |  false   |
+| Field    | Type                                                                                                | Description                                                    | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | :------: |
+| roleID   | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The role ID of which you want the role name to be returned of. |   true   |
+| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The guild ID.                                                  |  false   |
 
 ## Example(s)
 

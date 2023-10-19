@@ -14,10 +14,10 @@ $roundTenth[number;decimalPosition]
 
 ## Parameters
 
-| Field           | Type                                                                                              | Description                                        | Required |
-| --------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------- | :------: |
-| number          | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Number to round.                                   |   true   |
-| decimalPosition | integer                                                                                           | How many numbers after the comma will be returned. |   true   |
+| Field           | Type                                                                                                | Description                                        | Required |
+| --------------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------- | :------: |
+| number          | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | Number to round.                                   |   true   |
+| decimalPosition | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | How many numbers after the comma will be returned. |   true   |
 
 ## Example(s)
 

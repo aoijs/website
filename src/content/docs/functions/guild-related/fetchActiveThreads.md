@@ -14,10 +14,10 @@ $fetchActiveThreads[channelID;option?]
 
 ## Parameters
 
-| Field     | Type                                                                                              | Description                                                                     | Required |
-| --------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | :------: |
-| channelID | integer                                                                                           | Channel ID of the channel of which you want to fetch the active threads of.     |   true   |
-| option?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | How to return the active threads. <br /> 1. **name** (default) <br /> 2. **id** |  false   |
+| Field     | Type                                                                                                | Description                                                                     | Required |
+| --------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | :------: |
+| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Channel ID of the channel of which you want to fetch the active threads of.     |   true   |
+| option?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | How to return the active threads. <br /> 1. **name** (default) <br /> 2. **id** |  false   |
 
 ## Example(s)
 

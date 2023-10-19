@@ -14,10 +14,10 @@ $findRole[roleResolver;guildID?]
 
 ## Parameters
 
-| Field        | Type                                                                                              | Description                            | Required |
-| ------------ | ------------------------------------------------------------------------------------------------- | -------------------------------------- | :------: |
-| roleResolver | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Name of the role you want to find.     |   true   |
-| guildID?     | integer                                                                                           | Guild ID where the role is present in. |  false   |
+| Field        | Type                                                                                                | Description                            | Required |
+| ------------ | --------------------------------------------------------------------------------------------------- | -------------------------------------- | :------: |
+| roleResolver | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Name of the role you want to find.     |   true   |
+| guildID?     | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Guild ID where the role is present in. |  false   |
 
 ## Example(s)
 

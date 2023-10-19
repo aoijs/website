@@ -14,12 +14,12 @@ $clearReaction[channelID;messageID;userID;emoji]
 
 ## Parameters
 
-| Field     | Type                                                                                              | Description                                                                            | Required |
-| --------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | :------: |
-| channelID | integer                                                                                           | The channel ID of where the message is located in.                                     |   true   |
-| messageID | integer                                                                                           | The message ID.                                                                        |   true   |
-| userID    | integer                                                                                           | The user ID of the user whose reactions shall be removed.                              |   true   |
-| emoji     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The exact emoji to remove. <br /> 1. **all** (default) <br /> 2. **emoji** - any emoji |   true   |
+| Field     | Type                                                                                                | Description                                                                            | Required |
+| --------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | :------: |
+| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The channel ID of where the message is located in.                                     |   true   |
+| messageID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The message ID.                                                                        |   true   |
+| userID    | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The user ID of the user whose reactions shall be removed.                              |   true   |
+| emoji     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The exact emoji to remove. <br /> 1. **all** (default) <br /> 2. **emoji** - any emoji |   true   |
 
 ## Example(s)
 

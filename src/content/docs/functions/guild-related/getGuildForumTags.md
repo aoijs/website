@@ -14,11 +14,11 @@ $getGuildForumTags[forumId;option?;separator?]
 
 ## Parameters
 
-| Field      | Type                                                                                              | Description                         | Required |
-| ---------- | ------------------------------------------------------------------------------------------------- | ----------------------------------- | :------: |
-| forumId    | integer                                                                                           | The ID of the forum channel.        |   true   |
-| option?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The option / format to return.      |  false   |
-| separator? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The separator to separate the data. |  false   |
+| Field      | Type                                                                                                | Description                         | Required |
+| ---------- | --------------------------------------------------------------------------------------------------- | ----------------------------------- | :------: |
+| forumId    | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the forum channel.        |   true   |
+| option?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The option / format to return.      |  false   |
+| separator? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The separator to separate the data. |  false   |
 
 This function also supports **custom formatting**!
 

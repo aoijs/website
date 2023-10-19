@@ -14,11 +14,11 @@ $unlockThread[channelID;threadID;reason?]
 
 ## Parameters
 
-| Field     | Type                                                                                              | Description                                                   | Required |
-| --------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | :------: |
-| channelID | integer                                                                                           | The ID of the channel where the thread is a parent of.        |   true   |
-| threadID  | integer                                                                                           | The ID of the thread which will be unlocked.                  |   true   |
-| reason?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The reason which will be displayed in the guild's audit logs. |  false   |
+| Field     | Type                                                                                                | Description                                                   | Required |
+| --------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | :------: |
+| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the channel where the thread is a parent of.        |   true   |
+| threadID  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the thread which will be unlocked.                  |   true   |
+| reason?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The reason which will be displayed in the guild's audit logs. |  false   |
 
 ## Example(s)
 

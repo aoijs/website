@@ -14,11 +14,11 @@ $deleteRoles[guildID;...roles]
 
 ## Parameters
 
-| Field                                                                                                                                          | Type                                                    | Description                                     | Required |
-| ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | ----------------------------------------------- | :------: |
-| guildID                                                                                                                                        | integer                                                 | The guild ID of where the roles are located in. |   true   |
-| ...roles                                                                                                                                       | [integer](https://developer.mozilla.org/en-US/docs/Web/ |
-| JavaScript/Reference/Global_Objects/Integer),[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The Ids of the roles.                                   | true                                            |
+| Field                                                                                                                                          | Type                                                                                                | Description                                     | Required |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------- | :------: |
+| guildID                                                                                                                                        | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The guild ID of where the roles are located in. |   true   |
+| ...roles                                                                                                                                       | [integer](https://developer.mozilla.org/en-US/docs/Web/                                             |
+| JavaScript/Reference/Global_Objects/Integer),[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The Ids of the roles.                                                                               | true                                            |
 
 ## Example(s)
 

@@ -14,11 +14,11 @@ $hasAnyRole[guildID;userID;...roles]
 
 ## Parameters
 
-| Field    | Type    | Description                                     | Required |
-| -------- | ------- | ----------------------------------------------- | :------: |
-| guildID  | integer | ID of the guild where the roles are present in. |   true   |
-| userID   | integer | ID of the user.                                 |   true   |
-| ...roles | integer | The roles that will be checked for.             |   true   |
+| Field    | Type                                                                                                | Description                                     | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------- | :------: |
+| guildID  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the guild where the roles are present in. |   true   |
+| userID   | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the user.                                 |   true   |
+| ...roles | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The roles that will be checked for.             |   true   |
 
 ## Example(s)
 

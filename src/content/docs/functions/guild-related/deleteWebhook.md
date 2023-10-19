@@ -14,10 +14,10 @@ $deleteWebhook[webhookID;webhookToken]
 
 ## Parameters
 
-| Field        | Type                                                                                              | Description               | Required |
-| ------------ | ------------------------------------------------------------------------------------------------- | ------------------------- | :------: |
-| webhookID    | integer                                                                                           | The ID of the webhook.    |   true   |
-| webhookToken | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The token of the webhook. |   true   |
+| Field        | Type                                                                                                | Description               | Required |
+| ------------ | --------------------------------------------------------------------------------------------------- | ------------------------- | :------: |
+| webhookID    | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the webhook.    |   true   |
+| webhookToken | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The token of the webhook. |   true   |
 
 ## Example(s)
 

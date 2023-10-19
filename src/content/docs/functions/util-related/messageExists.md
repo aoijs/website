@@ -14,10 +14,10 @@ $messageExists[messageID;channelID?]
 
 ## Parameters
 
-| Field      | Type    | Description                                 | Required |
-| ---------- | ------- | ------------------------------------------- | -------- |
-| messageID  | integer | the id of the message                       | true     |
-| channelID? | integer | the channel id where the message is located | false    |
+| Field      | Type                                                                                                | Description                                 | Required |
+| ---------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------- | -------- |
+| messageID  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | the id of the message                       | true     |
+| channelID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | the channel id where the message is located | false    |
 
 ## Example(s)
 

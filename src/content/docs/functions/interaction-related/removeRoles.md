@@ -14,12 +14,12 @@ $removeRoles[guildID;userID;reason?;...roleIDs]
 
 ## Parameters
 
-| Field      | Type                                                                                              | Description                                                  | Required |
-| ---------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | :------: |
-| guildID    | integer                                                                                           | The guild ID of where the user and role is located in.       |   true   |
-| userID     | integer                                                                                           | The ID of the user whose role will be removed.               |   true   |
-| reason?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The reason that will be displayed in the guild's audit logs. |  false   |
-| ...roleIDs | integer                                                                                           | The IDs of the roles that will be removed.                   |   true   |
+| Field      | Type                                                                                                | Description                                                  | Required |
+| ---------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | :------: |
+| guildID    | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The guild ID of where the user and role is located in.       |   true   |
+| userID     | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the user whose role will be removed.               |   true   |
+| reason?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The reason that will be displayed in the guild's audit logs. |  false   |
+| ...roleIDs | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The IDs of the roles that will be removed.                   |   true   |
 
 ## Example(s)
 

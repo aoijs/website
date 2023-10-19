@@ -21,14 +21,14 @@ $newMember[option]
 
 ### Options
 
-| Field         | Type                                                                                              | Description                      |
-| ------------- | ------------------------------------------------------------------------------------------------- | -------------------------------- |
-| id            | integer                                                                                           | Returns User ID.                 |
-| name          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns Name of user.            |
-| roles         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns User roles.              |
-| permissions   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns User permissions.        |
-| nick          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns User nickname.           |
-| highestRoleID | integer                                                                                           | Returns Higher role ID user has. |
+| Field         | Type                                                                                                | Description                      |
+| ------------- | --------------------------------------------------------------------------------------------------- | -------------------------------- |
+| id            | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Returns User ID.                 |
+| name          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Returns Name of user.            |
+| roles         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Returns User roles.              |
+| permissions   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Returns User permissions.        |
+| nick          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Returns User nickname.           |
+| highestRoleID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Returns Higher role ID user has. |
 
 ## Example(s)
 

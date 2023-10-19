@@ -14,9 +14,9 @@ $channelCategoryID[channelID?]
 
 ## Parameters
 
-| Field      | Type    | Description                                                  | Required |
-| ---------- | ------- | ------------------------------------------------------------ | :------: |
-| channelID? | integer | ID of a channel of which you want to retrieve its parent of. |  false   |
+| Field      | Type                                                                                                | Description                                                  | Required |
+| ---------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | :------: |
+| channelID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of a channel of which you want to retrieve its parent of. |  false   |
 
 ## Example(s)
 

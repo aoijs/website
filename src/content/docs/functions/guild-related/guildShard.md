@@ -14,11 +14,11 @@ $guildShard[option?;sep?;shardId]
 
 ## Parameters
 
-| Field   | Type                                                                                              | Description                                                                  | Required |
-| ------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | :------: |
-| option? | integer                                                                                           | Option to return the guilds in <br /> 1. **id** (default) <br /> 2. **name** |  false   |
-| sep?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Separator to separate multiple returned values.                              |  false   |
-| shardId | integer                                                                                           | The shard ID.                                                                |   true   |
+| Field   | Type                                                                                                | Description                                                                  | Required |
+| ------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | :------: |
+| option? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Option to return the guilds in <br /> 1. **id** (default) <br /> 2. **name** |  false   |
+| sep?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Separator to separate multiple returned values.                              |  false   |
+| shardId | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The shard ID.                                                                |   true   |
 
 ## Example(s)
 

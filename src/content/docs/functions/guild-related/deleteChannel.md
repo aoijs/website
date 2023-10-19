@@ -14,9 +14,9 @@ $deleteChannel[channelID]
 
 ## Parameters
 
-| Field     | Type    | Description                                          | Required |
-| --------- | ------- | ---------------------------------------------------- | :------: |
-| channelID | integer | The channel ID of the channel which will be deleted. |   true   |
+| Field     | Type                                                                                                | Description                                          | Required |
+| --------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | :------: |
+| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The channel ID of the channel which will be deleted. |   true   |
 
 ## Example(s)
 

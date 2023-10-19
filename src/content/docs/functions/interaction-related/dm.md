@@ -14,9 +14,9 @@ $dm[userID]
 
 ## Parameters
 
-| Field  | Type    | Description                          | Required |
-| ------ | ------- | ------------------------------------ | :------: |
-| userID | integer | The user which shall receive the DM. |   true   |
+| Field  | Type                                                                                                | Description                          | Required |
+| ------ | --------------------------------------------------------------------------------------------------- | ------------------------------------ | :------: |
+| userID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The user which shall receive the DM. |   true   |
 
 **Important**:
 

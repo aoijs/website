@@ -14,10 +14,10 @@ $memberExists[userID;guildID?]
 
 ## Parameters
 
-| Field    | Type    | Description                                                                        | Required |
-| -------- | ------- | ---------------------------------------------------------------------------------- | -------- |
-| userID   | integer | id of the user you want to check if they're currently a member of the given server | true     |
-| guildID? | integer | the server where the user is present in                                            | false    |
+| Field    | Type                                                                                                | Description                                                                        | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | -------- |
+| userID   | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | id of the user you want to check if they're currently a member of the given server | true     |
+| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | the server where the user is present in                                            | false    |
 
 ## Example(s)
 

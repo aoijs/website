@@ -14,9 +14,9 @@ $channelTopic[channelID?]
 
 ## Parameters
 
-| Field      | Type    | Description                                                   | Required |
-| ---------- | ------- | ------------------------------------------------------------- | :------: |
-| channelID? | integer | ID of the channel you want it to return the channel topic of. |  false   |
+| Field      | Type                                                                                                | Description                                                   | Required |
+| ---------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | :------: |
+| channelID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the channel you want it to return the channel topic of. |  false   |
 
 ## Example(s)
 

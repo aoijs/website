@@ -14,10 +14,10 @@ $abbreviate[num;dec?]
 
 ## Parameters
 
-| Field | Type    | Description                     | Required |
-| ----- | ------- | ------------------------------- | :------: |
-| num   | integer | Number to abbreviate.           |   true   |
-| dec?  | integer | Decimal between the abbreviate. |  false   |
+| Field | Type                                                                                                | Description                     | Required |
+| ----- | --------------------------------------------------------------------------------------------------- | ------------------------------- | :------: |
+| num   | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Number to abbreviate.           |   true   |
+| dec?  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Decimal between the abbreviate. |  false   |
 
 ## Example(s)
 

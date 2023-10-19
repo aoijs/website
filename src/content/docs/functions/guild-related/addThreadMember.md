@@ -14,12 +14,12 @@ $addThreadMember[channelID;threadID;userID;reason]
 
 ## Parameters
 
-| Field     | Type                                                                                              | Description                                                  | Required |
-| --------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | :------: |
-| channelID | integer                                                                                           | Channel ID of where the thread is located.                   |   true   |
-| threadID  | integer                                                                                           | The thread ID.                                               |   true   |
-| userID    | integer                                                                                           | The user that should be added to the thread.                 |   true   |
-| reason    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The reason that will be displayed in the guild's audit logs. |   true   |
+| Field     | Type                                                                                                | Description                                                  | Required |
+| --------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | :------: |
+| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Channel ID of where the thread is located.                   |   true   |
+| threadID  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The thread ID.                                               |   true   |
+| userID    | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The user that should be added to the thread.                 |   true   |
+| reason    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The reason that will be displayed in the guild's audit logs. |   true   |
 
 ## Example(s)
 

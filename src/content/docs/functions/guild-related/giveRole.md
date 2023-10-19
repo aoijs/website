@@ -14,12 +14,12 @@ $giveRole[guildID;userID;roleID;reason?]
 
 ## Parameters
 
-| Field   | Type                                                                                              | Description                                                  | Required |
-| ------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | :------: |
-| guildID | integer                                                                                           | Of which guild the member should receive roles of.           |   true   |
-| userID  | integer                                                                                           | The user ID of the guild member.                             |   true   |
-| roleID  | integer                                                                                           | The ID of the role to give.                                  |   true   |
-| reason? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The reason that will be displayed in the guild's audit logs. |  false   |
+| Field   | Type                                                                                                | Description                                                  | Required |
+| ------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | :------: |
+| guildID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Of which guild the member should receive roles of.           |   true   |
+| userID  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The user ID of the guild member.                             |   true   |
+| roleID  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the role to give.                                  |   true   |
+| reason? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The reason that will be displayed in the guild's audit logs. |  false   |
 
 Please note that the bots **highest** role must be above the role you're trying to assign.
 

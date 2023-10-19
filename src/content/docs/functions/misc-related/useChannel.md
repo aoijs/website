@@ -14,9 +14,9 @@ $useChannel[channelID]
 
 ## Parameters
 
-| Field     | Type    | Description                     | Required |
-| --------- | ------- | ------------------------------- | :------: |
-| channelID | integer | Where to execute the functions. |   true   |
+| Field     | Type                                                                                                | Description                     | Required |
+| --------- | --------------------------------------------------------------------------------------------------- | ------------------------------- | :------: |
+| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Where to execute the functions. |   true   |
 
 ## Example(s)
 

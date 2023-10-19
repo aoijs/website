@@ -14,11 +14,11 @@ $userPlatform[userID?;guildID?;sep?]
 
 ## Parameters
 
-| Field    | Type                                                                                              | Description                                   | Required |
-| -------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------- | :------: |
-| userID?  | integer                                                                                           | ID of the user.                               |  false   |
-| guildID? | integer                                                                                           | The guild ID of where the user is present in. |  false   |
-| sep?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The separator to split multiple platforms.    |  false   |
+| Field    | Type                                                                                                | Description                                   | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------- | :------: |
+| userID?  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the user.                               |  false   |
+| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The guild ID of where the user is present in. |  false   |
+| sep?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The separator to split multiple platforms.    |  false   |
 
 ### Platforms:
 

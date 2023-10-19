@@ -14,10 +14,10 @@ $webhookExists[id;token]
 
 ## Parameters
 
-| Field | Type                                                                                              | Description    | Required |
-| ----- | ------------------------------------------------------------------------------------------------- | -------------- | :------: |
-| id    | integer                                                                                           | Webhook ID.    |   true   |
-| token | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Webhook token. |   true   |
+| Field | Type                                                                                                | Description    | Required |
+| ----- | --------------------------------------------------------------------------------------------------- | -------------- | :------: |
+| id    | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Webhook ID.    |   true   |
+| token | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Webhook token. |   true   |
 
 ## Example(s)
 

@@ -17,7 +17,7 @@ $getUserVar[varname;userID?;id?;table?]
 | Field   | Type                                                                                                       | Description                               | Required |
 | ------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------- | :------: |
 | varname | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)          | Variable name.                            |   true   |
-| userID? | integer                                                                                                    | User ID.                                  |  false   |
+| userID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer)        | User ID.                                  |  false   |
 | id?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), integer | 1. **specific guild id** <br /> 2. **dm** |  false   |
 | table?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)          | Variable table.                           |  false   |
 

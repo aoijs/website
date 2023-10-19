@@ -14,9 +14,9 @@ $splitText[index]
 
 ## Parameters
 
-| Field | Type    | Description                    | Required |
-| ----- | ------- | ------------------------------ | :------: |
-| index | integer | Index of `$textSplit` content. |   true   |
+| Field | Type                                                                                                | Description                    | Required |
+| ----- | --------------------------------------------------------------------------------------------------- | ------------------------------ | :------: |
+| index | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Index of `$textSplit` content. |   true   |
 
 ## Example(s)
 

@@ -14,9 +14,9 @@ $isVerified[guildID?]
 
 ## Parameters
 
-| Field    | Type    | Description                                                             | Required |
-| -------- | ------- | ----------------------------------------------------------------------- | :------: |
-| guildID? | integer | The ID of the guild where you want to check its verification status of. |  false   |
+| Field    | Type                                                                                                | Description                                                             | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | :------: |
+| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the guild where you want to check its verification status of. |  false   |
 
 ## Example(s)
 

@@ -14,11 +14,11 @@ $setGuildDiscoverySplash[guildID?;URL;reason?]
 
 ## Parameters
 
-| Field    | Type                                                                                              | Description                                              | Required |
-| -------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | -------- |
-| guildID? | integer                                                                                           | Guild ID of the guild.                                   | false    |
-| URL      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | New discovery splash banner.                             | true     |
-| reason?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Reason that will be displayed in the guild's audit logs. | false    |
+| Field    | Type                                                                                                | Description                                              | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | -------- |
+| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Guild ID of the guild.                                   | false    |
+| URL      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | New discovery splash banner.                             | true     |
+| reason?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Reason that will be displayed in the guild's audit logs. | false    |
 
 ## Example(s)
 

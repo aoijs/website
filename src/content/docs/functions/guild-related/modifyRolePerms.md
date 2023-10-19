@@ -14,11 +14,11 @@ $modifyRolePerms[guildID;roleID;...perms]
 
 ## Parameters
 
-| Field    | Type                                                                                              | Description                                                                              | Required |
-| -------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | :------: |
-| guildID  | integer                                                                                           | The guild ID of where the role is located in.                                            |   true   |
-| roleID   | integer                                                                                           | Role ID of the role which will be modified. / `$guildID` represents the `@everyone` role |   true   |
-| ...perms | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Permissions to modify.                                                                   |   true   |
+| Field    | Type                                                                                                | Description                                                                              | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | :------: |
+| guildID  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The guild ID of where the role is located in.                                            |   true   |
+| roleID   | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Role ID of the role which will be modified. / `$guildID` represents the `@everyone` role |   true   |
+| ...perms | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Permissions to modify.                                                                   |   true   |
 
 |     | Description                                          |
 | --- | ---------------------------------------------------- |

@@ -14,10 +14,10 @@ $guildEmojiExists[emojiResolver;guildId?]
 
 ## Parameters
 
-| Field         | Type                                                                                              | Description                             | Required |
-| ------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------- | :------: |
-| emojiResolver | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Emoji you want to check if it exists.   |   true   |
-| guildID?      | integer                                                                                           | ID of the guild where the emoji exists. |  false   |
+| Field         | Type                                                                                                | Description                             | Required |
+| ------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------- | :------: |
+| emojiResolver | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Emoji you want to check if it exists.   |   true   |
+| guildID?      | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the guild where the emoji exists. |  false   |
 
 ## Example(s)
 

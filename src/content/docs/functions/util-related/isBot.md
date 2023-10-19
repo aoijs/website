@@ -14,9 +14,9 @@ $isBot[userID?]
 
 ## Parameters
 
-| Field   | Type    | Description                        | Required |
-| ------- | ------- | ---------------------------------- | :------: |
-| userID? | integer | User id to check if they're a bot. |  false   |
+| Field   | Type                                                                                                | Description                        | Required |
+| ------- | --------------------------------------------------------------------------------------------------- | ---------------------------------- | :------: |
+| userID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | User id to check if they're a bot. |  false   |
 
 ## Example(s)
 

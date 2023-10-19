@@ -14,9 +14,9 @@ $joinSplitText[sep?]
 
 ## Parameters
 
-| Field | Type    | Description                                     | Required |
-| ----- | ------- | ----------------------------------------------- | :------: |
-| sep?  | integer | Separator to separate multiple returned values. |  false   |
+| Field | Type                                                                                                | Description                                     | Required |
+| ----- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------- | :------: |
+| sep?  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Separator to separate multiple returned values. |  false   |
 
 ## Example(s)
 

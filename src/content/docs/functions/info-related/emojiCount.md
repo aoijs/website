@@ -14,9 +14,9 @@ $emojiCount[guildID?]
 
 ## Parameters
 
-| Field    | Type    | Description                                            | Required |
-| -------- | ------- | ------------------------------------------------------ | :------: |
-| guildID? | integer | From where the emojis will be counted and returned of. |  false   |
+| Field    | Type                                                                                                | Description                                            | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | :------: |
+| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | From where the emojis will be counted and returned of. |  false   |
 
 ## Example(s)
 

@@ -14,10 +14,10 @@ $guildRoleIconURL[guildId?;roleId]
 
 ## Parameters
 
-| Field    | Type    | Description                                    | Required |
-| -------- | ------- | ---------------------------------------------- | :------: |
-| guildId? | integer | ID of the guild where the role exists.         |  false   |
-| roleId   | integer | ID of the role you want to check if it exists. |   true   |
+| Field    | Type                                                                                                | Description                                    | Required |
+| -------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------- | :------: |
+| guildId? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the guild where the role exists.         |  false   |
+| roleId   | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the role you want to check if it exists. |   true   |
 
 ## Example(s)
 
