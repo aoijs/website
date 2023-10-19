@@ -102,4 +102,4 @@ const client = new AoiClient({
 });
 ```
 
-In the shown `intents: []` array you would then add the needed intents, the more intents the more resources your bot may need. The intents which require verification must be enabled beforehand on the Discord Developer Portal, where you [created your Discord Bot](https://discord.com/developers/applications). After reached 75 guilds, this will need verification from Discord, getting any of these intents is although maybe necessary, not guarantied. You should start using [Application Commands](/guides/application-cmds) instead, to avoid the hassle.
+In the shown `intents: []` array you would then add the needed intents, the more intents the more resources your bot may need. The intents which require verification must be enabled beforehand on the Discord Developer Portal, where you [created your Discord Bot](https://discord.com/developers/applications). After reached 75 guilds, this will need verification from Discord, getting any of these intents is although maybe necessary, not guarantied. You should start using **Application Commands** instead, to avoid the hassle.
