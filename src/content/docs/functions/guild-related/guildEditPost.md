@@ -19,7 +19,7 @@ $guildEditPost[forumId;userID?;...threadTags(?)]
 | forumId                                      | integer                                                                                             | The ID of the forum channel.                                              |   true   |
 | reason?                                      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The reason displayed in the guild's audit logs.                           |  false   |
 | returnTags?                                  | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
-| JavaScript/Reference/Global_Objects/Boolean) | Return the thread tags?                                                                             | false                                                                     |
+ Return the thread tags?                                                                             | false                                                                     |
 | ...threadTags(?)                             | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The applied post tags. Optional when forum channel does not require tags. |    /     |
 
 ## Example(s)

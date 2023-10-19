@@ -18,7 +18,7 @@ $mentionedChannels[index;returnSelf?]
 | -------------------------------------------- | --------------------------------------------------------------------------------------------------- | -------------------------- | :------: |
 | index                                        | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The index of the argument. |   true   |
 | returnSelf?                                  | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
-| JavaScript/Reference/Global_Objects/Boolean) | Return the ID of the channel where the command was executed in when channel was not found.          | false                      |
+ Return the ID of the channel where the command was executed in when channel was not found.          | false                      |
 
 ## Example(s)
 

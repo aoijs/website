@@ -19,7 +19,7 @@ $membersCount[guildID?;presence?;countBot?]
 | guildID?                                     | integer                                                                                             | The ID of the guild.                                                                                                                  |  false   |
 | presence?                                    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The presence of the users <br /> 1. **all** (default) <br /> 2. **dnd** <br /> 3. **idle** <br /> 4. **offline** <br /> 5. **online** |  false   |
 | countBot?                                    | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
-| JavaScript/Reference/Global_Objects/Boolean) | Count bots? <br /> 1. **true** (default) <br /> 2. **false**                                        | false                                                                                                                                 |
+ Count bots? <br /> 1. **true** (default) <br /> 2. **false**                                        | false                                                                                                                                 |
 
 ## Example(s)
 

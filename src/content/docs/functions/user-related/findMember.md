@@ -18,7 +18,7 @@ $findMember[userResolver;returnSelf?;guildID?]
 | -------------------------------------------- | --------------------------------------------------------------------------------------------------- | -------------------------------------- | :------: |
 | userResolver                                 | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | User you want to find.                 |   true   |
 | returnSelf?                                  | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
-| JavaScript/Reference/Global_Objects/Boolean) | Return the author ID if the given user was not found.                                               | false                                  |
+ Return the author ID if the given user was not found.                                               | false                                  |
 | guildID?                                     | integer                                                                                             | Guild ID where the user is present in. |  false   |
 
 ## Example(s)

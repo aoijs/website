@@ -18,8 +18,7 @@ $archiveThread[threadID;channelID?;archive?;reason?]
 | -------------------------------------------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | :------: |
 | threadID                                     | integer                                                                                             | Thread ID.                                               |   true   |
 | channelID?                                   | integer                                                                                             | Channel ID of where the thread is located.               |  false   |
-| archive?                                     | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
-| JavaScript/Reference/Global_Objects/Boolean) | Archive the given thread?                                                                           | false                                                    |
+| archive?                                     | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |  Archive the given thread?                                                                           | false                                                    |
 | reason?                                      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Reason that will be displayed in the guild's audit logs. |  false   |
 
 ## Example(s)

@@ -20,7 +20,7 @@ $createApplicationCommand[guildID/global;name;description;defaultPermission;type
 | name                                         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Application command name, must be lowercase.                                |   true   |
 | description                                  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Application command description.                                            |   true   |
 | defaultPermissions                           | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
-| JavaScript/Reference/Global_Objects/Boolean) | If the command should follow the default permissions.                                               | true                                                                        |
+ If the command should follow the default permissions.                                               | true                                                                        |
 | type?                                        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The application command type. (slash/user/message)                          |  false   |
 | options?                                     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Application command options.                                                |  false   |
 

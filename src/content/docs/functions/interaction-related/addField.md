@@ -19,7 +19,7 @@ $addField[fieldTitle;fieldDescription;inline?]
 | fieldTitle?                                  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The title of the field.       |   true   |
 | fieldDescription?                            | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The description of the field. |   true   |
 | inline?                                      | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
-| JavaScript/Reference/Global_Objects/Boolean) | If the field is inline.                                                                             | false                         |
+ If the field is inline.                                                                             | false                         |
 
 ## Example(s)
 

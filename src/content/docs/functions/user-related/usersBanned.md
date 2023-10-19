@@ -18,7 +18,7 @@ $usersBanned[guildID?;force?;option?;sep?]
 | -------------------------------------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | :------: |
 | guildID?                                     | integer                                                                                             | The guild ID.                                                                                          |  false   |
 | force?                                       | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
-| JavaScript/Reference/Global_Objects/Boolean) | 1. **true** <br /> 2. **false** (default)                                                           | false                                                                                                  |
+ 1. **true** <br /> 2. **false** (default)                                                           | false                                                                                                  |
 | option?                                      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | How to return the banned users <br /> 1. **id** (default) <br /> 1. **username** <br /> 1. **mention** |  false   |
 | sep?                                         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Separator to separate multiple returned values.                                                        |  false   |
 

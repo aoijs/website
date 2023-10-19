@@ -18,7 +18,7 @@ $randomString[range;diffExec?]
 | -------------------------------------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------- | :------: |
 | range                                        | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | Range of the random generated string. |   true   |
 | diffExec?                                    | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
-| JavaScript/Reference/Global_Objects/Boolean) |                                                                                                     | false                                 |
+                                                                                                     | false                                 |
 
 ## Example(s)
 

@@ -18,7 +18,7 @@ $findUser[userResolver;returnSelf?]
 | -------------------------------------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------- | :------: |
 | userResolver                                 | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Query which is used to find the user. |   true   |
 | returnSelf?                                  | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
-| JavaScript/Reference/Global_Objects/Boolean) | Will return the user ID of the user who executed the command when user was not found.               | false                                 |
+ Will return the user ID of the user who executed the command when user was not found.               | false                                 |
 
 ## Example(s)
 

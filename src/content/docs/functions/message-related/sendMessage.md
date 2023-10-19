@@ -18,7 +18,7 @@ $sendMessage[content;returnID?]
 | -------------------------------------------- | --------------------------------------------------------------------------------------------------- | ------------------------ | :------: |
 | content                                      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Message Content to send. |   true   |
 | returnID?                                    | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
-| JavaScript/Reference/Global_Objects/Boolean) | Return message ID? <br /> 1. **true** <br /> 2. **false** (default)                                 | false                    |
+ Return message ID? <br /> 1. **true** <br /> 2. **false** (default)                                 | false                    |
 
 ## Example(s)
 

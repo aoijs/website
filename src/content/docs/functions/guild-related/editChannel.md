@@ -22,7 +22,7 @@ $editChannel[channelID;name?;type?;position?;topic?;nsfw?;bitrate?;userlimit?;pa
 | position?                                    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The new channel position.                                 |  false   |
 | topic?                                       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The new channel topic.                                    |  false   |
 | nsfw?                                        | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
-| JavaScript/Reference/Global_Objects/Boolean) | If it should mark the channel as NSFW or not.                                                       | false                                                     |
+ If it should mark the channel as NSFW or not.                                                       | false                                                     |
 | bitrate?                                     | integer                                                                                             | Voice Channel bitrate.                                    |  false   |
 | userlimit?                                   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | Voice Channel userlimit.                                  |  false   |
 | parent?                                      | integer                                                                                             | The new parent of the channel. (category ID)              |  false   |

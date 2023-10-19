@@ -22,7 +22,7 @@ $interactionFollowUp[content?;embeds?;components?;files?;ephemeral?]
 | components?                                  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Component parser. |  false   |
 | files?                                       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | File parser.      |  false   |
 | ephemeral?                                   | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
-| JavaScript/Reference/Global_Objects/Boolean) | vVisible to the command author only? <br /> 1. **true** <br /> 2. **false** (default)               | false             |
+ vVisible to the command author only? <br /> 1. **true** <br /> 2. **false** (default)               | false             |
 
 ## Example(s)
 

@@ -18,7 +18,7 @@ $mentioned[index;returnSelf?]
 | -------------------------------------------- | --------------------------------------------------------------------------------------------------- | -------------------------- | :------: |
 | index                                        | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The index of the argument. |   true   |
 | returnSelf?                                  | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
-| JavaScript/Reference/Global_Objects/Boolean) | Return the author's ID if user was not found.                                                       | false                      |
+ Return the author's ID if user was not found.                                                       | false                      |
 
 ## Example(s)
 

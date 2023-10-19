@@ -20,7 +20,7 @@ $memberAvatar[guildID?;userID?;size?;dynamic?;format?]
 | userID?                                      | integer                                                                                             | The ID of the user.    |  false   |
 | size?                                        | integer                                                                                             | The size of the image. |  false   |
 | dynamic?                                     | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) |
-| JavaScript/Reference/Global_Objects/Boolean) | 1. **true** (default) <br /> 2. **false**                                                           | false                  |
+ 1. **true** (default) <br /> 2. **false**                                                           | false                  |
 | format?                                      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Image format.          |  false   |
 
 ## Example(s)

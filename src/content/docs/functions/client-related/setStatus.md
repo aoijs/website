@@ -21,7 +21,7 @@ $setStatus[name;type;status;URL;afk?]
 | status                                       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)          | 1. **online** (default) <br /> 2. **idle** <br /> 3. **dnd** <br /> 4. **invisible**                                    |   true   |
 | URL                                          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)          | URL (streaming status)                                                                                                  |   true   |
 | afk?                                         | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)        |
-| JavaScript/Reference/Global_Objects/Boolean) | 1. **true** <br /> 2. **false** (default)                                                                  | false                                                                                                                   |
+ 1. **true** <br /> 2. **false** (default)                                                                  | false                                                                                                                   |
 
 ## Example(s)
 
