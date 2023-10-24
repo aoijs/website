@@ -39,6 +39,12 @@
 
 code {
   border-radius: 4px;
+  white-space: no-break;
+}
+
+aside {
+  z-index: var(--sl-z-index-menu);
+  background-color: var(--sl-color-bg);
 }
 
 .astro-code {

@@ -25,7 +25,7 @@ const packageInfo = await pRetry(
 );
 
 const { version } = packageInfo;
-const content = `The newest aoi.js version <b>${version}</b> is available! <a href="https://github.com/AkaruiDevelopment/aoi.js/releases/tag/${version}">Read the Changelogs</a>`;
+const content = `The newest ${pkgName} version <b>${version}</b> is available! <a href="https://github.com/AkaruiDevelopment/aoi.js/releases/tag/${version}">Read the Changelogs</a>`;
 ---
 
 <div class="sl-banner" set:html={content}><slot /></div>
@@ -44,7 +44,7 @@ const content = `The newest aoi.js version <b>${version}</b> is available! <a hr
     text-wrap: balance;
     box-shadow: var(--sl-shadow-sm);
     position: fixed;
-    z-index: 5;
+    z-index: 2;
     left: 0;
     top: 0;
     width: 100%;

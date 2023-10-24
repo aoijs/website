@@ -23,18 +23,20 @@ voice.addEvent(PlayerEvents.eventName);
 
 #### List of Events
 
-- `trackStart` &rarr; Emitted whenever a track starts.
-- `trackEnd` &rarr; Emitted whenever a track ends.
-- `queueStart` &rarr; Emitted whenever a queue starts.
-- `queueEnd` &rarr; Emitted whenever a queue ends.
-- `audioError` &rarr; Emitted whenever a audio error occurs.
-- `trackPause` &rarr; Emitted whenever a track pauses.
-- `trackResume` &rarr; Emitted whenever a track resumes.
+- `TrackStart` &rarr; Emitted whenever a track starts.
+- `TrackEnd` &rarr; Emitted whenever a track ends.
+- `QueueStart` &rarr; Emitted whenever a queue starts.
+- `QueueEnd` &rarr; Emitted whenever a queue ends.
+- `AudioError` &rarr; Emitted whenever a audio error occurs.
+- `TrackPause` &rarr; Emitted whenever a track pauses.
+- `TrackResume` &rarr; Emitted whenever a track resumes.
 
 ### Using Events
 
 :::warn[Command]
+
 You can only have aoi.music events in that given directory, adding aoi.js commands WILL return errors.
+
 :::
 
 ```js

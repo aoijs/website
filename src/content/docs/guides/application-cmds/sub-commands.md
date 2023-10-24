@@ -29,14 +29,14 @@ Sub-commands are apart of slash commands and are used to add as the name already
 $createApplicationCommand[guildID/global;name;description;defaultPermission(true/false);type(slash/user/message);options?]
 ```
 
-| Field             | Type            | Description                                                                                                    | Required |
-| ----------------- | --------------- | -------------------------------------------------------------------------------------------------------------- | :------: |
-| guildID/global    | string, integer | The type of application command, either for every guild (global) or for one specific guild (specific guildID). |   true   |
-| name              | string, number  | The actual slash command name that will be visible to the user.                                                |   true   |
-| description       | string, number  | The slash command description that will be visible to the user.                                                |   true   |
-| defaultPermission | string          | If the application command should syncronisate to the default permissions.                                     |   true   |
-| type              | string          | The application command type (explained below)                                                                 |   true   |
-| options?          | object          | Slash commands options.                                                                                        |   true   |
+| Field             | Type                                                                                                                                                                                                   | Description                                                                                                    | Required |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- | :------: |
+| guildID/global    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The type of application command, either for every guild (global) or for one specific guild (specific guildID). |   true   |
+| name              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The actual slash command name that will be visible to the user.                                                |   true   |
+| description       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The slash command description that will be visible to the user.                                                |   true   |
+| defaultPermission | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                      | If the application command should syncronisate to the default permissions.                                     |   true   |
+| type              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                      | The application command type (explained below)                                                                 |   true   |
+| options?          | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)                                                                                                      | Slash commands options.                                                                                        |   true   |
 
 ### Examples of creating Application Commands with sub commands
 
