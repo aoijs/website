@@ -1,4 +1,17 @@
 (() => {
+  const favicon = document.getElementById("favicon");
+  switch (window.location.pathname) {
+    case "/extensions/aoimusic":
+      favicon.href = "../src/images/musicicon.webp";
+      break;
+    case "/extensions/aoipanel":
+      favicon.href = "../src/images/panelicon.webp";
+      break;
+    default:
+      favicon.href = "../src/images/favicon.png";
+      break;
+  }
+
   const key = "toc-position";
   let position = { scrollTop: 0, details: [] };
 
