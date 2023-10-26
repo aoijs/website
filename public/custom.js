@@ -1,14 +1,14 @@
 (() => {
   const favicon = document.getElementById("favicon");
   switch (window.location.pathname) {
-    case "/extensions/aoimusic":
-      favicon.href = "../src/images/musicicon.webp";
+    case "/extensions/aoimusic/":
+      favicon.href = "https://raw.githubusercontent.com/aoijs/website/main/src/images/musicicon.webp";
       break;
-    case "/extensions/aoipanel":
-      favicon.href = "../src/images/panelicon.webp";
+    case "/extensions/aoipanel/":
+      favicon.href = "https://raw.githubusercontent.com/aoijs/website/main/src/images/panelicon.webp";
       break;
     default:
-      favicon.href = "../src/images/favicon.png";
+      favicon.href = "https://raw.githubusercontent.com/aoijs/website/main/src/images/favicon.png";
       break;
   }
 
