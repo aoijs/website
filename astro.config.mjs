@@ -277,9 +277,9 @@ export default defineConfig({
               collapsed: true,
             },
             {
-              label: "Variables",
+              label: "Database/Variable",
               autogenerate: {
-                directory: "functions/variables-related",
+                directory: "functions/database-related",
               },
               collapsed: true,
             },
