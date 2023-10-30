@@ -37,6 +37,17 @@ client.variables(
 );
 ```
 
+This also works:
+
+```js title="index.js"
+client.variables({
+  blacklisted: false,
+  money: 0,
+  developers: {},
+  title: "none",
+});
+```
+
 ---
 
 ## Variable Handlers
@@ -77,6 +88,19 @@ module.exports = (client) => {
     },
     "main",
   );
+};
+```
+
+This also works:
+
+```js title="handler/variables.js"
+module.exports = (client) => {
+  client.variables({
+    blacklisted: false,
+    money: 0,
+    developers: {},
+    title: "none",
+  });
 };
 ```
 

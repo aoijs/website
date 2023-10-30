@@ -26,7 +26,7 @@ import "@docsearch/css";
         props: {
           href: "https://github.com/AkaruiDevelopment",
           target: "_blank",
-          children: `${state.context.nbHits} results found! | Github`,
+          children: `${state.context.nbHits} results found!`,
         },
         __v: null,
       };
@@ -45,6 +45,7 @@ import "@docsearch/css";
 
   @media (min-width: 50rem) {
     :global(.DocSearch-Button) {
+      overflow: hidden;
       width: 100%;
       max-width: 22rem;
     }

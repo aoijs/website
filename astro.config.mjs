@@ -146,17 +146,14 @@ export default defineConfig({
                 {
                   label: "aoi.canvas",
                   link: "extensions/aoicanvas",
-                  badge: { text: "New", variant: "tip" },
                 },
                 {
                   label: "aoi.loader",
                   link: "extensions/aoiloader",
-                  badge: { text: "New", variant: "tip" },
                 },
                 {
                   label: "aoi.js-library",
                   link: "extensions/aoijs-library",
-                  badge: { text: "New", variant: "tip" },
                 },
               ],
             },

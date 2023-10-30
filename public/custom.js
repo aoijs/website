@@ -1,22 +1,44 @@
-(() => {
-  const favicon = document.getElementById("favicon");
-  switch (window.location.pathname) {
-    case "/extensions/aoimusic/":
-      favicon.href = "https://raw.githubusercontent.com/aoijs/website/main/src/images/musicicon.webp";
-      break;
-    case "/extensions/aoipanel/":
-      favicon.href = "https://raw.githubusercontent.com/aoijs/website/main/src/images/panelicon.webp";
-      break;
-    default:
-      favicon.href = "https://raw.githubusercontent.com/aoijs/website/main/src/images/favicon.png";
-      break;
-  }
+(async () => {
+  const loadFavicon = () => {
+    return new Promise((resolve, reject) => {
+      const favicon = document.querySelector("link[rel~='icon']");
+      if (!favicon) {
+        favicon = document.createElement("link");
+        favicon.rel = "icon";
+        document.head.appendChild(link);
+      }
+
+      const onLoad = () => {
+        resolve();
+      };
+
+      switch (window.location.pathname) {
+        case "/extensions/aoimusic/":
+          favicon.href =
+            "https://raw.githubusercontent.com/aoijs/website/main/src/images/musicicon.webp";
+          break;
+        case "/extensions/aoipanel/":
+          favicon.href =
+            "https://raw.githubusercontent.com/aoijs/website/main/src/images/panelicon.webp";
+          break;
+        default:
+          favicon.href =
+            "https://raw.githubusercontent.com/aoijs/website/main/src/images/favicon.png";
+          break;
+      }
+
+      favicon.addEventListener("load", onLoad);
+      favicon.addEventListener("error", reject);
+    });
+  };
+
+  await loadFavicon();
 
   const key = "toc-position";
   let position = { scrollTop: 0, details: [] };
 
   const sidebar = document.querySelector(
-    "#starlight__sidebar > .sidebar-content",
+    "#starlight__sidebar > .sidebar-content"
   );
 
   if (sidebar) {
