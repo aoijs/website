@@ -31,22 +31,22 @@ Character escaping is typically used in the following situations:
 
 The following table shows some commonly used escape sequences:
 
-| CHARACTER  | ESCAPED           | ALTERNATIVE |
-| ---------- | ----------------- | ----------- |
-| `[`        | `#RIGHT#`         | `\[`        |
-| `]`        | `#LEFT#`          | `\]`        |
-| `;`        | `#SEMI#`          | `\;`        |
-| `:`        | `#COLON#`         | `\:`        |
-| `$`        | `#CHAR#`          | `\$`        |
-| `<`        | `#RIGHT_CLICK#`   | `\<`        |
-| `>`        | `#LEFT_CLICK#`    | `\>`        |
-| `=`        | `#EQUAL#`         | `\=`        |
-| `{`        | `#RIGHT_BRACKET#` | `\{`        |
-| `}`        | `#LEFT_BRACKET#`  | `\}`        |
-| `,`        | `#COMMA#`         |             |
-| `&&`       | `#AND#`           | `\&\&`      |
-| `\|\|`     | `#OR#`            | `\\         |
-| `NEW LINE` |                   | `\n`        |
+| CHARACTER  | ESCAPED           | ALTERNATIVE      |
+| ---------- | ----------------- | ---------------- |
+| `[`        | `#RIGHT#`         | `\[`             |
+| `]`        | `#LEFT#`          | `\]`             |
+| `;`        | `#SEMI#`          | `\;`             |
+| `:`        | `#COLON#`         | `\:`             |
+| `$`        | `#CHAR#`          | `\$`             |
+| `<`        | `#RIGHT_CLICK#`   | `\<`             |
+| `>`        | `#LEFT_CLICK#`    | `\>`             |
+| `=`        | `#EQUAL#`         | `\=`             |
+| `{`        | `#RIGHT_BRACKET#` | `\{`             |
+| `}`        | `#LEFT_BRACKET#`  | `\}`             |
+| `,`        | `#COMMA#`         |                  |
+| `&&`       | `#AND#`           | `\&\& `          |
+| `\|\|`     | `#OR#`            | `\\|\\|`         |
+| `NEW LINE` |                   | `\n`             |
 
 ## Examples
 
