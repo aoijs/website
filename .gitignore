@@ -9,6 +9,9 @@
 # Generated files
 .docusaurus
 .cache-loader
+.next
+_map.ts
+next-env.d.ts
 
 # Misc
 .DS_Store

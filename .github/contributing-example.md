@@ -23,11 +23,13 @@ $functionName[parameter;parameter]
 
 ## Example(s)
 
-[description - what the example does]: 
+[description - what the example does]: ```javascript
 
-```javascript
 client.command({
-    ...
+...
 });
 // Example in non-handler format using client.command and JS code-highlighting
+
+```
+
 ```
