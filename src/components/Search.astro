@@ -17,7 +17,7 @@ import "@docsearch/css";
     getMissingResultsUrl({ query }) {
       return `https://github.com/aoijs/website/issues/new?title=${query}`;
     },
-    resultsFooterComponent({ state }) {
+    /*resultsFooterComponent({ state }) {
       return {
         type: "a",
         ref: undefined,
@@ -27,6 +27,113 @@ import "@docsearch/css";
           href: "https://github.com/AkaruiDevelopment",
           target: "_blank",
           children: `${state.context.nbHits} results found!`,
+        },
+        __v: null,
+      };
+    },*/
+    resultsFooterComponent({ state }) {
+      return {
+        type: "div",
+        ref: undefined,
+        constructor: undefined,
+        key: "resultsFooter",
+        props: {
+          style: { marginBlock: "0.5rem" },
+          children: [
+            {
+              type: "p",
+              ref: undefined,
+              constructor: undefined,
+              key: "resultsFooterLede",
+              props: {
+                children: `Searched for something else? Maybe something below can solve your issue.`,
+              },
+              __v: null,
+            },
+            {
+              type: "ul",
+              ref: undefined,
+              constructor: undefined,
+              key: "resultsFooterList",
+              props: {
+                style: {
+                  display: "flex",
+                  gap: "1em",
+                  marginBlock: "0.5em",
+                  flexWrap: "wrap",
+                },
+                children: [
+                  {
+                    type: "li",
+                    ref: undefined,
+                    constructor: undefined,
+                    key: "integrationLink",
+                    props: {
+                      children: [
+                        {
+                          type: "a",
+                          ref: undefined,
+                          constructor: undefined,
+                          key: "integrationAnchor",
+                          props: {
+                            href: "https://aoi.js.org/extensions/",
+                            children: "Discover our Extensions",
+                          },
+                          __v: null,
+                        },
+                      ],
+                    },
+                    __v: null,
+                  },
+                  {
+                    type: "li",
+                    ref: undefined,
+                    constructor: undefined,
+                    key: "themesLink",
+                    props: {
+                      children: [
+                        {
+                          type: "a",
+                          ref: undefined,
+                          constructor: undefined,
+                          key: "themesAnchor",
+                          props: {
+                            href: "https://github.com/AkaruiDevelopment/aoi.js/issues",
+                            children: "Found bugs? Report them here!",
+                          },
+                          __v: null,
+                        },
+                      ],
+                    },
+                    __v: null,
+                  },
+                  {
+                    type: "li",
+                    ref: undefined,
+                    constructor: undefined,
+                    key: "discordLink",
+                    props: {
+                      children: [
+                        {
+                          type: "a",
+                          ref: undefined,
+                          constructor: undefined,
+                          key: "discordAnchor",
+                          props: {
+                            href: "https://aoi.js.org/invite",
+                            children: "Need Support? Feel free to join our Discord.",
+                          },
+                          __v: null,
+                        },
+                      ],
+                    },
+                    __v: null,
+                  },
+                ],
+              },
+              __v: null,
+            },
+          ],
         },
         __v: null,
       };
