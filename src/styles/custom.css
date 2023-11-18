@@ -75,6 +75,10 @@ a:where(.astro-3ii7xxms) {
   margin-top: 0.2rem;
 }
 
+.action:where(.astro-yjy4zhro) {
+  border-radius: 5px;
+}
+
 a:where(.astro-3ii7xxms):hover {
   background-color: var(--sl-color-backdrop-overlay);
 }
