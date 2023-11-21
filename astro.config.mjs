@@ -3,26 +3,17 @@ import { rehypeHeadingIds } from "@astrojs/markdown-remark";
 import starlight from "@astrojs/starlight";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import react from "@astrojs/react";
-import expressiveCode from "astro-expressive-code";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
   site: "https://aoi.js.org",
   integrations: [
     sitemap(),
-    expressiveCode({
-      textMarkers: {
-        styleOverrides: {
-          defaultChroma: "55",
-        },
-      },
-      frames: {
-        showCopyToClipboardButton: true,
-      },
-      theme: "github-dark",
-    }),
     starlight({
       title: "aoi.js",
+      expressiveCode: {
+        themes: ["github-dark"],
+      },
       favicon: "/favicon.png",
       logo: {
         src: "/favicon.png",

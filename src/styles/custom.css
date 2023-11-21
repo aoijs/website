@@ -150,8 +150,12 @@ a:where(.linkStyle) {
   margin-right: 5px;
 }
 
-.content:where(.astro-ml6ntd6l)
+.content:where(.astro-c6vsoqas)
   :is(img, picture, video, canvas, svg, iframe):not(:where(.not-content *)) {
   display: inline-block;
   margin-left: 0.2rem;
+}
+
+.expressive-code .copy .feedback {
+  background-color: var(--sl-color-banner-bg, var(--sl-color-bg-accent));
 }
