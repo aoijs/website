@@ -10,37 +10,38 @@ id: options
 const { AoiClient } = require("aoi.js");
 
 const client = new AoiClient({
-    token : string,
-    prefix : string,
-    intents : ["MessageContent", "Guilds", "GuildMessages"],
-    events : ["onMessage", "onJoin", "onLeave"],
-    disableFunctions? : ["$function", "$function"],
-    plugins? : "./path/to/directory",
-    respondToBots? : boolean,
-    guildOnly? : boolean,
-    cache? : {
-        users : number,
-        messages : number,
+    token: string,
+    prefix: string,
+    intents: ["MessageContent", "Guilds", "GuildMessages"],
+    events: ["onMessage", "onJoin", "onLeave"],
+    disableFunctions?: ["$function", "$function"],
+    // plugins?: "./path/to/directory", (deprecated)
+    respondToBots?: boolean,
+    guildOnly?: boolean,
+    cache?: {
+        users: number,
+        messages: number,
     },
-    database? : {
-        type : "aoi.db",
-        db : require("@akarui/aoi.db"),
-        tables : ["main"],
-        path : "./database/",
-        extraOptions : {
+    database?: {
+        type: "aoi.db",
+        db: require("@akarui/aoi.db"),
+        tables: ["main"],
+        path: "./database/",
+        extraOptions: {
             dbType: "KeyValue",
         }
+        securityKey: string,
     }, // Example refers to @akarui/aoi.db, other databases are not included in this Example.
-    suppressAllErrors? : boolean,
-    errorMessage? : string,
-    aoiAutoUpdate? : boolean,
-    aoiWarning? : boolean,
-    aoiLogs? : boolean,
-    respondOnEdit? : {
-        commands : boolean,
-        alwaysExecute? : boolean,
-        nonPrefixed? : boolean,
-        time : number
+    suppressAllErrors?: boolean,
+    errorMessage?: string,
+    aoiAutoUpdate?: boolean,
+    aoiWarning?: boolean,
+    aoiLogs?: boolean,
+    respondOnEdit?: {
+        commands: boolean,
+        alwaysExecute?: boolean,
+        nonPrefixed?: boolean,
+        time: number
     },
 });
 ```
@@ -58,7 +59,7 @@ const client = new AoiClient({
 | `respondToBots`     | boolean | Either give your bot the ability to respond to bots or remove it.                       |
 | `guildOnly`         | boolean | Either give your bot the ability to respond in Direct Message or remove it.             |
 | `cache`             | string  | Client Cache Options.                                                                   |
-| `database`          | string  | Client Database Options.                                                                |
+| `database`          | string  | Client Database Options. (aoi.db)                                                       |
 | `suppressAllErrors` | boolean | Suppress all occuring errors.                                                           |
 | `errorMessage`      | string  | Send a given error message when `suppressAllErrors` executes, supports parser.          |
 | `aoiAutoUpdate`     | boolean | Automatically update aoi.js if a update is available.                                   |

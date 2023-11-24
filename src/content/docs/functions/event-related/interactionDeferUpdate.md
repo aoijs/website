@@ -28,6 +28,6 @@ client.command({
   code: ` 
    $interactionFollowUp[This is the first message!]
    $interactionEdit[This is the second message!]
-   $interactionDeferUpdate[true]`,
+   $interactionDeferUpdate[true]`
 });
 ```

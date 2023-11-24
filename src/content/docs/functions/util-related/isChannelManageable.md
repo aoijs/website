@@ -14,9 +14,9 @@ $isChannelManageable[channelID?]
 
 ## Parameters
 
-| Field      | Type                                                                                                | Description                                                     | Required |
-| ---------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | :------: |
-| channelID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the channel to check if the channel is manageable or not. |  false   |
+| Field      | Type                                                                                              | Description                                                     | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | :------: |
+| channelID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the channel to check if the channel is manageable or not. |  false   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "isChannelManageable",
   code: `
   $isChannelManageable[$channelID]
-  `,
+  `
 });
 ```

@@ -28,6 +28,6 @@ client.command({
   name: "embed",
   code: `
   $description[aoi.js is great!]
-  `,
+  `
 });
 ```

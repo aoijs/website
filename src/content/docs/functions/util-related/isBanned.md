@@ -14,10 +14,10 @@ $isBanned[guildID;userID]
 
 ## Parameters
 
-| Field   | Type                                                                                                | Description                                                   | Required |
-| ------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | :------: |
-| guildID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the guild where to check if the user is banned or not.  |   true   |
-| userID  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the user that will be checked if they're banned or not. |   true   |
+| Field   | Type                                                                                              | Description                                                   | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | :------: |
+| guildID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the guild where to check if the user is banned or not.  |   true   |
+| userID  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the user that will be checked if they're banned or not. |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "isBanned",
   code: `
   $isBanned[$guildID;$authorID]
-  `,
+  `
 });
 ```

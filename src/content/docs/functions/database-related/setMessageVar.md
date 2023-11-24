@@ -14,12 +14,12 @@ $setMessageVar[varname;value;messageID?;table?]
 
 ## Parameters
 
-| Field      | Type                                                                                                | Description         | Required |
-| ---------- | --------------------------------------------------------------------------------------------------- | ------------------- | :------: |
-| varname    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Variable name.      |   true   |
-| value      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | New Variable value. |   true   |
-| messageID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Message ID.         |  false   |
-| table?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Variable table.     |  false   |
+| Field      | Type                                                                                              | Description         | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | ------------------- | :------: |
+| varname    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable name.      |   true   |
+| value      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | New Variable value. |   true   |
+| messageID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Message ID.         |  false   |
+| table?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable table.     |  false   |
 
 ## Example(s)
 
@@ -30,6 +30,6 @@ client.command({
   name: "setMessageVar",
   code: `
     $setMessageVar[Example;This is a value;$messageID;main]
-    `,
+    `
 });
 ```

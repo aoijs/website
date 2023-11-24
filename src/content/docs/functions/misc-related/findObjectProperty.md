@@ -30,6 +30,6 @@ client.command({
   code: `
   $findObjectProperty[Object Name;Leref]
   $createObject[Object Name;{"Leref": "Ferel", "aoi.js": "dbd.js"}]
-  `,
+  `
 });
 ```

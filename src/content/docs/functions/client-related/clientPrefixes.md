@@ -14,13 +14,13 @@ $clientPrefixes
 
 ## Example(s)
 
-This will return all your prefixes separated by a comma (`, `):
+This will return all your prefixes separated by a comma (` `):
 
 ```javascript
 client.command({
   name: "clientPrefixes",
   code: `
   $clientPrefixes
-  `,
+  `
 });
 ```

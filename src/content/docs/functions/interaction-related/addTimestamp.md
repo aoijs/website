@@ -14,9 +14,9 @@ $addTimestamp[ms?]
 
 ## Parameters
 
-| Field | Type                                                                                                | Description | Required |
-| ----- | --------------------------------------------------------------------------------------------------- | ----------- | :------: |
-| ms    | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Epoch Time. |  false   |
+| Field | Type                                                                                              | Description | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ----------- | :------: |
+| ms    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Epoch Time. |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   code: `
   $description[Hello!]
   $addTimestamp[192839ms]
-  `,
+  `
 });
 ```

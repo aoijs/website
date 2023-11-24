@@ -28,7 +28,7 @@ client.command({
   name: "encode",
   code: `
   $uri[aoi.js is great :);encode]
-  `,
+  `
 });
 ```
 
@@ -39,6 +39,6 @@ client.command({
   name: "decode",
   code: `
   $uri[aoi.js%20is%20great%20%3A);decode]
-  `,
+  `
 });
 ```

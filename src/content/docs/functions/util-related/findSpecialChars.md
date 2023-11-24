@@ -27,6 +27,6 @@ client.command({
   name: "findSpecialChars",
   code: `
   $findSpecialChars[Aoi.js is ###### great]
-  `,
+  `
 });
 ```

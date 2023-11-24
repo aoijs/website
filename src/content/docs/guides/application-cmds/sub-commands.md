@@ -29,14 +29,14 @@ Sub-commands are apart of slash commands and are used to add as the name already
 $createApplicationCommand[guildID/global;name;description;defaultPermission(true/false);type(slash/user/message);options?]
 ```
 
-| Field             | Type                                                                                                                                                                                                   | Description                                                                                                    | Required |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- | :------: |
-| guildID/global    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The type of application command, either for every guild (global) or for one specific guild (specific guildID). |   true   |
-| name              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The actual slash command name that will be visible to the user.                                                |   true   |
-| description       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The slash command description that will be visible to the user.                                                |   true   |
-| defaultPermission | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                      | If the application command should syncronisate to the default permissions.                                     |   true   |
-| type              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                      | The application command type (explained below)                                                                 |   true   |
-| options?          | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)                                                                                                      | Slash commands options.                                                                                        |   true   |
+| Field             | Type                                                                                                                                                                                                 | Description                                                                                                    | Required |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | :------: |
+| guildID/global    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The type of application command, either for every guild (global) or for one specific guild (specific guildID). |   true   |
+| name              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The actual slash command name that will be visible to the user.                                                |   true   |
+| description       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The slash command description that will be visible to the user.                                                |   true   |
+| defaultPermission | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | If the application command should syncronisate to the default permissions.                                     |   true   |
+| type              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | The application command type (explained below)                                                                 |   true   |
+| options?          | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)                                                                                                    | Slash commands options.                                                                                        |   true   |
 
 ### Examples of creating Application Commands with sub commands
 
@@ -55,7 +55,7 @@ client.command({
   "description": "Ban someone of your guild!",
   "type": 1 
 }
-]]`,
+]]`
 });
 ```
 
@@ -92,7 +92,7 @@ client.command({
     description: "Ban someone of your guild!",
     type: 1,
   },
-];`,
+];`
 });
 ```
 
@@ -118,7 +118,7 @@ module.exports = [
     type: "interaction",
     code: `
     $interactionReply[You picked the **ban** sub command!]
-    $onlyIf[$interactionData[options._subcommand]==ban;]`,
+    $onlyIf[$interactionData[options._subcommand]==ban;]`
   },
   {
     name: "moderation",
@@ -126,7 +126,7 @@ module.exports = [
     type: "interaction",
     code: `
     $interactionReply[You picked the **kick** sub command!]
-    $onlyIf[$interactionData[options._subcommand]==kick;]`,
+    $onlyIf[$interactionData[options._subcommand]==kick;]`
   },
 ];
 ```

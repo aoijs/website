@@ -14,11 +14,11 @@ $channelOverwrites[channelID?;response?;sep?]
 
 ## Parameters
 
-| Field      | Type                                                                                                | Description                                                          | Required |
-| ---------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | :------: |
-| channelID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the channel you want the channel overwrites of.                |  false   |
-| response?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The format the channel overwrites will be returned in.               |  false   |
-| sep?       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The separator to split the channel overwrites if there are multiple. |  false   |
+| Field      | Type                                                                                              | Description                                                          | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | :------: |
+| channelID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the channel you want the channel overwrites of.                |  false   |
+| response?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The format the channel overwrites will be returned in.               |  false   |
+| sep?       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The separator to split the channel overwrites if there are multiple. |  false   |
 
 |    Type     | Output                         |
 | :---------: | ------------------------------ |
@@ -36,6 +36,6 @@ client.command({
   name: "channelOverwrites",
   code: `
   $channelOverwrites[$channelID;{mention} {type} {allow} {deny};, ]
-  `,
+  `
 });
 ```

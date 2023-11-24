@@ -27,6 +27,6 @@ client.command({
   name: "readFile",
   code: `
     $readFile[./index.js]
-    `,
+    `
 });
 ```

@@ -28,6 +28,6 @@ client.command({
   name: "stringStartsWith",
   code: `
   $stringStartsWith[aoi.js;aoi]
-  `,
+  `
 });
 ```

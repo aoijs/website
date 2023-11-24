@@ -14,10 +14,10 @@ $isHoisted[roleID;guildID?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description                                                                | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | :------: |
-| roleID   | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the role you want to check if it's hoisted or not.                   |   true   |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the guild where you want to check if the role is hoisted or not. |  false   |
+| Field    | Type                                                                                              | Description                                                                | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | :------: |
+| roleID   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the role you want to check if it's hoisted or not.                   |   true   |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the guild where you want to check if the role is hoisted or not. |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "isHoisted",
   code: `
   $isHoisted[$findRole[Owner];$guildID]
-  `,
+  `
 });
 ```

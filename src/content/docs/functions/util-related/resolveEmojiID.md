@@ -27,6 +27,6 @@ client.command({
   name: "resolveEmojiID",
   code: `
   $resolveEmojiID[LerefMoney]
-  `,
+  `
 });
 ```

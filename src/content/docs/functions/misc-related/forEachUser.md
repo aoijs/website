@@ -31,13 +31,13 @@ client.command({
   name: "awaitData",
   code: `
   $forEachUser[1;{};returnUsers;]
-  `,
+  `
 });
 
 client.awaitedCommand({
   name: "returnUsers",
   code: `
   $log[ $authorID ]
-  `,
+  `
 });
 ```

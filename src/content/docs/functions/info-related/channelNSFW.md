@@ -14,9 +14,9 @@ $channelNSFW[channelID?]
 
 ## Parameters
 
-| Field      | Type                                                                                                | Description                                                       | Required |
-| ---------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | :------: |
-| channelID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the channel you want to check if its marked as NSFW or not. |  false   |
+| Field      | Type                                                                                              | Description                                                       | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | :------: |
+| channelID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the channel you want to check if its marked as NSFW or not. |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "channelNSFW",
   code: `
   $channelNSFW[$channelID]
-  `,
+  `
 });
 ```

@@ -27,6 +27,6 @@ client.command({
   name: "round",
   code: `
   $round[555.78]
-  `,
+  `
 });
 ```

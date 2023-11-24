@@ -16,9 +16,9 @@ $memberAvatar[guildID?;userID?;size?;dynamic?;format?]
 
 | Field    | Type                                                                                                | Description                               | Required |
 | -------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------- | :------: |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the guild.                      |  false   |
-| userID?  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the user.                       |  false   |
-| size?    | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The size of the image.                    |  false   |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The ID of the guild.                      |  false   |
+| userID?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The ID of the user.                       |  false   |
+| size?    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The size of the image.                    |  false   |
 | dynamic? | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | 1. **true** (default) <br /> 2. **false** |  false   |
 | format?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Image format.                             |  false   |
 
@@ -31,6 +31,6 @@ client.command({
   name: "memberAvatar",
   code: `
   $memberAvatar[$guildID;$authorID;2048;true;webp]
-  `,
+  `
 });
 ```

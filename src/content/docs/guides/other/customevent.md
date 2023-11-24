@@ -39,7 +39,7 @@ event.command({
   listen: "eventName", // This should represent the name of the event, in this case it is "eventName".
   code: `
         code
-    `, // The code of the event that will be triggered once the event is emitted.
+    ` // The code of the event that will be triggered once the event is emitted.
 });
 
 event.listen("eventName"); // This will make the client "listen" or in other words, wait for the event to be triggered. It does not trigger the event yet.
@@ -94,7 +94,7 @@ const event = new CustomEvent(client);
 
 event.command({
   listen: "log",
-  code: `$log[Hello!] `,
+  code: `$log[Hello!] `
 });
 
 event.listen("log");

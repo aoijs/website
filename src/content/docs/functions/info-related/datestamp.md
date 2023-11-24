@@ -21,6 +21,6 @@ client.command({
   name: "datestamp",
   code: `
   $humanizeMS[$datestamp]
-  `,
+  `
 });
 ```

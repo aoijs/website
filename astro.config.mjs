@@ -8,12 +8,8 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://aoi.js.org",
   integrations: [
-    sitemap(),
     starlight({
       title: "aoi.js",
-      expressiveCode: {
-        themes: ["github-dark"],
-      },
       favicon: "/favicon.png",
       logo: {
         src: "/favicon.png",
@@ -46,7 +42,7 @@ export default defineConfig({
   gtag('js', new Date());
 
   gtag('config', 'G-GMH27HJZGY');
-      `,
+      `
         },
         {
           tag: "script",
@@ -277,6 +273,7 @@ export default defineConfig({
       ],
     }),
     react(),
+    sitemap(),
   ],
   image: {
     service: {
@@ -284,9 +281,6 @@ export default defineConfig({
     },
   },
   markdown: {
-    shikiConfig: {
-      langs: ["powershell"],
-    },
     rehypePlugins: [
       rehypeHeadingIds,
       [

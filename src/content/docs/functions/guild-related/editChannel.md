@@ -16,15 +16,15 @@ $editChannel[channelID;name?;type?;position?;topic?;nsfw?;bitrate?;userlimit?;pa
 
 | Field                       | Type                                                                                                | Description                                               | Required |
 | --------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | :------: |
-| channelID                   | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the channel which will be notified.             |   true   |
+| channelID                   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The ID of the channel which will be notified.             |   true   |
 | name?                       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The new channel name.                                     |  false   |
 | type?                       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The new channel type. (listed below)                      |  false   |
 | position?                   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The new channel position.                                 |  false   |
 | topic?                      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The new channel topic.                                    |  false   |
 | nsfw?                       | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | If it should mark the channel as NSFW or not.             |  false   |
-| bitrate?                    | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Voice Channel bitrate.                                    |  false   |
+| bitrate?                    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | Voice Channel bitrate.                                    |  false   |
 | userlimit?                  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | Voice Channel userlimit.                                  |  false   |
-| parent?                     | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The new parent of the channel. (category ID)              |  false   |
+| parent?                     | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The new parent of the channel. (category ID)              |  false   |
 | lockPermissions?            | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The new channels lock permissions.                        |  false   |
 | permissionOverwrites?       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The new channels permission overwrites.                   |  false   |
 | rateLimitPerUser?           | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The channel slowmode of the edited channel.               |  false   |
@@ -62,6 +62,6 @@ client.command({
   name: "editChannel",
   code: `
   $editChannel[$channelID;i-love-aoi-js]
-  `,
+  `
 });
 ```

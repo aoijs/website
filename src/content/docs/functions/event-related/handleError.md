@@ -25,6 +25,6 @@ $handleError[option]
 ```javascript
 client.functionErrorCommand({
   channel: "channelID (optional)",
-  code: `Something went wrong in your "$handleError[command]" command! The function "$handleError[function]" returned the error "$handleError[error]"!`,
+  code: `Something went wrong in your "$handleError[command]" command! The function "$handleError[function]" returned the error "$handleError[error]"!`
 });
 ```

@@ -14,15 +14,15 @@ $advanceCooldown[time;id;errorMessage]
 
 - You are able to retrieve the remaining cooldown in the `$cooldown` function by using **`%time%`** or any of the
   following below.
-  - `%time%`, `%year%`, `%month%`, `%week%`, `%day%`, `%hour%`, `%min%`, `%sec%`, `%ms%`, `%fullTime%`
+  - `%time%` `%year%` `%month%` `%week%` `%day%` `%hour%` `%min%` `%sec%` `%ms%` `%fullTime%`
 
 ## Parameters
 
-| Field        | Type                                                                                                | Description                                                    | Required |
-| ------------ | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | :------: |
-| time         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Text to be separated.                                          |   true   |
-| id           | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Text to be separated.                                          |   true   |
-| errorMessage | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Error message to be displayed when there's cooldown remaining. |   true   |
+| Field        | Type                                                                                              | Description                                                    | Required |
+| ------------ | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | :------: |
+| time         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Text to be separated.                                          |   true   |
+| id           | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Text to be separated.                                          |   true   |
+| errorMessage | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Error message to be displayed when there's cooldown remaining. |   true   |
 
 ## Example(s)
 
@@ -33,6 +33,6 @@ client.command({
   name: "advanceCooldown",
   code: `
   $advanceCooldown[2m;$guildID;]
-  `,
+  `
 });
 ```

@@ -28,6 +28,6 @@ client.command({
   name: "emojiExists",
   code: `
   $emojiExists[<:LerefMoney:1003365344724910191>]
-  `,
+  `
 });
 ```

@@ -14,11 +14,11 @@ $addMessageReactions[channelID;messageID;...reactions]
 
 ## Parameters
 
-| Field     | Type                                                                                                | Description                                 | Required |
-| --------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------- | :------: |
-| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Channel ID of where the message is located. |   true   |
-| messageID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Message ID.                                 |   true   |
-| reactions | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Reactions to add.                           |   true   |
+| Field     | Type                                                                                              | Description                                 | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------- | :------: |
+| channelID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Channel ID of where the message is located. |   true   |
+| messageID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Message ID.                                 |   true   |
+| reactions | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Reactions to add.                           |   true   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   name: "addMessageReactions",
   code: `
  $addMessageReactions[$channelID;$messageID;✅;❌]
-  `,
+  `
 });
 ```

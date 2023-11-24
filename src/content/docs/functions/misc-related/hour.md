@@ -21,7 +21,7 @@ client.command({
   name: "hour",
   code: `
     $hour
-    `,
+    `
 });
 ```
 
@@ -33,6 +33,6 @@ client.command({
   code: `
     $hour 
     $timezone[America/New_York]
-    `, // returns current hour in New York
+    ` // returns current hour in New York
 });
 ```

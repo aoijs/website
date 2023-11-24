@@ -21,6 +21,6 @@ client.command({
   name: "guildShardID",
   code: `
   I'm currently on shard $guildShardID!
-  `,
+  `
 });
 ```

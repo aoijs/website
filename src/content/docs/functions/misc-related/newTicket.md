@@ -18,7 +18,7 @@ $newTicket[name;msg;categoryID?;returnId?;error?]
 | ----------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | :------: |
 | name        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Channel name.                                                          |   true   |
 | msg         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Start message.                                                         |   true   |
-| categoryID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Where to place the channel after creation.                             |  false   |
+| categoryID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | Where to place the channel after creation.                             |  false   |
 | returnId?   | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Return the channel ID <br /> 1. **true** <br /> 2. **false** (default) |  false   |
 | error?      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Error to return when something went wrong.                             |  false   |
 
@@ -31,7 +31,7 @@ client.command({
   name: "newTicket",
   code: `
     $newTicket[ticket-$username;Hello <@$authorID!;$guildID;false;Error!]
-    `,
+    `
 });
 ```
 
@@ -42,6 +42,6 @@ client.command({
   name: "newTicket",
   code: `
     $newTicket[ticket-$username;Hello <@$authorID! {newEmbed:{description:<@$authorID> opened a new ticket!}};$guildID;false;Error!]
-    `,
+    `
 });
 ```

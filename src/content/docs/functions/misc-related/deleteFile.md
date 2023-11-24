@@ -27,6 +27,6 @@ client.command({
   name: "deleteFile",
   code: `
   $deleteFile[./index.js]
-  `,
+  `
 });
 ```

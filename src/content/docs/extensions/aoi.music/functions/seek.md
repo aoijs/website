@@ -27,6 +27,6 @@ client.command({
   name: "seek",
   code: `
     $seek[10000]
-  `,
+  `
 });
 ```

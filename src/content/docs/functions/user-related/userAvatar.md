@@ -16,7 +16,7 @@ $userAvatar[userID?;size?;dynamic?;format?]
 
 | Field    | Type                                                                                                                                                                                                 | Description                               | Required |
 | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | :------: |
-| userID?  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer)                                                                                                  | The ID of the user.                       |  false   |
+| userID?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)                                                                                                    | The ID of the user.                       |  false   |
 | size?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The size of the image                     |  false   |
 | dynamic? | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)                                                                                                  | 1. **true** (default) <br /> 2. **false** |  false   |
 | format?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | The format of the returned image.         |  false   |
@@ -30,6 +30,6 @@ client.command({
   name: "userAvatar",
   code: `
   $userAvatar[$authorID;2048;true;webp]
-  `,
+  `
 });
 ```

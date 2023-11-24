@@ -21,6 +21,6 @@ client.command({
   name: "argsCount",
   code: `
   $argsCount
-  `,
+  `
 });
 ```

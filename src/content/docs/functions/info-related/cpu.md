@@ -28,6 +28,6 @@ client.command({
   code: `
   OS: $cpu[os] 
   Process: $cpu[process] 
-  `,
+  `
 });
 ```

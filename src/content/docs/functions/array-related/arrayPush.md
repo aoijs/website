@@ -26,6 +26,6 @@ client.command({
   code: `
   $arrayPush[array;Leref;Ayaka;Ferel]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `,
+  `
 });
 ```

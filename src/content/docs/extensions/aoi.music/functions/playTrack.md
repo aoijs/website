@@ -28,6 +28,6 @@ client.command({
   name: "playTrack",
   code: `
     $playTrack[Silly Goose;youtube]
-  `,
+  `
 });
 ```

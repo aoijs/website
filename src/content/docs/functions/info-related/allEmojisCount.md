@@ -32,6 +32,6 @@ client.command({
   name: "allEmojisCount",
   code: `
   $allEmojisCount
-  `,
+  `
 });
 ```

@@ -28,6 +28,6 @@ client.command({
   name: "roleId",
   code: `
   $roleId[Owner;$guildID]
-  `,
+  `
 });
 ```

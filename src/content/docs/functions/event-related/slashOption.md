@@ -35,6 +35,6 @@ client.command({
   type: "interaction",
   prototype: "slash",
   code: `
-    $interactionReply[What a great example! You entered $slashOption[exampleOption]!]`,
+    $interactionReply[What a great example! You entered $slashOption[exampleOption]!]`
 });
 ```

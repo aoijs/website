@@ -45,6 +45,6 @@ client.command({
   name: "updateCommands",
   code: `
     $updateCommands
-    `,
+    `
 });
 ```

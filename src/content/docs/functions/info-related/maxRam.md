@@ -21,6 +21,6 @@ client.command({
   name: "maxRam",
   code: `
   $maxRam
-  `,
+  `
 });
 ```

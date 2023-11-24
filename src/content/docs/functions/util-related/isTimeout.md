@@ -14,10 +14,10 @@ $isTimeout[guildID?;userID?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description                                     | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------- | :------: |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the guild where they're timeouted in. |  false   |
-| userID?  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the user that's timeouted.            |  false   |
+| Field    | Type                                                                                              | Description                                     | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------- | :------: |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the guild where they're timeouted in. |  false   |
+| userID?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the user that's timeouted.            |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "isTimeout",
   code: `
   $isTimeout[$guildID;$authorID]
-  `,
+  `
 });
 ```

@@ -6,7 +6,7 @@ sidebar:
   order: 4
 ---
 
-There are multiple ways of using `$autoCompleteRespond`, you can either use JSON or the simple aoi.js way.
+There are multiple ways of using `$autoCompleteRespond` you can either use JSON or the simple aoi.js way.
 
 ### Usage
 
@@ -36,11 +36,11 @@ client.command({
     "required": false,
     "type": 3, 
     "autocomplete": true
-}]]`,
+}]]`
 });
 ```
 
-Checking if autoComplete equals `true`, if so it will respond with the given respond (addition of the code above):
+Checking if autoComplete equals `true` if so it will respond with the given respond (addition of the code above):
 
 ```javascript
 client.command({
@@ -53,7 +53,7 @@ client.command({
   $else
   $interactionReply[$slashOption[option]]
   $endif
-  `,
+  `
 });
 ```
 
@@ -74,11 +74,11 @@ client.command({
     "description": "Another option.",
     "required": false,
     "type": 3
-}]]`,
+}]]`
 });
 ```
 
-Using JSON and checking if autoComplete equals `true`, if so it will respond with the given response :
+Using JSON and checking if autoComplete equals `true` if so it will respond with the given response :
 
 ```javascript
 module.exports = [
@@ -98,7 +98,7 @@ module.exports = [
   $else
   $interactionReply[$slashOption[option] - autocomplete #SEMI# $slashOption[anotheroption] - false autocomplete;;;;everyone]
   $endif
-  `,
+  `
   },
 ];
 ```

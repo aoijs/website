@@ -21,14 +21,14 @@ $oldMember[option]
 
 ### Options
 
-| Field         | Type                                                                                                | Description                      |
-| ------------- | --------------------------------------------------------------------------------------------------- | -------------------------------- |
-| id            | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Returns User ID.                 |
-| name          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Returns Name of user.            |
-| roles         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Returns User roles.              |
-| permissions   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Returns User permissions.        |
-| nick          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Returns User nickname.           |
-| highestRoleID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Returns Higher role ID user has. |
+| Field         | Type                                                                                              | Description                      |
+| ------------- | ------------------------------------------------------------------------------------------------- | -------------------------------- |
+| id            | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns User ID.                 |
+| name          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns Name of user.            |
+| roles         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns User roles.              |
+| permissions   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns User permissions.        |
+| nick          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns User nickname.           |
+| highestRoleID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns Higher role ID user has. |
 
 ## Example(s)
 
@@ -44,7 +44,7 @@ client.memberUpdateCommand({
  
    $username[$newMember[id]] has updated their name!
 - New Name: $newMember[name]
- - Old Name: $oldMember[name]`,
+ - Old Name: $oldMember[name]`
 });
 ```
 

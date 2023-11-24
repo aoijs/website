@@ -14,11 +14,11 @@ $rolePerms[roleID;sep?;guildID?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description                                     | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------- | :------: |
-| roleID   | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The role ID.                                    |   true   |
-| sep?     | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Separator to separate multiple returned values. |  false   |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The guild ID.                                   |  false   |
+| Field    | Type                                                                                              | Description                                     | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------- | :------: |
+| roleID   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The role ID.                                    |   true   |
+| sep?     | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Separator to separate multiple returned values. |  false   |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The guild ID.                                   |  false   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   name: "rolePerms",
   code: `
   $rolePerms[$guildID;, ;$guildID]
-  `,
+  `
 });
 ```

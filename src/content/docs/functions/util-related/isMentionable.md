@@ -14,10 +14,10 @@ $isMentionable[roleID;guildID?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description                                      | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------ | :------: |
-| roleID   | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The role ID to check if it's mentionable or not. |   true   |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the guild where the role is present in.    |  false   |
+| Field    | Type                                                                                              | Description                                      | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------ | :------: |
+| roleID   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The role ID to check if it's mentionable or not. |   true   |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the guild where the role is present in.    |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "isMentionable",
   code: `
   $isMentionable[$findRole[Owner];$guildID]
-  `,
+  `
 });
 ```

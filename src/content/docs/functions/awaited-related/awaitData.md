@@ -27,13 +27,13 @@ client.command({
   name: "awaitData",
   code: `
   $forEachMember[1s;{ "members": "$membersCount" };returnMembers;]
-  `,
+  `
 });
 
 client.awaitedCommand({
   name: "returnMembers",
   code: `
   $log[ $authorID , is one out of $awaitData[members] members ]
-  `,
+  `
 });
 ```

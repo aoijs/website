@@ -14,9 +14,9 @@ $channelName[channelID?]
 
 ## Parameters
 
-| Field      | Type                                                                                                | Description                                             | Required |
-| ---------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | :------: |
-| channelID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Channel ID of the channel you want the channel name of. |  false   |
+| Field      | Type                                                                                              | Description                                             | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | :------: |
+| channelID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Channel ID of the channel you want the channel name of. |  false   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "channelName",
   code: `
   $channelName[$channelID]
-  `,
+  `
 });
 ```

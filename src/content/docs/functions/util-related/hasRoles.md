@@ -14,11 +14,11 @@ $hasRoles[guildID;userID;...roles]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description                                     | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------- | :------: |
-| guildID  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the guild where the roles are present in. |   true   |
-| userID   | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the user which has the roles.             |   true   |
-| ...roles | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The roles that will be checked for.             |   true   |
+| Field    | Type                                                                                              | Description                                     | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------- | :------: |
+| guildID  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the guild where the roles are present in. |   true   |
+| userID   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the user which has the roles.             |   true   |
+| ...roles | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The roles that will be checked for.             |   true   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   name: "hasRoles",
   code: `
   $hasRoles[$guildID;$authorID;$findRole[Owner]]
-  `,
+  `
 });
 ```

@@ -28,6 +28,6 @@ client.command({
   name: "stringEndsWith",
   code: `
   $stringEndsWith[aoi.js;js]
-  `,
+  `
 });
 ```

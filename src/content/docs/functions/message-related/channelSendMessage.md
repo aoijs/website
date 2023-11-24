@@ -16,7 +16,7 @@ $channelSendMessage[channelID;content;returnID?]
 
 | Field     | Type                                                                                                | Description                                                                                   | Required |
 | --------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | :------: |
-| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Where the messages shall be sent to.                                                          |   true   |
+| channelID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | Where the messages shall be sent to.                                                          |   true   |
 | content   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | What the content of the message should be.                                                    |   true   |
 | returnID? | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | If the message ID should be returned or not. <br /> 1. **true** <br /> 2. **false** (default) |  false   |
 
@@ -29,7 +29,7 @@ client.command({
   name: "channelSendMessage",
   code: `
   $channelSendMessage[$channelID;Hello!;false]
-  `,
+  `
 });
 ```
 
@@ -42,6 +42,6 @@ client.command({
   name: "channelSendMessage",
   code: `
   $channelSendMessage[$channelID;{newEmbed:{title:Hello}{footer:Bye}};false]
-  `,
+  `
 });
 ```

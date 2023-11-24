@@ -29,6 +29,6 @@ client.command({
   name: "authorBanner",
   code: `
   $authorBanner[2048;true;webp]
-  `,
+  `
 });
 ```

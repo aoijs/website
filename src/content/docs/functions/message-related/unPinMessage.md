@@ -14,10 +14,10 @@ $unPinMessage[messageID?;channelID?]
 
 ## Parameters
 
-| Field     | Type                                                                                                | Description                                               | Required |
-| --------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | :------: |
-| messageID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the message to unpin.                           |  false   |
-| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the channel of where the message is located in. |  false   |
+| Field     | Type                                                                                              | Description                                               | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | :------: |
+| messageID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the message to unpin.                           |  false   |
+| channelID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the channel of where the message is located in. |  false   |
 
 ## Example(s)
 
@@ -31,6 +31,6 @@ client.command({
   $wait[2s]
   $pinMessage[$get[id]]
   $let[id;$sendMessage[Hello!;true]
-  `, // using $let & $get to save the message ID
+  ` // using $let & $get to save the message ID
 });
 ```

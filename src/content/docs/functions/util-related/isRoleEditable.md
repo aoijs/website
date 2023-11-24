@@ -14,10 +14,10 @@ $isRoleEditable[roleID;guildID?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description                                       | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------- | :------: |
-| roleID   | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the role you want to check if its editable. |   true   |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the guild where the role exists.        |  false   |
+| Field    | Type                                                                                              | Description                                       | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------- | :------: |
+| roleID   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the role you want to check if its editable. |   true   |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the guild where the role exists.        |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "isRoleEditable",
   code: `
   $isRoleEditable[$findRole[Owner];$guildID]
-  `,
+  `
 });
 ```

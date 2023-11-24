@@ -21,6 +21,6 @@ client.command({
   name: "resetFilter",
   code: `
     $resetFilter
-  `,
+  `
 });
 ```

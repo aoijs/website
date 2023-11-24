@@ -21,7 +21,7 @@ client.command({
   name: "year",
   code: `
     $year
-    `,
+    `
 });
 ```
 
@@ -33,6 +33,6 @@ client.command({
   code: `
     $year 
     $timezone[America/New_York]
-    `, // returns current year in New York
+    ` // returns current year in New York
 });
 ```

@@ -27,6 +27,6 @@ client.command({
   name: "toUpperCase",
   code: `
     $toUpperCase[this is an example]
-    `,
+    `
 });
 ```

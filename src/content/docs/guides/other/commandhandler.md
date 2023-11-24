@@ -94,7 +94,7 @@ module.exports = [
 $title[Help Command!]
 $thumbnail[$userAvatar[$authorID]] 
 $description[Any text you like can go here!]
-$footer[Even footers!]`,
+$footer[Even footers!]`
   },
 ];
 ```
@@ -116,13 +116,13 @@ module.exports = [
 $title[Help Command!]
 $thumbnail[$userAvatar[$authorID]] 
 $description[Any text you like can go here!]
-$footer[Even footers!]`,
+$footer[Even footers!]`
   },
   {
     type: "join",
     channel: "$channelID",
     code: `
-$log[Someone joined a server!]`,
+$log[Someone joined a server!]`
   },
 ];
 ```

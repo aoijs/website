@@ -14,10 +14,10 @@ $userActivity[guildID?;userID?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description   | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | ------------- | :------: |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The guild ID. |  false   |
-| userID?  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The user ID.  |  false   |
+| Field    | Type                                                                                              | Description   | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ------------- | :------: |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The guild ID. |  false   |
+| userID?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The user ID.  |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "userActivity",
   code: `
   $userActivity[$guildID;$authorID]
-  `,
+  `
 });
 ```

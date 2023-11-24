@@ -28,6 +28,6 @@ client.command({
   name: "isValidInvite",
   code: `
   $isValidInvite[https://discord.gg/aoi-js-server-akarui-development-team-773352845738115102]
-  `,
+  `
 });
 ```

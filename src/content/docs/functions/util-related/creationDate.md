@@ -14,10 +14,10 @@ $creationDate[id;format?]
 
 ## Parameters
 
-| Field   | Type                                                                                                | Description                                                         | Required |
-| ------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | :------: |
-| id      | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | User ID of who you want to get the creation date to be returned of. |   true   |
-| format? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The format of the creation date (listed below).                     |  false   |
+| Field   | Type                                                                                              | Description                                                         | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | :------: |
+| id      | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | User ID of who you want to get the creation date to be returned of. |   true   |
+| format? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The format of the creation date (listed below).                     |  false   |
 
 ### Format Input
 
@@ -38,6 +38,6 @@ client.command({
   name: "creationDate",
   code: `
   Your account was created: $creationDate[$authorID;date]
-  `,
+  `
 });
 ```

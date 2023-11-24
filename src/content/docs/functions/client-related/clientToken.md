@@ -23,6 +23,6 @@ client.command({
   name: "clientToken",
   code: `
   $clientToken
-  `,
+  `
 });
 ```

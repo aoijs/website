@@ -196,7 +196,7 @@ const client = new AoiClient({
 ```javascript title="index.js"
 client.<eventName>Command({ // exclude "on" of the event for example, "onTypingStart" -> "typingStartCommand"
     name?: string // option for events
-    channel: integer,
+    channel: number,
     code: ...
 }]
 ```
@@ -207,7 +207,7 @@ client.<eventName>Command({ // exclude "on" of the event for example, "onTypingS
 module.exports = [{
     name?: string // option for events
     type: string, // name of the event
-    channel: integer,
+    channel: number,
     code: ...
 }]
 ```

@@ -26,6 +26,6 @@ client.command({
   code: `
   $arrayUnshift[array]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `,
+  `
 });
 ```

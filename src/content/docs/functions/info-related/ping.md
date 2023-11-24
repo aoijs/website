@@ -21,6 +21,6 @@ client.command({
   name: "ping",
   code: `
   My ping is: $pingMS!
-  `,
+  `
 });
 ```

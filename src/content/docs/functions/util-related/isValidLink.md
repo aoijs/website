@@ -27,6 +27,6 @@ client.command({
   name: "isValidLink",
   code: `
   $isValidLink[https://aoi.js.org/docs/]
-  `,
+  `
 });
 ```

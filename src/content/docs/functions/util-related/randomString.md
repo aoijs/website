@@ -28,6 +28,6 @@ client.command({
   name: "randomString",
   code: `
   $randomString[20]
-  `,
+  `
 });
 ```

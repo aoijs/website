@@ -38,7 +38,7 @@ client.command({
   code: `
   $arrayFind[array;akarui;==;, ]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `,
+  `
   // It will return "akarui" as it matches the query.
 });
 ```

@@ -35,6 +35,6 @@ client.command({
   name: "parseDate",
   code: `
   $parseDate[$dateStamp;date]
-  `,
+  `
 });
 ```

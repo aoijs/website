@@ -14,10 +14,10 @@ $leaveThread[channelID;threadID]
 
 ## Parameters
 
-| Field     | Type                                                                                                | Description                                              | Required |
-| --------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | :------: |
-| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the channel of where the thread is located in. |   true   |
-| threadID  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the thread.                                    |   true   |
+| Field     | Type                                                                                              | Description                                              | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | :------: |
+| channelID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the channel of where the thread is located in. |   true   |
+| threadID  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the thread.                                    |   true   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   code: `
   $leaveThread[$channelID;$get[threadID]]
   $let[threadID;$createThread[$channelID;Example!;1440;public;$messageID;true]]
-  `,
+  `
 });
 ```

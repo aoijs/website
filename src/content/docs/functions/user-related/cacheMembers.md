@@ -16,7 +16,7 @@ $cacheMembers[guildID?;returnCount?]
 
 | Field        | Type                                                                                                | Description                                                                       | Required |
 | ------------ | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | :------: |
-| guildID?     | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Of which guild the members shall be cached from.                                  |  false   |
+| guildID?     | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | Of which guild the members shall be cached from.                                  |  false   |
 | returnCount? | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Returns the cached member count. <br /> 1. **true** <br /> 2. **false** (default) |  false   |
 
 ## Example(s)
@@ -28,6 +28,6 @@ client.command({
   name: "cacheMembers",
   code: `
   $cacheMembers[$guildID;true]
-  `,
+  `
 });
 ```

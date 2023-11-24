@@ -29,6 +29,6 @@ client.command({
   code: `
 $get[genius]
 $let[genius;Ayaka]
-`,
+`
 });
 ```

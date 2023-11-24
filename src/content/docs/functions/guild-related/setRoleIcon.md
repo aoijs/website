@@ -14,11 +14,11 @@ $setRoleIcon[guildID;roleID;icon]
 
 ## Parameters
 
-| Field   | Type                                                                                                | Description                                | Required |
-| ------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------- |
-| guildID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the guild where the role exists. | false    |
-| roleID  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The role ID.                               | false    |
-| icon    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The URL of the icon.                       | false    |
+| Field   | Type                                                                                              | Description                                | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------- |
+| guildID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the guild where the role exists. | false    |
+| roleID  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The role ID.                               | false    |
+| icon    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The URL of the icon.                       | false    |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   name: "setRoleIcon",
   code: `
   $setRoleIcon[$guildID;roleID;iconURL]
-  `,
+  `
 });
 ```

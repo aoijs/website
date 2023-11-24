@@ -42,7 +42,7 @@ module.exports = [
     prototype: "button",
     code: `
   $interactionUpdate[Bye, world.]
-  `,
+  `
   },
 ];
 ```

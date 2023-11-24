@@ -27,6 +27,6 @@ client.command({
   name: "stopTimeout",
   code: `
     $stopTimeout[10029]
-    `,
+    `
 });
 ```

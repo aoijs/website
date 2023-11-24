@@ -27,7 +27,7 @@ client.command({
   code: `
   $arrayIndexOf[array;akarui]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `,
+  `
   // It will return "2" as the word "akarui" is in the 2nd position of the array.
 });
 ```

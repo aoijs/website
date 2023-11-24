@@ -29,6 +29,6 @@ client.command({
   name: "writeFile",
   code: `
     $writeFile[./testing.txt;Hello!;utf8]
-    `,
+    `
 });
 ```

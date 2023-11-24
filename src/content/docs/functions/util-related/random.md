@@ -30,7 +30,7 @@ client.command({
   name: "random",
   code: `
   $random[20;250]
-  `,
+  `
 });
 ```
 
@@ -43,7 +43,7 @@ client.command({
   name: "random",
   code: `
   $random[25;50;true]  
-  `,
+  `
 });
 ```
 
@@ -55,6 +55,6 @@ client.command({
   code: `
   $random[45;65;false;true]
   $random[45;65;false;true]
-  `,
+  `
 });
 ```

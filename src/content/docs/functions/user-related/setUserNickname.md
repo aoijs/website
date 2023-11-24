@@ -16,7 +16,7 @@ $setUserNickname[userID;newName;reason?]
 
 | Field   | Type                                                                                                                                                                                                 | Description                                              | Required |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | :------: |
-| userID  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer)                                                                                                  | The user ID of the user whose nickname shall be changed. |   true   |
+| userID  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)                                                                                                    | The user ID of the user whose nickname shall be changed. |   true   |
 | newName | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Their new nickname.                                      |   true   |
 | reason? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Reason that will be displayed in the guild's audit logs. |  false   |
 
@@ -29,6 +29,6 @@ client.command({
   name: "setUserNickname",
   code: `
   $setUserNickname[$authorID;I love aoi.js;They simply love aoi.js]
-  `,
+  `
 });
 ```

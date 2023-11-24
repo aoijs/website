@@ -28,7 +28,7 @@ client.command({
   name: "sendMessage",
   code: `
    $sendMessage[Hello!;false]  
-  `,
+  `
 });
 ```
 
@@ -39,6 +39,6 @@ client.command({
   name: "sendMessage",
   code: `
    $sendMessage[Hello! {newEmbed:{title:Bonjour!}};false]  
-  `,
+  `
 });
 ```

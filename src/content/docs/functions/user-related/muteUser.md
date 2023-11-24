@@ -16,8 +16,8 @@ $muteUser[guildID;userID;mute?;reason?]
 
 | Field   | Type                                                                                                | Description                                                                               | Required |
 | ------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | :------: |
-| guildID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The guild ID of where the user is located.                                                |   true   |
-| userID  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The user ID of the user to mute/unmute.                                                   |   true   |
+| guildID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The guild ID of where the user is located.                                                |   true   |
+| userID  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The user ID of the user to mute/unmute.                                                   |   true   |
 | mute?   | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Mute or unmute the user. <br /> 1. **true** (mute / default) <br /> 2. **false** (unmute) |  false   |
 | reason? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Reason that will be displayed in the guild's audit logs.                                  |  false   |
 
@@ -30,6 +30,6 @@ client.command({
   name: "muteUser",
   code: `
   $muteUser[$guildID;$authorID;true]
-  `,
+  `
 });
 ```

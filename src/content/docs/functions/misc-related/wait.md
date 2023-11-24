@@ -29,6 +29,6 @@ client.command({
     $description[Hello!]
     $wait[5s]
     $sendMessage[Oh, what's that?]
-    `,
+    `
 });
 ```

@@ -16,7 +16,7 @@ $clientOwnerIDs[separator?]
 
 | Field      | Type                                                                                              | Description                                 | Required |
 | ---------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------- | :------: |
-| separator? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Separator to split user IDs. (default: `,`) |  false   |
+| separator? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Separator to split user IDs. (default: ``) |  false   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "clientOwnerIDs",
   code: `
   $clientOwnerIDs
-  `,
+  `
 });
 ```

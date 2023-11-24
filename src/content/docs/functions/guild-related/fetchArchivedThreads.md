@@ -14,10 +14,10 @@ $fetchArchivedThreads[channelID;option?]
 
 ## Parameters
 
-| Field     | Type                                                                                                | Description                                                                       | Required |
-| --------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | :------: |
-| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Channel ID of the channel of which you want to fetch the achived threads of.      |   true   |
-| option?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | How to return the archived threads. <br /> 1. **name** (default) <br /> 2. **id** |  false   |
+| Field     | Type                                                                                              | Description                                                                       | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | :------: |
+| channelID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Channel ID of the channel of which you want to fetch the achived threads of.      |   true   |
+| option?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | How to return the archived threads. <br /> 1. **name** (default) <br /> 2. **id** |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "fetchArchivedThreads",
   code: `
   $fetchArchivedThreads[$channelID;name]
-  `,
+  `
 });
 ```

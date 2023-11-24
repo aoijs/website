@@ -14,12 +14,12 @@ $getEmbed[channelID?;messageID?;index?;option?]
 
 ## Parameters
 
-| Field     | Type                                                                                                | Description                                        | Required |
-| --------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------- | :------: |
-| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the channel where the message is located in. |   true   |
-| messageID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the message that has an embed.           |   true   |
-| index     | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The index of the embed.                            |   true   |
-| option    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The option to fetch.                               |   true   |
+| Field     | Type                                                                                              | Description                                        | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------- | :------: |
+| channelID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the channel where the message is located in. |   true   |
+| messageID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the message that has an embed.           |   true   |
+| index     | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The index of the embed.                            |   true   |
+| option    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The option to fetch.                               |   true   |
 
 <details>
   <summary><h3> Options </h3></summary>
@@ -54,6 +54,6 @@ client.command({
   name: "getEmbed",
   code: `
 $getEmbed[$channelID;messageID;1;description] 
-  `, // make sure to replace messageID with the actual message ID
+  ` // make sure to replace messageID with the actual message ID
 });
 ```

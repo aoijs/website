@@ -33,7 +33,7 @@ client.command({
   name: "interactionModal",
   code: `
 $addButton[1;Press Me!;primary;exampleID;false]
-Pretty Example!`,
+Pretty Example!`
 }); // Create a button which will trigger the modal.
 
 module.exports = [
@@ -52,7 +52,7 @@ $interactionModal[Example!;customID;
   {actionRow:
     {textInput:What's your gender?:2:genderInput:true:Anything will work!:1:10}
   }
-]`,
+]`
   },
 ]; /* The modal itself, we use {textInput} to accept user input.
 
@@ -73,7 +73,7 @@ $interactionReply[Thanks for submitting this form!;;;;everyone;true]
 $title[$username submitted a form!;$userAvatar]
 $addField[Their name is..;$textInputValue[nameInput]]
 $addField[Their age is..;$textInputValue[ageInput]]
-$addField[Their gender is..;$textInputValue[genderInput]]`,
+$addField[Their gender is..;$textInputValue[genderInput]]`
   },
 ]; /* Will return the values entered earlier from the modal. Using $textInputValue to retrieve those.
 

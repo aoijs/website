@@ -27,6 +27,6 @@ client.command({
   name: "isNumber",
   code: `
   $isNumber[255]
-  `,
+  `
 });
 ```

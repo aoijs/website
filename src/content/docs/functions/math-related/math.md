@@ -27,6 +27,6 @@ client.command({
   name: "math",
   code: `
   $math[15+5/2*26+(5+120)]
-  `,
+  `
 });
 ```

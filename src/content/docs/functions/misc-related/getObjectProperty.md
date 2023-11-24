@@ -29,6 +29,6 @@ client.command({
   code: `
     $getObjectProperty[Object Name;Leref]
     $createObject[Object Name;{"Leref": "Ferel"}]
-    `,
+    `
 });
 ```

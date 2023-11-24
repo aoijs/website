@@ -14,9 +14,9 @@ $guildMFALevel[guildID?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description          | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | -------------------- | :------: |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the guild. |  false   |
+| Field    | Type                                                                                              | Description          | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | -------------------- | :------: |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the guild. |  false   |
 
 | Type |                                                               |
 | ---- | ------------------------------------------------------------- |
@@ -32,6 +32,6 @@ client.command({
   name: "guildMFALevel",
   code: `
   $guildMFALevel[$guildID]
-  `,
+  `
 });
 ```

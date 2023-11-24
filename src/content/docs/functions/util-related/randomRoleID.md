@@ -14,9 +14,9 @@ $randomRoleID[guildID?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description                                   | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------- | :------: |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Where it will return the random role ID from. |   true   |
+| Field    | Type                                                                                              | Description                                   | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------- | :------: |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Where it will return the random role ID from. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "randomRoleID",
   code: `
   $randomRoleID[$guildID]
-  `,
+  `
 });
 ```

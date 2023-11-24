@@ -14,10 +14,10 @@ $setRoleColor[roleID;color]
 
 ## Parameters
 
-| Field  | Type                                                                                                | Description                               | Required |
-| ------ | --------------------------------------------------------------------------------------------------- | ----------------------------------------- | :------: |
-| roleID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the role that will be modified. |   true   |
-| color  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The new (hex) color.                      |   true   |
+| Field  | Type                                                                                              | Description                               | Required |
+| ------ | ------------------------------------------------------------------------------------------------- | ----------------------------------------- | :------: |
+| roleID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the role that will be modified. |   true   |
+| color  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The new (hex) color.                      |   true   |
 
 ## Example(s)
 
@@ -27,7 +27,7 @@ This will change a random role's color to red:
 client.command({
   name: "setRoleColor",
   code: `
-   $setRoleColor[$randomRoleID;Red]`,
+   $setRoleColor[$randomRoleID;Red]`
 });
 ```
 
@@ -35,6 +35,6 @@ client.command({
 client.command({
   name: "setRoleColor",
   code: `
-   $setRoleColor[$randomRoleID;ED4245]`,
+   $setRoleColor[$randomRoleID;ED4245]`
 });
 ```

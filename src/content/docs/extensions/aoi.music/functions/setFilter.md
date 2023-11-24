@@ -44,6 +44,6 @@ client.command({
   name: "setFilter",
   code: `
     $setFilter[{"nightCore": "1", "bassBoost": "0.3"}]
-  `,
+  `
 });
 ```

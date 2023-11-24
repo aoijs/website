@@ -14,10 +14,10 @@ $messageExists[messageID;channelID?]
 
 ## Parameters
 
-| Field      | Type                                                                                                | Description                                 | Required |
-| ---------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------- | -------- |
-| messageID  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | the id of the message                       | true     |
-| channelID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | the channel id where the message is located | false    |
+| Field      | Type                                                                                              | Description                                 | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------- | -------- |
+| messageID  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | the id of the message                       | true     |
+| channelID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | the channel id where the message is located | false    |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "messageExists",
   code: `
   $messageExists[1058998634823299143;$channelID]
-  `,
+  `
 });
 ```

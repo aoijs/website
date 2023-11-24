@@ -28,6 +28,6 @@ client.command({
   name: "getApplicationCommandID",
   code: `
   $getApplicationCommandID[example;global]
-  `,
+  `
 });
 ```

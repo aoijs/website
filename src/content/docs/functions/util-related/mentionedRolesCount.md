@@ -21,6 +21,6 @@ client.command({
   name: "mentionedRolesCount",
   code: `
   You have: $mentionedRolesCount role mentions in your message!
-`,
+`
 });
 ```

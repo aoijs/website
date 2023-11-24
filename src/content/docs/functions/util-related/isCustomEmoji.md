@@ -14,10 +14,10 @@ $isCustomEmoji[emojiResolver;guildID?]
 
 ## Parameters
 
-| Field         | Type                                                                                                | Description                                      | Required |
-| ------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------ | :------: |
-| emojiResolver | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Emoji you want to check if it is a custom emoji. |   true   |
-| guildID?      | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the guild where the emoji was created in.  |  false   |
+| Field         | Type                                                                                              | Description                                      | Required |
+| ------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------ | :------: |
+| emojiResolver | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Emoji you want to check if it is a custom emoji. |   true   |
+| guildID?      | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the guild where the emoji was created in.  |  false   |
 
 ## Example(s)
 
@@ -30,6 +30,6 @@ client.command({
   name: "isCustomEmoji",
   code: `
   $isCustomEmoji[<:LerefMoney:1003365344724910191>;773352845738115102]
-  `,
+  `
 });
 ```

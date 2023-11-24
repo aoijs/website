@@ -21,6 +21,6 @@ client.command({
   name: "getFilters",
   code: `
     $getFilters
-  `,
+  `
 });
 ```

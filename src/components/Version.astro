@@ -15,7 +15,7 @@ const packageInfo = await pRetry(
       throw new Error(
         `npm API call failed: GET "${url}" returned status ${
           response.status
-        }: ${JSON.stringify(json)}`,
+        }: ${JSON.stringify(json)}`
       );
     }
 

@@ -27,6 +27,6 @@ client.command({
   name: "fileExists",
   code: `
   $fileExists[./index.js]
-  `,
+  `
 });
 ```

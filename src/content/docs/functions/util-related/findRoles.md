@@ -36,6 +36,6 @@ client.command({
   name: "findRoles",
   code: `
   $findRoles[Owner;5;startsWith;{position}) {username}: {id}]
-  `,
+  `
 });
 ```

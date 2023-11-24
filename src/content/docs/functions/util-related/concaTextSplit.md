@@ -28,6 +28,6 @@ client.command({
   code: `
   $concatTextSplit[Hello;Bye]
   $textSplit[Goodmorning, Goodnight;, ]
-  `,
+  `
 });
 ```

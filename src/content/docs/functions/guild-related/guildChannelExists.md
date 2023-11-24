@@ -14,11 +14,11 @@ $guildChannelExists[guildID;channelResolver]
 
 ## Parameters
 
-| Field                                                                                                                                          | Type                                                                                                | Description                                        | Required |
-| ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------- | :------: |
-| guildID                                                                                                                                        | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the guild where the guild channel exists in. |   true   |
-| channelResolver                                                                                                                                | [integer](https://developer.mozilla.org/en-US/docs/Web/                                             |
-| JavaScript/Reference/Global_Objects/Integer),[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Channel ID or name of the channel.                                                                  | true                                               |
+| Field                                                                                                                                         | Type                                                                                              | Description                                        | Required |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------- | :------: |
+| guildID                                                                                                                                       | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the guild where the guild channel exists in. |   true   |
+| channelResolver                                                                                                                               | [number](https://developer.mozilla.org/en-US/docs/Web/                                            |
+| JavaScript/Reference/Global_Objects/Number),[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Channel ID or name of the channel.                                                                | true                                               |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   name: "guildChannelExists",
   code: `
   $guildChannelExists[$guildID;rules]
-  `,
+  `
 });
 ```

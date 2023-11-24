@@ -41,7 +41,7 @@ client.command({
   name: "replaceTextWithRegex",
   code: `
   $replaceTextWithRegex[This function is more complicated than it looks.;more;g;less]
-  `,
+  `
 });
 ```
 
@@ -54,6 +54,6 @@ client.command({
   name: "replaceTextWithRegex",
   code: `
   $replaceTextWithRegex[This function is more complicated than it looks.;lESs;i;more]
-  `,
+  `
 });
 ```

@@ -26,6 +26,6 @@ This will spawn shard `1`:
 client.command({
   name: "spawnShard",
   code: `
-   $spawnShard[1]`,
+   $spawnShard[1]`
 });
 ```

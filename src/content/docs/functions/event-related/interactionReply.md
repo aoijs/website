@@ -31,6 +31,6 @@ client.interactionCommand({
   prototype: "slash", // button/selectMenu/slash
   code: `
   $interactionReply[Hello, world!;;;;everyone;false]
-  `,
+  `
 });
 ```

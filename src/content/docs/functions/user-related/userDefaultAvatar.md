@@ -14,9 +14,9 @@ $userDefaultAvatar[userID?]
 
 ## Parameters
 
-| Field   | Type                                                                                                | Description         | Required |
-| ------- | --------------------------------------------------------------------------------------------------- | ------------------- | :------: |
-| userID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the user. |  false   |
+| Field   | Type                                                                                              | Description         | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ------------------- | :------: |
+| userID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the user. |  false   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "userDefaultAvatar",
   code: `
   $userDefaultAvatar[$authorID]
-  `,
+  `
 });
 ```

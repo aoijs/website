@@ -28,6 +28,6 @@ client.command({
   code: `
     $description
     $suppressErrors[Something went wrong!]
-    `, // Intentional invalid usage of $description
+    ` // Intentional invalid usage of $description
 });
 ```

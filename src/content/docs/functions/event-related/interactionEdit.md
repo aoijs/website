@@ -34,7 +34,7 @@ module.exports = [
   $interactionEdit[Bye, World!;;;;everyone]
   $wait[5s]
   $interactionReply[Hello, World!;;;;everyone;false]
-  `,
+  `
   },
 ];
 ```

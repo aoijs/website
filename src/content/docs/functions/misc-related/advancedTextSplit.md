@@ -14,11 +14,11 @@ $advancedTextSplit[text;sep;index;sep?;index?]
 
 ## Parameters
 
-| Field | Type                                                                                                | Description                                       | Required |
-| ----- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------- | :------: |
-| text  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Text to split.                                    |   true   |
-| sep   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Separator which is used to split the values.      |   true   |
-| index | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The position of the text you want to be returned. |   true   |
+| Field | Type                                                                                              | Description                                       | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------- | :------: |
+| text  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Text to split.                                    |   true   |
+| sep   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Separator which is used to split the values.      |   true   |
+| index | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The position of the text you want to be returned. |   true   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   name: "advancedTextSplit",
   code: `
   $advancedTextSplit[Hello/Bye;/;1]
-  `,
+  `
 });
 ```

@@ -55,14 +55,14 @@ anything, simply reinvite it.
 $createApplicationCommand[guildID/global;name;description;defaultPermission(true/false);type(slash/user/message);options?]
 ```
 
-| Field             | Type                                                                                                                                                                                                   | Description                                                                                                    | Required |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- | :------: |
-| guildID/global    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The type of application command, either for every guild (global) or for one specific guild (specific guildID). |   true   |
-| name              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The actual slash command name that will be visible to the user.                                                |   true   |
-| description       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The slash command description that will be visible to the user.                                                |   true   |
-| defaultPermission | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                      | If the application command should syncronisate to the default permissions.                                     |   true   |
-| type              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                      | The application command type (explained below)                                                                 |   true   |
-| options?          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)                                                                                                      | [Slash commands options](#examples-of-creating-application-commands).                                          |   true   |
+| Field             | Type                                                                                                                                                                                                 | Description                                                                                                    | Required |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | :------: |
+| guildID/global    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The type of application command, either for every guild (global) or for one specific guild (specific guildID). |   true   |
+| name              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The actual slash command name that will be visible to the user.                                                |   true   |
+| description       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The slash command description that will be visible to the user.                                                |   true   |
+| defaultPermission | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | If the application command should syncronisate to the default permissions.                                     |   true   |
+| type              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | The application command type (explained below)                                                                 |   true   |
+| options?          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)                                                                                                    | [Slash commands options](#examples-of-creating-application-commands).                                          |   true   |
 
 #### Application Types
 
@@ -76,7 +76,7 @@ $createApplicationCommand[guildID/global;name;description;defaultPermission(true
 client.command({
   name: "createApplicationCommand",
   code: `
-  $createApplicationCommand[guildID/global;example;slash command description!;true;slash]`,
+  $createApplicationCommand[guildID/global;example;slash command description!;true;slash]`
 });
 ```
 
@@ -93,7 +93,7 @@ learning how to use Interaction Commands and the basics of how they work.
 | SUB_COMMAND       | 1   |                                                                                              |
 | SUB_COMMAND_GROUP | 2   |                                                                                              |
 | STRING            | 3   |                                                                                              |
-| INTEGER           | 4   | Any Integer between -2^53 and 2^53                                                           |
+| NUMBER            | 4   | Any Number between -2^53 and 2^53                                                            |
 | BOOLEAN           | 5   |                                                                                              |
 | USER              | 6   |                                                                                              |
 | CHANNEL           | 7   | Includes all channel types + categories                                                      |

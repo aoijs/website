@@ -27,6 +27,6 @@ client.command({
   name: "loopMode",
   code: `
     $loopMode[song]
-  `,
+  `
 });
 ```

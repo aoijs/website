@@ -30,6 +30,6 @@ client.command({
   $arrayConcat[ ;array1;array2]
   $createArray[array1;This is]
   $createArray[array2;a test]
-  `,
+  `
 });
 ```

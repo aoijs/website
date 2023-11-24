@@ -16,7 +16,7 @@ $guildCreatePost[forumId;name;content;autoArchiveDuration?;returnId?;reason?;...
 
 | Field                                                                                                          | Type                                                                                                | Description                                                                                                                                                                     | Required |
 | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------: |
-| forumId                                                                                                        | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the forum channel.                                                                                                                                                    |   true   |
+| forumId                                                                                                        | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The ID of the forum channel.                                                                                                                                                    |   true   |
 | name                                                                                                           | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The name of the forum post.                                                                                                                                                     |   true   |
 | content                                                                                                        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The content of the start message.                                                                                                                                               |   true   |
 | [autoArchiveDuration](https://discord-api-types.dev/api/discord-api-types-v10/enum/ThreadAutoArchiveDuration)? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The automatic archive duration of the forum post. <br /> - **1440** (one day) <br /> - **60** (one hour) <br /> - **10080** (one week / default) <br /> - **4320** (three days) |  false   |
@@ -34,6 +34,6 @@ client.command({
   name: "guildCreatePost",
   code: `
   $guildCreatePost[forumId;This is a Post!;Hello!  {newEmbed:{title:This is an embed!}} {actionRow:{button:Button:primary:customId:false}};10080;true]
-  `,
+  `
 });
 ```

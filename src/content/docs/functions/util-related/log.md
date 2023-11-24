@@ -27,6 +27,6 @@ client.command({
   name: "log",
   code: `
     $log[Aoi.js is great!]
-    `,
+    `
 });
 ```

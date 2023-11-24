@@ -26,6 +26,6 @@ This will change the client's username to the command author's username:
 client.command({
   name: "setClientName",
   code: `
-   $setClientName[$username[$authorID]]`,
+   $setClientName[$username[$authorID]]`
 });
 ```

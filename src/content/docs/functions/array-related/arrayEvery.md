@@ -40,7 +40,7 @@ client.command({
   code: `
   $arrayEvery[array;30;==]
   $createArray[array;1;2;3;0;30]
-  `,
+  `
   // It will return "false". Cause 1 ≠ 30. You can think it as "and (&&)" logical operator.
 });
 ```
