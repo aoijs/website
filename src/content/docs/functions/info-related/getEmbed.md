@@ -28,7 +28,7 @@ $getEmbed[channelID?;messageID?;index?;option?]
 | ---------------------------------- | -------------------------------- |
 | title                              | Title of the embed.              |
 | description                        | Description of the embed.        |
-| URL                                | The URL in the title.            |
+| url                                | The URL in the title.            |
 | color                              | Color of the embed.              |
 | timestamp                          | Timestamp located in the footer. |
 | field<index\>.name / field1.name   | Field title.                     |
@@ -36,8 +36,10 @@ $getEmbed[channelID?;messageID?;index?;option?]
 | thumbnail                          | Thumbnail (image top right).     |
 | image                              | Large image at the bottom.       |
 | video                              | Video/GIF.                       |
-| author                             | Author, above title field.       |
-| footer                             | Footer.                          |
+| authorname                         | Author content, above title field.                             |
+| authorurl                          | Author Icon Url, above title field besides author field.       |
+| footertext                         | Footer text.                     |
+| footericon                         | Footer icon, besides footer.     |
 | files                              | Attached files.                  |
 | createdAt                          | Creation date of the embed.      |
 | hexColor                           | Hex color of the embed.          |
