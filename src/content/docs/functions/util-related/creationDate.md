@@ -1,22 +1,22 @@
 ---
 title: $creationDate
-description: $creationDate will return the creation date of the given Discord User.
+description: $creationDate will return the creation date of anything what was created within Discord.
 id: creationDate
 ---
 
-`$creationDate` will return the creation date of the given Discord User.
+`$creationDate` will return the creation date of anything what was created within Discord.
 
 ## Usage
 
 ```php
-$creationDate[id;format?]
+$creationDate[resolver;format?]
 ```
 
 ## Parameters
 
 | Field   | Type                                                                                              | Description                                                         | Required |
 | ------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | :------: |
-| id      | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | User ID of who you want to get the creation date to be returned of. |   true   |
+| resolver      | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | User Id, message Id, channel Id, guild Id or role Id of who or what you want to get the creation date to be returned of. |   true   |
 | format? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The format of the creation date (listed below).                     |  false   |
 
 ### Format Input
