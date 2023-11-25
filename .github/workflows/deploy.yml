@@ -21,8 +21,6 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v3
       - name: Install, build, and upload your site
-        env: 
-          API_KEY: ${{ secrets.API_KEY }}
         uses:
           withastro/action@v0
           # with:
@@ -39,6 +37,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        env: 
-          API_KEY: ${{ secrets.API_KEY }}
         uses: actions/deploy-pages@v1
