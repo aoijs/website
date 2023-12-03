@@ -26,6 +26,7 @@ export default defineConfig({
         // Override the default `Search` component.
         Search: "./src/components/Search.astro",
       },
+      pagefind: false,
       head: [
         {
           tag: "script",

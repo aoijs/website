@@ -22,6 +22,7 @@ const client = new AoiClient({
         users: number,
         messages: number,
     },
+    disableAoiDB?: boolean,
     database?: {
         type: "aoi.db",
         db: require("@akarui/aoi.db"),
@@ -59,6 +60,7 @@ const client = new AoiClient({
 | `respondToBots`     | boolean | Either give your bot the ability to respond to bots or remove it.                       |
 | `guildOnly`         | boolean | Either give your bot the ability to respond in Direct Message or remove it.             |
 | `cache`             | string  | Client Cache Options.                                                                   |
+| `disableAoiDB`      | boolean | Disables the use of aoi.db within your bot, to add custom databases and such.           |
 | `database`          | string  | Client Database Options. (aoi.db)                                                       |
 | `suppressAllErrors` | boolean | Suppress all occuring errors.                                                           |
 | `errorMessage`      | string  | Send a given error message when `suppressAllErrors` executes, supports parser.          |
