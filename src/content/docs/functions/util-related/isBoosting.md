@@ -14,10 +14,10 @@ $isBoosting[userID?;guildID?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description                                    | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------- | :------: |
-| userID?  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | User ID to check if they're boosting.          |  false   |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The guild ID of where they boosted the server. |  false   |
+| Field    | Type                                                                                              | Description                                    | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------- | :------: |
+| userID?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | User ID to check if they're boosting.          |  false   |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The guild ID of where they boosted the server. |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "isBoosting",
   code: `
   $isBoosting[$authorID;$guildID]
-  `,
+  `
 });
 ```

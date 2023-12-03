@@ -14,9 +14,9 @@ $banCount[guildID?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description                                                                 | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | -------- |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Guild ID of the guild you want to retrieve the amount of banned users from. | false    |
+| Field    | Type                                                                                              | Description                                                                 | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | -------- |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Guild ID of the guild you want to retrieve the amount of banned users from. | false    |
 
 #### Please note that your bot requires permissions to `VIEW_AUDIT_LOG`
 
@@ -29,6 +29,6 @@ client.command({
   name: "banCount",
   code: `
   $banCount
-  `,
+  `
 });
 ```

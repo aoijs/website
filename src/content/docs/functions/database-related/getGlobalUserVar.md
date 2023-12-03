@@ -14,11 +14,11 @@ $getGlobalUserVar[varname;userID?;table?]
 
 ## Parameters
 
-| Field   | Type                                                                                                | Description     | Required |
-| ------- | --------------------------------------------------------------------------------------------------- | --------------- | :------: |
-| varname | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Variable name.  |   true   |
-| userID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | User ID.        |  false   |
-| table?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Variable table. |  false   |
+| Field   | Type                                                                                              | Description     | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | --------------- | :------: |
+| varname | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable name.  |   true   |
+| userID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | User ID.        |  false   |
+| table?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable table. |  false   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   name: "getGlobalUserVar",
   code: `
     $getGlobalUserVar[Example;$authorID;main]
-    `,
+    `
 });
 ```

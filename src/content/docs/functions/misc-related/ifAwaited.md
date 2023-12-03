@@ -42,13 +42,13 @@ client.command({
   name: "ifAwaited",
   code: `
     $ifAwaited[1==1;{execute:awaitedCommand}]
-    `,
+    `
 });
 
 client.awaitedCommand({
   name: "awaitedCommand",
   code: `
     $sendMessage[That's true!;false]
-    `,
+    `
 });
 ```

@@ -28,6 +28,6 @@ client.command({
   name: "indexOf",
   code: `
   $indexOf[Hello, what is wrong with you?;w]
-  `,
+  `
 });
 ```

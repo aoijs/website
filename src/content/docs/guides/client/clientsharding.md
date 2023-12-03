@@ -100,7 +100,7 @@ const client = new AoiClient({
 // Ping Command Example (sharding)
 client.command({
   name: "ping",
-  code: `Pong! $guildShardPing[0]ms`,
+  code: `Pong! $guildShardPing[0]ms`
 });
 ```
 

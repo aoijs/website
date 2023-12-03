@@ -26,7 +26,7 @@ import "@docsearch/css";
         props: {
           href: "https://github.com/AkaruiDevelopment",
           target: "_blank",
-          children: `${state.context.nbHits} results found!`,
+          children: `${state.context.nbHits} results found!`
         },
         __v: null,
       };
@@ -46,7 +46,7 @@ import "@docsearch/css";
               constructor: undefined,
               key: "resultsFooterLede",
               props: {
-                children: `Searched for something else? Maybe something below can solve your issue.`,
+                children: `Searched for something else? Maybe something below can solve your issue.`
               },
               __v: null,
             },
@@ -121,7 +121,8 @@ import "@docsearch/css";
                           key: "discordAnchor",
                           props: {
                             href: "https://aoi.js.org/invite",
-                            children: "Need Support? Feel free to join our Discord.",
+                            children:
+                              "Need Support? Feel free to join our Discord.",
                           },
                           __v: null,
                         },
@@ -150,9 +151,42 @@ import "@docsearch/css";
     width: 100%;
   }
 
+  :global(.DocSearch-Button) {
+    background-color: var(--sl-color-black);
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 0.5rem;
+    color: var(--sl-color-gray-2);
+    font-size: var(--sl-text-sm);
+    height: 2.5rem;
+    margin: 0;
+    padding-inline-start: 0.75rem;
+  }
+
+  @media screen and (max-width: 48rem) {
+    :global(.DocSearch-Button) {
+      width: 2.5rem;
+    }
+  }
+
+  :global(.DocSearch-Button):hover {
+    background-color: var(--sl-color-black);
+    border-color: var(--sl-color-gray-2);
+    box-shadow: none;
+    color: var(--sl-color-gray-1);
+  }
+
+  :global(.DocSearch-Button .DocSearch-Search-Icon) {
+    color: var(--sl-color-gray-2);
+    width: 1em;
+    height: 1em;
+  }
+
+  :global(.DocSearch-Button:hover .DocSearch-Search-Icon) {
+    color: var(--sl-color-gray-1);
+  }
+
   @media (min-width: 50rem) {
     :global(.DocSearch-Button) {
-      overflow: hidden;
       width: 100%;
       max-width: 22rem;
     }

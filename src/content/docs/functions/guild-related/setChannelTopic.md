@@ -14,10 +14,10 @@ $setChannelTopic[channelID;topic]
 
 ## Parameters
 
-| Field     | Type                                                                                                | Description                                         | Required |
-| --------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------- | :------: |
-| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the channel whose topic will be modified. |   true   |
-| topic     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Content of the new channel topic.                   |   true   |
+| Field     | Type                                                                                              | Description                                         | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------- | :------: |
+| channelID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the channel whose topic will be modified. |   true   |
+| topic     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Content of the new channel topic.                   |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ This will change the topic of the channel where the command is executed in:
 client.command({
   name: "setChannelTopic",
   code: `
-   $setChannelTopic[$channelID;Hello! This is the new channel topic!]`,
+   $setChannelTopic[$channelID;Hello! This is the new channel topic!]`
 });
 ```

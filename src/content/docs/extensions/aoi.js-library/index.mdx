@@ -61,7 +61,7 @@ const client = new AoiClient({
 // Ping Command
 client.command({
   name: "ping",
-  code: `Pong! $pingms`,
+  code: `Pong! $pingms`
 });
 
 new PluginManager(client).loadPlugins("default/comment"); //Loads the from the default folder ($comment function)

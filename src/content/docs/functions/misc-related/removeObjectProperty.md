@@ -29,6 +29,6 @@ client.command({
   code: `
   $removeObjectProperty[Object Name;Object]
   $createObject[Object Name;{"Object": "Property"}]
-  `,
+  `
 });
 ```

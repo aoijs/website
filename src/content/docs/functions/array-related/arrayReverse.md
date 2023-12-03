@@ -26,6 +26,6 @@ client.command({
   code: `
   $arrayReverse[array]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `,
+  `
 });
 ```

@@ -17,7 +17,7 @@ $numberSeparator[num;sep?]
 | Field | Type                                                                                              | Description                                                         | Required |
 | ----- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | :------: |
 | num   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Number you want to separate.                                        |   true   |
-| sep?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Separator which will be used to separate the numbers, default: `,`. |  false   |
+| sep?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Separator which will be used to separate the numbers, default: ``. |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "numberSeparator",
   code: `
   $numberSeparator[1000000;,]
-  `,
+  `
 });
 ```

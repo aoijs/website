@@ -49,7 +49,7 @@ client.command({
     Hello!
     $addButton[1;Example Button!;primary;exampleButton;false;💔]
     $addButton[1;Example Button!;link;https://discord.gg;false]
-  `,
+  `
 });
 ```
 
@@ -61,7 +61,7 @@ module.exports = [
     prototype: "button",
     code: `
     $interactionReply[Awesome Button Interaction!]
-  `,
+  `
   },
 ];
 ```

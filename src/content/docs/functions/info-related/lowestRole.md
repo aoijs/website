@@ -14,10 +14,10 @@ $userLowestRole[userID?;guildID?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description                                                | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | :------: |
-| userID?  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the user you want the lowest role to be returned of. |  false   |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the guild.                                       |  false   |
+| Field    | Type                                                                                              | Description                                                | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | :------: |
+| userID?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the user you want the lowest role to be returned of. |  false   |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the guild.                                       |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "userLowestRole",
   code: `
   $userLowestRole[$authorID;$guildID]
-  `,
+  `
 });
 ```

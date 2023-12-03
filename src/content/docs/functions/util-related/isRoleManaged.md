@@ -14,10 +14,10 @@ $isRoleManaged[roleID;guildID?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description                                                         | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | :------: |
-| roleID   | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the role you want to check if it's managed by Discord or not. |   true   |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the guild where the role exists.                              |  false   |
+| Field    | Type                                                                                              | Description                                                         | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | :------: |
+| roleID   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the role you want to check if it's managed by Discord or not. |   true   |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the guild where the role exists.                              |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "isRoleManaged",
   code: `
   $isRoleManaged[$findRole[Server Booster];$guildID]
-  `,
+  `
 });
 ```

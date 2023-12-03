@@ -28,7 +28,7 @@ client.command({
   name: "volume",
   code: `
     $volume[get]
-  `,
+  `
 });
 ```
 
@@ -39,6 +39,6 @@ client.command({
   name: "volume",
   code: `
     $volume[45]
-  `,
+  `
 });
 ```

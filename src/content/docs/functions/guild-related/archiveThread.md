@@ -16,8 +16,8 @@ $archiveThread[threadID;channelID?;archive?;reason?]
 
 | Field      | Type                                                                                                | Description                                              | Required |
 | ---------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | :------: |
-| threadID   | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Thread ID.                                               |   true   |
-| channelID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Channel ID of where the thread is located.               |  false   |
+| threadID   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | Thread ID.                                               |   true   |
+| channelID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | Channel ID of where the thread is located.               |  false   |
 | archive?   | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Archive the given thread?                                |  false   |
 | reason?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Reason that will be displayed in the guild's audit logs. |  false   |
 
@@ -31,6 +31,6 @@ client.command({
   code: `
   $archiveThread[$channelID;$get[id];true;testing]
   $let[id;$createThread[$channelID;example;1440;public;$messageID;true]]  
-  `,
+  `
 });
 ```

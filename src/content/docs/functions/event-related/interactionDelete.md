@@ -26,7 +26,7 @@ module.exports = [
   $interactionDelete
   $wait[5s]
   $interactionReply[Hello, World!;;;;everyone;false]
-  `,
+  `
   },
 ];
 ```

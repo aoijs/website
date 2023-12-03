@@ -39,6 +39,6 @@ client.command({
   name: "mentionType",
   code: `
   $mentionType[<@$authorID>]
-  `,
+  `
 });
 ```

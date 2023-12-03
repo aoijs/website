@@ -16,7 +16,7 @@ $createSticker[guildID;URL;name;returnSticker?;tags;description;reason]
 
 | Field          | Type                                                                                                | Description                                                                             | Required |
 | -------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | :------: |
-| guildID        | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Guild ID of where the sticker will be created in.                                       |   true   |
+| guildID        | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | Guild ID of where the sticker will be created in.                                       |   true   |
 | URL            | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Image URL (**png only**).                                                               |   true   |
 | name           | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The sticker name.                                                                       |   true   |
 | returnSticker? | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Return the sticker after its creation. <br /> 1. **true** <br /> 2. **false** (default) |  false   |
@@ -33,6 +33,6 @@ client.command({
   name: "createSticker",
   code: `
   $createSticker[$guildID;https://cdn.discordapp.com/attachments/1061712111052521493/1066397675278323734/692445926480150611.png;Imagine;true;money;Random sticker;Testing.]
-  `,
+  `
 });
 ```

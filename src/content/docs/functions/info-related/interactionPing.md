@@ -24,7 +24,7 @@ client.command({
   code: `
  $addButton[1;Test;primary;testButton;false]
  Click me!
-  `,
+  `
 });
 
 module.exports = [
@@ -34,7 +34,7 @@ module.exports = [
     prototype: "button",
     code: `
   $interactionUpdate[This took me: $interactionPing MS!]
-  `,
+  `
   },
 ];
 ```

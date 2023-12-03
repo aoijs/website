@@ -35,6 +35,6 @@ client.command({
   code: `
   $arraySome[array;aoi.js;==]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `,
+  `
 });
 ```

@@ -27,6 +27,6 @@ client.command({
   code: `
   $arrayJoin[array;, ]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `,
+  `
 });
 ```

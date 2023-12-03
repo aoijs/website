@@ -78,7 +78,7 @@ module.exports = [
 module.exports = [{
     name: string,
     type: string,
-    channel?: integer,
+    channel?: number,
     executeOnStartup?: boolean,
     every: number,
     code: string

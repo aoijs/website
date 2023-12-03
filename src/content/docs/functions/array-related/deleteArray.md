@@ -28,6 +28,6 @@ client.command({
   code: `
   $deleteArray[array]
   $createArray[array;Hello;This;Is;Great]
-  `,
+  `
 });
 ```

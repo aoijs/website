@@ -26,6 +26,6 @@ This will return `1300000`:
 client.command({
   name: "expandNumber",
   code: `
-  $expandNumber[1.3m]`,
+  $expandNumber[1.3m]`
 });
 ```

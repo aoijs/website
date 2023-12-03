@@ -28,6 +28,6 @@ client.command({
   name: "removeContains",
   code: `
     $removeContains[Hello, aoi.js!;, ;aoi.js]
-    `,
+    `
 });
 ```

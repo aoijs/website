@@ -16,8 +16,8 @@ $modifyRole[guildID;roleID;...data]
 
 | Field                                       | Type                                                                                                                                                                                                 | Description                                   | Required |
 | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | :------: |
-| guildID                                     | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer)                                                                                                  | The guild ID of where the role is located in. |   true   |
-| roleID                                      | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer)                                                                                                  | The role ID to modify.                        |   true   |
+| guildID                                     | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)                                                                                                    | The guild ID of where the role is located in. |   true   |
+| roleID                                      | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)                                                                                                    | The role ID to modify.                        |   true   |
 | ...data                                     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |
 | JavaScript/Reference/Global_Objects/Object) | New Role Data.                                                                                                                                                                                       | true                                          |
 
@@ -32,6 +32,6 @@ client.command({
   $modifyRole[$guildID;roleID;{
     "name": "Awesome!"
   }]
-  `,
+  `
 });
 ```

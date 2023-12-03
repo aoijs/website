@@ -128,7 +128,7 @@ bot.functionManager.createFunction({
   code: ` 
     **$userTag[$replaceText[$replaceText[$checkCondition[{userID}==||{userID}==undefined];true;$authorID];false;{userID}]]** says: **{message}**
     $disableMentionType[everyone]
-  `,
+  `
 });
 ```
 

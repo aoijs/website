@@ -29,6 +29,6 @@ client.command({
   name: "setVar",
   code: `
     $setVar[Example;This is a value;main]
-    `,
+    `
 });
 ```

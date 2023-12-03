@@ -38,7 +38,7 @@ client.command({
   code: `
   $arrayFilter[array;akarui;==;, ]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `,
+  `
   // It will return "akarui" as it matches the query.
 });
 ```
@@ -49,7 +49,7 @@ client.command({
   code: `
   $arrayFilter[array;akarui;<=;, ]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `,
+  `
   // It will return "documents, bot" as its on the right of the found item.
 });
 ```

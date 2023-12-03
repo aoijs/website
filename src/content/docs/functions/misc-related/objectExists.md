@@ -28,6 +28,6 @@ client.command({
   code: `
     $objectExists[Object Name]
     $createObject[Object Name;{"Leref": "Ferel"}]
-    `,
+    `
 });
 ```

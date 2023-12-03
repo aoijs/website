@@ -31,6 +31,6 @@ client.command({
   code: `
     Ok.
     $onlyPerms[administrator;You don't have administrator permissions!]
-    `,
+    `
 });
 ```

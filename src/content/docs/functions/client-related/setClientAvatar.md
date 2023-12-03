@@ -26,6 +26,6 @@ This will change the client's avatar to the command author's user avatar:
 client.command({
   name: "setClientAvatar",
   code: `
-   $setClientAvatar[$userAvatar[$authorID]]`,
+   $setClientAvatar[$userAvatar[$authorID]]`
 });
 ```

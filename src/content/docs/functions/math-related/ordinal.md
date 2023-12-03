@@ -4,7 +4,7 @@ description: $ordinal adds st, nd, rd, th to a number such as 1st, 2nd, 3rd, 4th
 id: ordinal
 ---
 
-`$ordinal` adds `st`, `nd`, `rd`, `th` to a number such as `1st`, `2nd`, `3rd`, `4th`.
+`$ordinal` adds `st` `nd` `rd` `th` to a number such as `1st` `2nd` `3rd` `4th`.
 
 ## Usage
 
@@ -16,7 +16,7 @@ $ordinal[number]
 
 | Field  | Type                                                                                              | Description                                         | Required |
 | ------ | ------------------------------------------------------------------------------------------------- | --------------------------------------------------- | :------: |
-| number | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Number which will add `st`, `nd`, `rd`, `th` to it. |   true   |
+| number | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Number which will add `st` `nd` `rd` `th` to it. |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   $ordinal[50] -> Returns 50th
   $ordinal[11] -> Returns 11st
   $ordinal[88] -> Returns 88th
-  `,
+  `
 });
 ```

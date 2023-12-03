@@ -31,6 +31,6 @@ client.command({
   $getObjectProperty[Object Name;Leref]
   $setObjectProperty[Object Name;Leref;Ferel]
   $createObject[Object Name;{}]
-  `,
+  `
 });
 ```

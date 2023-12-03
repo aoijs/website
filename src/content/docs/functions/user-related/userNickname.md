@@ -16,8 +16,8 @@ $userNickname[guildID?;userID?;returnUser?]
 
 | Field       | Type                                                                                                | Description                                                          | Required |
 | ----------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | :------: |
-| guildID?    | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the guild.                                                 |  false   |
-| userID?     | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the user.                                                  |  false   |
+| guildID?    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The ID of the guild.                                                 |  false   |
+| userID?     | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The ID of the user.                                                  |  false   |
 | returnUser? | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Return the username <br /> 1. **true** <br /> 2. **false** (default) |  false   |
 
 ## Example(s)
@@ -29,6 +29,6 @@ client.command({
   name: "userNickname",
   code: `
   $userNickname[$guildID;$authorID;true]
-  `,
+  `
 });
 ```

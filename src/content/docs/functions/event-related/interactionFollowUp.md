@@ -34,7 +34,7 @@ module.exports = [
     code: `
   $interactionFollowUp[Bye, world!]
   $interactionDefer[true]
-  `,
+  `
   },
 ];
 ```

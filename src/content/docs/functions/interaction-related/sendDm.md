@@ -29,6 +29,6 @@ client.command({
   name: "sendDm",
   code: `
    $sendDm[Hello!;$authorID;false]  
-  `,
+  `
 });
 ```

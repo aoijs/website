@@ -14,10 +14,10 @@ $hasEmbeds[messageID;channelID]
 
 ## Parameters
 
-| Field     | Type                                                                                                | Description                                         | Required |
-| --------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------- | :------: |
-| messageID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the message to check if it contains an embed. |   true   |
-| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the channel where the message is located in.  |   true   |
+| Field     | Type                                                                                              | Description                                         | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------- | :------: |
+| messageID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the message to check if it contains an embed. |   true   |
+| channelID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the channel where the message is located in.  |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "hasEmbeds",
   code: `
   $hasEmbeds[$messageID;$channelID]
-  `,
+  `
 });
 ```

@@ -28,6 +28,6 @@ client.command({
   name: "thumbnail",
   code: `
    $thumbnail[$userAvatar[$authorID]]
-   $description[Hello, that's your Avatar!]`,
+   $description[Hello, that's your Avatar!]`
 });
 ```

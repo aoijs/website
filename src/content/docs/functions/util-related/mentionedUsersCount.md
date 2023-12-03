@@ -21,6 +21,6 @@ client.command({
   name: "mentionedUsersCount",
   code: `
   Amount of user mentions: $mentionedUsersCount
-`,
+`
 });
 ```

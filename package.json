@@ -21,7 +21,7 @@
     "@astrojs/node": "^6.0.0",
     "@astrojs/react": "^3.0.4",
     "@astrojs/sitemap": "^3.0.3",
-    "@astrojs/starlight": "^0.13.0",
+    "@astrojs/starlight": "^0.14.0",
     "@docsearch/css": "^3.5.2",
     "@docsearch/js": "^3.5.2",
     "@types/react": "^18.2.21",

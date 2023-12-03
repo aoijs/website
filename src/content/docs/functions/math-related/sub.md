@@ -27,6 +27,6 @@ client.command({
   name: "sub",
   code: `
   $sub[70;5]
-  `,
+  `
 });
 ```

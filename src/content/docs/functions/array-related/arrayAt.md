@@ -30,7 +30,7 @@ client.command({
   $arrayAt[Aoi;3]
   
   $createArray[Aoi;Aoi.music;Aoi.panel;Aoi.dashboard;Aoi]
-  `,
+  `
   // Returns "Aoi.dashboard"
 });
 ```

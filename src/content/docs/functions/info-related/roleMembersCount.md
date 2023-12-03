@@ -14,10 +14,10 @@ $roleMembersCount[roleID;guildID?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description   | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | ------------- | :------: |
-| roleID   | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The role ID.  |   true   |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The guild ID. |  false   |
+| Field    | Type                                                                                              | Description   | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ------------- | :------: |
+| roleID   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The role ID.  |   true   |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The guild ID. |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "roleMembersCount",
   code: `
   $roleMembersCount[$guildID;$guildID]
-  `,
+  `
 });
 ```

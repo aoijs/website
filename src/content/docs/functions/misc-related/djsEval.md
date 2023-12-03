@@ -28,6 +28,6 @@ client.command({
   name: "djsEval",
   code: `
   $djsEval[msg.author.id;true]
-  `,
+  `
 });
 ```

@@ -14,9 +14,9 @@ $deleteStageInstance[channelID]
 
 ## Parameters
 
-| Field     | Type                                                                                                | Description                                         | Required |
-| --------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------- | :------: |
-| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The stage channel ID of the current stage instance. |   true   |
+| Field     | Type                                                                                              | Description                                         | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------- | :------: |
+| channelID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The stage channel ID of the current stage instance. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "deleteStageInstance",
   code: `
   $deleteStageInstance[stageInstance]
-  `,
+  `
 });
 ```

@@ -27,6 +27,6 @@ client.command({
   name: "voicePing",
   code: `
     $voicePing[ws]
-  `,
+  `
 });
 ```

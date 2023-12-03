@@ -28,6 +28,6 @@ client.command({
   code: `
     Hello!
     $addClientReactions[🧡;❤]
-  `,
+  `
 });
 ```

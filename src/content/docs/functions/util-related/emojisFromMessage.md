@@ -23,6 +23,6 @@ client.command({
   name: "emojisFromMessage",
   code: `
 $emojisFromMessage
-  `,
+  `
 });
 ```

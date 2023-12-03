@@ -48,7 +48,7 @@ client.command({
   name: "if",
   code: `
     $if[1==2;That's true!;That's false!]
-    `,
+    `
 });
 ```
 
@@ -64,6 +64,6 @@ client.command({
     $else
     That's false!
     $endif
-    `,
+    `
 });
 ```

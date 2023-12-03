@@ -27,6 +27,6 @@ client.command({
   name: "isMentioned",
   code: `
   $isMentioned[<@$authorID>]
-  `,
+  `
 });
 ```

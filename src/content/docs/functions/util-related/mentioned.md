@@ -29,6 +29,6 @@ client.command({
   name: "mentioned",
   code: `
   $mentioned[1;true]
-  `,
+  `
 });
 ```

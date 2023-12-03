@@ -27,6 +27,6 @@ client.command({
   name: "randomUserID",
   code: `
   $randomUserID[global]
-  `,
+  `
 });
 ```

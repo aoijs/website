@@ -14,11 +14,11 @@ $createStageInstance[channelID;topic;type?]
 
 ## Parameters
 
-| Field     | Type                                                                                                | Description                              | Required |
-| --------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------- | :------: |
-| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The channel ID of the stage channel.     |   true   |
-| topic     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The stage topic which will be displayed. |   true   |
-| type?     | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The stage type. (listed below)           |  false   |
+| Field     | Type                                                                                              | Description                              | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------- | :------: |
+| channelID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The channel ID of the stage channel.     |   true   |
+| topic     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The stage topic which will be displayed. |   true   |
+| type?     | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The stage type. (listed below)           |  false   |
 
 <details open>
   <summary><h3> Invite Target Types </h3></summary>
@@ -39,6 +39,6 @@ client.command({
   name: "createStageInstance",
   code: `
   $createStageInstance[stageID;Testing!;1] 
-  `, // replace "stageID" with an actual stage ID
+  ` // replace "stageID" with an actual stage ID
 });
 ```

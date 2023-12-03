@@ -43,11 +43,11 @@ const panel = new Panel({
 
 #### Parameters
 
-| Name                                        | Description                        | type                                                                                                | required                 | Example |
-| ------------------------------------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------- | ------------------------ | ------- |
-| `port`                                      | Port on which the panel is hosted. | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | `false`. Default: `3000` | `8000`  |
-| `client`                                    | Your aoi.js or discord.js client.  | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)   |
-| JavaScript/Reference/Global_Objects/Object) | `true`                             | `bot`                                                                                               |
+| Name                                        | Description                        | type                                                                                              | required                 | Example |
+| ------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------ | ------- |
+| `port`                                      | Port on which the panel is hosted. | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | `false`. Default: `3000` | `8000`  |
+| `client`                                    | Your aoi.js or discord.js client.  | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |
+| JavaScript/Reference/Global_Objects/Object) | `true`                             | `bot`                                                                                             |
 
 ### Functions
 

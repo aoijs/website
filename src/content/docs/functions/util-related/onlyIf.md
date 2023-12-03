@@ -29,6 +29,6 @@ client.command({
   code: `
     Ok.
     $onlyIf[5==3;That's wrong!]
-    `,
+    `
 });
 ```

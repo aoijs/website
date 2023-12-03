@@ -28,6 +28,6 @@ client.command({
   code: `
 Aoi.js developer: $get[developer]
 $let[developer;Leref]
-`,
+`
 });
 ```

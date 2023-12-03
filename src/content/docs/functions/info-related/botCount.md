@@ -14,9 +14,9 @@ $guildBotCount[guildID?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description                                                    | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | :------: |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Guild ID of the guild you want to retrieve the amount of bots. |  false   |
+| Field    | Type                                                                                              | Description                                                    | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | :------: |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Guild ID of the guild you want to retrieve the amount of bots. |  false   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "guildBotCount",
   code: `
   $guildBotCount
-  `,
+  `
 });
 ```

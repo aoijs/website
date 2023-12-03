@@ -15,12 +15,12 @@ $userReacted[channelID;messageID;userID;emoji]
 
 ## Parameters
 
-| Field     | Type                                                                                                | Description         | Required |
-| --------- | --------------------------------------------------------------------------------------------------- | ------------------- | :------: |
-| guildID   | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The guild ID.       |   true   |
-| messageID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The message ID.     |   true   |
-| userID    | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The user ID.        |   true   |
-| emoji     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Emoji to check for. |   true   |
+| Field     | Type                                                                                              | Description         | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | ------------------- | :------: |
+| guildID   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The guild ID.       |   true   |
+| messageID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The message ID.     |   true   |
+| userID    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The user ID.        |   true   |
+| emoji     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Emoji to check for. |   true   |
 
 ## Example(s)
 
@@ -32,6 +32,6 @@ client.command({
   code: `
 $userReacted[$channelID;$messageID;$clientID;😩]
 $addCmdReactions[😩]
-  `,
+  `
 });
 ```

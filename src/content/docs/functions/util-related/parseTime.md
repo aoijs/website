@@ -27,7 +27,7 @@ client.command({
   name: "parseTime",
   code: `
   $parseTime[69m]
-  `,
+  `
 });
 ```
 
@@ -38,6 +38,6 @@ client.command({
   name: "parseTime",
   code: `
   $parseTime[1w 2d 20m]
-  `,
+  `
 });
 ```

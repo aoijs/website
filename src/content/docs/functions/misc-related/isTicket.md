@@ -14,9 +14,9 @@ $isTicket[channelID?]
 
 ## Parameters
 
-| Field      | Type                                                                                                | Description | Required |
-| ---------- | --------------------------------------------------------------------------------------------------- | ----------- | :------: |
-| channelID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Channel ID. |  false   |
+| Field      | Type                                                                                              | Description | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | ----------- | :------: |
+| channelID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Channel ID. |  false   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "isTicket",
   code: `
     $isTicket[$channelID]
-    `,
+    `
 });
 ```

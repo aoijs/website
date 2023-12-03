@@ -14,9 +14,9 @@ $isThread[channelID?]
 
 ## Parameters
 
-| Field      | Type                                                                                                | Description                               | Required |
-| ---------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------- | :------: |
-| channelID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the channel that you want to check. |  false   |
+| Field      | Type                                                                                              | Description                               | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------- | :------: |
+| channelID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the channel that you want to check. |  false   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "isThread",
   code: `
   $isThread[$channelID]
-  `,
+  `
 });
 ```

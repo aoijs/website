@@ -30,11 +30,11 @@ client.command({
   "required": false,
   "type": 3, 
   "autocomplete": true
-}]]`,
+}]]`
 });
 ```
 
-Checking if autoComplete equals `true`, if so it will respond with the given respond (addition of the code above):
+Checking if autoComplete equals `true` if so it will respond with the given respond (addition of the code above):
 
 ```javascript
 client.command({
@@ -47,7 +47,7 @@ client.command({
   $else
   $interactionReply[$slashOption[option];;;;everyone]
   $endif
-  `,
+  `
 });
 ```
 
@@ -68,11 +68,11 @@ client.command({
   "description": "test",
   "required": false,
   "type": 3
-}]]`,
+}]]`
 });
 ```
 
-Using JSON and checking if autoComplete equals `true`, if so it will respond with the given respond (addition of the
+Using JSON and checking if autoComplete equals `true` if so it will respond with the given respond (addition of the
 code above):
 
 ```javascript
@@ -92,6 +92,6 @@ client.command({
   $else
   $interactionReply[$slashOption[option] - autocomplete #SEMI# $slashOption[anotheroption] - false autocomplete;;;;everyone]
   $endif
-  `,
+  `
 });
 ```

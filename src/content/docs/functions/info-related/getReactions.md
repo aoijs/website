@@ -16,8 +16,8 @@ $getReactions[channelID;messageID;reaction;force?;option?]
 
 | Field     | Type                                                                                                | Description                                                                                                                                                                                         | Required |
 | --------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------: |
-| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the channel where the message is located in.                                                                                                                                                  |   true   |
-| messageID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the message.                                                                                                                                                                                  |   true   |
+| channelID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | ID of the channel where the message is located in.                                                                                                                                                  |   true   |
+| messageID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | ID of the message.                                                                                                                                                                                  |   true   |
 | reaction  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The reaction its information will be returned of.                                                                                                                                                   |   true   |
 | force?    | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | 1. **true** (default) <br /> 2. **false**                                                                                                                                                           |  false   |
 | option?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | How it will return the users who reacted to that message <br /> 1. **username** (default) - returns the usernames <br /> 2. **mention** - mentions the users <br /> 3. **id** - returns the user id |  false   |
@@ -34,6 +34,6 @@ client.command({
   code: `
 $getReactions[$channelID;$messageID;👋;true;mention]
 $addCmdReactions[👋]
-  `,
+  `
 });
 ```

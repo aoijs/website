@@ -14,11 +14,11 @@ $reactionCount[channelID;messageID;emoji]
 
 ## Parameters
 
-| Field     | Type                                                                                                | Description                                            | Required |
-| --------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | :------: |
-| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the channel where the message is located in. |   true   |
-| messageID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the message.                                 |   true   |
-| emoji     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The emoji its reaction count will be returned of.      |   true   |
+| Field     | Type                                                                                              | Description                                            | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | :------: |
+| channelID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the channel where the message is located in. |   true   |
+| messageID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the message.                                 |   true   |
+| emoji     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The emoji its reaction count will be returned of.      |   true   |
 
 ## Example(s)
 
@@ -31,6 +31,6 @@ client.command({
   code: `
 There are: $reactionCount[$channelID;$messageID;😫] reactions!
 $addCmdReactions[😫]
-`,
+`
 });
 ```

@@ -18,7 +18,7 @@ $findGuildChannel[channelResolver;returnSelf?;guildID?]
 | --------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ | :------: |
 | channelResolver | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Name of the channel you are trying to find.                              |   true   |
 | returnSelf?     | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Return the channel where the command got executed in when nothing found. |  false   |
-| guildID?        | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the guild where the channel is present in.                         |  false   |
+| guildID?        | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | ID of the guild where the channel is present in.                         |  false   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   name: "findGuildChannel",
   code: `
   $findGuildChannel[rules;false;$guildID]
-  `,
+  `
 });
 ```

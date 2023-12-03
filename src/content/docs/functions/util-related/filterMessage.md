@@ -28,6 +28,6 @@ client.command({
   name: "filterMessage",
   code: `
   $filterMessage[Never;N]
-  `,
+  `
 });
 ```

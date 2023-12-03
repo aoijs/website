@@ -21,6 +21,6 @@ client.command({
   name: "shutdown",
   code: `
     $shutdown
-    `,
+    `
 });
 ```

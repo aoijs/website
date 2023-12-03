@@ -14,10 +14,10 @@ $memberJoinPosition[userID?;guildID?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description          | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | -------------------- | :------: |
-| userID?  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the user.  |  false   |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the guild. |  false   |
+| Field    | Type                                                                                              | Description          | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | -------------------- | :------: |
+| userID?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the user.  |  false   |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the guild. |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "memberJoinPosition",
   code: `
   $memberJoinPosition[$authorID;$guildID]
-  `,
+  `
 });
 ```

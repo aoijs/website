@@ -30,6 +30,6 @@ client.command({
   code: `
   $addField[Example;Look at this!;false]
   $description[Hello!]
-  `,
+  `
 });
 ```

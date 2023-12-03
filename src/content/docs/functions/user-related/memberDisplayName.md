@@ -14,10 +14,10 @@ $memberDisplayName[guildID?;userID?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description          | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | -------------------- | :------: |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the guild. |  false   |
-| userID?  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the user.  |  false   |
+| Field    | Type                                                                                              | Description          | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | -------------------- | :------: |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the guild. |  false   |
+| userID?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the user.  |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "memberDisplayName",
   code: `
   $memberDisplayName[$guildID;$authorID]
-  `,
+  `
 });
 ```

@@ -14,11 +14,11 @@ $getMessage[channelID;messageID;option?]
 
 ## Parameters
 
-| Field     | Type                                                                                                | Description                                        | Required |
-| --------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------- | :------: |
-| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the channel where the message is located in. |   true   |
-| messageID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the message.                             |   true   |
-| option?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Which option to fetch.                             |  false   |
+| Field     | Type                                                                                              | Description                                        | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------- | :------: |
+| channelID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the channel where the message is located in. |   true   |
+| messageID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the message.                             |   true   |
+| option?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Which option to fetch.                             |  false   |
 
 <details open>
   <summary><h3> Options </h3></summary>
@@ -41,6 +41,6 @@ client.command({
   name: "getMessage",
   code: `
 $getMessage[$channelID;$messageID;content]
-  `,
+  `
 });
 ```

@@ -14,9 +14,9 @@ $channelExists[channel]
 
 ## Parameters
 
-| Field   | Type                                                                                                       | Description                 | Required |
-| ------- | ---------------------------------------------------------------------------------------------------------- | --------------------------- | :------: |
-| channel | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), integer | Channel ID or channel name. |   true   |
+| Field   | Type                                                                                                                                                                                                 | Description                 | Required |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | :------: |
+| channel | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-us/docs/web/javascript/reference/global_objects/number) | Channel ID or channel name. |   true   |
 
 ## Example(s)
 
@@ -27,6 +27,6 @@ client.command({
   name: "channelExists",
   code: `
   $channelExists[general]
-  `,
+  `
 });
 ```

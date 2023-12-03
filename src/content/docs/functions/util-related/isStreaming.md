@@ -14,10 +14,10 @@ $isStreaming[userID?;guildID?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description                                            | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | :------: |
-| userID?  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the user you want to check if they're streaming. |  false   |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the channel where they're streaming in.          |  false   |
+| Field    | Type                                                                                              | Description                                            | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | :------: |
+| userID?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the user you want to check if they're streaming. |  false   |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the channel where they're streaming in.          |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "isStreaming",
   code: `
   $isStreaming[$authorID;$guildID]
-  `,
+  `
 });
 ```

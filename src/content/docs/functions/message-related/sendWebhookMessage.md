@@ -16,7 +16,7 @@ $sendWebhookMessage[webhookID;webhookToken;content;returnID?]
 
 | Field        | Type                                                                                                | Description                                                         | Required |
 | ------------ | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | :------: |
-| webhookID    | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The webhook ID.                                                     |   true   |
+| webhookID    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The webhook ID.                                                     |   true   |
 | webhookToken | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The webhook Token.                                                  |   true   |
 | content      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The content of the message to send.                                 |   true   |
 | returnID?    | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Return message ID? <br /> 1. **true** <br /> 2. **false** (default) |  false   |

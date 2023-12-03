@@ -29,6 +29,6 @@ client.command({
   code: `
   $arraySplice[array;2;3]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `,
+  `
 });
 ```

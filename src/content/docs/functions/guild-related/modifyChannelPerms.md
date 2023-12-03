@@ -14,11 +14,11 @@ $modifyChannelPerms[channelID;roruID;...perms]
 
 ## Parameters
 
-| Field     | Type                                                                                                | Description                                                                | Required |
-| --------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | :------: |
-| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The channel ID of which you're trying to modify its permissions.           |   true   |
-| roruID    | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of an user or role. ( `$guildID` represents the `@everyone` role. ) |   true   |
-| ...perms  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The permissions that will be changed.                                      |   true   |
+| Field     | Type                                                                                              | Description                                                                | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | :------: |
+| channelID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The channel ID of which you're trying to modify its permissions.           |   true   |
+| roruID    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of an user or role. ( `$guildID` represents the `@everyone` role. ) |   true   |
+| ...perms  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The permissions that will be changed.                                      |   true   |
 
 |     | Description                                          |
 | --- | ---------------------------------------------------- |
@@ -37,6 +37,6 @@ client.command({
   name: "modifyChannelPerms",
   code: `
   $modifyChannelPerms[$channelID;$guildID;+sendmessages;+addreactions]
-  `,
+  `
 });
 ```

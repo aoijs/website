@@ -14,10 +14,10 @@ $userRoleColor[userID?;guildID?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description   | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | ------------- | :------: |
-| userID?  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The user ID.  |  false   |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The guild ID. |  false   |
+| Field    | Type                                                                                              | Description   | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ------------- | :------: |
+| userID?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The user ID.  |  false   |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The guild ID. |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "userRoleColor",
   code: `
   $userRoleColor[$authorID;$guildID]
-  `,
+  `
 });
 ```

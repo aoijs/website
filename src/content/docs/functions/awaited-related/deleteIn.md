@@ -28,6 +28,6 @@ client.command({
   code: `
   $deleteIn[5s]
   I'll delete this message in 5 seconds!
-  `,
+  `
 });
 ```

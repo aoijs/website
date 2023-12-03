@@ -27,6 +27,6 @@ client.command({
   name: "deleteEmoji",
   code: `
   $deleteEmoji[$randomEmoji]
-  `,
+  `
 });
 ```

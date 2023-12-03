@@ -14,10 +14,10 @@ $isDeafen[userID?;guildID?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description                                               | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | :------: |
-| userID?  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | User ID you want to check if they're deafened,            |  false   |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The guild ID where you want to check if they're deafened. |  false   |
+| Field    | Type                                                                                              | Description                                               | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | :------: |
+| userID?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | User ID you want to check if they're deafened,            |  false   |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The guild ID where you want to check if they're deafened. |  false   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "isDeafen",
   code: `
   $isDeafen[$authorID;$guildID]
-  `,
+  `
 });
 ```

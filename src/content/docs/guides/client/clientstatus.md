@@ -45,7 +45,7 @@ client.status({
 
 This will display the text "Example Text!" as bot status, of course you can modify it.
 
-If you want to have multiple statuses just add multiple `client.status({...})`, simple do the following:
+If you want to have multiple statuses just add multiple `client.status({...})` simple do the following:
 
 ```javascript title="index.js"
 client.status({

@@ -28,6 +28,6 @@ client.command({
   name: "renameFile",
   code: `
     $renameFile[./index.js;./index.txt]
-    `,
+    `
 });
 ```

@@ -14,12 +14,12 @@ $usersWithRole[roleID;guildID?;option?;sep?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description                                                              | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ | :------: |
-| roleID   | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The role ID.                                                             |   true   |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The guild ID.                                                            |  false   |
-| option?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | How to return the users <br /> 1. **id** (default) <br /> 2. **mention** |  false   |
-| sep?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Separator to separate multiple returned values.                          |  false   |
+| Field    | Type                                                                                              | Description                                                              | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ | :------: |
+| roleID   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The role ID.                                                             |   true   |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The guild ID.                                                            |  false   |
+| option?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | How to return the users <br /> 1. **id** (default) <br /> 2. **mention** |  false   |
+| sep?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Separator to separate multiple returned values.                          |  false   |
 
 ## Example(s)
 
@@ -30,6 +30,6 @@ client.command({
   name: "usersWithRole",
   code: `
   $usersWithRole[roleID;$guildID;id;, ]
-  `,
+  `
 });
 ```

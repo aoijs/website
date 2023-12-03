@@ -14,10 +14,10 @@ $repeatMessage[time;text]
 
 ## Parameters
 
-| Field | Type                                                                                                | Description                                 | Required |
-| ----- | --------------------------------------------------------------------------------------------------- | ------------------------------------------- | :------: |
-| time  | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The amount of times the text gets repeated. |   true   |
-| text  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The text that will get repeated.            |   true   |
+| Field | Type                                                                                              | Description                                 | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ------------------------------------------- | :------: |
+| time  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The amount of times the text gets repeated. |   true   |
+| text  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The text that will get repeated.            |   true   |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   name: "repeatMessage",
   code: `
   $repeatMessage[20;Hello ]
-  `,
+  `
 });
 ```

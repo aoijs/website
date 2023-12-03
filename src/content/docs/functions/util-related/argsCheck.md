@@ -44,6 +44,6 @@ client.command({
   You have more than two arguments, nice!
 
   $argsCheck[>2;You have less than two arguments!]
-  `,
+  `
 });
 ```

@@ -14,12 +14,12 @@ $setGlobalUserVar[varname;value;userID?;table?]
 
 ## Parameters
 
-| Field   | Type                                                                                                | Description         | Required |
-| ------- | --------------------------------------------------------------------------------------------------- | ------------------- | :------: |
-| varname | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Variable name.      |   true   |
-| value   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | New Variable value. |   true   |
-| userID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | User ID.            |  false   |
-| table?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Variable table.     |  false   |
+| Field   | Type                                                                                              | Description         | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ------------------- | :------: |
+| varname | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable name.      |   true   |
+| value   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | New Variable value. |   true   |
+| userID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | User ID.            |  false   |
+| table?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable table.     |  false   |
 
 ## Example(s)
 
@@ -30,6 +30,6 @@ client.command({
   name: "setGlobalUserVar",
   code: `
     $setGlobalUserVar[Example;This is a value;$authorID;main]
-    `,
+    `
 });
 ```

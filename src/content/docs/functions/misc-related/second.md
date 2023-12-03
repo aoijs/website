@@ -21,7 +21,7 @@ client.command({
   name: "second",
   code: `
     $second
-    `,
+    `
 });
 ```
 
@@ -33,6 +33,6 @@ client.command({
   code: `
     $second 
     $timezone[America/New_York]
-    `, // returns current second in New York
+    ` // returns current second in New York
 });
 ```

@@ -21,6 +21,6 @@ client.command({
   name: "guildCount",
   code: `
   I'm in $guildCount guilds!
-  `,
+  `
 });
 ```

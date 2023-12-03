@@ -33,6 +33,6 @@ client.command({
   usage: "commandInfo [command]",
   code: `
   Usage: $commandInfo[ci;usage]
-  `,
+  `
 });
 ```

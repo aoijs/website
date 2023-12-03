@@ -14,9 +14,9 @@ $discriminator[userId?]
 
 ## Parameters
 
-| Field   | Type                                                                                                | Description                                                      | Required |
-| ------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | -------- |
-| userId? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the user you want the discriminator to be returned of. | false    |
+| Field   | Type                                                                                              | Description                                                      | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | -------- |
+| userId? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the user you want the discriminator to be returned of. | false    |
 
 ## Example(s)
 
@@ -28,6 +28,6 @@ client.command({
   code: `
   $discriminator[$authorID] // your discriminator
   $discriminator[$clientID] // the bot's discriminator
-  `,
+  `
 });
 ```

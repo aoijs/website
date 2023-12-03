@@ -27,7 +27,7 @@ client.command({
   code: `
   $arrayIncludes[array;Leref]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `,
+  `
   // It will return "false" as it doesn't contain the word "Leref".
 });
 ```
@@ -38,7 +38,7 @@ client.command({
   code: `
   $arrayIncludes[array;akarui]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `,
+  `
   // It will return "true" as it contains the word "akarui".
 });
 ```

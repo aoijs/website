@@ -16,7 +16,7 @@ $cloneChannel[channelID;name;returnID?]
 
 | Field     | Type                                                                                                | Description                                                         | Required |
 | --------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | :------: |
-| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the channel which is to clone.                            |   true   |
+| channelID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The ID of the channel which is to clone.                            |   true   |
 | name      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The new name of the cloned channel.                                 |   true   |
 | returnID? | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | If the function should return the ID of the newly created channnel. |  false   |
 
@@ -31,6 +31,6 @@ client.command({
   name: "cloneChannel",
   code: `
   $cloneChannel[$channelID;new channel;false]
-  `,
+  `
 });
 ```

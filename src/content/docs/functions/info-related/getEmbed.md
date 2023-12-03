@@ -14,12 +14,12 @@ $getEmbed[channelID?;messageID?;index?;option?]
 
 ## Parameters
 
-| Field     | Type                                                                                                | Description                                        | Required |
-| --------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------- | :------: |
-| channelID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | ID of the channel where the message is located in. |   true   |
-| messageID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the message that has an embed.           |   true   |
-| index     | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The index of the embed.                            |   true   |
-| option    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The option to fetch.                               |   true   |
+| Field     | Type                                                                                              | Description                                        | Required |
+| --------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------- | :------: |
+| channelID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the channel where the message is located in. |   true   |
+| messageID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the message that has an embed.           |   true   |
+| index     | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The index of the embed.                            |   true   |
+| option    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The option to fetch.                               |   true   |
 
 <details>
   <summary><h3> Options </h3></summary>
@@ -28,7 +28,7 @@ $getEmbed[channelID?;messageID?;index?;option?]
 | ---------------------------------- | -------------------------------- |
 | title                              | Title of the embed.              |
 | description                        | Description of the embed.        |
-| URL                                | The URL in the title.            |
+| url                                | The URL in the title.            |
 | color                              | Color of the embed.              |
 | timestamp                          | Timestamp located in the footer. |
 | field<index\>.name / field1.name   | Field title.                     |
@@ -36,8 +36,10 @@ $getEmbed[channelID?;messageID?;index?;option?]
 | thumbnail                          | Thumbnail (image top right).     |
 | image                              | Large image at the bottom.       |
 | video                              | Video/GIF.                       |
-| author                             | Author, above title field.       |
-| footer                             | Footer.                          |
+| authorname                         | Author content, above title field.                             |
+| authorurl                          | Author Icon Url, above title field besides author field.       |
+| footertext                         | Footer text.                     |
+| footericon                         | Footer icon, besides footer.     |
 | files                              | Attached files.                  |
 | createdAt                          | Creation date of the embed.      |
 | hexColor                           | Hex color of the embed.          |
@@ -54,6 +56,6 @@ client.command({
   name: "getEmbed",
   code: `
 $getEmbed[$channelID;messageID;1;description] 
-  `, // make sure to replace messageID with the actual message ID
+  ` // make sure to replace messageID with the actual message ID
 });
 ```

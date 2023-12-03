@@ -29,6 +29,6 @@ client.command({
   code: `
   $editTextSplitElement[3;Goodbye]
   $textSplit[Hello, Bye, Cya;, ]
-  `,
+  `
 });
 ```

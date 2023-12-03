@@ -14,9 +14,9 @@ $clientLeave[guildID?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description                                     | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------- | :------: |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of the guild which your bot shall leave. |  false   |
+| Field    | Type                                                                                              | Description                                     | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------- | :------: |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the guild which your bot shall leave. |  false   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   $clientLeave[$guildID]
   $wait[2s]
   $sendMessage[Bye, I'm leaving!]
-  `,
+  `
 });
 ```

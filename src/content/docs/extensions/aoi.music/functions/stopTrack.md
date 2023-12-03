@@ -21,6 +21,6 @@ client.command({
   name: "stopTrack",
   code: `
     $stopTrack
-  `,
+  `
 });
 ```

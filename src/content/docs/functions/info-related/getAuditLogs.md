@@ -14,13 +14,13 @@ $getAuditLogs[guildID;userID?;limit?;action?;format?]
 
 ## Parameters
 
-| Field   | Type                                                                                                | Description                                            | Required |
-| ------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | :------: |
-| guildID | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The ID of a specific guild.                            |   true   |
-| userID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The user who executed the action stated in audit logs. |  false   |
-| limit?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The maximum of audit logs it will return.              |  false   |
-| action? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | The action that was executed.                          |  false   |
-| format? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The format to return the audit logs in.                |  false   |
+| Field   | Type                                                                                              | Description                                            | Required |
+| ------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | :------: |
+| guildID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of a specific guild.                            |   true   |
+| userID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The user who executed the action stated in audit logs. |  false   |
+| limit?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The maximum of audit logs it will return.              |  false   |
+| action? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The action that was executed.                          |  false   |
+| format? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The format to return the audit logs in.                |  false   |
 
 | Format              |                                                                   |
 | ------------------- | ----------------------------------------------------------------- |
@@ -100,6 +100,6 @@ client.command({
   name: "getAuditLogs",
   code: `
   $getAuditLogs[$guildID;$authorID;5;$authorID;12;{executor.username}: {target.id} - {action}]
-  `,
+  `
 });
 ```

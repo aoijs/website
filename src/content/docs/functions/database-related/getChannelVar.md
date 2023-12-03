@@ -14,11 +14,11 @@ $getChannelVar[varname;channelID?;table?]
 
 ## Parameters
 
-| Field      | Type                                                                                                | Description     | Required |
-| ---------- | --------------------------------------------------------------------------------------------------- | --------------- | :------: |
-| varname    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Variable name.  |   true   |
-| channelID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | Channel ID.     |  false   |
-| table?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Variable table. |  false   |
+| Field      | Type                                                                                              | Description     | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | --------------- | :------: |
+| varname    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable name.  |   true   |
+| channelID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Channel ID.     |  false   |
+| table?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable table. |  false   |
 
 ## Example(s)
 
@@ -29,6 +29,6 @@ client.command({
   name: "getChannelVar",
   code: `
     $getChannelVar[Example;$channelID;main]
-    `,
+    `
 });
 ```

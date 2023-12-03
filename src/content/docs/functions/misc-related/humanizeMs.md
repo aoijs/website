@@ -27,6 +27,6 @@ client.command({
   name: "humanizeMs",
   code: `
     $humanizeMs[16782516189]
-    `,
+    `
 });
 ```

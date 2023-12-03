@@ -28,6 +28,6 @@ client.command({
   name: "findChannel",
   code: `
   $findChannel[⊂・⊃﹐aoi_v5;false]
-  `,
+  `
 });
 ```

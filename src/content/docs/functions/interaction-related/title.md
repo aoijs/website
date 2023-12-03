@@ -29,6 +29,6 @@ client.command({
   name: "title",
   code: `
    $title[Hello!;https://aoi.js.org]
-   $description[The title contains a hyperlink..]`,
+   $description[The title contains a hyperlink..]`
 });
 ```

@@ -21,6 +21,6 @@ client.command({
   name: "getCurrentTrackDuration",
   code: `
     $getCurrentTrackDuration
-  `,
+  `
 });
 ```
