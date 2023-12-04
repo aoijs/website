@@ -55,12 +55,10 @@ const client = new AoiClient({
   database: {
     type: "aoi.db",
     db: require("@akarui/aoi.db"),
+    dbType: "KeyValue",
     tables: ["main"],
-    path: "./database/",
-    extraOptions: {
-      dbType: "KeyValue",
-    },
-  },
+    securityKey: "a-32-characters-long-string-here",
+  }
 });
 
 // Ping Command Example
@@ -73,7 +71,7 @@ client.command({
 <LinkCard
   title="Getting Started with Command Handlers"
   description="Learn how to handle commands clean and correct."
-  href="/guides/other/handler"
+  href="/guides/other/commandhandler"
 />
 
 <LinkCard
