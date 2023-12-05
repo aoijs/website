@@ -22,12 +22,12 @@ $newRole[option]
 ## Options
 | Field  | Type                                                                                              | Description |
 | ------ | ---- | ------ |
-| createdAt | String | Returns created date |
-| hexColor | String | Returns hex color |
-| members | String | Returns members having the role |
-| createdTimestamp | Number | Returns created timestamp |
-| memberCount | Number | Returns number of members having the role |
-| managed | Boolean | Returns if role is managed or not |
-| position | Number | Returns role position |
-| permissions | String | Returns permissions of role |
+| createdAt | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns created date |
+| hexColor | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns hex color |
+| members | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns members having the role |
+| createdTimestamp | [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns created timestamp |
+| memberCount | [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns number of members having the role |
+| managed | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Returns if role is managed or not |
+| position | [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns role position |
+| permissions | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns permissions of role |
 
