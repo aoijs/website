@@ -22,5 +22,15 @@ $newRole[option]
 ## Options
 | Field  | Type                                                                                              | Description |
 | ------ | ---- | ------ |
-
+| createdAt | 
+| hexColor |
+| members |
+| createdTimestamp |
+| memberCount |
+| managed |
+| position |
+| permissions |
+| tagsbotid |
+| tagsintegrationId | 
+| tagspremiumSubsciberRole | 
 
