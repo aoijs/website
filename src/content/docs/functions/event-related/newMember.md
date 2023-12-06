@@ -19,7 +19,7 @@ $newMember[option]
 | ------ | ------------------------------------------------------------------------------------------------- | ------------------- | :------: |
 | option | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Option to retrieve. |   true   |
 
-### Options
+## Options
 
 | Field         | Type                                                                                              | Description                      |
 | ------------- | ------------------------------------------------------------------------------------------------- | -------------------------------- |
@@ -29,6 +29,14 @@ $newMember[option]
 | permissions   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns User permissions.        |
 | nick          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns User nickname.           |
 | highestRoleID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns Higher role ID user has. |
+| joinedStamp | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns user joined timestamp. |
+| newPermissions | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns new permissions added to user. |
+| addedRoles | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns new roles added to user. |
+| bannable | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Returns if user is bannable. |
+| kickable | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Returns if user is kickable. |
+| manageable | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Returns if user is manageable. |
+
+
 
 ## Example(s)
 
@@ -49,5 +57,3 @@ client.memberUpdateCommand({
 ```
 
 - This code will execute when **member updates their guild nickname or discord username**
-
----
