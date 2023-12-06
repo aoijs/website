@@ -23,5 +23,5 @@ $newState[option]
 | Options | Type | Description |
 | ----- | ---- | ----- |
 | deaf | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Returns whether this member is either self-deafened or server-deafened |
-| mute | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Returns whether this member is either self-muted or server-muted |
+| mute | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Returns whether this member is either self-muted or server-muted |
 | guildId | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns guild ID | 
