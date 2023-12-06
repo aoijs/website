@@ -21,6 +21,7 @@ $newUser[option]
 ## Options
 
 | Option | Type | Description |
+| ---- | ---- | ----- | 
 | name | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns user name |
 | tag | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns user tag |
 | banner | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns user banner hash | 
