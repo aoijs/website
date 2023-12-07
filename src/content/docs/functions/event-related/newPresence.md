@@ -22,7 +22,7 @@ $newPresence[option]
 
 | Option | Type | Description |
 | ----- | ----- | ----- |
-| activites | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The activities of this presencem |
+| activities | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The activities of this presencem |
 | webStatus | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The status of this presence on webm |
 | desktopStatus | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The status of this presence on desktop. |
 | mobileStatus | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The status of this presence on mobile. |
