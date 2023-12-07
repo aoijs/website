@@ -22,9 +22,9 @@ $newPresence[option]
 
 | Option | Type | Description |
 | ----- | ----- | ----- |
-| activites | [string]() | The activities of this presencem |
-| webStatus | [string]() | The status of this presence on webm |
-| desktopStatus | [string]() | The status of this presence on desktop. |
-| mobileStatus | [string]() | The status of this presence on mobile. |
-| guildId | [number]() | The guild ID of this presence. |
-| authorId | [number]() | The author ID of this presence. |
+| activites | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The activities of this presencem |
+| webStatus | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The status of this presence on webm |
+| desktopStatus | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The status of this presence on desktop. |
+| mobileStatus | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The status of this presence on mobile. |
+| guildId | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The guild ID of this presence. |
+| authorId | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The author ID of this presence. |
