@@ -15,5 +15,17 @@ $oldUser[option]
 ## Parameters
 
 | Field  | Type                                                                                              | Description                                                                                                                                                                                                                       | Required |
-| ------ | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------: |
-| option | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Option to retrieve <br /> 1. **name** <br /> 2. **tag** <br /> 3. **banner** <br /> 4. **bannerURL** <br /> 5. **createdAt** <br /> 6. **avatarURL** <br /> 7. **accentColor** <br /> 8. **flags** <br /> 9. **createdTimestamp** |   true   |
+| ------ | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+| option | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Option to retrieve | true |
+
+## Options
+
+| Option | Type | Description |
+| ---- | ---- | ----- | 
+| name | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns user name |
+| tag | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns user tag |
+| banner | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns user banner hash | 
+| bannerURL | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns user banner URL |
+| createdAt | [date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) | Returns the time when user was created |
+| createdTimestamp | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns user created timestamp |
+| accentColor | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns base 10 accent color of user's banner |
