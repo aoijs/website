@@ -8,6 +8,7 @@ id: handler
 
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [Why should you use Command Handler?](#why-should-you-use-command-handler)
   - [Starting off with modifying your main file](#starting-off-with-modifying-your-main-file)
   - [Setting everything up with folders and files](#setting-everything-up-with-folders-and-files)
@@ -26,7 +27,7 @@ Storing your commands in your main file may seem fine, but after a certain amoun
 
 In this step we'll take a look at your main file also known as `index.js`. We add `LoadCommands` in order for the bot to understand where our files are.
 
-```javascript title="index.js"
+```diff lang="js" title="index.js"
 const { AoiClient } = require("aoi.js");
 
 const client = new AoiClient({
@@ -45,7 +46,7 @@ const client = new AoiClient({
   },
 });
 
-client.loadCommands("./commands/", true); // you can change this to any directory you want
++ client.loadCommands("./commands/", true); // you can change this to any directory you want
 ```
 
 ### Setting everything up with folders and files
@@ -131,7 +132,7 @@ $log[Someone joined a server!]`
 
 Ensure you have the required intents including `onJoin` in the `events` array or else this won't work!
 
-> **Required intents: `GuildMembers (p)`**
+> Required intents: `GuildMembers`
 
 ### Updating your commands
 

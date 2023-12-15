@@ -27,8 +27,8 @@ This will limit the command to bot developers only:
 client.command({
   name: "onlyForIDs",
   code: `
-    Ok.
-    $onlyForIDs[$botOwnerID;You can't use that command!]
+    You can use this!
+    $onlyForIDs[$clientOwnerIds;You can't use that command!]
     `
 });
 ```

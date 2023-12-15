@@ -38,7 +38,7 @@ const event = new CustomEvent(client); // Creates a new instance of the CustomEv
 event.command({
   listen: "eventName", // This should represent the name of the event, in this case it is "eventName".
   code: `
-        code
+    code
     ` // The code of the event that will be triggered once the event is emitted.
 });
 

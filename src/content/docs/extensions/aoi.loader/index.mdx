@@ -38,9 +38,9 @@ npm install aoi.loader
 
 ---
 
-```js title="index.js"
-const { Loader } = require("aoi.loader");
+```diff lang="js" title="index.js"
 const { AoiClient } = require("aoi.js");
++ const { Loader } = require("aoi.loader");
 
 const client = new AoiClient({
   database: {
@@ -59,7 +59,7 @@ const client = new AoiClient({
 });
 
 // Loading commands with custom loader.
-new Loader(client).load("./commands").then(() => console.log("Source loaded!"));
++ new Loader(client).load("./commands").then(() => console.log("Source loaded!"));
 ```
 
 ## Commands

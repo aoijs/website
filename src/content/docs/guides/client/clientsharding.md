@@ -116,10 +116,10 @@ Running `node index.js` will no longer work if you want to have sharding, use `n
 
 ## Sharding Related Functions
 
-- [`$shard[option]`](../../functions/event-related/shard.md)
-- [`$guildShard[option?;sep?;shardId]`](../../functions/guild-related/guildShard.md)
-- [`$guildShardID`](../../functions/guild-related/guildShardID.md)
-- [`$guildShardPing[shardId?]`](../../functions/guild-related/guildShardPing.md)
-- [`$killShard[shardId]`](../../functions/interaction-related/killShard.md)
-- [`$respawnAllShards`](../../functions/interaction-related/respawnAllShards.md)
-- [`$spawnShard[amount]`](../../functions/interaction-related/spawnShard.md)
+- [`$shard[option]`](/functions/event-related/shard)
+- [`$guildShard[option?;sep?;shardId]`](/functions/guild-related/guildShard)
+- [`$guildShardID`](/functions/guild-related/guildShardID)
+- [`$guildShardPing[shardId?]`](/functions/guild-related/guildShardPing)
+- [`$killShard[shardId]`](/functions/interaction-related/killShard)
+- [`$respawnAllShards`](/functions/interaction-related/respawnAllShards)
+- [`$spawnShard[amount]`](/functions/interaction-related/spawnShard)

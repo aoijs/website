@@ -25,7 +25,7 @@ The `client.variables()` function takes an object as an argument, where each pro
 
 For example:
 
-```js title="index.js"
+```js {8} title="index.js"
 client.variables(
   {
     blacklisted: false,

@@ -26,7 +26,7 @@ $modifyChannelPerms[channelID;roruID;...perms]
 | `+` | Allow a specific permission to someone or something. |
 | `/` | Reset a specific permission to its default state.    |
 
-You can find all permissions **[here](../../../guides/client/clientpermissions/)**.
+You can find all permissions **[here](/guides/client/clientpermissions/)**.
 
 ## Example(s)
 

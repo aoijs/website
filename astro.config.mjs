@@ -1,7 +1,8 @@
 import { defineConfig } from "astro/config";
 import { rehypeHeadingIds } from "@astrojs/markdown-remark";
-import starlight from "@astrojs/starlight";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import starlightLinksValidator from "starlight-links-validator";
+import starlight from "@astrojs/starlight";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 
@@ -9,6 +10,7 @@ export default defineConfig({
   site: "https://aoi.js.org",
   integrations: [
     starlight({
+      plugins: [starlightLinksValidator()],
       title: "aoi.js",
       favicon: "/favicon.png",
       logo: {
@@ -43,7 +45,7 @@ export default defineConfig({
   gtag('js', new Date());
 
   gtag('config', 'G-GMH27HJZGY');
-      `
+      `,
         },
         {
           tag: "script",

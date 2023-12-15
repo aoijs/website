@@ -21,16 +21,13 @@ $replaceTextWithRegex[text;reg;flags;newText]
 | flags   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | [Flags](#flags).                  |   true   |
 | newText | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The text that will replace `reg`. |  false   |
 
-<details open>
-  <summary><h2> Flags </h2></summary>
+### Flags
 
 | Flags |                                        |
 | :---: | -------------------------------------- |
 |   g   | Replace all matches (case-sensitive)   |
 |   m   | Multiline matching                     |
 |   i   | Replace all matches (case-insensitive) |
-
-</details>
 
 ## Example(s)
 

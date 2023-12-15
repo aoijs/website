@@ -56,7 +56,7 @@ bot.functionManager.createFunction({
 });
 ```
 
-```js
+```js {10-13}
 bot.functionManager.createFunction({
   name: "$function",
   type: "djs",

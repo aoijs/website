@@ -38,9 +38,10 @@ To get started with aoi.panel, follow these steps:
 
 ---
 
-```javascript title="index.js"
+```diff lang="js" title="index.js"
 const { AoiClient } = require("aoi.js");
-const { Panel } = require("@akarui/aoi.panel");
++ const { Panel } = require("@akarui/aoi.panel");
+
 const client = new AoiClient({
   token: "DISCORD BOT TOKEN",
   prefix: "DISCORD BOT PREFIX",
@@ -63,17 +64,17 @@ client.command({
   code: `Pong! $pingms`
 });
 
-const panel = new Panel({
-  port: 3000,
-  client: bot,
-});
++ const panel = new Panel({
++   port: 3000,
++   client: client,
++ });
 
-panel.loadAPI({
-  auth: "Authentication key here (random string)", // no spaces, keep it only alphanumeric...
-});
++ panel.loadAPI({
++   auth: "Authentication key here (random string)", // no spaces, keep it only alphanumeric...
++ });
 
-panel.loadGUI({
-  username: ["username 1", "username 2"],
-  password: ["Password 1", "Password 2"],
-});
++ panel.loadGUI({
++   username: ["username 1", "username 2"],
++   password: ["Password 1", "Password 2"],
++ });
 ```

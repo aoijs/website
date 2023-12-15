@@ -38,9 +38,9 @@ To get started with aoi.js-library, follow these steps:
 
 ---
 
-```javascript title="index.js"
+```diff lang="js" title="index.js"
 const { AoiClient } = require("aoi.js");
-const { PluginManager } = require("aoi.js-library");
++ const { PluginManager } = require("aoi.js-library");
 
 const client = new AoiClient({
   token: "DISCORD BOT TOKEN",
@@ -64,7 +64,7 @@ client.command({
   code: `Pong! $pingms`
 });
 
-new PluginManager(client).loadPlugins("default/comment"); //Loads the from the default folder ($comment function)
++ new PluginManager(client).loadPlugins("default/comment"); //Loads the from the default folder ($comment function)
 ```
 
 ## Plugin Class

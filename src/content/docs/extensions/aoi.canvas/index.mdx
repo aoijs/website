@@ -47,10 +47,9 @@ npm install aoi.canvas
 
 ---
 
-```js
-//index.js
-const { AoiClient, Util } = require("aoi.js");
-const aoicanvas = require("aoi.canvas");
+```diff lang="js" title="index.js"
++ const { AoiClient, Util } = require("aoi.js");
++ const aoicanvas = require("aoi.canvas");
 
 const client = new AoiClient({
   token: "Discord Bot Token",
@@ -68,12 +67,12 @@ const client = new AoiClient({
   },
 });
 
-aoicanvas.load({
-  client: client, // the aoi.js bot
-  Util: Util, // To make aoi.canvas parser work. ($sendMessage, $channelSendMessage, $interactionReply, etc)
-  DownloadFolder: "./aoicanvas/", // download folder for $downloadCanvas and $downloadGIF
-  ErrorsType: "console" // errors type (console/message)
-});
++ aoicanvas.load({
++   client: client, // the aoi.js bot
++   Util: Util, // To make aoi.canvas parser work. ($sendMessage, $channelSendMessage, $interactionReply, etc)
++   DownloadFolder: "./aoicanvas/", // download folder for $downloadCanvas and $downloadGIF
++   ErrorsType: "console" // errors type (console/message)
++ });
 
 // Ping Command Example
 client.command({

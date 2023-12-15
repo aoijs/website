@@ -43,11 +43,10 @@ const panel = new Panel({
 
 #### Parameters
 
-| Name                                        | Description                        | type                                                                                              | required                 | Example |
-| ------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------ | ------- |
-| `port`                                      | Port on which the panel is hosted. | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | `false`. Default: `3000` | `8000`  |
-| `client`                                    | Your aoi.js or discord.js client.  | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |
-| JavaScript/Reference/Global_Objects/Object) | `true`                             | `bot`                                                                                             |
+| Name     | Description                        | type                                                                                              | required                 | Example |
+| -------- | ---------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------ | ------- |
+| `port`   | Port on which the panel is hosted. | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | `false`. Default: `3000` | `8000`  |
+| `client` | Your aoi.js or discord.js client.  | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) | `true`                   | `bot`   |
 
 ### Functions
 
@@ -73,16 +72,16 @@ panel.loadAPI({
 
 2. `loadGUI` : Will load GUI of panel. This is optional and if you want to design your own GUI with the help of [aoi.panel API](https://github.com/AkaruiDevelopment/aoi.panel/tree/v0.0.5/docs/api.md), you do not need to call this function.
 
-| Name       | Description                | type                                                                                                             | required | Example                                                                         |
-| ---------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------- |
-| `username` | Username to login to panel | String \| [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)array | `true`   | `Bumblebee-3` or `["Bumblebee-3", "Leref", "Ayaka"]`                            |
-| `password` | Password to login to panel | String \| [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)array | `true`   | `Bumblebee-3` or `["NeverGonnGiveYouUp<3", "stillFerel", "UserSatoshiGuy2023"]` |
+| Name       | Description                | type                                                                                              | required | Example                                                                         |
+| ---------- | -------------------------- | ------------------------------------------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------- |
+| `username` | Username to login to panel | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | `true`   | `Bumblebee-3` or `["Bumblebee-3", "Leref", "Ayaka"]`                            |
+| `password` | Password to login to panel | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | `true`   | `Bumblebee-3` or `["NeverGonnGiveYouUp<3", "stillFerel", "UserSatoshiGuy2023"]` |
 
 The login credentials must be stored in `env` and it must not fall in wrong/untrustworthy hands. (Leaking of credentials could be as fatal as leaking of your discord bot token!)
 
 ---
 
-:::warning["Experienced Users]
+:::warning[Experienced Users]
 We don't offer support nor endorse the use of `express.js`. Please use this at your own discretion.
 :::
 

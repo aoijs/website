@@ -49,15 +49,9 @@ npm install @akarui/aoi.music ffmpeg-static opusscript
 
 ---
 
-```javascript title="index.js"
+```diff lang="js" title="index.js"
 const { AoiClient } = require("aoi.js");
-const {
-  AoiVoice,
-  PlayerEvents,
-  PluginName,
-  Cacher,
-  Filter,
-} = require("@akarui/aoi.music");
++ const { AoiVoice, PlayerEvents, PluginName, Cacher, Filter } = require("@akarui/aoi.music");
 
 const client = new AoiClient({
   token: "Discord Bot Token",
@@ -75,16 +69,16 @@ const client = new AoiClient({
   },
 });
 
-const voice = new AoiVoice(bot, {
-  searchOptions: {
-    soundcloudClientId: "Soundcloud ID", // optional
-    youtubegl: "US",
-  },
-  requestOptions: {
-    offsetTimeout: 0,
-    soundcloudLikeTrackLimit: 200,
-  },
-});
++ const voice = new AoiVoice(bot, {
++  searchOptions: {
++    soundcloudClientId: "Soundcloud ID", // optional
++    youtubegl: "US",
++  },
++  requestOptions: {
++    offsetTimeout: 0,
++    soundcloudLikeTrackLimit: 200,
++  },
++ });
 
 // Command Example (ping)
 client.command({
@@ -93,13 +87,13 @@ client.command({
 });
 
 // optional (cacher / filter)
-voice.addPlugin(PluginName.Cacher, new Cacher("memory" /* or "disk" */));
-voice.addPlugin(
-  PluginName.Filter,
-  new Filter({
-    filterFromStart: false,
-  }),
-);
++ voice.addPlugin(PluginName.Cacher, new Cacher("memory" /* or "disk" */));
++ voice.addPlugin(
++  PluginName.Filter,
++   new Filter({
++     filterFromStart: false,
++  }),
++ );
 
-voice.bindExecutor(client.functionManager.interpreter); // needed for events
++ voice.bindExecutor(client.functionManager.interpreter); // needed for events
 ```
