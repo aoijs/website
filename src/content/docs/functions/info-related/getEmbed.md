@@ -24,26 +24,26 @@ $getEmbed[channelID?;messageID?;index?;option?]
 <details>
   <summary><h3> Options </h3></summary>
 
-| Type                               | Description                      |
-| ---------------------------------- | -------------------------------- |
-| title                              | Title of the embed.              |
-| description                        | Description of the embed.        |
-| url                                | The URL in the title.            |
-| color                              | Color of the embed.              |
-| timestamp                          | Timestamp located in the footer. |
-| field<index\>.name / field1.name   | Field title.                     |
-| field<index\>.value / field1.value | Field description.               |
-| thumbnail                          | Thumbnail (image top right).     |
-| image                              | Large image at the bottom.       |
-| video                              | Video/GIF.                       |
-| authorname                         | Author content, above title field.                             |
-| authorurl                          | Author Icon Url, above title field besides author field.       |
-| footertext                         | Footer text.                     |
-| footericon                         | Footer icon, besides footer.     |
-| files                              | Attached files.                  |
-| createdAt                          | Creation date of the embed.      |
-| hexColor                           | Hex color of the embed.          |
-| length                             | Length of the embed.             |
+| Type                               | Description                                              |
+| ---------------------------------- | -------------------------------------------------------- |
+| title                              | Title of the embed.                                      |
+| description                        | Description of the embed.                                |
+| url                                | The URL in the title.                                    |
+| color                              | Color of the embed.                                      |
+| timestamp                          | Timestamp located in the footer.                         |
+| field<index\>.name / field1.name   | Field title.                                             |
+| field<index\>.value / field1.value | Field description.                                       |
+| thumbnail                          | Thumbnail (image top right).                             |
+| image                              | Large image at the bottom.                               |
+| video                              | Video/GIF.                                               |
+| authorname                         | Author content, above title field.                       |
+| authorurl                          | Author Icon Url, above title field besides author field. |
+| footertext                         | Footer text.                                             |
+| footericon                         | Footer icon, besides footer.                             |
+| files                              | Attached files.                                          |
+| createdAt                          | Creation date of the embed.                              |
+| hexColor                           | Hex color of the embed.                                  |
+| length                             | Length of the embed.                                     |
 
 </details>
 

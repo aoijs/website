@@ -26,20 +26,67 @@ $editButton[index;oldCustomId;newCustomId;label;style;disabled?;emoji?;messageId
 | messageId?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The Id of the message.                                                                                                   |   true   |
 | channelId?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The channel Id of where the message is located.                                                                          |   true   |
 
-<details open>
-  <summary><h3> Button Types </h3></summary>
-
-| Name          | Value | Color                    |                                                                                                                   |
-| ------------- | ----- | ------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| Primary       | 1     | blurple                  | `$editButton[1;customID;newCustomID;Example Button!;primary;customID;false]`                                      |
-| Secondary     | 2     | grey                     | `$editButton[1;customID;newCustomID;Example Button!;secondary;customID;false]`                                    |
-| Success       | 3     | green                    | `$editButton[1;customID;newCustomID;Example Button!;success;customID;false]`                                      |
-| Danger        | 4     | red                      | `$editButton[1;customID;newCustomID;Example Button!;danger;customID;false]`                                       |
-| Link          | 5     | grey, navigates to a URL | `$editButton[1;customID;newCustomID;Example Button!;link;https://discord.gg;false]`                               |
-| Custom Emoji  | any   | any                      | `$editButton[1;customID;newCustomID;Example Button!;link;customID;false;emojiName,emojiID,animated (true/false)]` |
-| Unicode Emoji | any   | any                      | `$editButton[1;customID;newCustomID;Example Button!;link;customID;false;😀]`                                      |
-
-</details>
+<div class="details">
+  <details open>
+    <summary><h3>Button Types</h3></summary>
+  </details>
+  <div class="content">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Value</th>
+          <th>Color</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Primary</td>
+          <td>1</td>
+          <td>blurple</td>
+          <td><code>$addButton[1;Example Button!;primary;customID;false]</code></td>
+        </tr>
+        <tr>
+          <td>Secondary</td>
+          <td>2</td>
+          <td>grey</td>
+          <td><code>$addButton[1;Example Button!;secondary;customID;false]</code></td>
+        </tr>
+        <tr>
+          <td>Success</td>
+          <td>3</td>
+          <td>green</td>
+          <td><code>$addButton[1;Example Button!;success;customID;false]</code></td>
+        </tr>
+        <tr>
+          <td>Danger</td>
+          <td>4</td>
+          <td>red</td>
+          <td><code>$addButton[1;Example Button!;danger;customID;false]</code></td>
+        </tr>
+        <tr>
+          <td>Link</td>
+          <td>5</td>
+          <td>grey, navigates to a URL</td>
+          <td><code>$addButton[1;Example Button!;link;https://discord.gg;false]</code></td>
+        </tr>
+        <tr>
+          <td>Custom Emoji</td>
+          <td>any</td>
+          <td>any</td>
+          <td><code>$addButton[1;Example Button!;link;customID;false;emojiName,emojiID,animated (true/false)]</code></td>
+        </tr>
+        <tr>
+          <td>Unicode Emoji</td>
+          <td>any</td>
+          <td>any</td>
+          <td><code>$addButton[1;Example Button!;link;customID;false;😀]</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
 ## Example(s)
 

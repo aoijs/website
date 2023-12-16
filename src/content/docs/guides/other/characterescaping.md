@@ -32,7 +32,7 @@ Character escaping is typically used in the following situations:
 The following table shows some commonly used escape sequences:
 
 | CHARACTER  | ESCAPED           | ALTERNATIVE |
-| ---------- | ----------------- | ----------- | --- | --- |
+| ---------- | ----------------- | ----------- |
 | `[`        | `#RIGHT#`         | `\[`        |
 | `]`        | `#LEFT#`          | `\]`        |
 | `;`        | `#SEMI#`          | `\;`        |
@@ -43,9 +43,9 @@ The following table shows some commonly used escape sequences:
 | `=`        | `#EQUAL#`         | `\=`        |
 | `{`        | `#RIGHT_BRACKET#` | `\{`        |
 | `}`        | `#LEFT_BRACKET#`  | `\}`        |
-| ``        | `#COMMA#`         |             |
+| `,`        | `#COMMA#`         |             |
 | `&&`       | `#AND#`           | `\&\& `     |
-| `\|\|`     | `#OR#`            | `\\         | \\  | `   |
+| `\|\|`     | `#OR#`            | `\\\`       |
 | `NEW LINE` |                   | `\n`        |
 
 ## Examples

@@ -23,8 +23,7 @@ $createApplicationCommand[guildID/global;name;description;defaultPermission;type
 | type?              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | The application command type. (slash/user/message)                          |  false   |
 | options?           | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | Application command options.                                                |  false   |
 
-<details>
-  <summary><h3> Application Command Option Type </h3></summary>
+### Application Command Option Type
 
 | NAME              | ID  | NOTE                                                                                         |
 | ----------------- | --- | -------------------------------------------------------------------------------------------- |
@@ -40,9 +39,7 @@ $createApplicationCommand[guildID/global;name;description;defaultPermission;type
 | NUMBER            | 10  | Any double between -2^53 and 2^53                                                            |
 | ATTACHMENT        | 11  | [attachment](https://discord.com/developers/docs/resources/channel#attachment-object) object |
 
-**You can find more information in the [official documentation of Discord's API](https://discord.com/developers/docs/interactions/application-commands#application-command-object-application-command-option-type).**
-
-</details>
+> You can find more information in the [official documentation of Discord's API](https://discord.com/developers/docs/interactions/application-commands#application-command-object-application-command-option-type).
 
 ## Example(s)
 

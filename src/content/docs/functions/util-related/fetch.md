@@ -20,8 +20,7 @@ $fetch[method;query;...properties]
 | query         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Input for the used method.         |   true   |
 | ...properties | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Sub properties of query to return. |  false   |
 
-<details>
-  <summary><h3> Methods </h3></summary>
+### Methods
 
 | Methods             |
 | ------------------- |
@@ -38,8 +37,6 @@ $fetch[method;query;...properties]
 | sticker             |
 | guildCommand        |
 | default             |
-
-</details>
 
 ## Example(s)
 

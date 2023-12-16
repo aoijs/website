@@ -18,8 +18,7 @@ $disableMentionType[type]
 | ----- | ------------------------------------------------------------------------------------------------- | ------------------------------------ | :------: |
 | type  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Type of mention you want to disable. |   true   |
 
-<details>
-  <summary> <h2> Available Types </h2></summary>
+### Available Types
 
 | Type     | Description                         |
 | -------- | ----------------------------------- |
@@ -27,8 +26,6 @@ $disableMentionType[type]
 | users    | All user mentions.                  |
 | roles    | All role mentions.                  |
 | all      | Roles, users and any other mention. |
-
-</details>
 
 ## Example(s)
 

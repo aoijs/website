@@ -18,8 +18,7 @@ $mentionType[content]
 | ------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------ | :------: |
 | content | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The mention whose mention type will be returned. |   true   |
 
-<details>
-  <summary> <h3> Mention Types </h3></summary>
+### Mention Types
 
 | Type     | Description                       |
 | -------- | --------------------------------- |
@@ -27,8 +26,6 @@ $mentionType[content]
 | users    | All user mentions.                |
 | roles    | All role mentions.                |
 | all      | Everything listed above.          |
-
-</details>
 
 ## Example(s)
 

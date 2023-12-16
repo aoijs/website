@@ -20,15 +20,31 @@ $createStageInstance[channelID;topic;type?]
 | topic     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The stage topic which will be displayed. |   true   |
 | type?     | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The stage type. (listed below)           |  false   |
 
-<details open>
-  <summary><h3> Invite Target Types </h3></summary>
-
-| TYPE    | VALUE |
-| ------- | ----- |
-| PUBLIC  | 1     |
-| PRIVATE | 2     |
-
-</details>
+<div class="details">
+  <details open>
+    <summary><h3>Invite Target Types</h3></summary>
+  </details>
+    <div class="content">
+      <table>
+        <thead>
+          <tr>
+            <th>TYPE</th>
+            <th>VALUE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>PUBLIC</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>PRIVATE</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
 
 ## Example(s)
 

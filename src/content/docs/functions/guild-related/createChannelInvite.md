@@ -20,15 +20,33 @@ $createChannelInvite[channelID?;...options]
 | options?                                    | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |
 | JavaScript/Reference/Global_Objects/Object) | Invite options.                                                                                   | false                                               |
 
+<div class="details">
 <details open>
   <summary><h3> Invite Target Types </h3></summary>
-
-| TYPE                 | VALUE |
-| -------------------- | ----- |
-| STREAM               | 1     |
-| EMBEDDED_APPLICATION | 2     |
-
 </details>
+<div class="content">
+
+<table>
+  <thead>
+    <tr>
+      <th>TYPE</th>
+      <th>VALUE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STREAM</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>EMBEDDED_APPLICATION</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+</div>
 
 ## Example(s)
 

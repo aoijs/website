@@ -34,24 +34,60 @@ $editChannel[channelID;name?;type?;position?;topic?;nsfw?;bitrate?;userlimit?;pa
 
 **Note: you can use `$default` to keep the current property.**
 
+<div class="details">
 <details>
-  <summary><h3> Channel Types </h3></summary>
-
-| Channel Type         |                    |
-| -------------------- | ------------------ |
-| Text Channel         | Text               |
-| Voice Channel        | Voice              |
-| Category             | Category           |
-| Stage Channel        | Stage              |
-| Private Thread       | PrivateThread      |
-| Public Thread        | PublicThread       |
-| Forum                | Forum              |
-| Announcement Thread  | AnnouncementThread |
-| Announcement Channel | Announcement       |
-
-Note: all channel types are **case-sensitive**.
-
+  <summary><h3>Channel Types</h3></summary>
 </details>
+  <div class="content">
+    <table>
+      <thead>
+        <tr>
+          <th>Channel Type</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Text Channel</td>
+          <td>Text</td>
+        </tr>
+        <tr>
+          <td>Voice Channel</td>
+          <td>Voice</td>
+        </tr>
+        <tr>
+          <td>Category</td>
+          <td>Category</td>
+        </tr>
+        <tr>
+          <td>Stage Channel</td>
+          <td>Stage</td>
+        </tr>
+        <tr>
+          <td>Private Thread</td>
+          <td>PrivateThread</td>
+        </tr>
+        <tr>
+          <td>Public Thread</td>
+          <td>PublicThread</td>
+        </tr>
+        <tr>
+          <td>Forum</td>
+          <td>Forum</td>
+        </tr>
+        <tr>
+          <td>Announcement Thread</td>
+          <td>AnnouncementThread</td>
+        </tr>
+        <tr>
+          <td>Announcement Channel</td>
+          <td>Announcement</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Note: all channel types are <strong>case-sensitive</strong>.</p>
+  </div>
+</div>
 
 ## Example(s)
 

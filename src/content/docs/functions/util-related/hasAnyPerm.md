@@ -20,8 +20,7 @@ $hasAnyPerm[guildID;userID;...perms]
 | userID   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the user.                                          |  false   |
 | ...perms | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Permissions.                                             |   true   |
 
-<details>
-  <summary> <h3> Discord API Permissions </h3></summary>
+### Discord API Permissions
 
 | Permission              |                                                                 |
 | ----------------------- | --------------------------------------------------------------- |
@@ -67,8 +66,6 @@ $hasAnyPerm[guildID;userID;...perms]
 | sendmessageinthreads    | Permission to send messages in threads                          |
 | startembeddedactivities | Permission to start activities within voice channels            |
 | moderatemembers         | Permission to timeout and remove timeouts from guild members    |
-
-</details>
 
 ## Example(s)
 

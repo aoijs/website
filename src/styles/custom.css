@@ -13,7 +13,7 @@
   --sl-color-black: #181818;
   --blue-hsl: 218, 100%, 83%;
   --overlay-blurple: hsla(var(--blue-hsl), 0.2);
-  --ec-frm-tooltipSuccessFg: var(--sl-color-accent);
+  --ec-frm-tooltipSuccessBg: var(--sl-color-gray-5) !important;
 }
 
 /* Light mode colors. */
@@ -33,7 +33,6 @@
   --blue-hsl: 201, 100%, 34%;
   --overlay-blurple: hsla(var(--blue-hsl), 0.45);
   --sl-hue-accent: 350;
-  --ec-frm-tooltipSuccessFg: var(--sl-color-accent);
 }
 
 code {
@@ -169,4 +168,73 @@ a:where(.linkStyle) {
 
 .split {
   margin-top: 1rem;
+}
+
+/* details */
+.details {
+  border-radius: 5px;
+  border: 1px solid var(--sl-color-hairline);
+}
+
+.details > details {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.details > details::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid var(--sl-color-hairline);
+}
+
+.details > details > summary {
+  display: block;
+  margin-top: 10px;
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+  padding-left: 50px;
+}
+
+.details > details > summary::before {
+  content: "⮞";
+  color: var(--sl-color-hairline);
+  position: absolute;
+  left: 0;
+  margin-left: 20px;
+  transition: transform 0.3s ease;
+}
+
+.details > details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.details > details > summary:focus::before {
+  outline: none;
+}
+
+.details > .content {
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  max-height: 0;
+  overflow: hidden;
+  border: 2px solid transparent;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  border-top: none;
+  transition:
+    max-height 400ms ease-out,
+    border 100ms 400ms linear;
+}
+
+.details > details[open] + .content {
+  max-height: 1750px;
+  transition:
+    max-height 400ms ease-out,
+    border 100ms 400ms linear;
 }

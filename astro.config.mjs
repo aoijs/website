@@ -25,8 +25,9 @@ export default defineConfig({
       },
       customCss: ["./src/styles/custom.css"],
       components: {
-        // Override the default `Search` component.
         Search: "./src/components/Search.astro",
+        Hero: "./src/components/Hero.astro", // doesnt do anything, as starlight doesnt support this (yet)
+        PageSidebar: './src/components/PageSidebar.astro',
       },
       pagefind: false,
       head: [

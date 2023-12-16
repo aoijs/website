@@ -19,8 +19,7 @@ $formatDate[date;format?]
 | date    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The date you want to format.                                     |   true   |
 | format? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The format that will be used to display the date (listed below). |  false   |
 
-<details open>
-  <summary> <h2> Possible formatting </h2></summary>
+### Date Formatting
 
 | Format |                                                            | Returns |
 | ------ | ---------------------------------------------------------- | ------: |
@@ -34,8 +33,6 @@ $formatDate[date;format?]
 | MMMM   | Returns the month fully January, February ...              |  String |
 | YYYY   | Returns year fully, 2020, 2021 ...                         |  Number |
 | YY     | Returns the last two digits of the year, 20, 21 ...        |  Number |
-
-</details>
 
 ## Example(s)
 
