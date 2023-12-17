@@ -9,7 +9,7 @@ id: getMessageVar
 ## Usage
 
 ```php
-$getMessageVar[varname;guildID?;table?]
+$getMessageVar[varname;messageId?;table?]
 ```
 
 ## Parameters
@@ -17,7 +17,7 @@ $getMessageVar[varname;guildID?;table?]
 | Field      | Type                                                                                              | Description     | Required |
 | ---------- | ------------------------------------------------------------------------------------------------- | --------------- | :------: |
 | varname    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable name.  |   true   |
-| messageID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | message ID      |  false   |
+| messageID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Message ID      |  false   |
 | table?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable table. |  false   |
 
 ## Example(s)

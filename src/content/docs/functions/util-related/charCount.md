@@ -38,7 +38,7 @@ This will search for the word matching "e", and return `2` as the character occu
 client.command({
   name: "charCount",
   code: `
-  $charCount[Hello, aoi.js is great!;a]
+  $charCount[Hello, aoi.js is great!;e]
   `
 });
 ```
