@@ -8,9 +8,6 @@ import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
   site: "https://aoi.js.org",
-  experimental: {
-    contentCollectionCache: true,
-  },
   integrations: [
     starlight({
       plugins: [starlightLinksValidator()],
