@@ -7,15 +7,6 @@ next: false
 prev: false
 ---
 
-Aoi.js is a package with simplified and ready-to-use functions for Discord bot developers. It aims to be the easiest package to learn and provides swift and flexible functionality using functions.
-
-### Features
-
-- 600+ Pre-built Functions: aoi.js comes packed with over 600 pre-built functions that empower you to create dynamic and interactive Discord bots with ease.
-- Built-in Custom Local Database: With aoi.js, you get a powerful custom local database out of the box.
-- Extensions for Added Functionality: Enhance your bot's capabilities with aoi.js extensions like aoi.music and aoi.panel. These extensions make it simple to add music playback, interactive panels, and more to your bot.
-- Easy-to-Use and Beginner Friendly: aoi.js boasts a user-friendly syntax that is perfect for beginners. The simple `$` prefix makes it easy to write commands and get your bot up and running quickly.
-
 ## Setup
 
 To get started with aoi.js, follow these steps:
@@ -32,6 +23,14 @@ import { LinkCard } from "@astrojs/starlight/components";
     ```
 
   </TabItem >
+  <TabItem label="pnpm">
+    **NodeJS v20 or higher is required.**
+
+    ```bash
+    pnpm add aoi.js
+    ```
+
+  </TabItem>
   <TabItem label="yarn">
     **NodeJS v20 or higher is required.**
 
@@ -40,11 +39,69 @@ import { LinkCard } from "@astrojs/starlight/components";
     ```
 
   </TabItem>
+    <TabItem label="bun">
+    **NodeJS v20 or higher is required.**
+
+    ```bash
+    bun install aoi.js
+    ```
+
+  </TabItem>
 </Tabs>
 
 ---
 
-```javascript {3-15} title="index.js"
+To get started with aoi.js, note the following
+- You will need an application created from the [Developer Portal](https://discord.com/developers/applications)
+- Make sure all the intents are checked, as some functions require them. If you can't do so then ignore this step.
+- You will need the bot token to run your bot.
+
+### Getting Started
+
+Before we get started, create a new file called `index.js` and follow these steps carefully.
+
+Firstly, we import the `AoiClient` class from aoi.js.
+
+```diff lang="js" title="index.js"
++ const { AoiClient } = require("aoi.js");
+```
+
+Next we add the main part, which will define our bot.
+
+```diff lang="js" title="index.js"
+const { AoiClient } = require("aoi.js");
+
++ const client = new AoiClient({
++  token: "Discord Bot Token",
++  prefix: "Discord Bot Prefix",
++  intents: ["MessageContent", "Guilds", "GuildMessages"],
++  events: ["onMessage", "onInteractionCreate"],
++  database: {
++    type: "aoi.db",
++    db: require("@akarui/aoi.db"),
++    dbType: "KeyValue",
++    tables: ["main"],
++    securityKey: "a-32-characters-long-string-here",
++  }
++ });
+```
+
+The token part is where your Discord Token goes, which you previously copied from the Developer Portal.
+```diff lang="js" title="index.js"
++ token: "Your Discord Bot Token"
+```
+
+The prefix part is where your bot's prefix goes, you can even have multiple prefixes.
+```js {1} {4} title="index.js"
+prefix: "Your Discord Bot Prefix"
+
+// You can also have multiple prefixes
+prefix: ["Your Prefix", "Another Prefix"]
+```
+
+In the end your index.js file should look like the following:
+
+```javascript {1-15} title="index.js"
 const { AoiClient } = require("aoi.js");
 
 const client = new AoiClient({
@@ -60,22 +117,22 @@ const client = new AoiClient({
     securityKey: "a-32-characters-long-string-here",
   }
 });
-
-// Ping Command Example
-client.command({
-  name: "ping",
-  code: `Pong! $pingms`
-});
 ```
 
-<LinkCard
-  title="Getting Started with Command Handlers"
-  description="Learn how to handle commands clean and correct."
-  href="/guides/other/commandhandler"
-/>
+Now we can run our bot, but there isn't any functionality yet.
+
+Continue to the next page to learn how to add commands to your bot.
 
 <LinkCard
-  title="Get started with Client Variables"
-  description="Learn how to use and create Client Variables."
-  href="/guides/other/variables"
+  title="Get started with Commands"
+  description="Learn how to add commands to your bot, and how to handle them correctly."
+  href="/guides/client/clientcommands"
+/>
+
+Already know how to use commands? Continue to the next page to learn how to use events.
+
+<LinkCard
+  title="Getting Started with Events"
+  description="Get started with client events, their functionality and how to correctly implement those."
+  href="/guides/other/events"
 />

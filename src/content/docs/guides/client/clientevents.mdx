@@ -1,0 +1,112 @@
+---
+title: Client Events
+description: This guide covers how to use client events, how to implement them in your code and explains what they do.
+id: events
+---
+
+import { LinkCard } from "@astrojs/starlight/components";
+
+Before we get started, what are events?
+
+An event is an action that occurs as per the user's instruction as input or active and gives the output in response.
+
+Meaning you for example, delete a message in your Discord Server, then your bot can react to it and do something with it.
+
+### Adding Events to your Bot
+
+In this step we'll take a look at how to add events in your main file, commonly known as `index.js`.
+
+```diff lang="js" title="index.js"
+const { AoiClient } = require("aoi.js");
+
+const client = new AoiClient({
+  // our configuration
++ events: ["onMessage", "onInteraction", "onMessageDelete"] // Here we add "onMessageDelete", this will cause the bot to aknowledge the deletion of a message, this pretty much works for every event.
+  // ...
+});
+```
+
+---
+
+So, how do we add events?
+
+It's pretty much the same as with commands.
+
+Normally you would do this for commands, right?
+
+```js
+client.command({
+    name: "ping",
+    code: `My ping is $ping MS!`
+});
+```
+
+Events are no different from commands! We simply add some more properties and rename the "commands" part (properties are the keys such as "code" and "name" in your command which defines something) like this:
+
+```diff lang="js" title="index.js"
+- client.command({
++ client.messageDeleteCommand({
+     name: "ping",
++    channel: "$channelId",
+     code: `My ping is $ping MS!`
+  });
+```
+
+This would send your bot ping every time you delete a message! Awesome right? But let's edit this a bit to be actually useful.
+
+```diff lang="js" title="index.js"
+client.messageDeleteCommand({
+    name: "Event Delete!",
+    channel: "$channelId",
++   code: `You just deleted: $oldMessage` // Old message returns, as the name says, the old or deleted message.
+});
+```
+
+This would send the message which gets deleted to the same channel again, this works with every other event as well, let's try something else.
+
+This time we trigger an event when the bot starts.
+
+```diff lang="js" title="index.js"
+- client.messageDeleteCommand({
++ client.readyCommand({
+    name: "Wakey Wakey",
+-   channel: "$channelId",
+    code: `$log[Hello World!]` // Logs "Hello World" to your console when the client is ready.
+});
+```
+
+That's is, just remove the `on` part from the event, put client.\<event> in your main file and you're ready to go!
+
+## Using Events in Command Handler
+
+This is pretty much the same, we simply add two more properties to the command handler. (properties are keys like "code" and "name" which define something)
+
+```diff lang="js" title="index.js"
+module.exports = [{
+    name: "Delete Event!",
++   type: "messageDelete",
++   channel: "$channelId",
+    code: `Someone just deleted a message! It contained: $oldMessage`
+}]
+```
+
+And another example right below this one:
+
+```diff lang="js" title="index.js"
+module.exports = [{
+    name: "Wakey Wakey",
++   type: "ready",
+    channel: "$channelId",
+    code: `$log[Hello World!]`
+}]
+```
+
+Feeling ready?
+
+Check out all events here:
+
+<LinkCard
+  title="Discord API Events"
+  description="All events you can use in your bots, with examples."
+  href="/guides/other/events"
+/>

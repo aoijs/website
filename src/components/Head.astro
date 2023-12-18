@@ -1,0 +1,24 @@
+---
+import type { Props } from "@astrojs/starlight/props";
+import { ViewTransitions } from "astro:transitions";
+import StarlightHead from "@astrojs/starlight/components/Head.astro";
+
+const { props }: { props: Props } = Astro;
+---
+
+<StarlightHead transition:animate="slide" {...props} />
+<ViewTransitions />
+
+<script>
+  import { isTransitionBeforeSwapEvent, TRANSITION_BEFORE_SWAP } from "astro:transitions/client";
+
+  document.addEventListener(TRANSITION_BEFORE_SWAP, (event) => {
+    if (!isTransitionBeforeSwapEvent(event)) return;
+    const currentPageSearch = document.querySelector("#docsearch");
+    const newPageSearch = event.newDocument.querySelector("#docsearch");
+
+    if (currentPageSearch && newPageSearch) {
+      newPageSearch.replaceWith(currentPageSearch);
+    }
+  });
+</script>

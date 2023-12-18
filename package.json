@@ -8,6 +8,7 @@
     "dev": "astro dev",
     "format": "prettier -w --cache --plugin prettier-plugin-astro .",
     "check": "astro check",
+    "prebuild": "astro build",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "start": "prettier -w --cache --plugin prettier-plugin-astro . && astro build && astro preview"
@@ -21,7 +22,7 @@
     "@astrojs/node": "^7.0.1",
     "@astrojs/react": "^3.0.7",
     "@astrojs/sitemap": "^3.0.3",
-    "@astrojs/starlight": "^0.15.0",
+    "@astrojs/starlight": "^0.15.1",
     "@docsearch/css": "^3.5.2",
     "@docsearch/js": "^3.5.2",
     "@types/react": "^18.2.21",

@@ -1,11 +1,10 @@
 ---
-title: Client Events
-description: This guide will be covering everything you need to know about events and their usage.
-id: events
+title: API Events
+description: This page contains all the events that are available in aoi.js.
+id: clientevents
 ---
 
 <!-- omit from toc -->
-
 ### Table of Contents
 
 - [Types of Events](#types-of-events)
@@ -15,8 +14,8 @@ id: events
   - [User Based-Events](#user-based-events)
   - [Custom Events](#custom-events)
 - [Usage of Events](#usage-of-events)
-  - [Example Usage of Events without Handler](#example-usage-of-events-without-handler)
-  - [Example Usage of Events in Handler](#example-usage-of-events-in-handler)
+    - [Example Usage of Events without Handler](#example-usage-of-events-without-handler)
+    - [Example Usage of Events in Handler](#example-usage-of-events-in-handler)
 
 ---
 

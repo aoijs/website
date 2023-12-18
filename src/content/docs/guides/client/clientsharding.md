@@ -5,7 +5,6 @@ id: sharding
 ---
 
 <!-- omit from toc -->
-
 ### Table of Contents
 
 - [What's Sharding?](#whats-sharding)
@@ -76,7 +75,7 @@ sharder.on("shardCreate", (shard) => console.log(`Launched shard ${shard.id}`));
 sharder.startProcess(); // Starts the sharding process.
 ```
 
-Your index.js, also known as main file should look like the following
+Your index.js, also known as main file should look like the following (nothing changes..!):
 
 ```js title="index.js"
 const { AoiClient } = require("aoi.js");
@@ -89,12 +88,10 @@ const client = new AoiClient({
   database: {
     type: "aoi.db",
     db: require("@akarui/aoi.db"),
+    dbType: "KeyValue",
     tables: ["main"],
-    path: "./database/",
-    extraOptions: {
-      dbType: "KeyValue",
-    },
-  },
+    securityKey: "a-32-characters-long-string-here",
+  }
 });
 
 // Ping Command Example (sharding)

@@ -144,13 +144,6 @@ a:where(.astro-3ii7xxms):hover {
   color: var(--sl-color-white) !important;
 }
 
-/* custom links */
-
-a:where(.linkStyle) {
-  text-decoration: none;
-  display: inline;
-}
-
 .content:where(.astro-c6vsoqas)
   :is(img, picture, video, canvas, svg, iframe):not(:where(.not-content *)) {
   display: inline-block;
@@ -237,4 +230,68 @@ a:where(.linkStyle) {
   transition:
     max-height 400ms ease-out,
     border 100ms 400ms linear;
+}
+
+html[data-theme="light"] p > a {
+  color: var(--sl-color-accent) !important;
+  border-bottom: 1px dotted var(--sl-color-accent) !important;
+  transition: all 0.6 ease-in;
+  text-decoration: none;
+  display: inline;
+}
+
+html[data-theme="light"] p > a:hover {
+  text-decoration: none;
+  display: inline;
+  color: var(--sl-color-accent-high) !important;
+  border-bottom: 1px solid var(--sl-color-accent-high) !important;
+  transition: all 0.6 ease-in;
+}
+
+html[data-theme="dark"] p > a {
+  color: var(--sl-color-accent-high) !important;
+  border-bottom: 1px dotted var(--sl-color-accent-high) !important;
+  transition: all 0.6 ease-in;
+  text-decoration: none;
+  display: inline;
+}
+
+html[data-theme="dark"] p > a:hover {
+  text-decoration: none;
+  display: inline;
+  color: var(--sl-color-accent) !important;
+  border-bottom: 1px solid var(--sl-color-accent) !important;
+  transition: all 0.6 ease-in;
+}
+
+html[data-theme="light"] > .linkStyle {
+  color: #fff !important;
+  border-bottom: 1px dotted var(--sl-color-accent-high) !important;
+  transition: all 0.6 ease-in;
+  text-decoration: none;
+  display: inline;
+}
+
+html[data-theme="light"] > .linkStyle:hover {
+  text-decoration: none;
+  display: inline;
+  color: var(--sl-color-accent-high) !important;
+  border-bottom: 1px solid var(--sl-color-accent-high) !important;
+  transition: all 0.6 ease-in;
+}
+
+html[data-theme="dark"] > .linkStyle {
+  color: var(--sl-color-accent-high) !important;
+  border-bottom: 1px dotted var(--sl-color-accent-high) !important;
+  transition: all 0.6 ease-in;
+  text-decoration: none;
+  display: inline;
+}
+
+html[data-theme="dark"] > .linkStyle:hover {
+  text-decoration: none;
+  display: inline;
+  color: var(--sl-color-accent) !important;
+  border-bottom: 1px solid var(--sl-color-accent) !important;
+  transition: all 0.6 ease-in;
 }
