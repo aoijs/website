@@ -37,6 +37,7 @@ hero:
       variant: secondary
 ---
 import Version from "../../components/Version.astro";
+import PackageStats from "../../components/PackageStats.jsx";
 import { Card, CardGrid } from "@astrojs/starlight/components";
 
 <Version pkgName="aoi.js" />
@@ -81,3 +82,7 @@ import { Card, CardGrid } from "@astrojs/starlight/components";
   aoi.js offers extensions like <a href="extensions/">aoi.music</a> and <a href="extensions/">aoi.panel</a> to enhance your bot's capabilities. These extensions make it simple to add
   features like music playback and a customizable web dashboard for managing your bot.
 </Card>
+
+<br />
+
+<PackageStats client:load client:only="react" />
