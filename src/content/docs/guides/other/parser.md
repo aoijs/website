@@ -4,8 +4,13 @@ description: This guide explains how to properly use embed parsers and component
 id: parser
 ---
 
-<!-- omit from toc -->
+:::caution[Rework]
 
+This page will be reworked in the future.
+
+:::
+
+<!-- omit from toc -->
 ### Table of Contents
 
 - [Embed Parser](#embed-parser)

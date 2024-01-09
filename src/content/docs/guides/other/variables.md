@@ -4,6 +4,12 @@ description: This Guide will be covering variables, their usage and how to store
 id: variables
 ---
 
+:::caution[Rework]
+
+This page will be reworked in the future.
+
+:::
+
 This guide will provide you with a comprehensive understanding of variables.
 
 ### Using Variables

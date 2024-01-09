@@ -81,7 +81,7 @@ The login credentials must be stored in `env` and it must not fall in wrong/untr
 
 ---
 
-:::warning[Experienced Users]
+:::caution[Experienced Users]
 We don't offer support nor endorse the use of `express.js`. Please use this at your own discretion.
 :::
 

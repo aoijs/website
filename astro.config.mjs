@@ -88,68 +88,8 @@ export default defineConfig({
       ],
       sidebar: [
         {
-          label: "Introduction",
+          label: "Get Started",
           link: "/guides/setup",
-        },
-        {
-          label: "Extensions",
-          items: [
-            {
-              label: "Showcase",
-              link: "/extensions/showcase/",
-            },
-            {
-              label: "@akarui",
-              items: [
-                {
-                  label: "aoi.panel",
-                  autogenerate: {
-                    directory: "extensions/aoi.panel",
-                  },
-                  collapsed: true,
-                },
-                {
-                  label: "aoi.music",
-                  items: [
-                    {
-                      label: "Getting Started",
-                      link: "/extensions/aoimusic/",
-                    },
-                    {
-                      label: "Events",
-                      link: "/extensions/aoimusic/events",
-                    },
-                    {
-                      label: "Functions",
-                      autogenerate: {
-                        directory: "extensions/aoi.music/functions",
-                      },
-                      collapsed: true,
-                    },
-                  ],
-                  collapsed: true,
-                },
-              ],
-            },
-            {
-              label: "Community Extensions",
-              items: [
-                {
-                  label: "aoi.canvas",
-                  link: "extensions/aoicanvas",
-                },
-                {
-                  label: "aoi.loader",
-                  link: "extensions/aoiloader",
-                },
-                {
-                  label: "aoi.js-library",
-                  link: "extensions/aoijs-library",
-                },
-              ],
-            },
-          ],
-          collapsed: true,
         },
         {
           label: "Guides",
@@ -183,97 +123,104 @@ export default defineConfig({
             {
               label: "Array",
               autogenerate: {
-                directory: "functions/array-related",
+                directory: "functions/array",
               },
               collapsed: true,
             },
             {
               label: "Awaited",
               autogenerate: {
-                directory: "functions/awaited-related",
+                directory: "functions/awaited",
               },
               collapsed: true,
             },
             {
               label: "Client",
               autogenerate: {
-                directory: "functions/client-related",
-              },
-              collapsed: true,
-            },
-            {
-              label: "Event",
-              autogenerate: {
-                directory: "functions/event-related",
-              },
-              collapsed: true,
-            },
-            {
-              label: "Guild",
-              autogenerate: {
-                directory: "functions/guild-related",
-              },
-              collapsed: true,
-            },
-            {
-              label: "Info",
-              autogenerate: {
-                directory: "functions/info-related",
-              },
-              collapsed: true,
-            },
-            {
-              label: "Interaction",
-              autogenerate: {
-                directory: "functions/interaction-related",
-              },
-              collapsed: true,
-            },
-            {
-              label: "Math",
-              autogenerate: {
-                directory: "functions/math-related",
-              },
-              collapsed: true,
-            },
-            {
-              label: "Message",
-              autogenerate: {
-                directory: "functions/message-related",
-              },
-              collapsed: true,
-            },
-            {
-              label: "Misc",
-              autogenerate: {
-                directory: "functions/misc-related",
-              },
-              collapsed: true,
-            },
-            {
-              label: "User",
-              autogenerate: {
-                directory: "functions/user-related",
-              },
-              collapsed: true,
-            },
-            {
-              label: "Util",
-              autogenerate: {
-                directory: "functions/util-related",
+                directory: "functions/client",
               },
               collapsed: true,
             },
             {
               label: "Database/Variable",
               autogenerate: {
-                directory: "functions/database-related",
+                directory: "functions/database",
               },
               collapsed: true,
             },
+            {
+              label: "Event",
+              autogenerate: {
+                directory: "functions/event",
+              },
+              collapsed: true,
+            },
+            {
+              label: "Embed",
+              autogenerate: {
+                directory: "functions/embed",
+              },
+              collapsed: true,
+            },
+            {
+              label: "Guild",
+              autogenerate: {
+                directory: "functions/guild",
+              },
+              collapsed: true,
+            },
+            {
+              label: "Info",
+              autogenerate: {
+                directory: "functions/info",
+              },
+              collapsed: true,
+            },
+            {
+              label: "Interaction",
+              autogenerate: {
+                directory: "functions/interaction",
+              },
+              collapsed: true,
+            },
+            {
+              label: "Math",
+              autogenerate: {
+                directory: "functions/math",
+              },
+              collapsed: true,
+            },
+            {
+              label: "Message",
+              autogenerate: {
+                directory: "functions/message",
+              },
+              collapsed: true,
+            },
+            {
+              label: "Misc",
+              autogenerate: {
+                directory: "functions/misc",
+              },
+              collapsed: true,
+            },
+            {
+              label: "User",
+              autogenerate: {
+                directory: "functions/user",
+              },
+              collapsed: true,
+            },
+            {
+              label: "Util",
+              autogenerate: {
+                directory: "functions/util",
+              },
+              collapsed: true,
+            }
           ],
           collapsed: true,
-        },
+        }        
       ],
     }),
     react(),

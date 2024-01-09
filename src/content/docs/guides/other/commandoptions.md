@@ -4,8 +4,13 @@ description: This page is covering all command options and what they do.
 id: commandoptions
 ---
 
-<!-- omit from toc -->
+:::caution[Rework]
 
+This page will be reworked in the future.
+
+:::
+
+<!-- omit from toc -->
 ## Table of Contents
 
 - [Base Commands](#base-commands)

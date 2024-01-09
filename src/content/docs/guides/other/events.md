@@ -19,6 +19,12 @@ id: clientevents
 
 ---
 
+:::caution[Rework]
+
+This page will be reworked in the future.
+
+:::
+
 **aoi.js** has various event listeners, known as "events", that cater to the majority of events provided by the Discord
 API.
 

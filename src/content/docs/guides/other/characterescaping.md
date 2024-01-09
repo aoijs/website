@@ -5,10 +5,8 @@ id: characterescaping
 ---
 
 <!-- omit from toc -->
-
 ## Table of Contents
 
-- [Table of Contents](#table-of-contents)
 - [What is character escaping?](#what-is-character-escaping)
 - [When to use character escaping](#when-to-use-character-escaping)
 - [Commonly used escape sequences](#commonly-used-escape-sequences)
