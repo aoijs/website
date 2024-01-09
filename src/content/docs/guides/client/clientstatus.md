@@ -2,15 +2,17 @@
 title: Client Status
 description: This guide will be covering the functionality and usage of client statuses.
 id: status
+og_image: /src/images/og/10.png
 ---
 
 <!-- omit from toc -->
 
 ## Table of Contents
 
-- [Bot Status](#bot-status)
-  - [Customizing Bot Status](#customizing-bot-status)
-- [Client Presence](#client-presence)
+- [Table of Contents](#table-of-contents)
+  - [Bot Status](#bot-status)
+    - [Customizing Bot Status](#customizing-bot-status)
+  - [Client Presence](#client-presence)
 
 ---
 

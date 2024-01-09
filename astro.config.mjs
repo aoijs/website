@@ -18,7 +18,7 @@ export default defineConfig({
       },
       social: {
         github: "https://github.com/aoijs/website",
-        discord: "https://discord.com/invite/HMUfMXDQsV",
+        discord: "https://aoi.js.org/invite",
       },
       editLink: {
         baseUrl: "https://github.com/aoijs/website/edit/main/",
@@ -26,28 +26,11 @@ export default defineConfig({
       customCss: ["./src/styles/custom.css"],
       components: {
         Search: "./src/components/Search.astro",
-        Head: "./src/components/Head.astro", // doesnt do anything, as starlight doesnt support this (yet)
+        Head: "./src/components/Head.astro",
         PageSidebar: './src/components/PageSidebar.astro',
       },
       pagefind: false,
       head: [
-        {
-          tag: "script",
-          attrs: {
-            async: true,
-            src: "https://www.googletagmanager.com/gtag/js?id=G-GMH27HJZGY",
-          },
-        },
-        {
-          tag: "script",
-          content: `
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GMH27HJZGY');
-      `,
-        },
         {
           tag: "script",
           attrs: {
@@ -64,18 +47,16 @@ export default defineConfig({
         },
         {
           tag: "meta",
-          attrs: {
+          attrs: { 
             property: "og:image",
-            content:
-              "https://raw.githubusercontent.com/aoijs/website/master/assets/images/aoijs-banner.png",
+            content: "/src/images/og/1.png",
           },
         },
         {
           tag: "meta",
           attrs: {
             property: "twitter:image",
-            content:
-              "https://raw.githubusercontent.com/aoijs/website/master/assets/images/aoijs-banner.png",
+            content: "/src/images/og/1.png",
           },
         },
         {

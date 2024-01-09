@@ -2,6 +2,7 @@
 title: Interaction Commands
 description: This guide will be covering the basics about Interaction Commands and their functionality. As well as everything else you might need to know.
 id: interactioncommands
+og_image: /src/images/og/3.png
 sidebar:
   order: 1
 ---
@@ -15,7 +16,7 @@ sidebar:
   - [Inviting your bot with correct permissions](#inviting-your-bot-with-correct-permissions)
 - [Important](#important)
 - [Creating Application Commands](#creating-application-commands)
-  - [Application Types](#application-types)
+    - [Application Types](#application-types)
   - [Examples of creating Application Commands](#examples-of-creating-application-commands)
 - [Conclusion](#conclusion)
 - [Application Command Option Type](#application-command-option-type)

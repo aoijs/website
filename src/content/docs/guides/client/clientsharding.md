@@ -2,6 +2,7 @@
 title: Client Sharding
 description: This guide will be covering the functionality and usage of client sharding.
 id: sharding
+og_image: /src/images/og/9.png
 ---
 
 <!-- omit from toc -->

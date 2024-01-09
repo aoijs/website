@@ -2,6 +2,7 @@
 title: Subcommands
 description: This page covers everything about Subcommands of Application Commands.
 id: interaction-subcommands
+og_image: /src/images/og/3.png
 sidebar:
   order: 2
 ---

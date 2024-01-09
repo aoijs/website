@@ -2,6 +2,7 @@
 title: Client Permissions
 description: This page provides an overview of the Client Permissions required for various functions.
 id: permissions
+og_image: /src/images/og/8.png
 ---
 
 ## createinvite

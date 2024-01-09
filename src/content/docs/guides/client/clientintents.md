@@ -2,6 +2,7 @@
 title: Client Intents
 description: This page provides an overview of the Client Intents required for various functionalities.
 id: intents
+og_image: /src/images/og/6.png
 ---
 
 <!-- omit from toc -->

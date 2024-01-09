@@ -2,6 +2,7 @@
 title: Parser
 description: This guide explains how to properly use embed parsers and component parsers. Including basics and examples.
 id: parser
+og_image: /src/images/og/17.png
 ---
 
 :::caution[Rework]

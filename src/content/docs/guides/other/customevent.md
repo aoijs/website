@@ -2,6 +2,7 @@
 title: Custom Events
 description: This guide will be covering everything you need to know about Custom Events and their usage.
 id: custom-events
+og_image: /src/images/og/13.png
 ---
 
 :::caution[Experienced Users]

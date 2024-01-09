@@ -2,6 +2,7 @@
 title: Client Commands
 description: This guide will be covering how to start creating commands, how to use command handlers, how to creat multiple commands in one file and how to update commands without restarting your Discord Bot.
 id: commands
+og_image: /src/images/og/4.png
 ---
 
 To get started, we should explain commands first.
