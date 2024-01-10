@@ -4,7 +4,7 @@ import { docsSchema } from "@astrojs/starlight/schema";
 export const collections = {
   docs: defineCollection({
     schema: docsSchema({
-      extend: ({ image }) => z.object({ og_image: image().optional() }),
+      extend: z.object({ og_image: z.string().optional() }),
     }),
   }),
-}
+} 
