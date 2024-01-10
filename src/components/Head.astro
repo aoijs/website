@@ -1,17 +1,13 @@
 ---
 import type { Props } from "@astrojs/starlight/props";
 import { ViewTransitions } from "astro:transitions";
-import StarlightHead from "@astrojs/starlight/components/Head.astro";
-
-const { props }: { props: Props } = Astro;
+import Default from "@astrojs/starlight/components/Head.astro";
 ---
 
 <ViewTransitions />
 
-<StarlightHead transition:animate="slide" {...props} />
-
 <meta property="og:image" content={Astro.props.entry.data?.og_image ?? "https://raw.githubusercontent.com/aoijs/website/main/src/images/og/1.png"} />
-
+<Default transition:animate="slide" {...Astro.props}><slot /></Default>
 
 <script>
   import { isTransitionBeforeSwapEvent, TRANSITION_BEFORE_SWAP } from "astro:transitions/client";
