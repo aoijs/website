@@ -10,7 +10,7 @@ const { props }: { props: Props } = Astro;
 
 <StarlightHead transition:animate="slide" {...props} />
 
-<meta property="og:image" content={Astro.props.entry.data.og_image ?? "/src/images/og/1.png"} />
+<meta property="og:image" content={Astro.props.entry.data.og_image?.src ?? "/src/images/og/1.png"} />
 
 
 <script>
