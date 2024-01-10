@@ -2,7 +2,7 @@
 title: Message Formatting
 description: This page is covering all about message formatting.
 id: msgformatting
-og_image: /src/images/og/16.png
+og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/16.png
 ---
 
 :::tip[Markdown]

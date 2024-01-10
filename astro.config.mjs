@@ -49,14 +49,14 @@ export default defineConfig({
           tag: "meta",
           attrs: { 
             property: "og:image",
-            content: "/src/images/og/1.png",
+            content: "https://raw.githubusercontent.com/aoijs/website/main/src/images/og/1.png",
           },
         },
         {
           tag: "meta",
           attrs: {
             property: "twitter:image",
-            content: "/src/images/og/1.png",
+            content: "https://raw.githubusercontent.com/aoijs/website/main/src/images/og/1.png",
           },
         },
         {

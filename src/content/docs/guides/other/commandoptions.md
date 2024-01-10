@@ -2,7 +2,7 @@
 title: Command Options
 description: This page is covering all command options and what they do.
 id: commandoptions
-og_image: /src/images/og/12.png
+og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/12.png
 ---
 
 :::caution[Rework]

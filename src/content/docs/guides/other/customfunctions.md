@@ -2,7 +2,7 @@
 title: Custom Functions
 description: This guide is covering custom functions, their usage and some useful examples.
 id: custom-functions
-og_image: /src/images/og/14.png
+og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/14.png
 ---
 
 <!-- omit from toc -->

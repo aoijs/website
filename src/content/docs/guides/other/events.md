@@ -2,7 +2,7 @@
 title: API Events
 description: This page contains all the events that are available in aoi.js.
 id: clientevents
-og_image: /src/images/og/15.png
+og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/15.png
 ---
 
 <!-- omit from toc -->

@@ -2,7 +2,7 @@
 title: Interaction Commands
 description: This guide will be covering the basics about Interaction Commands and their functionality. As well as everything else you might need to know.
 id: interactioncommands
-og_image: /src/images/og/3.png
+og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/3.png
 sidebar:
   order: 1
 ---

@@ -2,7 +2,7 @@
 title: Variables
 description: This Guide will be covering variables, their usage and how to store variables in other files.
 id: variables
-og_image: /src/images/og/18.png
+og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/18.png
 ---
 
 :::caution[Rework]

@@ -2,7 +2,7 @@
 title: Autocomplete
 description: This page covers everything about the autocomplete property of Application Commands.
 id: interaction-autocomplete
-og_image: /src/images/og/3.png
+og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/3.png
 sidebar:
   order: 4
 ---

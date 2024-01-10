@@ -2,7 +2,7 @@
 title: Subcommand Groups
 description: This page covers everything about Subcommand Groups of Application Commands.
 id: interaction-subcommandgroups
-og_image: /src/images/og/3.png
+og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/3.png
 sidebar:
   order: 3
 ---

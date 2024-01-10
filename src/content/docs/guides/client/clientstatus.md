@@ -2,7 +2,7 @@
 title: Client Status
 description: This guide will be covering the functionality and usage of client statuses.
 id: status
-og_image: /src/images/og/10.png
+og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/10.png
 ---
 
 <!-- omit from toc -->

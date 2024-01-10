@@ -2,7 +2,7 @@
 title: Character Escaping
 description: This page explains character escaping and provides a table of commonly used escape sequences.
 id: characterescaping
-og_image: /src/images/og/11.png
+og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/11.png
 ---
 
 <!-- omit from toc -->
