@@ -47,20 +47,6 @@ export default defineConfig({
         },
         {
           tag: "meta",
-          attrs: { 
-            property: "og:image",
-            content: "https://raw.githubusercontent.com/aoijs/website/main/src/images/og/1.png",
-          },
-        },
-        {
-          tag: "meta",
-          attrs: {
-            property: "twitter:image",
-            content: "https://raw.githubusercontent.com/aoijs/website/main/src/images/og/1.png",
-          },
-        },
-        {
-          tag: "meta",
           attrs: {
             property: "theme-color",
             content: "#89CFF0",
