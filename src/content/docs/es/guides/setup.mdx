@@ -1,0 +1,139 @@
+---
+title: Empezando
+description: Aprende cómo configurar y usar aoi.js, un paquete para desarrollar bots de Discord con funciones simplificadas y listas para usar.
+id: setup
+og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/2.png
+tableOfContents: false
+next: false
+prev: false
+---
+
+## Configuración
+
+Para empezar con aoi.js, sigue estos pasos:
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import { LinkCard } from "@astrojs/starlight/components";
+
+<Tabs>
+  <TabItem label="npm">
+    **Se requiere NodeJS v20 o superior.**
+
+    ```bash
+    npm install aoi.js
+    ```
+
+  </TabItem >
+  <TabItem label="pnpm">
+    **Se requiere NodeJS v20 o superior.**
+
+    ```bash
+    pnpm add aoi.js
+    ```
+
+  </TabItem>
+  <TabItem label="yarn">
+    **Se requiere NodeJS v20 o superior.**
+
+    ```bash
+    yarn add aoi.js
+    ```
+
+  </TabItem>
+    <TabItem label="bun">
+    **Se requiere NodeJS v20 o superior.**
+
+    ```bash
+    bun install aoi.js
+    ```
+
+  </TabItem>
+</Tabs>
+
+---
+
+Para empezar con aoi.js, ten en cuenta lo siguiente:
+- Necesitarás una aplicación creada desde el [Portal para Desarrolladores](https://discord.com/developers/applications)
+- Asegúrate de marcar todas las intenciones, ya que algunas funciones las requieren. Si no puedes hacerlo, entonces ignora este paso.
+- Necesitarás el token del bot para ejecutarlo.
+
+### Empezando
+
+Antes de comenzar, crea un nuevo archivo llamado `index.js` y sigue estos pasos cuidadosamente.
+
+En primer lugar, importamos la clase `AoiClient` de aoi.js.
+
+```diff lang="js" title="index.js"
++ const { AoiClient } = require("aoi.js");
+```
+
+Luego añadimos la parte principal, que definirá nuestro bot.
+
+```diff lang="js" title="index.js"
+const { AoiClient } = require("aoi.js");
+
++ const client = new AoiClient({
++  token: "Token del Bot de Discord",
++  prefix: "Prefijo del Bot de Discord",
++  intents: ["MessageContent", "Guilds", "GuildMessages"],
++  events: ["onMessage", "onInteractionCreate"],
++  database: {
++    type: "aoi.db",
++    db: require("@akarui/aoi.db"),
++    dbType: "KeyValue",
++    tables: ["main"],
++    securityKey: "una-cadena-de-32-caracteres-aquí",
++  }
++ });
+```
+
+La parte del token es donde va tu Token de Discord, que copiaste previamente desde el Portal para Desarrolladores.
+```diff lang="js" title="index.js"
++ token: "Token de tu Bot de Discord"
+```
+
+La parte del prefijo es donde va el prefijo de tu bot, incluso puedes tener varios prefijos.
+```js {1} {4} title="index.js"
+prefix: "Prefijo de tu Bot de Discord"
+
+// También puedes tener varios prefijos
+prefix: ["Tu Prefijo", "Otro Prefijo"]
+```
+
+Al final, tu archivo index.js debería verse así:
+
+```javascript {1-15} title="index.js"
+const { AoiClient } = require("aoi.js");
+
+const client = new AoiClient({
+  token: "Token de tu Bot de Discord",
+  prefix: "Prefijo de tu Bot de Discord",
+  intents: ["MessageContent", "Guilds", "GuildMessages"],
+  events: ["onMessage", "onInteractionCreate"],
+  database: {
+    type: "aoi.db",
+    db: require("@akarui/aoi.db"),
+    dbType: "KeyValue",
+    tables: ["main"],
+    securityKey: "una-cadena-de-32-caracteres-aquí",
+  }
+});
+```
+
+Ahora podemos ejecutar nuestro bot, pero aún no hay funcionalidad.
+
+Continúa a la siguiente página para aprender cómo añadir comandos a tu bot.
+
+<LinkCard
+  title="Empezar con Comandos"
+  description="Aprende cómo añadir comandos a tu bot y cómo manejarlos correctamente."
+  href="/es/guides/client/clientcommands"
+/>
+
+¿Ya sabes cómo usar comandos? Continúa a la siguiente página para aprender cómo usar eventos.
+
+<LinkCard
+  title="Empezar con Eventos"
+  description="Comienza con eventos de cliente, su funcionalidad y cómo implementarlos correctamente."
+  href="/es/guides/other/events"
+/>

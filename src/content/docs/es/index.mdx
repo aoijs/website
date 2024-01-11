@@ -1,0 +1,85 @@
+---
+title: aoi.js
+description: El paquete de cadenas más potente para crear un bot de Discord simple y rápido.
+template: splash
+editUrl: false
+lastUpdated: false
+prev: false
+next: false
+og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/1.png
+#banner:
+#  content: |
+#    ¡La versión más reciente, acaba de salir!
+#    <a href="https://github.com/AkaruiDevelopment/aoi.js/releases/tag/6.5.6">Lea los cambios</a>
+head:
+  - tag: title
+    content: aoi.js - Construye Bots de Discord con facilidad
+  - tag: meta
+    attrs:
+      name: "og:description"
+      content: "Comienza con aoi.js, el paquete de cadenas más potente para crear un bot de Discord simple y rápido."
+hero:
+  title: Construye Bots de Discord potentes con aoi.js
+  tagline: El paquete basado en cadenas más avanzado para crear un bot de Discord rápido y potente
+  image:
+    file: /favicon.png
+  actions:
+    - text: Empezar
+      link: guides/setup
+      icon: right-arrow
+      variant: primary
+    - text: "¿Necesitas ayuda? ¡Únete a nuestro Discord!"
+      link: invite/
+      icon: external
+      variant: secondary
+---
+import Version from "../../../components/Version.astro";
+import PackageStats from "../../../components/PackageStats.jsx";
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+<Version pkgName="aoi.js" />
+
+<CardGrid>
+  <Card title="Fácil de usar" icon="laptop">
+    Aunque mantiene las cosas simples, aoi.js también te permite personalizar y ampliar
+    sus capacidades. Puedes crear tus propios comandos y eventos adaptados
+    a los requisitos de tu proyecto.
+  </Card>
+  <Card title="Comunidad" icon="discord">
+    El paquete viene con una documentación completa que es útil tanto para
+    principiantes como para desarrolladores experimentados. Además, hay una <a href="invite/">comunidad de usuarios</a>
+    que puede ayudarte si encuentras algún problema.
+  </Card>
+</CardGrid>
+  <Card title="Crea el tuyo propio" icon="rocket">
+    <div class="card-container">
+      <div class="card-split split">
+        ```sh
+          # crea un nuevo bot de Discord
+          npm create aoijs-bot
+        ```
+      </div>
+      <div class="card-split">
+        Nuestra guía paso a paso te cubre. <a href="guides/setup">Comienza</a> con aoi.js y crea tu propio bot de Discord.
+      </div>
+    </div>
+  </Card>
+<CardGrid>
+  <Card title="Funciones preconstruidas" icon="puzzle">
+    aoi.js viene con más de 600 funciones preconstruidas que te permiten crear
+    bots de Discord dinámicos e interactivos con facilidad. Estas funciones proporcionan
+    una amplia gama de funcionalidades para mejorar las capacidades de tu bot.
+  </Card>
+  <Card title="Base de datos local personalizada integrada" icon="document">
+    aoi.js proporciona una potente base de datos local personalizada, <a href="extensions/">aoi.db</a>. Esta base de datos te permite almacenar y recuperar datos fácilmente, lo que
+    resulta conveniente para gestionar y persistir información relacionada con el bot.
+  </Card>
+</CardGrid>
+<Card title="Extensiones para funcionalidad adicional" icon="open-book">
+  aoi.js ofrece extensiones como <a href="extensions/">aoi.music</a> y <a href="extensions/">aoi.panel</a> para mejorar las capacidades de tu bot. Estas extensiones facilitan la adición
+  de funciones como la reproducción de música y un panel web personalizable para gestionar tu bot.
+</Card>
+
+<br />
+
+<PackageStats client:load client:only="react" />

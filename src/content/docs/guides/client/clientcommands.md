@@ -5,55 +5,197 @@ id: commands
 og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/4.png
 ---
 
-To get started, we should explain commands first.
-
-Commands are a way to make your bot execute specific code just by sending a message in your Discord channel.
-
-In order to make those commands execute though, we need to create them first. There are two ways, adding the commands directly to the client or creating a command handler.
-
-### Adding Commands to your Bot
-
-In this step we'll take a look at how to add commands to your bot directly from your main file, commonly known as `index.js`.
-
-```diff lang="js" title="index.js"
-const { AoiClient } = require("aoi.js");
-
-const client = new AoiClient({
-  // our configuration
-});
-
-+ client.command({
-+   name: "Your command name", // This will define the name of your command, which will later get executeable.
-+   code: `Your code here` // This will define the code that will be executed when the command gets executed.
-+ });
-```
-
-Let's create a simple `ping` command which shows the bot's current ping.
-
-Firstly we name our command.
-
-```js {2} title="index.js"
-client.command({
-  name: "ping",
-})
-```
-
-After this is done, we can add code, which shows the current ping.
-
-```js {3} title="index.js"
-client.command({
-  name: "ping",
-  code: `My ping is $ping MS!` // The ping function returns the current ping.
-})
-```
-
-This is the easy way, but it can get cluttered fast if you add a lot of commands. If that's the case, consider using command handlers instead.
+<!-- omit from toc -->
+## Table of Contents
+- [Creating Commands](#creating-commands)
+  - [Command Options](#command-options)
+    - [Base Commands](#base-commands)
+    - [Event Commands](#event-commands)
+    - [Interaction Commands](#interaction-commands)
+    - [Loop Commands](#loop-commands)
+  - [Command Handler](#command-handler)
 
 ---
 
-## Command Handlers
+Before we get started let's cover the basics.
 
-In this, we'll take a look at command handlers and on how to use them. There are multiple ways, but let's start with one.
+- aoi.js reads **bottom** to **top**, meaning the code starts from the bottom and starts working towards the top.
+
+An example for that is the following:
+
+```js
+client.command({
+  name: "example",
+  code: `
+  $sendMessage[Bye!]
+  $sendMessage[Hello!]
+  `
+});
+```
+
+In this case, the code will send `Hello!` first and then `Bye!`. This applies to all commands within aoi.js.
+
+## Creating Commands
+
+Creating commands brings functionality to your bot, this structure will be used for all commands including events. Events will be covered at a later time.
+
+The structure is as following, (if you're not using a command handler):
+
+```js
+<client>.command({ ... });
+```
+
+`<client>` stands for the AoiClient you defined in your `index.js` file at the very top.
+
+Commands have a variety of properties, which will be covered in the next section.
+
+For now you only need to know about `name` and `code`.
+
+---
+
+The `name` defines the name of the command and also how to execute it. Meaning you would be able to use `[prefix]name` to execute the command.
+
+```js
+<client>.command({ 
+  name: "ping" 
+});
+```
+
+This does nothing, as of now. It's just a command called `ping`. To give it functionality we use the `code` property.
+
+The code property defines the **functionality** of the command - its core.
+
+```js
+<client>.command({ 
+  name: "ping",
+  code: `My ping is: $ping MS!`
+});
+```
+
+This would execute upon using the `[prefix]ping` within your Discord Server, this would return the current bot latency.
+
+### Command Options
+
+There are a variety of commands, event commands, base commands, interaction commands and way more.
+
+#### Base Commands
+
+The base command, also known as prefix command has a few properties.
+
+```js
+<client>.command({ 
+    name: string,
+    aliases? : string,
+    nonPrefixed? : boolean,
+    executeAt? : string,
+    code: string
+});
+```
+
+An example of using all properties would be the following:
+
+```js
+<client>.command({ 
+    name: "ping",
+    aliases: ["pong"],
+    nonPrefixed: false,
+    executeAt: "both",
+    code: `My ping is $ping MS!`
+});
+```
+
+| OPTION        | INPUT   | EXPLANATION                                                                                                            |
+| ------------- | ------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `name`        | string  | Command Name.                                                                                                          |
+| `aliases`     | string  | Aliases, work the same way as `name`.                                                                                  |
+| `nonPrefixed` | boolean | Set your command as non prefixed, meaning it can be executed without the actual prefix.                                |
+| `dmOnly`      | boolean | Set the command to be useably only in guilds or Direct Messages.                                                       |
+| `executeAt`   | string  | Define where it may can get executed in. <br /> 1. **guild** <br /> 2. **dm** <br /> 3. **groupDM** <br /> 4. **both** |
+| `code`        | string  | Your command code.                                                                                                     |
+
+#### Event Commands
+
+Event commands have the following structure:
+
+```js
+<client>.<event>Command({
+    name? : string,
+    channel? : string,
+    code: string,
+})
+```
+
+`<client>` stands - once again - for the AoiClient you defined in your `index.js` file at the very top.
+
+`<event>` stands for the event you want to use for example `onBanAdd` would become `<client>.banAddCommand()`. this applies to all commands.
+
+An example of using all properties would be the following:
+
+```js
+<client>.banAddCommand({ 
+    name: "Event Command Example",
+    channel: "123456789012345", // **must** be a valid channel ID
+    code: `
+    <@$authorID> just got banned!
+    `
+});
+```
+
+
+| OPTION    | INPUT  | EXPLANATION                                                                |
+| --------- | ------ | -------------------------------------------------------------------------- |
+| `name`    | string | Command Name.                                                              |
+| `type`    | string | Defines the command type, any event, for example: `interaction` or `loop`. |
+| `channel` | string | Where the output may go.                                                   |
+| `code`    | string | Your command code.                                                         |
+
+#### Interaction Commands
+
+```js
+<client>.interactionCommand({
+    name: string,
+    type: string,
+    prototype: string,
+    code: string,
+});
+```
+
+| OPTION      | INPUT  | EXPLANATION                                                                                                                          |
+| ----------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| `name`      | string | Command Name.                                                                                                                        |
+| `type`      | string | Defines the command type.                                                                                                            |
+| `prototype` | string | Defines what the command will be triggered by. <br /> 1. **button** <br /> 2. **selectMenu** <br /> 4. **slash** <br /> 5. **modal** |
+| `code`      | string | Your command code.                                                                                                                   |
+
+#### Loop Commands
+
+```js
+<client>.loopCommand({
+    name: string,
+    type: string,
+    channel? : number,
+    executeOnStartup? : boolean,
+    every: number,
+    code: string
+});
+```
+
+| OPTION             | INPUT   | EXPLANATION                                                   |
+| ------------------ | ------- | ------------------------------------------------------------- |
+| `name`             | string  | Command Name.                                                 |
+| `type`             | string  | Defines the command type, any event, `interaction` or `loop`. |
+| `channel`          | string  | Where the output may go.                                      |
+| `executeOnStartup` | boolean | If the command will be executed after the bot restarted.      |
+| `every`            | number  | Interval of the loop command.                                 |
+| `code`             | string  | Your command code.                                            |
+
+---
+
+### Command Handler
+
+You can also keep your `index.js` - or whatever the file is called for you - neat and tidy, by using command handlers.
+
+By using command handlers, you're creating a file for each command instead of putting them all in the same file.
 
 ```diff lang="js" title="index.js"
 const { AoiClient } = require("aoi.js");
@@ -67,6 +209,8 @@ const client = new AoiClient({
 
 Make sure to create a commands folder in the root directory, meaning where your index.js file is located.
 
+---
+
 Once that is done, we start creating files inside of that folder.
 
 These files can be named what you want, however you need to add the `.js` syntax after the name, to turn it into a Javascript file.
@@ -74,7 +218,7 @@ These files can be named what you want, however you need to add the `.js` syntax
 Let's, once again, create a ping command. It's basically the same, just one line changes.
 
 ```diff lang="js" title="commands/index.js"
-- client.command({
+- <client>.command({
 + module.exports = ({
     name: "ping",
     code: `My ping is $ping MS!` // The ping function returns the current ping.
@@ -112,7 +256,7 @@ Yet again, we pretty much only change the first and last line.
 
 This is basically an array just with a little extra spice.
 
-Your command should look like this in the end:
+Your command should look like this in the end,
 
 ```js title="commands/ping.js"
 module.exports = [{
@@ -124,10 +268,3 @@ module.exports = [{
 }];
 ```
 
-And there you go, you successfully created two commands in the same file!
-
----
-
-## Updating Commands
-
-When using the command handler, you are able to refresh all your commands within the command directory with a single function, called `$updateCommands`! This function will refresh all commands, which are in the directory.

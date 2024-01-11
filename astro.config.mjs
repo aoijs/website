@@ -13,6 +13,17 @@ export default defineConfig({
       plugins: [starlightLinksValidator()],
       title: "aoi.js",
       favicon: "/favicon.png",
+      defaultLocale: "root",
+      locales: {
+        root: {
+          label: "English",
+          lang: "en",
+        },
+        es: {
+          label: "Espanol",
+          lang: "es",
+        },
+      },
       logo: {
         src: "/favicon.png",
       },
@@ -27,7 +38,7 @@ export default defineConfig({
       components: {
         Search: "./src/components/Search.astro",
         Head: "./src/components/Head.astro",
-        PageSidebar: './src/components/PageSidebar.astro',
+        PageSidebar: "./src/components/PageSidebar.astro",
       },
       pagefind: false,
       head: [
@@ -184,10 +195,10 @@ export default defineConfig({
                 directory: "functions/util",
               },
               collapsed: true,
-            }
+            },
           ],
           collapsed: true,
-        }        
+        },
       ],
     }),
     react(),
