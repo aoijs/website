@@ -38,7 +38,6 @@ export default defineConfig({
       components: {
         Search: "./src/components/Search.astro",
         Head: "./src/components/Head.astro",
-        PageSidebar: "./src/components/PageSidebar.astro",
       },
       pagefind: false,
       head: [
