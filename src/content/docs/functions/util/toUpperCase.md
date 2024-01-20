@@ -2,6 +2,7 @@
 title: $toUpperCase
 description: $toUpperCase will change the given text from lowercase to uppercase.
 id: toUpperCase
+pagination_next: null
 ---
 
 `$toUpperCase` will change the given text from lowercase to uppercase.

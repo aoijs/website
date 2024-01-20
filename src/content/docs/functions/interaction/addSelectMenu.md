@@ -2,6 +2,10 @@
 title: $addSelectMenu
 description: $addSelectMenu will add a select menu to the bot's message.
 id: addSelectMenu
+sidebar: 
+  badge:
+    text: Updated
+    variant: note
 ---
 
 `$addSelectMenu` will add a select menu to the bot's message.
@@ -35,7 +39,7 @@ client.command({
   code: `
   Select an option.
   
-  $addSelectMenu[1;yourCustomID;string;This is a placeholder!;1;1;false;A Option:Description of option A:anotherCustomID:false;B Option:Description of option B:andAnotherCustomID:true]
+  $addSelectMenu[1;string;yourCustomID;This is a placeholder!;1;1;false;A Option:Description of option A:anotherCustomID:false;B Option:Description of option B:andAnotherCustomID:true]
   `
 });
 
@@ -44,7 +48,7 @@ module.exports = [
     name: "add-select-menu",
     code: `
      Select an option.
-     $addSelectMenu[1;yourCustomID;string;This is a placeholder!;1;1;false;A Option:Description of option A:anotherCustomID:false;B Option:Description of option B:andAnotherCustomID:true]
+     $addSelectMenu[1;string;yourCustomID;This is a placeholder!;1;1;false;A Option:Description of option A:anotherCustomID:false;B Option:Description of option B:andAnotherCustomID:true]
   `
   },
   {

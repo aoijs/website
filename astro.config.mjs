@@ -20,7 +20,7 @@ export default defineConfig({
           lang: "en",
         },
         es: {
-          label: "Espanol",
+          label: "Español",
           lang: "es",
         },
       },
@@ -28,7 +28,7 @@ export default defineConfig({
         src: "/favicon.png",
       },
       social: {
-        github: "https://github.com/aoijs/website",
+        github: "https://github.com/AkaruiDevelopment/aoi.js#v6",
         discord: "https://aoi.js.org/invite",
       },
       editLink: {
@@ -74,6 +74,7 @@ export default defineConfig({
           items: [
             {
               label: "Application Commands",
+              badge: { text: "Updated", variant: "note" },
               autogenerate: {
                 directory: "guides/application-cmds",
               },
@@ -179,6 +180,14 @@ export default defineConfig({
               label: "Misc",
               autogenerate: {
                 directory: "functions/misc",
+              },
+              collapsed: true,
+            },
+            {
+              label: "Music",
+              badge: "Extension",
+              autogenerate: {
+                directory: "functions/music",
               },
               collapsed: true,
             },
