@@ -73,7 +73,6 @@ export default defineConfig({
           items: [
             {
               label: "Application Commands",
-              badge: { text: "Updated", variant: "note" },
               autogenerate: {
                 directory: "guides/application-cmds",
               },

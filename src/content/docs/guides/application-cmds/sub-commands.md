@@ -5,6 +5,9 @@ id: interaction-subcommands
 og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/3.png
 sidebar:
   order: 2
+  badge:
+    text: Updated
+    variant: tip
 ---
 
 <!-- omit from toc -->
@@ -68,32 +71,46 @@ Creating sub commands with options or choices work basically the same as any oth
 client.command({
   name: "createApplicationCommand",
   code: `
-  $createApplicationCommand[guildID/global;moderation;Moderation Commands!;true;slash;[
-  {
-    name: "kick",
-    description: "Kick someone of your guild!",
-    type: 1,
-    options: [
+  $createApplicationCommand[$guildID;moderation;Moderation Commands!;true;slash;[
+{
+  "name": "kick",
+  "description": "Kick someone out of your guild!",
+  "type": 1,
+   "options": [
       {
-        name: "user",
-        description: "Mention the user you want to kick",
-        required: true,
-        type: 6,
+        "name": "user",
+        "description": "Mention the user you want to kick",
+        "required": true,
+        "type": 6
       },
       {
-        name: "reason",
-        description: "Reason",
-        required: true,
-        type: 3,
+        "name": "reason",
+        "description": "Reason",
+        "required": true,
+        "type": 3
+      }
+    ]
+},
+{
+  "name": "ban",
+  "description": "Ban someone of your guild!",
+  "type": 1,
+   "options": [
+      {
+        "name": "user",
+        "description": "Mention the user you want to kick",
+        "required": true,
+        "type": 6
       },
-    ],
-  },
-  {
-    name: "ban",
-    description: "Ban someone of your guild!",
-    type: 1,
-  },
-];`
+      {
+        "name": "reason",
+        "description": "Reason",
+        "required": true,
+        "type": 3
+      }
+    ]
+}
+]]`
 });
 ```
 
