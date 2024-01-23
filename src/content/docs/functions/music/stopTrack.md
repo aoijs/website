@@ -2,10 +2,6 @@
 title: $stopTrack
 description: $stopTrack will stop the current track.
 id: stopTrack
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

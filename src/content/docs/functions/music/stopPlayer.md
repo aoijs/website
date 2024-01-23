@@ -2,10 +2,6 @@
 title: $stopPlayer
 description: $stopPlayer will destroy the current player.
 id: stopPlayer
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

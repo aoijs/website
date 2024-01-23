@@ -2,10 +2,6 @@
 title: $skipTrack
 description: $skipTrack will skip the current track.
 id: skipTrack
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

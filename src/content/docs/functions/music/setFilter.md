@@ -2,10 +2,6 @@
 title: $setFilter
 description: $setFilter will set given filters.
 id: setFilter
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

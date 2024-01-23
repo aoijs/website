@@ -2,6 +2,10 @@
 title: $databasePing
 description: $databasePing will return your database ping.
 id: databasePing
+sidebar: 
+  badge:
+    text: Deprecated
+    variant: danger
 ---
 
 `$databasePing` will return your database ping.

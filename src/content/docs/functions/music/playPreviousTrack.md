@@ -2,10 +2,6 @@
 title: $playPreviousTrack
 description: $playPreviousTrack will play the previous track.
 id: playPreviousTrack
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

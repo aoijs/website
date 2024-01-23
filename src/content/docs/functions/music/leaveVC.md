@@ -2,10 +2,6 @@
 title: $leaveVC
 description: $leaveVC will make your bot leave the current Voice Channel.
 id: leaveVC
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

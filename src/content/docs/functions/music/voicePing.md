@@ -2,10 +2,6 @@
 title: $voicePing
 description: $voicePing will return the voice latency.
 id: voicePing
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

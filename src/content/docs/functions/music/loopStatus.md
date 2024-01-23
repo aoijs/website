@@ -2,10 +2,6 @@
 title: $loopStatus
 description: $loopStatus will return the current loop status.
 id: loopStatus
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

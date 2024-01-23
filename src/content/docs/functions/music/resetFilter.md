@@ -2,10 +2,6 @@
 title: $resetFilter
 description: $resetFilter will set all filters.
 id: resetFilter
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

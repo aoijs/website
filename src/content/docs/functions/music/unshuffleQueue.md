@@ -2,10 +2,6 @@
 title: $unshuffleQueue
 description: $unshuffleQueue will unshuffle the current queue.
 id: unshuffleQueue
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

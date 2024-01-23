@@ -2,10 +2,6 @@
 title: $pauseTrack
 description: $pauseTrack will pause the current track.
 id: pauseTrack
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

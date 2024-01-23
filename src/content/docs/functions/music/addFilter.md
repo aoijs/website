@@ -2,10 +2,6 @@
 title: $addFilter
 description: $addFilter will add given filters.
 id: addFilter
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

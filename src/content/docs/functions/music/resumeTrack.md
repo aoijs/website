@@ -2,10 +2,6 @@
 title: $resumeTrack
 description: $resumeTrack will resume the current paused track.
 id: resumeTrack
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

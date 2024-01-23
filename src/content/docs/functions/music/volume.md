@@ -2,10 +2,6 @@
 title: $volume
 description: $volume will set or return the current volume.
 id: volume
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

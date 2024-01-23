@@ -2,10 +2,6 @@
 title: $getFilters
 description: $getFilters will return all active filters.
 id: getFilters
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

@@ -2,10 +2,6 @@
 title: $joinVC
 description: $joinVC will make your bot join a specified voice channel.
 id: joinVC
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

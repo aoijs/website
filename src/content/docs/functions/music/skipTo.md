@@ -2,10 +2,6 @@
 title: $skipTo
 description: $skipTo will skip to a specific song in the queue.
 id: skipTo
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

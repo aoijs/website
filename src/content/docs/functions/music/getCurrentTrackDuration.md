@@ -2,10 +2,6 @@
 title: $getCurrentTrackDuration
 description: $getCurrentTrackDuration will return the current track duration.
 id: getCurrentTrackDuration
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

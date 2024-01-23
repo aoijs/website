@@ -2,10 +2,6 @@
 title: $playTrack
 description: $playTrack will play a track using the specified method.
 id: playTrack
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

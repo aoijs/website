@@ -2,10 +2,6 @@
 title: $shuffleQueue
 description: $shuffleQueue will shuffle the current queue.
 id: shuffleQueue
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

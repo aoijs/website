@@ -2,10 +2,6 @@
 title: $queue
 description: $queue will return the current song queue.
 id: queue
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

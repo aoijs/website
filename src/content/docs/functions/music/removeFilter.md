@@ -2,10 +2,6 @@
 title: $removeFilter
 description: $removeFilter will remove given filters.
 id: removeFilter
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

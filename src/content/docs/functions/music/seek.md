@@ -2,10 +2,6 @@
 title: $seek
 description: $seek will seek to a specified position of a song.
 id: seek
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

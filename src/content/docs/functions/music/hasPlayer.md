@@ -2,10 +2,6 @@
 title: $hasPlayer
 description: $hasPlayer will return either true or false depending on if the current instance has a player in the current guild.
 id: hasPlayer
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

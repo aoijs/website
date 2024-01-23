@@ -2,10 +2,6 @@
 title: $loopMode
 description: $loopMode will either loop the current track, queue or end the loop.
 id: loopMode
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

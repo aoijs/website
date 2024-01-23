@@ -2,10 +2,6 @@
 title: $playerStatus
 description: $playerStatus will return the current Player Status.
 id: playerStatus
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

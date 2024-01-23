@@ -2,10 +2,6 @@
 title: $autoPlay
 description: $autoPlay will autoplay songs.
 id: autoPlay
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

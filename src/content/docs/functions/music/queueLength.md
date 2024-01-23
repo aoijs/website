@@ -2,10 +2,7 @@
 title: $queueLength
 description: $queueLength will return the queue length.
 id: queueLength
-sidebar: 
-  badge:
-    text: New
-    variant: tip
+
 ---
 
 `$queueLength` will return the queue length.

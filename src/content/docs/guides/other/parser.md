@@ -3,17 +3,16 @@ title: Parser
 description: This guide explains how to properly use embed parsers and component parsers. Including basics and examples.
 id: parser
 og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/17.png
+sidebar: 
+  badge:
+    text: Updated
+    variant: tip
 ---
-
-:::caution[Rework]
-
-This page will be reworked in the future.
-
-:::
 
 <!-- omit from toc -->
 ### Table of Contents
 
+- [ExtraOptions/Options Parser Functions](#extraoptionsoptions-parser-functions)
 - [Embed Parser](#embed-parser)
   - [Embed Parser Functions](#embed-parser-functions)
 - [Components Parser](#components-parser)
@@ -30,12 +29,34 @@ This page will be reworked in the future.
 
 ---
 
+## ExtraOptions/Options Parser Functions
+
+```php
+{execute:awaitedCommand} // executes an awaited command
+{reply:messageId:reply?} // replies to a given message
+{interaction} // declares reply as an interaction
+{ephemeral} // declares interaction as ephemeral
+{reactions:...reactions} // adds reactions to a message
+{attachment:attachmentName:attachment} // sends file, image as attachment
+{file:fileName:content} // creates a text file with the given content
+{deleteCommand} // deletes the command which was used to execute the command
+{deleteIn:time} // deletes the given reply within the provided time
+{suppress} // suppress the output
+```
+
+These parser can only be used within specific functions, for example:
+`$sendMessage`, `$channelSendMessage` or similar. This includes functions like `$onlyIf`.
+
+---
+
 ## Embed Parser
 
 Embed Parser are handy to use once you know how, this section will be covering the basics about embed parsers.
 
 :::tip
+
 You require `{newEmbed:{...}}` every time you want to use embed parsers.
+
 :::
 
 ### Embed Parser Functions
@@ -59,7 +80,9 @@ You require `{newEmbed:{...}}` every time you want to use embed parsers.
 ## Components Parser
 
 :::tip
+
 For every component parser is one thing always the same, `{actionRow:{...}}`. We use that to declare the arguments inside of it as components.
+
 :::
 
 ### Button Parser
@@ -72,23 +95,32 @@ Usage:
 
 #### Button Types
 
-|   Name    | Value |                     Color |                                                                     |
-| :-------: | :---: | ------------------------: | ------------------------------------------------------------------- |
-|  Primary  |   1   |                   blurple | `{button:Example Button!:primary:customID:false}`                   |
-| Secondary |   2   |                      grey | `{button:Example Button!:secondary:customID:false}`                 |
-|  Success  |   3   |                     green | `{button:Example Button!:success:customID:false}`                   |
-|  Danger   |   4   |                       red | `{button:Example Button!:danger:customID:false}`                    |
-|   Link    |   5   |  grey, navigates to a URL | `{button:Example Button!:link:https\\:discord.gg:false}`            |
-|   Emoji   |   -   | primary button with emoji | `{button:Example Button!:primary:customID:false:emojiName,emojiID}` |
+|   Name    | Value |                     Color |                                                                                        |
+| :-------: | :---: | ------------------------: | -------------------------------------------------------------------------------------- |
+|  Primary  |   1   |                   blurple | `{button:Example Button!:primary:customID:false}`                                      |
+| Secondary |   2   |                      grey | `{button:Example Button!:secondary:customID:false}`                                    |
+|  Success  |   3   |                     green | `{button:Example Button!:success:customID:false}`                                      |
+|  Danger   |   4   |                       red | `{button:Example Button!:danger:customID:false}`                                       |
+|   Link    |   5   |  grey, navigates to a URL | `{button:Example Button!:link:https\\:discord.gg:false}`                               |
+|   Emoji   |   -   | primary button with emoji | `{button:Example Button!:primary:customID:false:emojiName or emojiID or emoji String}` |
 
 ### Select Menu Parser
 
 Select Menu Parser Usage:
 
-```bash
+```php
 {selectMenu:customID:placeholder:minValue:maxValue:default(true / false):...options}
 
-{selectMenuOptions:optionName:customID:optionDescription:default? (true / false):emoji?}
+{stringInput:optionName:customID:optionDescription:default? (true / false):emoji?}
+
+// for every option you want to add to the select menu, you can use the following:
+{roleInput}
+
+{channelInput}
+
+{mentionableInput}
+
+{userInput}
 ```
 
 ### Interaction Modal Parser
@@ -134,13 +166,25 @@ Below are simple examples of each parser and how to use them.
 **Single-Select Menu with two options**
 
 ```bash
-{actionRow:{selectMenu:customID:Placeholder:1:1:false:{selectMenuOptions:Option1:1:OptionDescription1:false:👋}{selectMenuOptions:Option2:2:OptionDescription2:false}}}
+{actionRow:{selectMenu:customID:Placeholder:1:1:false:{stringInput:Option1:1:OptionDescription1:false:👋}{stringInput:Option2:2:OptionDescription2:false}}}
 ```
 
 **Multi-Select Menu with three options and and a maximum of 2 selectable options**
 
 ```bash
-{actionRow:{selectMenu:customID:Placeholder:1:2:false:{selectMenuOptions:Option1:1:OptionDescription1:false:👋}{selectMenuOptions:Option2:2:OptionDescription2:false}{selectMenuOptions:Option3:3:OptionDescription3:false}}}
+{actionRow:{selectMenu:customID:Placeholder:1:2:false:{stringInput:Option1:1:OptionDescription1:false:👋}{stringInput:Option2:2:OptionDescription2:false}{selectMenuOptions:Option3:3:OptionDescription3:false}}}
+```
+
+**User-Select Menu**
+
+:::tip
+
+This applies to every other type!
+
+:::
+
+```bash
+{actionRow:{selectMenu:customID:Placeholder:1:1:false:{userInput}}}
 ```
 
 #### Interaction Modal Parser

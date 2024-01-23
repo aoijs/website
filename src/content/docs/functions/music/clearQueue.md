@@ -2,10 +2,6 @@
 title: $clearQueue
 description: $clearQueue will clear the current player's queue.
 id: clearQueue
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]

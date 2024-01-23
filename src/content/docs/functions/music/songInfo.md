@@ -2,10 +2,6 @@
 title: $songInfo
 description: $songInfo will return given song's information.
 id: songInfo
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 :::tip[Extension]
