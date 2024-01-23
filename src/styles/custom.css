@@ -176,7 +176,7 @@ a:where(.astro-3ii7xxms):hover {
 }
 
 .details > details::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -194,8 +194,8 @@ a:where(.astro-3ii7xxms):hover {
 }
 
 .details > details > summary::before {
-  content: "⮞";
-  color: var(--sl-color-hairline);
+  content: ">";
+  color: var(--sl-color-gray-3);
   position: absolute;
   left: 0;
   margin-left: 20px;
@@ -211,6 +211,7 @@ a:where(.astro-3ii7xxms):hover {
 }
 
 .details > .content {
+  display: none;
   max-width: 1200px;
   box-sizing: border-box;
   padding: 0 10px;
@@ -221,13 +222,20 @@ a:where(.astro-3ii7xxms):hover {
   margin-left: 50px;
   border-top: none;
   transition:
+    display 400ms ease-out,
     max-height 400ms ease-out,
     border 100ms 400ms linear;
 }
 
 .details > details[open] + .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
   max-height: 1750px;
   transition:
+    display 400ms ease-out,
     max-height 400ms ease-out,
     border 100ms 400ms linear;
 }
@@ -294,4 +302,8 @@ html[data-theme="dark"] > .linkStyle:hover {
   color: var(--sl-color-accent) !important;
   border-bottom: 1px solid var(--sl-color-accent) !important;
   transition: all 0.6 ease-in;
+}
+
+td {
+  white-space: nowrap;
 }
