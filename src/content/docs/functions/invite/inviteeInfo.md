@@ -1,4 +1,3 @@
-
 ---
 title: $inviteeInfo
 description: $inviteeInfo returns the invitee's information.

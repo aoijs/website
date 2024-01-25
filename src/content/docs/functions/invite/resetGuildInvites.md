@@ -1,4 +1,3 @@
-
 ---
 title: $resetGuildInvites
 description: $resetGuildInvites will reset the invites of a guild.
