@@ -1,6 +1,6 @@
 ---
 title: $inviteLeaderboard
-description: `$inviteLeaderboard` will return the invite leaderboard.
+description: $inviteLeaderboard will return the invite leaderboard.
 id: inviteLeaderboard
 sidebar: 
   badge:

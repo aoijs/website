@@ -1,6 +1,6 @@
 ---
 title: $inviteEventInfo
-description:  $inviteEventInfo returns the inviteSystem event's information
+description: $inviteEventInfo returns the inviteSystem event's information
 id: inviteEventInfo
 sidebar: 
   badge:
