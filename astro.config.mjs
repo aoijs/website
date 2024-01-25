@@ -36,6 +36,7 @@ export default defineConfig({
       },
       customCss: ["./src/styles/custom.css"],
       components: {
+        PageSidebar: "./src/components/PageSidebar.astro",
         Search: "./src/components/Search.astro",
         Head: "./src/components/Head.astro",
       },
