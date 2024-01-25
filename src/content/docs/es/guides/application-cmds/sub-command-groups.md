@@ -24,7 +24,7 @@ Los subcomandos forman parte de los comandos de barra inclinada y se utilizan pa
 ## Creación de Comandos de Aplicación
 
 ```js
-$createApplicationCommand[guildID/global;name;description;defaultPermission(true/false);type(slash/user/message);options?]
+$createApplicationCommand[guildID/global;name;description;defaultPermission(true/false);type(slash/user/message);allowDm;options?]
 ```
 
 | Campo             | Tipo                                                                                                                                                                                                 | Descripción                                                                                                    | Requerido |
@@ -44,7 +44,7 @@ La documentación oficial se puede encontrar [aquí](https://discord.com/develop
 client.command({
   name: "createApplicationCommand",
   code: `
-  $createApplicationCommand[guildID/global;moderacion;Comandos de Moderación;true;slash;[{
+  $createApplicationCommand[guildID/global;moderacion;Comandos de Moderación;true;true;slash;[{
             "name": "usuario",
             "description": "Obtener o editar permisos para un usuario",
             "type": 2, // 2 es el tipo SUB_COMMAND_GROUP

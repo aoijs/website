@@ -21,7 +21,7 @@ $slashOption[option]
 ## Example(s)
 
 ```javascript
-$createApplicationCommand[global;exampleslash;Simple example slash command.;true;slash;[{
+$createApplicationCommand[global;exampleslash;Simple example slash command.;true;true;slash;[{
     "name": "exampleOption",
     "description": "example slash command option",
     "required": true,

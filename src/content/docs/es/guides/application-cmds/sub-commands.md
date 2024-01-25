@@ -25,7 +25,7 @@ Los subcomandos forman parte de los comandos de barra inclinada y se utilizan pa
 ## Creación de Comandos de Aplicación
 
 ```js
-$createApplicationCommand[guildID/global;name;description;defaultPermission(true/false);type(slash/user/message);options?]
+$createApplicationCommand[guildID/global;name;description;defaultPermission(true/false);type(slash/user/message);allowDm;options?]
 ```
 
 | Campo             | Tipo                                                                                                                                                                                                 | Descripción                                                                                                    | Requerido |
@@ -43,7 +43,7 @@ $createApplicationCommand[guildID/global;name;description;defaultPermission(true
 client.command({
   name: "createApplicationCommand",
   code: `
-  $createApplicationCommand[guildID/global;moderacion;¡Comandos de Moderación!;true;slash;[
+  $createApplicationCommand[guildID/global;moderacion;¡Comandos de Moderación!;true;true;slash;[
 {
   "name": "expulsar",
   "description": "¡Expulsa a alguien de tu servidor!",
@@ -66,7 +66,7 @@ Crear subcomandos con opciones o selecciones funciona básicamente de la misma m
 client.command({
   name: "createApplicationCommand",
   code: `
-  $createApplicationCommand[guildID/global;moderacion;¡Comandos de Moderación!;true;slash;[
+  $createApplicationCommand[guildID/global;moderacion;¡Comandos de Moderación!;true;true;slash;[
   {
     name: "expulsar",
     description: "¡Expulsa a alguien de tu servidor!",

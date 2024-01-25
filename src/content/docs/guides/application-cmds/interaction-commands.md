@@ -77,7 +77,7 @@ $createApplicationCommand[guildID/global;name;description;defaultPermission(true
 client.command({
   name: "createApplicationCommand",
   code: `
-  $createApplicationCommand[guildID/global;example;slash command description!;true;slash]`
+  $createApplicationCommand[guildID/global;example;slash command description!;true;true;slash]`
 });
 ```
 

@@ -31,7 +31,7 @@ Crea el comando de barra, esto creará un comando de aplicación global con el n
 client.command({
   name: "createApplicationCommand",
   code: `
-  $createApplicationCommand[global;ejemplo;¡Increíble comando de interacción de ejemplo con autocompletar!;true;slash;[{
+  $createApplicationCommand[global;ejemplo;¡Increíble comando de interacción de ejemplo con autocompletar!;true;true;slash;[{
     "name": "opcion", 
     "description": "¡Primera opción!",
     "required": false,

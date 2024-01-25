@@ -32,7 +32,7 @@ your main file)
 client.command({
   name: "createSlashCommand",
   code: `
-  $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;slash;[{
+  $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;true;slash;[{
   "name": "option",
   "description": "test",
   "required": false,
@@ -68,7 +68,7 @@ your main file)
 client.command({
   name: "createSlashCommand",
   code: `
-  $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;slash;[{
+  $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;true;slash;[{
   "name": "option",
   "description": "test",
   "required": false,

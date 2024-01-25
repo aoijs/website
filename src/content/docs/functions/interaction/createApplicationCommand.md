@@ -9,7 +9,7 @@ id: createApplicationCommand
 ## Usage
 
 ```php
-$createApplicationCommand[guildID/global;name;description;defaultPermission;type?;options?]
+$createApplicationCommand[guildID/global;name;description;defaultPermission;type?;allowDm?;options?]
 ```
 
 ## Parameters
@@ -20,6 +20,7 @@ $createApplicationCommand[guildID/global;name;description;defaultPermission;type
 | name               | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | Application command name, must be lowercase.                                |   true   |
 | description        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | Application command description.                                            |   true   |
 | defaultPermissions | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)                                                                                                  | If the command should follow the default permissions.                       |   true   |
+| allowDm?           | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)                                                                                                  | Allow Direct Message execution.                                             |   true   |
 | type?              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | The application command type. (slash/user/message)                          |  false   |
 | options?           | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | Application command options.                                                |  false   |
 
@@ -51,7 +52,7 @@ This will create a slash command without options:
 client.command({
   name: "createApplicationCommand",
   code: `
-  $createApplicationCommand[$guildID/global;example;slash command description!;true;slash]`
+  $createApplicationCommand[$guildID/global;example;slash command description!;true;true;slash]`
 });
 // Will create a slash commands without any user input, you can choose between global/$guildID to create a command globally or only for a specific guild.
 ```

@@ -76,7 +76,7 @@ const client = new AoiClient({
 // Create Interaction Ping Command
 client.command({
   name: "create",
-  code: `$createApplicationCommand[$guildID;ping;Pong!;true;slash]`
+  code: `$createApplicationCommand[$guildID;ping;Pong!;true;true;slash]`
 });
 ```
 

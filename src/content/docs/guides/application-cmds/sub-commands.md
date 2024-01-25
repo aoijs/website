@@ -48,7 +48,7 @@ $createApplicationCommand[guildID/global;name;description;defaultPermission(true
 client.command({
   name: "createApplicationCommand",
   code: `
-  $createApplicationCommand[guildID/global;moderation;Moderation Commands!;true;slash;[
+  $createApplicationCommand[guildID/global;moderation;Moderation Commands!;true;true;slash;[
 {
   "name": "kick",
   "description": "Kick someone of your guild!",
@@ -71,7 +71,7 @@ Creating sub commands with options or choices work basically the same as any oth
 client.command({
   name: "createApplicationCommand",
   code: `
-  $createApplicationCommand[$guildID;moderation;Moderation Commands!;true;slash;[
+  $createApplicationCommand[$guildID;moderation;Moderation Commands!;true;true;slash;[
 {
   "name": "kick",
   "description": "Kick someone out of your guild!",

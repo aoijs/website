@@ -161,6 +161,14 @@ export default defineConfig({
               collapsed: true,
             },
             {
+              label: "Invite",
+              badge: "Extension",
+              autogenerate: {
+                directory: "functions/invite",
+              },
+              collapsed: true,
+            },
+            {
               label: "Math",
               autogenerate: {
                 directory: "functions/math",

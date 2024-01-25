@@ -24,7 +24,7 @@ most cases, index.js)
 client.command({
   name: "createSlashCommand",
   code: `
-  $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;slash;[{
+  $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;true;slash;[{
   "name": "option", 
   "description": "test",
   "required": false,

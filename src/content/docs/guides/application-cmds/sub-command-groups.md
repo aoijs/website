@@ -47,7 +47,7 @@ The official documentation can be found [here](https://discord.com/developers/do
 client.command({
   name: "createApplicationCommand",
   code: `
-  $createApplicationCommand[guildID/global;moderation;Moderation Commands!;true;slash;[{
+  $createApplicationCommand[guildID/global;moderation;Moderation Commands!;true;true;slash;[{
             "name": "user",
             "description": "Get or edit permissions for a user",
             "type": 2, // 2 is type SUB_COMMAND_GROUP

@@ -31,7 +31,7 @@ Create the slash command, this will create a global application command with the
 client.command({
   name: "createApplicationCommand",
   code: `
-  $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;slash;[{
+  $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;true;slash;[{
     "name": "option", 
     "description": "First option!",
     "required": false,
@@ -64,7 +64,7 @@ Create the slash-command, this will create a global application command with the
 client.command({
   name: "createApplicationCommand",
   code: `
-  $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;slash;[{
+  $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;true;slash;[{
     "name": "option",
     "description": "First option with autocomplete.",
     "required": false, 
