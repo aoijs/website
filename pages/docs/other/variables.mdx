@@ -1,0 +1,136 @@
+---
+title: Variables
+description: This Guide will be covering variables, their usage and how to store variables in other files.
+id: variables
+og_image: https://raw.githubusercontent.com/aoijs/website/main/images/og/18.png
+---
+
+import { FileTree, Steps } from 'nextra/components'
+
+
+This guide will provide you with a comprehensive understanding of variables.
+
+### Using Variables
+
+Variables are useful tools in programming that allow you to store values that can be accessed and manipulated throughout your code. To use a variable, you first need to declare it by giving it a name and assigning a value to it.
+
+One way to do this is by using the following code snippet in your main file (usually named `index.js`):
+
+```js
+client.variables({
+  variableName: boolean,
+  variableName: number,
+  variableName: object,
+  variableName: "string",
+}, table?);
+```
+
+The `client.variables()` function takes an object as an argument, where each property represents a variable name and its corresponding value. You can assign variables to a certain table. However, this is optional and will default to "main".
+
+For example:
+
+```js
+client.variables({
+    blacklisted: false,
+    money: 0,
+    developers: {},
+    title: "none",
+  }, "main");
+```
+
+This also works:
+
+```js
+client.variables({
+  blacklisted: false,
+  money: 0,
+  developers: {},
+  title: "none",
+});
+```
+
+---
+
+## Variable Handlers
+
+Another way to use variables is by using a variable handler, which can help keep your main file organized and cleaner. To set up a variable handler, follow these steps:
+
+<Steps>
+### Create the directory
+- Create a folder with the name `handler` in the main directory.
+
+<FileTree>
+  <FileTree.File name="index.js" />
+  <FileTree.Folder name="commands">
+    <FileTree.File name="ban.js" />
+    <FileTree.File name="kick.js" />
+    <FileTree.File name="ping.js" />
+  </FileTree.Folder>
+  <FileTree.Folder name="handler" />
+</FileTree>
+
+### Create the file
+- Create a file with the name `variables.js` in the `handler` folder.
+
+<FileTree>
+  <FileTree.File name="index.js" />
+  <FileTree.Folder name="commands">
+    <FileTree.File name="ban.js" />
+    <FileTree.File name="kick.js" />
+    <FileTree.File name="ping.js" />
+  </FileTree.Folder>
+  <FileTree.Folder name="handler" defaultOpen>
+    <FileTree.File name="variables.js" />
+  </FileTree.Folder>
+</FileTree>
+
+### index.js file
+- In the `index.js` file, require the `variables.js` file.
+ 
+```js
+require("./handler/variables.js")(client);
+```
+
+### `handler/variables.js`
+- In the `handler/variables.js` file, export a function that takes a client as an argument including your variables.
+
+```js
+module.exports = (client) => {
+  client.variables({
+    variableName: boolean,
+    variableName: number,
+    variableName: object,
+    variableName: "string",
+  }, table?);
+};
+```
+
+For example:
+
+```js
+module.exports = (client) => {
+  client.variables({
+    blacklisted: false,
+    money: 0,
+    developers: {},
+    title: "none",
+  }, "main");
+};
+```
+
+This also works:
+
+```js
+module.exports = (client) => {
+  client.variables({
+    blacklisted: false,
+    money: 0,
+    developers: {},
+    title: "none",
+  });
+};
+```
+
+</Steps>
+
+With these steps, you now have a working variable handler, which can help you keep your code organized and easier to manage.

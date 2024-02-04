@@ -1,0 +1,56 @@
+---
+title: Getting Started
+description: The beginning process of how to use aoi.js and all its features.
+---
+
+![aoijs](https://raw.githubusercontent.com/aoijs/website/master/assets/images/aoijs-banner.png)
+
+## Features
+
+- Built-in support of **[database](https://www.npmjs.com/package/@akarui/aoi.db)** by default and ready for multipurpose.
+- Built-in **600+** functions, simple and easy to learn.
+- Simple to learn, all in string-based and compact.
+- Support of extensions available to be used by the community.
+
+## Installation
+
+```sh npm2yarn
+npm intall aoi.js
+```
+
+## Setup
+
+```javascript
+const { AoiClient } = require("aoi.js");
+
+const client = new AoiClient({
+    token: "Discord Bot Token",
+    prefix: "Discord Bot Prefix",
+    intents: ["MessageContent", "Guilds", "GuildMessages"],
+    events: ["onMessage", "onInteractionCreate"],
+    database: {
+        type: "aoi.db",
+        db: require("@akarui/aoi.db"),
+        dbType: "KeyValue",
+        tables: ["main"],
+        securityKey: "a-32-characters-long-string-here",
+    }
+});
+
+// Ping Command
+bot.command({
+    name: "ping",
+    code: `Pong! $pingms`
+});
+```
+
+## Disclaimer
+
+**[Aoi.js](https://www.npmjs.com/package/aoi.js)** is not affiliated or associated with Discord or any other services.
+
+## Links
+
+- [Website](https://aoi.js.org)
+- [NPM](https://www.npmjs.com/package/aoi.js)
+- [Github](https://github.com/AkaruiDevelopment/aoi.js)
+- [Discord Support Server](https://aoi.js.org/invite)

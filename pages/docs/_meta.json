@@ -1,0 +1,19 @@
+{
+  "*": {
+    "href": "/docs"
+  },
+  "index": "Introduction",
+  "-- Guides": {
+    "type": "separator",
+    "title": "Guides"
+  },
+  "client": "Client",
+  "application-cmds": "Application Commands",
+  "other": "Other",
+  "-- Functions": {
+    "type": "separator",
+    "title": "Functions"
+  },
+  "functions": "Functions",
+  "extensions": "Extensions"
+}

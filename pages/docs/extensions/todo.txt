@@ -1,0 +1,11 @@
+RENAME: all files to mdx
+FIX: components 
+
+new usage:
+
+import { Callout } from 'nextra/components'
+ 
+<Callout type="THE TYPE">
+  This is a dangerous feature that can cause everything to explode.
+</Callout>
+

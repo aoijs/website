@@ -1,0 +1,24 @@
+{
+  "index": {
+    "type": "page",
+    "title": "aoi.js",
+    "display": "hidden",
+    "theme": {
+      "layout": "full",
+      "timestamp": false,
+      "typesetting": "article"
+    }
+  },
+  "docs": {
+    "type": "page",
+    "title": "Documentation"
+  },
+  "404": {
+    "display": "hidden",
+    "type": "page",
+    "theme": {
+      "timestamp": false,
+      "typesetting": "article"
+    }
+  }
+}
