@@ -18,7 +18,7 @@ $clear[channelID;amount;filter?;returnCount?]
 | ------------ | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | :------: |
 | channelID    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | In which channel the permissions shall be deleted.                                                                                       |   true   |
 | amount       | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | Amount of messages to delete.                                                                                                            |   true   |
-| filter?      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Filter of messages which are to delete. <br /> 1. **everyone** (default) <br /> 2. **notpinned** <br /> 3. **bot** <br /> 4. **user:id** |  false   |
+| filter?      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Filter of messages which are to delete. <br /> 1. **everyone** (default) <br /> 2. **unpinned** <br /> 3. **bots** <br /> 4. **user:id** |  false   |
 | returnCount? | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Return the count of deleted messages. <br /> 1. **false** (default) <br /> 2. **true**                                                   |  false   |
 
 ## Example(s)
@@ -29,7 +29,7 @@ This will delete the most recent fifty messages which are not pinned:
 client.command({
   name: "clear",
   code: `
-  $clear[$channelID;50;unPins;false]
+  $clear[$channelID;50;unpinned;false]
   `
 });
 ```
