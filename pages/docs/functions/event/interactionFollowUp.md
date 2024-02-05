@@ -10,7 +10,7 @@ than 3 seconds.
 ## Usage
 
 ```php
-$interactionFollowUp[content?;embeds?;components?;files?;ephemeral?]
+$interactionFollowUp[content?;embeds?;components?;files?;ephemeral?;returnID?]
 ```
 
 ## Parameters
@@ -22,6 +22,7 @@ $interactionFollowUp[content?;embeds?;components?;files?;ephemeral?]
 | components? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Component parser.                                                                    |  false   |
 | files?      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | File parser.                                                                         |  false   |
 | ephemeral?  | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Visible to the command author only? <br /> 1. **true** <br /> 2. **false** (default) |  false   |
+| returnID?  | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Return message ID? <br /> 1. **true** <br /> 2. **false** (default) |  false   |
 
 ## Example(s)
 
