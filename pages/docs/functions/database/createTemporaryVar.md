@@ -27,7 +27,7 @@ This will create a new variable with the name of "variable" and the value of "va
 client.command({
   name: "createTemporaryVar",
   code: `
-  $createTemporaryVar[main;variable;value]
+  $createTemporaryVar[main:variable:value]
   `
 });
 ```
