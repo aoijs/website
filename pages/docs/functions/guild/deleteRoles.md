@@ -17,8 +17,7 @@ $deleteRoles[guildID;...roles]
 | Field                                                                                                                                         | Type                                                                                              | Description                                     | Required |
 | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------- | :------: |
 | guildID                                                                                                                                       | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The guild ID of where the roles are located in. |   true   |
-| ...roles                                                                                                                                      | [number](https://developer.mozilla.org/en-US/docs/Web/                                            |
-| JavaScript/Reference/Global_Objects/Number),[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The Ids of the roles.                                                                             | true                                            |
+| ...roles                                                                                                                                      | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number),[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The Ids of the roles.                                                                             | true  |
 
 ## Example(s)
 
