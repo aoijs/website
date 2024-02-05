@@ -9,16 +9,14 @@ id: editButton
 ## Usage
 
 ```php
-$editButton[index;oldCustomId;newCustomId;label;style;disabled?;emoji?;messageId?;channelId?]
+$editButton[customId;label;style;disabled?;emoji?;messageId?;channelId?]
 ```
 
 ## Parameters
 
 | Field       | Type                                                                                                | Description                                                                                                              | Required |
 | ----------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | :------: |
-| index       | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | In which (action)row the button is located.                                                                              |   true   |
-| oldCustomId | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The custom Id of the button you wish to edit.                                                                            |   true   |
-| newCustomId | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The new custom Id that will be assigned.                                                                                 |   true   |
+| customId | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The custom ID of the button you wish to edit.                                                                            |   true   |
 | label       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The text that will be displayed on the button as label.                                                                  |   true   |
 | style       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The button **[style](https://discord.com/developers/docs/interactions/message-components#button-object-button-styles)**. |   true   |
 | disabled?   | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Make the button unuseable/disabled? <br /> 1. **true** <br /> 2. **false** (default)                                     |  false   |
@@ -109,7 +107,7 @@ module.exports = [
     type: "interaction",
     prototype: "button",
     code: `
-    $editButton[1;exampleButton;newExampleButton;New Button!;secondary;true;😀;$interactionData[message.id];$interactionData[channel.id]]
+    $editButton[exampleButton;New Button!;secondary;true;😀;$interactionData[message.id];$interactionData[channel.id]]
     $interactionReply[The button just changed!]`
   },
 ];
