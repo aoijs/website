@@ -27,7 +27,7 @@ This will return `Ferel` and `aoi.js`:
 client.command({
   name: "getObjectValues",
   code: `
-  $getObjectValues[Object Name;Leref;Ferel]
+  $getObjectValues[Object Name; ]
   $createObject[Object Name;{
     "Leref": "Ferel",
     "dbd.js": "aoi.js"
