@@ -22,7 +22,7 @@ $onlyForRoles[...roleIds;error]
 
 ## Example(s)
 
-This will limit the command only to the listed channels:
+This will limit the command only to the listed roles:
 
 ```javascript
 client.command({
