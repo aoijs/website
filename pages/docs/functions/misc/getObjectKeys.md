@@ -27,7 +27,7 @@ This will return `Leref` and `dbd.js`:
 client.command({
   name: "getObjectKeys",
   code: `
-  $getObjectKeys[Object Name;Leref;Ferel]
+  $getObjectKeys[Object Name; ]
   $createObject[Object Name;{
     "Leref": "Ferel",
     "dbd.js": "aoi.js"
