@@ -53,7 +53,7 @@ anything, simply reinvite it.
 ## Creating Application Commands
 
 ```js
-$createApplicationCommand[guildID/global;name;description;defaultPermission(true/false);type(slash/user/message);options?]
+$createApplicationCommand[guildID/global;name;description;defaultPermission(true/false);allowDm(true/false);type(slash/user/message);options?]
 ```
 
 | Field             | Type                                                                                                                                                                                                 | Description                                                                                                    | Required |
@@ -62,8 +62,9 @@ $createApplicationCommand[guildID/global;name;description;defaultPermission(true
 | name              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The actual slash command name that will be visible to the user.                                                |   true   |
 | description       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The slash command description that will be visible to the user.                                                |   true   |
 | defaultPermission | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | If the application command should syncronisate to the default permissions.                                     |   true   |
+| allowDm           | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | Allow Direct Message execution.                                                                                |   true   |
 | type              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | The application command type (explained below)                                                                 |   true   |
-| options?          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)                                                                                                    | [Slash commands options](#examples-of-creating-application-commands).                                          |   true   |
+| options?          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)                                                                                                    | [Slash commands options](#examples-of-creating-application-commands).                                          |   false  |
 
 #### Application Types
 

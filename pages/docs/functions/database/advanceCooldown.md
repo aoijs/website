@@ -12,8 +12,7 @@ id: advanceCooldown
 $advanceCooldown[time;id;errorMessage]
 ```
 
-- You are able to retrieve the remaining cooldown in the `$cooldown` function by using **`%time%`** or any of the
-  following below.
+- You can retrieve the remaining cooldown in the `$cooldown` function by using **`%time%`** or any of the below.
   - `%time%` `%year%` `%month%` `%week%` `%day%` `%hour%` `%min%` `%sec%` `%ms%` `%fullTime%`
 
 ## Parameters
@@ -26,13 +25,13 @@ $advanceCooldown[time;id;errorMessage]
 
 ## Example(s)
 
-This will set a cooldown for the guild of where you execute the command in and return the remaining cooldown time:
+This will set a cooldown for the guild where you execute the command and return the remaining cooldown time:
 
 ```javascript
 client.command({
   name: "advanceCooldown",
   code: `
-  $advanceCooldown[2m;$guildID;]
+  $advanceCooldown[2m;$guildID;Please wait %time% to execute this command again.]
   `
 });
 ```

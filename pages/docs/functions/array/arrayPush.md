@@ -9,14 +9,15 @@ id: arrayPush
 ## Usage
 
 ```php
-$arrayPush[...elements]
+$arrayPush[name;...elements]
 ```
 
 ## Parameters
 
-| Field       | Type                                                                                              | Description      | Required |
-| ----------- | ------------------------------------------------------------------------------------------------- | ---------------- | :------: |
-| ...elements | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Elements to add. |   true   |
+| Field       | Type                                                                                              | Description        | Required |
+| ----------- | ------------------------------------------------------------------------------------------------- | ------------------ | :------: |
+| name        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Name of the array. |   true   |
+| ...elements | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Elements to add.   |   true   |
 
 ## Example(s)
 

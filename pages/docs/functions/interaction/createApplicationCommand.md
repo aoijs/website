@@ -9,7 +9,7 @@ id: createApplicationCommand
 ## Usage
 
 ```php
-$createApplicationCommand[guildID/global;name;description;defaultPermission;type?;allowDm?;options?]
+$createApplicationCommand[guildID/global;name;description;defaultPermission;allowDm?;type?;options?]
 ```
 
 ## Parameters

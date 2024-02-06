@@ -1,10 +1,10 @@
 ---
 title: $hour
-description: $hour will return the current hour in CST.
+description: $hour will return the current hour in UTC.
 id: hour
 ---
 
-`$hour` will return the current hour in CST.
+`$hour` will return the current hour in UTC.
 
 ## Usage
 
