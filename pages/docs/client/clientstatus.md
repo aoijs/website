@@ -27,7 +27,7 @@ client.status({
     name: string,
     type: string,
     time: number,
-    URL?: string,
+    url?: string,
     afk?: boolean
 });
 ```
@@ -60,7 +60,7 @@ client.status({
   name: "Example Text two!",
   type: "STREAMING",
   time: 25,
-  URL: "some URL",
+  url: "some URL",
 });
 
 client.status({
