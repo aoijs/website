@@ -45,9 +45,10 @@ const config: DocsThemeConfig = {
             This function is not included in aoi.js and requires therefore <b>{functionType === "invite" ? "@akarui/aoi.invite" : "@akarui/aoi.music"}</b> to be installed.
           </Callout>
         </div>
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image:src" content={frontMatter?.og_image || "https://raw.githubusercontent.com/aoijs/website/main/images/og/1.png"}>
         <link rel="icon" href={"https://raw.githubusercontent.com/aoijs/website/main/images/favicon.png"}></link>
         <meta property="og:url" content={url} />
-        <meta property="og:image" content={frontMatter?.og_image || "https://raw.githubusercontent.com/aoijs/website/main/images/og/1.png"} />
         <meta property="og:title" content={frontMatter.title || "aoi.js | Akarui Development"} />
         <meta
           property="og:description"
@@ -60,7 +61,8 @@ const config: DocsThemeConfig = {
     return (
       <>
         <meta property="og:url" content={url} />
-        <meta property="og:image" content={frontMatter?.og_image || "https://raw.githubusercontent.com/aoijs/website/main/images/og/1.png"} />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image:src" content={frontMatter?.og_image || "https://raw.githubusercontent.com/aoijs/website/main/images/og/1.png"}>
         <meta property="og:title" content={frontMatter.title || "aoi.js | Akarui Development"} />
         <meta
           property="og:description"
