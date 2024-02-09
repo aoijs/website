@@ -47,7 +47,7 @@ const config: DocsThemeConfig = {
         </div>
         <link rel="icon" href={"https://raw.githubusercontent.com/aoijs/website/main/images/favicon.png"}></link>
         <meta property="og:url" content={url} />
-        <meta name="og:image" content={frontMatter?.og_image || "https://raw.githubusercontent.com/aoijs/website/main/images/og/1.png"} />
+        <meta property="og:image" content={frontMatter?.og_image || "https://raw.githubusercontent.com/aoijs/website/main/images/og/1.png"} />
         <meta property="og:title" content={frontMatter.title || "aoi.js | Akarui Development"} />
         <meta
           property="og:description"
