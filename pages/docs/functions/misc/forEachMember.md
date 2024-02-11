@@ -9,7 +9,7 @@ id: forEachMember
 ## Usage
 
 ```php
-$forEachMember[time;awaitData;...awaitedCmds;endCmd]
+$forEachMember[time;awaitData;...awaitedCmds;endCmd?]
 ```
 
 ## Parameters
