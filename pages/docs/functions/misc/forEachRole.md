@@ -9,7 +9,7 @@ id: forEachRole
 ## Usage
 
 ```php
-$forEachRole[guildID;time;awaitData;...awaitedCmds;endCmd]
+$forEachRole[guildID;time;awaitData;...awaitedCmds;endCmd?]
 ```
 
 ## Parameters
@@ -17,7 +17,6 @@ $forEachRole[guildID;time;awaitData;...awaitedCmds;endCmd]
 | Field                                       | Type                                                                                              | Description                                              | Required |
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | :------: |
 | time                                        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | How long it takes between each role to execute the next. |   true   |
-| awaitData                                   | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |
-| JavaScript/Reference/Global_Objects/Object) | Awaited Data.                                                                                     | true                                                     |
+| awaitData                                   | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) | Awaited Data.                                            |   true   |
 | ...awaitedCmds                              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Awaited Commands to execute.                             |   true   |
-| endCmd                                      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Awaited Command to execute when loop ends.               |   true   |
+| endCmd?                                     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Awaited Command to execute when the loop ends.           |   false  |
