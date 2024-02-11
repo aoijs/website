@@ -14,12 +14,10 @@ $cloneObject[objectName;newObjectName]
 
 ## Parameters
 
-| Field                                             | Type                                                                                              | Description                                                                                           | Required |
-| ------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | :------: |
-| objectName                                        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |
-| JavaScript/Reference/Global_Objects/Object) name. | true                                                                                              |
-| newObjectName                                     | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |
-| JavaScript/Reference/Global_Objects/Object)       | The object name of the cloned object.                                                             | true                                                                                                  |
+| Field           | Type                                                                                              | Description                                  | Required |
+|---------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------- | :------: |
+| objectName      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The name of the object that will be cloned.  | true     |
+| newObjectName   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The new name for the cloned object.          | true     |
 
 ## Example(s)
 

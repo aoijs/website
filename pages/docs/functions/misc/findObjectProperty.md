@@ -9,16 +9,16 @@ id: findObjectProperty
 ## Usage
 
 ```php
-$findObjectProperty[objectName;...properties]
+$findObjectProperty[objectName;property;format?]
 ```
 
 ## Parameters
 
-| Field                                       | Type                                                                                              | Description             | Required |
-| ------------------------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------- | :------: |
-| objectName                                  | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |
-| JavaScript/Reference/Global_Objects/Object) | The object name.                                                                                  | true                    |
-| ...properties                               | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Name of the properties. |   true   |
+| Field      | Type                                                                                                | Description                                                   | Required |
+| ---------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | :------: |
+| objectName | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The object's name.                                            |   true   |
+| property   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Name of the property to be searched.                          |   true   |
+| format?    | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Format the output?<br/>1. **true**<br/>2. **false** (default) |   false  |
 
 ## Example(s)
 

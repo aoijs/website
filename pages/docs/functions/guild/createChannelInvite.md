@@ -17,8 +17,7 @@ $createChannelInvite[channelID?;...options]
 | Field                                       | Type                                                                                              | Description                                         | Required |
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------- | :------: |
 | channelID?                                  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The channel ID of which the invite will be created. |  false   |
-| options?                                    | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |
-| JavaScript/Reference/Global_Objects/Object) | Invite options.                                                                                   | false                                               |
+| options?                                    | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) | Invite options.                                     |  false   |
 
 <div class="details">
 <details open>
