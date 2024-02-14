@@ -3,25 +3,41 @@ title: Getting Started
 description: The beginning process of how to use aoi.js and all its features.
 ---
 
+import { Feature, Features } from '../components/features'
+import { ArrowRightIcon } from '../components/icons/arrow-right'
+import cn from 'clsx'
+import Image from 'next/image'
 import Link from 'next/link'
+import docsCard from '../images/og/1.png'
+import extensionsCard from '../images/extensions-front.png'
 import styles from './index.module.css'
 
 <meta property="og:url" content={"https://aoi.js.org"} />
 <meta name="og:image" content={"https://raw.githubusercontent.com/aoijs/website/main/images/og/1.png"} />
 <meta property="og:title" content={"aoi.js | Akarui Development"} />
 <meta property="og:description" content={"The most advanced string package to create your own Discord Bot"} />
+<link rel="icon" href={"https://raw.githubusercontent.com/aoijs/website/main/images/favicon.png"}></link>
 
+export function Comparison({ a, b, invert, ...props }) {
+  return (
+    <div className={cn(styles.comparison, invert && styles.invert)} {...props}>
+      <div>{a}</div>
+      <ArrowRightIcon width="1.2em" />
+      <div>{b}</div>
+    </div>
+  )
+}
 
 <div className="home-content">
   <div className="content-container">
-    <h1 className="headline">Create powerful Discord Bots <br className='sm:block hidden'/>with aoi.js</h1>
-    <p className="subtitle">Advanced, powerful and easy <br className='sm:block hidden'/>creation of Discord Bots</p>
+    <h1 className="headline">Create Discord bots <br className='sm:block hidden'/>with ease</h1>
+    <p className="subtitle">Simple, powerful and easy to use <br className='sm:block hidden'/>string based package</p>
+    <br />
     <p className="subtitle">
       <Link className={styles.cta} href="/docs">Get started <span>→</span></Link>
     </p>
   </div>
-</div>
-
+  <br />
   <style jsx>{`
     .content-container {
       max-width: 90rem;
@@ -33,12 +49,14 @@ import styles from './index.module.css'
       margin: 8rem 0 0;
       padding: 4rem 0;
       background-color: #f3f4f6;
+      border-radius: 6px;
       border-bottom: 1px solid #e5e7eb;
     }
     .features-container .content-container {
       margin-top: -8rem;
     }
     :global(.dark) .features-container {
+      border-radius: 6px;
       background-color: #000;
       border-bottom: 1px solid rgb(38,38,38);
     }
@@ -61,7 +79,6 @@ import styles from './index.module.css'
       background-image: linear-gradient(146deg,#fff,#757a7d);
     }
     .subtitle {
-      margin-top: 10px;
       font-size: 1.3rem;
       font-size: min(1.3rem, max(3.5vw, 1.2rem));
       font-feature-settings: initial;
@@ -88,15 +105,6 @@ import styles from './index.module.css'
       z-index: 0;
       user-select: none;
       pointer-events: none;
-    }
-    :global(#docs-card img:nth-child(2)) {
-      display: none;
-    }
-    :global(.dark #docs-card img:nth-child(2)) {
-      display: initial;
-    }
-    :global(.dark #docs-card img:nth-child(1)) {
-      display: none;
     }
     :global(#highlighting-card) {
       min-height: 300px;
@@ -216,3 +224,39 @@ import styles from './index.module.css'
       }
     }
   `}</style>
+
+  <div className="features-container">
+    <div className="content-container">
+      <Features>
+        <Feature index={0} large centered id="docs-card" href="/docs">
+          <Image src={docsCard} alt="Background" loading="eager" />
+        </Feature>
+        <Feature index={1} centered className="card-with-border" href="/docs">
+          <div className="h-full flex flex-col justify-between">
+            <h3>Get Started</h3>
+            <p className='text-left mb-8'>Create your Discord Bot within minutes using our CLI tool.</p>
+            <br />
+            <div>
+              <div className={styles.optimization}>
+                <div style={{ fontSize: '.9rem' }} className="leading-8">
+                  <code>{`npm install -g @akarui/aoi.cli`}</code> <br /> <code>{`npx aoijs create`}</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Feature>
+        <Feature index={2} centered className="card-with-border" href="/extentions">
+          <br />
+          <h3>String based functions</h3>
+          <br />
+          <p>With string based functions, you can create and edit your code without actual JavaScript knowledge.</p>
+          <br />
+          <br />
+        </Feature>
+        <Feature index={3} large centered id="docs-card" href="/extensions">
+          <Image src={extensionsCard} alt="Background" loading="eager" />
+        </Feature>
+      </Features>
+    </div>
+  </div>
+</div>

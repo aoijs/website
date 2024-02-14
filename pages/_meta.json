@@ -9,9 +9,16 @@
       "typesetting": "article"
     }
   },
+  "invite": {
+    "display": "hidden"
+  },
   "docs": {
     "type": "page",
     "title": "Documentation"
+  },
+  "extensions": {
+    "type": "page",
+    "title": "Extensions"
   },
   "404": {
     "display": "hidden",

@@ -1,0 +1,12 @@
+{
+  "-- Music": {
+    "type": "separator",
+    "title": "Music"
+  },
+  "music": "@akarui/aoi.music",
+  "-- Invite": {
+    "type": "separator",
+    "title": "Invite"
+  },
+  "invite": "@akarui/aoi.invite"
+}

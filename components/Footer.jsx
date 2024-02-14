@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div>
             <div>
-                Last built: {buildInfo.buildDate || "N/A"} 
+                Last built: {buildInfo.buildDate || "N/A, "}
                 Commit: {buildInfo.commitHash || "N/A"}
             </div>
             © {new Date().getFullYear()} Brought to you by <b>Akarui Development</b>

@@ -4,15 +4,17 @@
   "description": "nextra",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node --max-old-space-size=4096 ./node_modules/.bin/next build",
     "start": "next start"
   },
   "dependencies": {
-    "next": "^13.0.6",
+    "framer-motion": "^10.0.0",
+    "next": "^13.5.6",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1"
   },
   "devDependencies": {
     "@types/node": "18.11.10",

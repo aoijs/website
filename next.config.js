@@ -9,4 +9,7 @@ module.exports = {
   images: {
     unoptimized: true,
   },
+  experimental: {
+    esmExternals: false,
+  }
 };
