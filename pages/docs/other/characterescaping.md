@@ -17,8 +17,6 @@ og_image: https://raw.githubusercontent.com/aoijs/website/main/images/og/11.png
 
 Character escaping is a technique used to represent characters that have special meaning in a particular context. For example, in programming languages, the backslash (`\`) character is used to escape special characters, such as newlines and quotation marks.
 
-Character escaping can also be used in markup languages, such as HTML and XML, to represent characters that are not part of the standard character set. For example, the `&` character can be used to represent the ampersand (`&`) symbol.
-
 ## When to use character escaping
 
 Character escaping is typically used in the following situations:
@@ -44,7 +42,7 @@ The following table shows some commonly used escape sequences:
 | `}`        | `#LEFT_BRACKET#`  | `\}`        |
 | `,`        | `#COMMA#`         |             |
 | `&&`       | `#AND#`           | `\&\& `     |
-| `\|\|`     | `#OR#`            | `\\\`       |
+| `\|\|`     | `#OR#`            | `\\\\`      |
 | `NEW LINE` |                   | `\n`        |
 
 ## Examples
