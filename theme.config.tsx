@@ -51,10 +51,6 @@ const config: DocsThemeConfig = {
             property="og:description"
           />
           <meta content="aoi.js | Discord" property="og:site_name" />
-          <meta
-            http-equiv="refresh"
-            content="0;url=https://discord.com/invite/HMUfMXDQsV"
-          />
         </>
       );
     }
