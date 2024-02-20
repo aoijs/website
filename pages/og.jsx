@@ -3,13 +3,7 @@ export const config = {
   runtime: "edge",
 };
 
-const font = fetch(new URL("./Inter-SemiBold.otf", import.meta.url)).then(
-  (res) => res.arrayBuffer()
-);
-
 export default async function (req) {
-  const inter = await font;
-
   const { searchParams } = new URL(req.url);
 
   // ?title=<title>
@@ -128,13 +122,6 @@ export default async function (req) {
     {
       width: 1200,
       height: 630,
-      fonts: [
-        {
-          name: "inter",
-          data: inter,
-          style: "normal",
-        },
-      ],
     }
   );
 }
