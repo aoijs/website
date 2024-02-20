@@ -51,7 +51,7 @@ const config: DocsThemeConfig = {
       );
     }
 
-    const ogImage = `https://aoi.js.org/og/image?title=${frontMatter.title}&description=${frontMatter.description}`;
+    const ogImage = `https://aoi.js.org/api/og?title=${frontMatter.title}&description=${frontMatter.description}`;
 
     return (
       <>
