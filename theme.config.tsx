@@ -1,9 +1,8 @@
-import { DocsThemeConfig } from "nextra-theme-docs";
+import type { DocsThemeConfig } from "nextra-theme-docs";
 import { useRouter } from "next/router";
 import { useConfig } from "nextra-theme-docs";
 import Footer from "./components/Footer";
 import Image from "next/image";
-import { Callout } from "nextra/components";
 
 const config: DocsThemeConfig = {
   logo: () => {
@@ -27,16 +26,13 @@ const config: DocsThemeConfig = {
       };
     }
   },
-  head: () => {
+  head: function useHead() {
     const { asPath } = useRouter();
     const { frontMatter } = useConfig();
 
     const url = `https://aoi.js.org/${asPath}`;
 
-    const functionType = asPath.split("/")[2];
-
-    console.log(asPath);
-
+    // /invite
     if (asPath === "/invite") {
       return (
         <>
@@ -55,28 +51,7 @@ const config: DocsThemeConfig = {
       );
     }
 
-    /*
-    if (frontMatter.extension) {
-      return (
-        <>
-        <div style={{ paddingTop: '0px', paddingRight: '10px', paddingBottom: '10px', paddingLeft: '10px' }}>
-          <Callout type="warning" emoji="⚠️">
-            This function is not included in aoi.js and requires therefore <b>{functionType === "invite" ? "@akarui/aoi.invite" : "@akarui/aoi.music"}</b> to be installed.
-          </Callout>
-        </div>
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image:src" content={frontMatter?.og_image || "https://raw.githubusercontent.com/aoijs/website/main/images/og/1.png"} />
-        <link rel="icon" href={"https://raw.githubusercontent.com/aoijs/website/main/images/favicon.png"}></link>
-        <meta property="og:url" content={url} />
-        <meta property="og:title" content={frontMatter.title || "aoi.js | Akarui Development"} />
-        <meta
-          property="og:description"
-          content={frontMatter.description || "The most advanced string package to create your own Discord Bot"}
-        />
-        </>
-      )
-    }
-    */
+    const ogImage = `https://aoi.js.org/api/og?title=${frontMatter.title}&description=${frontMatter.description}`;
 
     return (
       <>
@@ -88,23 +63,10 @@ const config: DocsThemeConfig = {
           }
         ></link>
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:image:src"
-          content={
-            frontMatter?.og_image ||
-            "https://raw.githubusercontent.com/aoijs/website/main/images/og/1.png"
-          }
-        />
+        <meta name="twitter:image:src" content={ogImage} />
         <meta
           property="og:title"
           content={frontMatter.title || "aoi.js | Akarui Development"}
-        />
-        <meta
-          property="og:description"
-          content={
-            frontMatter.description ||
-            "The most advanced string package to create your own Discord Bot"
-          }
         />
       </>
     );

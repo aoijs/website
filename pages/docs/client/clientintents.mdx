@@ -1,0 +1,80 @@
+---
+title: Client Intents
+description: This page provides an overview of the Client Intents required for various functionalities.
+id: intents
+og_image: https://raw.githubusercontent.com/aoijs/website/main/images/og/6.png
+---
+
+import { Callout } from "nextra/components";
+
+<Callout type="warning" emoji="⚠️">
+  - All intents marked with (**R**) require verification if your bot is in more
+  than 100 guilds. 
+  - For more information on each intent and its specific use
+  cases, refer to the official Discord.js documentation:
+  [https://discordjs.guide/popular-topics/intents](https://discordjs.guide/popular-topics/intents)
+</Callout>
+
+Two types of intents exist:
+
+- Standard intents can be passed by default. You don't need any additional permissions or configurations.
+- [Privileged intents](https://discord.com/developers/docs/topics/gateway#privileged-intents) require you to toggle the intent for your app in your app's settings within the Developer Portal before passing said intent. For verified apps (required for apps in 100+ guilds), the intent must also be approved after the verification process to use the intent.
+
+## List of Intents
+
+### Guild Intents
+
+- **Guilds** (**R**)
+  - Access data about guilds the bot is in.
+- **GuildMembers** (**R**)
+  - Access data about members in guilds the bot is in.
+- **GuildPresences** (**R**)
+  - Access online status and activities of members in guilds the bot is in.
+- **GuildMessages**
+  - Access messages sent in guilds the bot is in.
+- **GuildVoiceStates** (**R**)
+  - Access voice state information of members in guilds the bot is in.
+- **GuildIntegrations**
+  - Access data about third-party integrations in guilds the bot is in.
+- **GuildWebhooks**
+  - Access data about webhooks in guilds the bot is in.
+- **GuildInvites**
+  - Access data about invites in guilds the bot is in.
+- **GuildVoiceDiscovery** (**R**)
+  - Access data about Voice Discovery in guilds the bot is in.
+- **GuildEmojisAndStickers**
+  - Access data about emojis and stickers in guilds the bot is in.
+- **GuildMessageReactions**
+  - Access data about message reactions in guilds the bot is in.
+- **GuildChannelMessages**
+  - Access messages sent in guild channels (requires additional configuration).
+- **GuildTyping**
+  - Access information about users typing in guild channels.
+- **GuildScheduledEvents**
+  - Access data about scheduled events in guilds the bot is in.
+- **GuildVoiceStates**
+  - Access voice state information of members in guilds the bot is in.
+- **GuildIntegrations**
+  - Access data about third-party integrations in guilds the bot is in.
+- **GuildWebhooks**
+  - Access data about webhooks in guilds the bot is in.
+- **GuildInvites**
+  - Access data about invites in guilds the bot is in.
+
+### Direct Messages
+
+- **DirectMessages**
+  - Access data about direct messages sent to the bot.
+- **DirectMessageReactions**
+  - Access data about reactions in direct messages sent to the bot.
+- **DirectMessageTyping**
+  - Access information about users typing in direct messages to the bot.
+
+### Privileged Intents
+
+- **GuildMembers**
+  - Access data about members in guilds the bot is in (requires verification).
+- **GuildPresences**
+  - Access online status and activities of members in guilds the bot is in (requires verification).
+- **GuildVoiceStates**
+  - Access voice state information of members in guilds the bot is in (requires verification).
