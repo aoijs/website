@@ -4,21 +4,19 @@ export const config = {
 };
 
 export default async function (req) {
-  const inter = await font;
-
   const { searchParams } = new URL(req.url);
 
   // ?title=<title>
   const hasTitle = searchParams.has("title");
   const title = hasTitle
     ? searchParams.get("title")?.slice(0, 100)
-    : "aoi.js Documentation";
+    : "Documentation";
 
   // ?description=<description>
   const hasDescription = searchParams.has("description");
   const description = hasDescription
     ? searchParams.get("description")?.slice(0, 200)
-    : "Create powerful Discord Bots fast, easy.";
+    : "Description";
 
   return new ImageResponse(
     (
@@ -95,7 +93,7 @@ export default async function (req) {
             }}
           >
             <img
-              src="https://cdn.discordapp.com/attachments/1058843428831629443/1194650171749974118/image-removebg-preview_1.png"
+              src="image url (removed it for now)"
               style={{
                 opacity: 0.3,
                 width: "50px",
