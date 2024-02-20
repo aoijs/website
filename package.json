@@ -9,11 +9,7 @@
   },
   "dependencies": {
     "@vercel/og": "^0.5.0",
-    "framer-motion": "^10.0.0",
-    "fs": "^0.0.1-security",
     "next": "^13.5.6",
-    "nextra": "latest",
-    "nextra-theme-docs": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
