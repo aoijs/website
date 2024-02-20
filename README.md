@@ -15,6 +15,8 @@
   </div>
 </div>
 
+## If you see this page, that means the docs are temporarly unaccessible. Try again in a few minutes.
+
 ## ❓ What is aoi.js?
 
 aoi.js is a JavaScript library that is designed to make it easy to build Discord bots. It is open-source and free to

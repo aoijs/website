@@ -1,18 +1,18 @@
 ---
-title: Client Status
-description: This guide will be covering the functionality and usage of client statuses.
+title: Client Status Guide
+description: Learn how to customize and manage client statuses and presences in your Discord bot.
 id: status
 og_image: https://raw.githubusercontent.com/aoijs/website/main/images/og/10.png
 ---
 
 <!-- omit from toc -->
-
 ## Table of Contents
 
-- [Table of Contents](#table-of-contents)
-  - [Bot Status](#bot-status)
-    - [Customizing Bot Status](#customizing-bot-status)
-  - [Client Presence](#client-presence)
+- [Bot Status](#bot-status)
+  - [Customizing Bot Status](#customizing-bot-status)
+  - [Status Types](#status-types)
+- [Client Presence](#client-presence)
+  - [Presence Types](#presence-types)
 
 ---
 
@@ -20,7 +20,7 @@ og_image: https://raw.githubusercontent.com/aoijs/website/main/images/og/10.png
 
 #### Customizing Bot Status
 
-First of all we have to add the following piece of code to our main file:
+To customize your bot's status, add the following code to your main file:
 
 ```javascript
 client.status({
@@ -28,11 +28,11 @@ client.status({
     type: string,
     time: number,
     url?: string,
-    afk?: boolean
+    afk?: boolean,
 });
 ```
 
-When you use sharding you can individually change the status of each shard:
+When using sharding, you can individually change the status of each shard:
 
 ```javascript
 client.status({
@@ -43,11 +43,17 @@ client.status({
 });
 ```
 
----
+Replace `string`, `number`, and `boolean` with appropriate values. Here's an example:
 
-This will display the text "Example Text!" as bot status, of course you can modify it.
+```javascript
+client.status({
+  name: "Example Text!",
+  type: "PLAYING",
+  time: 12,
+});
+```
 
-If you want to have multiple statuses just add multiple `client.status({...})` simple do the following:
+You can have multiple statuses by adding multiple `client.status({...})` calls:
 
 ```javascript
 client.status({
@@ -64,11 +70,13 @@ client.status({
 });
 
 client.status({
-  name: "Doing nothing..", // normal status as any other Discord User without any state
+  name: "Doing nothing..", // Normal status like any other Discord user without any state.
   time: 50,
   type: "CUSTOM",
 });
 ```
+
+#### Status Types
 
 There are various types of statuses (not case-sensitive):
 
@@ -81,7 +89,7 @@ There are various types of statuses (not case-sensitive):
 
 ### Client Presence
 
-You can also set the bot's presence, by adding the `status` property, for example:
+You can also set the bot's presence by adding the `status` property, for example:
 
 ```javascript
 client.status({
@@ -92,9 +100,11 @@ client.status({
 });
 ```
 
-There are multiple types of presences:
+#### Presence Types
 
-> - **online**
-> - **idle**
-> - **dnd**
-> - **invisible**
+Available presence statuses:
+
+- **online**
+- **idle**
+- **dnd**
+- **invisible**

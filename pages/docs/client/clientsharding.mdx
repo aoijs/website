@@ -5,9 +5,9 @@ id: sharding
 og_image: https://raw.githubusercontent.com/aoijs/website/main/images/og/9.png
 ---
 
-<!-- omit from toc -->
-### Table of Contents
+import { Callout } from "nextra/components";
 
+### Table of Contents
 - [What's Sharding?](#whats-sharding)
 - [Getting Started](#getting-started)
   - [Constructor](#constructor)
@@ -104,11 +104,10 @@ client.command({
 
 Then by running `node shard.js` you are able to start your bot.
 
-:::caution[Start Command]
 
-Running `node index.js` will no longer work if you want to have sharding, use `node shard.js`.
-
-:::
+<Callout type="warning" emoji="⚠️">
+  Running `node index.js` will no longer work if you want to have sharding, use `node shard.js`.
+</Callout>
 
 ---
 
