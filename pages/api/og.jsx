@@ -22,7 +22,7 @@ export default async function (req) {
   const hasDescription = searchParams.has("description");
   const description = hasDescription
     ? searchParams.get("description")?.slice(0, 200)
-    : "Aoi.js is a powerful, fast, and easy-to-use package for creating your Discord Bot.";
+    : "Create powerful Discord Bots fast, easy.";
 
   return new ImageResponse(
     (
@@ -54,7 +54,7 @@ export default async function (req) {
           <div
             style={{
               display: "flex",
-              fontSize: 75,
+              fontSize: 60,
               fontStyle: "normal",
               padding: "0px 15px",
               borderRadius: "10px",
@@ -66,12 +66,12 @@ export default async function (req) {
                 "linear-gradient(90deg, rgb(0, 124, 240), rgb(0, 223, 216))",
             }}
           >
-            <b>{title}</b>
+            {title}
           </div>
           <div
             style={{
               display: "flex",
-              fontSize: 45,
+              fontSize: 38,
               fontStyle: "normal",
               color: "lightgray",
               lineHeight: 1.8,
@@ -102,16 +102,18 @@ export default async function (req) {
               src="https://cdn.discordapp.com/attachments/1058843428831629443/1194650171749974118/image-removebg-preview_1.png"
               style={{
                 opacity: 0.3,
-                width: "65px",
-                height: "65px",
+                width: "50px",
+                height: "50px",
+                marginBottom: "10px",
               }}
             />
             <div
               style={{
                 display: "flex",
                 flexDirection: "column",
-                marginLeft: "7px",
-                marginTop: "10px",
+                marginLeft: "4px",
+                marginTop: "8px",
+                marginBottom: "12.5px",
                 fontStyle: "normal",
                 color: "lightgray",
               }}
