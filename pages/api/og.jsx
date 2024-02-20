@@ -94,6 +94,8 @@ export default async function (req) {
           >
             <img
               src="https://raw.githubusercontent.com/faf4a/og-image/main/images/akaruilogo.png"
+              width="50"
+              height="50"
               style={{
                 opacity: 0.3,
                 width: "50px",
