@@ -93,7 +93,7 @@ export default async function (req) {
             }}
           >
             <img
-              src="https://cdn.discordapp.com/attachments/1058843428831629443/1194650171749974118/image-removebg-preview_1.png"
+              src="https://raw.githubusercontent.com/faf4a/og-image/main/images/akaruilogo.png"
               style={{
                 opacity: 0.3,
                 width: "50px",
