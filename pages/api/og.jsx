@@ -93,7 +93,7 @@ export default async function (req) {
             }}
           >
             <img
-              src="image url (removed it for now)"
+              src="https://cdn.discordapp.com/attachments/1058843428831629443/1194650171749974118/image-removebg-preview_1.png"
               style={{
                 opacity: 0.3,
                 width: "50px",
