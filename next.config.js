@@ -11,9 +11,7 @@ module.exports = {
     ignoreDuringBuilds: true,
   },
   images: {
-    loader: "akamai",
-    path: "/",
-    domains: ["localhost", "raw.githubusercontent.com"],
+    unoptimized: true
   },
   experimental: {
     esmExternals: false,
