@@ -1,6 +1,6 @@
 import { ImageResponse } from "@vercel/og";
 export const config = {
-  runtime: "edge",
+  runtime: "experimental-edge",
 };
 
 export default async function (req) {
