@@ -24,6 +24,28 @@ export default async function (req) {
     ? searchParams.get("description")?.slice(0, 200)
     : "Create powerful Discord Bots fast, easy.";
 
+  // ?gradient=<color>
+  const hasGradient = searchParams.has("gradient");
+  let gradient;
+  switch (searchParams.get("gradient")) {
+    case "green":
+      gradient = "linear-gradient(90deg, rgb(0, 200, 0), rgb(150, 200, 0))";
+      break;
+    case "red":
+      gradient = "linear-gradient(90deg, rgb(200, 0, 0), rgb(200, 100, 0))";
+      break;
+    case "yellow":
+      gradient = "linear-gradient(90deg, rgb(200, 200, 0), rgb(200, 200, 150))";
+      break;
+    default:
+      gradient = "linear-gradient(90deg, rgb(0, 124, 240), rgb(0, 223, 216))";
+      break;
+  }
+
+  // ?logo=<boolean>
+  const hasLogo = searchParams.has("logo");
+  const logo = hasLogo ? searchParams.get("logo") == "true" : true;
+
   return new ImageResponse(
     (
       <div
@@ -46,8 +68,7 @@ export default async function (req) {
             flexDirection: "column",
             flexWrap: "nowrap",
             backgroundColor: "#000000",
-            backgroundImage:
-              "radial-gradient(circle at 25px 25px, #242424 2%, transparent 0%), radial-gradient(circle at 75px 75px, #242424 2%, transparent 0%)",
+            backgroundImage: gradient,
             backgroundSize: "100px 100px",
           }}
         >
@@ -81,39 +102,41 @@ export default async function (req) {
             {description}
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            position: "absolute",
-            bottom: "7px",
-            left: "15px",
-          }}
-        >
+        {logo && (
           <div
             style={{
               display: "flex",
-              alignItems: "center",
-              marginBottom: "5px",
-              opacity: 0.4,
+              flexDirection: "column",
+              position: "absolute",
+              bottom: "7px",
+              left: "15px",
             }}
           >
             <div
               style={{
                 display: "flex",
-                flexDirection: "column",
-                marginLeft: "4px",
-                marginTop: "8px",
-                marginBottom: "12.5px",
-                fontStyle: "normal",
-                color: "lightgray",
+                alignItems: "center",
+                marginBottom: "5px",
+                opacity: 0.4,
               }}
             >
-              <p style={{ margin: "3px 0", lineHeight: "1" }}>Akarui</p>
-              <p style={{ margin: "3px 0", lineHeight: "1" }}>Development</p>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  marginLeft: "4px",
+                  marginTop: "8px",
+                  marginBottom: "12.5px",
+                  fontStyle: "normal",
+                  color: "lightgray",
+                }}
+              >
+                <p style={{ margin: "3px 0", lineHeight: "1" }}>Akarui</p>
+                <p style={{ margin: "3px 0", lineHeight: "1" }}>Development</p>
+              </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
     ),
     {
