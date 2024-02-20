@@ -1,6 +1,6 @@
 import { ImageResponse } from "@vercel/og";
 export const config = {
-  runtime: "experimental-edge",
+  runtime: "edge",
 };
 
 const font = fetch(new URL("./Inter-SemiBold.otf", import.meta.url)).then(
