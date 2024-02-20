@@ -26,7 +26,7 @@ const config: DocsThemeConfig = {
       };
     }
   },
-  head: function useHead() {
+  head: () => {
     const { asPath } = useRouter();
     const { frontMatter } = useConfig();
 
