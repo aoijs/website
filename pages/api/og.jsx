@@ -1,9 +1,11 @@
 import { ImageResponse } from "@vercel/og";
 export const config = {
-  runtime: "experimental-edge",
+  runtime: "edge",
 };
 
 export default async function (req) {
+  const inter = await font;
+
   const { searchParams } = new URL(req.url);
 
   // ?title=<title>
