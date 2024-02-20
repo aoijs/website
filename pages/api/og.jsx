@@ -68,7 +68,7 @@ export default async function (req) {
             flexDirection: "column",
             flexWrap: "nowrap",
             backgroundColor: "#000000",
-            backgroundImage: gradient,
+            backgroundImage: "radial-gradient(circle at 25px 25px, #242424 2%, transparent 0%), radial-gradient(circle at 75px 75px, #242424 2%, transparent 0%)",
             backgroundSize: "100px 100px",
           }}
         >
@@ -83,8 +83,7 @@ export default async function (req) {
               marginTop: -25,
               lineHeight: 1.8,
               whiteSpace: "pre-wrap",
-              backgroundImage:
-                "linear-gradient(90deg, rgb(0, 124, 240), rgb(0, 223, 216))",
+              backgroundImage: gradient,
             }}
           >
             {title}
