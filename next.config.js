@@ -6,8 +6,12 @@ const withNextra = require("nextra")({
 
 module.exports = {
   ...withNextra(),
+  reactStrictMode: true,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
-    unoptimized: true,
+    domains: ["localhost", "raw.githubusercontent.com"],
   },
   experimental: {
     esmExternals: false,
