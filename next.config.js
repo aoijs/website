@@ -1,7 +1,7 @@
 const withNextra = require("nextra")({
   theme: "nextra-theme-docs",
   themeConfig: "./theme.config.tsx",
-  defaultShowCopyCode: true
+  defaultShowCopyCode: true,
 });
 
 module.exports = {
@@ -11,9 +11,11 @@ module.exports = {
     ignoreDuringBuilds: true,
   },
   images: {
+    loader: "akamai",
+    path: "/",
     domains: ["localhost", "raw.githubusercontent.com"],
   },
   experimental: {
     esmExternals: false,
-  }
+  },
 };
