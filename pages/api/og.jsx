@@ -3,20 +3,26 @@ export const config = {
   runtime: "edge",
 };
 
+const font = fetch(new URL("./Inter-SemiBold.otf", import.meta.url)).then(
+  (res) => res.arrayBuffer()
+);
+
 export default async function (req) {
+  const inter = await font;
+
   const { searchParams } = new URL(req.url);
 
   // ?title=<title>
   const hasTitle = searchParams.has("title");
   const title = hasTitle
     ? searchParams.get("title")?.slice(0, 100)
-    : "Documentation";
+    : "aoi.js Documentation";
 
   // ?description=<description>
   const hasDescription = searchParams.has("description");
   const description = hasDescription
     ? searchParams.get("description")?.slice(0, 200)
-    : "Description";
+    : "Create powerful Discord Bots fast, easy.";
 
   return new ImageResponse(
     (
@@ -92,17 +98,6 @@ export default async function (req) {
               opacity: 0.4,
             }}
           >
-            <img
-              src="https://raw.githubusercontent.com/faf4a/og-image/main/images/akaruilogo.png"
-              width="50"
-              height="50"
-              style={{
-                opacity: 0.3,
-                width: "50px",
-                height: "50px",
-                marginBottom: "10px",
-              }}
-            />
             <div
               style={{
                 display: "flex",
@@ -124,6 +119,13 @@ export default async function (req) {
     {
       width: 1200,
       height: 630,
+      fonts: [
+        {
+          name: "inter",
+          data: inter,
+          style: "normal",
+        },
+      ],
     }
   );
 }
