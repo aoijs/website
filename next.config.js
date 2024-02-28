@@ -7,6 +7,7 @@ const withNextra = require("nextra")({
 module.exports = {
   ...withNextra(),
   reactStrictMode: true,
+  VERCEL_DEEP_CLONE: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
