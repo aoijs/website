@@ -1,10 +1,10 @@
 ---
 title: $second
-description: $second will return the current second in CST.
+description: $second will return the current second in UTC.
 id: second
 ---
 
-`$second` will return the current second in CST.
+`$second` will return the current second in UTC.
 
 ## Usage
 

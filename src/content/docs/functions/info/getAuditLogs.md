@@ -22,15 +22,15 @@ $getAuditLogs[guildID;userID?;limit?;action?;format?]
 | action? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The action that was executed.                          |  false   |
 | format? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The format to return the audit logs in.                |  false   |
 
-| Format              |                                                                   |
-| ------------------- | ----------------------------------------------------------------- |
-| {executor.username} | Will return the username of the user who excuted the action       |
-| {executor.mention}  | Will mention the user who executed the action                     |
-| {executor.id}       | Will return the user ID of the user who executed the action       |
-| {executor.tag}      | Will return the discriminator of the user who executed the action |
-| {target.id}         | Will return the ID of the user who was the target of the action   |
-| {action}            | Will return the action itself                                     |
-| {id}                | Will return the action/auditlog ID                                |
+| Format                |                                                                   |
+| --------------------- | ----------------------------------------------------------------- |
+| \{executor.username\} | Will return the username of the user who excuted the action       |
+| \{executor.mention\}  | Will mention the user who executed the action                     |
+| \{executor.id\}       | Will return the user ID of the user who executed the action       |
+| \{executor.tag\}      | Will return the discriminator of the user who executed the action |
+| \{target.id\}         | Will return the ID of the user who was the target of the action   |
+| \{action\}            | Will return the action itself                                     |
+| \{id\}                | Will return the action/auditlog ID                                |
 
 ## AuditLogEvents
 

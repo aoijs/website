@@ -24,11 +24,11 @@ $findMembers[userResolver;limit?;type?;force?;format?]
 
 ### Parameters for the `format` argument
 
-- {position} -> returns the position
-- {id} -> returns the user ID
-- {username} -> returns the username
-- {nick} -> returns the nickname
-- {tag} -> returns the user discriminator
+- \{position\} -> returns the position
+- \{id\} -> returns the user ID
+- \{username\} -> returns the username
+- \{nick\} -> returns the nickname
+- \{tag\} -> returns the user discriminator
 
 ## Example(s)
 

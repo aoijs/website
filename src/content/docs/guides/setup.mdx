@@ -10,130 +10,128 @@ prev: false
 
 ## Setup
 
-To get started with aoi.js, follow these steps:
+import { Tabs, TabItem, LinkCard, Steps, FileTree } from "@astrojs/starlight/components";
 
-import { Tabs, TabItem } from "@astrojs/starlight/components";
-import { LinkCard } from "@astrojs/starlight/components";
+To get started with aoi.js, you will need to install the package. You can do so by running the following command in your terminal.
 
-<Tabs>
-  <TabItem label="npm">
-    **NodeJS v20 or higher is required.**
+<Steps>
 
-    ```bash
-    npm install aoi.js
-    ```
+1. #### Installing `aoi.js`
+   - using the package manager of your choice, run the following command to install aoi.js.
 
-  </TabItem >
-  <TabItem label="pnpm">
-    **NodeJS v20 or higher is required.**
+    <Tabs>
+        <TabItem label="npm" icon="seti:npm">
 
-    ```bash
-    pnpm add aoi.js
-    ```
+        ```bash
+        npm install aoi.js
+        ```
 
-  </TabItem>
-  <TabItem label="yarn">
-    **NodeJS v20 or higher is required.**
+        </TabItem>
+        <TabItem label="pnpm" icon="pnpm">
 
-    ```bash
-    yarn add aoi.js
-    ```
+        ```bash
+        pnpm add aoi.js
+        ```
 
-  </TabItem>
-    <TabItem label="bun">
-    **NodeJS v20 or higher is required.**
+        </TabItem>
+        <TabItem label="yarn" icon="seti:yarn">
 
-    ```bash
-    bun install aoi.js
-    ```
+        ```bash
+        yarn add aoi.js
+        ```
 
-  </TabItem>
-</Tabs>
+        </TabItem>
+        <TabItem label="bun" icon="bun">
 
----
+        ```bash
+        bun install aoi.js
+        ```
 
-To get started with aoi.js, note the following
-- You will need an application created from the [Developer Portal](https://discord.com/developers/applications)
-- Make sure all the intents are checked, as some functions require them. If you can't do so then ignore this step.
-- You will need the bot token to run your bot.
+        </TabItem>
+    </Tabs>
 
-### Getting Started
+    <br />
 
-Before we get started, create a new file called `index.js` and follow these steps carefully.
+2. #### Creating the Discord Bot
 
-Firstly, we import the `AoiClient` class from aoi.js.
+    After doing so you will need to create an application from the [Developer Portal](https://discord.com/developers/applications) and get the bot token from there.
 
-```diff lang="js" title="index.js"
-+ const { AoiClient } = require("aoi.js");
-```
+    - Make sure all the intents are enabled, as some functions require them. If you can't do so then ignore this step.
+    - Copy the Discord Bot Token for later.
 
-Next we add the main part, which will define our bot.
+    <br /> 
 
-```diff lang="js" title="index.js"
-const { AoiClient } = require("aoi.js");
+3. #### Setting up the bot
 
-+ const client = new AoiClient({
-+  token: "Discord Bot Token",
-+  prefix: "Discord Bot Prefix",
-+  intents: ["MessageContent", "Guilds", "GuildMessages"],
-+  events: ["onMessage", "onInteractionCreate"],
-+  database: {
-+    type: "aoi.db",
-+    db: require("@akarui/aoi.db"),
-+    dbType: "KeyValue",
-+    tables: ["main"],
-+    securityKey: "a-32-characters-long-string-here",
-+  }
-+ });
-```
+        ##### Create your main file
 
-The token part is where your Discord Token goes, which you previously copied from the Developer Portal.
-```diff lang="js" title="index.js"
-+ token: "Your Discord Bot Token"
-```
+            Before we get started, create a new file called `index.js` within your project folder. This will be the main file for your bot.
 
-The prefix part is where your bot's prefix goes, you can even have multiple prefixes.
-```js {1} {4} title="index.js"
-prefix: "Your Discord Bot Prefix"
+            <FileTree>
+            - **index.js**
+            - package.json
+            - node_modules
+              - ...
+            - ...
+            </FileTree>
 
-// You can also have multiple prefixes
-prefix: ["Your Prefix", "Another Prefix"]
-```
+        <br />
 
-In the end your index.js file should look like the following:
+        ##### Create the base of your bot
 
-```javascript {1-15} title="index.js"
-const { AoiClient } = require("aoi.js");
+            To get the bot running we need to create a new instance of the `AoiClient` class. This class is the main class for the bot and is used to interact with the Discord API.
 
-const client = new AoiClient({
-  token: "Discord Bot Token",
-  prefix: "Discord Bot Prefix",
-  intents: ["MessageContent", "Guilds", "GuildMessages"],
-  events: ["onMessage", "onInteractionCreate"],
-  database: {
-    type: "aoi.db",
-    db: require("@akarui/aoi.db"),
-    dbType: "KeyValue",
-    tables: ["main"],
-    securityKey: "a-32-characters-long-string-here",
-  }
-});
-```
+            Basically this will be the content of your **index.js** file.
 
-Now we can run our bot, but there isn't any functionality yet.
+            ```js title="index.js"
+            const { AoiClient } = require("aoi.js");
 
-Continue to the next page to learn how to add commands to your bot.
+            const client = new AoiClient({
+                token: "Discord Bot Token",
+                prefix: "Discord Bot Prefix",
+                intents: ["MessageContent", "Guilds", "GuildMessages"],
+                events: ["onMessage", "onInteractionCreate"],
+                database: {
+                    type: "aoi.db",
+                    db: require("@akarui/aoi.db"),
+                    dbType: "KeyValue",
+                    tables: ["main"],
+                    securityKey: "a-32-characters-long-string-here"
+                }
+            });
+            ```
+
+            The token part is where your Discord Bot Token goes, which you previously copied from the Developer Portal.
+            ```diff lang="js" title="index.js"
+            +token: "Your Discord Bot Token"
+            ```
+
+            The prefix part is where your bot's prefix goes, you can even have multiple prefixes.
+
+            ```js "one prefix" "multiple prefix"
+            // To have one prefix
+            prefix: "Your Discord Bot Prefix"
+
+            // You can also have multiple prefixes
+            prefix: ["Your Prefix", "Another Prefix"]
+            ```
+
+    Now we can run our bot, but there isn't any functionality yet.
+
+    Continue to the next page to learn how to add commands to your bot.
+
+</Steps>
 
 <LinkCard
-  title="Get started with Commands"
-  description="Learn how to add commands to your bot, and how to handle them correctly."
-  href="/guides/client/clientcommands"
+    title="Get started with Commands"
+    description="Learn how to add commands to your bot, and how to handle them correctly."
+    href="/guides/client/commands"
 />
 
 Already know how to use commands? Continue to the next page to learn how to use events.
 
 <LinkCard
-  title="Getting Started with Events"
-  description="Get started with client events, their functionality and how to correctly implement those."
-  href="/guides/other/events"
+    title="Getting Started with Events"
+    description="Get started with client events, their functionality and how to correctly implement those."
+    href="/guides/other/events"
 />

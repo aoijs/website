@@ -28,6 +28,6 @@ client.command({
   name: "deleteWebhook",
   code: `
   $deleteWebhook[webhookID;webhookToken]
-  ` // replace the fields which the actual information.
+  ` // replace the fields with the actual information.
 });
 ```

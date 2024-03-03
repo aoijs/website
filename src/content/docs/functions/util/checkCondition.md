@@ -24,10 +24,10 @@ $checkCondition[condition]
 | -------- | ------------------------ |
 | ==       | equal to                 |
 | !=       | not equal to             |
-| <=       | less than or equal to    |
+| \<=      | less than or equal to    |
 | \>=      | greater than or equal to |
 | \>       | greater than             |
-| <        | less than                |
+| \<       | less than                |
 | \|\|     | logical OR               |
 | &&       | logical conjunction      |
 

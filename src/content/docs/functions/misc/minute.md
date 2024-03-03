@@ -1,10 +1,10 @@
 ---
 title: $minute
-description: $minute will return the current minute in CST.
+description: $minute will return the current minute in UTC.
 id: minute
 ---
 
-`$minute` will return the current minute in CST.
+`$minute` will return the current minute in UTC.
 
 ## Usage
 

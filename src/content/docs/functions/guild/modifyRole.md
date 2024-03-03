@@ -18,12 +18,11 @@ $modifyRole[guildID;roleID;...data]
 | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | :------: |
 | guildID                                     | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)                                                                                                    | The guild ID of where the role is located in. |   true   |
 | roleID                                      | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)                                                                                                    | The role ID to modify.                        |   true   |
-| ...data                                     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |
-| JavaScript/Reference/Global_Objects/Object) | New Role Data.                                                                                                                                                                                       | true                                          |
+| ...data                                     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) | New role data.                                |   true   |
 
 ## Example(s)
 
-This will edit a existing role / change its name to "Awesome!":
+This will edit an existing role / change its name to "Awesome!":
 
 ```javascript
 client.command({

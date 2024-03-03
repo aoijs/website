@@ -22,7 +22,7 @@ $writeFile[path;text;encoding?]
 
 ## Example(s)
 
-This will a file called "testing.txt" with the content of "Hello!":
+This will create a file called "testing.txt" with the content of "Hello!":
 
 ```javascript
 client.command({

@@ -2,11 +2,7 @@
 title: Parser
 description: This guide explains how to properly use embed parsers and component parsers. Including basics and examples.
 id: parser
-og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/17.png
-sidebar: 
-  badge:
-    text: Updated
-    variant: tip
+og_image: https://raw.githubusercontent.com/aoijs/website/main/images/og/17.png
 ---
 
 <!-- omit from toc -->
@@ -169,10 +165,10 @@ Below are simple examples of each parser and how to use them.
 {actionRow:{selectMenu:customID:Placeholder:1:1:false:{stringInput:Option1:1:OptionDescription1:false:👋}{stringInput:Option2:2:OptionDescription2:false}}}
 ```
 
-**Multi-Select Menu with three options and and a maximum of 2 selectable options**
+**Multi-Select Menu with three options and a maximum of 2 selectable options**
 
 ```bash
-{actionRow:{selectMenu:customID:Placeholder:1:2:false:{stringInput:Option1:1:OptionDescription1:false:👋}{stringInput:Option2:2:OptionDescription2:false}{selectMenuOptions:Option3:3:OptionDescription3:false}}}
+{actionRow:{selectMenu:customID:Placeholder:1:2:false:{stringInput:Option1:1:OptionDescription1:false:👋}{stringInput:Option2:2:OptionDescription2:false}{stringInput:Option3:3:OptionDescription3:false}}}
 ```
 
 **User-Select Menu**

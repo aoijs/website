@@ -14,16 +14,15 @@ $loop[time;awaitData;...awaitedCmds]
 
 ## Parameters
 
-| Field                                       | Type                                                                                              | Description                    | Required |
-| ------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------ | :------: |
-| time                                        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | How often to execute the loop. |   true   |
-| awaitData                                   | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |
-| JavaScript/Reference/Global_Objects/Object) | Awaited Data.                                                                                     | true                           |
-| ...awaitedCmds                              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Awaited Commands to execute.   |   true   |
+| Field            | Type                                                                                              | Description                    | Required |
+| ---------------- | ------------------------------------------------------------------------------------------------- | ------------------------------ | :------: |
+| time             | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | How often to execute the loop. |   true   |
+| awaitData        | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) | Awaited Data.                  | true     |
+| ...awaitedCmds   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Awaited Commands to execute.   |   true   |
 
 ## Example(s)
 
-This will execute a loop which will edit the sent message 5 times with the given content in `awaitData`:
+This will execute a loop that will edit the sent message 5 times with the given content in `awaitData`:
 
 ```javascript
 client.command({
@@ -35,7 +34,7 @@ client.command({
 });
 ```
 
-We use `$awaitData` to retrieve the given properties in the `awaitData` field which is located in the loop command.
+We use `$awaitData` to retrieve the given properties in the `awaitData` field in the loop command.
 
 ```javascript
 client.awaitedCommand({

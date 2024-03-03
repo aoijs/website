@@ -39,10 +39,10 @@ $color[index?;hex]
     <img style="border: 2px solid var(--sl-color-hairline); border-radius: 50%;" src="https://placehold.co/15x15/95A5A6/95A5A6.png" alt="c"> Grey </img><br />
     <img style="border: 2px solid var(--sl-color-hairline); border-radius: 50%;" src="https://placehold.co/15x15/34495E/34495E.png" alt="c"> Navy </img><br />
     <img style="border: 2px solid var(--sl-color-hairline); border-radius: 50%;" src="https://placehold.co/15x15/11806A/11806A.png" alt="c"> DarkAqua</img> <br />
-    <img style="border: 2px solid var(--sl-color-hairline); border-radius: 50%;" src="https://placehold.co/15x15/1F8B4C/1F8B4C.png" alt="c"> DarkGreen </img><br />
+    <img style="border: 2px solid var(--sl-color-hairline); border-radius: 50%;" src="https://placehold.co/15x15/1F8B4C/1F8B4C.png" alt="c"> DarkGreen </img> <br />
     <img style="border: 2px solid var(--sl-color-hairline); border-radius: 50%;" src="https://placehold.co/15x15/206694/206694.png" alt="c"> DarkBlue</img> <br />
-    <img style="border: 2px solid var(--sl-color-hairline); border-radius: 50%;" src="https://placehold.co/15x15/71368A/71368A.png" alt="c"> DarkPurple </img><br />
-    <img style="border: 2px solid var(--sl-color-hairline); border-radius: 50%;" src="https://placehold.co/15x15/AD1457/AD1457.png" alt="c"> DarkVividPink <br />
+    <img style="border: 2px solid var(--sl-color-hairline); border-radius: 50%;" src="https://placehold.co/15x15/71368A/71368A.png" alt="c"> DarkPurple </img> <br />
+    <img style="border: 2px solid var(--sl-color-hairline); border-radius: 50%;" src="https://placehold.co/15x15/AD1457/AD1457.png" alt="c"> DarkVividPink</img> <br />
     <img style="border: 2px solid var(--sl-color-hairline); border-radius: 50%;" src="https://placehold.co/15x15/C27C0E/C27C0E.png" alt="c"> DarkGold</img> <br />
     <img style="border: 2px solid var(--sl-color-hairline); border-radius: 50%;" src="https://placehold.co/15x15/A84300/A84300.png" alt="c"> DarkOrange </img><br />
     <img style="border: 2px solid var(--sl-color-hairline); border-radius: 50%;" src="https://placehold.co/15x15/992D22/992D22.png" alt="c"> DarkRed </img><br />

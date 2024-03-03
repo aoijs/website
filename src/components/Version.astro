@@ -52,7 +52,15 @@ const content = `The newest ${pkgName} version <b>${version}</b> is available! <
     transition: color 0.1s;
   }
   .sl-banner :global(a) {
-    color: var(--__sl-banner-text);
-    transition: color 0.1s;
+    color: var(--sl-color-accent) !important;
+    border-bottom: 1px dotted var(--sl-color-accent-high) !important;
+    transition: all 0.6 ease-in;
+    text-decoration: none;
+  }
+  .sl-banner :global(a:hover) {
+    transition: all 0.6 ease-out;
+    text-decoration: none;
+    color: var(--sl-color-accent) !important;
+    border-bottom: 1px solid var(--sl-color-accent) !important;
   }
 </style>

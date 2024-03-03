@@ -1,15 +1,15 @@
 ---
-title: $isNumber
-description: $isNumber will check if the given number is an number or not.
-id: isNumber
+title: $isInteger
+description: $isInteger will check if the given number is an integer or not.
+id: isInteger
 ---
 
-`$isNumber` will check if the given number is an number or not.
+`$isInteger` will check if the given number is an integer or not.
 
 ## Usage
 
 ```php
-$isNumber[number]
+$isInteger[number]
 ```
 
 ## Parameters
@@ -20,13 +20,13 @@ $isNumber[number]
 
 ## Example(s)
 
-This checks if your message contains an number and returns `true` or `false`:
+This checks if your message contains an integer and returns `true` or `false`:
 
 ```javascript
 client.command({
-  name: "isNumber",
+  name: "isInteger",
   code: `
-  $isNumber[$message]
+  $isInteger[$message]
   `
 });
 ```

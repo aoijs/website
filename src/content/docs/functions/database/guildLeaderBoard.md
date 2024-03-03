@@ -23,13 +23,12 @@ $guildLeaderboard[variable;type?;custom?;list?;page?;table?]
 | page?    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Which page to list.                                                                                       |  false   |
 | table?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable table.                                                                                           |  false   |
 
-| Options                                            | Returns                                                                                           |                                         |
-| -------------------------------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| **{top}**                                          | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns the user position of the guild. |
-| **{name}**                                         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns the user name.                  |
-| **{id}**                                           | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns the guild ID.                   |
-| **{value}**                                        | [number](https://developer.mozilla.org/en-US/docs/Web/                                            |
-| JavaScript/Reference/Global_Objects/Number),number | Returns the variable value.                                                                       |
+| Options       | Returns                                                                                           |                                         |
+| ------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| **\{top\}**   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns the user position of the guild. |
+| **\{name\}**  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns the user name.                  |
+| **\{id\}**    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns the guild ID.                   |
+| **\{value\}** | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns the variable value.             |
 
 ## Example(s)
 

@@ -1,7 +1,6 @@
 import { defineConfig } from "astro/config";
 import { rehypeHeadingIds } from "@astrojs/markdown-remark";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
-import starlightLinksValidator from "starlight-links-validator";
 import starlight from "@astrojs/starlight";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
@@ -10,20 +9,8 @@ export default defineConfig({
   site: "https://aoi.js.org",
   integrations: [
     starlight({
-      plugins: [starlightLinksValidator()],
       title: "aoi.js",
       favicon: "/favicon.png",
-      defaultLocale: "root",
-      locales: {
-        root: {
-          label: "English",
-          lang: "en",
-        },
-        es: {
-          label: "Español",
-          lang: "es",
-        },
-      },
       logo: {
         src: "/favicon.png",
       },
@@ -36,9 +23,9 @@ export default defineConfig({
       },
       customCss: ["./src/styles/custom.css"],
       components: {
-        PageSidebar: "./src/components/PageSidebar.astro",
         Search: "./src/components/Search.astro",
         Head: "./src/components/Head.astro",
+        Sidebar: "./src/components/Sidebar.astro",
       },
       pagefind: false,
       head: [
@@ -75,7 +62,7 @@ export default defineConfig({
             {
               label: "Application Commands",
               autogenerate: {
-                directory: "guides/application-cmds",
+                directory: "guides/application",
               },
               collapsed: true,
             },
@@ -240,9 +227,5 @@ export default defineConfig({
         },
       ],
     ],
-  },
-  redirects: {
-    // for easier navigation
-    guides: "/",
   },
 });

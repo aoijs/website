@@ -1,8 +1,8 @@
 ---
-title: API Events
-description: This page contains all the events that are available in aoi.js.
-id: clientevents
-og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/15.png
+title: Discord Events
+description: This page contains all the events available in aoi.js.
+id: events
+og_image: https://raw.githubusercontent.com/aoijs/website/main/images/og/15.png
 ---
 
 <!-- omit from toc -->
@@ -20,29 +20,19 @@ og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/15.
 
 ---
 
-:::caution[Rework]
+**aoi.js** offers various event listeners, also known as "events," which cover most of the events provided by the Discord API.
 
-This page will be reworked in the future.
+Each event serves a specific purpose and requires a particular command type to execute designated tasks, such as logging activities.
 
-:::
+The events are not mandatory, except for `onMessage`, which is essential for the bot to read and send messages. If you wish to use other events, you must include them in your main file so your bot can listen to these events. This step is necessary to utilize various command types.
 
-**aoi.js** has various event listeners, known as "events", that cater to the majority of events provided by the Discord
-API.
-
-Each of them has its own usage and command type for executing specific tasks (for example, for logging purposes).
-
-The events are not mandatory, apart from **`onMessage`** (which is required for the bot to read and send messages), but
-if you wish to utilise them, they must be included in your main file, in order for the bot to listen for those events.
-This is necessary in order to make use of the different command types.
-
-It's worth bearing in mind that in order to utilise certain events, you'll need to activate your intents on the Discord
-Developer Portal.
+It's important to note that activating your intents on the Discord Developer Portal is required to utilize certain events.
 
 ## Types of Events
 
 ### Message Based-Events
 
-- **onMessage** &rarr; (requires **[message content intent](https://discord.com/developers/docs/topics/gateway#caveats)**) Emitted whenever a message is sent.
+- **onMessage** &rarr; Emitted whenever a message is sent. (requires **[message content intent](https://discord.com/developers/docs/topics/gateway#caveats)**)
 - **onMessageDelete** &rarr; Emitted whenever a message is deleted.
   - `messageDelete` &rarr; Command Handler type.
 - **onMessageUpdate** &rarr; Emitted whenever a message is updated (for example, embed or content change).
@@ -106,9 +96,9 @@ Developer Portal.
   - `threadDelete` &rarr; Command Handler type.
 - **onThreadListSync** &rarr; Emitted whenever the client user gains access to a text or news channel that contains threads.
   - `threadListSync` &rarr; Command Handler type.
-- **onThreadMemberUpdate** &rarr; (requires **[guild members intent](https://discord.com/developers/docs/topics/gateway#caveats)**) Emitted whenever the client user's thread member is updated.
+- **onThreadMemberUpdate** &rarr; Emitted whenever the client user's thread member is updated. (requires **[guild members intent](https://discord.com/developers/docs/topics/gateway#caveats)**)
   - `threadMemberUpdate` &rarr; Command Handler type.
-- **onThreadMembersUpdate** &rarr; (requires **[guild members intent](https://discord.com/developers/docs/topics/gateway#caveats)**) Emitted whenever members are added or removed from a thread.
+- **onThreadMembersUpdate** &rarr; Emitted whenever members are added or removed from a thread. (requires **[guild members intent](https://discord.com/developers/docs/topics/gateway#caveats)**)
   - `threadMembersUpdate` &rarr; Command Handler type.
 - **onEmojiCreate** &rarr; Emitted whenever a custom emoji is created in a guild.
   - `emojiCreate` &rarr; Command Handler type.
@@ -143,13 +133,13 @@ Developer Portal.
   - `join` &rarr; Command Handler type.
 - **onLeave** &rarr; Emitted whenever a member leaves a guild, or is kicked.
   - `leave` &rarr; Command Handler type.
-- **onMemberUpdate** &rarr; (requires **[guild members intent](https://discord.com/developers/docs/topics/gateway#caveats)**) Emitted whenever a guild member changes (for example, new role, removed role, nickname).
+- **onMemberUpdate** &rarr; Emitted whenever a guild member changes (for example, new role, removed role, nickname). (requires **[guild members intent](https://discord.com/developers/docs/topics/gateway#caveats)**)
   - `memberUpdate` &rarr; Command Handler type.
   * `$oldMember[option?]` &rarr; Retrieves data of the old member. (if any)
   * `$newMember[option?]` &rarr; Retrieves data of the new/updated member. (if any)
-- **onMemberAvailable** &rarr; (requires **[guild members intent](https://discord.com/developers/docs/topics/gateway#caveats)**) Emitted whenever a member becomes available in a large guild.
+- **onMemberAvailable** &rarr; Emitted whenever a member becomes available in a large guild. (requires **[guild members intent](https://discord.com/developers/docs/topics/gateway#caveats)**)
   - `memberAvailable` &rarr; Command Handler type.
-- **onMembersChunk** &rarr; (requires **[guild members intent](https://discord.com/developers/docs/topics/gateway#caveats)**) Emitted whenever a chunk of guild members is received (all members come from the same guild).
+- **onMembersChunk** &rarr; Emitted whenever a chunk of guild members is received (all members come from the same guild). (requires **[guild members intent](https://discord.com/developers/docs/topics/gateway#caveats)**)
   - `membersChunk` &rarr; Command Handler type.
 
 ### User Based-Events
@@ -167,9 +157,9 @@ Developer Portal.
 
 ### Custom Events
 
-- **onInteractionCreate** &rarr; Emitted whenever a Interaction is created.
-- **onFunctionError** &rarr; Emitted whenever a command or function returns a error message.
-- **onApplicationCommandPermissionsUpdate** &rarr; Emitted whenever a Application Command gets updated (for example, name).
+- **onInteractionCreate** &rarr; Emitted whenever an Interaction is created.
+- **onFunctionError** &rarr; Emitted whenever a command or function returns an error message.
+- **onApplicationCommandPermissionsUpdate** &rarr; Emitted whenever an Application Command gets updated (for example, name).
   - `$oldApplicationCmd[option?]` &rarr; Retrieves data of the old application command.
   - `$newApplicationCmd[option?]` &rarr; Retrieves data of the updated application command.
 - **onVariableCreate** &rarr; Emitted whenever a variable is created.
@@ -185,7 +175,7 @@ Developer Portal.
 
 ## Usage of Events
 
-```js title="index.js"
+```js
 const { AoiClient } = require("aoi.js");
 
 const client = new AoiClient({
@@ -199,21 +189,21 @@ const client = new AoiClient({
 
 #### Example Usage of Events without Handler
 
-```javascript title="index.js"
-client.<eventName>Command({ // exclude "on" of the event for example, "onTypingStart" -> "typingStartCommand"
-    name?: string // option for events
-    channel: number,
-    code: ...
-}]
+```javascript
+client.<eventName>Command({ // Exclude "on" of the event's name. For example, "onTypingStart" becomes "typingStartCommand"
+  name?: string, // name of the event
+  channel: number,
+  code: ...
+});
 ```
 
 #### Example Usage of Events in Handler
 
-```javascript title="file.js"
+```javascript
 module.exports = [{
-    name?: string // option for events
-    type: string, // name of the event
-    channel: number,
-    code: ...
+  name?: string, // name of the event
+  type: string, // the event type
+  channel: number,
+  code: ...
 }]
 ```

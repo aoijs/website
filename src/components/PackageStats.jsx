@@ -138,7 +138,7 @@ const PackageStats = () => {
         <p
           style={{
             color: "var(--sl-color-accent-high)",
-            fontSize: "30px",
+            fontSize: window.innerWidth <= 768 ? "20px" : "30px"
           }}
         >
           Downloads
@@ -157,7 +157,7 @@ const PackageStats = () => {
         <p
           style={{
             color: "var(--sl-color-accent-high)",
-            fontSize: "30px",
+            fontSize: window.innerWidth <= 768 ? "20px" : "30px"
           }}
         >
           Stars
@@ -176,7 +176,7 @@ const PackageStats = () => {
         <p
           style={{
             color: "var(--sl-color-accent-high)",
-            fontSize: "30px",
+            fontSize: window.innerWidth <= 768 ? "20px" : "30px"
           }}
         >
           Forks
@@ -189,7 +189,7 @@ const PackageStats = () => {
           marginTop: "auto",
           marginBottom: "15px",
           color: "var(--sl-color-accent-high)",
-          fontSize: "14px",
+          fontSize: window.innerWidth <= 768 ? "10px" : "14px",
         }}
       >
         <div>
