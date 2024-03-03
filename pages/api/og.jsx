@@ -1,21 +1,21 @@
 import { ImageResponse } from "@vercel/og";
-import fs from 'fs';
-import path from 'path';
+import fetch from 'node-fetch';
 
 export const config = {
   runtime: "edge",
 };
 
-function getFontBase64(fontPath) {
-  const font = fs.readFileSync(path.resolve(fontPath));
-  const fontBase64 = Buffer.from(font).toString('base64');
+async function getFontBase64(fontUrl) {
+  const response = await fetch(fontUrl);
+  const fontBuffer = await response.buffer();
+  const fontBase64 = fontBuffer.toString('base64');
   return fontBase64;
 }
 
-const poppins = getFontBase64('./node_modules/@fontsource/poppins/files/poppins-latin-400-normal.woff2');
-const poppinsBold = getFontBase64('./node_modules/@fontsource/poppins/files/poppins-latin-600-normal.woff2');
+const poppinsUrl = 'https://cdn.jsdelivr.net/npm/@fontsource/poppins/files/poppins-latin-400-normal.woff2';
+const poppinsBoldUrl = 'https://cdn.jsdelivr.net/npm/@fontsource/poppins/files/poppins-latin-600-normal.woff2';
 
-export default function (req) {
+export default async function (req) {
   const { searchParams } = new URL(req.url);
 
   // ?title=<title>
@@ -51,6 +51,9 @@ export default function (req) {
   // ?logo=<boolean>
   const hasLogo = searchParams.has("logo");
   const logo = hasLogo ? searchParams.get("logo") == "true" : true;
+
+  const poppins = await getFontBase64(poppinsUrl);
+  const poppinsBold = await getFontBase64(poppinsBoldUrl);
 
   return new ImageResponse(
     (
