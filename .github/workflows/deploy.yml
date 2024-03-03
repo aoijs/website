@@ -19,9 +19,13 @@ jobs:
       PUBLIC_BUILD_TIME: ${{ github.event.head_commit.timestamp }}
       PUBLIC_COMMIT: ${{ github.sha }}
     steps:
-      - name: Checkout your repository using git
+      - name: BUILD - Checkout repository
         uses: actions/checkout@v3
-      - name: Install, build, and upload your site
+      - name: BUILD INFO - Environment variables
+        run: |
+          echo "PUBLIC_BUILD_TIME: $PUBLIC_BUILD_TIME"
+          echo "PUBLIC_COMMIT: $PUBLIC_COMMIT"
+      - name: BUILD - Start & Install
         uses: withastro/action@v1
         # with:
         #   node-version: 16
@@ -34,6 +38,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
+      - name: DEPLOY - Deploy to Github
         id: deployment
         uses: actions/deploy-pages@v1
