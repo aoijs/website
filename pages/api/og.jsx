@@ -39,7 +39,7 @@ export default async function (req) {
     : "Create powerful Discord Bots fast, easy.";
 
   if (replace) {
-    if (description.startsWith('$')) {
+    if (description.startsWith(`$${title} will return`)) {
       const words = description.split(' ');
       if (words.length > 3) {
         words.splice(0, 3, 'Returns');
