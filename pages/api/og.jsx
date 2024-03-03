@@ -1,21 +1,21 @@
 import { ImageResponse } from "@vercel/og";
-import fetch from 'node-fetch';
-
+import { listenerCount } from "events";
 export const config = {
   runtime: "edge",
 };
 
-async function getFontBase64(fontUrl) {
-  const response = await fetch(fontUrl);
-  const fontBuffer = await response.buffer();
-  const fontBase64 = fontBuffer.toString('base64');
-  return fontBase64;
-}
+const font = fetch(
+  new URL("../../assets/Poppins-Regular.ttf", import.meta.url)
+).then((res) => res.arrayBuffer());
 
-const poppinsUrl = 'https://cdn.jsdelivr.net/npm/@fontsource/poppins/files/poppins-latin-400-normal.woff2';
-const poppinsBoldUrl = 'https://cdn.jsdelivr.net/npm/@fontsource/poppins/files/poppins-latin-600-normal.woff2';
+const fontbold = fetch(
+  new URL("../../assets/Poppins-SemiBold.ttf", import.meta.url)
+).then((res) => res.arrayBuffer());
 
 export default async function (req) {
+  const inter = await font;
+  const interbold = await fontbold;
+
   const { searchParams } = new URL(req.url);
 
   // ?title=<title>
@@ -26,9 +26,28 @@ export default async function (req) {
 
   // ?description=<description>
   const hasDescription = searchParams.has("description");
-  const description = hasDescription
+  let description = hasDescription
     ? searchParams.get("description")?.slice(0, 200)
     : "Create powerful Discord Bots fast, easy.";
+
+  // ?replace=<boolean>
+  const hasReplace = searchParams.has("replace");
+  const replace = hasReplace ? searchParams.get("replace") == "true" : true;
+
+  description = hasDescription
+    ? searchParams.get("description")?.slice(0, 200)
+    : "Create powerful Discord Bots fast, easy.";
+
+  if (replace) {
+    if (description.startsWith('$')) {
+      const words = description.split(' ');
+      if (words.length > 3) {
+        words.splice(0, 3, 'Returns');
+        description = words.join(' ');
+      } else {
+        description = 'Returns ' + words.join(' ');
+      }
+    }  }
 
   // ?gradient=<color>
   const hasGradient = searchParams.has("gradient");
@@ -52,9 +71,6 @@ export default async function (req) {
   const hasLogo = searchParams.has("logo");
   const logo = hasLogo ? searchParams.get("logo") == "true" : true;
 
-  const poppins = await getFontBase64(poppinsUrl);
-  const poppinsBold = await getFontBase64(poppinsBoldUrl);
-
   return new ImageResponse(
     (
       <div
@@ -77,16 +93,19 @@ export default async function (req) {
             flexDirection: "column",
             flexWrap: "nowrap",
             backgroundColor: "#000000",
-            backgroundImage: "radial-gradient(circle at 25px 25px, #242424 2%, transparent 0%), radial-gradient(circle at 75px 75px, #242424 2%, transparent 0%)",
+            backgroundImage:
+              "radial-gradient(circle at 25px 25px, #242424 2%, transparent 0%), radial-gradient(circle at 75px 75px, #242424 2%, transparent 0%)",
             backgroundSize: "100px 100px",
           }}
         >
           <div
             style={{
               display: "flex",
+              fontSize: 60,
               fontStyle: "normal",
               padding: "0px 15px",
               borderRadius: "10px",
+              fontFamily: "'interbold'",
               color: "white",
               marginTop: -25,
               lineHeight: 1.8,
@@ -99,7 +118,9 @@ export default async function (req) {
           <div
             style={{
               display: "flex",
+              fontSize: 38,
               fontStyle: "normal",
+              fontFamily: "'inter'",
               color: "lightgray",
               lineHeight: 1.8,
               whiteSpace: "pre-wrap",
@@ -150,32 +171,14 @@ export default async function (req) {
       height: 630,
       fonts: [
         {
-          name: "poppins",
-          data: `data:font/woff2;base64,${poppins}`,
+          name: "inter",
+          data: inter,
           style: "normal",
         },
         {
-          name: "poppinsBold",
-          data: `data:font/woff2;base64,${poppinsBold}`,
+          name: "interbold",
+          data: interbold,
           style: "bold",
-        },
-      ],
-      text: [
-        {
-          text: title,
-          font: "poppinsBold",
-          fontSize: 60,
-          color: "#000",
-          x: 100,
-          y: 200,
-        },
-        {
-          text: description,
-          font: "poppins",
-          fontSize: 40,
-          color: "#000",
-          x: 100,
-          y: 300,
         },
       ],
     }
