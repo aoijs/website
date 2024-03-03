@@ -1,10 +1,10 @@
 import { ImageResponse } from "@vercel/og";
+import fs from 'fs';
+import path from 'path';
+
 export const config = {
   runtime: "edge",
 };
-
-import fs from 'fs';
-import path from 'path';
 
 function getFontBase64(fontPath) {
   const font = fs.readFileSync(path.resolve(fontPath));
@@ -12,12 +12,10 @@ function getFontBase64(fontPath) {
   return fontBase64;
 }
 
-const poppins = getFontBase64('/node_modules/@fontsource/poppins/files/poppins-latin-400-normal.woff2');
-const poppinsBold = getFontBase64('/node_modules/@fontsource/poppins/files/poppins-latin-600-normal.woff2');
+const poppins = getFontBase64('./node_modules/@fontsource/poppins/files/poppins-latin-400-normal.woff2');
+const poppinsBold = getFontBase64('./node_modules/@fontsource/poppins/files/poppins-latin-600-normal.woff2');
 
-export default async function (req) {
-  const inter = await font; 
-
+export default function (req) {
   const { searchParams } = new URL(req.url);
 
   // ?title=<title>
