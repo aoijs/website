@@ -1,11 +1,11 @@
 const CommitStats = () => {
-    const buildTime = process.env.PUBLIC_BUILD_TIME;
-    const commit = process.env.PUBLIC_COMMIT;
+    const buildTime = import.meta.env.PUBLIC_BUILD_TIME;
+    const commit = import.meta.env.PUBLIC_COMMIT;
 
     return (
         <div>
-            <p>Build Time: {buildTime}</p>
-            <p>Commit: {commit}</p>
+            <p style={{ fontSize: '10px', fontFamily: 'monospace' }}>Build Time: {buildTime}</p>
+            <p style={{ fontSize: '10px', fontFamily: 'monospace' }}>Commit: {commit}</p>
         </div>
     );
 };

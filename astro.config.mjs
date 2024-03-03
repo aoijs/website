@@ -32,16 +32,10 @@ export default defineConfig({
         Search: "./src/components/Search.astro",
         Head: "./src/components/Head.astro",
         Sidebar: "./src/components/Sidebar.astro",
+        PageSidebar: "./src/components/PageSidebar.astro",
       },
       pagefind: false,
       head: [
-        {
-          tag: "script",
-          attrs: {
-            src: "/custom.js",
-            defer: true,
-          },
-        },
         {
           tag: "meta",
           attrs: {
