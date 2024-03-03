@@ -1,0 +1,24 @@
+---
+import type { Props } from "@astrojs/starlight/props";
+import { ViewTransitions } from "astro:transitions";
+import Default from "@astrojs/starlight/components/Head.astro";
+---
+
+<ViewTransitions />
+
+<meta property="og:image" content={Astro.props.entry.data?.og_image ?? `https://og-image-aoijs.vercel.app/api/og?title=${Astro.props.entry.data.title}&description=${Astro.props.entry.data.description}`} />
+<Default transition:animate="slide" {...Astro.props}><slot /></Default>
+
+<script>
+  import { isTransitionBeforeSwapEvent, TRANSITION_BEFORE_SWAP } from "astro:transitions/client";
+
+  document.addEventListener(TRANSITION_BEFORE_SWAP, (event) => {
+    if (!isTransitionBeforeSwapEvent(event)) return;
+    const currentPageSearch = document.querySelector("#docsearch");
+    const newPageSearch = event.newDocument.querySelector("#docsearch");
+
+    if (currentPageSearch && newPageSearch) {
+      newPageSearch.replaceWith(currentPageSearch);
+    }
+  });
+</script>

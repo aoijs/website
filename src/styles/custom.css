@@ -1,0 +1,293 @@
+/* Dark mode colors. */
+:root {
+  --sl-color-accent-low: #03263e;
+  --sl-color-accent: #0070ac;
+  --sl-color-accent-high: #a8ceed;
+  --blue-hsl: 218, 100%, 83%;
+  --overlay-blurple: hsla(var(--blue-hsl), 0.2);
+  --ec-frm-tooltipSuccessBg: var(--sl-color-gray-5) !important;
+  --sl-font: "Poppins", sans-serif !important;
+}
+
+/* Light mode colors. */
+:root[data-theme="light"] {
+  --sl-color-accent-low: #bfdbf3;
+  --sl-color-accent: #0072af;
+  --sl-color-accent-high: #003556;
+  --blue-hsl: 201, 100%, 34%;
+  --overlay-blurple: hsla(var(--blue-hsl), 0.45);
+  --sl-hue-accent: 350;
+}
+
+code {
+  border-radius: 4px;
+  white-space: no-break;
+}
+
+aside {
+  z-index: var(--sl-z-index-menu);
+  background-color: var(--sl-color-bg);
+}
+
+.card {
+  border-radius: 5px;
+}
+
+.astro-code {
+  border-radius: 7px;
+}
+
+[data-has-hero] .page {
+  background:
+    linear-gradient(215deg, var(--overlay-blurple), transparent 40%),
+    radial-gradient(var(--overlay-blurple), transparent 40%) no-repeat -60vw -40vh /
+      105vw 200vh,
+    radial-gradient(var(--overlay-blurple), transparent 65%) no-repeat 50%
+      calc(100% + 20rem) / 60rem 30rem;
+}
+
+[data-has-hero] header {
+  border-bottom: 1px solid transparent;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+[data-has-hero] .hero > img {
+  filter: drop-shadow(0 0 3rem var(--overlay-blurple));
+}
+
+a:where(.astro-3ii7xxms) {
+  margin-top: 0.2rem;
+}
+
+.action:where(.astro-yjy4zhro) {
+  border-radius: 5px;
+}
+
+a:where(.astro-3ii7xxms):hover {
+  background-color: var(--sl-color-backdrop-overlay);
+}
+
+/* Theme Component */
+.astro-4yphtoen {
+  border-radius: 6px;
+  transition: border-color 0.3s;
+  border-bottom: 1px solid transparent;
+}
+
+.astro-4yphtoen:focus {
+  outline: none;
+}
+
+/* Copy button for ALL codeblocks (//) */
+
+.sh-button-container {
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: var(--astro-code-color-background);
+}
+
+.sh-button {
+  padding: 5px 10px;
+  margin-right: 1rem;
+  background-color: transparent;
+  border: #585858 solid 0.1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  user-select: none;
+  transition: all 0.1s ease-in;
+  align-items: center;
+}
+
+.sh-button:hover {
+  border: #c2c2c2 solid 0.11rem;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+}
+
+/* Custom Header Link */
+
+.heading-link::after {
+  content: "#";
+  padding-inline-start: 0.25em;
+  opacity: 0;
+  transition: all 0.3;
+}
+
+.heading-link:hover::after {
+  color: var(--sl-color-text-accent);
+  transition: all 0.3;
+  opacity: 1;
+}
+
+.heading-link {
+  text-decoration: none;
+  color: var(--sl-color-white) !important;
+}
+
+.content:where(.astro-c6vsoqas)
+  :is(img, picture, video, canvas, svg, iframe):not(:where(.not-content *)) {
+  display: inline-block;
+  margin-left: 0.2rem;
+}
+
+.card-container {
+  display: flex;
+}
+
+.card-split {
+  width: 50%;
+  margin-right: 1rem;
+}
+
+.split {
+  margin-top: 1rem;
+}
+
+/* details */
+.details {
+  border-radius: 5px;
+  border: 1px solid var(--sl-color-hairline);
+}
+
+.details > details {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.details > details::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid var(--sl-color-hairline);
+}
+
+.details > details > summary {
+  display: block;
+  margin-top: 10px;
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+  padding-left: 50px;
+}
+
+.details > details > summary::before {
+  content: ">";
+  color: var(--sl-color-gray-3);
+  position: absolute;
+  left: 0;
+  margin-left: 20px;
+  transition: transform 0.3s ease;
+}
+
+.details > details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.details > details > summary:focus::before {
+  outline: none;
+}
+
+.details > .content {
+  display: none;
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  max-height: 0;
+  overflow: hidden;
+  border: 2px solid transparent;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  border-top: none;
+  transition:
+    display 400ms ease-out,
+    max-height 400ms ease-out,
+    border 100ms 400ms linear;
+}
+
+.details > details[open] + .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  max-height: 1750px;
+  transition:
+    display 400ms ease-out,
+    max-height 400ms ease-out,
+    border 100ms 400ms linear;
+}
+
+html[data-theme="light"] p > a {
+  color: var(--sl-color-accent) !important;
+  border-bottom: 1px dotted var(--sl-color-accent) !important;
+  transition: all 0.6 ease-in;
+  text-decoration: none;
+  display: inline;
+}
+
+html[data-theme="light"] p > a:hover {
+  text-decoration: none;
+  display: inline;
+  color: var(--sl-color-accent-high) !important;
+  border-bottom: 1px solid var(--sl-color-accent-high) !important;
+  transition: all 0.6 ease-in;
+}
+
+html[data-theme="dark"] p > a {
+  color: var(--sl-color-accent-high) !important;
+  border-bottom: 1px dotted var(--sl-color-accent-high) !important;
+  transition: all 0.6 ease-in;
+  text-decoration: none;
+  display: inline;
+}
+
+html[data-theme="dark"] p > a:hover {
+  text-decoration: none;
+  display: inline;
+  color: var(--sl-color-accent) !important;
+  border-bottom: 1px solid var(--sl-color-accent) !important;
+  transition: all 0.6 ease-in;
+}
+
+html[data-theme="light"] > .linkStyle {
+  color: #fff !important;
+  border-bottom: 1px dotted var(--sl-color-accent-high) !important;
+  transition: all 0.6 ease-in;
+  text-decoration: none;
+  display: inline;
+}
+
+html[data-theme="light"] > .linkStyle:hover {
+  text-decoration: none;
+  display: inline;
+  color: var(--sl-color-accent-high) !important;
+  border-bottom: 1px solid var(--sl-color-accent-high) !important;
+  transition: all 0.6 ease-in;
+}
+
+html[data-theme="dark"] > .linkStyle {
+  color: var(--sl-color-accent-high) !important;
+  border-bottom: 1px dotted var(--sl-color-accent-high) !important;
+  transition: all 0.6 ease-in;
+  text-decoration: none;
+  display: inline;
+}
+
+html[data-theme="dark"] > .linkStyle:hover {
+  text-decoration: none;
+  display: inline;
+  color: var(--sl-color-accent) !important;
+  border-bottom: 1px solid var(--sl-color-accent) !important;
+  transition: all 0.6 ease-in;
+}
+
+td {
+  white-space: nowrap;
+}
