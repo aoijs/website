@@ -3,12 +3,20 @@ export const config = {
   runtime: "edge",
 };
 
-const font = fetch(new URL("./Inter-SemiBold.otf", import.meta.url)).then(
-  (res) => res.arrayBuffer()
-);
+import fs from 'fs';
+import path from 'path';
+
+function getFontBase64(fontPath) {
+  const font = fs.readFileSync(path.resolve(fontPath));
+  const fontBase64 = Buffer.from(font).toString('base64');
+  return fontBase64;
+}
+
+const poppins = getFontBase64('/node_modules/@fontsource/poppins/files/poppins-latin-400-normal.woff2');
+const poppinsBold = getFontBase64('/node_modules/@fontsource/poppins/files/poppins-latin-600-normal.woff2');
 
 export default async function (req) {
-  const inter = await font;
+  const inter = await font; 
 
   const { searchParams } = new URL(req.url);
 
@@ -75,7 +83,6 @@ export default async function (req) {
           <div
             style={{
               display: "flex",
-              fontSize: 60,
               fontStyle: "normal",
               padding: "0px 15px",
               borderRadius: "10px",
@@ -91,7 +98,6 @@ export default async function (req) {
           <div
             style={{
               display: "flex",
-              fontSize: 38,
               fontStyle: "normal",
               color: "lightgray",
               lineHeight: 1.8,
@@ -143,9 +149,32 @@ export default async function (req) {
       height: 630,
       fonts: [
         {
-          name: "inter",
-          data: inter,
+          name: "poppins",
+          data: `data:font/woff2;base64,${poppins}`,
           style: "normal",
+        },
+        {
+          name: "poppinsBold",
+          data: `data:font/woff2;base64,${poppinsBold}`,
+          style: "bold",
+        },
+      ],
+      text: [
+        {
+          text: title,
+          font: "poppinsBold",
+          fontSize: 60,
+          color: "#000",
+          x: 100,
+          y: 200,
+        },
+        {
+          text: description,
+          font: "poppins",
+          fontSize: 40,
+          color: "#000",
+          x: 100,
+          y: 300,
         },
       ],
     }
