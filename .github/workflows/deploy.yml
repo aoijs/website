@@ -15,6 +15,9 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      PUBLIC_BUILD_TIME: ${{ github.event.head_commit.timestamp }}
+      PUBLIC_COMMIT: ${{ github.sha }}
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v3
