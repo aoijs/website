@@ -12,6 +12,18 @@ const fontbold = fetch(
   new URL("../../assets/Poppins-SemiBold.ttf", import.meta.url)
 ).then((res) => res.arrayBuffer());
 
+const calculateFontSize = (description) => {
+  const baseSize = 32;
+  const characterLimit = 50;
+  const reductionPerCharacter = 0.1;
+
+  if (description.length > characterLimit) {
+    return baseSize - (description.length - characterLimit) * reductionPerCharacter;
+  } else {
+    return baseSize;
+  }
+};
+
 export default async function (req) {
   const inter = await font;
   const interbold = await fontbold;
@@ -39,7 +51,9 @@ export default async function (req) {
     : "Create powerful Discord Bots fast, easy.";
 
   if (replace) {
-    if (description.startsWith(`$${title} will return`)) {
+    //console.log(description.startsWith(`${title} will return`))
+    //console.log(description)
+    if (description.startsWith(`${title} will return`)) {
       const words = description.split(' ');
       if (words.length > 3) {
         words.splice(0, 3, 'Returns');
@@ -93,8 +107,7 @@ export default async function (req) {
             flexDirection: "column",
             flexWrap: "nowrap",
             backgroundColor: "#000000",
-            backgroundImage:
-              "radial-gradient(circle at 25px 25px, #242424 2%, transparent 0%), radial-gradient(circle at 75px 75px, #242424 2%, transparent 0%)",
+            backgroundImage: "radial-gradient(circle at 25px 25px, #242424 2%, transparent 0%), radial-gradient(circle at 75px 75px, #242424 2%, transparent 0%)",
             backgroundSize: "100px 100px",
           }}
         >
@@ -107,8 +120,8 @@ export default async function (req) {
               borderRadius: "10px",
               fontFamily: "'interbold'",
               color: "white",
-              marginTop: -25,
-              lineHeight: 1.8,
+              marginBottom: 20,
+              lineHeight: 1.4,
               whiteSpace: "pre-wrap",
               backgroundImage: gradient,
             }}
@@ -118,11 +131,11 @@ export default async function (req) {
           <div
             style={{
               display: "flex",
-              fontSize: 38,
+              fontSize: calculateFontSize(description),
               fontStyle: "normal",
               fontFamily: "'inter'",
               color: "lightgray",
-              lineHeight: 1.8,
+              lineHeight: 1.3,
               whiteSpace: "pre-wrap",
             }}
           >
