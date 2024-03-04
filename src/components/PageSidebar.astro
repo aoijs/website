@@ -4,6 +4,12 @@ import type { Props } from '@astrojs/starlight/props';
 import TableOfContents from '@astrojs/starlight/components/TableOfContents.astro';
 import MobileTableOfContents from '@astrojs/starlight/components/MobileTableOfContents.astro';
 import CommitStats from './CommitStats.jsx';
+
+const page = Astro.props.entry?.id.split("/");
+const isValid = !["music", "invite"].includes(page[1]);
+
+let githubURL = page.join("/").replace(".md", ".js");
+githubURL = `https://github.com/AkaruiDevelopment/aoi.js/blob/v6/src/${githubURL}`;
 ---
 
 {
@@ -17,6 +23,7 @@ import CommitStats from './CommitStats.jsx';
 					<TableOfContents {...Astro.props} />
 				</div>
 				<div class="sl-container">
+					{isValid ? (<a href={githubURL}>View Source</a>) : (<a href="#">Source Not Found</a>)}
 					<CommitStats />
 				</div>
 			</div>
