@@ -19,9 +19,8 @@
   --sl-hue-accent: 350;
 }
 
-code {
-  border-radius: 4px;
-  white-space: no-break;
+.expressive-code .frame pre {
+  border-radius: 4px !important;
 }
 
 aside {
@@ -30,20 +29,18 @@ aside {
 }
 
 .card {
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .astro-code {
-  border-radius: 7px;
+  border-radius: 4px;
 }
 
 [data-has-hero] .page {
   background:
     linear-gradient(215deg, var(--overlay-blurple), transparent 40%),
-    radial-gradient(var(--overlay-blurple), transparent 40%) no-repeat -60vw -40vh /
-      105vw 200vh,
-    radial-gradient(var(--overlay-blurple), transparent 65%) no-repeat 50%
-      calc(100% + 20rem) / 60rem 30rem;
+    radial-gradient(var(--overlay-blurple), transparent 40%) no-repeat -60vw -40vh / 105vw 200vh,
+    radial-gradient(var(--overlay-blurple), transparent 65%) no-repeat 50% calc(100% + 20rem) / 60rem 30rem;
 }
 
 [data-has-hero] header {
@@ -55,6 +52,10 @@ aside {
 
 [data-has-hero] .hero > img {
   filter: drop-shadow(0 0 3rem var(--overlay-blurple));
+}
+
+starlight-file-tree {
+  border-radius: 4px !important;
 }
 
 a:where(.astro-3ii7xxms) {
@@ -286,8 +287,4 @@ html[data-theme="dark"] > .linkStyle:hover {
   color: var(--sl-color-accent) !important;
   border-bottom: 1px solid var(--sl-color-accent) !important;
   transition: all 0.6 ease-in;
-}
-
-td {
-  white-space: nowrap;
 }

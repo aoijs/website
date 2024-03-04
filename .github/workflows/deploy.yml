@@ -18,6 +18,7 @@ jobs:
     env:
       PUBLIC_BUILD_TIME: ${{ github.event.head_commit.timestamp }}
       PUBLIC_COMMIT: ${{ github.sha }}
+      PUBLIC_ENV: "production"
     steps:
       - name: BUILD - Checkout repository
         uses: actions/checkout@v3
@@ -25,6 +26,7 @@ jobs:
         run: |
           echo "PUBLIC_BUILD_TIME: $PUBLIC_BUILD_TIME"
           echo "PUBLIC_COMMIT: $PUBLIC_COMMIT"
+          echo "PUBLIC_ENV: $PUBLIC_ENV"
       - name: BUILD - Start & Install
         uses: withastro/action@v1
         # with:
