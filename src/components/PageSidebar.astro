@@ -23,7 +23,7 @@ githubURL = `https://github.com/AkaruiDevelopment/aoi.js/blob/v6/src/${githubURL
 					<TableOfContents {...Astro.props} />
 				</div>
 				<div class="sl-container">
-					{isValid ? (<a href={githubURL}>View Source</a>) : (<a href="#">Source Not Found</a>)}
+					{isValid && (<a href={githubURL}>View Source</a>)}
 					<CommitStats />
 				</div>
 			</div>
