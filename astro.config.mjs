@@ -8,6 +8,9 @@ import starlightLinksValidator from "starlight-links-validator";
 
 export default defineConfig({
   site: "https://aoi.js.org",
+  devToolbar: {
+    enabled: false,
+  },
   integrations: [
     starlight({
       plugins: [starlightLinksValidator()],
