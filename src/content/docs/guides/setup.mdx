@@ -1,0 +1,137 @@
+---
+title: Getting Started
+description: Learn how to set up and use aoi.js, a package for developing Discord bots with simplified and ready-to-use functions.
+id: setup
+og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/2.png
+tableOfContents: false
+next: false
+prev: false
+---
+
+## Setup
+
+import { Tabs, TabItem, LinkCard, Steps, FileTree } from "@astrojs/starlight/components";
+
+To get started with aoi.js, you will need to install the package. You can do so by running the following command in your terminal.
+
+<Steps>
+
+1. #### Installing `aoi.js`
+   - using the package manager of your choice, run the following command to install aoi.js.
+
+    <Tabs>
+        <TabItem label="npm" icon="seti:npm">
+
+        ```bash
+        npm install aoi.js
+        ```
+
+        </TabItem>
+        <TabItem label="pnpm" icon="pnpm">
+
+        ```bash
+        pnpm add aoi.js
+        ```
+
+        </TabItem>
+        <TabItem label="yarn" icon="seti:yarn">
+
+        ```bash
+        yarn add aoi.js
+        ```
+
+        </TabItem>
+        <TabItem label="bun" icon="bun">
+
+        ```bash
+        bun install aoi.js
+        ```
+
+        </TabItem>
+    </Tabs>
+
+    <br />
+
+2. #### Creating the Discord Bot
+
+    After doing so you will need to create an application from the [Developer Portal](https://discord.com/developers/applications) and get the bot token from there.
+
+    - Make sure all the intents are enabled, as some functions require them. If you can't do so then ignore this step.
+    - Copy the Discord Bot Token for later.
+
+    <br /> 
+
+3. #### Setting up the bot
+
+        ##### Create your main file
+
+            Before we get started, create a new file called `index.js` within your project folder. This will be the main file for your bot.
+
+            <FileTree>
+            - **index.js**
+            - package.json
+            - node_modules
+              - ...
+            - ...
+            </FileTree>
+
+        <br />
+
+        ##### Create the base of your bot
+
+            To get the bot running we need to create a new instance of the `AoiClient` class. This class is the main class for the bot and is used to interact with the Discord API.
+
+            Basically this will be the content of your **index.js** file.
+
+            ```js title="index.js"
+            const { AoiClient } = require("aoi.js");
+
+            const client = new AoiClient({
+                token: "Discord Bot Token",
+                prefix: "Discord Bot Prefix",
+                intents: ["MessageContent", "Guilds", "GuildMessages"],
+                events: ["onMessage", "onInteractionCreate"],
+                database: {
+                    type: "aoi.db",
+                    db: require("@akarui/aoi.db"),
+                    dbType: "KeyValue",
+                    tables: ["main"],
+                    securityKey: "a-32-characters-long-string-here"
+                }
+            });
+            ```
+
+            The token part is where your Discord Bot Token goes, which you previously copied from the Developer Portal.
+            ```diff lang="js" title="index.js"
+            +token: "Your Discord Bot Token"
+            ```
+
+            The prefix part is where your bot's prefix goes, you can even have multiple prefixes.
+
+            ```js "one prefix" "multiple prefixes"
+            // To have one prefix
+            prefix: "Your Discord Bot Prefix"
+
+            // You can also have multiple prefixes
+            prefix: ["Your Prefix", "Another Prefix"]
+            ```
+
+    Now we can run our bot, but there isn't any functionality yet.
+
+    Continue to the next page to learn how to add commands to your bot.
+
+</Steps>
+
+<LinkCard
+    title="Get started with Commands"
+    description="Learn how to add commands to your bot, and how to handle them correctly."
+    href="/guides/client/commands"
+/>
+
+Already know how to use commands? Continue to the next page to learn how to use events.
+
+<LinkCard
+    title="Getting Started with Events"
+    description="Get started with client events, their functionality and how to correctly implement those."
+    href="/guides/other/events"
+/>

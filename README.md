@@ -1,21 +1,21 @@
 <br/>
 
 <div align="center" style="margin: 30px;">
-  <a href="https://aoi.js.org/">
-    <img src="https://github.com/aoijs/website/blob/master/assets/images/aoijs-banner.png?raw=true"   style="width:350px;" align="center"  alt="aoi.js"/>
-  </a>
-  <br />
-  <br />
+<a href="https://aoi.js.org/">
+  <img src="https://github.com/aoijs/website/blob/master/assets/images/aoijs-banner.png?raw=true"   style="width:350px;" align="center"  alt="aoi.js"/>
+</a>
+<br />
+<br />
 
-  <div align="center"><strong>aoi.js Official Documentation</strong><br>
-      <div align="center">
-          <a href="https://aoi.js.org/invite">Discord</a> |
-          <a href="https://aoi.js.org/">Documentation</a> <br />
-      </div>
-  </div>
+<div align="center"><strong>aoi.js Official Documentation</strong><br>
+<div align="center">
+    <a href="https://aoi.js.org/invite">Discord</a> |
+    <a href="https://aoi.js.org/">Documentation</a> <br /> <br />
+    <a href="https://starlight.astro.build"><img src="https://astro.badg.es/v2/built-with-starlight/tiny.svg" alt="Built with Starlight" width="140" height="20"></a>
 </div>
-
-## If you see this page, that means the docs are temporarly unaccessible. Try again in a few minutes.
+</div>
+<br />
+</div>
 
 ## ❓ What is aoi.js?
 
@@ -39,7 +39,7 @@ const client = new AoiClient({
         db: require("@akarui/aoi.db"),
         dbType: "KeyValue",
         tables: ["main"],
-        securityKey: "a-32-characters-long-string-here",
+        securityKey: "a-32-characters-long-string-here"
     }
 });
 
@@ -47,6 +47,32 @@ const client = new AoiClient({
 client.command({
   name: "ping",
   code: `Pong! $pingms`
+});
+```
+
+### Interaction Command Setup
+
+```javascript
+const { AoiClient } = require("aoi.js");
+
+const client = new AoiClient({
+    token: "Discord Bot Token",
+    prefix: "Discord Bot Prefix",
+    intents: ["MessageContent", "Guilds", "GuildMessages"],
+    events: ["onMessage", "onInteractionCreate"],
+    database: {
+        type: "aoi.db",
+        db: require("@akarui/aoi.db"),
+        dbType: "KeyValue",
+        tables: ["main"],
+        securityKey: "a-32-characters-long-string-here"
+    }
+});
+
+// Create Interaction Ping Command
+client.command({
+  name: "create",
+  code: `$createApplicationCommand[$guildID;ping;Pong!;true;true;slash]`
 });
 ```
 
