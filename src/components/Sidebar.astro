@@ -12,12 +12,6 @@ githubURL = `https://github.com/AkaruiDevelopment/aoi.js/blob/v6/src/${githubURL
 
 <Default {...Astro.props}><slot /></Default>
 
-<div class="sl-container">
-  <a class="sl-link" href="/contributors"><Icon name="external" />Contributors</a>
-  {isValid && (<a class="sl-link" href={githubURL}><Icon name="github" />Source</a>)}
-  <a class="sl-link" href={Astro.props?.editUrl?.href} target="_blank"><Icon name="pencil" />Edit Page</a>
-</div>
-
 <style>
   .sl-container {
     display: flex;
