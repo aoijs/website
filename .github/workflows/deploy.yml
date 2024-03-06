@@ -17,11 +17,16 @@ jobs:
     runs-on: ubuntu-latest
     env:
       PUBLIC_BUILD_TIME: ${{ github.event.head_commit.timestamp }}
-      PUBLIC_COMMIT: ${{ github.event.head_commit.id }}
+      PUBLIC_COMMIT: ${{ github.sha }}
       PUBLIC_ENV: "production"
     steps:
       - name: BUILD - Checkout repository
         uses: actions/checkout@v3
+      - name: BUILD INFO - Commit Hash
+        id: vars
+        run: |
+          shortCommit=$(git rev-parse --short ${{ github.sha }})
+          echo "::set-env name=PUBLIC_COMMIT::$shortCommit"
       - name: BUILD INFO - Environment variables
         run: |
           echo "PUBLIC_BUILD_TIME: $PUBLIC_BUILD_TIME"
@@ -30,7 +35,7 @@ jobs:
       - name: BUILD - Start & Install
         uses: withastro/action@v1
         with:
-          node-version: 16
+          node-version: 21
         #   package-manager: npm
 
   deploy:
