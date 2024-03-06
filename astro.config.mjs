@@ -25,7 +25,7 @@ export default defineConfig({
               showLineNumbers: true,
             },
           },
-          wrap: false,
+          wrap: true,
         },
         themes: ["dracula", "github-light"],
         styleOverrides: {
