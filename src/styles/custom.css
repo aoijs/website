@@ -19,8 +19,27 @@
   --sl-hue-accent: 350;
 }
 
+@font-face{
+  font-family: 'JetBrainsMono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 .expressive-code .frame pre {
-  border-radius: 4px !important;
+  border-radius: 3px !important;
+  font-family: 'JetBrainsMono', monospace !important;
+}
+
+.expressive-code pre > code {
+  font-family: 'JetBrainsMono', monospace !important;
+}
+
+code {
+  border-radius: 3px !important;
+  font-family: 'JetBrainsMono', monospace !important;
 }
 
 aside {
@@ -56,6 +75,40 @@ aside {
 
 starlight-file-tree {
   border-radius: 4px !important;
+  font-family: 'JetBrainsMono', monospace !important;
+}
+
+#starlight__sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+
+#starlight__sidebar::-webkit-scrollbar-track {
+  background: var(--overlay-blurple);
+}
+
+#starlight__sidebar::-webkit-scrollbar-thumb {
+  transition: background 0.2s ease !important;
+  background: gray;
+  border-radius: 10px;
+}
+
+#starlight__sidebar::-webkit-scrollbar-thumb:hover {
+  transition: background 0.2s ease !important;
+  background: var(--sl-color-text-accent);
+  cursor: grab;
+}
+
+#starlight__sidebar::-webkit-scrollbar-thumb:active {
+  background: var(--sl-color-text-accent);
+  cursor: grabbing;
+}
+
+.sl-badge {
+  font-family: 'JetBrainsMono', monospace !important;
+}
+
+div.meta.sl-flex > a {
+  display: none !important;
 }
 
 a:where(.astro-3ii7xxms) {
@@ -73,7 +126,7 @@ a:where(.astro-3ii7xxms):hover {
 /* Theme Component */
 .astro-4yphtoen {
   border-radius: 6px;
-  transition: border-color 0.3s;
+  transition: border-color 0.2s ease-in;
   border-bottom: 1px solid transparent;
 }
 
@@ -99,13 +152,13 @@ a:where(.astro-3ii7xxms):hover {
   padding: 0.5rem 0.75rem;
   font-size: 1rem;
   user-select: none;
-  transition: all 0.1s ease-in;
+  transition: all 0.2s ease-in;
   align-items: center;
 }
 
 .sh-button:hover {
   border: #c2c2c2 solid 0.11rem;
-  transition: all 0.1s ease-in;
+  transition: all 0.2s ease-in;
   cursor: pointer;
 }
 
@@ -115,12 +168,12 @@ a:where(.astro-3ii7xxms):hover {
   content: "#";
   padding-inline-start: 0.25em;
   opacity: 0;
-  transition: all 0.3;
+  transition: all 0.2s ease-in;
 }
 
 .heading-link:hover::after {
   color: var(--sl-color-text-accent);
-  transition: all 0.3;
+  transition: all 0.2s ease-in;
   opacity: 1;
 }
 
@@ -184,7 +237,7 @@ a:where(.astro-3ii7xxms):hover {
   position: absolute;
   left: 0;
   margin-left: 20px;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
 .details > details[open] > summary::before {
@@ -228,7 +281,7 @@ a:where(.astro-3ii7xxms):hover {
 html[data-theme="light"] p > a {
   color: var(--sl-color-accent) !important;
   border-bottom: 1px dotted var(--sl-color-accent) !important;
-  transition: all 0.6 ease-in;
+  transition: all 0.2s ease-in;
   text-decoration: none;
   display: inline;
 }
@@ -238,13 +291,13 @@ html[data-theme="light"] p > a:hover {
   display: inline;
   color: var(--sl-color-accent-high) !important;
   border-bottom: 1px solid var(--sl-color-accent-high) !important;
-  transition: all 0.6 ease-in;
+  transition: all 0.2s ease-in;
 }
 
 html[data-theme="dark"] p > a {
   color: var(--sl-color-accent-high) !important;
   border-bottom: 1px dotted var(--sl-color-accent-high) !important;
-  transition: all 0.6 ease-in;
+  transition: all 0.2s ease-in;
   text-decoration: none;
   display: inline;
 }
@@ -254,13 +307,45 @@ html[data-theme="dark"] p > a:hover {
   display: inline;
   color: var(--sl-color-accent) !important;
   border-bottom: 1px solid var(--sl-color-accent) !important;
-  transition: all 0.6 ease-in;
+  transition: all 0.2s ease-in;
+}
+
+html[data-theme="light"] td > a {
+  color: var(--sl-color-accent) !important;
+  border-bottom: 1px dotted var(--sl-color-accent) !important;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+  display: inline;
+}
+
+html[data-theme="light"] td > a:hover {
+  text-decoration: none;
+  display: inline;
+  color: var(--sl-color-accent-high) !important;
+  border-bottom: 1px solid var(--sl-color-accent-high) !important;
+  transition: all 0.2s ease-in;
+}
+
+html[data-theme="dark"] td > a {
+  color: var(--sl-color-accent-high) !important;
+  border-bottom: 1px dotted var(--sl-color-accent-high) !important;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+  display: inline;
+}
+
+html[data-theme="dark"] td > a:hover {
+  text-decoration: none;
+  display: inline;
+  color: var(--sl-color-accent) !important;
+  border-bottom: 1px solid var(--sl-color-accent) !important;
+  transition: all 0.2s ease-in;
 }
 
 html[data-theme="light"] > .linkStyle {
   color: #fff !important;
   border-bottom: 1px dotted var(--sl-color-accent-high) !important;
-  transition: all 0.6 ease-in;
+  transition: all 0.2s ease-in;
   text-decoration: none;
   display: inline;
 }
@@ -270,13 +355,13 @@ html[data-theme="light"] > .linkStyle:hover {
   display: inline;
   color: var(--sl-color-accent-high) !important;
   border-bottom: 1px solid var(--sl-color-accent-high) !important;
-  transition: all 0.6 ease-in;
+  transition: all 0.2s ease-in;
 }
 
 html[data-theme="dark"] > .linkStyle {
   color: var(--sl-color-accent-high) !important;
   border-bottom: 1px dotted var(--sl-color-accent-high) !important;
-  transition: all 0.6 ease-in;
+  transition: all 0.2s ease-in;
   text-decoration: none;
   display: inline;
 }
@@ -286,5 +371,5 @@ html[data-theme="dark"] > .linkStyle:hover {
   display: inline;
   color: var(--sl-color-accent) !important;
   border-bottom: 1px solid var(--sl-color-accent) !important;
-  transition: all 0.6 ease-in;
+  transition: all 0.2s ease-in;
 }

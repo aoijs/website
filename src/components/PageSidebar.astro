@@ -4,6 +4,7 @@ import type { Props } from '@astrojs/starlight/props';
 import TableOfContents from '@astrojs/starlight/components/TableOfContents.astro';
 import MobileTableOfContents from '@astrojs/starlight/components/MobileTableOfContents.astro';
 import CommitStats from './CommitStats.jsx';
+import { Icon } from '@astrojs/starlight/components';
 
 const page = Astro.props.entry?.id.split("/");
 const isValid = !["music", "invite"].includes(page[1]) && ["functions"].includes(page[0]);
@@ -23,7 +24,10 @@ githubURL = `https://github.com/AkaruiDevelopment/aoi.js/blob/v6/src/${githubURL
 					<TableOfContents {...Astro.props} />
 				</div>
 				<div class="sl-container">
-					{isValid && (<a href={githubURL}>View Source</a>)}
+					<a href="/contributors"><Icon name="external" />Contributors</a>
+					{isValid && (<a href={githubURL}><Icon name="github" /> View Source</a>)}
+					<a href={Astro.props?.editUrl?.href} target="_blank"><Icon name="pencil" />Edit this Page</a>
+					<br />
 					<CommitStats />
 				</div>
 			</div>
@@ -32,6 +36,11 @@ githubURL = `https://github.com/AkaruiDevelopment/aoi.js/blob/v6/src/${githubURL
 }
 
 <style>
+
+	svg {
+		display: inline-block !important;
+	}
+
 	.right-sidebar-panel {
 		flex-direction: column;
 		justify-content: space-between;

@@ -5,9 +5,19 @@ const CommitStats = () => {
 
     return (
         <div>
-            <p style={{ fontSize: '10px', fontFamily: 'monospace' }}>Build Time: {buildTime}</p>
-            <p style={{ fontSize: '10px', fontFamily: 'monospace' }}>Commit: {commit}</p>
-            {(env === "dev" || !env) && (<p style={{ fontSize: '10px', fontFamily: 'monospace' }}>Simulated for DEV</p>)}
+            <p style={{ fontSize: '10px', fontFamily: 'JetBrainsMono, monospace' }}>Build Time: {buildTime}</p>
+            <p style={{ fontSize: '10px', fontFamily: 'JetBrainsMono, monospace' }}>Commit: {commit}</p>
+            {(env === "dev" || !env) && (
+                <p style={{ 
+                    backgroundColor: "rgba(0, 0, 255, 0.4)",
+                    borderRadius: "4px",
+                    padding: "3px 4px",
+                    fontSize: '10px', 
+                    fontFamily: 'JetBrainsMono, monospace' 
+                }}>
+                    Simulated for better Developer Experience
+                </p>
+            )}
         </div>
     );
 };

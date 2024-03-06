@@ -76,8 +76,8 @@ import "@docsearch/css";
                           constructor: undefined,
                           key: "integrationAnchor",
                           props: {
-                            href: "https://aoi.js.org/extensions/",
-                            children: "Discover our Extensions",
+                            href: "https://aoi.js.org/contributor",
+                            children: "Our Contributors",
                           },
                           __v: null,
                         },
@@ -121,8 +121,7 @@ import "@docsearch/css";
                           key: "discordAnchor",
                           props: {
                             href: "https://aoi.js.org/invite",
-                            children:
-                              "Need Support? Feel free to join our Discord.",
+                            children: "Need Support? Feel free to join our Discord.",
                           },
                           __v: null,
                         },
@@ -152,7 +151,13 @@ import "@docsearch/css";
   }
 
   :global(.DocSearch-Button) {
-    background-color: var(--sl-color-black);
+    background:
+      linear-gradient(150deg, var(--overlay-blurple), transparent 50%),
+      radial-gradient(var(--overlay-blurple), transparent 30%) no-repeat -60vw -40vh /
+        105vw 200vh,
+      radial-gradient(var(--overlay-blurple), transparent 30%) no-repeat 50%
+        calc(100% + 20rem) / 45rem 30rem;
+    transition: all 0.2s ease-in-out;
     border: 1px solid var(--sl-color-gray-5);
     border-radius: 0.5rem;
     color: var(--sl-color-gray-2);
@@ -169,10 +174,8 @@ import "@docsearch/css";
   }
 
   :global(.DocSearch-Button):hover {
+    transition: all 0.2s ease-in-out;
     background-color: var(--sl-color-black);
-    border-color: var(--sl-color-gray-2);
-    box-shadow: none;
-    color: var(--sl-color-gray-1);
   }
 
   :global(.DocSearch-Button .DocSearch-Search-Icon) {

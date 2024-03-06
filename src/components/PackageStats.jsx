@@ -132,7 +132,7 @@ const PackageStats = () => {
           flexDirection: "column",
           alignItems: "center",
           textAlign: "center",
-          marginTop: "25px",
+          marginTop: "20px",
         }}
       >
         <p
@@ -194,7 +194,7 @@ const PackageStats = () => {
       >
         <div>
           <a href="https://github.com/AkaruiDevelopment/aoi.js">
-            <img alt="aoi.js banner image" style={{ filter: "drop-shadow(0 0 3rem var(--overlay-blurple))" }}src="https://github.com/aoijs/website/raw/master/assets/images/aoijs-banner.png?raw=true" width="250" height="250" />
+            <img loading="eager" decoding="async" alt="aoi.js banner image" style={{ filter: "drop-shadow(0 0 3rem var(--overlay-blurple))" }}src="https://github.com/aoijs/website/raw/master/assets/images/aoijs-banner.png?raw=true" width="250" height="250" />
           </a>
         </div>
         <p style={{ marginLeft: "5px", color: "var(--sl-color-gray-4)" }}>Last fetched: {lastFetchedTime ?? `${new Date(Date.now()).toLocaleString()} (now)`}</p>

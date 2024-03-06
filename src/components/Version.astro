@@ -49,16 +49,16 @@ const content = `The newest ${pkgName} version <b>${version}</b> is available! <
     top: 0;
     width: 100%;
     top: var(--sl-nav-height);
-    transition: color 0.1s;
+    transition: color 0.1s ease-in;
   }
   .sl-banner :global(a) {
     color: var(--__sl-banner-text) !important;
     border-bottom: 1px dotted  var(--__sl-banner-text) !important;
-    transition: all 0.6 ease-in;
+    transition: all 0.3s ease-in;
     text-decoration: none;
   }
   .sl-banner :global(a:hover) {
-    transition: all 0.6 ease-out;
+    transition: all 0.3s ease-out;
     text-decoration: none;
     color: var(--__sl-banner-text) !important;
     border-bottom: 1px solid var(--__sl-banner-text) !important;
