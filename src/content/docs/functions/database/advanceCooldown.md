@@ -19,8 +19,8 @@ $advanceCooldown[time;id;errorMessage]
 
 | Field        | Type                                                                                              | Description                                                    | Required |
 | ------------ | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | :------: |
-| time         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Text to be separated.                                          |   true   |
-| id           | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Text to be separated.                                          |   true   |
+| time         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The duration of the cooldown.                                  |   true   |
+| id           | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The Id of a user, role or anything else.                       |   true   |
 | errorMessage | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Error message to be displayed when there's cooldown remaining. |   true   |
 
 ## Example(s)
