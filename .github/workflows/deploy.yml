@@ -31,7 +31,7 @@ jobs:
       - name: BUILD INFO - Time & Date
         id: time
         run: |
-          time=$(date +'%d-%m-%Y-%S:%M:%H')
+          time=$(date +'%d/%m/%Y %H:%M:%S')
           echo "::set-env name=PUBLIC_BUILD_TIME::$time"
       - name: BUILD INFO - Environment variables
         run: |
