@@ -16,6 +16,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
+      ACTIONS_ALLOW_UNSECURE_COMMANDS: true
       PUBLIC_BUILD_TIME: ${{ github.event.head_commit.timestamp }}
       PUBLIC_COMMIT: ${{ github.sha }}
       PUBLIC_ENV: "production"
