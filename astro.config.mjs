@@ -5,6 +5,8 @@ import starlight from "@astrojs/starlight";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import starlightLinksValidator from "starlight-links-validator";
+import { pluginLineNumbers } from "@expressive-code/plugin-line-numbers"
+import { pluginCollapsibleSections } from "@expressive-code/plugin-collapsible-sections"
 
 export default defineConfig({
   site: "https://aoi.js.org",
@@ -14,6 +16,23 @@ export default defineConfig({
   integrations: [
     starlight({
       plugins: [starlightLinksValidator()],
+      expressiveCode: {
+        plugins: [pluginCollapsibleSections(), pluginLineNumbers()],
+        defaultProps: {
+          showLineNumbers: false,
+          overridesByLang: {
+            'js,ts': {
+              showLineNumbers: true,
+            },
+          },
+          wrap: false,
+        },
+        themes: ["dracula", "github-light"],
+        styleOverrides: {
+          borderRadius: "0.2rem",
+          codeFontFamily: "'JetBrains Mono', monospace",
+        },
+      },
       title: "aoi.js",
       favicon: "/favicon.png",
       logo: {

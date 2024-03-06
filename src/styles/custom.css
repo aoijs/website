@@ -28,15 +28,6 @@
   font-style: normal;
 }
 
-.expressive-code .frame pre {
-  border-radius: 3px !important;
-  font-family: 'JetBrainsMono', monospace !important;
-}
-
-.expressive-code pre > code {
-  font-family: 'JetBrainsMono', monospace !important;
-}
-
 code {
   border-radius: 3px !important;
   font-family: 'JetBrainsMono', monospace !important;

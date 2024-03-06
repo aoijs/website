@@ -26,6 +26,8 @@
     "@astrojs/starlight": "^0.21.1",
     "@docsearch/css": "^3.5.2",
     "@docsearch/js": "^3.5.2",
+    "@expressive-code/plugin-collapsible-sections": "^0.33.4",
+    "@expressive-code/plugin-line-numbers": "^0.33.4",
     "@fontsource/poppins": "^5.0.8",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
