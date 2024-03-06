@@ -28,6 +28,11 @@ jobs:
         run: |
           shortCommit=$(git rev-parse --short ${{ github.sha }})
           echo "::set-env name=PUBLIC_COMMIT::$shortCommit"
+      - name: BUILD INFO - Time & Date
+        id: time
+        run: |
+          time=$(date +'%d-%m-%Y-%S:%M:%H')
+          echo "::set-env name=PUBLIC_BUILD_TIME::$time"
       - name: BUILD INFO - Environment variables
         run: |
           echo "PUBLIC_BUILD_TIME: $PUBLIC_BUILD_TIME"
