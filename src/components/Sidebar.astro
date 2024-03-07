@@ -1,13 +1,6 @@
 ---
 import type { Props } from '@astrojs/starlight/props';
 import Default from "@astrojs/starlight/components/Sidebar.astro";
-import { Icon } from '@astrojs/starlight/components';
-
-const page = Astro.props.entry?.id.split("/");
-const isValid = !["music", "invite"].includes(page[1]) && ["functions"].includes(page[0]);
-
-let githubURL = page.join("/").replace(".md", ".js");
-githubURL = `https://github.com/AkaruiDevelopment/aoi.js/blob/v6/src/${githubURL}`;
 ---
 
 <Default {...Astro.props}><slot /></Default>
@@ -26,6 +19,7 @@ githubURL = `https://github.com/AkaruiDevelopment/aoi.js/blob/v6/src/${githubURL
     color: var(--sl-color-text-accent);
   }
 </style>
+
 <script is:inline>
   (() => {
     const sidebarContent = document.getElementById('starlight__sidebar')?.firstElementChild;
