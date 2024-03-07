@@ -15,6 +15,7 @@ export default defineConfig({
   },
   integrations: [
     starlight({
+      head: [{ tag: "script", attrs: { src: "/preserve-sidebar.js" } }],
       plugins: [starlightLinksValidator()],
       expressiveCode: {
         plugins: [pluginCollapsibleSections(), pluginLineNumbers()],
