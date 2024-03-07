@@ -124,8 +124,8 @@ It's important to note that activating your intents on the Discord Developer Por
   - `voiceStateUpdate` &rarr; Command Handler type.
   * `$oldState[option?]` &rarr; Retrieves data of the old voice state. (if any)
   * `$newState[option?]` &rarr; Retrieves data of the new voice state. (if any)
-- **onWebhookUpdate** &rarr; Emitted whenever a channel has its webhooks changed.
-  - `webhookUpdate` &rarr; Command Handler type.
+- **onWebhooksUpdate** &rarr; Emitted whenever a channel has its webhooks changed.
+  - `webhooksUpdate` &rarr; Command Handler type.
 
 ### Guild Members Based-Events
 
