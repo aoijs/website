@@ -18,7 +18,9 @@ const calculateFontSize = (description) => {
   const reductionPerCharacter = 0.1;
 
   if (description.length > characterLimit) {
-    return baseSize - (description.length - characterLimit) * reductionPerCharacter;
+    return (
+      baseSize - (description.length - characterLimit) * reductionPerCharacter
+    );
   } else {
     return baseSize;
   }
@@ -51,17 +53,12 @@ export default async function (req) {
     : "Create powerful Discord Bots fast, easy.";
 
   if (replace) {
-    //console.log(description.startsWith(`${title} will return`))
-    //console.log(description)
-    if (description.startsWith(`${title} will return`)) {
-      const words = description.split(' ');
-      if (words.length > 3) {
-        words.splice(0, 3, 'Returns');
-        description = words.join(' ');
-      } else {
-        description = 'Returns ' + words.join(' ');
-      }
-    }  }
+    const words = description.split(" ");
+    if (words.length > 2 && words[1] === "will") {
+      words[2] = words[2][0].toUpperCase() + words[2].slice(1) + "s";
+      description = words.join(" ");
+    }
+  }
 
   // ?gradient=<color>
   const hasGradient = searchParams.has("gradient");
@@ -107,7 +104,8 @@ export default async function (req) {
             flexDirection: "column",
             flexWrap: "nowrap",
             backgroundColor: "#000000",
-            backgroundImage: "radial-gradient(circle at 25px 25px, #242424 2%, transparent 0%), radial-gradient(circle at 75px 75px, #242424 2%, transparent 0%)",
+            backgroundImage:
+              "radial-gradient(circle at 25px 25px, #242424 2%, transparent 0%), radial-gradient(circle at 75px 75px, #242424 2%, transparent 0%)",
             backgroundSize: "100px 100px",
           }}
         >
