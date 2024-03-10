@@ -53,11 +53,11 @@ export default async function (req) {
     : "Create powerful Discord Bots fast, easy.";
 
   if (replace) {
-    const words = description.split(' ');
-    if (words.length > 2 && words[1] === 'will') {
-      words[2] = words[2][0].toUpperCase() + words[2].slice(1) + 's';
+    const words = description.split(" ");
+    if (words.length > 2 && words[1] === "will") {
+      words[2] = words[2][0].toUpperCase() + words[2].slice(1) + "s";
       words.splice(0, 2);
-      description = words.join(' ');
+      description = words.join(" ");
     }
   }
 
