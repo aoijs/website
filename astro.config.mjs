@@ -22,13 +22,13 @@ export default defineConfig({
         defaultProps: {
           showLineNumbers: false,
           overridesByLang: {
-            'js,ts': {
+            'js,ts,javascript': {
               showLineNumbers: true,
             },
           },
           wrap: true,
         },
-        themes: ["dracula", "github-light"],
+        themes: ["github-dark", "github-light"],
         styleOverrides: {
           borderRadius: "0.2rem",
           codeFontFamily: "'JetBrains Mono', monospace",
@@ -55,7 +55,8 @@ export default defineConfig({
         Search: "./src/components/Search.astro",
         Head: "./src/components/Head.astro",
         Sidebar: "./src/components/Sidebar.astro",
-        PageSidebar: "./src/components/PageSidebar.astro",
+        PageTitle: "./src/components/PageTitle.astro",
+        PageSidebar: "./src/components/PageSidebar.astro"
       },
       pagefind: false,
       head: [
@@ -100,6 +101,18 @@ export default defineConfig({
               label: "Other",
               autogenerate: {
                 directory: "guides/other",
+              },
+              collapsed: true,
+            },
+          ],
+        },
+        {
+          label: "Extensions",
+          items: [
+            {
+              label: "@akarui",
+              autogenerate: {
+                directory: "extensions/@akarui",
               },
               collapsed: true,
             },

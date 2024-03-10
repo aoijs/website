@@ -1,0 +1,55 @@
+---
+title: Events
+description: "Events for aoi.music."
+id: events
+sidebar:
+    order: 2
+---
+
+#### Adding Events
+
+```js
+voice.addEvent(PlayerEvents.eventName);
+```
+
+#### List of Events
+
+[Typings can be found here.](https://akaruidevelopment.github.io/aoi.music/interfaces/ManagerEvents.html)
+
+- `trackStart` &rarr; Emitted whenever a track starts.
+- `trackEnd` &rarr; Emitted whenever a track ends.
+- `queueStart` &rarr; Emitted whenever a queue starts.
+- `queueEnd` &rarr; Emitted whenever a queue ends.
+- `audioError` &rarr; Emitted whenever a audio error occurs.
+- `trackPause` &rarr; Emitted whenever a track pauses.
+- `trackResume` &rarr; Emitted whenever a track resumes.
+
+### Using Events
+
+```js
+const { LoadCommands } = require("aoi.js");
+
+... // rest of your setup
+
+const loader = new LoadCommands(client);
+loader.load(voice.cmds, "./voice/");
+```
+
+This should be the content of your `./voice/<filename>.js`:
+
+```js
+module.exports = [{
+    channel: "$channelID",
+    type: "eventName",
+    code: `code to execute here`,
+}];
+```
+
+If you don't want to use handlers, you can use this instead in your main file also known as `index.js`:
+
+```js
+voice.cmds["eventName"].set("Name for the command, can be anything", {
+  channel: "$channelID", // Any channel Id, must be valid.
+  code: `The code to execute when the event is triggered.`,
+});
+```
