@@ -7,13 +7,19 @@ sidebar:
   order: 4
 ---
 
-There are multiple ways of using `$autoCompleteRespond` you can either use JSON or the simple aoi.js way.
+There are multiple ways of using `$autoCompleteRespond`. You can either use JSON or the simple aoi.js way.
 
-### Usage
+## Usage
+
+The `$autoCompleteRespond` can be used in two ways:
+
+1. **Simple Way**: Here's how you can use it in a simple way:
 
 ```php
 $autoCompleteRespond[OptionName;OptionReply;...]
 ```
+
+2. **JSON Way**: If you prefer JSON, you can use it like this:
 
 ```php
 $autoCompleteRespond[[{
@@ -25,7 +31,9 @@ $autoCompleteRespond[[{
   }]]
 ```
 
-Create the slash command, this will create a global application command with the name of "example" with an option which uses autoComplete:
+## Creating a Slash Command with Autocomplete
+
+Here's how you can create a global application command named "example" with an option that uses autocomplete:
 
 ```javascript
 client.command({
@@ -41,7 +49,9 @@ client.command({
 });
 ```
 
-Checking if autoComplete equals `true` if so it will respond with the given respond (addition of the code above):
+## Responding Based on Autocomplete Selection
+
+If autoComplete equals `true`, it will respond with the given response:
 
 ```javascript
 client.command({
@@ -58,7 +68,9 @@ client.command({
 });
 ```
 
-Create the slash-command, this will create a global application command with the name "example":
+## Creating a Slash Command with Multiple Options
+
+Here's how you can create a global application command named "example" with multiple options:
 
 ```javascript
 client.command({
@@ -79,7 +91,9 @@ client.command({
 });
 ```
 
-Using JSON and checking if autoComplete equals `true` if so it will respond with the given response :
+## Responding with JSON Based on Autocomplete Selection
+
+If autoComplete equals `true`, it will respond with the given JSON response:
 
 ```javascript
 module.exports = [

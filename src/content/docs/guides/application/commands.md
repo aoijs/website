@@ -1,6 +1,6 @@
 ---
 title: Interaction Commands
-description: This guide will be covering the basics about Interaction Commands and their functionality. As well as everything else you might need to know.
+description: This guide covers the basics about Interaction Commands and their functionality, along with everything else you might need to know.
 id: commands
 og_image: https://raw.githubusercontent.com/aoijs/website/main/images/og/3.png
 sidebar:
@@ -8,16 +8,15 @@ sidebar:
 ---
 
 <!-- omit from toc -->
-
 ### Table of Contents
 
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
-  - [Inviting your bot with correct permissions](#inviting-your-bot-with-correct-permissions)
-- [Important](#important)
+  - [Inviting Your Bot with Correct Permissions](#inviting-your-bot-with-correct-permissions)
+- [Important Notes](#important-notes)
 - [Creating Application Commands](#creating-application-commands)
     - [Application Types](#application-types)
-  - [Examples of creating Application Commands](#examples-of-creating-application-commands)
+  - [Examples of Creating Application Commands](#examples-of-creating-application-commands)
 - [Conclusion](#conclusion)
 - [Application Command Option Type](#application-command-option-type)
 
@@ -25,30 +24,26 @@ sidebar:
 
 ## Introduction
 
-Application Commands make it much easier for us to use our favourite bots on Discord. All you need to do is type `/` followed by the command you want to use or right click a message, and your favourite bot will do the rest.
+Application Commands simplify the use of our favorite bots on Discord. Simply type `/` followed by the command you want to use or right-click a message, and your favorite bot will do the rest.
 
-Application Commands make it simpler for users to discover what a bot can do, and they can also find new features as they are added. Validation, error states, and a user-friendly interface guide users through the commands, so they can quickly get the results they need without confusion or frustration. Plus, they allow users to keep the mental model of how they think about the bot separate from how it actually works, which makes it easier for everyone to understand and use the bot.
-
-Using Application Commands offers a few benefits, like the ability to quickly and easily access the features of a bot, a user-friendly interface to guide users through commands, and the ability to separate the user's mental model from the workings of the bot. All of this makes it simpler for users to use the bot, so they can get the most out of it.
+Application Commands make it easier for users to discover what a bot can do, and they can also find new features as they are added. Validation, error states, and a user-friendly interface guide users through the commands, so they can quickly get the results they need without confusion or frustration. Plus, they allow users to keep the mental model of how they think about the bot separate from how it actually works, which makes it easier for everyone to understand and use the bot.
 
 ## Getting Started
 
-### Inviting your bot with correct permissions
+### Inviting Your Bot with Correct Permissions
 
-In order to use Application Commands, your bot requires the `application.commands` scope which can be found on
-the [Discord Developer Portal](https://discord.com/developers/applications/). You don't have to kick your bot or
-anything, simply reinvite it.
+To use Application Commands, your bot requires the `application.commands` scope, which can be found on the [Discord Developer Portal](https://discord.com/developers/applications/). You don't have to kick your bot or anything, simply reinvite it.
 
-![scope](https://media.discordapp.net/attachments/1061712111052521493/1062539303386873929/image_5.png?width=1200&height=447)
+![Scope](https://media.discordapp.net/attachments/1061712111052521493/1062539303386873929/image_5.png?width=1200&height=447)
 
-## Important
+## Important Notes
 
-- Due to Discord's Limitation you can only have up to **50 slash commands** in your bot / per guild.
+- Due to Discord's limitation, you can only have up to **50 slash commands** in your bot / per guild.
 - Two Application commands can **not have the same name** in the same guild.
 - Application command names can **not contain special symbols (this includes spaces)** and must be shorter than **32 characters**.
 - You require `events: ["onMessage", "onInteractionCreate"]` in your main file.
 
-![slash-example](https://cdn.discordapp.com/attachments/1061712111052521493/1062559509601591427/image_6.png)
+![Slash Command Example](https://cdn.discordapp.com/attachments/1061712111052521493/1062559509601591427/image_6.png)
 
 ## Creating Application Commands
 
@@ -61,7 +56,7 @@ $createApplicationCommand[guildID/global;name;description;defaultPermission(true
 | guildID/global    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The type of application command, either for every guild (global) or for one specific guild (specific guildID). |   true   |
 | name              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The actual slash command name that will be visible to the user.                                                |   true   |
 | description       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The slash command description that will be visible to the user.                                                |   true   |
-| defaultPermission | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | If the application command should syncronisate to the default permissions.                                     |   true   |
+| defaultPermission | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | If the application command should synchronize to the default permissions.                                      |   true   |
 | allowDm           | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | Allow Direct Message execution.                                                                                |   true   |
 | type              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | The application command type (explained below)                                                                 |   true   |
 | options?          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)                                                                                                    | [Slash commands options](#examples-of-creating-application-commands).                                          |   false  |
@@ -69,10 +64,10 @@ $createApplicationCommand[guildID/global;name;description;defaultPermission(true
 #### Application Types
 
 > - `message` — Creates an Application Command that can be executed on a message. ([documentation](https://discord.com/developers/docs/interactions/application-commands#message-commands))
-> - `slash` — Creates an Application Command as slash command. ([documentation](https://discord.com/developers/docs/interactions/application-commands))
+> - `slash` — Creates an Application Command as a slash command. ([documentation](https://discord.com/developers/docs/interactions/application-commands))
 > - `user` — Creates an Application Command that can be executed on a user. ([documentation](https://discord.com/developers/docs/interactions/application-commands#user-commands))
 
-### Examples of creating Application Commands
+### Examples of Creating Application Commands
 
 ```js
 client.command({
@@ -84,13 +79,11 @@ client.command({
 
 ## Conclusion
 
-Interaction Commands are an incredibly useful tool for developing interactive bots. They can be used to create robust
-interactions with users, and make it easier to manage commands and features. We hope this guide has been helpful in
-learning how to use Interaction Commands and the basics of how they work.
+Interaction Commands are an incredibly useful tool for developing interactive bots. They can be used to create robust interactions with users, and make it easier to manage commands and features. We hope this guide has been helpful in learning how to use Interaction Commands and the basics of how they work.
 
 ## [Application Command Option Type](https://discord.com/developers/docs/interactions/application-commands#application-command-object-application-command-option-type)
 
-| NAME              | ID  | NOTE                                                                                         |
+| Name              | ID  | Note                                                                                         |
 | ----------------- | --- | -------------------------------------------------------------------------------------------- |
 | SUB_COMMAND       | 1   |                                                                                              |
 | SUB_COMMAND_GROUP | 2   |                                                                                              |
