@@ -37,7 +37,7 @@ export default defineConfig({
       title: "aoi.js",
       favicon: "/favicon.ico",
       logo: {
-        src: "/favicon.ico",
+        src: "./src/images/icon.webp",
       },
       social: {
         github: "https://github.com/AkaruiDevelopment/aoi.js#v6",

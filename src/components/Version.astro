@@ -4,7 +4,7 @@ import pRetry from "p-retry";
 
 const { pkgName } = Astro.props as Props;
 
-const url = `https://registry.npmjs.org/${pkgName}/latest`;
+const url = `https://registry.npmjs.org/${pkgName}`;
 
 const packageInfo = await pRetry(
   async () => {
@@ -21,14 +21,21 @@ const packageInfo = await pRetry(
 
     return json;
   },
-  { retries: 10 },
+  { retries: 3 },
 );
 
-const { version } = packageInfo;
+const modified = new Date(packageInfo.time.modified).getTime();
+const date = new Date().getTime();
+
+let showBanner = true;
+if ((date - modified) / (1000 * 60 * 60 * 24) > 7) showBanner = false;
+
+const version = packageInfo["dist-tags"].latest;
+
 const content = `The newest ${pkgName} version <b>${version}</b> is available! <a href="https://github.com/AkaruiDevelopment/${pkgName}/releases/tag/${version}">Read the Changelogs</a>`;
 ---
 
-<div class="sl-banner" set:html={content}><slot /></div>
+<div class="sl-banner" set:html={content} style={showBanner ? '' : 'display: none !important;'}><slot /></div>
 
 <style>
   .sl-banner {

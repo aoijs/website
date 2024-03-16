@@ -6,11 +6,6 @@ editUrl: false
 lastUpdated: false
 prev: false
 next: false
-og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/1.png
-# banner:
-#   content: |
-#     The newest version, just dropped!
-#     <a href="https://github.com/AkaruiDevelopment/aoi.js/releases/tag/6.5.6">Read the Changelogs</a>
 head:
   - tag: title
     content: aoi.js - Build Discord Bots with ease
@@ -19,11 +14,11 @@ head:
       name: "og:description"
       content: "Get started with aoi.js, the most powerful string package to create a simple and fast Discord Bot."
 hero:
-  title: Build Powerful Discord Bots using aoi.js
+  title: Build <span style='color:var(--sl-color-banner-bg, var(--sl-color-bg-accent));'>Powerful Discord Bots</span> using aoi.js
   tagline: The most advanced string-based package to create a Discord Bot fast and powerful
   image:
     file: ../../images/hero_icon.png
-    alt: "aoi.js mascot, showint bird with heart over head"
+    alt: "aoi.js mascot, showing bird with heart over head"
   actions:
     - text: Getting Started
       link: guides/setup
@@ -33,13 +28,13 @@ hero:
       link: invite/
       icon: external
       variant: secondary
-    - text: "Contributors"
-      link: contributors/
-      variant: secondary
 ---
+
 import Version from "../../components/Version.astro";
 import PackageStats from "../../components/PackageStats.jsx";
 import { Card, CardGrid } from "@astrojs/starlight/components";
+import { Image } from "astro:assets";
+import hero_icon from "../../images/hero_icon.png";
 
 <Version pkgName="aoi.js" />
 
@@ -87,3 +82,20 @@ import { Card, CardGrid } from "@astrojs/starlight/components";
 <br />
 
 <PackageStats client:load client:only="react" />
+
+  <div class="contribute-footer">
+    <p>This project is possible thanks to our contributors!</p>
+    <p>Check them out <a href="/contributors">here 🚀</a></p>
+    <p>
+      Contribute to <a href="https://github.com/AkaruiDevelopment/aoi.js" target="_blank">aoi.js</a> or our <a href="https://github.com/aoijs/website" target="_blank">documentation</a>!
+    </p>
+    <div class="logo">
+      <Image
+        draggable="false"
+        src={hero_icon}
+        alt="aoi.js Mascot"
+        style="display: block;"
+        loading="eager"
+      />
+    </div>
+  </div>

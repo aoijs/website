@@ -364,3 +364,25 @@ html[data-theme="dark"] > .linkStyle:hover {
   border-bottom: 1px solid var(--sl-color-accent) !important;
   transition: all 0.2s ease-in;
 }
+
+/* Footer */
+.contribute-footer {
+  margin-top: 10rem !important;
+  text-align: center;
+}
+
+.logo {
+  margin: 0 auto;
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+
+header a:hover {
+  transition: all 0.1s ease-in;
+  color: var(--sl-color-accent-high) !important;
+}
+
+header a {
+  transition: all 0.1s ease-in;
+}
