@@ -1,15 +1,15 @@
 ---
-title: $maximumMembers
-description: $maximumMembers will return the maximal amount of members a guild can have.
-id: maximumMembers
+title: $guildMaximumMembers
+description: $guildMaximumMembers will return the maximal amount of members a guild can have.
+id: guildMaximumMembers
 ---
 
-`$maximumMembers` will return the maximal amount of members a guild can have.
+`$guildMaximumMembers` will return the maximal amount of members a guild can have.
 
 ## Usage
 
 ```php
-$maximumMembers[guildID?]
+$guildMaximumMembers[guildID?]
 ```
 
 ## Parameters
@@ -24,9 +24,9 @@ This will return the maximum of members you can have in your guild:
 
 ```javascript
 client.command({
-  name: "maximumMembers",
+  name: "guildMaximumMembers",
   code: `
-  You can have: $maximumMembers[$guildID] Members in this guild!
+  You can have: $guildMaximumMembers[$guildID] Members in this guild!
   `
 });
 ```

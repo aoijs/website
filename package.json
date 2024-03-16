@@ -1,6 +1,6 @@
 {
   "name": "aoi.js-website",
-  "version": "0.3.0",
+  "version": "0.0.0",
   "description": "Offical aoi.js Documentation.",
   "main": "index.js",
   "type": "module",
@@ -8,8 +8,7 @@
     "dev": "astro dev",
     "format": "prettier -w --cache --plugin prettier-plugin-astro .",
     "check": "astro check",
-    "prebuild": "astro build",
-    "build": "astro check && astro build",
+    "build": "astro build",
     "preview": "astro preview",
     "start": "prettier -w --cache --plugin prettier-plugin-astro . && astro build && astro preview"
   },

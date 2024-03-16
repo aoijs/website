@@ -14,6 +14,7 @@ import contrib_6 from "../images/contributors/astrookai.png";
 import contrib_7 from "../images/contributors/snow.png";
 import contrib_8 from "../images/contributors/nanotechpikachu.png";
 import contrib_9 from "../images/contributors/relevantzone.png";
+import contrib_10 from "../images/contributors/ahoemi.png";
 
 //staff (cm above)
 import staff_1 from "../images/contributors/dodogames.png";
@@ -77,6 +78,18 @@ import hover_icon from "../images/hero_icon.png";
           role: "Developer",
           color: "#8f00ee",
           avatar: contrib_4,
+        },
+        {
+          name: "ahoemi.official",
+          discord: "@ahoemi.official",
+          role: "Developer",
+          color: "#8f00ee",
+          avatar: contrib_10,
+          link: {
+            url: "https://discord.com/users/715852000096419900",
+            label: "Discord Profile",
+            type: "discord",
+          },
         },
         {
           name: "dodogames",
@@ -176,14 +189,16 @@ import hover_icon from "../images/hero_icon.png";
                   @ {user.role}
                 </span>
                 {user.link && (
-                  <a href={user.link.url} target="_black" class="link-button">
+                  <a href={user.link.url} target="_blank" class="link-button">
                     <Icon
                       name={
                         user.link.type === "twitter"
                           ? "twitter"
                           : user.link.type === "github"
                             ? "github"
-                            : "external"
+                            : user.link.type === "discord"
+                              ? "discord"
+                              : "external"
                       }
                     />
                     {user.link.label}

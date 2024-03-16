@@ -1,15 +1,15 @@
 ---
-title: $vanityUses
-description: $vanityUses will return the uses of a vanity URL.
-id: vanityUses
+title: $guildVanityUses
+description: $guildVanityUses will return the uses of a vanity URL.
+id: guildVanityUses
 ---
 
-`$vanityUses` will return the uses of a vanity URL.
+`$guildVanityUses` will return the uses of a vanity URL.
 
 ## Usage
 
 ```php
-$vanityUses[guildID?]
+$guildVanityUses[guildID?]
 ```
 
 ## Parameters
@@ -24,9 +24,9 @@ This will return the uses of your guild's vanity URL, if you have one:
 
 ```javascript
 client.command({
-  name: "vanityUses",
+  name: "guildVanityUses",
   code: `
-  $vanityUses[$guildID]
+  $guildVanityUses[$guildID]
   `
 });
 ```
