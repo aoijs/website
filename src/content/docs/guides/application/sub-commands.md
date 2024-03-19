@@ -2,7 +2,7 @@
 title: Subcommands
 description: This page covers everything about Subcommands of Application Commands.
 id: sub-commands
-og_image: https://raw.githubusercontent.com/aoijs/website/main/images/og/3.png
+og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/3.png
 sidebar:
   order: 2
   badge:

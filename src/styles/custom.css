@@ -19,13 +19,37 @@
   --sl-hue-accent: 350;
 }
 
-@font-face{
+@font-face {
   font-family: 'JetBrainsMono';
   src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
     url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff'),
     url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Whitney";
+  src: url("https://cdn.skyra.pw/whitney-font/v2/Book.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Whitney";
+  src: url("https://cdn.skyra.pw/whitney-font/v2/Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Whitney";
+  src: url("https://cdn.skyra.pw/whitney-font/v2/Semibold.woff") format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Whitney";
+  src: url("https://cdn.skyra.pw/whitney-font/v2/Bold.woff") format("woff");
+  font-weight: 700;
 }
 
 code {
@@ -385,4 +409,41 @@ header a:hover {
 
 header a {
   transition: all 0.1s ease-in;
+}
+
+/* Discord Message */
+
+.discord-message .discord-author-avatar img {
+  margin-top: 16px !important;
+}
+
+.discord-message .discord-attachments>* {
+  align-items: self-end;
+  margin-top: -2px !important;
+}
+
+.discord-message .discord-attachments {
+  margin-top: -.5rem;
+}
+
+.discord-messages {
+  border-radius: 4px;
+  margin-top: 2rem;
+}
+
+.discord-message {
+  font-family: "Whitney", sans-serif !important;
+  margin-top: 0.2px !important;
+}
+
+.discord-left-border {
+  background-color: #202225;
+  border-radius: 4px 0 0 4px !important;
+  flex-shrink: 0 !important;
+  width: 4px !important;
+  margin-top: 16px !important;
+}
+
+.discord-embed {
+  margin-top: -0.2px !important;
 }

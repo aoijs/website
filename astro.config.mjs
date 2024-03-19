@@ -7,6 +7,7 @@ import sitemap from "@astrojs/sitemap";
 import starlightLinksValidator from "starlight-links-validator";
 import { pluginLineNumbers } from "@expressive-code/plugin-line-numbers"
 import { pluginCollapsibleSections } from "@expressive-code/plugin-collapsible-sections"
+import starlightImageZoom from "starlight-image-zoom"
 
 export default defineConfig({
   site: "https://aoi.js.org",
@@ -56,7 +57,7 @@ export default defineConfig({
         Head: "./src/components/Head.astro",
         Sidebar: "./src/components/Sidebar.astro",
         PageTitle: "./src/components/PageTitle.astro",
-        PageSidebar: "./src/components/PageSidebar.astro"
+        PageSidebar: "./src/components/PageSidebar.astro",
       },
       pagefind: false,
       head: [
@@ -84,16 +85,16 @@ export default defineConfig({
           label: "Guides",
           items: [
             {
-              label: "Application Commands",
+              label: "Client",
               autogenerate: {
-                directory: "guides/application",
+                directory: "guides/client",
               },
               collapsed: true,
             },
             {
-              label: "Client",
+              label: "Application Commands",
               autogenerate: {
-                directory: "guides/client",
+                directory: "guides/application",
               },
               collapsed: true,
             },
@@ -241,6 +242,7 @@ export default defineConfig({
       ],
     }),
     react(),
+    starlightImageZoom(),
     sitemap(),
   ],
   image: {

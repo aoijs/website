@@ -2,10 +2,15 @@
 title: Parser
 description: This guide explains how to properly use embed parsers and component parsers. Including basics and examples.
 id: parser
-og_image: https://raw.githubusercontent.com/aoijs/website/main/images/og/17.png
+og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/17.png
+sidebar:
+  badge:
+    text: Updated
+    variant: tip
 ---
 
-<!-- omit from toc -->
+import DiscordComponents from "../../../../components/DiscordMessage/DiscordComponents";
+
 ### Table of Contents
 
 - [ExtraOptions/Options Parser Functions](#extraoptionsoptions-parser-functions)
@@ -91,14 +96,25 @@ Usage:
 
 #### Button Types
 
-|   Name    | Value |                     Color |                                                                                        |
-| :-------: | :---: | ------------------------: | -------------------------------------------------------------------------------------- |
-|  Primary  |   1   |                   blurple | `{button:Example Button!:primary:customID:false}`                                      |
-| Secondary |   2   |                      grey | `{button:Example Button!:secondary:customID:false}`                                    |
-|  Success  |   3   |                     green | `{button:Example Button!:success:customID:false}`                                      |
-|  Danger   |   4   |                       red | `{button:Example Button!:danger:customID:false}`                                       |
-|   Link    |   5   |  grey, navigates to a URL | `{button:Example Button!:link:https\\:discord.gg:false}`                               |
-|   Emoji   |   -   | primary button with emoji | `{button:Example Button!:primary:customID:false:emojiName or emojiID or emoji String}` |
+|   Name    | Value |                     Color |                                                                               |
+| :-------: | :---: | ------------------------: | ----------------------------------------------------------------------------- |
+|  Primary  |   1   |                   blurple | `{button:Button:primary:customID:false}`                                      |
+| Secondary |   2   |                      grey | `{button:Button:secondary:customID:false}`                                    |
+|  Success  |   3   |                     green | `{button:Button:success:customID:false}`                                      |
+|  Danger   |   4   |                       red | `{button:Button:danger:customID:false}`                                       |
+|   Link    |   5   |  grey, navigates to a URL | `{button:Button:link:https\\:aoi.js.org/invite:false}`                        |
+|   Emoji   |   -   | primary button with emoji | `{button:Button:primary:customID:false:emojiName or emojiID or emoji String}` |
+
+    <DiscordComponents client:load client:only="react"
+        bot="All possible button types!"
+        buttons={[
+        { label: "Button", type: "primary", customId: "customId_1", row: 0, "emoji-name": "👋", emoji: "https://www.svgrepo.com/show/407719/waving-hand.svg" },
+        { label: "Button", type: "secondary", customId: "customId_2", row: 0  },
+        { label: "Button", type: "success", customId: "customId_5", row: 0 },
+        { label: "Button", type: "destructive", customId: "customId_3", row: 0 },
+        { label: "Button", type: "link", url: "https://aoi.js.org/invite", row: 0 },
+        ]}
+    />
 
 ### Select Menu Parser
 
@@ -136,8 +152,29 @@ Below are simple examples of each parser and how to use them.
 **Embed with title, footer, image and field.**
 
 ```bash
-{newEmbed:{title:Another Awesome Example !}{image:https://cdn.discordapp.com/icons/773352845738115102/f6b0d1a62a83397976ea441c5377e6ad.png?size=128}{field:This is a field title!:And a field description which is not inline!:false}{footer:Example #2}}
+{newEmbed:{title:Another Awesome Example !}{image:https://cdn.discordapp.com/banners/773352845738115102/01e9a05d24039fe562bcc8ab95e721f8.webp?size=4096}{field:This is a field title!:And a field description which is not inline!:false}{footer:Example #2}}
 ```
+
+<DiscordComponents
+  client:load
+  client:only="react"
+  bot=""
+  embeds={[
+    {
+      title: "Another Awesome Example !",
+      image:
+        "https://cdn.discordapp.com/banners/773352845738115102/01e9a05d24039fe562bcc8ab95e721f8.webp?size=4096",
+      fields: [
+        {
+          fieldTitle: "This is a field title!",
+          value: "And a field description which is not inline!",
+          inline: false,
+        },
+      ],
+      footer: "Example #2",
+    },
+  ]}
+/>
 
 ---
 
@@ -151,11 +188,28 @@ Below are simple examples of each parser and how to use them.
 {actionRow:{button:Button:secondary:button1}}{actionRow:{button:Button:primary:button2}}
 ```
 
+    <DiscordComponents client:load client:only="react"
+        bot="Two buttons each one in a different row."
+        buttons={[
+        { label: "Button", type: "secondary", customId: "button1", row: 0 },
+        { label: "Button", type: "primary", customId: "button2", row: 1  },
+        ]}
+    />
+
 **Three buttons, one with emoji.**
 
 ```bash
 {actionRow:{button:Button:primary:button1:false}{button:Button:primary:button2:false}{button:Button:danger:button3:false:👋}}
 ```
+
+    <DiscordComponents client:load client:only="react"
+        bot="Three buttons, one with emoji."
+        buttons={[
+        { label: "Button", type: "primary", customId: "customId_1", row: 0 },
+        { label: "Button", type: "primary", customId: "customId_2", row: 0  },
+        { label: "Button", type: "destructive", customId: "customId_3", row: 0, "emoji-name": "👋", emoji: "https://www.svgrepo.com/show/407719/waving-hand.svg" }
+        ]}
+    />
 
 #### Select Menu Parser
 
