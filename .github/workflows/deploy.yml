@@ -39,8 +39,8 @@ jobs:
       - name: BUILD - Start & Install
         uses: withastro/action@v1
         with:
-          node-version: 19
-        #   package-manager: npm
+          node-version: 21
+        # package-manager: npm
 
   deploy:
     needs: build
