@@ -1,6 +1,9 @@
 ---
 title: Character Escaping
 description: This page explains character escaping and provides a table of commonly used escape sequences.
+type: guide
+author: "Fafa"
+author_url: "https://raw.githubusercontent.com/aoijs/website/main/src/images/contributors/fafa.png"
 id: character-escaping
 og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/11.png
 ---

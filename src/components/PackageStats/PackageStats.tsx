@@ -1,13 +1,24 @@
 import { useState, useEffect } from "react";
+import type { FC } from "react";
 
-const PackageStats = () => {
-  const [downloads, setdownloads] = useState(0);
-  const [gitstats, setgitstats] = useState({ stars: 0, forks: 0 });
-  const [lastFetchedTime, setLastFetchedTime] = useState(null);
+interface GitStats {
+  stars: number;
+  forks: number;
+}
 
-  const CountUp = ({ targetNumber }) => {
+interface CachedData {
+  data: number | GitStats;
+  timestamp: number;
+}
+
+const PackageStats: FC = () => {
+  const [downloads, setDownloads] = useState(0);
+  const [gitstats, setGitStats] = useState({ stars: 0, forks: 0 });
+  const [lastFetchedTime, setLastFetchedTime] = useState<string | null>(null);
+
+  const CountUp: FC<{ targetNumber: number }> = ({ targetNumber }) => {
     const [currentNumber, setCurrentNumber] = useState(0);
-    let intervalId = null;
+    let intervalId: any = null;
 
     useEffect(() => {
       let increment = 0;
@@ -49,11 +60,8 @@ const PackageStats = () => {
         `https://api.npmjs.org/downloads/range/1000-01-01:2030-12-31/aoi.js`
       );
       const data = await response.json();
-      const total = data.downloads.reduce(
-        (acc, entry) => acc + entry.downloads,
-        0
-      );
-      setdownloads(total);
+      const total = data.downloads.reduce((acc: any, entry: any) => acc + entry.downloads, 0);
+      setDownloads(total);
       cacheData("npm", total);
     } catch (e) {
       return;
@@ -70,14 +78,14 @@ const PackageStats = () => {
         stars: data.stargazers_count,
         forks: data.forks_count,
       };
-      setgitstats(stats);
+      setGitStats(stats);
       cacheData("git", stats);
     } catch (error) {
       console.error("Error fetching GitHub repo stats:", error);
     }
   };
 
-  const getCachedData = (key) => {
+  const getCachedData = (key: string): CachedData | null => {
     const cachedData = localStorage.getItem(key);
     if (cachedData) {
       const { data, timestamp } = JSON.parse(cachedData);
@@ -91,19 +99,19 @@ const PackageStats = () => {
     return null;
   };
 
-  const cacheData = (key, data) => {
+  const cacheData = (key: string, data: any) => {
     const timestamp = Date.now();
     const dataToCache = { data, timestamp };
     localStorage.setItem(key, JSON.stringify(dataToCache));
   };
 
   useEffect(() => {
-    const cachedTotalStats = getCachedData("npm");
+    const totalStats = getCachedData("npm");
     const git = getCachedData("git");
 
-    if (cachedTotalStats !== null && git !== null) {
-      setdownloads(cachedTotalStats.data);
-      setgitstats(git.data);
+    if (totalStats !== null && git !== null) {
+      setDownloads(totalStats.data as any);
+      setGitStats(git.data as any);
     } else {
       npmStats();
       gitStats();

@@ -2,7 +2,7 @@
 import type { Props } from "@astrojs/starlight/props";
 import { Icon } from "@astrojs/starlight/components";
 import Default from "@astrojs/starlight/components/PageTitle.astro";
-import Version from "./PackageVersion.astro";
+import Version from "../PackageStats/PackageVersion.astro";
 
 const { data } = Astro.props.entry;
 ---
@@ -32,7 +32,27 @@ const { data } = Astro.props.entry;
 				</a>
 			</div>
 		</div>
-	) : (
+	) : data.type === "guide" ? (
+        <div class="wrapper">
+            <h1 id="_top">{data.title}</h1>
+            <div class="author-info">
+                <div>
+                    <span>Written by</span>
+                    {data.edited_by && <span>Edited by</span>}
+                </div>
+                <div>
+                    <img src={data.author_url} alt={data.author} />
+                    <span>{data.author}</span>
+                    {data.edited_by && (
+                        <>
+                            <img src={data.edited_by_url} alt={data.edited_by} />
+                            <span>{data.edited_by}</span>
+                        </>
+                    )}
+                </div>
+            </div>
+        </div>
+    ) : (
 		<Default {...Astro.props}>
 			<slot />
 		</Default>
@@ -77,4 +97,20 @@ const { data } = Astro.props.entry;
 	.integration-metadata svg {
 		width: 1.5rem;
 	}
+    .author-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+		align-self: vertical;
+        gap: 0.5rem;
+    }
+    .author-info div {
+        display: flex;
+        gap: 0.5rem;
+    }
+    .author-info img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
 </style>

@@ -30,8 +30,8 @@ hero:
       variant: secondary
 ---
 
-import Version from "../../components/Version.astro";
-import PackageStats from "../../components/PackageStats.jsx";
+import Version from "../../components/PackageStats/Version.astro";
+import PackageStats from "../../components/PackageStats/PackageStats.tsx";
 import { Card, CardGrid } from "@astrojs/starlight/components";
 import { Image } from "astro:assets";
 import hero_icon from "../../images/hero_icon.png";
@@ -72,7 +72,8 @@ import DiscordComponents from "../../components/DiscordMessage/DiscordComponents
     <DiscordComponents client:load client:only="react"
         bot="Here are your buttons!"
         buttons={[
-          { label: "Button", type: "secondary", customId: "customId_1" },
+          { label: "Link", type: "link", url: "https://aoi.js.org/invite", row: 0 },
+          { label: "Primary", type: "primary", customId: "button2", row: 0  },
         ]}
         embeds={[
         {
@@ -82,7 +83,7 @@ import DiscordComponents from "../../components/DiscordMessage/DiscordComponents
               { fieldTitle: "Features", fieldValue: "Features simplified with the power of discord.js", inline: false },
             ]
         }
-        ]}
+        ]}x
     />
   </Card>
   <Card title="Built-in Custom Local Database" icon="document">
@@ -115,3 +116,4 @@ import DiscordComponents from "../../components/DiscordMessage/DiscordComponents
       />
     </div>
   </div>
+../../components/PackageStats/PackageStats.jsx

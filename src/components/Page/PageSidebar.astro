@@ -1,10 +1,10 @@
 ---
-import type { Props } from '@astrojs/starlight/props';
+import type { Props } from "@astrojs/starlight/props";
 
-import TableOfContents from '@astrojs/starlight/components/TableOfContents.astro';
-import MobileTableOfContents from '@astrojs/starlight/components/MobileTableOfContents.astro';
-import CommitStats from './CommitStats.jsx';
-import { Icon } from '@astrojs/starlight/components';
+import TableOfContents from "@astrojs/starlight/components/TableOfContents.astro";
+import MobileTableOfContents from "@astrojs/starlight/components/MobileTableOfContents.astro";
+import CommitStats from "../PackageStats/CommitStats.jsx";
+import { Icon } from "@astrojs/starlight/components";
 
 const page = Astro.props.entry?.id.split("/");
 const isValid = !["music", "invite"].includes(page[1]) && ["functions"].includes(page[0]);

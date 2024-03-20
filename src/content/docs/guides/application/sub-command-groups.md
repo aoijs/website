@@ -1,6 +1,9 @@
 ---
 title: Subcommand Groups
 description: This page covers everything about Subcommand Groups of Application Commands.
+type: guide
+author: "Fafa"
+author_url: "https://raw.githubusercontent.com/aoijs/website/main/src/images/contributors/fafa.png"
 id: sub-command-groups
 og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/3.png
 ---

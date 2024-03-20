@@ -17,20 +17,6 @@ import "@docsearch/css";
     getMissingResultsUrl({ query }) {
       return `https://github.com/aoijs/website/issues/new?title=${query}`;
     },
-    /*resultsFooterComponent({ state }) {
-      return {
-        type: "a",
-        ref: undefined,
-        constructor: undefined,
-        key: state.query,
-        props: {
-          href: "https://github.com/AkaruiDevelopment",
-          target: "_blank",
-          children: `${state.context.nbHits} results found!`
-        },
-        __v: null,
-      };
-    },*/
     resultsFooterComponent() {
       return {
         type: "div",

@@ -1,6 +1,9 @@
 ---
 title: Discord Events
 description: This page contains all the events available in aoi.js.
+type: guide
+author: "Fafa"
+author_url: "https://raw.githubusercontent.com/aoijs/website/main/src/images/contributors/fafa.png"
 id: events
 og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/15.png
 ---

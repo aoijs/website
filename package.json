@@ -23,6 +23,7 @@
     "@astrojs/react": "^3.0.10",
     "@astrojs/sitemap": "^3.1.1",
     "@astrojs/starlight": "^0.21.1",
+    "@astrojs/starlight-docsearch": "^0.1.0",
     "@docsearch/css": "^3.5.2",
     "@docsearch/js": "^3.5.2",
     "@expressive-code/plugin-collapsible-sections": "^0.33.4",

@@ -1,6 +1,9 @@
 ---
 title: Subcommands
 description: This page covers everything about Subcommands of Application Commands.
+type: guide
+author: "Fafa"
+author_url: "https://raw.githubusercontent.com/aoijs/website/main/src/images/contributors/fafa.png"
 id: sub-commands
 og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/3.png
 ---
