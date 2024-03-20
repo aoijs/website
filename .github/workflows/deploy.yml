@@ -54,7 +54,7 @@ jobs:
         uses: actions/deploy-pages@v1
       - name: CRAWL - Update Algolia Crawler 🔎
         uses: algolia/algoliasearch-crawler-github-actions@v1.0.10
-        if: steps.deployment.outcome == "success"
+        if: steps.deployment.outcome == 'success'
         id: algolia_crawler
         with:
           crawler-user-id: ${{ secrets.CRAWLER_USER_ID }}
