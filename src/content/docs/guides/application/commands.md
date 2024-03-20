@@ -3,11 +3,6 @@ title: Interaction Commands
 description: This guide covers the basics about Interaction Commands and their functionality, along with everything else you might need to know.
 id: commands
 og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/3.png
-sidebar:
-  order: 1
-  badge:
-    text: Updated
-    variant: tip
 ---
 
 <!-- omit from toc -->

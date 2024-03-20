@@ -3,10 +3,6 @@ title: Client Options
 description: This page is covering all aoi.js client options and what they do.
 id: options
 og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/7.png
-sidebar:
-  badge:
-    text: Updated
-    variant: tip
 ---
 
 ```js

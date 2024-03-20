@@ -3,11 +3,6 @@ title: Autocomplete
 description: This page covers everything about the autocomplete property of Application Commands.
 id: auto-complete
 og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/3.png
-sidebar:
-  order: 4
-  badge:
-    text: Updated
-    variant: tip
 ---
 
 There are multiple ways of using `$autoCompleteRespond`. You can either use JSON or the simple aoi.js way.

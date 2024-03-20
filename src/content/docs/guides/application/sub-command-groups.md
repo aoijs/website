@@ -3,11 +3,6 @@ title: Subcommand Groups
 description: This page covers everything about Subcommand Groups of Application Commands.
 id: sub-command-groups
 og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/3.png
-sidebar:
-  order: 3
-  badge:
-    text: Updated
-    variant: tip
 ---
 
 <!-- omit from toc -->

@@ -3,10 +3,6 @@ title: $search
 description: $search will search for tracks.
 id: search
 extension: true
-sidebar: 
-  badge:
-    text: New
-    variant: tip
 ---
 
 `$search` will search for tracks.

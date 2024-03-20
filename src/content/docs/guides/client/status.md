@@ -3,10 +3,6 @@ title: Client Status
 description: Learn how to customize and manage client statuses and presences in your Discord bot.
 id: status
 og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/10.png
-sidebar:
-  badge:
-    text: Updated
-    variant: tip
 ---
 
 <!-- omit from toc -->

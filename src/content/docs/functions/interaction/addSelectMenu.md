@@ -2,10 +2,6 @@
 title: $addSelectMenu
 description: $addSelectMenu will add a select menu to the bot's message.
 id: addSelectMenu
-sidebar: 
-  badge:
-    text: Updated
-    variant: note
 ---
 
 `$addSelectMenu` will add a select menu to the bot's message.
