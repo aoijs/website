@@ -20,7 +20,7 @@ jobs:
       PUBLIC_ENV: "production"
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: 📝 Modify Environment variables (commit)
         id: vars
         run: |
@@ -39,7 +39,7 @@ jobs:
       - name: ⚙️ Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 21
+          node-version: 20
           cache: "npm"
           cache-dependency-path: "./package-lock.json"
 
@@ -58,11 +58,13 @@ jobs:
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          name: github-pages
           path: ./dist
 
   deploy:
     needs: build
+    permissions:
+      pages: write
+      id-token: write
     runs-on: ubuntu-latest
     environment:
       name: github-pages
