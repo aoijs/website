@@ -32,8 +32,6 @@ tableOfContents: false
     - [Can I have two slash commands under the same name in global (across all guilds) and private (limited to one guild)?](#can-i-have-two-slash-commands-under-the-same-name-in-global-across-all-guilds-and-private-limited-to-one-guild)
     - [What if I wanted to create a slash command under the same name?](#what-if-i-wanted-to-create-a-slash-command-under-the-same-name)
     - [How to create a slash command without using any command to execute createApplicationCommand function?](#how-to-create-a-slash-command-without-using-any-command-to-execute-createapplicationcommand-function)
-- [Need help?](#need-help)
-
 ---
 
 # Introduction
@@ -276,6 +274,3 @@ module.exports = {
 }
 ```
 Be sure to remove the command after that.
-
-# Need help?
-Be sure to ask for help in our [support](https://discord.com/invite/HMUfMXDQsV) or ask for help here directly!

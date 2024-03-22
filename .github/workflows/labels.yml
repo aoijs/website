@@ -1,0 +1,19 @@
+name: Label Previous Pull Requests
+on:
+  schedule:
+    - cron: "0 1 * * 1"
+  pull_request:
+    types: [opened]
+
+jobs:
+  labeler:
+    permissions:
+      contents: read
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Label PRs based on edited files
+        uses: actions/labeler@v5
