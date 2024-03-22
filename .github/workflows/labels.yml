@@ -1,9 +1,9 @@
 name: Label Previous Pull Requests
 on:
   schedule:
-    - cron: "0 1 * * 1"
+    - cron: "5 * * * *"
   pull_request:
-    types: [opened]
+    types: [opened, edited, labeled, unlabeled, synchronize, reopened, ready_for_review, closed]
 
 jobs:
   labeler:
