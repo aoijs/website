@@ -36,20 +36,27 @@ jobs:
           echo "PUBLIC_BUILD_TIME: $PUBLIC_BUILD_TIME"
           echo "PUBLIC_COMMIT: $PUBLIC_COMMIT"
           echo "PUBLIC_ENV: $PUBLIC_ENV"
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 21
+          cache: "npm"
+          cache-dependency-path: "./package-lock.json"
+
       - name: ♻️ Install Packages
         shell: "bash"
-        working-directory: ${{ inputs.path }}
+        working-directory: ./
         run: npm install --legacy-peer-deps
   
       - name: 🧑‍💻 Build
         shell: "bash"
-        working-directory: ${{ inputs.path }}
+        working-directory: ./
         run: $PACKAGE_MANAGER run build
   
       - name: 🆙 Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "${{ inputs.path }}/dist/"
+          path: "./dist/"
           # package-manager: npm
 
   deploy:
