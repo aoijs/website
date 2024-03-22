@@ -19,28 +19,38 @@ jobs:
       PUBLIC_COMMIT: ${{ github.sha }}
       PUBLIC_ENV: "production"
     steps:
-      - name: BUILD - Checkout repository
+      - name: ✅ Checkout Repository
         uses: actions/checkout@v3
-      - name: BUILD INFO - Commit Hash
+      - name: 📝 Set Environment variables
         id: vars
         run: |
           shortCommit=$(git rev-parse --short ${{ github.sha }})
           echo "::set-env name=PUBLIC_COMMIT::$shortCommit"
-      - name: BUILD INFO - Time & Date
+      - name: 📝 Set Environment variables
         id: time
         run: |
           time=$(date +'%d/%m/%Y %H:%M:%S')
           echo "::set-env name=PUBLIC_BUILD_TIME::$time"
-      - name: BUILD INFO - Environment variables
+      - name: 📝 Set Environment variables
         run: |
           echo "PUBLIC_BUILD_TIME: $PUBLIC_BUILD_TIME"
           echo "PUBLIC_COMMIT: $PUBLIC_COMMIT"
           echo "PUBLIC_ENV: $PUBLIC_ENV"
-      - name: BUILD - Start & Install
-        uses: withastro/action@v1
+      - name: ♻️ Install Packages
+        shell: "bash"
+        working-directory: ${{ inputs.path }}
+        run: npm install --legacy-peer-deps
+  
+      - name: 🧑‍💻 Build
+        shell: "bash"
+        working-directory: ${{ inputs.path }}
+        run: $PACKAGE_MANAGER run build
+  
+      - name: 🆙 Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          node-version: 21
-        # package-manager: npm
+          path: "${{ inputs.path }}/dist/"
+          # package-manager: npm
 
   deploy:
     needs: build
@@ -49,10 +59,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: DEPLOY - Deploy to Github 🚀
+      - name: Deploy to Github 🚀
         id: deployment
         uses: actions/deploy-pages@v1
-      - name: CRAWL - Update Algolia Crawler 🔎
+      - name: Update Algolia Crawler 🔎
+        if: 1 == 2
         uses: algolia/algoliasearch-crawler-github-actions@v1.0.10
         id: algolia_crawler
         with:
