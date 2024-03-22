@@ -55,6 +55,12 @@ jobs:
         working-directory: ./
         run: npm run build
 
+      - name: Upload Pages Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages
+          path: ./dist
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -62,11 +68,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Upload Pages Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: dist
-          path: ./dist
       - name: 🚀 Deploy to Github 
         id: deployment
         uses: actions/deploy-pages@v4
