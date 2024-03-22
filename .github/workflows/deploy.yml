@@ -51,7 +51,7 @@ jobs:
       - name: 🧑‍💻 Build
         shell: "bash"
         working-directory: ./
-        run: $PACKAGE_MANAGER run build
+        run: npm run build
   
       - name: 🆙 Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
