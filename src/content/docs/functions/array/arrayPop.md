@@ -14,7 +14,7 @@ $arrayPop[name]
 
 ## Parameters
 
-| Field | Type                                                                                              | Description | Required |
+| Field | Tip                                                                                             | Description | Required |
 | ----- | ------------------------------------------------------------------------------------------------- | ----------- | :------: |
 | name  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Array name. |   true   |
 
