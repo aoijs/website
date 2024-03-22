@@ -56,7 +56,7 @@ jobs:
         run: npm run build
 
       - name: Upload Pages Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v2
         with:
           name: github-pages
           path: ./dist
@@ -70,7 +70,7 @@ jobs:
     steps:
       - name: 🚀 Deploy to Github 
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v2
       - name: 🔎 Update Algolia Crawler 
         if: 1 == 2
         uses: algolia/algoliasearch-crawler-github-actions@v1.0.10
