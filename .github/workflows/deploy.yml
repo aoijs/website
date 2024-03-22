@@ -46,8 +46,10 @@ jobs:
       - name: ♻️ Install Packages
         shell: "bash"
         working-directory: ./
-        run: npm install --legacy-peer-deps
-  
+        run: |
+          npm install --legacy-peer-deps
+          npm install react-dom
+
       - name: 🧑‍💻 Build
         shell: "bash"
         working-directory: ./
