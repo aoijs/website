@@ -19,14 +19,14 @@ jobs:
       PUBLIC_COMMIT: ${{ github.sha }}
       PUBLIC_ENV: "production"
     steps:
-      - name: ✅ Checkout Repository
+      - name: Checkout Repository
         uses: actions/checkout@v3
-      - name: 📝 Set Environment variables
+      - name: 📝 Modify Environment variables (commit)
         id: vars
         run: |
           shortCommit=$(git rev-parse --short ${{ github.sha }})
           echo "::set-env name=PUBLIC_COMMIT::$shortCommit"
-      - name: 📝 Set Environment variables
+      - name: 📝 Modify Environment variables (time)
         id: time
         run: |
           time=$(date +'%d/%m/%Y %H:%M:%S')
@@ -36,7 +36,7 @@ jobs:
           echo "PUBLIC_BUILD_TIME: $PUBLIC_BUILD_TIME"
           echo "PUBLIC_COMMIT: $PUBLIC_COMMIT"
           echo "PUBLIC_ENV: $PUBLIC_ENV"
-      - name: Setup Node
+      - name: ⚙️ Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 21
@@ -56,10 +56,10 @@ jobs:
         run: npm run build
   
       - name: 🆙 Upload Pages Artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
-          path: "./dist/"
-          # package-manager: npm
+          name: dist
+          path: ./dist
 
   deploy:
     needs: build
@@ -68,10 +68,15 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to Github 🚀
+      - name: 📂 Download Pages Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: ./dist
+      - name: 🚀 Deploy to Github 
         id: deployment
         uses: actions/deploy-pages@v1
-      - name: Update Algolia Crawler 🔎
+      - name: 🔎 Update Algolia Crawler 
         if: 1 == 2
         uses: algolia/algoliasearch-crawler-github-actions@v1.0.10
         id: algolia_crawler
