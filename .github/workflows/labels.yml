@@ -1,7 +1,9 @@
 name: Label Previous Pull Requests
+
 on:
+  workflow_dispatch:
   schedule:
-    - cron: "5 * * * *"
+    - cron: "*/5 * * * *"
   pull_request:
     types: [opened, edited, labeled, unlabeled, synchronize, reopened, ready_for_review, closed]
 
