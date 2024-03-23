@@ -1,21 +1,15 @@
 "type: components":
-- changed-files:
     - any-glob-to-any-file:src/components/**/*
   
 "type: guides":
-- changed-files:
     - any-glob-to-any-file:src/content/docs/guides/**/*
   
 "type: functions":
-- changed-files:
-    - any-glob-to-any-file: src/content/docs/functions/**/*
+    - src/content/docs/functions/**/*
   
 "type: extensions":
-- changed-files:
-    - any-glob-to-any-file: src/content/docs/extensions/**/*
+    - src/content/docs/extensions/**/*
   
 "type: config":
-- changed-files:
-    - any-glob-to-any-file: 
-        - src/content/config.ts
-        - astro.config.mjs
+    - src/content/config.ts
+    - astro.config.mjs
