@@ -1,15 +1,15 @@
-"type: components":
+type: components:
     - any-glob-to-any-file:src/components/**/*
   
-"type: guides":
+type: guides:
     - any-glob-to-any-file:src/content/docs/guides/**/*
   
-"type: functions":
+type: functions:
     - src/content/docs/functions/**/*
   
-"type: extensions":
+type: extensions:
     - src/content/docs/extensions/**/*
   
-"type: config":
+type: config:
     - src/content/config.ts
     - astro.config.mjs
