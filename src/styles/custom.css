@@ -20,10 +20,14 @@
 }
 
 @font-face {
-  font-family: 'JetBrainsMono';
-  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
-    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff'),
-    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+  font-family: "JetBrainsMono";
+  src:
+    url("https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf")
+      format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -54,7 +58,7 @@
 
 code {
   border-radius: 3px !important;
-  font-family: 'JetBrainsMono', monospace !important;
+  font-family: "JetBrainsMono", monospace !important;
 }
 
 aside {
@@ -73,8 +77,10 @@ aside {
 [data-has-hero] .page {
   background:
     linear-gradient(215deg, var(--overlay-blurple), transparent 40%),
-    radial-gradient(var(--overlay-blurple), transparent 40%) no-repeat -60vw -40vh / 105vw 200vh,
-    radial-gradient(var(--overlay-blurple), transparent 65%) no-repeat 50% calc(100% + 20rem) / 60rem 30rem;
+    radial-gradient(var(--overlay-blurple), transparent 40%) no-repeat -60vw -40vh /
+      105vw 200vh,
+    radial-gradient(var(--overlay-blurple), transparent 65%) no-repeat 50%
+      calc(100% + 20rem) / 60rem 30rem;
 }
 
 [data-has-hero] header {
@@ -90,7 +96,7 @@ aside {
 
 starlight-file-tree {
   border-radius: 4px !important;
-  font-family: 'JetBrainsMono', monospace !important;
+  font-family: "JetBrainsMono", monospace !important;
 }
 
 #starlight__sidebar::-webkit-scrollbar {
@@ -119,7 +125,7 @@ starlight-file-tree {
 }
 
 .sl-badge {
-  font-family: 'JetBrainsMono', monospace !important;
+  font-family: "JetBrainsMono", monospace !important;
 }
 
 div.meta.sl-flex > a {
@@ -417,13 +423,13 @@ header a {
   margin-top: 16px !important;
 }
 
-.discord-message .discord-attachments>* {
+.discord-message .discord-attachments > * {
   align-items: self-end;
   margin-top: -2px !important;
 }
 
 .discord-message .discord-attachments {
-  margin-top: -.5rem;
+  margin-top: -0.5rem;
 }
 
 .discord-messages {
@@ -446,4 +452,54 @@ header a {
 
 .discord-embed {
   margin-top: -0.2px !important;
+}
+
+.discord-light-theme .discord-message a {
+  color: #fff;
+}
+
+.discord-button.discord-button-secondary:hover {
+  background-color: #43484fdb;
+}
+
+a.sl-flex.action.primary:hover {
+  transition: all 0.3s ease-in;
+  filter: drop-shadow(0 0 7rem var(--sl-color-accent-high));
+}
+
+a.sl-flex.action.primary {
+  transition: all 0.3s ease-out;
+}
+
+.css-1momdgt {
+  margin-top: 0px !important;
+}
+
+.css-7z2xty-ProgressBar2 {
+  margin-top: 0px !important;
+}
+
+.css-dwwhbz-ProgressMarker2 {
+  z-index: 2;
+}
+
+.sl-markdown-content :is(th, td):not(:where(.not-content *)):has(img) {
+  width: 50%;
+}
+
+.css-yy5no8-Link2 {
+  text-decoration: none !important;
+}
+
+.tracker-container {
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--sl-color-hairline);
+}
+
+@media (max-width: 600px) {
+  .tracker-container {
+    font-size: 0.2rem;
+    padding: 0.5rem;
+  }
 }

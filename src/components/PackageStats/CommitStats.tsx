@@ -10,15 +10,18 @@ const CommitStats: FC = () => {
             <p style={{ fontSize: "10px", fontFamily: "'JetBrainsMono', monospace" }}>Build Time: {buildTime}</p>
             <p style={{ fontSize: "10px", fontFamily: "'JetBrainsMono', monospace" }}>Commit: {commit}</p>
             {(env === "dev" || !env) && (
-                <p style={{ 
-                    backgroundColor: "rgba(0, 0, 255, 0.4)",
-                    borderRadius: "4px",
-                    padding: "3px 4px",
-                    fontSize: "6px",
-                    fontFamily: "'JetBrainsMono', monospace"
-                }}>
-                    When you see this, that means you forgot to add your PUBLIC_ENV to Astro's environment variables. ;)
-                </p>
+                <>
+                    <br />
+                    <p style={{ 
+                        backgroundColor: "var(--sl-color-red-low)",
+                        borderRadius: "4px",
+                        color: "var(--sl-color-text)",
+                        padding: "3px 4px",
+                        fontSize: "12px",
+                    }}>
+                        When you see this message during production, please open an <a href="https://github.com/aoijs/website/issues">issue</a> on Github.
+                    </p>
+                </>
             )}
         </div>
     );

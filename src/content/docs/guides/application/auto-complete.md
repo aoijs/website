@@ -5,7 +5,8 @@ type: guide
 author: "Fafa"
 author_url: "https://raw.githubusercontent.com/aoijs/website/main/src/images/contributors/fafa.png"
 id: auto-complete
-og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/3.png
+sidebar:
+    order: 5
 ---
 
 There are multiple ways of using `$autoCompleteRespond`. You can either use JSON or the simple aoi.js way.
@@ -112,7 +113,7 @@ module.exports = [
     "value" : "You selected the second option, therefore I\'m responding with this!"
   }]]
   $else
-  $interactionReply[$slashOption[option] - autocomplete #SEMI# $slashOption[anotheroption] - false autocomplete;;;;everyone]
+  $interactionReply[You selected: $slashOption[option]!]
   $endif
   `
   },

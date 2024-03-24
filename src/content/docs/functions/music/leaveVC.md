@@ -20,9 +20,9 @@ $leaveVC[guildID?]
 
 ## Parameters
 
-| Field    | Type                                                                                                | Description | Required |
-| -------- | --------------------------------------------------------------------------------------------------- | ----------- | :------: |
-| guildID? | [integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Integer) | guild ID    |  false   |
+| Field    | Type                                                                                             | Description | Required |
+| -------- | ------------------------------------------------------------------------------------------------ | ----------- | :------: |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Numer) | guild ID    |  false   |
 
 ## Example(s)
 
