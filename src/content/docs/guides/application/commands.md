@@ -7,8 +7,9 @@ author: "dodogames"
 author_url: "https://raw.githubusercontent.com/aoijs/website/main/src/images/contributors/dodogames.png"
 edited_by: "Fafa"
 edited_by_url: "https://raw.githubusercontent.com/aoijs/website/main/src/images/contributors/fafa.png"
-og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/3.png
 tableOfContents: false
+sidebar:
+    order: 1
 ---
 
 ### Table of Contents

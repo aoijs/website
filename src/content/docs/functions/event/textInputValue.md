@@ -66,7 +66,7 @@ module.exports = [
     type: "interaction",
     prototype: "modal", // Using "prototype" as this interaction belongs to a modal.
     code: `
-$interactionReply[Thanks for submitting this form!;;;;everyone;true]
+$interactionReply[Thanks for submitting this form!;everyone;true]
 
 $title[$username submitted a form!;$userAvatar]
 $addField[Their name is..;$textInputValue[nameInput]]

@@ -5,7 +5,8 @@ type: guide
 author: "Fafa"
 author_url: "https://raw.githubusercontent.com/aoijs/website/main/src/images/contributors/fafa.png"
 id: sub-commands
-og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/3.png
+sidebar:
+    order: 3
 ---
 
 <!-- omit from toc -->

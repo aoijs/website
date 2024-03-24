@@ -72,7 +72,7 @@ $addButton[index;label;style;customID;disabled?;emoji?]
           <td>Custom Emoji</td>
           <td>any</td>
           <td>any</td>
-          <td><code>$addButton[1;Example Button!;link;customID;false;emojiName,emojiID,animated (true/false)]</code></td>
+          <td><code>$addButton[1;Example Button!;link;customID;false;emojiName/emojiId/emojiString]</code></td>
         </tr>
         <tr>
           <td>Unicode Emoji</td>

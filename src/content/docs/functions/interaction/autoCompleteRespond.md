@@ -53,7 +53,7 @@ client.command({
   $if[$isAutocomplete==true]
   $autoCompleteRespond[First option;You selected the first option, therefore I'm responding with this!;Second option;You selected the first second, therefore I'm responding with this!]
   $else
-  $interactionReply[$slashOption[option];;;;everyone]
+  $interactionReply[$slashOption[option]]
   $endif
   `
 });
@@ -101,7 +101,7 @@ client.command({
     "value" : "You selected the second option, therefore I\'m responding with this!"
   }]]
   $else
-  $interactionReply[$slashOption[option] - autocomplete #SEMI# $slashOption[anotheroption] - false autocomplete;;;;everyone]
+  $interactionReply[$slashOption[option]]
   $endif
   `
 });

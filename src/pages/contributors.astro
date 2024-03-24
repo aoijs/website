@@ -383,18 +383,3 @@ import hover_icon from "../images/hero_icon.png";
     cursor: pointer;
   }
 </style>
-
-<script is:inline>
-  const normal = document.getElementById("logo-normal");
-  const hover = document.getElementById("logo-hover");
-
-  normal.addEventListener("mouseover", () => {
-    normal.style.display = "none";
-    hover.style.display = "block";
-  });
-
-  hover.addEventListener("mouseout", () => {
-    hover.style.display = "none";
-    normal.style.display = "block";
-  });
-</script>

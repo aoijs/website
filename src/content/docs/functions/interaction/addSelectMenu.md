@@ -56,7 +56,7 @@ module.exports = [
     type: "interaction", // clarifying that this command is an Interaction
     prototype: "selectMenu",
     code: `
-     $interactionReply[Hello! :);;;;everyone;false]
+     $interactionReply[Hello! :);everyone;false]
      $onlyIf[$interactionData[values[0]]==anotherCustomID;]`
   },
   {
@@ -64,7 +64,7 @@ module.exports = [
     type: "interaction", // clarifying that this command is an Interaction
     prototype: "selectMenu",
     code: `
-     $interactionReply[Bye! :(;;;;everyone;false]
+     $interactionReply[Bye! :(;everyone;false]
      $onlyIf[$interactionData[values[0]]==andAnotherCustomID;]`
   },
 ];
