@@ -13,7 +13,7 @@ if (data.author) {
   avatars.push({
     key: data.author,
     name: data.author,
-    href: "#",
+    href: "/contributors",
     src: data.author_url,
   });
 }
@@ -22,7 +22,7 @@ if (data.edited_by) {
   avatars.push({
     key: data.edited_by,
     name: data.edited_by,
-    href: "#",
+    href: "/contributors",
     src: data.edited_by_url,
   });
 }
@@ -69,7 +69,7 @@ if (data.edited_by) {
           client:only="react"
           appearance="stack"
           data={avatars}
-		  borderColor="var(--sl-color-text-accent)"
+          borderColor="var(--sl-color-text-accent)"
         />
       </div>
     </div>
