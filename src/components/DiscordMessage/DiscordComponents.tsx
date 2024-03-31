@@ -29,8 +29,8 @@ interface Embed {
 }
 
 interface EmbedField {
-  fieldTitle: string;
-  fieldValue: string;
+  title: string;
+  value: string;
   inline: boolean;
 }
 
@@ -44,7 +44,6 @@ interface Button {
   row: number;
 }
 
-
 function DiscordMessagesDark({
   user,
   bot,
@@ -56,95 +55,96 @@ function DiscordMessagesDark({
   );
 
   return (
-    <DiscordMessages>
-    {user && (
-      <DiscordMessage
-        author="Leref"
-        avatar="https://cdn.discordapp.com/avatars/608358453580136499/46e2d7c347cbb948d1cf541409d7d48b.png?size=4096"
-      >
-        {user}
-      </DiscordMessage>
-    )}
-    <DiscordMessage
-      author="Akarui Helper"
-      avatar="https://cdn.discordapp.com/avatars/1138204326402203691/a_b8d941eebad1a41cf177148834f84bb8.gif?size=4096"
-      bot
-      verified={true}
-    >
-      {bot}
-      {embeds &&
-        embeds.map((embed, embedIndex) => (
-          <DiscordMessage key={embedIndex}>
-            {embed.fields && (
-              <DiscordEmbed
-                slot="embeds"
-                color={embed.color}
-                image={embed.image}
-                embed-title={embed.title}
-              >
-                {embed.description && (
-                  <DiscordEmbedDescription slot="description">
-                    {embed.description}
-                  </DiscordEmbedDescription>
-                )}
-                {embed.footer && (
-                  <DiscordEmbedFooter slot="footer">
-                    {embed.footer}
-                  </DiscordEmbedFooter>
-                )}
-                <DiscordEmbedFields slot="fields">
-                  {embed.fields.map((field, fieldIndex) => (
-                    <DiscordEmbedField
-                      key={fieldIndex}
-                      fieldTitle={field.fieldTitle}
-                      inline={field.inline}
-                    >
-                      {field.fieldValue}
-                    </DiscordEmbedField>
-                  ))}
-                </DiscordEmbedFields>
-              </DiscordEmbed>
-            )}
+    <div className="not-content">
+      <DiscordMessages>
+        {user && (
+          <DiscordMessage
+            author="Leref"
+            avatar="https://cdn.discordapp.com/avatars/608358453580136499/46e2d7c347cbb948d1cf541409d7d48b.png?size=4096"
+          >
+            {user}
           </DiscordMessage>
-        ))}
-      {buttons && (
-        <DiscordAttachments slot="components">
-          {Array.from(
-            {
-              length:
-                Math.max(...buttons.map((button) => button.row)) + 1,
-            },
-            (_, rowIndex) => (
-              <DiscordActionRow key={rowIndex}>
-                {buttons
-                  .filter((button) => button.row === rowIndex)
-                  .map((button, index) => {
-                    const buttonProps = {
-                      type: button.type as
-                        | "primary"
-                        | "secondary"
-                        | "success"
-                        | "destructive",
-                      ...(button.url && { url: button.url }),
-                      ...(button.emoji && { emoji: button.emoji }),
-                      ...(button["emoji-name"] && {
-                        "emoji-name": button["emoji-name"],
-                      }),
-                    };
+        )}
+        <DiscordMessage
+          author="Akarui Helper"
+          avatar="https://cdn.discordapp.com/avatars/1138204326402203691/a_b8d941eebad1a41cf177148834f84bb8.gif?size=4096"
+          bot
+          verified={true}
+        >
+          {bot}
+          {embeds &&
+            embeds.map((embed, embedIndex) => (
+              <DiscordMessage key={embedIndex}>
+                {embed.fields && (
+                  <DiscordEmbed
+                    slot="embeds"
+                    color={embed.color}
+                    image={embed.image}
+                    embed-title={embed.title}
+                  >
+                    {embed.description && (
+                      <DiscordEmbedDescription slot="description">
+                        {embed.description}
+                      </DiscordEmbedDescription>
+                    )}
+                    {embed.footer && (
+                      <DiscordEmbedFooter slot="footer">
+                        {embed.footer}
+                      </DiscordEmbedFooter>
+                    )}
+                    <DiscordEmbedFields slot="fields">
+                      {embed.fields.map((field, fieldIndex) => (
+                        <DiscordEmbedField
+                          key={fieldIndex}
+                          fieldTitle={field.title}
+                          inline={field.inline}
+                        >
+                          {field.value}
+                        </DiscordEmbedField>
+                      ))}
+                    </DiscordEmbedFields>
+                  </DiscordEmbed>
+                )}
+              </DiscordMessage>
+            ))}
+          {buttons && (
+            <DiscordAttachments slot="components">
+              {Array.from(
+                {
+                  length: Math.max(...buttons.map((button) => button.row)) + 1,
+                },
+                (_, rowIndex) => (
+                  <DiscordActionRow key={rowIndex}>
+                    {buttons
+                      .filter((button) => button.row === rowIndex)
+                      .map((button, index) => {
+                        const buttonProps = {
+                          type: button.type as
+                            | "primary"
+                            | "secondary"
+                            | "success"
+                            | "destructive",
+                          ...(button.url && { url: button.url }),
+                          ...(button.emoji && { emoji: button.emoji }),
+                          ...(button["emoji-name"] && {
+                            "emoji-name": button["emoji-name"],
+                          }),
+                        };
 
-                    return (
-                      <DiscordButton {...buttonProps} key={index}>
-                        {button.label}
-                      </DiscordButton>
-                    );
-                  })}
-              </DiscordActionRow>
-            )
+                        return (
+                          <DiscordButton {...buttonProps} key={index}>
+                            {button.label}
+                          </DiscordButton>
+                        );
+                      })}
+                  </DiscordActionRow>
+                )
+              )}
+            </DiscordAttachments>
           )}
-        </DiscordAttachments>
-      )}
-    </DiscordMessage>
-  </DiscordMessages>
+        </DiscordMessage>
+      </DiscordMessages>
+    </div>
   );
 }
 
@@ -159,95 +159,96 @@ function DiscordMessagesLight({
   );
 
   return (
-    <DiscordMessages lightTheme>
-    {user && (
-      <DiscordMessage
-        author="Leref"
-        avatar="https://cdn.discordapp.com/avatars/608358453580136499/46e2d7c347cbb948d1cf541409d7d48b.png?size=4096"
-      >
-        {user}
-      </DiscordMessage>
-    )}
-    <DiscordMessage
-      author="Akarui Helper"
-      avatar="https://cdn.discordapp.com/avatars/1138204326402203691/a_b8d941eebad1a41cf177148834f84bb8.gif?size=4096"
-      bot
-      verified={true}
-    >
-      {bot}
-      {embeds &&
-        embeds.map((embed, embedIndex) => (
-          <DiscordMessage key={embedIndex}>
-            {embed.fields && (
-              <DiscordEmbed
-                slot="embeds"
-                color={embed.color}
-                image={embed.image}
-                embed-title={embed.title}
-              >
-                {embed.description && (
-                  <DiscordEmbedDescription slot="description">
-                    {embed.description}
-                  </DiscordEmbedDescription>
-                )}
-                {embed.footer && (
-                  <DiscordEmbedFooter slot="footer">
-                    {embed.footer}
-                  </DiscordEmbedFooter>
-                )}
-                <DiscordEmbedFields slot="fields">
-                  {embed.fields.map((field, fieldIndex) => (
-                    <DiscordEmbedField
-                      key={fieldIndex}
-                      fieldTitle={field.fieldTitle}
-                      inline={field.inline}
-                    >
-                      {field.fieldValue}
-                    </DiscordEmbedField>
-                  ))}
-                </DiscordEmbedFields>
-              </DiscordEmbed>
-            )}
+    <div className="not-content">
+      <DiscordMessages lightTheme>
+        {user && (
+          <DiscordMessage
+            author="Leref"
+            avatar="https://cdn.discordapp.com/avatars/608358453580136499/46e2d7c347cbb948d1cf541409d7d48b.png?size=4096"
+          >
+            {user}
           </DiscordMessage>
-        ))}
-      {buttons && (
-        <DiscordAttachments slot="components">
-          {Array.from(
-            {
-              length:
-                Math.max(...buttons.map((button) => button.row)) + 1,
-            },
-            (_, rowIndex) => (
-              <DiscordActionRow key={rowIndex}>
-                {buttons
-                  .filter((button) => button.row === rowIndex)
-                  .map((button, index) => {
-                    const buttonProps = {
-                      type: button.type as
-                        | "primary"
-                        | "secondary"
-                        | "success"
-                        | "destructive",
-                      ...(button.url && { url: button.url }),
-                      ...(button.emoji && { emoji: button.emoji }),
-                      ...(button["emoji-name"] && {
-                        "emoji-name": button["emoji-name"],
-                      }),
-                    };
+        )}
+        <DiscordMessage
+          author="Akarui Helper"
+          avatar="https://cdn.discordapp.com/avatars/1138204326402203691/a_b8d941eebad1a41cf177148834f84bb8.gif?size=4096"
+          bot
+          verified={true}
+        >
+          {bot}
+          {embeds &&
+            embeds.map((embed, embedIndex) => (
+              <DiscordMessage key={embedIndex}>
+                {embed.fields && (
+                  <DiscordEmbed
+                    slot="embeds"
+                    color={embed.color}
+                    image={embed.image}
+                    embed-title={embed.title}
+                  >
+                    {embed.description && (
+                      <DiscordEmbedDescription slot="description">
+                        {embed.description}
+                      </DiscordEmbedDescription>
+                    )}
+                    {embed.footer && (
+                      <DiscordEmbedFooter slot="footer">
+                        {embed.footer}
+                      </DiscordEmbedFooter>
+                    )}
+                    <DiscordEmbedFields slot="fields">
+                      {embed.fields.map((field, fieldIndex) => (
+                        <DiscordEmbedField
+                          key={fieldIndex}
+                          fieldTitle={field.title}
+                          inline={field.inline}
+                        >
+                          {field.value}
+                        </DiscordEmbedField>
+                      ))}
+                    </DiscordEmbedFields>
+                  </DiscordEmbed>
+                )}
+              </DiscordMessage>
+            ))}
+          {buttons && (
+            <DiscordAttachments slot="components">
+              {Array.from(
+                {
+                  length: Math.max(...buttons.map((button) => button.row)) + 1,
+                },
+                (_, rowIndex) => (
+                  <DiscordActionRow key={rowIndex}>
+                    {buttons
+                      .filter((button) => button.row === rowIndex)
+                      .map((button, index) => {
+                        const buttonProps = {
+                          type: button.type as
+                            | "primary"
+                            | "secondary"
+                            | "success"
+                            | "destructive",
+                          ...(button.url && { url: button.url }),
+                          ...(button.emoji && { emoji: button.emoji }),
+                          ...(button["emoji-name"] && {
+                            "emoji-name": button["emoji-name"],
+                          }),
+                        };
 
-                    return (
-                      <DiscordButton {...buttonProps} key={index}>
-                        {button.label}
-                      </DiscordButton>
-                    );
-                  })}
-              </DiscordActionRow>
-            )
+                        return (
+                          <DiscordButton {...buttonProps} key={index}>
+                            {button.label}
+                          </DiscordButton>
+                        );
+                      })}
+                  </DiscordActionRow>
+                )
+              )}
+            </DiscordAttachments>
           )}
-        </DiscordAttachments>
-      )}
-    </DiscordMessage>
-  </DiscordMessages>
+        </DiscordMessage>
+      </DiscordMessages>
+    </div>
   );
 }
 
@@ -259,8 +260,13 @@ function DiscordComponents(props: DiscordComponentsProps) {
   useEffect(() => {
     const observer = new MutationObserver((mutations) => {
       mutations.forEach((mutation) => {
-        if (mutation.type === "attributes" && mutation.attributeName === "data-theme") {
-          setIsLightTheme(document.documentElement.getAttribute("data-theme") === "light");
+        if (
+          mutation.type === "attributes" &&
+          mutation.attributeName === "data-theme"
+        ) {
+          setIsLightTheme(
+            document.documentElement.getAttribute("data-theme") === "light"
+          );
         }
       });
     });
@@ -272,7 +278,11 @@ function DiscordComponents(props: DiscordComponentsProps) {
     };
   }, []);
 
-  return isLightTheme ? <DiscordMessagesLight {...props} /> : <DiscordMessagesDark {...props} />;
+  return isLightTheme ? (
+    <DiscordMessagesLight {...props} />
+  ) : (
+    <DiscordMessagesDark {...props} />
+  );
 }
 
 export default DiscordComponents;

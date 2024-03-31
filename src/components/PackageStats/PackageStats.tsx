@@ -46,7 +46,7 @@ const PackageStats: FC = () => {
         style={{
           marginTop: "5px",
           fontSize: "25px",
-          color: "var(--sl-color-text)",
+          color: "var(--sl-color-text-accent)",
         }}
       >
         {currentNumber.toLocaleString()}
@@ -123,6 +123,7 @@ const PackageStats: FC = () => {
 
   return (
     <div
+      className="not-content"
       style={{
         position: "relative",
         display: "flex",
@@ -143,13 +144,13 @@ const PackageStats: FC = () => {
           flexDirection: "column",
           alignItems: "center",
           textAlign: "center",
-          marginTop: "20px",
         }}
       >
         <p
           style={{
-            color: "var(--sl-color-text)",
+            color: "var(--sl-color-text-accent)",
             fontSize: window.innerWidth <= 768 ? "20px" : "30px",
+            padding: "15px 15px",
           }}
         >
           Downloads
@@ -167,8 +168,9 @@ const PackageStats: FC = () => {
       >
         <p
           style={{
-            color: "var(--sl-color-text)",
+            color: "var(--sl-color-text-accent)",
             fontSize: window.innerWidth <= 768 ? "20px" : "30px",
+            padding: "15px 15px",
           }}
         >
           Stars
@@ -186,8 +188,9 @@ const PackageStats: FC = () => {
       >
         <p
           style={{
-            color: "var(--sl-color-text)",
+            color: "var(--sl-color-text-accent)",
             fontSize: window.innerWidth <= 768 ? "20px" : "30px",
+            padding: "15px 15px",
           }}
         >
           Forks
@@ -199,7 +202,7 @@ const PackageStats: FC = () => {
         style={{
           marginTop: "auto",
           marginBottom: "15px",
-          color: "var(--sl-color-text)",
+          color: "var(--sl-color-text-accent)",
           fontSize: window.innerWidth <= 768 ? "10px" : "14px",
         }}
       >
@@ -211,12 +214,12 @@ const PackageStats: FC = () => {
               alt="aoi.js banner image"
               style={{ filter: "drop-shadow(0 0 3rem var(--overlay-blurple))" }}
               src="https://github.com/aoijs/website/raw/master/assets/images/aoijs-banner.png?raw=true"
-              width="250"
-              height="250"
+              width="350"
+              height="125"
             />
           </a>
         </div>
-        <p style={{ marginLeft: "5px", color: "var(--sl-color-gray-4)" }}>
+        <p style={{ textAlign: "center", color: "var(--sl-color-gray-4)" }}>
           Last fetched:{" "}
           {lastFetchedTime ?? `${new Date(Date.now()).toLocaleString()} (now)`}
         </p>

@@ -7,7 +7,7 @@ interface TrackerProps {
 }
 
 const Tracker: FC<TrackerProps> = ({ items }) => (
-  <div className="tracker-container">
+  <div className="tracker-container not-content link-style">
     <ProgressTracker items={items} spacing="comfortable" />
   </div>
 );
