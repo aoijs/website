@@ -395,6 +395,10 @@ html[data-theme="dark"] > .linkStyle:hover {
   transition: all 0.2s ease-in;
 }
 
+th :is(img) {
+  border-radius: 4px;
+}
+
 /* Footer */
 .contribute-footer {
   margin-top: 10rem !important;
@@ -419,39 +423,8 @@ header a {
 
 /* Discord Message */
 
-.discord-message .discord-author-avatar img {
-  margin-top: 16px !important;
-}
-
-.discord-message .discord-attachments > * {
-  align-items: self-end;
-  margin-top: -2px !important;
-}
-
-.discord-message .discord-attachments {
-  margin-top: -0.5rem;
-}
-
-.discord-messages {
-  border-radius: 4px;
-  margin-top: 2rem;
-}
-
 .discord-message {
   font-family: "Whitney", sans-serif !important;
-  margin-top: 0.2px !important;
-}
-
-.discord-left-border {
-  background-color: #202225;
-  border-radius: 4px 0 0 4px !important;
-  flex-shrink: 0 !important;
-  width: 4px !important;
-  margin-top: 16px !important;
-}
-
-.discord-embed {
-  margin-top: -0.2px !important;
 }
 
 .discord-light-theme .discord-message a {
@@ -471,24 +444,8 @@ a.sl-flex.action.primary {
   transition: all 0.3s ease-out;
 }
 
-.css-1momdgt {
-  margin-top: 0px !important;
-}
-
-.css-7z2xty-ProgressBar2 {
-  margin-top: 0px !important;
-}
-
-.css-dwwhbz-ProgressMarker2 {
-  z-index: 2;
-}
-
 .sl-markdown-content :is(th, td):not(:where(.not-content *)):has(img) {
   width: 50%;
-}
-
-.css-yy5no8-Link2 {
-  text-decoration: none !important;
 }
 
 .tracker-container {
@@ -501,5 +458,60 @@ a.sl-flex.action.primary {
   .tracker-container {
     font-size: 0.2rem;
     padding: 0.5rem;
+  }
+}
+
+.social-icons a {
+  position: relative;
+}
+
+.social-icons a:hover .sr-only,
+.social-icons a:focus .sr-only {
+  all: unset;
+  position: absolute;
+  inset-inline-start: 50%;
+  bottom: 0;
+  transform: translateX(-50%) translateY(100%);
+  background: var(--sl-color-black);
+  color: var(--sl-color-white);
+  padding: .5rem;
+  line-height: 1;
+  border-radius: 0.25rem;
+  box-shadow: var(--sl-shadow-md), 0px 10px 15px rgba(0, 0, 0, 0.1);
+  font-size: var(--sl-text-xs);
+}
+
+.social-icons a:hover .sr-only::before,
+.social-icons a:focus .sr-only::before {
+  content: "";
+  position: absolute;
+  top: -65%;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--sl-color-black) transparent;
+}
+
+.link-style li {
+  margin-bottom: .8rem;
+  padding: 2px 2px;
+}
+
+.link-style a {
+  color: var(--sl-color-accent-high);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all .1s ease-in-out;
+}
+
+.link-style a:hover {
+  border-bottom: 1px dotted var(--sl-color-accent-high);
+  transition: all .1s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .link-style span, .link-style a {
+    font-size: 0.8rem;
   }
 }
