@@ -1,5 +1,5 @@
 ---
-title: Interaction Commands - Choices
+title: Choices
 description: This guide covers the basics about Interaction Command Choices and their functionality, along with everything else you might need to know.
 id: choices
 type: guide

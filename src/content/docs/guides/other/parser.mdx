@@ -104,6 +104,8 @@ Usage:
 |   Link    |   5   |  grey, navigates to a URL | `{button:Button:link:https\\:aoi.js.org/invite:false}`                        |
 |   Emoji   |   -   | primary button with emoji | `{button:Button:primary:customID:false:emojiName or emojiID or emoji String}` |
 
+<br />
+
     <DiscordComponents client:load client:only="react"
         bot="All possible button types!"
         buttons={[
@@ -154,6 +156,8 @@ Below are simple examples of each parser and how to use them.
 {newEmbed:{title:Another Awesome Example !}{image:https://cdn.discordapp.com/banners/773352845738115102/01e9a05d24039fe562bcc8ab95e721f8.webp?size=4096}{field:This is a field title!:And a field description which is not inline!:false}{footer:Example #2}}
 ```
 
+<br />
+
 <DiscordComponents
   client:load
   client:only="react"
@@ -165,7 +169,7 @@ Below are simple examples of each parser and how to use them.
         "https://cdn.discordapp.com/banners/773352845738115102/01e9a05d24039fe562bcc8ab95e721f8.webp?size=4096",
       fields: [
         {
-          fieldTitle: "This is a field title!",
+          title: "This is a field title!",
           value: "And a field description which is not inline!",
           inline: false,
         },
@@ -187,13 +191,15 @@ Below are simple examples of each parser and how to use them.
 {actionRow:{button:Button:secondary:button1}}{actionRow:{button:Button:primary:button2}}
 ```
 
-    <DiscordComponents client:load client:only="react"
-        bot="Two buttons each one in a different row."
-        buttons={[
-        { label: "Button", type: "secondary", customId: "button1", row: 0 },
-        { label: "Button", type: "primary", customId: "button2", row: 1  },
-        ]}
-    />
+<br />
+
+<DiscordComponents client:load client:only="react"
+  bot="Two buttons each one in a different row."
+  buttons={[
+    { label: "Button", type: "secondary", customId: "button1", row: 0 },
+    { label: "Button", type: "primary", customId: "button2", row: 1  },
+  ]}
+/>
 
 **Three buttons, one with emoji.**
 
@@ -201,14 +207,16 @@ Below are simple examples of each parser and how to use them.
 {actionRow:{button:Button:primary:button1:false}{button:Button:primary:button2:false}{button:Button:danger:button3:false:👋}}
 ```
 
-    <DiscordComponents client:load client:only="react"
-        bot="Three buttons, one with emoji."
-        buttons={[
-        { label: "Button", type: "primary", customId: "customId_1", row: 0 },
-        { label: "Button", type: "primary", customId: "customId_2", row: 0  },
-        { label: "Button", type: "destructive", customId: "customId_3", row: 0, "emoji-name": "👋", emoji: "https://www.svgrepo.com/show/407719/waving-hand.svg" }
-        ]}
-    />
+<br />
+
+<DiscordComponents client:load client:only="react"
+  bot="Three buttons, one with emoji."
+  buttons={[
+    { label: "Button", type: "primary", customId: "customId_1", row: 0 },
+    { label: "Button", type: "primary", customId: "customId_2", row: 0  },
+    { label: "Button", type: "destructive", customId: "customId_3", row: 0, "emoji-name": "👋", emoji: "https://www.svgrepo.com/show/407719/waving-hand.svg" }
+  ]}
+/>
 
 #### Select Menu Parser
 
