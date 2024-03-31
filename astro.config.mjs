@@ -27,118 +27,7 @@ export default defineConfig({
           indexName: "aoi-js",
           apiKey: "775caf3aef9ecccc83a7b3948ac1b92f",
           placeholder: "Search something..",
-          maxResultsPerGroup: 5,
-          getMissingResultsUrl({ query }) {
-            return `https://github.com/aoijs/website/issues/new?title=${query}`;
-          },
-          resultsFooterComponent() {
-            return {
-              type: "div",
-              ref: undefined,
-              constructor: undefined,
-              key: "resultsFooter",
-              props: {
-                style: { marginBlock: "0.5rem" },
-                children: [
-                  {
-                    type: "p",
-                    ref: undefined,
-                    constructor: undefined,
-                    key: "resultsFooterLede",
-                    props: {
-                      children: `Searched for something else? Maybe something below can solve your issue.`,
-                    },
-                    __v: null,
-                  },
-                  {
-                    type: "ul",
-                    ref: undefined,
-                    constructor: undefined,
-                    key: "resultsFooterList",
-                    props: {
-                      style: {
-                        display: "flex",
-                        gap: "1em",
-                        marginBlock: "0.5em",
-                        flexWrap: "wrap",
-                      },
-                      children: [
-                        {
-                          type: "li",
-                          ref: undefined,
-                          constructor: undefined,
-                          key: "integrationLink",
-                          props: {
-                            children: [
-                              {
-                                type: "a",
-                                ref: undefined,
-                                constructor: undefined,
-                                key: "integrationAnchor",
-                                props: {
-                                  href: "https://aoi.js.org/contributor",
-                                  children: "Our Contributors",
-                                },
-                                __v: null,
-                              },
-                            ],
-                          },
-                          __v: null,
-                        },
-                        {
-                          type: "li",
-                          ref: undefined,
-                          constructor: undefined,
-                          key: "themesLink",
-                          props: {
-                            children: [
-                              {
-                                type: "a",
-                                ref: undefined,
-                                constructor: undefined,
-                                key: "themesAnchor",
-                                props: {
-                                  href: "https://github.com/AkaruiDevelopment/aoi.js/issues",
-                                  children: "Found bugs? Report them here!",
-                                },
-                                __v: null,
-                              },
-                            ],
-                          },
-                          __v: null,
-                        },
-                        {
-                          type: "li",
-                          ref: undefined,
-                          constructor: undefined,
-                          key: "discordLink",
-                          props: {
-                            children: [
-                              {
-                                type: "a",
-                                ref: undefined,
-                                constructor: undefined,
-                                key: "discordAnchor",
-                                props: {
-                                  href: "https://aoi.js.org/invite",
-                                  children:
-                                    "Need Support? Feel free to join our Discord.",
-                                },
-                                __v: null,
-                              },
-                            ],
-                          },
-                          __v: null,
-                        },
-                      ],
-                    },
-                    __v: null,
-                  },
-                ],
-              },
-              __v: null,
-            };
-          },
+          maxResultsPerGroup: 5
         }),
       ],
       expressiveCode: {
@@ -221,10 +110,51 @@ export default defineConfig({
               collapsed: true,
             },
             {
-              label: "Other",
-              autogenerate: {
-                directory: "guides/other",
-              },
+              label: "Others",
+              items: [
+                {
+                  label: "Character Escaping",
+                  link: "/guides/other/character-escaping",
+                },
+                { label: "Discord Events", link: "/guides/other/events" },
+                {
+                  label: "Message Formatting",
+                  link: "/guides/other/message-formatting",
+                },
+                {
+                  label: "Parsers",
+                  link: "/guides/other/parser",
+                },
+                {
+                  label: "Variables",
+                  link: "/guides/other/variables",
+                },
+                {
+                  label: "Customs",
+                  items: [
+                    {
+                      label: "Custom Functions",
+                      link: "/guides/other/custom-functions/",
+                    },
+                    { label: "Custom Events", link: "/guides/custom-events/" },
+                  ],
+                  collapsed: true,
+                },
+                {
+                  label: "Hosting",
+                  items: [
+                    {
+                      label: "Using Hosting Services",
+                      link: "/guides/other/hosting/hosting-service/",
+                    },
+                    {
+                      label: "Using Termux",
+                      link: "/guides/other/hosting/termux",
+                    },
+                  ],
+                  collapsed: true,
+                },
+              ],
               collapsed: true,
             },
           ],
