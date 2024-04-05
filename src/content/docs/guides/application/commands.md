@@ -275,7 +275,7 @@ module.exports = {
 ```
 Be sure to remove the command after that.
 
-### What list of slash option types i can use?
+### What list of slash option types can i use?
 Here's a list consisting of types you can use
 | Types    | Description |
 | -------- | ------- |
