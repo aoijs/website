@@ -274,3 +274,20 @@ module.exports = {
 }
 ```
 Be sure to remove the command after that.
+
+### What list of slash option types i can use?
+Here's a list consisting of types you can use
+| Types    | Description |
+| -------- | ------- |
+| SUB_COMMAND (1)  | Sub command type |
+| SUB_COMMAND_GROUP (2) | Same as sub command type but with groups instead |
+| STRING (3)   | Text Type |
+| INTEGER (4)  | Integer type. Any Number between -2^53 and 2^53 |
+| BOOLEAN (5)  | Boolean Type. Presents a "true" and "false" as options to choose from |
+| USER (6)  | User type. Includes all users + bots to select from |
+| CHANNEL (7)  | Includes all channel types + categories  |
+| ROLE (8) | Role type. Includes all roles to select from |
+| MENTIONABLE (9) | Same as User type but Includes users and roles all in one |
+| NUMBER (10)  | Number type. Any double between -2^53 and 2^53 |
+| ATTACHMENT (11) | [Attachment](https://discord.com/developers/docs/resources/channel#attachment-object) type. Let's user upload an attachment to a option |
+
