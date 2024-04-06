@@ -18,7 +18,7 @@ sidebar:
 - [Notes](#notes)
 - [Creating the slash command](#creating-the-slash-command)
 - [Deleting the slash command](#deleting-the-slash-command)
-- [Responding to the commands](#responding-to-the-commands)
+- [Responding to slash commands](#responding-to-slash-commands)
 - [Creating options](#creating-options)
 - [Optional options](#optional-options)
   - [Note](#note)
@@ -97,7 +97,7 @@ $deleteApplicationCommand[global;$getApplicationCommandID[ping;global]]
 
 Lastly, if it didn't error the first time but second time it did, then it means that you have successfully deleted the slash command. Restart your Discord if it still appears for you in this case.
 
-# Responding to the commands
+# Responding to slash commands
 We may use `$interactionReply` to respond to the slash command with the same name we used from `$createApplicationCommand` which is `ping` as it's the slash command name we have chose!
 
 Let's create an aoi.js interaction command for slash:
@@ -110,7 +110,7 @@ module.exports = {
   `
 }
 ```
-Restart your commands using `$updateCommands` and the slash command should now respond with `Hi.`!
+Restart your commands using `$updateCommands` and the slash command should now respond with "Hi."!
 
 # Creating options
 `$createApplicationCommand` function has one extra parameter dedicated to options, it is usually a JSON format that goes like this:
