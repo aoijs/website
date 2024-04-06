@@ -27,7 +27,7 @@ This will create a new automod rule with the maximum allowed mention limit of 3.
 client.command({
     name: "setAutomodMentionTotalLimit",
     code: `
-    $createautomodrule[$guildid;Automod Rule;true;Creating a new rule!]
+    $createAutomodRule[$guildid;Automod Rule;true;Creating a new rule!]
     $setAutomodMentionTotalLimit[3]
     `
 })

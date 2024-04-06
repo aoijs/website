@@ -14,11 +14,11 @@ $deleteAutomodRule[guildID;automodRuleName;reason?;force?]
 
 ## Parameters
 
-| Field           | Type                                                                                              | Description          | Required |
-| --------------- | ------------------------------------------------------------------------------------------------- | -------------------- | :------: |
-| guildID         | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | New message content. |   true   |
-| automodRuleName | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | New message content. |   true   |
-| reason?         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | New message content. |   true   |
+| Field           | Type                                                                                               | Description          | Required |
+| --------------- | -------------------------------------------------------------------------------------------------- | -------------------- | :------: |
+| guildID         | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)  | New message content. |   true   |
+| automodRuleName | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)  | New message content. |   true   |
+| reason?         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)  | New message content. |   true   |
 | force?          | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | New message content. |   true   |
 
 ## Example(s)

@@ -38,7 +38,7 @@ This will create a new automod rule with the BlockMessage action.
 client.command({
     name: "setAutomodActions",
     code: `
-    $createautomodrule[$guildid;Automod Rule;true;Creating a new rule!]
+    $createAutomodRule[$guildid;Automod Rule;true;Creating a new rule!]
     $setAutomodPreset[Slurs]
     $setAutomodType[Keyword]
     $setAutomodActions[BlockMessage;$channelId;60;You tried to say slurs, you got blocked!]  

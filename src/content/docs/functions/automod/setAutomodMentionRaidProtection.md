@@ -27,7 +27,7 @@ This will create a new automod rule with the mention raid protection enabled.
 client.command({
     name: "setAutomodMentionRaidProtection",
     code: `
-    $createautomodrule[$guildid;Automod Rule;true;Creating a new rule!]
-    $setAutomodMentionRaidProtection[true]  
+    $createAutomodRule[$guildid;Automod Rule;true;Creating a new rule!]
+    $setAutomodMentionRaidProtection[true]
     `
 })

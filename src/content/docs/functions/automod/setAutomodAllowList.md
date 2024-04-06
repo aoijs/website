@@ -26,10 +26,10 @@ This will create a new automod rule with the BlockMessage action and two whiteli
 client.command({
     name: "setAutomodAllowList",
     code: `
-    $createautomodrule[$guildid;Automod Rule;true;Creating a new rule!]
+    $createAutomodRule[$guildid;Automod Rule;true;Creating a new rule!]
     $setAutomodPreset[Slurs]
     $setAutomodType[Keyword]
     $setAutomodAllowList[Leref;Ayaka]
-    $setAutomodAllowList[BlockMessage;$channelId;60;You tried to say slurs, you got blocked!]  
+    $setAutomodActions[BlockMessage;$channelId;60;You tried to say slurs, you got blocked!]  
     `
 })
