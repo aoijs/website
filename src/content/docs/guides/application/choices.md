@@ -29,11 +29,11 @@ With that being said, do not think of choices as autocomplete.
 When it comes to choices, they can be treated in two ways
 
 * **customID**
-* **replies**
+* **Replies**
 
-## customID vs replies
+## customID vs Replies
 
-There’re differences between using choices as customIDs and replies. Here’s a brief comparison between both.
+There’re differences between using choices as customIDs and Replies. Here’s a brief comparison between both.
 
 ### customID
 * Usually allows you to do anything
@@ -41,9 +41,9 @@ There’re differences between using choices as customIDs and replies. Here’s 
 * Can be used to setup long messages and other stuff
 * Short and memorable if you used it well
 
-### replies
+### Replies
 
-* You don’t need to use multiple functions to set replies
+* You don’t need to use multiple functions to add replies
 * Pretty much limited as you’re just including a text
 * Not suitable for stuff such as creating features that requires a lot of time to code
 * Will only allow up to 100 characters, therefore, not suitable for long messages
@@ -117,11 +117,11 @@ $createApplicationCommand[$guildID;example;A regular slash command!;true;false;s
 }]]
 ```
 
-# Creating a command to respond to selected choices
+# Responding to selected choices
 
 ### customID method
 
-I will start with this example code:
+Let's start with this example code:
 ```js
 $createApplicationCommand[$guildID;example;A regular slash command!;true;false;slash;[{
   "name": "exampleoption",
@@ -137,7 +137,7 @@ $createApplicationCommand[$guildID;example;A regular slash command!;true;false;s
   }]
 }]]
 ```
-Let’s start with a simple code to return the choice selected from the slash option 
+We will then create a simple interaction command to return the choice selected from the slash option 
 ```js
 module.exports = {
     name: "example",
@@ -160,16 +160,16 @@ module.exports = {
     code: `$if[$slashOption[exampleoption]==value1]
     $interactionReply[{newEmbed:{title:Hello!}{description:You have selected choice 1!}}]
     $elseIf[$slashOption[exampleoption]==value2]
-    $interactionReply[{newEmbed:{title:Hello!}{description:You have selected choice 2}}]
+    $interactionReply[{newEmbed:{title:Hello!}{description:You have selected choice 2!}}]
     $endelseif
     $endif`
 }
 ```
-Because our slash option is called `option` then we will use it on `$slashOption` function. You can also see that we gave each choice it’s own code by forcing our slashOption function to check if the choice which has the value itself is selected.
+Because our slash option is called `exampleoption` then we will use it on `$slashOption` function. You can also see that we gave each choice it’s own code by forcing our slashOption function to check if the choice which has the value itself is selected.
 
 That way, you can use choices as custom id to do anything as you have the freedom in this case!
 
-### replies method
+### Replies method
 As with choices as replies, we will use the same code from the very beginning of this guide.
 ```js
 $createApplicationCommand[$guildID;example;A regular slash command!;true;false;slash;[{
@@ -192,7 +192,7 @@ module.exports = {
     name: "example",
     type: "interaction",
     prototype: "slash",
-    code: `$interactionReply[$slashOption[option]]`
+    code: `$interactionReply[$slashOption[exampleoption]]`
 }
 ```
 
