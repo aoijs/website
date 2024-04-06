@@ -15,7 +15,6 @@ sidebar:
 ### Table of Contents
 
 - [Introduction](#introduction)
-- [What are slash commands](#what-are-slash-commands)
 - [Notes](#notes)
 - [Creating the slash command](#creating-the-slash-command)
 - [Deleting the slash command](#deleting-the-slash-command)
@@ -33,6 +32,7 @@ sidebar:
     - [Can I have two slash commands under the same name in global (across all guilds) and private (limited to one guild)?](#can-i-have-two-slash-commands-under-the-same-name-in-global-across-all-guilds-and-private-limited-to-one-guild)
     - [What if I wanted to create a slash command under the same name?](#what-if-i-wanted-to-create-a-slash-command-under-the-same-name)
     - [How to create a slash command without using any command to execute createApplicationCommand function?](#how-to-create-a-slash-command-without-using-any-command-to-execute-createapplicationcommand-function)
+    - [What list of slash option types can i use?](#what-list-of-slash-option-types-can-i-use)
 ---
 
 # Introduction
