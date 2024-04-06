@@ -1,0 +1,41 @@
+# .github/workflows/preview.yml
+name: Deploy PR previews
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
+
+concurrency: preview-${{ github.ref }}
+
+jobs:
+  deploy-preview:
+    env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+        PUBLIC_BUILD_TIME: "13/09/2024 12:00:00"
+        PUBLIC_COMMIT: "#PREVIEW"
+        PUBLIC_ENV: "preview"
+        PUBLIC_PR_NUMBER: ${{ github.event.number }}
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Debug Environment Variables
+        run: env
+
+      - name: Install and Build
+        if: github.event.action != 'closed'
+        run: |
+            npm install --legacy-peer-deps
+            npm install react-dom --force
+            npm run build
+
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./dist/
+          custom-url: "https://aoi.js.org"
