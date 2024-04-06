@@ -110,7 +110,7 @@ module.exports = {
   `
 }
 ```
-Restart your commands using `$updateCommands` and the slash command will now respond with `Hi.`!
+Restart your commands using `$updateCommands` and the slash command should now respond with `Hi.`!
 
 # Creating options
 `$createApplicationCommand` function has one extra parameter dedicated to options, it is usually a JSON format that goes like this:
