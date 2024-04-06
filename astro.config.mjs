@@ -28,133 +28,128 @@ export default defineConfig({
           apiKey: "775caf3aef9ecccc83a7b3948ac1b92f",
           placeholder: "Search something..",
           maxResultsPerGroup: 5,
+          getMissingResultsUrl({ query }) {
+            return `https://github.com/aoijs/website/issues/new?title=${query}`;
+          },
+          resultsFooterComponent() {
+            return {
+              type: "div",
+              ref: undefined,
+              constructor: undefined,
+              key: "resultsFooter",
+              props: {
+                style: { marginBlock: "0.5rem" },
+                children: [
+                  {
+                    type: "p",
+                    ref: undefined,
+                    constructor: undefined,
+                    key: "resultsFooterLede",
+                    props: {
+                      children: `Searched for something else? Maybe something below can solve your issue.`,
+                    },
+                    __v: null,
+                  },
+                  {
+                    type: "ul",
+                    ref: undefined,
+                    constructor: undefined,
+                    key: "resultsFooterList",
+                    props: {
+                      style: {
+                        display: "flex",
+                        gap: "1em",
+                        marginBlock: "0.5em",
+                        flexWrap: "wrap",
+                      },
+                      children: [
+                        {
+                          type: "li",
+                          ref: undefined,
+                          constructor: undefined,
+                          key: "integrationLink",
+                          props: {
+                            children: [
+                              {
+                                type: "a",
+                                ref: undefined,
+                                constructor: undefined,
+                                key: "integrationAnchor",
+                                props: {
+                                  href: "https://aoi.js.org/contributor",
+                                  children: "Our Contributors",
+                                },
+                                __v: null,
+                              },
+                            ],
+                          },
+                          __v: null,
+                        },
+                        {
+                          type: "li",
+                          ref: undefined,
+                          constructor: undefined,
+                          key: "themesLink",
+                          props: {
+                            children: [
+                              {
+                                type: "a",
+                                ref: undefined,
+                                constructor: undefined,
+                                key: "themesAnchor",
+                                props: {
+                                  href: "https://github.com/AkaruiDevelopment/aoi.js/issues",
+                                  children: "Found bugs? Report them here!",
+                                },
+                                __v: null,
+                              },
+                            ],
+                          },
+                          __v: null,
+                        },
+                        {
+                          type: "li",
+                          ref: undefined,
+                          constructor: undefined,
+                          key: "discordLink",
+                          props: {
+                            children: [
+                              {
+                                type: "a",
+                                ref: undefined,
+                                constructor: undefined,
+                                key: "discordAnchor",
+                                props: {
+                                  href: "https://aoi.js.org/invite",
+                                  children:
+                                    "Need Support? Feel free to join our Discord.",
+                                },
+                                __v: null,
+                              },
+                            ],
+                          },
+                          __v: null,
+                        },
+                      ],
+                    },
+                    __v: null,
+                  },
+                ],
+              },
+              __v: null,
+            };
+          },
         }),
       ],
       expressiveCode: {
-        plugins: [pluginCollapsibleSections(), pluginLineNumbers()],
-        defaultProps: {
-          showLineNumbers: false,
-          overridesByLang: {
-            "js,ts,javascript": {
-              showLineNumbers: true,
-            },
-          },
-          wrap: true,
-        },
-        themes: ["github-dark", "github-light"],
-        styleOverrides: {
-          borderRadius: "0.2rem",
-          codeFontFamily: "'JetBrains Mono', monospace",
-        },
-      },
-      title: "aoi.js",
-      favicon: "/favicon.ico",
-      logo: {
-        src: "./src/images/icon.webp",
-      },
-      social: {
-        github: "https://github.com/AkaruiDevelopment/aoi.js#v6",
-        discord: "https://aoi.js.org/invite",
-      },
-      editLink: {
-        baseUrl: "https://github.com/aoijs/website/edit/main/",
-      },
-      customCss: [
-        "./src/styles/custom.css",
-        "@fontsource/poppins/400.css",
-        "@fontsource/poppins/600.css",
-      ],
-      components: {
-        //Search: "./src/components/Page/Search.astro",
-        Head: "./src/components/Page/Head.astro",
-        PageTitle: "./src/components/Page/PageTitle.astro",
-        PageSidebar: "./src/components/Page/PageSidebar.astro",
-      },
-      pagefind: false,
-      head: [
-        {
-          tag: "meta",
-          attrs: {
-            property: "og:site_name",
-            content: "aoi.js | Akarui Development",
-          },
-        },
-        {
-          tag: "meta",
-          attrs: {
-            property: "theme-color",
-            content: "#89CFF0",
-          },
-        },
-      ],
-      sidebar: [
-        {
-          label: "Get Started",
-          link: "/guides/setup",
-        },
-        {
-          label: "Guides",
-          items: [
-            {
-              label: "Client",
-              autogenerate: {
-                directory: "guides/client",
-              },
+	@@ -221,10 +112,51 @@ export default defineConfig({
               collapsed: true,
             },
             {
-              label: "Application Commands",
+              label: "Other",
               autogenerate: {
-                directory: "guides/application",
+                directory: "guides/other",
               },
-              collapsed: true,
-            },
-            {
-              label: "Others",
-              items: [
-                {
-                  label: "Character Escaping",
-                  link: "/guides/other/character-escaping",
-                },
-                { label: "Discord Events", link: "/guides/other/events" },
-                {
-                  label: "Message Formatting",
-                  link: "/guides/other/message-formatting",
-                },
-                {
-                  label: "Parsers",
-                  link: "/guides/other/parser",
-                },
-                {
-                  label: "Variables",
-                  link: "/guides/other/variables",
-                },
-                {
-                  label: "Customs",
-                  items: [
-                    {
-                      label: "Custom Functions",
-                      link: "/guides/other/custom-functions/",
-                    },
-                    { label: "Custom Events", link: "/guides/custom-events/" },
-                  ],
-                  collapsed: true,
-                },
-                {
-                  label: "Hosting",
-                  items: [
-                    {
-                      label: "Using Hosting Services",
-                      link: "/guides/other/hosting/hosting-service/",
-                    },
-                    {
-                      label: "Using Termux",
-                      link: "/guides/other/hosting/termux",
-                    },
-                  ],
-                  collapsed: true,
-                },
-              ],
               collapsed: true,
             },
           ],
@@ -220,6 +215,13 @@ export default defineConfig({
               label: "Guild",
               autogenerate: {
                 directory: "functions/guild",
+              },
+              collapsed: true,
+            },
+            {
+              label: "Info",
+              autogenerate: {
+                directory: "functions/info",
               },
               collapsed: true,
             },
