@@ -24,6 +24,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Debug Environment Variables
+        run: env
+
       - name: Install and Build
         if: github.event.action != 'closed'
         run: |
@@ -35,3 +38,4 @@ jobs:
         uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: ./dist/
+          custom-url: "https://aoi.js.org"
