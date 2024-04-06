@@ -100,7 +100,7 @@ Lastly, if it didn't error the first time but second time it did, then it means 
 # Responding to slash commands
 We may use `$interactionReply` to respond to the slash command with the same name we used from `$createApplicationCommand` which is `ping` as it's the slash command name we have chose!
 
-Let's create an aoi.js interaction command for slash:
+Let's create a interaction command for slash:
 ```js
 module.exports = {
   name: "ping",
