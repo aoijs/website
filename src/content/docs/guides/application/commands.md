@@ -151,7 +151,7 @@ $createApplicationCommand[global;exampleslash;Simple example slash command.;true
 }]]
 ```
 
-`"type":` is the type of the slash option, we're using number `3` which is text type, more information on each option type can be seen [here](https://aoi.js.org/guides/application/commands/#application-command-option-type).
+`"type":` is the type of the slash option, we're using number `3` which is text type, more information on each option type can be seen at the end of FAQ.
 
 Be aware that you can create up to 25 slash options, so make sure to avoid limits! Getting the data from both of the options should be easy as using multiple of `$slashOption` as well:
 ```js
