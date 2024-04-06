@@ -23,7 +23,6 @@ export default defineConfig({
       head: [{ tag: "script", attrs: { src: "/preserve-sidebar.js" } }],
       lastUpdated: true,
       plugins: [
-        starlightLinksValidator(),
         starlightImageZoom(),
         starlightDocSearch({
           appId: "7NDV3UYBW5",
