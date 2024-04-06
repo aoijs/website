@@ -21,8 +21,7 @@ $guildEmojiExists[emojiResolver;guildId?]
 
 ## Example(s)
 
-This will return `true` as
-the ![emoji](https://cdn.discordapp.com/emojis/1003365344724910191.webp?size=16&quality=lossless) emoji exists:
+This will return `true` as the emoji exists:
 
 ```javascript
 client.command({
