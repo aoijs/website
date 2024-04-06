@@ -18,7 +18,7 @@ $arrange[order;separator;...numbers]
 | ---------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | :------: |
 | order      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | **asc** (ascending), or **desc** (descending): the order in which the numbers will be sorted in. |   true   |
 | separator  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The separator which separates the numbers.                                                       |   true   |
-| ...numbers | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The numbers to sort.                                                                             |   true   |
+| ...numbers | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The numbers to sort.                                                                             |   true   |
 
 
 ## Example(s)
