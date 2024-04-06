@@ -36,16 +36,13 @@ sidebar:
 ---
 
 # Introduction
-This guide is dedicated to my take on slash command's tutorials. It aims to be simplified and mention the common mistakes when setting up slash commands. It is recommended that you read the entire guide otherwise you may end up making mistakes inevitably.
-
-# What are slash commands
 Slash commands are supposedly "new generation" of bots by Discord's vision. The idea is that all bots do rely on one prefix that is `/` and so people do not have to guess prefixes of any bot they encounter whether it would be in a server or a random bot they have just added it to an server they're in. Slash commands has been around since April 2021 and has since been enforced into verified bots due to message content intent updates by DIscord!
 
 # Notes
 * This guide requires you to have put `onInteractionCreate` onto your events code otherwise the example code for replying to the slash command will not work AT ALL
 * You can create up to 100 slash commands both in global (across all guilds) and private (limited to one guild)
 * The function `$createApplicationCommand` must be only executed for once, otherwise, you'll update the application command.
-* Highly recommend reading the usage from docs to get an idea
+* Highly recommend reading the usage for functions to get an idea
 * The command code examples here are for command handler setups, so please do not put them directly into your `index.js` or whatever your main file is. You can modify the commands to match with the index.js ones
 
 # Creating the slash command
