@@ -27,7 +27,7 @@ export default defineConfig({
           indexName: "aoi-js",
           apiKey: "775caf3aef9ecccc83a7b3948ac1b92f",
           placeholder: "Search something..",
-          maxResultsPerGroup: 5
+          maxResultsPerGroup: 5,
         }),
       ],
       expressiveCode: {
@@ -220,13 +220,6 @@ export default defineConfig({
               label: "Guild",
               autogenerate: {
                 directory: "functions/guild",
-              },
-              collapsed: true,
-            },
-            {
-              label: "Info",
-              autogenerate: {
-                directory: "functions/info",
               },
               collapsed: true,
             },
