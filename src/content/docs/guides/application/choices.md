@@ -54,8 +54,8 @@ There’re differences between using choices as customIDs and replies. Here’s 
 ### customID method
 Let's start with the customID way, so here's a little ordinary slash option code:
 ```js
-$createApplicationCommand[$guildID;slash;A regular slash command!;true;false;slash;[{
-  "name": "option",
+$createApplicationCommand[$guildID;example;A regular slash command!;true;false;slash;[{
+  "name": "exampleoption",
   "description": "options example",
   "required": true,
   "type": 3
@@ -63,8 +63,8 @@ $createApplicationCommand[$guildID;slash;A regular slash command!;true;false;sla
 ```
 Seems normal right? We can then expand it further by adding `"choices":` with it's names and values like this.
 ```js
-$createApplicationCommand[$guildID;slash;A regular slash command!;true;false;slash;[{
-  "name": "option",
+$createApplicationCommand[$guildID;example;A regular slash command!;true;false;slash;[{
+  "name": "exampleoption",
   "description": "options example",
   "required": true,
   "type": 3,
@@ -76,8 +76,8 @@ $createApplicationCommand[$guildID;slash;A regular slash command!;true;false;sla
 ```
 As with slash command options, you can add more choices by separating each JSON with a comma!
 ```js
-$createApplicationCommand[$guildID;slash;A regular slash command!;true;false;slash;[{
-  "name": "option",
+$createApplicationCommand[$guildID;example;A regular slash command!;true;false;slash;[{
+  "name": "exampleoption",
   "description": "options example",
   "required": true,
   "type": 3,
@@ -96,23 +96,23 @@ $createApplicationCommand[$guildID;slash;A regular slash command!;true;false;sla
 
 As we're talking about how to use choices as custom ids then we will need to give it a short perfect name that you usually do in interactions such as buttons.
 
-In this example, i have gave it `value1` which is alright for testing. This is how we create choices with it's values as customIDs!
+In this example, we have gave it `value1` which is alright for testing. This is how we create choices with it's values as customIDs!
 
 ### replies method
 If for some reason, you prefer choices to be just regular replies then it is as simple as just adding the reply to the choice value itself
 
 ```js
-$createApplicationCommand[$guildID;slash;A regular slash command!;true;false;slash;[{
-  "name": "option",
+$createApplicationCommand[$guildID;example;A regular slash command!;true;false;slash;[{
+  "name": "exampleoption",
   "description": "options example",
   "required": true,
   "type": 3,
   "choices" : [{
     "name" : "choice 1",
-    "value" : "Hey! You have just selected choice 1"
+    "value" : "Hey! You have just selected choice 1!"
   }, {
     "name": "choice 2",
-    "value": "Hey! You have just selected choice 2"
+    "value": "Hey! You have just selected choice 2!"
   }]
 }]]
 ```
@@ -123,8 +123,8 @@ $createApplicationCommand[$guildID;slash;A regular slash command!;true;false;sla
 
 I will start with this example code:
 ```js
-$createApplicationCommand[$guildID;slash;A regular slash command!;true;false;slash;[{
-  "name": "option",
+$createApplicationCommand[$guildID;example;A regular slash command!;true;false;slash;[{
+  "name": "exampleoption",
   "description": "options example",
   "required": true,
   "type": 3,
@@ -140,26 +140,26 @@ $createApplicationCommand[$guildID;slash;A regular slash command!;true;false;sla
 Let’s start with a simple code to return the choice selected from the slash option 
 ```js
 module.exports = {
-    name: "slash",
+    name: "example",
     type: "interaction",
     prototype: "slash",
-    code: `$interactionReply[$slashOption[option]]`
+    code: `$interactionReply[$slashOption[exampleoption]]`
 }
 ```
 Playing around with the example slash command, you will see that it returns `value1` if choice 1 is selected otherwise `value2` if choice 2 is selected. There’s nothing interesting happening after that.
 
-Taking advantage of the values as custom id can depend on your needs, so in my case, I will be doing that using `$if: “old”` to make each specific choice have it’s own code!
+Taking advantage of the values as custom id can depend on your needs, so in this case, we will be doing that using `$if: “old”` to make each specific choice have it’s own code!
 
 To do this, we will be using `$slashOption` with our slash command option name that has the choices added to it and if old for each specific code for each selected choice by the author!
 ```js
 module.exports = {
-    name: "slash",
+    name: "example",
     type: "interaction",
     $if: "old",
     prototype: "slash",
-    code: `$if[$slashOption[option]==value1]
+    code: `$if[$slashOption[exampleoption]==value1]
     $interactionReply[{newEmbed:{title:Hello!}{description:You have selected choice 1!}}]
-    $elseIf[$slashOption[option]==value2]
+    $elseIf[$slashOption[exampleoption]==value2]
     $interactionReply[{newEmbed:{title:Hello!}{description:You have selected choice 2}}]
     $endelseif
     $endif`
@@ -170,31 +170,31 @@ Because our slash option is called `option` then we will use it on `$slashOption
 That way, you can use choices as custom id to do anything as you have the freedom in this case!
 
 ### replies method
-As with my guide for choices as replies. I will present you with the same code from the very beginning of this guide.
+As with choices as replies, we will use the same code from the very beginning of this guide.
 ```js
-$createApplicationCommand[$guildID;slash;A regular slash command!;true;false;slash;[{
-  "name": "option",
+$createApplicationCommand[$guildID;example;A regular slash command!;true;false;slash;[{
+  "name": "exampleoption",
   "description": "options example",
   "required": true,
   "type": 3,
   "choices" : [{
     "name" : "choice 1",
-    "value" : "Hey! You have just selected choice 1"
+    "value" : "Hey! You have just selected choice 1!"
   }, {
     "name": "choice 2",
-    "value": "Hey! You have just selected choice 2"
+    "value": "Hey! You have just selected choice 2!"
   }]
 }]]
 ```
-Since choices has it’s own reply through the values we specified, there’s nothing you need to do aside from using `$slashOption` on the slash command option that has those choices.
+Since choices has it’s own reply through the values we specified, there’s nothing you need to do aside from using `$slashOption` on the slash command option that has these choices.
 ```js
 module.exports = {
-    name: "slash",
+    name: "example",
     type: "interaction",
     prototype: "slash",
     code: `$interactionReply[$slashOption[option]]`
 }
 ```
 
-That’s it, it will just return any of the replies you see in the first code and that’s how you setup choices as replies!
+That’s it! It will just return any of the replies you see in the first code and that’s how you setup choices as replies!
 
