@@ -10,8 +10,10 @@ import { pluginCollapsibleSections } from "@expressive-code/plugin-collapsible-s
 import starlightImageZoom from "starlight-image-zoom";
 import starlightDocSearch from "@astrojs/starlight-docsearch";
 
+const PREVIEW_SITE = process.env.PUBLIC_ENV === "preview" ? `https://aoijs.github.io/website/pr-preview/pr-${process.env?.PUBLIC_PR_NUMBER}` : "https://aoi.js.org"
+
 export default defineConfig({
-  site: "https://aoi.js.org",
+  site: PREVIEW_SITE,
   devToolbar: {
     enabled: false,
   },
