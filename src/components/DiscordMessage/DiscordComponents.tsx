@@ -11,6 +11,7 @@ import {
   DiscordEmbedFooter,
   DiscordEmbedFields,
 } from "@skyra/discord-components-react";
+import lerefAvatar from "../../images/contributors/leref.png";
 
 interface DiscordComponentsProps {
   user?: string;
@@ -60,7 +61,7 @@ function DiscordMessagesDark({
         {user && (
           <DiscordMessage
             author="Leref"
-            avatar="https://cdn.discordapp.com/avatars/608358453580136499/46e2d7c347cbb948d1cf541409d7d48b.png?size=4096"
+            avatar={lerefAvatar.src}
           >
             {user}
           </DiscordMessage>
@@ -164,7 +165,7 @@ function DiscordMessagesLight({
         {user && (
           <DiscordMessage
             author="Leref"
-            avatar="https://cdn.discordapp.com/avatars/608358453580136499/46e2d7c347cbb948d1cf541409d7d48b.png?size=4096"
+            avatar={lerefAvatar.src}
           >
             {user}
           </DiscordMessage>
