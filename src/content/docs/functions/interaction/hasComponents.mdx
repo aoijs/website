@@ -39,12 +39,12 @@ $hasComponents[channelID?;messageID?;type?]
 
 ## Example(s)
 
-This will return `true` since the message has a button:
+This will return `false` since the message does not have a button:
 
 ```js
 client.command({
   name: "hasComponents",
-  code: `$hasComponents[$channelID;78901234567890;Button]`
+  code: `$hasComponents[$channelID;$messageID;Button]`
 });
 ```
     <DiscordComponents client:load client:only="react"
