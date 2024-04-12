@@ -9,8 +9,7 @@ id: cooldown
 ## Usage
 
 ```php
-$cooldown[time;errorMessage
-]
+$cooldown[time;errorMessage]
 ```
 
 - You are able to retrieve the remaining cooldown in the `$cooldown` function by using **`%time%`** or any of the

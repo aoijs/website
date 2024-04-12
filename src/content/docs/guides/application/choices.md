@@ -10,47 +10,69 @@ sidebar:
     order: 2
 ---
 
-# What are choices?
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [What are choices?](#what-are-choices)
+- [Getting started](#getting-started)
+  - [customID vs Replies](#customid-vs-replies)
+    - [customID](#customid)
+    - [Replies](#replies)
+- [Setting up choices](#setting-up-choices)
+  - [customID method](#customid-method)
+  - [Replies method](#replies-method)
+- [Responding to selected choices](#responding-to-selected-choices)
+  - [customID method](#customid-method-1)
+  - [Replies method](#replies-method-1)
+
+## What are choices?
 Choices are custom options for a `string` type of a slash command option. You know the select menu with custom options? It’s exactly that except it’s a slash command option instead.
 
 To put it simple, they're basically items inside of a slash command option that you can select in case you didn't get it yet.
 
-# Notes
+::::note
+
 This feature is not the same as autocomplete, the difference between both is that, choices are forced custom options with no custom input allowed from the user when autocomplete is the opposite of that and are more of suggestions based on the user’s current input.
 
 With that being said, do not think of choices as autocomplete.
 
-# Limits
+:::danger[Limitations]
+
 * Choice name allows up to 100 characters
 * Choice's values allows up to 100 characters just like the name
 * You can only create up to 25 choices
 
-# Getting started
+:::
+
+::::
+
+
+## Getting started
 When it comes to choices, they can be treated in two ways
 
 * **customID**
 * **Replies**
 
-## customID vs Replies
+### customID vs Replies
 
 There’re differences between using choices as customIDs and Replies. Here’s a brief comparison between both.
 
-### customID
+#### customID
 * Usually allows you to do anything
 * May require a couple of functions to do certain stuff depending on your needs such as creating bot features with it
 * Can be used to setup long messages and other stuff
 * Short and memorable if you used it well
 
-### Replies
+#### Replies
 
 * You don’t need to use multiple functions to add replies
 * Pretty much limited as you’re just including a text
 * Not suitable for stuff such as creating features that requires a lot of time to code
 * Will only allow up to 100 characters, therefore, not suitable for long messages
 
+---
 
-# Setting up choices
-
+## Setting up choices
 ### customID method
 Let's start with the customID way, so here's a little ordinary slash option code:
 ```js
@@ -61,17 +83,19 @@ $createApplicationCommand[$guildID;example;A regular slash command!;true;false;s
   "type": 3
 }]]
 ```
+
 Seems normal right? We can then expand it further by adding `"choices":` with it's names and values like this.
+
 ```js
 $createApplicationCommand[$guildID;example;A regular slash command!;true;false;slash;[{
   "name": "exampleoption",
   "description": "options example",
   "required": true,
   "type": 3,
-"choices" : [{
-"name" : "choice 1",
-"value" : "value1"
-}]
+  "choices" : [{
+    "name" : "choice 1",
+    "value" : "value1"
+  }]
 }]]
 ```
 As with slash command options, you can add more choices by separating each JSON with a comma!
@@ -98,7 +122,7 @@ As we're talking about how to use choices as custom ids then we will need to giv
 
 In this example, we have gave it `value1` which is alright for testing. This is how we create choices with it's values as customIDs!
 
-### replies method
+### Replies method
 If for some reason, you prefer choices to be just regular replies then it is as simple as just adding the reply to the choice value itself
 
 ```js
@@ -117,7 +141,7 @@ $createApplicationCommand[$guildID;example;A regular slash command!;true;false;s
 }]]
 ```
 
-# Responding to selected choices
+## Responding to selected choices
 
 ### customID method
 
@@ -197,4 +221,3 @@ module.exports = {
 ```
 
 That’s it! It will just return any of the replies you see in the first code and that’s how you setup choices as replies!
-

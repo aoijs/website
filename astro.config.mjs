@@ -69,6 +69,7 @@ export default defineConfig({
         Head: "./src/components/Page/Head.astro",
         PageTitle: "./src/components/Page/PageTitle.astro",
         PageSidebar: "./src/components/Page/PageSidebar.astro",
+        Sidebar: "./src/components/Page/Sidebar.astro",
       },
       pagefind: false,
       head: [

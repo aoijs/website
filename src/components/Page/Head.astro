@@ -1,25 +1,32 @@
 ---
 import type { Props } from "@astrojs/starlight/props";
 import Default from "@astrojs/starlight/components/Head.astro";
+import { ViewTransitions } from "astro:transitions";
 ---
 
-<meta property="og:image" content={Astro.props.entry.data?.og_image ?? `https://og-image-aoijs.vercel.app/api/og?title=${Astro.props.entry.data.title}&description=${Astro.props.entry.data.description}`} />
+<meta
+    property="og:image"
+    content={Astro.props.entry.data?.og_image ?? `https://og-image-aoijs.vercel.app/api/og?title=${Astro.props.entry.data.title}&description=${Astro.props.entry.data.description}`}
+/>
 <Default {...Astro.props}><slot /></Default>
 
 
 <script>
-  /* -- Disabled because Sidebar breaks when using transitions --
+    /*
 
-  import { isTransitionBeforeSwapEvent, TRANSITION_BEFORE_SWAP } from "astro:transitions/client";
+    // Broken: <ViewTransitions />
+    // This is a workaround for the broken ViewTransitions component
+    
+    import { isTransitionBeforeSwapEvent, TRANSITION_BEFORE_SWAP } from "astro:transitions/client";
 
-  document.addEventListener(TRANSITION_BEFORE_SWAP, (event) => {
-    if (!isTransitionBeforeSwapEvent(event)) return;
-    const currentPageSearch = document.querySelector("#docsearch");
-    const newPageSearch = event.newDocument.querySelector("#docsearch");
+    document.addEventListener(TRANSITION_BEFORE_SWAP, (event) => {
+        if (!isTransitionBeforeSwapEvent(event)) return;
+        const currentPageSearch = document.querySelector("#docsearch");
+        const newPageSearch = event.newDocument.querySelector("#docsearch");
 
-    if (currentPageSearch && newPageSearch) {
-      newPageSearch.replaceWith(currentPageSearch);
-    }
-  });
-  */
+        if (currentPageSearch && newPageSearch) {
+            newPageSearch.replaceWith(currentPageSearch);
+        }
+    });
+    */
 </script>

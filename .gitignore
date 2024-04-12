@@ -3,7 +3,7 @@
 
 # Production
 .env
-.prettierignore
+.prettierrc
 .nojekyll
 .astro
 /dist
