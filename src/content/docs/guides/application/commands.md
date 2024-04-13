@@ -50,7 +50,7 @@ Slash commands can be created using `$createApplicationCommand`, it is a functio
 
 It is not a way to create a code to respond to a slash and SHOULD NOT be put under a aoi.js interaction command of a non existing slash command for example. Similar to running any regular functions, `$createApplicationCommand` can be run on anything but I recommend using eval command or at least a prefix command with it.
 
-Here, we can have a usage example:
+Here's a example usage of this function:
 ```js
 $createApplicationCommand[global;name;description;true;true;slash]
 ```
