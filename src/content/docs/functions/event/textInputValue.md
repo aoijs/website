@@ -51,7 +51,8 @@ $interactionModal[Example!;customID;
     {textInput:What's your gender?:2:genderInput:true:Anything will work!:1:10}
   }
 ]`
-  }; /* The modal itself, we use {textInput} to accept user input.
+  }
+]; /* The modal itself, we use {textInput} to accept user input.
 
 The correct usage of {textInput} would be:
 
