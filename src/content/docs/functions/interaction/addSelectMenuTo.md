@@ -1,21 +1,23 @@
 ---
-title: $addSelectMenu
-description: $addSelectMenu will add a select menu to the bot's message.
-id: addSelectMenu
+title: $addSelectMenuTo
+description: $addSelectMenuTo will add a select menu to a specific message.
+id: addSelectMenuTo
 ---
 
-`$addSelectMenu` will add a select menu to the bot's message.
+`$addSelectMenuTo` will add a select menu to a specific message.
 
 ## Usage
 
 ```php
-$addSelectMenu[index;type;customId;placeHolder;minValues;maxValues;disabled?;label:description:value:default?:emoji?;...]
+$addSelectMenuTo[channelId;messageId;index;type;customId;placeHolder;minValues;maxValues;disabled?;label:description:value:default?:emoji?;...]
 ```
 
 ## Parameters
 
 | Field       | Type                                                                                                | Description                                                                                                                    | Required |
 | ----------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | :------: |
+| channelId   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The channel id.                                                                                                                |   true   |
+| messageId   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The message id.                                                                                                                |   true   |
 | index       | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | In which actionRow the selectMenu appears, a selectMenu requires one whole row for it alone.                                   |   true   |
 | type        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The component type. <br /> 1. **string** <br /> 2. **user** <br /> 3. **role** <br /> 4. **mentionable** <br /> 5. **channel** |   true   |
 | customID    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The component custom ID.                                                                                                       |   true   |
@@ -35,7 +37,7 @@ client.command({
   code: `
   Select an option.
   
-  $addSelectMenu[1;string;yourCustomID;This is a placeholder!;1;1;false;A Option:Description of option A:anotherCustomID:false;B Option:Description of option B:andAnotherCustomID:true]
+  $addSelectMenuTo[1;string;yourCustomID;This is a placeholder!;1;1;false;A Option:Description of option A:anotherCustomID:false;B Option:Description of option B:andAnotherCustomID:true]
   `
 });
 
@@ -44,7 +46,7 @@ module.exports = [
     name: "add-select-menu",
     code: `
      Select an option.
-     $addSelectMenu[1;string;yourCustomID;This is a placeholder!;1;1;false;A Option:Description of option A:anotherCustomID:false;B Option:Description of option B:andAnotherCustomID:true]
+     $addSelectMenuTo[1;string;yourCustomID;This is a placeholder!;1;1;false;A Option:Description of option A:anotherCustomID:false;B Option:Description of option B:andAnotherCustomID:true]
   `
   },
   {
@@ -71,3 +73,5 @@ We use "$onlyIf[$interactionData[values[0]]==customID;]" to make sure this only 
 Also ensure that you have the "onInteractionCreate" event in your main file (index.js in most cases).
 */
 ```
+
+[dp]: https://discord.com/developers/docs/interactions/message-components#button-object-button-styles
