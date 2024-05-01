@@ -35,8 +35,8 @@ This will replace `more` with `less`:
 
 ```javascript
 client.command({
-  name: "replaceTextWithRegex",
-  code: `
+    name: "replaceTextWithRegex",
+    code: `
   $replaceTextWithRegex[This function is more complicated than it looks.;more;g;less]
   `
 });
@@ -48,8 +48,8 @@ This will replace `less` with `more`:
 
 ```javascript
 client.command({
-  name: "replaceTextWithRegex",
-  code: `
+    name: "replaceTextWithRegex",
+    code: `
   $replaceTextWithRegex[This function is more complicated than it looks.;lESs;i;more]
   `
 });

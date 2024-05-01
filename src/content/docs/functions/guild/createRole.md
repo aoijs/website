@@ -34,8 +34,8 @@ This will create a new role called "Bird" in the color of red:
 
 ```javascript
 client.command({
-  name: "createRole",
-  code: `
+    name: "createRole",
+    code: `
     $createRole[$guildID;Bird;FF0000;1;;false;❤;false;false;Some reason!;sendmessages;addreactions]`
 });
 ```

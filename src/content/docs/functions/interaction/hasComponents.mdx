@@ -16,13 +16,14 @@ $hasComponents[channelID?;messageID?;type?]
 
 ## Parameters
 
-| Field      | Type                                                                                                | Description                                                                                    | Required |
-| ---------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | :------: |
-| channelID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The channel ID of where the message is.                                                        |  false   |
-| messageID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The ID of the message.                                                                         |  false   |
-| type?      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | [Component Types.](https://discord-api-types.dev/api/discord-api-types-v10/enum/ComponentType) |  false   |
+| Field      | Type                                                                                              | Description                                                                                    | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | :------: |
+| channelID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The channel ID of where the message is.                                                        |  false   |
+| messageID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the message.                                                                         |  false   |
+| type?      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | [Component Types.](https://discord-api-types.dev/api/discord-api-types-v10/enum/ComponentType) |  false   |
 
 ## Component Types
+
 | Type                | Description                                       |
 | ------------------- | ------------------------------------------------- |
 | `any` (default)     | Any component type                                |
@@ -36,17 +37,17 @@ $hasComponents[channelID?;messageID?;type?]
 | `MentionableSelect` | Select menu for mentionables (users and roles)    |
 | `TextInput`         | Text input component                              |
 
-
 ## Example(s)
 
 This will return `false` since the message does not have a button:
 
 ```js
 client.command({
-  name: "hasComponents",
-  code: `$hasComponents[$channelID;$messageID;Button]`
+    name: "hasComponents",
+    code: `$hasComponents[$channelID;$messageID;Button]`
 });
 ```
+
     <DiscordComponents client:load client:only="react"
         bot="Hello! The ID of this message is 78901234567890"
         buttons={[

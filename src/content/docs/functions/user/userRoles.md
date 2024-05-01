@@ -27,8 +27,8 @@ This will return your roles:
 
 ```javascript
 client.command({
-  name: "userRoles",
-  code: `
+    name: "userRoles",
+    code: `
   $userRoles[$authorID;$guildID;id;, ]
   `
 });

@@ -18,8 +18,8 @@ This will return the last time your bot started/was ready:
 
 ```javascript
 client.command({
-  name: "readyTimestamp",
-  code: `
+    name: "readyTimestamp",
+    code: `
   $readyTimestamp
   `
 });

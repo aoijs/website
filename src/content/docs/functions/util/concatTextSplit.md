@@ -24,8 +24,8 @@ This will add `Hello, Bye` to the already used `$textSplit` argument:
 
 ```javascript
 client.command({
-  name: "concatTextSplit",
-  code: `
+    name: "concatTextSplit",
+    code: `
   $concatTextSplit[Hello;Bye]
   $textSplit[Good Morning, Goodnight;, ]
   `

@@ -24,8 +24,8 @@ This will return the emoji count of your guild:
 
 ```javascript
 client.command({
-  name: "emojiCount",
-  code: `
+    name: "emojiCount",
+    code: `
   You have $emojiCount emojis in your guild!
   `
 });

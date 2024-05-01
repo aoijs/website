@@ -24,8 +24,8 @@ This will return the shard latency of the current shard:
 
 ```javascript
 client.command({
-  name: "guildShardPing",
-  code: `
+    name: "guildShardPing",
+    code: `
   $guildShardPing[$shardId]MS
   `
 });

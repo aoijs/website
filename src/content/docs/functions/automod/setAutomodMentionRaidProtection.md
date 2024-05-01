@@ -18,7 +18,6 @@ $setAutomodMentionRaidProtection[type;channel;durationSeconds;customMessage?]
 | -------- | --------------------------------------------------------------------------------------------------- | ------------------------------- | :------: |
 | enabled? | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Enable mention raid protection? |  false   |
 
-
 ## Example(s)
 
 This will create a new automod rule with the mention raid protection enabled.
@@ -30,4 +29,5 @@ client.command({
     $createAutomodRule[$guildid;Automod Rule;true;Creating a new rule!]
     $setAutomodMentionRaidProtection[true]
     `
-})
+});
+```

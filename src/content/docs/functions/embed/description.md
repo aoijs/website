@@ -25,8 +25,8 @@ This will send an embed with the content `aoi.js is great!`:
 
 ```javascript
 client.command({
-  name: "embed",
-  code: `
+    name: "embed",
+    code: `
   $description[aoi.js is great!]
   `
 });

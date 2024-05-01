@@ -26,8 +26,8 @@ This will return all guild templates of the current guild:
 
 ```javascript
 client.command({
-  name: "getGuildTemplates",
-  code: `
+    name: "getGuildTemplates",
+    code: `
   $getGuildTemplates[$guildID;code;, ]
   `
 });

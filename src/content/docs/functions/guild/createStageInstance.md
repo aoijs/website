@@ -52,8 +52,8 @@ This will create start a new stage instance:
 
 ```javascript
 client.command({
-  name: "createStageInstance",
-  code: `
+    name: "createStageInstance",
+    code: `
   $createStageInstance[stageID;Testing!;1] 
   ` // replace "stageID" with an actual stage ID
 });

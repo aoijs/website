@@ -25,16 +25,16 @@ This will change a random role's color to red:
 
 ```javascript
 client.command({
-  name: "setRoleColor",
-  code: `
+    name: "setRoleColor",
+    code: `
    $setRoleColor[$randomRoleID;Red]`
 });
 ```
 
 ```javascript
 client.command({
-  name: "setRoleColor",
-  code: `
+    name: "setRoleColor",
+    code: `
    $setRoleColor[$randomRoleID;ED4245]`
 });
 ```

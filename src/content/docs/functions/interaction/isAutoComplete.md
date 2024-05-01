@@ -22,8 +22,8 @@ most cases, index.js)
 
 ```javascript
 client.command({
-  name: "createSlashCommand",
-  code: `
+    name: "createSlashCommand",
+    code: `
   $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;true;slash;[{
   "name": "option", 
   "description": "test",
@@ -38,10 +38,10 @@ Checking if autoComplete equals `true` if so it will respond with the given resp
 
 ```javascript
 client.command({
-  name: "example",
-  prototype: "slash",
-  $if: "old",
-  code: `
+    name: "example",
+    prototype: "slash",
+    $if: "old",
+    code: `
   $if[$isAutocomplete==true]
   $autoCompleteRespond[First option;You selected the first option, therefore I'm responding with this!;Second option;You selected the first second, therefore I'm responding with this!]
   $else
@@ -55,8 +55,8 @@ Create the slash-commands with another option:
 
 ```javascript
 client.command({
-  name: "createSlashCommand",
-  code: `
+    name: "createSlashCommand",
+    code: `
   $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;slash;[{
   "name": "option",
   "description": "test",
@@ -77,10 +77,10 @@ code above):
 
 ```javascript
 client.command({
-  name: "example",
-  prototype: "slash",
-  $if: "old",
-  code: `
+    name: "example",
+    prototype: "slash",
+    $if: "old",
+    code: `
   $if[$isAutocomplete==true]
   $autoCompleteRespond[[{ 
     "name" : "First Option",

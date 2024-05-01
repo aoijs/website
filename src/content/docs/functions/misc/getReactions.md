@@ -30,8 +30,8 @@ This will mention all users that reacted to your message, in this case, only you
 
 ```javascript
 client.command({
-  name: "getReactions",
-  code: `
+    name: "getReactions",
+    code: `
 $getReactions[$channelID;$messageID;👋;true;mention]
 $addCmdReactions[👋]
   `

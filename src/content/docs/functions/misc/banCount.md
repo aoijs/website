@@ -26,8 +26,8 @@ This will return the amount of banned users in your guild:
 
 ```javascript
 client.command({
-  name: "banCount",
-  code: `
+    name: "banCount",
+    code: `
   $banCount
   `
 });

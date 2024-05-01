@@ -24,7 +24,7 @@ This will send the sticker to the current channel, replace `resolver` with an ac
 
 ```js
 client.command({
-  name: "sendSticker",
-  code: `$sendSticker[resolver]`
+    name: "sendSticker",
+    code: `$sendSticker[resolver]`
 });
 ```

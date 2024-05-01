@@ -30,9 +30,9 @@ This will seek to second 10 of the song>
 
 ```javascript
 client.command({
-  name: "seek",
-  code: `
+    name: "seek",
+    code: `
     $seek[10000]
-  `,
+  `
 });
 ```

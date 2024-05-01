@@ -10,7 +10,6 @@ This requires aoi.invite installed.
 
 :::
 
-
 `$invite` returns information about the invite.
 
 ## Usage
@@ -24,5 +23,5 @@ $invite
 This returns information about the invite.
 
 ```javascript
-$invite
+$invite;
 ```

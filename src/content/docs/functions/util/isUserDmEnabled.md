@@ -24,8 +24,8 @@ This will return either `true` or `false` depending on if your Direct Messages a
 
 ```javascript
 client.command({
-  name: "isUserDmEnabled",
-  code: `
+    name: "isUserDmEnabled",
+    code: `
   $isUserDmEnabled[$authorID]
   `
 });

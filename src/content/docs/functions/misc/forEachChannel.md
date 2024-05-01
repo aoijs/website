@@ -28,15 +28,15 @@ This will change the variable value of each channel to "test":
 
 ```javascript
 client.command({
-  name: "forEachChannel",
-  code: `
+    name: "forEachChannel",
+    code: `
   $forEachChannel[2s;{"value": "test"};awaitedCommand;]
   `
 });
 
 client.awaitedCommand({
-  name: "awaitedCommand",
-  code: `
+    name: "awaitedCommand",
+    code: `
   $setChannelVar[varname;$awaitData[value];$channelID]
   `
 });

@@ -22,8 +22,8 @@ $noEscapingMessage[args]
 
 ```javascript
 client.command({
-  name: "noEscapingMessage",
-  code: `
+    name: "noEscapingMessage",
+    code: `
     $noEscapingMessage[1]
     `
 });

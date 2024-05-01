@@ -10,7 +10,6 @@ This requires aoi.invite installed.
 
 :::
 
-
 `$inviteUserID` returns the ID of the user that created the invite.
 
 ## Usage
@@ -24,5 +23,5 @@ $inviteUserID
 This returns the ID of the user that created the invite.
 
 ```javascript
-$inviteUserID
+$inviteUserID;
 ```

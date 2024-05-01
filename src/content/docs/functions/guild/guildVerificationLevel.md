@@ -32,8 +32,8 @@ This will return the guild's verification Level:
 
 ```javascript
 client.command({
-  name: "guildVerificationLevel",
-  code: `
+    name: "guildVerificationLevel",
+    code: `
   $guildVerificationLevel[$guildID]
   `
 });

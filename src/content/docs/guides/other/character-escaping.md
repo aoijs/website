@@ -9,12 +9,13 @@ og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/11.
 ---
 
 <!-- omit from toc -->
+
 ## Table of Contents
 
-- [What is character escaping?](#what-is-character-escaping)
-- [When to use character escaping](#when-to-use-character-escaping)
-- [Commonly used escape sequences](#commonly-used-escape-sequences)
-- [Examples](#examples)
+-   [What is character escaping?](#what-is-character-escaping)
+-   [When to use character escaping](#when-to-use-character-escaping)
+-   [Commonly used escape sequences](#commonly-used-escape-sequences)
+-   [Examples](#examples)
 
 ## What is character escaping?
 
@@ -24,8 +25,8 @@ Character escaping is a technique used to represent characters that have special
 
 Character escaping is typically used in the following situations:
 
-- When using the embed parser
-- When wanting to use specific characters within functions that would be normally not allowed
+-   When using the embed parser
+-   When wanting to use specific characters within functions that would be normally not allowed
 
 ## Commonly used escape sequences
 
@@ -52,5 +53,5 @@ The following table shows some commonly used escape sequences:
 
 Here are some examples of character escaping:
 
-- The `#RIGHT#` escape sequence is used to represent the `[` character.
-- The `\n` escape sequence is used to represent a newline character.
+-   The `#RIGHT#` escape sequence is used to represent the `[` character.
+-   The `\n` escape sequence is used to represent a newline character.

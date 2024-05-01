@@ -18,8 +18,8 @@ This will return the user ID of whoever you replied to:
 
 ```js
 client.command({
-  name: "referenceUserId",
-  code: `
+    name: "referenceUserId",
+    code: `
     $referenceUserId
     `
 });

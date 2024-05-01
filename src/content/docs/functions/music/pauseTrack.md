@@ -24,9 +24,9 @@ This will pause the current track:
 
 ```javascript
 client.command({
-  name: "pauseTrack",
-  code: `
+    name: "pauseTrack",
+    code: `
     $pauseTrack
-  `,
+  `
 });
 ```

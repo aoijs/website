@@ -24,9 +24,9 @@ This will destroy the current player:
 
 ```javascript
 client.command({
-  name: "stopPlayer",
-  code: `
+    name: "stopPlayer",
+    code: `
     $stopPlayer
-  `,
+  `
 });
 ```

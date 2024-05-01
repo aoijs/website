@@ -25,8 +25,8 @@ This will change guild's name you're executing the command in to your username:
 
 ```javascript
 client.command({
-  name: "setGuildName",
-  code: `
+    name: "setGuildName",
+    code: `
    $setGuildName[$username[$authorID];$guildID]`
 });
 ```

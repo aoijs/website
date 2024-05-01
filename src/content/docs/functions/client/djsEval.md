@@ -25,8 +25,8 @@ This will return your user ID:
 
 ```javascript
 client.command({
-  name: "djsEval",
-  code: `
+    name: "djsEval",
+    code: `
   $djsEval[msg.author.id;true]
   `
 });

@@ -27,8 +27,8 @@ This will create a new guild template.
 
 ```javascript
 client.command({
-  name: "createGuildTemplate",
-  code: `
+    name: "createGuildTemplate",
+    code: `
   $createGuildTemplate[$guildId;Guild Template;This is a template!;true]
   `
 });

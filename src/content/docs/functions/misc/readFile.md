@@ -24,8 +24,8 @@ This will return your main file (index.js):
 
 ```javascript
 client.command({
-  name: "readFile",
-  code: `
+    name: "readFile",
+    code: `
     $readFile[./index.js]
     `
 });

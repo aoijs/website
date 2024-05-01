@@ -26,8 +26,8 @@ This will create an embed with a title:
 
 ```javascript
 client.command({
-  name: "title",
-  code: `
+    name: "title",
+    code: `
    $title[Hello!;https://aoi.js.org]
    $description[The title contains a hyperlink..]`
 });

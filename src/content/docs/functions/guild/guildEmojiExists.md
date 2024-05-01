@@ -25,8 +25,8 @@ This will return `true` as the emoji exists:
 
 ```javascript
 client.command({
-  name: "guildEmojiExists",
-  code: `
+    name: "guildEmojiExists",
+    code: `
   $guildEmojiExists[<:LerefMoney:1003365344724910191>;$guildID]
   `
 });

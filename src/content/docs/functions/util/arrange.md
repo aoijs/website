@@ -20,15 +20,14 @@ $arrange[order;separator;...numbers]
 | separator  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The separator which separates the numbers.                                                       |   true   |
 | ...numbers | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The numbers to sort.                                                                             |   true   |
 
-
 ## Example(s)
 
 This will sort the following numbers: (returns: `1, 2, 3, 4, 5, 6)`)
 
 ```javascript
 client.command({
-  name: "arrange",
-  code: `
+    name: "arrange",
+    code: `
 $arrange[asc;, ;1;6;4;2;5;3]
   `
 });

@@ -25,8 +25,8 @@ This will return the ID of an application command called "example", (if any):
 
 ```javascript
 client.command({
-  name: "getApplicationCommandID",
-  code: `
+    name: "getApplicationCommandID",
+    code: `
   $getApplicationCommandID[example;global]
   `
 });

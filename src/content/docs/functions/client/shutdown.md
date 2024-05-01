@@ -18,8 +18,8 @@ This will shutdown your bot:
 
 ```javascript
 client.command({
-  name: "shutdown",
-  code: `
+    name: "shutdown",
+    code: `
     $shutdown
     `
 });

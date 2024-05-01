@@ -25,8 +25,8 @@ This returns: `20k`
 
 ```javascript
 client.command({
-  name: "abbreviate",
-  code: `
+    name: "abbreviate",
+    code: `
   $abbreviate[20000]
   `
 });
@@ -36,8 +36,8 @@ This returns: `20.0k`
 
 ```javascript
 client.command({
-  name: "abbreviate",
-  code: `
+    name: "abbreviate",
+    code: `
   $abbreviate[20000;1]
   `
 });

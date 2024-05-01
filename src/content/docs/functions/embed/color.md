@@ -14,9 +14,9 @@ $color[index?;hex]
 
 ## Parameters
 
-| Field  | Type                                                                                              | Description                                               | Required |
-| ------ | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | :------: |
-| index? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The embed index.                                          |  false   |
+| Field  | Type                                                                                              | Description                                                | Required |
+| ------ | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | :------: |
+| index? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The embed index.                                           |  false   |
 | hex    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The hex color or color name (supported color names below). |   true   |
 
 <div class="details">
@@ -64,8 +64,8 @@ This will return a red embed:
 
 ```javascript
 client.command({
-  name:"color",
-  code: `
+    name: "color",
+    code: `
   $description[What a nice color!]
   $color[Red]
   `
@@ -74,8 +74,8 @@ client.command({
 
 ```javascript
 client.command({
-  name:"color",
-  code: `
+    name: "color",
+    code: `
   $description[What a nice color!]
   $color[ED4245]
   `

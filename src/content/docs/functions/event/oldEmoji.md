@@ -18,10 +18,10 @@ $oldEmoji[option]
 | ------ | ------------------------------------------------------------------------------------------------- | ------------------- | :------: |
 | option | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Option to retrieve. |   true   |
 
-## Options 
+## Options
 
-| Option | Type | Description |
-| ----- | ---- | ----- |
-| string | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns text required to form the emoji.
-| guild | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns the guild ID of emoji. |
-| url | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns url of emoji(if it's custom). |
+| Option | Type                                                                                              | Description                              |
+| ------ | ------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| string | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns text required to form the emoji. |
+| guild  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns the guild ID of emoji.           |
+| url    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns url of emoji(if it's custom).    |

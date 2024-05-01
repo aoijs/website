@@ -25,8 +25,8 @@ This will return the ID of your lowest role:
 
 ```javascript
 client.command({
-  name: "userLowestRole",
-  code: `
+    name: "userLowestRole",
+    code: `
   $userLowestRole[$authorID;$guildID]
   `
 });

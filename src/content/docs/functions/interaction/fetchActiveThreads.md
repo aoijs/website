@@ -25,8 +25,8 @@ This will return all active threads, if any:
 
 ```javascript
 client.command({
-  name: "fetchActiveThreads",
-  code: `
+    name: "fetchActiveThreads",
+    code: `
   $fetchActiveThreads[$channelID;name]
   `
 });

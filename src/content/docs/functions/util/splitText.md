@@ -24,8 +24,8 @@ This will return `aoi.js` as it's the second argument of `$textSplit`:
 
 ```javascript
 client.command({
-  name: "splitText",
-  code: `
+    name: "splitText",
+    code: `
   $splitText[2]
   $textSplit[@akarui/aoi.db//aoi.js;//]
   `

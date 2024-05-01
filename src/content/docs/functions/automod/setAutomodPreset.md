@@ -20,11 +20,11 @@ $setAutomodPreset[...presets]
 
 ### Automod Presets
 
-| Type          | Id   |
-| :------------ | :--- |
-| Profanity     | 1    |
-| SexualContent | 2    |
-| Slurs         | 3    |
+| Type          | Id  |
+| :------------ | :-- |
+| Profanity     | 1   |
+| SexualContent | 2   |
+| Slurs         | 3   |
 
 ## Example(s)
 
@@ -39,4 +39,5 @@ client.command({
     $setAutomodType[Keyword]
     $setAutomodActions[BlockMessage;$channelId;60;You tried to say slurs, you got blocked!]  
     `
-})
+});
+```

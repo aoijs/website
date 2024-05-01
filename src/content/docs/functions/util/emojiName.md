@@ -24,8 +24,8 @@ This will return the name of an emoji:
 
 ```javascript
 client.command({
-  name: "emojiName",
-  code: `
+    name: "emojiName",
+    code: `
   $emojiName[emojiResolver]
   `
 });

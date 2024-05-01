@@ -25,8 +25,8 @@ This will reply to your command message:
 
 ```javascript
 client.command({
-  name: "reply",
-  code: `
+    name: "reply",
+    code: `
    Hello!
    $reply[$messageID;true]
   `

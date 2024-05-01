@@ -24,9 +24,9 @@ This will return the current player status:
 
 ```javascript
 client.command({
-  name: "playerStatus",
-  code: `
+    name: "playerStatus",
+    code: `
     $playerStatus
-  `,
+  `
 });
 ```

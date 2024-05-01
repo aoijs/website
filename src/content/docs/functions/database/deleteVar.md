@@ -26,8 +26,8 @@ This will delete a variable called "Test":
 
 ```javascript
 client.command({
-  name: "deleteVar",
-  code: `
+    name: "deleteVar",
+    code: `
   $deleteVar[Test;$authorID;main]
   `
 });

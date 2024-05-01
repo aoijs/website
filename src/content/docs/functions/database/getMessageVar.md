@@ -26,8 +26,8 @@ This will return the value of a variable called "Example":
 
 ```javascript
 client.command({
-  name: "getMessageVar",
-  code: `
+    name: "getMessageVar",
+    code: `
     $getMessageVar[Example;$messageID;main]
     `
 });

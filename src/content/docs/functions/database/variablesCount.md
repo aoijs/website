@@ -18,8 +18,8 @@ This will return your total amount of variables:
 
 ```javascript
 client.command({
-  name: "variablesCount",
-  code: `
+    name: "variablesCount",
+    code: `
     $variablesCount
     `
 });

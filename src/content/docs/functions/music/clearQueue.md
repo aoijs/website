@@ -24,9 +24,9 @@ This will clear the current queue:
 
 ```javascript
 client.command({
-  name: "clearQueue",
-  code: `
+    name: "clearQueue",
+    code: `
     $clearQueue
-  `,
+  `
 });
 ```

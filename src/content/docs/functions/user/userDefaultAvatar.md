@@ -24,8 +24,8 @@ This will return your default Discord User Avatar:
 
 ```javascript
 client.command({
-  name: "userDefaultAvatar",
-  code: `
+    name: "userDefaultAvatar",
+    code: `
   $userDefaultAvatar[$authorID]
   `
 });

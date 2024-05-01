@@ -32,4 +32,5 @@ client.command({
     $setAutomodExemptChannels[$channelId;$randomChannelId]
     $setAutomodActions[BlockMessage;$channelId;60;You tried to say slurs, you got blocked!]  
     `
-})
+});
+```

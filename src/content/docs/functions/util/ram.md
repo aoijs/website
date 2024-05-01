@@ -18,8 +18,8 @@ This will return the RAM usage and the available amount of RAM:
 
 ```javascript
 client.command({
-  name: "ram",
-  code: `
+    name: "ram",
+    code: `
   I'm currently using \`$ram%\` out of \`$maxRam%\`!
   `
 });

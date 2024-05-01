@@ -10,7 +10,6 @@ This requires aoi.invite installed.
 
 :::
 
-
 `$inviteGuildID` returns the guild ID of the invite.
 
 ## Usage
@@ -24,5 +23,5 @@ $inviteGuildID
 This returns the guild ID of the invite.
 
 ```javascript
-$inviteGuildID
+$inviteGuildID;
 ```

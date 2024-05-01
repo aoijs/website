@@ -25,8 +25,8 @@ This will either return `idle` `online` `invisible` or `dnd` depending on your c
 
 ```javascript
 client.command({
-  name: "userStatus",
-  code: `
+    name: "userStatus",
+    code: `
   $userStatus[$guildID;$authorID]
   `
 });

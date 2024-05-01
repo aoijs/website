@@ -25,8 +25,8 @@ This will remove `Object` from the given object:
 
 ```javascript
 client.command({
-  name: "removeObjectProperty",
-  code: `
+    name: "removeObjectProperty",
+    code: `
   $removeObjectProperty[Object Name;Object]
   $createObject[Object Name;{"Object": "Property"}]
   `

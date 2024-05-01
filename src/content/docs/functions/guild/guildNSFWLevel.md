@@ -24,8 +24,8 @@ This will return the guild's NSFW level:
 
 ```javascript
 client.command({
-  name: "guildNSFWLevel",
-  code: `
+    name: "guildNSFWLevel",
+    code: `
   $guildNSFWLevel[$guildID]
   `
 });

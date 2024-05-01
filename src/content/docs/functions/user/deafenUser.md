@@ -25,8 +25,8 @@ This will deafen yourself:
 
 ```javascript
 client.command({
-  name: "deafen",
-  code: `
+    name: "deafen",
+    code: `
   $deafen[$authorID;true]
   `
 });

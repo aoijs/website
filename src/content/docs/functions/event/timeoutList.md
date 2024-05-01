@@ -25,8 +25,8 @@ This will return all timeouts in the `key` format:
 
 ```javascript
 client.command({
-  name: "timeoutList",
-  code: `
+    name: "timeoutList",
+    code: `
     $timeoutList[key;, ]
     `
 });
@@ -36,8 +36,9 @@ This will return all timeouts in the `key` format:
 
 ```javascript
 client.command({
-  name: "timeoutList",
-  code: `
+    name: "timeoutList",
+    code: `
     $timeoutList[{key} {duration}];, ]
     `
 });
+```

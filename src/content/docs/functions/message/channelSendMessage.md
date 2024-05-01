@@ -26,8 +26,8 @@ This will send "Hello!" to the current channel:
 
 ```javascript
 client.command({
-  name: "channelSendMessage",
-  code: `
+    name: "channelSendMessage",
+    code: `
   $channelSendMessage[$channelID;Hello!;false]
   `
 });
@@ -39,8 +39,8 @@ This will send an embed with description and footer to the current channel:
 
 ```javascript
 client.command({
-  name: "channelSendMessage",
-  code: `
+    name: "channelSendMessage",
+    code: `
   $channelSendMessage[$channelID;{newEmbed:{title:Hello}{footer:Bye}};false]
   `
 });

@@ -24,8 +24,8 @@ This will return a random user id:
 
 ```javascript
 client.command({
-  name: "randomUserID",
-  code: `
+    name: "randomUserID",
+    code: `
   $randomUserID[global]
   `
 });

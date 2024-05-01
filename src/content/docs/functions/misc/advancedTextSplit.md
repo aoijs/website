@@ -26,8 +26,8 @@ This will split `Hello` from `Bye` and return `Hello`:
 
 ```javascript
 client.command({
-  name: "advancedTextSplit",
-  code: `
+    name: "advancedTextSplit",
+    code: `
   $advancedTextSplit[Hello/Bye;/;1]
   `
 });

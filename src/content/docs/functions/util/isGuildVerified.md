@@ -24,8 +24,8 @@ This will check if your server is verified and return either `true` or `false`:
 
 ```javascript
 client.command({
-  name: "isGuildVerified",
-  code: `
+    name: "isGuildVerified",
+    code: `
   $isGuildVerified[$guildID]
   `
 });

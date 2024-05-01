@@ -24,9 +24,9 @@ This will skip the current track:
 
 ```javascript
 client.command({
-  name: "skipTrack",
-  code: `
+    name: "skipTrack",
+    code: `
     $skipTrack
-  `,
+  `
 });
 ```

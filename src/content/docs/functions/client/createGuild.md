@@ -34,8 +34,8 @@ This will create a new guild with your username and avatar:
 
 ```javascript
 client.command({
-  name: "createGuild",
-  code: `
+    name: "createGuild",
+    code: `
   $createGuild[$username;$authorAvatar;true]
   `
 });

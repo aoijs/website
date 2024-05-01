@@ -18,7 +18,6 @@ $setAutomodMentionTotalLimit[limit]
 | ----- | ------------------------------------------------------------------------------------------------- | -------------------------------- | :------: |
 | limit | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The maximum of allowed mentions. |   true   |
 
-
 ## Example(s)
 
 This will create a new automod rule with the maximum allowed mention limit of 3.
@@ -30,4 +29,5 @@ client.command({
     $createAutomodRule[$guildid;Automod Rule;true;Creating a new rule!]
     $setAutomodMentionTotalLimit[3]
     `
-})
+});
+```

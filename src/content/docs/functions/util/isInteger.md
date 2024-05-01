@@ -24,8 +24,8 @@ This checks if your message contains an integer and returns `true` or `false`:
 
 ```javascript
 client.command({
-  name: "isInteger",
-  code: `
+    name: "isInteger",
+    code: `
   $isInteger[$message]
   `
 });

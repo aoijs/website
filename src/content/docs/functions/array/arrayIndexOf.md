@@ -23,11 +23,11 @@ $arrayIndexOf[name;query]
 
 ```javascript
 client.command({
-  name: "arrayIndexOf",
-  code: `
+    name: "arrayIndexOf",
+    code: `
   $arrayIndexOf[array;akarui]
   $createArray[array;aoi.js;akarui;documents;bot]
   `
-  // It will return "2" as the word "akarui" is in the 2nd position of the array.
+    // It will return "2" as the word "akarui" is in the 2nd position of the array.
 });
 ```

@@ -24,8 +24,8 @@ This will return the maximum of members you can have in your guild:
 
 ```javascript
 client.command({
-  name: "guildMaximumMembers",
-  code: `
+    name: "guildMaximumMembers",
+    code: `
   You can have: $guildMaximumMembers[$guildID] Members in this guild!
   `
 });

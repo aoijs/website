@@ -26,8 +26,8 @@ This will return the Id of the given automod rule while force fetching all guild
 
 ```javascript
 client.command({
-  name: "getAutomodRuleId",
-  code: `
+    name: "getAutomodRuleId",
+    code: `
   $getAutomodRuleId[$guildId;Automod Rule;true]
   `
 });

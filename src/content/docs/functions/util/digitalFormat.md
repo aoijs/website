@@ -14,9 +14,9 @@ $digitalFormat[ms]
 
 ## Parameters
 
-| Field | Type                                                                                              | Description                              | Required |
-| ----- | ------------------------------------------------------------------------------------------------- | ---------------------------------------- | :------: |
-| ms    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Time in milliseconds  you wish to convert. |   true   |
+| Field | Type                                                                                              | Description                               | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ----------------------------------------- | :------: |
+| ms    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Time in milliseconds you wish to convert. |   true   |
 
 ## Example(s)
 
@@ -24,8 +24,8 @@ This will return `00:04:00` as `240000ms` are four minutes:
 
 ```javascript
 client.command({
-  name: "digitalFormat",
-  code: `
+    name: "digitalFormat",
+    code: `
   $digitalFormat[240000]
   `
 });

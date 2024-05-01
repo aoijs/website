@@ -26,8 +26,8 @@ This will return `Bye` and remove `Hello` from the given text:
 
 ```javascript
 client.command({
-  name: "slice",
-  code: `
+    name: "slice",
+    code: `
   $argsSlice[Hello Bye;1;5]
   `
 });

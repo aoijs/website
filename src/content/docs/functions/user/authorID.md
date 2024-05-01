@@ -18,8 +18,8 @@ This will return your user ID:
 
 ```javascript
 client.command({
-  name: "authorID",
-  code: `
+    name: "authorID",
+    code: `
   $authorID
   `
 });

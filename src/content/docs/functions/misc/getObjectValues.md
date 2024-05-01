@@ -25,8 +25,8 @@ This will return `Ferel` and `aoi.js`:
 
 ```javascript
 client.command({
-  name: "getObjectValues",
-  code: `
+    name: "getObjectValues",
+    code: `
   $getObjectValues[Object Name; ]
   $createObject[Object Name;{
     "Leref": "Ferel",

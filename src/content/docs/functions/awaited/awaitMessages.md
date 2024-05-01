@@ -31,17 +31,17 @@ This will reply to any message you send after executing the command:
 
 ```js
 client.command({
-  name: "awaitMessages",
-  code: `
+    name: "awaitMessages",
+    code: `
   $awaitMessages[$channelID;$authorID;15s;everything;awaitedcommandexample;Oh? You don't want to talk to me..?] 
   What's your name?
   `
-  // Please make sure that the awaitedCommand name is ALL lowercase or else it won't work.
+    // Please make sure that the awaitedCommand name is ALL lowercase or else it won't work.
 });
 
 client.awaitedCommand({
-  name: "awaitedcommandexample",
-  code: `
+    name: "awaitedcommandexample",
+    code: `
   Nice to meet you, $message!
   `
 });

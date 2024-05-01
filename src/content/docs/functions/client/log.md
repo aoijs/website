@@ -24,8 +24,8 @@ This will log "Aoi.js is great!" in your bot's console:
 
 ```javascript
 client.command({
-  name: "log",
-  code: `
+    name: "log",
+    code: `
     $log[Aoi.js is great!]
     `
 });

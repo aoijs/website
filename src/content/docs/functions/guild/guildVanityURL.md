@@ -24,8 +24,8 @@ This will return the vanity URL of your guild, if you have one:
 
 ```javascript
 client.command({
-  name: "guildVanityURL",
-  code: `
+    name: "guildVanityURL",
+    code: `
   $guildVanityURL[$guildID]
   `
 });

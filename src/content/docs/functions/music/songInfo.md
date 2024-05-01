@@ -58,9 +58,9 @@ This will return the current track name:
 
 ```javascript
 client.command({
-  name: "songInfo",
-  code: `
+    name: "songInfo",
+    code: `
     $songInfo[title]
-  `,
+  `
 });
 ```

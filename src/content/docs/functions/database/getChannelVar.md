@@ -26,8 +26,8 @@ This will return the value of a variable called "Example":
 
 ```javascript
 client.command({
-  name: "getChannelVar",
-  code: `
+    name: "getChannelVar",
+    code: `
     $getChannelVar[Example;$channelID;main]
     `
 });

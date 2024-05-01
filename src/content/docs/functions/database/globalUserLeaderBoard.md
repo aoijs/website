@@ -23,11 +23,11 @@ $globalUserLeaderBoard[variable;type?;custom?;list?;page?;table?]
 | page?    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Which page to list.                                                                                       |  false   |
 | table?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable table.                                                                                           |  false   |
 
-| Options        | Returns                                                                                           |                                         |
-| -------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| Options          | Returns                                                                                           |                                         |
+| ---------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------- |
 | **\{top\}**      | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns the position of the user.       |
 | **\{username\}** | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns the username.                   |
-| **\{tag}**      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns the username and discriminator. |
+| **\{tag}**       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns the username and discriminator. |
 | **\{id\}**       | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns the user ID.                    |
 | **\{value\}**    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns the variable value.             |
 
@@ -37,8 +37,8 @@ This will returns a leaderboard of the "Example" variable:
 
 ```javascript
 client.command({
-  name: "globalUserLeaderBoard",
-  code: `
+    name: "globalUserLeaderBoard",
+    code: `
     $globalUserLeaderBoard[Example;asc;{top} - {username} - {value};10;1;main]
     `
 });

@@ -25,8 +25,8 @@ This will return the role name of any role you may like, in this case, It would 
 
 ```javascript
 client.command({
-  name: "roleName",
-  code: `
+    name: "roleName",
+    code: `
   \`$roleName[$guildID]\`
   `
 });

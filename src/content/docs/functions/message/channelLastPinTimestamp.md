@@ -24,7 +24,7 @@ This will return the timestamp when the last pinned message was pinned on the cu
 
 ```js
 client.command({
-  name: "channelLastPinTimestamp",
-  code: `$channelLastPinTimestamp[$channelID]`
+    name: "channelLastPinTimestamp",
+    code: `$channelLastPinTimestamp[$channelID]`
 });
 ```

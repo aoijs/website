@@ -25,8 +25,8 @@ This will return `882360051640193054` as it was able to find the `#⊂・⊃﹐a
 
 ```javascript
 client.command({
-  name: "findChannel",
-  code: `
+    name: "findChannel",
+    code: `
   $findChannel[⊂・⊃﹐aoi_v5;false]
   `
 });

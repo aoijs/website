@@ -25,8 +25,8 @@ This will return `true` as `easy` and/or `simple` are present in the given text:
 
 ```javascript
 client.command({
-  name: "checkContains",
-  code: `
+    name: "checkContains",
+    code: `
   $checkContains[aoi.js is easy and simple to use for beginners;easy;simple]
   `
 });

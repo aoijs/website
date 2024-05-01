@@ -54,14 +54,14 @@ const client = new AoiClient({
 | `prefix`            | string  | Your Discord Bot Prefix                                                                      |
 | `intents`           | string  | Required Intents                                                                             |
 | `events`            | string  | Required Events                                                                              |
-| `disableFunctions`  | string  | aoi.js functions you want to make unusable                                                  |
+| `disableFunctions`  | string  | aoi.js functions you want to make unusable                                                   |
 | `plugins`           | string  | aoi.js plugins directory                                                                     |
 | `respondToBots`     | boolean | Either give your bot the ability to respond to bots or remove it.                            |
 | `guildOnly`         | boolean | Either give your bot the ability to respond in Direct Message or remove it.                  |
 | `cache`             | string  | Client Cache Options.                                                                        |
 | `disableAoiDB`      | boolean | Disables the use of aoi.db within your bot, to add custom databases and such.                |
 | `database`          | string  | Client Database Options. (aoi.db)                                                            |
-| `suppressAllErrors` | boolean | Suppress all occurring errors.                                                                |
+| `suppressAllErrors` | boolean | Suppress all occurring errors.                                                               |
 | `errorMessage`      | string  | Send a given error message when `suppressAllErrors` executes, supports parser and functions. |
 | `aoiAutoUpdate`     | boolean | Automatically update aoi.js if a update is available.                                        |
 | `aoiWarning`        | boolean | Disable aoiWarning logs which are sent to your console.                                      |

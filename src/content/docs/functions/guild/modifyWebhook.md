@@ -28,8 +28,8 @@ This will modify a existing webhook and change it's avatar to your user avatar:
 
 ```javascript
 client.command({
-  name: "modifyWebhook",
-  code: `
+    name: "modifyWebhook",
+    code: `
   $modifyWebhook[webhookID;Hello!;$userAvatar[$authorID];$channelID;Testing!]
   `
 });

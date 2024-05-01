@@ -27,8 +27,8 @@ This will change the value of "Example" to "This is a value":
 
 ```javascript
 client.command({
-  name: "setGuildVar",
-  code: `
+    name: "setGuildVar",
+    code: `
     $setGuildVar[Example;This is a value;$guildID;main]
     `
 });

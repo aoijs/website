@@ -18,8 +18,8 @@ This will return day of the month, in MS ( we're using $humanizeMS to make it re
 
 ```javascript
 client.command({
-  name: "datestamp",
-  code: `
+    name: "datestamp",
+    code: `
   $humanizeMS[$datestamp]
   `
 });

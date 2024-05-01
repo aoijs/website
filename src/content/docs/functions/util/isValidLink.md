@@ -24,8 +24,8 @@ This will return `true` as the given link is valid:
 
 ```javascript
 client.command({
-  name: "isValidLink",
-  code: `
+    name: "isValidLink",
+    code: `
   $isValidLink[https://aoi.js.org/docs/]
   `
 });

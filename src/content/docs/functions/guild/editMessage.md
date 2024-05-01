@@ -28,8 +28,8 @@ This will edit the sent message after five seconds: ( works the same way as `$ed
 
 ```javascript
 client.command({
-  name: "editMessage",
-  code: `
+    name: "editMessage",
+    code: `
   $editMessage[$get[id];Bye!]
   $wait[5s]
   $let[id;$sendMessage[Hello!;true]]

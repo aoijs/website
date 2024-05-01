@@ -27,8 +27,8 @@ This will delete the most recent fifty messages which are not pinned:
 
 ```javascript
 client.command({
-  name: "clear",
-  code: `
+    name: "clear",
+    code: `
   $clear[$channelID;50;unpinned;false]
   `
 });
@@ -38,8 +38,8 @@ This will delete the most recent fifty messages which are sent by the command au
 
 ```javascript
 client.command({
-  name: "clear",
-  code: `
+    name: "clear",
+    code: `
   $clear[$channelID;50;user:$authorId;false]
   `
 });

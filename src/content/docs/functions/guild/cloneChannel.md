@@ -28,8 +28,8 @@ This will clone the current channel and name it "new channel":
 
 ```javascript
 client.command({
-  name: "cloneChannel",
-  code: `
+    name: "cloneChannel",
+    code: `
   $cloneChannel[$channelID;new channel;false]
   `
 });

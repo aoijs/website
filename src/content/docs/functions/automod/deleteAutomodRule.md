@@ -4,7 +4,7 @@ description: $deleteAutomodRule will delete a given automod rule.
 id: deleteAutomodRule
 ---
 
-`$deleteAutomodRule` will delete a given automod rule. 
+`$deleteAutomodRule` will delete a given automod rule.
 
 ## Usage
 
@@ -31,4 +31,5 @@ client.command({
     code: `
     $deleteAutomodRule[$guildID;Block Words;Deleting this rule!;true]
     `
-})
+});
+```

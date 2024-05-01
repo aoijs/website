@@ -24,8 +24,8 @@ This will return the guild's preferred locale:
 
 ```javascript
 client.command({
-  name: "guildPreferredLocale",
-  code: `
+    name: "guildPreferredLocale",
+    code: `
   $guildPreferredLocale[$guildID]
   `
 });

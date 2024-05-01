@@ -30,8 +30,8 @@ This will attempt to delete the current guild:
 
 ```javascript
 client.command({
-  name: "deleteGuild",
-  code: `
+    name: "deleteGuild",
+    code: `
   $deleteGuild[$guildId]
   `
 });

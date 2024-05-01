@@ -24,8 +24,8 @@ This will spawn shard `1`:
 
 ```javascript
 client.command({
-  name: "spawnShard",
-  code: `
+    name: "spawnShard",
+    code: `
    $spawnShard[1]`
 });
 ```

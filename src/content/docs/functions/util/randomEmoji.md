@@ -18,8 +18,8 @@ This will return a random emoji ID of your guild:
 
 ```javascript
 client.command({
-  name: "randomEmoji",
-  code: `
+    name: "randomEmoji",
+    code: `
   $randomEmoji
   `
 });

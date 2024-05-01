@@ -30,9 +30,9 @@ This will return the current voice latency:
 
 ```javascript
 client.command({
-  name: "voicePing",
-  code: `
+    name: "voicePing",
+    code: `
     $voicePing[ws]
-  `,
+  `
 });
 ```

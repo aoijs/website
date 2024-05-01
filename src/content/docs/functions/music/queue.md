@@ -59,9 +59,9 @@ This will return the current queue in the `{position}) {title} - {requester.user
 
 ```javascript
 client.command({
-  name: "queue",
-  code: `
+    name: "queue",
+    code: `
     $queue[1;10;{position}) {title} - {requester.user.name}]
-  `,
+  `
 });
 ```

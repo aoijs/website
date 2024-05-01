@@ -24,8 +24,8 @@ This will remove the word "bye" from the array:
 
 ```javascript
 client.command({
-  name: "removeTextSplitElement",
-  code: `
+    name: "removeTextSplitElement",
+    code: `
     $removeTextSplitElement[bye]
     $textSplit[hello, bye, aoi.js;, ]
     `

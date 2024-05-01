@@ -25,29 +25,28 @@ $interactionFollowUp[content?;ephemeral?;returnID?]
 
 ```javascript
 module.exports = [
-  {
-    name: "interactionFollowUp",
-    type: "interaction",
-    prototype: "slash",
-    code: `
+    {
+        name: "interactionFollowUp",
+        type: "interaction",
+        prototype: "slash",
+        code: `
   $interactionFollowUp[Bye, world!]
   $interactionDefer[true]
   `
-  },
+    }
 ];
 ```
 
-
 ```javascript
 module.exports = [
-  {
-    name: "interactionFollowUp",
-    type: "interaction",
-    prototype: "slash",
-    code: `
+    {
+        name: "interactionFollowUp",
+        type: "interaction",
+        prototype: "slash",
+        code: `
   $interactionFollowUp[Bye, world! {newEmbed:{title:Hello!}{description:This is an embed!}}]
   $interactionDefer[true]
   `
-  },
+    }
 ];
 ```

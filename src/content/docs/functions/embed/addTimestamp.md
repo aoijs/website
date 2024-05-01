@@ -24,8 +24,8 @@ This will create a embed with timestamp and description:
 
 ```javascript
 client.command({
-  name: "addTimestamp",
-  code: `
+    name: "addTimestamp",
+    code: `
   $description[Hello!]
   $addTimestamp[192839ms]
   `

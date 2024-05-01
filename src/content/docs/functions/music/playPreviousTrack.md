@@ -24,9 +24,9 @@ This will play the previous track:
 
 ```javascript
 client.command({
-  name: "playPreviousTrack",
-  code: `
+    name: "playPreviousTrack",
+    code: `
     $playPreviousTrack
-  `,
+  `
 });
 ```

@@ -24,8 +24,8 @@ This will delete the channel where the command was executed in:
 
 ```javascript
 client.command({
-  name: "deleteChannel",
-  code: `
+    name: "deleteChannel",
+    code: `
   $deleteChannel[$channelID]
   `
 });

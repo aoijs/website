@@ -24,8 +24,8 @@ This will return the channel type of the channel where you execute the command i
 
 ```javascript
 client.command({
-  name: "channelType",
-  code: `
+    name: "channelType",
+    code: `
   $channelType[$channelID]
   `
 });

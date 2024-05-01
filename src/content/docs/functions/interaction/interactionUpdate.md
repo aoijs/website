@@ -33,26 +33,26 @@ module.exports = [{
 
 ```js
 module.exports = [
-  {
-    name: "customID",
-    type: "interaction",
-    prototype: "button",
-    code: `
+    {
+        name: "customID",
+        type: "interaction",
+        prototype: "button",
+        code: `
   $interactionUpdate[Bye, world.]
   `
-  },
+    }
 ];
 ```
 
 ```js
 module.exports = [
-  {
-    name: "customID",
-    type: "interaction",
-    prototype: "button",
-    code: `
+    {
+        name: "customID",
+        type: "interaction",
+        prototype: "button",
+        code: `
   $interactionUpdate[Bye, world. {newEmbed:{title:Hello!}{description:This is an embed!}}]
   `
-  },
+    }
 ];
 ```

@@ -18,8 +18,8 @@ This will return the client's ID:
 
 ```javascript
 client.command({
-  name: "clientID",
-  code: `
+    name: "clientID",
+    code: `
   $clientID
   `
 });

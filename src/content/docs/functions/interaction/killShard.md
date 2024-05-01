@@ -24,8 +24,8 @@ This will kill the current shard ( requires **sharding** ):
 
 ```javascript
 client.command({
-  name: "killShard",
-  code: `
+    name: "killShard",
+    code: `
   $killShard[$shardID]
   `
 });

@@ -27,8 +27,8 @@ This will return the users of a specific role, make sure to replace roleID:
 
 ```javascript
 client.command({
-  name: "usersWithRole",
-  code: `
+    name: "usersWithRole",
+    code: `
   $usersWithRole[roleID;$guildID;id;, ]
   `
 });

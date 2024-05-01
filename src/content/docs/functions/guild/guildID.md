@@ -24,8 +24,8 @@ This will return your guild ID:
 
 ```javascript
 client.command({
-  name: "guildID",
-  code: `
+    name: "guildID",
+    code: `
   $guildID
   `
 });

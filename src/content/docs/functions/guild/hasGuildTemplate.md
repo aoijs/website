@@ -24,8 +24,8 @@ This will check if the given guild has a guild template created.
 
 ```javascript
 client.command({
-  name: "hasGuildTemplate",
-  code: `
+    name: "hasGuildTemplate",
+    code: `
   $hasGuildTemplate[$guildId]
   `
 });

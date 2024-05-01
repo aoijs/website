@@ -31,31 +31,31 @@ You will get ratelimited a lot and after their recent update, you can't run a bo
 <br />
 
 <Tracker
-  client:load
-  client:only="react"
-  items={[
-    {
-      id: "setting-up",
-      label: "Setting up (you're here!)",
-      percentageComplete: 0,
-      status: "current",
-      href: "#setting-up",
-    },
-    {
-      id: "editing-files",
-      label: "Editing Files",
-      percentageComplete: 0,
-      status: "unvisited",
-      href: "#editing-files",
-    },
-    {
-      id: "done",
-      label: "Complete 🎉",
-      percentageComplete: 0,
-      status: "unvisited",
-      href: "#setting-up",
-    },
-  ]}
+    client:load
+    client:only="react"
+    items={[
+        {
+            id: "setting-up",
+            label: "Setting up (you're here!)",
+            percentageComplete: 0,
+            status: "current",
+            href: "#setting-up"
+        },
+        {
+            id: "editing-files",
+            label: "Editing Files",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#editing-files"
+        },
+        {
+            id: "done",
+            label: "Complete 🎉",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#setting-up"
+        }
+    ]}
 />
 
 ## Setting up
@@ -77,14 +77,14 @@ You can also set, if applicable, the startup command to `bash` to use the consol
 
 3. Use the console to install and set up your server.
 
-   ```bash title="Installing packages"
-   npm init -y && npm install aoi.js
-   ```
+    ```bash title="Installing packages"
+    npm init -y && npm install aoi.js
+    ```
 
 4. Create a new project
-   ```bash title="Creating Project"
-   aoijs create --dir ./
-   ```
+    ```bash title="Creating Project"
+    aoijs create --dir ./
+    ```
 
 </Steps>
 
@@ -110,29 +110,29 @@ Do the same for your commands as you did with your `index.js` file.
 <br />
 
 <Tracker
-  client:load
-  client:only="react"
-  items={[
-    {
-      id: "setting-up",
-      label: "Setting up",
-      percentageComplete: 100,
-      status: "visited",
-      href: "#setting-up",
-    },
-    {
-      id: "editing-files",
-      label: "Editing Files",
-      percentageComplete: 100,
-      status: "visited",
-      href: "#editing-files",
-    },
-    {
-      id: "done",
-      label: "Complete 🎉",
-      percentageComplete: 0,
-      status: "current",
-      href: "#setting-up-termux",
-    },
-  ]}
+    client:load
+    client:only="react"
+    items={[
+        {
+            id: "setting-up",
+            label: "Setting up",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#setting-up"
+        },
+        {
+            id: "editing-files",
+            label: "Editing Files",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#editing-files"
+        },
+        {
+            id: "done",
+            label: "Complete 🎉",
+            percentageComplete: 0,
+            status: "current",
+            href: "#setting-up-termux"
+        }
+    ]}
 />

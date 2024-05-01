@@ -10,7 +10,6 @@ This requires aoi.invite installed.
 
 :::
 
-
 `$inviteURL` returns the URL of the invite.
 
 ## Usage
@@ -24,5 +23,5 @@ $inviteURL
 This returns the URL of the invite.
 
 ```javascript
-$inviteURL
+$inviteURL;
 ```

@@ -102,8 +102,8 @@ This will return the the amount of your commands:
 
 ```javascript
 client.command({
-  name: "commandsCount",
-  code: `
+    name: "commandsCount",
+    code: `
   $commandsCount
   `
 });

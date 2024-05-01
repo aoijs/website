@@ -10,7 +10,6 @@ This requires aoi.invite installed.
 
 :::
 
-
 `$inviteCode` returns the code of the invite.
 
 ## Usage
@@ -24,5 +23,5 @@ $inviteCode
 This returns the code of the invite.
 
 ```javascript
-$inviteCode
+$inviteCode;
 ```

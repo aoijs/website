@@ -14,9 +14,9 @@ $ceil[number]
 
 ## Parameters
 
-| Field  | Type                                                                                                | Description                         | Required |
-| ------ | --------------------------------------------------------------------------------------------------- | ----------------------------------- | :------: |
-| number | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The number that will be rounded up. |   true   |
+| Field  | Type                                                                                              | Description                         | Required |
+| ------ | ------------------------------------------------------------------------------------------------- | ----------------------------------- | :------: |
+| number | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The number that will be rounded up. |   true   |
 
 ## Example(s)
 
@@ -24,7 +24,7 @@ This will round `1.1` up to `2`:
 
 ```js
 client.command({
-  name: "ceil",
-  code: `$ceil[1.1]`
+    name: "ceil",
+    code: `$ceil[1.1]`
 });
 ```

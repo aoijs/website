@@ -18,8 +18,8 @@ This will restart your bot:
 
 ```javascript
 client.command({
-  name: "reboot",
-  code: `
+    name: "reboot",
+    code: `
     $reboot
     `
 });

@@ -24,8 +24,8 @@ This will return `Leref` from `$let`:
 
 ```javascript
 client.command({
-  name: "get",
-  code: `
+    name: "get",
+    code: `
 Aoi.js developer: $get[developer]
 $let[developer;Leref]
 `

@@ -12,38 +12,38 @@ import { FileTree, Steps } from "@astrojs/starlight/components";
 import Tracker from "../../../../components/ProgressTracker";
 
 <Tracker
-  client:load
-  client:only="react"
-  items={[
-    {
-      id: "understanding-variables",
-      label: "Understanding Variables (you're here!)",
-      percentageComplete: 0,
-      status: "current",
-      href: "#understanding-variables",
-    },
-    {
-      id: "using-variables",
-      label: "Using Variables",
-      percentageComplete: 0,
-      status: "unvisited",
-      href: "#using-variables",
-    },
-    {
-      id: "using-different-tables",
-      label: "Using different Tables",
-      percentageComplete: 0,
-      status: "unvisited",
-      href: "#using-different-tables",
-    },
-    {
-      id: "done",
-      label: "Complete 🎉",
-      percentageComplete: 0,
-      status: "unvisited",
-      href: "#_top",
-    },
-  ]}
+    client:load
+    client:only="react"
+    items={[
+        {
+            id: "understanding-variables",
+            label: "Understanding Variables (you're here!)",
+            percentageComplete: 0,
+            status: "current",
+            href: "#understanding-variables"
+        },
+        {
+            id: "using-variables",
+            label: "Using Variables",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#using-variables"
+        },
+        {
+            id: "using-different-tables",
+            label: "Using different Tables",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#using-different-tables"
+        },
+        {
+            id: "done",
+            label: "Complete 🎉",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#_top"
+        }
+    ]}
 />
 
 ## Understanding Variables
@@ -62,10 +62,10 @@ The default database is a JSON database, called aoi.db. Currently there's no way
 
 Variables have different types.
 
-- **Global Variables**: These variables are accessible from anywhere in the discord server.
-- **Guild Variables** & **User Variables**: These variables are accessible only in the guild where they were set.
-- **Message Variables**: These variables are accessible only in the message where they were set.
-- **Channel Variables**: These variables are accessible only in the channel where they were set.
+-   **Global Variables**: These variables are accessible from anywhere in the discord server.
+-   **Guild Variables** & **User Variables**: These variables are accessible only in the guild where they were set.
+-   **Message Variables**: These variables are accessible only in the message where they were set.
+-   **Channel Variables**: These variables are accessible only in the channel where they were set.
 
 ### Why use Variables?
 
@@ -76,38 +76,38 @@ If you do not wish to use variables you can always disable the database using th
 <br />
 
 <Tracker
-  client:load
-  client:only="react"
-  items={[
-    {
-      id: "understanding-variables",
-      label: "Understanding Variables",
-      percentageComplete: 100,
-      status: "visited",
-      href: "#understanding-variables",
-    },
-    {
-      id: "using-variables",
-      label: "Using Variables (you're here!)",
-      percentageComplete: 0,
-      status: "current",
-      href: "#using-variables",
-    },
-    {
-      id: "using-different-tables",
-      label: "Using different Tables",
-      percentageComplete: 0,
-      status: "unvisited",
-      href: "#using-different-tables",
-    },
-    {
-      id: "done",
-      label: "Complete 🎉",
-      percentageComplete: 0,
-      status: "unvisited",
-      href: "#_top",
-    },
-  ]}
+    client:load
+    client:only="react"
+    items={[
+        {
+            id: "understanding-variables",
+            label: "Understanding Variables",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#understanding-variables"
+        },
+        {
+            id: "using-variables",
+            label: "Using Variables (you're here!)",
+            percentageComplete: 0,
+            status: "current",
+            href: "#using-variables"
+        },
+        {
+            id: "using-different-tables",
+            label: "Using different Tables",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#using-different-tables"
+        },
+        {
+            id: "done",
+            label: "Complete 🎉",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#_top"
+        }
+    ]}
 />
 
 ## Using Variables
@@ -141,98 +141,98 @@ To use the database we first need to setup some things.
 3. The important part; adding variables.
    To add variables we use `<client>.variables()`, the `<client>` stands for your defined AoiClient.
 
-   In our case we defined it as `client`, so we would use `client.variables()`.
+    In our case we defined it as `client`, so we would use `client.variables()`.
 
-   :::tip[Where do I find my client?]
+    :::tip[Where do I find my client?]
 
-   Your client is where you defined your AoiClient, as in shown below.
+    Your client is where you defined your AoiClient, as in shown below.
 
-   In this case your client would be called `client`.
+    In this case your client would be called `client`.
 
-   ```js {3}
-   const { AoiClient } = require("aoi.js");
+    ```js {3}
+    const { AoiClient } = require("aoi.js");
 
-   const client = new AoiClient({...});
-   ```
+    const client = new AoiClient({...});
+    ```
 
-   :::
+    :::
 
-   ```js {17-19}
-   const { AoiClient } = require("aoi.js");
+    ```js {17-19}
+    const { AoiClient } = require("aoi.js");
 
-   const client = new AoiClient({
-     token: "Discord Bot Token",
-     prefix: "Discord Bot Prefix",
-     intents: ["MessageContent", "Guilds", "GuildMessages"],
-     events: ["onMessage", "onInteractionCreate"],
-     database: {
-       type: "aoi.db",
-       db: require("@akarui/aoi.db"),
-       dbType: "KeyValue",
-       tables: ["main"],
-       securityKey: "a-32-characters-long-string-here",
-     },
-   });
+    const client = new AoiClient({
+        token: "Discord Bot Token",
+        prefix: "Discord Bot Prefix",
+        intents: ["MessageContent", "Guilds", "GuildMessages"],
+        events: ["onMessage", "onInteractionCreate"],
+        database: {
+            type: "aoi.db",
+            db: require("@akarui/aoi.db"),
+            dbType: "KeyValue",
+            tables: ["main"],
+            securityKey: "a-32-characters-long-string-here"
+        }
+    });
 
-   client.variables({
-     warnings: 0,
-   });
-   ```
+    client.variables({
+        warnings: 0
+    });
+    ```
 
-   In this example we added a variable called `warnings` with a value of `0`. You can add more variables by separating them with a comma.
+    In this example we added a variable called `warnings` with a value of `0`. You can add more variables by separating them with a comma.
 
-   ```js startLineNumber=17 {3-4}
-   client.variables({
-     warnings: 0,
-     kicks: 0,
-     bans: 0,
-   });
-   ```
+    ```js startLineNumber=17 {3-4}
+    client.variables({
+        warnings: 0,
+        kicks: 0,
+        bans: 0
+    });
+    ```
 
 4. After doing this you should see a startup message including the database type.
    If you don't see this message, and you see an error, ensure you've followed the steps correctly.
 
-   | ![Picture showing startup message of aoi.db](https://i.imgur.com/gKLXyjq.png) |
-   | :---------------------------------------------------------------------------: |
-   |                   Picture showing startup message of aoi.db                   |
+    | ![Picture showing startup message of aoi.db](https://i.imgur.com/gKLXyjq.png) |
+    | :---------------------------------------------------------------------------: |
+    |                   Picture showing startup message of aoi.db                   |
 
 </Steps>
 
 <br />
 
 <Tracker
-  client:load
-  client:only="react"
-  items={[
-    {
-      id: "understanding-variables",
-      label: "Understanding Variables",
-      percentageComplete: 100,
-      status: "visited",
-      href: "#understanding-variables",
-    },
-    {
-      id: "using-variables",
-      label: "Using Variables",
-      percentageComplete: 100,
-      status: "visited",
-      href: "#using-variables",
-    },
-    {
-      id: "using-different-tables",
-      label: "Using different Tables (you're here!)",
-      percentageComplete: 0,
-      status: "current",
-      href: "#using-different-tables",
-    },
-    {
-      id: "done",
-      label: "Complete 🎉",
-      percentageComplete: 0,
-      status: "unvisited",
-      href: "#_top",
-    },
-  ]}
+    client:load
+    client:only="react"
+    items={[
+        {
+            id: "understanding-variables",
+            label: "Understanding Variables",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#understanding-variables"
+        },
+        {
+            id: "using-variables",
+            label: "Using Variables",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#using-variables"
+        },
+        {
+            id: "using-different-tables",
+            label: "Using different Tables (you're here!)",
+            percentageComplete: 0,
+            status: "current",
+            href: "#using-different-tables"
+        },
+        {
+            id: "done",
+            label: "Complete 🎉",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#_top"
+        }
+    ]}
 />
 
 ## Using different Tables
@@ -272,7 +272,7 @@ For this we would have to edit your database configuration in our index.js.
 
     2. Adding Variables to the tables.
        To assign variables to a specific table you can use the `table` option in the `variables` function.
-        
+
        ```js startLineNumber=17 {3-4}
        client.variables({
           warnings: 0,
@@ -285,40 +285,39 @@ For this we would have to edit your database configuration in our index.js.
 
   </Steps>
 
-
 <br />
 
 <Tracker
-  client:load
-  client:only="react"
-  items={[
-    {
-      id: "understanding-variables",
-      label: "Understanding Variables",
-      percentageComplete: 100,
-      status: "visited",
-      href: "#understanding-variables",
-    },
-    {
-      id: "using-variables",
-      label: "Using Variables",
-      percentageComplete: 100,
-      status: "visited",
-      href: "#using-variables",
-    },
-    {
-      id: "using-different-tables",
-      label: "Using different Tables",
-      percentageComplete: 100,
-      status: "visited",
-      href: "#using-different-tables",
-    },
-    {
-      id: "done",
-      label: "Complete 🎉 (you're here!)",
-      percentageComplete: 0,
-      status: "current",
-      href: "#_top",
-    },
-  ]}
+    client:load
+    client:only="react"
+    items={[
+        {
+            id: "understanding-variables",
+            label: "Understanding Variables",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#understanding-variables"
+        },
+        {
+            id: "using-variables",
+            label: "Using Variables",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#using-variables"
+        },
+        {
+            id: "using-different-tables",
+            label: "Using different Tables",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#using-different-tables"
+        },
+        {
+            id: "done",
+            label: "Complete 🎉 (you're here!)",
+            percentageComplete: 0,
+            status: "current",
+            href: "#_top"
+        }
+    ]}
 />

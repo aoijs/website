@@ -24,8 +24,8 @@ This will delete a guild template.
 
 ```javascript
 client.command({
-  name: "deleteGuildTemplate",
-  code: `
+    name: "deleteGuildTemplate",
+    code: `
   $deleteGuildTemplate[TEMPLATE CODE]
   `
 });

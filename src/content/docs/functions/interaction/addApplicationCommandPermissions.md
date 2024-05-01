@@ -25,8 +25,8 @@ ID ):
 
 ```javascript
 client.command({
-  name: "addApplicationCommandPermissions",
-  code: `
+    name: "addApplicationCommandPermissions",
+    code: `
     $addApplicationCommandPermissions[$guildID;ID;[
   {
     id: '$guildID',

@@ -26,8 +26,8 @@ ID ):
 
 ```javascript
 client.command({
-  name: "deleteMessage",
-  code: `
+    name: "deleteMessage",
+    code: `
   $deleteMessage[$get[id];$channelID]
   $let[id;$sendMessage[Hello!;true]]
   `

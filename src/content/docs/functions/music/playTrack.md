@@ -31,9 +31,9 @@ This will play a youtube video called "Silly Goose":
 
 ```javascript
 client.command({
-  name: "playTrack",
-  code: `
+    name: "playTrack",
+    code: `
     $playTrack[Silly Goose;youtube]
-  `,
+  `
 });
 ```

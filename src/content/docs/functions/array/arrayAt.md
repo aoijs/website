@@ -21,16 +21,16 @@ $arrayAt[name;index]
 
 ## Example(s)
 
-- This will return `Aoi.dashboard`:
+-   This will return `Aoi.dashboard`:
 
 ```javascript
 client.command({
-  name: "array-at",
-  code: `
+    name: "array-at",
+    code: `
   $arrayAt[Aoi;3]
   
   $createArray[Aoi;Aoi.music;Aoi.panel;Aoi.dashboard;Aoi]
   `
-  // Returns "Aoi.dashboard"
+    // Returns "Aoi.dashboard"
 });
 ```

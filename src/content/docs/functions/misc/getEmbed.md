@@ -53,8 +53,8 @@ This will return the description of an embed:
 
 ```javascript
 client.command({
-  name: "getEmbed",
-  code: `
+    name: "getEmbed",
+    code: `
 $getEmbed[$channelID;messageID;1;description] 
   ` // make sure to replace messageID with the actual message ID
 });

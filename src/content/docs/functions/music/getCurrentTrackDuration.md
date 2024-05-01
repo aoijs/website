@@ -24,9 +24,9 @@ This will return the current track duration in ms:
 
 ```javascript
 client.command({
-  name: "getCurrentTrackDuration",
-  code: `
+    name: "getCurrentTrackDuration",
+    code: `
     $getCurrentTrackDuration
-  `,
+  `
 });
 ```

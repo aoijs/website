@@ -24,8 +24,8 @@ This will return your Discord User Discriminator, for example `User#0000` (the f
 
 ```javascript
 client.command({
-  name: "discriminator",
-  code: `
+    name: "discriminator",
+    code: `
   $discriminator[$authorID] // your discriminator
   $discriminator[$clientID] // the bot's discriminator
   `

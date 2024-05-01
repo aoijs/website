@@ -25,8 +25,8 @@ This will return `false` as you're not banned in this guild:
 
 ```javascript
 client.command({
-  name: "isBanned",
-  code: `
+    name: "isBanned",
+    code: `
   $isBanned[$guildID;$authorID]
   `
 });

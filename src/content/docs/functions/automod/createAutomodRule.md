@@ -27,8 +27,8 @@ This will create a automod rule which blocks slur words:
 
 ```javascript
 client.command({
-  name: "createAutomodRule",
-  code: `
+    name: "createAutomodRule",
+    code: `
     $createAutomodRule[$guildid;Automod Rule;true;Creating a new rule!]
     $setAutomodPreset[Slurs]
     $setAutomodType[Keyword]

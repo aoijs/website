@@ -26,8 +26,8 @@ This will return your permissions in the channel where you execute the command:
 
 ```javascript
 client.command({
-  name: "channelPermissionsFor",
-  code: `
+    name: "channelPermissionsFor",
+    code: `
   $channelPermissionsFor[$authorID;$channelID;, ]
   `
 });

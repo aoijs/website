@@ -24,8 +24,8 @@ This will the following text readable:
 
 ```javascript
 client.command({
-  name: "reverse",
-  code: `
+    name: "reverse",
+    code: `
   $reverse[!snoitalutargnoc neht ,siht daer ot elba er'uoy fi ,desrever si txet sihT]
   `
 });

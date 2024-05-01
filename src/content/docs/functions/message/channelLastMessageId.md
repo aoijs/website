@@ -24,7 +24,7 @@ This will return the last message ID sent in the channel, if one was sent:
 
 ```js
 client.command({
-  name: "channelLastMessageID",
-  code: `$channelLastMessageID[$channelID]`
+    name: "channelLastMessageID",
+    code: `$channelLastMessageID[$channelID]`
 });
 ```

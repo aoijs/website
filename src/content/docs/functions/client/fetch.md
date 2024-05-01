@@ -44,8 +44,8 @@ This will display information about the initial command message using the `fetch
 
 ```javascript
 client.command({
-  name: "fetch",
-  code: `
+    name: "fetch",
+    code: `
   \`\`\`
   $fetch[message;$messageID;id]
   \`\`\`

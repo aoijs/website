@@ -25,8 +25,8 @@ This will return `503.70` as it's the nearest number to `503.6972`:
 
 ```javascript
 client.command({
-  name: "roundTenth",
-  code: `
+    name: "roundTenth",
+    code: `
   $roundTenth[503.6972]
   `
 });

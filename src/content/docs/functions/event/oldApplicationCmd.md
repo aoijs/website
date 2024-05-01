@@ -37,8 +37,8 @@ $oldApplicationCmd[option]
 
 ```js
 client.applicationCmdUpdateCommand({
-  channel: "channelid",
-  code: `
+    channel: "channelid",
+    code: `
     Slash command was updated!
 - New Name: $newApplicationCmd[name]
  - Old Name: $oldApplicationCmd[name]
@@ -47,4 +47,4 @@ client.applicationCmdUpdateCommand({
 });
 ```
 
-- This code will execute when **slash command is updated** (Modified)
+-   This code will execute when **slash command is updated** (Modified)

@@ -24,8 +24,8 @@ This will limit the command only to NSFW channels:
 
 ```javascript
 client.command({
-  name: "onlyNSFW",
-  code: `
+    name: "onlyNSFW",
+    code: `
     Ok.
     $onlyNSFW[You can't use that command here!]
     `

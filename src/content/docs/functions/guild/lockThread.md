@@ -26,8 +26,8 @@ This will lock a given thread:
 
 ```javascript
 client.command({
-  name: "lockThread",
-  code: `
+    name: "lockThread",
+    code: `
   $lockThread[$channelID;threadID;Example reason!]
   `
 });

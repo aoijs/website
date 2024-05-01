@@ -45,8 +45,8 @@ This will return `That's false!` as `1` doesn't equal `2`:
 
 ```javascript
 client.command({
-  name: "if",
-  code: `
+    name: "if",
+    code: `
     $if[1==2;That's true!;That's false!]
     `
 });
@@ -56,9 +56,9 @@ This will do the exact same just different usage of `$if` by using `$if: "old"`:
 
 ```javascript
 client.command({
-  name: "if",
-  $if: "old",
-  code: `
+    name: "if",
+    $if: "old",
+    code: `
     $if[1==2]
     That's true!
     $else

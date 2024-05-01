@@ -24,8 +24,8 @@ This will return the names of the guilds your bot is in and separate it by a com
 
 ```javascript
 client.command({
-  name: "guildNames",
-  code: `
+    name: "guildNames",
+    code: `
   $guildNames[, ]
   `
 });

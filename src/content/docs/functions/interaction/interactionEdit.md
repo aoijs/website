@@ -22,19 +22,23 @@ $interactionEdit[content;allowedMentions?]
 ## Example(s)
 
 ```javascript
-module.exports = [{
-    name: "interactionEdit",
-    type: "interaction",
-    prototype: "slash",
-    code: ` $interactionEdit[Bye, World!]`
-}];
+module.exports = [
+    {
+        name: "interactionEdit",
+        type: "interaction",
+        prototype: "slash",
+        code: ` $interactionEdit[Bye, World!]`
+    }
+];
 ```
 
 ```javascript
-module.exports = [{
-    name: "interactionEdit",
-    type: "interaction",
-    prototype: "slash",
-    code: ` $interactionEdit[Bye, World! {newEmbed:{title:Hello!}{description:This is an embed!}}]`
-}];
+module.exports = [
+    {
+        name: "interactionEdit",
+        type: "interaction",
+        prototype: "slash",
+        code: ` $interactionEdit[Bye, World! {newEmbed:{title:Hello!}{description:This is an embed!}}]`
+    }
+];
 ```

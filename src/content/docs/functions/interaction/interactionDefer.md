@@ -22,10 +22,10 @@ $interactionDefer[ephemeral]
 
 ```javascript
 client.command({
-  name: "exampleButton",
-  type: "interaction",
-  prototype: "button",
-  code: `
+    name: "exampleButton",
+    type: "interaction",
+    prototype: "button",
+    code: `
    $interactionFollowUp[This is the second message!] 
    $interactionFollowUp[This is the first message!] 
    $interactionDefer[true]`

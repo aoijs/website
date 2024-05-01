@@ -24,8 +24,8 @@ This will return either `true` or `false` depending on if you're executing the c
 
 ```javascript
 client.command({
-  name: "isDM",
-  code: `
+    name: "isDM",
+    code: `
   $isDM[$channelID]
   `
 });

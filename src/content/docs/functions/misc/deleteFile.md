@@ -24,8 +24,8 @@ This will delete your `index.js` (don't actually do that):
 
 ```javascript
 client.command({
-  name: "deleteFile",
-  code: `
+    name: "deleteFile",
+    code: `
   $deleteFile[./index.js]
   `
 });

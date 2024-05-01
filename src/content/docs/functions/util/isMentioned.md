@@ -24,8 +24,8 @@ This will return `true` as you were mentioned within the message:
 
 ```javascript
 client.command({
-  name: "isMentioned",
-  code: `
+    name: "isMentioned",
+    code: `
   $isMentioned[<@$authorID>]
   `
 });

@@ -25,8 +25,8 @@ This will return the message URL of the message which executed the command:
 
 ```javascript
 client.command({
-  name: "messageURL",
-  code: `
+    name: "messageURL",
+    code: `
   $messageURL[$messageID;$channelID]
   `
 });

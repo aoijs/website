@@ -26,7 +26,7 @@ This will change the value of the property "year" from `2023` to `2024` and retu
 
 ```js
 client.command({
-  name: `$getObjectProperty[obj;year]
+    name: `$getObjectProperty[obj;year]
   $editObjectProperty[obj;year;2024]
   $createObject[obj;{
     "year": "2023"

@@ -25,8 +25,8 @@ This will slice the message from the first message to the fifth message:
 
 ```javascript
 client.command({
-  name: "messageSlice",
-  code: `
+    name: "messageSlice",
+    code: `
   $messageSlice[1;5]
   `
 });

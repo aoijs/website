@@ -24,8 +24,8 @@ This will return the category ID of the text channel in where you execute the co
 
 ```javascript
 client.command({
-  name: "channelCategoryID",
-  code: `
+    name: "channelCategoryID",
+    code: `
   $channelCategoryID[$channelID]
   `
 });

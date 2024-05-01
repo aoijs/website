@@ -7,46 +7,42 @@ next: false
 prev: false
 ---
 
-import {
-  Tabs,
-  TabItem,
-  LinkCard,
-} from "@astrojs/starlight/components";
+import { Tabs, TabItem, LinkCard } from "@astrojs/starlight/components";
 import Tracker from "../../../components/ProgressTracker";
 
 <Tracker
-  client:load
-  client:only="react"
-  items={[
-    {
-      id: "creating-discord-bot",
-      label: "Creating your Bot (you're here!)",
-      percentageComplete: 0,
-      status: "current",
-      href: "#creating-your-discord-bot",
-    },
-    {
-      id: "inviting-discord-bot",
-      label: "Inviting your Bot",
-      percentageComplete: 0,
-      status: "unvisited",
-      href: "#inviting-your-bot",
-    },
-    {
-      id: "setting-up-bot",
-      label: "Setting up a Project",
-      percentageComplete: 0,
-      status: "unvisited",
-      href: "#",
-    },
-    {
-      id: "done",
-      label: "Complete 🎉",
-      percentageComplete: 0,
-      status: "unvisited",
-      href: "#setting-up-a-project",
-    },
-  ]}
+    client:load
+    client:only="react"
+    items={[
+        {
+            id: "creating-discord-bot",
+            label: "Creating your Bot (you're here!)",
+            percentageComplete: 0,
+            status: "current",
+            href: "#creating-your-discord-bot"
+        },
+        {
+            id: "inviting-discord-bot",
+            label: "Inviting your Bot",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#inviting-your-bot"
+        },
+        {
+            id: "setting-up-bot",
+            label: "Setting up a Project",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#"
+        },
+        {
+            id: "done",
+            label: "Complete 🎉",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#setting-up-a-project"
+        }
+    ]}
 />
 
 ## Creating your Discord Bot
@@ -88,38 +84,38 @@ Now you have created your Discord Bot. Next, we're going to allow some intents f
 <br />
 
 <Tracker
-  client:load
-  client:only="react"
-  items={[
-    {
-      id: "creating-discord-bot",
-      label: "Creating your Bot",
-      percentageComplete: 100,
-      status: "visited",
-      href: "#creating-your-discord-bot",
-    },
-    {
-      id: "inviting-discord-bot",
-      label: "Inviting your Bot (you're here!)",
-      percentageComplete: 0,
-      status: "current",
-      href: "#inviting-your-bot",
-    },
-    {
-      id: "setting-up-bot",
-      label: "Setting up a Project",
-      percentageComplete: 0,
-      status: "unvisited",
-      href: "#",
-    },
-    {
-      id: "done",
-      label: "Complete 🎉",
-      percentageComplete: 0,
-      status: "unvisited",
-      href: "#setting-up-a-project",
-    },
-  ]}
+    client:load
+    client:only="react"
+    items={[
+        {
+            id: "creating-discord-bot",
+            label: "Creating your Bot",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#creating-your-discord-bot"
+        },
+        {
+            id: "inviting-discord-bot",
+            label: "Inviting your Bot (you're here!)",
+            percentageComplete: 0,
+            status: "current",
+            href: "#inviting-your-bot"
+        },
+        {
+            id: "setting-up-bot",
+            label: "Setting up a Project",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#"
+        },
+        {
+            id: "done",
+            label: "Complete 🎉",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#setting-up-a-project"
+        }
+    ]}
 />
 
 Now we need to invite our newly created bot to our server!
@@ -134,8 +130,8 @@ Now we need to invite our newly created bot to our server!
 
 Check the following scopes:
 
-- `bot`
-- `application.commands`
+-   `bot`
+-   `application.commands`
 
 Preferably, you should also check the "`Administrator`" permission to avoid any permission issues.
 
@@ -162,38 +158,38 @@ You should now see your bot in your invited server. Next, we will set up a proje
 <br />
 
 <Tracker
-  client:load
-  client:only="react"
-  items={[
-    {
-      id: "creating-discord-bot",
-      label: "Creating your Bot",
-      percentageComplete: 100,
-      status: "visited",
-      href: "#creating-your-discord-bot",
-    },
-    {
-      id: "inviting-discord-bot",
-      label: "Inviting your Bot",
-      percentageComplete: 100,
-      status: "visited",
-      href: "#inviting-your-bot",
-    },
-    {
-      id: "setting-up-bot",
-      label: "Setting up a Project (you're here!)",
-      percentageComplete: 0,
-      status: "current",
-      href: "#setting-up-a-project",
-    },
-    {
-      id: "done",
-      label: "Complete 🎉",
-      percentageComplete: 0,
-      status: "unvisited",
-      href: "#setting-up-a-project",
-    },
-  ]}
+    client:load
+    client:only="react"
+    items={[
+        {
+            id: "creating-discord-bot",
+            label: "Creating your Bot",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#creating-your-discord-bot"
+        },
+        {
+            id: "inviting-discord-bot",
+            label: "Inviting your Bot",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#inviting-your-bot"
+        },
+        {
+            id: "setting-up-bot",
+            label: "Setting up a Project (you're here!)",
+            percentageComplete: 0,
+            status: "current",
+            href: "#setting-up-a-project"
+        },
+        {
+            id: "done",
+            label: "Complete 🎉",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#setting-up-a-project"
+        }
+    ]}
 />
 
 The last thing to do is getting our new bot up and running. But first, let's get our Discord Bot Token.
@@ -212,8 +208,8 @@ The last thing to do is getting our new bot up and running. But first, let's get
 
 Anyone who has access to your bot token can control your bot. Do not share your bot token with anyone.
 
-- Be sure to copy it as it will not be shown to you again.
-- For security purposes, tokens can only be viewed once, when created. If you forgot or lost access to your token, please regenerate a new one.
+-   Be sure to copy it as it will not be shown to you again.
+-   For security purposes, tokens can only be viewed once, when created. If you forgot or lost access to your token, please regenerate a new one.
 
 | ![Discord Developer Portal showing the "Token" section](https://i.imgur.com/hsJuhCw.png) |
 | :--------------------------------------------------------------------------------------: |
@@ -237,17 +233,17 @@ Using the Command Line is recommended for people without JavaScript knowledge.
 
 :::
 
-- [Using the Command Line](#using-the-command-line)
+-   [Using the Command Line](#using-the-command-line)
 
-- [Starting from Scratch](#starting-from-scratch)
+-   [Starting from Scratch](#starting-from-scratch)
 
 ### Using the Command Line
 
 1. Open a new terminal.
 
-   | ![Opening a new terminal](https://i.imgur.com/wzObbjA.png) |
-   | :--------------------------------------------------------: |
-   |                   Opening a new terminal                   |
+    | ![Opening a new terminal](https://i.imgur.com/wzObbjA.png) |
+    | :--------------------------------------------------------: |
+    |                   Opening a new terminal                   |
 
 2. Run the following command to create a new project:
 
@@ -279,11 +275,9 @@ If you get an error saying `npm is not recognized as an internal or external com
 
 ::::
 
-
-
 3. You will be asked to enter your bot token. Paste the token you copied earlier.
 
-- Head to the created index.js file, you should see a couple of placeholders.
+-   Head to the created index.js file, you should see a couple of placeholders.
 
 You need to replace the `DISCORD BOT TOKEN` with the token you copied earlier, and the `DISCORD BOT PREFIX` with the prefix you want to use for your bot.
 
@@ -389,31 +383,31 @@ Your file structure should look like this:
 
 7. We now need to add the base of your bot.
 
-- This is the code that will be in your `index.js` file.
-- You require the previously copied token!
-- You can ignore everything else for now besides the token.
+-   This is the code that will be in your `index.js` file.
+-   You require the previously copied token!
+-   You can ignore everything else for now besides the token.
 
 ```js title="index.js"
 const { AoiClient } = require("aoi.js");
 
 const client = new AoiClient({
-  token: "Discord Bot Token", // Here goes the Token you copied earlier!
-  prefix: "!", // Here goes the prefix you want to use for your bot!
-  intents: ["MessageContent", "Guilds", "GuildMessages"],
-  events: ["onMessage", "onInteractionCreate"],
-  database: {
-    type: "aoi.db",
-    db: require("@akarui/aoi.db"),
-    dbType: "KeyValue",
-    tables: ["main"],
-    securityKey: "a-32-characters-long-string-here",
-  },
+    token: "Discord Bot Token", // Here goes the Token you copied earlier!
+    prefix: "!", // Here goes the prefix you want to use for your bot!
+    intents: ["MessageContent", "Guilds", "GuildMessages"],
+    events: ["onMessage", "onInteractionCreate"],
+    database: {
+        type: "aoi.db",
+        db: require("@akarui/aoi.db"),
+        dbType: "KeyValue",
+        tables: ["main"],
+        securityKey: "a-32-characters-long-string-here"
+    }
 });
 
 // Ping Command which responds when doing "!ping"
 client.command({
-  name: "ping",
-  code: `Pong! $pingms`,
+    name: "ping",
+    code: `Pong! $pingms`
 });
 
 client.loadCommands("./commands");
@@ -434,38 +428,38 @@ To continue with this guide, follow this link.
 <br />
 
 <Tracker
-  client:load
-  client:only="react"
-  items={[
-    {
-      id: "creating-discord-bot",
-      label: "Creating your Bot",
-      percentageComplete: 100,
-      status: "visited",
-      href: "#creating-your-discord-bot",
-    },
-    {
-      id: "inviting-discord-bot",
-      label: "Inviting your Bot",
-      percentageComplete: 100,
-      status: "visited",
-      href: "#inviting-your-bot",
-    },
-    {
-      id: "setting-up-bot",
-      label: "Setting up a Project (you're here!)",
-      percentageComplete: 75,
-      status: "current",
-      href: "#setting-up-a-project",
-    },
-    {
-      id: "done",
-      label: "Complete 🎉",
-      percentageComplete: 0,
-      status: "unvisited",
-      href: "#setting-up-a-project",
-    },
-  ]}
+    client:load
+    client:only="react"
+    items={[
+        {
+            id: "creating-discord-bot",
+            label: "Creating your Bot",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#creating-your-discord-bot"
+        },
+        {
+            id: "inviting-discord-bot",
+            label: "Inviting your Bot",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#inviting-your-bot"
+        },
+        {
+            id: "setting-up-bot",
+            label: "Setting up a Project (you're here!)",
+            percentageComplete: 75,
+            status: "current",
+            href: "#setting-up-a-project"
+        },
+        {
+            id: "done",
+            label: "Complete 🎉",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#setting-up-a-project"
+        }
+    ]}
 />
 
 Now that we have the base of our bot, let's create our first command.
@@ -477,14 +471,14 @@ We will now use several functions to return the avatar of the user who used the 
 
 ```js title="avatar.js"
 module.exports = {
-  name: "avatar",
-  code: `
+    name: "avatar",
+    code: `
   $author[$username's Avatar!]
   $color[Random]
   $image[$authorAvatar]
   $footer[Requested by $username]
   $addTimestamp
-  `,
+  `
 };
 ```
 
@@ -511,36 +505,36 @@ When running `!avatar` or `!ping` in your server, you should see the bot respond
 <br />
 
 <Tracker
-  client:load
-  client:only="react"
-  items={[
-    {
-      id: "creating-discord-bot",
-      label: "Creating your Bot",
-      percentageComplete: 100,
-      status: "visited",
-      href: "#creating-your-discord-bot",
-    },
-    {
-      id: "inviting-discord-bot",
-      label: "Inviting your Bot",
-      percentageComplete: 100,
-      status: "visited",
-      href: "#inviting-your-bot",
-    },
-    {
-      id: "setting-up-bot",
-      label: "Setting up a Project",
-      percentageComplete: 100,
-      status: "visited",
-      href: "#setting-up-a-project",
-    },
-    {
-      id: "done",
-      label: "Complete 🎉",
-      percentageComplete: 0,
-      status: "current",
-      href: "#running-your-bot",
-    },
-  ]}
+    client:load
+    client:only="react"
+    items={[
+        {
+            id: "creating-discord-bot",
+            label: "Creating your Bot",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#creating-your-discord-bot"
+        },
+        {
+            id: "inviting-discord-bot",
+            label: "Inviting your Bot",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#inviting-your-bot"
+        },
+        {
+            id: "setting-up-bot",
+            label: "Setting up a Project",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#setting-up-a-project"
+        },
+        {
+            id: "done",
+            label: "Complete 🎉",
+            percentageComplete: 0,
+            status: "current",
+            href: "#running-your-bot"
+        }
+    ]}
 />

@@ -26,8 +26,8 @@ return your ID:
 
 ```javascript
 client.command({
-  name: "mentioned",
-  code: `
+    name: "mentioned",
+    code: `
   $mentioned[1;true]
   `
 });

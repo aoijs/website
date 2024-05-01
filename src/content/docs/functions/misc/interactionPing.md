@@ -20,21 +20,21 @@ This will return the latency of an interaction:
 
 ```javascript
 client.command({
-  name: "interactionPing",
-  code: `
+    name: "interactionPing",
+    code: `
  $addButton[1;Test;primary;testButton;false]
  Click me!
   `
 });
 
 module.exports = [
-  {
-    name: "testButton",
-    type: "interaction",
-    prototype: "button",
-    code: `
+    {
+        name: "testButton",
+        type: "interaction",
+        prototype: "button",
+        code: `
   $interactionUpdate[This took me: $interactionPing MS!]
   `
-  },
+    }
 ];
 ```

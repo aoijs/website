@@ -25,8 +25,8 @@ This will return a random [string](https://developer.mozilla.org/en-US/docs/Web/
 
 ```javascript
 client.command({
-  name: "randomString",
-  code: `
+    name: "randomString",
+    code: `
   $randomString[20]
   `
 });

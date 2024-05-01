@@ -25,8 +25,8 @@ This will send a message in the current channel:
 
 ```javascript
 client.command({
-  name: "sendMessage",
-  code: `
+    name: "sendMessage",
+    code: `
    $sendMessage[Hello!;false]  
   `
 });
@@ -36,8 +36,8 @@ This will send an embed in the current channel using parsers:
 
 ```javascript
 client.command({
-  name: "sendMessage",
-  code: `
+    name: "sendMessage",
+    code: `
    $sendMessage[Hello! {newEmbed:{title:Bonjour!}};false]  
   `
 });

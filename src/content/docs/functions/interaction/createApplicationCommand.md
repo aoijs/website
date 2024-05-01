@@ -50,8 +50,8 @@ This will create a slash command without options:
 
 ```js
 client.command({
-  name: "createApplicationCommand",
-  code: `
+    name: "createApplicationCommand",
+    code: `
   $createApplicationCommand[$guildID/global;example;slash command description!;true;true;slash]`
 });
 // Will create a slash commands without any user input, you can choose between global/$guildID to create a command globally or only for a specific guild.

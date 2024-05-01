@@ -22,8 +22,8 @@ $closeTicket[error?]
 
 ```javascript
 client.command({
-  name: "closeTicket",
-  code: `
+    name: "closeTicket",
+    code: `
   $closeTicket[Something went wrong!]
   `
 });

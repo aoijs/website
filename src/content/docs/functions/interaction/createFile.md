@@ -25,8 +25,8 @@ This will create a text file called **`example.txt`** with the text "This is an 
 
 ```javascript
 client.command({
-  name: "createFile",
-  code: `
+    name: "createFile",
+    code: `
   $createFile[This is an example!;example.txt]
   `
 });

@@ -26,8 +26,8 @@ This will add a comment to your main file:
 
 ```javascript
 client.command({
-  name: "appendFile",
-  code: `
+    name: "appendFile",
+    code: `
   $appendFile[./index.js;// Hello!]
   `
 });

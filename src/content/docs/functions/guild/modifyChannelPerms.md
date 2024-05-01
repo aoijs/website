@@ -34,8 +34,8 @@ This will allow `@everyone` to send messages and add reactions in the current ch
 
 ```javascript
 client.command({
-  name: "modifyChannelPerms",
-  code: `
+    name: "modifyChannelPerms",
+    code: `
   $modifyChannelPerms[$channelID;$guildID;+sendmessages;+addreactions]
   `
 });

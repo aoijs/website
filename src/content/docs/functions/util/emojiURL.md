@@ -24,8 +24,8 @@ This will return the URL of an emoji:
 
 ```javascript
 client.command({
-  name: "emojiURL",
-  code: `
+    name: "emojiURL",
+    code: `
   $emojiURL[emojiResolver]
   `
 });

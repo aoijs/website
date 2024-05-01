@@ -10,7 +10,6 @@ This requires aoi.invite installed.
 
 :::
 
-
 `$inviteChannelID` returns the ID of the channel the invite is for.
 
 ## Usage
@@ -24,5 +23,5 @@ $inviteChannelID
 This returns the ID of the channel the invite is for.
 
 ```javascript
-$inviteChannelID
+$inviteChannelID;
 ```

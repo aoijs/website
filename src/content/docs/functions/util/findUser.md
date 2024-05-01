@@ -25,8 +25,8 @@ This will search for a user called Ferel, if it wont find the user then it'll re
 
 ```javascript
 client.command({
-  name: "findUser",
-  code: `
+    name: "findUser",
+    code: `
   $findUser[Ferel;true]
   `
 });

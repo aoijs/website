@@ -47,9 +47,9 @@ This will add `nightCore` and `bassBoost` filters:
 
 ```javascript
 client.command({
-  name: "addFilter",
-  code: `
+    name: "addFilter",
+    code: `
     $addFilter[{"nightCore": "1", "bassBoost": "0.3"}]
-  `,
+  `
 });
 ```

@@ -74,8 +74,8 @@ have any of those:
 
 ```javascript
 client.command({
-  name: "hasAnyPerm",
-  code: `
+    name: "hasAnyPerm",
+    code: `
   $hasAnyPerm[$guildID;$authorID;kick;managemessages]
   `
 });

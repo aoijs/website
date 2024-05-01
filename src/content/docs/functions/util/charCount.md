@@ -25,8 +25,8 @@ This will return `77` as there are 77 characters in this text:
 
 ```javascript
 client.command({
-  name: "charCount",
-  code: `
+    name: "charCount",
+    code: `
   $charCount[aoi.js is one of the simplest and easiest ways to create your own Discord Bot]
   `
 });
@@ -36,8 +36,8 @@ This will search for the word matching "e", and return `2` as the character occu
 
 ```javascript
 client.command({
-  name: "charCount",
-  code: `
+    name: "charCount",
+    code: `
   $charCount[Hello, aoi.js is great!;e]
   `
 });

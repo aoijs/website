@@ -14,15 +14,15 @@ $editButton[customId;label;style;disabled?;emoji?;messageId?;channelId?]
 
 ## Parameters
 
-| Field       | Type                                                                                                | Description                                                                                                              | Required |
-| ----------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | :------: |
-| customId | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The custom ID of the button you wish to edit.                                                                            |   true   |
-| label       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The text that will be displayed on the button as label.                                                                  |   true   |
-| style       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The button **[style](https://discord.com/developers/docs/interactions/message-components#button-object-button-styles)**. |   true   |
-| disabled?   | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Make the button unusable/disabled? <br /> 1. **true** <br /> 2. **false** (default)                                     |  false   |
-| emoji?      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The emoji displayed in the button.                                                                                       |  false   |
-| messageId?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The Id of the message.                                                                                                   |   true   |
-| channelId?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The channel Id of where the message is located.                                                                          |   true   |
+| Field      | Type                                                                                                | Description                                                                                                              | Required |
+| ---------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | :------: |
+| customId   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The custom ID of the button you wish to edit.                                                                            |   true   |
+| label      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The text that will be displayed on the button as label.                                                                  |   true   |
+| style      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The button **[style](https://discord.com/developers/docs/interactions/message-components#button-object-button-styles)**. |   true   |
+| disabled?  | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Make the button unusable/disabled? <br /> 1. **true** <br /> 2. **false** (default)                                      |  false   |
+| emoji?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The emoji displayed in the button.                                                                                       |  false   |
+| messageId? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The Id of the message.                                                                                                   |   true   |
+| channelId? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The channel Id of where the message is located.                                                                          |   true   |
 
 <div class="details">
   <details open>
@@ -92,8 +92,8 @@ This adds a primary and link button to the bot's message:
 
 ```javascript
 client.command({
-  name: "editButton",
-  code: `
+    name: "editButton",
+    code: `
     Hello!
     $addButton[1;Example Button!;primary;exampleButton;false;💔]
   `
@@ -102,13 +102,13 @@ client.command({
 
 ```javascript
 module.exports = [
-  {
-    name: "exampleButton",
-    type: "interaction",
-    prototype: "button",
-    code: `
+    {
+        name: "exampleButton",
+        type: "interaction",
+        prototype: "button",
+        code: `
     $editButton[exampleButton;New Button!;secondary;true;😀;$interactionData[message.id];$interactionData[channel.id]]
     $interactionReply[The button just changed!]`
-  },
+    }
 ];
 ```

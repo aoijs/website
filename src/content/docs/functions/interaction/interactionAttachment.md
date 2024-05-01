@@ -14,9 +14,9 @@ $interactionAttachment[option]
 
 ## Parameters
 
-| Field  | Type                                                                                                | Description                        | Required |
-| ------ | --------------------------------------------------------------------------------------------------- | ---------------------------------- | :------: |
-| option | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The name of the attachment option. |   true   |
+| Field  | Type                                                                                              | Description                        | Required |
+| ------ | ------------------------------------------------------------------------------------------------- | ---------------------------------- | :------: |
+| option | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The name of the attachment option. |   true   |
 
 ## Example(s)
 
@@ -30,10 +30,11 @@ $createApplicationCommand[$guildID;exampleslash;Simple example slash command.;tr
     "type": 11
 }]]
 ```
+
 ```js
 client.interactionCommand({
-  name: "exampleslash",
-  prototype: "slash",
-  code: `$interactionReply[Your attachment: $interactionAttachment[attachment]]`
+    name: "exampleslash",
+    prototype: "slash",
+    code: `$interactionReply[Your attachment: $interactionAttachment[attachment]]`
 });
 ```

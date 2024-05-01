@@ -32,4 +32,5 @@ client.command({
     $setAutomodExemptRoles[$findRole[Support]]
     $setAutomodActions[BlockMessage;$channelId;60;You tried to say slurs, you got blocked!]  
     `
-})
+});
+```

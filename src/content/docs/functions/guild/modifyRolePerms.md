@@ -34,8 +34,8 @@ This will edit a existing role's permission and allow the "@everyone" role to se
 
 ```javascript
 client.command({
-  name: "modifyRolePerms",
-  code: `
+    name: "modifyRolePerms",
+    code: `
   $modifyRolePerms[$guildID;$guildID;+sendmessages;+addreactions]"
   }]
   `

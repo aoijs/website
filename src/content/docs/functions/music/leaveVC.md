@@ -30,9 +30,9 @@ This will make your bot leave the current voice channel in the current guild (if
 
 ```javascript
 client.command({
-  name: "leaveVC",
-  code: `
+    name: "leaveVC",
+    code: `
     $leaveVC[$guildID]
-  `,
+  `
 });
 ```

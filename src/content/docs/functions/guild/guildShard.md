@@ -26,8 +26,8 @@ This will return the amount guilds of a shard:
 
 ```javascript
 client.command({
-  name: "guildShard",
-  code: `
+    name: "guildShard",
+    code: `
   $guildShard[name;, ;$shardID]
   `
 });

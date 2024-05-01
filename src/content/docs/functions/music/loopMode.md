@@ -30,9 +30,9 @@ This will set the loop mode to the current track:
 
 ```javascript
 client.command({
-  name: "loopMode",
-  code: `
+    name: "loopMode",
+    code: `
     $loopMode[song]
-  `,
+  `
 });
 ```

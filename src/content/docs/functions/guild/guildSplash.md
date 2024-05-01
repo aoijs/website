@@ -27,8 +27,8 @@ This will return the guild's invite background (if unlocked):
 
 ```javascript
 client.command({
-  name: "guildSplash",
-  code: `
+    name: "guildSplash",
+    code: `
   $guildSplash[$guildID]
   `
 });

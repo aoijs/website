@@ -24,8 +24,8 @@ This will return `true` your guild exists:
 
 ```javascript
 client.command({
-  name: "guildExists",
-  code: `
+    name: "guildExists",
+    code: `
   $guildExists[$guildID]
   `
 });

@@ -14,8 +14,8 @@ $clientOwnerIDs[separator?]
 
 ## Parameters
 
-| Field      | Type                                                                                              | Description                                 | Required |
-| ---------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------- | :------: |
+| Field      | Type                                                                                              | Description                                | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------ | :------: |
 | separator? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Separator to split user IDs. (default: ``) |  false   |
 
 ## Example(s)
@@ -24,8 +24,8 @@ This will return your user ID most likely:
 
 ```javascript
 client.command({
-  name: "clientOwnerIDs",
-  code: `
+    name: "clientOwnerIDs",
+    code: `
   $clientOwnerIDs
   `
 });

@@ -24,8 +24,8 @@ This will add the given emojis to the author's response ("Hello!"):
 
 ```javascript
 client.command({
-  name: "addCmdReactions",
-  code: `
+    name: "addCmdReactions",
+    code: `
 Hello!
 $addCmdReactions[🧡;❤]
   `

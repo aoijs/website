@@ -24,15 +24,15 @@ This will send "Hello!" after 10 seconds in the command execution channel:
 
 ```javascript
 client.command({
-  name: "setTimeout",
-  code: `
+    name: "setTimeout",
+    code: `
     $setTimeout[timeoutCommand;10s;{"channelID": "$channelID", "authorID": "$authorID"};false]
     `
 });
 
 client.timeoutCommand({
-  name: "timeoutCommand",
-  code: `
+    name: "timeoutCommand",
+    code: `
     $channelSendMessage[$timeoutData[channelID];Hello, <@$timeoutData[authorID]>!]
     `
 });

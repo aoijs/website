@@ -20,12 +20,12 @@ $setAutomodType[type]
 
 ### Automod Types
 
-| Type          | Id   |
-| :------------ | :--- |
-| Keyword       | 1    |
-| Spam          | 3    |
-| KeywordPreset | 4    |
-| MentionSpam   | 5    |
+| Type          | Id  |
+| :------------ | :-- |
+| Keyword       | 1   |
+| Spam          | 3   |
+| KeywordPreset | 4   |
+| MentionSpam   | 5   |
 
 ## Example(s)
 
@@ -40,4 +40,5 @@ client.command({
     $setAutomodType[Keyword]
     $setAutomodActions[BlockMessage;$channelId;60;You tried to say slurs, you got blocked!]  
     `
-})
+});
+```

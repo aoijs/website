@@ -22,8 +22,8 @@ $deleteObject[objectName]
 
 ```javascript
 client.command({
-  name: "deleteObject",
-  code: `
+    name: "deleteObject",
+    code: `
   $deleteObject[Object Name]
   $getObjectProperty[Object Name;Leref]
   $createObject[Object Name;{

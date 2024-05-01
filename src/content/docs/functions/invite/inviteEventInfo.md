@@ -20,8 +20,8 @@ $inviteEventInfo[field[options]]
 
 ## Parameters
 
-| Parameter | Description | Type   | Required |
-| --------- | ----------- | ------ | -------- |
+| Parameter | Description | Type                                                                                              | Required |
+| --------- | ----------- | ------------------------------------------------------------------------------------------------- | -------- |
 | options   | The options | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | false    |
 
 ## Example(s)

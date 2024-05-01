@@ -27,8 +27,8 @@ This will return a random number between `20` and `250`:
 
 ```javascript
 client.command({
-  name: "random",
-  code: `
+    name: "random",
+    code: `
   $random[20;250]
   `
 });
@@ -40,8 +40,8 @@ This will return a random decimal number between `25` and `50`:
 
 ```javascript
 client.command({
-  name: "random",
-  code: `
+    name: "random",
+    code: `
   $random[25;50;true]  
   `
 });
@@ -51,8 +51,8 @@ This will return a random number between `45` and `64` and the second `$random` 
 
 ```javascript
 client.command({
-  name: "random",
-  code: `
+    name: "random",
+    code: `
   $random[45;65;false;true]
   $random[45;65;false;true]
   `

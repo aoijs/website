@@ -10,7 +10,7 @@ og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/8.p
 
 ## Permissions
 
-:::info 
+:::info
 
 The `all` permission is a special permission that is used to grant all permissions, this does not exist within discord.js
 
@@ -18,61 +18,61 @@ The `all` permission is a special permission that is used to grant all permissio
 
 ### General Permissions
 
-- AddReactions
-- Administrator
-- ChangeNickname
-- CreateInvite
-- UseEmbeddedActivities
-- KickMembers
-- BanMembers
-- ManageChannels
-- ManageGuildExpressions (formally known as `ManageEmojisAndStickers`)
-- ManageGuild
-- ManageEvents
-- ManageMessages
-- ManageNicknames
-- ManageRoles
-- ManageWebhooks
-- ManageThreads
-- MentionEveryone
-- ModerateMembers
-- ViewAuditLog
-- ViewGuildInsights
-- ViewCreatorMonetizationAnalytics *
+-   AddReactions
+-   Administrator
+-   ChangeNickname
+-   CreateInvite
+-   UseEmbeddedActivities
+-   KickMembers
+-   BanMembers
+-   ManageChannels
+-   ManageGuildExpressions (formally known as `ManageEmojisAndStickers`)
+-   ManageGuild
+-   ManageEvents
+-   ManageMessages
+-   ManageNicknames
+-   ManageRoles
+-   ManageWebhooks
+-   ManageThreads
+-   MentionEveryone
+-   ModerateMembers
+-   ViewAuditLog
+-   ViewGuildInsights
+-   ViewCreatorMonetizationAnalytics \*
 
 ### Text Channel
 
-- CreatePublicThreads
-- CreatePrivateThreads
-- ReadMessageHistory
-- ViewChannel
-- AttachFiles
-- EmbedLinks
-- SendMessages
-- SendTtsMessages
-- SendVoiceMessages
-- SendMessagesInThreads
-- UseExternalEmojis
-- UseExternalSticker
-- UseApplicationCommands
+-   CreatePublicThreads
+-   CreatePrivateThreads
+-   ReadMessageHistory
+-   ViewChannel
+-   AttachFiles
+-   EmbedLinks
+-   SendMessages
+-   SendTtsMessages
+-   SendVoiceMessages
+-   SendMessagesInThreads
+-   UseExternalEmojis
+-   UseExternalSticker
+-   UseApplicationCommands
 
 ### Voice Channel Permissions
 
-- Connect
-- Speak
-- PrioritySpeaker
-- Stream
-- UseVAD
-- Mute
-- Deafen
-- MoveMembers
-- UseSoundboard
-- UseExternalSounds
-- RequestToSpeak
+-   Connect
+-   Speak
+-   PrioritySpeaker
+-   Stream
+-   UseVAD
+-   Mute
+-   Deafen
+-   MoveMembers
+-   UseSoundboard
+-   UseExternalSounds
+-   RequestToSpeak
 
 :::tip
 
-* These permissions require the owner account to use two-factor authentication when used on a guild that has server-wide 2FA enabled.
+-   These permissions require the owner account to use two-factor authentication when used on a guild that has server-wide 2FA enabled.
 
 :::
 
@@ -80,10 +80,10 @@ The `all` permission is a special permission that is used to grant all permissio
 
 Applying permissions may seem intuitive at first, but there are some hidden restrictions that prevent a bot from performing certain inappropriate actions based on the bot's top role versus its target's top role. The highest role of a robot or user is the role with the largest position value in the guild. The default role `@everyone` starts from 0. Permissions follow a hierarchy with the following rules:
 
-- Bots can assign roles to other users with positions lower than their top role.
-- Bots can edit roles with a lower position than their highest role, but can only grant permissions to roles they own.
-– Bots can only rank characters lower than their highest character.
-– Bots can only kick, ban, and edit usernames whose highest role is lower than the bot’s highest role.
+-   Bots can assign roles to other users with positions lower than their top role.
+-   Bots can edit roles with a lower position than their highest role, but can only grant permissions to roles they own.
+    – Bots can only rank characters lower than their highest character.
+    – Bots can only kick, ban, and edit usernames whose highest role is lower than the bot’s highest role.
 
 Otherwise, permissions are not bound by the role hierarchy. For example, a user has two roles: A and B. A Denying ViewChannel permission for the `#coolchannel` channel. B Grant ViewChannel permission to the same `#coolchannel` channel. Regardless of role title, users are likely to end up seeing the `#coolchannel` channel.
 

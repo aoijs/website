@@ -18,8 +18,8 @@ This will return the creator's Avatar:
 
 ```javascript
 client.command({
-  name: "lerefAvatar",
-  code: `
+    name: "lerefAvatar",
+    code: `
     $lerefAvatar
     `
 });

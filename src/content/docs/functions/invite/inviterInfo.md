@@ -20,8 +20,8 @@ $inviterInfo[field[userId];field[guildId];field[options]]
 
 ## Parameters
 
-| Parameter | Description    | Type   | Required |
-| --------- | -------------- | ------ | -------- |
+| Parameter | Description    | Type                                                                                              | Required |
+| --------- | -------------- | ------------------------------------------------------------------------------------------------- | -------- |
 | userId    | The user's id  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | false    |
 | guildId   | The guild's id | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | false    |
 | options   | The options    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | false    |

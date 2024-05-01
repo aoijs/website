@@ -25,8 +25,8 @@ This will check if a role called `Server Booster` is managed by Discord and retu
 
 ```javascript
 client.command({
-  name: "isRoleManaged",
-  code: `
+    name: "isRoleManaged",
+    code: `
   $isRoleManaged[$findRole[Server Booster];$guildID]
   `
 });

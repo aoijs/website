@@ -24,8 +24,8 @@ This will stop from escaping certain characters:
 
 ```javascript
 client.command({
-  name: "nonEscape",
-  code: `
+    name: "nonEscape",
+    code: `
   $nonEscape[Hello [;)]]
   `
 });

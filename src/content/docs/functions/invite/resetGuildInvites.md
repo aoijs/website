@@ -20,8 +20,8 @@ $resetGuildInvites[field[guildId]]
 
 ## Parameters
 
-| Parameter | Description    | Type   | Required |
-| --------- | -------------- | ------ | -------- |
+| Parameter | Description    | Type                                                                                              | Required |
+| --------- | -------------- | ------------------------------------------------------------------------------------------------- | -------- |
 | guildId   | The guild's id | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | false    |
 
 ## Example(s)
@@ -29,8 +29,8 @@ $resetGuildInvites[field[guildId]]
 Resets the invites of a guild
 
 ```javascript
-$resetGuildInvites
+$resetGuildInvites;
 //or
 
-$resetGuildInvites[$guildID]
+$resetGuildInvites[$guildID];
 ```

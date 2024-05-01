@@ -26,8 +26,8 @@ This will create an embed with description and author title:
 
 ```javascript
 client.command({
-  name: "author",
-  code: `
+    name: "author",
+    code: `
   $author[Hello!;$userAvatar[$authorID]]
   $description[Embed with author!]
   `

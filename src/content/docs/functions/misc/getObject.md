@@ -25,8 +25,8 @@ This will return the object created in `$createObject`:
 
 ```javascript
 client.command({
-  name: "getObject",
-  code: `
+    name: "getObject",
+    code: `
     $getObject[Object Name;true]
     $createObject[Object Name;{"Leref": "Ferel"}]
     `

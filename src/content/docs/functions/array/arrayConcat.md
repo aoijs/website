@@ -25,8 +25,8 @@ This will return `This is a test` as it concats array 1 and 2:
 
 ```javascript
 client.command({
-  name: "arrayConcat",
-  code: `
+    name: "arrayConcat",
+    code: `
   $arrayConcat[ ;array1;array2]
   $createArray[array1;This is]
   $createArray[array2;a test]

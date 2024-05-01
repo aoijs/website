@@ -25,8 +25,8 @@ This will calculate the root of 7:
 
 ```js
 client.command({
-  name: "root",
-  code: `
+    name: "root",
+    code: `
   $root[7;2]` // returns: 2.6457513110645907
 });
 ```

@@ -25,8 +25,8 @@ This will check if a role called `Owner` is hoisted in your server:
 
 ```javascript
 client.command({
-  name: "isHoisted",
-  code: `
+    name: "isHoisted",
+    code: `
   $isHoisted[$findRole[Owner];$guildID]
   `
 });

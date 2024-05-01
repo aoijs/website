@@ -30,8 +30,8 @@ your main file)
 
 ```javascript
 client.command({
-  name: "createSlashCommand",
-  code: `
+    name: "createSlashCommand",
+    code: `
   $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;true;slash;[{
   "name": "option",
   "description": "test",
@@ -47,9 +47,9 @@ Interaction Command:
 
 ```javascript
 client.command({
-  name: "test",
-  prototype: "slash",
-  code: `
+    name: "test",
+    prototype: "slash",
+    code: `
   $if[$isAutocomplete==true]
   $autoCompleteRespond[First option;You selected the first option, therefore I'm responding with this!;Second option;You selected the first second, therefore I'm responding with this!]
   $else
@@ -66,8 +66,8 @@ your main file)
 
 ```javascript
 client.command({
-  name: "createSlashCommand",
-  code: `
+    name: "createSlashCommand",
+    code: `
   $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;true;slash;[{
   "name": "option",
   "description": "test",
@@ -88,10 +88,10 @@ Interaction Command:
 
 ```javascript
 client.command({
-  name: "test",
-  prototype: "slash",
-  $if: "old",
-  code: `
+    name: "test",
+    prototype: "slash",
+    $if: "old",
+    code: `
   $if[$isAutocomplete==true]
   $autoCompleteRespond[[{ 
     "name" : "First Option",

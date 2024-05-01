@@ -27,8 +27,8 @@ This will return the remaining cooldown of the "getCooldownTime" command:
 
 ```javascript
 client.command({
-  name: "getCooldownTime",
-  code: `
+    name: "getCooldownTime",
+    code: `
     $cooldown[2m;]
     $getCooldownTime[2m;user;getCooldownTime;$authorID]
     `

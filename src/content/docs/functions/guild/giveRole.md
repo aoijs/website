@@ -29,8 +29,8 @@ This will assign you a role called "Admin" (if present):
 
 ```javascript
 client.command({
-  name: "giveRole",
-  code: `
+    name: "giveRole",
+    code: `
   $giveRole[$guildID;$authorID;$findRole[Admin];Some reason.]
   `
 });

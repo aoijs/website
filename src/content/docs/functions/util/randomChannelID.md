@@ -95,8 +95,8 @@ This will return a random channel ID of your guild:
 
 ```javascript
 client.command({
-  name: "randomChannelID",
-  code: `
+    name: "randomChannelID",
+    code: `
   <#$randomChannelID[$guildID;all]>
   `
 });

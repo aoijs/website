@@ -26,8 +26,8 @@ This will return the name of your highest hoisted role:
 
 ```javascript
 client.command({
-  name: "hoistedRole",
-  code: `
+    name: "hoistedRole",
+    code: `
   $hoistedRole[$authorID;$guildID;name]
   `
 });

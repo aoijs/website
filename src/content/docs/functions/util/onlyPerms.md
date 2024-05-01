@@ -27,8 +27,8 @@ This will limit the command to work only when the user has administrator permiss
 
 ```javascript
 client.command({
-  name: "onlyPerms",
-  code: `
+    name: "onlyPerms",
+    code: `
     Ok.
     $onlyPerms[administrator;You don't have administrator permissions!]
     `

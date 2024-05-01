@@ -30,8 +30,8 @@ As you can see, one condition is `false`.
 
 ```js
 client.command({
-  name: "and",
-  code: `
+    name: "and",
+    code: `
   $and[$authorId==$authorId;1>=1;$packageVersion==1.0.0]` // returns: false
 });
 ```
@@ -48,8 +48,8 @@ As you can see, all conditions are `true`.
 
 ```js
 client.command({
-  name: "and",
-  code: `
+    name: "and",
+    code: `
   $and[$authorId==$authorId;1>=1;$packageVersion==6.7.0]` // returns: true
 });
 ```

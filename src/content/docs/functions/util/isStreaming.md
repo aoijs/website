@@ -25,8 +25,8 @@ This will return either `true` or `false` depending on if you're streaming (voic
 
 ```javascript
 client.command({
-  name: "isStreaming",
-  code: `
+    name: "isStreaming",
+    code: `
   $isStreaming[$authorID;$guildID]
   `
 });

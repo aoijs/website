@@ -26,8 +26,8 @@ This will return your banner (if any):
 
 ```javascript
 client.command({
-  name: "authorBanner",
-  code: `
+    name: "authorBanner",
+    code: `
   $authorBanner[2048;true;webp]
   `
 });

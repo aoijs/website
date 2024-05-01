@@ -30,8 +30,8 @@ As you can see, one condition is `false`.
 
 ```js
 client.command({
-  name: "or",
-  code: `
+    name: "or",
+    code: `
   $or[$authorId==$authorId;1>=1;$packageVersion==1.0.0]` // returns: true
 });
 ```
@@ -48,8 +48,8 @@ As you can see, all conditions are `false`.
 
 ```js
 client.command({
-  name: "or",
-  code: `
+    name: "or",
+    code: `
   $or[$authorId==$channelId;1!=1;$packageVersion==1.0.0]` // returns: false
 });
 ```

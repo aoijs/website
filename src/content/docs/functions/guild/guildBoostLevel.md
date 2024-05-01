@@ -24,8 +24,8 @@ This will return the boost level of a specific guild:
 
 ```javascript
 client.command({
-  name: "guildBoostLevel",
-  code: `
+    name: "guildBoostLevel",
+    code: `
   $guildBoostLevel[$guildID]
   `
 });

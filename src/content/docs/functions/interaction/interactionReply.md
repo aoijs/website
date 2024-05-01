@@ -25,9 +25,9 @@ $interactionReply[content?;allowedMentions?;ephemeral?;returnID?]
 
 ```javascript
 client.interactionCommand({
-  name: "interactionReply",
-  prototype: "slash", // button/selectMenu/slash
-  code: `
+    name: "interactionReply",
+    prototype: "slash", // button/selectMenu/slash
+    code: `
   $interactionReply[Hello, world!;everyone;false;false]
   `
 });
@@ -35,9 +35,9 @@ client.interactionCommand({
 
 ```javascript
 client.interactionCommand({
-  name: "interactionReply",
-  prototype: "slash", // button/selectMenu/slash
-  code: `
+    name: "interactionReply",
+    prototype: "slash", // button/selectMenu/slash
+    code: `
   $interactionReply[Hello, world! {newEmbed:{title:Hello!}{description:This is an embed!}};everyone;false;false]
   `
 });

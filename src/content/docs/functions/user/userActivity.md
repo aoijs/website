@@ -25,8 +25,8 @@ This will return your current Activity:
 
 ```javascript
 client.command({
-  name: "userActivity",
-  code: `
+    name: "userActivity",
+    code: `
   $userActivity[$guildID;$authorID]
   `
 });

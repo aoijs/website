@@ -82,8 +82,8 @@ This will create a new text channel called "aoijs":
 
 ```javascript
 client.command({
-  name: "createChannel",
-  code: `
+    name: "createChannel",
+    code: `
     $createChannel[$guildID;aoijs;Text;false]
   `
 });

@@ -24,8 +24,8 @@ This will return `true` or `false` depending on if the channel you're executing 
 
 ```javascript
 client.command({
-  name: "isChannelManageable",
-  code: `
+    name: "isChannelManageable",
+    code: `
   $isChannelManageable[$channelID]
   `
 });

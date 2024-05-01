@@ -24,8 +24,8 @@ This will return the channel topic of the channel where you execute the command 
 
 ```javascript
 client.command({
-  name: "channelTopic",
-  code: `
+    name: "channelTopic",
+    code: `
   $channelTopic[$channelID]
   `
 });

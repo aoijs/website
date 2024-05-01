@@ -26,8 +26,8 @@ You can change the timezone using `$timezone` like the following:
 
 ```javascript
 client.command({
-  name: "time",
-  code: `
+    name: "time",
+    code: `
     $hour:$minute:$second
     $timeZone[America/New_York]
     ` // returns current time of New York

@@ -23,22 +23,22 @@ $arrayFind[name;query;queryType?;separator?]
 
 ## Comparison Operators
 
-- `==` — Every item that matches the query.
-- `!=` — Every item that doesn't match the query.
-- `>` — All items on the "left" of the found item, excluding itself.
-- `<` — All items on the "right" of the found item, excluding itself.
-- `>=` — All items on the "left" of the found item, including itself.
-- `<=` — All items on the "right" of the found item, including itself.
+-   `==` — Every item that matches the query.
+-   `!=` — Every item that doesn't match the query.
+-   `>` — All items on the "left" of the found item, excluding itself.
+-   `<` — All items on the "right" of the found item, excluding itself.
+-   `>=` — All items on the "left" of the found item, including itself.
+-   `<=` — All items on the "right" of the found item, including itself.
 
 ## Example(s)
 
 ```javascript
 client.command({
-  name: "array-find",
-  code: `
+    name: "array-find",
+    code: `
   $arrayFind[array;akarui;==;, ]
   $createArray[array;aoi.js;akarui;documents;bot]
   `
-  // It will return "akarui" as it matches the query.
+    // It will return "akarui" as it matches the query.
 });
 ```

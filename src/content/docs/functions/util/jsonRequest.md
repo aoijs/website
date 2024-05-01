@@ -27,8 +27,8 @@ This will return a random dog fact:
 
 ```javascript
 client.command({
-  name: "jsonRequest",
-  code: `
+    name: "jsonRequest",
+    code: `
     $jsonRequest[https://some-random-api.ml/facts/dog;fact;Something went wrong.]
     `
 });

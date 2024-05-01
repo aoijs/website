@@ -21,14 +21,13 @@ $setAutomodActions[type;channel;durationSeconds;customMessage?]
 | durationSeconds? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The duration of the timeout in seconds. |   true   |
 | customMessage?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The custom message to display.          |   true   |
 
-
 ### Automod Actions
 
-| Type             | Id   |
-| :--------------- | :--- |
-| BlockMessage     | 1    |
-| SendAlertMessage | 2    |
-| Timeout          | 3    |
+| Type             | Id  |
+| :--------------- | :-- |
+| BlockMessage     | 1   |
+| SendAlertMessage | 2   |
+| Timeout          | 3   |
 
 ## Example(s)
 
@@ -43,4 +42,5 @@ client.command({
     $setAutomodType[Keyword]
     $setAutomodActions[BlockMessage;$channelId;60;You tried to say slurs, you got blocked!]  
     `
-})
+});
+```

@@ -28,8 +28,8 @@ This will change the value of "Example" to "This is a value":
 
 ```javascript
 client.command({
-  name: "setUserVar",
-  code: `
+    name: "setUserVar",
+    code: `
     $setUserVar[Example;This is a value;$authorID;$guildID;main]
     `
 });

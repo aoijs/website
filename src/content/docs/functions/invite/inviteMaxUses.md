@@ -10,7 +10,6 @@ This requires aoi.invite installed.
 
 :::
 
-
 `$inviteMaxUses` returns the maximum uses of the invite.
 
 ## Usage
@@ -24,5 +23,5 @@ $inviteMaxUses
 This returns the maximum uses of the invite.
 
 ```javascript
-$inviteMaxUses
+$inviteMaxUses;
 ```

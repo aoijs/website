@@ -23,7 +23,7 @@ $addSelectMenu[index;type;customId;placeHolder;minValues;maxValues;disabled?;lab
 | minValues   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | SelectMenu minimal value of selectable options                                                                                 |   true   |
 | maxValues   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | SelectMenu maximal value of selectable options                                                                                 |   true   |
 | disabled    | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | If the selectMenu will appear as disabled- <br /> 1. **true** <br /> 2. **false** (default)                                    |   true   |
-| options     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Select menu options separated by each other with `;` and `:`.                                                                   |   true   |
+| options     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Select menu options separated by each other with `;` and `:`.                                                                  |   true   |
 
 ## Example(s)
 
@@ -31,8 +31,8 @@ This adds a select menu with two functions:
 
 ```javascript
 client.command({
-  name: "add-select-menu",
-  code: `
+    name: "add-select-menu",
+    code: `
   Select an option.
   
   $addSelectMenu[1;string;yourCustomID;This is a placeholder!;1;1;false;A Option:Description of option A:anotherCustomID:false;B Option:Description of option B:andAnotherCustomID:true]
@@ -40,29 +40,29 @@ client.command({
 });
 
 module.exports = [
-  {
-    name: "add-select-menu",
-    code: `
+    {
+        name: "add-select-menu",
+        code: `
      Select an option.
      $addSelectMenu[1;string;yourCustomID;This is a placeholder!;1;1;false;A Option:Description of option A:anotherCustomID:false;B Option:Description of option B:andAnotherCustomID:true]
   `
-  },
-  {
-    name: "yourCustomID",
-    type: "interaction", // clarifying that this command is an Interaction
-    prototype: "selectMenu",
-    code: `
+    },
+    {
+        name: "yourCustomID",
+        type: "interaction", // clarifying that this command is an Interaction
+        prototype: "selectMenu",
+        code: `
      $interactionReply[Hello! :);everyone;false]
      $onlyIf[$interactionData[values[0]]==anotherCustomID;]`
-  },
-  {
-    name: "yourCustomID",
-    type: "interaction", // clarifying that this command is an Interaction
-    prototype: "selectMenu",
-    code: `
+    },
+    {
+        name: "yourCustomID",
+        type: "interaction", // clarifying that this command is an Interaction
+        prototype: "selectMenu",
+        code: `
      $interactionReply[Bye! :(;everyone;false]
      $onlyIf[$interactionData[values[0]]==andAnotherCustomID;]`
-  },
+    }
 ];
 
 /* 

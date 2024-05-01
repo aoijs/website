@@ -26,8 +26,8 @@ This will return the value of a variable called "Example":
 
 ```javascript
 client.command({
-  name: "getGlobalUserVar",
-  code: `
+    name: "getGlobalUserVar",
+    code: `
     $getGlobalUserVar[Example;$authorID;main]
     `
 });

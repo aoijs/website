@@ -25,8 +25,8 @@ This will return the role ID of a role called `Owner` (this example won't work i
 
 ```javascript
 client.command({
-  name: "roleId",
-  code: `
+    name: "roleId",
+    code: `
   $roleId[Owner;$guildID]
   `
 });

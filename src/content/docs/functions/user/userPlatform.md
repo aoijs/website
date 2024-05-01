@@ -22,10 +22,10 @@ $userPlatform[userID?;guildID?;sep?]
 
 ### Platforms:
 
-- **web** - The user is currently using the web client.
-- **mobile** - The user is using the mobile app.
-- **desktop** - The user is using the desktop app.
-- **none** - The user is either offline, or unable to fetch the platform.
+-   **web** - The user is currently using the web client.
+-   **mobile** - The user is using the mobile app.
+-   **desktop** - The user is using the desktop app.
+-   **none** - The user is either offline, or unable to fetch the platform.
 
 ## Example(s)
 
@@ -33,8 +33,8 @@ This will return your platform you're using Discord on:
 
 ```javascript
 client.command({
-  name: "userPlatform",
-  code: `
+    name: "userPlatform",
+    code: `
   $userPlatform[$authorID;$guildID;, ]
   `
 });

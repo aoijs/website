@@ -24,7 +24,7 @@ This will return the position of the current channel on the guild:
 
 ```js
 client.command({
-  name: "channelPosition",
-  code: `$channelPosition[$channelID]`
+    name: "channelPosition",
+    code: `$channelPosition[$channelID]`
 });
 ```

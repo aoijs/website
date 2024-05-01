@@ -25,8 +25,8 @@ This will return `Leref` and `dbd.js`:
 
 ```javascript
 client.command({
-  name: "getObjectKeys",
-  code: `
+    name: "getObjectKeys",
+    code: `
   $getObjectKeys[Object Name; ]
   $createObject[Object Name;{
     "Leref": "Ferel",

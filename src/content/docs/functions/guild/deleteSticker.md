@@ -25,8 +25,8 @@ This will delete a sticker of your guild ( make sure to provide an actual sticke
 
 ```javascript
 client.command({
-  name: "deleteSticker",
-  code: `
+    name: "deleteSticker",
+    code: `
   $deleteSticker[$guildID;sticker]
   `
 });

@@ -25,8 +25,8 @@ This will everything given to uppercase, in this case it would return `THIS IS A
 
 ```javascript
 client.command({
-  name: "toUpperCase",
-  code: `
+    name: "toUpperCase",
+    code: `
     $toUpperCase[this is an example]
     `
 });

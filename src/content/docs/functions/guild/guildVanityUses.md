@@ -24,8 +24,8 @@ This will return the uses of your guild's vanity URL, if you have one:
 
 ```javascript
 client.command({
-  name: "guildVanityUses",
-  code: `
+    name: "guildVanityUses",
+    code: `
   $guildVanityUses[$guildID]
   `
 });

@@ -24,8 +24,8 @@ This will return all guild IDs your bot is in:
 
 ```javascript
 client.command({
-  name: "guildIDS",
-  code: `
+    name: "guildIDS",
+    code: `
   $guildIDS[, ]
   `
 });

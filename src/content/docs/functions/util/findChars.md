@@ -14,9 +14,9 @@ $findChars[text]
 
 ## Parameters
 
-| Field | Type                                                                                                | Description | Required |
-| ----- | --------------------------------------------------------------------------------------------------- | ----------- | :------: |
-| text  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The text.   |   true   |
+| Field | Type                                                                                              | Description | Required |
+| ----- | ------------------------------------------------------------------------------------------------- | ----------- | :------: |
+| text  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The text.   |   true   |
 
 ## Example(s)
 
@@ -24,7 +24,7 @@ This will return "Hello":
 
 ```js
 client.command({
-  name: "findChars",
-  code: `$findChars[Hello!123.@#%&]`
+    name: "findChars",
+    code: `$findChars[Hello!123.@#%&]`
 });
 ```

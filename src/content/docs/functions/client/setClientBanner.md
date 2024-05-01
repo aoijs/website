@@ -30,8 +30,8 @@ This will attempt to set the avatar of the client to your user banner:
 
 ```javascript
 client.command({
-  name: "setClientBanner",
-  code: `
+    name: "setClientBanner",
+    code: `
   $setClientBanner[$authorBanner]
   `
 });

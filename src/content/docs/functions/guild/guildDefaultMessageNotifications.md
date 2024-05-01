@@ -24,8 +24,8 @@ This will return the guild's default message notification type:
 
 ```javascript
 client.command({
-  name: "guildDefaultMessageNotifications",
-  code: `
+    name: "guildDefaultMessageNotifications",
+    code: `
   $guildDefaultMessageNotifications
   `
 });

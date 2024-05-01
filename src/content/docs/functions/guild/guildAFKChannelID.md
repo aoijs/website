@@ -24,8 +24,8 @@ This will return the AFK voice channel of your guild:
 
 ```javascript
 client.command({
-  name: "guildAFKChannelID",
-  code: `
+    name: "guildAFKChannelID",
+    code: `
   $guildAFKChannelID
   `
 });

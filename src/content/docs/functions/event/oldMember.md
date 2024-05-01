@@ -21,29 +21,29 @@ $oldMember[option]
 
 ## Options
 
-| Field         | Type                                                                                              | Description                      |
-| ------------- | ------------------------------------------------------------------------------------------------- | -------------------------------- |
-| id            | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns User ID.                 |
-| name          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns Name of user.            |
-| roles         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns User roles.              |
-| permissions   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns User permissions.        |
-| nick          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns User nickname.           |
-| highestRoleID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns Higher role ID user has. |
-| joinedStamp | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns user joined timestamp. |
-| removedPermissions | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns permissions removed from the user. |
-| removedRoles | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns roles removed from the user. |
-| bannable | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Returns if user is bannable. |
-| kickable | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Returns if user is kickable. |
-| manageable | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Returns if user is manageable. |
+| Field              | Type                                                                                                | Description                                |
+| ------------------ | --------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| id                 | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | Returns User ID.                           |
+| name               | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Returns Name of user.                      |
+| roles              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Returns User roles.                        |
+| permissions        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Returns User permissions.                  |
+| nick               | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Returns User nickname.                     |
+| highestRoleID      | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | Returns Higher role ID user has.           |
+| joinedStamp        | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | Returns user joined timestamp.             |
+| removedPermissions | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Returns permissions removed from the user. |
+| removedRoles       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Returns roles removed from the user.       |
+| bannable           | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Returns if user is bannable.               |
+| kickable           | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Returns if user is kickable.               |
+| manageable         | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Returns if user is manageable.             |
 
 ## Example(s)
 
-- **Note: You need `GuildMembers` intent**
+-   **Note: You need `GuildMembers` intent**
 
 ```js
 client.memberUpdateCommand({
-  channel: "channelid",
-  code: `
+    channel: "channelid",
+    code: `
     $username[$newMember[id]] has updated their nickname!
 - New Nickname: $newMember[nick]
  - Old Nickname: $oldMember[nick]
@@ -54,6 +54,6 @@ client.memberUpdateCommand({
 });
 ```
 
-- This code will execute when **member updates their guild nickname or discord username**
+-   This code will execute when **member updates their guild nickname or discord username**
 
 ---

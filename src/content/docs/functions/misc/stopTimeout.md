@@ -24,8 +24,8 @@ This will end a `$setTimeout` timeout:
 
 ```javascript
 client.command({
-  name: "stopTimeout",
-  code: `
+    name: "stopTimeout",
+    code: `
     $stopTimeout[10029]
     `
 });

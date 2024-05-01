@@ -14,9 +14,9 @@ $resolveStickerID[resolver]
 
 ## Parameters
 
-| Field     | Type                                                                                              | Description                    | Required |
-| --------- | ------------------------------------------------------------------------------------------------- | ------------------------------ | :------: |
-| resolver  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The name or ID of the sticker. |   true   |
+| Field    | Type                                                                                              | Description                    | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ------------------------------ | :------: |
+| resolver | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The name or ID of the sticker. |   true   |
 
 ## Example(s)
 
@@ -24,7 +24,7 @@ This will return the ID of the sticker, replace `resolver` with an actual sticke
 
 ```js
 client.command({
-  name: "resolveStickerID",
-  code: `$resolveStickerID[resolver]`
+    name: "resolveStickerID",
+    code: `$resolveStickerID[resolver]`
 });
 ```

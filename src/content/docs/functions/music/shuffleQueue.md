@@ -24,9 +24,9 @@ This will shuffle the current queue:
 
 ```javascript
 client.command({
-  name: "shuffleQueue",
-  code: `
+    name: "shuffleQueue",
+    code: `
     $shuffleQueue
-  `,
+  `
 });
 ```

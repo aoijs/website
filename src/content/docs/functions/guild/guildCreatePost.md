@@ -30,8 +30,8 @@ This will create a post in the given forum with the name "this is a post" with a
 
 ```javascript
 client.command({
-  name: "guildCreatePost",
-  code: `
+    name: "guildCreatePost",
+    code: `
   $guildCreatePost[forumId;This is a Post!;Hello!  {newEmbed:{title:This is an embed!}} {actionRow:{button:Button:primary:customId:false}};10080;true]
   `
 });

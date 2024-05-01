@@ -18,17 +18,18 @@ This will return the custom ID of the button, which is `exampleButton`:
 
 ```js
 client.command({
-  name: "examplecommand",
-  code: `
+    name: "examplecommand",
+    code: `
     Hello!
     $addButton[1;Example Button!;primary;exampleButton;false;💔]
   `
 });
 ```
+
 ```js
 client.interactionCommand({
-  name: "exampleButton",
-  prototype: "button",
-  code: `$interactionReply[The button's custom ID: $getComponentCustomID]`
+    name: "exampleButton",
+    prototype: "button",
+    code: `$interactionReply[The button's custom ID: $getComponentCustomID]`
 });
 ```

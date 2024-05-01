@@ -30,8 +30,8 @@ This will return the time of how long your bot is online for:
 
 ```javascript
 client.command({
-  name: "uptime",
-  code: `
+    name: "uptime",
+    code: `
   I've been up for $uptime[full]!
   `
 });
