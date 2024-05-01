@@ -52,5 +52,5 @@ The following table shows some commonly used escape sequences:
 
 Here are some examples of character escaping:
 
-- Tthe `#RIGHT#` escape sequence is used to represent the `[` character.
+- The `#RIGHT#` escape sequence is used to represent the `[` character.
 - The `\n` escape sequence is used to represent a newline character.

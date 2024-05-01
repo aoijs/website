@@ -22,7 +22,7 @@ You can find all timezones **[here](https://gist.githubusercontent.com/diogocape
 
 ## Example(s)
 
-You can change the timezone using `$timezone` like the followning:
+You can change the timezone using `$timezone` like the following:
 
 ```javascript
 client.command({

@@ -16,7 +16,7 @@ $floor[number]
 
 | Field  | Type                                                                                              | Description                                            | Required |
 | ------ | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | :------: |
-| number | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The number of which you want the interger returned of. |   true   |
+| number | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The number of which you want the integer returned of. |   true   |
 
 ## Example(s)
 

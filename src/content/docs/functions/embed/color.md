@@ -17,7 +17,7 @@ $color[index?;hex]
 | Field  | Type                                                                                              | Description                                               | Required |
 | ------ | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | :------: |
 | index? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The embed index.                                          |  false   |
-| hex    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The hex color or color name (supported colornames below). |   true   |
+| hex    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The hex color or color name (supported color names below). |   true   |
 
 <div class="details">
   <details>

@@ -74,7 +74,7 @@ const PackageStats: FC = () => {
   const gitStats = async () => {
     try {
       const response = await fetch(
-        `https://api.github.com/repos/AkaruiDevelopment/aoi.js`
+        `https://api.github.com/repos/aoijs/aoi.js`
       );
       const data = await response.json();
       const stats = {
@@ -207,7 +207,7 @@ const PackageStats: FC = () => {
         }}
       >
         <div>
-          <a href="https://github.com/AkaruiDevelopment/aoi.js">
+          <a href="https://github.com/aoijs/aoi.js">
             <img
               loading="eager"
               decoding="async"

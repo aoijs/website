@@ -27,7 +27,7 @@ client.command({
   name: "concatTextSplit",
   code: `
   $concatTextSplit[Hello;Bye]
-  $textSplit[Goodmorning, Goodnight;, ]
+  $textSplit[Good Morning, Goodnight;, ]
   `
 });
 ```

@@ -16,7 +16,7 @@ $digitalFormat[ms]
 
 | Field | Type                                                                                              | Description                              | Required |
 | ----- | ------------------------------------------------------------------------------------------------- | ---------------------------------------- | :------: |
-| ms    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Time in miliseconds you wish to convert. |   true   |
+| ms    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Time in milliseconds  you wish to convert. |   true   |
 
 ## Example(s)
 

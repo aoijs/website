@@ -1,10 +1,10 @@
 ---
 title: $sub
-description: $sub will substract two given numbers.
+description: $sub will subtract two given numbers.
 id: sub
 ---
 
-`$sub` will substract two given numbers.
+`$sub` will subtract two given numbers.
 
 ## Usage
 

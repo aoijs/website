@@ -16,7 +16,7 @@ $divide[...numbers;...numbers]
 
 | Field   | Type                                                                                              | Description                                | Required |
 | ------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------ | :------: |
-| numbers | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Numbers you want to divide with eachother. |   true   |
+| numbers | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Numbers you want to divide with each other. |   true   |
 
 ## Example(s)
 

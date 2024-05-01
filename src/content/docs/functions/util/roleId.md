@@ -21,7 +21,7 @@ $roleId[roleResolver;guildID?]
 
 ## Example(s)
 
-This will return the role ID of a role called `Owner` (this example won't work if you dont have that role):
+This will return the role ID of a role called `Owner` (this example won't work if you don't have that role):
 
 ```javascript
 client.command({

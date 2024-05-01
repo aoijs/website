@@ -18,7 +18,7 @@ $createThread[channelID;name;archive;type;startMessage;returnId?]
 | ------------ | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | :------: |
 | channelID    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The channel ID of where the thread should be created in.         |   true   |
 | name         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The name of the newly created thread.                            |   true   |
-| archieve     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | After how much time the thread will be archieved (ms).           |   true   |
+| archive     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | After how much time the thread will be archived (ms).           |   true   |
 | type         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Thread type <br /> 1. **public** (default) <br /> 2. **private** |   true   |
 | startMessage | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The message ID of where the thread should relate to.             |   true   |
 | returnId?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | If the function should return the thread ID after its creation.  |  false   |

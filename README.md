@@ -78,11 +78,11 @@ client.command({
 
 ## 🐛 Contribution
 
-[Refer to contribution documentation for more information](https://github.com/AkaruiDevelopment/aoi.js/blob/v6/.github/CONTRIBUTING.md)
+[Refer to contribution documentation for more information](https://github.com/aoijs/aoi.js/blob/v6/.github/CONTRIBUTING.md)
 
 ### 🧑‍💻 Aoi.js
 
-[![AkaruiDevelopment/aoi.js](https://contrib.rocks/image?repo=AkaruiDevelopment/aoi.js)](https://github.com/AkaruiDevelopment/aoi.js)
+[![aoijs/aoi.js](https://contrib.rocks/image?repo=aoijs/aoi.js)](https://github.com/aoijs/aoi.js)
 
 ### 📄 Documentation
 

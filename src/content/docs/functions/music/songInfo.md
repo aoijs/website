@@ -46,7 +46,7 @@ $songInfo[type?;position?]
 | platformType                                | Returns the platform Type                                          | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | YouTube, Spotify, SoundCloud, Url, LocalFile |
 | rawData                                     | Returns song information as object                                 | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |
 | JavaScript/Reference/Global_Objects/Object) | YouTube, Spotify, SoundCloud, Url, LocalFile                       |
-| formatedPlatforms                           | SoundCloud, YouTube, Localfile, Url, Spotify                       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | YouTube, Spotify, SoundCloud, Url, LocalFile |
+| formattedPlatforms                          | SoundCloud, YouTube, Localfile, Url, Spotify                       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | YouTube, Spotify, SoundCloud, Url, LocalFile |
 | requester                                   | Returns the Song Requester (user object, .user.id, .user.name etc) | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | YouTube, Spotify, SoundCloud, Url, LocalFile |
 | position                                    | Returns the Song Position in the current Queue                     | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | YouTube, Spotify, SoundCloud, Url, LocalFile |
 

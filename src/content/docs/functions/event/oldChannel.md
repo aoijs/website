@@ -35,7 +35,7 @@ $oldChannel[option]
 | lastMessageID              | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns ID of last message sent in channel.                              |
 | lastPinAt                  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns date of last pinned message.                                     |
 | lastPinTimestamp           | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns the timestamp of last pinned message.                            |
-| manageable                 | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns true / false if channel is managable.                            |
+| manageable                 | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns true / false if channel is manageable.                            |
 | nsfw                       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns true / false if channel is NSFW.                                 |
 | parentName                 | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns Category Name.                                                   |
 | parentID                   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns Category ID.                                                     |

@@ -14,9 +14,9 @@ $sendSticker[resolver]
 
 ## Parameters
 
-| Field     | Type                                                                                              | Descript                       | Required |
-| --------- | ------------------------------------------------------------------------------------------------- | ------------------------------ | :------: |
-| resolver  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The name or ID of the sticker. |   true   |
+| Field    | Type                                                                                              | Description                    | Required |
+| -------- | ------------------------------------------------------------------------------------------------- | ------------------------------ | :------: |
+| resolver | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The name or ID of the sticker. |   true   |
 
 ## Example(s)
 

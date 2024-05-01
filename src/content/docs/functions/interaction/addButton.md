@@ -20,7 +20,7 @@ $addButton[index;label;style;customID;disabled?;emoji?]
 | label     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The text that will be displayed on the button as label.                                                                  |   true   |
 | style     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The button **[style](https://discord.com/developers/docs/interactions/message-components#button-object-button-styles)**. |   true   |
 | customID  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The component custom ID used to identify the button.                                                                     |   true   |
-| disabled? | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Make the button unuseable/disabled? <br /> 1. **true** <br /> 2. **false** (default)                                     |  false   |
+| disabled? | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Make the button unusable/disabled? <br /> 1. **true** <br /> 2. **false** (default)                                     |  false   |
 | emoji?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The emoji displayed in the button.                                                                                       |  false   |
 
 <div class="details">

@@ -25,7 +25,7 @@ $addSelectMenuTo[channelId;messageId;index;type;customId;placeHolder;minValues;m
 | minValues   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | SelectMenu minimal value of selectable options                                                                                 |   true   |
 | maxValues   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | SelectMenu maximal value of selectable options                                                                                 |   true   |
 | disabled    | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | If the selectMenu will appear as disabled- <br /> 1. **true** <br /> 2. **false** (default)                                    |   true   |
-| options     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Select menu options separated by eachother with `;` and `:`.                                                                   |   true   |
+| options     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Select menu options separated by each other with `;` and `:`.                                                                   |   true   |
 
 ## Example(s)
 

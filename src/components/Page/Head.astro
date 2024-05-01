@@ -1,12 +1,13 @@
 ---
 import type { Props } from "@astrojs/starlight/props";
 import Default from "@astrojs/starlight/components/Head.astro";
-import { ViewTransitions } from "astro:transitions";
+
+const { siteTitle } = Astro.props;
 ---
 
 <meta
     property="og:image"
-    content={Astro.props.entry.data?.og_image ?? `https://og-image-aoijs.vercel.app/api/og?title=${Astro.props.entry.data.title}&description=${Astro.props.entry.data.description}`}
+    content={Astro.props.entry.data?.og_image ?? `https://og-image-aoijs.vercel.app/api/og?title=${Astro.props.entry.data?.title ?? siteTitle}&description=${Astro.props.entry.data.description}`}
 />
 <Default {...Astro.props}><slot /></Default>
 
