@@ -3,6 +3,8 @@ name: Check Build
 on:
   issue_comment:
     types: [created]
+  pull_request_target:
+    types: [opened, reopened, synchronize]
 
 jobs:
   deploy-preview:
@@ -11,7 +13,7 @@ jobs:
       START_TIME: ${{ github.event.issue.created_at }}
     steps:
       - name: Check Approval
-        if: startsWith(github.event.comment.body, 'approve')
+        if: startsWith(github.event.comment.body, 'approve') && github.event.issue.pull_request
         run: echo "Approval received."
         id: approval
 
@@ -102,5 +104,5 @@ jobs:
         with:
           issue-number: ${{ github.event.issue.number }}
           body: ${{ env.COMMENT_BODY }}
-          reactions: hourglass
+          reactions: 'hourglass'
           add-labels: ${{ env.LABEL }}
