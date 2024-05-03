@@ -27,8 +27,8 @@ This will limit the command to work only when the Bot has administrator permissi
 
 ```javascript
 client.command({
-  name: "onlyClientPerms",
-  code: `
+    name: "onlyClientPerms",
+    code: `
     Ok.
     $onlyClientPerms[administrator;I don't have administrator permissions!]
     `

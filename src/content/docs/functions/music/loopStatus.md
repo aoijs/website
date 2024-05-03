@@ -24,9 +24,9 @@ This will return the current loop status:
 
 ```javascript
 client.command({
-  name: "loopStatus",
-  code: `
+    name: "loopStatus",
+    code: `
     $loopStatus
-  `,
+  `
 });
 ```

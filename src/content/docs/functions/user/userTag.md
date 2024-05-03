@@ -24,8 +24,8 @@ This will return your username and discriminator:
 
 ```javascript
 client.command({
-  name: "userTag",
-  code: `
+    name: "userTag",
+    code: `
   $userTag[$authorID]
   `
 });

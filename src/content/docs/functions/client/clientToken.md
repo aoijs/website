@@ -20,8 +20,8 @@ This will return the client's Token:
 
 ```javascript
 client.command({
-  name: "clientToken",
-  code: `
+    name: "clientToken",
+    code: `
   $clientToken
   `
 });

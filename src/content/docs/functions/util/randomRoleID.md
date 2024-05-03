@@ -24,8 +24,8 @@ This will return a random role ID of your guild:
 
 ```javascript
 client.command({
-  name: "randomRoleID",
-  code: `
+    name: "randomRoleID",
+    code: `
   $randomRoleID[$guildID]
   `
 });

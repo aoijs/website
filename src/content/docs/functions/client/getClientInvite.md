@@ -71,8 +71,8 @@ This will return your bot's invite with administrator privileges:
 
 ```javascript
 client.command({
-  name: "getClientInvite",
-  code: `
+    name: "getClientInvite",
+    code: `
   Invite me here: $getClientInvite[administrator]
   `
 });

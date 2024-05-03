@@ -18,8 +18,8 @@ This will return day of the month, for example, `28`:
 
 ```javascript
 client.command({
-  name: "date",
-  code: `
+    name: "date",
+    code: `
   $date
   `
 });

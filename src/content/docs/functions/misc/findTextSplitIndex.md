@@ -24,8 +24,8 @@ This will return `3` as the first `Cya` in this `$textSplit` is in the third pos
 
 ```javascript
 client.command({
-  name: "findTextSplitIndex",
-  code: `
+    name: "findTextSplitIndex",
+    code: `
   $findTextSplitIndex[Cya]
   $textSplit[Hello, Bye, Cya;, ]
   `

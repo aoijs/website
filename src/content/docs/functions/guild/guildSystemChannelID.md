@@ -24,8 +24,8 @@ This will return the guild's system channel ID:
 
 ```javascript
 client.command({
-  name: "guildSystemChannelID",
-  code: `
+    name: "guildSystemChannelID",
+    code: `
   $guildSystemChannelID[$guildID]
   `
 });

@@ -22,8 +22,8 @@ $arrayReverse[name]
 
 ```javascript
 client.command({
-  name: "array-reverse",
-  code: `
+    name: "array-reverse",
+    code: `
   $arrayReverse[array]
   $createArray[array;aoi.js;akarui;documents;bot]
   `

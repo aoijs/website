@@ -24,8 +24,8 @@ This will return `true` as `255` is a valid number:
 
 ```javascript
 client.command({
-  name: "isNumber",
-  code: `
+    name: "isNumber",
+    code: `
   $isNumber[255]
   `
 });

@@ -30,10 +30,10 @@ This will return the current volume:
 
 ```javascript
 client.command({
-  name: "volume",
-  code: `
+    name: "volume",
+    code: `
     $volume[get]
-  `,
+  `
 });
 ```
 
@@ -41,9 +41,9 @@ This will set the current volume to `45`:
 
 ```javascript
 client.command({
-  name: "volume",
-  code: `
+    name: "volume",
+    code: `
     $volume[45]
-  `,
+  `
 });
 ```

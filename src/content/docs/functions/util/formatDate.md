@@ -40,8 +40,8 @@ This will return your current date in the `dddd, DD MMMM YYYY` format:
 
 ```javascript
 client.command({
-  name: "formatDate",
-  code: `
+    name: "formatDate",
+    code: `
   $formatDate[$dateStamp;dddd, DD MMMM YYYY]
   `
 });

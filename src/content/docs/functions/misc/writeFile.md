@@ -26,8 +26,8 @@ This will create a file called "testing.txt" with the content of "Hello!":
 
 ```javascript
 client.command({
-  name: "writeFile",
-  code: `
+    name: "writeFile",
+    code: `
     $writeFile[./testing.txt;Hello!;utf8]
     `
 });

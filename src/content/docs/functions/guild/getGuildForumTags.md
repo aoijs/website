@@ -28,8 +28,8 @@ This will return the forum tag names:
 
 ```javascript
 client.command({
-  name: "getGuildForumTags",
-  code: `
+    name: "getGuildForumTags",
+    code: `
   $getGuildForumTags[forumId;name;, ]
   `
 });
@@ -39,8 +39,8 @@ This will return the emojis of the tags and ids:
 
 ```javascript
 client.command({
-  name: "getGuildForumTags",
-  code: `
+    name: "getGuildForumTags",
+    code: `
   $getGuildForumTags[forumId;Name: {name} -> Emoji: {emoji} {emojiId}]
   `
 });

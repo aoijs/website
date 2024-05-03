@@ -25,8 +25,8 @@ This will change guild's icon you're executing the command in to your user avata
 
 ```javascript
 client.command({
-  name: "setGuildIcon",
-  code: `
+    name: "setGuildIcon",
+    code: `
    $setGuildIcon[$userAvatar[$authorID];$guildID]`
 });
 ```

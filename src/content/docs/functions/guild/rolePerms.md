@@ -26,8 +26,8 @@ This will return the permissions for the `@everyone` role:
 
 ```javascript
 client.command({
-  name: "rolePerms",
-  code: `
+    name: "rolePerms",
+    code: `
   $rolePerms[$guildID;, ;$guildID]
   `
 });

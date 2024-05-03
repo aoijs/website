@@ -25,8 +25,8 @@ This will return the value of a variable called "Example":
 
 ```javascript
 client.command({
-  name: "getVar",
-  code: `
+    name: "getVar",
+    code: `
     $getVar[Example;main]
     `
 });

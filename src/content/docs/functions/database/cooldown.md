@@ -9,13 +9,12 @@ id: cooldown
 ## Usage
 
 ```php
-$cooldown[time;errorMessage
-]
+$cooldown[time;errorMessage]
 ```
 
-- You are able to retrieve the remaining cooldown in the `$cooldown` function by using **`%time%`** or any of the
-  following below.
-  - `%time%` `%year%` `%month%` `%week%` `%day%` `%hour%` `%min%` `%sec%` `%ms%` `%fullTime%`
+-   You are able to retrieve the remaining cooldown in the `$cooldown` function by using **`%time%`** or any of the
+    following below.
+    -   `%time%` `%year%` `%month%` `%week%` `%day%` `%hour%` `%min%` `%sec%` `%ms%` `%fullTime%`
 
 ## Parameters
 
@@ -30,8 +29,8 @@ This will set a cooldown for a command which applies to the user only and return
 
 ```javascript
 client.command({
-  name: "cooldown",
-  code: `
+    name: "cooldown",
+    code: `
   hello
   $cooldown[2m;Please wait %time% to execute this command again.]
   `

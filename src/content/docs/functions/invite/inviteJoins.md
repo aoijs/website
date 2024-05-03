@@ -20,8 +20,8 @@ $inviteJoins[field[code];field[guildId];field[separator]]
 
 ## Parameters
 
-| Parameter | Description                          | Type   | Required |
-| --------- | ------------------------------------ | ------ | -------- |
+| Parameter | Description                          | Type                                                                                              | Required |
+| --------- | ------------------------------------ | ------------------------------------------------------------------------------------------------- | -------- |
 | code      | The invite code                      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | true     |
 | guildId   | The guild's id                       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | false    |
 | separator | The separator between the member ids | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | false    |

@@ -24,8 +24,8 @@ This will return the unlocked guild features of a guild:
 
 ```javascript
 client.command({
-  name: "guildFeatures",
-  code: `
+    name: "guildFeatures",
+    code: `
   $guildFeatures[$guildID;true]
   `
 });

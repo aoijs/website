@@ -18,8 +18,8 @@ This will return your current aoi.js version:
 
 ```javascript
 client.command({
-  name: "packageVersion",
-  code: `
+    name: "packageVersion",
+    code: `
     $packageVersion
     `
 });

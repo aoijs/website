@@ -26,8 +26,8 @@ This will change the banner of the current guild:
 
 ```javascript
 client.command({
-  name: "setGuildDiscoverySplash",
-  code: `
+    name: "setGuildDiscoverySplash",
+    code: `
   $setGuildDiscoverySplash[$guildID;https://cdn.discordapp.com/banners/773352845738115102/b2b27d0915a838e8b4f68b180d1901ad.webp;Example!]
   `
 });

@@ -35,7 +35,7 @@ $newChannel[option]
 | lastMessageID              | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns ID of last message sent in channel.                              |
 | lastPinAt                  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns date of last pinned message.                                     |
 | lastPinTimestamp           | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns the timestamp of last pinned message.                            |
-| manageable                 | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns true / false if channel is managable.                            |
+| manageable                 | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns true / false if channel is manageable.                           |
 | nsfw                       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns true / false if channel is NSFW.                                 |
 | parentName                 | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns Category Name.                                                   |
 | parentID                   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns Category ID.                                                     |
@@ -55,8 +55,8 @@ $newChannel[option]
 
 ```js
 client.channelCreateCommand({
-  channel: "channelid",
-  code: `
+    channel: "channelid",
+    code: `
     New channel has been created!
 - Name: $newChannel[name]
 - ID: $newChannel[id]
@@ -64,34 +64,34 @@ client.channelCreateCommand({
 });
 ```
 
-- This code will execute when **channel is created**.
+-   This code will execute when **channel is created**.
 
 ---
 
 ```js
 client.channelDeleteCommand({
-  channel: "channelid",
-  code: `
+    channel: "channelid",
+    code: `
     Channel has been deleted!
 - Name: $oldChannel[name]
 - ID: $oldChannel[id]`
 });
 ```
 
-- This code will execute when **channel is deleted**.
+-   This code will execute when **channel is deleted**.
 
 ---
 
 ```js
 client.channelUpdateCommand({
-  channel: "channelid",
-  code: `
+    channel: "channelid",
+    code: `
     Channel has been updated!
 - New name: $newChannel[name]
  - Old name: $oldChannel[name]`
 });
 ```
 
-- This code will execute when **channel is updated**.
+-   This code will execute when **channel is updated**.
 
 ---

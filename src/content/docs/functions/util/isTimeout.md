@@ -25,8 +25,8 @@ This will check if you're timeouted and either return `true` or `false`:
 
 ```javascript
 client.command({
-  name: "isTimeout",
-  code: `
+    name: "isTimeout",
+    code: `
   $isTimeout[$guildID;$authorID]
   `
 });

@@ -9,18 +9,29 @@ og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/9.p
 ---
 
 ### Table of Contents
-- [What's Sharding?](#whats-sharding)
-- [Getting Started](#getting-started)
-  - [Constructor](#constructor)
-  - [`options`](#options)
-- [Setting up Sharding](#setting-up-sharding)
-- [Sharding Related Functions](#sharding-related-functions)
+
+-   [What's Sharding?](#whats-sharding)
+-   [Getting Started](#getting-started)
+    -   [Constructor](#constructor)
+    -   [`options`](#options)
+-   [Setting up Sharding](#setting-up-sharding)
+-   [Sharding Related Functions](#sharding-related-functions)
 
 ---
 
+:::note[Sharding]
+
+Sharding is **required** once passing 2,500 guilds, this is a Discord limitation.
+
+**You should think about sharding once hitting 2,000 guilds.**
+
+Discord will prevent your client from connecting to the gateway if you exceed this limit.
+
+:::
+
 ## What's Sharding?
 
-As a bot developer, you may have experienced some limitations when scaling up your Discord bot to serve a large number of users. Discord imposes a maximum limit of 2500 guilds per bot, and if your bot exceeds this number, Discord enforces a sharding strategy to split portions of your bot into separate processes.
+As a bot developer, you may have experienced some limitations when scaling up your Discord bot to serve a large number of users. Discord imposes a maximum limit of 2,500 guilds per bot, and if your bot exceeds this number, Discord enforces a sharding to split portions of your bot into separate processes.
 
 Sharding is an effective way to distribute your bot's workload across multiple servers, which can greatly enhance the bot's performance and reduce the strain on any single server. Once you've reached the 2500-guild limit, Discord requires that you shard your bot in a way that allocates no more than 2500 guilds per shard.
 
@@ -68,9 +79,9 @@ One called `index.js` and another one with the name `shard.js`.
 const { ClientShard } = require("aoi.js");
 
 const sharder = new ClientShard("./index.js", {
-  // Your main file, in this case called "index.js".
-  token: "Discord Bot Token", // Your Discord Bot token.
-  totalShards: 3, // The amount of shards/instances you want to create, in this case three.
+    // Your main file, in this case called "index.js".
+    token: "Discord Bot Token", // Your Discord Bot token.
+    totalShards: 3 // The amount of shards/instances you want to create, in this case three.
 });
 
 sharder.on("shardCreate", (shard) => console.log(`Launched shard ${shard.id}`)); // Used for debugging, can be removed.
@@ -83,23 +94,23 @@ Your index.js, also known as main file should look like the following (nothing c
 const { AoiClient } = require("aoi.js");
 
 const client = new AoiClient({
-  token: "Discord Bot Token",
-  prefix: "Discord Bot Prefix",
-  intents: ["MessageContent", "Guilds", "GuildMessages"],
-  events: ["onMessage", "onInteractionCreate"],
-  database: {
-    type: "aoi.db",
-    db: require("@akarui/aoi.db"),
-    dbType: "KeyValue",
-    tables: ["main"],
-    securityKey: "a-32-characters-long-string-here",
-  }
+    token: "Discord Bot Token",
+    prefix: "Discord Bot Prefix",
+    intents: ["MessageContent", "Guilds", "GuildMessages"],
+    events: ["onMessage", "onInteractionCreate"],
+    database: {
+        type: "aoi.db",
+        db: require("@akarui/aoi.db"),
+        dbType: "KeyValue",
+        tables: ["main"],
+        securityKey: "a-32-characters-long-string-here"
+    }
 });
 
 // Ping Command Example (sharding)
 client.command({
-  name: "ping",
-  code: `Pong! $guildShardPing[0]ms`
+    name: "ping",
+    code: `Pong! $guildShardPing[0]ms`
 });
 ```
 
@@ -109,14 +120,16 @@ Then by running `node shard.js` you are able to start your bot.
 
 Running `node index.js` will no longer work if you want to have sharding, use `node shard.js`.
 
+This depends on the file name you have chosen for the sharding file.
+
 ---
 
 ## Sharding Related Functions
 
-- `$shard[option]`
-- `$guildShard[option?;sep?;shardId]`
-- `$guildShardID`
-- `$guildShardPing[shardId?]`
-- `$killShard[shardId]`
-- `$respawnAllShards`
-- `$spawnShard[amount]`
+-   `$shard[option]`
+-   `$guildShard[option?;sep?;shardId]`
+-   `$guildShardID`
+-   `$guildShardPing[shardId?]`
+-   `$killShard[shardId]`
+-   `$respawnAllShards`
+-   `$spawnShard[amount]`

@@ -26,8 +26,8 @@ This will return all channels of your guild:
 
 ```javascript
 client.command({
-  name: "guildChannels",
-  code: `
+    name: "guildChannels",
+    code: `
   $guildChannels[$guildID;mention;, ]
   `
 });

@@ -24,8 +24,8 @@ This will delete the sent message after five seconds:
 
 ```javascript
 client.command({
-  name: "deleteIn",
-  code: `
+    name: "deleteIn",
+    code: `
   $deleteIn[5s]
   I'll delete this message in 5 seconds!
   `

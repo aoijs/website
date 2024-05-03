@@ -24,8 +24,8 @@ This will end the current stage instance: ( make sure to replace stageID with an
 
 ```javascript
 client.command({
-  name: "deleteStageInstance",
-  code: `
+    name: "deleteStageInstance",
+    code: `
   $deleteStageInstance[stageInstance]
   `
 });

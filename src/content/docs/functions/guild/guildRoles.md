@@ -28,8 +28,8 @@ This will return all roles of your guild:
 
 ```javascript
 client.command({
-  name: "guildRoles",
-  code: `
+    name: "guildRoles",
+    code: `
   $description[$guildRoles[$guildID;name;, ]]
   `
 });

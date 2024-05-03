@@ -5,17 +5,19 @@ type: guide
 author: "Fafa"
 author_url: "https://raw.githubusercontent.com/aoijs/website/main/src/images/contributors/fafa.png"
 id: sub-command-groups
-og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/3.png
+sidebar:
+    order: 4
 ---
 
 <!-- omit from toc -->
+
 ## Table of Contents
 
-- [Sub command groups](#sub-command-groups)
-- [Creating Application Commands](#creating-application-commands)
-  - [Examples of creating Application Commands with sub command groups](#examples-of-creating-application-commands-with-sub-command-groups)
-  - [Preview of the Example](#preview-of-the-example)
-- [Replying to Sub commands/groups](#replying-to-sub-commandsgroups)
+-   [Sub command groups](#sub-command-groups)
+-   [Creating Application Commands](#creating-application-commands)
+    -   [Examples of creating Application Commands with sub command groups](#examples-of-creating-application-commands-with-sub-command-groups)
+    -   [Preview of the Example](#preview-of-the-example)
+-   [Replying to Sub commands/groups](#replying-to-sub-commandsgroups)
 
 ---
 
@@ -34,7 +36,7 @@ $createApplicationCommand[guildID/global;name;description;defaultPermission(true
 | guildID/global    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)  | The type of application command, either for every guild (global) or for one specific guild (specific guildID). |   true   |
 | name              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The actual slash command name that will be visible to the user.                                                |   true   |
 | description       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The slash command description that will be visible to the user.                                                |   true   |
-| defaultPermission | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | If the application command should syncronisate to the default permissions.                                     |   true   |
+| defaultPermission | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | If the application command should synchronize to the default permissions.                                      |   true   |
 | type              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | The application command type (explained below)                                                                 |   true   |
 | options?          | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)                                                                                                    | Slash commands options.                                                                                        |   true   |
 
@@ -44,8 +46,8 @@ The official documentation can be found [here](https://discord.com/developers/do
 
 ```js
 client.command({
-  name: "createApplicationCommand",
-  code: `
+    name: "createApplicationCommand",
+    code: `
   $createApplicationCommand[guildID/global;moderation;Moderation Commands!;true;true;slash;[{
             "name": "user",
             "description": "Get or edit permissions for a user",

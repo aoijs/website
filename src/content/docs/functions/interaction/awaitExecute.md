@@ -24,8 +24,8 @@ This will execute an awaited command:
 
 ```js
 client.command({
-  name: "awaitExecute",
-  code: `
+    name: "awaitExecute",
+    code: `
 $awaitExecute[awaited]
 $let[variable;Hello!]
 `
@@ -34,8 +34,8 @@ $let[variable;Hello!]
 
 ```js
 client.awaitedCommand({
-  name: "awaited",
-  code: `
+    name: "awaited",
+    code: `
 $get[variable] // Returns "Hello!"
 `
 });

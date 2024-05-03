@@ -26,8 +26,8 @@ This will limit the command only to given channel categories:
 
 ```javascript
 client.command({
-  name: "onlyForCategories",
-  code: `
+    name: "onlyForCategories",
+    code: `
     Ok.
     $onlyForCategories[categoryID;categoryID;You can't use that command here!]
     `

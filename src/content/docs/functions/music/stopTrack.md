@@ -24,9 +24,9 @@ This will stop the current track:
 
 ```javascript
 client.command({
-  name: "stopTrack",
-  code: `
+    name: "stopTrack",
+    code: `
     $stopTrack
-  `,
+  `
 });
 ```

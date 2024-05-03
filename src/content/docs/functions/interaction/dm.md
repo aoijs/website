@@ -20,8 +20,8 @@ $dm[userID]
 
 **Important**:
 
-- You are unable to DM other bots.
-- You are unable to DM people who closed their DMs.
+-   You are unable to DM other bots.
+-   You are unable to DM people who closed their DMs.
 
 ## Example(s)
 
@@ -29,8 +29,8 @@ This will send an DM to you containing "Hello! Did you really think this works?"
 
 ```javascript
 client.command({
-  name: "dm",
-  code: `
+    name: "dm",
+    code: `
   Hello! Did you really think this works?
   $dm[$authorID]
   `

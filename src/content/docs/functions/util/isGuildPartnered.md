@@ -24,8 +24,8 @@ This will check if your server is partnered and return either `true` or `false`:
 
 ```javascript
 client.command({
-  name: "isGuildPartnered",
-  code: `
+    name: "isGuildPartnered",
+    code: `
   $isGuildPartnered[$guildID]
   `
 });

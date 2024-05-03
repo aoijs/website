@@ -10,12 +10,12 @@ og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/14.
 
 ### Table of Content
 
-- [Getting Started with Custom Functions](#getting-started-with-custom-functions)
-  - [Aoi.js Custom Functions](#aoijs-custom-functions)
-  - [Discord.js Custom Functions](#discordjs-custom-functions)
-- [Custom Functions Examples](#custom-functions-examples)
-  - [Aoi.js Custom Functions Examples](#aoijs-custom-functions-examples)
-  - [Discord.js Custom Functions Examples](#discordjs-custom-functions-examples)
+-   [Getting Started with Custom Functions](#getting-started-with-custom-functions)
+    -   [Aoi.js Custom Functions](#aoijs-custom-functions)
+    -   [Discord.js Custom Functions](#discordjs-custom-functions)
+-   [Custom Functions Examples](#custom-functions-examples)
+    -   [Aoi.js Custom Functions Examples](#aoijs-custom-functions-examples)
+    -   [Discord.js Custom Functions Examples](#discordjs-custom-functions-examples)
 
 ---
 
@@ -40,7 +40,7 @@ bot.functionManager.createFunction({
 
 Pretty simple example, and usage.
 
-- To return any parameter of `params: [...]` you can use `{name}` (name stands for the parameter name).
+-   To return any parameter of `params: [...]` you can use `{name}` (name stands for the parameter name).
 
 ---
 
@@ -96,7 +96,7 @@ aoiError.consoleError(name, e);
 | guild   | Invalid Guild ID Provided In ...   |
 | emoji   | Invalid Emoji ID Provided In ...   |
 | option  | Invalid Option ID Provided In ...  |
-| custom  | Invalid __custom message__         |
+| custom  | Invalid **custom message**         |
 
 ```js
 if (!parameter) return d.aoiError.fnError(d, "custom", {}, "Custom Error Message");
@@ -109,7 +109,7 @@ Advanced Custom Functions Examples can be found here, some are useful others are
 
 ### Aoi.js Custom Functions Examples
 
-* This section has been removed due to aoi.js custom functions being broken. We will update this section once aoi.js custom functions are fixed.  
+-   This section has been removed due to aoi.js custom functions being broken. We will update this section once aoi.js custom functions are fixed.
 
 ### Discord.js Custom Functions Examples
 
@@ -121,26 +121,26 @@ $sendImage[URL];
 
 ```js
 bot.functionManager.createFunction({
-  name: "$sendImage", // our function name
-  type: "djs", // notice how we don't need any params? that's the magic of JavaScript
-  code: async (d) => {
-    const data = d.util.aoiFunc(d);
-    const [URL] = data.inside.splits; // our parameter of the function
+    name: "$sendImage", // our function name
+    type: "djs", // notice how we don't need any params? that's the magic of JavaScript
+    code: async (d) => {
+        const data = d.util.aoiFunc(d);
+        const [URL] = data.inside.splits; // our parameter of the function
 
-    let image = URL;
-    const a = await d.message.channel.send({
-      // send the attachment in the current channel
-      files: [
-        {
-          attachment: image, // set the given URL as attachment
-        },
-      ],
-    });
+        let image = URL;
+        const a = await d.message.channel.send({
+            // send the attachment in the current channel
+            files: [
+                {
+                    attachment: image // set the given URL as attachment
+                }
+            ]
+        });
 
-    data.result = a; // set the "message" as result, to make aoi.js acknowledge it
-    return {
-      code: d.util.setCode(data),
-    };
-  },
+        data.result = a; // set the "message" as result, to make aoi.js acknowledge it
+        return {
+            code: d.util.setCode(data)
+        };
+    }
 });
 ```

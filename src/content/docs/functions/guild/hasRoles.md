@@ -26,8 +26,8 @@ This will return `true` when the user has the listed roles:
 
 ```javascript
 client.command({
-  name: "hasRoles",
-  code: `
+    name: "hasRoles",
+    code: `
   $hasRoles[$guildID;$authorID;$findRole[Owner]]
   `
 });

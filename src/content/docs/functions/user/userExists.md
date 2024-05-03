@@ -25,8 +25,8 @@ as you exist as Discord user:
 
 ```javascript
 client.command({
-  name: "userExists",
-  code: `
+    name: "userExists",
+    code: `
   $userExists[$authorID]
   `
 });

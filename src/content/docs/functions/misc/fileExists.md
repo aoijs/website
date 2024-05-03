@@ -24,8 +24,8 @@ This will check if a file called `index.js` exists in your directory:
 
 ```javascript
 client.command({
-  name: "fileExists",
-  code: `
+    name: "fileExists",
+    code: `
   $fileExists[./index.js]
   `
 });

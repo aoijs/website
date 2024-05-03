@@ -28,8 +28,8 @@ This will timeout a given member for five minutes:
 
 ```javascript
 client.command({
-  name: "timeoutMember",
-  code: `
+    name: "timeoutMember",
+    code: `
    $timeoutMember[$guildID;userID;5m;false]`
 });
 ```

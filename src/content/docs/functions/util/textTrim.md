@@ -24,8 +24,8 @@ This will remove any extra spaces of the given text, in this case it would retur
 
 ```javascript
 client.command({
-  name: "textTrim",
-  code: `
+    name: "textTrim",
+    code: `
     $textTrim[      Imagine a string package      ]
     `
 });

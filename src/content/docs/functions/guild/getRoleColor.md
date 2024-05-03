@@ -25,8 +25,8 @@ This will return the role ID of your highest role:
 
 ```javascript
 client.command({
-  name: "getRoleColor",
-  code: `
+    name: "getRoleColor",
+    code: `
   $getRoleColor[$userHighestRole]
   `
 });

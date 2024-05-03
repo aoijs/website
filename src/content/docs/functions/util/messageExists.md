@@ -25,8 +25,8 @@ This will return `false` as the message doesn't exist in the given channel:
 
 ```javascript
 client.command({
-  name: "messageExists",
-  code: `
+    name: "messageExists",
+    code: `
   $messageExists[1058998634823299143;$channelID]
   `
 });

@@ -22,8 +22,8 @@ $setTimeout[awaitedCmd;duration;timeoutData;returnId?;pulse?]
 | returnId?   | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)                                                                                                  | Return timeout ID.                                                     |  false   |
 | pulse?      | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)                                                                                                    | Pulse.                                                                 |  false   |
 
-- You can retrieve timeout data using `$timeoutData[name]`.
-- Note that the duration may not go over **21 days**.
+-   You can retrieve timeout data using `$timeoutData[name]`.
+-   Note that the duration may not go over **21 days**.
 
 ## Example(s)
 
@@ -31,15 +31,15 @@ This will send "Hello!" after 10 seconds in the command execution channel:
 
 ```javascript
 client.command({
-  name: "setTimeout",
-  code: `
+    name: "setTimeout",
+    code: `
     $setTimeout[timeoutCommand;10s;{"channelID": "$channelID", "authorID": "$authorID"};false]
     `
 });
 
 client.timeoutCommand({
-  name: "timeoutCommand",
-  code: `
+    name: "timeoutCommand",
+    code: `
     $channelSendMessage[$timeoutData[channelID];Hello, <@$timeoutData[authorID]>!]
     `
 });

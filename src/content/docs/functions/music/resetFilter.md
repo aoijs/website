@@ -24,9 +24,9 @@ This will reset the current applied filters:
 
 ```javascript
 client.command({
-  name: "resetFilter",
-  code: `
+    name: "resetFilter",
+    code: `
     $resetFilter
-  `,
+  `
 });
 ```

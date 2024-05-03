@@ -1,6 +1,6 @@
 ---
 title: Client Commands
-description: This guide will be covering how to start creating commands, how to use command handlers, how to creat multiple commands in one file and how to update commands without restarting your Discord Bot.
+description: This guide will be covering how to start creating commands, how to use command handlers, how to create multiple commands in one file and how to update commands without restarting your Discord Bot.
 type: guide
 author: "Fafa"
 author_url: "https://raw.githubusercontent.com/aoijs/website/main/src/images/contributors/fafa.png"
@@ -8,29 +8,30 @@ id: commands
 og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/4.png
 ---
 
-import { FileTree } from "@astrojs/starlight/components"
+import { FileTree } from "@astrojs/starlight/components";
 
 ## Table of Contents
-- [Creating Commands](#creating-commands)
-  - [Command Options](#command-options)
-    - [Base Commands](#base-commands)
-    - [Event Commands](#event-commands)
-    - [Interaction Commands](#interaction-commands)
-    - [Loop Commands](#loop-commands)
-  - [Command Handler](#command-handler)
+
+-   [Creating Commands](#creating-commands)
+    -   [Command Options](#command-options)
+        -   [Base Commands](#base-commands)
+        -   [Event Commands](#event-commands)
+        -   [Interaction Commands](#interaction-commands)
+        -   [Loop Commands](#loop-commands)
+    -   [Command Handler](#command-handler)
 
 ---
 
 Before we get started let's cover the basics.
 
-- aoi.js reads **bottom** to **top**, meaning the code starts from the bottom and starts working towards the top.
+-   aoi.js reads **bottom** to **top**, meaning the code starts from the bottom and starts working towards the top.
 
 An example for that is the following:
 
 ```js
 client.command({
-  name: "example",
-  code: `
+    name: "example",
+    code: `
   $sendMessage[Bye!]
   $sendMessage[Hello!]
   `
@@ -60,8 +61,8 @@ For now you only need to know about `name` and `code`.
 The `name` defines the name of the command and also how to execute it. Meaning you would be able to use `[prefix]name` to execute the command.
 
 ```js
-<client>.command({ 
-  name: "ping" 
+<client>.command({
+  name: "ping"
 });
 ```
 
@@ -70,7 +71,7 @@ This does nothing, as of now. It's just a command called `ping`. To give it func
 The code property defines the **functionality** of the command - its core.
 
 ```js
-<client>.command({ 
+<client>.command({
   name: "ping",
   code: `My ping is: $ping MS!`
 });
@@ -87,7 +88,7 @@ There are a variety of commands, event commands, base commands, interaction comm
 The base command, also known as prefix command has a few properties.
 
 ```js
-<client>.command({ 
+<client>.command({
     name: string,
     aliases? : string,
     nonPrefixed? : boolean,
@@ -99,7 +100,7 @@ The base command, also known as prefix command has a few properties.
 An example of using all properties would be the following:
 
 ```js
-<client>.command({ 
+<client>.command({
     name: "ping",
     aliases: ["pong"],
     nonPrefixed: false,
@@ -136,7 +137,7 @@ Event commands have the following structure:
 An example of using all properties would be the following:
 
 ```js
-<client>.banAddCommand({ 
+<client>.banAddCommand({
     name: "Event Command Example",
     channel: "123456789012345", // **must** be a valid channel ID
     code: `
@@ -144,7 +145,6 @@ An example of using all properties would be the following:
     `
 });
 ```
-
 
 | OPTION    | INPUT  | EXPLANATION                                                                |
 | --------- | ------ | -------------------------------------------------------------------------- |
@@ -215,10 +215,10 @@ Make sure to create a commands folder in the root directory, meaning where your 
 
 <FileTree>
 
-- index.js your **main file**
-- package.json
-- commands the folder for your **commands**
-- ...
+-   index.js your **main file**
+-   package.json
+-   commands the folder for your **commands**
+-   ...
 
 </FileTree>
 
@@ -228,11 +228,11 @@ Once that is done, we start creating files inside of that folder.
 
 <FileTree>
 
-- index.js
-- package.json
-- commands the folder for your **commands**
-  - ping.js
-- ...
+-   index.js
+-   package.json
+-   commands the folder for your **commands**
+    -   ping.js
+-   ...
 
 </FileTree>
 
@@ -253,10 +253,10 @@ Everything besides the first line stays the same, easy right?
 Your command should look like this in the end:
 
 ```js
-module.exports = ({
+module.exports = {
     name: "ping",
     code: `My ping is $ping MS!` // The ping function returns the current ping.
-});
+};
 ```
 
 ---
@@ -282,11 +282,14 @@ This is basically an array just with a little extra spice.
 Your command should look like this in the end,
 
 ```js
-module.exports = [{
-  name: "ping",
-  code: `My ping is $ping MS!` // The ping function returns the current ping.
-}, {
-  name: "uptime",
-  code: `I'm online for $uptime!` // The uptime function returns the current uptime in hours, minutes and seconds.
-}];
+module.exports = [
+    {
+        name: "ping",
+        code: `My ping is $ping MS!` // The ping function returns the current ping.
+    },
+    {
+        name: "uptime",
+        code: `I'm online for $uptime!` // The uptime function returns the current uptime in hours, minutes and seconds.
+    }
+];
 ```

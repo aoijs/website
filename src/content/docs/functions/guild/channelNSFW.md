@@ -25,8 +25,8 @@ not:
 
 ```javascript
 client.command({
-  name: "channelNSFW",
-  code: `
+    name: "channelNSFW",
+    code: `
   $channelNSFW[$channelID]
   `
 });

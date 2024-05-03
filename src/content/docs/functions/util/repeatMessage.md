@@ -25,8 +25,8 @@ This will return `Hello` twenty times:
 
 ```javascript
 client.command({
-  name: "repeatMessage",
-  code: `
+    name: "repeatMessage",
+    code: `
   $repeatMessage[20;Hello ]
   `
 });

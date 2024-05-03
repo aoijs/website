@@ -18,7 +18,7 @@ This will send the given message each time you send a message:
 
 ```javascript
 client.command({
-  name: "$alwaysExecute",
-  code: `Hello!`
+    name: "$alwaysExecute",
+    code: `Hello!`
 });
 ```

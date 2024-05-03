@@ -26,8 +26,8 @@ This will return all channels of the category of the channel where you execute t
 
 ```javascript
 client.command({
-  name: "categoryChannels",
-  code: `
+    name: "categoryChannels",
+    code: `
   $categoryChannels[$channelCategoryID;names;, ]
   `
 });

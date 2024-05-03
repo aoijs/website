@@ -25,8 +25,8 @@ This will check if your message has an attachment attached:
 
 ```javascript
 client.command({
-  name: "hasAttachment",
-  code: `
+    name: "hasAttachment",
+    code: `
   Your message has an attachment? 
   --> $hasAttachment[$messageId;$channelId]
   `

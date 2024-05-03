@@ -26,8 +26,8 @@ This will return `Ferel` from the `Leref` Property:
 
 ```javascript
 client.command({
-  name: "setObjectProperty",
-  code: `
+    name: "setObjectProperty",
+    code: `
   $getObjectProperty[Object Name;Leref]
   $setObjectProperty[Object Name;Leref;Ferel]
   $createObject[Object Name;{}]

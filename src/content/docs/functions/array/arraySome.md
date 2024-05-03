@@ -20,19 +20,19 @@ $arraySome[name;query;queryType?]
 | query      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The element we will be queering for every element inside the array. |   true   |
 | queryType? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The comparison operator.                                            |  false   |
 
-- `==` — Every item that matches the query.
-- `!=` — Every item that doesn't match the query.
-- `>` — All items on the "left" of the found item, excluding itself.
-- `<` — All items on the "right" of the found item, excluding itself.
-- `>=` — All items on the "left" of the found item, including itself.
-- `<=` — All items on the "right" of the found item, including itself.
+-   `==` — Every item that matches the query.
+-   `!=` — Every item that doesn't match the query.
+-   `>` — All items on the "left" of the found item, excluding itself.
+-   `<` — All items on the "right" of the found item, excluding itself.
+-   `>=` — All items on the "left" of the found item, including itself.
+-   `<=` — All items on the "right" of the found item, including itself.
 
 ## Example(s)
 
 ```javascript
 client.command({
-  name: "array-some",
-  code: `
+    name: "array-some",
+    code: `
   $arraySome[array;aoi.js;==]
   $createArray[array;aoi.js;akarui;documents;bot]
   `

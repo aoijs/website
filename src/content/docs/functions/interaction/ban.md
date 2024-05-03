@@ -27,8 +27,8 @@ This will ban a random user of your guild:
 
 ```javascript
 client.command({
-  name: "ban",
-  code: `
+    name: "ban",
+    code: `
   $ban[$guildID;$randomUserID;7;Imagine getting banned.]
   `
 });

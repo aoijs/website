@@ -24,8 +24,8 @@ This will make your bot leave the current guild:
 
 ```javascript
 client.command({
-  name: "clientLeave",
-  code: `
+    name: "clientLeave",
+    code: `
   $clientLeave[$guildID]
   $wait[2s]
   $sendMessage[Bye, I'm leaving!]

@@ -22,8 +22,8 @@ $arrayUnshift[name]
 
 ```javascript
 client.command({
-  name: "array-unshift",
-  code: `
+    name: "array-unshift",
+    code: `
   $arrayUnshift[array]
   $createArray[array;aoi.js;akarui;documents;bot]
   `

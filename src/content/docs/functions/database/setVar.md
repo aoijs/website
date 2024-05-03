@@ -26,8 +26,8 @@ This will change the value of "Example" to "This is a value":
 
 ```javascript
 client.command({
-  name: "setVar",
-  code: `
+    name: "setVar",
+    code: `
     $setVar[Example;This is a value;main]
     `
 });

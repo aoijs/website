@@ -25,8 +25,8 @@ This will return all user mentions:
 
 ```javascript
 client.command({
-  name: "getMentions",
-  code: `
+    name: "getMentions",
+    code: `
 $getMentions[users;, ]
 `
 });

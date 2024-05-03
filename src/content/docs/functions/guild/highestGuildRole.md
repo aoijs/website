@@ -25,8 +25,8 @@ This will return the name of the highest role of your guild:
 
 ```javascript
 client.command({
-  name: "guildHighestRole",
-  code: `
+    name: "guildHighestRole",
+    code: `
   $guildHighestRole[$guildID;name]
   `
 });

@@ -23,8 +23,8 @@ $deleteApplicationCommand[guildID/global;id]
 
 ```javascript
 client.command({
-  name: "deleteApplicationCommand",
-  code: `
+    name: "deleteApplicationCommand",
+    code: `
   $deleteApplicationCommand[$guildID;$getApplicationCommandID[application-command-name;$guildID]]
   `
 });

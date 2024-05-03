@@ -26,8 +26,8 @@ This will delete an invite (wont work as the invite code doesn't exist):
 
 ```javascript
 client.command({
-  name: "deleteInvite",
-  code: `
+    name: "deleteInvite",
+    code: `
   $deleteInvite[$guildID;ifawd9a;Testing!]
   `
 });

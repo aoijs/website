@@ -5,7 +5,8 @@ type: guide
 author: "Fafa"
 author_url: "https://raw.githubusercontent.com/aoijs/website/main/src/images/contributors/fafa.png"
 id: auto-complete
-og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/3.png
+sidebar:
+    order: 5
 ---
 
 There are multiple ways of using `$autoCompleteRespond`. You can either use JSON or the simple aoi.js way.
@@ -38,8 +39,8 @@ Here's how you can create a global application command named "example" with an o
 
 ```javascript
 client.command({
-  name: "createApplicationCommand",
-  code: `
+    name: "createApplicationCommand",
+    code: `
   $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;true;slash;[{
     "name": "option", 
     "description": "First option!",
@@ -56,10 +57,10 @@ If autoComplete equals `true`, it will respond with the given response:
 
 ```javascript
 client.command({
-  name: "example",
-  prototype: "slash",
-  $if: "old",
-  code: `
+    name: "example",
+    prototype: "slash",
+    $if: "old",
+    code: `
   $if[$isAutocomplete==true]
   $autoCompleteRespond[First option;You selected the first option, therefore I'm responding with this!;Second option;You selected the first second, therefore I'm responding with this!]
   $else
@@ -75,8 +76,8 @@ Here's how you can create a global application command named "example" with mult
 
 ```javascript
 client.command({
-  name: "createApplicationCommand",
-  code: `
+    name: "createApplicationCommand",
+    code: `
   $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;true;slash;[{
     "name": "option",
     "description": "First option with autocomplete.",
@@ -98,11 +99,11 @@ If autoComplete equals `true`, it will respond with the given JSON response:
 
 ```javascript
 module.exports = [
-  {
-    name: "example",
-    prototype: "slash",
-    $if: "old",
-    code: `
+    {
+        name: "example",
+        prototype: "slash",
+        $if: "old",
+        code: `
   $if[$isAutocomplete==true]
   $autoCompleteRespond[[{ 
     "name" : "First Option",
@@ -112,9 +113,9 @@ module.exports = [
     "value" : "You selected the second option, therefore I\'m responding with this!"
   }]]
   $else
-  $interactionReply[$slashOption[option] - autocomplete #SEMI# $slashOption[anotheroption] - false autocomplete;;;;everyone]
+  $interactionReply[You selected: $slashOption[option]!]
   $endif
   `
-  },
+    }
 ];
 ```

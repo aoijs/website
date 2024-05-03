@@ -26,8 +26,8 @@ This will send a DM to the command author:
 
 ```javascript
 client.command({
-  name: "sendDm",
-  code: `
+    name: "sendDm",
+    code: `
    $sendDm[Hello!;$authorID;false]  
   `
 });

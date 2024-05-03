@@ -97,8 +97,8 @@ This will return your latest bans (which are logged in audit logs):
 
 ```javascript
 client.command({
-  name: "getAuditLogs",
-  code: `
+    name: "getAuditLogs",
+    code: `
   $getAuditLogs[$guildID;$authorID;5;$authorID;12;{executor.username}: {target.id} - {action}]
   `
 });

@@ -28,8 +28,8 @@ This will return the position of the current guild:
 
 ```javascript
 client.command({
-  name: "getLeaderboardInfo",
-  code: `
+    name: "getLeaderboardInfo",
+    code: `
     $getLeaderboardInfo[Example;$authorId;guild;top]
     `
 });

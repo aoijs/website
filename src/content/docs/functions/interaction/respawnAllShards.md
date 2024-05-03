@@ -18,8 +18,8 @@ This will respawn all shards (requires sharding):
 
 ```javascript
 client.command({
-  name: "respawnAllShards",
-  code: `
+    name: "respawnAllShards",
+    code: `
    $respawnAllShards
   `
 });

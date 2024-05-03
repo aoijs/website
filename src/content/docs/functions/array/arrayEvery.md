@@ -22,25 +22,25 @@ $arrayEvery[name;query;queryType?]
 
 ## Comparison Operators
 
-- `includes` — Including
-- `startsWith` — Starts with
-- `endsWith` — Ends with
-- `==` — Equal to
-- `!=` — Not equal to
-- `>` — Greater than
-- `<` — Less than
-- `>=` — Greater than or equal to
-- `<=` — Less than or equal to
+-   `includes` — Including
+-   `startsWith` — Starts with
+-   `endsWith` — Ends with
+-   `==` — Equal to
+-   `!=` — Not equal to
+-   `>` — Greater than
+-   `<` — Less than
+-   `>=` — Greater than or equal to
+-   `<=` — Less than or equal to
 
 ## Example(s)
 
 ```javascript
 client.command({
-  name: "array-every",
-  code: `
+    name: "array-every",
+    code: `
   $arrayEvery[array;30;==]
   $createArray[array;1;2;3;0;30]
   `
-  // It will return "false". Cause 1 ≠ 30. You can think it as "and (&&)" logical operator.
+    // It will return "false". Cause 1 ≠ 30. You can think it as "and (&&)" logical operator.
 });
 ```

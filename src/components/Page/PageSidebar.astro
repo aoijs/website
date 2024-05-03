@@ -10,7 +10,7 @@ const page = Astro.props.entry?.id.split("/");
 const isValid = !["music", "invite"].includes(page[1]) && ["functions"].includes(page[0]);
 
 let githubURL = page.join("/").replace(".md", ".js");
-githubURL = `https://github.com/AkaruiDevelopment/aoi.js/blob/v6/src/${githubURL}`;
+githubURL = `https://github.com/aoijs/aoi.js/blob/v6/src/${githubURL}`;
 ---
 
 {

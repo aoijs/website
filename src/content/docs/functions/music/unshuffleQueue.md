@@ -24,9 +24,9 @@ This will unshuffle the current queue:
 
 ```javascript
 client.command({
-  name: "unshuffleQueue",
-  code: `
+    name: "unshuffleQueue",
+    code: `
     $unshuffleQueue
-  `,
+  `
 });
 ```

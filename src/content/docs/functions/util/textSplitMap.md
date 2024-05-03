@@ -24,16 +24,16 @@ This will return the arguments within `$textSplit` and send all of them separate
 
 ```javascript
 client.command({
-  name: "textSplitMap",
-  code: `
+    name: "textSplitMap",
+    code: `
     $textSplitMap[devs]
     $textSplit[Ayaka,Leref,Ferel,Blurr;,]
     `
 });
 
 client.awaitedCommand({
-  name: "devs",
-  code: `
+    name: "devs",
+    code: `
     $message[1]
     `
 });

@@ -25,8 +25,8 @@ This will limit the command to bot developers only:
 
 ```javascript
 client.command({
-  name: "onlyForIDs",
-  code: `
+    name: "onlyForIDs",
+    code: `
     You can use this!
     $onlyForIDs[$clientOwnerIds;You can't use that command!]
     `

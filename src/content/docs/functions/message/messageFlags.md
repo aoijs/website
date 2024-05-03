@@ -26,8 +26,8 @@ This will the message flags of your initial command message:
 
 ```javascript
 client.command({
-  name: "messageFlags",
-  code: `
+    name: "messageFlags",
+    code: `
   $messageFlags[$messageID;, ;$channelID]
   `
 });

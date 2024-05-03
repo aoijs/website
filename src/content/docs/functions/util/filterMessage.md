@@ -25,8 +25,8 @@ This will remove the `N` of `Never` and return `ever`:
 
 ```javascript
 client.command({
-  name: "filterMessage",
-  code: `
+    name: "filterMessage",
+    code: `
   $filterMessage[Never;N]
   `
 });

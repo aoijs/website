@@ -25,8 +25,8 @@ This will pin the bot's message and unpin it after two seconds:
 
 ```javascript
 client.command({
-  name: "unPinMessage",
-  code: `
+    name: "unPinMessage",
+    code: `
   $unPinMessage[$get[id]]
   $wait[2s]
   $pinMessage[$get[id]]

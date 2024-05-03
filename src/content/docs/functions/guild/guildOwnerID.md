@@ -24,8 +24,8 @@ This will return the ID of the server owner where you execute the command in:
 
 ```javascript
 client.command({
-  name: "guildOwnerID",
-  code: `
+    name: "guildOwnerID",
+    code: `
   $guildOwnerID[$guildID]
   `
 });

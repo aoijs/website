@@ -25,8 +25,8 @@ This will return the message type of the message which executed the command:
 
 ```javascript
 client.command({
-  name: "messageType",
-  code: `
+    name: "messageType",
+    code: `
   $messageType[$messageID;$channelID]
   `
 });

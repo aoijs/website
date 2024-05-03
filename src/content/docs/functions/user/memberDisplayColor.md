@@ -25,8 +25,8 @@ This will return your display color:
 
 ```javascript
 client.command({
-  name: "memberDisplayColor",
-  code: `
+    name: "memberDisplayColor",
+    code: `
   $memberDisplayColor[$guildID;$authorID]
   `
 });

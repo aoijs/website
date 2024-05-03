@@ -28,8 +28,8 @@ This will return your profile picture:
 
 ```javascript
 client.command({
-  name: "memberAvatar",
-  code: `
+    name: "memberAvatar",
+    code: `
   $memberAvatar[$guildID;$authorID;2048;true;webp]
   `
 });

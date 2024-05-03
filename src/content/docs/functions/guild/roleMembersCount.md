@@ -25,8 +25,8 @@ This will return the amount of users who have a specific role:
 
 ```javascript
 client.command({
-  name: "roleMembersCount",
-  code: `
+    name: "roleMembersCount",
+    code: `
   $roleMembersCount[$guildID;$guildID]
   `
 });

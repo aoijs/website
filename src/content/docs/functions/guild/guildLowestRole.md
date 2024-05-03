@@ -24,8 +24,8 @@ This will return the ID of the lowest guild role:
 
 ```javascript
 client.command({
-  name: "guildLowestRole",
-  code: `
+    name: "guildLowestRole",
+    code: `
   $guildLowestRole[$guildID]
   `
 });

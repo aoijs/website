@@ -24,8 +24,8 @@ This will return the channel ID of the channel where you execute the command in:
 
 ```javascript
 client.command({
-  name: "channelID",
-  code: `
+    name: "channelID",
+    code: `
   $channelID
   `
 });

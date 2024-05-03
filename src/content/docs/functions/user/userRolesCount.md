@@ -25,8 +25,8 @@ This will return the amount of roles you have assigned:
 
 ```javascript
 client.command({
-  name: "userRolesCount",
-  code: `
+    name: "userRolesCount",
+    code: `
   $userRolesCount[$authorID;$guildID]
   `
 });

@@ -24,8 +24,8 @@ This will delete two random emojis of your guild:
 
 ```javascript
 client.command({
-  name: "deleteEmojis",
-  code: `
+    name: "deleteEmojis",
+    code: `
   $deleteEmojis[$randomEmoji;$randomEmoji]
   `
 });

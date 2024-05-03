@@ -1,10 +1,10 @@
 ---
 title: $sub
-description: $sub will substract two given numbers.
+description: $sub will subtract two given numbers.
 id: sub
 ---
 
-`$sub` will substract two given numbers.
+`$sub` will subtract two given numbers.
 
 ## Usage
 
@@ -24,8 +24,8 @@ This will return `65` as `70-5` equals `65`:
 
 ```javascript
 client.command({
-  name: "sub",
-  code: `
+    name: "sub",
+    code: `
   $sub[70;5]
   `
 });

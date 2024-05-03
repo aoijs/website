@@ -33,8 +33,8 @@ This will return `users` as you're an user:
 
 ```javascript
 client.command({
-  name: "mentionType",
-  code: `
+    name: "mentionType",
+    code: `
   $mentionType[<@$authorID>]
   `
 });

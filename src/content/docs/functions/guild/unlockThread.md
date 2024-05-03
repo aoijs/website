@@ -26,8 +26,8 @@ This will unlock a given thread:
 
 ```javascript
 client.command({
-  name: "unlockThread",
-  code: `
+    name: "unlockThread",
+    code: `
   $unlockThread[$channelID;threadID;Example reason!]
   `
 });

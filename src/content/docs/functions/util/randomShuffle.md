@@ -24,8 +24,8 @@ This will shuffle the given words (this works similar to randomText, but is ALWA
 
 ```js
 client.command({
-  name: "randomShuffle",
-  code: `
+    name: "randomShuffle",
+    code: `
 $randomShuffle[aoi.js;aoi.db;aoi.music]
 `
 });

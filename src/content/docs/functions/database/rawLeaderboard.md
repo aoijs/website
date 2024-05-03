@@ -38,8 +38,8 @@ This will return a leaderboard of the "Example" variable:
 
 ```javascript
 client.command({
-  name: "rawLeaderboard",
-  code: `
+    name: "rawLeaderboard",
+    code: `
     $rawLeaderboard[Example;asc;globalUser;{top} - {username} - {value};10;1;main]
     `
 });

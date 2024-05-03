@@ -26,8 +26,8 @@ This will unban a given user:
 
 ```javascript
 client.command({
-  name: "unban",
-  code: `
+    name: "unban",
+    code: `
   $unban[$guildID;$randomUserID;Some reason.]
   `
 });

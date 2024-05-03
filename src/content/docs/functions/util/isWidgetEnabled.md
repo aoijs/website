@@ -24,8 +24,8 @@ This will return true or false depending on if the widget is enabled in the curr
 
 ```javascript
 client.command({
-  name: "isWidgetEnabled",
-  code: `
+    name: "isWidgetEnabled",
+    code: `
   $isWidgetEnabled[$guildID]
   `
 });

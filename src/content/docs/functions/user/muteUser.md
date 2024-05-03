@@ -27,8 +27,8 @@ This will server mute yourself (must be in a voice channel):
 
 ```javascript
 client.command({
-  name: "muteUser",
-  code: `
+    name: "muteUser",
+    code: `
   $muteUser[$guildID;$authorID;true]
   `
 });

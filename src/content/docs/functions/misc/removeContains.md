@@ -25,8 +25,8 @@ This will remove the word "aoi.js from the given text:
 
 ```javascript
 client.command({
-  name: "removeContains",
-  code: `
+    name: "removeContains",
+    code: `
     $removeContains[Hello, aoi.js!;, ;aoi.js]
     `
 });

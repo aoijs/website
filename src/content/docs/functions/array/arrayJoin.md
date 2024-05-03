@@ -23,8 +23,8 @@ $arrayJoin[name;separator?]
 
 ```javascript
 client.command({
-  name: "array-join",
-  code: `
+    name: "array-join",
+    code: `
   $arrayJoin[array;, ]
   $createArray[array;aoi.js;akarui;documents;bot]
   `

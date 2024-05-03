@@ -29,8 +29,8 @@ This will assign you two role called "Admin" and "Moderator" (if present):
 
 ```javascript
 client.command({
-  name: "giveRoles",
-  code: `
+    name: "giveRoles",
+    code: `
   $giveRoles[$guildID;$authorID;Some reason.;$findRole[Admin];$findRole[Moderator]]
   `
 });

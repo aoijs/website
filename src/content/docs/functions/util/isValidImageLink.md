@@ -24,8 +24,8 @@ This will return `true` as the given image link is valid:
 
 ```javascript
 client.command({
-  name: "isValidImageLink",
-  code: `
+    name: "isValidImageLink",
+    code: `
   $isValidImageLink[https://cdn.discordapp.com/attachments/...]
   `
 });

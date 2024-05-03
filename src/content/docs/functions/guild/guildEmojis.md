@@ -25,8 +25,8 @@ This will return the emojis of your guild:
 
 ```javascript
 client.command({
-  name: "guildEmojis",
-  code: `
+    name: "guildEmojis",
+    code: `
   $guildEmojis[, ;$guildID]
   `
 });

@@ -18,8 +18,8 @@ This will return your database ping:
 
 ```javascript
 client.command({
-  name: "databasePing",
-  code: `
+    name: "databasePing",
+    code: `
   My database ping is: $databasePing MS!
   `
 });

@@ -22,8 +22,8 @@ $noMentionMessage[args]
 
 ```javascript
 client.command({
-  name: "noMentionMessage",
-  code: `
+    name: "noMentionMessage",
+    code: `
     $noMentionMessage[1]
     `
 });

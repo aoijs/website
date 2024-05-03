@@ -25,8 +25,8 @@ This will edit the 3rd text split element and change it to "Goodbye":
 
 ```javascript
 client.command({
-  name: "editTextSplitElement",
-  code: `
+    name: "editTextSplitElement",
+    code: `
   $editTextSplitElement[3;Goodbye]
   $textSplit[Hello, Bye, Cya;, ]
   `

@@ -26,8 +26,8 @@ This will add the given reactions to your message:
 
 ```javascript
 client.command({
-  name: "addMessageReactions",
-  code: `
+    name: "addMessageReactions",
+    code: `
  $addMessageReactions[$channelID;$messageID;✅;❌]
   `
 });

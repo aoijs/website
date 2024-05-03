@@ -23,8 +23,8 @@ $arraySort[name;type?]
 
 ```javascript
 client.command({
-  name: "array-sort",
-  code: `
+    name: "array-sort",
+    code: `
   $arrayJoin[array;, ]
   $arraySort[array;asc]
   $createArray[array;aoi.js;akarui;documents;bot]

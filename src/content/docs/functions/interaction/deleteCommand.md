@@ -18,8 +18,8 @@ This will delete the initial command message:
 
 ```javascript
 client.command({
-  name: "deleteCommand",
-  code: `
+    name: "deleteCommand",
+    code: `
   Hello!
   $deleteCommand
   `

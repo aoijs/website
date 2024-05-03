@@ -25,8 +25,8 @@ This will return `true` as `aoi.js` ends with `js`:
 
 ```javascript
 client.command({
-  name: "stringEndsWith",
-  code: `
+    name: "stringEndsWith",
+    code: `
   $stringEndsWith[aoi.js;js]
   `
 });

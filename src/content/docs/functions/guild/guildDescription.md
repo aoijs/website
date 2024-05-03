@@ -24,8 +24,8 @@ This will return the description of a specific guild:
 
 ```javascript
 client.command({
-  name: "guildDescription",
-  code: `
+    name: "guildDescription",
+    code: `
   $guildDescription[$guildID]
   `
 });

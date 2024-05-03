@@ -26,8 +26,8 @@ This will send a TTS message in the current channel:
 
 ```javascript
 client.command({
-  name: "sendTTS",
-  code: `
+    name: "sendTTS",
+    code: `
    $sendTTS[$channelID;Hello!;false]
   `
 });

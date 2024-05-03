@@ -24,8 +24,8 @@ This will return `######`:
 
 ```javascript
 client.command({
-  name: "findSpecialChars",
-  code: `
+    name: "findSpecialChars",
+    code: `
   $findSpecialChars[Aoi.js is ###### great]
   `
 });

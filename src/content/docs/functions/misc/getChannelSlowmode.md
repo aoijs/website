@@ -24,8 +24,8 @@ This will return the slowmode of the channel where you execute the command in:
 
 ```javascript
 client.command({
-  name: "getChannelSlowmode",
-  code: `
+    name: "getChannelSlowmode",
+    code: `
   The current channel slowmode is: $getChannelSlowmode[$channelID] seconds!
   `
 });

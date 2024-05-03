@@ -25,8 +25,8 @@ the ![emoji](https://cdn.discordapp.com/emojis/1003365344724910191.webp?size=16&
 
 ```javascript
 client.command({
-  name: "emojiExists",
-  code: `
+    name: "emojiExists",
+    code: `
   $emojiExists[<:LerefMoney:1003365344724910191>]
   `
 });

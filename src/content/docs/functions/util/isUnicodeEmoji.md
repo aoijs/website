@@ -24,8 +24,8 @@ This will return `true` as "🤓" is an valid unicode emoji:
 
 ```javascript
 client.command({
-  name: "isUnicodeEmoji",
-  code: `
+    name: "isUnicodeEmoji",
+    code: `
   $isUnicodeEmoji[🤓]
   `
 });

@@ -26,10 +26,10 @@ This will send a message with a button and remove the button after doing so:
 
 ```js
 client.command({
-  name: "deleteButton",
-  code: `
+    name: "deleteButton",
+    code: `
   $deleteButton[$get[messageId];customId]
   $wait[5s]
-  $let[messageId;$sendMessage[Hello! This is a button. {actionRow:{button:I'm a button!:primary:customId:false}};true]]` // saving the message Id for later! 
+  $let[messageId;$sendMessage[Hello! This is a button. {actionRow:{button:I'm a button!:primary:customId:false}};true]]` // saving the message Id for later!
 });
 ```

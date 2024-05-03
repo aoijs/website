@@ -12,9 +12,9 @@ id: globalCooldown
 $globalCooldown[time;errorMessage]
 ```
 
-- You are able to retrieve the remaining cooldown in the `$globalCooldown` function by using **`%time%`** or any of the
-  following below.
-  - `%time%` `%year%` `%month%` `%week%` `%day%` `%hour%` `%min%` `%sec%` `%ms%` `%fullTime%`
+-   You are able to retrieve the remaining cooldown in the `$globalCooldown` function by using **`%time%`** or any of the
+    following below.
+    -   `%time%` `%year%` `%month%` `%week%` `%day%` `%hour%` `%min%` `%sec%` `%ms%` `%fullTime%`
 
 ## Parameters
 
@@ -29,8 +29,8 @@ This will return `Hello` and stop anyone from executing the command again for an
 
 ```javascript
 client.command({
-  name: "globalCooldown",
-  code: `
+    name: "globalCooldown",
+    code: `
   Hello
   $globalCooldown[5m;Please wait %time% to execute this command again.]
   `

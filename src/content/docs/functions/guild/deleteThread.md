@@ -27,8 +27,8 @@ thread ID ):
 
 ```javascript
 client.command({
-  name: "deleteThread",
-  code: `
+    name: "deleteThread",
+    code: `
   $deleteThread[$channelID;threadID;Crazy Example.]
   `
 });

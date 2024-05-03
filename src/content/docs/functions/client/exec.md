@@ -24,8 +24,8 @@ This will return your current node version:
 
 ```javascript
 client.command({
-  name: "exec",
-  code: `
+    name: "exec",
+    code: `
     \`\`\`
     $exec[node -v]
     \`\`\`

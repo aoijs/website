@@ -25,8 +25,8 @@ This will return the object property of "Leref" created in `$createObject`:
 
 ```javascript
 client.command({
-  name: "getObjectProperty",
-  code: `
+    name: "getObjectProperty",
+    code: `
     $getObjectProperty[Object Name;Leref]
     $createObject[Object Name;{"Leref": "Ferel"}]
     `

@@ -33,8 +33,8 @@ This will return the channel overwrites of the channel where you execute the com
 
 ```javascript
 client.command({
-  name: "channelOverwrites",
-  code: `
+    name: "channelOverwrites",
+    code: `
   $channelOverwrites[$channelID;{mention} {type} {allow} {deny};, ]
   `
 });

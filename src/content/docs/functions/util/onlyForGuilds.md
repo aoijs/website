@@ -25,8 +25,8 @@ This will limit the command only to the listed guilds:
 
 ```javascript
 client.command({
-  name: "onlyForGuilds",
-  code: `
+    name: "onlyForGuilds",
+    code: `
     Ok.
     $onlyForGuilds[guildID;guildID;You can't use that command here!]
     `

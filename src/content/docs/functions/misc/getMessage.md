@@ -38,8 +38,8 @@ This will return the content of your sent message:
 
 ```javascript
 client.command({
-  name: "getMessage",
-  code: `
+    name: "getMessage",
+    code: `
 $getMessage[$channelID;$messageID;content]
   `
 });

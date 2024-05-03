@@ -27,8 +27,8 @@ This will either remove or add specific roles from you:
 
 ```javascript
 client.command({
-  name: "setRoles",
-  code: `
+    name: "setRoles",
+    code: `
    $setRoles[$guildID;$authorID;Some reason.;roleID1;roleID2;roleID3;....]`
 });
 ```

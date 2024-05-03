@@ -25,8 +25,8 @@ This will return the role ID of the role `Owner` if it exists:
 
 ```javascript
 client.command({
-  name: "findRole",
-  code: `
+    name: "findRole",
+    code: `
   $findRole[Owner;$guildID]
   `
 });

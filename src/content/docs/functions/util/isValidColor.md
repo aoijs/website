@@ -24,8 +24,8 @@ This will check if the given color `ff0000` is valid:
 
 ```js
 client.command({
-  name: "isValidColor",
-  code: `
+    name: "isValidColor",
+    code: `
   $isValidColor[ff0000]` // returns: true
 });
 ```

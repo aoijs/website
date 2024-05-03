@@ -25,8 +25,8 @@ This will return the data about a given guild template:
 
 ```javascript
 client.command({
-  name: "getGuildTemplate",
-  code: `
+    name: "getGuildTemplate",
+    code: `
   $getGuildTemplate[guild-template-code;name]
   `
 });

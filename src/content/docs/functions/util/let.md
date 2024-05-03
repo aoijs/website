@@ -25,8 +25,8 @@ This will return `Ayaka` from `$get`:
 
 ```javascript
 client.command({
-  name: "let",
-  code: `
+    name: "let",
+    code: `
 $get[genius]
 $let[genius;Ayaka]
 `

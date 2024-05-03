@@ -27,8 +27,8 @@ This will create a post in the given forum with the name "this is a post" with a
 
 ```javascript
 client.command({
-  name: "guildEditPost",
-  code: `
+    name: "guildEditPost",
+    code: `
   $guildEditPost[forumId;This is a reason!;false;Tag 1;Tag 2;Tag 3]
   `
 });

@@ -14,17 +14,17 @@ $createObject[objectName;object]
 
 ## Parameters
 
-| Field                                       | Type                                                                                              | Description      | Required |
-| ------------------------------------------- | ------------------------------------------------------------------------------------------------- | ---------------- | :------: |
-| objectName                                  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The object name. |   true   |
-| object                                      | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) | JSON object.     |   true   |
+| Field      | Type                                                                                              | Description      | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | ---------------- | :------: |
+| objectName | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The object name. |   true   |
+| object     | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) | JSON object.     |   true   |
 
 ## Example(s)
 
 ```javascript
 client.command({
-  name: "createObject",
-  code: `
+    name: "createObject",
+    code: `
   $getObjectProperty[Object Name;Leref]
   $createObject[Object Name;{
     "Leref": "Ferel",

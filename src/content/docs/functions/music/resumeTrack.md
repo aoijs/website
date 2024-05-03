@@ -24,9 +24,9 @@ This will resume the current track:
 
 ```javascript
 client.command({
-  name: "resumeTrack",
-  code: `
+    name: "resumeTrack",
+    code: `
     $resumeTrack
-  `,
+  `
 });
 ```

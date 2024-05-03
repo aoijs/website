@@ -25,8 +25,8 @@ This will return `true` as you're currently in this guild:
 
 ```javascript
 client.command({
-  name: "memberExists",
-  code: `
+    name: "memberExists",
+    code: `
   $memberExists[$authorid;$guildID]
   `
 });

@@ -25,8 +25,8 @@ This will return either `true` or `false` depending on if you're server deafened
 
 ```javascript
 client.command({
-  name: "isGuildDeafened",
-  code: `
+    name: "isGuildDeafened",
+    code: `
   $isGuildDeafened
   `
 });

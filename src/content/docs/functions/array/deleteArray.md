@@ -24,8 +24,8 @@ This will delete the array "array":
 
 ```javascript
 client.command({
-  name: "deleteArray",
-  code: `
+    name: "deleteArray",
+    code: `
   $deleteArray[array]
   $createArray[array;Hello;This;Is;Great]
   `

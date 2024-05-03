@@ -36,8 +36,8 @@ This will returns a leaderboard of the "Example" variable:
 
 ```javascript
 client.command({
-  name: "guildLeaderboard",
-  code: `
+    name: "guildLeaderboard",
+    code: `
     $guildLeaderboard[Example;asc;{top} - {name} - {value};10;1;main]
     `
 });

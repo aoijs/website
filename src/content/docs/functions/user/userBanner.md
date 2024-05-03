@@ -27,8 +27,8 @@ This will return your profile banner:
 
 ```javascript
 client.command({
-  name: "userBanner",
-  code: `
+    name: "userBanner",
+    code: `
   $userBanner[$authorID;4096;true;webp]
   `
 });

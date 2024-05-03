@@ -8,129 +8,316 @@ id: variables
 og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/18.png
 ---
 
-import { FileTree, Steps } from '@astrojs/starlight/components'
+import { FileTree, Steps } from "@astrojs/starlight/components";
+import Tracker from "../../../../components/ProgressTracker";
 
-This guide will provide you with a comprehensive understanding of variables.
+<Tracker
+    client:load
+    client:only="react"
+    items={[
+        {
+            id: "understanding-variables",
+            label: "Understanding Variables (you're here!)",
+            percentageComplete: 0,
+            status: "current",
+            href: "#understanding-variables"
+        },
+        {
+            id: "using-variables",
+            label: "Using Variables",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#using-variables"
+        },
+        {
+            id: "using-different-tables",
+            label: "Using different Tables",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#using-different-tables"
+        },
+        {
+            id: "done",
+            label: "Complete 🎉",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#_top"
+        }
+    ]}
+/>
 
-### Using Variables
+## Understanding Variables
 
-Variables are useful tools in programming that allow you to store values that can be accessed and manipulated throughout your code. To use a variable, you first need to declare it by giving it a name and assigning a value to it.
+Firstly, we need to understand what variables are and what purpose they have.
 
-One way to do this is by using the following code snippet in your main file (usually named `index.js`):
+### What are Variables?
 
-```js
-client.variables({
-  variableName: boolean,
-  variableName: number,
-  variableName: object,
-  variableName: "string",
-}, table?);
-```
+Variables are used to store data that can be used later in the code. They are like containers that store data. Variables can store different types of data such as numbers, strings, objects, arrays, etc.
 
-The `client.variables()` function takes an object as an argument, where each property represents a variable name and its corresponding value. You can assign variables to a certain table. However, this is optional and will default to "main".
+We use functions like, `$setUserVar`, `$setGlobalUserVar` and so on.
 
-For example:
+The default database is a JSON database, called aoi.db. Currently there's no way to change the database type, except using community packages.
 
-```js
-client.variables({
-    blacklisted: false,
-    money: 0,
-    developers: {},
-    title: "none",
-  }, "main");
-```
+### Types of Variables
 
-This also works:
+Variables have different types.
 
-```js
-client.variables({
-  blacklisted: false,
-  money: 0,
-  developers: {},
-  title: "none",
-});
-```
+-   **Global Variables**: These variables are accessible from anywhere in the discord server.
+-   **Guild Variables** & **User Variables**: These variables are accessible only in the guild where they were set.
+-   **Message Variables**: These variables are accessible only in the message where they were set.
+-   **Channel Variables**: These variables are accessible only in the channel where they were set.
 
----
+### Why use Variables?
 
-## Variable Handlers
+Variables are handy in storing data directly within your project. This way you can build more complex commands and store data that can be used later in the code.
 
-Another way to use variables is by using a variable handler, which can help keep your main file organized and cleaner. To set up a variable handler, follow these steps:
+If you do not wish to use variables you can always disable the database using the `disableAoiDB` option in the constructor.
+
+<br />
+
+<Tracker
+    client:load
+    client:only="react"
+    items={[
+        {
+            id: "understanding-variables",
+            label: "Understanding Variables",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#understanding-variables"
+        },
+        {
+            id: "using-variables",
+            label: "Using Variables (you're here!)",
+            percentageComplete: 0,
+            status: "current",
+            href: "#using-variables"
+        },
+        {
+            id: "using-different-tables",
+            label: "Using different Tables",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#using-different-tables"
+        },
+        {
+            id: "done",
+            label: "Complete 🎉",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#_top"
+        }
+    ]}
+/>
+
+## Using Variables
+
+To use the database we first need to setup some things.
 
 <Steps>
+  1. Edit your index.js, if you haven't already.
+     It should look like the following, and have a `database` option in the constructor.
+     ```js
+     const { AoiClient } = require("aoi.js");
 
-1. Create the directory
-    - Create a folder with the name `handler` in the main directory.
-
-    <FileTree>
-    - index.js your **main file**
-    - package.json
-    - commands your **commands folder**
-      - ban.js
-      - ...
-    - handler your **handler folder**
-    </FileTree>
-
-2. Create the file
-    - Create a file with the name `variables.js` in the `handler` folder.
-
-    <FileTree>
-    - index.js your **main file**
-    - package.json
-    - commands your **commands folder**
-      - ban.js
-      - ...
-    - handler your **handler folder**
-      - variables.js
-    </FileTree>
-
-3. Edit the index.js file
-    - In the `index.js` file, require the `variables.js` file.
-    
-    ```js
-    require("./handler/variables.js")(client);
-    ```
-
-4. Modify your `handler/variables.js`
-    - In the `handler/variables.js` file, export a function that takes a client as an argument including your variables.
-
-    ```js
-    module.exports = (client) => {
-      client.variables({
-        variableName: boolean,
-        variableName: number,
-        variableName: object,
-        variableName: "string",
-      }, table?);
-    };
-    ```
-
-    For example:
-
-    ```js
-    module.exports = (client) => {
-      client.variables({
-        blacklisted: false,
-        money: 0,
-        developers: {},
-        title: "none",
-      }, "main");
-    };
-    ```
-
-    This also works:
-
-    ```js
-    module.exports = (client) => {
-      client.variables({
-        blacklisted: false,
-        money: 0,
-        developers: {},
-        title: "none",
+      const client = new AoiClient({
+          token: "Discord Bot Token",
+          prefix: "Discord Bot Prefix",
+          intents: ["MessageContent", "Guilds", "GuildMessages"],
+          events: ["onMessage", "onInteractionCreate"],
+          database: {
+              type: "aoi.db",
+              db: require("@akarui/aoi.db"),
+              dbType: "KeyValue",
+              tables: ["main"],
+              securityKey: "a-32-characters-long-string-here"
+          }
       });
-    };
+      ```
+
+2. **(optional)** Change the `securityKey` to a 32 character long string.
+   This isn't exactly needed, but if you want to change it ensure it's 32 characters long, and <u>don't change it again</u> otherwise your <u>data will be lost</u>!
+
+3. The important part; adding variables.
+   To add variables we use `<client>.variables()`, the `<client>` stands for your defined AoiClient.
+
+    In our case we defined it as `client`, so we would use `client.variables()`.
+
+    :::tip[Where do I find my client?]
+
+    Your client is where you defined your AoiClient, as in shown below.
+
+    In this case your client would be called `client`.
+
+    ```js {3}
+    const { AoiClient } = require("aoi.js");
+
+    const client = new AoiClient({...});
     ```
+
+    :::
+
+    ```js {17-19}
+    const { AoiClient } = require("aoi.js");
+
+    const client = new AoiClient({
+        token: "Discord Bot Token",
+        prefix: "Discord Bot Prefix",
+        intents: ["MessageContent", "Guilds", "GuildMessages"],
+        events: ["onMessage", "onInteractionCreate"],
+        database: {
+            type: "aoi.db",
+            db: require("@akarui/aoi.db"),
+            dbType: "KeyValue",
+            tables: ["main"],
+            securityKey: "a-32-characters-long-string-here"
+        }
+    });
+
+    client.variables({
+        warnings: 0
+    });
+    ```
+
+    In this example we added a variable called `warnings` with a value of `0`. You can add more variables by separating them with a comma.
+
+    ```js startLineNumber=17 {3-4}
+    client.variables({
+        warnings: 0,
+        kicks: 0,
+        bans: 0
+    });
+    ```
+
+4. After doing this you should see a startup message including the database type.
+   If you don't see this message, and you see an error, ensure you've followed the steps correctly.
+
+    | ![Picture showing startup message of aoi.db](https://i.imgur.com/gKLXyjq.png) |
+    | :---------------------------------------------------------------------------: |
+    |                   Picture showing startup message of aoi.db                   |
 
 </Steps>
 
-With these steps, you now have a working variable handler, which can help you keep your code organized and easier to manage.
+<br />
+
+<Tracker
+    client:load
+    client:only="react"
+    items={[
+        {
+            id: "understanding-variables",
+            label: "Understanding Variables",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#understanding-variables"
+        },
+        {
+            id: "using-variables",
+            label: "Using Variables",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#using-variables"
+        },
+        {
+            id: "using-different-tables",
+            label: "Using different Tables (you're here!)",
+            percentageComplete: 0,
+            status: "current",
+            href: "#using-different-tables"
+        },
+        {
+            id: "done",
+            label: "Complete 🎉",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#_top"
+        }
+    ]}
+/>
+
+## Using different Tables
+
+You can use different tables to sort your data even more.
+
+For this we would have to edit your database configuration in our index.js.
+
+  <Steps>
+
+    1. Adding more tables, currently you should have only one table called `main`.
+       To add more tables you can add them as an array in the `tables` option.
+
+       ```js {12}
+       const { AoiClient } = require("aoi.js");
+
+       const client = new AoiClient({
+           token: "Discord Bot Token",
+           prefix: "Discord Bot Prefix",
+           intents: ["MessageContent", "Guilds", "GuildMessages"],
+           events: ["onMessage", "onInteractionCreate"],
+           database: {
+               type: "aoi.db",
+               db: require("@akarui/aoi.db"),
+               dbType: "KeyValue",
+               tables: ["main", "moderation"],
+               securityKey: "a-32-characters-long-string-here"
+           }
+       });
+       ```
+
+       In this example we added a table called `moderation`. You can add more tables by separating them with a comma.
+
+       ```js startLineNumber=12
+       tables: ["main", "moderation", "economy"],
+       ```
+
+    2. Adding Variables to the tables.
+       To assign variables to a specific table you can use the `table` option in the `variables` function.
+
+       ```js startLineNumber=17 {3-4}
+       client.variables({
+          warnings: 0,
+          kicks: 0,
+          bans: 0,
+       }, "moderation");
+       ```
+
+       This would add the variables `warnings`, `kicks` and `bans` to the table `moderation`.
+
+  </Steps>
+
+<br />
+
+<Tracker
+    client:load
+    client:only="react"
+    items={[
+        {
+            id: "understanding-variables",
+            label: "Understanding Variables",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#understanding-variables"
+        },
+        {
+            id: "using-variables",
+            label: "Using Variables",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#using-variables"
+        },
+        {
+            id: "using-different-tables",
+            label: "Using different Tables",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#using-different-tables"
+        },
+        {
+            id: "done",
+            label: "Complete 🎉 (you're here!)",
+            percentageComplete: 0,
+            status: "current",
+            href: "#_top"
+        }
+    ]}
+/>

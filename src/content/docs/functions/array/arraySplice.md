@@ -25,8 +25,8 @@ $arraySplice[name;index;amount;...elements]
 
 ```javascript
 client.command({
-  name: "array-splice",
-  code: `
+    name: "array-splice",
+    code: `
   $arraySplice[array;2;3]
   $createArray[array;aoi.js;akarui;documents;bot]
   `

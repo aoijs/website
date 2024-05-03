@@ -18,8 +18,8 @@ This will return the amount of members in your guild:
 
 ```javascript
 client.command({
-  name: "allMembersCount",
-  code: `
+    name: "allMembersCount",
+    code: `
   $allMembersCount
   `
 });

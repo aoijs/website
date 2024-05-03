@@ -30,9 +30,9 @@ This will automatically add songs to your queue from the given type:
 
 ```javascript
 client.command({
-  name: "autoPlay",
-  code: `
+    name: "autoPlay",
+    code: `
     $autoPlay[relative]
-  `,
+  `
 });
 ```

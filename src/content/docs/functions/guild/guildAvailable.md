@@ -24,8 +24,8 @@ This will return `true` or `false` depending on if the guild is available:
 
 ```javascript
 client.command({
-  name: "guildAvailable",
-  code: `
+    name: "guildAvailable",
+    code: `
   $guildAvailable[$guildID]
   `
 });

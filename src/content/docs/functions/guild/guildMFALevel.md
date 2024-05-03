@@ -29,8 +29,8 @@ This will return the guild's MFA Level:
 
 ```javascript
 client.command({
-  name: "guildMFALevel",
-  code: `
+    name: "guildMFALevel",
+    code: `
   $guildMFALevel[$guildID]
   `
 });

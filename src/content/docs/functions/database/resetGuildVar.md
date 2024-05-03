@@ -25,8 +25,8 @@ This will reset a variable called "Example":
 
 ```javascript
 client.command({
-  name: "resetGuildVar",
-  code: `
+    name: "resetGuildVar",
+    code: `
     $resetGuildVar[Example;main]
     `
 });

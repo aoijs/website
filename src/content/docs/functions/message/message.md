@@ -24,8 +24,8 @@ This will return your given message:
 
 ```javascript
 client.command({
-  name: "message",
-  code: `
+    name: "message",
+    code: `
   You said: "$message"
   ` // [prefix]message Hello!
 });

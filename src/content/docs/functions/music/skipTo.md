@@ -30,9 +30,9 @@ This will skip to the third song in the queue:
 
 ```javascript
 client.command({
-  name: "skipTo",
-  code: `
+    name: "skipTo",
+    code: `
     $skipTo[3]
-  `,
+  `
 });
 ```

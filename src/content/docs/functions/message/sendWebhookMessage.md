@@ -27,13 +27,13 @@ This will create a webhook and send a message using it:
 
 ```javascript
 client.command({
-  name: "sendWebhookMessage",
-  code: `
+    name: "sendWebhookMessage",
+    code: `
    $sendWebhookMessage[$splitText[1];$splitText[2];Hello!;false]
    $textSplit[$createWebhook[$channelID;$username;$userAvatar;Testing!;,];,]
   ` /* Using $textSplit to split the ID and Token in separate parts to use it in sendWebhookMessage
   $splitText[1] equals the webhook ID 
   $splitText[2] equals the webhook Token
-  */,
+  */
 });
 ```

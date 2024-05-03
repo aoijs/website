@@ -27,8 +27,8 @@ This will change the value of "Example" to "This is a value" for the command aut
 
 ```javascript
 client.command({
-  name: "setGlobalUserVar",
-  code: `
+    name: "setGlobalUserVar",
+    code: `
     $setGlobalUserVar[Example;This is a value;$authorID;main]
     `
 });

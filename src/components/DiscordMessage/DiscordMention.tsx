@@ -38,7 +38,7 @@ function DiscordMentionComponent({ children }: DiscordMentionComponentProps) {
   }, []);
 
   return (
-    <div>
+    <div className="not-content">
       <DiscordMessages light-theme={isLightTheme}>
         <DiscordMessage
           author="Akarui Helper"

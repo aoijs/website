@@ -25,8 +25,8 @@ This will return the size of your `index.js` in `GB`:
 
 ```javascript
 client.command({
-  name: "fileSize",
-  code: `
+    name: "fileSize",
+    code: `
   $fileSize[./index.js;GB]
   `
 });

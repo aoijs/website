@@ -94,8 +94,8 @@ This will return the amount of Voice Channels in your guild:
 
 ```javascript
 client.command({
-  name: "allChannelsCount",
-  code: `
+    name: "allChannelsCount",
+    code: `
   $allChannelsCount[Voice]
   `
 });

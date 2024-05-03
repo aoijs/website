@@ -28,8 +28,8 @@ This will return your user ID:
 
 ```javascript
 client.command({
-  name: "eval",
-  code: `
+    name: "eval",
+    code: `
     \`\`\`
     $eval[$authorID;true;true;true;true]
     \`\`\`

@@ -25,8 +25,8 @@ This will crosspost a message to multiple channels in your server:
 
 ```javascript
 client.command({
-  name: "sendCrosspostingMessage",
-  code: `
+    name: "sendCrosspostingMessage",
+    code: `
    $sendCrosspostingMessage[Hello!;$channelID;$randomChannelID]
   `
 });

@@ -24,8 +24,8 @@ This will return `72` as `8*9` equals that:
 
 ```javascript
 client.command({
-  name: "multi",
-  code: `
+    name: "multi",
+    code: `
   $multi[8;9]
   `
 });

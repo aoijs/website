@@ -24,8 +24,8 @@ This will return your display name, if you have none then it'll return your Disc
 
 ```javascript
 client.command({
-  name: "userDisplayName",
-  code: `
+    name: "userDisplayName",
+    code: `
   $userDisplayName[$authorID]
   `
 });

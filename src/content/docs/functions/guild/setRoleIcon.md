@@ -26,8 +26,8 @@ This will change the icon of a given role to the specified icon:
 
 ```javascript
 client.command({
-  name: "setRoleIcon",
-  code: `
+    name: "setRoleIcon",
+    code: `
   $setRoleIcon[$guildID;roleID;iconURL]
   `
 });

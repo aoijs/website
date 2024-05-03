@@ -27,8 +27,8 @@ This will return the icon of the guild:
 
 ```javascript
 client.command({
-  name: "guildIcon",
-  code: `
+    name: "guildIcon",
+    code: `
   $guildIcon[$guildID;4096;true;webp]
   `
 });

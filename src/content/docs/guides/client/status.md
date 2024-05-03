@@ -9,13 +9,14 @@ og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/10.
 ---
 
 <!-- omit from toc -->
+
 ## Table of Contents
 
-- [Bot Status](#bot-status)
-  - [Customizing Bot Status](#customizing-bot-status)
-  - [Status Types](#status-types)
-- [Client Presence](#client-presence)
-  - [Presence Types](#presence-types)
+-   [Bot Status](#bot-status)
+    -   [Customizing Bot Status](#customizing-bot-status)
+    -   [Status Types](#status-types)
+-   [Client Presence](#client-presence)
+    -   [Presence Types](#presence-types)
 
 ---
 
@@ -39,10 +40,10 @@ When using sharding, you can individually change the status of each shard:
 
 ```javascript
 client.status({
-  name: string,
-  type: string,
-  time: number,
-  shard: number,
+    name: string,
+    type: string,
+    time: number,
+    shard: number
 });
 ```
 
@@ -50,9 +51,9 @@ Replace `string`, `number`, and `boolean` with appropriate values. Here's an exa
 
 ```javascript
 client.status({
-  name: "Example Text!",
-  type: "PLAYING",
-  time: 12,
+    name: "Example Text!",
+    type: "PLAYING",
+    time: 12
 });
 ```
 
@@ -60,22 +61,22 @@ You can have multiple statuses by adding multiple `client.status({...})` calls:
 
 ```javascript
 client.status({
-  name: "Example Text one!",
-  type: "PLAYING",
-  time: 12,
+    name: "Example Text one!",
+    type: "PLAYING",
+    time: 12
 });
 
 client.status({
-  name: "Example Text two!",
-  type: "STREAMING",
-  time: 25,
-  url: "some URL",
+    name: "Example Text two!",
+    type: "STREAMING",
+    time: 25,
+    url: "some URL"
 });
 
 client.status({
-  name: "Doing nothing..", // Normal status like any other Discord user without any state.
-  time: 50,
-  type: "CUSTOM",
+    name: "Doing nothing..", // Normal status like any other Discord user without any state.
+    time: 50,
+    type: "CUSTOM"
 });
 ```
 
@@ -83,12 +84,12 @@ client.status({
 
 There are various types of statuses (not case-sensitive):
 
-- **PLAYING**
-- **WATCHING**
-- **STREAMING**
-- **LISTENING**
-- **COMPETING**
-- **CUSTOM**
+-   **PLAYING**
+-   **WATCHING**
+-   **STREAMING**
+-   **LISTENING**
+-   **COMPETING**
+-   **CUSTOM**
 
 ### Client Presence
 
@@ -96,10 +97,10 @@ You can also set the bot's presence by adding the `status` property, for example
 
 ```javascript
 client.status({
-  name: "Example Text!",
-  type: "PLAYING",
-  status: "dnd",
-  time: 12,
+    name: "Example Text!",
+    type: "PLAYING",
+    status: "dnd",
+    time: 12
 });
 ```
 
@@ -107,7 +108,7 @@ client.status({
 
 Available presence statuses:
 
-- **online**
-- **idle**
-- **dnd**
-- **invisible**
+-   **online**
+-   **idle**
+-   **dnd**
+-   **invisible**

@@ -25,8 +25,8 @@ This will reset a variable called "Example":
 
 ```javascript
 client.command({
-  name: "resetGlobalUserVar",
-  code: `
+    name: "resetGlobalUserVar",
+    code: `
     $resetGlobalUserVar[Example;main]
     `
 });

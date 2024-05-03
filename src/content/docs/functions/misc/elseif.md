@@ -26,9 +26,9 @@ You require `$endelseif` to end the `$elseIf` statement.
 
 ```javascript
 client.command({
-  name: "if",
-  $if: "old",
-  code: `
+    name: "if",
+    $if: "old",
+    code: `
   $if[1==2]
   Hello!
   $elseif[2==4]

@@ -39,8 +39,8 @@ This returns: Greater than 2 arguments if condition met, else it will return an 
 
 ```javascript
 client.command({
-  name: "argsCheck",
-  code: `
+    name: "argsCheck",
+    code: `
   You have more than two arguments, nice!
 
   $argsCheck[>2;You have less than two arguments!]

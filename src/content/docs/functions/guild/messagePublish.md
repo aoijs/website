@@ -25,8 +25,8 @@ This will publish a message ( will only work in announcement channels ):
 
 ```javascript
 client.command({
-  name: "messagePublish",
-  code: `
+    name: "messagePublish",
+    code: `
   $messagePublish[$get[msgID];$channelID]
   $let[msgID;$sendMessage[Hello!;true]]
   `

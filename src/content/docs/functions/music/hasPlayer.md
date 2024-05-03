@@ -24,9 +24,9 @@ This will return either true or false depending on if your bot has a player in t
 
 ```javascript
 client.command({
-  name: "hasPlayer",
-  code: `
+    name: "hasPlayer",
+    code: `
     $hasPlayer
-  `,
+  `
 });
 ```

@@ -24,8 +24,8 @@ This will send an embed delayed:
 
 ```javascript
 client.command({
-  name: "wait",
-  code: `
+    name: "wait",
+    code: `
     $description[Hello!]
     $wait[5s]
     $sendMessage[Oh, what's that?]

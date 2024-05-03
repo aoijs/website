@@ -26,8 +26,8 @@ This will return your profile picture:
 
 ```javascript
 client.command({
-  name: "authorAvatar",
-  code: `
+    name: "authorAvatar",
+    code: `
   $authorAvatar[2048;true;webp]
   `
 });

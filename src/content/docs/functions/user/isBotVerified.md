@@ -24,8 +24,8 @@ This will check if your bot is verified and return either `true` or `false`:
 
 ```javascript
 client.command({
-  name: "isBotVerified",
-  code: `
+    name: "isBotVerified",
+    code: `
   $isBotVerified[$clientId]
   `
 });

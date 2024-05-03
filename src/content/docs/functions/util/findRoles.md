@@ -23,9 +23,9 @@ $findRoles[roleResolver;limit?;type?;format?]
 
 ### Parameters for the `format` argument
 
-- \{position\} -> returns the position
-- \{id\} -> returns the role ID
-- \{username\} -> returns the role name
+-   \{position\} -> returns the position
+-   \{id\} -> returns the role ID
+-   \{username\} -> returns the role name
 
 ## Example(s)
 
@@ -33,8 +33,8 @@ This will return all roles which are named `Owner`:
 
 ```javascript
 client.command({
-  name: "findRoles",
-  code: `
+    name: "findRoles",
+    code: `
   $findRoles[Owner;5;startsWith;{position}) {username}: {id}]
   `
 });

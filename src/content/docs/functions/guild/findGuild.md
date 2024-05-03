@@ -24,8 +24,8 @@ This will search for a guild:
 
 ```javascript
 client.command({
-  name: "findGuild",
-  code: `
+    name: "findGuild",
+    code: `
   $findGuild[any-server-name]
   `
 });

@@ -24,8 +24,8 @@ This will return `true` as `#30dbd8` is an valid hex color:
 
 ```javascript
 client.command({
-  name: "isValidHex",
-  code: `
+    name: "isValidHex",
+    code: `
   $isValidHex[#30dbd8]
   `
 });
@@ -35,8 +35,8 @@ This will return `true` as well as `80` is an valid hexadecimal color:
 
 ```javascript
 client.command({
-  name: "isValidHex",
-  code: `
+    name: "isValidHex",
+    code: `
   $isValidHex[80]
   `
 });

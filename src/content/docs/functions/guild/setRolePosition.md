@@ -26,8 +26,8 @@ This will change a random role's position to `1` (the bot's highest role must be
 
 ```javascript
 client.command({
-  name: "setRolePosition",
-  code: `
+    name: "setRolePosition",
+    code: `
    $setRolePosition[$randomRoleID;1;$guildID]`
 });
 ```

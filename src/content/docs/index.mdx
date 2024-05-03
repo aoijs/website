@@ -15,7 +15,7 @@ head:
       content: "Get started with aoi.js, the most powerful string package to create a simple and fast Discord Bot."
 hero:
   title: Build <span style='color:var(--sl-color-banner-bg, var(--sl-color-bg-accent));'>Powerful Discord Bots</span> using aoi.js
-  tagline: The most advanced string-based package to create a Discord Bot fast and powerful
+  tagline: The most <b>advanced string-based package</b> to create a Discord Bot fast and powerful
   image:
     file: ../../images/hero_icon.png
     alt: "aoi.js mascot, showing bird with heart over head"
@@ -69,6 +69,7 @@ import DiscordComponents from "../../components/DiscordMessage/DiscordComponents
     aoi.js comes with over 675 pre-built functions that empower you to create
     dynamic and interactive Discord bots with ease. These functions provide a
     wide range of functionalities to enhance your bot's capabilities.
+    <br />
     <DiscordComponents client:load client:only="react"
         bot="Look at the unlimited possibilities!"
         buttons={[
@@ -80,7 +81,7 @@ import DiscordComponents from "../../components/DiscordMessage/DiscordComponents
             color: "Gold",
             description: "This is an embed!",
             fields: [
-              { fieldTitle: "Features", fieldValue: "Features simplified with the power of discord.js", inline: false },
+              { title: "Features", value: "Features simplified with the power of discord.js", inline: false },
             ]
         }
         ]}x
@@ -92,8 +93,7 @@ import DiscordComponents from "../../components/DiscordMessage/DiscordComponents
   </Card>
 </CardGrid>
 <Card title="Extensions for Added Functionality" icon="open-book">
-  aoi.js offers extensions like <a href="extensions/">aoi.music</a> and <a href="extensions/">aoi.panel</a> to enhance your bot's capabilities. These extensions make it simple to add
-  features like music playback and a customizable web dashboard for managing your bot.
+  aoi.js offers extensions like <a href="extensions/akarui/aoimusic/">aoi.music</a> and <a href="extensions/akarui/aoipanel/">aoi.panel</a> to enhance your bot's capabilities. These extensions make it simple to add features like music playback and a customizable web dashboard for managing your bot.
 </Card>
 
 <br />
@@ -104,7 +104,7 @@ import DiscordComponents from "../../components/DiscordMessage/DiscordComponents
     <p>This project is possible thanks to our contributors!</p>
     <p>Check them out <a href="/contributors">here 🚀</a></p>
     <p>
-      Contribute to <a href="https://github.com/AkaruiDevelopment/aoi.js" target="_blank">aoi.js</a> or our <a href="https://github.com/aoijs/website" target="_blank">documentation</a>!
+      Contribute to <a href="https://github.com/aoijs/aoi.js" target="_blank">aoi.js</a> or our <a href="https://github.com/aoijs/website" target="_blank">documentation</a>!
     </p>
     <div class="logo">
       <Image

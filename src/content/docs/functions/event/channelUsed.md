@@ -20,7 +20,7 @@ This will return the amount of roles of your guild:
 
 ```javascript
 client.deletedCommand({
-  channel: "channelID",
-  code: `$userTag deleted a message in <#$channelUsed>!`
+    channel: "channelID",
+    code: `$userTag deleted a message in <#$channelUsed>!`
 });
 ```

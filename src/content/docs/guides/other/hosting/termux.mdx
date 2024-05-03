@@ -1,0 +1,189 @@
+---
+title: Termux
+description: Learn how to host your Discord Bot using Termux.
+id: termux
+author: "Fafa"
+author_url: "https://raw.githubusercontent.com/aoijs/website/main/src/images/contributors/fafa.png"
+lastUpdated: false
+next: false
+prev: false
+---
+
+import { Steps } from "@astrojs/starlight/components";
+import Tracker from "../../../../../components/ProgressTracker";
+
+:::note[What is Termux?]
+
+Termux is an Android terminal emulator and Linux environment app that works directly with no rooting or setup required. A minimal base system is installed automatically - additional packages are available using the APT package manager.
+
+:::
+
+:::caution[Note]
+
+Please note that your bot will only be online when your phone is on and connected to the internet. If you want your bot to be online 24/7, you should consider using a VPS or a hosting service.
+
+Your Bot ping will be higher than usual, and it may not be as stable as a VPS or hosting service.
+
+:::
+
+<br />
+
+<Tracker
+    client:load
+    client:only="react"
+    items={[
+        {
+            id: "setting-up",
+            label: "Setting up Termux (you're here!)",
+            percentageComplete: 0,
+            status: "current",
+            href: "#setting-up-termux"
+        },
+        {
+            id: "running-cli",
+            label: "Running CLI",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#running-cli"
+        },
+        {
+            id: "editing-files",
+            label: "Editing Files",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#editing-files"
+        },
+        {
+            id: "done",
+            label: "Complete 🎉",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#setting-up-termux"
+        }
+    ]}
+/>
+
+## Setting up Termux
+
+<Steps>
+
+1. Update dependencies by running the following command:
+
+    ```bash title="apt command"
+    apt update && apt upgrade
+    ```
+
+2. Install node.js
+
+    ```bash title="node.js installation"
+    pkg install nodejs-lts
+    ```
+
+3. Install CLI
+    ```bash title="CLI installation"
+    npm install -g @akarui/aoi.cli
+    ```
+
+</Steps>
+
+After doing those steps, we're ready to get started!
+
+## Running CLI
+
+<br />
+
+<Tracker
+    client:load
+    client:only="react"
+    items={[
+        {
+            id: "setting-up",
+            label: "Setting up Termux",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#setting-up-termux"
+        },
+        {
+            id: "running-cli",
+            label: "Running CLI (you're here!)",
+            percentageComplete: 25,
+            status: "current",
+            href: "#running-cli"
+        },
+        {
+            id: "editing-files",
+            label: "Editing Files",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#editing-files"
+        },
+        {
+            id: "done",
+            label: "Complete 🎉",
+            percentageComplete: 0,
+            status: "unvisited",
+            href: "#setting-up-termux"
+        }
+    ]}
+/>
+
+To create our project easily and quickly, we will use the CLI. To do this, run the following command:
+
+```bash title="Creating a project"
+aoijs create --dir ./aoijs
+```
+
+This will create a new project in the `aoijs` directory and install all needed packages for us, wait for it to finish.
+
+## Editing Files
+
+Once the project is created, you can edit the files in the `aoijs` directory using your favorite text editor. You can use `nano`, `vim`, or `vi` to edit the files.
+
+```bash title="Editing files"
+cd aoijs
+nano index.js
+```
+
+This will open the built-in text editor, `nano`, where you can edit the `index.js` file.
+
+Add your Discord Bot token and your prefix to the file, then save it by pressing `Ctrl + O`, `ENTER` and exit by pressing `Ctrl + X`.
+
+Do the same for your commands as you did with your `index.js` file.
+
+<br />
+<br />
+
+<Tracker
+    client:load
+    client:only="react"
+    items={[
+        {
+            id: "setting-up",
+            label: "Setting up Termux",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#setting-up-termux"
+        },
+        {
+            id: "running-cli",
+            label: "Running CLI",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#running-cli"
+        },
+        {
+            id: "editing-files",
+            label: "Editing Files",
+            percentageComplete: 100,
+            status: "visited",
+            href: "#editing-files"
+        },
+        {
+            id: "done",
+            label: "Complete 🎉",
+            percentageComplete: 0,
+            status: "current",
+            href: "#setting-up-termux"
+        }
+    ]}
+/>

@@ -20,8 +20,8 @@ $inviteLeaderboard[field[guildId];field[page];field[limit];field[format]]
 
 ## Parameters
 
-| Parameter | Description                   | Type   | Required |
-| --------- | ----------------------------- | ------ | -------- |
+| Parameter | Description                   | Type                                                                                              | Required |
+| --------- | ----------------------------- | ------------------------------------------------------------------------------------------------- | -------- |
 | guildId   | The guild's id                | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | false    |
 | page      | The page number               | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | false    |
 | limit     | The limit of the leaderboard  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | false    |

@@ -18,8 +18,8 @@ This will forcefully shutdown your bot:
 
 ```javascript
 client.command({
-  name: "killClient",
-  code: `
+    name: "killClient",
+    code: `
     $killClient
     `
 });

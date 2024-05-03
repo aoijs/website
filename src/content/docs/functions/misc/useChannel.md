@@ -24,8 +24,8 @@ This will send an embed in the current channel:
 
 ```javascript
 client.command({
-  name: "useChannel",
-  code: `
+    name: "useChannel",
+    code: `
     $description[Hello!]
     $useChannel[$channelID]
     `

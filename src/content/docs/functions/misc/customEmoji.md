@@ -27,8 +27,8 @@ Tries to search for the emoji in all guilds the bot is in:
 
 ```javascript
 client.command({
-  name: "customEmoji",
-  code: `
+    name: "customEmoji",
+    code: `
   $customEmoji[emojiResolver;global]
   `
 });
@@ -38,8 +38,8 @@ Tries to return the emoji of the given guild:
 
 ```javascript
 client.command({
-  name: "customEmoji",
-  code: `
+    name: "customEmoji",
+    code: `
   $customEmoji[emojiResolver;specific guild ID]
   `
 });

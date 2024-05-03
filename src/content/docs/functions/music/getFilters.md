@@ -24,9 +24,9 @@ This will return the current applied filters:
 
 ```javascript
 client.command({
-  name: "getFilters",
-  code: `
+    name: "getFilters",
+    code: `
     $getFilters
-  `,
+  `
 });
 ```

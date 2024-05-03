@@ -15,24 +15,19 @@ import contrib_7 from "../images/contributors/snow.png";
 import contrib_8 from "../images/contributors/nanotechpikachu.png";
 import contrib_9 from "../images/contributors/relevantzone.png";
 import contrib_10 from "../images/contributors/ahoemi.png";
+import contrib_11 from "../images/contributors/supreme.gif";
 
 //staff (cm above)
 import staff_1 from "../images/contributors/dodogames.png";
-import staff_2 from "../images/contributors/supreme.gif";
 
 //aoi.js logo
-import hero_icon from "../images/error_2_icon.png";
-import hover_icon from "../images/hero_icon.png";
+import hero_icon from "../images/hero_icon.png";
 ---
 
 <StarlightPage
   frontmatter={{ title: "Contributors", description: "Our beloved Contributors.", tableOfContents: false }}
   hasSidebar={false}
 >
-    <div class="contribute-header">
-        <p>Everyone on this page deserves a huge thanks.</p>
-         <p>Thank you for contributing to this project.</p>
-    </div>
   <div class="contributors">
     {
       [
@@ -61,23 +56,23 @@ import hover_icon from "../images/hero_icon.png";
           },
         },
         {
-          name: "Fafa",
-          discord: "@faf4a",
-          role: "Docs Manager",
-          color: "#3498db",
-          avatar: contrib_3,
-          link: {
-            url: "https://github.com/faf4a",
-            label: "Github Profile",
-            type: "github",
-          },
-        },
-        {
           name: "Blur",
           discord: "@bumblebee_3",
           role: "Developer",
           color: "#8f00ee",
           avatar: contrib_4,
+        },
+        {
+          name: "Wiltark",
+          discord: "@wiltark",
+          role: "Developer",
+          color: "#8f00ee",
+          avatar: contrib_5,
+          link: {
+            url: "https://github.com/wiltark",
+            label: "Github Profile",
+            type: "github",
+          },
         },
         {
           name: "ahoemi.official",
@@ -92,13 +87,25 @@ import hover_icon from "../images/hero_icon.png";
           },
         },
         {
-          name: "dodogames",
-          discord: "@dodogames",
-          role: "Community Manager",
-          color: "#e71d99",
-          avatar: staff_1,
+          name: "Fafa",
+          discord: "@faf4a",
+          role: "Docs Manager",
+          color: "#3498db",
+          avatar: contrib_3,
           link: {
-            url: "https://github.com/DodoGames7",
+            url: "https://github.com/faf4a",
+            label: "Github Profile",
+            type: "github",
+          },
+        },
+        {
+          name: "AstrooKai",
+          discord: "@astrookai",
+          role: "Docs Manager",
+          color: "#3498db",
+          avatar: contrib_6,
+          link: {
+            url: "https://github.com/AstrooKai",
             label: "Github Profile",
             type: "github",
           },
@@ -116,25 +123,13 @@ import hover_icon from "../images/hero_icon.png";
           },
         },
         {
-          name: "Wiltark",
-          discord: "@wiltark",
-          role: "Developer",
-          color: "#8f00ee",
-          avatar: contrib_5,
+          name: "dodogames",
+          discord: "@dodogames",
+          role: "Community Manager",
+          color: "#e71d99",
+          avatar: staff_1,
           link: {
-            url: "https://github.com/wiltark",
-            label: "Github Profile",
-            type: "github",
-          },
-        },
-        {
-          name: "AstrooKai",
-          discord: "@astrookai",
-          role: "Docs Manager",
-          color: "#3498db",
-          avatar: contrib_6,
-          link: {
-            url: "https://github.com/AstrooKai",
+            url: "https://github.com/DodoGames7",
             label: "Github Profile",
             type: "github",
           },
@@ -161,9 +156,9 @@ import hover_icon from "../images/hero_icon.png";
         {
           name: "Supreme",
           discord: "@supremesupreme",
-          role: "Moderator",
-          color: "#6461f6",
-          avatar: staff_2,
+          role: "Contributor",
+          color: "#c5fff8",
+          avatar: contrib_11,
           link: {
             url: "https://github.com/berticulousnert",
             label: "Github Profile",
@@ -214,7 +209,7 @@ import hover_icon from "../images/hero_icon.png";
   <div class="contribute-footer">
     <p>Want to be on this page as well?</p>
     <p>
-      Contribute to <a href="https://github.com/AkaruiDevelopment/aoi.js" target="_blank">aoi.js</a> or our <a
+      Contribute to <a href="https://github.com/aoijs/aoi.js" target="_blank">aoi.js</a> or our <a
         href="https://github.com/aoijs/website" target="_blank">documentation</a
       >!
     </p>
@@ -223,7 +218,7 @@ import hover_icon from "../images/hero_icon.png";
         draggable="false"
         src={hero_icon}
         alt="aoi.js Mascot"
-        style="display: block; cursor: pointer;"
+        style="display: block;"
         id="logo-normal"
         loading="eager"
         decoding="async"
@@ -249,11 +244,11 @@ import hover_icon from "../images/hero_icon.png";
     backdrop-filter: blur(16px);
   }
 
-  img {
+  img:not(.site-title img) {
     filter: drop-shadow(0 0 1rem var(--overlay-blurple));
   }
 
-  svg {
+  a svg {
     display: inline-block !important;
   }
 
@@ -368,33 +363,9 @@ import hover_icon from "../images/hero_icon.png";
     text-align: center;
   }
 
-  .contribute-header {
-    margin-bottom: 5rem;
-    background: var(--overlay-blurple);
-    padding: 5px 10px;
-    border-radius: 10px;
-    text-align: center;
-  }
-
   .logo {
     margin: 0 auto;
     width: 100px;
     height: auto;
-    cursor: pointer;
   }
 </style>
-
-<script is:inline>
-  const normal = document.getElementById("logo-normal");
-  const hover = document.getElementById("logo-hover");
-
-  normal.addEventListener("mouseover", () => {
-    normal.style.display = "none";
-    hover.style.display = "block";
-  });
-
-  hover.addEventListener("mouseout", () => {
-    hover.style.display = "none";
-    normal.style.display = "block";
-  });
-</script>

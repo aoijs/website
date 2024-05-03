@@ -24,8 +24,8 @@ This will return your given attachment:
 
 ```javascript
 client.command({
-  name: "messageAttachment",
-  code: `
+    name: "messageAttachment",
+    code: `
   You had the following attachment in your message: $messageAttachment
   `
 });

@@ -25,8 +25,8 @@ This will return `1,000,000`:
 
 ```javascript
 client.command({
-  name: "numberSeparator",
-  code: `
+    name: "numberSeparator",
+    code: `
   $numberSeparator[1000000;,]
   `
 });

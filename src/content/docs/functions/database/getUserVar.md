@@ -27,8 +27,8 @@ This will return the value of a variable called "Example":
 
 ```javascript
 client.command({
-  name: "getUserVar",
-  code: `
+    name: "getUserVar",
+    code: `
     $getUserVar[Example;$authorID;$guildID;main]
     `
 });

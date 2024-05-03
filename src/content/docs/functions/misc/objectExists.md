@@ -24,8 +24,8 @@ This will return true as the object exists created by `$createObject`:
 
 ```javascript
 client.command({
-  name: "objectExists",
-  code: `
+    name: "objectExists",
+    code: `
     $objectExists[Object Name]
     $createObject[Object Name;{"Leref": "Ferel"}]
     `

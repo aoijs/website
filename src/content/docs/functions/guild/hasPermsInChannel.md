@@ -73,8 +73,8 @@ This will return `true` when the author has `send messages` permissions and retu
 
 ```javascript
 client.command({
-  name: "hasPermsInChannel",
-  code: `
+    name: "hasPermsInChannel",
+    code: `
   $hasPermsInChannel[$channelID;$authorID;sendmessages]
   `
 });

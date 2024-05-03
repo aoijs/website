@@ -26,8 +26,8 @@ This will return the users connected to a voice channel:
 
 ```javascript
 client.command({
-  name: "usersInChannel",
-  code: `
+    name: "usersInChannel",
+    code: `
   $usersInChannel[$voiceID;user;, ]
   `
 });

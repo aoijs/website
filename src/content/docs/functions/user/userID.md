@@ -24,8 +24,8 @@ This will return your user ID:
 
 ```javascript
 client.command({
-  name: "userID",
-  code: `
+    name: "userID",
+    code: `
   $userID[$username]
   `
 });

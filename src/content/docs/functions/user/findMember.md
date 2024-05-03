@@ -26,8 +26,8 @@ This will return your ID as `Leref` was not found in the given guild:
 
 ```javascript
 client.command({
-  name: "findMember",
-  code: `
+    name: "findMember",
+    code: `
   $findMember[Leref;true;$guildID]
   `
 });

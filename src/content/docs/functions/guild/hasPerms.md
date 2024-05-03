@@ -73,8 +73,8 @@ This will return `true` when the author has `kick` permissions and return `false
 
 ```javascript
 client.command({
-  name: "hasPerms",
-  code: `
+    name: "hasPerms",
+    code: `
   $hasPerms[$guildID;$authorID;kick]
   `
 });
