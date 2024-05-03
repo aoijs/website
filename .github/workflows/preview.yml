@@ -32,13 +32,6 @@ jobs:
     env:
       START_TIME: ${{ github.event.created_at }}
     steps:
-      - name: Check for Maintainer Approval
-        if: github.event.action != 'closed' && github.event_name == 'pull_request'
-        uses: tzkhan/approval-action@v2
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          num-approvals: 1
-
       - name: Create or Update Comment
         id: create-or-update-comment
         uses: peter-evans/create-or-update-comment@v4
