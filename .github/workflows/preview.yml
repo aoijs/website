@@ -1,36 +1,13 @@
-name: Check Build
+name: Update Comment on PR Approval
 
 on:
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
-      - closed
+  issue_comment:
+    types: [created, edited, deleted]
 
 jobs:
-  remove-build-pending-label:
+  update-comment:
     runs-on: ubuntu-latest
-    steps:
-      - name: Remove Build Pending Label
-        if: github.event_name == 'pull_request'
-        uses: actions/github-script@v5
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const issue_number = context.payload.pull_request.number;
-            const label_to_remove = 'Build Pending';
-            await github.issues.removeLabel({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: issue_number,
-              name: label_to_remove
-            })
-
-  deploy-preview:
-    runs-on: ubuntu-20.04
-    env:
-      START_TIME: ${{ github.event.created_at }}
+    if: ${{ github.event.issue.pull_request && contains(github.event.comment.body, 'approve') }}
     steps:
       - name: Create or Update Comment
         id: create-or-update-comment
@@ -41,8 +18,13 @@ jobs:
             Waiting for deployment to finish..
           reactions: 'hourglass'
 
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+      - uses: actions-ecosystem/action-remove-labels@v1
+        with:
+          labels: |
+            'Build Pending'
+            'Build Failed'
+            'Build Passed'
 
       - name: Install and Build
         if: github.event.action != 'closed'
@@ -53,8 +35,8 @@ jobs:
         continue-on-error: true
 
       - name: Check Build Status
+        if: always()
         id: check-build-status
-        if: ${{ always() }}
         run: |
           if [ $? -eq 0 ]; then
             echo "Build succeeded."
@@ -69,7 +51,7 @@ jobs:
           fi
 
       - name: Update Comment
-        if: ${{ always() }}
+        if: always()
         uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{ github.event.pull_request.number }}
