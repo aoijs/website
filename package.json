@@ -10,8 +10,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "format": "prettier -w --cache --plugin prettier-plugin-astro src/content/docs/functions/**/*.md* src/content/docs/guides/**/*.md*",
-    "spellcheck": "cspell src/content/docs/guides/**/*.md*",
-    "install": "npm install --legacy-peer-deps"
+    "spellcheck": "cspell src/content/docs/guides/**/*.md*"
   },
   "keywords": [],
   "author": "",
