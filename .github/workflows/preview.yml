@@ -2,32 +2,31 @@
 name: Deploy PR previews
 
 on:
-  workflow_dispatch:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
 
 concurrency: preview-${{ github.ref }}
 
 jobs:
   deploy-preview:
-    env:
-        ACTIONS_ALLOW_UNSECURE_COMMANDS: true
-        PUBLIC_BUILD_TIME: "13/09/2024 12:00:00"
-        PUBLIC_COMMIT: "#PREVIEW"
-        PUBLIC_ENV: "preview"
-        PUBLIC_PR_NUMBER: ${{ github.event.number }}
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
       - name: Install and Build
-        if: github.event.action != 'closed'
+        if: github.event.action != 'closed' # You might want to skip the build if the PR has been closed
         run: |
-            npm install --legacy-peer-deps
-            npm install react-dom --force
-            npm run build
+          npm install --legacy-peer-deps
+          npm install react-dom --legacy-peer-deps
+          npm run build
 
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
-          source-dir: ./dist/
-          custom-url: "https://aoi.js.org"
+          source-dir: ./build/
+          custom-url: aoi.js.org
