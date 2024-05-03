@@ -1,40 +1,80 @@
 name: Check Build
 
 on:
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
-      - closed
+  issue_comment:
+    types: [created]
 
 jobs:
   deploy-preview:
     runs-on: ubuntu-20.04
     env:
-      START_TIME: ${{ github.event.created_at }}
+      START_TIME: ${{ github.event.issue.created_at }}
     steps:
-      - name: Check for Maintainer Approval
-        if: github.event.action != 'closed' && github.event_name == 'pull_request'
-        uses: tzkhan/approval-action@v2
+      - name: Check Approval
+        if: startsWith(github.event.comment.body, 'approve')
+        run: echo "Approval received."
+        id: approval
+
+      - name: Check for "Build Pending" Label
+        if: steps.approval.outcome == 'success'
+        uses: actions/github-script@v4
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          num-approvals: 1
+          script: |
+            const { Octokit } = require("@octokit/rest");
+            const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
+
+            const { owner, repo } = context.repo;
+            const { number } = context.issue;
+
+            const response = await octokit.issues.listLabelsOnIssue({
+              owner,
+              repo,
+              issue_number: number
+            });
+
+            const hasBuildPendingLabel = response.data.some(label => label.name === "Build Pending");
+
+            if (hasBuildPendingLabel) {
+              console.log("Build Pending label found.");
+              core.setOutput("remove_label", true);
+            } else {
+              console.log("Build Pending label not found.");
+              core.setOutput("remove_label", false);
+            }
+
+      - name: Remove "Build Pending" Label
+        if: steps.approval.outcome == 'success' && steps.check-for-label.outputs.remove_label == 'true'
+        uses: actions/github-script@v4
+        with:
+          script: |
+            const { Octokit } = require("@octokit/rest");
+            const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
+
+            const { owner, repo } = context.repo;
+            const { number } = context.issue;
+
+            await octokit.issues.removeLabel({
+              owner,
+              repo,
+              issue_number: number,
+              name: "Build Pending"
+            });
 
       - name: Create or Update Comment
-        id: create-or-update-comment
+        if: steps.approval.outcome == 'success'
         uses: peter-evans/create-or-update-comment@v4
         with:
-          issue-number: ${{ github.event.pull_request.number }}
+          issue-number: ${{ github.event.issue.number }}
           body: |
             Waiting for deployment to finish..
           reactions: 'hourglass'
 
       - name: Checkout
+        if: steps.approval.outcome == 'success'
         uses: actions/checkout@v3
 
       - name: Install and Build
-        if: github.event.action != 'closed'
+        if: steps.approval.outcome == 'success'
         run: |
           npm install --legacy-peer-deps
           npm install react-dom --legacy-peer-deps
@@ -42,8 +82,7 @@ jobs:
         continue-on-error: true
 
       - name: Check Build Status
-        id: check-build-status
-        if: ${{ always() }}
+        if: steps.approval.outcome == 'success' && ${{ always() }}
         run: |
           if [ $? -eq 0 ]; then
             echo "Build succeeded."
@@ -58,10 +97,10 @@ jobs:
           fi
 
       - name: Update Comment
-        if: ${{ always() }}
+        if: steps.approval.outcome == 'success' && ${{ always() }}
         uses: peter-evans/create-or-update-comment@v4
         with:
-          issue-number: ${{ github.event.pull_request.number }}
+          issue-number: ${{ github.event.issue.number }}
           body: ${{ env.COMMENT_BODY }}
-          reactions: 'hourglass'
+          reactions: hourglass
           add-labels: ${{ env.LABEL }}
