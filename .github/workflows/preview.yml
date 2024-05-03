@@ -14,6 +14,13 @@ jobs:
     env:
       START_TIME: ${{ github.event.created_at }}
     steps:
+      - name: Check for Maintainer Approval
+        if: github.event.action != 'closed' && github.event_name == 'pull_request'
+        uses: tzkhan/approval-action@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          num-approvals: 1
+
       - name: Create or Update Comment
         id: create-or-update-comment
         uses: peter-evans/create-or-update-comment@v4
@@ -35,16 +42,19 @@ jobs:
         continue-on-error: true
 
       - name: Check Build Status
+        id: check-build-status
         if: ${{ always() }}
         run: |
           if [ $? -eq 0 ]; then
             echo "Build succeeded."
             echo "Updating comment..."
             echo "COMMENT_BODY=Build succeeded." >> $GITHUB_ENV
+            echo "LABEL=Build Succeeded" >> $GITHUB_ENV
           else
             echo "Build failed."
             echo "Updating comment..."
-            echo "COMMENT_BODY=Build failed. Please check the build logs for details." >> $GITHUB_ENV
+            echo "COMMENT_BODY=Build failed. Please check the build logs for details. Mentioning user." >> $GITHUB_ENV
+            echo "LABEL=Build Failed" >> $GITHUB_ENV
           fi
 
       - name: Update Comment
@@ -52,6 +62,6 @@ jobs:
         uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{ github.event.pull_request.number }}
-          body: |
-                ${{ env.COMMENT_BODY }}
-          reactions: ''
+          body: ${{ env.COMMENT_BODY }}
+          reactions: 'hourglass'
+          add-labels: ${{ env.LABEL }}
