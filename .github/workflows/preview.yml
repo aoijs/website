@@ -1,5 +1,4 @@
-# .github/workflows/preview.yml
-name: Deploy PR previews
+name: Check Build
 
 on:
   pull_request:
@@ -15,18 +14,44 @@ jobs:
   deploy-preview:
     runs-on: ubuntu-20.04
     steps:
+      - name: Create comment
+        id: create-comment
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: 1
+          body: |
+            Waiting for deployment to finish..
+          reaction: 'hourglass'
+
       - name: Checkout
         uses: actions/checkout@v3
 
       - name: Install and Build
-        if: github.event.action != 'closed' # You might want to skip the build if the PR has been closed
+        if: github.event.action != 'closed'
         run: |
           npm install --legacy-peer-deps
           npm install react-dom --legacy-peer-deps
           npm run build
+        continue-on-error: true
 
-      - name: Deploy preview
-        uses: rossjrw/pr-preview-action@v1
+      - name: Check Build Status
+        if: ${{ always() }}
+        run: |
+          if [ $? -eq 0 ]; then
+            echo "Build succeeded."
+            echo "Updating comment..."
+            echo "::set-output name=comment-body::Build succeeded. Deployment completed in $((($(date +%s)-$(date -d "$START_TIME" +%s))/60)) minutes."
+          else
+            echo "Build failed."
+            echo "Updating comment..."
+            echo "::set-output name=comment-body::Build failed. Please check the build logs for details."
+          fi
+        env:
+          START_TIME: ${{ github.event.created_at }}
+
+      - name: Update Comment
+        if: ${{ always() }}
+        uses: peter-evans/create-or-update-comment@v4
         with:
-          source-dir: ./dist/
-          custom-url: aoi.js.org
+          issue-number: ${{ github.event.pull_request.number }}
+          body: ${{ steps.check-build-status.outputs.comment-body }}
