@@ -48,7 +48,7 @@ jobs:
         working-directory: ./
         run: |
           npm install --legacy-peer-deps
-          npm install react-dom --force
+          npm install react-dom --legacy-peer-deps
 
       - name: 🧑‍💻 Build
         shell: "bash"
