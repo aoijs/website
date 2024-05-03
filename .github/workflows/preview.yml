@@ -8,14 +8,14 @@ on:
       - synchronize
       - closed
 
-concurrency: preview-${{ github.ref }}
-
 jobs:
   deploy-preview:
     runs-on: ubuntu-20.04
+    env:
+      START_TIME: ${{ github.event.created_at }}
     steps:
-      - name: Create comment
-        id: create-comment
+      - name: Create or Update Comment
+        id: create-or-update-comment
         uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{ github.event.pull_request.number }}
@@ -40,18 +40,18 @@ jobs:
           if [ $? -eq 0 ]; then
             echo "Build succeeded."
             echo "Updating comment..."
-            echo "::set-output name=comment-body::Build succeeded. Deployment completed in $((($(date +%s)-$(date -d "$START_TIME" +%s))/60)) minutes."
+            echo "COMMENT_BODY=Build succeeded." >> $GITHUB_ENV
           else
             echo "Build failed."
             echo "Updating comment..."
-            echo "::set-output name=comment-body::Build failed. Please check the build logs for details."
+            echo "COMMENT_BODY=Build failed. Please check the build logs for details." >> $GITHUB_ENV
           fi
-        env:
-          START_TIME: ${{ github.event.created_at }}
 
       - name: Update Comment
         if: ${{ always() }}
         uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{ github.event.pull_request.number }}
-          body: ${{ steps.check-build-status.outputs.comment-body }}
+          body: |
+                ${{ env.COMMENT_BODY }}
+          reactions: ''
