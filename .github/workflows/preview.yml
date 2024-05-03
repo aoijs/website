@@ -18,10 +18,10 @@ jobs:
         id: create-comment
         uses: peter-evans/create-or-update-comment@v4
         with:
-          issue-number: 1
+          issue-number: ${{ github.event.pull_request.number }}
           body: |
             Waiting for deployment to finish..
-          reaction: 'hourglass'
+          reactions: 'hourglass'
 
       - name: Checkout
         uses: actions/checkout@v3
