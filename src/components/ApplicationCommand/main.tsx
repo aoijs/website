@@ -73,14 +73,19 @@ function ApplicationCommand() {
                     </div>
                 </div>
             </div>
-            <div style={{ marginTop: "2rem"}}>
+            <div style={{ marginTop: "2rem" }}>
                 <Flex direction="column" w="full" h="full">
-                    <AddOption />
+                    {applicationCommandType === "slash" && <AddOption />}
                     <Spacer />
                     {optionElements}
                     <Spacer />
                     <CodeBlock
-                        code={`$createApplicationCommand[${type ?? "global"};${name?.toLowerCase().replaceAll(" ", "_").replaceAll(/[^a-zA-Z0-9_]/g, "") ?? "application_command"};${description ?? "Imagine an application command"};${join(defaultPermissions.toString(), allowDirectMessageExecution.toString(), applicationCommandType, output)}]`}
+                        code={`$createApplicationCommand[${type ?? "global"};${
+                            name
+                                ?.toLowerCase()
+                                .replaceAll(" ", "_")
+                                .replaceAll(/[^a-zA-Z0-9_]/g, "") ?? "application_command"
+                        };${description ?? "Imagine an application command"};${join(defaultPermissions.toString(), allowDirectMessageExecution.toString(), applicationCommandType, output)}]`}
                     />
                 </Flex>
             </div>

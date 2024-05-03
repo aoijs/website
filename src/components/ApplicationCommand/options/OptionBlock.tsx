@@ -105,7 +105,7 @@ function OptionBlock({ type, _key, inSubCommand, setters }: OptionBlockProps) {
                         >
                             Required
                         </Checkbox>
-                        {["String", "Integer", "Number"].indexOf(type) != -1 && (
+                        {["String"].indexOf(type) != -1 && (
                             <Checkbox
                                 size="lg"
                                 colorScheme="blue"
@@ -118,7 +118,7 @@ function OptionBlock({ type, _key, inSubCommand, setters }: OptionBlockProps) {
                                 Autocomplete
                             </Checkbox>
                         )}
-                        {["String", "Integer", "Number"].indexOf(type) != -1 && (
+                        {["String"].indexOf(type) != -1 && (
                             <Button mx="1" mt="4" w="32" colorScheme="blue" onClick={addChoice}>
                                 Add Choice
                             </Button>

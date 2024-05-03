@@ -111,7 +111,7 @@ export default defineConfig({
                                             label: "Custom Functions",
                                             link: "/guides/other/custom-functions/"
                                         },
-                                        { label: "Custom Events", link: "/guides/custom-events/" }
+                                        { label: "Custom Events", link: "/guides/other/custom-events/" }
                                     ],
                                     collapsed: true
                                 },
