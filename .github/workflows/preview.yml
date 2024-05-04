@@ -69,36 +69,6 @@ jobs:
         with:
           labels: ${{ env.LABEL }}
 
-      - name: Request Review
+      - name: Review
         if: ${{ env.BUILD_STATUS == 'succeeded' }}
-        uses: actions/github-script@v7
-        env:
-          PR_NUMBER: ${{ github.event.issue.number }}
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const { d } = context;
-            const prNumber = process.env.PR_NUMBER;
-            const changes = await d.pulls.listFiles({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              pull_number: prNumber
-            });
-            if (changes.data.length > 10) {
-              const body = "This pull request cannot be merged because it modifies more than 10 files. Please reduce the number of modified files before merging.";
-              const reviews = await d.pulls.listReviews({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                pull_number: prNumber
-              });
-              const existingReviews = reviews.data.filter(review => review.user.login === "github-actions[bot]");
-              if (existingReviews.length === 0) {
-                await d.pulls.createReview({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  pull_number: prNumber,
-                  event: "REQUEST_CHANGES",
-                  body: body
-                });
-              }
-            }
+        uses: hmarr/auto-approve-action@v4
