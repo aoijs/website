@@ -7,7 +7,7 @@ on:
 jobs:
   update-comment:
     runs-on: ubuntu-latest
-    if: ${{ github.event.issue.pull_request && contains(github.event.comment.body, '/test') && github.event.comment.author_association == 'MEMBER' }}
+    if: ${{ github.event.issue.pull_request && contains(github.event.comment.body, '/test')}}
     steps:
       - name: comment
         id: create-or-update-comment
@@ -19,8 +19,9 @@ jobs:
           reactions: hourglass
 
       - id: get-comment-id
-        run: echo "COMMENT_ID=${{ steps.create-or-update-comment.outputs.comment-id }}" >> $GITHUB_ENV
-
+        run: |
+          echo "COMMENT_ID=${{ steps.create-or-update-comment.outputs.comment-id }}" >> $GITHUB_ENV
+          echo ${{github.event.comment.author_association}}
       - uses: actions/checkout@v3
       - uses: actions-ecosystem/action-remove-labels@v1
         with:
