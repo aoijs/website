@@ -22,11 +22,12 @@ jobs:
         run: |
           echo "COMMENT_ID=${{ steps.create-or-update-comment.outputs.comment-id }}" >> $GITHUB_ENV
           echo ${{github.event.comment.author_association}}
-          
+
       - name: Checkout PR
         uses: actions/checkout@v3
         with:
-          ref: ${{ github.event.issue.pull_request.head.sha }}
+          ref: ${{ github.event.pull_request.head.ref }}
+          repository: ${{ github.event.repository.full_name }}
 
       - uses: actions-ecosystem/action-remove-labels@v1
         with:
