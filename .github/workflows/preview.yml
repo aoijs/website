@@ -1,4 +1,4 @@
-name: Update Comment on PR Approval
+name: check build
 
 on:
   issue_comment:
@@ -13,10 +13,13 @@ jobs:
         id: create-or-update-comment
         uses: peter-evans/create-or-update-comment@v4
         with:
-          issue-number: ${{ github.event.pull_request.number }}
+          issue-number: ${{ github.event.issue.number }}
           body: |
-            Waiting for deployment to finish..
+            Waiting for deployment to finish
           reactions: 'hourglass'
+
+      - id: get-comment-id
+        run: echo "COMMENT_ID=${{ steps.create-or-update-comment.outputs.comment-id }}" >> $GITHUB_ENV
 
       - uses: actions/checkout@v3
       - uses: actions-ecosystem/action-remove-labels@v1
@@ -46,7 +49,7 @@ jobs:
           else
             echo "Build failed."
             echo "Updating comment..."
-            echo "COMMENT_BODY=Build failed. Please check the build logs for details. Mentioning user." >> $GITHUB_ENV
+            echo "COMMENT_BODY=Build failed." >> $GITHUB_ENV
             echo "LABEL=Build Failed" >> $GITHUB_ENV
           fi
 
@@ -54,7 +57,7 @@ jobs:
         if: always()
         uses: peter-evans/create-or-update-comment@v4
         with:
-          issue-number: ${{ github.event.pull_request.number }}
+          comment-id: ${{ env.COMMENT_ID }}
           body: ${{ env.COMMENT_BODY }}
           reactions: 'hourglass'
           add-labels: ${{ env.LABEL }}
