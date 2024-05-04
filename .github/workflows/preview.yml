@@ -7,7 +7,7 @@ on:
 jobs:
   update-comment:
     runs-on: ubuntu-latest
-    if: ${{ github.event.issue.pull_request && contains(github.event.comment.body, '/test') }}
+    if: ${{ github.event.issue.pull_request && contains(github.event.comment.body, '/test') && github.event.comment.author_association == 'OWNER' }}
     steps:
       - name: comment
         id: create-or-update-comment
@@ -16,7 +16,7 @@ jobs:
           issue-number: ${{ github.event.issue.number }}
           body: |
             Waiting for deployment to finish
-          reactions: ':hourglass:'
+          reactions: hourglass
 
       - id: get-comment-id
         run: echo "COMMENT_ID=${{ steps.create-or-update-comment.outputs.comment-id }}" >> $GITHUB_ENV
@@ -44,13 +44,14 @@ jobs:
           if [ $? -eq 0 ]; then
             echo "Build succeeded."
             echo "Updating comment..."
-            echo "COMMENT_BODY=Build succeeded." > $GITHUB_ENV
-            echo "LABEL=Build Passed" > $GITHUB_ENV
+            echo "BUILD_STATUS=succeeded >> $GITHUB_ENV"
+            echo "COMMENT_BODY=Build succeeded." >> $GITHUB_ENV
+            echo "LABEL=Build Passed" >> $GITHUB_ENV
           else
             echo "Build failed."
             echo "Updating comment..."
-            echo "COMMENT_BODY=Build failed." > $GITHUB_ENV
-            echo "LABEL=Build Failed" > $GITHUB_ENV
+            echo "COMMENT_BODY=Build failed." >> $GITHUB_ENV
+            echo "LABEL=Build Failed" >> $GITHUB_ENV
           fi
 
       - name: Update Comment
@@ -59,6 +60,8 @@ jobs:
         with:
           comment-id: ${{ env.COMMENT_ID }}
           body: ${{ env.COMMENT_BODY }}
+          edit-mode: 'replace'
+          reactions-edit-mode: 'replace'
           reactions: ''
           
       - uses: actions-ecosystem/action-add-labels@v1
