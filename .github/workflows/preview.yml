@@ -71,7 +71,7 @@ jobs:
 
       - name: Request Review
         if: ${{ env.BUILD_STATUS == 'succeeded' }}
-        uses: actions/github-script@0.10.0
+        uses: actions/github-script@v7
         env:
           PR_NUMBER: ${{ github.event.issue.number }}
         with:
