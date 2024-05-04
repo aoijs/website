@@ -2,12 +2,12 @@ name: check build
 
 on:
   issue_comment:
-    types: [created, edited, deleted]
+    types: [created, edited]
 
 jobs:
   update-comment:
     runs-on: ubuntu-latest
-    if: ${{ github.event.issue.pull_request && contains(github.event.comment.body, '/test')}}
+    if: ${{ github.event.issue.pull_request && contains(github.event.comment.body, '/test') && ["COLLABORATOR", "MEMBER", "OWNER"].includes(github.event.comment.author_association) }}
     steps:
       - name: comment
         id: create-or-update-comment
