@@ -71,16 +71,6 @@ jobs:
 
       - name: Request Review
         if: ${{ env.BUILD_STATUS == 'succeeded' }}
-        uses: actions/github-script@v5
+        uses: hmarr/auto-approve-action@v4
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const e = context.github;
-            const { owner, repo } = context.repo;
-            const prNumber = context.issue.number;
-            e.pulls.createReview({
-              owner,
-              repo,
-              pull_number: prNumber,
-              event: 'APPROVE'
-            });
+          pull-request-number: ${{ github.event.issue.number }}
