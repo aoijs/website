@@ -7,7 +7,7 @@ on:
 jobs:
   update-comment:
     runs-on: ubuntu-latest
-    if: ${{ github.event.issue.pull_request && contains(github.event.comment.body, '/test') && ["COLLABORATOR", "MEMBER", "OWNER"].includes(github.event.comment.author_association) }}
+    if: github.event.issue.pull_request && contains(github.event.comment.body, '/test') && any(equals(github.event.comment.author_association, x) for x in ['COLLABORATOR', 'MEMBER', 'OWNER'])
     steps:
       - name: comment
         id: create-or-update-comment
