@@ -75,10 +75,10 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const github = context.github;
+            const e = context.github;
             const { owner, repo } = context.repo;
             const prNumber = context.issue.number;
-            github.pulls.createReview({
+            e.pulls.createReview({
               owner,
               repo,
               pull_number: prNumber,
