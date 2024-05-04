@@ -26,9 +26,9 @@ jobs:
       - uses: actions-ecosystem/action-remove-labels@v1
         with:
           labels: |
-            'Build Pending'
-            'Build Failed'
-            'Build Passed'
+            Build Pending
+            Build Failed
+            Build Passed
 
       - name: Install and Build
         if: github.event.action != 'closed'
@@ -45,7 +45,7 @@ jobs:
           if [ $? -eq 0 ]; then
             echo "Build succeeded."
             echo "Updating comment..."
-            echo "BUILD_STATUS=succeeded >> $GITHUB_ENV"
+            echo "BUILD_STATUS=succeeded" >> $GITHUB_ENV
             echo "COMMENT_BODY=Build succeeded." >> $GITHUB_ENV
             echo "LABEL=Build Passed" >> $GITHUB_ENV
           else
