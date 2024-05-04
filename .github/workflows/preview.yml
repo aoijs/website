@@ -7,7 +7,7 @@ on:
 jobs:
   update-comment:
     runs-on: ubuntu-latest
-    if: ${{ github.event.issue.pull_request && contains(github.event.comment.body, '/test') && (github.event.comment.author_association == 'MEMBER' || github.event.comment.author_association == 'OWNER' || github.event.comment.author_association == COLLABORATOR)}}
+    if: ${{ github.event.issue.pull_request && contains(github.event.comment.body, '/test') && (github.event.comment.author_association == 'MEMBER' || github.event.comment.author_association == 'OWNER' || github.event.comment.author_association == 'COLLABORATOR') }}
     steps:
       - name: comment
         id: create-or-update-comment
