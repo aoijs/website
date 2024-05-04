@@ -77,6 +77,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
+            const { github } = context;
             const prNumber = process.env.PR_NUMBER;
             const changes = await github.pulls.listFiles({
               owner: context.repo.owner,
