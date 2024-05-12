@@ -9,7 +9,7 @@ id: timeoutList
 ## Usage
 
 ```php
-$timeoutList[option]
+$timeoutList[format?;separator?]
 ```
 
 ## Parameters
