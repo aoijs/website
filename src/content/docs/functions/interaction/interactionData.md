@@ -35,4 +35,9 @@ $interactionData[message.id]
 // returns the message ID of the interaction.
 ```
 
+```php
+$interactionData[channel.id]
+// returns the channel ID of the interaction.
+```
+
 That are just a few example, there are a lot more.
