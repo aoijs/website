@@ -30,7 +30,7 @@ This will create a new ticket:
 client.command({
     name: "newTicket",
     code: `
-    $newTicket[ticket-$username;Hello <@$authorID!;$guildID;false;Error!]
+    $newTicket[ticket-$username;Hello <@$authorID!;$channelCategoryID;false;Error!]
     `
 });
 ```
@@ -41,7 +41,7 @@ This will create a new ticket and send an embed:
 client.command({
     name: "newTicket",
     code: `
-    $newTicket[ticket-$username;Hello <@$authorID! {newEmbed:{description:<@$authorID> opened a new ticket!}};$guildID;false;Error!]
+    $newTicket[ticket-$username;Hello <@$authorID! {newEmbed:{description:<@$authorID> opened a new ticket!}};$channelCategoryID;false;Error!]
     `
 });
 ```
