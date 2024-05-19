@@ -6,6 +6,7 @@ on:
 
 jobs:
   pull_request_created:
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
