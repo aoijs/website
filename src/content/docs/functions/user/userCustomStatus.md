@@ -28,7 +28,7 @@ This will return your status text if you have any:
 client.command({
     name: "userCustomStatus",
     code: `
-  $userCustomStatus[$authorID;$guildID;state]
+  $userCustomStatus[$guildID;$authorID;state]
   `
 });
 ```

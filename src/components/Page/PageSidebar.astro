@@ -23,7 +23,7 @@ githubURL = `https://github.com/aoijs/aoi.js/blob/v6/src/${githubURL}`;
 				<div class="sl-container">
 					<TableOfContents {...Astro.props} />
 				</div>
-				<div class="sl-container">
+				<div id="exclude-algolia-crawler" class="sl-container">
 					<a href="/contributors"><Icon name="external" />Contributors</a>
 					{isValid && (<a href={githubURL}><Icon name="github" /> View Source</a>)}
 					<a href={Astro.props?.editUrl?.href} target="_blank"><Icon name="pencil" />Edit this Page</a>

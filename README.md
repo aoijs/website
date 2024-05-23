@@ -11,7 +11,6 @@
 <div align="center">
     <a href="https://aoi.js.org/invite">Discord</a> |
     <a href="https://aoi.js.org/">Documentation</a> <br /> <br />
-    <a href="https://starlight.astro.build"><img src="https://astro.badg.es/v2/built-with-starlight/tiny.svg" alt="Built with Starlight" width="140" height="20"></a>
 </div>
 </div>
 <br />
