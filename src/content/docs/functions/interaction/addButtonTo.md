@@ -31,11 +31,8 @@ This function only works if the Client is the original author of the message.
 
 :::
 
-<div class="details">
-  <details open>
+<details open>
     <summary><h3>Button Types</h3></summary>
-  </details>
-  <div class="content">
     <table>
       <thead>
         <tr>
@@ -50,48 +47,47 @@ This function only works if the Client is the original author of the message.
           <td>Primary</td>
           <td>1</td>
           <td>blurple</td>
-          <td><code>$addButtonTo[1;Example Button!;primary;customID;false]</code></td>
+          <td><code>$addButton[1;Example Button!;primary;customID;false]</code></td>
         </tr>
         <tr>
           <td>Secondary</td>
           <td>2</td>
           <td>grey</td>
-          <td><code>$addButtonTo[1;Example Button!;secondary;customID;false]</code></td>
+          <td><code>$addButton[1;Example Button!;secondary;customID;false]</code></td>
         </tr>
         <tr>
           <td>Success</td>
           <td>3</td>
           <td>green</td>
-          <td><code>$addButtonTo[1;Example Button!;success;customID;false]</code></td>
+          <td><code>$addButton[1;Example Button!;success;customID;false]</code></td>
         </tr>
         <tr>
           <td>Danger</td>
           <td>4</td>
           <td>red</td>
-          <td><code>$addButtonTo[1;Example Button!;danger;customID;false]</code></td>
+          <td><code>$addButton[1;Example Button!;danger;customID;false]</code></td>
         </tr>
         <tr>
           <td>Link</td>
           <td>5</td>
           <td>grey, navigates to a URL</td>
-          <td><code>$addButtonTo[1;Example Button!;link;https://discord.gg;false]</code></td>
+          <td><code>$addButton[1;Example Button!;link;https://discord.gg;false]</code></td>
         </tr>
         <tr>
           <td>Custom Emoji</td>
           <td>any</td>
           <td>any</td>
-          <td><code>$addButtonTo[1;Example Button!;link;customID;false;emojiName/emojiId/emojiString]</code></td>
+          <td><code>$addButton[1;Example Button!;link;customID;false;emojiName/emojiId/emojiString]</code></td>
         </tr>
         <tr>
           <td>Unicode Emoji</td>
           <td>any</td>
           <td>any</td>
-          <td><code>$addButtonTo[1;Example Button!;link;customID;false;😀]</code></td>
+          <td><code>$addButton[1;Example Button!;link;customID;false;😀]</code></td>
         </tr>
       </tbody>
     </table>
-  </div>
-</div>
+</details>
 
 ## Example(s)
 

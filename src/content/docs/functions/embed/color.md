@@ -19,11 +19,8 @@ $color[index?;hex]
 | index? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The embed index.                                           |  false   |
 | hex    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The hex color or color name (supported color names below). |   true   |
 
-<div class="details">
   <details>
     <summary>Embed Colors</summary>
-  </details>
-  <div class="content">
     <img style="border: 2px solid var(--sl-color-hairline); border-radius: 50%;" src="https://placehold.co/15x15/000000/000000.png" alt="c"> Default </img> <br />
     <img style="border: 2px solid var(--sl-color-hairline); border-radius: 50%;" src="https://placehold.co/15x15/FFFFFF/FFFFFF.png" alt="c"> White </img> <br />
     <img style="border: 2px solid var(--sl-color-hairline); border-radius: 50%;" src="https://placehold.co/15x15/1ABC9C/1ABC9C.png" alt="c"> Aqua </img> <br />
@@ -55,8 +52,8 @@ $color[index?;hex]
     <img style="border: 2px solid var(--sl-color-hairline); border-radius: 50%;" src="https://placehold.co/15x15/2C2F33/2C2F33.png" alt="c"> DarkButNotBlack</img> <br />
     <img style="border: 2px solid var(--sl-color-hairline); border-radius: 50%;" src="https://placehold.co/15x15/23272A/23272A.png" alt="c"> NotQuiteBlack</img> <br />
     <img style="border: 2px solid var(--sl-color-hairline); border-radius: 50%;" src="https://placehold.co/15x15/000000/000000.png" alt="c"> Random</img>
-  </div>
-</div>
+  </details>
+
 
 ## Example(s)
 

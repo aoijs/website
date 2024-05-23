@@ -34,11 +34,8 @@ $editChannel[channelID;name?;type?;position?;topic?;nsfw?;bitrate?;userlimit?;pa
 
 **Note: you can use `$default` to keep the current property.**
 
-<div class="details">
-<details>
-  <summary><h3>Channel Types</h3></summary>
-</details>
-  <div class="content">
+<details open>
+  <summary>Channel Types</summary>
     <table>
       <thead>
         <tr>
@@ -83,11 +80,25 @@ $editChannel[channelID;name?;type?;position?;topic?;nsfw?;bitrate?;userlimit?;pa
           <td>Announcement Channel</td>
           <td>Announcement</td>
         </tr>
+        <tr>
+          <td>Home</td>
+          <td>GuildDirectory</td>
+        </tr>
+        <tr>
+          <td>NSFW Channel</td>
+          <td>NSFW</td>
+        </tr>
+        <tr>
+          <td>Direct Message</td>
+          <td>DM</td>
+        </tr>
+        <tr>
+          <td>All Channel Types</td>
+          <td>all</td>
+        </tr>
       </tbody>
     </table>
-    <p>Note: all channel types are <strong>case-sensitive</strong>.</p>
-  </div>
-</div>
+</details>
 
 ## Example(s)
 

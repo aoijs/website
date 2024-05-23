@@ -22,7 +22,7 @@ $getEmbed[channelID?;messageID?;index?;option?]
 | option    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The option to fetch.                               |   true   |
 
 <details>
-  <summary><h3> Options </h3></summary>
+  <summary>Options</summary>
 
 | Type                              | Description                                              |
 | --------------------------------- | -------------------------------------------------------- |

@@ -19,11 +19,8 @@ $randomChannelID[guildID/global?;type?]
 | guildID/global? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Guild ID or global search. |  false   |
 | type?           | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Channel type.              |  false   |
 
-<div class="details">
 <details open>
-  <summary><h3>Channel Types</h3></summary>
-</details>
-  <div class="content">
+  <summary>Channel Types</summary>
     <table>
       <thead>
         <tr>
@@ -86,8 +83,7 @@ $randomChannelID[guildID/global?;type?]
         </tr>
       </tbody>
     </table>
-  </div>
-</div>
+</details>
 
 ## Example(s)
 

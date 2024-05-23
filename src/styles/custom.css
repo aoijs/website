@@ -6,7 +6,7 @@
   --blue-hsl: 218, 100%, 83%;
   --overlay-blurple: hsla(var(--blue-hsl), 0.2);
   --ec-frm-tooltipSuccessBg: var(--sl-color-gray-5) !important;
-  --sl-font: "Poppins", sans-serif !important;
+  --sl-font: "Whitney", sans-serif !important;
 }
 
 /* Light mode colors. */
@@ -222,7 +222,7 @@ a:where(.astro-3ii7xxms):hover {
   margin-top: 1rem;
 }
 
-/* details */
+/*
 .details {
   border-radius: 5px;
   border: 1px solid var(--sl-color-hairline);
@@ -298,6 +298,7 @@ a:where(.astro-3ii7xxms):hover {
     max-height 400ms ease-out,
     border 100ms 400ms linear;
 }
+*/
 
 html[data-theme="light"] p > a {
   color: var(--sl-color-accent) !important;

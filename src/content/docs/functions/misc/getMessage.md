@@ -21,7 +21,7 @@ $getMessage[channelID;messageID;option?]
 | option?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Which option to fetch.                             |  false   |
 
 <details open>
-  <summary><h3> Options </h3></summary>
+  <summary>Options</summary>
 
 | Type     | Description             |
 | -------- | ----------------------- |

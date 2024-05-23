@@ -19,11 +19,8 @@ $createChannelInvite[channelID?;...options]
 | channelID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The channel ID of which the invite will be created. |  false   |
 | options?   | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) | Invite options.                                     |  false   |
 
-<div class="details">
 <details open>
-  <summary><h3> Invite Target Types </h3></summary>
-</details>
-<div class="content">
+  <summary>Invite Target Types</summary>
 
 <table>
   <thead>
@@ -43,9 +40,7 @@ $createChannelInvite[channelID?;...options]
     </tr>
   </tbody>
 </table>
-
-  </div>
-</div>
+</details>
 
 ## Example(s)
 

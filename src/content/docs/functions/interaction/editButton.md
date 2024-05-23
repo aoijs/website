@@ -24,11 +24,8 @@ $editButton[customId;label;style;disabled?;emoji?;messageId?;channelId?]
 | messageId? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The Id of the message.                                                                                                   |   true   |
 | channelId? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The channel Id of where the message is located.                                                                          |   true   |
 
-<div class="details">
-  <details open>
+<details open>
     <summary><h3>Button Types</h3></summary>
-  </details>
-  <div class="content">
     <table>
       <thead>
         <tr>
@@ -73,7 +70,7 @@ $editButton[customId;label;style;disabled?;emoji?;messageId?;channelId?]
           <td>Custom Emoji</td>
           <td>any</td>
           <td>any</td>
-          <td><code>$addButton[1;Example Button!;link;customID;false;emojiName,emojiID,animated (true/false)]</code></td>
+          <td><code>$addButton[1;Example Button!;link;customID;false;emojiName/emojiId/emojiString]</code></td>
         </tr>
         <tr>
           <td>Unicode Emoji</td>
@@ -83,8 +80,7 @@ $editButton[customId;label;style;disabled?;emoji?;messageId?;channelId?]
         </tr>
       </tbody>
     </table>
-  </div>
-</div>
+</details>
 
 ## Example(s)
 

@@ -23,11 +23,8 @@ $addButton[index;label;style;customID;disabled?;emoji?]
 | disabled? | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Make the button unusable/disabled? <br /> 1. **true** <br /> 2. **false** (default)                                      |  false   |
 | emoji?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The emoji displayed in the button.                                                                                       |  false   |
 
-<div class="details">
-  <details open>
+<details open>
     <summary><h3>Button Types</h3></summary>
-  </details>
-  <div class="content">
     <table>
       <thead>
         <tr>
@@ -82,8 +79,7 @@ $addButton[index;label;style;customID;disabled?;emoji?]
         </tr>
       </tbody>
     </table>
-  </div>
-</div>
+</details>
 
 ## Example(s)
 

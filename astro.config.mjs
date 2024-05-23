@@ -38,7 +38,7 @@ export default defineConfig({
             editLink: {
                 baseUrl: "https://github.com/aoijs/website/edit/main/"
             },
-            customCss: ["./src/styles/custom.css", "@fontsource/poppins/400.css", "@fontsource/poppins/600.css"],
+            customCss: ["./src/styles/custom.css", "./src/fonts/font-face.css"],
             components: {
                 //Search: "./src/components/Page/Search.astro",
                 Head: "./src/components/Page/Head.astro",
