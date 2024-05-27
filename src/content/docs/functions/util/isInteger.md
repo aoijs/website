@@ -8,7 +8,7 @@ id: isInteger
 
 ## Usage
 
-```php
+```aoi
 $isInteger[number]
 ```
 

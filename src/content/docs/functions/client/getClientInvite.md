@@ -8,7 +8,7 @@ id: getClientInvite
 
 ## Usage
 
-```php
+```aoi
 $getClientInvite[...perms?]
 ```
 

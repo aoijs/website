@@ -8,7 +8,7 @@ id: setClientName
 
 ## Usage
 
-```php
+```aoi
 $setClientName[username]
 ```
 

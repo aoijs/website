@@ -8,7 +8,7 @@ id: awaitMessages
 
 ## Usage
 
-```php
+```aoi
 $awaitMessages[channelID;userFilter;time;replies;cmds;errorMessage?;awaitData?;dm?]
 ```
 

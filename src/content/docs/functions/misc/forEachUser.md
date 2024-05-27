@@ -8,7 +8,7 @@ id: forEachUser
 
 ## Usage
 
-```php
+```aoi
 $forEachUser[time;awaitData;...awaitedCmds;endCmd?]
 ```
 

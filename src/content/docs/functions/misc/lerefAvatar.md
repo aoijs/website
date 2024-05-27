@@ -8,7 +8,7 @@ id: lerefAvatar
 
 ## Usage
 
-```php
+```aoi
 $lerefAvatar
 ```
 

@@ -8,7 +8,7 @@ id: databasePing
 
 ## Usage
 
-```php
+```aoi
 $databasePing
 ```
 

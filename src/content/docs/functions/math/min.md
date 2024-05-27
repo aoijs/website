@@ -8,7 +8,7 @@ id: min
 
 ## Usage
 
-```php
+```aoi
 $min[...numbers]
 ```
 

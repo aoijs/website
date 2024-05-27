@@ -8,7 +8,7 @@ id: isVideoOn
 
 ## Usage
 
-```php
+```aoi
 $isVideoOn[userID?;guildID?]
 ```
 

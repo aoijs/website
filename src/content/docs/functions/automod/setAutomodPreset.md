@@ -8,7 +8,7 @@ id: setAutomodPreset
 
 ## Usage
 
-```php
+```aoi
 $setAutomodPreset[...presets]
 ```
 

@@ -8,7 +8,7 @@ id: addMessageReactions
 
 ## Usage
 
-```php
+```aoi
 $addMessageReactions[channelID;messageID;...reactions]
 ```
 

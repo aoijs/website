@@ -8,7 +8,7 @@ id: findUser
 
 ## Usage
 
-```php
+```aoi
 $findUser[userResolver;returnSelf?]
 ```
 

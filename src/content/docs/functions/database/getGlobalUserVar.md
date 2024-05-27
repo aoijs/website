@@ -8,7 +8,7 @@ id: getGlobalUserVar
 
 ## Usage
 
-```php
+```aoi
 $getGlobalUserVar[varname;userID?;table?]
 ```
 

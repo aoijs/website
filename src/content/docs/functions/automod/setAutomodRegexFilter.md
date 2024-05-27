@@ -8,7 +8,7 @@ id: setAutomodRegexFilter
 
 ## Usage
 
-```php
+```aoi
 $setAutomodRegexFilter[...regex]
 ```
 

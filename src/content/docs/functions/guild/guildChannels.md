@@ -8,7 +8,7 @@ id: guildChannels
 
 ## Usage
 
-```php
+```aoi
 $guildChannels[guildID?;option?;sep?]
 ```
 

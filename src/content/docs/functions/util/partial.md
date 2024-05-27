@@ -8,6 +8,6 @@ id: partial
 
 ## Usage
 
-```php
+```aoi
 $partial
 ```

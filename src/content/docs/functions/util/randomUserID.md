@@ -8,7 +8,7 @@ id: randomUserID
 
 ## Usage
 
-```php
+```aoi
 $randomUserID[global/guildID?]
 ```
 

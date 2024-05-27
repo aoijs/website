@@ -8,7 +8,7 @@ id: oldEmoji
 
 ## Usage
 
-```php
+```aoi
 $oldEmoji[option]
 ```
 

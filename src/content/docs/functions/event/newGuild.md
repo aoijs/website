@@ -9,7 +9,7 @@ property. (guildUpdate event)
 
 ## Usage
 
-```php
+```aoi
 $newGuild[option]
 ```
 

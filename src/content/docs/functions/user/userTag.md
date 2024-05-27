@@ -8,7 +8,7 @@ id: userTag
 
 ## Usage
 
-```php
+```aoi
 $userTag[userID?]
 ```
 

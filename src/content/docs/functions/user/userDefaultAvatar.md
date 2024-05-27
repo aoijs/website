@@ -8,7 +8,7 @@ id: userDefaultAvatar
 
 ## Usage
 
-```php
+```aoi
 $userDefaultAvatar[userID?]
 ```
 

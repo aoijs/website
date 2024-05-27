@@ -8,7 +8,7 @@ id: nonEscape
 
 ## Usage
 
-```php
+```aoi
 $nonEscape[message]
 ```
 

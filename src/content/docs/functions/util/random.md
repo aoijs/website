@@ -8,7 +8,7 @@ id: random
 
 ## Usage
 
-```php
+```aoi
 $random[num1;num2;allow?;random?]
 ```
 

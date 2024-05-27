@@ -8,7 +8,7 @@ id: interactionDelete
 
 ## Usage
 
-```php
+```aoi
 $interactionDelete
 ```
 

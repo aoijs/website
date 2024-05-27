@@ -8,7 +8,7 @@ id: memberJoinPosition
 
 ## Usage
 
-```php
+```aoi
 $memberJoinPosition[userID?;guildID?]
 ```
 

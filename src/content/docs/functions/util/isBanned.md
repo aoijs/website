@@ -8,7 +8,7 @@ id: isBanned
 
 ## Usage
 
-```php
+```aoi
 $isBanned[guildID;userID]
 ```
 

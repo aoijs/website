@@ -8,7 +8,7 @@ id: allEmojisCount
 
 ## Usage
 
-```php
+```aoi
 $allEmojisCount[type?]
 ```
 

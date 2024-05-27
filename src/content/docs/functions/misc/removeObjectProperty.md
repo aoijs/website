@@ -8,7 +8,7 @@ id: removeObjectProperty
 
 ## Usage
 
-```php
+```aoi
 $removeObjectProperty[objectName;...properties]
 ```
 

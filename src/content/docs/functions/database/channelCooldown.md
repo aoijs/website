@@ -8,7 +8,7 @@ id: channelCooldown
 
 ## Usage
 
-```php
+```aoi
 $channelCooldown[time;errorMessage]
 ```
 

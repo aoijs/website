@@ -8,7 +8,7 @@ id: hasAnyRole
 
 ## Usage
 
-```php
+```aoi
 $hasAnyRole[guildID;userID;...roles]
 ```
 

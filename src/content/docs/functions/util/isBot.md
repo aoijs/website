@@ -8,7 +8,7 @@ id: isBot
 
 ## Usage
 
-```php
+```aoi
 $isBot[userID?]
 ```
 

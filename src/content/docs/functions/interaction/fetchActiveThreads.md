@@ -8,7 +8,7 @@ id: fetchActiveThreads
 
 ## Usage
 
-```php
+```aoi
 $fetchActiveThreads[channelID;option?]
 ```
 

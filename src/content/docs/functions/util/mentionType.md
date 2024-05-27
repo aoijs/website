@@ -8,7 +8,7 @@ id: mentionType
 
 ## Usage
 
-```php
+```aoi
 $mentionType[content]
 ```
 

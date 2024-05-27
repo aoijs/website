@@ -8,7 +8,7 @@ id: disconnectUser
 
 ## Usage
 
-```php
+```aoi
 $disconnectUser[userID;guildID;reason?]
 ```
 

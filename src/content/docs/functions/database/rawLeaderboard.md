@@ -8,7 +8,7 @@ id: rawLeaderboard
 
 ## Usage
 
-```php
+```aoi
 $rawLeaderboard[variable;order?;type?;custom?;list?;page?;table?]
 ```
 

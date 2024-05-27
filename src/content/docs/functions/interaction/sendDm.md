@@ -8,7 +8,7 @@ id: sendDm
 
 ## Usage
 
-```php
+```aoi
 $sendDm[message;userID?;returnID?]
 ```
 

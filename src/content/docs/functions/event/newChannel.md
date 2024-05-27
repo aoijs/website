@@ -9,7 +9,7 @@ will be empty.
 
 ## Usage
 
-```php
+```aoi
 $newChannel[option]
 ```
 

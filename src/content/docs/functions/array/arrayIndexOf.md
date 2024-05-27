@@ -8,7 +8,7 @@ id: arrayIndexOf
 
 ## Usage
 
-```php
+```aoi
 $arrayIndexOf[name;query]
 ```
 

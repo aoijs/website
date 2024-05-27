@@ -8,7 +8,7 @@ id: createRole
 
 ## Usage
 
-```php
+```aoi
 $createRole[guildID;name;color;position?;icon?;hoist?;unicodeEmoji?;mentionable?;position?;returnId?;...permissions?]
 ```
 

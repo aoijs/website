@@ -8,7 +8,7 @@ id: resetGuildVar
 
 ## Usage
 
-```php
+```aoi
 $resetGuildVar[varname;table?]
 ```
 

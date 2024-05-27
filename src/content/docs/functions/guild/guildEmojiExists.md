@@ -8,7 +8,7 @@ id: guildEmojiExists
 
 ## Usage
 
-```php
+```aoi
 $guildEmojiExists[emojiResolver;guildId?]
 ```
 

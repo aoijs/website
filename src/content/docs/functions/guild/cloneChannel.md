@@ -8,7 +8,7 @@ id: cloneChannel
 
 ## Usage
 
-```php
+```aoi
 $cloneChannel[channelID;name;returnID?]
 ```
 

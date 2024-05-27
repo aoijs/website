@@ -8,7 +8,7 @@ id: timeoutMember
 
 ## Usage
 
-```php
+```aoi
 $timeoutMember[guildID;memberID;timer;timeoutEndsAt?;reason?]
 ```
 

@@ -8,7 +8,7 @@ id: guildDefaultMessageNotifications
 
 ## Usage
 
-```php
+```aoi
 $guildDefaultMessageNotifications[guildID?]
 ```
 

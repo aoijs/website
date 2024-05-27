@@ -8,7 +8,7 @@ id: hoistedRole
 
 ## Usage
 
-```php
+```aoi
 $hoistedRole[userID?;guildID?;option?]
 ```
 

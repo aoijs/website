@@ -8,7 +8,7 @@ id: isValidLink
 
 ## Usage
 
-```php
+```aoi
 $isValidLink[URL]
 ```
 

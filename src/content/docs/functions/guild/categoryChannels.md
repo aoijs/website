@@ -8,7 +8,7 @@ id: categoryChannels
 
 ## Usage
 
-```php
+```aoi
 $categoryChannels[categoryID;option?;sep?]
 ```
 

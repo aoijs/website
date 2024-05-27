@@ -8,7 +8,7 @@ id: deleteMessage
 
 ## Usage
 
-```php
+```aoi
 $deleteMessage[messageID;channelID]
 ```
 

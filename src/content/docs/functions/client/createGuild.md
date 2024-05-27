@@ -8,7 +8,7 @@ id: createGuild
 
 ## Usage
 
-```php
+```aoi
 $createGuild[name;icon?;returnId?]
 ```
 

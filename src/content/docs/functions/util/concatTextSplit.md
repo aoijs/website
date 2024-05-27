@@ -8,7 +8,7 @@ id: concatTextSplit
 
 ## Usage
 
-```php
+```aoi
 $concatTextSplit[...text]
 ```
 

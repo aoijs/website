@@ -8,7 +8,7 @@ id: toLowerCase
 
 ## Usage
 
-```php
+```aoi
 $toLowerCase[text]
 ```
 

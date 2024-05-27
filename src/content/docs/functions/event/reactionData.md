@@ -8,7 +8,7 @@ id: reactionData
 
 ## Usage
 
-```php
+```aoi
 $reactionData[option]
 ```
 

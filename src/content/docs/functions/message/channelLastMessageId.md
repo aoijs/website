@@ -8,7 +8,7 @@ id: channelLastMessageId
 
 ## Usage
 
-```php
+```aoi
 $channelLastMessageID[channelID?]
 ```
 

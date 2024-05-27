@@ -8,7 +8,7 @@ id: emojiCount
 
 ## Usage
 
-```php
+```aoi
 $emojiCount[guildID?]
 ```
 

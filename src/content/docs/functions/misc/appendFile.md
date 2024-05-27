@@ -8,7 +8,7 @@ id: appendFile
 
 ## Usage
 
-```php
+```aoi
 $appendFile[path;content;encode?]
 ```
 

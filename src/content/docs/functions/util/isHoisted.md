@@ -8,7 +8,7 @@ id: isHoisted
 
 ## Usage
 
-```php
+```aoi
 $isHoisted[roleID;guildID?]
 ```
 

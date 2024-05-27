@@ -8,7 +8,7 @@ id: packageVersion
 
 ## Usage
 
-```php
+```aoi
 $packageVersion
 ```
 

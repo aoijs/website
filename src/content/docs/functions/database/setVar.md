@@ -8,7 +8,7 @@ id: setVar
 
 ## Usage
 
-```php
+```aoi
 $setVar[varname;value;table?]
 ```
 

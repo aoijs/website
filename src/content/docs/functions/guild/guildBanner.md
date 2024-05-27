@@ -8,7 +8,7 @@ id: guildBanner
 
 ## Usage
 
-```php
+```aoi
 $guildBanner[guildID?;size?;dynamic?;extension?]
 ```
 

@@ -8,7 +8,7 @@ id: findSpecialChars
 
 ## Usage
 
-```php
+```aoi
 $findSpecialChars[text]
 ```
 

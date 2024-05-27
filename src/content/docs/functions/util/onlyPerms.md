@@ -8,7 +8,7 @@ id: onlyPerms
 
 ## Usage
 
-```php
+```aoi
 $onlyPerms[...perms;error]
 ```
 

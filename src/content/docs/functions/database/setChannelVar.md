@@ -8,7 +8,7 @@ id: setChannelVar
 
 ## Usage
 
-```php
+```aoi
 $setChannelVar[varname;value;channelID?;table?]
 ```
 

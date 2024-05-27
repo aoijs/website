@@ -8,7 +8,7 @@ id: deafenUser
 
 ## Usage
 
-```php
+```aoi
 $deafenUser[userID;deafen?]
 ```
 

@@ -8,7 +8,7 @@ id: oldApplicationCmd
 
 ## Usage
 
-```php
+```aoi
 $oldApplicationCmd[option]
 ```
 

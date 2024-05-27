@@ -8,7 +8,7 @@ id: editObjectProperty
 
 ## Usage
 
-```php
+```aoi
 $editObjectProperty[objectName;property;newValue]
 ```
 

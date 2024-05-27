@@ -8,7 +8,7 @@ id: tempCooldown
 
 ## Usage
 
-```php
+```aoi
 $tempCooldown[time;id;errorMessage?]
 ```
 

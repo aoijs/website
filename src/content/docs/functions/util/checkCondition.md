@@ -8,7 +8,7 @@ id: checkCondition
 
 ## Usage
 
-```php
+```aoi
 $checkCondition[condition]
 ```
 

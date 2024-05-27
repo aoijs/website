@@ -8,7 +8,7 @@ id: getAutomodRuleId
 
 ## Usage
 
-```php
+```aoi
 $getAutomodRuleId[guildID;name;force?]
 ```
 

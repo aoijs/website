@@ -8,7 +8,7 @@ id: newApplicationCmd
 
 ## Usage
 
-```php
+```aoi
 $newApplicationCmd[name]
 ```
 

@@ -8,7 +8,7 @@ id: spawnShard
 
 ## Usage
 
-```php
+```aoi
 $spawnShard[shard]
 ```
 

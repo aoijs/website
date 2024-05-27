@@ -8,6 +8,6 @@ id: isButtonInteraction
 
 ## Usage
 
-```php
+```aoi
 $isButtonInteraction
 ```

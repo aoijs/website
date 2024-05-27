@@ -8,7 +8,7 @@ id: modifyApplicationCommand
 
 ## Usage
 
-```php
+```aoi
 $modifyApplicationCommand[guildID/global;appID;name:description:type:options:defaultPermission;...options]
 ```
 

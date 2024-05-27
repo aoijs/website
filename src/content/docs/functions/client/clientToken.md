@@ -8,7 +8,7 @@ id: clientToken
 
 ## Usage
 
-```php
+```aoi
 $clientToken
 ```
 

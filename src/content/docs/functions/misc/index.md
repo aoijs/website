@@ -8,7 +8,7 @@ id: index
 
 ## Usage
 
-```php
+```aoi
 $index
 ```
 

@@ -8,7 +8,7 @@ id: floor
 
 ## Usage
 
-```php
+```aoi
 $floor[number]
 ```
 

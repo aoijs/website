@@ -8,7 +8,7 @@ id: or
 
 ## Usage
 
-```php
+```aoi
 $or[...conditions]
 ```
 

@@ -8,7 +8,7 @@ id: channelPosition
 
 ## Usage
 
-```php
+```aoi
 $channelPosition[channelID?]
 ```
 

@@ -8,7 +8,7 @@ id: setUserNickname
 
 ## Usage
 
-```php
+```aoi
 $setUserNickname[userID;newName;reason?]
 ```
 

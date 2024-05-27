@@ -8,7 +8,7 @@ id: setUserVar
 
 ## Usage
 
-```php
+```aoi
 $setUserVar[varname;value;userID?;id?;table?]
 ```
 

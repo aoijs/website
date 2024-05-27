@@ -8,7 +8,7 @@ id: replaceTextWithRegex
 
 ## Usage
 
-```php
+```aoi
 $replaceTextWithRegex[text;reg;flags;newText]
 ```
 

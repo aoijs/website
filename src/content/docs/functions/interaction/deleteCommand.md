@@ -8,7 +8,7 @@ id: deleteCommand
 
 ## Usage
 
-```php
+```aoi
 $deleteCommand
 ```
 

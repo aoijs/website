@@ -8,6 +8,6 @@ id: error
 
 ## Usage
 
-```php
+```aoi
 $error
 ```

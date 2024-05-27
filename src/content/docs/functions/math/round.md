@@ -8,7 +8,7 @@ id: round
 
 ## Usage
 
-```php
+```aoi
 $round[number]
 ```
 

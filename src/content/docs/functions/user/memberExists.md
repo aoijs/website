@@ -8,7 +8,7 @@ id: memberExists
 
 ## Usage
 
-```php
+```aoi
 $memberExists[userID;guildID?]
 ```
 

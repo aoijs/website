@@ -8,7 +8,7 @@ id: slashOption
 
 ## Usage
 
-```php
+```aoi
 $slashOption[option]
 ```
 

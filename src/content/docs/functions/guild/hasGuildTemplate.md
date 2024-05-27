@@ -8,7 +8,7 @@ id: hasGuildTemplate
 
 ## Usage
 
-```php
+```aoi
 $hasGuildTemplate[guildId?]
 ```
 

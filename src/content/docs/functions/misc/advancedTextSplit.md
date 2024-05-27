@@ -8,7 +8,7 @@ id: advancedTextSplit
 
 ## Usage
 
-```php
+```aoi
 $advancedTextSplit[text;sep;index;sep?;index?]
 ```
 

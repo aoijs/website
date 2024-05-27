@@ -8,7 +8,7 @@ id: findMembers
 
 ## Usage
 
-```php
+```aoi
 $findMembers[userResolver;limit?;type?;force?;format?]
 ```
 

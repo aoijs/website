@@ -8,7 +8,7 @@ id: editMessage
 
 ## Usage
 
-```php
+```aoi
 $editMessage[messageID;content;channelID?]
 ```
 

@@ -8,7 +8,7 @@ id: webhookUpdate
 
 ## Usage
 
-```php
+```aoi
 $webhookUpdate[option]
 ```
 

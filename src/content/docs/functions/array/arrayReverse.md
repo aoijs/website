@@ -8,7 +8,7 @@ id: arrayReverse
 
 ## Usage
 
-```php
+```aoi
 $arrayReverse[name]
 ```
 

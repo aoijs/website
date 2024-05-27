@@ -8,7 +8,7 @@ id: createWebhook
 
 ## Usage
 
-```php
+```aoi
 $createWebhook[channelID;name;avatar;reason;sep?]
 ```
 

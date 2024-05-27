@@ -9,7 +9,7 @@ of the provided role IDs.
 
 ## Usage
 
-```php
+```aoi
 $addEmoji[guildID;URL;name;returnEmoji?;reason?;...roles?]
 ```
 

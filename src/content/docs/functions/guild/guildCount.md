@@ -8,7 +8,7 @@ id: guildCount
 
 ## Usage
 
-```php
+```aoi
 $guildCount
 ```
 

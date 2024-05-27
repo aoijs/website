@@ -8,7 +8,7 @@ id: pruneMembers
 
 ## Usage
 
-```php
+```aoi
 $pruneMembers[days;guildID?;roleIDs?;dry?;reason?;returnCount?]
 ```
 

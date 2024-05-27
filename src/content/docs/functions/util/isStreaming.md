@@ -8,7 +8,7 @@ id: isStreaming
 
 ## Usage
 
-```php
+```aoi
 $isStreaming[userID?;guildID?]
 ```
 

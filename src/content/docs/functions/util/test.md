@@ -8,7 +8,7 @@ id: test
 
 ## Usage
 
-```php
+```aoi
 $test[text;pattern;flag?]
 ```
 

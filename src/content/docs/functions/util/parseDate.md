@@ -8,7 +8,7 @@ id: parseDate
 
 ## Usage
 
-```php
+```aoi
 $parseDate[ms;type?]
 ```
 

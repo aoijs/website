@@ -8,7 +8,7 @@ id: setAutomodAllowList
 
 ## Usage
 
-```php
+```aoi
 $setAutomodAllowList[...words]
 ```
 

@@ -8,7 +8,7 @@ id: argsSlice
 
 ## Usage
 
-```php
+```aoi
 $argsSlice[text;from?;to]
 ```
 

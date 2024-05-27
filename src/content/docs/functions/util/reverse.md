@@ -8,7 +8,7 @@ id: reverse
 
 ## Usage
 
-```php
+```aoi
 $reverse[text]
 ```
 

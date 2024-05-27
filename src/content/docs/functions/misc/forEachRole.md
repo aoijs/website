@@ -8,7 +8,7 @@ id: forEachRole
 
 ## Usage
 
-```php
+```aoi
 $forEachRole[guildID;time;awaitData;...awaitedCmds;endCmd?]
 ```
 

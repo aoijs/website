@@ -8,7 +8,7 @@ id: addButton
 
 ## Usage
 
-```php
+```aoi
 $addButton[index;label;style;customID;disabled?;emoji?]
 ```
 

@@ -8,7 +8,7 @@ id: isRoleManaged
 
 ## Usage
 
-```php
+```aoi
 $isRoleManaged[roleID;guildID?]
 ```
 

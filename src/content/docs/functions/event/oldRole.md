@@ -8,7 +8,7 @@ id: oldRole
 
 ## Usage
 
-```php
+```aoi
 $oldRole[option]
 ```
 

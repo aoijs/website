@@ -8,7 +8,7 @@ id: randomRoleID
 
 ## Usage
 
-```php
+```aoi
 $randomRoleID[guildID?]
 ```
 

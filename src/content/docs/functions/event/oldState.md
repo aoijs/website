@@ -8,7 +8,7 @@ id: oldState
 
 ## Usage
 
-```php
+```aoi
 $oldState[option]
 ```
 

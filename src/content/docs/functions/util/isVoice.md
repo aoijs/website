@@ -8,7 +8,7 @@ id: isVoice
 
 ## Usage
 
-```php
+```aoi
 $isVoice[channelID]
 ```
 

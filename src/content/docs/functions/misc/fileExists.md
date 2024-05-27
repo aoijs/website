@@ -8,7 +8,7 @@ id: fileExists
 
 ## Usage
 
-```php
+```aoi
 $fileExists[path]
 ```
 

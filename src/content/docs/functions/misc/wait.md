@@ -8,7 +8,7 @@ id: wait
 
 ## Usage
 
-```php
+```aoi
 $wait[time]
 ```
 

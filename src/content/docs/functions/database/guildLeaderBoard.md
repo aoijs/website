@@ -8,7 +8,7 @@ id: guildLeaderboard
 
 ## Usage
 
-```php
+```aoi
 $guildLeaderboard[variable;type?;custom?;list?;page?;table?]
 ```
 

@@ -8,7 +8,7 @@ id: memberPremiumSince
 
 ## Usage
 
-```php
+```aoi
 $memberPremiumSince[userID?;guildID?]
 ```
 

@@ -8,7 +8,7 @@ id: hasEmbeds
 
 ## Usage
 
-```php
+```aoi
 $hasEmbeds[messageID;channelID]
 ```
 

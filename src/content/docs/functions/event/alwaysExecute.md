@@ -8,7 +8,7 @@ id: alwaysExecute
 
 ## Usage
 
-```php
+```aoi
 $alwaysExecute
 ```
 

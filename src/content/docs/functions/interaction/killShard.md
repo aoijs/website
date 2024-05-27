@@ -8,7 +8,7 @@ id: killShard
 
 ## Usage
 
-```php
+```aoi
 $killShard[shardID]
 ```
 

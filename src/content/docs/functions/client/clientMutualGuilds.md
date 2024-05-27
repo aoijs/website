@@ -8,7 +8,7 @@ id: clientMutualGuilds
 
 ## Usage
 
-```php
+```aoi
 $clientMutualGuilds[userID?;sep?]
 ```
 

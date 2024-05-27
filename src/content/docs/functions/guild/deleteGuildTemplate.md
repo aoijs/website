@@ -8,7 +8,7 @@ id: deleteGuildTemplate
 
 ## Usage
 
-```php
+```aoi
 $deleteGuildTemplate[templateCode?]
 ```
 

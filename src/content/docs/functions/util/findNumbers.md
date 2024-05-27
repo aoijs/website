@@ -8,7 +8,7 @@ id: findNumbers
 
 ## Usage
 
-```php
+```aoi
 $findNumbers[text]
 ```
 

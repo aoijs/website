@@ -8,7 +8,7 @@ id: ram
 
 ## Usage
 
-```php
+```aoi
 $ram
 ```
 

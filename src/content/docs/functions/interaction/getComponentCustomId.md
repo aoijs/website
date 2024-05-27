@@ -8,7 +8,7 @@ id: getComponentCustomId
 
 ## Usage
 
-```php
+```aoi
 $getComponentCustomID
 ```
 

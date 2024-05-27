@@ -8,7 +8,7 @@ id: userPlatform
 
 ## Usage
 
-```php
+```aoi
 $userPlatform[userID?;guildID?;sep?]
 ```
 

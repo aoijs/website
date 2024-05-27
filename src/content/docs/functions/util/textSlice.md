@@ -8,7 +8,7 @@ id: textSlice
 
 ## Usage
 
-```php
+```aoi
 $textSlice[text;from?;to]
 ```
 

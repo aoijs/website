@@ -8,7 +8,7 @@ id: interactionModal
 
 ## Usage
 
-```php
+```aoi
 $interactionModal[title;customID;components]
 ```
 

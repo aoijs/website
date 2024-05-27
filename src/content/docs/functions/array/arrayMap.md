@@ -8,7 +8,7 @@ id: arrayMap
 
 ## Usage
 
-```php
+```aoi
 $arrayMap[name;awaitedCommand;separator?;awaitData?]
 ```
 

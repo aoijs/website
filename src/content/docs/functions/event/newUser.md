@@ -8,7 +8,7 @@ id: newUser
 
 ## Usage
 
-```php
+```aoi
 $newUser[option]
 ```
 

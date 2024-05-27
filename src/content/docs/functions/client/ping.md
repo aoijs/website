@@ -8,7 +8,7 @@ id: ping
 
 ## Usage
 
-```php
+```aoi
 $ping
 ```
 

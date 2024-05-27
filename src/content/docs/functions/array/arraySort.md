@@ -8,7 +8,7 @@ id: arraySort
 
 ## Usage
 
-```php
+```aoi
 $arraySort[name;type?]
 ```
 

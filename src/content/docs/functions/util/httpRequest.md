@@ -8,7 +8,7 @@ id: httpRequest
 
 ## Usage
 
-```php
+```aoi
 $httpRequest[URL;method;body?;property?;error?;...header?]
 ```
 

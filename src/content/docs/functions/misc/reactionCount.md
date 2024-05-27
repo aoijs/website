@@ -8,7 +8,7 @@ id: reactionCount
 
 ## Usage
 
-```php
+```aoi
 $reactionCount[channelID;messageID;emoji]
 ```
 

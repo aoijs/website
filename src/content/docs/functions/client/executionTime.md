@@ -8,7 +8,7 @@ id: executionTime
 
 ## Usage
 
-```php
+```aoi
 $executionTime
 ```
 

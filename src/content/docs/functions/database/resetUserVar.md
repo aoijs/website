@@ -8,7 +8,7 @@ id: resetUserVar
 
 ## Usage
 
-```php
+```aoi
 $resetUserVar[varname;guildID?;table?]
 ```
 

@@ -8,7 +8,7 @@ id: resolveColor
 
 ## Usage
 
-```php
+```aoi
 $resolveColor[type;returnAs?;...data]
 ```
 

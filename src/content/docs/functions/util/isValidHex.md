@@ -8,7 +8,7 @@ id: isValidHex
 
 ## Usage
 
-```php
+```aoi
 $isValidHex[colorResolver]
 ```
 

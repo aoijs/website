@@ -8,7 +8,7 @@ id: noMentionMessage
 
 ## Usage
 
-```php
+```aoi
 $noMentionMessage[args]
 ```
 

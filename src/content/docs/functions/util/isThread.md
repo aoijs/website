@@ -8,7 +8,7 @@ id: isThread
 
 ## Usage
 
-```php
+```aoi
 $isThread[channelID?]
 ```
 

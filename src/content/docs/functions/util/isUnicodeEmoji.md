@@ -8,7 +8,7 @@ id: isUnicodeEmoji
 
 ## Usage
 
-```php
+```aoi
 $isUnicodeEmoji[emojiResolver]
 ```
 

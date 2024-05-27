@@ -8,7 +8,7 @@ id: modifyChannelPerms
 
 ## Usage
 
-```php
+```aoi
 $modifyChannelPerms[channelID;roruID;...perms]
 ```
 

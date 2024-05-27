@@ -8,7 +8,7 @@ id: shutdown
 
 ## Usage
 
-```php
+```aoi
 $shutdown
 ```
 

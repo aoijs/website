@@ -8,7 +8,7 @@ id: humanizeMs
 
 ## Usage
 
-```php
+```aoi
 $humanizeMs[time]
 ```
 

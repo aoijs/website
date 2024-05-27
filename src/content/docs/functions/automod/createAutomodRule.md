@@ -8,7 +8,7 @@ id: createAutomodRule
 
 ## Usage
 
-```php
+```aoi
 $createAutomodRule[guildID;name;enabled?;reason?]
 ```
 

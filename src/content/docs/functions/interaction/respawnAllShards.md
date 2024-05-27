@@ -8,7 +8,7 @@ id: respawnAllShards
 
 ## Usage
 
-```php
+```aoi
 $respawnAllShards
 ```
 

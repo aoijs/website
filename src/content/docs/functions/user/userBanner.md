@@ -8,7 +8,7 @@ id: userBanner
 
 ## Usage
 
-```php
+```aoi
 $userBanner[userID?;size?;dynamic?;extension?]
 ```
 

@@ -8,7 +8,7 @@ id: arrayShuffle
 
 ## Usage
 
-```php
+```aoi
 $arrayShuffle[name]
 ```
 

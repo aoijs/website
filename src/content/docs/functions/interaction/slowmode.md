@@ -8,7 +8,7 @@ id: slowmode
 
 ## Usage
 
-```php
+```aoi
 $slowmode[time;channelID?]
 ```
 

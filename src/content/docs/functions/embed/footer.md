@@ -8,7 +8,7 @@ id: footer
 
 ## Usage
 
-```php
+```aoi
 $footer[index?;content;iconURL?]
 ```
 

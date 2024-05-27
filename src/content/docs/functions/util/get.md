@@ -8,7 +8,7 @@ id: get
 
 ## Usage
 
-```php
+```aoi
 $get[var]
 ```
 

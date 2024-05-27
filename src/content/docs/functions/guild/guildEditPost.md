@@ -8,7 +8,7 @@ id: guildEditPost
 
 ## Usage
 
-```php
+```aoi
 $guildEditPost[forumId;userID?;...threadTags(?)]
 ```
 

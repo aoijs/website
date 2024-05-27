@@ -8,7 +8,7 @@ id: unlockThread
 
 ## Usage
 
-```php
+```aoi
 $unlockThread[channelID;threadID;reason?]
 ```
 

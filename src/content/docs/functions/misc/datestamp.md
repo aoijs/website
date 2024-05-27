@@ -8,7 +8,7 @@ id: datestamp
 
 ## Usage
 
-```php
+```aoi
 $datestamp
 ```
 

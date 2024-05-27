@@ -8,7 +8,7 @@ id: fetch
 
 ## Usage
 
-```php
+```aoi
 $fetch[method;query;...properties]
 ```
 

@@ -8,7 +8,7 @@ id: guildSplash
 
 ## Usage
 
-```php
+```aoi
 $guildSplash[guildID?;size?;dynamic?;extension?]
 ```
 

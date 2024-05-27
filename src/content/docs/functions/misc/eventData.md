@@ -8,6 +8,6 @@ id: eventData
 
 ## Usage
 
-```php
+```aoi
 $eventData
 ```

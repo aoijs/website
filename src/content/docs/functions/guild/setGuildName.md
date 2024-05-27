@@ -8,7 +8,7 @@ id: setGuildName
 
 ## Usage
 
-```php
+```aoi
 $setGuildName[name;guildID?]
 ```
 

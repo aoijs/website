@@ -8,7 +8,7 @@ id: oldVariable
 
 ## Usage
 
-```php
+```aoi
 $oldVariable[option;sep?]
 ```
 

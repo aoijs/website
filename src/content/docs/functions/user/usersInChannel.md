@@ -8,7 +8,7 @@ id: usersInChannel
 
 ## Usage
 
-```php
+```aoi
 $usersInChannel[channelID;option?;sep?]
 ```
 

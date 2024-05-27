@@ -8,7 +8,7 @@ id: addSelectMenuTo
 
 ## Usage
 
-```php
+```aoi
 $addSelectMenuTo[channelId;messageId;index;type;customId;placeHolder;minValues;maxValues;disabled?;label:description:value:default?:emoji?;...]
 ```
 

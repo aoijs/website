@@ -8,7 +8,7 @@ id: guildVanityUses
 
 ## Usage
 
-```php
+```aoi
 $guildVanityUses[guildID?]
 ```
 

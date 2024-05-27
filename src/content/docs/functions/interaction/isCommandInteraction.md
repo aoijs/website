@@ -8,6 +8,6 @@ id: isCommandInteraction
 
 ## Usage
 
-```php
+```aoi
 $isCommandInteraction
 ```

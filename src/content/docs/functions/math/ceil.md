@@ -8,7 +8,7 @@ id: ceil
 
 ## Usage
 
-```php
+```aoi
 $ceil[number]
 ```
 

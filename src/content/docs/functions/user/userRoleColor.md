@@ -8,7 +8,7 @@ id: userRoleColor
 
 ## Usage
 
-```php
+```aoi
 $userRoleColor[userID?;guildID?]
 ```
 

@@ -8,7 +8,7 @@ id: editChannel
 
 ## Usage
 
-```php
+```aoi
 $editChannel[channelID;name?;type?;position?;topic?;nsfw?;bitrate?;userlimit?;parent?;lockPermissions?;permissionOverwrites?;rateLimitPerUser?;defaultAutoArchiveDuration?;rtcRegion?;reason?]
 ```
 

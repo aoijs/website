@@ -8,7 +8,7 @@ id: comment
 
 ## Usage
 
-```php
+```aoi
 $comment[content]
 ```
 

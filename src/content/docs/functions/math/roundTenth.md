@@ -8,7 +8,7 @@ id: roundTenth
 
 ## Usage
 
-```php
+```aoi
 $roundTenth[number;decimalPosition]
 ```
 

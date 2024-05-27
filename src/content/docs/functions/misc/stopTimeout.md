@@ -8,7 +8,7 @@ id: stopTimeout
 
 ## Usage
 
-```php
+```aoi
 $stopTimeout[id]
 ```
 

@@ -8,7 +8,7 @@ id: findGuild
 
 ## Usage
 
-```php
+```aoi
 $findGuild[guildResolver]
 ```
 

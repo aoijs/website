@@ -8,7 +8,7 @@ id: image
 
 ## Usage
 
-```php
+```aoi
 $image[index?;URL]
 ```
 

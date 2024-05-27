@@ -8,7 +8,7 @@ id: cloneObject
 
 ## Usage
 
-```php
+```aoi
 $cloneObject[objectName;newObjectName]
 ```
 

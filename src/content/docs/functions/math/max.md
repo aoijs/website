@@ -8,7 +8,7 @@ id: max
 
 ## Usage
 
-```php
+```aoi
 $max[...numbers]
 ```
 

@@ -8,7 +8,7 @@ id: digitalFormat
 
 ## Usage
 
-```php
+```aoi
 $digitalFormat[ms]
 ```
 

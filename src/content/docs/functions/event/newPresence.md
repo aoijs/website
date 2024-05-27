@@ -8,7 +8,7 @@ id: newPresence
 
 ## Usage
 
-```php
+```aoi
 $newPresence[option]
 ```
 

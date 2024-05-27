@@ -8,7 +8,7 @@ id: findTextSplitIndex
 
 ## Usage
 
-```php
+```aoi
 $findTextSplitIndex[query]
 ```
 

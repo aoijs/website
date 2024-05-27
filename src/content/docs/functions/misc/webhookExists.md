@@ -8,7 +8,7 @@ id: webhookExists
 
 ## Usage
 
-```php
+```aoi
 $webhookExists[id;token]
 ```
 

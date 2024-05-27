@@ -8,7 +8,7 @@ id: setGuildVar
 
 ## Usage
 
-```php
+```aoi
 $setGuildVar[varname;value;guildID?;table?]
 ```
 

@@ -8,7 +8,7 @@ id: onlyNSFW
 
 ## Usage
 
-```php
+```aoi
 $onlyNSFW[error?]
 ```
 

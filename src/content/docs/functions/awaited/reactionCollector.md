@@ -8,7 +8,7 @@ id: reactionCollector
 
 ## Usage
 
-```php
+```aoi
 $reactionCollector[channelID;messageID;userFilters;time;reactions;awaitedCommands;removeReaction?;awaitData?;endAwait?]
 ```
 

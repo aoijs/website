@@ -8,7 +8,7 @@ id: isWidgetEnabled
 
 ## Usage
 
-```php
+```aoi
 $isWidgetEnabled[guildID?]
 ```
 

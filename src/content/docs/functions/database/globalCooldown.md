@@ -8,7 +8,7 @@ id: globalCooldown
 
 ## Usage
 
-```php
+```aoi
 $globalCooldown[time;errorMessage]
 ```
 

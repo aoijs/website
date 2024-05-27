@@ -8,7 +8,7 @@ id: pinsUpdate
 
 ## Usage
 
-```php
+```aoi
 $pinsUpdate[option]
 ```
 

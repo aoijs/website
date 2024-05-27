@@ -8,7 +8,7 @@ id: guildIDS
 
 ## Usage
 
-```php
+```aoi
 $guildIDS[sep?]
 ```
 

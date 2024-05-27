@@ -8,7 +8,7 @@ id: root
 
 ## Usage
 
-```php
+```aoi
 $root[number;root]
 ```
 

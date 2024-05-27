@@ -8,7 +8,7 @@ id: getObjectKeys
 
 ## Usage
 
-```php
+```aoi
 $getObjectKeys[objectName;separator?]
 ```
 

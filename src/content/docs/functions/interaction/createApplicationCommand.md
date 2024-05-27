@@ -8,7 +8,7 @@ id: createApplicationCommand
 
 ## Usage
 
-```php
+```aoi
 $createApplicationCommand[guildID/global;name;description;defaultPermission;allowDm?;type?;options?]
 ```
 

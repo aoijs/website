@@ -8,7 +8,7 @@ id: date
 
 ## Usage
 
-```php
+```aoi
 $date
 ```
 

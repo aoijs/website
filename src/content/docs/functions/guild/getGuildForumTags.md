@@ -8,7 +8,7 @@ id: getGuildForumTags
 
 ## Usage
 
-```php
+```aoi
 $getGuildForumTags[forumId;option?;separator?]
 ```
 

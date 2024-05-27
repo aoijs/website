@@ -8,7 +8,7 @@ id: arrayLastIndexOf
 
 ## Usage
 
-```php
+```aoi
 $arrayLastIndexOf[name;query]
 ```
 

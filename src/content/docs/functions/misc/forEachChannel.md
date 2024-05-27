@@ -8,7 +8,7 @@ id: forEachChannel
 
 ## Usage
 
-```php
+```aoi
 $forEachChannel[time;awaitData;...awaitedCmds;endCmd]
 ```
 

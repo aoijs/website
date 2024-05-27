@@ -8,7 +8,7 @@ id: onlyIfMessageContains
 
 ## Usage
 
-```php
+```aoi
 $onlyIfMessageContains[content;...text;error]
 ```
 

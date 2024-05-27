@@ -8,7 +8,7 @@ id: setAutomodExemptChannels
 
 ## Usage
 
-```php
+```aoi
 $setAutomodExemptChannels[...channels]
 ```
 

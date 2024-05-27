@@ -8,7 +8,7 @@ id: color
 
 ## Usage
 
-```php
+```aoi
 $color[index?;hex]
 ```
 

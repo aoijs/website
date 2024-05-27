@@ -8,7 +8,7 @@ id: userCustomStatus
 
 ## Usage
 
-```php
+```aoi
 $userCustomStatus[guildID?;userID?;option?]
 ```
 

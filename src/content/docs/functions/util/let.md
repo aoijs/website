@@ -8,7 +8,7 @@ id: let
 
 ## Usage
 
-```php
+```aoi
 $let[varname;value]
 ```
 

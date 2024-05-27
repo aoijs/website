@@ -8,7 +8,7 @@ id: clear
 
 ## Usage
 
-```php
+```aoi
 $clear[channelID;amount;filter?;returnCount?]
 ```
 

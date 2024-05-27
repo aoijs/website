@@ -8,7 +8,7 @@ id: guildWidgetChannelID
 
 ## Usage
 
-```php
+```aoi
 $guildWidgetChannelID[guildID?]
 ```
 

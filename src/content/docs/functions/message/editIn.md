@@ -8,7 +8,7 @@ id: editIn
 
 ## Usage
 
-```php
+```aoi
 $editIn[time;...content]
 ```
 

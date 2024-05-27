@@ -8,6 +8,6 @@ id: isSelectMenuInteraction
 
 ## Usage
 
-```php
+```aoi
 $isSelectMenuInteraction
 ```

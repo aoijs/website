@@ -8,7 +8,7 @@ id: emojiExists
 
 ## Usage
 
-```php
+```aoi
 $emojiExists[emojiResolver]
 ```
 

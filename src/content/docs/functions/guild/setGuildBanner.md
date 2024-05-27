@@ -8,7 +8,7 @@ id: setGuildBanner
 
 ## Usage
 
-```php
+```aoi
 $setGuildBanner[guildID?;URL;reason?]
 ```
 

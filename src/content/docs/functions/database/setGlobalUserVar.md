@@ -8,7 +8,7 @@ id: setGlobalUserVar
 
 ## Usage
 
-```php
+```aoi
 $setGlobalUserVar[varname;value;userID?;table?]
 ```
 

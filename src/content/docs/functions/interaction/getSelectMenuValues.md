@@ -8,7 +8,7 @@ id: getSelectMenuValues
 
 ## Usage
 
-```php
+```aoi
 $getSelectMenuValues[index?;sep?]
 ```
 

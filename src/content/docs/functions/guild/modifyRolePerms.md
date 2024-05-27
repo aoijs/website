@@ -8,7 +8,7 @@ id: modifyRolePerms
 
 ## Usage
 
-```php
+```aoi
 $modifyRolePerms[guildID;roleID;...perms]
 ```
 

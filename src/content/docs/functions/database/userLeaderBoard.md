@@ -8,7 +8,7 @@ id: userLeaderBoard
 
 ## Usage
 
-```php
+```aoi
 $userLeaderBoard[guildID;variable;order?;custom?;list?;page?;table?]
 ```
 

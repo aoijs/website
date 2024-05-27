@@ -8,7 +8,7 @@ id: setMessageVar
 
 ## Usage
 
-```php
+```aoi
 $setMessageVar[varname;value;messageID?;table?]
 ```
 

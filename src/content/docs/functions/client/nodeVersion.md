@@ -8,7 +8,7 @@ id: nodeVersion
 
 ## Usage
 
-```php
+```aoi
 $nodeVersion
 ```
 

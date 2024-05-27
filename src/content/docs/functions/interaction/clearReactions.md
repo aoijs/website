@@ -8,7 +8,7 @@ id: clearReactions
 
 ## Usage
 
-```php
+```aoi
 $clearReactions[channelID;messageID;emoji]
 ```
 

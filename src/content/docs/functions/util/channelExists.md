@@ -8,7 +8,7 @@ id: channelExists
 
 ## Usage
 
-```php
+```aoi
 $channelExists[channel]
 ```
 

@@ -8,7 +8,7 @@ id: onlyClientPerms
 
 ## Usage
 
-```php
+```aoi
 $onlyClientPerms[...perms;error]
 ```
 

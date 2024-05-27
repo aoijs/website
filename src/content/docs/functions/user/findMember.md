@@ -8,7 +8,7 @@ id: findMember
 
 ## Usage
 
-```php
+```aoi
 $findMember[userResolver;returnSelf?;guildID?]
 ```
 

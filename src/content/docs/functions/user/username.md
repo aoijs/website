@@ -8,7 +8,7 @@ id: username
 
 ## Usage
 
-```php
+```aoi
 $username[userID?]
 ```
 

@@ -8,7 +8,7 @@ id: createObject
 
 ## Usage
 
-```php
+```aoi
 $createObject[objectName;object]
 ```
 

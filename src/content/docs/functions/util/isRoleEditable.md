@@ -8,7 +8,7 @@ id: isRoleEditable
 
 ## Usage
 
-```php
+```aoi
 $isRoleEditable[roleID;guildID?]
 ```
 

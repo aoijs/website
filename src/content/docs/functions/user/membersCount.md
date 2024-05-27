@@ -8,7 +8,7 @@ id: membersCount
 
 ## Usage
 
-```php
+```aoi
 $membersCount[guildID?;presence?;countBot?]
 ```
 

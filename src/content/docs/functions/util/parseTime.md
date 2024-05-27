@@ -8,7 +8,7 @@ id: parseTime
 
 ## Usage
 
-```php
+```aoi
 $parseTime[time]
 ```
 

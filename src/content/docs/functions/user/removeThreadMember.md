@@ -8,7 +8,7 @@ id: removeThreadMember
 
 ## Usage
 
-```php
+```aoi
 $removeThreadMember[channelID;threadID;userID;reason?]
 ```
 

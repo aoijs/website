@@ -8,7 +8,7 @@ id: getEmbed
 
 ## Usage
 
-```php
+```aoi
 $getEmbed[channelID?;messageID?;index?;option?]
 ```
 

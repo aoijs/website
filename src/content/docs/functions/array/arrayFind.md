@@ -8,7 +8,7 @@ id: arrayFind
 
 ## Usage
 
-```php
+```aoi
 $arrayFind[name;query;queryType?;separator?]
 ```
 

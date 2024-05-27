@@ -8,7 +8,7 @@ id: deleteThread
 
 ## Usage
 
-```php
+```aoi
 $deleteThread[channelID;threadID;reason?]
 ```
 

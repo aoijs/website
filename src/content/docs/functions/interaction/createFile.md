@@ -8,7 +8,7 @@ id: createFile
 
 ## Usage
 
-```php
+```aoi
 $createFile[attachment;name]
 ```
 

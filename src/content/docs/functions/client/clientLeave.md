@@ -8,7 +8,7 @@ id: clientLeave
 
 ## Usage
 
-```php
+```aoi
 $clientLeave[guildID?]
 ```
 

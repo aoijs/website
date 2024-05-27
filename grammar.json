@@ -1,0 +1,60 @@
+{
+  "name": "aoi",
+  "scopeName": "source.custom",
+  "patterns": [
+    {
+      "include": "#commentPattern"
+    },
+    {
+      "include": "#functionPattern"
+    }
+  ],
+  "repository": {
+    "functionPattern": {
+      "patterns": [
+        {
+          "begin": "(\\$[a-zA-Z_][a-zA-Z0-9_]*\\[)",
+          "beginCaptures": {
+            "1": {
+              "name": "keyword.function.custom"
+            }
+          },
+          "end": "\\]",
+          "endCaptures": {
+            "0": {
+              "name": "keyword.function.custom"
+            }
+          },
+          "patterns": [
+            {
+              "name": "punctuation.separator.custom",
+              "match": ";"
+            },
+            {
+              "name": "variable.parameter.custom",
+              "match": "[a-zA-Z_][a-zA-Z0-9_]*"
+            }
+          ]
+        }
+      ]
+    },
+    "commentPattern": {
+      "patterns": [
+        {
+          "begin": "(\\$comment\\[)",
+          "beginCaptures": {
+            "1": {
+              "name": "comment.block.custom"
+            }
+          },
+          "end": "\\]",
+          "endCaptures": {
+            "0": {
+              "name": "comment.block.custom"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

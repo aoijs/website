@@ -8,7 +8,7 @@ id: bulk
 
 ## Usage
 
-```php
+```aoi
 $bulk[option]
 ```
 

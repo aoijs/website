@@ -8,7 +8,7 @@ id: messageSlice
 
 ## Usage
 
-```php
+```aoi
 $messageSlice[from;to?]
 ```
 

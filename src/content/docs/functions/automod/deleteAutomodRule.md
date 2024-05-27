@@ -8,7 +8,7 @@ id: deleteAutomodRule
 
 ## Usage
 
-```php
+```aoi
 $deleteAutomodRule[guildID;automodRuleName;reason?;force?]
 ```
 

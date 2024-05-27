@@ -8,7 +8,7 @@ id: setTimeout
 
 ## Usage
 
-```php
+```aoi
 $setTimeout[awaitedCmd;duration;timeoutData;returnId?;pulse?]
 ```
 

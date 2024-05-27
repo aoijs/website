@@ -8,7 +8,7 @@ id: mentionedChannels
 
 ## Usage
 
-```php
+```aoi
 $mentionedChannels[index;returnSelf?]
 ```
 

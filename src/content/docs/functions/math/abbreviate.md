@@ -8,7 +8,7 @@ id: abbreviate
 
 ## Usage
 
-```php
+```aoi
 $abbreviate[num;dec?]
 ```
 

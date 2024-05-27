@@ -8,7 +8,7 @@ id: math
 
 ## Usage
 
-```php
+```aoi
 $math[equation]
 ```
 

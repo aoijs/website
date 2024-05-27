@@ -8,7 +8,7 @@ id: sendSticker
 
 ## Usage
 
-```php
+```aoi
 $sendSticker[resolver]
 ```
 

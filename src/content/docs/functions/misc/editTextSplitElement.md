@@ -8,7 +8,7 @@ id: editTextSplitElement
 
 ## Usage
 
-```php
+```aoi
 $editTextSplitElement[index;text]
 ```
 

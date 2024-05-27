@@ -8,7 +8,7 @@ id: addThreadMember
 
 ## Usage
 
-```php
+```aoi
 $addThreadMember[channelID;threadID;userID;reason]
 ```
 

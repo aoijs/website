@@ -8,7 +8,7 @@ id: expandNumber
 
 ## Usage
 
-```php
+```aoi
 $expandNumber[abbrNumber]
 ```
 

@@ -8,7 +8,7 @@ id: messageID
 
 ## Usage
 
-```php
+```aoi
 $messageID
 ```
 

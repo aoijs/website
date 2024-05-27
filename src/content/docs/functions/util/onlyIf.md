@@ -8,7 +8,7 @@ id: onlyIf
 
 ## Usage
 
-```php
+```aoi
 $onlyIf[condition;error]
 ```
 

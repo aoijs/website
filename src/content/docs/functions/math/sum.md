@@ -8,7 +8,7 @@ id: sum
 
 ## Usage
 
-```php
+```aoi
 $sum[num;num]
 ```
 

@@ -8,7 +8,7 @@ id: replaceText
 
 ## Usage
 
-```php
+```aoi
 $replaceText[text;replacer;replaceTo;times?]
 ```
 

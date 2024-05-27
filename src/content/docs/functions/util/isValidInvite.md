@@ -8,7 +8,7 @@ id: isValidInvite
 
 ## Usage
 
-```php
+```aoi
 $isValidInvite[inviteResolver]
 ```
 

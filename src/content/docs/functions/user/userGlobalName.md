@@ -8,7 +8,7 @@ id: userGlobalName
 
 ## Usage
 
-```php
+```aoi
 $userGlobalName[userID?]
 ```
 

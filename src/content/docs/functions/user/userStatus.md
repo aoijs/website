@@ -8,7 +8,7 @@ id: userStatus
 
 ## Usage
 
-```php
+```aoi
 $userStatus[guildId?;userId?]
 ```
 

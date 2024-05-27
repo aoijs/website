@@ -8,7 +8,7 @@ id: resolveEmojiID
 
 ## Usage
 
-```php
+```aoi
 $resolveEmojiID[emojiResolver]
 ```
 

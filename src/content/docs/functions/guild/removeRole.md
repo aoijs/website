@@ -8,7 +8,7 @@ id: removeRole
 
 ## Usage
 
-```php
+```aoi
 $removeRole[guildID;userID;roleID;reason?]
 ```
 

@@ -8,7 +8,7 @@ id: guildVerificationLevel
 
 ## Usage
 
-```php
+```aoi
 $guildVerificationLevel[guildID?]
 ```
 

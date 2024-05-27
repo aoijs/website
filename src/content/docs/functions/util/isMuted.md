@@ -8,7 +8,7 @@ id: isMuted
 
 ## Usage
 
-```php
+```aoi
 $isMuted[userID?;guildID?]
 ```
 

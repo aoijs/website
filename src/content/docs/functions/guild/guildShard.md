@@ -8,7 +8,7 @@ id: guildShard
 
 ## Usage
 
-```php
+```aoi
 $guildShard[option?;sep?;shardId]
 ```
 

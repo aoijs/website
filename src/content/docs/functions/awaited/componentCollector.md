@@ -8,7 +8,7 @@ id: componentCollector
 
 ## Usage
 
-```php
+```aoi
 $componentCollector[messageID;userFilter;time;customIDs;commands;errorMsg?;endcommand?;awaitData?]
 ```
 

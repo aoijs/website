@@ -8,7 +8,7 @@ id: addSelectMenu
 
 ## Usage
 
-```php
+```aoi
 $addSelectMenu[index;type;customId;placeHolder;minValues;maxValues;disabled?;label:description:value:default?:emoji?;...]
 ```
 

@@ -8,7 +8,7 @@ id: addField
 
 ## Usage
 
-```php
+```aoi
 $addField[fieldTitle;fieldDescription;inline?]
 ```
 

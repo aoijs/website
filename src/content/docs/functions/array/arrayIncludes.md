@@ -8,7 +8,7 @@ id: arrayIncludes
 
 ## Usage
 
-```php
+```aoi
 $arrayIncludes[name;query]
 ```
 

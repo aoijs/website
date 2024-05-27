@@ -8,7 +8,7 @@ id: reply
 
 ## Usage
 
-```php
+```aoi
 $reply[messageID?;mentionUser?]
 ```
 

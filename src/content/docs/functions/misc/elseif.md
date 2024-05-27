@@ -8,7 +8,7 @@ id: elseif
 
 ## Usage
 
-```php
+```aoi
 $elseif[condition]
 ```
 

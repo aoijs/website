@@ -17,13 +17,13 @@ The `$autoCompleteRespond` can be used in two ways:
 
 1. **Simple Way**: Here's how you can use it in a simple way:
 
-```php
+```aoi
 $autoCompleteRespond[OptionName;OptionReply;...]
 ```
 
 2. **JSON Way**: If you prefer JSON, you can use it like this:
 
-```php
+```aoi
 $autoCompleteRespond[[{
     "name" : "Option Name One",
     "value" : "Option Reply 1"

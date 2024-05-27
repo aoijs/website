@@ -8,7 +8,7 @@ id: guildRoles
 
 ## Usage
 
-```php
+```aoi
 $guildRoles[guildID?;type?;sep?;removeManagedRoles?;fetch?]
 ```
 

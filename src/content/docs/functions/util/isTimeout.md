@@ -8,7 +8,7 @@ id: isTimeout
 
 ## Usage
 
-```php
+```aoi
 $isTimeout[guildID?;userID?]
 ```
 

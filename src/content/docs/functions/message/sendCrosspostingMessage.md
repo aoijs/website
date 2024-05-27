@@ -8,7 +8,7 @@ id: sendCrosspostingMessage
 
 ## Usage
 
-```php
+```aoi
 $sendCrosspostingMessage[content;...channelIDs]
 ```
 

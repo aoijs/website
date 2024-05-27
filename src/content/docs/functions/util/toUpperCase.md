@@ -9,7 +9,7 @@ pagination_next: null
 
 ## Usage
 
-```php
+```aoi
 $toUpperCase[text]
 ```
 

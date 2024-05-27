@@ -8,7 +8,7 @@ id: variablesCount
 
 ## Usage
 
-```php
+```aoi
 $variablesCount
 ```
 

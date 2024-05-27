@@ -8,7 +8,7 @@ id: textSplitMap
 
 ## Usage
 
-```php
+```aoi
 $textSplit[awaited]
 ```
 

@@ -8,7 +8,7 @@ id: editButton
 
 ## Usage
 
-```php
+```aoi
 $editButton[customId;label;style;disabled?;emoji?;messageId?;channelId?]
 ```
 

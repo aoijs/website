@@ -8,7 +8,7 @@ id: arrayEvery
 
 ## Usage
 
-```php
+```aoi
 $arrayEvery[name;query;queryType?]
 ```
 

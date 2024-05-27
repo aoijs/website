@@ -8,7 +8,7 @@ id: setCacheData
 
 ## Usage
 
-```php
+```aoi
 $setCacheData[type;cacheName;cacheKey;cacheValue]
 ```
 

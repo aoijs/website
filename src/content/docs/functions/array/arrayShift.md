@@ -8,7 +8,7 @@ id: arrayShift
 
 ## Usage
 
-```php
+```aoi
 $arrayShift[name]
 ```
 

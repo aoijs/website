@@ -8,7 +8,7 @@ id: textTrim
 
 ## Usage
 
-```php
+```aoi
 $textTrim[text]
 ```
 

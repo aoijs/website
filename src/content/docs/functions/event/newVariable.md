@@ -8,7 +8,7 @@ id: newVariable
 
 ## Usage
 
-```php
+```aoi
 $newVariable[option;sep?]
 ```
 

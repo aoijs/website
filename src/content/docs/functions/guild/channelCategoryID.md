@@ -8,7 +8,7 @@ id: channelCategoryID
 
 ## Usage
 
-```php
+```aoi
 $channelCategoryID[channelID?]
 ```
 

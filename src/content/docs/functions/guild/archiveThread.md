@@ -8,7 +8,7 @@ id: archiveThread
 
 ## Usage
 
-```php
+```aoi
 $archiveThread[threadID;channelID?;archive?;reason?]
 ```
 

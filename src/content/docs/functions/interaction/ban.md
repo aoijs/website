@@ -8,7 +8,7 @@ id: ban
 
 ## Usage
 
-```php
+```aoi
 $ban[guildID;userID;days?;reason?]
 ```
 

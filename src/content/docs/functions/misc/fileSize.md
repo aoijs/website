@@ -8,7 +8,7 @@ id: fileSize
 
 ## Usage
 
-```php
+```aoi
 $fileSize[path;unit?]
 ```
 

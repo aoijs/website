@@ -8,7 +8,7 @@ id: loop
 
 ## Usage
 
-```php
+```aoi
 $loop[time;awaitData;...awaitedCmds]
 ```
 

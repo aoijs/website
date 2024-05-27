@@ -9,7 +9,7 @@ than 3 seconds.
 
 ## Usage
 
-```php
+```aoi
 $interactionFollowUp[content?;ephemeral?;returnID?]
 ```
 

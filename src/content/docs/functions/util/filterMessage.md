@@ -8,7 +8,7 @@ id: filterMessage
 
 ## Usage
 
-```php
+```aoi
 $filterMessage[text;...letters]
 ```
 

@@ -8,7 +8,7 @@ id: guildMaxStageVideoChannelUsers
 
 ## Usage
 
-```php
+```aoi
 $guildMaxStageVideoChannelUsers[guildID?]
 ```
 

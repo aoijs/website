@@ -8,7 +8,7 @@ id: channelOverwrites
 
 ## Usage
 
-```php
+```aoi
 $channelOverwrites[channelID?;response?;sep?]
 ```
 

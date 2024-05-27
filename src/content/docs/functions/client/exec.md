@@ -8,7 +8,7 @@ id: exec
 
 ## Usage
 
-```php
+```aoi
 $exec[code]
 ```
 

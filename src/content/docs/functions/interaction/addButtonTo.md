@@ -8,7 +8,7 @@ id: addButtonTo
 
 ## Usage
 
-```php
+```aoi
 $addButtonTo[channelId;messageId;index;label;style;customID;disabled?;emoji?]
 ```
 

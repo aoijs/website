@@ -8,7 +8,7 @@ id: setAutomodMentionTotalLimit
 
 ## Usage
 
-```php
+```aoi
 $setAutomodMentionTotalLimit[limit]
 ```
 

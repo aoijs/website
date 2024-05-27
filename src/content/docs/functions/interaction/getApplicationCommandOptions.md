@@ -8,7 +8,7 @@ id: getApplicationCommandOptions
 
 ## Usage
 
-```php
+```aoi
 $getApplicationCommandOptions[name;type?]
 ```
 

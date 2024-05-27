@@ -8,7 +8,7 @@ id: sendTTS
 
 ## Usage
 
-```php
+```aoi
 $sendTTS[channelID;message;returnID?]
 ```
 

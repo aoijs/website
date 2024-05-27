@@ -8,7 +8,7 @@ id: setClientAvatar
 
 ## Usage
 
-```php
+```aoi
 $setClientAvatar[URL]
 ```
 

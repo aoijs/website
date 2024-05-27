@@ -8,7 +8,7 @@ id: guildBoostLevel
 
 ## Usage
 
-```php
+```aoi
 $guildBoostLevel[guildID?]
 ```
 

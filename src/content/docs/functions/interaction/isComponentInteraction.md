@@ -8,6 +8,6 @@ id: isComponentInteraction
 
 ## Usage
 
-```php
+```aoi
 $isComponentInteraction
 ```

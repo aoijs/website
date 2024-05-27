@@ -8,7 +8,7 @@ id: randomString
 
 ## Usage
 
-```php
+```aoi
 $randomString[range;diffExec?]
 ```
 

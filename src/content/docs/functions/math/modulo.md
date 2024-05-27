@@ -8,7 +8,7 @@ id: modulo
 
 ## Usage
 
-```php
+```aoi
 $modulo[num;num]
 ```
 

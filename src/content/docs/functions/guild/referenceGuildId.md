@@ -8,6 +8,6 @@ id: referenceGuildId
 
 ## Usage
 
-```php
+```aoi
 $referenceGuildId
 ```

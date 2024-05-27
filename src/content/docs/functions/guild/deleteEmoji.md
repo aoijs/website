@@ -8,7 +8,7 @@ id: deleteEmoji
 
 ## Usage
 
-```php
+```aoi
 $deleteEmoji[emoji]
 ```
 

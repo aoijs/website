@@ -8,7 +8,7 @@ id: awaitExecute
 
 ## Usage
 
-```php
+```aoi
 $awaitExecute[awaitedCommand]
 ```
 

@@ -8,7 +8,7 @@ id: deleteRoles
 
 ## Usage
 
-```php
+```aoi
 $deleteRoles[guildID;...roles]
 ```
 

@@ -8,7 +8,7 @@ id: arrayLength
 
 ## Usage
 
-```php
+```aoi
 $arrayLength[name]
 ```
 

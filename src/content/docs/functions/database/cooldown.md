@@ -8,7 +8,7 @@ id: cooldown
 
 ## Usage
 
-```php
+```aoi
 $cooldown[time;errorMessage]
 ```
 

@@ -8,7 +8,7 @@ id: messageType
 
 ## Usage
 
-```php
+```aoi
 $messageType[messageID?;channelID?]
 ```
 

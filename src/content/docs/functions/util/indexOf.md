@@ -8,7 +8,7 @@ id: indexOf
 
 ## Usage
 
-```php
+```aoi
 $indexOf[string;char]
 ```
 

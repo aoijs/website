@@ -8,7 +8,7 @@ id: readyTimestamp
 
 ## Usage
 
-```php
+```aoi
 $readyTimestamp
 ```
 

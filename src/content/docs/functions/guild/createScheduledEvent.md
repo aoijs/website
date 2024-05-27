@@ -8,7 +8,7 @@ id: createScheduledEvent
 
 ## Usage
 
-```php
+```aoi
 $createScheduledEvent[channelID;name;description;startTime;endTime?;entityType?;entityMetadata?;image?;reason?]
 ```
 

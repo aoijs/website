@@ -8,7 +8,7 @@ id: findRole
 
 ## Usage
 
-```php
+```aoi
 $findRole[roleResolver;guildID?]
 ```
 

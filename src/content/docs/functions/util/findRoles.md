@@ -8,7 +8,7 @@ id: findRoles
 
 ## Usage
 
-```php
+```aoi
 $findRoles[roleResolver;limit?;type?;format?]
 ```
 

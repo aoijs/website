@@ -8,7 +8,7 @@ id: guildRandomID
 
 ## Usage
 
-```php
+```aoi
 $guildRandomID
 ```
 

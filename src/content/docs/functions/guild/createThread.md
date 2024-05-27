@@ -8,7 +8,7 @@ id: createThread
 
 ## Usage
 
-```php
+```aoi
 $createThread[channelID;name;archive;type;startMessage;returnId?]
 ```
 

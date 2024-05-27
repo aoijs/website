@@ -8,7 +8,7 @@ id: createSticker
 
 ## Usage
 
-```php
+```aoi
 $createSticker[guildID;URL;name;returnSticker?;tags;description;reason]
 ```
 

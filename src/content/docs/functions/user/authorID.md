@@ -8,7 +8,7 @@ id: authorID
 
 ## Usage
 
-```php
+```aoi
 $authorID
 ```
 

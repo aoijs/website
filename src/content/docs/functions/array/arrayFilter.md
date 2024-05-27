@@ -8,7 +8,7 @@ id: arrayFilter
 
 ## Usage
 
-```php
+```aoi
 $arrayFilter[name;query;queryType?;separator?]
 ```
 

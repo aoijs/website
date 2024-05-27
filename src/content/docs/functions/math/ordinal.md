@@ -8,7 +8,7 @@ id: ordinal
 
 ## Usage
 
-```php
+```aoi
 $ordinal[number]
 ```
 

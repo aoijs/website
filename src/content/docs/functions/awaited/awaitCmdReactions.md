@@ -8,7 +8,7 @@ id: awaitCmdReactions
 
 ## Usage
 
-```php
+```aoi
 $awaitCmdReactions[userFilter;time;reactions;commands;errorMsg?;awaitData?]
 ```
 

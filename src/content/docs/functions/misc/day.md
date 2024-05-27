@@ -8,7 +8,7 @@ id: day
 
 ## Usage
 
-```php
+```aoi
 $day
 ```
 

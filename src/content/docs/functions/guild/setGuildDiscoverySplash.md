@@ -8,7 +8,7 @@ id: setGuildDiscoverySplash
 
 ## Usage
 
-```php
+```aoi
 $setGuildDiscoverySplash[guildID?;URL;reason?]
 ```
 

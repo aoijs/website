@@ -8,7 +8,7 @@ id: newTicket
 
 ## Usage
 
-```php
+```aoi
 $newTicket[name;msg;categoryID?;returnId?;error?]
 ```
 

@@ -8,7 +8,7 @@ id: guildVanityURL
 
 ## Usage
 
-```php
+```aoi
 $guildVanityURL[guildID?]
 ```
 

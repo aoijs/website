@@ -8,7 +8,7 @@ id: joinThread
 
 ## Usage
 
-```php
+```aoi
 $joinThread[channelID;threadID]
 ```
 

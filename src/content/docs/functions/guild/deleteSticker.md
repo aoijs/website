@@ -8,7 +8,7 @@ id: deleteSticker
 
 ## Usage
 
-```php
+```aoi
 $deleteSticker[guildID;sticker]
 ```
 

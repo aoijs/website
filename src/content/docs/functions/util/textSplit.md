@@ -8,7 +8,7 @@ id: textSplit
 
 ## Usage
 
-```php
+```aoi
 $textSplit[text;sep?]
 ```
 

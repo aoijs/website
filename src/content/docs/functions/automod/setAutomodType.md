@@ -8,7 +8,7 @@ id: setAutomodType
 
 ## Usage
 
-```php
+```aoi
 $setAutomodType[type]
 ```
 

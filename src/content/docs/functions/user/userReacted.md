@@ -9,7 +9,7 @@ or false.
 
 ## Usage
 
-```php
+```aoi
 $userReacted[channelID;messageID;userID;emoji]
 ```
 

@@ -8,6 +8,6 @@ id: commandCode
 
 ## Usage
 
-```php
+```aoi
 $commandCode
 ```

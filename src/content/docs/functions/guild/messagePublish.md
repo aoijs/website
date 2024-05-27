@@ -8,7 +8,7 @@ id: messagePublish
 
 ## Usage
 
-```php
+```aoi
 $messagePublish[messageID;channelID?]
 ```
 

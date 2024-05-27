@@ -8,7 +8,7 @@ id: getAuditLogs
 
 ## Usage
 
-```php
+```aoi
 $getAuditLogs[guildID;userID?;limit?;action?;format?]
 ```
 

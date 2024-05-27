@@ -8,7 +8,7 @@ id: getVar
 
 ## Usage
 
-```php
+```aoi
 $getVar[varname;table?]
 ```
 

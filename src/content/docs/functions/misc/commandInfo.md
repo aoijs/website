@@ -8,7 +8,7 @@ id: commandInfo
 
 ## Usage
 
-```php
+```aoi
 $commandInfo[name;option]
 ```
 

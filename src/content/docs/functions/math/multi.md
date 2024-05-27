@@ -8,7 +8,7 @@ id: multi
 
 ## Usage
 
-```php
+```aoi
 $multi[num;num]
 ```
 

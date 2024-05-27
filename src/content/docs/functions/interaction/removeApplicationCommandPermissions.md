@@ -8,7 +8,7 @@ id: removeApplicationCommandPermissions
 
 ## Usage
 
-```php
+```aoi
 $removeApplicationCommandPermissions[guildID/global;id;...roruIds]
 ```
 

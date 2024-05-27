@@ -8,7 +8,7 @@ id: joinSplitText
 
 ## Usage
 
-```php
+```aoi
 $joinSplitText[sep?]
 ```
 

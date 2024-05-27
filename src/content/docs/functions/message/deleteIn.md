@@ -8,7 +8,7 @@ id: deleteIn
 
 ## Usage
 
-```php
+```aoi
 $deleteIn[time]
 ```
 

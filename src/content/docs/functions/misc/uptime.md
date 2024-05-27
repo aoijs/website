@@ -8,7 +8,7 @@ id: uptime
 
 ## Usage
 
-```php
+```aoi
 $uptime[option?]
 ```
 

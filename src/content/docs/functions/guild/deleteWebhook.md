@@ -8,7 +8,7 @@ id: deleteWebhook
 
 ## Usage
 
-```php
+```aoi
 $deleteWebhook[webhookID;webhookToken]
 ```
 

@@ -8,7 +8,7 @@ id: setRoles
 
 ## Usage
 
-```php
+```aoi
 $setRoles[guildID;memberID;reason?;...roleIDs]
 ```
 

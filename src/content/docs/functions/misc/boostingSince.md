@@ -8,7 +8,7 @@ id: boostingSince
 
 ## Usage
 
-```php
+```aoi
 $boostingSince[guildID?;userID?;format?]
 ```
 

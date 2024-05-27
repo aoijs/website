@@ -8,7 +8,7 @@ id: deleteChannels
 
 ## Usage
 
-```php
+```aoi
 $deleteChannels[...channels]
 ```
 

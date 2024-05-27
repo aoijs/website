@@ -8,7 +8,7 @@ id: arrayJoin
 
 ## Usage
 
-```php
+```aoi
 $arrayJoin[name;separator?]
 ```
 

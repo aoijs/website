@@ -8,7 +8,7 @@ id: setAutomodActions
 
 ## Usage
 
-```php
+```aoi
 $setAutomodActions[type;channel;durationSeconds;customMessage?]
 ```
 

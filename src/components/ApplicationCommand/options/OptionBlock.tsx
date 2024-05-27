@@ -92,7 +92,7 @@ function OptionBlock({ type, _key, inSubCommand, setters }: OptionBlockProps) {
                         <CloseButton size="md" onClick={removeOptionElement} />
                     </HStack>
                     <Flex direction="column" w="full">
-                        <BaseInput title="Name" placeholder="Option Name" setter={(name) => updateLocalOption({ name: name?.toLowerCase().replaceAll(/[^a-zA-Z0-9_]/g, "") })} />
+                        <BaseInput title="Name" placeholder="Option Name" setter={(name) => updateLocalOption({ name: name?.toLowerCase() })} />
                         <BaseInput title="Description" placeholder="Option Description" setter={(description) => updateLocalOption({ description })} />
                         <Checkbox
                             size="lg"

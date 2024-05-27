@@ -8,7 +8,7 @@ id: messagePing
 
 ## Usage
 
-```php
+```aoi
 $messagePing
 ```
 

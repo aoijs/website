@@ -8,7 +8,7 @@ id: cropText
 
 ## Usage
 
-```php
+```aoi
 $cropText[text;limit;start?]
 ```
 

@@ -8,7 +8,7 @@ id: deleteButton
 
 ## Usage
 
-```php
+```aoi
 $deleteButton[messageId;customId;channelId?]
 ```
 

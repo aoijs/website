@@ -8,7 +8,7 @@ id: interactionData
 
 ## Usage
 
-```php
+```aoi
 $interactionData[data]
 ```
 
@@ -20,22 +20,22 @@ $interactionData[data]
 
 ## Example(s)
 
-```php
+```aoi
 $interactionData[customId]
 // returns the custom ID of the interaction.
 ```
 
-```php
+```aoi
 $interactionData[author.id]
 // returns the author ID of the interaction.
 ```
 
-```php
+```aoi
 $interactionData[message.id]
 // returns the message ID of the interaction.
 ```
 
-```php
+```aoi
 $interactionData[channel.id]
 // returns the channel ID of the interaction.
 ```

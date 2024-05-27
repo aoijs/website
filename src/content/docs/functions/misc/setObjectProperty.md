@@ -8,7 +8,7 @@ id: setObjectProperty
 
 ## Usage
 
-```php
+```aoi
 $setObjectProperty[objectName;property;value]
 ```
 

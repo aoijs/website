@@ -8,7 +8,7 @@ id: findObjectProperty
 
 ## Usage
 
-```php
+```aoi
 $findObjectProperty[objectName;property;format?]
 ```
 

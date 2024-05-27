@@ -8,7 +8,7 @@ id: fetchClientValues
 
 ## Usage
 
-```php
+```aoi
 $fetchClientValues[function]
 ```
 

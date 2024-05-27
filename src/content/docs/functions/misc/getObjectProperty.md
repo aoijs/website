@@ -8,7 +8,7 @@ id: getObjectProperty
 
 ## Usage
 
-```php
+```aoi
 $getObjectProperty[objectName;property]
 ```
 

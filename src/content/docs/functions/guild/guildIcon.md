@@ -8,7 +8,7 @@ id: guildIcon
 
 ## Usage
 
-```php
+```aoi
 $guildIcon[guildID?;size?;dynamic?;extension?]
 ```
 

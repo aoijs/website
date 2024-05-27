@@ -8,7 +8,7 @@ id: guildShardPing
 
 ## Usage
 
-```php
+```aoi
 $guildShardPing[shardId?]
 ```
 

@@ -8,7 +8,7 @@ id: channelPermissionsFor
 
 ## Usage
 
-```php
+```aoi
 $channelPermissionsFor[userOrRoleID?;channelID?;sep?]
 ```
 

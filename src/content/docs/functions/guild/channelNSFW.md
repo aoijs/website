@@ -8,7 +8,7 @@ id: channelNSFW
 
 ## Usage
 
-```php
+```aoi
 $channelNSFW[channelID?]
 ```
 

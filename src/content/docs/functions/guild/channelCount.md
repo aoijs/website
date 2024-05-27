@@ -8,7 +8,7 @@ id: channelCount
 
 ## Usage
 
-```php
+```aoi
 $channelCount[guildID?;type?]
 ```
 

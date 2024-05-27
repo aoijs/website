@@ -8,7 +8,7 @@ id: arraySome
 
 ## Usage
 
-```php
+```aoi
 $arraySome[name;query;queryType?]
 ```
 

@@ -8,7 +8,7 @@ id: oldPresence
 
 ## Usage
 
-```php
+```aoi
 $oldPresence[option]
 ```
 

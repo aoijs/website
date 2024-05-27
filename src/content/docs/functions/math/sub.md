@@ -8,7 +8,7 @@ id: sub
 
 ## Usage
 
-```php
+```aoi
 $sub[num;num]
 ```
 

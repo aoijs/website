@@ -8,7 +8,7 @@ id: messageAttachment
 
 ## Usage
 
-```php
+```aoi
 $messageAttachment[index?]
 ```
 

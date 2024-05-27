@@ -8,7 +8,7 @@ id: guildEmojis
 
 ## Usage
 
-```php
+```aoi
 $guildEmojis[sep?;guildID?]
 ```
 

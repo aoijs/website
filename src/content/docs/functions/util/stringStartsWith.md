@@ -8,7 +8,7 @@ id: stringStartsWith
 
 ## Usage
 
-```php
+```aoi
 $stringStartsWith[text;check]
 ```
 

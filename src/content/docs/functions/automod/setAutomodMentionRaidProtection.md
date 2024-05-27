@@ -8,7 +8,7 @@ id: setAutomodMentionRaidProtection
 
 ## Usage
 
-```php
+```aoi
 $setAutomodMentionRaidProtection[type;channel;durationSeconds;customMessage?]
 ```
 

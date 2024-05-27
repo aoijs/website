@@ -8,7 +8,7 @@ id: createCache
 
 ## Usage
 
-```php
+```aoi
 $createCache[type;name;options]
 ```
 

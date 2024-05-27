@@ -8,7 +8,7 @@ id: getGuildInvite
 
 ## Usage
 
-```php
+```aoi
 $getGuildInvite[guildID?;...options]
 ```
 

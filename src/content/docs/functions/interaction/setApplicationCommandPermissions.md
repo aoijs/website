@@ -8,7 +8,7 @@ id: setApplicationCommandPermissions
 
 ## Usage
 
-```php
+```aoi
 $setApplicationCommandPermissions[guildID/global;ID;...perms]
 ```
 

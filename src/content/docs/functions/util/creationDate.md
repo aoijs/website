@@ -8,7 +8,7 @@ id: creationDate
 
 ## Usage
 
-```php
+```aoi
 $creationDate[resolver;format?]
 ```
 

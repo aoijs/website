@@ -8,7 +8,7 @@ id: clientPrefixes
 
 ## Usage
 
-```php
+```aoi
 $clientPrefixes
 ```
 

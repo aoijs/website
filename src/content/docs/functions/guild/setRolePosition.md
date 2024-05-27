@@ -8,7 +8,7 @@ id: setRolePosition
 
 ## Usage
 
-```php
+```aoi
 $setRolePosition[roleID;position;guildID?]
 ```
 

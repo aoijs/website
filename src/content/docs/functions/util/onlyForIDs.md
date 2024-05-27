@@ -8,7 +8,7 @@ id: onlyForIDs
 
 ## Usage
 
-```php
+```aoi
 $onlyForIDs[...userIds;error]
 ```
 

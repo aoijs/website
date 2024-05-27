@@ -8,7 +8,7 @@ id: moveUser
 
 ## Usage
 
-```php
+```aoi
 $moveUser[guildID;userID;channelID;reason?]
 ```
 

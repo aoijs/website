@@ -8,7 +8,7 @@ id: authorBanner
 
 ## Usage
 
-```php
+```aoi
 $authorBanner[size?;dynamic?;extension?]
 ```
 

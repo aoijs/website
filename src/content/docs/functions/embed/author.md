@@ -8,7 +8,7 @@ id: author
 
 ## Usage
 
-```php
+```aoi
 $author[index?;name;iconURL?]
 ```
 

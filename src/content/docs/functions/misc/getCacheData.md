@@ -8,7 +8,7 @@ id: getCacheData
 
 ## Usage
 
-```php
+```aoi
 $getCacheData[type;name;key;option?]
 ```
 

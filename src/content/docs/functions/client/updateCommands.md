@@ -8,7 +8,7 @@ id: updateCommands
 
 ## Usage
 
-```php
+```aoi
 $updateCommands
 ```
 

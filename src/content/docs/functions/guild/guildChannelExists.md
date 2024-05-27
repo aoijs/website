@@ -8,7 +8,7 @@ id: guildChannelExists
 
 ## Usage
 
-```php
+```aoi
 $guildChannelExists[guildID;channelResolver]
 ```
 

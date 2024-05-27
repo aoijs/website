@@ -8,7 +8,7 @@ id: isValidObject
 
 ## Usage
 
-```php
+```aoi
 $isValidObject[object]
 ```
 

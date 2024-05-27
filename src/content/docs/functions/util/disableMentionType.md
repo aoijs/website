@@ -8,7 +8,7 @@ id: disableMentionType
 
 ## Usage
 
-```php
+```aoi
 $disableMentionType[type]
 ```
 

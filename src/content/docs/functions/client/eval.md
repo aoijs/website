@@ -8,7 +8,7 @@ id: eval
 
 ## Usage
 
-```php
+```aoi
 $eval[code;returnCode?;sendMessage?;returnExecution?;returnID?]
 ```
 

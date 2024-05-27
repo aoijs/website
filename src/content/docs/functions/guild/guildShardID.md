@@ -8,7 +8,7 @@ id: guildShardID
 
 ## Usage
 
-```php
+```aoi
 $guildShardID
 ```
 

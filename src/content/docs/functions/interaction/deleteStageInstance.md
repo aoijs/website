@@ -8,7 +8,7 @@ id: deleteStageInstance
 
 ## Usage
 
-```php
+```aoi
 $deleteStageInstance[channelID]
 ```
 

@@ -8,7 +8,7 @@ id: isGuildVerified
 
 ## Usage
 
-```php
+```aoi
 $isGuildVerified[guildID?]
 ```
 

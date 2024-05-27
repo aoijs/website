@@ -8,7 +8,7 @@ id: advanceCooldown
 
 ## Usage
 
-```php
+```aoi
 $advanceCooldown[time;id;errorMessage]
 ```
 

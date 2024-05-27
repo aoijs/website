@@ -8,7 +8,7 @@ id: broadcastEval
 
 ## Usage
 
-```php
+```aoi
 $broadcastEval[function]
 ```
 

@@ -8,7 +8,7 @@ id: authorBannerColor
 
 ## Usage
 
-```php
+```aoi
 $authorBannerColor
 ```
 

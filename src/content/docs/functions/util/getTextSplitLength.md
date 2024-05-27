@@ -8,7 +8,7 @@ id: getTextSplitLength
 
 ## Usage
 
-```php
+```aoi
 $getTextSplitLength
 ```
 

@@ -8,7 +8,7 @@ id: addCmdReactions
 
 ## Usage
 
-```php
+```aoi
 $addCmdReactions[...reactions]
 ```
 

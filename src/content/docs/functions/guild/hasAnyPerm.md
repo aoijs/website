@@ -8,7 +8,7 @@ id: hasAnyPerm
 
 ## Usage
 
-```php
+```aoi
 $hasAnyPerm[guildID;userID;...perms]
 ```
 

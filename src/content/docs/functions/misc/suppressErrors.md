@@ -8,7 +8,7 @@ id: suppressErrors
 
 ## Usage
 
-```php
+```aoi
 $suppressErrors[errorMsg?]
 ```
 

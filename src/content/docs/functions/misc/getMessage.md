@@ -8,7 +8,7 @@ id: getMessage
 
 ## Usage
 
-```php
+```aoi
 $getMessage[channelID;messageID;option?]
 ```
 

@@ -8,7 +8,7 @@ id: isEveryoneMentioned
 
 ## Usage
 
-```php
+```aoi
 $isEveryoneMentioned
 ```
 

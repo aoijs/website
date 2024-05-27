@@ -8,7 +8,7 @@ id: sendWebhookMessage
 
 ## Usage
 
-```php
+```aoi
 $sendWebhookMessage[webhookID;webhookToken;content;returnID?]
 ```
 

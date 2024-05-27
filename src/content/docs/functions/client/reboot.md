@@ -8,7 +8,7 @@ id: reboot
 
 ## Usage
 
-```php
+```aoi
 $reboot
 ```
 

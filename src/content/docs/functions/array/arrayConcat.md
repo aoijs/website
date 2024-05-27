@@ -8,7 +8,7 @@ id: arrayConcat
 
 ## Usage
 
-```php
+```aoi
 $arrayConcat[separator;...arrays]
 ```
 

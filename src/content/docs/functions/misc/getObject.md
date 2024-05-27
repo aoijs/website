@@ -8,7 +8,7 @@ id: getObject
 
 ## Usage
 
-```php
+```aoi
 $getObject[objectName;format?]
 ```
 

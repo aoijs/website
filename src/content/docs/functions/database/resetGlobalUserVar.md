@@ -8,7 +8,7 @@ id: resetGlobalUserVar
 
 ## Usage
 
-```php
+```aoi
 $resetGlobalUserVar[varname;table?]
 ```
 

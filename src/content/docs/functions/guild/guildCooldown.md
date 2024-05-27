@@ -8,7 +8,7 @@ id: guildCooldown
 
 ## Usage
 
-```php
+```aoi
 $guildCooldown[time;errorMessage]
 ```
 

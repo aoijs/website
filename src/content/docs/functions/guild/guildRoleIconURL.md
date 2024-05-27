@@ -8,7 +8,7 @@ id: guildRoleIconURL
 
 ## Usage
 
-```php
+```aoi
 $guildRoleIconURL[guildId?;roleId]
 ```
 

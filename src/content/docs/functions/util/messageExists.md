@@ -8,7 +8,7 @@ id: messageExists
 
 ## Usage
 
-```php
+```aoi
 $messageExists[messageID;channelID?]
 ```
 

@@ -8,7 +8,7 @@ id: addClientReactions
 
 ## Usage
 
-```php
+```aoi
 $addClientReactions[...reactions]
 ```
 

@@ -8,7 +8,7 @@ id: endif
 
 ## Usage
 
-```php
+```aoi
 $endif
 ```
 

@@ -8,7 +8,7 @@ id: uri
 
 ## Usage
 
-```php
+```aoi
 $uri[text;type?]
 ```
 

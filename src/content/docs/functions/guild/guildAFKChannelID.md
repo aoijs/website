@@ -8,7 +8,7 @@ id: guildAFKChannelID
 
 ## Usage
 
-```php
+```aoi
 $guildAFKChannelID[guildID?]
 ```
 

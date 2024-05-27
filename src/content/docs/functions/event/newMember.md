@@ -9,7 +9,7 @@ any property. (memberUpdate event)
 
 ## Usage
 
-```php
+```aoi
 $newMember[option]
 ```
 

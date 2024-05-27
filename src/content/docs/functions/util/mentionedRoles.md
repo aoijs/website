@@ -8,7 +8,7 @@ id: mentionedRoles
 
 ## Usage
 
-```php
+```aoi
 $mentionedRoles[index]
 ```
 

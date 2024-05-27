@@ -8,7 +8,7 @@ id: mentioned
 
 ## Usage
 
-```php
+```aoi
 $mentioned[index;returnSelf?]
 ```
 

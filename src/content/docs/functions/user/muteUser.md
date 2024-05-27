@@ -8,7 +8,7 @@ id: muteUser
 
 ## Usage
 
-```php
+```aoi
 $muteUser[guildID;userID;mute?;reason?]
 ```
 

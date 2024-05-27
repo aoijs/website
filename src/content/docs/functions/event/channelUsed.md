@@ -8,7 +8,7 @@ id: channelUsed
 
 ## Usage
 
-```php
+```aoi
 $channelUsed
 ```
 

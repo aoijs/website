@@ -8,7 +8,7 @@ id: eventEmit
 
 ## Usage
 
-```php
+```aoi
 $eventEmit[name;...datas]
 ```
 

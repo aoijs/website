@@ -8,7 +8,7 @@ id: hasAttachment
 
 ## Usage
 
-```php
+```aoi
 $hasAttachment[messageId?;channelId?]
 ```
 

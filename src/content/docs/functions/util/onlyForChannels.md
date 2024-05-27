@@ -9,7 +9,7 @@ not.
 
 ## Usage
 
-```php
+```aoi
 $onlyForChannels[...categoryIds;error]
 ```
 

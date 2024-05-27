@@ -8,7 +8,7 @@ id: textInputValue
 
 ## Usage
 
-```php
+```aoi
 $textInputValue[option]
 ```
 

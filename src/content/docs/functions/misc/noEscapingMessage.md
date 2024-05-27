@@ -8,7 +8,7 @@ id: noEscapingMessage
 
 ## Usage
 
-```php
+```aoi
 $noEscapingMessage[args]
 ```
 

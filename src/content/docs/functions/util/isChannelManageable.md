@@ -8,7 +8,7 @@ id: isChannelManageable
 
 ## Usage
 
-```php
+```aoi
 $isChannelManageable[channelID?]
 ```
 

@@ -8,7 +8,7 @@ id: deleteObject
 
 ## Usage
 
-```php
+```aoi
 $deleteObject[objectName]
 ```
 

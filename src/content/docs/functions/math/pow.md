@@ -8,7 +8,7 @@ id: pow
 
 ## Usage
 
-```php
+```aoi
 $pow[number;...numbers]
 ```
 

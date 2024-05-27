@@ -8,7 +8,7 @@ id: isMentionable
 
 ## Usage
 
-```php
+```aoi
 $isMentionable[roleID;guildID?]
 ```
 

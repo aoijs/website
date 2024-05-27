@@ -8,7 +8,7 @@ id: commandsCount
 
 ## Usage
 
-```php
+```aoi
 $commandsCount[type?]
 ```
 

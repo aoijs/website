@@ -9,7 +9,7 @@ if not.
 
 ## Usage
 
-```php
+```aoi
 $onlyForRoles[...roleIds;error]
 ```
 

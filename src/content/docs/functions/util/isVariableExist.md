@@ -8,7 +8,7 @@ id: isVariableExist
 
 ## Usage
 
-```php
+```aoi
 $isVariableExist[variable;table?]
 ```
 

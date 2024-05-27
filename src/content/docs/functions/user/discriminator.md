@@ -8,7 +8,7 @@ id: discriminator
 
 ## Usage
 
-```php
+```aoi
 $discriminator[userId?]
 ```
 

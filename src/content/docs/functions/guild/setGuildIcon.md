@@ -8,7 +8,7 @@ id: setGuildIcon
 
 ## Usage
 
-```php
+```aoi
 $setGuildIcon[URL;guildID?]
 ```
 

@@ -8,7 +8,7 @@ id: setStatus
 
 ## Usage
 
-```php
+```aoi
 $setStatus[name;type?;status?;URL?;afk?]
 ```
 

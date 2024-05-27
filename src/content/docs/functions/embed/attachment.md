@@ -8,7 +8,7 @@ id: attachment
 
 ## Usage
 
-```php
+```aoi
 $attachment[attachment;name;type?]
 ```
 

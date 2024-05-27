@@ -8,7 +8,7 @@ id: getArray
 
 ## Usage
 
-```php
+```aoi
 $getArray[name]
 ```
 

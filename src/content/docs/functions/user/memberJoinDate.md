@@ -8,7 +8,7 @@ id: memberJoinDate
 
 ## Usage
 
-```php
+```aoi
 $memberJoinDate[userID?;guildID?]
 ```
 

@@ -8,7 +8,7 @@ id: usersWithRole
 
 ## Usage
 
-```php
+```aoi
 $usersWithRole[roleID;guildID?;option?;sep?]
 ```
 

@@ -8,7 +8,7 @@ id: getAttachments
 
 ## Usage
 
-```php
+```aoi
 $getAttachments[channelID;messageID;index?;option?]
 ```
 

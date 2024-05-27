@@ -8,7 +8,7 @@ id: findInCache
 
 ## Usage
 
-```php
+```aoi
 $findInCache[type;name;prop;value;findType?;returnValue?]
 ```
 

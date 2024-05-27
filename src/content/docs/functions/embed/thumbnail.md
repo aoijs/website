@@ -8,7 +8,7 @@ id: thumbnail
 
 ## Usage
 
-```php
+```aoi
 $thumbnail[index?;URL]
 ```
 

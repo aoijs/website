@@ -8,7 +8,7 @@ id: arrayAt
 
 ## Usage
 
-```php
+```aoi
 $arrayAt[name;index]
 ```
 

@@ -8,7 +8,7 @@ id: hasPermsInChannel
 
 ## Usage
 
-```php
+```aoi
 $hasPermsInChannel[channelID;userOrRoleID;...perms]
 ```
 

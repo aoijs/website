@@ -8,7 +8,7 @@ id: checkContains
 
 ## Usage
 
-```php
+```aoi
 $checkContains[text;...chars]
 ```
 

@@ -8,7 +8,7 @@ id: renameFile
 
 ## Usage
 
-```php
+```aoi
 $renameFile[oldFile;newFile]
 ```
 

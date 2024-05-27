@@ -8,7 +8,7 @@ id: maxRam
 
 ## Usage
 
-```php
+```aoi
 $maxRam
 ```
 

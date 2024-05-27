@@ -8,7 +8,7 @@ id: clientOwnerIDs
 
 ## Usage
 
-```php
+```aoi
 $clientOwnerIDs[separator?]
 ```
 

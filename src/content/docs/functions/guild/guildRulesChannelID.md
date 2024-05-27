@@ -8,7 +8,7 @@ id: guildRulesChannelID
 
 ## Usage
 
-```php
+```aoi
 $guildRulesChannelID[guildID?]
 ```
 

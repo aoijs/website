@@ -8,7 +8,7 @@ id: setAutomodExemptRoles
 
 ## Usage
 
-```php
+```aoi
 $setAutomodExemptRoles[...roles]
 ```
 

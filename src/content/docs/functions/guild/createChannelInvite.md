@@ -8,7 +8,7 @@ id: createChannelInvite
 
 ## Usage
 
-```php
+```aoi
 $createChannelInvite[channelID?;...options]
 ```
 

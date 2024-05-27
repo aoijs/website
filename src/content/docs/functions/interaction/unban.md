@@ -8,7 +8,7 @@ id: unban
 
 ## Usage
 
-```php
+```aoi
 $unban[guildID;userID;reason?]
 ```
 

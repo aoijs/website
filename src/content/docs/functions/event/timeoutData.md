@@ -8,7 +8,7 @@ id: timeoutData
 
 ## Usage
 
-```php
+```aoi
 $timeoutData[option]
 ```
 

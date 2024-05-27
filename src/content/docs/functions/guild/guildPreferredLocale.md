@@ -8,7 +8,7 @@ id: guildPreferredLocale
 
 ## Usage
 
-```php
+```aoi
 $guildPreferredLocale[guildID?]
 ```
 

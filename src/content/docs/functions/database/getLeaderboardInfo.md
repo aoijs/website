@@ -8,7 +8,7 @@ id: getLeaderboardInfo
 
 ## Usage
 
-```php
+```aoi
 $getLeaderboardInfo[variable;id;type;option;table?]
 ```
 

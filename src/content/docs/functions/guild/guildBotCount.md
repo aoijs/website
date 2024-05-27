@@ -8,7 +8,7 @@ id: guildBotCount
 
 ## Usage
 
-```php
+```aoi
 $guildBotCount[guildID?]
 ```
 

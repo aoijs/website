@@ -8,7 +8,7 @@ id: userPerms
 
 ## Usage
 
-```php
+```aoi
 $userPerms[userID?;sep?;guildID?]
 ```
 

@@ -8,7 +8,7 @@ id: isMentioned
 
 ## Usage
 
-```php
+```aoi
 $isMentioned[query]
 ```
 

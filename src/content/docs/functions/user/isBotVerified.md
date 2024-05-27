@@ -8,7 +8,7 @@ id: isBotVerified
 
 ## Usage
 
-```php
+```aoi
 $isBotVerified[clientId?]
 ```
 

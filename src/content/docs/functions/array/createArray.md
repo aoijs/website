@@ -8,7 +8,7 @@ id: createArray
 
 ## Usage
 
-```php
+```aoi
 $createArray[name;...elements]
 ```
 

@@ -8,7 +8,7 @@ id: messageWebhookID
 
 ## Usage
 
-```php
+```aoi
 $messageWebhookID[messageID?;channelID?]
 ```
 

@@ -8,7 +8,7 @@ id: arraySplice
 
 ## Usage
 
-```php
+```aoi
 $arraySplice[name;index;amount;...elements]
 ```
 

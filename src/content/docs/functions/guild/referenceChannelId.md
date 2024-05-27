@@ -8,6 +8,6 @@ id: referenceChannelId
 
 ## Usage
 
-```php
+```aoi
 $referenceChannelId
 ```

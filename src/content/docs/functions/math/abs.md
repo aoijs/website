@@ -8,7 +8,7 @@ id: abs
 
 ## Usage
 
-```php
+```aoi
 $abs[number]
 ```
 

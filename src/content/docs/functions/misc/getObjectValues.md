@@ -8,7 +8,7 @@ id: getObjectValues
 
 ## Usage
 
-```php
+```aoi
 $getObjectValues[objectName;separator?]
 ```
 

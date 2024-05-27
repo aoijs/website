@@ -8,7 +8,7 @@ id: getChannelSlowmode
 
 ## Usage
 
-```php
+```aoi
 $getChannelSlowmode[channelID?]
 ```
 

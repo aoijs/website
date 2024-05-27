@@ -8,7 +8,7 @@ id: createStageInstance
 
 ## Usage
 
-```php
+```aoi
 $createStageInstance[channelID;topic;type?]
 ```
 

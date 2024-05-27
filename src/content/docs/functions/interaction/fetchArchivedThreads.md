@@ -8,7 +8,7 @@ id: fetchArchivedThreads
 
 ## Usage
 
-```php
+```aoi
 $fetchArchivedThreads[channelID;option?]
 ```
 

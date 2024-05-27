@@ -8,7 +8,7 @@ id: leaveThread
 
 ## Usage
 
-```php
+```aoi
 $leaveThread[channelID;threadID]
 ```
 

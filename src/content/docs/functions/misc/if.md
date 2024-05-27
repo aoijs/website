@@ -8,7 +8,7 @@ id: if
 
 ## Usage
 
-```php
+```aoi
 $if[condition;true;false?]
 ```
 

@@ -9,7 +9,7 @@ message if not.
 
 ## Usage
 
-```php
+```aoi
 $onlyForCategories[...categoryIds;error]
 ```
 

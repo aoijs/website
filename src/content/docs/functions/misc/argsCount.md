@@ -8,7 +8,7 @@ id: argsCount
 
 ## Usage
 
-```php
+```aoi
 $argsCount
 ```
 

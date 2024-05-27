@@ -8,7 +8,7 @@ id: timeoutList
 
 ## Usage
 
-```php
+```aoi
 $timeoutList[format?;separator?]
 ```
 

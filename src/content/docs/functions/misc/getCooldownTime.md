@@ -8,7 +8,7 @@ id: getCooldownTime
 
 ## Usage
 
-```php
+```aoi
 $getCooldownTime[time;type;command;id]
 ```
 

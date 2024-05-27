@@ -8,7 +8,7 @@ id: emojiURL
 
 ## Usage
 
-```php
+```aoi
 $emojiURL[emojiResolver]
 ```
 

@@ -8,7 +8,7 @@ id: roleName
 
 ## Usage
 
-```php
+```aoi
 $roleName[roleID;guildID?]
 ```
 

@@ -8,7 +8,7 @@ id: memberDisplayName
 
 ## Usage
 
-```php
+```aoi
 $memberDisplayName[guildID?;userID?]
 ```
 

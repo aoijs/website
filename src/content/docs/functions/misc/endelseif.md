@@ -8,7 +8,7 @@ id: endelseif
 
 ## Usage
 
-```php
+```aoi
 $endelseif
 ```
 

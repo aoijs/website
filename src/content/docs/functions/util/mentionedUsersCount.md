@@ -8,7 +8,7 @@ id: mentionedUsersCount
 
 ## Usage
 
-```php
+```aoi
 $mentionedUsersCount
 ```
 

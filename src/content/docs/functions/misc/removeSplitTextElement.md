@@ -8,7 +8,7 @@ id: removeSplitTextElement
 
 ## Usage
 
-```php
+```aoi
 $removeSplitTextElement[...elements]
 ```
 

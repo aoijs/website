@@ -8,7 +8,7 @@ id: isValidColor
 
 ## Usage
 
-```php
+```aoi
 $isValidColor[color]
 ```
 

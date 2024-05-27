@@ -8,7 +8,7 @@ id: charCount
 
 ## Usage
 
-```php
+```aoi
 $charCount[text;find?]
 ```
 

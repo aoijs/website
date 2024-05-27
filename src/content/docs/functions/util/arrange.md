@@ -8,7 +8,7 @@ id: arrange
 
 ## Usage
 
-```php
+```aoi
 $arrange[order;separator;...numbers]
 ```
 

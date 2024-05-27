@@ -8,7 +8,7 @@ id: channelSendMessage
 
 ## Usage
 
-```php
+```aoi
 $channelSendMessage[channelID;content;returnID?]
 ```
 

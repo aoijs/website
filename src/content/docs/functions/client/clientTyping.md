@@ -8,7 +8,7 @@ id: clientTyping
 
 ## Usage
 
-```php
+```aoi
 $clientTyping
 ```
 

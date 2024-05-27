@@ -8,7 +8,7 @@ id: resolveStickerId
 
 ## Usage
 
-```php
+```aoi
 $resolveStickerID[resolver]
 ```
 

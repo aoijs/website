@@ -8,7 +8,7 @@ id: djsEval
 
 ## Usage
 
-```php
+```aoi
 $djsEval[code;returnCode?]
 ```
 

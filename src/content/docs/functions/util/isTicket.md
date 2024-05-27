@@ -8,7 +8,7 @@ id: isTicket
 
 ## Usage
 
-```php
+```aoi
 $isTicket[channelID?]
 ```
 

@@ -8,7 +8,7 @@ id: onlyForGuilds
 
 ## Usage
 
-```php
+```aoi
 $onlyForGuilds[...guildIds;error]
 ```
 

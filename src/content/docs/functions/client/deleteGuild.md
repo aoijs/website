@@ -8,7 +8,7 @@ id: deleteGuild
 
 ## Usage
 
-```php
+```aoi
 $deleteGuild[guildId]
 ```
 

@@ -8,7 +8,7 @@ id: emojisFromMessage
 
 ## Usage
 
-```php
+```aoi
 $emojisFromMessage
 ```
 

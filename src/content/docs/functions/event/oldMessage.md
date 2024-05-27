@@ -8,6 +8,6 @@ id: oldMessage
 
 ## Usage
 
-```php
+```aoi
 $oldMessage
 ```

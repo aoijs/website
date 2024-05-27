@@ -8,7 +8,7 @@ id: divide
 
 ## Usage
 
-```php
+```aoi
 $divide[...numbers;...numbers]
 ```
 

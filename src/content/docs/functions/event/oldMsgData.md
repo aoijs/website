@@ -8,7 +8,7 @@ id: oldMsgData
 
 ## Usage
 
-```php
+```aoi
 $oldMsgData[option]
 ```
 

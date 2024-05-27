@@ -8,7 +8,7 @@ id: kick
 
 ## Usage
 
-```php
+```aoi
 $kick[guildID;userID;reason?]
 ```
 

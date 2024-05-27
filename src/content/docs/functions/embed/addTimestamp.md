@@ -8,7 +8,7 @@ id: addTimestamp
 
 ## Usage
 
-```php
+```aoi
 $addTimestamp[ms?]
 ```
 

@@ -8,7 +8,7 @@ id: userExists
 
 ## Usage
 
-```php
+```aoi
 $userExists[userID?]
 ```
 

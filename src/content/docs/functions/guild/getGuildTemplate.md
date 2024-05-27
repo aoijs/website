@@ -8,7 +8,7 @@ id: getGuildTemplate
 
 ## Usage
 
-```php
+```aoi
 $getGuildTemplate[template;property]
 ```
 

@@ -8,7 +8,7 @@ id: getChannelVar
 
 ## Usage
 
-```php
+```aoi
 $getChannelVar[varname;channelID?;table?]
 ```
 

@@ -8,7 +8,7 @@ id: getReactions
 
 ## Usage
 
-```php
+```aoi
 $getReactions[channelID;messageID;reaction;force?;option?]
 ```
 

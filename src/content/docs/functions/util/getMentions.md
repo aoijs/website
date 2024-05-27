@@ -8,7 +8,7 @@ id: getMentions
 
 ## Usage
 
-```php
+```aoi
 $getMentions[type?;separator?]
 ```
 

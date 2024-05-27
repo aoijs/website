@@ -8,7 +8,7 @@ id: mentionedChannelsCount
 
 ## Usage
 
-```php
+```aoi
 $mentionedChannelsCount
 ```
 

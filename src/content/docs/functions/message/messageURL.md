@@ -8,7 +8,7 @@ id: messageURL
 
 ## Usage
 
-```php
+```aoi
 $messageURL[messageID?;channelID?]
 ```
 

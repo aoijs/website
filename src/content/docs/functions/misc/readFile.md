@@ -8,7 +8,7 @@ id: readFile
 
 ## Usage
 
-```php
+```aoi
 $readFile[path]
 ```
 

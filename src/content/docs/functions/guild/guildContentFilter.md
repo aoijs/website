@@ -8,7 +8,7 @@ id: guildContentFilter
 
 ## Usage
 
-```php
+```aoi
 $guildContentFilter[guildID?]
 ```
 

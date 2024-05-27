@@ -8,7 +8,7 @@ id: filterTextSplitElement
 
 ## Usage
 
-```php
+```aoi
 $filterTextSplitElement[query;type?;sep?]
 ```
 

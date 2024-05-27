@@ -8,7 +8,7 @@ id: guildMaximumMembers
 
 ## Usage
 
-```php
+```aoi
 $guildMaximumMembers[guildID?]
 ```
 

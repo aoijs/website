@@ -8,7 +8,7 @@ id: getGuildAutomodNames
 
 ## Usage
 
-```php
+```aoi
 $getGuildAutomodNames[guildID?]
 ```
 

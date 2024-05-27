@@ -8,7 +8,7 @@ id: minute
 
 ## Usage
 
-```php
+```aoi
 $minute
 ```
 

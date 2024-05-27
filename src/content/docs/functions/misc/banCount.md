@@ -8,7 +8,7 @@ id: banCount
 
 ## Usage
 
-```php
+```aoi
 $banCount[guildID?]
 ```
 

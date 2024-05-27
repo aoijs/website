@@ -8,7 +8,7 @@ id: guildCreatePost
 
 ## Usage
 
-```php
+```aoi
 $guildCreatePost[forumId;name;content;autoArchiveDuration?;returnId?;reason?;...appliedTags?]
 ```
 

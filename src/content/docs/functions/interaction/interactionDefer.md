@@ -8,7 +8,7 @@ id: interactionDefer
 
 ## Usage
 
-```php
+```aoi
 $interactionDefer[ephemeral]
 ```
 

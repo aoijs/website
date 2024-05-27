@@ -8,6 +8,6 @@ id: isContextMenuInteraction
 
 ## Usage
 
-```php
+```aoi
 $isContextMenuInteraction
 ```

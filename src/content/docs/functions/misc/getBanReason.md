@@ -8,7 +8,7 @@ id: getBanReason
 
 ## Usage
 
-```php
+```aoi
 $getBanReason[guildID?;userID?]
 ```
 

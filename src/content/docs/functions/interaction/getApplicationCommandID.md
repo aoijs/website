@@ -8,7 +8,7 @@ id: getApplicationCommandID
 
 ## Usage
 
-```php
+```aoi
 $getApplicationCommandID[name;type?]
 ```
 

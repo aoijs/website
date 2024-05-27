@@ -8,7 +8,7 @@ id: stringEndsWith
 
 ## Usage
 
-```php
+```aoi
 $stringEndsWith[text;check]
 ```
 

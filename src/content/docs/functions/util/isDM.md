@@ -8,7 +8,7 @@ id: isDM
 
 ## Usage
 
-```php
+```aoi
 $isDM[channelID?]
 ```
 

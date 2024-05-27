@@ -8,7 +8,7 @@ id: isUserDmEnabled
 
 ## Usage
 
-```php
+```aoi
 $isUserDmEnabled[userID]
 ```
 

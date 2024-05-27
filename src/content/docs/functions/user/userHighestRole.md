@@ -8,7 +8,7 @@ id: userHighestRole
 
 ## Usage
 
-```php
+```aoi
 $userHighestRole[userID?;guildID?;option?]
 ```
 

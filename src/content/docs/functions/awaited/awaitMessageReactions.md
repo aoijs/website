@@ -8,7 +8,7 @@ id: awaitMessageReactions
 
 ## Usage
 
-```php
+```aoi
 $awaitMessageReactions[channelID;messageID;userFilter;time;reactions;commands;errorMessage?;awaitData?]
 ```
 

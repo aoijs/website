@@ -8,7 +8,7 @@ id: userNickname
 
 ## Usage
 
-```php
+```aoi
 $userNickname[guildID?;userID?;returnUser?]
 ```
 

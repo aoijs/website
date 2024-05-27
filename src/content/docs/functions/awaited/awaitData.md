@@ -8,7 +8,7 @@ id: awaitData
 
 ## Usage
 
-```php
+```aoi
 $awaitData[name]
 ```
 

@@ -9,7 +9,7 @@ not. (autoCompleteRespond function)
 
 ## Usage
 
-```php
+```aoi
 $isAutoComplete
 ```
 

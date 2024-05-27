@@ -8,7 +8,7 @@ id: userRolesCount
 
 ## Usage
 
-```php
+```aoi
 $userRolesCount[userID?;guildID?]
 ```
 

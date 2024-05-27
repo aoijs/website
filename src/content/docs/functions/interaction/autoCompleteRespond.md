@@ -8,11 +8,11 @@ id: autoCompleteRespond
 
 ## Usage
 
-```php
+```aoi
 $autoCompleteRespond[object]
 ```
 
-```php
+```aoi
 $autoCompleteRespond[OptionName;OptionReply;...]
 ```
 

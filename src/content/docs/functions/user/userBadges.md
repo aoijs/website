@@ -8,7 +8,7 @@ id: userBadges
 
 ## Usage
 
-```php
+```aoi
 $userBadges[userId?;sep?]
 ```
 

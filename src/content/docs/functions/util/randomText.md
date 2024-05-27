@@ -8,7 +8,7 @@ id: randomText
 
 ## Usage
 
-```php
+```aoi
 $randomText[text;text;...]
 ```
 

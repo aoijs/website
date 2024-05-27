@@ -8,7 +8,7 @@ id: toLocaleUpperCase
 
 ## Usage
 
-```php
+```aoi
 $toLocaleUpperCase[text]
 ```
 

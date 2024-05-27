@@ -8,7 +8,7 @@ id: setRoleColor
 
 ## Usage
 
-```php
+```aoi
 $setRoleColor[roleID;color]
 ```
 

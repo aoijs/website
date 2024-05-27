@@ -8,7 +8,7 @@ id: month
 
 ## Usage
 
-```php
+```aoi
 $month
 ```
 

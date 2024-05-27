@@ -8,7 +8,7 @@ id: modifyEmoji
 
 ## Usage
 
-```php
+```aoi
 $modifyEmoji[guildID;emojiID;name;...roles?]
 ```
 

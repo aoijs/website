@@ -8,7 +8,7 @@ id: userBannerColor
 
 ## Usage
 
-```php
+```aoi
 $userBannerColor[userID?]
 ```
 

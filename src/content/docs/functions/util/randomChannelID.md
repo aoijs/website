@@ -8,7 +8,7 @@ id: randomChannelID
 
 ## Usage
 
-```php
+```aoi
 $randomChannelID[guildID/global?;type?]
 ```
 

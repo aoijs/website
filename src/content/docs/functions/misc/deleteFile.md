@@ -8,7 +8,7 @@ id: deleteFile
 
 ## Usage
 
-```php
+```aoi
 $deleteFile[path]
 ```
 

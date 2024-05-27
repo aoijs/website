@@ -8,7 +8,7 @@ id: guildBoostCount
 
 ## Usage
 
-```php
+```aoi
 $guildBoostCount[guildID?]
 ```
 

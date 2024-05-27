@@ -8,7 +8,7 @@ id: findGuildChannel
 
 ## Usage
 
-```php
+```aoi
 $findGuildChannel[channelResolver;returnSelf?;guildID?]
 ```
 

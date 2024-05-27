@@ -8,7 +8,7 @@ id: createGuildTemplate
 
 ## Usage
 
-```php
+```aoi
 $createGuildTemplate[guildId;name;description;returnCode?]
 ```
 

@@ -8,7 +8,7 @@ id: modifyRole
 
 ## Usage
 
-```php
+```aoi
 $modifyRole[guildID;roleID;...data]
 ```
 

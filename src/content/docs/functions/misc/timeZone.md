@@ -8,7 +8,7 @@ id: timeZone
 
 ## Usage
 
-```php
+```aoi
 $timeZone[timezone]
 ```
 

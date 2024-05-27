@@ -8,7 +8,7 @@ id: cpu
 
 ## Usage
 
-```php
+```aoi
 $cpu[option?]
 ```
 

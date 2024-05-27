@@ -8,7 +8,7 @@ id: memberAvatar
 
 ## Usage
 
-```php
+```aoi
 $memberAvatar[guildID?;userID?;size?;dynamic?;format?]
 ```
 

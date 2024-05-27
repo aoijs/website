@@ -8,7 +8,7 @@ $isSelfMuted is similar but not to confuse with `$isMuted` this will check if th
 
 ## Usage
 
-```php
+```aoi
 $isSelfMuted[userID?;guildID?]
 ```
 

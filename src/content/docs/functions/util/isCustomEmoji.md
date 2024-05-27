@@ -8,7 +8,7 @@ id: isCustomEmoji
 
 ## Usage
 
-```php
+```aoi
 $isCustomEmoji[emojiResolver;guildID?]
 ```
 

@@ -8,7 +8,7 @@ id: deleteInvite
 
 ## Usage
 
-```php
+```aoi
 $deleteInvite[guildID;inviteCode;reason?]
 ```
 

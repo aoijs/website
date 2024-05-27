@@ -8,7 +8,7 @@ id: setRoleIcon
 
 ## Usage
 
-```php
+```aoi
 $setRoleIcon[guildID;roleID;icon]
 ```
 

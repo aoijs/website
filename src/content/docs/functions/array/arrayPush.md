@@ -8,7 +8,7 @@ id: arrayPush
 
 ## Usage
 
-```php
+```aoi
 $arrayPush[name;...elements]
 ```
 

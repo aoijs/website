@@ -8,7 +8,7 @@ id: truncate
 
 ## Usage
 
-```php
+```aoi
 $truncate[number]
 ```
 

@@ -8,7 +8,7 @@ id: splitText
 
 ## Usage
 
-```php
+```aoi
 $splitText[index]
 ```
 

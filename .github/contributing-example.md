@@ -8,7 +8,7 @@ id: functionName
 
 ## Usage
 
-```php
+```aoi
 $functionName[parameter;parameter? (? == optional parameter)]
 ```
 

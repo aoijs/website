@@ -8,7 +8,7 @@ id: allChannelsCount
 
 ## Usage
 
-```php
+```aoi
 $allChannelsCount[type?]
 ```
 

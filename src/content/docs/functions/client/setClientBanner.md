@@ -8,7 +8,7 @@ id: setClientBanner
 
 ## Usage
 
-```php
+```aoi
 $setClientBanner[url]
 ```
 

@@ -8,7 +8,7 @@ id: arrayForEach
 
 ## Usage
 
-```php
+```aoi
 $arrayForEach[name;awaitedCommand;awaitData?]
 ```
 

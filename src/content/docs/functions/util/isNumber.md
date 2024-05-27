@@ -8,7 +8,7 @@ id: isNumber
 
 ## Usage
 
-```php
+```aoi
 $isNumber[num]
 ```
 

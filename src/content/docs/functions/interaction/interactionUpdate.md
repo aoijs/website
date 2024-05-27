@@ -8,7 +8,7 @@ id: interactionUpdate
 
 ## Usage
 
-```php
+```aoi
 $interactionUpdate[content]
 ```
 

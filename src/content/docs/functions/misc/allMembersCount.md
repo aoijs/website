@@ -8,7 +8,7 @@ id: allMembersCount
 
 ## Usage
 
-```php
+```aoi
 $allMembersCount
 ```
 

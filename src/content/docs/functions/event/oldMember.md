@@ -9,7 +9,7 @@ whether it's cached, so use partial option before attempting to access any prope
 
 ## Usage
 
-```php
+```aoi
 $oldMember[option]
 ```
 

@@ -8,7 +8,7 @@ id: findChannel
 
 ## Usage
 
-```php
+```aoi
 $findChannel[channelResolver;returnSelf?]
 ```
 

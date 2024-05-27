@@ -8,7 +8,7 @@ id: interactionAttachment
 
 ## Usage
 
-```php
+```aoi
 $interactionAttachment[option]
 ```
 

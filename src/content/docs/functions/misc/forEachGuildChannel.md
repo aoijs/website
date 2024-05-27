@@ -8,7 +8,7 @@ id: forEachGuildChannel
 
 ## Usage
 
-```php
+```aoi
 $forEachGuildChannel[time;awaitData;...awaitedCmds;endCmd]
 ```
 

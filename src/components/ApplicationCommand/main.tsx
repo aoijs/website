@@ -83,8 +83,7 @@ function ApplicationCommand() {
                         code={`$createApplicationCommand[${type ?? "global"};${
                             name
                                 ?.toLowerCase()
-                                .replaceAll(" ", "_")
-                                .replaceAll(/[^a-zA-Z0-9_]/g, "") ?? "application_command"
+                                .replaceAll(" ", "_") ?? "application_command"
                         };${description ?? "Imagine an application command"};${join(defaultPermissions.toString(), allowDirectMessageExecution.toString(), applicationCommandType, output)}]`}
                     />
                 </Flex>

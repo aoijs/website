@@ -8,7 +8,7 @@ id: channelLastPinTimestamp
 
 ## Usage
 
-```php
+```aoi
 $channelLastPinTimestamp[channelID?]
 ```
 

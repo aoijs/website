@@ -8,7 +8,7 @@ id: numberSeparator
 
 ## Usage
 
-```php
+```aoi
 $numberSeparator[num;sep?]
 ```
 

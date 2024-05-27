@@ -8,7 +8,7 @@ id: killClient
 
 ## Usage
 
-```php
+```aoi
 $killClient
 ```
 

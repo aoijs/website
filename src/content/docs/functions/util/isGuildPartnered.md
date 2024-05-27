@@ -8,7 +8,7 @@ id: isGuildPartnered
 
 ## Usage
 
-```php
+```aoi
 $isGuildPartnered[guildID?]
 ```
 

@@ -8,7 +8,7 @@ id: getGuildTemplates
 
 ## Usage
 
-```php
+```aoi
 $getGuildTemplates[guildID?;option?;separator?]
 ```
 

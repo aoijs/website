@@ -8,7 +8,7 @@ id: createChannel
 
 ## Usage
 
-```php
+```aoi
 $createChannel[guildID;name;type;returnID;parentID]
 ```
 

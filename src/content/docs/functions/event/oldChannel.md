@@ -9,7 +9,7 @@ empty
 
 ## Usage
 
-```php
+```aoi
 $oldChannel[option]
 ```
 

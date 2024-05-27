@@ -8,7 +8,7 @@ id: userAvatar
 
 ## Usage
 
-```php
+```aoi
 $userAvatar[userID?;size?;dynamic?;format?]
 ```
 

@@ -8,7 +8,7 @@ id: ifAwaited
 
 ## Usage
 
-```php
+```aoi
 $ifAwaited[condition;true;false?]
 ```
 

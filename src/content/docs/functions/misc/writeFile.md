@@ -8,7 +8,7 @@ id: writeFile
 
 ## Usage
 
-```php
+```aoi
 $writeFile[path;text;encoding?]
 ```
 

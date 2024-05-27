@@ -8,7 +8,7 @@ id: interactionEdit
 
 ## Usage
 
-```php
+```aoi
 $interactionEdit[content;allowedMentions?]
 ```
 

@@ -8,7 +8,7 @@ id: log
 
 ## Usage
 
-```php
+```aoi
 $log[content]
 ```
 

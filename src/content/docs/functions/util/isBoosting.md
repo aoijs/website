@@ -8,7 +8,7 @@ id: isBoosting
 
 ## Usage
 
-```php
+```aoi
 $isBoosting[userID?;guildID?]
 ```
 

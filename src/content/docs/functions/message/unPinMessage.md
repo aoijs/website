@@ -8,7 +8,7 @@ id: unPinMessage
 
 ## Usage
 
-```php
+```aoi
 $unPinMessage[messageID?;channelID?]
 ```
 

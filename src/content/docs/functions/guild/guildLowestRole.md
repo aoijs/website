@@ -8,7 +8,7 @@ id: guildLowestRole
 
 ## Usage
 
-```php
+```aoi
 $guildLowestRole[guildID?]
 ```
 

@@ -8,7 +8,7 @@ id: description
 
 ## Usage
 
-```php
+```aoi
 $description[index?;description]
 ```
 

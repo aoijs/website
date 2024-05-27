@@ -8,7 +8,7 @@ id: message
 
 ## Usage
 
-```php
+```aoi
 $message[index?]
 ```
 

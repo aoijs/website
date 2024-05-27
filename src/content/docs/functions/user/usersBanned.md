@@ -8,7 +8,7 @@ id: usersBanned
 
 ## Usage
 
-```php
+```aoi
 $usersBanned[guildID?;force?;option?;sep?]
 ```
 

@@ -8,7 +8,7 @@ id: mentionedRolesCount
 
 ## Usage
 
-```php
+```aoi
 $mentionedRolesCount
 ```
 

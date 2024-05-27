@@ -8,7 +8,7 @@ id: deleteApplicationCommand
 
 ## Usage
 
-```php
+```aoi
 $deleteApplicationCommand[guildID/global;id]
 ```
 

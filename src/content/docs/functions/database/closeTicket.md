@@ -8,7 +8,7 @@ id: closeTicket
 
 ## Usage
 
-```php
+```aoi
 $closeTicket[error?]
 ```
 

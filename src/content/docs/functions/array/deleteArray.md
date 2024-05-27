@@ -8,7 +8,7 @@ id: deleteArray
 
 ## Usage
 
-```php
+```aoi
 $deleteArray[name]
 ```
 

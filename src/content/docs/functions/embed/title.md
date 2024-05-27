@@ -8,7 +8,7 @@ id: title
 
 ## Usage
 
-```php
+```aoi
 $title[index?;title;URL?]
 ```
 

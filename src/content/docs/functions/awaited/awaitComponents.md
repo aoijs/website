@@ -8,7 +8,7 @@ id: awaitComponents
 
 ## Usage
 
-```php
+```aoi
 $awaitComponents[channelID;messageID;userFilter;customIDs;commands;awaitedCmd;uses?;time]
 ```
 

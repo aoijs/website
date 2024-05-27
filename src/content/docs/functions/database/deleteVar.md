@@ -8,7 +8,7 @@ id: deleteVar
 
 ## Usage
 
-```php
+```aoi
 $deleteVar[variable;id;table?]
 ```
 

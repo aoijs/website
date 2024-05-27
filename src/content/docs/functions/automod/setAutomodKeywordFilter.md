@@ -8,7 +8,7 @@ id: setAutomodKeywordFilter
 
 ## Usage
 
-```php
+```aoi
 $setAutomodKeywordFilter[...words]
 ```
 

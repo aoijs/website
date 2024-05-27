@@ -8,7 +8,7 @@ id: handleError
 
 ## Usage
 
-```php
+```aoi
 $handleError[option]
 ```
 

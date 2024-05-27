@@ -8,7 +8,7 @@ id: interactionReply
 
 ## Usage
 
-```php
+```aoi
 $interactionReply[content?;allowedMentions?;ephemeral?;returnID?]
 ```
 

@@ -8,7 +8,7 @@ id: roleCount
 
 ## Usage
 
-```php
+```aoi
 $roleCount[guildID?;fetchFirst?]
 ```
 

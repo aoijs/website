@@ -9,7 +9,7 @@ error message.
 
 ## Usage
 
-```php
+```aoi
 $argsCheck[condition;errorMessage]
 ```
 

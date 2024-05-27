@@ -8,7 +8,7 @@ id: createTemporaryVar
 
 ## Usage
 
-```php
+```aoi
 $createTemporaryVar[table;...vars]
 ```
 

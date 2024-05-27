@@ -8,7 +8,7 @@ id: packageDependencies
 
 ## Usage
 
-```php
+```aoi
 $packageDependencies
 ```
 

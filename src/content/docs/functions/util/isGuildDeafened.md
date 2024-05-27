@@ -8,7 +8,7 @@ id: isGuildDeafened
 
 ## Usage
 
-```php
+```aoi
 $isGuildDeafened[userID?;guildID?]
 ```
 

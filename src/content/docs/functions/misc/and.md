@@ -8,7 +8,7 @@ id: and
 
 ## Usage
 
-```php
+```aoi
 $and[...conditions]
 ```
 

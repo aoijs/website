@@ -8,7 +8,7 @@ id: editWebhookMessage
 
 ## Usage
 
-```php
+```aoi
 $editWebhookMessage[webhookID;webhookToken;messageID;content]
 ```
 

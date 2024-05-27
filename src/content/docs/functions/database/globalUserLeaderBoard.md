@@ -8,7 +8,7 @@ id: globalUserLeaderBoard
 
 ## Usage
 
-```php
+```aoi
 $globalUserLeaderBoard[variable;type?;custom?;list?;page?;table?]
 ```
 

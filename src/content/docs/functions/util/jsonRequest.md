@@ -8,7 +8,7 @@ id: jsonRequest
 
 ## Usage
 
-```php
+```aoi
 $jsonRequest[URL;property?;error?;...header?]
 ```
 

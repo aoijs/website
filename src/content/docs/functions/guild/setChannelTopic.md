@@ -8,7 +8,7 @@ id: setChannelTopic
 
 ## Usage
 
-```php
+```aoi
 $setChannelTopic[channelID;topic]
 ```
 

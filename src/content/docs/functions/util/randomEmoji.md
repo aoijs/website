@@ -8,7 +8,7 @@ id: randomEmoji
 
 ## Usage
 
-```php
+```aoi
 $randomEmoji
 ```
 

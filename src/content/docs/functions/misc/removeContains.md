@@ -8,7 +8,7 @@ id: removeContains
 
 ## Usage
 
-```php
+```aoi
 $removeContains[content;...words]
 ```
 

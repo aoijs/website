@@ -8,7 +8,7 @@ id: messageFlags
 
 ## Usage
 
-```php
+```aoi
 $messageFlags[messageID;sep?;channelID?]
 ```
 

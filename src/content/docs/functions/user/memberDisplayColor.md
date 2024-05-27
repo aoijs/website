@@ -8,7 +8,7 @@ id: memberDisplayColor
 
 ## Usage
 
-```php
+```aoi
 $memberDisplayColor[guildID?;userID?]
 ```
 

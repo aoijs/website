@@ -8,7 +8,7 @@ id: map
 
 ## Usage
 
-```php
+```aoi
 $map[text;split;awaitedCmds;sep?]
 ```
 

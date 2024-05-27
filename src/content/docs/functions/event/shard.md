@@ -8,7 +8,7 @@ id: shard
 
 ## Usage
 
-```php
+```aoi
 $shard[option]
 ```
 

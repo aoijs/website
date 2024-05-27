@@ -8,7 +8,7 @@ id: interactionPing
 
 ## Usage
 
-```php
+```aoi
 $interactionPing
 ```
 

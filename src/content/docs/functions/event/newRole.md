@@ -9,7 +9,7 @@ or else it won't give any data.
 
 ## Usage
 
-```php
+```aoi
 $newRole[option]
 ```
 

@@ -8,7 +8,7 @@ id: guildNSFWLevel
 
 ## Usage
 
-```php
+```aoi
 $guildNSFWLevel[guildID?]
 ```
 

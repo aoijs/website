@@ -8,7 +8,7 @@ id: guildFeatures
 
 ## Usage
 
-```php
+```aoi
 $guildFeatures[guildID?]
 ```
 

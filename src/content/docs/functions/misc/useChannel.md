@@ -8,7 +8,7 @@ id: useChannel
 
 ## Usage
 
-```php
+```aoi
 $useChannel[channelID]
 ```
 

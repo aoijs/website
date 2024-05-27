@@ -8,7 +8,7 @@ id: repeatMessage
 
 ## Usage
 
-```php
+```aoi
 $repeatMessage[time;text]
 ```
 

@@ -8,7 +8,7 @@ id: modifyWebhook
 
 ## Usage
 
-```php
+```aoi
 $modifyWebhook[webhookID;name;avatar;channelID?;reason?]
 ```
 

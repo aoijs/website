@@ -8,7 +8,7 @@ id: oldUser
 
 ## Usage
 
-```php
+```aoi
 $oldUser[option]
 ```
 

@@ -8,7 +8,7 @@ id: pinMessage
 
 ## Usage
 
-```php
+```aoi
 $pinMessage[messageID?;channelID?]
 ```
 

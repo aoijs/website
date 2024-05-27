@@ -8,7 +8,7 @@ id: second
 
 ## Usage
 
-```php
+```aoi
 $second
 ```
 

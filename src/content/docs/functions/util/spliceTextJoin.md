@@ -8,7 +8,7 @@ id: spliceTextJoin
 
 ## Usage
 
-```php
+```aoi
 $spliceTextJoin[text;splitter;sep1?;sep2?]
 ```
 

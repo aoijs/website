@@ -8,7 +8,7 @@ id: giveRole
 
 ## Usage
 
-```php
+```aoi
 $giveRole[guildID;userID;roleID;reason?]
 ```
 

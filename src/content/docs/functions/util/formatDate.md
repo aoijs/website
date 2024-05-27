@@ -8,7 +8,7 @@ id: formatDate
 
 ## Usage
 
-```php
+```aoi
 $formatDate[date;format?]
 ```
 

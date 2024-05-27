@@ -8,7 +8,7 @@ id: objectExists
 
 ## Usage
 
-```php
+```aoi
 $objectExists[objectName]
 ```
 

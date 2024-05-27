@@ -8,7 +8,7 @@ id: sendMessage
 
 ## Usage
 
-```php
+```aoi
 $sendMessage[content;returnID?]
 ```
 

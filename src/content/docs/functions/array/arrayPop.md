@@ -8,7 +8,7 @@ id: arrayPop
 
 ## Usage
 
-```php
+```aoi
 $arrayPop[name]
 ```
 

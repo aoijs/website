@@ -8,7 +8,7 @@ id: indexOfArg
 
 ## Usage
 
-```php
+```aoi
 $indexOfArg[string;query]
 ```
 
