@@ -56,6 +56,12 @@
   font-weight: 700;
 }
 
+@media (min-width: 780px) {
+  .sl-markdown-content :is(th, td):not(:where(.not-content *)) > code {
+    overflow-wrap: normal;
+  }  
+}
+
 code {
   border-radius: 3px !important;
   font-family: "JetBrainsMono", monospace !important;

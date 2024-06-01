@@ -1,5 +1,6 @@
 import { pluginLineNumbers } from "@expressive-code/plugin-line-numbers";
 import { pluginCollapsibleSections } from "@expressive-code/plugin-collapsible-sections";
+import { readFileSync } from "fs";
 
 /** @type {import('@astrojs/starlight/expressive-code').StarlightExpressiveCodeOptions} */
 export default {
@@ -19,7 +20,7 @@ export default {
     // e.g. to load custom language grammars:
     langs: [
       // import('./grammar.mjs'),
-      JSON.parse(fs.readFileSync("./grammar.json", "utf-8")),
+      JSON.parse(readFileSync("./grammar.json", "utf-8")),
     ],
   },
   styleOverrides: {
