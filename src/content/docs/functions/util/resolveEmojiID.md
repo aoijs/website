@@ -20,7 +20,7 @@ $resolveEmojiID[emojiResolver]
 
 ## Example(s)
 
-This will return `<:LerefMoney:1003365344724910191>`:
+This will return emojiID:
 
 ```javascript
 client.command({
