@@ -7,7 +7,8 @@ export interface Props {
 
 const { pkgName } = Astro.props as Props;
 
-const url = `https://registry.npmjs.org/${pkgName}/latest`;
+// We need to replace until all packages are moved on NPM
+const url = `https://registry.npmjs.org/${pkgName.replace("@aoijs", "@akarui")}/latest`;
 
 const response = await pRetry(
   async () => {
@@ -15,17 +16,13 @@ const response = await pRetry(
     const json = await response.json();
 
     if (!response.ok) {
-      throw new Error(
-        `npm API call failed: GET "${url}" returned status ${
-          response.status
-        }: ${JSON.stringify(json)}`
-      );
+      return "Failed to fetch package info from npm registry."
     }
 
-    return json;
+    return "v" + json.version;
   },
-  { retries: 10 },
+  { retries: 1 },
 );
 ---
 
-<span>v{response.version}</span>
+<span>{response}</span>

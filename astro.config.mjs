@@ -158,12 +158,12 @@ export default defineConfig({
                     },
                     {
                       label: "Events",
-                      link: "extensions/aoijs/aoimusic/events",
+                      link: "/extensions/aoijs/aoimusic/events",
                     },
                     {
                       label: "Functions",
                       autogenerate: {
-                        directory: "extensions/@aoijs/aoi.music/music",
+                        directory: "/extensions/@aoijs/aoi.music/music",
                       },
                       collapsed: true,
                     },
@@ -180,14 +180,14 @@ export default defineConfig({
                     {
                       label: "Guides",
                       autogenerate: {
-                        directory: "extensions/@aoijs/aoi.canvas/guides",
+                        directory: "/extensions/@aoijs/aoi.canvas/guides",
                       },
                       collapsed: true,
                     },
                     {
                       label: "Functions",
                       autogenerate: {
-                        directory: "extensions/@aoijs/aoi.canvas/functions",
+                        directory: "/extensions/@aoijs/aoi.canvas/functions",
                       },
                       collapsed: true,
                     },
@@ -204,7 +204,7 @@ export default defineConfig({
                     {
                       label: "Functions",
                       autogenerate: {
-                        directory: "extensions/@aoijs/aoi.invite/invite",
+                        directory: "/extensions/@aoijs/aoi.invite/invite",
                       },
                       collapsed: true,
                     },
