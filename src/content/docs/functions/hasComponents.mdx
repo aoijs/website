@@ -6,8 +6,6 @@ id: hasComponents
 
 `$hasComponents` checks if a message has components, returns boolean.
 
-import DiscordComponents from "../../../../components/DiscordMessage/DiscordComponents";
-
 ## Usage
 
 ```aoi
@@ -47,10 +45,3 @@ client.command({
     code: `$hasComponents[$channelID;$messageID;Button]`
 });
 ```
-
-    <DiscordComponents client:load client:only="react"
-        bot="Hello! The ID of this message is 78901234567890"
-        buttons={[
-        { label: "Button", type: "primary", customId: "customId_1", row: 0}
-        ]}
-    />

@@ -29,6 +29,15 @@ This will create a one-hour poll with the question "Is aoi.js great?" with two o
 ```js
 client.command({
   name: "createPoll",
-  code: `$createPoll[$channelID;Is aoi.js great?;1h;false;✅ Yes;❌ No]`
+  code: `$createPoll[$channelID;Is aoi.js great?;1h;false;Yes:✅;No:❌]`
+});
+```
+
+You can also remove the emojis:
+
+```js
+client.command({
+  name: "createPoll",
+  code: `$createPoll[$channelID;Is aoi.js great?;1h;false;Yes;No]`
 });
 ```

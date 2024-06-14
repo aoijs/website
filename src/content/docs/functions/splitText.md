@@ -27,7 +27,7 @@ client.command({
     name: "splitText",
     code: `
   $splitText[2]
-  $textSplit[@akarui/aoi.db//aoi.js;//]
+  $textSplit[@aoijs/aoi.db//aoi.js;//]
   `
 });
 ```

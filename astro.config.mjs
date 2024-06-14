@@ -7,6 +7,7 @@ import sitemap from "@astrojs/sitemap";
 import starlightLinksValidator from "starlight-links-validator";
 import starlightImageZoom from "starlight-image-zoom";
 import starlightDocSearch from "@astrojs/starlight-docsearch";
+import starlightVersions from "starlight-versions";
 
 export default defineConfig({
   site: "https://aoi.js.org",
@@ -25,6 +26,10 @@ export default defineConfig({
           indexName: "aoi-js",
           apiKey: "775caf3aef9ecccc83a7b3948ac1b92f",
         }),
+        /*  starlightVersions({
+              versions: [{ slug: '6.8' }],
+            }),
+        */
       ],
       title: "aoi.js",
       favicon: "/favicon.ico",
@@ -142,23 +147,47 @@ export default defineConfig({
           label: "Extensions",
           items: [
             {
-              label: "@akarui",
+              label: "@aoijs",
               items: [
                 {
                   label: "aoi.music",
                   items: [
                     {
                       label: "Setup",
-                      link: "/extensions/akarui/aoimusic/",
+                      link: "/extensions/aoijs/aoimusic/",
                     },
                     {
                       label: "Events",
-                      link: "extensions/akarui/aoimusic/events",
+                      link: "extensions/aoijs/aoimusic/events",
                     },
                     {
                       label: "Functions",
                       autogenerate: {
-                        directory: "extensions/@akarui/aoi.music/music",
+                        directory: "extensions/@aoijs/aoi.music/music",
+                      },
+                      collapsed: true,
+                    },
+                  ],
+                  collapsed: true,
+                },
+                {
+                  label: "aoi.canvas",
+                  items: [
+                    {
+                      label: "Setup",
+                      link: "/extensions/aoijs/aoicanvas/",
+                    },
+                    {
+                      label: "Guides",
+                      autogenerate: {
+                        directory: "extensions/@aoijs/aoi.canvas/guides",
+                      },
+                      collapsed: true,
+                    },
+                    {
+                      label: "Functions",
+                      autogenerate: {
+                        directory: "extensions/@aoijs/aoi.canvas/functions",
                       },
                       collapsed: true,
                     },
@@ -170,12 +199,12 @@ export default defineConfig({
                   items: [
                     {
                       label: "Setup",
-                      link: "/extensions/akarui/aoiinvite/",
+                      link: "/extensions/aoijs/aoiinvite/",
                     },
                     {
                       label: "Functions",
                       autogenerate: {
-                        directory: "extensions/@akarui/aoi.invite/invite",
+                        directory: "extensions/@aoijs/aoi.invite/invite",
                       },
                       collapsed: true,
                     },

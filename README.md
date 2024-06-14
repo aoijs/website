@@ -7,7 +7,7 @@
 <br />
 <br />
 
-<div align="center"><strong>aoi.js Official Documentation</strong><br>
+<div align="center"><strong>aoi.js Official Documentation</strong><br />
 <div align="center">
     <a href="https://aoi.js.org/invite">Discord</a> |
     <a href="https://aoi.js.org/">Documentation</a> <br /> <br />
@@ -35,7 +35,7 @@ const client = new AoiClient({
     events: ["onMessage", "onInteractionCreate"],
     database: {
         type: "aoi.db",
-        db: require("@akarui/aoi.db"),
+        db: require("@aoijs/aoi.db"),
         dbType: "KeyValue",
         tables: ["main"],
         securityKey: "a-32-characters-long-string-here"
@@ -61,7 +61,7 @@ const client = new AoiClient({
     events: ["onMessage", "onInteractionCreate"],
     database: {
         type: "aoi.db",
-        db: require("@akarui/aoi.db"),
+        db: require("@aoijs/aoi.db"),
         dbType: "KeyValue",
         tables: ["main"],
         securityKey: "a-32-characters-long-string-here"

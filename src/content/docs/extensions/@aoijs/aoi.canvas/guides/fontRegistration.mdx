@@ -1,0 +1,99 @@
+---
+title: Font Registration
+description: aoi.canvas Font registration guide.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+Welcome to the Font Registration Guide for aoi.canvas!
+
+In this guide, we will walk you through the process of registering custom fonts in aoi.canvas.
+
+## In index.js Way
+
+To register your fonts in index.js, follow these steps:
+
+### 1. Setup aoi.canvas
+
+If you already setup aoi.canvas in your project, you can skip this step.
+If not, check out our [guide](/extensions/aoicanvas/gettingstarted) on how to set it up.
+
+### 2. Use the registerFonts() function.
+
+Once youve set up aoi.canvas in your project, use the `registerFonts()` function to register your custom fonts.
+
+```js {2-4}
+const canvas = new AoiCanvas(client); // Your aoi.canvas setup.
+canvas.registerFonts([
+    // ...
+]);
+```
+
+#### Registering a font
+
+To register a single font, specify the path to the font file and, optionally, provide a name for reference.
+
+```js {3-6}
+const canvas = new AoiCanvas(client); // Your aoi.canvas setup.
+canvas.registerFonts([
+    {
+        src: "./examplefont.ttf", // Your font file path.
+        name: "ExampleFont"
+    },
+    // ...
+]);
+```
+
+#### Registering multiple fonts
+
+You can register multiple fonts by adding a font object to the fonts array or use multiple `registerFonts()` functions.
+
+```js {9-12}
+const canvas = new AoiCanvas(client); // Your aoi.canvas setup.
+
+// Multiple fonts in one function
+canvas.registerFonts([
+    {
+        src: "./examplefont1.ttf",
+        name: "ExampleFont1"
+    },
+    {
+        src: "./examplefont2.ttf",
+        name: "ExampleFont2"
+    },
+    // ...
+]);
+
+// You can also use as much registerFonts() as you want:
+canvas.registerFonts([
+    {
+        src: "./examplefont2.ttf",
+        name: "ExampleFont2"
+    },
+    {
+        src: "./examplefont3.ttf",
+        name: "ExampleFont3"
+    },
+    // ...
+]);
+```
+
+#### Registering Fonts in a directory
+
+If you don't want to register every font manually, you can put them into a folder and register them all at once.
+
+<Aside>You wouldnt be able to set their names.</Aside>
+
+```js {3-5}
+const canvas = new AoiCanvas(client); // Your aoi.canvas setup.
+canvas.registerFonts([
+    {
+        src: "./fonts"
+    },
+    // ...
+]);
+```
+
+## In a command way
+
+To register fonts in a command, please head to [$registerFont](/functions/registerfont).

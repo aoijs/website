@@ -18,7 +18,7 @@ $userHoistedRole[userID?;guildID?;option?]
 | -------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | :------: |
 | userID?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The user ID.                                                            |  false   |
 | guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The guild ID.                                                           |  false   |
-| option?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | How the role will be returned.<br>1. **id** (default)<br>2. **mention** |  false   |
+| option?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | How the role will be returned.<br />1. **id** (default)<br />2. **mention** |  false   |
 
 ## Example(s)
 

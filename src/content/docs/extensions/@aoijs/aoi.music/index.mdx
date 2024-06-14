@@ -1,8 +1,8 @@
 ---
 type: integration
-package: "@akarui/aoi.music"
+package: "@aoijs/aoi.music"
 title: "Setup"
-description: Learn how to integrate @akarui/aoi.music in your Discord Bot.
+description: Learn how to integrate @aoijs/aoi.music in your Discord Bot.
 extensionUrl: "https://github.com/aoijs/aoi.music"
 tableOfContents: false
 next: false
@@ -23,28 +23,28 @@ ffmpeg-static is required as a dependency.
     <TabItem label="npm" icon="seti:npm">
 
         ```bash
-            npm install @akarui/aoi.music ffmpeg-static
+            npm install @aoijs/aoi.music ffmpeg-static
         ```
 
     </TabItem>
     <TabItem label="pnpm" icon="pnpm">
 
         ```bash
-            pnpm add @akarui/aoi.music ffmpeg-static
+            pnpm add @aoijs/aoi.music ffmpeg-static
         ```
 
     </TabItem>
     <TabItem label="yarn" icon="seti:yarn">
 
         ```bash
-            yarn add @akarui/aoi.music ffmpeg-static
+            yarn add @aoijs/aoi.music ffmpeg-static
         ```
 
     </TabItem>
     <TabItem label="bun" icon="bun">
 
         ```bash
-            bun install @akarui/aoi.music ffmpeg-static
+            bun install @aoijs/aoi.music ffmpeg-static
         ```
 
     </TabItem>
@@ -56,7 +56,7 @@ To use aoi.music, you are required to edit your index.js file.
 
 ```javascript
 const { AoiClient } = require("aoi.js");
-const { AoiVoice, PlayerEvents, PluginName, Cacher, Filter } = require("@akarui/aoi.music");
+const { AoiVoice, PlayerEvents, PluginName, Cacher, Filter } = require("@aoijs/aoi.music");
 
 const client = new AoiClient({
   token: "Discord Bot Token",
@@ -65,7 +65,7 @@ const client = new AoiClient({
   events: ["onMessage", "onInteractionCreate"],
   database: {
     type: "aoi.db",
-    db: require("@akarui/aoi.db"),
+    db: require("@aoijs/aoi.db"),
     dbType: "KeyValue",
     tables: ["main"],
     securityKey: "a-32-characters-long-string-here",

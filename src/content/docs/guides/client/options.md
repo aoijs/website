@@ -8,6 +8,19 @@ id: options
 og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/7.png
 ---
 
+
+:::info [Optional]
+
+Options who have a leading question mark (?) are optional and __not required__, however if you want to use them, make sure to remove it!
+
+```
+string: ""
+boolean: true/false
+number: 1
+```
+
+:::
+
 ```js
 const { AoiClient } = require("aoi.js");
 
@@ -17,7 +30,7 @@ const client = new AoiClient({
     intents: ["MessageContent", "Guilds", "GuildMessages"],
     events: ["onMessage", "onJoin", "onLeave"],
     disableFunctions?: ["$function", "$function"],
-    // plugins?: "./path/to/directory", (deprecated)
+    mobilePlatform?: boolean,
     respondToBots?: boolean,
     guildOnly?: boolean,
     cache?: {
@@ -27,11 +40,11 @@ const client = new AoiClient({
     disableAoiDB?: boolean,
     database?: {
         type: "aoi.db",
-        db: require("@akarui/aoi.db"),
+        db: require("@aoijs/aoi.db"),
         tables: ["main"],
         path: "./database/",
         securityKey: string,
-    }, // Example refers to @akarui/aoi.db, other databases are not included in this Example.
+    }, // Example refers to @aoijs/aoi.db, other databases are not included in this Example.
     suppressAllErrors?: boolean,
     errorMessage?: string,
     aoiAutoUpdate?: boolean,
@@ -39,9 +52,8 @@ const client = new AoiClient({
     aoiLogs?: boolean,
     respondOnEdit?: {
         commands: boolean,
-        alwaysExecute?: boolean,
+        time: number,
         nonPrefixed?: boolean,
-        time: number
     },
 });
 ```

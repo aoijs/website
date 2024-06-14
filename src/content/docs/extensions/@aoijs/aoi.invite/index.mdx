@@ -1,8 +1,8 @@
 ---
 type: integration
-package: "@akarui/aoi.invite"
+package: "@aoijs/aoi.invite"
 title: "Setup"
-description: Learn how to integrate @akarui/aoi.invite in your Discord Bot.
+description: Learn how to integrate @aoijs/aoi.invite in your Discord Bot.
 extensionUrl: "https://github.com/aoijs/aoi.invite"
 tableOfContents: false
 next: false
@@ -17,28 +17,28 @@ import { Tabs, TabItem } from "@astrojs/starlight/components";
     <TabItem label="npm" icon="seti:npm">
 
         ```bash
-            npm install @akarui/aoi.invite
+            npm install @aoijs/aoi.invite
         ```
 
     </TabItem>
     <TabItem label="pnpm" icon="pnpm">
 
         ```bash
-            pnpm add @akarui/aoi.invite
+            pnpm add @aoijs/aoi.invite
         ```
 
     </TabItem>
     <TabItem label="yarn" icon="seti:yarn">
 
         ```bash
-            yarn add @akarui/aoi.invite
+            yarn add @aoijs/aoi.invite
         ```
 
     </TabItem>
     <TabItem label="bun" icon="bun">
 
         ```bash
-            bun install @akarui/aoi.invite
+            bun install @aoijs/aoi.invite
         ```
 
     </TabItem>
@@ -50,7 +50,7 @@ To use aoi.invite, you are required to edit your index.js file.
 
 ```javascript
 const { AoiClient } = require("aoi.js");
-const { InviteManager } = require("@akarui/aoi.invite");
+const { InviteManager } = require("@aoijs/aoi.invite");
 
 const client = new AoiClient({
   token: "Discord Bot Token",
@@ -59,7 +59,7 @@ const client = new AoiClient({
   events: ["onMessage", "onInteractionCreate"],
   database: {
     type: "aoi.db",
-    db: require("@akarui/aoi.db"),
+    db: require("@aoijs/aoi.db"),
     dbType: "KeyValue",
     tables: ["main"],
     securityKey: "a-32-characters-long-string-here",
