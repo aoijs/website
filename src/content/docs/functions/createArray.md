@@ -17,9 +17,11 @@ $createArray[name;...elements]
 | Field       | Type                                                                                              | Description      | Required |
 | ----------- | ------------------------------------------------------------------------------------------------- | ---------------- | :------: |
 | name        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Array name.      |   true   |
-| ...elements | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Elements to add. |   true   |
+| ...elements | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Elements to add. |  false   |
 
 ## Example(s)
+
+This will create an array called "array" with the following elements:
 
 ```javascript
 client.command({
