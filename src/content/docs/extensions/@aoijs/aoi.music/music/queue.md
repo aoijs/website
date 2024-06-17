@@ -15,16 +15,17 @@ This requires aoi.music installed.
 ## Usage
 
 ```aoi
-$queue[page?;limit?;format?]
+$queue[page?;limit?;format?;separator?]
 ```
 
 ## Parameters
 
-| Field   | Type                                                                                              | Description                                   | Required |
-| ------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------- | :------: |
-| page?   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | queue page                                    |  false   |
-| limit?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | maximum of songs to display                   |  false   |
-| format? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | format to display information about the songs |  false   |
+| Field      | Type                                                                                              | Description                                   | Required |
+| ---------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------- | :------: |
+| page?      | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | queue page                                    |  false   |
+| limit?     | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | maximum of songs to display                   |  false   |
+| format?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | format to display information about the songs |  false   |
+| separator? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The separator of queue, default = ","         |  false   |
 
 <details>
   <summary>Types</summary>
