@@ -12,43 +12,11 @@ sidebar:
 ---
 
 import { Tabs, TabItem } from "@astrojs/starlight/components";
+import { PackageManagers } from 'starlight-package-managers'
 
-:::tip[Dependencies]
+## Installation
 
-ffmpeg-static is required as a dependency.
-
-:::
-
-<Tabs>
-    <TabItem label="npm" icon="seti:npm">
-
-        ```bash
-            npm install @aoijs/aoi.music ffmpeg-static
-        ```
-
-    </TabItem>
-    <TabItem label="pnpm" icon="pnpm">
-
-        ```bash
-            pnpm add @aoijs/aoi.music ffmpeg-static
-        ```
-
-    </TabItem>
-    <TabItem label="yarn" icon="seti:yarn">
-
-        ```bash
-            yarn add @aoijs/aoi.music ffmpeg-static
-        ```
-
-    </TabItem>
-    <TabItem label="bun" icon="bun">
-
-        ```bash
-            bun install @aoijs/aoi.music ffmpeg-static
-        ```
-
-    </TabItem>
-</Tabs>
+<PackageManagers pkg="@aoijs/aoi.music" />
 
 ---
 

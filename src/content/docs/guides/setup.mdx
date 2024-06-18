@@ -9,6 +9,7 @@ prev: false
 
 import { Tabs, TabItem, LinkCard } from "@astrojs/starlight/components";
 import Tracker from "../../../components/ProgressTracker";
+import { PackageManagers } from 'starlight-package-managers'
 
 <Tracker
     client:load
@@ -322,36 +323,7 @@ Make sure you're in the project folder before running the command.
 
     You can use either `npm`, `pnpm`, `yarn`, or `bun` to install the package. If you don't know what to use, you can use `npm`.
 
-<Tabs>
-  <TabItem label="npm" icon="seti:npm">
-
-        ```bash
-        npm install aoi.js
-        ```
-
-        </TabItem>
-        <TabItem label="pnpm" icon="pnpm">
-
-        ```bash
-        pnpm add aoi.js
-        ```
-
-        </TabItem>
-        <TabItem label="yarn" icon="seti:yarn">
-
-        ```bash
-        yarn add aoi.js
-        ```
-
-        </TabItem>
-        <TabItem label="bun" icon="bun">
-
-        ```bash
-        bun install aoi.js
-        ```
-
-  </TabItem>
-</Tabs>
+<PackageManagers pkg="aoi.js" />
 
 ::::caution[npm is not recognized as an internal or external command]
 

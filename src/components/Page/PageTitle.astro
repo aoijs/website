@@ -13,7 +13,7 @@ if (data.author) {
   avatars.push({
     key: data.author,
     name: data.author,
-    href: "/contributors",
+    href: `/contributors/#${data.author}`,
     src: data.author_url,
   });
 }
@@ -22,7 +22,7 @@ if (data.edited_by) {
   avatars.push({
     key: data.edited_by,
     name: data.edited_by,
-    href: "/contributors",
+    href: `/contributors/#${data.edited_by}`,
     src: data.edited_by_url,
   });
 }

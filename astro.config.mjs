@@ -7,7 +7,7 @@ import sitemap from "@astrojs/sitemap";
 import starlightLinksValidator from "starlight-links-validator";
 import starlightImageZoom from "starlight-image-zoom";
 import starlightDocSearch from "@astrojs/starlight-docsearch";
-import starlightVersions from "starlight-versions";
+import starlightUtils from "@lorenzo_lewis/starlight-utils";
 
 export default defineConfig({
   site: "https://aoi.js.org",
@@ -25,6 +25,11 @@ export default defineConfig({
           appId: "7NDV3UYBW5",
           indexName: "aoi-js",
           apiKey: "775caf3aef9ecccc83a7b3948ac1b92f",
+        }),
+        starlightUtils({
+          navLinks: {
+            leading: { useSidebarLabelled: "leadingNavLinks" },
+          },
         }),
         /*  starlightVersions({
               versions: [{ slug: '6.8' }],
@@ -69,6 +74,14 @@ export default defineConfig({
         },
       ],
       sidebar: [
+        {
+          label: "leadingNavLinks",
+          items: [
+            { label: "Docs", link: "/functions/abbreviate" },
+            { label: "Guides", link: "/guides/setup" },
+            { label: "Extensions", link: "/extensions/aoijs/aoicanvas" },
+          ],
+        },
         {
           label: "Get Started",
           link: "/guides/setup",

@@ -4,29 +4,23 @@ import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
 import { Image } from "astro:assets";
 import { Icon } from "@astrojs/starlight/components";
 
-//contributors
-import contrib_1 from "../images/contributors/leref.png";
-import contrib_2 from "../images/contributors/USERSATOSHI.png";
-import contrib_3 from "../images/contributors/fafa.png";
-import contrib_4 from "../images/contributors/blur.png";
-import contrib_5 from "../images/contributors/wiltark.png";
-import contrib_6 from "../images/contributors/astrookai.png";
-import contrib_7 from "../images/contributors/snow.png";
-import contrib_8 from "../images/contributors/nanotechpikachu.png";
-import contrib_9 from "../images/contributors/relevantzone.png";
-import contrib_10 from "../images/contributors/ahoemi.png";
-import contrib_11 from "../images/contributors/supreme.gif";
-import contrib_12 from "../images/contributors/vishvaas.png";
+const images = import.meta.glob("/src/images/**/*.{webp,png,gif}");
 
-//staff (cm above)
-import staff_1 from "../images/contributors/dodogames.png";
-
-//aoi.js logo
-import hero_icon from "../images/hero_icon.png";
+/* Dynamically import images
+ * https://docs.astro.build/en/recipes/dynamically-importing-images/
+*/
+async function getImageSrc(e: string) {
+  const imageInfo: any = images[e]();
+  return imageInfo;
+}
 ---
 
 <StarlightPage
-  frontmatter={{ title: "Contributors", description: "Our beloved Contributors.", tableOfContents: false }}
+  frontmatter={{
+    title: "Contributors",
+    description: "Our beloved Contributors.",
+    tableOfContents: false,
+  }}
   hasSidebar={false}
 >
   <div class="contributors">
@@ -37,7 +31,7 @@ import hero_icon from "../images/hero_icon.png";
           discord: "@leref",
           role: "Creator",
           color: "#ff0007",
-          avatar: contrib_1,
+          avatar: getImageSrc("/src/images/contributors/leref.png"),
           link: {
             url: "https://github.com/leref",
             label: "Github Profile",
@@ -47,9 +41,9 @@ import hero_icon from "../images/hero_icon.png";
         {
           name: "USERSATOSHI",
           discord: "@usersatoshi",
-          role: "Developer",
+          role: "Core Developer",
           color: "#8f00ee",
-          avatar: contrib_2,
+          avatar: getImageSrc("/src/images/contributors/USERSATOSHI.png"),
           link: {
             url: "https://github.com/usersatoshi",
             label: "Github Profile",
@@ -57,30 +51,11 @@ import hero_icon from "../images/hero_icon.png";
           },
         },
         {
-          name: "Blur",
-          discord: "@bumblebee_3",
-          role: "Developer",
-          color: "#8f00ee",
-          avatar: contrib_4,
-        },
-        {
-          name: "Wiltark",
-          discord: "@wiltark",
-          role: "Developer",
-          color: "#8f00ee",
-          avatar: contrib_5,
-          link: {
-            url: "https://github.com/wiltark",
-            label: "Github Profile",
-            type: "github",
-          },
-        },
-        {
           name: "Fafa",
           discord: "@faf4a",
-          role: "Docs Manager",
-          color: "#3498db",
-          avatar: contrib_3,
+          role: "Core Developer",
+          color: "#8f00ee",
+          avatar: getImageSrc("/src/images/contributors/fafa.png"),
           link: {
             url: "https://github.com/faf4a",
             label: "Github Profile",
@@ -88,11 +63,56 @@ import hero_icon from "../images/hero_icon.png";
           },
         },
         {
+          name: "Supreme",
+          discord: "@supremesupreme",
+          role: "Core Developer",
+          color: "#8f00ee",
+          avatar: getImageSrc("/src/images/contributors/supreme.gif"),
+          link: {
+            url: "https://github.com/berticulousnert",
+            label: "Github Profile",
+            type: "github",
+          },
+        },
+        {
+          name: "Blur",
+          discord: "@bumblebee_3",
+          role: "Extension Developer",
+          color: "#ffa5ea",
+          avatar: getImageSrc("/src/images/contributors/blur.png"),
+        },
+        {
+          name: "Wiltark",
+          discord: "@wiltark",
+          role: "Extension Developer",
+          color: "#ffa5ea",
+          avatar: getImageSrc("/src/images/contributors/wiltark.png"),
+          link: {
+            url: "https://github.com/wiltark",
+            label: "Github Profile",
+            type: "github",
+          },
+        },
+        {
+          name: "vishvaas",
+          discord: "@vishvaas",
+          role: "Extension Developer",
+          color: "#ffa5ea",
+          avatar: getImageSrc("/src/images/contributors/vishvaas.png"),
+        },
+        {
+          name: "lordduck",
+          discord: "@lordex.js",
+          role: "Extension Developer",
+          color: "#ffa5ea",
+          avatar: getImageSrc("/src/images/contributors/lordexjs.webp"),
+        },
+        {
           name: "AstrooKai",
           discord: "@astrookai",
           role: "Docs Manager",
           color: "#3498db",
-          avatar: contrib_6,
+          avatar: getImageSrc("/src/images/contributors/astrookai.png"),
           link: {
             url: "https://github.com/AstrooKai",
             label: "Github Profile",
@@ -104,11 +124,11 @@ import hero_icon from "../images/hero_icon.png";
           discord: "@b3lla.x",
           role: "Artist",
           color: "#e8d0cc",
-          avatar: contrib_7,
+          avatar: getImageSrc("/src/images/contributors/snow.png"),
           link: {
             url: "https://x.com/snowtealatte",
-            label: "Twitter",
-            type: "twitter",
+            label: "x.com",
+            type: "x.com",
           },
         },
         {
@@ -116,7 +136,7 @@ import hero_icon from "../images/hero_icon.png";
           discord: "@dodogames",
           role: "Community Manager",
           color: "#e71d99",
-          avatar: staff_1,
+          avatar: getImageSrc("/src/images/contributors/dodogames.png"),
           link: {
             url: "https://github.com/DodoGames7",
             label: "Github Profile",
@@ -128,7 +148,7 @@ import hero_icon from "../images/hero_icon.png";
           discord: "@ahoemi.official",
           role: "Contributor",
           color: "#c5fff8",
-          avatar: contrib_10,
+          avatar: getImageSrc("/src/images/contributors/ahoemi.png"),
           link: {
             url: "https://discord.com/users/715852000096419900",
             label: "Discord Profile",
@@ -136,45 +156,38 @@ import hero_icon from "../images/hero_icon.png";
           },
         },
         {
-          name: "vishvaas",
-          discord: "@vishvaas",
+          name: "ayaka068198",
+          discord: "@ayaka068198",
           role: "Contributor",
           color: "#c5fff8",
-          avatar: contrib_12,
+          avatar: getImageSrc("/src/images/contributors/ayaka068198.webp"),
+          link: {
+            url: "https://github.com/Ayaka2356",
+            label: "Github Profile",
+            type: "github",
+          },
         },
         {
           name: "Kino",
           discord: "@relevantzone",
           role: "Contributor",
           color: "#c5fff8",
-          avatar: contrib_9,
+          avatar: getImageSrc("/src/images/contributors/relevantzone.png"),
         },
         {
           name: "NanotechPikachu",
           discord: "@nanotechpikachu",
           role: "Contributor",
           color: "#c5fff8",
-          avatar: contrib_8,
+          avatar: getImageSrc("/src/images/contributors/nanotechpikachu.png"),
           link: {
             url: "https://github.com/NanotechPikachu",
             label: "Github Profile",
             type: "github",
           },
         },
-        {
-          name: "Supreme",
-          discord: "@supremesupreme",
-          role: "Contributor",
-          color: "#c5fff8",
-          avatar: contrib_11,
-          link: {
-            url: "https://github.com/berticulousnert",
-            label: "Github Profile",
-            type: "github",
-          },
-        },
       ].map((user) => (
-        <div class="contributor">
+        <div class="contributor" id={user.name}>
           <Image
             draggable="false"
             src={user.avatar}
@@ -188,15 +201,19 @@ import hero_icon from "../images/hero_icon.png";
               <p class="name">{user.name}</p>
               <p class="discord">{user.discord}</p>
               <div class="role-wrapper">
-                <span class="role" style={`color: ${user.role === "Contributor" || user.role === "Artist" ? "black" : "white"}; background-color: ${user.color};`}>
+                <span
+                  class="role"
+                  style={`color: ${user.role === "Contributor" || user.role === "Artist" || user.role === "Extension Developer" ? "black" : "white"}; background-color: ${user.color};`}
+                >
                   @ {user.role}
                 </span>
                 {user.link && (
                   <a href={user.link.url} target="_blank" class="link-button">
                     <Icon
+                      class="not-content"
                       name={
-                        user.link.type === "twitter"
-                          ? "twitter"
+                        user.link.type === "twitter" || user.link.type === "x.com"
+                          ? "x.com"
                           : user.link.type === "github"
                             ? "github"
                             : user.link.type === "discord"
@@ -204,7 +221,7 @@ import hero_icon from "../images/hero_icon.png";
                               : "external"
                       }
                     />
-                    {user.link.label}
+                    {user.link.label} {user.link.label === "x.com" ? "(formally known as Twitter)" : ""}
                   </a>
                 )}
               </div>
@@ -215,27 +232,37 @@ import hero_icon from "../images/hero_icon.png";
     }
   </div>
   <div class="contribute-footer">
+    <p style="font-size: 1.2rem !important;background-color: var(--sl-color-bg-nav);border-radius: 4px;border: 1px solid var(--sl-color-accent-high);">All art belongs to <a href="#b3lla.x">our artist, <b>b3lla.x</b> (also known as Snow)</a>.</p>
     <p>Want to be on this page as well?</p>
     <p>
-      Contribute to <a href="https://github.com/aoijs/aoi.js" target="_blank">aoi.js</a> or our <a
-        href="https://github.com/aoijs/website" target="_blank">documentation</a
+      Contribute to <a href="https://github.com/aoijs/aoi.js" target="_blank"
+        >aoi.js</a
+      > or our <a href="https://github.com/aoijs/website" target="_blank"
+        >documentation</a
       >!
     </p>
     <div class="logo">
       <Image
         draggable="false"
-        src={hero_icon}
+        src={getImageSrc("/src/images/icon_new.webp")}
         alt="aoi.js Mascot"
-        style="display: block;"
-        id="logo-normal"
         loading="eager"
         decoding="async"
+        data-zoom-off
       />
     </div>
   </div>
 </StarlightPage>
 
 <style is:global>
+
+  :target {
+    transition: all 0.3s ease-in;
+    filter: drop-shadow(0 0 7rem var(--sl-color-accent-high));
+    border: 3px solid var(--sl-color-accent-high);
+    padding: 15px;
+    border-radius: 10px;
+  }
   .page {
     background:
       linear-gradient(215deg, var(--overlay-blurple), transparent 40%),
@@ -373,6 +400,7 @@ import hero_icon from "../images/hero_icon.png";
 
   .logo {
     margin: 0 auto;
+    cursor: default;
     width: 100px;
     height: auto;
   }

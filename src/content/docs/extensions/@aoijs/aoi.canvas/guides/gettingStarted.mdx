@@ -3,44 +3,16 @@ title: Getting Started
 description: Beginner tutorial for aoi.canvas
 ---
 
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import { PackageManagers } from 'starlight-package-managers'
+
 In this guide we will be making a few simple commands using aoi.canvas.
 
 This guide assumes you have a basic understanding of aoi.js. It also assumes you defined your `AoiClient` as `client`
 
 ## Installation
 
-import { Tabs, TabItem } from "@astrojs/starlight/components";
-
-<Tabs>
-    <TabItem label="npm" icon="seti:npm">
-
-        ```bash
-            npm install @aoijs/aoi.canvas
-        ```
-
-    </TabItem>
-    <TabItem label="pnpm" icon="pnpm">
-
-        ```bash
-            pnpm add @aoijs/aoi.canvas
-        ```
-
-    </TabItem>
-    <TabItem label="yarn" icon="seti:yarn">
-
-        ```bash
-            yarn add @aoijs/aoi.canvas
-        ```
-
-    </TabItem>
-    <TabItem label="bun" icon="bun">
-
-        ```bash
-            bun install @aoijs/aoi.canvas
-        ```
-
-    </TabItem>
-</Tabs>
+<PackageManagers pkg="@aoijs/aoi.canvas" />
 
 ---
 

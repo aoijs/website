@@ -34,6 +34,7 @@
     "@emotion/styled": "^11.11.5",
     "@expressive-code/plugin-collapsible-sections": "^0.33.4",
     "@expressive-code/plugin-line-numbers": "^0.33.4",
+    "@lorenzo_lewis/starlight-utils": "^0.1.1",
     "@skyra/discord-components-core": "^3.6.1",
     "@skyra/discord-components-react": "^3.6.1",
     "astro": "^4.9.0",
@@ -49,6 +50,7 @@
     "shiki": "^0.14.5",
     "starlight-image-zoom": "^0.5.0",
     "starlight-links-validator": "^0.8.0",
+    "starlight-package-managers": "^0.6.0",
     "starlight-versions": "^0.1.0",
     "typescript": "^5.3.3",
     "zustand": "^3.5.8"

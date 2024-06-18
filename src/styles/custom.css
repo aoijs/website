@@ -6,13 +6,26 @@
   --blue-hsl: 218, 100%, 83%;
   --overlay-blurple: hsla(var(--blue-hsl), 0.2);
   --ec-frm-tooltipSuccessBg: var(--sl-color-gray-5) !important;
-  --sl-font: "Whitney", sans-serif !important;
-  /* Fix for the sidebar width - see https://github.com/withastro/starlight/discussions/1985 */
+  --sl-font: "Ginto Normal", "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
 }
 
+h1, h2, h3, h4, .starlight-aside__title {
+  font-family: "Ginto Nord", "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+}
+
+header ul {
+  display: none;
+}
+
+/* Fix for the sidebar width - see https://github.com/withastro/starlight/discussions/1985 */
 @media (min-width: 1250px) {
   :root {
     --sl-content-width: calc(100vw - 0.3 * var(--sl-sidebar-pad-x) - 2 * var(--sl-sidebar-width));
+  }
+
+  /* Hide Navbar links on mobile because they break the whole navbar */
+  header ul {
+    display: flex !important;
   }
 }
 
@@ -468,6 +481,8 @@ a.sl-flex.action.primary {
   border: 1px solid var(--sl-color-hairline);
 }
 
+/* fix for small screens */
+
 @media (max-width: 600px) {
   .tracker-container {
     font-size: 0.2rem;
@@ -524,8 +539,28 @@ a.sl-flex.action.primary {
   transition: all .1s ease-in-out;
 }
 
+/* Fix font size for small screens */
+
 @media (max-width: 600px) {
   .link-style span, .link-style a {
     font-size: 0.8rem;
   }
+}
+
+/* Better Steps Layout */
+
+.sl-steps>li:last-of-type:after {
+  --guide-width: 1px;
+  background: linear-gradient(to bottom, var(--sl-color-hairline-light), var(--sl-color-bg) 85%);
+  bottom: var(--bullet-margin);
+  content: "";
+  inset-inline-start: calc((var(--bullet-size) - var(--guide-width)) / 2);
+  position: absolute;
+  top: calc(var(--bullet-size) + var(--bullet-margin));
+  width: var(--guide-width);
+}
+
+/* Hide first item in the sidebar which is used to generate the navbar (in-case it fails) */
+#starlight__sidebar > div > ul > li:nth-child(1) {
+  display: none !important;
 }
