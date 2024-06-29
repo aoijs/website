@@ -1,10 +1,10 @@
 ---
 title: $djsEval
-description: $djsEval will execute given discord.js code.
+description: $djsEval will execute given javascript code.
 id: djsEval
 ---
 
-`$djsEval` will execute given discord.js code.
+`$djsEval` will execute given javascript code.
 
 ## Usage
 
@@ -16,7 +16,7 @@ $djsEval[code;returnCode?]
 
 | Field       | Type                                                                                              | Description                                                   | Required |
 | ----------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | :------: |
-| code        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Discord.js code to execute.                                   |   true   |
+| code        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Javascript code to execute.                                   |   true   |
 | returnCode? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Return code. <br /> 1. **true** <br /> 2. **false** (default) |  false   |
 
 ## Example(s)
