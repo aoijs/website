@@ -9,7 +9,7 @@ id: textSplitMap
 ## Usage
 
 ```aoi
-$textSplit[awaited]
+$textSplitMap[awaited]
 ```
 
 ## Parameters
