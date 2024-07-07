@@ -17,7 +17,7 @@ $messageURL[messageID?;channelID?]
 | Field      | Type                                                                                              | Description                                        | Required |
 | ---------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------- | :------: |
 | messageID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the message.                                 |  false   |
-| channelID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the message where the message is located in. |  false   |
+| channelID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the channel where the message is located in. |  false   |
 
 ## Example(s)
 
