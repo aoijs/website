@@ -1,17 +1,19 @@
-import { Box, Button, Checkbox, CloseButton, Flex, HStack, Spacer, Text, useColorModeValue, VStack, Wrap } from "@chakra-ui/react";
+import { Box, Button, CloseButton, Flex, HStack, Spacer, Text, useColorModeValue, VStack, Wrap } from "@chakra-ui/react";
+
 import React, { useEffect, useState } from "react";
 import type { ReactNode } from "react";
 import { ApplicationCommandOptionType, useOptionElementStore, useCommandStore } from "../state";
-import type { ApplicationCommandOption, ApplicationCommandOptionChoice } from "../state";
+import type { ApplicationCommandOption } from "../state";
 import Icons from "../icons";
 import BaseInput from "./BaseInput";
+import { getIcon } from "./addOption";
 import { nanoid } from "nanoid";
-import Choice from "./Choice";
+import OptionBlock from "./OptionBlock";
 
-interface OptionBlockProps {
+interface SubCommandProps {
     type: keyof typeof ApplicationCommandOptionType;
     _key: string;
-    inSubCommand?: boolean;
+    inGroup?: boolean;
     setters?: {
         addOption: (option: ApplicationCommandOption) => void;
         removeElement: (key: string) => void;
@@ -20,14 +22,14 @@ interface OptionBlockProps {
     };
 }
 
-function OptionBlock({ type, _key, inSubCommand, setters }: OptionBlockProps) {
-    const Icon = Icons[type];
+function SubCommand({ type, _key, inGroup, setters }: SubCommandProps) {
+    const Icon = Icons.SubCommand;
     const removeElement = useOptionElementStore((state) => state.removeElement);
     const addOption = useCommandStore((state) => state.addOption);
     const removeOption = useCommandStore((state) => state.removeOption);
     const updateOption = useCommandStore((state) => state.updateOption);
     const removeOptionElement = () => {
-        if (inSubCommand) {
+        if (inGroup) {
             setters?.removeOption(_key);
             setters?.removeElement(_key);
         } else {
@@ -36,49 +38,59 @@ function OptionBlock({ type, _key, inSubCommand, setters }: OptionBlockProps) {
         }
     };
 
+    const optionNames = Object.values(ApplicationCommandOptionType).filter((value) => typeof value === "string") as Array<keyof typeof ApplicationCommandOptionType>;
+
     const [option, setOption] = useState<ApplicationCommandOption>({
         key: _key,
-        type: ApplicationCommandOptionType[type],
+        type: ApplicationCommandOptionType.SubCommand,
         name: "",
-        description: ""
+        description: "",
+        options: []
     });
 
+    const [optionElements, setOptionElements] = useState<ReactNode[]>([]);
+
+    const addOptionElement = (type: keyof typeof ApplicationCommandOptionType) => {
+        const elemKey = nanoid();
+        const setters = {
+            addOption: (option: ApplicationCommandOption) => {
+                setOption((opt) => ({
+                    ...opt,
+                    options: [...(opt.options ?? []), option]
+                }));
+            },
+            removeElement: (key: string) => {
+                setOptionElements((elems) => elems.filter((elem: any) => elem.key !== key));
+            },
+            removeOption: (key?: string | undefined) => {
+                setOption((opt) => ({
+                    ...opt,
+                    options: (opt.options ?? []).filter((o) => o.key !== key)
+                }));
+            },
+            updateOption: (option: ApplicationCommandOption) => {
+                setOption((opt) => ({
+                    ...opt,
+                    options: [...(opt.options ?? []).filter((o) => o.key !== option.key), option]
+                }));
+            }
+        };
+        setOptionElements((elems) => [...elems, <OptionBlock type={type} key={elemKey} _key={elemKey} inSubCommand setters={setters} />]);
+    };
+
     useEffect(() => {
-        inSubCommand ? setters?.addOption(option) : addOption(option);
+        inGroup ? setters?.addOption(option) : addOption(option);
     }, []);
 
     useEffect(() => {
-        inSubCommand ? setters?.updateOption(option) : updateOption(option);
+        inGroup ? setters?.updateOption(option) : updateOption(option);
     }, [option]);
 
     const updateLocalOption = (opt: Partial<ApplicationCommandOption>) => {
-        setOption((option) => ({ ...option, ...opt }));
-    };
-
-    const [choiceElements, setChoiceElements] = useState<ReactNode[]>([]);
-
-    const addChoice = () => {
-        const key = nanoid();
-        const addChoice = (choice: ApplicationCommandOptionChoice) => {
-            setOption((option) => ({
-                ...option,
-                choices: [...(option.choices ?? []), choice]
-            }));
-        };
-        const updateChoice = (choice: ApplicationCommandOptionChoice) => {
-            setOption((option) => ({
-                ...option,
-                choices: [...(option.choices ?? []).filter((c) => c.key !== choice.key), choice]
-            }));
-        };
-        const deleteChoice = (key?: string) => {
-            setOption((option) => ({
-                ...option,
-                choices: (option.choices ?? []).filter((c) => c.key !== key)
-            }));
-            setChoiceElements((elems) => elems.filter((elem: any) => elem.key !== key));
-        };
-        setChoiceElements((elems) => [...elems, <Choice key={key} _key={key} addChoice={addChoice} updateChoice={updateChoice} deleteChoice={deleteChoice} />]);
+        setOption({
+            ...option,
+            ...opt
+        });
     };
 
     return (
@@ -86,49 +98,29 @@ function OptionBlock({ type, _key, inSubCommand, setters }: OptionBlockProps) {
             <Box boxShadow={useColorModeValue("lg", "dark-lg")} p="6" my="4" rounded="md">
                 <VStack spacing={2}>
                     <HStack spacing="2" w="full">
-                        <Icon boxSize={6} />
+                        <Icon boxSize={6} mt="1" />
                         <Text>{type}</Text>
                         <Spacer />
                         <CloseButton size="md" onClick={removeOptionElement} />
                     </HStack>
                     <Flex direction="column" w="full">
-                        <BaseInput title="Name" placeholder="Option Name" setter={(name) => updateLocalOption({ name })} />
+                        <BaseInput title="Name" placeholder="Option Name" setter={(name) => updateLocalOption({ name: name?.toLowerCase() })} />
                         <BaseInput title="Description" placeholder="Option Description" setter={(description) => updateLocalOption({ description })} />
-                        <Checkbox
-                            size="lg"
-                            colorScheme="blue"
-                            onChange={(e) =>
-                                updateLocalOption({
-                                    required: e.target.checked ? true : undefined
-                                })
-                            }
-                        >
-                            Required
-                        </Checkbox>
-                        {["String", "Integer", "Number"].indexOf(type) != -1 && (
-                            <Checkbox
-                                size="lg"
-                                colorScheme="blue"
-                                onChange={(e) =>
-                                    updateLocalOption({
-                                        autocomplete: e.target.checked ? true : undefined
-                                    })
-                                }
-                            >
-                                Autocomplete
-                            </Checkbox>
-                        )}
-                        <Button mx="1" mt="4" w="32" colorScheme="blue" onClick={addChoice}>
-                            Add Choice
-                        </Button>
                     </Flex>
+                    <Wrap spacing="2" w="full">
+                        {optionNames
+                            .filter((o) => !o.includes("SubCommand"))
+                            .map((val) => (
+                                <Button m="1" leftIcon={getIcon(val)} onClick={() => addOptionElement(val)} key={val}>
+                                    {val}
+                                </Button>
+                            ))}
+                    </Wrap>
                 </VStack>
             </Box>
-            <Box ml="8">
-                <Wrap>{choiceElements}</Wrap>
-            </Box>
+            <Box ml="8">{optionElements}</Box>
         </>
     );
 }
 
-export default OptionBlock;
+export default SubCommand;

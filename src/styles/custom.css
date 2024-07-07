@@ -564,3 +564,13 @@ a.sl-flex.action.primary {
 #starlight__sidebar > div > ul > li:nth-child(1) {
   display: none !important;
 }
+
+div[id=starlight__sidebar] li:has(a[aria-current="page"], details) {
+  border-inline-start: 1px solid var(--sl-color-accent-high) !important;
+  margin-inline-start: var(--sl-sidebar-item-padding-inline);
+  padding-inline-start: var(--sl-sidebar-item-padding-inline);
+}
+
+li:has(details) {
+  margin-bottom: 3px;
+}

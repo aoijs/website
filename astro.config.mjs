@@ -31,10 +31,6 @@ export default defineConfig({
             leading: { useSidebarLabelled: "leadingNavLinks" },
           },
         }),
-        /*  starlightVersions({
-              versions: [{ slug: '6.8' }],
-            }),
-        */
       ],
       title: "aoi.js",
       favicon: "/favicon.ico",
@@ -228,7 +224,6 @@ export default defineConfig({
               collapsed: true,
             },
           ],
-          collapsed: true,
         },
         {
           label: "Tools",
@@ -236,7 +231,6 @@ export default defineConfig({
             {
               label: "Application Command Creator",
               link: "/tools/slash",
-              collapsed: true,
             },
           ],
         },

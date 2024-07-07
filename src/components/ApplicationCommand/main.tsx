@@ -37,12 +37,12 @@ function ApplicationCommand() {
                 <div style={{ marginTop: "2rem", marginBottom: "2rem" }}>
                     <div>
                         <Checkbox size="lg" colorScheme="blue" onChange={(e) => setDefaultPermissions(e.target.checked ? true : false)}>
-                            Default Permissions <p style={{ fontSize: "0.7rem" }}>If the command should follow the default permissions.</p>
+                            Default Permissions <p style={{ fontSize: "0.7rem" }}>Follow default discord permissions when creating the command</p>
                         </Checkbox>
                     </div>
                     <div style={{ marginTop: "2rem" }}>
                         <Checkbox size="lg" colorScheme="blue" onChange={(e) => setAllowDirectMessageExecution(e.target.checked ? true : false)}>
-                            Allow Direct Message Execution <p style={{ fontSize: "0.7rem" }}>Prevents execution within Direct Messages</p>
+                            Allow Direct Message Execution <p style={{ fontSize: "0.7rem" }}>Allows execution within Direct Messages</p>
                         </Checkbox>
                     </div>
                 </div>

@@ -9,7 +9,7 @@ id: setTimeout
 ## Usage
 
 ```aoi
-$setTimeout[awaitedCmd;duration;timeoutData;returnId?;pulse?]
+$setTimeout[awaitedCmd;duration;timeoutData;returnId?]
 ```
 
 ## Parameters
@@ -20,10 +20,8 @@ $setTimeout[awaitedCmd;duration;timeoutData;returnId?;pulse?]
 | duration    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | After how much time it will execute / this cannot go over **21 days**. |   true   |
 | timeoutData | [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)                                                                                                    | Timeout data.                                                          |   true   |
 | returnId?   | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)                                                                                                  | Return timeout ID.                                                     |  false   |
-| pulse?      | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)                                                                                                    | Pulse.                                                                 |  false   |
 
--   You can retrieve timeout data using `$timeoutData[name]`.
--   Note that the duration may not go over **21 days**.
+- You can retrieve timeout data using `$timeoutData[name]`.
 
 ## Example(s)
 
@@ -31,16 +29,12 @@ This will send "Hello!" after 10 seconds in the command execution channel:
 
 ```javascript
 client.command({
-    name: "setTimeout",
-    code: `
-    $setTimeout[timeoutCommand;10s;{"channelID": "$channelID", "authorID": "$authorID"};false]
-    `
+  name: "setTimeout",
+  code: `$setTimeout[timeoutCommand;10s;{"channelID": "$channelID", "authorID": "$authorID"};false]`,
 });
 
 client.timeoutCommand({
-    name: "timeoutCommand",
-    code: `
-    $channelSendMessage[$timeoutData[channelID];Hello, <@$timeoutData[authorID]>!]
-    `
+  name: "timeoutCommand",
+  code: `$channelSendMessage[$timeoutData[channelID];Hello, <@$timeoutData[authorID]>!]`
 });
 ```

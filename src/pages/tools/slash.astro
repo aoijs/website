@@ -45,7 +45,7 @@ import ApplicationCommand from "../../components/ApplicationCommand/main";
     }
 
     .chakra-button:hover,
-    button[type="button"]:hover,
+    button[type="button"]:not([class*=DocSearch-Button], starlight-theme-select):hover,
     button[role="menuitem"]:hover {
         color: #fff !important;
         background-color: var(--sl-color-accent) !important;
