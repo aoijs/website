@@ -17,17 +17,6 @@ header ul {
   display: none;
 }
 
-/* Fix for the sidebar width - see https://github.com/withastro/starlight/discussions/1985 */
-@media (min-width: 1250px) {
-  :root {
-    --sl-content-width: calc(100vw - 0.3 * var(--sl-sidebar-pad-x) - 2 * var(--sl-sidebar-width));
-  }
-
-  /* Hide Navbar links on mobile because they break the whole navbar */
-  header ul {
-    display: flex !important;
-  }
-}
 
 /* Light mode colors. */
 :root[data-theme="light"] {
@@ -548,7 +537,6 @@ a.sl-flex.action.primary {
 }
 
 /* Better Steps Layout */
-
 .sl-steps>li:last-of-type:after {
   --guide-width: 1px;
   background: linear-gradient(to bottom, var(--sl-color-hairline-light), var(--sl-color-bg) 85%);
@@ -560,17 +548,74 @@ a.sl-flex.action.primary {
   width: var(--guide-width);
 }
 
-/* Hide first item in the sidebar which is used to generate the navbar (in-case it fails) */
-#starlight__sidebar > div > ul > li:nth-child(1) {
-  display: none !important;
+/* index, main page */
+
+.icon-layout {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  transform: rotate(-15deg);
+  margin-top: 5px;
+  z-index: -1;
+  opacity: 0.25;
+  overflow: hidden;
+  width: max-content;
+  pointer-events: none;
+  transition: fill 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-div[id=starlight__sidebar] li:has(a[aria-current="page"], details) {
-  border-inline-start: 1px solid var(--sl-color-accent-high) !important;
-  margin-inline-start: var(--sl-sidebar-item-padding-inline);
-  padding-inline-start: var(--sl-sidebar-item-padding-inline);
+.package-stats-container {
+  position: relative;
+  display: flex;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 5px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: var(--sl-color-bg);
+  backdrop-filter: blur(16px);
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-li:has(details) {
-  margin-bottom: 3px;
+.package-container-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  && p {
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+
+.container-inner-font {
+  color: var(--sl-color-text-accent);
+  padding: 15px;
+}
+
+#stars:hover {
+  && p {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.8;
+  }
+
+  && svg {
+    transition: fill 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: rotate(15deg);
+    fill: #e3b341;
+  }
+}
+
+#downloads:hover {
+  && p {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.8;
+  }
+
+  && svg {
+    transition: fill 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: rotate(15deg);
+    fill: #177312;
+  }
 }

@@ -1,58 +1,12 @@
 import { useState, useEffect } from "react";
-import type { FC } from "react";
+import SlotCounter from "react-slot-counter";
 
-interface GitStats {
-  stars: number;
-  forks: number;
-}
+const BANNER_URL =
+  "https://raw.githubusercontent.com/aoijs/website/master/assets/images/aoijs-banner.png";
 
-interface CachedData {
-  data: number | GitStats;
-  timestamp: number;
-}
-
-const PackageStats: FC = () => {
+const PackageStats: React.FC = () => {
   const [downloads, setDownloads] = useState(0);
   const [gitstats, setGitStats] = useState({ stars: 0, forks: 0 });
-  const [lastFetchedTime, setLastFetchedTime] = useState<string | null>(null);
-
-  const CountUp: FC<{ targetNumber: number }> = ({ targetNumber }) => {
-    const [currentNumber, setCurrentNumber] = useState(0);
-    let intervalId: any = null;
-
-    useEffect(() => {
-      let increment = 0;
-
-      const animateNumber = () => {
-        increment = Math.min(increment + targetNumber / 650, targetNumber);
-        setCurrentNumber(Math.round(increment));
-      };
-
-      intervalId = setInterval(animateNumber, 15);
-
-      return () => {
-        clearInterval(intervalId);
-      };
-    }, [targetNumber]);
-
-    useEffect(() => {
-      if (currentNumber >= targetNumber) {
-        clearInterval(intervalId);
-      }
-    }, [currentNumber, targetNumber]);
-
-    return (
-      <p
-        style={{
-          marginTop: "5px",
-          fontSize: "25px",
-          color: "var(--sl-color-text-accent)",
-        }}
-      >
-        {currentNumber.toLocaleString()}
-      </p>
-    );
-  };
 
   const npmStats = async () => {
     try {
@@ -66,16 +20,19 @@ const PackageStats: FC = () => {
       );
       setDownloads(total);
       cacheData("npm", total);
-    } catch (e) {
-      return;
+    } catch (err) {
+      return console.error(
+        "%c" + "Error",
+        "color: red; font-weight: bold; background-color: white; padding: 2px; border-radius: 5px;",
+        "Failed to get stats with reason:",
+        err
+      );
     }
   };
 
   const gitStats = async () => {
     try {
-      const response = await fetch(
-        `https://api.github.com/repos/aoijs/aoi.js`
-      );
+      const response = await fetch(`https://api.github.com/repos/aoijs/aoi.js`);
       const data = await response.json();
       const stats = {
         stars: data.stargazers_count,
@@ -83,37 +40,40 @@ const PackageStats: FC = () => {
       };
       setGitStats(stats);
       cacheData("git", stats);
-    } catch (error) {
-      console.error("Error fetching GitHub repo stats:", error);
+    } catch (err) {
+      console.error(
+        "%c" + "Error",
+        "color: red; font-weight: bold; background-color: white; padding: 2px; border-radius: 5px;",
+        "Failed to get stats with reason:",
+        err
+      );
     }
   };
 
-  const getCachedData = (key: string): CachedData | null => {
+  const getCachedData = (key: string) => {
     const cachedData = localStorage.getItem(key);
     if (cachedData) {
       const { data, timestamp } = JSON.parse(cachedData);
       if (timestamp && Date.now() - timestamp < 3600000) {
-        setLastFetchedTime(new Date(timestamp).toLocaleString());
         return { data, timestamp };
       }
-
-      console.log({ data, timestamp });
+    } else {
+      return null;
     }
-    return null;
   };
 
   const cacheData = (key: string, data: any) => {
     const timestamp = Date.now();
-    const dataToCache = { data, timestamp };
-    localStorage.setItem(key, JSON.stringify(dataToCache));
+    const cache = { data, timestamp };
+    localStorage.setItem(key, JSON.stringify(cache));
   };
 
   useEffect(() => {
-    const totalStats = getCachedData("npm");
+    const npm = getCachedData("npm");
     const git = getCachedData("git");
 
-    if (totalStats !== null && git !== null) {
-      setDownloads(totalStats.data as any);
+    if (npm && git) {
+      setDownloads(npm.data as any);
       setGitStats(git.data as any);
     } else {
       npmStats();
@@ -122,110 +82,145 @@ const PackageStats: FC = () => {
   }, []);
 
   return (
-    <div
-      className="not-content"
-      style={{
-        position: "relative",
-        display: "flex",
-        border: "1px solid var(--sl-color-gray-5)",
-        borderRadius: "5px",
-        justifyContent: "space-around",
-        alignItems: "center",
-        marginTop: "2rem",
-        backgroundColor: "transparent",
-        backdropFilter: "blur(16px)",
-        flexDirection: "row",
-        flexWrap: "wrap",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          textAlign: "center",
-        }}
-      >
+    <div className="not-content package-stats-container">
+      <div className="package-container-inner" id="downloads">
         <p
           style={{
-            color: "var(--sl-color-text-accent)",
             fontSize: window.innerWidth <= 768 ? "20px" : "30px",
-            padding: "15px 15px",
           }}
+          className="container-inner-font"
         >
           Downloads
         </p>
-        <CountUp targetNumber={downloads} />
-        <div style={{ marginBottom: "1rem" }} />
+        <p
+          style={{
+            fontSize: window.innerWidth <= 768 ? "20px" : "30px",
+          }}
+          className="container-inner-font"
+        >
+          <SlotCounter
+            delay={0.5}
+            startValueOnce={false}
+            animateOnVisible={true}
+            duration={1.5}
+            hasInfiniteList={true}
+            startValue={0}
+            value={downloads}
+          />
+        </p>
+        <DownloadsIcon />
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          textAlign: "center",
-        }}
-      >
+      <div className="package-container-inner" id="stars">
         <p
           style={{
             color: "var(--sl-color-text-accent)",
             fontSize: window.innerWidth <= 768 ? "20px" : "30px",
-            padding: "15px 15px",
+            padding: "15px",
           }}
         >
           Stars
         </p>
-        <CountUp targetNumber={gitstats.stars} />
-        <div style={{ marginBottom: "1rem" }} />
-      </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          textAlign: "center",
-        }}
-      >
         <p
           style={{
-            color: "var(--sl-color-text-accent)",
             fontSize: window.innerWidth <= 768 ? "20px" : "30px",
-            padding: "15px 15px",
           }}
+          className="container-inner-font"
+        >
+          <SlotCounter
+            delay={0.5}
+            startValueOnce={false}
+            animateOnVisible={true}
+            duration={1.5}
+            hasInfiniteList={true}
+            startValue={0}
+            value={gitstats.stars}
+          />
+        </p>
+        <StarIcon />
+      </div>
+      <div className="package-container-inner">
+        <p
+          style={{
+            fontSize: window.innerWidth <= 768 ? "20px" : "30px",
+          }}
+          className="container-inner-font"
         >
           Forks
         </p>
-        <CountUp targetNumber={gitstats.forks} />
-        <div style={{ marginBottom: "1rem" }} />
-      </div>
-      <div
-        style={{
-          marginTop: "auto",
-          marginBottom: "15px",
-          color: "var(--sl-color-text-accent)",
-          fontSize: window.innerWidth <= 768 ? "10px" : "14px",
-        }}
-      >
-        <div>
-          <a href="https://github.com/aoijs/aoi.js">
-            <img
-              loading="eager"
-              decoding="async"
-              alt="aoi.js banner image"
-              style={{ filter: "drop-shadow(0 0 3rem var(--overlay-blurple))" }}
-              src="https://github.com/aoijs/website/raw/master/assets/images/aoijs-banner.png?raw=true"
-              width="350"
-              height="125"
-            />
-          </a>
-        </div>
-        <p style={{ textAlign: "center", color: "var(--sl-color-gray-4)" }}>
-          Last fetched:{" "}
-          {lastFetchedTime ?? `${new Date(Date.now()).toLocaleString()} (now)`}
+        <p
+          style={{
+            fontSize: window.innerWidth <= 768 ? "20px" : "30px",
+          }}
+          className="container-inner-font"
+        >
+          <SlotCounter
+            delay={0.5}
+            startValueOnce={false}
+            animateOnVisible={true}
+            duration={1.5}
+            hasInfiniteList={true}
+            startValue={0}
+            value={gitstats.forks}
+          />
         </p>
+        <ForkIcon />
+      </div>
+      <div>
+        <a href="https://github.com/aoijs/aoi.js">
+          <img
+            loading="eager"
+            decoding="async"
+            alt="aoi.js banner image"
+            style={{
+              filter: "drop-shadow(0 0 3rem var(--overlay-blurple))",
+              width: "100%",
+              maxWidth: "300px",
+              padding: "8px",
+            }}
+            src={BANNER_URL}
+          />
+        </a>
       </div>
     </div>
   );
 };
+
+const StarIcon = (props: any) => (
+  <svg
+    aria-hidden="true"
+    viewBox="0 0 16 16"
+    className="icon-layout"
+    fill="var(--sl-color-gray-5)"
+    {...props}
+  >
+    <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z" />
+  </svg>
+);
+
+const ForkIcon = (props: any) => (
+  <svg
+    aria-hidden="true"
+    viewBox="0 0 16 16"
+    className="icon-layout"
+    fill="var(--sl-color-gray-5)"
+    id="forks"
+    {...props}
+  >
+    <path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path>
+  </svg>
+);
+
+const DownloadsIcon = (props: any) => (
+  <svg
+    aria-hidden="true"
+    viewBox="0 0 16 16"
+    className="icon-layout"
+    fill="var(--sl-color-gray-5)"
+    {...props}
+  >
+    <path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"></path>
+    <path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.749.749 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06l1.97 1.969Z"></path>
+  </svg>
+);
 
 export default PackageStats;
