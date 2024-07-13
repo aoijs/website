@@ -11,7 +11,7 @@ export const collections = {
         edited_by: z.string().optional(),
         edited_by_url: z.string().optional(),
         type: z.string().optional(),
-        og_image: z.string().optional(),
+        // og_image: z.string().optional(),
         package: z.string().optional() || "aoi.js",
         extensionUrl: z.string().url().optional(),
       }),
