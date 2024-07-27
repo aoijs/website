@@ -50,7 +50,7 @@ This will replace `less` with `more`:
 client.command({
     name: "replaceTextWithRegex",
     code: `
-  $replaceTextWithRegex[This function is more complicated than it looks.;lESs;i;more]
+  $replaceTextWithRegex[This function is more simple than it looks.;complicated;g;simple]
   `
 });
 ```

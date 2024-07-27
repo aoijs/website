@@ -68,7 +68,7 @@ function DiscordMessagesDark({
         )}
         <DiscordMessage
           author="Akarui Helper"
-          avatar="https://cdn.discordapp.com/avatars/1138204326402203691/a_b8d941eebad1a41cf177148834f84bb8.gif?size=4096"
+          avatar="https://i.imgur.com/vU34KOa.png"
           bot
           verified={true}
         >
@@ -172,7 +172,7 @@ function DiscordMessagesLight({
         )}
         <DiscordMessage
           author="Akarui Helper"
-          avatar="https://cdn.discordapp.com/avatars/1138204326402203691/a_b8d941eebad1a41cf177148834f84bb8.gif?size=4096"
+          avatar="https://i.imgur.com/vU34KOa.png"
           bot
           verified={true}
         >

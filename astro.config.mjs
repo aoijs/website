@@ -16,8 +16,8 @@ export default defineConfig({
   integrations: [
     starlight({
       head: [{ tag: "script", attrs: { src: "/preserve-sidebar.js" } }],
-      lastUpdated: true,
-      credits: true,
+      customCss: ["./src/styles/custom.css"],
+      lastUpdated: false,
       plugins: [
         starlightLinksValidator(),
         starlightImageZoom(),
@@ -39,7 +39,6 @@ export default defineConfig({
       editLink: {
         baseUrl: "https://github.com/aoijs/website/edit/main/",
       },
-      customCss: ["./src/styles/custom.css", "./src/fonts/font-face.css"],
       components: {
         //Search: "./src/components/Page/Search.astro",
         Head: "./src/components/Page/Head.astro",
@@ -53,7 +52,7 @@ export default defineConfig({
           tag: "meta",
           attrs: {
             property: "og:site_name",
-            content: "aoi.js | Akarui Development",
+            content: "aoi.js",
           },
         },
         {
@@ -218,6 +217,10 @@ export default defineConfig({
             {
               label: "Application Command Creator",
               link: "/tools/slash",
+            },
+            {
+              label: "Github Changelogs",
+              link: "/changelogs",
             },
           ],
         },
