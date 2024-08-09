@@ -8,6 +8,7 @@ id: functionName
 
 ## Usage
 
+(IMPORTANT! Use `aoi` codeblocks only for the usage!)
 ```aoi
 $functionName[parameter;parameter? (? == optional parameter)]
 ```
