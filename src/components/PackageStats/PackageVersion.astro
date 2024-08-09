@@ -7,8 +7,7 @@ export interface Props {
 
 const { pkgName } = Astro.props as Props;
 
-// We need to replace until all packages are moved on NPM
-const url = `https://registry.npmjs.org/${pkgName.replace("@aoijs", "@akarui")}/latest`;
+const url = `https://registry.npmjs.org/${pkgName}/latest`;
 
 const response = await pRetry(
   async () => {
