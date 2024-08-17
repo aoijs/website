@@ -1,10 +1,10 @@
 ---
 title: $disableComponents
-description: $disableComponents disables all components for a specific command.
+description: $disableComponents disables all components for the specified command.
 id: disableComponents
 ---
 
-`$awaitComponents` disables all components for a specific command.
+`$awaitComponents` disables all components for the specified command.
 
 ## Usage
 
