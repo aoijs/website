@@ -18,7 +18,7 @@ $disableComponents[channelID;messageID;type?]
 | ---------- | ------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------------| :------: |
 | channelID  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Channel ID of the command that has been executed.                                                                      |   true   |
 | messageID  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the message that will disable the components.                                                                |   true   |
-| type?      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The type of component that will be disabled. <br /> 1. **all** (default) <br /> 2. **button** <br /> 3. **selectmenu**   |   true   |                       
+| type?      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The type of component that will be disabled. <br /> 1. **all** (default) <br /> 2. **button** <br /> 3. **selectmenu** |   true   |                       
 
 ## Example(s)
 
