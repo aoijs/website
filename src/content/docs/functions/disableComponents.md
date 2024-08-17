@@ -4,7 +4,7 @@ description: $disableComponents disables all components for the specified comman
 id: disableComponents
 ---
 
-`$awaitComponents` disables all components for the specified command.
+`$disableComponents` disables all components for the specified command.
 
 ## Usage
 
