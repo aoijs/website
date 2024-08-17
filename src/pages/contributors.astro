@@ -94,13 +94,6 @@ async function getImageSrc(e: string) {
           },
         },
         {
-          name: "lordduck",
-          discord: "@lordex.js",
-          role: "Extension Developer",
-          color: "#ffa5ea",
-          avatar: getImageSrc("/src/images/contributors/lordexjs.webp"),
-        },
-        {
           name: "AstrooKai",
           discord: "@astrookai",
           role: "Docs Manager",
@@ -186,6 +179,13 @@ async function getImageSrc(e: string) {
           color: "#c5fff8",
           avatar: getImageSrc("/src/images/contributors/vishvaas.png"),
         },
+        {
+          name: "lordduck",
+          discord: "@lordex.js",
+          role: "Contributor",
+          color: "#c5fff8",
+          avatar: getImageSrc("/src/images/contributors/lordexjs.webp"),
+        }
       ].map((user) => (
         <div class="contributor" id={user.name}>
           <Image
