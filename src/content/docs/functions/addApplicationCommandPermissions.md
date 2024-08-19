@@ -1,8 +1,10 @@
 ---
 title: $addApplicationCommandPermissions
-description: $addApplicationCommandPermissions will change permissions of a slash command.
+description: $addApplicationCommandPermissions will change the permissions of an application command.
 id: addApplicationCommandPermissions
 ---
+
+`$addApplicationCommandPermissions` will change the permissions of an application command.
 
 ## Usage
 
@@ -20,7 +22,7 @@ $addApplicationCommandPermissions[guildID/global?;id;...perms]
 
 ## Example(s)
 
-This will disable the slash command for everyone in the guild ( make sure to replace "ID" with the actual slash command
+This will disable the application command for everyone in the guild ( make sure to replace "ID" with the actual slash command
 ID ):
 
 ```javascript

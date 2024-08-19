@@ -44,7 +44,8 @@ $createApplicationCommand[guildID/global;name;description;defaultPermission;allo
 
 ## Example(s)
 
-**Check the Slash Command/Interaction guide for more information about slash commands!**
+> **Check the Slash Command/Interaction guide for more information about slash commands!**
+> You can also use the [Application Command Creator](https://aoi.js.org/tools/slash/) to easily create your own custom application commands for your application.
 
 This will create a slash command without options:
 

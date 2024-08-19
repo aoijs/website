@@ -16,7 +16,7 @@ $userDisplayName[userID?]
 
 | Field    | Type                                                                                              | Description          | Required |
 | -------- | ------------------------------------------------------------------------------------------------- | -------------------- | :------: |
-| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the guild. |  false   |
+| userID?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the user.  |  false   |
 
 ## Example(s)
 

@@ -20,7 +20,7 @@ $abs[number]
 
 ## Example(s)
 
-This will return the absolute value of `-151.5`:
+This will return the absolute value of `-151.5`, which is `151.5`:
 
 ```js
 client.command({

@@ -14,12 +14,13 @@ $interactionPremium
 
 ## Example(s)
 
-```aoi
+```js
 client.command({
     name: "interactionPremium",
     code: `
 $sendMessage[If you see this message, you are subscribed to Premium!]
 
 $interactionPremium
+`
 });
 ```
