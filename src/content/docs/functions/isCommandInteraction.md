@@ -28,7 +28,7 @@ client.command({
     type: "interaction",
     prototype: "button",
     code:`
-	$isCommandInteraction
+	  $isCommandInteraction
     $interactionReply[Hello World!;everyone;false]
   `
-})```
+});```
