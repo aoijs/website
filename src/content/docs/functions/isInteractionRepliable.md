@@ -16,10 +16,9 @@ $isInteractionRepliable
 This will return `true` because the interaction is able reply.
 
 ```js
-client.command({
+client.interactionCommand({
     name: "isInteractionRepliable",
     prototype: "slash",
-    type: "interaction",
     code: `
 $isInteractionRepliable
 $interactionReply[I just replied!]

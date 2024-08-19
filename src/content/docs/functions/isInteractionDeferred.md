@@ -16,9 +16,8 @@ $isInteractionDeferred
 This will return `true` because the interaction has been deferred.
 
 ```js
-client.command({
+client.interactionCommand({
     name: "isInteractionDeferred",
-    prototype: "slash",
     type: "interaction",
     code: `
 $isInteractionDeferred

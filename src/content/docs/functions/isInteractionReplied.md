@@ -16,10 +16,9 @@ $isInteractionReplied
 This will return `true` because the interaction has been replied to previously.
 
 ```js
-client.command({
+client.interactionCommand({
     name: "isInteractionReplied",
     prototype: "slash",
-    type: "interaction",
     code: `
 $isInteractionReplied 
 $interactionReply[I just replied!]
