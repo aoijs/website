@@ -15,7 +15,7 @@ $isInteractionReplied
 ## Example(s)
 This will return `true` because the interaction has been replied to previously.
 
-```aoi
+```js
 client.command({
     name: "isInteractionReplied",
     prototype: "slash",
@@ -23,5 +23,6 @@ client.command({
     code: `
 $isInteractionReplied 
 $interactionReply[I just replied!]
+`
 });
 ```

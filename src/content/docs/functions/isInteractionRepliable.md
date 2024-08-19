@@ -4,7 +4,7 @@ description: $isInteractionRepliable will return true or false depending on whet
 id: isInteractionRepliable
 ---
 
-`$isInteractionRepliable` will return `true` or `false` depending on whether the interaction can be replied to or not.
+`$isInteractionRepliable` will return `true` or `false` depending on whether the interaction is able to reply or not.
 
 ## Usage
 
@@ -13,9 +13,9 @@ $isInteractionRepliable
 ```
 
 ## Example(s)
-This will return `true` because the interaction can reply.
+This will return `true` because the interaction is able reply.
 
-```aoi
+```js
 client.command({
     name: "isInteractionRepliable",
     prototype: "slash",
@@ -23,5 +23,6 @@ client.command({
     code: `
 $isInteractionRepliable
 $interactionReply[I just replied!]
+`
 });
 ```

@@ -28,7 +28,7 @@ module.exports = [{
   code: `
   $interactionReply[Hello, World! {actionRow:{button:Example Button!:primary:customID:false}};everyone;false]
   `
-});
+}];
 ```
 
 ```js
