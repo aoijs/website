@@ -15,10 +15,11 @@ $interactionPremium
 ## Example(s)
 
 ```js
-client.command({
+client.interactionCommand({
     name: "interactionPremium",
+    prototype: "slash",
     code: `
-$sendMessage[If you see this message, you are subscribed to Premium!]
+$interactionReply[If you see this message, you are subscribed to Premium!]
 
 $interactionPremium
 `
