@@ -18,7 +18,7 @@ This will return `true` because the interaction has been deferred.
 ```js
 client.interactionCommand({
     name: "isInteractionDeferred",
-    type: "interaction",
+    prototype: "slash",
     code: `
 $isInteractionDeferred
 $interactionFollowUp[Hello World!]
