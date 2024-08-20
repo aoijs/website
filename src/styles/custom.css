@@ -1,14 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap");
 
 :root {
+  --sl-color-accent-low: #03263e;
+  --sl-color-accent: #0070ac;
+  --sl-color-accent-high: #a8ceed;
   --ds-text: var(--sl-color-text-accent);
+  --blue-hsl: 218, 100%, 83%;
+  --overlay-blurple: hsla(var(--blue-hsl), 0.2);
+  --ec-frm-tooltipSuccessBg: var(--sl-color-gray-5) !important;
+}
+
+/* Light mode colors. */
+:root[data-theme="light"] {
+  --sl-color-accent-low: #bfdbf3;
+  --sl-color-accent: #0072af;
+  --sl-color-accent-high: #003556;
+  --blue-hsl: 201, 100%, 34%;
+  --overlay-blurple: hsla(var(--blue-hsl), 0.45);
+  --sl-hue-accent: 350;
 }
 
 /* fix for small screens */
-
 @media (max-width: 900px) {
   .tracker-container {
-    font-size: 0.2rem;
+    font-size: 0.25rem;
     padding: 0.5rem;
     overflow-x: scroll !important;
 
@@ -30,24 +45,7 @@
   width: 50%;
 }
 
-/* Better Steps Layout */
-.sl-steps > li:last-of-type:after {
-  --guide-width: 1px;
-  background: linear-gradient(
-    to bottom,
-    var(--sl-color-hairline-light),
-    var(--sl-color-bg) 85%
-  );
-  bottom: var(--bullet-margin);
-  content: "";
-  inset-inline-start: calc((var(--bullet-size) - var(--guide-width)) / 2);
-  position: absolute;
-  top: calc(var(--bullet-size) + var(--bullet-margin));
-  width: var(--guide-width);
-}
-
 /* package stats styles */
-
 .icon-layout {
   position: absolute;
   height: 150px;
@@ -156,7 +154,6 @@
 }
 
 /* Discord Message Component global styles */
-
 .discord-light-theme .discord-message a {
   color: rgb(255, 255, 255);
 }
@@ -283,7 +280,6 @@ a.sl-flex.action.primary {
 }
 
 .sl-markdown-content {
-
   && th:not([align]):not(:where(.not-content *)) {
     text-align: center;
   }

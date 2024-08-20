@@ -15,7 +15,6 @@ export default defineConfig({
   },
   integrations: [
     starlight({
-      head: [{ tag: "script", attrs: { src: "/preserve-sidebar.js" } }],
       customCss: ["./src/styles/custom.css"],
       lastUpdated: false,
       plugins: [
@@ -217,10 +216,6 @@ export default defineConfig({
             {
               label: "Application Command Creator",
               link: "/tools/slash",
-            },
-            {
-              label: "Github Changelogs",
-              link: "/changelogs",
             },
           ],
         },
