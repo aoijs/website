@@ -37,7 +37,8 @@ $getEmbed[channelID?;messageID?;index?;option?]
 | image                             | Large image at the bottom.                               |
 | video                             | Video/GIF.                                               |
 | authorname                        | Author content, above title field.                       |
-| authorurl                         | Author Icon Url, above title field besides author field. |
+| authorurl                         | Author url, above title field.                           |
+| authoricon                        | Author icon, above title field besides author content    |
 | footertext                        | Footer text.                                             |
 | footericon                        | Footer icon, besides footer.                             |
 | files                             | Attached files.                                          |

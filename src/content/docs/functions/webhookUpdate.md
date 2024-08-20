@@ -4,7 +4,7 @@ description: $webhookUpdate holds data for the channel the webhook was updated i
 id: webhookUpdate
 ---
 
-`$webhookUpdate` channel the webhook was updated in. (webhookUpdate event)
+`$webhookUpdate` holds data for the channel the webhook was updated in. (webhookUpdate event)
 
 ## Usage
 

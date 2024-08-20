@@ -1,10 +1,10 @@
 ---
 title: $disableComponents
-description: $disableComponents disables all components for the specified command.
+description: $disableComponents disables all components for a specific message.
 id: disableComponents
 ---
 
-`$disableComponents` disables all components for the specified command.
+`$disableComponents` disables all components for a specific message.
 
 ## Usage
 
@@ -42,6 +42,7 @@ $disableComponents[$channelID;$get[msgID]]
 $wait[5s]
 $let[msgID;$sendMessage[These components will be disabled in 5 seconds. 
 {actionRow:{button:Button:primary:customID:false}} 
-{actionRow:{selectMenu:MenuCustomID:Placeholder:1:1:false:{stringInput:Option:1:Option Description:false}}};true]]`
+{actionRow:{selectMenu:MenuCustomID:Placeholder:1:1:false:{stringInput:Option:1:Option Description:false}}};true]]
+`
 });
 ```

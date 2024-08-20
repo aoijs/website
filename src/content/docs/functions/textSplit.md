@@ -1,10 +1,10 @@
 ---
 title: $textSplit
-description: $textSplit
+description: $textSplit will split a message into parts based on a specify separator, allowing you to access each part individually by its position.
 id: textSplit
 ---
 
-`$textSplit`
+`$textSplit` will split a message into parts based on a specify separator, allowing you to access each part individually by its position.
 
 ## Usage
 

@@ -4,7 +4,7 @@ description: $isSelfMuted is similar but not to confuse with `$isMuted` this wil
 id: isSelfMuted
 ---
 
-$isSelfMuted is similar but not to confuse with `$isMuted` this will check if the user muted themselves.
+`$isSelfMuted` is similar but not to confuse with `$isMuted` this will check if the user muted themselves.
 
 ## Usage
 

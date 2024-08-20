@@ -4,7 +4,7 @@ description: $timeoutData holds data for $setTimeout data parameters, this will 
 id: timeoutData
 ---
 
-`$timeoutData` holds data for $setTimeout data parameters, this will be empty if used outside timeoutCommand codes.
+`$timeoutData` holds data for `$setTimeout` data parameters, this will be empty if used outside timeoutCommand codes.
 
 ## Usage
 
