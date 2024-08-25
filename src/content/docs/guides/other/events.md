@@ -9,18 +9,17 @@ og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/15.
 ---
 
 <!-- omit from toc -->
-
 ### Table of Contents
 
--   [Types of Events](#types-of-events)
-    -   [Message Based-Events](#message-based-events)
-    -   [Guild Based-Events](#guild-based-events)
-    -   [Guild Members Based-Events](#guild-members-based-events)
-    -   [User Based-Events](#user-based-events)
-    -   [Custom Events](#custom-events)
--   [Usage of Events](#usage-of-events)
-    -   [Example Usage of Events without Handler](#example-usage-of-events-without-handler)
-    -   [Example Usage of Events in Handler](#example-usage-of-events-in-handler)
+- [Types of Events](#types-of-events)
+  - [Message Based-Events](#message-based-events)
+  - [Guild Based-Events](#guild-based-events)
+  - [Guild Members Based-Events](#guild-members-based-events)
+  - [User Based-Events](#user-based-events)
+  - [Custom Events](#custom-events)
+- [Usage of Events](#usage-of-events)
+    - [Example Usage of Events without Handler](#example-usage-of-events-without-handler)
+    - [Example Usage of Events in Handler](#example-usage-of-events-in-handler)
 
 ---
 
