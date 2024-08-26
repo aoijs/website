@@ -66,6 +66,12 @@ $addButton[index;label;style;customID;disabled?;emoji?]
           <td><code>$addButton[1;Example Button!;link;https://discord.gg;false]</code></td>
         </tr>
         <tr>
+          <td>Premium</td>
+          <td>6</td>
+          <td>blurple, restricts the interaction to [premium-only](https://discord.com/developers/docs/monetization/skus) users</td>
+          <td><code>$addButton[1;Example Button!;premium;customID;false]</code></td>
+        </tr>
+        <tr>
           <td>Custom Emoji</td>
           <td>any</td>
           <td>any</td>

@@ -1,15 +1,15 @@
 ---
-title: $awaitComponents
-description: $awaitComponents awaits components for given amount of uses.
-id: awaitComponents
+title: $awaitComponentsUntil
+description: $awaitComponentsUntil awaits components for given amount of time.
+id: awaitComponentsUntil
 ---
 
-`$awaitComponents` awaits components for given amount of uses.
+`$awaitComponentsUntil` awaits components for given amount of time.
 
 ## Usage
 
 ```aoi
-$awaitComponents[channelID;messageID;userFilter;customIDs;commands;awaitedCmd;uses?;time]
+$awaitComponentsUntil[channelID;messageID;userFilter;customIDs;commands;awaitedCmd;time]
 ```
 
 ## Parameters
@@ -22,17 +22,16 @@ $awaitComponents[channelID;messageID;userFilter;customIDs;commands;awaitedCmd;us
 | customID   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Custom IDs that will be awaited, use `,` for multiple custom IDs.                                                              |   true   |
 | commands   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The new interaction names to be used in interaction commands for the awaited customIDs, use `,` for multiple awaited commands. |   true   |
 | awaitedCmd | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Awaited command to execute if time ran out.                                                                                    |   true   |
-| uses?      | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The times the awaited interactions can be used (default `1`).                                                                  |  false   |
 | time       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The duration for which the interaction can be used.                                                                            |   true   |
 
 ## Example(s)
 
-This will send a message with a button. It will wait for 30 seconds for the button to be clicked only once, `examplebuttonresults` will be executed if the button has been clicked before the time runs out, otherwise `errormessage` will be executed:
+This will send a message with a button. It will wait for 30 seconds for the button to be clicked, `examplebuttonresults` will be executed if the button has been clicked before the time runs out, otherwise `errormessage` will be executed:
 
 ```js
 client.command({
-    name: "awaitComponents",
-    code: `$awaitComponents[$channelID;$get[messageID];$authorID;examplebutton;examplebuttonresults;errormessage;1;30s]
+    name: "awaitComponentsUntil",
+    code: `$awaitComponentsUntil[$channelID;$get[messageID];$authorID;examplebutton;examplebuttonresults;errormessage;30s]
   $let[messageID;$sendMessage[Please click on the button.{actionRow:{button:Random Button:2:examplebutton:false}};true]]`
 });
 
