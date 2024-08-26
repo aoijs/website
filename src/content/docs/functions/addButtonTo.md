@@ -76,7 +76,7 @@ This function only works if the Client is the original author of the message.
         <tr>
           <td>Premium</td>
           <td>6</td>
-          <td>blurple, restricts the interaction to [premium-only](https://discord.com/developers/docs/monetization/skus) users</td>
+          <td>blurple, restricts the interaction to <a href="https://discord.com/developers/docs/monetization/skus">premium-only</a> users</td>
           <td><code>$addButton[1;Example Button!;premium;customID;false]</code></td>
         </tr>
         <tr>
