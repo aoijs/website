@@ -17,8 +17,8 @@ $cloneEmbed[index;messageID;channelID]
 | Field     | Type                                                                                                | Description                                                                              | Required |
 | --------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | :------: |
 | index     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The index of the embed which you want to clone. <br /> 1. **all** <br /> 2. **number**   |   true   |
-| messageID | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The ID of the embed message that will be cloned.                                         |   true   |
-| channelID | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | The ID of the channel that you sent the embed message.                                   |   true   |
+| messageID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The ID of the embed message that will be cloned.                                         |   true   |
+| channelID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The ID of the channel that you sent the embed message.                                   |   true   |
 
 
 ## Example(s)
