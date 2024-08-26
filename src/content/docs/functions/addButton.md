@@ -68,7 +68,7 @@ $addButton[index;label;style;customID;disabled?;emoji?]
         <tr>
           <td>Premium</td>
           <td>6</td>
-          <td>blurple, restricts the interaction to [premium-only](https://discord.com/developers/docs/monetization/skus) users</td>
+          <td>blurple, restricts the interaction to <a href="https://discord.com/developers/docs/monetization/skus">premium</a> users</td>
           <td><code>$addButton[1;Example Button!;premium;customID;false]</code></td>
         </tr>
         <tr>
