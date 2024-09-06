@@ -20,3 +20,12 @@ $setCacheData[type;cacheName;cacheKey;cacheValue]
 | cacheName  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Cache name.  |   true   |
 | cacheKey   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Cache key.   |   true   |
 | cacheValue | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Cache value. |   true   |
+
+## Cache Types
+
+| Field         | 
+| --------------| 
+| Group         | 
+| LinkedList    | 
+| PriorityQueue | 
+
