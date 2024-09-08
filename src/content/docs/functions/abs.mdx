@@ -20,11 +20,38 @@ $abs[number]
 
 ## Example(s)
 
+import Example from "../../../components/Page/Example.astro";
+import DiscordComponents from "../../../components/DiscordMessage/DiscordComponents.tsx";
+
+<Example>
+
+<div slot="default">
 This will return the absolute value of `-151.5`, which is `151.5`:
 
-```js
+```javascript
 client.command({
     name: "abs",
     code: `$abs[-151.5]`
 });
 ```
+</div>
+<div slot="handler">
+
+This will return the absolute value of `-151.5`, which is `151.5`:
+
+```javascript
+module.exports = {
+  name: "abs",
+  code: `$abs[-151.5]`
+};
+```
+</div>
+<div slot="example">
+<DiscordComponents
+  client:load
+  client:only="react"
+  bot="151.5"
+  user="!abs"
+/>
+</div>
+</Example>

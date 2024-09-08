@@ -21,6 +21,12 @@ $abbreviate[num;dec?]
 
 ## Example(s)
 
+import Example from "../../../components/Page/Example.astro";
+import DiscordComponents from "../../../components/DiscordMessage/DiscordComponents.tsx";
+
+<Example>
+
+<div slot="default">
 This returns: `20k`
 
 ```javascript
@@ -42,3 +48,36 @@ client.command({
   `
 });
 ```
+</div>
+<div slot="handler">
+
+This returns: `20k`
+```javascript
+module.exports = {
+  name: "abbreviate",
+  code: `
+  $abbreviate[20000]
+  `
+};
+```
+
+This returns: `20.0k`
+
+```javascript
+module.exports = {
+  name: "abbreviate",
+  code: `
+  $abbreviate[20000;1]
+  `
+};
+```
+</div>
+<div slot="example">
+<DiscordComponents
+  client:load
+  client:only="react"
+  bot="20k"
+  user="!abbreviate"
+/>
+</div>
+</Example>

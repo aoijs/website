@@ -97,6 +97,12 @@ This function only works if the Client is the original author of the message.
 
 ## Example(s)
 
+import Example from "../../../components/Page/Example.astro";
+import DiscordComponents from "../../../components/DiscordMessage/DiscordComponents.tsx";
+
+<Example>
+
+<div slot="default">
 This adds a primary and link button to the bot's message:
 
 ```javascript
@@ -119,3 +125,42 @@ client.interactionCommand({
   `
 });
 ```
+</div>
+<div slot="handler">
+
+This adds a primary and link button to the bot's message:
+
+```javascript
+module.exports = [
+    {
+      name: "addButtonTo",
+      code: `
+      Hello!
+      $addButtonTo[$channelId;$messageId;1;Example Button!;primary;exampleButton;false;💔]
+      $addButtonTo[$channelId;$messageId;1;Example Button!;link;https://discord.gg;false]
+    `
+    },
+    {
+      name: "exampleButton",
+      type: "interaction",
+      prototype: "button",
+      code: `
+      $interactionReply[Awesome Button Interaction!]
+    `
+    }
+];
+```
+</div>
+<div slot="example">
+<DiscordComponents
+  client:load
+  client:only="react"
+  bot="Hello!"
+  buttons={[
+        { label: "Example Button!", type: "primary", customId: "exampleButton", row: 0, "emoji-name": "💔", emoji: "https://www.svgrepo.com/show/404891/broken-heart.svg" },
+        { label: "Example Button!", type: "link", url: "https://discord.gg", row: 0 },
+        ]}
+  user="!addButtonTo"
+/>
+</div>
+</Example>
