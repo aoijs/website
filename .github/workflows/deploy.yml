@@ -78,8 +78,9 @@ jobs:
       - name: 🚀 Deploy to Github 
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Wait for site to be deployed
+        run: sleep 15
       - name: 🔎 Update Algolia Crawler 
-        if: 1 == 2
         uses: algolia/algoliasearch-crawler-github-actions@v1.0.10
         id: algolia_crawler
         with:
