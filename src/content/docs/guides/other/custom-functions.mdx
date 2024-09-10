@@ -120,6 +120,9 @@ $sendImage[URL;name?];
 ```
 
 ```js
+// we need this for our function!
+const { AttachmentBuilder } = require("discord.js");
+
 client.functionManager.createFunction({
     name: "$sendImage", // our function name
     type: "djs", // notice how we don't need any params? that's the magic of JavaScript
