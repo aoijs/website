@@ -9,16 +9,16 @@ id: cloneEmbed
 ## Usage
 
 ```aoi
-$cloneEmbed[index;messageID;channelID]
+$cloneEmbed[index;messageID;channelID?]
 ```
 
 ## Parameters
 
-| Field     | Type                                                                                                | Description                                                                              | Required |
-| --------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | :------: |
-| index     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The index of the embed which you want to clone. <br /> 1. **all** <br /> 2. **number**   |   true   |
-| messageID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The ID of the embed message that will be cloned.                                         |   true   |
-| channelID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The ID of the channel that you sent the embed message.                                   |   true   |
+| Field      | Type                                                                                                | Description                                                                              | Required |
+| ---------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | :------: |
+| index      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The index of the embed which you want to clone. <br /> 1. **all** <br /> 2. **number**   |   true   |
+| messageID  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The ID of the embed message that will be cloned.                                         |   true   |
+| channelID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The ID of the channel that you sent the embed message.                                   |   false  |
 
 
 ## Example(s)
@@ -32,8 +32,8 @@ client.command({
   $title[Bye!]
   $cloneEmbed[all;$get[messageID];$channelID]
 
-  $wait[30s]
-  $let[messageID;$sendMessage[{newEmbed: {title:Hello!} {description:How are you?}};true]]
+  $wait[15s]
+  $let[messageID;$sendMessage[{newEmbed: {title:Hello!} {description:I'll edit this message in 15 seconds.}};true]]
   `
 });
 ```
