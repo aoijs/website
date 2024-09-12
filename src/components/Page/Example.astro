@@ -1,0 +1,19 @@
+---
+import type { Props } from "@astrojs/starlight/props";
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+---
+
+<Tabs syncKey="examples">
+  <TabItem label="Default">
+    <slot name="default" />
+  </TabItem>
+  <TabItem label="Command Handler">
+    <slot name="handler" />
+  </TabItem>
+  <TabItem label="Example" icon="rocket">
+    <slot name="example">
+        There's no example for this function at this time.
+    </slot>
+  </TabItem>
+</Tabs>

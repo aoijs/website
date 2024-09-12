@@ -5,7 +5,6 @@ type: guide
 author: "Fafa"
 author_url: "https://raw.githubusercontent.com/aoijs/website/main/src/images/contributors/fafa.png"
 id: custom-functions
-og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/14.png
 ---
 
 ### Table of Content
@@ -29,7 +28,7 @@ As you may can tell by the name `aoi.js` custom functions include aoi.js functio
 
 ### Aoi.js Custom Functions
 
-```js
+```js {3-4}
 bot.functionManager.createFunction({
     name: "$function", // custom function name, can be anything.
     params: [ "parameter", ... ], // function parameters, $function[parameter;parameter]
@@ -47,7 +46,7 @@ Pretty simple example, and usage.
 ### Discord.js Custom Functions
 
 ```js
-bot.functionManager.createFunction({
+client.functionManager.createFunction({
     name: "$function", // custom function name, can be anything.
     type: "djs", // custom function type
     code: ... // the code that will be executed
@@ -55,7 +54,7 @@ bot.functionManager.createFunction({
 ```
 
 ```js {10-13}
-bot.functionManager.createFunction({
+client.functionManager.createFunction({
   name: "$function",
   type: "djs",
   code: async d => { // fetching data
@@ -110,36 +109,41 @@ Advanced Custom Functions Examples can be found here, some are useful others are
 ### Aoi.js Custom Functions Examples
 
 -   This section has been removed due to aoi.js custom functions being broken. We will update this section once aoi.js custom functions are fixed.
+-   A fix has been implemented in 6.8.10 which will be released in the near future.
 
 ### Discord.js Custom Functions Examples
 
 In this example we will create a custom function which sends an image as an attachment. The usage is as following:
 
 ```ts
-$sendImage[URL];
+$sendImage[URL;name?];
 ```
 
 ```js
-bot.functionManager.createFunction({
+// we need this for our function!
+const { AttachmentBuilder } = require("discord.js");
+
+client.functionManager.createFunction({
     name: "$sendImage", // our function name
     type: "djs", // notice how we don't need any params? that's the magic of JavaScript
     code: async (d) => {
         const data = d.util.aoiFunc(d);
-        const [URL] = data.inside.splits; // our parameter of the function
+        if (data.err) return d.error(data.err); // we can make this function require arguments, if user doesnt pass one itll throw an error message
+        const [URL, name = "image.png"] = data.inside.splits; // our parameter of the function, image has a default value "image.png" therefore making it optional
 
-        let image = URL;
-        const a = await d.message.channel.send({
-            // send the attachment in the current channel
-            files: [
-                {
-                    attachment: image // set the given URL as attachment
-                }
-            ]
-        });
+        const result = new AttachmentBuilder(
+            type === "buffer"
+                ? Buffer.from(image.addBrackets())
+                : image.addBrackets(),
+            { name: name.addBrackets() }
+        );
 
-        data.result = a; // set the "message" as result, to make aoi.js acknowledge it
+        d.files.push(result); // pushing our file to make aoijs "register it"
+        // we COULD send it directly, but this would break other file related commands!
+
         return {
-            code: d.util.setCode(data)
+            code: d.util.setCode(data),
+            files: d.files
         };
     }
 });

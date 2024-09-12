@@ -10,6 +10,10 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -74,9 +78,10 @@ jobs:
       - name: 🚀 Deploy to Github 
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Wait for site to be deployed
+        run: sleep 5
       - name: 🔎 Update Algolia Crawler 
-        if: 1 == 2
-        uses: algolia/algoliasearch-crawler-github-actions@v1.0.10
+        uses: algolia/algoliasearch-crawler-github-actions@v1.1.0
         id: algolia_crawler
         with:
           crawler-user-id: ${{ secrets.CRAWLER_USER_ID }}
@@ -84,3 +89,4 @@ jobs:
           algolia-app-id: ${{ secrets.ALGOLIA_APP_ID }}
           algolia-api-key: ${{ secrets.ALGOLIA_API_KEY }}
           site-url: "https://aoi.js.org"
+          crawler-name: aoi-js-org

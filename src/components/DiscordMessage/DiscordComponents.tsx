@@ -38,7 +38,7 @@ interface EmbedField {
 interface Button {
   label: string;
   type: string;
-  customId: string;
+  customId?: string;
   emoji?: string;
   "emoji-name"?: string;
   url?: string;
@@ -155,10 +155,6 @@ function DiscordMessagesLight({
   embeds,
   buttons,
 }: DiscordComponentsProps) {
-  const [isLightTheme, setIsLightTheme] = useState(
-    document.documentElement.getAttribute("data-theme") === "light"
-  );
-
   return (
     <div className="not-content">
       <DiscordMessages lightTheme>
