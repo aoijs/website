@@ -9,7 +9,7 @@ id: newApplicationCmd
 ## Usage
 
 ```aoi
-$newApplicationCmd[name]
+$newApplicationCmd[option]
 ```
 
 ## Parameters
@@ -23,7 +23,7 @@ $newApplicationCmd[name]
 | Field             | Type                                                                                              | Description                                                 |
 | ----------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
 | name              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Name of slash commnad.                                      |
-| id                | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of slash commnad.                                        |
+| id                | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of slash command.                                        |
 | description       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Description of slash commnad.                               |
 | version           | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Version of slash command.                                   |
 | options           | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Options of slash command.                                   |

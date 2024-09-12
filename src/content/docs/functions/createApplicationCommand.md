@@ -9,20 +9,21 @@ id: createApplicationCommand
 ## Usage
 
 ```aoi
-$createApplicationCommand[guildID/global;name;description;defaultPermission;allowDm?;type?;options?]
+$createApplicationCommand[type;name;description;permissions;integrationType?;context?;options?]
 ```
 
 ## Parameters
 
-| Field              | Type                                                                                                                                                                                                 | Description                                                                 | Required |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | :------: |
-| guildID/global     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-us/docs/web/javascript/reference/global_objects/number) | Application command type. <br/> 1. **global** <br/> 2. **specific guildID** |   true   |
-| name               | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | Application command name, must be lowercase.                                |   true   |
-| description        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | Application command description.                                            |   true   |
-| defaultPermissions | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)                                                                                                  | If the command should follow the default permissions.                       |   true   |
-| allowDm?           | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)                                                                                                  | Allow Direct Message execution.                                             |   true   |
-| type?              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | The application command type. (slash/user/message)                          |  false   |
-| options?           | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | Application command options.                                                |  false   |
+| Field              | Type                                                                                                                                                                                                 | Description                                                                                                 | Required |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | :------: |
+| type               | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-us/docs/web/javascript/reference/global_objects/number) | Application command type. <br/> 1. **global** <br/> 2. **specific guildID**                                 |   true   |
+| name               | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | Application command name, must be lowercase.                                                                |   true   |
+| description        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | Application command description.                                                                            |   true   |
+| permissions?       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | If the command should be restricted to certain permissions.                                                 |  false   |
+| integrationType?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | The application command integration type. <br/> 1. **user** <br/> 2. **guild**                              |  false   |
+| context?           | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | The application command context. <br/>1. **botdm** <br/> 2. **dm** <br/> 3. **guild**                       |  false   |
+| type?              | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | The application command type. <br/>1. **slash** <br/> 2. **user** <br/> 3. **message**                      |  false   |
+| options?           | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | Application command options.                                                                                |  false   |
 
 ### Application Command Option Type
 
@@ -47,13 +48,24 @@ $createApplicationCommand[guildID/global;name;description;defaultPermission;allo
 > **Check the Slash Command/Interaction guide for more information about slash commands!**
 > You can also use the [Application Command Creator](https://aoi.js.org/tools/slash/) to easily create your own custom application commands for your application.
 
-This will create a slash command without options:
+This will create a guild slash command without options:
 
 ```js
 client.command({
     name: "createApplicationCommand",
     code: `
-  $createApplicationCommand[$guildID/global;example;slash command description!;true;true;slash]`
+  $createApplicationCommand[$guildID/global;example;slash command description!;false;guild;guild;slash]`
 });
 // Will create a slash commands without any user input, you can choose between global/$guildID to create a command globally or only for a specific guild.
+```
+
+This will create a guild slash command with restricted permissions, without options:
+
+```js
+client.command({
+    name: "createApplicationCommand",
+    code: `
+  $createApplicationCommand[$guildID/global;example;slash command description!;managemessages;guild;guild;slash]`
+});
+// Will create a slash commands without any user input but with restricted permissions (managemessages), you can choose between global/$guildID to create a command globally or only for a specific guild.
 ```

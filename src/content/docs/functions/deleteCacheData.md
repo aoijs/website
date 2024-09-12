@@ -1,15 +1,15 @@
 ---
-title: $setCacheData
-description: $setCacheData will modify given cache data.
-id: setCacheData
+title: $deleteCacheData
+description: $deleteCacheData will delete given cache data.
+id: deleteCacheData
 ---
 
-`$setCacheData` will modify given cache data.
+`$setCacheData` will delete given cache data.
 
 ## Usage
 
 ```aoi
-$setCacheData[type;cacheName;cacheKey;cacheValue]
+$deleteCacheData[type;cacheName;cacheKey]
 ```
 
 ## Parameters
@@ -19,7 +19,7 @@ $setCacheData[type;cacheName;cacheKey;cacheValue]
 | type       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Cache type.  |   true   |
 | cacheName  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Cache name.  |   true   |
 | cacheKey   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Cache key.   |   true   |
-| cacheValue | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Cache value. |   true   |
+
 
 ## Cache Types
 

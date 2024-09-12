@@ -20,3 +20,12 @@ $getCacheData[type;name;key;option?]
 | name    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             |   true   |
 | key     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             |   true   |
 | option? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             |  false   |
+
+## Cache Types
+
+| Field         | 
+| --------------| 
+| Group         | 
+| LinkedList    | 
+| PriorityQueue | 
+

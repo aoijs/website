@@ -9,13 +9,14 @@ id: arrayForEach
 ## Usage
 
 ```aoi
-$arrayForEach[name;awaitedCommand;awaitData?]
+$arrayForEach[name;awaitedCommand;awaitData?;endCmd?]
 ```
 
 ## Parameters
 
-| Field          | Type                                                                                              | Description                  | Required |
-| -------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | :------: |
-| name           | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Array name.                  |   true   |
-| awaitedCommand | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Awaited command to executed. |   true   |
-| awaitData?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Awaited Data.                |  false   |
+| Field          | Type                                                                                              | Description                                               | Required |
+| -------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | :------: |
+| name           | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Array name.                                               |   true   |
+| awaitedCommand | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Awaited command to executed.                              |   true   |
+| awaitData?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Awaited Data.                                             |   false  |
+| endCmd?        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Awaited command to executed when array ends.              |   false  |
