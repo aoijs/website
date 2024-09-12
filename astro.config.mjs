@@ -23,7 +23,7 @@ export default defineConfig({
         starlightDocSearch({
           appId: "7NDV3UYBW5",
           indexName: "aoi-js",
-          apiKey: "775caf3aef9ecccc83a7b3948ac1b92f",
+          apiKey: "56086da80cd1e86f4400ac102f0131c1",
         }),
       ],
       title: "aoi.js",
