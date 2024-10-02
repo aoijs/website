@@ -3,29 +3,9 @@ import type { Props } from "@astrojs/starlight/props";
 import { Icon } from "@astrojs/starlight/components";
 import Default from "@astrojs/starlight/components/PageTitle.astro";
 import Version from "../PackageStats/PackageVersion.astro";
-import AvatarGroup from "@atlaskit/avatar-group";
 
 const { data } = Astro.props.entry;
 
-const avatars = [];
-
-if (data.author) {
-  avatars.push({
-    key: data.author,
-    name: data.author,
-    href: `/contributors/#${data.author}`,
-    src: data.author_url,
-  });
-}
-
-if (data.edited_by) {
-  avatars.push({
-    key: data.edited_by,
-    name: data.edited_by,
-    href: `/contributors/#${data.edited_by}`,
-    src: data.edited_by_url,
-  });
-}
 ---
 
 {
@@ -57,20 +37,6 @@ if (data.edited_by) {
         <a href={data.extensionUrl + "/releases"}>
           <Icon size="1rem" name="list-format" /> Changelog
         </a>
-      </div>
-    </div>
-  ) : data.type === "guide" ? (
-    <div class="wrapper">
-      <h1 id="_top">{data.title}</h1>
-      <div class="author-info">
-        <span>Written by</span>
-        <AvatarGroup
-          client:load
-          client:only="react"
-          appearance="stack"
-          data={avatars}
-          borderColor="var(--sl-color-text-accent)"
-        />
       </div>
     </div>
   ) : (
@@ -117,17 +83,6 @@ if (data.edited_by) {
   }
   .integration-metadata svg {
     width: 1.5rem;
-  }
-  .author-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    align-self: vertical;
-    gap: 0.5rem;
-  }
-  .author-info div {
-    display: flex;
-    gap: 0.5rem;
   }
   .image {
     width: 45px;

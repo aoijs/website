@@ -3,8 +3,6 @@ title: Choices
 description: This guide covers the basics about Interaction Command Choices and their functionality, along with everything else you might need to know.
 id: choices
 type: guide
-author: "dodogames"
-author_url: "https://raw.githubusercontent.com/aoijs/website/main/src/images/contributors/dodogames.png"
 tableOfContents: false
 sidebar:
     order: 2
@@ -12,18 +10,18 @@ sidebar:
 
 ## Table of Contents
 
--   [Table of Contents](#table-of-contents)
--   [What are choices?](#what-are-choices)
--   [Getting started](#getting-started)
-    -   [customID vs Replies](#customid-vs-replies)
-        -   [customID](#customid)
-        -   [Replies](#replies)
--   [Setting up choices](#setting-up-choices)
-    -   [customID method](#customid-method)
-    -   [Replies method](#replies-method)
--   [Responding to selected choices](#responding-to-selected-choices)
-    -   [customID method](#customid-method-1)
-    -   [Replies method](#replies-method-1)
+- [Table of Contents](#table-of-contents)
+- [What are choices?](#what-are-choices)
+- [Getting started](#getting-started)
+  - [customID vs Replies](#customid-vs-replies)
+    - [customID](#customid)
+    - [Replies](#replies)
+- [Setting up choices](#setting-up-choices)
+  - [customID method](#customid-method)
+  - [Replies method](#replies-method)
+- [Responding to selected choices](#responding-to-selected-choices)
+  - [customID method](#customid-method-1)
+  - [Replies method](#replies-method-1)
 
 ## What are choices?
 

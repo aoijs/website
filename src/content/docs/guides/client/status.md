@@ -2,8 +2,6 @@
 title: Client Status
 description: Learn how to customize and manage client statuses and presences in your Discord bot.
 type: guide
-author: "Fafa"
-author_url: "https://raw.githubusercontent.com/aoijs/website/main/src/images/contributors/fafa.png"
 id: status
 og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/10.png
 ---

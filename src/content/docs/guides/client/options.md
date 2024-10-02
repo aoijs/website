@@ -2,8 +2,6 @@
 title: Client Options
 description: This page is covering all aoi.js client options and what they do.
 type: guide
-author: "Fafa"
-author_url: "https://raw.githubusercontent.com/aoijs/website/main/src/images/contributors/fafa.png"
 id: options
 og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/7.png
 ---

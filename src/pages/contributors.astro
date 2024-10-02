@@ -4,15 +4,51 @@ import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
 import { Image } from "astro:assets";
 import { Icon } from "@astrojs/starlight/components";
 
-const images = import.meta.glob("/src/images/**/*.{webp,png,gif}");
+async function fetchContributors() {
+  const responses = await Promise.all([
+    fetch("https://api.github.com/repos/aoijs/aoi.js/contributors"),
+    fetch("https://api.github.com/repos/aoijs/website/contributors"),
+    fetch("https://api.github.com/repos/aoijs/aoi.panel/contributors"),
+    fetch("https://api.github.com/repos/aoijs/aoi.music/contributors"),
+  ]);
 
-/* Dynamically import images
- * https://docs.astro.build/en/recipes/dynamically-importing-images/
-*/
-async function getImageSrc(e: string) {
-  const imageInfo: any = images[e]();
-  return imageInfo;
+  const contributorsArray = await Promise.all(responses.map(response => {
+    if (!response.ok) {
+      console.error(`Error fetching contributors: ${response.statusText}`);
+      return [];
+    }
+    return response.json();
+  }));
+
+  return contributorsArray.flat();
 }
+
+const allContributors = await fetchContributors();
+let contributors = [];
+if (Array.isArray(allContributors)) {
+  contributors = allContributors
+    .filter((user: any) => !user.bot)
+    .sort((a: any, b: any) => b.contributions - a.contributions);
+
+  const map = new Map();
+  for (const contributor of contributors) {
+    map.set(contributor.login, contributor);
+  }
+  contributors = Array.from(map.values());
+
+  const developers = [
+    "Leref",
+    "USERSATOSHI",
+    "Faf4a",
+    "supremesupreme",
+    "Bumblebee-3",
+  ];
+
+  contributors.map((user: any) => {
+    user.role = developers.includes(user.login) ? "Maintainer" : "Contributor";
+  });
+}
+
 ---
 
 <StarlightPage
@@ -25,214 +61,52 @@ async function getImageSrc(e: string) {
 >
   <div class="contributors">
     {
-      [
-        {
-          name: "Leref",
-          discord: "@leref",
-          role: "Creator",
-          color: "#ff0007",
-          avatar: getImageSrc("/src/images/contributors/leref.png"),
-          link: {
-            url: "https://github.com/leref",
-            label: "Github Profile",
-            type: "github",
-          },
-        },
-        {
-          name: "USERSATOSHI",
-          discord: "@usersatoshi",
-          role: "Core Developer",
-          color: "#8f00ee",
-          avatar: getImageSrc("/src/images/contributors/USERSATOSHI.png"),
-          link: {
-            url: "https://github.com/usersatoshi",
-            label: "Github Profile",
-            type: "github",
-          },
-        },
-        {
-          name: "Fafa",
-          discord: "@faf4a",
-          role: "Core Developer",
-          color: "#8f00ee",
-          avatar: getImageSrc("/src/images/contributors/fafa.png"),
-          link: {
-            url: "https://github.com/faf4a",
-            label: "Github Profile",
-            type: "github",
-          },
-        },
-        {
-          name: "Supreme",
-          discord: "@supremesupreme",
-          role: "Core Developer",
-          color: "#8f00ee",
-          avatar: getImageSrc("/src/images/contributors/supreme.gif"),
-          link: {
-            url: "https://github.com/berticulousnert",
-            label: "Github Profile",
-            type: "github",
-          },
-        },
-        {
-          name: "Blur",
-          discord: "@bumblebee_3",
-          role: "Extension Developer",
-          color: "#ffa5ea",
-          avatar: getImageSrc("/src/images/contributors/blur.png"),
-        },
-        {
-          name: "Wiltark",
-          discord: "@wiltark",
-          role: "Extension Developer",
-          color: "#ffa5ea",
-          avatar: getImageSrc("/src/images/contributors/wiltark.png"),
-          link: {
-            url: "https://github.com/wiltark",
-            label: "Github Profile",
-            type: "github",
-          },
-        },
-        {
-          name: "AstrooKai",
-          discord: "@astrookai",
-          role: "Docs Manager",
-          color: "#3498db",
-          avatar: getImageSrc("/src/images/contributors/astrookai.png"),
-          link: {
-            url: "https://github.com/AstrooKai",
-            label: "Github Profile",
-            type: "github",
-          },
-        },
-        {
-          name: "b3lla.x",
-          discord: "@b3lla.x",
-          role: "Artist",
-          color: "#e8d0cc",
-          avatar: getImageSrc("/src/images/contributors/snow.png"),
-          link: {
-            url: "https://x.com/snowtealatte",
-            label: "x.com",
-            type: "x.com",
-          },
-        },
-        {
-          name: "dodogames",
-          discord: "@dodogames",
-          role: "Community Manager",
-          color: "#e71d99",
-          avatar: getImageSrc("/src/images/contributors/dodogames.png"),
-          link: {
-            url: "https://github.com/DodoGames7",
-            label: "Github Profile",
-            type: "github",
-          },
-        },
-        {
-          name: "ahoemi.official",
-          discord: "@ahoemi.official",
-          role: "Contributor",
-          color: "#c5fff8",
-          avatar: getImageSrc("/src/images/contributors/ahoemi.png"),
-          link: {
-            url: "https://discord.com/users/715852000096419900",
-            label: "Discord Profile",
-            type: "discord",
-          },
-        },
-        {
-          name: "ayaka068198",
-          discord: "@ayaka068198",
-          role: "Contributor",
-          color: "#c5fff8",
-          avatar: getImageSrc("/src/images/contributors/ayaka068198.webp"),
-          link: {
-            url: "https://github.com/Ayaka2356",
-            label: "Github Profile",
-            type: "github",
-          },
-        },
-        {
-          name: "Kino",
-          discord: "@relevantzone",
-          role: "Contributor",
-          color: "#c5fff8",
-          avatar: getImageSrc("/src/images/contributors/relevantzone.png"),
-        },
-        {
-          name: "NanotechPikachu",
-          discord: "@nanotechpikachu",
-          role: "Contributor",
-          color: "#c5fff8",
-          avatar: getImageSrc("/src/images/contributors/nanotechpikachu.png"),
-          link: {
-            url: "https://github.com/NanotechPikachu",
-            label: "Github Profile",
-            type: "github",
-          },
-        },
-        {
-          name: "vishvaas",
-          discord: "@vishvaas",
-          role: "Contributor",
-          color: "#c5fff8",
-          avatar: getImageSrc("/src/images/contributors/vishvaas.png"),
-        },
-        {
-          name: "lordduck",
-          discord: "@lordex.js",
-          role: "Contributor",
-          color: "#c5fff8",
-          avatar: getImageSrc("/src/images/contributors/lordexjs.webp"),
-        }
-      ].map((user) => (
-        <div class="contributor" id={user.name}>
+      contributors.map((user: any) => (
+        <div class="contributor" id={user.login}>
           <Image
-            draggable="false"
-            src={user.avatar}
+            src={user.avatar_url}
             class="avatar"
             alt="Contributor Avatar"
             loading="eager"
             decoding="async"
+            width={82}
+            height={82}
           />
           <div class="info">
             <div class="wrapper">
-              <p class="name">{user.name}</p>
-              <p class="discord">{user.discord}</p>
+              <p class="name">{user.login}</p>
+              <p class="discord">{user.login}</p>
               <div class="role-wrapper">
                 <span
                   class="role"
-                  style={`color: ${user.role === "Contributor" || user.role === "Artist" || user.role === "Extension Developer" ? "black" : "white"}; background-color: ${user.color};`}
+                  style={{
+                    backgroundColor:
+                      user.role === "Maintainer" ? "#8f00ee" : "#c5fff8",
+                  }}
                 >
                   @ {user.role}
                 </span>
-                {user.link && (
-                  <a href={user.link.url} target="_blank" class="link-button">
-                    <Icon
-                      class="not-content"
-                      name={
-                        user.link.type === "twitter" || user.link.type === "x.com"
-                          ? "x.com"
-                          : user.link.type === "github"
-                            ? "github"
-                            : user.link.type === "discord"
-                              ? "discord"
-                              : "external"
-                      }
-                    />
-                    {user.link.label} {user.link.label === "x.com" ? "(formally known as Twitter)" : ""}
-                  </a>
-                )}
+                <a
+                  href={`https://github.com/${user.login}`}
+                  target="_blank"
+                  class="link-button"
+                >
+                  <Icon class="not-content" name="github" />
+                  Github Profile
+                </a>
               </div>
             </div>
           </div>
         </div>
-      ))
+      )) ?? "Failed to get the contributors, sorry."
     }
   </div>
   <div class="contribute-footer">
-    <p>All art belongs to <a href="#b3lla.x">our artist, <b>b3lla.x</b> (also known as Snow)</a>.</p>
+    <p>
+      All art belongs to <a href="#b3lla.x"
+        >our artist, <b>b3lla.x</b> (also known as Snow)</a
+      >.
+    </p>
     <p>Want to be on this page as well?</p>
     <p>
       Contribute to <a href="https://github.com/aoijs/aoi.js" target="_blank"
@@ -241,21 +115,10 @@ async function getImageSrc(e: string) {
         >documentation</a
       >!
     </p>
-    <div class="footer-icon">
-      <Image
-        draggable="false"
-        src={getImageSrc("/src/images/icon_new.webp")}
-        alt="aoi.js Mascot"
-        loading="eager"
-        decoding="async"
-        data-zoom-off
-      />
-    </div>
   </div>
 </StarlightPage>
 
 <style is:global>
-
   :target {
     transition: all 0.3s ease-in;
     filter: drop-shadow(0 0 7rem var(--sl-color-accent-high));
@@ -396,12 +259,5 @@ async function getImageSrc(e: string) {
   .contribute-footer {
     margin-top: 10rem !important;
     text-align: center;
-  }
-
-  .footer-icon {
-    margin: 0 auto;
-    cursor: default;
-    width: 100px;
-    height: auto;
   }
 </style>

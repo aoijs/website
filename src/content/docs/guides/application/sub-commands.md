@@ -2,8 +2,6 @@
 title: Subcommands
 description: This page covers everything about Subcommands of Application Commands.
 type: guide
-author: "Fafa"
-author_url: "https://raw.githubusercontent.com/aoijs/website/main/src/images/contributors/fafa.png"
 id: sub-commands
 sidebar:
     order: 3
@@ -13,11 +11,12 @@ sidebar:
 
 ## Table of Contents
 
--   [Sub commands](#sub-commands)
--   [Creating Application Commands](#creating-application-commands)
-    -   [Examples of creating Application Commands with sub commands](#examples-of-creating-application-commands-with-sub-commands)
-        -   [Creating Sub Commands with options](#creating-sub-commands-with-options)
--   [Replying to Sub commands](#replying-to-sub-commands)
+- [Table of Contents](#table-of-contents)
+- [Sub commands](#sub-commands)
+- [Creating Application Commands](#creating-application-commands)
+  - [Examples of creating Application Commands with sub commands](#examples-of-creating-application-commands-with-sub-commands)
+    - [Creating Sub Commands with options](#creating-sub-commands-with-options)
+- [Replying to Sub commands](#replying-to-sub-commands)
 
 ---
 

@@ -22,7 +22,6 @@
     "@astrojs/sitemap": "^3.1.6",
     "@astrojs/starlight": "^0.27.1",
     "@astrojs/starlight-docsearch": "^0.1.1",
-    "@atlaskit/avatar": "^21.11.0",
     "@atlaskit/avatar-group": "^9.9.0",
     "@atlaskit/progress-tracker": "^8.7.3",
     "@atlaskit/tooltip": "^18.1.3",
