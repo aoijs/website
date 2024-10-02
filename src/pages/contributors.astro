@@ -5,54 +5,21 @@ import { Image } from "astro:assets";
 import { Icon } from "@astrojs/starlight/components";
 
 async function fetchContributors() {
-  const responses = await Promise.all([
-    fetch("https://api.github.com/repos/aoijs/aoi.js/contributors"),
-    fetch("https://api.github.com/repos/aoijs/website/contributors"),
-    fetch("https://api.github.com/repos/aoijs/aoi.panel/contributors"),
-  ]);
-
-  const contributorsArray = await Promise.all(responses.map(response => {
-    if (!response.ok) {
-      console.error(`Error fetching contributors: ${response.statusText}`);
-      return [];
-    }
-    return response.json();
-  }));
-
-  return contributorsArray.flat();
+  const response = fetch("https://api.github.com/repos/aoijs/aoi.js/contributors").then(res => res.json());
+  return response;
 }
 
 const allContributors = await fetchContributors();
 let contributors = [];
-if (Array.isArray(allContributors)) {
-  contributors = allContributors
-    .filter((user: any) => !user.bot)
-    .sort((a: any, b: any) => b.contributions - a.contributions);
 
-  console.log("contribs:", contributors);
-  contributors.reduce((accumulator, current) => {
-      const x = accumulator.find(item => item.id === current.id);
-      if (!x) {
-          accumulator.push(current);
-          console.log(current);
-      }
-      return accumulator;
-  }, []);
-  console.log("contribs deduped:", contributors);
+contributors = allContributors.filter((user: any) => !user.bot).sort((a: any, b: any) => b.contributions - a.contributions);
 
-  const developers = [
-    "Leref",
-    "USERSATOSHI",
-    "Faf4a",
-    "supremesupreme",
-    "Bumblebee-3",
-  ];
+const developers = ["Leref", "USERSATOSHI", "Faf4a", "supremesupreme"];
 
-  contributors.map((user: any) => {
-    user.role = developers.includes(user.login) ? "Maintainer" : "Contributor";
-  });
-}
-
+contributors.map((user: any) => {
+  user.role = developers.includes(user.login) ? "Maintainer" : "Contributor";
+  console.log(user.login, user.role);
+});
 ---
 
 <StarlightPage
