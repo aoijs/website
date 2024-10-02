@@ -9,7 +9,6 @@ async function fetchContributors() {
     fetch("https://api.github.com/repos/aoijs/aoi.js/contributors"),
     fetch("https://api.github.com/repos/aoijs/website/contributors"),
     fetch("https://api.github.com/repos/aoijs/aoi.panel/contributors"),
-    fetch("https://api.github.com/repos/aoijs/aoi.music/contributors"),
   ]);
 
   const contributorsArray = await Promise.all(responses.map(response => {
@@ -30,6 +29,7 @@ if (Array.isArray(allContributors)) {
     .filter((user: any) => !user.bot)
     .sort((a: any, b: any) => b.contributions - a.contributions);
 
+  console.log("contribs:", contributors);
   const map = new Map();
   for (const contributor of contributors) {
     map.set(contributor.login, contributor);
