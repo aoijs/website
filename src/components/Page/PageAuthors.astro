@@ -5,6 +5,10 @@ interface Props {
 }
 const { file } = Astro.props;
 
+let commitAuthors = [];
+
+if (!file.includes("extension")) {
+
 // Build an API URL that gets the 100 most recent commits for the specified file.
 // See https://docs.github.com/en/rest/commits/commits?apiVersion=2022-11-28#list-commits
 const url = new URL(`https://api.github.com/repos/aoijs/website/commits`);
@@ -20,19 +24,23 @@ const commits = await fetch(url, {
 }).then((res) => res.json());
 
 // @ts-ignore
-function removeDuplicates(commits) {
-  if (!commits) return [];
+// remove duplicates
+
+const removeDuplicates = (arr) => {
+  if (!arr.length) return [];
+  const uniqueAuthors = [];
   const map = new Map();
-  for (const commit of commits) {
-    const author = commit.commit.author;
-    if (author) {
-      map.set(author.email, { login: commit.author.login, id: commit.author.id });
+  for (const commit of arr) {
+    if (!map.has(commit.author.id)) {
+      map.set(commit.author.id, { login: commit.author.login, id: commit.author.id });
+      uniqueAuthors.push(commit.author);
     }
   }
-  return Array.from(map.values());
-}
+  return uniqueAuthors;
+};
 
-const uniqueAuthors = removeDuplicates(commits);
+commitAuthors = removeDuplicates(commits);
+}
 ---
 
 {
@@ -41,11 +49,11 @@ const uniqueAuthors = removeDuplicates(commits);
  */
 }
 {
-  uniqueAuthors.length > 0 && (
+  commitAuthors.length > 0 && (
     <div class="page-authors">
       <p>Page authors</p>
       <ul class="smol-avatar-list not-content">
-        {uniqueAuthors.map(({ login, id }) => (
+        {commitAuthors.map(({ login, id }) => (
           <li>
             <a href={`https://github.com/${login}`}>
               <img
@@ -62,7 +70,7 @@ const uniqueAuthors = removeDuplicates(commits);
   )
 }
 
-<style define:vars={{ "avatar-count": uniqueAuthors.length }}>
+<style define:vars={{ "avatar-count": commitAuthors.length }}>
   .page-authors {
     display: flex;
     flex-direction: column;

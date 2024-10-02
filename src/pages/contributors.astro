@@ -5,21 +5,50 @@ import { Image } from "astro:assets";
 import { Icon } from "@astrojs/starlight/components";
 
 async function fetchContributors() {
-  const response = fetch("https://api.github.com/repos/aoijs/aoi.js/contributors").then(res => res.json());
-  return response;
+  const responses = await Promise.all([
+    fetch("https://api.github.com/repos/aoijs/aoi.js/contributors"),
+    fetch("https://api.github.com/repos/aoijs/website/contributors"),
+    fetch("https://api.github.com/repos/aoijs/aoi.panel/contributors"),
+    fetch("https://api.github.com/repos/aoijs/aoi.music/contributors"),
+  ]);
+
+  const contributorsArray = await Promise.all(responses.map(response => {
+    if (!response.ok) {
+      console.error(`Error fetching contributors: ${response.statusText}`);
+      return [];
+    }
+    return response.json();
+  }));
+
+  return contributorsArray.flat();
 }
 
 const allContributors = await fetchContributors();
 let contributors = [];
+if (Array.isArray(allContributors)) {
+  contributors = allContributors
+    .filter((user: any) => !user.bot)
+    .sort((a: any, b: any) => b.contributions - a.contributions);
 
-contributors = allContributors.filter((user: any) => !user.bot).sort((a: any, b: any) => b.contributions - a.contributions);
+  const map = new Map();
+  for (const contributor of contributors) {
+    map.set(contributor.login, contributor);
+  }
+  contributors = Array.from(map.values());
 
-const developers = ["Leref", "USERSATOSHI", "Faf4a", "supremesupreme"];
+  const developers = [
+    "Leref",
+    "USERSATOSHI",
+    "Faf4a",
+    "supremesupreme",
+    "Bumblebee-3",
+  ];
 
-contributors.map((user: any) => {
-  user.role = developers.includes(user.login) ? "Maintainer" : "Contributor";
-  console.log(user.login, user.role);
-});
+  contributors.map((user: any) => {
+    user.role = developers.includes(user.login) ? "Maintainer" : "Contributor";
+  });
+}
+
 ---
 
 <StarlightPage
