@@ -30,11 +30,15 @@ if (Array.isArray(allContributors)) {
     .sort((a: any, b: any) => b.contributions - a.contributions);
 
   console.log("contribs:", contributors);
-  const map = new Map();
-  for (const contributor of contributors) {
-    map.set(contributor.login, contributor);
-  }
-  contributors = Array.from(map.values());
+  contributors.reduce((accumulator, current) => {
+      const x = accumulator.find(item => item.id === current.id);
+      if (!x) {
+          accumulator.push(current);
+          console.log(current);
+      }
+      return accumulator;
+  }, []);
+  console.log("contribs deduped:", contributors);
 
   const developers = [
     "Leref",
