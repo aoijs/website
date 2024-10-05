@@ -2,8 +2,6 @@
 title: Autocomplete
 description: This page covers everything about the autocomplete property of Application Commands.
 type: guide
-author: "Fafa"
-author_url: "https://raw.githubusercontent.com/aoijs/website/main/src/images/contributors/fafa.png"
 id: auto-complete
 sidebar:
     order: 5

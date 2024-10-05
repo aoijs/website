@@ -3,10 +3,6 @@ title: Interaction Commands
 description: This guide covers the basics about Interaction Commands and their functionality, along with everything else you might need to know.
 id: commands
 type: guide
-author: "dodogames"
-author_url: "https://raw.githubusercontent.com/aoijs/website/main/src/images/contributors/dodogames.png"
-edited_by: "Fafa"
-edited_by_url: "https://raw.githubusercontent.com/aoijs/website/main/src/images/contributors/fafa.png"
 tableOfContents: false
 sidebar:
     order: 1
@@ -14,25 +10,25 @@ sidebar:
 
 ### Table of Contents
 
--   [Introduction](#introduction)
--   [Notes](#notes)
--   [Creating the slash command](#creating-the-slash-command)
--   [Deleting the slash command](#deleting-the-slash-command)
--   [Responding to slash commands](#responding-to-slash-commands)
--   [Creating options](#creating-options)
--   [Optional options](#optional-options)
-    -   [Note](#note)
--   [DM Support](#dm-support)
-    -   [Note](#note-1)
-    -   [Configuring DM Support](#configuring-dm-support)
--   [Frequently asked questions](#frequently-asked-questions)
-    -   [I have created a slash command but Discord does not show it for me](#i-have-created-a-slash-command-but-discord-does-not-show-it-for-me)
-    -   [Is `$createApplicationCommand` associated with `onInteractionCreate`?](#is-createapplicationcommand-associated-with-oninteractioncreate)
-    -   [How do I make the slash option at user type return the author id if there's no one selected?](#how-do-i-make-the-slash-option-at-user-type-return-the-author-id-if-theres-no-one-selected)
-    -   [Can I have two slash commands under the same name in global (across all guilds) and private (limited to one guild)?](#can-i-have-two-slash-commands-under-the-same-name-in-global-across-all-guilds-and-private-limited-to-one-guild)
-    -   [What if I wanted to create a slash command under the same name?](#what-if-i-wanted-to-create-a-slash-command-under-the-same-name)
-    -   [How to create a slash command without using any command to execute createApplicationCommand function?](#how-to-create-a-slash-command-without-using-any-command-to-execute-createapplicationcommand-function)
-    -   [What list of slash option types can i use?](#what-list-of-slash-option-types-can-i-use)
+- [Introduction](#introduction)
+- [Notes](#notes)
+- [Creating the slash command](#creating-the-slash-command)
+- [Deleting the slash command](#deleting-the-slash-command)
+- [Responding to slash commands](#responding-to-slash-commands)
+- [Creating options](#creating-options)
+- [Optional options](#optional-options)
+  - [Note](#note)
+- [DM Support](#dm-support)
+    - [Note](#note-1)
+    - [Configuring DM Support](#configuring-dm-support)
+- [Frequently asked questions](#frequently-asked-questions)
+    - [I have created a slash command but Discord does not show it for me](#i-have-created-a-slash-command-but-discord-does-not-show-it-for-me)
+    - [Is `$createApplicationCommand` associated with `onInteractionCreate`?](#is-createapplicationcommand-associated-with-oninteractioncreate)
+    - [How do I make the slash option at user type return the author id if there's no one selected?](#how-do-i-make-the-slash-option-at-user-type-return-the-author-id-if-theres-no-one-selected)
+    - [Can I have two slash commands under the same name in global (across all guilds) and private (limited to one guild)?](#can-i-have-two-slash-commands-under-the-same-name-in-global-across-all-guilds-and-private-limited-to-one-guild)
+    - [What if I wanted to create a slash command under the same name?](#what-if-i-wanted-to-create-a-slash-command-under-the-same-name)
+    - [How to create a slash command without using any command to execute createApplicationCommand function?](#how-to-create-a-slash-command-without-using-any-command-to-execute-createapplicationcommand-function)
+    - [What list of slash option types can i use?](#what-list-of-slash-option-types-can-i-use)
 
 ---
 

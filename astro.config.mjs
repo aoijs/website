@@ -44,9 +44,28 @@ export default defineConfig({
         PageTitle: "./src/components/Page/PageTitle.astro",
         PageSidebar: "./src/components/Page/PageSidebar.astro",
         Sidebar: "./src/components/Page/Sidebar.astro",
+        Pagination: './src/components/Page/Pagination.astro',
       },
       pagefind: false,
       head: [
+        // Google Analytics, Anonymized (for the user)
+        {
+          tag: "script",
+          attrs: {
+            async: true,
+            src: "https://www.googletagmanager.com/gtag/js?id=G-GMH27HJZGY",
+          },
+        },
+        {
+          tag: "script",
+          content: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-GMH27HJZGY');
+          `,
+        },
         {
           tag: "meta",
           attrs: {
