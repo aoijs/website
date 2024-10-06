@@ -28,7 +28,7 @@ This will check if the provided user is subscribed to [premium](https://discord.
 client.command({
     name: "hasPremium",
     code: `
-   $hasPremium[123456789;$userID;user] 
+   $hasPremium[123456789;$authorID;user] 
    $comment[Example value of SKU ID]
   `
 });

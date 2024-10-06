@@ -4,7 +4,7 @@ description: $consume marks the provided item as used, making it unusable until 
 id: consume
 ---
 
-`$consume` marks the provided item as used, making it unusable until repurchased.
+`$consume` marks the provided item as consumed, making it unusable until repurchased.
 
 ## Usage
 
@@ -21,7 +21,7 @@ $consume[consumableId]
 
 ## Example(s)
 
-This will mark the provided `consumableId` as used.
+This will mark the provided `consumableId` as consumed.
 
 ```javascript
 client.command({

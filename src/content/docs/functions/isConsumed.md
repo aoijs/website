@@ -1,10 +1,10 @@
 ---
 title: $isConsumed
-description: $consume marks the provided item as used, making it unusable until repurchased.
-id: consume
+description: $consume will check if the specified consumable has been consumed
+id: isConsume
 ---
 
-`$isConsumed` marks the provided item as used, making it unusable until repurchased.
+`$isConsumed` will check if the specified consumable has been consumed.
 
 ## Usage
 
@@ -28,7 +28,7 @@ This will check if the provided `consumableId` has been marked as used for this 
 client.command({
     name: "isConsumed",
     code: `
-   $isConsumed[12345678;$userID]
+   $isConsumed[12345678;$authorID]
    $comment[Example value of consumableId]
   `
 });

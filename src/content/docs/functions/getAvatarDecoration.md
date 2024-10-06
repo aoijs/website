@@ -1,7 +1,7 @@
 ---
-title: $consume
+title: $getAvatarDecoration
 description: $getAvatarDecoration will return an static image of the provided users' avatar decoration
-id: consume
+id: $getAvatarDecoration
 ---
 
 `$getAvatarDecoration` will return an static image of the provided users' avatar decoration.
