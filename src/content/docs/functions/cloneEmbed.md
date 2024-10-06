@@ -23,7 +23,7 @@ $cloneEmbed[index;messageID;channelID?]
 
 ## Example(s)
 
-This will clone the previous embed and edit the title after 30 seconds:
+This will clone the previous embed and edit the title after 15 seconds:
 
 ```javascript
 client.command({
