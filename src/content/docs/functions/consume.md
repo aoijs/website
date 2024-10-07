@@ -1,6 +1,6 @@
 ---
 title: $consume
-description: $consume marks the provided item as used, making it unusable until repurchased
+description: $consume marks the provided item as consumed, making it unusable until repurchased
 id: consume
 ---
 

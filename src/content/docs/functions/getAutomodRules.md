@@ -18,7 +18,7 @@ $getAutomodRules[guildID;option?;sep?]
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | :------: |
 | guildID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)                                                                                                    | The ID of the guild where the automod rules exists in. |   true   |
 | option? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | The type of the function response.                     |  false   |
-| option? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | The separator between each automod rule.               |  false   |
+| sep?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | The separator between each automod rule.               |  false   |
 
 ## Example(s)
 
@@ -26,7 +26,7 @@ $getAutomodRules[guildID;option?;sep?]
 client.command({
     name: "getAutomodRules",
     code: `
-  $getAutomodRules[$guildID;{index}. {name}]
+    $getAutomodRules[$guildID;{name};, ]
   `
 });
 ```

@@ -1,20 +1,20 @@
 ---
 title: $newEntitlementData
-description: $newEntitlementData will return the old entitlement data of the provided SKU.
+description: $newEntitlementData will return the new entitlement data
 id: newEntitlementData
 ---
 
-`$newEntitlementData` will return the new entitlement data of the provided SKU.
+`$newEntitlementData` will return the new entitlement data.
 
 ## Usage
 
 ```aoi
-$newEntitlementData[skuID]
+$newEntitlementData[option]
 ```
 
 ## Parameters
 
 | Field         | Type                                                                                                | Description                                                                    | Required |
 | ------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | :------: |
-| skuID         | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | Your generated [SKU ID](https://discord.com/developers/docs/resources/sku).    |   true   |
+| option        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The data to return.                                                            |   true   |
 
