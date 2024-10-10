@@ -18,7 +18,7 @@ $editAppEmoji[name;newName;returnEmoji?]
 | -------------- | --------------------------------------------------------------------------------------------------- | --------------------------- | :------: |
 | name           | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The name of the emoji.      |   true   |
 | newName        | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The new name of the emoji.  |   true   |
-| returnEmoji?   | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Reuturns the emoji.         |   false  |
+| returnEmoji?   | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Returns the emoji.          |   false  |
 
 ## Example(s)
 
