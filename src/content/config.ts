@@ -1,6 +1,6 @@
 import { defineCollection, z } from "astro:content";
-import { docsSchema } from "@astrojs/starlight/schema";
-// import { docsVersionsSchema } from "starlight-versions/schema";
+import { docsSchema, i18nSchema } from "@astrojs/starlight/schema";
+import { docSearchI18nSchema } from "@astrojs/starlight-docsearch/schema";
 
 export const collections = {
   docs: defineCollection({
@@ -13,5 +13,8 @@ export const collections = {
       }),
     }),
   }),
-  // versions: defineCollection({ type: "data", schema: docsVersionsSchema() }),
+  i18n: defineCollection({
+    type: "data",
+    schema: i18nSchema({ extend: docSearchI18nSchema() }),
+  }),
 };

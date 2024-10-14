@@ -1,0 +1,61 @@
+---
+title: onInteractionCreate
+description: This event triggers whenever a interaction is created.
+id: interaction
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Functions">
+
+This event has too many functions associated with it, you can check them out below:
+
+[Learn More about Interaction Commands here!](/guides/application/commands/)
+
+</Aside>
+
+<Aside type="danger">
+
+### You should not use this!
+
+You shouldn't use this "raw" event, aoi.js has extended support for this event for component and application interactions.
+
+- Use the `type` & `prototype` properties in the command instead!
+
+[Learn More about Interaction Commands here!](/guides/application/commands/)
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.interactionCommand({
+    name: "Interaction Command",
+    prototype: "slash",
+    code: `
+        $interactionReply[Hello!]
+    `
+});
+```
+
+</div>
+
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Interaction Command",
+    type: "interaction",
+    prototype: "slash",
+    code: `
+        $interactionReply[Hello!]
+    `
+};
+```
+
+</div>
+
+</Example>

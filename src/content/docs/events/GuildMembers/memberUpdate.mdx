@@ -1,0 +1,55 @@
+---
+title: onMemberUpdate
+description: This event triggers whenever a member is updated.
+id: memberUpdate
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `GuildMembers` intent!
+
+</Aside>
+
+<Aside title="Functions" type="tip">
+
+This event has a function to retrieve data:
+
+[$newMember[option]](/functions/newmember)
+
+[$oldMember[option]](/functions/oldmember)
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.memberUpdateCommand({
+    name: "Member Update",
+    channel: "$channelId",
+    code: `
+        $log[$oldMember[id]'s data changed!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Member Update",
+    channel: "$channelId",
+    type: "memberUpdate",
+    code: `
+    $log[$oldMember[id]'s data changed!]
+    `
+};
+```
+
+</div>
+</Example>

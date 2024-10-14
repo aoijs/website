@@ -1,0 +1,45 @@
+---
+title: onThreadListSync
+description: This event triggers whenever a guild thread's member list is synced.
+id: threadListSync
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `Guilds` intent!
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.threadListSyncCommand({
+    name: "Thread List Sync",
+    channel: "$channelId",
+    code: `
+        $log[$channelId just synchronized the members list]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Thread List Sync",
+    channel: "$channelId",
+    type: "threadListSync",
+    code: `
+        $log[$channelId just synchronized the members list]
+    `
+};
+```
+
+</div>
+</Example>

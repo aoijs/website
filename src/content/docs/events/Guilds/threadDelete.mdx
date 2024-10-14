@@ -1,0 +1,55 @@
+---
+title: onThreadDelete
+description: This event triggers whenever a guild thread is deleted.
+id: threadDelete
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `Guilds` intent!
+
+</Aside>
+
+<Aside title="Functions" type="tip">
+
+This event has a function to retrieve data:
+
+[$newChannel[option]](/functions/newchannel)
+
+[$oldChannel[option]](/functions/oldchannel)
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.threadDeleteCommand({
+    name: "Thread Delete",
+    channel: "$channelId",
+    code: `
+        $log[$authorId just deleted a thread called: $oldChannel[name]]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Thread Delete",
+    channel: "$channelId",
+    type: "threadDelete",
+    code: `
+        $log[$authorId just deleted a thread called: $oldChannel[name]]
+    `
+};
+```
+
+</div>
+</Example>

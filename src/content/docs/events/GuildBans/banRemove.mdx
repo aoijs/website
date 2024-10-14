@@ -1,0 +1,45 @@
+---
+title: onBanRemove
+description: This event triggers whenever a guild member is unbanned.
+id: banRemove
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `GuildBans` intent!
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.banRemoveCommand({
+    name: "Guild Bans",
+    channel: "$channelId",
+    code: `
+        $log[A member was unbanned!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Guild Bans",
+    channel: "$channelId",
+    type: "banRemove",
+    code: `
+        $log[A member was unbanned!]
+    `
+};
+```
+
+</div>
+</Example>

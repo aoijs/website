@@ -1,0 +1,53 @@
+---
+title: onPinsUpdate
+description: This event triggers whenever the pins of a guild channel are updated.
+id: pinsUpdate
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `Guilds` intent!
+
+</Aside>
+
+<Aside title="Functions" type="tip">
+
+This event has a function to retrieve data:
+
+[$pinsUpdate[option]](/functions/pinsupdate)
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.pinsUpdateCommand({
+    name: "Channel Pins Update",
+    channel: "$channelId",
+    code: `
+        $log[$authorId just updated the channel pins!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Channel Pins Update",
+    channel: "$channelId",
+    type: "pinsUpdate",
+    code: `
+        $log[$authorId just updated the channel pins!]
+    `
+};
+```
+
+</div>
+</Example>

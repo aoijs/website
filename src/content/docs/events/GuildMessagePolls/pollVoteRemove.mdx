@@ -1,0 +1,45 @@
+---
+title: onPollVoteRemove
+description: This event triggers whenever a vote is removed from a poll.
+id: pollVoteRemove
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `GuildMessagePolls` intent!
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.pollVoteRemoveCommand({
+    name: "Poll Vote Remove",
+    channel: "$channelId",
+    code: `
+        $log[$messageId just lost a vote from $authorId]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Poll Vote Remove",
+    channel: "$channelId",
+    type: "pollVoteRemove",
+    code: `
+        $log[$messageId just lost a vote from $authorId]
+    `
+};
+```
+
+</div>
+</Example>

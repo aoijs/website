@@ -1,86 +1,234 @@
 ---
-import type { Props } from "@astrojs/starlight/props";
-
+import type { Props as StarlightProps } from "@astrojs/starlight/props";
 import TableOfContents from "@astrojs/starlight/components/TableOfContents.astro";
 import MobileTableOfContents from "@astrojs/starlight/components/MobileTableOfContents.astro";
 import CommitStats from "../PackageStats/CommitStats.jsx";
 import { Icon } from "@astrojs/starlight/components";
+interface Props extends StarlightProps {
+  repo: string;
+  file: string;
+}
 
+const gh_token = import.meta.env?.GHTOKEN as string;
+const environment = import.meta.env?.PUBLIC_ENV as string;
 const page = Astro.props.entry?.id.split("/");
-const isValid = !["music", "invite"].includes(page[1]) && ["functions"].includes(page[0]);
+const isValid =
+  !["music", "invite"].includes(page[1]) && ["functions"].includes(page[0]);
 
-let githubURL = page.join("/").replace(".md", ".js");
-githubURL = `https://github.com/aoijs/aoi.js/blob/v6/src/${githubURL}`;
+const documentationGithubURL = `https://github.com/aoijs/website/blame/main/src/content/docs/${page.join("/")}`;
+const sourceCodeURL = `https://github.com/aoijs/aoi.js/blob/v6/src/${page.join("/").replace(".md", ".js")}`;
+
+let commitAuthors = [];
+
+if (!page.includes("extension")) {
+  // Build an API URL that gets the 100 most recent commits for the specified file.
+  // See https://docs.github.com/en/rest/commits/commits?apiVersion=2022-11-28#list-commits
+  const url = new URL(`https://api.github.com/repos/aoijs/website/commits`);
+  url.searchParams.set("path", `src/content/docs/${page.join("/")}`);
+  // @ts-ignore
+  url.searchParams.set("per_page", 100);
+
+  const headers = {
+      Accept: "application/vnd.github+json",
+      "User-Agent": "starlight-contributors/1.0",
+  }
+
+  // @ts-ignore -- not going to type this
+  if (environment == "production") headers.Authorization = `token ${gh_token}`;
+
+  const commits = await fetch(url, {
+    headers
+  }).then((res) => res.json());
+
+  // @ts-ignore
+  // remove duplicates
+  const removeDuplicates = (arr) => {
+    if (!arr.length) return [];
+    const uniqueAuthors = [];
+    const map = new Map();
+    for (const commit of arr) {
+      if (!map.has(commit.author.id)) {
+        map.set(commit.author.id, {
+          login: commit.author.login,
+          id: commit.author.id,
+        });
+        uniqueAuthors.push(commit.author);
+      }
+    }
+    return uniqueAuthors;
+  };
+
+  commitAuthors = removeDuplicates(commits);
+}
 ---
 
 {
-	Astro.props.toc && (
-		<>
-			<div class="lg:sl-hidden">
-				<MobileTableOfContents {...Astro.props} />
-			</div>
-			<div class="right-sidebar-panel sl-hidden lg:sl-block">
-				<div class="sl-container">
-					<TableOfContents {...Astro.props} />
-				</div>
-				<div id="exclude-algolia-crawler" class="sl-container">
-					<a href="/contributors"><Icon name="external" />Contributors</a>
-					{isValid && (<a href={githubURL}><Icon name="github" /> View Source</a>)}
-					<a href={Astro.props?.editUrl?.href} target="_blank"><Icon name="pencil" />Edit this Page</a>
-					<br />
-					<CommitStats />
-				</div>
-			</div>
-		</>
-	)
+  Astro.props.toc && (
+    <>
+      <div class="lg:sl-hidden">
+        <MobileTableOfContents {...Astro.props} />
+      </div>
+      <div class="right-sidebar-panel sl-hidden lg:sl-block">
+        <div class="sl-container">
+          <TableOfContents {...Astro.props} />
+        </div>
+        <div id="exclude-algolia-crawler" class="sl-container">
+          <a href="/contributors">
+            <Icon name="external" />
+            Contributors
+          </a>
+          {isValid && (
+            <a href={sourceCodeURL} target="_blank">
+              <Icon name="github" /> View Source
+            </a>
+          )}
+          <a href={Astro.props?.editUrl?.href} target="_blank">
+            <Icon name="pencil" />
+            Edit this Page
+          </a>
+          {commitAuthors.length > 0 && (
+            <div class="page-authors">
+              <a href={documentationGithubURL} target="_blank">
+                Authored by:
+              </a>
+
+              <ul class="smol-avatar-list">
+                {commitAuthors.map(({ login, id }) => (
+                  <li>
+                    <a href={`https://github.com/${login}`}>
+                      <img
+                        alt={`Contributor ${login}`}
+                        width="64"
+                        height="64"
+                        src={`https://avatars.githubusercontent.com/u/${id}`}
+                      />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          <br />
+          <CommitStats />
+        </div>
+      </div>
+    </>
+  )
 }
 
-<style>
+<style define:vars={{ "avatar-count": commitAuthors.length }}>
+  svg {
+    display: inline-block !important;
+  }
 
-	svg {
-		display: inline-block !important;
-	}
+  .right-sidebar-panel {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1rem var(--sl-sidebar-pad-x);
+  }
+  .sl-container {
+    width: calc(var(--sl-sidebar-width) - 2 * var(--sl-sidebar-pad-x));
+  }
+  .right-sidebar-panel :global(:where(h2)) {
+    color: var(--sl-color-white);
+    font-size: var(--sl-text-h5);
+    font-weight: 600;
+    line-height: var(--sl-line-height-headings);
+    margin-bottom: 0.5rem;
+  }
+  .right-sidebar-panel :global(:where(a)) {
+    display: block;
+    font-size: var(--sl-text-xs);
+    text-decoration: none;
+    color: var(--sl-color-gray-3);
+    overflow-wrap: anywhere;
+  }
+  .right-sidebar-panel :global(:where(a):hover) {
+    color: var(--sl-color-white);
+  }
+  @media (min-width: 72rem) {
+    .right-sidebar-panel {
+      display: flex;
+    }
 
-	.right-sidebar-panel {
-		flex-direction: column;
-		justify-content: space-between;
-		height: 100%;
-		padding: 1rem var(--sl-sidebar-pad-x);
-	}
-	.sl-container {
-		width: calc(var(--sl-sidebar-width) - 2 * var(--sl-sidebar-pad-x));
-	}
-	.right-sidebar-panel :global(:where(h2)) {
-		color: var(--sl-color-white);
-		font-size: var(--sl-text-h5);
-		font-weight: 600;
-		line-height: var(--sl-line-height-headings);
-		margin-bottom: 0.5rem;
-	}
-	.right-sidebar-panel :global(:where(a)) {
-		display: block;
-		font-size: var(--sl-text-xs);
-		text-decoration: none;
-		color: var(--sl-color-gray-3);
-		overflow-wrap: anywhere;
-	}
-	.right-sidebar-panel :global(:where(a):hover) {
-		color: var(--sl-color-white);
-	}
-	@media (min-width: 72rem) {
-		.right-sidebar-panel {
-			display: flex;
-		}
+    .sl-container {
+      max-width: calc(
+        (
+          (
+              100vw - var(--sl-sidebar-width) - 2 * var(--sl-content-pad-x) - 2 *
+                var(--sl-sidebar-pad-x)
+            ) * 0.25 /* MAGIC NUMBER 🥲 */
+        )
+      );
+    }
+  }
+  /* Thank you Stephanie Eckles! https://smolcss.dev/#smol-avatar-list */
+  .smol-avatar-list {
+    --avatar-size: 2.5rem;
 
-		.sl-container {
-			max-width: calc(
-				(
-					(
-							100vw - var(--sl-sidebar-width) - 2 * var(--sl-content-pad-x) - 2 *
-								var(--sl-sidebar-pad-x)
-						) * 0.25 /* MAGIC NUMBER 🥲 */
-				)
-			);
-		}
-	}
+    display: grid;
+    /* Default to displaying most of the avatar to
+  enable easier access on touch devices, ensuring
+  the WCAG touch target size is met or exceeded */
+    grid-template-columns: repeat(
+      var(--avatar-count),
+      max(44px, calc(var(--avatar-size) / 1.15))
+    );
+    /* `padding` matches added visual dimensions of
+  the `box-shadow` to help create a more accurate
+  computed component size */
+    padding: 0.08em;
+    font-size: var(--avatar-size);
+    list-style: none;
+  }
+
+  @media (any-hover: hover) and (any-pointer: fine) {
+    .smol-avatar-list {
+      /* We create 1 extra cell to enable the computed 
+    width to match the final visual width */
+      grid-template-columns: repeat(
+        calc(var(--avatar-count) + 1),
+        calc(var(--avatar-size) / 1.75)
+      );
+    }
+  }
+
+  .smol-avatar-list li {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+  }
+
+  .smol-avatar-list li:hover ~ li a,
+  .smol-avatar-list li:focus-within ~ li a {
+    transform: translateX(33%);
+  }
+
+  .smol-avatar-list img,
+  .smol-avatar-list a {
+    display: block;
+    border-radius: 50%;
+  }
+
+  .smol-avatar-list a {
+    transition: transform 180ms ease-in-out;
+  }
+
+  .smol-avatar-list img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #fff;
+    box-shadow:
+      0 0 0 0.05em #fff,
+      0 0 0 0.08em rgba(0, 0, 0, 0.15);
+  }
+
+  .smol-avatar-list a:focus {
+    outline: 2px solid transparent;
+    /* Double-layer trick to work for dark and light backgrounds */
+    box-shadow:
+      0 0 0 0.08em #29344b,
+      0 0 0 0.12em white;
+  }
 </style>

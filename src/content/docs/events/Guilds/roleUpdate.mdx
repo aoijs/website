@@ -1,0 +1,55 @@
+---
+title: onRoleUpdate
+description: This event triggers whenever a guild role is updated.
+id: roleUpdate
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `Guilds` intent!
+
+</Aside>
+
+<Aside title="Functions" type="tip">
+
+This event has a function to retrieve data:
+
+[$newRole[option]](/functions/newrole)
+
+[$oldRole[option]](/functions/oldrole)
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.roleUpdateCommand({
+    name: "Role Update",
+    channel: "$channelId",
+    code: `
+        $log[$oldRole[id] just updated!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Role Update",
+    channel: "$channelId",
+    type: "roleUpdate",
+    code: `
+        $log[$oldRole[id] just updated!]
+    `
+};
+```
+
+</div>
+</Example>

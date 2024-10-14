@@ -1,0 +1,45 @@
+---
+title: onGuildUnavailable
+description: This event triggers whenever a guild becomes unavailable to the client.
+id: guildUnavailable
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `Guilds` intent!
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.guildUnavailableCommand({
+    name: "Guild Unavailable",
+    channel: "$channelId",
+    code: `
+        $log[$guildId just became unavailable!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Guild Unavailable",
+    channel: "$channelId",
+    type: "guildUnavailable",
+    code: `
+        $log[$guildId just became unavailable!]
+    `
+};
+```
+
+</div>
+</Example>

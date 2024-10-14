@@ -1,0 +1,48 @@
+---
+title: onVariableDelete
+description: This event triggers whenever a variable is deleted.
+id: variableDelete
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Functions">
+
+This event has a function to retrieve data:
+
+[$oldVariable[option;sep]](/functions/oldvariable)
+
+[$newVariable[option;sep]](/functions/newvariable)
+
+</Aside>
+
+<Example>
+<div slot="default">
+
+```js
+client.variableDeleteCommand({
+    name: "Variable Delete",
+    channel: "$channelId",
+    code: `
+        $log[$oldVariable[variable] was deleted!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Variable Delete",
+    channel: "$channelId",
+    type: "variableDelete",
+    code: `
+        $log[$oldVariable[variable] was deleted!]
+    `
+};
+```
+
+</div>
+</Example>

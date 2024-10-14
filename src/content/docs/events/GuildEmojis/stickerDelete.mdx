@@ -1,0 +1,45 @@
+---
+title: onStickerDelete
+description: This event triggers whenever a guild sticker is deleted.
+id: stickerDelete
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `GuildEmojis` intent!
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.stickerDeleteCommand({
+    name: "Guild Sticker Delete",
+    channel: "$channelId",
+    code: `
+        $log[A sticker was deleted!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Guild Sticker Delete",
+    channel: "$channelId",
+    type: "stickerDelete",
+    code: `
+        $log[A sticker was deleted!]
+    `
+};
+```
+
+</div>
+</Example>

@@ -1,0 +1,45 @@
+---
+title: onReactionRemoveAll
+description: This event triggers when all reactions are removed from a message.
+id: reactionRemoveAll
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `GuildMessageReactions` intent!
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.reactionRemoveAllCommand({
+    name: "Reaction Remove All",
+    channel: "$channelId",
+    code: `
+        $log[$authorId just removed all reactions!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Reaction Remove All",
+    channel: "$channelId",
+    type: "reactionRemoveAll",
+    code: `
+        $log[$authorId just removed all reactions!]
+    `
+};
+```
+
+</div>
+</Example>

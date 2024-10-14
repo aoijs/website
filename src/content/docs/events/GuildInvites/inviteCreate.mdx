@@ -1,0 +1,45 @@
+---
+title: onInviteCreate
+description: This event triggers whenever a guild invite is created.
+id: inviteCreate
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `GuildInvites` intent!
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.inviteCreateCommand({
+    name: "Guild Invite Create",
+    channel: "$channelId",
+    code: `
+        $log[An invite was created!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Guild Invite Create",
+    channel: "$channelId",
+    type: "inviteCreate",
+    code: `
+        $log[A invite was created!]
+    `
+};
+```
+
+</div>
+</Example>

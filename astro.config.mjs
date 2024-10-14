@@ -239,6 +239,13 @@ export default defineConfig({
           ],
         },
         {
+          label: "Events",
+          autogenerate: {
+            directory: "/events/",
+          },
+          collapsed: true,
+        },
+        {
           label: "Functions",
           autogenerate: {
             directory: "/functions/",

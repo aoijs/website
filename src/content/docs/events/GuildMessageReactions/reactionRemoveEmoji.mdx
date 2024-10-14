@@ -1,0 +1,53 @@
+---
+title: onReactionRemoveEmoji
+description: This event triggers when a specific reaction is removed.
+id: reactionRemoveEmoji
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `GuildMessageReactions` intent!
+
+</Aside>
+
+<Aside title="Functions" type="tip">
+
+This event has a function to retrieve data:
+
+[$reactionData[option]](/functions/reactiondata)
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.reactionRemoveEmojiCommand({
+    name: "Reaction Remove Emoji",
+    channel: "$channelId",
+    code: `
+        $log[$authorId just removed all $reactionData[emoji] reactions!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Reaction Remove Emoji",
+    channel: "$channelId",
+    type: "reactionRemoveEmoji",
+    code: `
+        $log[$authorId just removed all $reactionData[emoji] reactions!]
+    `
+};
+```
+
+</div>
+</Example>

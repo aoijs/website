@@ -1,0 +1,45 @@
+---
+title: onStageInstanceUpdate
+description: This event triggers whenever a stage is updated within a guild.
+id: stageInstanceUpdate
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `Guilds` intent!
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.stageInstanceUpdateCommand({
+    name: "Stage Update",
+    channel: "$channelId",
+    code: `
+        $log[$channelId just updated!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Stage Update",
+    channel: "$channelId",
+    type: "stageInstanceUpdate",
+    code: `
+        $log[$channelId just updated!]
+    `
+};
+```
+
+</div>
+</Example>

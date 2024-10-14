@@ -1,0 +1,45 @@
+---
+title: onInviteDelete
+description: This event triggers whenever a guild invite is deleted.
+id: inviteDelete
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `GuildInvites` intent!
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.inviteDeleteCommand({
+    name: "Guild Invite Delete",
+    channel: "$channelId",
+    code: `
+        $log[An invite was deleted!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Guild Invite Delete",
+    channel: "$channelId",
+    type: "inviteDelete",
+    code: `
+        $log[A invite was deleted!]
+    `
+};
+```
+
+</div>
+</Example>

@@ -1,0 +1,45 @@
+---
+title: onBanAdd
+description: This event triggers whenever a guild member is banned.
+id: banAdd
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `GuildBans` intent!
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.banAddCommand({
+    name: "Guild Bans",
+    channel: "$channelId",
+    code: `
+        $log[A member was banned!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Guild Bans",
+    channel: "$channelId",
+    type: "banAdd",
+    code: `
+        $log[A member was banned!]
+    `
+};
+```
+
+</div>
+</Example>

@@ -1,0 +1,55 @@
+---
+title: onThreadCreate
+description: This event triggers whenever a guild thread is created.
+id: threadCreate
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `Guilds` intent!
+
+</Aside>
+
+<Aside title="Functions" type="tip">
+
+This event has a function to retrieve data:
+
+[$newChannel[option]](/functions/newchannel)
+
+[$oldChannel[option]](/functions/oldchannel)
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.threadCreateCommand({
+    name: "Thread Create",
+    channel: "$channelId",
+    code: `
+        $log[$authorId just created a new thread called: $newChannel[name]]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Thread Create",
+    channel: "$channelId",
+    type: "threadCreate",
+    code: `
+        $log[$authorId just created a new thread called: $newChannel[name]]
+    `
+};
+```
+
+</div>
+</Example>

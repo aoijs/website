@@ -1,0 +1,45 @@
+---
+title: onGuildJoin
+description: This event triggers whenever the client joins a new guild.
+id: guildJoin
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `Guilds` intent!
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.guildJoinCommand({
+    name: "Guild Join",
+    channel: "$channelId",
+    code: `
+        $log[I just joined a new guild called: $guildName!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Guild Join",
+    channel: "$channelId",
+    type: "guildJoin",
+    code: `
+        $log[I just joined a new guild called: $guildName!]
+    `
+};
+```
+
+</div>
+</Example>

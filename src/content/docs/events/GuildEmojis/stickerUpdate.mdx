@@ -1,0 +1,45 @@
+---
+title: onStickerUpdate
+description: This event triggers whenever a guild sticker is updated.
+id: stickerUpdate
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `GuildEmojis` intent!
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.stickerUpdateCommand({
+    name: "Guild Sticker Update",
+    channel: "$channelId",
+    code: `
+        $log[A sticker was updated!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Guild Sticker Update",
+    channel: "$channelId",
+    type: "stickerUpdate",
+    code: `
+        $log[A sticker was updated!]
+    `
+};
+```
+
+</div>
+</Example>

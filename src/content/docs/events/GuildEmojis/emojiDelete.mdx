@@ -1,0 +1,55 @@
+---
+title: onEmojiDelete
+description: This event triggers whenever a guild emoji is deleted.
+id: emojiDelete
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `GuildEmojis` intent!
+
+</Aside>
+
+<Aside title="Functions" type="tip">
+
+This event has a function to retrieve data:
+
+[$newEmoji[option]](/functions/newemoji)
+
+[$oldEmoji[option]](/functions/oldemoji)
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.emojiDeleteCommand({
+    name: "Guild Emoji Delete",
+    channel: "$channelId",
+    code: `
+        $log[A new emoji was deleted with the name $oldEmoji[string]!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Guild Emoji Delete",
+    channel: "$channelId",
+    type: "emojiDelete",
+    code: `
+        $log[A new emoji was deleted with the name $oldEmoji[string]!]
+    `
+};
+```
+
+</div>
+</Example>

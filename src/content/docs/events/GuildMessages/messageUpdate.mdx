@@ -1,0 +1,55 @@
+---
+title: onMessageUpdate
+description: This event triggers whenever a message is updated within a guild.
+id: messageUpdate
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `GuildMessages` intent!
+
+</Aside>
+
+<Aside title="Functions" type="tip">
+
+This event has a function to retrieve data:
+
+[$oldMsgData[option]](/functions/oldmsgdata)
+
+[$oldMessage](/functions/oldmessage)
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.messageUpdateCommand({
+    name: "Member Update",
+    channel: "$channelId",
+    code: `
+        $log[$authorId just updated "$oldMessage" to "$message"]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Member Update",
+    channel: "$channelId",
+    type: "messageUpdate",
+    code: `
+        $log[$authorId just updated "$oldMessage" to "$message"]
+    `
+};
+```
+
+</div>
+</Example>

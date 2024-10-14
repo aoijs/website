@@ -1,0 +1,37 @@
+---
+title: onAutoModerationRuleCreate
+description: This event triggers whenever a rule is created.
+id: autoModerationRuleCreate
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `AutoModerationConfiguration` intent!
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+This event doesn't have a default event type!
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Automod Rule Updates",
+    channel: "$channelId",
+    type: "autoModerationRuleCreate",
+    code: `
+        $log[A automod rule was created!]
+    `
+};
+```
+
+</div>
+</Example>

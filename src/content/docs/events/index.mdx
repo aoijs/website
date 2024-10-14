@@ -1,0 +1,434 @@
+---
+title: Events
+description: Introduction to events within aoi.js
+id: events
+---
+
+import { LinkCard } from '@astrojs/starlight/components';
+
+Events are used to listen to specific changes of something, such as members or channels, which you then can use for your commands.
+
+This section will list all events and what they do.
+
+- [AutoModerationConfiguration](#automoderationconfiguration)
+- [AutoModerationExecution](#automoderationexecution)
+- [Custom](#custom)
+- [GuildBans](#guildbans)
+- [GuildEmojis](#guildemojis)
+  - [Stickers](#stickers)
+- [GuildInvites](#guildinvites)
+- [GuildMembers](#guildmembers)
+- [GuildMessagePolls](#guildmessagepolls)
+- [GuildMessageReactions](#guildmessagereactions)
+- [GuildMessages](#guildmessages)
+- [GuildPresences](#guildpresences)
+- [Guilds](#guilds)
+- [GuildVoiceStates](#guildvoicestates)
+- [GuildWebhooks](#guildwebhooks)
+- [NonIntents](#nonintents)
+- [Discord Event Documentation](#discord-event-documentation)
+
+## AutoModerationConfiguration
+
+<LinkCard
+  title="onAutoModerationRuleCreate"
+  href="/events/automoderationconfiguration/automoderationrulecreate"
+  description="This event triggers whenever a auto moderation rule is created."
+/>
+
+<LinkCard
+  title="onAutoModerationRuleDelete"
+  href="/events/automoderationconfiguration/automoderationruledelete"
+  description="This event triggers whenever a auto moderation rule is deleted."
+/>
+
+<LinkCard
+  title="onAutoModerationRuleUpdate"
+  href="/events/automoderationconfiguration/automoderationruleupdate"
+  description="This event triggers whenever a auto moderation rule is updated."
+/>
+
+## AutoModerationExecution
+
+<LinkCard
+  title="onAutoModerationExecution"
+  href="/events/automoderationexecution/automoderationexecution"
+  description="This event triggers whenever a auto moderation rule is triggered."
+/>
+
+## Custom
+
+<LinkCard
+  title="onFunctionError"
+  href="/events/custom/functionerror"
+  description="This event triggers whenever a function has an error."
+/>
+
+<LinkCard
+  title="onVariableCreate"
+  href="/events/variablecreate"
+  description="This event triggers whenever a variable is created."
+/>
+
+<LinkCard
+  title="onVariableDelete"
+  href="/events/variabledelete"
+  description="This event triggers whenever a variable is deleted."
+/>
+
+<LinkCard
+  title="onVariableUpdate"
+  href="/events/variableupdate"
+  description="This event triggers whenever a variable is updated."
+/>
+
+## GuildBans
+
+<LinkCard
+  title="onGuildBanAdd"
+  href="/events/guildbans/banadd"
+  description="This event triggers whenever a member is banned."
+/>
+
+<LinkCard
+  title="onGuildBanRemove"
+  href="/events/guildbans/banremove"
+  description="This event triggers whenever a member is unbanned."
+/>
+
+## GuildEmojis
+
+<LinkCard
+  title="onEmojiCreate"
+  href="/events/guildemojis/emojicreate"
+  description="This event triggers whenever a emoji is created."
+/>
+
+<LinkCard
+  title="onEmojiDelete"
+  href="/events/guildemojis/emojidelete"
+  description="This event triggers whenever a emoji is deleted."
+/>
+
+<LinkCard
+  title="onEmojiUpdate"
+  href="/events/guildemojis/emojiupdate"
+  description="This event triggers whenever a emoji is updated."
+/>
+
+### Stickers
+
+<LinkCard
+  title="onStickerCreate"
+  href="/events/guildemojis/stickercreate"
+  description="This event triggers whenever a sticker is created."
+/>
+
+<LinkCard
+  title="onStickerDelete"
+  href="/events/guildemojis/stickerdelete"
+  description="This event triggers whenever a sticker is deleted."
+/>
+
+<LinkCard
+  title="onStickerUpdate"
+  href="/events/guildemojis/stickerupdate"
+  description="This event triggers whenever a sticker is updated."
+/>
+
+## GuildInvites
+
+<LinkCard
+  title="onInviteCreate"
+  href="/events/guildinvites/invitecreate"
+  description="This event triggers whenever a invite is created."
+/>
+
+<LinkCard
+  title="onInviteDelete"
+  href="/events/guildinvites/invitedelete"
+  description="This event triggers whenever a invite is deleted."
+/>
+
+## GuildMembers
+
+<LinkCard
+  title="onJoin"
+  href="/events/guildmembers/join"
+  description="This event triggers whenever a member joins a guild."
+/>
+
+<LinkCard
+  title="onLeave"
+  href="/events/guildmembers/leave"
+  description="This event triggers whenever a member leaves a guild."
+/>
+
+<LinkCard
+  title="onMemberAvailable"
+  href="/events/guildmembers/memberavailable"
+  description="This event triggers whenever a member becomes available."
+/>
+
+<LinkCard
+  title="onMemberChunk"
+  href="/events/guildmembers/memberchunk"
+  description="This event triggers whenever a member chunk is received."
+/>
+
+<LinkCard
+  title="onMemberUpdate"
+  href="/events/guildmembers/memberupdate"
+  description="This event triggers whenever a member is updated."
+/>
+
+## GuildMessagePolls
+
+<LinkCard
+  title="onPollVoteAdd"
+  href="/events/guildmessagepolls/pollvoteadd"
+  description="This event triggers whenever a vote is added to a poll."
+/>
+
+<LinkCard
+  title="onPollVoteRemove"
+  href="/events/guildmessagepolls/pollvoteremove"
+  description="This event triggers whenever a vote is removed from a poll."
+/>
+
+## GuildMessageReactions
+
+<LinkCard
+  title="onReactionAdd"
+  href="/events/guildmessagereactions/reactionadd"
+  description="This event triggers whenever a reaction is added to a message."
+/>
+
+<LinkCard
+  title="onReactionRemove"
+  href="/events/guildmessagereactions/reactionremove"
+  description="This event triggers whenever a reaction is removed from a message."
+/>
+
+<LinkCard
+  title="onReactionRemoveAll"
+  href="/events/guildmessagereactions/reactionremoveall"
+  description="This event triggers whenever all reactions are removed from a message."
+/>
+
+<LinkCard
+  title="onReactionRemoveEmoji"
+  href="/events/guildmessagereactions/reactionremoveemoji"
+  description="This event triggers whenever a reaction is removed from a message."
+/>
+
+## GuildMessages
+
+<LinkCard
+  title="onMessageDelete"
+  href="/events/guildmessages/messagedelete"
+  description="This event triggers whenever a message is deleted."
+/>
+
+<LinkCard
+  title="onMessageDeleteBulk"
+  href="/events/messagedeletebulk"
+  description="This event triggers whenever multiple messages are deleted."
+/>
+
+<LinkCard
+  title="onMessageUpdate"
+  href="/events/guildmessages/messageupdate"
+  description="This event triggers whenever a message is updated."
+/>
+
+<LinkCard
+  title="onTypingStart"
+  href="/events/guildmessagetypings/typingstart"
+  description="This event triggers whenever a user starts typing."
+/>
+
+## GuildPresences
+
+<LinkCard
+  title="onPresenceUpdate"
+  href="/events/guildpresences/presenceupdate"
+  description="This event triggers whenever a presence is updated."
+/>
+
+## Guilds
+
+<LinkCard
+  title="onChannelCreate"
+  href="/events/guilds/channelcreate"
+  description="This event triggers whenever a channel is created."
+/>
+
+<LinkCard
+  title="onChannelDelete"
+  href="/events/guilds/channeldelete"
+  description="This event triggers whenever a channel is deleted."
+/>
+
+<LinkCard
+  title="onChannelPinsUpdate"
+  href="/events/guilds/channelpinsupdate"
+  description="This event triggers whenever a channel's pins are updated."
+/>
+
+<LinkCard
+  title="onChannelUpdate"
+  href="/events/guilds/channelupdate"
+  description="This event triggers whenever a channel is updated."
+/>
+
+<LinkCard
+  title="onGuildJoin"
+  href="/events/guilds/guildjoin"
+  description="This event triggers whenever the bot joins a guild."
+/>
+
+<LinkCard
+  title="onGuildLeave"
+  href="/events/guilds/guildleave"
+  description="This event triggers whenever the bot leaves a guild."
+/>
+
+<LinkCard
+  title="onGuildUnavailable"
+  href="/events/guilds/guildunavailable"
+  description="This event triggers whenever a guild becomes unavailable."
+/>
+
+<LinkCard
+  title="onGuildUpdate"
+  href="/events/guilds/guildupdate"
+  description="This event triggers whenever a guild is updated."
+/>
+
+<LinkCard
+  title="onRoleCreate"
+  href="/events/guilds/rolecreate"
+  description="This event triggers whenever a role is created."
+/>
+
+<LinkCard
+  title="onRoleDelete"
+  href="/events/guilds/roledelete"
+  description="This event triggers whenever a role is deleted."
+/>
+
+<LinkCard
+  title="onRoleUpdate"
+  href="/events/guilds/roleupdate"
+  description="This event triggers whenever a role is updated."
+/>
+
+<LinkCard
+  title="onStageInstanceCreate"
+  href="/events/guilds/stageinstancecreate"
+  description="This event triggers whenever a stage instance is created."
+/>
+
+<LinkCard
+  title="onStageInstanceDelete"
+  href="/events/guilds/stageinstancedelete"
+  description="This event triggers whenever a stage instance is deleted."
+/>
+
+<LinkCard
+  title="onStageInstanceUpdate"
+  href="/events/guilds/stageinstanceupdate"
+  description="This event triggers whenever a stage instance is updated."
+/>
+
+<LinkCard
+  title="onThreadCreate"
+  href="/events/guilds/threadcreate"
+  description="This event triggers whenever a thread is created."
+/>
+
+<LinkCard
+  title="onThreadDelete"
+  href="/events/guilds/threaddelete"
+  description="This event triggers whenever a thread is deleted."
+/>
+
+<LinkCard
+  title="onThreadListSync"
+  href="/events/guilds/threadlistsync"
+  description="This event triggers whenever a thread list is synced."
+/>
+
+<LinkCard
+  title="onThreadMembersUpdate"
+  href="/events/guilds/threadmembersupdate"
+  description="This event triggers whenever a thread's members are updated."
+/>
+
+<LinkCard
+  title="onThreadMemberUpdate"
+  href="/events/guilds/threadmemberupdate"
+  description="This event triggers whenever a thread member is updated."
+/>
+
+<LinkCard
+  title="onThreadUpdate"
+  href="/events/guilds/threadupdate"
+  description="This event triggers whenever a thread is updated."
+/>
+
+## GuildVoiceStates
+
+<LinkCard
+  title="onVoiceStateUpdate"
+  href="/events/guildvoicestates/voicestateupdate"
+  description="This event triggers whenever a voice state is updated."
+/>
+
+## GuildWebhooks
+
+<LinkCard
+  title="onWebhooksUpdate"
+  href="/events/guildwebhooks/webhooksupdate"
+  description="This event triggers whenever a webhook is updated."
+/>
+
+## NonIntents
+
+<LinkCard
+  title="onApplicationCommandPermissionsUpdate"
+  href="/events/nonintents/applicationcommandpermissionsupdate"
+  description="This event triggers whenever a application command permissions are updated."
+/>
+
+<LinkCard
+  title="onEntitlementCreate"
+  href="/events/nonintents/entitlementcreate"
+  description="This event triggers whenever a entitlement is created."
+/>
+
+<LinkCard
+  title="onEntitlementDelete"
+  href="/events/nonintents/entitlementdelete"
+  description="This event triggers whenever a entitlement is deleted."
+/>
+
+<LinkCard
+  title="onEntitlementUpdate"
+  href="/events/nonintents/entitlementupdate"
+  description="This event triggers whenever a entitlement is updated."
+/>
+
+<LinkCard
+  title="onInteractionCreate"
+  href="/events/nonintents/interactioncreate"
+  description="This event triggers whenever a interaction is created."
+/>
+
+## Discord Event Documentation
+
+https://discord.com/developers/docs/topics/gateway
+
+You may find the appropriate return data for each event in the Discord documentation, otherwise it's documented in the event functions displayed on the event pages.
+

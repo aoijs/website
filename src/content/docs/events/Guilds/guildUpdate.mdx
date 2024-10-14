@@ -1,0 +1,55 @@
+---
+title: onGuildUpdate
+description: This event triggers whenever a guild is updated.
+id: guildUpdate
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `Guilds` intent!
+
+</Aside>
+
+<Aside title="Functions" type="tip">
+
+This event has a function to retrieve data:
+
+[$newGuild[option]](/functions/newguild)
+
+[$oldGuild[option]](/functions/oldguild)
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.guildUpdateCommand({
+    name: "Guild Update",
+    channel: "$channelId",
+    code: `
+        $log[$guildId just updated!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Guild Update",
+    channel: "$channelId",
+    type: "guildUpdate",
+    code: `
+        $log[$guildId just updated!]
+    `
+};
+```
+
+</div>
+</Example>

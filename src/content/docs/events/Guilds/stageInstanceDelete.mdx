@@ -1,0 +1,45 @@
+---
+title: onStageInstanceDelete
+description: This event triggers whenever a stage is ended within a guild.
+id: stageInstanceDelete
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `Guilds` intent!
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.stageInstanceDeleteCommand({
+    name: "Stage Delete",
+    channel: "$channelId",
+    code: `
+        $log[$channelId just ended!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Stage Delete",
+    channel: "$channelId",
+    type: "stageInstanceDelete",
+    code: `
+        $log[$channelId just ended!]
+    `
+};
+```
+
+</div>
+</Example>

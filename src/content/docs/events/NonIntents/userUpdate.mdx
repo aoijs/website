@@ -1,0 +1,49 @@
+---
+title: onUserUpdate
+description: This event triggers whenever a user is updated.
+id: userUpdate
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Functions">
+
+This event has a function to retrieve data:
+
+[$newUser[option]](/functions/newuser)
+
+[$oldUser[option]](/functions/olduser)
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.userUpdateCommand({
+    name: "User Update",
+    channel: "$channelId",
+    code: `
+        $log[$oldUser[id]'s data changed!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "User Update",
+    channel: "$channelId",
+    type: "userUpdate",
+    code: `
+    $log[$oldUser[id]'s data changed!]
+    `
+};
+```
+
+</div>
+</Example>

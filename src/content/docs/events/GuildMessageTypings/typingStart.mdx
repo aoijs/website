@@ -1,0 +1,45 @@
+---
+title: onTypingStart
+description: This event triggers whenever a user starts typing in a channel.
+id: typingStart
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `GuildMessageTypings` intent!
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.typingStartCommand({
+    name: "Typing Start",
+    channel: "$channelId",
+    code: `
+        $log[$authorId just started typing in $channelId!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Typing Start",
+    channel: "$channelId",
+    type: "typingStart",
+    code: `
+        $log[$authorId just started typing in $channelId!]
+    `
+};
+```
+
+</div>
+</Example>

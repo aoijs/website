@@ -1,0 +1,48 @@
+---
+title: onVariableUpdate
+description: This event triggers whenever a variable is updated.
+id: variableUpdate
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Functions">
+
+This event has a function to retrieve data:
+
+[$oldVariable[option;sep]](/functions/oldvariable)
+
+[$newVariable[option;sep]](/functions/newvariable)
+
+</Aside>
+
+<Example>
+<div slot="default">
+
+```js
+client.variableUpdateCommand({
+    name: "Variable Update",
+    channel: "$channelId",
+    code: `
+        $log[$oldVariable[variable] was updated!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Variable Update",
+    channel: "$channelId",
+    type: "variableUpdate",
+    code: `
+        $log[$oldVariable[variable] was updated!]
+    `
+};
+```
+
+</div>
+</Example>

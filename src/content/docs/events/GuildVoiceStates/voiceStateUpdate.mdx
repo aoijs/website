@@ -1,0 +1,54 @@
+---
+title: onVoiceStateUpdate
+description: This event triggers whenever the voice state of a member changes (leaving, joining, deafening, muting...).
+id: voiceStateUpdate
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `Guilds` intent!
+
+</Aside>
+
+<Aside title="Functions" type="tip">
+
+This event has a function to retrieve data:
+
+[$newState[option]](/functions/newstate)
+
+[$oldState[option]](/functions/oldstate)
+
+</Aside>
+
+<Example>
+<div slot="default">
+
+```js
+client.voiceStateUpdateCommand({
+    name: "Voice State Update",
+    channel: "$channelId",
+    code: `
+        $log[$authorId just joined $newState[id]!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Voice State Update",
+    channel: "$channelId",
+    type: "voiceStateUpdate",
+    code: `
+        $log[$authorId just joined $newState[id]!]
+    `
+};
+```
+
+</div>
+</Example>

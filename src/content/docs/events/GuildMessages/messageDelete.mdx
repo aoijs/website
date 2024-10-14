@@ -1,0 +1,55 @@
+---
+title: onMessageDelete
+description: This event triggers whenever a message is deleted within a guild.
+id: messageDelete
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `GuildMessages` intent!
+
+</Aside>
+
+<Aside title="Functions" type="tip">
+
+This event has a function to retrieve data:
+
+[$oldMsgData[option]](/functions/oldmsgdata)
+
+[$oldMessage](/functions/oldmessage)
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.messageDeleteCommand({
+    name: "Member Delete",
+    channel: "$channelId",
+    code: `
+        $log[$authorId just deleted "$oldMessage"]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Member Delete",
+    channel: "$channelId",
+    type: "messageDelete",
+    code: `
+        $log[$authorId just deleted "$oldMessage"]
+    `
+};
+```
+
+</div>
+</Example>

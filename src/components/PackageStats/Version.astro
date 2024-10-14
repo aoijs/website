@@ -1,28 +1,26 @@
 ---
 import type { Props } from "@astrojs/starlight/props";
-import pRetry from "p-retry";
 
 const { pkgName } = Astro.props as Props;
 
 const url = `https://registry.npmjs.org/${pkgName}`;
 
-const packageInfo = await pRetry(
-  async () => {
-    const response = await fetch(url);
-    const json = await response.json();
+type PackageInfo = {
+  time: {
+    modified: string;
+  };
+  "dist-tags": {
+    latest: string;
+  };
+};
 
-    if (!response.ok) {
-      throw new Error(
-        `npm API call failed: GET "${url}" returned status ${
-          response.status
-        }: ${JSON.stringify(json)}`
-      );
-    }
+const fetchPackageInfo = async (): Promise<PackageInfo> => {
+  const response = await fetch(url);
+  const json = await response.json();
+  return json;
+};
 
-    return json;
-  },
-  { retries: 3 },
-);
+const packageInfo = await fetchPackageInfo();
 
 const modified = new Date(packageInfo.time.modified).getTime();
 const date = new Date().getTime();
@@ -35,7 +33,13 @@ const version = packageInfo["dist-tags"].latest;
 const content = `The newest ${pkgName} version <b>${version}</b> is available! <a href="https://github.com/AkaruiDevelopment/${pkgName}/releases/tag/${version}">Read the Changelogs</a>`;
 ---
 
-<div class="sl-banner" set:html={content} style={showBanner ? '' : 'display: none !important;'}><slot /></div>
+<div
+  class="sl-banner"
+  set:html={content}
+  style={showBanner ? "" : "display: none !important;"}
+>
+  <slot />
+</div>
 
 <style>
   .sl-banner {
@@ -60,7 +64,7 @@ const content = `The newest ${pkgName} version <b>${version}</b> is available! <
   }
   .sl-banner :global(a) {
     color: var(--__sl-banner-text) !important;
-    border-bottom: 1px dotted  var(--__sl-banner-text) !important;
+    border-bottom: 1px dotted var(--__sl-banner-text) !important;
     transition: all 0.3s ease-in;
     text-decoration: none;
   }

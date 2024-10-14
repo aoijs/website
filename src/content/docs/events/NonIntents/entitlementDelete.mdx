@@ -1,0 +1,48 @@
+---
+title: onEntitlementDelete
+description: This event triggers whenever a entitlement is deleted.
+id: entitlementDelete
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Functions">
+
+This event has a function to retrieve data:
+
+[$newEntitlementData[option]](/functions/newentitlementdata)
+
+[$oldEntitlementData[option]](/functions/oldentitlementdata)
+
+</Aside>
+
+<Example>
+<div slot="default">
+
+```js
+client.entitlementDeleteCommand({
+    name: "Entitlement Delete",
+    channel: "$channelId",
+    code: `
+        $log[$oldEntitlementData[userId]'s entitlement just expired!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Entitlement Delete",
+    channel: "$channelId",
+    type: "entitlementDelete",
+    code: `
+        $log[$oldEntitlementData[userId]'s entitlement just expired!]
+    `
+};
+```
+
+</div>
+</Example>

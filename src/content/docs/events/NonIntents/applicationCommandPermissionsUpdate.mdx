@@ -1,0 +1,47 @@
+---
+title: onApplicationCommandPermissionsUpdate
+description: This event triggers whenever the permissions of an application command are updated in a guild.
+id: applicationCommandPermissionsUpdate
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Functions">
+
+This event has a function to retrieve data:
+
+[$newApplicationCmd[option]](/functions/newapplicationcmd)
+
+[$oldApplicationCmd[option]](/functions/oldapplicationcmd)
+</Aside>
+
+<Example>
+<div slot="default">
+
+```js
+client.applicationCommandPermissionsUpdateCommand({
+    name: "Application Command Permissions Update",
+    channel: "$channelId",
+    code: `
+        $log[$oldApplicationCmd[permissions] just updated to $newApplicationCmd[permissions]!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Application Command Permissions Update",
+    channel: "$channelId",
+    type: "applicationCommandPermissionsUpdate",
+    code: `
+        $log[$oldApplicationCmd[permissions] just updated to $newApplicationCmd[permissions]!]
+    `
+};
+```
+
+</div>
+</Example>

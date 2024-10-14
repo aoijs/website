@@ -1,0 +1,58 @@
+---
+title: onFunctionError
+description: This event triggers whenever a function error occurs.
+id: functionError
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Functions">
+
+This event has a function to retrieve data:
+
+[$handleError[option]](/functions/handleerror)
+
+Options:
+1. function
+2. command
+3. error
+
+<Aside type="caution">
+
+When suppressing error messages via `$suppressErrors` or client options, the `error` field is replaced with the custom message instead!
+
+</Aside>
+</Aside>
+
+
+<Example>
+
+<div slot="default">
+
+```js
+client.functionErrorCommand({
+    name: "Function Error",
+    channel: "$channelId",
+    code: `
+        $log[$handleError[function] just found an error: $handleError[error]]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Function Error",
+    channel: "$channelId",
+    type: "functionError",
+    code: `
+        $log[$handleError[function] just found an error: $handleError[error]]
+    `
+};
+```
+
+</div>
+</Example>

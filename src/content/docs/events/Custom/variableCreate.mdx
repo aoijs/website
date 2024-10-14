@@ -1,0 +1,48 @@
+---
+title: onVariableCreate
+description: This event triggers whenever a variable is created.
+id: variableCreate
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Functions">
+
+This event has a function to retrieve data:
+
+[$oldVariable[option;sep]](/functions/oldvariable)
+
+[$newVariable[option;sep]](/functions/newvariable)
+
+</Aside>
+
+<Example>
+<div slot="default">
+
+```js
+client.variableCreateCommand({
+    name: "Variable Create",
+    channel: "$channelId",
+    code: `
+        $log[$newVariable[variable] was created!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Variable Create",
+    channel: "$channelId",
+    type: "variableCreate",
+    code: `
+        $log[$newVariable[variable] was created!]
+    `
+};
+```
+
+</div>
+</Example>

@@ -1,0 +1,45 @@
+---
+title: onMemberAvailable
+description: This event triggers whenever a user becomes for whatever reason unavailable to the client.
+id: memberAvailable
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `GuildMembers` intent!
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.memberAvailableCommand({
+    name: "Member Available",
+    channel: "$channelId",
+    code: `
+        $log[$username is now available!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Member Available",
+    channel: "$channelId",
+    type: "memberAvailable",
+    code: `
+        $log[$username is now available!]
+    `
+};
+```
+
+</div>
+</Example>

@@ -1,0 +1,45 @@
+---
+title: onLeave
+description: This event triggers whenever a user leaves a guild.
+id: leave
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `GuildMembers` intent!
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.leaveCommand({
+    name: "User Leave",
+    channel: "$channelId",
+    code: `
+        $log[$username just leaveed!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "User Leave",
+    channel: "$channelId",
+    type: "leave",
+    code: `
+        $log[$username just leaveed!]
+    `
+};
+```
+
+</div>
+</Example>

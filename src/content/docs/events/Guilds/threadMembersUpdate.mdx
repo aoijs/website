@@ -1,0 +1,45 @@
+---
+title: onThreadMembersUpdate
+description: This event triggers whenever members within a thread is updated.
+id: threadMembersUpdate
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `Guilds` intent!
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.threadMembersUpdateCommand({
+    name: "Thread Members Update",
+    channel: "$channelId",
+    code: `
+        $log[$authorId just changed!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Thread Members Update",
+    channel: "$channelId",
+    type: "threadMembersUpdate",
+    code: `
+        $log[$authorId just changed!]
+    `
+};
+```
+
+</div>
+</Example>

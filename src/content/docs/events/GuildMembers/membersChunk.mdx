@@ -1,0 +1,45 @@
+---
+title: onMembersChunk
+description: This event triggers whenever a request to bulk fetch members is executed.
+id: membersChunk
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `GuildMembers` intent!
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.membersChunkCommand({
+    name: "Member Chunk",
+    channel: "$channelId",
+    code: `
+        $log[membersChunk event triggered!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Member Chunk",
+    channel: "$channelId",
+    type: "membersChunk",
+    code: `
+        $log[membersChunk event triggered!]
+    `
+};
+```
+
+</div>
+</Example>

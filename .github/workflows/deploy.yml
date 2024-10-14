@@ -21,6 +21,7 @@ jobs:
       ACTIONS_ALLOW_UNSECURE_COMMANDS: true
       PUBLIC_BUILD_TIME: ${{ github.event.head_commit.timestamp }}
       PUBLIC_COMMIT: ${{ github.sha }}
+      GHTOKEN: ${{ secrets.GHTOKEN }}
       PUBLIC_ENV: "production"
     steps:
       - name: Checkout Repository

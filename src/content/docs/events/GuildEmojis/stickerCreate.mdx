@@ -1,0 +1,45 @@
+---
+title: onStickerCreate
+description: This event triggers whenever a guild sticker is created.
+id: stickerCreate
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `GuildEmojis` intent!
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.stickerCreateCommand({
+    name: "Guild Sticker Create",
+    channel: "$channelId",
+    code: `
+        $log[A sticker was created!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Guild Sticker Create",
+    channel: "$channelId",
+    type: "stickerCreate",
+    code: `
+        $log[A sticker was created!]
+    `
+};
+```
+
+</div>
+</Example>

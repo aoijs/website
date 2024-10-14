@@ -1,0 +1,45 @@
+---
+title: onStageInstanceCreate
+description: This event triggers whenever a stage is started within a guild.
+id: stageInstanceCreate
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `Guilds` intent!
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.stageInstanceCreateCommand({
+    name: "Stage Delete",
+    channel: "$channelId",
+    code: `
+        $log[$channelId just started!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Stage Delete",
+    channel: "$channelId",
+    type: "stageInstanceCreate",
+    code: `
+        $log[$channelId just started!]
+    `
+};
+```
+
+</div>
+</Example>

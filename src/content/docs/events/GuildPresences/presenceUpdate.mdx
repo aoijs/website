@@ -1,0 +1,55 @@
+---
+title: onPresenceUpdate
+description: This event triggers whenever a user changes their presence.
+id: presenceUpdate
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `GuildPresences` intent!
+
+</Aside>
+
+<Aside title="Functions" type="tip">
+
+This event has a function to retrieve data:
+
+[$newPresence[option]](/functions/newpresence)
+
+[$oldPresence[option]](/functions/oldpresence)
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.presenceUpdateCommand({
+    name: "Presence Update",
+    channel: "$channelId",
+    code: `
+        $log[$authorId just updated their presence to $newPresence[status]]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Presence Update",
+    channel: "$channelId",
+    type: "presenceUpdate",
+    code: `
+        $log[$authorId just updated their presence to $newPresence[status]]
+    `
+};
+```
+
+</div>
+</Example>

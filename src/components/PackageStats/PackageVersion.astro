@@ -1,27 +1,24 @@
 ---
-import pRetry from "p-retry";
-
 export interface Props {
-	pkgName: string;
+  pkgName: string;
 }
 
 const { pkgName } = Astro.props as Props;
 
 const url = `https://registry.npmjs.org/${pkgName}/latest`;
 
-const response = await pRetry(
-  async () => {
-    const response = await fetch(url);
-    const json = await response.json();
+const fetchPackageVersion = async () => {
+  const response = await fetch(url);
+  const json = await response.json();
 
-    if (!response.ok) {
-      return "Failed to fetch package info from npm registry."
-    }
+  if (!response.ok) {
+    return "Failed to fetch package info from npm registry.";
+  }
 
-    return "v" + json.version;
-  },
-  { retries: 1 },
-);
+  return "v" + json.version;
+};
+
+const version = await fetchPackageVersion();
 ---
 
-<span>{response}</span>
+<span>{version}</span>

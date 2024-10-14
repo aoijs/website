@@ -1,0 +1,55 @@
+---
+title: onRoleDelete
+description: This event triggers whenever a guild role is deleted.
+id: roleDelete
+---
+
+import Example from "../../../../components/Page/Example.astro";
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Intents">
+
+This requires the `Guilds` intent!
+
+</Aside>
+
+<Aside title="Functions" type="tip">
+
+This event has a function to retrieve data:
+
+[$newRole[option]](/functions/newrole)
+
+[$oldRole[option]](/functions/oldrole)
+
+</Aside>
+
+<Example>
+
+<div slot="default">
+
+```js
+client.roleDeleteCommand({
+    name: "Role Delete",
+    channel: "$channelId",
+    code: `
+        $log[$oldRole[id] was just deleted!]
+    `
+});
+```
+
+</div>
+<div slot="handler">
+
+```js
+module.exports = {
+    name: "Role Delete",
+    channel: "$channelId",
+    type: "roleDelete",
+    code: `
+        $log[$oldRole[id] was just deleted!]
+    `
+};
+```
+
+</div>
+</Example>
