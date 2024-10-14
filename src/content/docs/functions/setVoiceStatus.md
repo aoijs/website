@@ -9,7 +9,7 @@ id: setVoiceStatus
 ## Usage
 
 ```aoi
-$setVoiceStatus[channelID,voiceStatus]
+$setVoiceStatus[channelID;voiceStatus]
 ```
 
 ## Parameters
