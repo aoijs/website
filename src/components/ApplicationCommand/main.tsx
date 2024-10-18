@@ -348,7 +348,6 @@ function ApplicationCommand() {
               name?.toLowerCase().replaceAll(" ", "_") ?? "application_command"
             };${description ?? "Imagine an application command"};${join(
               defaultPermissions ? permissions?.join(",") ?? "false" : "false",
-              allowDirectMessageExecution.toString(),
               Object.keys(integrationType)
                 .filter((key) => integrationType[key] === true)
                 .join(",") || "all",
