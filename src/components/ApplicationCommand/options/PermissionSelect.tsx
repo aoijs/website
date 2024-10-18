@@ -73,6 +73,7 @@ function PermissionSelect({
       isMulti
       selectedOptionStyle="check"
       tagColorScheme="var(--sl-color-text-accent)"
+      // @ts-ignore
       options={permissions}
       value={selectedOptions}
       onChange={handleChange}
