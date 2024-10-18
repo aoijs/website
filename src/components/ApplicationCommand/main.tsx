@@ -13,7 +13,7 @@ import {
 import { ChevronDownIcon, ChevronUpIcon, WarningIcon } from "@chakra-ui/icons";
 import CodeBlock from "./helpers/CodeBlock";
 import BaseInput from "./options/BaseInput";
-import PermissionSelect from "./options/permissionSelect";
+import PermissionSelect from "./options/PermissionSelect";
 
 function ApplicationCommand() {
   const optionElements = useOptionElementStore((state) => state.elements);
