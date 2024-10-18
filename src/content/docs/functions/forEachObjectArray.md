@@ -1,15 +1,15 @@
 ---
-title: $ForEachObjectArray
+title: $forEachObjectArray
 description: $arrayForEach will execute an awaited command for each item in the object array.
-id: ForEachObjectArray
+id: forEachObjectArray
 ---
 
-`$ForEachObjectArray` will execute an awaited command for each item in the object array.
+`$forEachObjectArray` will execute an awaited command for each item in the object array.
 
 ## Usage
 
 ```aoi
-$ForEachObjectArray[name;property;awaitedCommand;endCmd?]
+$forEachObjectArray[name;property;awaitedCommand;endCmd?]
 ```
 
 ## Parameters
