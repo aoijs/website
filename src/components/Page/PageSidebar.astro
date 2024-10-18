@@ -72,7 +72,7 @@ if (!page.includes("extension")) {
         <div class="sl-container">
           <TableOfContents {...Astro.props} />
         </div>
-        <div id="exclude-algolia-crawler" class="sl-container">
+        <div data-pagefind-ignore class="sl-container">
           <a href="/contributors">
             <Icon name="external" />
             Contributors

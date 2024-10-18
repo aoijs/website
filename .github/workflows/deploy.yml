@@ -80,8 +80,10 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
       - name: Wait for site to be deployed
+        if: 1 == 2
         run: sleep 5
-      - name: 🔎 Update Algolia Crawler 
+      - name: 🔎 Update Algolia Crawler (skip)
+        if: 1 == 2
         uses: algolia/algoliasearch-crawler-github-actions@v1.1.0
         id: algolia_crawler
         with:

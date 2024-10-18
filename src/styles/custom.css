@@ -1,4 +1,42 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap");
+@font-face {
+  font-family: "gg sans";
+  src: url("https://github.com/Faf4a/stunning-spoon/raw/refs/heads/main/fonts/ggsans-Bold.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gg sans";
+  src: url("https://github.com/Faf4a/stunning-spoon/raw/refs/heads/main/fonts/ggsans-BoldItalic.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "gg sans";
+  src: url("https://github.com/Faf4a/stunning-spoon/raw/refs/heads/main/fonts/ggsans-ExtraBoldItalic.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "gg sans";
+  src: url("https://github.com/Faf4a/stunning-spoon/raw/refs/heads/main/fonts/ggsans-Normal.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gg sans";
+  src: url("https://github.com/Faf4a/stunning-spoon/raw/refs/heads/main/fonts/ggsans-NormalItalic.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
 
 :root {
   --sl-color-accent-low: #03263e;
@@ -37,6 +75,12 @@
     max-width: 45%;
     margin: 0.5rem;
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .tracker-container {
+    display: none;
   }
 }
 
@@ -160,6 +204,19 @@
 
 .discord-button.discord-button-secondary:hover {
   background-color: rgba(67, 72, 79, 80%);
+}
+
+discord-messages > discord-message {
+  padding: 15px;
+
+  && discord-embed {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  && discord-embed-field {
+    margin-top: 5px;
+  }
 }
 
 a.sl-flex.action.primary {
@@ -298,7 +355,16 @@ a.sl-flex.action.primary {
   }
 
   && table:has(thead img) tbody {
-    font-family: "Fira Code", monospace;
+    font-family: monospace;
     color: var(--sl-color-gray-3);
   }
+}
+
+#starlight__search mark {
+  background-color: var(--sl-color-text-accent);
+}
+
+/* Fix code wrapping in tables */
+.sl-markdown-content :is(th, td):not(:where(.not-content *)) code {
+  white-space: pre-wrap;
 }

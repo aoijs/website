@@ -1,12 +1,13 @@
+// @ts-check
 import { defineConfig } from "astro/config";
 import { rehypeHeadingIds } from "@astrojs/markdown-remark";
-import rehypeAutolinkHeadings from "rehype-autolink-headings";
-import starlight from "@astrojs/starlight";
+
 import react from "@astrojs/react";
-import sitemap from "@astrojs/sitemap";
+import starlight from "@astrojs/starlight";
 import starlightLinksValidator from "starlight-links-validator";
 import starlightImageZoom from "starlight-image-zoom";
-import starlightDocSearch from "@astrojs/starlight-docsearch";
+import starlightSidebarTopics from "starlight-sidebar-topics";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
 
 export default defineConfig({
   site: "https://aoi.js.org",
@@ -20,11 +21,192 @@ export default defineConfig({
       plugins: [
         starlightLinksValidator(),
         starlightImageZoom(),
-        starlightDocSearch({
-          appId: "7NDV3UYBW5",
-          indexName: "aoi-js",
-          apiKey: "56086da80cd1e86f4400ac102f0131c1",
-        }),
+        starlightSidebarTopics([
+          {
+            label: "Guides",
+            icon: "open-book",
+            link: "/guides/",
+            items: [
+              {
+                label: "Get Started",
+                link: "/guides",
+              },
+              {
+                label: "Client",
+                autogenerate: {
+                  directory: "guides/client",
+                },
+                collapsed: false,
+              },
+              {
+                label: "Application Commands",
+                autogenerate: {
+                  directory: "guides/application",
+                },
+                collapsed: true,
+              },
+              {
+                label: "Others",
+                items: [
+                  {
+                    label: "Character Escaping",
+                    link: "/guides/other/character-escaping",
+                  },
+                  { label: "Discord Events", link: "/guides/other/events" },
+                  {
+                    label: "Message Formatting",
+                    link: "/guides/other/message-formatting",
+                  },
+                  {
+                    label: "Parsers",
+                    link: "/guides/other/parser",
+                  },
+                  {
+                    label: "Variables",
+                    link: "/guides/other/variables",
+                  },
+                  {
+                    label: "Customs",
+                    items: [
+                      {
+                        label: "Custom Functions",
+                        link: "/guides/other/custom-functions/",
+                      },
+                      {
+                        label: "Custom Events",
+                        link: "/guides/other/custom-events/",
+                      },
+                    ],
+                    collapsed: true,
+                  },
+                  {
+                    label: "Hosting",
+                    items: [
+                      {
+                        label: "Using Hosting Services",
+                        link: "/guides/other/hosting/hosting-service/",
+                      },
+                      {
+                        label: "Using Termux",
+                        link: "/guides/other/hosting/termux",
+                      },
+                    ],
+                    collapsed: true,
+                  },
+                ],
+                collapsed: true,
+              },
+            ],
+          },
+          {
+            label: "Extensions",
+            icon: "puzzle",
+            link: "/extensions/",
+            items: [
+              {
+                label: "@aoijs",
+                items: [
+                  {
+                    label: "aoi.music",
+                    items: [
+                      {
+                        label: "Setup",
+                        link: "/extensions/aoijs/aoimusic/",
+                      },
+                      {
+                        label: "Events",
+                        link: "/extensions/aoijs/aoimusic/events",
+                      },
+                      {
+                        label: "Functions",
+                        autogenerate: {
+                          directory: "/extensions/@aoijs/aoi.music/music",
+                        },
+                        collapsed: true,
+                      },
+                    ],
+                    collapsed: false,
+                  },
+                  {
+                    label: "aoi.canvas",
+                    items: [
+                      {
+                        label: "Setup",
+                        link: "/extensions/aoijs/aoicanvas/",
+                      },
+                      {
+                        label: "Guides",
+                        autogenerate: {
+                          directory: "/extensions/@aoijs/aoi.canvas/guides",
+                        },
+                        collapsed: true,
+                      },
+                      {
+                        label: "Functions",
+                        autogenerate: {
+                          directory: "/extensions/@aoijs/aoi.canvas/functions",
+                        },
+                        collapsed: true,
+                      },
+                    ],
+                    collapsed: true,
+                  },
+                  {
+                    label: "aoi.invite",
+                    items: [
+                      {
+                        label: "Setup",
+                        link: "/extensions/aoijs/aoiinvite/",
+                      },
+                      {
+                        label: "Functions",
+                        autogenerate: {
+                          directory: "/extensions/@aoijs/aoi.invite/invite",
+                        },
+                        collapsed: true,
+                      },
+                    ],
+                    collapsed: true,
+                  },
+                ],
+                collapsed: true,
+              },
+            ],
+          },
+          {
+            label: "Functions",
+            icon: "list-format",
+            link: "/functions/",
+            items: [
+              {
+                label: "Functions",
+                autogenerate: {
+                  directory: "/functions/",
+                },
+                collapsed: true,
+              },    
+            ]
+          },
+          {
+            label: "Events",
+            icon: "rocket",
+            link: "/events/",
+            items: [
+              {
+                label: "Events",
+                autogenerate: {
+                  directory: "/events/",
+                },
+                collapsed: true,
+              }, 
+            ]
+          },
+          {
+            label: "Application Command Creator",
+            icon: "forward-slash",
+            link: "/tools/slash",
+          },
+        ]),
       ],
       title: "aoi.js",
       favicon: "/favicon.ico",
@@ -44,9 +226,9 @@ export default defineConfig({
         PageTitle: "./src/components/Page/PageTitle.astro",
         PageSidebar: "./src/components/Page/PageSidebar.astro",
         Sidebar: "./src/components/Page/Sidebar.astro",
-        Pagination: './src/components/Page/Pagination.astro',
+        Pagination: "./src/components/Page/Pagination.astro",
       },
-      pagefind: false,
+      pagefind: true,
       head: [
         // Google Analytics, Anonymized (for the user)
         {
@@ -81,181 +263,8 @@ export default defineConfig({
           },
         },
       ],
-      sidebar: [
-        {
-          label: "Get Started",
-          link: "/guides",
-        },
-        {
-          label: "Guides",
-          items: [
-            {
-              label: "Client",
-              autogenerate: {
-                directory: "guides/client",
-              },
-              collapsed: true,
-            },
-            {
-              label: "Application Commands",
-              autogenerate: {
-                directory: "guides/application",
-              },
-              collapsed: true,
-            },
-            {
-              label: "Others",
-              items: [
-                {
-                  label: "Character Escaping",
-                  link: "/guides/other/character-escaping",
-                },
-                { label: "Discord Events", link: "/guides/other/events" },
-                {
-                  label: "Message Formatting",
-                  link: "/guides/other/message-formatting",
-                },
-                {
-                  label: "Parsers",
-                  link: "/guides/other/parser",
-                },
-                {
-                  label: "Variables",
-                  link: "/guides/other/variables",
-                },
-                {
-                  label: "Customs",
-                  items: [
-                    {
-                      label: "Custom Functions",
-                      link: "/guides/other/custom-functions/",
-                    },
-                    {
-                      label: "Custom Events",
-                      link: "/guides/other/custom-events/",
-                    },
-                  ],
-                  collapsed: true,
-                },
-                {
-                  label: "Hosting",
-                  items: [
-                    {
-                      label: "Using Hosting Services",
-                      link: "/guides/other/hosting/hosting-service/",
-                    },
-                    {
-                      label: "Using Termux",
-                      link: "/guides/other/hosting/termux",
-                    },
-                  ],
-                  collapsed: true,
-                },
-              ],
-              collapsed: true,
-            },
-          ],
-        },
-        {
-          label: "Extensions",
-          items: [
-            {
-              label: "@aoijs",
-              items: [
-                {
-                  label: "aoi.music",
-                  items: [
-                    {
-                      label: "Setup",
-                      link: "/extensions/aoijs/aoimusic/",
-                    },
-                    {
-                      label: "Events",
-                      link: "/extensions/aoijs/aoimusic/events",
-                    },
-                    {
-                      label: "Functions",
-                      autogenerate: {
-                        directory: "/extensions/@aoijs/aoi.music/music",
-                      },
-                      collapsed: true,
-                    },
-                  ],
-                  collapsed: true,
-                },
-                {
-                  label: "aoi.canvas",
-                  items: [
-                    {
-                      label: "Setup",
-                      link: "/extensions/aoijs/aoicanvas/",
-                    },
-                    {
-                      label: "Guides",
-                      autogenerate: {
-                        directory: "/extensions/@aoijs/aoi.canvas/guides",
-                      },
-                      collapsed: true,
-                    },
-                    {
-                      label: "Functions",
-                      autogenerate: {
-                        directory: "/extensions/@aoijs/aoi.canvas/functions",
-                      },
-                      collapsed: true,
-                    },
-                  ],
-                  collapsed: true,
-                },
-                {
-                  label: "aoi.invite",
-                  items: [
-                    {
-                      label: "Setup",
-                      link: "/extensions/aoijs/aoiinvite/",
-                    },
-                    {
-                      label: "Functions",
-                      autogenerate: {
-                        directory: "/extensions/@aoijs/aoi.invite/invite",
-                      },
-                      collapsed: true,
-                    },
-                  ],
-                  collapsed: true,
-                },
-              ],
-              collapsed: true,
-            },
-          ],
-        },
-        {
-          label: "Tools",
-          items: [
-            {
-              label: "Application Command Creator",
-              link: "/tools/slash",
-            },
-          ],
-        },
-        {
-          label: "Events",
-          autogenerate: {
-            directory: "/events/",
-          },
-          collapsed: true,
-        },
-        {
-          label: "Functions",
-          autogenerate: {
-            directory: "/functions/",
-          },
-          collapsed: true,
-        },
-      ],
     }),
     react(),
-    sitemap(),
   ],
   image: {
     service: {
@@ -265,6 +274,7 @@ export default defineConfig({
   markdown: {
     rehypePlugins: [
       rehypeHeadingIds,
+      // @ts-ignore
       [
         rehypeAutolinkHeadings,
         {

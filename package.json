@@ -21,7 +21,6 @@
     "@astrojs/react": "^3.6.2",
     "@astrojs/sitemap": "^3.1.6",
     "@astrojs/starlight": "^0.27.1",
-    "@astrojs/starlight-docsearch": "^0.1.1",
     "@atlaskit/progress-tracker": "^8.7.3",
     "@chakra-ui/icons": "^1.0.15",
     "@chakra-ui/react": "^1.6.6",
@@ -32,6 +31,7 @@
     "@skyra/discord-components-core": "^4.0.0-alpha.34",
     "@skyra/discord-components-react": "^4.0.0-alpha.34",
     "astro": "^4.15.4",
+    "chakra-react-select": "^5.0.1",
     "framer-motion": "^11.11.8",
     "nanoid": "^3.1.25",
     "node-fetch": "^3.3.2",
@@ -45,6 +45,7 @@
     "starlight-image-zoom": "^0.7.0",
     "starlight-links-validator": "^0.10.1",
     "starlight-package-managers": "^0.6.0",
+    "starlight-sidebar-topics": "^0.1.0",
     "typescript": "^5.5.3",
     "zustand": "^3.5.8"
   },

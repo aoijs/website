@@ -1,6 +1,6 @@
 import { Button, Code, Flex, Spacer, useClipboard } from "@chakra-ui/react";
 import Highlight, { defaultProps } from "prism-react-renderer";
-import { CopyIcon } from "@chakra-ui/icons";
+import { CopyIcon, CheckIcon } from "@chakra-ui/icons";
 
 interface CodeBlockProps {
     code: string;
@@ -8,11 +8,12 @@ interface CodeBlockProps {
 
 function CodeBlock({ code }: CodeBlockProps) {
     const { onCopy, hasCopied } = useClipboard(code);
+
     return (
-        <Code display="block" whiteSpace="pre" flexGrow={1} p="4" my="4">
+        <Code style={{ backgroundColor: "var(--sl-color-bg-sidebar)", borderRadius: "4px", border: "1px solid var(--sl-color-hairline)" }} display="block" whiteSpace="pre-wrap" wordBreak="break-all" flexGrow={1} p="4" my="4">
             <Highlight {...defaultProps} code={code} language="javascript">
                 {({ className, tokens, getLineProps, getTokenProps }) => (
-                    <pre className={className} style={{ overflow: "auto", marginBottom: "5px" }}>
+                    <pre className={className} style={{ whiteSpace: "pre-wrap", wordBreak: "break-all", marginBottom: "5px" }}>
                         {tokens.map((line, i) => (
                             <div key={i} {...getLineProps({ line })}>
                                 {line.map((token, key) => (
@@ -25,7 +26,7 @@ function CodeBlock({ code }: CodeBlockProps) {
             </Highlight>
             <Flex>
                 <Spacer />
-                <Button style={{ marginBottom: "5px" }} leftIcon={<CopyIcon />} onClick={onCopy}>
+                <Button style={{ marginBottom: "5px" }} leftIcon={hasCopied ? <CheckIcon /> : <CopyIcon />} onClick={onCopy}>
                     {hasCopied ? "Copied" : "Copy"}
                 </Button>
             </Flex>
