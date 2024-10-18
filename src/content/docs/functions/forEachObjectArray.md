@@ -1,6 +1,6 @@
 ---
 title: $forEachObjectArray
-description: $arrayForEach will execute an awaited command for each item in the object array.
+description: $forEachObjectArray will execute an awaited command for each item in the object array.
 id: forEachObjectArray
 ---
 
