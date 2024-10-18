@@ -27,7 +27,7 @@ client.command({
     name: "addClientReactions",
     code: `
     Hello!
-    $addClientReactions[🧡;❤]
+    $addClientReactions[🧡;❤️]
   `
 });
 ```
