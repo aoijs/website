@@ -15,23 +15,75 @@ $getGuildBoosters[guildID;option?;sep?]
 | option? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | The type of the function response.                     |  false   |
 | sep? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | The separator between each booster.                    |  false   |
 
-## Types
-
-| Type     | Description                         |
-| -------- | ----------------------------------- |
-| {mention} | Mentions users who boosted.   |
-| {id}    | Returns the id of users who boosted.                  |
-| {nickname}    | Returns the nickname of users who boosted.                 |
-| {username}      | Returns the username of users who boosted. |
-| {premiumSinceTimestamp}      | Returns the timestamp of boost time. |
+<details open>
+    <summary><h3>Types</h3></summary>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{mention}</td>
+          <td>Mentions boosters.</td>
+          </tr>
+        <tr>
+          <td>{id}</td>
+          <td>Returns the id's of boosters.</td>
+          </tr>
+        <tr>
+          <td>{nickname}</td>
+          <td>Returns the nickname's of boosters.</td>
+          </tr>
+        <tr>
+          <td>{username}</td>
+          <td>Returns the username's of boosters.</td>
+          </tr>
+        <tr>
+          <td>{premiumSinceTimestamp}</td>
+          <td>Returns the timestamp of boost time.</td>
+          </tr>
+        </tbody>
+    </table>
+</details>
 
 ## Example(s)
 
+import Example from "../../../components/Page/Example.astro";
+import DiscordComponents from "../../../components/DiscordMessage/DiscordComponents.tsx";
+
+<Example>
+
+<div slot="default">
 ```javascript
 client.command({
     name: "getGuildBoosters",
     code: `
-    $getGuildBoosters[$guildId;{username} - {id};,]
-  `
+    $getGuildBoosters[$guildID;{username} - {id};, ]
+    `
 });
 ```
+
+</div>
+<div slot="handler">
+```javascript
+module.exports = {
+  name: "getGuildBoosters",
+  code: `
+  $getGuildBoosters[$guildID;{username} - {id};, ]
+  `
+  };
+ ```
+ 
+</div>
+<div slot="example">
+<DiscordComponents
+  client:load
+  client:only="react"
+  bot="leref - 608358453580136499"
+  user="!getGuildBoosters"
+/>
+</div>
+</Example>
