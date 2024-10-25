@@ -4,11 +4,15 @@ description: $getGuildBoosters will fetch and return the automod rules of the sp
 id: getGuildBoosters
 ---
 `$getGuildBoosters` will fetch and return all the boosters of the specified guild.
+
 ## Usage
+
 ```aoi
 $getGuildBoosters[guildID;option?;sep?]
 ```
+
 ## Parameters
+
 | Field   | Type                                                                                                                                                                                                 | Description                                            | Required |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | :------: |
 | guildID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)                                                                                                    | The ID of the guild.                                   |   true   |
@@ -26,23 +30,23 @@ $getGuildBoosters[guildID;option?;sep?]
       </thead>
       <tbody>
         <tr>
-          <td>{mention}</td>
+          <td>\{mention\}</td>
           <td>Mentions boosters.</td>
           </tr>
         <tr>
-          <td>{id}</td>
+          <td>\{id\}</td>
           <td>Returns the id's of boosters.</td>
           </tr>
         <tr>
-          <td>{nickname}</td>
+          <td>\{nickname\}</td>
           <td>Returns the nickname's of boosters.</td>
           </tr>
         <tr>
-          <td>{username}</td>
+          <td>\{username\}</td>
           <td>Returns the username's of boosters.</td>
           </tr>
         <tr>
-          <td>{premiumSinceTimestamp}</td>
+          <td>\{premiumSinceTimestamp\}</td>
           <td>Returns the timestamp of boost time.</td>
           </tr>
         </tbody>
