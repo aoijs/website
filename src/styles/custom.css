@@ -58,6 +58,21 @@
   --sl-hue-accent: 350;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+img::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  background: inherit;
+  filter: blur(20px);
+  z-index: -1;
+}
+
 /* fix for small screens */
 @media (max-width: 900px) {
   .tracker-container {
