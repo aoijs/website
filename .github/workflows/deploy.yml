@@ -26,21 +26,25 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+
       - name: 📝 Modify Environment variables (commit)
         id: vars
         run: |
           shortCommit=$(git rev-parse --short ${{ github.sha }})
           echo "::set-env name=PUBLIC_COMMIT::$shortCommit"
+
       - name: 📝 Modify Environment variables (time)
         id: time
         run: |
           time=$(date +'%d/%m/%Y %H:%M:%S')
           echo "::set-env name=PUBLIC_BUILD_TIME::$time"
+
       - name: 📝 Set Environment variables
         run: |
           echo "PUBLIC_BUILD_TIME: $PUBLIC_BUILD_TIME"
           echo "PUBLIC_COMMIT: $PUBLIC_COMMIT"
           echo "PUBLIC_ENV: $PUBLIC_ENV"
+
       - name: ⚙️ Setup Node
         uses: actions/setup-node@v4
         with:
@@ -48,16 +52,20 @@ jobs:
           cache: "npm"
           cache-dependency-path: "./package-lock.json"
 
+      - name: npm bug
+        shell: "bash"
+        run: |
+          rm -rf node_modules
+          rm -f package-lock.json
+
       - name: ♻️ Install Packages
         shell: "bash"
-        working-directory: ./
         run: |
           npm install --legacy-peer-deps
           npm install react-dom --legacy-peer-deps
 
       - name: 🧑‍💻 Build
         shell: "bash"
-        working-directory: ./
         run: npm run build
 
       - name: Upload Pages Artifact
@@ -79,9 +87,11 @@ jobs:
       - name: 🚀 Deploy to Github 
         id: deployment
         uses: actions/deploy-pages@v4
+
       - name: Wait for site to be deployed
         if: 1 == 2
         run: sleep 5
+
       - name: 🔎 Update Algolia Crawler (skip)
         if: 1 == 2
         uses: algolia/algoliasearch-crawler-github-actions@v1.1.0
