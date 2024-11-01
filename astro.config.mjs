@@ -14,7 +14,7 @@ export default defineConfig({
   devToolbar: {
     enabled: false,
   },
-  trailingSlash: "never",
+  trailingSlash: "ignore",
   integrations: [
     starlight({
       customCss: ["./src/styles/custom.css"],
