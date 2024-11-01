@@ -286,7 +286,7 @@ function ApplicationCommand() {
                   }}
                 >
                   Don't know what these are? Check{" "}
-                  <a href="/guides/application/commands/">our guide</a>!
+                  <a href="/guides/application/commands">our guide</a>!
                 </p>
               </div>
             </div>
@@ -322,7 +322,7 @@ function ApplicationCommand() {
             />
             <p>
               Don't know what you're doing? Check{" "}
-              <a href="/guides/application/commands/">our guide</a>!
+              <a href="/guides/application/commands">our guide</a>!
             </p>
           </Flex>
           <WarningIcon

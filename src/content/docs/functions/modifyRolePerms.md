@@ -26,7 +26,7 @@ $modifyRolePerms[guildID;roleID;...perms]
 | `+` | Allow a specific permission to someone or something. |
 | `/` | Reset a specific permission to its default state.    |
 
-You can find all permissions **[here](/guides/client/permissions/)**.
+You can find all permissions **[here](/guides/client/permissions)**.
 
 ## Example(s)
 

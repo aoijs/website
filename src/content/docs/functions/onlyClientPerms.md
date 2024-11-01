@@ -19,7 +19,7 @@ $onlyClientPerms[...perms;error]
 | ...perms | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Permission that the bot requires.                            |   true   |
 | error    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Error to return when the bot has not the listed permissions. |   true   |
 
-You can find all permissions **[here](/guides/client/permissions/)**.
+You can find all permissions **[here](/guides/client/permissions)**.
 
 ## Example(s)
 
