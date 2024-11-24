@@ -18,3 +18,11 @@ $oldGuild[option]
 | Field  | Type                                                                                              | Description         | Required |
 | ------ | ------------------------------------------------------------------------------------------------- | ------------------- | :------: |
 | option | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Option to retrieve. |   true   |
+
+
+## Options
+
+| Option           | Type                                                                                              | Description                                   |
+| ---------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| afkChannel | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns AFK Channel Name  |
+| bannerURL  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns guild banner URL  |
