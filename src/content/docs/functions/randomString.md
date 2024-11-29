@@ -21,7 +21,7 @@ $randomString[range;diffExec?]
 
 ## Example(s)
 
-This will return a random [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)of twenty characters:
+This will return a random [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) of twenty characters:
 
 ```javascript
 client.command({
