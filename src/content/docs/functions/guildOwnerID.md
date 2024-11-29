@@ -4,7 +4,7 @@ description: $guildOwnerID will return the ID of the server owner, depending on 
 id: guildOwnerID
 ---
 
-`$guildOwnerID` +will return the ID of the server owner, depending on the given argument.
+`$guildOwnerID` will return the ID of the server owner, depending on the given argument.
 
 ## Usage
 
