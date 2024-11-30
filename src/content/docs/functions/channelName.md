@@ -1,10 +1,10 @@
 ---
 title: $channelName
-description: $channelName will return the channel name of the given channel.
+description: $channelName will return the given channel's name.
 id: channelName
 ---
 
-`$channelName` will return the channel name of the given channel.
+`$channelName` will return the name of the given channel.
 
 ## Usage
 
