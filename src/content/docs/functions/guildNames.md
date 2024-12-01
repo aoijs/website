@@ -1,6 +1,6 @@
 ---
 title: $guildNames
-description: $guildNames will return the guide names your bot is in.
+description: $guildNames will return the guild names your bot is in.
 id: guildNames
 ---
 
