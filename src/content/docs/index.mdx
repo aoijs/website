@@ -73,7 +73,7 @@ import DiscordComponents from "../../components/DiscordMessage/DiscordComponents
     dynamic and interactive Discord bots with ease. These functions provide a
     wide range of functionalities to enhance your bot's capabilities.
     <br />
-    <DiscordComponents client:load client:only="react"
+    <DiscordComponents client:load transition:persist client:only="react"
         bot="Look at the unlimited possibilities!"
         buttons={[
           { label: "Link", type: "link", url: "https://aoi.js.org/invite", row: 0 },
@@ -110,7 +110,7 @@ import DiscordComponents from "../../components/DiscordMessage/DiscordComponents
 
 <br />
 
-<PackageStats client:load client:only="react" />
+<PackageStats client:load transition:persist client:only="react" />
 
   <div class="contribute-footer">
     <p>This project is possible thanks to our contributors!</p>

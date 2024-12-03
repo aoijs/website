@@ -10,7 +10,7 @@ import { FileTree, Steps } from "@astrojs/starlight/components";
 import Tracker from "../../../../components/ProgressTracker";
 
 <Tracker
-    client:load
+    client:load transition:persist
     client:only="react"
     items={[
         {
@@ -74,7 +74,7 @@ If you do not wish to use variables you can always disable the database using th
 <br />
 
 <Tracker
-    client:load
+    client:load transition:persist
     client:only="react"
     items={[
         {
@@ -199,7 +199,7 @@ To use the database we first need to setup some things.
 <br />
 
 <Tracker
-    client:load
+    client:load transition:persist
     client:only="react"
     items={[
         {
@@ -286,7 +286,7 @@ For this we would have to edit your database configuration in our index.js.
 <br />
 
 <Tracker
-    client:load
+    client:load transition:persist
     client:only="react"
     items={[
         {

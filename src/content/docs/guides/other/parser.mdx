@@ -105,7 +105,7 @@ Usage:
 
 <br />
 
-<DiscordComponents client:load client:only="react"
+<DiscordComponents client:load transition:persist client:only="react"
     bot="All possible button types!"
     buttons={[
     { label: "Button", type: "primary", customId: "customId_1", row: 0, "emoji-name": "👋", emoji: "https://www.svgrepo.com/show/407719/waving-hand.svg" },
@@ -160,7 +160,7 @@ Below are simple examples of each parser and how to use them.
 <br />
 
 <DiscordComponents
-    client:load
+    client:load transition:persist
     client:only="react"
     bot=""
     embeds={[
@@ -194,7 +194,7 @@ Below are simple examples of each parser and how to use them.
 <br />
 
 <DiscordComponents
-    client:load
+    client:load transition:persist
     client:only="react"
     bot="Two buttons each one in a different row."
     buttons={[
@@ -212,7 +212,7 @@ Below are simple examples of each parser and how to use them.
 <br />
 
 <DiscordComponents
-    client:load
+    client:load transition:persist
     client:only="react"
     bot="Three buttons, one with emoji."
     buttons={[
@@ -238,7 +238,7 @@ Below are simple examples of each parser and how to use them.
 
 <br />
 
-<DiscordComponents client:load client:only="react"
+<DiscordComponents client:load transition:persist client:only="react"
     bot="Look at the components!"
     selectMenus={[{
         label: "I am a string select menu!",

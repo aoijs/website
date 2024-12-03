@@ -1,0 +1,57 @@
+---
+---
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      let snowflakeInterval: any;
+      const maxSnowflakes = 100;
+  
+      const createSnowflake = () => {
+        if (document.querySelectorAll('.snowflake').length >= maxSnowflakes) return;
+        
+        const snowflake = document.createElement("div");
+        snowflake.className = "snowflake";
+        snowflake.textContent = "❄";
+        document.body.appendChild(snowflake);
+  
+        snowflake.style.cssText = `
+          font-size: ${Math.random() * 10 + 10}px;
+          left: ${Math.random() * window.innerWidth}px;
+          animation-duration: ${Math.random() * 3 + 2}s;
+          opacity: ${Math.random()};
+          pointer-events: none;
+          user-select: none;
+        `;
+  
+        snowflake.addEventListener('animationend', () => snowflake.remove());
+      };
+  
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          clearInterval(snowflakeInterval);
+        } else {
+          snowflakeInterval = setInterval(createSnowflake, 200);
+        }
+      });
+  
+      snowflakeInterval = setInterval(createSnowflake, 200);
+    });
+  </script>
+  
+  <style>
+    .snowflake {
+      position: fixed;
+      top: -20px;
+      pointer-events: none;
+      user-select: none;
+      color: white;
+      animation: fall linear forwards;
+      z-index: 1000;
+    }
+  
+    @keyframes fall {
+      to {
+        transform: translateY(100vh) rotate(360deg);
+      }
+    }
+  </style>
