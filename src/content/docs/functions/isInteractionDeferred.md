@@ -4,7 +4,7 @@ description: $isInteractionDeferred will return true or false depending on wheth
 id: isInteractionDeferred
 ---
 
-`$isInteractionRepliable` will return `true` or `false` depending on whether the interaction has been deferred to or not.
+`isInteractionDeferred` will return `true` or `false` depending on whether the interaction has been deferred to or not.
 
 ## Usage
 
