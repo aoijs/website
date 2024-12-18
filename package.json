@@ -30,7 +30,7 @@
     "@expressive-code/plugin-line-numbers": "^0.35.6",
     "@skyra/discord-components-core": "^4.0.0-alpha.34",
     "@skyra/discord-components-react": "^4.0.0-alpha.34",
-    "astro": "^4.16.7",
+    "astro": "^4.16.18",
     "chakra-react-select": "^5.0.1",
     "framer-motion": "^11.11.8",
     "nanoid": "^3.1.25",
