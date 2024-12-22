@@ -20,7 +20,7 @@ $addEmoji[guildID;URL;name;returnEmoji?;reason?;...roles?]
 | guildID      | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | guild ID                                                 |   true   |
 | URL          | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | valid image URL                                          |   true   |
 | name         | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | emoji name                                               |   true   |
-| returnEmoji? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | return the created emoji?                                |  false   |
+| returnEmoji? | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | return the created emoji?                                |  false   |
 | reason?      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | reason which will be displayed in the guild's audit logs |  false   |
 | roles?       | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | which roles will be able to use the given emoji          |  false   |
 
