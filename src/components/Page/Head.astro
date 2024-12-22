@@ -1,33 +1,16 @@
 ---
 import type { Props } from "@astrojs/starlight/props";
 import Default from "@astrojs/starlight/components/Head.astro";
+import { ViewTransitions } from 'astro:transitions';
+import SnowFlakes from './SnowFlakes.astro';
 
 const { siteTitle } = Astro.props;
 ---
 
 <meta
-    property="og:image"
-    content={`https://aoijs-api.vercel.app/api/v1/og?title=${Astro.props.entry.data?.title ?? siteTitle}&description=${Astro.props.entry.data.description}`}
+  property="og:image"
+  content={`https://aoijs-api.vercel.app/api/v1/og?title=${Astro.props.entry.data?.title ?? siteTitle}&description=${Astro.props.entry.data.description}`}
 />
 <Default {...Astro.props}><slot /></Default>
-
-
-<script>
-    /*
-
-    // Broken: <ViewTransitions />
-    // This is a workaround for the broken ViewTransitions component
-    
-    import { isTransitionBeforeSwapEvent, TRANSITION_BEFORE_SWAP } from "astro:transitions/client";
-
-    document.addEventListener(TRANSITION_BEFORE_SWAP, (event) => {
-        if (!isTransitionBeforeSwapEvent(event)) return;
-        const currentPageSearch = document.querySelector("#docsearch");
-        const newPageSearch = event.newDocument.querySelector("#docsearch");
-
-        if (currentPageSearch && newPageSearch) {
-            newPageSearch.replaceWith(currentPageSearch);
-        }
-    });
-    */
-</script>
+<ViewTransitions />
+<SnowFlakes />

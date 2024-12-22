@@ -16,7 +16,7 @@ $channelNSFW[channelID?]
 
 | Field      | Type                                                                                              | Description                                                       | Required |
 | ---------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | :------: |
-| channelID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the channel you want to check if its marked as NSFW or not. |  false   |
+| channelID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | ID of the channel you want to check whether it's marked as NSFW or not. |  false   |
 
 ## Example(s)
 

@@ -1,6 +1,6 @@
 ---
 title: $arrayFilter
-description: $arrayFilter will check whether a element in the array equals the query and return it.
+description: $arrayFilter will check whether an element in the array equals the query and return it.
 id: arrayFilter
 ---
 
@@ -17,7 +17,7 @@ $arrayFilter[name;query;queryType?;separator?]
 | Field      | Type                                                                                              | Description                                                         | Required |
 | ---------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | :------: |
 | name       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Array name.                                                         |   true   |
-| query      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The element we will be queering for every element inside the array. |   true   |
+| query      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The element we will be querying for every element inside the array. |   true   |
 | queryType? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The comparison operator.                                            |  false   |
 | separator? | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Separator.                                                          |  false   |
 

@@ -3,7 +3,9 @@ import type { Props } from "@astrojs/starlight/props";
 import Default from "starlight-sidebar-topics/overrides/Sidebar.astro";
 ---
 
+<div id="sidebar-toc-content">
 <Default {...Astro.props}><slot /></Default>
+</div>
 
 <script is:inline>
 	(() => {

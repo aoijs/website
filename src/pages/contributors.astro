@@ -23,7 +23,19 @@ async function fetchContributors() {
   return contributorsArray.flat();
 }
 
-const allContributors = await fetchContributors();
+const prod = import.meta.env?.PUBLIC_ENV as string;
+let allContributors = [];
+if (prod !== "production") {
+  allContributors = [
+    {
+      login: "Github User",
+      avatar_url: "",
+      contributions: 100,
+    },
+  ];
+} else {
+  allContributors = await fetchContributors();
+}
 let contributors = [];
 if (Array.isArray(allContributors)) {
   contributors = allContributors

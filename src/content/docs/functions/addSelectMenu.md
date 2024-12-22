@@ -22,8 +22,8 @@ $addSelectMenu[index;type;customId;placeHolder;minValues;maxValues;disabled?;lab
 | placeHolder | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | SelectMenu Placeholder Text.                                                                                                   |   true   |
 | minValues   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | SelectMenu minimal value of selectable options                                                                                 |   true   |
 | maxValues   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | SelectMenu maximal value of selectable options                                                                                 |   true   |
-| disabled    | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | If the selectMenu will appear as disabled- <br /> 1. **true** <br /> 2. **false** (default)                                    |   true   |
-| options     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Select menu options separated by each other with `;` and `:`.                                                                  |   true   |
+| disabled    | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | If the selectMenu will appear as disabled <br /> 1. **true** <br /> 2. **false** (default)                                     |   true   |
+| options     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Select menu options separated by each other with `;` and `:`.                                                                  |   false  |
 
 ## Example(s)
 
@@ -68,6 +68,6 @@ module.exports = [
 /* 
 We use "$onlyIf[$interactionData[values[0]]==customID;]" to make sure this only will be triggered for the according select menu option.
 
-Also ensure that you have the "onInteractionCreate" event in your main file (index.js in most cases).
+Also ensure that you have the "onInteractionCreate" event in your index.js (or whatever your main entry file might be!)
 */
 ```
