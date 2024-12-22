@@ -28,7 +28,7 @@ This will send an embed with a field and description:
 client.command({
     name: "addField",
     code: `
-  $addField[Example;Look at this!;false]
+  $addField[Example;Look at this!;true]
   $description[Hello!]
   `
 });
