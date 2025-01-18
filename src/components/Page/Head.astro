@@ -12,4 +12,4 @@ const { siteTitle } = Astro.props;
   property="og:image"
   content={`https://aoijs-api.vercel.app/api/v1/og?title=${Astro.props.entry.data?.title ?? siteTitle}&description=${Astro.props.entry.data.description}`}
 />
-<Default {...Astro.props}><slot /></Default
+<Default {...Astro.props}><slot /></Default>
