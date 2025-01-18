@@ -5,12 +5,11 @@ import { ViewTransitions } from 'astro:transitions';
 import SnowFlakes from './SnowFlakes.astro';
 
 const { siteTitle } = Astro.props;
+// only use SnowFlakes from December to January
 ---
 
 <meta
   property="og:image"
   content={`https://aoijs-api.vercel.app/api/v1/og?title=${Astro.props.entry.data?.title ?? siteTitle}&description=${Astro.props.entry.data.description}`}
 />
-<Default {...Astro.props}><slot /></Default>
-<ViewTransitions />
-<SnowFlakes />
+<Default {...Astro.props}><slot /></Default
