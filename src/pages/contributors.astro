@@ -76,7 +76,7 @@ if (Array.isArray(allContributors)) {
       contributors.map((user: any) => (
         <div class="contributor" id={user.login}>
           <Image
-            src={user.avatar_url}
+            src={user.avatar_url || "https://cdn.discordapp.com/embed/avatars/0.png"}
             class="avatar"
             alt="Contributor Avatar"
             loading="eager"

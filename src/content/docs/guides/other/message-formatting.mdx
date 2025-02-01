@@ -5,10 +5,7 @@ type: guide
 author: "Fafa"
 author_url: "https://raw.githubusercontent.com/aoijs/website/main/src/images/contributors/fafa.png"
 id: message-formatting
-og_image: https://raw.githubusercontent.com/aoijs/website/main/src/images/og/16.png
 ---
-
-import { DiscordMentionComponent, DiscordMention } from "../../../../components/DiscordMessage/DiscordMention";
 
 | TYPE                    | STRUCTURE               | EXAMPLE                              |
 | ----------------------- | ----------------------- | ------------------------------------ |
@@ -22,13 +19,6 @@ import { DiscordMentionComponent, DiscordMention } from "../../../../components/
 | Custom Emoji (Animated) | \<a\:NAME\:ID\>         | \<a\:lerefblob\:392938283556143104\> |
 | Unix Timestamp          | \<t\:TIMESTAMP\>        | \<t\:1619757519\>                    |
 | Unix Timestamp (Styled) | \<t\:TIMESTAMP\:STYLE\> | \<t\:1619757519\:d\>                 |
-
-<div styles={{ marginTop: "2rem" }}>
-    <DiscordMentionComponent client:load transition:persist client:only="react">
-        Hey, <DiscordMention type="user">Leref</DiscordMention> and <DiscordMention type="user">Ayaka</DiscordMention>. This looks very nice, doesn't it? You can also mention channels
-        <DiscordMention type="channel">rules</DiscordMention>, <DiscordMention type="voice">General</DiscordMention>, <DiscordMention type="forum">feedback</DiscordMention> and roles <DiscordMention type="role" color="#70f0b4">Support</DiscordMention>!
-    </DiscordMentionComponent>
-</div>
 
 ### Markdown
 
