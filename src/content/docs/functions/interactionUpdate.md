@@ -4,7 +4,7 @@ description: $interactionUpdate will update an existing interaction.
 id: interactionUpdate
 ---
 
-`$interactionUpdate` will return update an existing interaction.
+`$interactionUpdate` will update an existing interaction.
 
 ## Usage
 
