@@ -1,10 +1,10 @@
 ---
 title: $memberJoinPosition
-description: $memberJoinPosition will return a members join position.
+description: $memberJoinPosition will return a member's join position.
 id: memberJoinPosition
 ---
 
-`$memberJoinPosition` will return a members join position.
+`$memberJoinPosition` will return a member's join position.
 
 ## Usage
 
