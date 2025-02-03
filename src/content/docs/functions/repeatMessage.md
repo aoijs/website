@@ -1,10 +1,10 @@
 ---
 title: $repeatMessage
-description: $repeatMessage will repeat the given text for given amount of times.
+description: $repeatMessage will repeat the given text for a given amount of times.
 id: repeatMessage
 ---
 
-`$repeatMessage` will repeat the given text for given amount of times.
+`$repeatMessage` will repeat the given text for a given amount of times.
 
 ## Usage
 
