@@ -1,10 +1,10 @@
 ---
 title: $userBadges
-description: $userBadges will return the given users' badges.
+description: $userBadges will return the given user's badges.
 id: userBadges
 ---
 
-`$userBadges` will return the given users's badges.
+`$userBadges` will return the given user's badges.
 
 ## Usage
 
@@ -21,7 +21,7 @@ $userBadges[userId?;sep?]
 
 ## Example(s)
 
-This will return your Discord Badges separated with a comma:
+This will return your Discord Badges separated by a comma:
 
 ```javascript
 client.command({
