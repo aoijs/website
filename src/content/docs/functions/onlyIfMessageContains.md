@@ -1,10 +1,10 @@
 ---
 title: $onlyIfMessageContains
-description: $onlyIfMessageContains will check if the message contains the given text and if not return a error message.
+description: $onlyIfMessageContains will check if the message contains the given text and if not return an error message.
 id: onlyIfMessageContains
 ---
 
-`$onlyIfMessageContains` will check if the message contains the given text and if not return a error message.
+`$onlyIfMessageContains` will check if the message contains the given text and if not return an error message.
 
 ## Usage
 
