@@ -1,10 +1,10 @@
 ---
 title: $variablesCount
-description: $variablesCount will return the total amount of variables added..
+description: $variablesCount will return the total amount of variables added.
 id: variablesCount
 ---
 
-`$variablesCount` will return the total amount of variables added..
+`$variablesCount` will return the total amount of variables added.
 
 ## Usage
 
