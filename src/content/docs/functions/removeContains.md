@@ -21,7 +21,7 @@ $removeContains[content;...words]
 
 ## Example(s)
 
-This will remove the word "aoi.js from the given text:
+This will remove the word "aoi.js" from the given text:
 
 ```javascript
 client.command({
