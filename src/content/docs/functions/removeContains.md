@@ -1,10 +1,10 @@
 ---
 title: $removeContains
-description: $removeContains will remove specific text from a give text.
+description: $removeContains will remove specific word from a given text.
 id: removeContains
 ---
 
-`$removeContains` will remove specific text from a give text.
+`$removeContains` will remove specific word from a given text.
 
 ## Usage
 
