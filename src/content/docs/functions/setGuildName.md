@@ -1,10 +1,10 @@
 ---
 title: $setGuildName
-description: $setGuildName will change a guilds' name.
+description: $setGuildName will change a guild's name.
 id: setGuildName
 ---
 
-`$setGuildName` will change a guilds' name.
+`$setGuildName` will change a guild's name.
 
 ## Usage
 
