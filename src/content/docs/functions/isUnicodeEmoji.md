@@ -20,7 +20,7 @@ $isUnicodeEmoji[emojiResolver]
 
 ## Example(s)
 
-This will return `true` as "🤓" is an valid unicode emoji:
+This will return `true` as "🤓" is a valid unicode emoji:
 
 ```javascript
 client.command({
