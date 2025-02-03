@@ -9,14 +9,14 @@ id: onlyForIDs
 ## Usage
 
 ```aoi
-$onlyForIDs[...userIds;error]
+$onlyForIDs[...userIDs;error]
 ```
 
 ## Parameters
 
 | Field      | Type                                                                                                                                                                                                 | Description                                                                   | Required |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | :------: |
-| ...userIds | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-us/docs/web/javascript/reference/global_objects/number) | Users you want to limit the command to.                                       |   true   |
+| ...userIDs | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-us/docs/web/javascript/reference/global_objects/number) | Users you want to limit the command to.                                       |   true   |
 | error      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | Error to return when the command was not executed by and of the listed users. |   true   |
 
 ## Example(s)
@@ -28,7 +28,7 @@ client.command({
     name: "onlyForIDs",
     code: `
     You can use this!
-    $onlyForIDs[$clientOwnerIds;You can't use that command!]
+    $onlyForIDs[$clientOwnerIDs;You can't use that command!]
     `
 });
 ```
