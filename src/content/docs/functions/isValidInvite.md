@@ -20,7 +20,7 @@ $isValidInvite[inviteResolver]
 
 ## Example(s)
 
-This will return `true` as `https://discord.gg/aoi-js-server-akarui-development-team-773352845738115102` is an valid
+This will return `true` as `https://discord.gg/aoi-js-server-akarui-development-team-773352845738115102` is a valid
 invite:
 
 ```javascript
