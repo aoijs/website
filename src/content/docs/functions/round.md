@@ -20,7 +20,7 @@ $round[number]
 
 ## Example(s)
 
-This will return `555` as it's the next number to `555.78`:
+This will return `556` as it's the next number to `555.78`:
 
 ```javascript
 client.command({
