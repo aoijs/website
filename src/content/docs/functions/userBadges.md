@@ -9,14 +9,14 @@ id: userBadges
 ## Usage
 
 ```aoi
-$userBadges[userId?;sep?]
+$userBadges[userID?;sep?]
 ```
 
 ## Parameters
 
 | Field   | Type                                                                                              | Description                                                            | Required |
 | ------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | :------: |
-| userId? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the user you want the badges of.                             |  false   |
+| userID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the user you want the badges of.                             |  false   |
 | sep?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Separator to split multiple badges from each other <br /> `` (default) |  false   |
 
 ## Example(s)
