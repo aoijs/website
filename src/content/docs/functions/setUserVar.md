@@ -19,7 +19,7 @@ $setUserVar[varname;value;userID?;id?;table?]
 | varname | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable name.                            |   true   |
 | value   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | New Variable value.                       |   true   |
 | userID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | User ID.                                  |  false   |
-| id?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | 1. **specific guild id** <br /> 2. **dm** |  false   |
+| id?     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | 1. **specific guild ID** <br /> 2. **dm** |  false   |
 | table?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Variable table.                           |  false   |
 
 ## Example(s)
