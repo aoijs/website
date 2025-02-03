@@ -9,14 +9,14 @@ id: onlyForGuilds
 ## Usage
 
 ```aoi
-$onlyForGuilds[...guildIds;error]
+$onlyForGuilds[...guildIDs;error]
 ```
 
 ## Parameters
 
 | Field       | Type                                                                                                                                                                                                 | Description                                                                    | Required |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | :------: |
-| ...guildIds | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-us/docs/web/javascript/reference/global_objects/number) | Guilds you want to limit the command to.                                       |   true   |
+| ...guildIDs | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-us/docs/web/javascript/reference/global_objects/number) | Guilds you want to limit the command to.                                       |   true   |
 | error       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | Error to return when the command was not executed in any of the listed guilds. |   true   |
 
 ## Example(s)
