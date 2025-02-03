@@ -14,7 +14,7 @@ $month
 
 ## Example(s)
 
-This will returns the current month:
+This will return the current month:
 
 ```javascript
 client.command({
