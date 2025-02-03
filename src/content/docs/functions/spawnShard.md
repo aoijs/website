@@ -4,8 +4,7 @@ description: $spawnShard will spawn a shard.
 id: spawnShard
 ---
 
-`$spawnShard` will spawn a shard, requires sharding.
-
+`$spawnShard` will spawn a shard (requires [**sharding**](https://aoi.js.org/guides/client/sharding))
 ## Usage
 
 ```aoi
