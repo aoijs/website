@@ -21,7 +21,7 @@ $webhookExists[id;token]
 
 ## Example(s)
 
-This will check if the given Webhook Exists:
+This will check if the given webhook exists:
 
 ```javascript
 client.command({
