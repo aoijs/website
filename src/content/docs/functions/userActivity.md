@@ -21,7 +21,7 @@ $userActivity[guildID?;userID?]
 
 ## Example(s)
 
-This will return your current Activity:
+This will return your current activity:
 
 ```javascript
 client.command({
