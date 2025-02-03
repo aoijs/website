@@ -1,10 +1,10 @@
 ---
 title: $isTimeout
-description: $isTimeout will check if the user is timeouted with Discord's built-in timeout feature.
+description: $isTimeout will check if the user is timed out with Discord's built-in timeout feature.
 id: isTimeout
 ---
 
-`$isTimeout` will check if the user is timeouted with Discord's built-in timeout feature.
+`$isTimeout` will check if the user is timed out with Discord's built-in timeout feature.
 
 ## Usage
 
@@ -21,7 +21,7 @@ $isTimeout[guildID?;userID?]
 
 ## Example(s)
 
-This will check if you're timeouted and either return `true` or `false`:
+This will check if you're timed out and either return `true` or `false`:
 
 ```javascript
 client.command({
