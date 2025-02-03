@@ -1,10 +1,10 @@
 ---
 title: $voiceID
-description: $voiceID will return the current or given voice ID of an user.
+description: $voiceID will return the current or given voice ID of a user.
 id: voiceID
 ---
 
-`$voiceID` will return the current or given voice ID of an user.
+`$voiceID` will return the current or given voice ID of a user.
 
 ## Usage
 
