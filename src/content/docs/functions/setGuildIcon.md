@@ -1,10 +1,10 @@
 ---
 title: $setGuildIcon
-description: $setGuildIcon will change a guilds' icon.
+description: $setGuildIcon will change a guild's icon.
 id: setGuildIcon
 ---
 
-`$setGuildIcon` will change a guilds' icon.
+`$setGuildIcon` will change a guild's icon.
 
 ## Usage
 
