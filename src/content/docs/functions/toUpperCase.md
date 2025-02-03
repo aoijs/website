@@ -21,7 +21,7 @@ $toUpperCase[text]
 
 ## Example(s)
 
-This will everything given to uppercase, in this case it would return `THIS IS AN EXAMPLE`:
+This will make everything given uppercase, in this case it would return `THIS IS AN EXAMPLE`:
 
 ```javascript
 client.command({
