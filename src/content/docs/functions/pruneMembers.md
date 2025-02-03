@@ -1,10 +1,10 @@
 ---
 title: $pruneMembers
-description: $pruneMembers will kick all inactive users whose been inactive for a given amount of time.
+description: $pruneMembers will kick all inactive users who've been inactive for a given amount of time.
 id: pruneMembers
 ---
 
-`$pruneMembers` will kick all inactive users whose been inactive for a given amount of time.
+`$pruneMembers` will kick all inactive users who've been inactive for a given amount of time.
 
 ## Usage
 
