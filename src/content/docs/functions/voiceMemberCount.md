@@ -1,10 +1,10 @@
 ---
 title: $voiceMemberCount
-description: $voiceMemberCount will return the total members of the specified voice channel
+description: $voiceMemberCount will return the total amount of members in the specified voice channel.
 id: voiceMemberCount
 ---
 
-`$voiceMemberCount` will return the total members of the specified voice channel.
+`$voiceMemberCount` will return the total amount of members in the specified voice channel.
 
 ## Usage
 
