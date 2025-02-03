@@ -21,7 +21,7 @@ $mentionedChannels[index;returnSelf?]
 
 ## Example(s)
 
-This will return the ID of the **first** mention if you attempt to mention any channel in this command, or else it will
+This will return the ID of the **first** mention, if you attempt to mention any channel in this command, or else it will
 return the channel ID of the channel where the command was executed in:
 
 ```javascript
