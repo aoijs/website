@@ -1,10 +1,10 @@
 ---
 title: $userPlatform
-description: $userPlatform will return the platform which the user is using Discord with.
+description: $userPlatform will return the platform which the user is using Discord on.
 id: userPlatform
 ---
 
-`$userPlatform` will return the platform which the user is using Discord with.
+`$userPlatform` will return the platform which the user is using Discord on.
 
 ## Usage
 
@@ -29,7 +29,7 @@ $userPlatform[userID?;guildID?;sep?]
 
 ## Example(s)
 
-This will return your platform you're using Discord on:
+This will return the platform you're using Discord on:
 
 ```javascript
 client.command({
