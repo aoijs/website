@@ -1,10 +1,10 @@
 ---
 title: $roleCount
-description: $roleCount will return the guild's role count.
+description: $roleCount will return a guild's role count.
 id: roleCount
 ---
 
-`$roleCount` will return the guild's role count.
+`$roleCount` will return a guild's role count.
 
 ## Usage
 
@@ -21,7 +21,7 @@ $roleCount[guildID?;fetchFirst?]
 
 ## Example(s)
 
-This will return the amount of roles of your guild:
+This will return the amount of roles your guild has:
 
 ```javascript
 client.command({
