@@ -1,10 +1,10 @@
 ---
 title: $resetGlobalUserVar
-description: $resetGlobalUserVar will set a given global user variable to its default value.
+description: $resetGlobalUserVar will set a given global user variable to it's default value.
 id: resetGlobalUserVar
 ---
 
-`$resetGlobalUserVar` will set a given global user variable to its default value.
+`$resetGlobalUserVar` will set a given global user variable to it's default value.
 
 ## Usage
 
