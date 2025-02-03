@@ -1,10 +1,10 @@
 ---
 title: $setUserNickname
-description: $setUserNickname will change a nickname of a guild member.
+description: $setUserNickname will change the nickname of a guild member.
 id: setUserNickname
 ---
 
-`$setUserNickname` will change a nickname of a guild member.
+`$setUserNickname` will change the nickname of a guild member.
 
 ## Usage
 
@@ -22,7 +22,7 @@ $setUserNickname[userID;newName;reason?]
 
 ## Example(s)
 
-This will change your nickname to "I love aoi.js": (wont work if you're the guild owner)
+This will change your nickname to "I love aoi.js": (won't work if you're the guild owner)
 
 ```javascript
 client.command({
