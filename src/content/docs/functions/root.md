@@ -16,7 +16,7 @@ $root[number;root]
 
 | Field  | Type                                                                                              | Description                                        | Required |
 | ------ | ------------------------------------------------------------------------------------------------- | -------------------------------------------------- | :------: |
-| number | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The number of which you want the root returned of. |   true   |
+| number | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The number of which you want the root of. |   true   |
 | root   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The root.                                          |   true   |
 
 ## Example(s)
