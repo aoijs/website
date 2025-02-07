@@ -1,10 +1,10 @@
 ---
 title: $resetUserVar
-description: $resetUserVar will set a given user variable to it's default value of a given guild.
+description: $resetUserVar will set a given user variable to its default value of a given guild.
 id: resetUserVar
 ---
 
-`$resetUserVar` will set a given user variable to it's default value of a given guild.
+`$resetUserVar` will set a given user variable to its default value of a given guild.
 
 ## Usage
 
