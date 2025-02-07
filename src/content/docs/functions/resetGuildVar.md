@@ -1,10 +1,10 @@
 ---
 title: $resetGuildVar
-description: $resetGuildVar will set a given guild variable to it's default value.
+description: $resetGuildVar will set a given guild variable to its default value.
 id: resetGuildVar
 ---
 
-`$resetGuildVar` will set a given guild variable to it's default value.
+`$resetGuildVar` will set a given guild variable to its default value.
 
 ## Usage
 
