@@ -1,10 +1,10 @@
 ---
 title: $rolePerms
-description: $rolePerms will return all given permissions of a role.
+description: $rolePerms will return all permissions of a given role.
 id: rolePerms
 ---
 
-`$rolePerms` will return all given permissions of a role.
+`$rolePerms` will return all permissions of a given role.
 
 ## Usage
 

@@ -1,10 +1,10 @@
 ---
 title: $spliceTextJoin
-description: $spliceTextJoin
+description: $spliceTextJoin will join spliced text.
 id: spliceTextJoin
 ---
 
-`$spliceTextJoin`
+`$spliceTextJoin` will join spliced text.
 
 ## Usage
 

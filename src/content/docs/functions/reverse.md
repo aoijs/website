@@ -20,7 +20,7 @@ $reverse[text]
 
 ## Example(s)
 
-This will the following text readable:
+This will return the following text `This text is reversed, if you're able to read this, then congratulations!`:
 
 ```javascript
 client.command({

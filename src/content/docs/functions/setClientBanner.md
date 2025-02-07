@@ -1,10 +1,10 @@
 ---
 title: $setClientBanner
-description: $setClientBanner will set the user banner of the client.
+description: $setClientBanner will set the banner of the client.
 id: setClientBanner
 ---
 
-`$setClientBanner` will set the user banner of the client.
+`$setClientBanner` will set the banner of the client.
 
 ## Usage
 

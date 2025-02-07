@@ -4,7 +4,7 @@ description: $removeObjectProperty will remove a property of an object.
 id: removeObjectProperty
 ---
 
-`$removeObjectProperty` will remove a property of an given object.
+`$removeObjectProperty` will remove a property of a given object.
 
 ## Usage
 

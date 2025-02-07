@@ -20,7 +20,7 @@ $isValidHex[colorResolver]
 
 ## Example(s)
 
-This will return `true` as `#30dbd8` is an valid hex color:
+This will return `true` as `#30dbd8` is a valid hex color:
 
 ```javascript
 client.command({
@@ -31,7 +31,7 @@ client.command({
 });
 ```
 
-This will return `true` as well as `80` is an valid hexadecimal color:
+This will return `true` as well as `80` is a valid hexadecimal color:
 
 ```javascript
 client.command({

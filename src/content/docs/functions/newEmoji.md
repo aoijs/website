@@ -23,5 +23,5 @@ $newEmoji[option]
 | Option | Type                                                                                              | Description                              |
 | ------ | ------------------------------------------------------------------------------------------------- | ---------------------------------------- |
 | string | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns text required to form the emoji. |
-| guild  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns the guild ID of emoji.           |
-| url    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns url of emoji(if it's custom).    |
+| guild  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns the guild ID of the emoji.           |
+| url    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns the URL of the emoji. (if it's custom)    |

@@ -19,7 +19,7 @@ $setRoles[guildID;memberID;reason?;...roleIDs]
 | guildID    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the guild where the users roles will be removed or added. |   true   |
 | memberID   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The user ID of the guild member.                                    |   true   |
 | reason?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The reason that will be displayed in the guild's audit logs.        |  false   |
-| ...roleIDs | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The Ids of the roles.                                               |   true   |
+| ...roleIDs | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The IDs of the roles.                                               |   true   |
 
 ## Example(s)
 

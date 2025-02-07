@@ -1,10 +1,10 @@
 ---
 title: $title
-description: $title add a title to an embed.
+description: $title adds a title to an embed.
 id: title
 ---
 
-`$title` add a title to an embed.
+`$title` adds a title to an embed.
 
 ## Usage
 

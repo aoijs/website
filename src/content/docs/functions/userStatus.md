@@ -9,15 +9,15 @@ id: userStatus
 ## Usage
 
 ```aoi
-$userStatus[guildId?;userId?]
+$userStatus[guildID?;userID?]
 ```
 
 ## Parameters
 
 | Field    | Type                                                                                              | Description                                                     | Required |
 | -------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | :------: |
-| guildId? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The guild ID of which guild you want to retrieve the status of. |  false   |
-| userId?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the user you want to return the status of.            |  false   |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The guild ID of which guild you want to retrieve the status of. |  false   |
+| userID?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the user you want to return the status of.            |  false   |
 
 ## Example(s)
 

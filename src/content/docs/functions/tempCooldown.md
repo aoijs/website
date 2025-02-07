@@ -26,7 +26,7 @@ $tempCooldown[time;id;errorMessage?]
 
 ## Example(s)
 
-This will set a temporary cooldown for a command which applies once only:
+This will set a temporary cooldown for a command which applies once:
 
 ```javascript
 client.command({

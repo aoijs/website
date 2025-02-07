@@ -10,14 +10,14 @@ if not.
 ## Usage
 
 ```aoi
-$onlyForRoles[...roleIds;error]
+$onlyForRoles[...roleIDs;error]
 ```
 
 ## Parameters
 
 | Field      | Type                                                                                                                                                                                                 | Description                                                                          | Required |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | :------: |
-| ...roleIds | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-us/docs/web/javascript/reference/global_objects/number) | Roles you want to limit the command to.                                              |   true   |
+| ...roleIDs | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-us/docs/web/javascript/reference/global_objects/number) | Roles you want to limit the command to.                                              |   true   |
 | error      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | Error to return when the command was not executed by any user with the listed roles. |  false   |
 
 ## Example(s)

@@ -20,7 +20,7 @@ $wait[time]
 
 ## Example(s)
 
-This will send an embed delayed:
+This will send an embed with a delay of 5 seconds:
 
 ```javascript
 client.command({

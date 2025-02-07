@@ -1,10 +1,10 @@
 ---
 title: $oldMember
-description: $oldMember holds data for the member before it was updated, this is from discord cache and might be empty depending on whether it's cached, so use partial option before attempting to access any property. (memberUpdate event)
+description: $oldMember holds data for the member before it was updated, this is from Discord's cache and might be empty depending on whether it's cached, so use partial option before attempting to access any property. (memberUpdate event)
 id: oldMember
 ---
 
-`$oldMember` holds data for the member before it was updated, this is from discord cache and might be empty depending on
+`$oldMember` holds data for the member before it was updated, this is from Discord's cache and might be empty depending on
 whether it's cached, so use partial option before attempting to access any property. (memberUpdate event)
 
 ## Usage
@@ -54,6 +54,6 @@ client.memberUpdateCommand({
 });
 ```
 
--   This code will execute when **member updates their guild nickname or discord username**
+-   This code will execute when **member updates their guild nickname or Discord username**
 
 ---

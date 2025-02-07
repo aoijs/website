@@ -1,10 +1,10 @@
 ---
 title: $usersInChannel
-description: $usersInChannel will return all users who are connected to the specified voice channel.
+description: $usersInChannel will return all users who are connected to a specified voice channel.
 id: usersInChannel
 ---
 
-`$usersInChannel` will return all users who are connected to the specified voice channel.
+`$usersInChannel` will return all users who are connected to a specified voice channel.
 
 ## Usage
 

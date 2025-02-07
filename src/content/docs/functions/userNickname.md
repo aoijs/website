@@ -22,7 +22,7 @@ $userNickname[guildID?;userID?;returnUser?]
 
 ## Example(s)
 
-This will return your nickname, if you have none then it'll return your Discord username:
+This will return your nickname, if you have none, it'll return your Discord username:
 
 ```javascript
 client.command({

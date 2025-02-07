@@ -1,10 +1,10 @@
 ---
 title: $setRolePosition
-description: $setRolePosition will set a roles' position.
+description: $setRolePosition will set a role's position.
 id: setRolePosition
 ---
 
-`$setRolePosition` will set a roles' position.
+`$setRolePosition` will set a role's position.
 
 ## Usage
 

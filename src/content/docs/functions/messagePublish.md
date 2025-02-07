@@ -21,7 +21,7 @@ $messagePublish[messageID;channelID?]
 
 ## Example(s)
 
-This will publish a message ( will only work in announcement channels ):
+This will publish a message (will only work in announcement channels):
 
 ```javascript
 client.command({

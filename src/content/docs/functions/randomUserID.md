@@ -1,10 +1,10 @@
 ---
 title: $randomUserID
-description: $randomUserID will return a random username.
+description: $randomUserID will return a random user ID.
 id: randomUserID
 ---
 
-`$randomUserID` will return a random username.
+`$randomUserID` will return a random user ID.
 
 ## Usage
 
@@ -20,7 +20,7 @@ $randomUserID[global/guildID?]
 
 ## Example(s)
 
-This will return a random user id:
+This will return a random user ID:
 
 ```javascript
 client.command({

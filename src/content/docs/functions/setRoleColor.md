@@ -1,10 +1,10 @@
 ---
 title: $setRoleColor
-description: $setRoleColor will set a roles' color.
+description: $setRoleColor will set a role's color.
 id: setRoleColor
 ---
 
-`$setRoleColor` will set a roles' color.
+`$setRoleColor` will set a role's color.
 
 ## Usage
 

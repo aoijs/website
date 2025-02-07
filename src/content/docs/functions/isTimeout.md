@@ -16,8 +16,8 @@ $isTimeout[guildID?;userID?]
 
 | Field    | Type                                                                                              | Description                                     | Required |
 | -------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------- | :------: |
-| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the guild where they're timeouted in. |  false   |
-| userID?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the user that's timeouted.            |  false   |
+| guildID? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the guild where they're timed out in. |  false   |
+| userID?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The ID of the user that's timed out.            |  false   |
 
 ## Example(s)
 

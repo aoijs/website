@@ -1,10 +1,10 @@
 ---
 title: $mentioned
-description: $mentioned will return the ID of an user of the mention.
+description: $mentioned will return the mentioned user's ID.
 id: mentioned
 ---
 
-`$mentioned` will return the ID of an user of the mention.
+`$mentioned` will return the mentioned user's ID.
 
 ## Usage
 
@@ -21,7 +21,7 @@ $mentioned[index;returnSelf?]
 
 ## Example(s)
 
-This will return the ID of the **first** mention if you attempt to mention someone in this command, or else it will
+This will return the ID of the **first** mention, if you attempt to mention someone in this command, or else it will
 return your ID:
 
 ```javascript

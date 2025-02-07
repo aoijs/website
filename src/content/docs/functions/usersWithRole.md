@@ -23,7 +23,7 @@ $usersWithRole[roleID;guildID?;option?;sep?]
 
 ## Example(s)
 
-This will return the users of a specific role, make sure to replace roleID:
+This will return the users of a specific role, make sure to replace the roleID:
 
 ```javascript
 client.command({

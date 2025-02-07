@@ -20,7 +20,7 @@ $min[...numbers]
 
 ## Example(s)
 
-This will return `5` since its the smallest number provided:
+This will return `5` since it's the smallest number provided:
 
 ```js
 client.command({

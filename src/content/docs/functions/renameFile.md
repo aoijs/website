@@ -1,10 +1,10 @@
 ---
 title: $renameFile
-description: $renameFile will rename a file of your bot's directory.
+description: $renameFile will rename a file in your bot's directory.
 id: renameFile
 ---
 
-`$renameFile` will rename a file of your bot's directory.
+`$renameFile` will rename a file in your bot's directory.
 
 ## Usage
 
@@ -21,7 +21,7 @@ $renameFile[oldFile;newFile]
 
 ## Example(s)
 
-This will change your index.js to a index.txt file:
+This will change your index.js to index.txt:
 
 ```javascript
 client.command({

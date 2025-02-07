@@ -21,7 +21,7 @@ $roleExists[roleResolver;guildID?]
 
 ## Example(s)
 
-This will return `false` as the role doesn't exist in your guide:
+This will return `false` as this role doesn't exist in your guild:
 
 ```javascript
 client.command({

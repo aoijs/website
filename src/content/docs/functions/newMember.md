@@ -54,4 +54,4 @@ client.memberUpdateCommand({
 });
 ```
 
--   This code will execute when **member updates their guild nickname or discord username**
+-   This code will execute when **member updates their guild nickname or Discord username**

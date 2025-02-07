@@ -21,7 +21,7 @@ $memberDisplayName[guildID?;userID?]
 
 ## Example(s)
 
-This will return your display name, if you have none then it'll return your Discord username:
+This will return your display name, if you have none, it'll return your Discord username:
 
 ```javascript
 client.command({

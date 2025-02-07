@@ -20,7 +20,7 @@ $toLowerCase[text]
 
 ## Example(s)
 
-This will everything given to lowercase, in this case it would return `aoi.js is great.`:
+This will make everything given lowercase, in this case it would return `aoi.js is great.`:
 
 ```javascript
 client.command({
