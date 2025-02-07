@@ -4,7 +4,7 @@ description: $resetGlobalUserVar will set a given global user variable to it's d
 id: resetGlobalUserVar
 ---
 
-`$resetGlobalUserVar` will set a given global user variable to it's default value.
+`$resetGlobalUserVar` will set a given global user variable to its default value.
 
 ## Usage
 
