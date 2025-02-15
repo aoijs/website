@@ -14,7 +14,7 @@ $guildRandomID
 
 ## Example(s)
 
-This will return a random guild if of the guild's your bot is a member of:
+This will return a random guild ID of the guilds your bot is in:
 
 ```javascript
 client.command({
