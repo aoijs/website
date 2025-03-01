@@ -1,10 +1,10 @@
 ---
 title: $thumbnail
-description: $thumbnail add a thumbnail to an embed (upper right corner image).
+description: $thumbnail adds a thumbnail to an embed (upper right corner image).
 id: thumbnail
 ---
 
-`$thumbnail` add a thumbnail to an embed (upper right corner image).
+`$thumbnail` adds a thumbnail to an embed (upper right corner image).
 
 ## Usage
 
@@ -21,13 +21,13 @@ $thumbnail[index?;URL]
 
 ## Example(s)
 
-This will create an embed with your user avatar in it:
+Here’s an example of how to create an embed that includes your avatar:
 
 ```javascript
-client.command({
-    name: "thumbnail",
-    code: `
-   $thumbnail[$userAvatar[$authorID]]
-   $description[Hello, that's your Avatar!]`
+client.command({  
+    name: "thumbnail",  
+    code: `  
+   $thumbnail[$userAvatar[$authorID]]  
+   $description[Hello! This is your avatar.]`  
 });
 ```
