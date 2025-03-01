@@ -1,10 +1,10 @@
 ---
 title: $uri
-description: $uri will encode or decode an URL.
+description: $uri will encode or decode a URL.
 id: uri
 ---
 
-`$uri` will encode or decode an URL.
+`$uri` will encode or decode a URL.
 
 ## Usage
 
