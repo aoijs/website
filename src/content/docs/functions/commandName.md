@@ -1,10 +1,10 @@
 ---
 title: $commandName
-description: $commandName will return the commands' name.
+description: $commandName will return the command's name.
 id: commandName
 ---
 
-`$commandName` will return the commands' name.
+`$commandName` will return the command's name.
 
 ## Usage
 
