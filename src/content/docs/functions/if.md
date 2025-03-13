@@ -12,12 +12,6 @@ id: if
 $if[condition;true;false?]
 ```
 
-:::caution[Deprecation]
-
-`$if: "old"` is deprecated and should no longer be used as it will be removed in the future.
-
-:::
-
 ## Parameters
 
 | Field     | Type                                                                                              | Description                                 | Required |
