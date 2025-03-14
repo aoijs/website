@@ -53,7 +53,6 @@ export default defineConfig({
                     label: "Character Escaping",
                     link: "/guides/other/character-escaping",
                   },
-                  { label: "Discord Events", link: "/guides/other/events" },
                   {
                     label: "Message Formatting",
                     link: "/guides/other/message-formatting",
