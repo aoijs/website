@@ -208,7 +208,7 @@ export default defineConfig({
           },
         ]),
       ],
-      title: "aoi.js",
+      title: "aoi.js — Documentation",
       favicon: "/favicon.ico",
       logo: {
         src: "./src/images/icon.webp",
