@@ -1,10 +1,10 @@
 ---
 title: $onlyForCategories
-description: $onlyForCategories will check if the command was executed in the category of the execution channel and return a error message if not.
+description: $onlyForCategories will check if the command was executed in the category of the execution channel and return an error message if not.
 id: onlyForCategories
 ---
 
-`$onlyForCategories` will check if the command was executed in the category of the execution channel and return a error
+`$onlyForCategories` will check if the command was executed in the category of the execution channel and return an error
 message if not.
 
 ## Usage
