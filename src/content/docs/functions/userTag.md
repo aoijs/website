@@ -4,7 +4,7 @@ description: $userTag will return a user's username and discriminator.
 id: userTag
 ---
 
-`$userTag` will return a user's username and discriminator.
+`$userTag` will return an user's username and discriminator.
 
 ## Usage
 
