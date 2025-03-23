@@ -1,10 +1,10 @@
 ---
 title: $modifyChannelPerms
-description: $modifyChannelPerms will modify a given channels permission overrides.
+description: $modifyChannelPerms will modify the given channel's permission overrides.
 id: modifyChannelPerms
 ---
 
-`$modifyChannelPerms` will modify a given channel's permission overrides.
+`$modifyChannelPerms` will modify the given channel's permission overrides.
 
 ## Usage
 
