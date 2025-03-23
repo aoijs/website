@@ -1,10 +1,10 @@
 ---
 title: $onlyForRoles
-description: $onlyForRoles will check if the user who executed the command has any of the listed roles and return a error message if not.
+description: $onlyForRoles will check if the user who executed the command has any of the listed roles and return an error message if not.
 id: onlyForRoles
 ---
 
-`$onlyForRoles` will check if the user who executed the command has any of the listed roles and return a error message
+`$onlyForRoles` will check if the user who executed the command has any of the listed roles and return an error message
 if not.
 
 ## Usage
