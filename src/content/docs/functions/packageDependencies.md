@@ -21,6 +21,6 @@ client.command({
     name: "packageDependencies",
     code: `
     $packageDependencies
-    ` // Should return "@aoijs/aoi.db, axios, discord-api-types, discord.js, undici"
+    ` // Should return "@aoijs/aoi.db, @aoijs/aoi.structures, chalk, discord.js, undici"
 });
 ```
