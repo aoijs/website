@@ -1,10 +1,10 @@
 ---
 title: $getObjectProperty
-description: $getObjectProperty will return a object property of a given object.
+description: $getObjectProperty will return an object property of a given object.
 id: getObjectProperty
 ---
 
-`$getObjectProperty` will return a object property of a given object.
+`$getObjectProperty` will return an object property of a given object.
 
 ## Usage
 
