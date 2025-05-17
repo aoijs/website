@@ -8,18 +8,19 @@ id: getAttachments
 
 ## Usage
 
-```aoi
-$getAttachments[channelID;messageID;index?;option?]
+```aoi  
+$getAttachments[channelID;messageID;index?;option?;sep?]
 ```
 
 ## Parameters
 
-| Field     | Type                                                                                              | Description                                     | Required |
-| --------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------- | :------: |
-| channelID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The channel of where the message is present in. |   true   |
-| messageID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The message ID.                                 |   true   |
-| index?    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Attachment index.                               |  false   |
-| option?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The option to retrieve.                         |  false   |
+| Field     | Type                                                                                                | Description                                                                      | Required |
+| --------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | :------: |
+| channelID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The channel of where the message is present in.                                  |   true   |
+| messageID | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The message ID.                                                                  |   true   |
+| index?    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | Attachment index.                                                                |  false   |
+| option?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The option to retrieve.                                                          |  false   |
+| sep?      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Separator used to join multiple values. Defaults to `", "`.                      |  false   |
 
 ### Options
 
@@ -41,11 +42,11 @@ $getAttachments[channelID;messageID;index?;option?]
 
 This will return the name of the first attachment from the message that executed the command:
 
-```javascript
-client.command({
-    name: "getAttachments",
-    code: `
-  $getAttachments[$channelID;$messageID;1;name]
-  `
-});
-```
+```javascript  
+client.command({  
+    name: "getAttachments",  
+    code: `  
+  $getAttachments[$channelID;$messageID;1;name]  
+  `  
+}); 
+``` 
