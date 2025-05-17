@@ -62,6 +62,10 @@ export default defineConfig({
                     link: "/guides/other/parser",
                   },
                   {
+                    label: "Macros",
+                    link: "/guides/other/macros",
+                  },
+                  {
                     label: "Variables",
                     link: "/guides/other/variables",
                   },
