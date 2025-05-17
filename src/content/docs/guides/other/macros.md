@@ -20,10 +20,10 @@ id: macros
 
 ## Syntax
 
-To create a macro, use `<client>.macro()` and define a name and a code block.
+To create a macro, use `\<client\>.macro()` and define a name and a code block.
 
 ```js
-<client>.macro({
+\<client\>.macro({
   name: "macroName",
   code: `aoi.js functions`
 });
@@ -32,7 +32,7 @@ To create a macro, use `<client>.macro()` and define a name and a code block.
 You can define multiple macros at once:
 
 ```js
-<client>.macro(
+\<client\>.macro(
   {
     name: "logmessage",
     code: `$log[Hello world!]`
@@ -67,7 +67,7 @@ This will insert the code block defined in the macro at that point in your comma
 Defining and using multiple macros:
 
 ```js
-<client>.macro({
+\<client\>.macro({
   name: 'logmessage',
   code: '$log[aoi.js bot just started c:]'
 }, {
@@ -76,7 +76,7 @@ Defining and using multiple macros:
 });
 ```
 ```js
-<client>.readyCommand({
+\<client\>.readyCommand({
   code: `
     #logmessage
     $log[Starting..]
@@ -84,7 +84,7 @@ Defining and using multiple macros:
 });
 ```
 ```js
-<client>.command({
+\<client\>.command({
   name: "eval",
   code: `
     $eval[$message]
