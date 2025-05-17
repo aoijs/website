@@ -8,8 +8,8 @@ id: guildRoles
 
 ## Usage
 
-```aoi
-$guildRoles[guildID?;type?;sep?;removeManagedRoles?;fetch?]
+```aoi  
+$guildRoles[guildID?;type?;sep?;removeManagedRoles?;removeBotRoles?;fetch?]
 ```
 
 ## Parameters
@@ -20,17 +20,18 @@ $guildRoles[guildID?;type?;sep?;removeManagedRoles?;fetch?]
 | type?               | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The option on how to return the roles <br /> 1. **name** (default) <br /> 2. **id** <br /> 3. **mention** |  false   |
 | sep?                | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | Separator to separate multiple returned values.                                                           |  false   |
 | removeManagedRoles? | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Remove Managed Roles from the result.                                                                     |  false   |
+| removeBotRoles?     | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Remove roles associated with bots from the result.                                                        |  false   |
 | fetch?              | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Fetch all roles of the guild.                                                                             |  false   |
 
 ## Example(s)
 
-This will return all roles of your guild:
+This will return all roles of your guild by name, separated by commas, excluding managed and bot roles:
 
 ```javascript
 client.command({
     name: "guildRoles",
     code: `
-  $description[$guildRoles[$guildID;name;, ]]
+   $guildRoles[$guildID;name;, ;true;true]
   `
 });
 ```

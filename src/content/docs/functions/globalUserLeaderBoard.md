@@ -27,6 +27,7 @@ $globalUserLeaderBoard[variable;type?;custom?;list?;page?;table?]
 | ---------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------- |
 | **\{top\}**      | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns the position of the user.       |
 | **\{username\}** | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns the username.                   |
+| **\{nickname\}** | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns the nickname.                   |
 | **\{tag}**       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | Returns the username and discriminator. |
 | **\{id\}**       | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns the user ID.                    |
 | **\{value\}**    | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Returns the variable value.             |
