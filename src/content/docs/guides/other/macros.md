@@ -10,13 +10,11 @@ id: macros
 - [Macros](#macros)
 - [Syntax](#syntax)
 - [Usage](#usage)
-- [Example](#example(s))
+- [Example](#example)
 
 ## Macros
 
 **Macros** allow you to define reusable blocks of code that can be referenced using `#macroName` inside your commands, events, or even other macros. This helps to avoid repeating code and makes your bot code more organised.
-
----
 
 ## Syntax
 
@@ -60,9 +58,7 @@ For example, using a macro named `logmessage`:
 
 This will insert the code block defined in the macro at that point in your command or event.
 
----
-
-## Example(s)
+## Example
 
 Defining and using multiple macros:
 
