@@ -65,10 +65,10 @@ Defining and using multiple macros:
 ```js
 <client>.macro({
   name: 'logmessage',
-  code: '$log[aoi.js bot just started c:]'
+  code: `$log[aoi.js bot just started c:]`
 }, {
   name: 'onlyDevelopers',
-  code: '$onlyIf[$authorID==918231238912839;You are not a developer.]'
+  code: `$onlyIf[$authorID==918231238912839;You are not a developer.]`
 });
 ```
 ```js
