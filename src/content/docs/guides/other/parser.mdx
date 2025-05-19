@@ -73,6 +73,30 @@ You require `{newEmbed:{...}}` every time you want to use embed parsers.
 {timestamp:ms?} // Adds a timestamp to the embed.
 ```
 
+## Message Components
+
+
+:::tip
+
+You require `{newContainer:{...}}` or `{newSection:{...}}` wrappers to declare components in your messages.
+
+:::
+
+### Message Components Functions
+
+```aoi
+{color:DiscordResolvableColor} // Sets the color for the container.
+{spoiler:true/false} // Marks the container or media as a spoiler.
+{text:content} // Adds a text display component inside a section or container.
+{thumbnail:URL:spoiler?:description?} // Adds a thumbnail with optional spoiler and description.
+{button:label:style:custom_id:disabled?:emoji?} // Adds a button with label and style.
+{actionRow:{...}} // Defines an action row to group buttons or select menus.
+{gallery:{media:URL:spoiler?:description?}} // Adds a media gallery containing one or more media items.
+{media:URL:spoiler?:description?} // Defines a single media item inside a gallery.
+{separator:divider?:type?} // Adds a separator line with optional boolean divider (true/false) and numeric type.
+{file:filename:spoiler?} // Adds a file attachment with optional spoiler flag.
+```
+
 ---
 
 ## Components Parser
