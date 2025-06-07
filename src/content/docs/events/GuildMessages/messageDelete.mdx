@@ -29,7 +29,7 @@ This event has a function to retrieve data:
 
 ```js
 client.messageDeleteCommand({
-    name: "Member Delete",
+    name: "Message Delete",
     channel: "$channelId",
     code: `
         $log[$authorId just deleted "$oldMessage"]
@@ -42,7 +42,7 @@ client.messageDeleteCommand({
 
 ```js
 module.exports = {
-    name: "Member Delete",
+    name: "Message Delete",
     channel: "$channelId",
     type: "messageDelete",
     code: `
