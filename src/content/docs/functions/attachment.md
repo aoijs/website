@@ -16,10 +16,10 @@ $attachment[attachment;name;type?;encoding?]
 
 | Field      | Type                                                                                              | Description                                                    | Required |
 | ---------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | :------: |
-| attachment | string (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)  | Content of the attachment, preferably a URL.                   |   true   |
-| name       | string (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)  | Attachment name.                                               |   true   |
-| type?      | string (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)  | Attachment type. 1. **URL** (default)                          |  false   |
-| encoding?  | string (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)  | Encoding to use. (e.g., "utf-8", "base64").                    |  false   |
+| attachment | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)  | Content of the attachment, preferably a URL.                   |   true   |
+| name       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)  | Attachment name.                                               |   true   |
+| type?      | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)  | Attachment type. 1. **URL** (default)                          |  false   |
+| encoding?  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)  | Encoding to use. (e.g., "utf-8", "base64").                    |  false   |
 
 ## Example(s)
 
