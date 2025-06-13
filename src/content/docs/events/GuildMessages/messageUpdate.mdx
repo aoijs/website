@@ -29,7 +29,7 @@ This event has a function to retrieve data:
 
 ```js
 client.messageUpdateCommand({
-    name: "Member Update",
+    name: "Message Update",
     channel: "$channelId",
     code: `
         $log[$authorId just updated "$oldMessage" to "$message"]
@@ -42,7 +42,7 @@ client.messageUpdateCommand({
 
 ```js
 module.exports = {
-    name: "Member Update",
+    name: "Message Update",
     channel: "$channelId",
     type: "messageUpdate",
     code: `

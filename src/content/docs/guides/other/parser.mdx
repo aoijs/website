@@ -22,6 +22,7 @@ import DiscordComponents from "../../../../components/DiscordMessage/DiscordComp
     -   [Interaction Modal Parser](#interaction-modal-parser)
 -   [Parsers Examples](#parsers-examples)
     -   [Embed Parser](#embed-parser-1)
+    -   [Message Componenets](#message-components-1)
     -   [Components Parser](#components-parser-1)
         -   [Button Parser](#button-parser-1)
         -   [Select Menu Parser](#select-menu-parser-1)
@@ -31,18 +32,18 @@ import DiscordComponents from "../../../../components/DiscordMessage/DiscordComp
 
 ## ExtraOptions/Options Parser Functions
 
-```aoi
-{execute:awaitedCommand} // executes an awaited command
-{reply:messageId:reply?} // replies to a given message
-{interaction} // declares reply as an interaction
-{ephemeral} // declares interaction as ephemeral
-{reactions:...reactions} // adds reactions to a message
-{attachment:attachmentName:attachment} // sends file, image as attachment
-{file:fileName:content} // creates a text file with the given content
-{deleteCommand} // deletes the command which was used to execute the command
-{deleteIn:time} // deletes the given reply within the provided time
-{suppress} // suppress the output
-```
+|                 Syntax                   |                            Description                              |                          Example                            |
+|:----------------------------------------:|:-------------------------------------------------------------------:|:-----------------------------------------------------------:|
+| `{execute:awaitedCommand}`               | Executes an awaited command.                                        | `{execute:myCommand}`                                       |
+| `{reply:messageId:reply?}`               | Replies to a specific message ID.                                   | `{reply:1234567890:Thanks!}`                                |
+| `{interaction}`                          | Declares reply as an interaction.                                   | `{interaction}`                                             |
+| `{ephemeral}`                            | Marks the interaction as ephemeral (visible only to user).          | `{ephemeral}`                                               |
+| `{reactions:...reactions}`               | Adds reactions to the message.                                      | `{reactions:👍:👎}`                                        |
+| `{attachment:attachmentName:attachment}` | Sends a file/image attachment.                                      | `{attachment:image.png:https://example.com/image.png}`      |
+| `{file:fileName:content}`                | Sends a file with custom text content.                              | `{file:hello.txt:Hello World}`                              |
+| `{deleteCommand}`                        | Deletes the triggering command message.                             | `{deleteCommand}`                                           |
+| `{deleteIn:time}`                        | Deletes the message after a given time.                             | `{deleteIn:5s}`                                             |
+| `{suppress}`                             | Suppresses the output message.                                      | `{suppress}`                                                |
 
 These parser can only be used within specific functions, for example:
 `$sendMessage`, `$channelSendMessage` or similar. This includes functions like `$onlyIf`.
@@ -61,19 +62,19 @@ You require `{newEmbed:{...}}` every time you want to use embed parsers.
 
 ### Embed Parser Functions
 
-```aoi
-{title:text} // Adds title to the embed.
-{url:URL} // Adds clickable link to the title.
-{description:text} // Adds description to the embed.
-{color:...} // Adds color to the side of the embed.
-{footer:text:icon?} // Adds footer to the embed with either small image on the left of the footer or none.
-{image:URL} // Adds big image at the bottom of the embed.
-{thumbnail:URL} // Adds a small image in the right-upper-corner.
-{author:name:icon?} // Adds text above the title with either a small icon on the left or none.
-{authorURL:URL} // Adds clickable link to the author.
-{field:title:value:inline? (true / false)} // Adds fields to the embed, which is either inline or not.
-{timestamp:ms?} // Adds a timestamp to the embed.
-```
+|                    Syntax               |                      Description                     |                      Example                                 |
+|:---------------------------------------:|:----------------------------------------------------:|:------------------------------------------------------------:|
+| `{title:text}`                          | Sets the embed's title.                              | `{title:My Embed Title}`                                     |
+| `{url:URL}`                             | Makes the title a clickable link.                    | `{url:https://example.com}`                                  |
+| `{description:text}`                    | Adds description text.                               | `{description:This is a description}`                        |
+| `{color:color}`                         | Sets the color bar on the side.                      | `{color:#00ffcc}`                                            |
+| `{footer:text:icon?}`                   | Adds a footer with optional icon.                    | `{footer:Made with aoi.js:https://example.com/icon.png}`     |
+| `{image:URL}`                           | Adds a large image below the embed.                  | `{image:https://example.com/image.png}`                      |
+| `{thumbnail:URL}`                       | Adds a small image at the top right.                 | `{thumbnail:https://example.com/thumb.png}`                  |
+| `{author:name:icon?}`                   | Adds an author line with optional icon.              | `{author:Bot Name:https://example.com/avatar.png}`           |
+| `{authorURL:URL}`                       | Makes the author name clickable.                     | `{authorURL:https://example.com}`                            |
+| `{field:title:value:inline?}`           | Adds a field (can be inline or not).                 | `{field:Name:Value:true}`                                    |
+| `{timestamp:ms?}`                       | Adds a timestamp to the embed.                       | `{timestamp}` or `{timestamp:1628353826}`                    |
 
 ---
 
@@ -87,18 +88,18 @@ You require `{newContainer:{...}}` or `{newSection:{...}}` wrappers to declare c
 
 ### Message Components Functions
 
-```aoi
-{color:...} // Adds the color for the container.
-{spoiler:true/false} // Marks the container or media as a spoiler.
-{text:content} // Adds a text display component inside a section or container.
-{thumbnail:URL:spoiler?:description?} // Adds a thumbnail with optional spoiler and description.
-{button:label:style:custom_id:disabled?:emoji?} // Adds a button with label and style.
-{actionRow:{...}} // Defines an action row to group buttons or select menus.
-{gallery:{media:URL:spoiler?:description?}} // Adds a media gallery containing one or more media items.
-{media:URL:spoiler?:description?} // Defines a single media item inside a gallery.
-{separator:divider?:type?} // Adds a separator line with optional boolean divider (true/false) and numeric type.
-{file:filename:spoiler?} // Adds a file attachment with optional spoiler flag.
-```
+|            Syntax                                 |                                 Description                                        |              Example                        |
+|:-------------------------------------------------:|:----------------------------------------------------------------------------------:|:-------------------------------------------:|
+| `{color:color}`                                   | Adds the color for the container.                                                  | `{color:#00ff00}`                           |
+| `{spoiler:true/false}`                            | Marks the container or media as a spoiler.                                         | `{spoiler:true}`                            |
+| `{text:content}`                                  | Adds a text display component inside a section or container.                       | `{text:Hello World}`                        |
+| `{thumbnail:URL:spoiler?:description?}`           | Adds a thumbnail with optional spoiler and description.                            | `{thumbnail:https://img.png:true:My Img}`   |
+| `{button:label:style:custom_id:disabled?:emoji?}` | Adds a button with label and style.                                                | `{button:ClickMe:primary:btn_1:false:👍}`   |
+| `{actionRow:{...}}`                               | Defines an action row to group buttons or select menus.                            | `{actionRow:{button:Click:primary:btn_2}}`  |
+| `{gallery:{media:URL:spoiler?:description?}}`     | Adds a media gallery containing one or more media items.                           | `{gallery:{media:https://img1.png}}`        |
+| `{media:URL:spoiler?:description?}`               | Defines a single media item inside a gallery.                                      | `{media:https://img2.png:false:Sample}`     |
+| `{separator:divider?:type?}`                      | Adds a separator line with optional boolean divider (true/false) and numeric type. | `{separator:true:1}`                        |
+| `{file:filename:spoiler?}`                        | Adds a file attachment with optional spoiler flag.                                 | `{file:readme.txt:true}`                    |
 
 ---
 
@@ -120,15 +121,15 @@ Usage:
 
 #### Button Types
 
-|   Name    | Value |                                                                                                                              Color |                                                                               |
-| :-------: | :---: | ---------------------------------------------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------- |
-|  Primary  |   1   |                                                                                                                            blurple | `{button:Button:primary:customID:false}`                                      |
-| Secondary |   2   |                                                                                                                               grey | `{button:Button:secondary:customID:false}`                                    |
-|  Success  |   3   |                                                                                                                              green | `{button:Button:success:customID:false}`                                      |
-|  Danger   |   4   |                                                                                                                                red | `{button:Button:danger:customID:false}`                                       |
-|   Link    |   5   |                                                                                                           grey, navigates to a URL | `{button:Button:link:https\\:aoi.js.org/invite:false}`                        |
-|   Emoji   |   -   |                                                                                                          primary button with emoji | `{button:Button:primary:customID:false:emojiName or emojiID or emoji String}` |
-|  Premium  |   6   | premium button that allows purchases (only usable if you have monitarization enabled & converts automatically to user's currency!) | `{button:Button:premium:skuID:false}` |
+|   Name    | Value |                                                                                                                              Color  |                                                                               |
+| :-------: | :---: | ---------------------------------------------------------------------------------------------------------------------------------:  | ----------------------------------------------------------------------------- |
+|  Primary  |   1   |                                                                                                                            Blurple. | `{button:Button:primary:customID:false}`                                      |
+| Secondary |   2   |                                                                                                                               Grey. | `{button:Button:secondary:customID:false}`                                    |
+|  Success  |   3   |                                                                                                                              Green. | `{button:Button:success:customID:false}`                                      |
+|  Danger   |   4   |                                                                                                                                Red. | `{button:Button:danger:customID:false}`                                       |
+|   Link    |   5   |                                                                                                           Grey, navigates to a URL. | `{button:Button:link:https\\:aoi.js.org/invite:false}`                        |
+|   Emoji   |   -   |                                                                                                         Primary button with emoji.  | `{button:Button:primary:customID:false:emojiName or emojiID or emoji String}` |
+|  Premium  |   6   | Premium button that allows purchases. (only usable if you have monitarization enabled & converts automatically to user's currency!) | `{button:Button:premium:skuID:false}` |
 
 <br />
 
@@ -149,28 +150,27 @@ Usage:
 
 Select Menu Parser Usage:
 
-```aoi
-{selectMenu:customID:placeholder:minValue:maxValue:default(true / false):...options}
+|                    Syntax                                                           |                              Description                                                    |                              Example                                                 |
+|:-----------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
+| `{selectMenu:customID:placeholder:minValue:maxValue:default:true/false:...options}` | Declares a select menu with customID, placeholder, min/max values, default, and options.    | `{selectMenu:menuID:Choose option:1:3:false:{stringInput:Option1:1:Desc1:false:👋}}` |
+| `{stringInput:optionName:customID:optionDescription:default? (true/false):emoji?}`  | Adds a string option with name, ID, description, default, and optional emoji.               | `{stringInput:Option1:1:OptionDescription:false:👋}`                                 |
 
-{stringInput:optionName:customID:optionDescription:default? (true / false):emoji?}
+For every option you want to add to the select menu, you can use one of the following inputs:
 
-// for every option you want to add to the select menu, you can use the following:
-{roleInput}
-
-{channelInput}
-
-{mentionableInput}
-
-{userInput}
-```
+|      Input Name      |                     Description                    | 
+|:--------------------:|:--------------------------------------------------:|
+| `{roleInput}`        | Adds a role selection input to the select menu.    |
+| `{channelInput}`     | Adds a channel selection input to the select menu. | 
+| `{mentionableInput}` | Adds a mentionable (user or role) selection input. | 
+| `{userInput}`        | Adds a user selection input to the select menu.    | 
 
 ### Interaction Modal Parser
 
 Interaction Modal Parser Usage:
 
-```bash
-{textInput:label:style:customID:required? (true / false):placeholder?:minLength?:maxLength?:defaultValue?}
-```
+|              Syntax                                                                                          |                            Description                            |               Example Usage                                |
+|:------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------:|:----------------------------------------------------------:|
+| `{textInput:label:style:customID:required? (true / false):placeholder?:minLength?:maxLength?:defaultValue?}` | Input field inside a modal interaction with many options.         | `{textInput:Name:1:customID:true:Enter your name:1:100}`  |
 
 ## Parsers Examples
 
@@ -181,7 +181,12 @@ Below are simple examples of each parser and how to use them.
 **Embed with title, footer, image and field.**
 
 ```bash
-{newEmbed:{title:Another Awesome Example !}{image:https://cdn.discordapp.com/banners/773352845738115102/01e9a05d24039fe562bcc8ab95e721f8.webp?size=4096}{field:This is a field title!:And a field description which is not inline!:false}{footer:Example #2}}
+{newEmbed:
+  {title:Another Awesome Example!}
+  {image:https://cdn.discordapp.com/banners/773352845738115102/01e9a05d24039fe562bcc8ab95e721f8.webp?size=4096}
+  {field:This is a field title!:And a field description which is not inline!:false}
+  {footer:Example #2}
+}
 ```
 
 <br />
@@ -205,6 +210,25 @@ Below are simple examples of each parser and how to use them.
         }
     ]}
 />
+
+### Message Components Parser
+
+**Component with text, button, and a gallery with media.**
+
+```bash
+{newContainer:
+  {color:0089ff}
+
+  {newSection:
+    {text:This is a text!}
+    {button:Click Me:primary:clickbutton:false}
+  }
+
+  {gallery:
+    {media:https://cdn.discordapp.com/banners/773352845738115102/01e9a05d24039fe562bcc8ab95e721f8.webp?size=4096:false:Sample image}
+  }
+}
+```
 
 ---
 

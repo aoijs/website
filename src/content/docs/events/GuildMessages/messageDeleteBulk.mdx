@@ -27,7 +27,7 @@ This event has a function to retrieve data:
 
 ```js
 client.messageDeleteBulkCommand({
-    name: "Member Delete Bulk",
+    name: "Message Delete Bulk",
     channel: "$channelId",
     code: `
         $log[A lot of messages were just deleted!: $bulk[messages]]
@@ -40,7 +40,7 @@ client.messageDeleteBulkCommand({
 
 ```js
 module.exports = {
-    name: "Member Delete Bulk",
+    name: "Message Delete Bulk",
     channel: "$channelId",
     type: "messageDeleteBulk",
     code: `
