@@ -28,7 +28,7 @@ This will unban a given user:
 client.command({
     name: "unban",
     code: `
-  $unban[$guildID;$randomUserID;Some reason.]
+  $unban[$guildID;$mentioned[1];Some reason.]
   `
 });
 ```
